@@ -1,9 +1,72 @@
 /**
  * Daily Plan Component
- * Displays detailed day view with meals, prep tasks, recipes, and reminders
+ * Displays detailed day view with meals for both Roland and Maia, prep tasks, recipes, and reminders
  */
 
 import { MEAL_PLAN_DATA } from '../data/mealPlanData.js';
+import { appState } from '../utils/state.js';
+
+/**
+ * Render a meal item
+ */
+function renderMeal(meal, icon, label) {
+  if (!meal) return '';
+  
+  return `
+    <div style="display:flex;margin-bottom:14px">
+      <div style="font-size:1.6rem;margin-right:12px">${icon}</div>
+      <div style="flex:1">
+        <div style="font-weight:600">${label}${meal.time ? ` ${meal.time}` : ''}</div>
+        <div style="color:#718096;margin-top:2px">${meal.name}</div>
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Render prep tasks with checkboxes
+ */
+function renderPrepTasks(prep, dayKey, person) {
+  if (!prep || (!prep.morning?.length && !prep.evening?.length)) return '';
+  
+  const prepId = (time, index) => `prep-${dayKey}-${person}-${time}-${index}`;
+  
+  return `
+    <div class="prep-card">
+      <h2>📋 Prep Tasks</h2>
+      ${prep.morning?.length ? `
+        <div style="margin-bottom:16px">
+          <div style="font-weight:600;color:#1e40af;margin-bottom:8px">🌅 Morning:</div>
+          ${prep.morning.map((task, i) => {
+            const id = prepId('morning', i);
+            const checked = appState.isChecked(id);
+            return `
+              <div class="checkbox-item ${checked ? 'checked' : ''}" onclick="toggleItem('${id}')" style="margin-bottom:6px">
+                <div class="checkbox ${checked ? 'checked' : ''}">${checked ? '✓' : ''}</div>
+                <span style="color:#374151">${task}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      ` : ''}
+      ${prep.evening?.length ? `
+        <div>
+          <div style="font-weight:600;color:#1e40af;margin-bottom:8px">🌙 Evening:</div>
+          ${prep.evening.map((task, i) => {
+            const id = prepId('evening', i);
+            const checked = appState.isChecked(id);
+            return `
+              <div class="checkbox-item ${checked ? 'checked' : ''}" onclick="toggleItem('${id}')" style="margin-bottom:6px">
+                <div class="checkbox ${checked ? 'checked' : ''}">${checked ? '✓' : ''}</div>
+                <span style="color:#374151">${task}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
 
 /**
  * Render a daily plan page
@@ -24,6 +87,9 @@ export function renderDay(dayKey) {
       </div>
     `;
   }
+  
+  const roland = day.roland;
+  const maia = day.maia;
   
   return `
     <div class="container">
@@ -46,37 +112,25 @@ export function renderDay(dayKey) {
       ` : ''}
       
       <div class="card">
-        <h2>Today's Meals</h2>
-        ${[
-          ['🌅', 'Breakfast', day.meals.b],
-          ['🥗', 'Lunch', day.meals.l],
-          ['🍽️', 'Dinner', day.meals.d]
-        ].map(([icon, label, meal]) => `
-          <div style="display:flex;margin-bottom:14px">
-            <div style="font-size:1.6rem;margin-right:12px">${icon}</div>
-            <div>
-              <div style="font-weight:600">${label}</div>
-              <div style="color:#718096;margin-top:2px">${meal}</div>
-            </div>
-          </div>
-        `).join('')}
+        <h2 style="color:#1e40af;border-bottom:2px solid #3b82f6;padding-bottom:8px;margin-bottom:16px">ROLAND</h2>
+        ${renderMeal(roland.meals.b, '🌅', 'Breakfast')}
+        ${renderMeal(roland.meals.l, '🥗', 'Lunch')}
+        ${renderMeal(roland.meals.d, '🍽️', 'Dinner')}
       </div>
       
-      ${day.prep ? `
-        <div class="prep-card">
-          <h2>Prep Tasks</h2>
-          <ul style="list-style:none;padding:0">
-            ${day.prep.map(task => `
-              <li style="display:flex;align-items:flex-start;margin-bottom:8px">
-                <span style="color:#3b82f6;margin-right:8px;font-weight:bold">✓</span>
-                <span style="color:#374151">${task}</span>
-              </li>
-            `).join('')}
-          </ul>
+      ${maia && (maia.meals.b || maia.meals.l || maia.meals.d) ? `
+        <div class="card">
+          <h2 style="color:#db2777;border-bottom:2px solid #ec4899;padding-bottom:8px;margin-bottom:16px">MAIA</h2>
+          ${maia.meals.b ? renderMeal(maia.meals.b, '🌅', 'Breakfast') : ''}
+          ${maia.meals.l ? renderMeal(maia.meals.l, '🍱', maia.meals.l.name.includes('Packed') ? 'Packed Lunch' : 'Lunch') : ''}
+          ${maia.meals.d ? renderMeal(maia.meals.d, '🍽️', 'Dinner') : maia.meals.d === null && (maia.meals.b || maia.meals.l) ? '<div style="color:#718096;font-style:italic">At mum\'s for dinner</div>' : ''}
         </div>
       ` : ''}
       
-      ${day.recipes ? day.recipes.map(recipe => `
+      ${renderPrepTasks(roland.prep, dayKey, 'roland')}
+      ${maia && renderPrepTasks(maia.prep, dayKey, 'maia')}
+      
+      ${roland.recipes ? roland.recipes.map(recipe => `
         <div class="card">
           <h2>${recipe.name}</h2>
           <div style="margin-bottom:20px">

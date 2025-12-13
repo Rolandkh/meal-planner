@@ -7,6 +7,9 @@ import { appState } from './state.js';
 import { renderHome } from '../components/HomePage.js';
 import { renderShopping } from '../components/ShoppingList.js';
 import { renderDay } from '../components/DailyPlan.js';
+import { renderWeeklyOverview } from '../components/WeeklyOverview.js';
+import { renderGenerateWeek } from '../components/GenerateWeek.js';
+import { renderFeedback } from '../components/Feedback.js';
 
 /**
  * Initialize the router and render the initial page
@@ -42,6 +45,15 @@ function render() {
         break;
       case 'shopping':
         html = renderShopping();
+        break;
+      case 'weekly':
+        html = renderWeeklyOverview();
+        break;
+      case 'generate':
+        html = renderGenerateWeek();
+        break;
+      case 'feedback':
+        html = renderFeedback();
         break;
       default:
         // Assume it's a day key
