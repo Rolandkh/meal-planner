@@ -11,11 +11,20 @@ export default async function handler(req, res) {
   }
 
   // Get API key from environment variable (set in Vercel dashboard)
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
 
   if (!apiKey) {
+    console.error('ANTHROPIC_API_KEY is not set or is empty');
     return res.status(500).json({ 
-      error: 'API key not configured. Please set ANTHROPIC_API_KEY in Vercel environment variables.' 
+      error: 'API key not configured. Please set ANTHROPIC_API_KEY in Vercel environment variables and redeploy.' 
+    });
+  }
+
+  // Validate API key format
+  if (!apiKey.startsWith('sk-ant-')) {
+    console.error('API key format is invalid (should start with sk-ant-)');
+    return res.status(500).json({ 
+      error: 'Invalid API key format. The key should start with "sk-ant-". Please check your Vercel environment variable.' 
     });
   }
 
@@ -100,8 +109,16 @@ Output required (JSON format):
 
     if (!response.ok) {
       const error = await response.json();
+      console.error('Claude API error:', error);
+      
+      // Provide more helpful error messages
+      let errorMessage = error.error?.message || `API error: ${response.status}`;
+      if (errorMessage.includes('invalid x-api-key') || errorMessage.includes('authentication')) {
+        errorMessage = 'Invalid API key. Please check that ANTHROPIC_API_KEY is set correctly in Vercel environment variables. Make sure there are no extra spaces or characters.';
+      }
+      
       return res.status(response.status).json({ 
-        error: error.error?.message || `API error: ${response.status}` 
+        error: errorMessage 
       });
     }
 
@@ -124,8 +141,15 @@ Output required (JSON format):
 
   } catch (error) {
     console.error('Claude API error:', error);
+    console.error('Error details:', {
+      message: error.message,
+      stack: error.stack,
+      apiKeyPresent: !!process.env.ANTHROPIC_API_KEY,
+      apiKeyLength: process.env.ANTHROPIC_API_KEY?.length
+    });
+    
     return res.status(500).json({ 
-      error: error.message || 'Failed to generate meal plan' 
+      error: error.message || 'Failed to generate meal plan. Check server logs for details.' 
     });
   }
 }
