@@ -1099,8 +1099,3 @@ async function queryShoppingList(items) {
 ---
 
 *End of Specification v1.0*
-
-
-
-anthopic key
-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
