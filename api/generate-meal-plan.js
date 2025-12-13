@@ -11,22 +11,28 @@ export default async function handler(req, res) {
   }
 
   // Get API key from environment variable (set in Vercel dashboard)
-  const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
+  // Try both possible variable names (Vercel sometimes uses different casing)
+  const apiKey = (process.env.ANTHROPIC_API_KEY || process.env.anthropic_api_key || process.env.Anthropic_Api_Key)?.trim();
 
   if (!apiKey) {
     console.error('ANTHROPIC_API_KEY is not set or is empty');
+    console.error('Available env vars:', Object.keys(process.env).filter(k => k.toLowerCase().includes('anthropic')));
     return res.status(500).json({ 
-      error: 'API key not configured. Please set ANTHROPIC_API_KEY in Vercel environment variables and redeploy.' 
+      error: 'API key not configured. Please set ANTHROPIC_API_KEY in Vercel environment variables and redeploy. Visit /api/check-env to verify.' 
     });
   }
 
   // Validate API key format
   if (!apiKey.startsWith('sk-ant-')) {
     console.error('API key format is invalid (should start with sk-ant-)');
+    console.error('Key starts with:', apiKey.substring(0, 10));
     return res.status(500).json({ 
-      error: 'Invalid API key format. The key should start with "sk-ant-". Please check your Vercel environment variable.' 
+      error: `Invalid API key format. The key should start with "sk-ant-". Found: "${apiKey.substring(0, 10)}...". Please check your Vercel environment variable.` 
     });
   }
+
+  // Log key info (first 10 and last 4 chars only for security)
+  console.log('Using API key:', apiKey.substring(0, 10) + '...' + apiKey.substring(apiKey.length - 4));
 
   try {
     const { userPrompt, budgetTarget, store, feedbackHistory } = req.body;
