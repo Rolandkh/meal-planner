@@ -1,0 +1,16 @@
+# Vercel ignore file
+# Files that don't need to be deployed
+
+# Old HTML file (reference only)
+diet-compass-app.html
+
+# Documentation files
+*.md
+!README.md
+
+# Development files
+.editorconfig
+
+# Git files
+.git
+.gitignore

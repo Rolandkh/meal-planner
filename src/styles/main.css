@@ -1,0 +1,251 @@
+/**
+ * Main Stylesheet
+ * Global styles for the meal planner app
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+  color: #1a202c;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  padding-bottom: 80px;
+}
+
+.header {
+  text-align: center;
+  margin: 24px 0 32px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.header p {
+  color: white;
+  font-weight: 500;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 20px 0 12px;
+  color: white;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  transition: transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-shopping {
+  background: #48bb78;
+  color: white;
+}
+
+.btn.special {
+  background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+  border: 2px solid #db2777;
+}
+
+.back-btn {
+  color: #3182ce;
+  font-weight: 600;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.checkbox-item {
+  background: white;
+  padding: 12px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.checkbox-item:hover {
+  opacity: 0.9;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #cbd5e0;
+  border-radius: 6px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.checkbox.checked {
+  background: #48bb78;
+  border-color: #48bb78;
+  color: white;
+}
+
+.checkbox-item.checked {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.progress {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #48bb78, #38a169);
+  transition: width 0.5s ease;
+}
+
+.prep-card {
+  background: #eff6ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.prep-card h2 {
+  color: #1e40af;
+}
+
+/* Accessibility improvements */
+.btn:focus,
+.back-btn:focus,
+.checkbox-item:focus {
+  outline: 2px solid #3182ce;
+  outline-offset: 2px;
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Error state */
+.error {
+  background: #fee;
+  border: 2px solid #fcc;
+  color: #c33;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding: 12px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+  }
+  
+  .btn,
+  .back-btn {
+    display: none;
+  }
+}

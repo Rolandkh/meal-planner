@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Meal Plan</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #f0f4f8; color: #1a202c; }
+.container { max-width: 600px; margin: 0 auto; padding: 16px; padding-bottom: 80px; }
+.header { text-align: center; margin: 24px 0 32px; }
+.header h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 8px; color: white; }
+.header p { color: white; font-weight: 500; }
+.page-title { font-size: 2rem; font-weight: 700; margin-bottom: 16px; color: white; }
+.section-title { font-size: 1.2rem; font-weight: 700; margin: 20px 0 12px; color: white; }
+.category-title { font-size: 1.1rem; font-weight: 700; margin: 16px 0 8px; color: white; }
+.btn { width: 100%; padding: 18px; border: none; border-radius: 12px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-between; background: white; }
+.btn:active { transform: scale(0.98); }
+.btn-shopping { background: #48bb78; color: white; }
+.btn.special { background: linear-gradient(135deg, #fce7f3, #fbcfe8); border: 2px solid #db2777; }
+.back-btn { color: #3182ce; font-weight: 600; padding: 8px 0; margin-bottom: 16px; background: none; border: none; cursor: pointer; font-size: 1rem; }
+.card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.card h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 16px; }
+.card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; }
+.checkbox-item { background: white; padding: 12px; margin-bottom: 4px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; align-items: center; cursor: pointer; }
+.checkbox { width: 24px; height: 24px; border: 2px solid #cbd5e0; border-radius: 6px; margin-right: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.checkbox.checked { background: #48bb78; border-color: #48bb78; color: white; }
+.checkbox-item.checked { opacity: 0.5; text-decoration: line-through; }
+.progress { width: 100%; height: 12px; background: #e5e7eb; border-radius: 999px; overflow: hidden; margin-top: 12px; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, #48bb78, #38a169); transition: width 0.5s; }
+.prep-card { background: #eff6ff; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+.prep-card h2 { color: #1e40af; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const DATA = {
+  shopping: [
+    {cat:'Protein Bars',items:['200g oats','100g walnuts','80g protein powder','30g cacao','200g chocolate','30g coconut oil','2 bananas','260g almond butter','100ml maple syrup']},
+    {cat:'Produce',items:['Salad greens (4 bags)','Tomatoes (2)','Cucumbers (4)','Capsicums (4)','Avocados (3)','Lemons (5)','Broccoli','Spinach','Kale','Mushrooms']},
+    {cat:'Proteins',items:['Salmon 150g','Sardines (tin)','Mackerel 120g','Tuna (tin)','Firm tofu 400g','Smoked tofu 200g']},
+    {cat:'Grains',items:['Hummus 800g','Chickpeas (4 tins)','Quinoa 200g','Bulgur 100g','Whole grain bread','Whole grain wraps']},
+    {cat:'Dairy',items:['Greek yogurt 1kg','Kefir 500ml','Sauerkraut 500g']},
+    {cat:'Pantry',items:['Lentil soup','Veg soup','Plant milk','Olive oil','Coconut oil','Tamari sauce']}
+  ],
+  days: {
+    sunday:{
+      name:'Sunday',date:'Dec 8',
+      meals:{b:'Protein bar 8am',l:'Hummus Bowl 12:30pm',d:'Salmon & Greens 5:30pm'},
+      prep:['Make 12 protein bars (see recipe below)','Wash and dry salad greens','Chop vegetables for week (cucumber, capsicum, carrots)','Cook 150g quinoa for buddha bowl','Cook 100g bulgur for Saturday'],
+      recipes:[
+        {name:'Protein Bars (Makes 12)',
+         ing:['200g rolled oats','100g walnuts, chopped','80g plant protein powder','30g cacao powder','15g maca powder','50g chia seeds','30g oat flour','100g dried blueberries','10g Lion\'s Mane powder','5g Reishi powder','5g turmeric powder','20g ground flaxseed','260g almond butter','100ml maple syrup','2 ripe bananas (200g), mashed','60ml plant milk','5g fresh ginger, grated','200-250g dark chocolate','30-40g coconut oil'],
+         steps:['Line 20×20cm tin with parchment','Melt 100-125g chocolate with 15-20g coconut oil','Pour into tin, spread evenly, refrigerate 10 min','Mix all dry ingredients in large bowl','Warm 260g almond butter, 100ml maple syrup, and 60ml plant milk until smooth','Remove from heat, stir in 200g mashed bananas and 5g grated ginger','Pour wet into dry, mix until sticky','Spread over set chocolate, press VERY firmly','Refrigerate 2-3 hours','Melt remaining chocolate with remaining coconut oil','Pour over top, spread evenly, refrigerate 30 min','Cut into 12 bars (warm knife between cuts)','Wrap individually']},
+        {name:'Hummus Power Bowl',
+         ing:['1 protein bar','150-200g mixed salad greens','150g hummus','50g cooked chickpeas','30g walnuts','30g whole grain crackers','150g Greek yogurt','10g chia seeds','15ml olive oil','Lemon juice'],
+         steps:['Arrange 150-200g greens in bowl','Add 150g hummus','Top with 50g chickpeas and 30g walnuts','Serve with 30g crackers','Mix 150g yogurt with 10g chia seeds','Drizzle 15ml olive oil and lemon juice','Eat protein bar alongside']},
+        {name:'Salmon & Greens',
+         ing:['150g salmon fillet','200g broccoli and green beans','100g mixed salad greens','50g sauerkraut','15ml olive oil','Lemon, herbs, garlic'],
+         steps:['Pan-fry or bake 150g salmon with herbs and garlic','Steam 200g broccoli and green beans','Arrange 100g salad greens','Add salmon and vegetables','Serve 50g sauerkraut on side','Drizzle 15ml olive oil and lemon']}
+      ]
+    },
+    monday:{
+      name:'Monday',date:'Dec 9',
+      meals:{b:'Protein bar 8am',l:'Lentil Soup 12:30pm',d:'Sardines Salad 5:30pm'},
+      prep:['No prep needed - using pre-made soup'],
+      recipes:[
+        {name:'Lentil Soup',
+         ing:['1 protein bar','500ml lentil soup','2 slices whole grain bread (60g)','1 apple'],
+         steps:['Heat 500ml lentil soup','Serve with 2 slices (60g) bread','Have 1 apple for dessert','Eat protein bar alongside']},
+        {name:'Sardines Salad',
+         ing:['125g tinned sardines, drained','250g mixed salad','50g avocado (1/4)','50g cherry tomatoes','15ml olive oil','Lemon, herbs'],
+         steps:['Arrange 250g salad on plate','Top with 125g sardines','Add 50g avocado and 50g tomatoes','Drizzle 15ml olive oil and lemon','Garnish with herbs']}
+      ]
+    },
+    tuesday:{
+      name:'Tuesday',date:'Dec 10',
+      meals:{b:'Protein bar 8am',l:'Whole Grain Wrap 12:30pm',d:'Tofu Scramble 5:30pm'},
+      prep:['Assemble wrap - takes 5 minutes'],
+      recipes:[
+        {name:'Whole Grain Wrap',
+         ing:['1 protein bar','1 whole grain wrap (60g)','100g hummus','150g raw vegetables','30g tahini','150ml kefir'],
+         steps:['Spread 100g hummus on 60g wrap','Add 150g vegetables','Drizzle 30g tahini','Roll up tightly','Serve with 150ml kefir','Eat protein bar alongside']},
+        {name:'Tofu Scramble',
+         ing:['200g firm tofu, crumbled','150g spinach/kale','100g mushrooms','50g sauerkraut','10ml olive oil','Nutritional yeast, turmeric','100g mixed greens'],
+         steps:['Heat 10ml olive oil in pan','Add 200g crumbled tofu with turmeric and black pepper','Cook 100g mushrooms until soft','Add 150g spinach, wilt','Season with nutritional yeast','Serve with 50g sauerkraut and 100g salad']}
+      ]
+    },
+    wednesday:{
+      name:'Wednesday',date:'Dec 11',
+      meals:{b:'Protein bar 8am',l:'Buddha Bowl 12:30pm',d:'Mackerel Stir-Fry 5:30pm'},
+      prep:['Assemble buddha bowl from prepped ingredients'],
+      recipes:[
+        {name:'Buddha Bowl',
+         ing:['1 protein bar','100g cooked quinoa','150g roasted vegetables','100g chickpeas','50g hummus','30g seeds','150g Greek yogurt'],
+         steps:['Layer 100g quinoa in bowl','Add 150g roasted vegetables','Top with 100g chickpeas','Add 50g hummus and 30g seeds','Serve 150g yogurt on side','Eat protein bar alongside']},
+        {name:'Mackerel Stir-Fry',
+         ing:['120g smoked mackerel','250g frozen stir-fry vegetables','50g kimchi','10ml coconut oil','Tamari, ginger, garlic'],
+         steps:['Heat 10ml coconut oil in wok','Stir-fry 250g vegetables with ginger and garlic','Add 120g mackerel, heat through','Season with tamari','Serve with 50g kimchi']}
+      ]
+    },
+    thursday:{
+      name:'Thursday',date:'Dec 12',isFast:true,
+      meals:{b:'Protein bar 8am',l:'Chickpea Salad EARLY 12pm',d:'NO DINNER - FAST BEGINS'},
+      prep:['Prepare chickpea salad components in morning'],
+      recipes:[
+        {name:'Chickpea Salad',
+         ing:['1 protein bar','200g canned chickpeas, drained','150g mixed salad greens','Cherry tomatoes, cucumber, onion','30g feta','40g walnuts','15ml olive oil','Lemon, herbs','30g crackers','1 pear'],
+         steps:['Arrange 150g greens in bowl','Add 200g drained chickpeas','Top with tomatoes, cucumber, onion','Add 30g feta and 40g walnuts','Drizzle 15ml olive oil and lemon','Serve with 30g crackers and 1 pear','Eat protein bar alongside','EAT EARLY AT 12PM - Last meal before 24hr fast']}
+      ]
+    },
+    friday:{
+      name:'Friday',date:'Dec 13',isPost:true,
+      meals:{b:'Coffee/tea only',l:'Light meal LATE 1pm',d:'Salad with Tofu 5:30pm'},
+      prep:['Keep it simple - breaking 24hr fast'],
+      recipes:[
+        {name:'Break-Fast Meal',
+         ing:['1 protein bar','200g mixed salad greens','75g hummus','15ml olive oil'],
+         steps:['Arrange 200g salad greens in bowl','Add 75g hummus','Drizzle 15ml olive oil','Eat protein bar alongside','BREAK FAST AT 1PM - Eat slowly, chew well']},
+        {name:'Large Salad with Smoked Tofu',
+         ing:['150g smoked tofu','300g mixed salad','100g avocado (1/2)','30g walnuts','15ml olive oil','Tahini dressing','50g sauerkraut'],
+         steps:['Arrange 300g mixed salad on large plate','Add 150g smoked tofu (sliced or cubed)','Top with 100g avocado and 30g walnuts','Drizzle 15ml olive oil and tahini','Serve 50g sauerkraut on side','Take your time - gentle after fast']}
+      ]
+    },
+    saturday:{
+      name:'Saturday',date:'Dec 14',
+      meals:{b:'Protein bar 8am',l:'Veg Soup & Grain 12:30pm',d:'Tuna Bowl 5:30pm'},
+      prep:['Reheat pre-cooked bulgur','Shopping list resets today!'],
+      recipes:[
+        {name:'Vegetable Soup & Grain',
+         ing:['1 protein bar','400ml vegetable soup','80g cooked bulgur','50g sauerkraut','30g sunflower seeds','1 orange'],
+         steps:['Heat 400ml soup','Mix 80g bulgur with 50g sauerkraut in bowl','Top with 30g sunflower seeds','Have 1 orange for dessert','Eat protein bar alongside']},
+        {name:'Tuna Bowl',
+         ing:['120g tinned tuna','200g mixed raw vegetables','100g leafy greens','30g olives','50g avocado (1/4)','Lemon and herb dressing'],
+         steps:['Arrange 100g leafy greens in bowl','Add 200g chopped vegetables','Top with 120g tuna and 30g olives','Add 50g avocado slices','Drizzle with lemon and herb dressing']}
+      ]
+    }
+  }
+};
+
+let currentPage = 'home';
+let checkedItems = {};
+let hideChecked = false;
+
+try {
+  const saved = localStorage.getItem('dietApp');
+  if (saved) checkedItems = JSON.parse(saved).checked || {};
+} catch(e) {}
+
+function save() {
+  try {
+    localStorage.setItem('dietApp', JSON.stringify({checked: checkedItems}));
+  } catch(e) {}
+}
+
+function goTo(page) {
+  currentPage = page;
+  render();
+}
+
+function toggle(id) {
+  checkedItems[id] = !checkedItems[id];
+  save();
+  render();
+}
+
+function renderHome() {
+  const days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+  const names = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  
+  return `
+    <div class="container">
+      <div class="header">
+        <h1>🍎 Meal Plan</h1>
+        <p>Week of Dec 8-14, 2025</p>
+      </div>
+      
+      <button class="btn btn-shopping" onclick="goTo('shopping')">
+        <span>🛒 Shopping List</span>
+        <span>→</span>
+      </button>
+      
+      <h2 class="section-title">Daily Plans</h2>
+      
+      ${days.map((d,i) => {
+        const day = DATA.days[d];
+        const special = day.isFast || day.isPost;
+        return `
+          <button class="btn ${special?'special':''}" onclick="goTo('${d}')">
+            <div style="flex:1;text-align:left">
+              <div style="font-weight:700">${names[i]}</div>
+              <div style="font-size:0.85rem;color:#718096;margin-top:4px">${day.meals.b} • ${day.meals.l}</div>
+              ${special ? `<div style="font-size:0.75rem;color:#a855f7;font-weight:600;margin-top:4px">${day.isFast?'⚡ Fast Day':'🌅 Post-Fast'}</div>` : ''}
+            </div>
+            <span>→</span>
+          </button>
+        `;
+      }).join('')}
+    </div>
+  `;
+}
+
+function renderShopping() {
+  const all = DATA.shopping.flatMap(c => c.items.map((item,i) => ({id:`${c.cat}-${i}`,cat:c.cat,text:item})));
+  const vis = hideChecked ? all.filter(i => !checkedItems[i.id]) : all;
+  const grouped = {};
+  vis.forEach(i => {
+    if (!grouped[i.cat]) grouped[i.cat] = [];
+    grouped[i.cat].push(i);
+  });
+  
+  const count = Object.values(checkedItems).filter(Boolean).length;
+  const total = all.length;
+  const percent = Math.round(count/total*100);
+  
+  return `
+    <div class="container">
+      <button class="back-btn" onclick="goTo('home')">← Back</button>
+      <h1 class="page-title">Shopping List</h1>
+      
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;font-size:0.9rem;margin-bottom:8px">
+          <div style="color:#718096">Progress: <span style="font-weight:700;color:#48bb78">${count}</span> / ${total}</div>
+          <div style="font-weight:600">${percent}%</div>
+        </div>
+        <div class="progress">
+          <div class="progress-fill" style="width:${percent}%"></div>
+        </div>
+      </div>
+      
+      <button class="btn" style="background:${hideChecked?'#2d3748':'#e5e7eb'};color:${hideChecked?'white':'#2d3748'}" onclick="hideChecked=!hideChecked;render()">
+        ${hideChecked ? '✓ Hiding Bought Items' : 'Show All Items'}
+      </button>
+      
+      ${Object.entries(grouped).map(([cat,items]) => `
+        <h3 class="category-title">${cat}</h3>
+        ${items.map(item => `
+          <div class="checkbox-item ${checkedItems[item.id]?'checked':''}" onclick="toggle('${item.id}')">
+            <div class="checkbox ${checkedItems[item.id]?'checked':''}">${checkedItems[item.id]?'✓':''}</div>
+            <span>${item.text}</span>
+          </div>
+        `).join('')}
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderDay(dayKey) {
+  const day = DATA.days[dayKey];
+  return `
+    <div class="container">
+      <button class="back-btn" onclick="goTo('home')">← Back</button>
+      <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:8px;color:white">${day.name}</h1>
+      <p style="color:white;margin-bottom:24px">${day.date}</p>
+      
+      ${day.isFast ? `
+        <div class="card" style="background:#faf5ff;border:2px solid #a855f7">
+          <div style="font-size:1.2rem;font-weight:700;color:#7c3aed;margin-bottom:8px">⚡ Fast Day</div>
+          <div style="font-size:0.9rem;color:#6b21a8">Last meal at 12PM. No dinner. Fast until Friday 1PM.</div>
+        </div>
+      ` : ''}
+      
+      ${day.isPost ? `
+        <div class="card" style="background:#ecfdf5;border:2px solid #48bb78">
+          <div style="font-size:1.2rem;font-weight:700;color:#059669;margin-bottom:8px">🌅 Post-Fast Day</div>
+          <div style="font-size:0.9rem;color:#047857">Break fast at 1PM. Eat slowly and gently.</div>
+        </div>
+      ` : ''}
+      
+      <div class="card">
+        <h2>Today's Meals</h2>
+        ${[['🌅','Breakfast',day.meals.b],['🥗','Lunch',day.meals.l],['🍽️','Dinner',day.meals.d]].map(([icon,label,meal]) => `
+          <div style="display:flex;margin-bottom:14px">
+            <div style="font-size:1.6rem;margin-right:12px">${icon}</div>
+            <div>
+              <div style="font-weight:600">${label}</div>
+              <div style="color:#718096;margin-top:2px">${meal}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+      
+      ${day.prep ? `
+        <div class="prep-card">
+          <h2>Prep Tasks</h2>
+          <ul style="list-style:none;padding:0">
+            ${day.prep.map(task => `
+              <li style="display:flex;align-items:flex-start;margin-bottom:8px">
+                <span style="color:#3b82f6;margin-right:8px;font-weight:bold">✓</span>
+                <span style="color:#374151">${task}</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      ` : ''}
+      
+      ${day.recipes ? day.recipes.map(recipe => `
+        <div class="card">
+          <h2>${recipe.name}</h2>
+          <div style="margin-bottom:20px">
+            <h3>Ingredients:</h3>
+            <ul style="font-size:0.9rem;margin-left:20px">
+              ${recipe.ing.map(ing => `<li style="margin-bottom:4px">${ing}</li>`).join('')}
+            </ul>
+          </div>
+          <div>
+            <h3>Steps:</h3>
+            <ol style="font-size:0.9rem;margin-left:20px">
+              ${recipe.steps.map(step => `<li style="margin-bottom:8px">${step}</li>`).join('')}
+            </ol>
+          </div>
+        </div>
+      `).join('') : ''}
+      
+      <div class="card" style="background:#fffbeb;border:2px solid #fbbf24">
+        <div style="font-weight:700;margin-bottom:8px">⏰ Reminders</div>
+        <ul style="font-size:0.9rem;margin-left:20px">
+          <li>10-minute walk after lunch (mandatory)</li>
+          <li>Walk after dinner if possible</li>
+          <li>No snacking between meals</li>
+          <li>Nothing after 6 PM (water/tea only)</li>
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function render() {
+  let html = '';
+  if (currentPage === 'home') html = renderHome();
+  else if (currentPage === 'shopping') html = renderShopping();
+  else html = renderDay(currentPage);
+  
+  document.getElementById('app').innerHTML = html;
+}
+
+render();
+</script>
+</body>
+</html>

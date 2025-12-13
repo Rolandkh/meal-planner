@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Meal Plan</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+  <div id="app"></div>
+
+  <script type="module">
+    import { initRouter } from './src/utils/router.js';
+    
+    // Error handling for module loading
+    window.addEventListener('error', (event) => {
+      console.error('Application error:', event.error);
+      const app = document.getElementById('app');
+      if (app) {
+        app.innerHTML = `
+          <div class="container">
+            <div class="error">
+              <h2>Application Error</h2>
+              <p>Failed to load the application. Please refresh the page.</p>
+              <button class="btn" onclick="location.reload()" style="margin-top: 12px">
+                Reload Page
+              </button>
+            </div>
+          </div>
+        `;
+      }
+    });
+    
+    // Initialize the app when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initRouter);
+    } else {
+      initRouter();
+    }
+  </script>
+</body>
+</html>
