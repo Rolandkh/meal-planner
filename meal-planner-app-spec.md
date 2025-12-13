@@ -1099,5 +1099,8 @@ async function queryShoppingList(items) {
 ---
 
 *End of Specification v1.0*
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1673e978c2ba1f3bb8d4f75fc3e09cadab289321
