@@ -3,7 +3,8 @@
  * Displays aisle-optimized shopping list with prices, checkboxes and progress tracking
  */
 
-import { MEAL_PLAN_DATA, BUDGET_TARGET } from '../data/mealPlanData.js';
+import { BUDGET_TARGET } from '../data/mealPlanData.js';
+import { getMealPlanData } from '../data/mealPlanLoader.js';
 import { appState } from '../utils/state.js';
 
 /**
@@ -11,6 +12,7 @@ import { appState } from '../utils/state.js';
  * @returns {string} HTML string
  */
 export function renderShopping() {
+  const MEAL_PLAN_DATA = getMealPlanData();
   const state = appState;
   
   // Flatten all items with their metadata

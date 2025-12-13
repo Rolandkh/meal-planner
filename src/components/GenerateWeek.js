@@ -1,9 +1,14 @@
 /**
  * Generate Week Component
- * UI for generating a new meal plan with preferences
+ * UI for generating a new meal plan with preferences using Claude API
  */
 
+import { getApiKey } from '../utils/claudeApi.js';
+import { handleGenerate } from '../utils/generateHandler.js';
+
 export function renderGenerateWeek() {
+  const savedApiKey = getApiKey();
+  
   return `
     <div class="container">
       <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
@@ -12,8 +17,25 @@ export function renderGenerateWeek() {
       <div class="card" style="background:#f0f9ff;border:2px solid #0ea5e9;margin-bottom:24px">
         <div style="font-weight:600;color:#0369a1;margin-bottom:8px">💡 How it works</div>
         <div style="font-size:0.9rem;color:#0c4a6e">
-          Enter your preferences for the week, and we'll generate personalized meal plans for both Roland and Maia, 
+          Enter your preferences for the week, and Claude AI will generate personalized meal plans for both Roland and Maia, 
           create an optimized shopping list, and calculate the budget.
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>API Configuration</h2>
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-weight:600;margin-bottom:8px">Claude API Key</label>
+          <input 
+            type="password" 
+            id="api-key-input" 
+            value="${savedApiKey || ''}"
+            placeholder="sk-ant-..."
+            style="width:100%;padding:12px;border:2px solid #e5e7eb;border-radius:8px;font-size:1rem;font-family:monospace"
+          />
+          <div style="font-size:0.85rem;color:#718096;margin-top:4px">
+            Your API key is stored locally and never sent to our servers.
+          </div>
         </div>
       </div>
       
@@ -49,6 +71,7 @@ export function renderGenerateWeek() {
         </div>
         
         <button 
+          id="generate-btn"
           class="btn" 
           style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:white;margin-top:8px"
           onclick="handleGenerate()"
@@ -56,6 +79,14 @@ export function renderGenerateWeek() {
           <span>✨ Generate Meal Plan</span>
           <span>→</span>
         </button>
+        
+        <div id="loading-indicator" style="display:none;text-align:center;padding:16px;color:#718096">
+          <div style="font-size:1.2rem;margin-bottom:8px">⏳</div>
+          <div>Generating your meal plan with Claude AI...</div>
+          <div style="font-size:0.85rem;margin-top:4px">This may take 30-60 seconds</div>
+        </div>
+        
+        <div id="error-message" style="display:none;background:#fee;border:2px solid #fcc;color:#c33;padding:12px;border-radius:8px;margin-top:12px"></div>
       </div>
       
       <div class="card" style="background:#fffbeb;border:2px solid #fbbf24">
@@ -67,30 +98,7 @@ export function renderGenerateWeek() {
           <div>• "Budget: tight/normal/flexible" - Adjust budget constraints</div>
         </div>
       </div>
-      
-      <div class="card" style="background:#f0fdf4;border:2px solid #86efac">
-        <div style="font-weight:600;margin-bottom:8px">ℹ️ Note</div>
-        <div style="font-size:0.9rem;color:#166534">
-          AI generation requires Claude API integration. For now, this will use the current meal plan data. 
-          Full AI generation will be available in a future update.
-        </div>
-      </div>
     </div>
     
-    <script>
-      function handleGenerate() {
-        const preferences = document.getElementById('preferences-input').value;
-        const budget = document.getElementById('budget-input').value;
-        const store = document.getElementById('store-input').value;
-        
-        // For now, just navigate back to home
-        // In full implementation, this would call the AI generation service
-        alert('AI generation coming soon! For now, using current meal plan.');
-        navigateTo('home');
-      }
-      
-      // Make handleGenerate available globally
-      window.handleGenerate = handleGenerate;
-    </script>
   `;
 }

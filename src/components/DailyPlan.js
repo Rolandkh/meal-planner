@@ -3,7 +3,7 @@
  * Displays detailed day view with meals for both Roland and Maia, prep tasks, recipes, and reminders
  */
 
-import { MEAL_PLAN_DATA } from '../data/mealPlanData.js';
+import { getMealPlanData } from '../data/mealPlanLoader.js';
 import { appState } from '../utils/state.js';
 
 /**
@@ -74,6 +74,7 @@ function renderPrepTasks(prep, dayKey, person) {
  * @returns {string} HTML string
  */
 export function renderDay(dayKey) {
+  const MEAL_PLAN_DATA = getMealPlanData();
   const day = MEAL_PLAN_DATA.days[dayKey];
   
   if (!day) {

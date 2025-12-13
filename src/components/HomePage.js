@@ -3,13 +3,15 @@
  * Displays the week overview with daily meal cards, budget, and navigation
  */
 
-import { MEAL_PLAN_DATA, DAY_ORDER, DAY_NAMES, WEEK_INFO, BUDGET_TARGET } from '../data/mealPlanData.js';
+import { DAY_ORDER, DAY_NAMES, WEEK_INFO, BUDGET_TARGET } from '../data/mealPlanData.js';
+import { getMealPlanData } from '../data/mealPlanLoader.js';
 
 /**
  * Render the home page
  * @returns {string} HTML string
  */
 export function renderHome() {
+  const MEAL_PLAN_DATA = getMealPlanData();
   const budget = MEAL_PLAN_DATA.budget;
   const budgetStatus = budget.estimated <= budget.target ? 'under' : 'over';
   const budgetDiff = Math.abs(budget.target - budget.estimated);

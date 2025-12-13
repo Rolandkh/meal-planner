@@ -10,6 +10,7 @@ import { renderDay } from '../components/DailyPlan.js';
 import { renderWeeklyOverview } from '../components/WeeklyOverview.js';
 import { renderGenerateWeek } from '../components/GenerateWeek.js';
 import { renderFeedback } from '../components/Feedback.js';
+import { handleGenerate } from './generateHandler.js';
 
 /**
  * Initialize the router and render the initial page
@@ -90,3 +91,4 @@ export function navigateTo(page) {
 window.navigateTo = navigateTo;
 window.toggleItem = (id) => appState.toggleItem(id);
 window.toggleHideChecked = () => appState.toggleHideChecked();
+window.handleGenerate = handleGenerate;
