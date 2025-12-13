@@ -22,20 +22,14 @@ export function renderGenerateWeek() {
         </div>
       </div>
       
-      <div class="card">
-        <h2>API Configuration</h2>
-        <div style="margin-bottom:16px">
-          <label style="display:block;font-weight:600;margin-bottom:8px">Claude API Key</label>
-          <input 
-            type="password" 
-            id="api-key-input" 
-            value="${savedApiKey || ''}"
-            placeholder="sk-ant-..."
-            style="width:100%;padding:12px;border:2px solid #e5e7eb;border-radius:8px;font-size:1rem;font-family:monospace"
-          />
-          <div style="font-size:0.85rem;color:#718096;margin-top:4px">
-            Your API key is stored locally and never sent to our servers.
-          </div>
+      <div class="card" style="background:#f0fdf4;border:2px solid #86efac;margin-bottom:24px">
+        <div style="font-weight:600;color:#166534;margin-bottom:8px">🔒 Secure API Key Storage</div>
+        <div style="font-size:0.9rem;color:#166534">
+          Your Claude API key is stored securely on the server using Vercel environment variables. 
+          It's never exposed to the browser or client-side code.
+        </div>
+        <div style="font-size:0.85rem;color:#166534;margin-top:8px;font-weight:600">
+          To set up: Add ANTHROPIC_API_KEY in your Vercel project settings → Environment Variables
         </div>
       </div>
       

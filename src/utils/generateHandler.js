@@ -3,31 +3,16 @@
  * Handles the meal plan generation process
  */
 
-import { generateMealPlan, saveApiKey } from './claudeApi.js';
+import { generateMealPlan } from './claudeApi.js';
 import { transformClaudeResponse } from './mealPlanTransformer.js';
 
 /**
  * Handle meal plan generation
  */
 export async function handleGenerate() {
-  const apiKey = document.getElementById('api-key-input')?.value.trim();
   const preferences = document.getElementById('preferences-input')?.value || '';
   const budget = parseFloat(document.getElementById('budget-input')?.value || '150');
   const store = document.getElementById('store-input')?.value || 'coles-caulfield';
-  
-  // Validate API key
-  if (!apiKey) {
-    showError('Please enter your Claude API key');
-    return;
-  }
-  
-  if (!apiKey.startsWith('sk-ant-')) {
-    showError('Invalid API key format. Should start with "sk-ant-"');
-    return;
-  }
-  
-  // Save API key
-  saveApiKey(apiKey);
   
   // Show loading state
   const generateBtn = document.getElementById('generate-btn');
@@ -42,8 +27,8 @@ export async function handleGenerate() {
     // Load feedback history
     const feedbackHistory = JSON.parse(localStorage.getItem('mealPlannerFeedback') || '[]');
     
-    // Generate meal plan
-    const response = await generateMealPlan(apiKey, preferences, budget, store, feedbackHistory);
+    // Generate meal plan (API key is now stored server-side)
+    const response = await generateMealPlan(null, preferences, budget, store, feedbackHistory);
     
     // Transform response
     const transformedPlan = transformClaudeResponse(response);
@@ -57,7 +42,7 @@ export async function handleGenerate() {
     
   } catch (error) {
     console.error('Generation error:', error);
-    showError(error.message || 'Failed to generate meal plan. Please check your API key and try again.');
+    showError(error.message || 'Failed to generate meal plan. Please check that ANTHROPIC_API_KEY is set in Vercel environment variables.');
     if (generateBtn) generateBtn.style.display = 'flex';
     if (loadingIndicator) loadingIndicator.style.display = 'none';
   }
