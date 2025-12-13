@@ -12,7 +12,7 @@ export function renderWeeklyOverview() {
   
   return `
     <div class="container">
-      <button class="back-btn" onclick="navigateTo('home')">← Back</button>
+      <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
       <h1 class="page-title">Weekly Overview</h1>
       <p style="color:white;margin-bottom:24px">${WEEK_INFO.startDate} - ${WEEK_INFO.endDate}, ${WEEK_INFO.year}</p>
       

@@ -60,7 +60,7 @@ export function renderShopping() {
   
   return `
     <div class="container">
-      <button class="back-btn" onclick="navigateTo('home')">← Back</button>
+      <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
       <h1 class="page-title">🛒 Shopping List</h1>
       <p style="color:white;margin-bottom:16px;font-size:0.9rem">Coles Caulfield Village</p>
       

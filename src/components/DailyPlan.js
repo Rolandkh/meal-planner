@@ -79,7 +79,7 @@ export function renderDay(dayKey) {
   if (!day) {
     return `
       <div class="container">
-        <button class="back-btn" onclick="navigateTo('home')">← Back</button>
+        <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
         <div class="error">
           <h2>Day Not Found</h2>
           <p>The requested day could not be found.</p>
@@ -93,7 +93,7 @@ export function renderDay(dayKey) {
   
   return `
     <div class="container">
-      <button class="back-btn" onclick="navigateTo('home')">← Back</button>
+      <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
       <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:8px;color:white">${day.name}</h1>
       <p style="color:white;margin-bottom:24px">${day.date}</p>
       

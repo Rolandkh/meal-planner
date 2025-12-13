@@ -6,7 +6,7 @@
 export function renderGenerateWeek() {
   return `
     <div class="container">
-      <button class="back-btn" onclick="navigateTo('home')">← Back</button>
+      <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
       <h1 class="page-title">✨ Generate Week</h1>
       
       <div class="card" style="background:#f0f9ff;border:2px solid #0ea5e9;margin-bottom:24px">
