@@ -90,38 +90,48 @@ export function generateExportDocument() {
     // Roland's meals
     if (roland?.meals) {
       if (roland.meals.b) {
-        doc += `- **${roland.meals.b.time || '8:00 AM'} Breakfast:** ${roland.meals.b.name}\n`;
+        // Friday special case - coffee only, no breakfast label
+        if (dayKey === 'friday') {
+          doc += `- **Coffee only** (no breakfast)\n`;
+        } else {
+          doc += `- **${roland.meals.b.time || '8:00 AM'} Breakfast:** ${roland.meals.b.name}\n`;
+        }
       }
       if (roland.meals.l) {
-        doc += `- **${roland.meals.l.time || '12:30 PM'} Lunch:** ${roland.meals.l.name}${dayKey !== 'thursday' ? ' + 10-min walk' : ''}\n`;
+        const lunchTime = dayKey === 'thursday' ? '12:00 PM' : (roland.meals.l.time || '12:30 PM');
+        const lunchNote = dayKey === 'thursday' ? ' (EARLY - LAST MEAL)' : (dayKey !== 'thursday' ? ' + 10-min walk' : '');
+        doc += `- **${lunchTime} Lunch:** ${roland.meals.l.name}${lunchNote}\n`;
       }
       if (roland.meals.d) {
         if (dayKey === 'thursday') {
           doc += `- **NO DINNER - FAST BEGINS**\n`;
           doc += `- **Evening:** Water, black coffee, herbal tea only\n`;
+        } else if (dayKey === 'friday') {
+          // Friday dinner
+          doc += `- **${roland.meals.d.time || '5:30 PM'} Dinner:** ${roland.meals.d.name} + walk\n`;
         } else {
           doc += `- **${roland.meals.d.time || '5:30 PM'} Dinner:** ${roland.meals.d.name} + walk\n`;
         }
       }
     }
     
-    // Maia's meals
-    if (maia?.meals) {
-      const maiaMeals = [];
-      if (maia.meals.b) maiaMeals.push(`**${maia.meals.b.time || '8:00 AM'} Breakfast:** ${maia.meals.b.name}`);
+    // Maia's meals - format on separate lines for readability
+    if (maia?.meals && (maia.meals.b || maia.meals.l || maia.meals.d)) {
+      doc += `- **Maia:**\n`;
+      if (maia.meals.b) {
+        doc += `  - ${maia.meals.b.time || '8:00 AM'} Breakfast: ${maia.meals.b.name}\n`;
+      }
       if (maia.meals.l) {
         const lunchLabel = maia.meals.l.name.includes('Packed') ? 'Packed Lunch' : 'Lunch';
-        maiaMeals.push(`**${maia.meals.l.time || '12:30 PM'} ${lunchLabel}:** ${maia.meals.l.name}`);
+        doc += `  - ${maia.meals.l.time || '12:30 PM'} ${lunchLabel}: ${maia.meals.l.name}\n`;
       }
       if (maia.meals.d) {
         if (dayKey === 'wednesday') {
-          maiaMeals.push(`**Dinner:** At mum's`);
+          doc += `  - Dinner: At mum's\n`;
         } else {
-          maiaMeals.push(`**${maia.meals.d.time || '5:30 PM'} Dinner:** ${maia.meals.d.name}${maia.meals.d.name.includes('shared') ? '' : ' (shared with Roland)'}`);
+          const sharedNote = maia.meals.d.name && maia.meals.d.name.includes('shared') ? '' : ' (shared with Roland)';
+          doc += `  - ${maia.meals.d.time || '5:30 PM'} Dinner: ${maia.meals.d.name}${sharedNote}\n`;
         }
-      }
-      if (maiaMeals.length > 0) {
-        doc += `- **Maia:** ${maiaMeals.join(' • ')}\n`;
       }
     }
     
@@ -142,12 +152,10 @@ export function generateExportDocument() {
   
   // Protein bar recipe (special section)
   const sundayRecipes = MEAL_PLAN_DATA.days?.sunday?.roland?.recipes || [];
-  const proteinBarRecipe = sundayRecipes.find(r => r.name && r.name.toLowerCase().includes('protein bar'));
+  const proteinBarRecipe = sundayRecipes.find(r => r && r.name && (r.name.toLowerCase().includes('protein bar') || r.name.toLowerCase().includes('protein')));
   
-  if (proteinBarRecipe) {
-    doc += `---
-
-## PROTEIN BAR RECIPE
+  if (proteinBarRecipe && proteinBarRecipe.ing && Array.isArray(proteinBarRecipe.ing) && proteinBarRecipe.ing.length > 0) {
+    doc += `## PROTEIN BAR RECIPE
 **Make today (Sunday) - yields 12 bars**
 
 `;
@@ -157,16 +165,19 @@ export function generateExportDocument() {
     const wetIngredients = [];
     const chocolateIngredients = [];
     
-    proteinBarRecipe.ing.forEach(ing => {
-      const ingLower = ing.toLowerCase();
-      if (ingLower.includes('chocolate') || ingLower.includes('coconut oil') || ingLower.includes('cacao')) {
-        chocolateIngredients.push(ing);
-      } else if (ingLower.includes('butter') || ingLower.includes('syrup') || ingLower.includes('banana') || ingLower.includes('milk') || ingLower.includes('ginger')) {
-        wetIngredients.push(ing);
-      } else {
-        dryIngredients.push(ing);
-      }
-    });
+    if (Array.isArray(proteinBarRecipe.ing)) {
+      proteinBarRecipe.ing.forEach(ing => {
+        if (!ing) return;
+        const ingLower = ing.toLowerCase();
+        if (ingLower.includes('chocolate') || ingLower.includes('coconut oil') || ingLower.includes('cacao')) {
+          chocolateIngredients.push(ing);
+        } else if (ingLower.includes('butter') || ingLower.includes('syrup') || ingLower.includes('banana') || ingLower.includes('milk') || ingLower.includes('ginger')) {
+          wetIngredients.push(ing);
+        } else {
+          dryIngredients.push(ing);
+        }
+      });
+    }
     
     if (dryIngredients.length > 0) {
       doc += `### DRY INGREDIENTS:\n`;
@@ -215,25 +226,29 @@ export function generateExportDocument() {
   });
   
   if (allRecipes.length > 0) {
-    doc += `### OTHER MEAL RECIPES\n\n`;
+    doc += `\n### OTHER MEAL RECIPES\n\n`;
     allRecipes.forEach(recipe => {
+      if (!recipe || !recipe.name) return;
       doc += `#### ${recipe.name} (${recipe.dayName})\n\n`;
-      if (recipe.ing && recipe.ing.length > 0) {
+      if (recipe.ing && Array.isArray(recipe.ing) && recipe.ing.length > 0) {
         doc += `**Ingredients:**\n`;
         recipe.ing.forEach(ing => {
-          doc += `- ${ing}\n`;
+          if (ing) doc += `- ${ing}\n`;
         });
         doc += `\n`;
       }
-      if (recipe.steps && recipe.steps.length > 0) {
+      if (recipe.steps && Array.isArray(recipe.steps) && recipe.steps.length > 0) {
         doc += `**Steps:**\n`;
         recipe.steps.forEach((step, i) => {
-          doc += `${i + 1}. ${step}\n`;
+          if (step) doc += `${i + 1}. ${step}\n`;
         });
         doc += `\n`;
       }
       doc += `\n`;
     });
+  } else if (!proteinBarRecipe) {
+    // If no recipes at all, add a note
+    doc += `*Recipes will be included when meal plan is generated with recipe details.*\n\n`;
   }
   
   // Shopping list
@@ -246,14 +261,33 @@ export function generateExportDocument() {
   // Group shopping items by category
   const shoppingByCategory = {};
   MEAL_PLAN_DATA.shopping.forEach(category => {
-    shoppingByCategory[category.cat] = category.items || [];
+    const items = category.items || [];
+    // Handle both string items and object items
+    const processedItems = items.map(item => {
+      if (typeof item === 'string') {
+        return { name: item, price: null, aisle: null, quantity: null };
+      }
+      const name = item.name || item.item || 'Unknown item';
+      // If quantity is separate, prepend it to name; otherwise name may already contain quantity
+      const quantity = item.quantity;
+      const displayName = quantity && !name.includes(quantity) ? `${quantity} ${name}` : name;
+      return {
+        name: displayName,
+        price: item.price || item.estimated_price || null,
+        aisle: item.aisle || null,
+        quantity: quantity || null
+      };
+    });
+    shoppingByCategory[category.cat] = processedItems;
   });
   
   // Protein bar ingredients section
   if (shoppingByCategory['Protein Bars'] && shoppingByCategory['Protein Bars'].length > 0) {
     doc += `### PROTEIN BAR INGREDIENTS (if not already in pantry)\n`;
     shoppingByCategory['Protein Bars'].forEach(item => {
-      doc += `- [ ] ${item.name}${item.price ? ` - $${item.price.toFixed(2)}` : ''}\n`;
+      const name = item.name || 'Unknown item';
+      const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+      doc += `- [ ] ${name}${priceStr}\n`;
     });
     doc += `\n`;
   }
@@ -280,7 +314,9 @@ export function generateExportDocument() {
     if (vegetables.length > 0) {
       doc += `#### Vegetables\n`;
       vegetables.forEach(item => {
-        doc += `- [ ] ${item.name}${item.price ? ` - $${item.price.toFixed(2)}` : ''}\n`;
+        const name = item.name || 'Unknown item';
+        const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+        doc += `- [ ] ${name}${priceStr}\n`;
       });
       doc += `\n`;
     }
@@ -288,7 +324,9 @@ export function generateExportDocument() {
     if (fruits.length > 0) {
       doc += `#### Fruits\n`;
       fruits.forEach(item => {
-        doc += `- [ ] ${item.name}${item.price ? ` - $${item.price.toFixed(2)}` : ''}\n`;
+        const name = item.name || 'Unknown item';
+        const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+        doc += `- [ ] ${name}${priceStr}\n`;
       });
       doc += `\n`;
     }
@@ -296,62 +334,108 @@ export function generateExportDocument() {
     if (herbs.length > 0) {
       doc += `#### Herbs\n`;
       herbs.forEach(item => {
-        doc += `- [ ] ${item.name}${item.price ? ` - $${item.price.toFixed(2)}` : ''}\n`;
+        const name = item.name || 'Unknown item';
+        const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+        doc += `- [ ] ${name}${priceStr}\n`;
       });
       doc += `\n`;
     }
   }
   
   // Other categories
-  const categoryOrder = ['Proteins', 'Legumes & Grains', 'Dairy & Fermented Foods', 'Nuts, Seeds & Healthy Fats', 'Frozen Foods', 'Ready-Made Meals/Soups', 'Pantry Items'];
   const categoryMap = {
     'Proteins': 'PROTEINS',
+    'Protein': 'PROTEINS',
     'Dairy': 'DAIRY & FERMENTED FOODS',
     'Grains': 'LEGUMES & GRAINS',
-    'Pantry': 'PANTRY ITEMS (check you have these)'
+    'Pantry': 'PANTRY ITEMS (check you have these)',
+    'Bakery': 'BAKERY & BREAD',
+    'Bakery & Bread': 'BAKERY & BREAD',
+    'Snacks': 'SNACKS & EXTRAS',
+    'Snacks & Extras': 'SNACKS & EXTRAS'
   };
   
+  // Process categories in a logical order
+  const categoryOrder = ['Proteins', 'Protein', 'Grains', 'Dairy', 'Bakery', 'Bakery & Bread', 'Pantry', 'Snacks', 'Snacks & Extras'];
+  const processedCats = new Set();
+  
+  // First process known categories in order
+  categoryOrder.forEach(cat => {
+    if (shoppingByCategory[cat] && shoppingByCategory[cat].length > 0 && !processedCats.has(cat)) {
+      processedCats.add(cat);
+      const items = shoppingByCategory[cat];
+      const sectionName = categoryMap[cat] || cat.toUpperCase();
+      doc += `### ${sectionName}\n\n`;
+      
+      // Sub-categorize proteins
+      if (cat === 'Proteins' || cat === 'Protein') {
+        const fish = items.filter(i => {
+          const name = (i.name || '').toLowerCase();
+          return name.includes('salmon') || name.includes('sardine') || name.includes('mackerel') || name.includes('tuna') || name.includes('fish') || name.includes('white fish');
+        });
+        const plant = items.filter(i => {
+          const name = (i.name || '').toLowerCase();
+          return name.includes('tofu') || name.includes('tempeh');
+        });
+        const other = items.filter(i => {
+          const name = (i.name || '').toLowerCase();
+          return !fish.includes(i) && !plant.includes(i);
+        });
+        
+        if (fish.length > 0) {
+          doc += `#### Fish (Tinned/Packaged)\n`;
+          fish.forEach(item => {
+            const name = item.name || 'Unknown item';
+            const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+            doc += `- [ ] ${name}${priceStr}\n`;
+          });
+          doc += `\n`;
+        }
+        
+        if (plant.length > 0) {
+          doc += `#### Plant-Based Proteins\n`;
+          plant.forEach(item => {
+            const name = item.name || 'Unknown item';
+            const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+            doc += `- [ ] ${name}${priceStr}\n`;
+          });
+          doc += `\n`;
+        }
+        
+        if (other.length > 0) {
+          other.forEach(item => {
+            const name = item.name || 'Unknown item';
+            const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+            doc += `- [ ] ${name}${priceStr}\n`;
+          });
+          doc += `\n`;
+        }
+      } else {
+        items.forEach(item => {
+          const name = item.name || 'Unknown item';
+          const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+          doc += `- [ ] ${name}${priceStr}\n`;
+        });
+        doc += `\n`;
+      }
+    }
+  });
+  
+  // Then process any remaining categories
   Object.keys(shoppingByCategory).forEach(cat => {
-    if (cat === 'Produce' || cat === 'Protein Bars') return; // Already handled
+    if (cat === 'Produce' || cat === 'Protein Bars' || processedCats.has(cat)) return;
     
     const items = shoppingByCategory[cat];
     if (!items || items.length === 0) return;
     
     const sectionName = categoryMap[cat] || cat.toUpperCase();
     doc += `### ${sectionName}\n\n`;
-    
-    // Sub-categorize proteins
-    if (cat === 'Proteins') {
-      const fish = items.filter(i => {
-        const name = i.name.toLowerCase();
-        return name.includes('salmon') || name.includes('sardine') || name.includes('mackerel') || name.includes('tuna') || name.includes('fish');
-      });
-      const plant = items.filter(i => {
-        const name = i.name.toLowerCase();
-        return name.includes('tofu') || name.includes('tempeh');
-      });
-      
-      if (fish.length > 0) {
-        doc += `#### Fish (Tinned/Packaged)\n`;
-        fish.forEach(item => {
-          doc += `- [ ] ${item.name}${item.price ? ` - $${item.price.toFixed(2)}` : ''}\n`;
-        });
-        doc += `\n`;
-      }
-      
-      if (plant.length > 0) {
-        doc += `#### Plant-Based Proteins\n`;
-        plant.forEach(item => {
-          doc += `- [ ] ${item.name}${item.price ? ` - $${item.price.toFixed(2)}` : ''}\n`;
-        });
-        doc += `\n`;
-      }
-    } else {
-      items.forEach(item => {
-        doc += `- [ ] ${item.name}${item.price ? ` - $${item.price.toFixed(2)}` : ''}\n`;
-      });
-      doc += `\n`;
-    }
+    items.forEach(item => {
+      const name = item.name || 'Unknown item';
+      const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+      doc += `- [ ] ${name}${priceStr}\n`;
+    });
+    doc += `\n`;
   });
   
   // Shopping list by store section
@@ -366,33 +450,48 @@ export function generateExportDocument() {
     2: 'BAKERY',
     3: 'REFRIGERATED SECTION',
     4: 'FISH COUNTER/AISLE',
-    5: 'CANNED GOODS',
+    5: 'CANNED GOODS / PANTRY',
     6: 'HEALTH FOOD/ORGANIC SECTION',
     7: 'NUTS & DRIED FRUIT',
     8: 'GRAINS/PASTA AISLE',
     9: 'FREEZER SECTION',
     10: 'SOUP AISLE',
     11: 'BREAKFAST/BAKING AISLE',
-    12: 'OILS & CONDIMENTS'
+    12: 'OILS & CONDIMENTS',
+    99: 'OTHER ITEMS'
   };
   
   const byAisle = {};
   MEAL_PLAN_DATA.shopping.forEach(category => {
     (category.items || []).forEach(item => {
-      const aisle = item.aisle || 99;
+      // Handle both string and object items
+      const itemObj = typeof item === 'string' 
+        ? { name: item, aisle: 99, price: null }
+        : { 
+            name: item.name || item.item || 'Unknown item',
+            aisle: item.aisle || 99,
+            price: item.price || item.estimated_price || null,
+            quantity: item.quantity || null
+          };
+      
+      const aisle = itemObj.aisle || 99;
       if (!byAisle[aisle]) {
         byAisle[aisle] = [];
       }
-      byAisle[aisle].push({ ...item, category: category.cat });
+      byAisle[aisle].push({ ...itemObj, category: category.cat });
     });
   });
   
   Object.keys(byAisle).sort((a, b) => Number(a) - Number(b)).forEach(aisleNum => {
     const items = byAisle[aisleNum];
+    if (!items || items.length === 0) return;
+    
     const sectionName = aisleMap[aisleNum] || `AISLE ${aisleNum}`;
     doc += `### ${sectionName}\n`;
     items.forEach(item => {
-      doc += `- ${item.name}${item.price ? ` - $${item.price.toFixed(2)}` : ''}\n`;
+      const name = item.name || 'Unknown item';
+      const priceStr = item.price ? ` - $${item.price.toFixed(2)}` : '';
+      doc += `- ${name}${priceStr}\n`;
     });
     doc += `\n`;
   });
