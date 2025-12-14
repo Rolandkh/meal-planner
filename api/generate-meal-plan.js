@@ -101,7 +101,7 @@ Output required (JSON format):
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify({
-        model: 'claude-3-5-sonnet-20240620',
+        model: 'claude-sonnet-3-5-20241022',
         max_tokens: 4000,
         system: systemPrompt,
         messages: [
@@ -121,12 +121,14 @@ Output required (JSON format):
         errorData = { error: { message: await response.text() } };
       }
       
-      console.error('Claude API error response:', errorData);
+      console.error('Claude API error response:', JSON.stringify(errorData, null, 2));
       console.error('Status:', response.status);
+      console.error('Status text:', response.statusText);
       
-      // Extract error message properly
+      // Extract error message properly - Anthropic API error format
       let errorMessage = 'Unknown error';
       
+      // Anthropic API returns errors in format: { error: { type: "...", message: "..." } }
       if (errorData.error) {
         if (typeof errorData.error === 'string') {
           errorMessage = errorData.error;
@@ -134,10 +136,15 @@ Output required (JSON format):
           errorMessage = errorData.error.message;
         } else if (errorData.error.type) {
           errorMessage = `${errorData.error.type}: ${errorData.error.message || JSON.stringify(errorData.error)}`;
+        } else {
+          errorMessage = JSON.stringify(errorData.error);
         }
       } else if (errorData.message) {
         errorMessage = errorData.message;
+      } else if (errorData.type) {
+        errorMessage = `${errorData.type}: ${errorData.message || ''}`;
       } else {
+        // Show full error for debugging
         errorMessage = `API error (${response.status}): ${JSON.stringify(errorData)}`;
       }
       
