@@ -114,13 +114,38 @@ Output required (JSON format):
     });
 
     if (!response.ok) {
-      const error = await response.json();
-      console.error('Claude API error:', error);
+      let errorData;
+      try {
+        errorData = await response.json();
+      } catch (e) {
+        errorData = { error: { message: await response.text() } };
+      }
+      
+      console.error('Claude API error response:', errorData);
+      console.error('Status:', response.status);
+      
+      // Extract error message properly
+      let errorMessage = 'Unknown error';
+      
+      if (errorData.error) {
+        if (typeof errorData.error === 'string') {
+          errorMessage = errorData.error;
+        } else if (errorData.error.message) {
+          errorMessage = errorData.error.message;
+        } else if (errorData.error.type) {
+          errorMessage = `${errorData.error.type}: ${errorData.error.message || JSON.stringify(errorData.error)}`;
+        }
+      } else if (errorData.message) {
+        errorMessage = errorData.message;
+      } else {
+        errorMessage = `API error (${response.status}): ${JSON.stringify(errorData)}`;
+      }
       
       // Provide more helpful error messages
-      let errorMessage = error.error?.message || `API error: ${response.status}`;
-      if (errorMessage.includes('invalid x-api-key') || errorMessage.includes('authentication')) {
+      if (errorMessage.includes('invalid x-api-key') || errorMessage.includes('authentication') || errorMessage.includes('401')) {
         errorMessage = 'Invalid API key. Please check that ANTHROPIC_API_KEY is set correctly in Vercel environment variables. Make sure there are no extra spaces or characters.';
+      } else if (errorMessage.includes('model') || errorMessage.includes('invalid')) {
+        errorMessage = `Claude API error: ${errorMessage}. Please check the model name and API version.`;
       }
       
       return res.status(response.status).json({ 

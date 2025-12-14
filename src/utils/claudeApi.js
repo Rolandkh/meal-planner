@@ -30,8 +30,17 @@ export async function generateMealPlan(apiKey, userPrompt, budgetTarget, store, 
     });
 
     if (!response.ok) {
-      const error = await response.json();
-      throw new Error(error.error || `API error: ${response.status}`);
+      let errorData;
+      try {
+        errorData = await response.json();
+      } catch (e) {
+        const text = await response.text();
+        throw new Error(text || `API error: ${response.status}`);
+      }
+      
+      // Extract error message properly
+      const errorMessage = errorData.error || errorData.message || `API error: ${response.status}`;
+      throw new Error(typeof errorMessage === 'string' ? errorMessage : JSON.stringify(errorMessage));
     }
 
     const mealPlan = await response.json();
