@@ -11,6 +11,7 @@ import { renderWeeklyOverview } from '../components/WeeklyOverview.js';
 import { renderGenerateWeek } from '../components/GenerateWeek.js';
 import { renderFeedback } from '../components/Feedback.js';
 import { handleGenerate } from './generateHandler.js';
+import { downloadMealPlan } from './exportMealPlan.js';
 
 /**
  * Initialize the router and render the initial page
@@ -92,3 +93,4 @@ window.navigateTo = navigateTo;
 window.toggleItem = (id) => appState.toggleItem(id);
 window.toggleHideChecked = () => appState.toggleHideChecked();
 window.handleGenerate = handleGenerate;
+window.downloadMealPlan = downloadMealPlan;

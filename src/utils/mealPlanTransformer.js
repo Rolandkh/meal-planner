@@ -80,21 +80,39 @@ export function transformClaudeResponse(claudeResponse) {
 
 /**
  * Transform shopping list to our format
+ * Handles both flat array format and nested structure with items arrays
  */
 function transformShoppingList(shoppingList) {
   const byCategory = {};
 
   shoppingList.forEach(item => {
-    const category = item.category || 'Pantry';
-    if (!byCategory[category]) {
-      byCategory[category] = [];
-    }
+    // Handle nested structure: {category: "...", items: [{name: "...", ...}]}
+    if (item.items && Array.isArray(item.items)) {
+      const category = item.category || 'Pantry';
+      if (!byCategory[category]) {
+        byCategory[category] = [];
+      }
+      
+      item.items.forEach(subItem => {
+        byCategory[category].push({
+          name: subItem.name || subItem.item || 'Unknown item',
+          price: subItem.price || subItem.estimated_price || 0,
+          aisle: subItem.aisle || getAisleFromCategory(category)
+        });
+      });
+    } else {
+      // Handle flat structure: {item: "...", category: "...", ...}
+      const category = item.category || 'Pantry';
+      if (!byCategory[category]) {
+        byCategory[category] = [];
+      }
 
-    byCategory[category].push({
-      name: item.name || item.item,
-      price: item.price || item.estimated_price || 0,
-      aisle: item.aisle || getAisleFromCategory(category)
-    });
+      byCategory[category].push({
+        name: item.name || item.item || 'Unknown item',
+        price: item.price || item.estimated_price || 0,
+        aisle: item.aisle || getAisleFromCategory(category)
+      });
+    }
   });
 
   // Convert to array format

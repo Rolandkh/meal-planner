@@ -48,6 +48,11 @@ export function renderHome() {
         <span>→</span>
       </button>
       
+      <button class="btn" style="background:#fef3c7;color:#92400e;border:2px solid #fbbf24" onclick="downloadMealPlan()">
+        <span>📄 Export & Print</span>
+        <span>↓</span>
+      </button>
+      
       <h2 class="section-title">Daily Plans</h2>
       
       ${DAY_ORDER.map((dayKey, index) => {

@@ -67,7 +67,14 @@ Output required (JSON format):
     "sunday": {
       "breakfast": {"name": "...", "time": "8:00 AM"},
       "lunch": {"name": "...", "time": "12:30 PM"},
-      "dinner": {"name": "...", "time": "5:30 PM"}
+      "dinner": {"name": "...", "time": "5:30 PM"},
+      "recipes": [
+        {
+          "name": "Meal Name",
+          "ing": ["ingredient 1 with quantity", "ingredient 2 with quantity", ...],
+          "steps": ["step 1", "step 2", ...]
+        }
+      ]
     },
     ...
   },
@@ -79,18 +86,24 @@ Output required (JSON format):
     ...
   },
   "shopping_list": [
-    {"category": "...", "items": [{"name": "...", "price": 0.00, "aisle": 1}]}
+    {"item": "Item name", "quantity": "amount", "category": "Produce|Dairy|Proteins|etc", "estimated_price": 0.00, "aisle": 1}
   ],
   "prep_tasks": {
     "sunday": {
-      "roland": {"morning": [...], "evening": [...]},
-      "maia": {"morning": [...], "evening": [...]}
+      "roland": {"morning": ["task 1", "task 2"], "evening": ["task 1", "task 2"]},
+      "maia": {"morning": ["task 1"], "evening": ["task 1"]}
     },
     ...
   },
   "budget_estimate": 0.00,
   "notes": "..."
-}`;
+}
+
+IMPORTANT:
+- Include detailed recipes for Roland's meals (lunch and dinner) with ingredients (ing array) and steps (steps array)
+- Shopping list should be a flat array with each item having: item, quantity, category, estimated_price, and aisle
+- Prep tasks should be specific and actionable
+- Ensure all meals follow the Diet Compass protocol and Maia's preferences`;
 
     // Call Claude API
     const response = await fetch('https://api.anthropic.com/v1/messages', {
@@ -196,25 +209,61 @@ Output required (JSON format):
  * Load base specification
  */
 async function loadBaseSpecification() {
-  // Return key parts of the spec
+  // Return key parts of the spec with detailed requirements
   return `Meal Planner App Specification
 
 ## ROLAND'S MEAL PLAN
-- Breakfast: 8:00 AM (Protein bar)
-- Lunch: 12:30 PM (Protein bar + ~600 cal meal)
-- Dinner: 5:30 PM (Protein + vegetables, NO carbs)
-- Thursday: Fast day (last meal 12:00 PM, no dinner)
-- Friday: Post-fast (coffee only, light meal at 1:00 PM)
+
+### Schedule
+- Sunday-Saturday: Breakfast 8:00 AM, Lunch 12:30 PM, Dinner 5:30 PM
+- Thursday: Early lunch at 12:00 PM, NO DINNER (fast begins)
+- Friday: Coffee only for breakfast, Late lunch at 1:00 PM, Dinner 5:30 PM
+
+### Meal Requirements
+- Breakfast: Protein bar (280-300 cal)
+- Lunch: Protein bar + ~600 cal meal (880-900 cal total). Options: Hummus Power Bowl, Lentil Soup, Whole Grain Wrap, Buddha Bowl, Chickpea Salad, Vegetable Soup & Grain
+- Dinner: 120-150g protein (fish/tofu/tempeh) + 200-300g vegetables + healthy fat. NO carbohydrates (no rice, bread, pasta, potatoes). Fish 3-4x/week, plant-based 2-3x/week
+
+### Daily Targets
+- Calories: 1,490-1,540
+- Protein: 60-75g
+- Fats: 60-70g (healthy sources)
+- Carbs: 150-180g (whole grains only)
+- Fiber: 35-45g
+- Omega-3: 5.5-7g
 
 ## MAIA'S MEAL PLAN
+
+### Schedule
 - Sunday: Lunch and dinner with Roland
 - Monday: Breakfast (crumpet), Packed lunch, Dinner with Roland
 - Tuesday: Breakfast (crumpet), Packed lunch, Dinner with Roland
 - Wednesday: Breakfast (crumpet), Lunch with Roland, At mum's for dinner
 - Thursday-Saturday: No meals scheduled
 
+### Meal Requirements
+- Breakfast: Crumpet (simple, consistent)
+- Packed Lunch (Mon/Tue): Finger-food friendly - fruit (strawberries, blueberries), crackers, yogurt pouch, cheese cubes or hummus cup, carrot sticks, cucumber. Sometimes: sandwich, pasta salad, leftovers
+- Shared Meals: Likes pick-up/finger foods, pasta, olives, hummus, carrots, plain foods, fruit. Avoid: spicy foods, complex flavors, anything too "mixed together"
+
+## RECIPES REQUIREMENT
+For Roland's lunch and dinner meals, you MUST include detailed recipes with:
+- Recipe name matching the meal name
+- Ingredients array (ing) with quantities: ["120g salmon fillet", "200g broccoli", "15ml olive oil", ...]
+- Steps array (steps) with clear cooking instructions: ["Heat olive oil in pan", "Cook salmon 4-5 min per side", ...]
+
+## SHOPPING LIST REQUIREMENT
+Shopping list must be a flat array format:
+[
+  {"item": "Salmon fillet", "quantity": "300g", "category": "Proteins", "estimated_price": 12.00, "aisle": 4},
+  {"item": "Broccoli", "quantity": "500g", "category": "Produce", "estimated_price": 4.50, "aisle": 1},
+  ...
+]
+
+Categories: Produce, Dairy, Proteins, Bakery, Pantry, Grains, etc.
+
 ## INGREDIENT EFFICIENCY
-Maximize shared ingredients between Roland and Maia's meals.`;
+Maximize shared ingredients between Roland and Maia's meals to minimize waste and shopping costs.`;
 }
 
 /**
