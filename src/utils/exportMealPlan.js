@@ -609,3 +609,4 @@ export function downloadMealPlan() {
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }
+

@@ -48,7 +48,9 @@ export default async function handler(req, res) {
 
 ${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}\n` : ''}
 
-Generate a meal plan following the specification above. Return ONLY valid JSON matching the structure below. Do not include any markdown formatting or code blocks.`;
+Generate a meal plan following the specification above. Return ONLY valid JSON matching the structure below. Do not include any markdown formatting or code blocks.
+
+CRITICAL: Ensure all strings in the JSON are properly escaped. Use \\" for quotes inside string values. The JSON must be valid and parseable.`;
 
     // Construct the user prompt
     const userMessage = `Generate a meal plan for the week of ${getNextWeekDate()}.
@@ -59,6 +61,14 @@ ${userPrompt || 'No specific preferences provided.'}
 Constraints:
 - Budget: $${budgetTarget} max
 - Store: ${store === 'coles-caulfield' ? 'Coles Caulfield Village (Store ID: 7724)' : 'Woolworths Carnegie North'}
+
+CRITICAL JSON FORMATTING REQUIREMENTS:
+- Return ONLY valid, parseable JSON
+- All string values must have quotes properly escaped (use \\" for quotes inside strings)
+- No unescaped newlines in string values (use \\n)
+- No trailing commas
+- All brackets and braces must be properly closed
+- The JSON must be complete and valid - test it mentally before returning
 
 Output required (JSON format):
 {
@@ -103,7 +113,8 @@ IMPORTANT:
 - Include detailed recipes for Roland's meals (lunch and dinner) with ingredients (ing array) and steps (steps array)
 - Shopping list should be a flat array with each item having: item, quantity, category, estimated_price, and aisle
 - Prep tasks should be specific and actionable
-- Ensure all meals follow the Diet Compass protocol and Maia's preferences`;
+- Ensure all meals follow the Diet Compass protocol and Maia's preferences
+- CRITICAL: All string values must have quotes properly escaped. Use \\" for any quotes inside string values. The JSON must be completely valid and parseable.`;
 
     // Call Claude API
     const response = await fetch('https://api.anthropic.com/v1/messages', {
@@ -178,11 +189,73 @@ IMPORTANT:
 
     // Extract JSON from response
     let jsonText = content.trim();
+    
+    // Remove markdown code blocks if present
     if (jsonText.startsWith('```')) {
-      jsonText = jsonText.replace(/^```json\n?/, '').replace(/```$/, '').trim();
+      jsonText = jsonText.replace(/^```json\n?/i, '').replace(/```\s*$/i, '').trim();
     }
+    
+    // Remove any leading/trailing text that's not JSON
+    // Look for the first { and last } to extract just the JSON object
+    const firstBrace = jsonText.indexOf('{');
+    const lastBrace = jsonText.lastIndexOf('}');
+    if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+      jsonText = jsonText.substring(firstBrace, lastBrace + 1);
+    }
+    
+    // Log the extracted JSON length for debugging
+    console.log('Extracted JSON length:', jsonText.length);
 
-    const mealPlan = JSON.parse(jsonText);
+    let mealPlan;
+    try {
+      mealPlan = JSON.parse(jsonText);
+    } catch (parseError) {
+      // Log the problematic JSON for debugging
+      console.error('JSON parse error:', parseError.message);
+      const positionMatch = parseError.message.match(/position (\d+)/);
+      const position = positionMatch ? parseInt(positionMatch[1]) : null;
+      
+      console.error('JSON length:', jsonText.length);
+      if (position !== null) {
+        console.error('Error at position:', position);
+        const start = Math.max(0, position - 300);
+        const end = Math.min(jsonText.length, position + 300);
+        const context = jsonText.substring(start, end);
+        console.error('Context around error (characters', start, 'to', end, '):');
+        console.error(context);
+        console.error('Character at error position:', JSON.stringify(jsonText[position]));
+        
+        // Try to find the line number
+        const beforeError = jsonText.substring(0, position);
+        const lineNumber = (beforeError.match(/\n/g) || []).length + 1;
+        const columnNumber = position - beforeError.lastIndexOf('\n');
+        console.error('Approximate line:', lineNumber, 'column:', columnNumber);
+      }
+      
+      // Log a sample of the JSON to help identify the issue
+      console.error('First 500 characters:', jsonText.substring(0, 500));
+      console.error('Last 500 characters:', jsonText.substring(Math.max(0, jsonText.length - 500)));
+      
+      // Try a simple fix: look for common issues
+      let fixedJson = jsonText;
+      let fixed = false;
+      
+      // Try to fix unescaped newlines in strings (they should be \n)
+      if (parseError.message.includes('Unterminated string')) {
+        // This is complex to fix automatically, so we'll just provide a better error
+        console.error('Unterminated string detected - this usually means unescaped quotes or newlines in a string value');
+      }
+      
+      if (!fixed) {
+        // If we couldn't auto-fix, provide a helpful error message
+        const errorMsg = `Failed to parse JSON response from Claude: ${parseError.message}. ` +
+          `The AI response contains invalid JSON (likely unescaped quotes or special characters in strings). ` +
+          `Please try generating the meal plan again. If the issue persists, the prompt may need adjustment.`;
+        throw new Error(errorMsg);
+      }
+      
+      mealPlan = JSON.parse(fixedJson);
+    }
 
     // Return the meal plan
     return res.status(200).json({
