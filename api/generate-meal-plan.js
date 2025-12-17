@@ -50,7 +50,13 @@ ${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}\n` : ''}
 
 Generate a meal plan following the specification above. Return ONLY valid JSON matching the structure below. Do not include any markdown formatting or code blocks.
 
-CRITICAL: Ensure all strings in the JSON are properly escaped. Use \\" for quotes inside string values. The JSON must be valid and parseable.`;
+CRITICAL JSON REQUIREMENTS:
+1. All strings in the JSON must be properly escaped. Use \\" for quotes inside string values.
+2. All property values must be followed by commas (except the last property in an object).
+3. All arrays and objects must be properly closed with ] and }.
+4. No trailing commas before closing brackets or braces.
+5. The JSON must be completely valid and parseable - test it mentally before returning.
+6. Double-check that every opening { has a closing } and every opening [ has a closing ].`;
 
     // Construct the user prompt
     const userMessage = `Generate a meal plan for the week of ${getNextWeekDate()}.
@@ -114,7 +120,13 @@ IMPORTANT:
 - Shopping list should be a flat array with each item having: item, quantity, category, estimated_price, and aisle
 - Prep tasks should be specific and actionable
 - Ensure all meals follow the Diet Compass protocol and Maia's preferences
-- CRITICAL: All string values must have quotes properly escaped. Use \\" for any quotes inside string values. The JSON must be completely valid and parseable.`;
+
+FINAL CHECK BEFORE RETURNING:
+1. Verify every property has a comma after its value (except the last one in each object/array)
+2. Verify all strings are properly quoted and escaped
+3. Verify all brackets [ ] and braces { } are properly matched and closed
+4. Verify there are no trailing commas
+5. The JSON must parse successfully - if you're unsure, simplify the content rather than risk invalid JSON`;
 
     // Call Claude API
     const response = await fetch('https://api.anthropic.com/v1/messages', {
@@ -236,25 +248,19 @@ IMPORTANT:
       console.error('First 500 characters:', jsonText.substring(0, 500));
       console.error('Last 500 characters:', jsonText.substring(Math.max(0, jsonText.length - 500)));
       
-      // Try a simple fix: look for common issues
-      let fixedJson = jsonText;
-      let fixed = false;
+      // Try to repair common JSON issues
+      let fixedJson = attemptJsonRepair(jsonText, parseError, position);
       
-      // Try to fix unescaped newlines in strings (they should be \n)
-      if (parseError.message.includes('Unterminated string')) {
-        // This is complex to fix automatically, so we'll just provide a better error
-        console.error('Unterminated string detected - this usually means unescaped quotes or newlines in a string value');
-      }
-      
-      if (!fixed) {
-        // If we couldn't auto-fix, provide a helpful error message
+      try {
+        mealPlan = JSON.parse(fixedJson);
+        console.log('Successfully parsed JSON after repair attempt');
+      } catch (repairError) {
+        // If repair didn't work, throw the original error with context
         const errorMsg = `Failed to parse JSON response from Claude: ${parseError.message}. ` +
-          `The AI response contains invalid JSON (likely unescaped quotes or special characters in strings). ` +
-          `Please try generating the meal plan again. If the issue persists, the prompt may need adjustment.`;
+          `The AI response contains invalid JSON. Please try generating the meal plan again. ` +
+          `If the issue persists, check the server logs for more details.`;
         throw new Error(errorMsg);
       }
-      
-      mealPlan = JSON.parse(fixedJson);
     }
 
     // Return the meal plan
@@ -369,6 +375,134 @@ function buildFeedbackSummary(feedbackHistory) {
   }
 
   return summary || null;
+}
+
+/**
+ * Attempt to repair common JSON issues
+ */
+function attemptJsonRepair(jsonText, parseError, errorPosition) {
+  let fixed = jsonText;
+  let repairs = [];
+  
+  // Fix 1: Remove trailing commas before closing brackets/braces
+  const trailingCommaMatches = fixed.match(/,(\s*[}\]])/g);
+  if (trailingCommaMatches) {
+    fixed = fixed.replace(/,(\s*[}\]])/g, '$1');
+    repairs.push('Removed trailing commas');
+  }
+  
+  // Fix 2: Remove comments (single line and multi-line)
+  const commentMatches = fixed.match(/\/\/.*$|\/\*[\s\S]*?\*\//g);
+  if (commentMatches) {
+    fixed = fixed.replace(/\/\/.*$/gm, ''); // Single line comments
+    fixed = fixed.replace(/\/\*[\s\S]*?\*\//g, ''); // Multi-line comments
+    repairs.push('Removed comments');
+  }
+  
+  // Fix 3: Remove any control characters that might break JSON
+  fixed = fixed.replace(/[\x00-\x1F\x7F]/g, '');
+  
+  // Fix 4: If error mentions missing comma or closing brace, try to fix it
+  if ((parseError.message.includes("Expected ','") || parseError.message.includes("Expected '}'")) && errorPosition !== null) {
+    // Look at context around the error - expand the search area
+    const contextStart = Math.max(0, errorPosition - 200);
+    const contextEnd = Math.min(fixed.length, errorPosition + 200);
+    const context = fixed.substring(contextStart, contextEnd);
+    const relativeErrorPos = errorPosition - contextStart;
+    
+    console.log('Context around error:', context);
+    console.log('Relative error position in context:', relativeErrorPos);
+    
+    // Try multiple patterns to find where the comma/brace is missing
+    
+    // Pattern 1: String value followed by closing brace/bracket without comma
+    // Look backwards from error position for: "value" } or "value" ]
+    let searchStart = Math.max(0, relativeErrorPos - 50);
+    let searchEnd = Math.min(context.length, relativeErrorPos + 10);
+    let searchContext = context.substring(searchStart, searchEnd);
+    
+    // Look for pattern: "..." } or "..." ] (missing comma)
+    const missingCommaAfterString = /("(?:[^"\\]|\\.)*")\s*([}\]])/;
+    let match = searchContext.match(missingCommaAfterString);
+    if (match) {
+      const matchStart = contextStart + searchStart + searchContext.indexOf(match[0]);
+      const insertPos = matchStart + match[1].length;
+      fixed = fixed.substring(0, insertPos) + ',' + fixed.substring(insertPos);
+      repairs.push('Added missing comma after string value');
+      return fixed; // Return early since we made a fix
+    }
+    
+    // Pattern 2: Number or boolean/null value followed by closing brace/bracket
+    const missingCommaAfterValue = /([\d\w]+)\s*([}\]])/;
+    match = searchContext.match(missingCommaAfterValue);
+    if (match && (match[1] === 'true' || match[1] === 'false' || match[1] === 'null' || /^\d+$/.test(match[1]))) {
+      const matchStart = contextStart + searchStart + searchContext.indexOf(match[0]);
+      const insertPos = matchStart + match[1].length;
+      fixed = fixed.substring(0, insertPos) + ',' + fixed.substring(insertPos);
+      repairs.push('Added missing comma after value');
+      return fixed;
+    }
+    
+    // Pattern 3: Property value followed by another property without comma
+    const missingCommaBetweenProps = /(["\}\]\]])\s*"([^"]+)":/;
+    match = searchContext.match(missingCommaBetweenProps);
+    if (match) {
+      const matchStart = contextStart + searchStart + searchContext.indexOf(match[0]);
+      const insertPos = matchStart + match[1].length;
+      fixed = fixed.substring(0, insertPos) + ',' + fixed.substring(insertPos);
+      repairs.push('Added missing comma between properties');
+      return fixed;
+    }
+    
+    // Pattern 4: Array element followed by closing bracket without comma
+    const missingCommaInArray = /(["\d\]\]])\s*(\])/;
+    match = searchContext.match(missingCommaInArray);
+    if (match) {
+      const matchStart = contextStart + searchStart + searchContext.indexOf(match[0]);
+      const insertPos = matchStart + match[1].length;
+      fixed = fixed.substring(0, insertPos) + ',' + fixed.substring(insertPos);
+      repairs.push('Added missing comma in array');
+      return fixed;
+    }
+    
+    // Pattern 5: If error says "Expected '}'", maybe there's a missing closing brace
+    if (parseError.message.includes("Expected '}'")) {
+      // Count braces up to error position
+      const beforeError = fixed.substring(0, errorPosition);
+      const openCount = (beforeError.match(/{/g) || []).length;
+      const closeCount = (beforeError.match(/}/g) || []).length;
+      if (openCount > closeCount) {
+        // Try to insert closing brace at error position
+        fixed = fixed.substring(0, errorPosition) + '}' + fixed.substring(errorPosition);
+        repairs.push('Added missing closing brace');
+        return fixed;
+      }
+    }
+  }
+  
+  // Fix 5: Ensure proper closing of brackets/braces
+  const openBraces = (fixed.match(/{/g) || []).length;
+  const closeBraces = (fixed.match(/}/g) || []).length;
+  const openBrackets = (fixed.match(/\[/g) || []).length;
+  const closeBrackets = (fixed.match(/\]/g) || []).length;
+  
+  // Add missing closing braces
+  if (openBraces > closeBraces) {
+    fixed += '}'.repeat(openBraces - closeBraces);
+    repairs.push(`Added ${openBraces - closeBraces} missing closing braces`);
+  }
+  
+  // Add missing closing brackets
+  if (openBrackets > closeBrackets) {
+    fixed += ']'.repeat(openBrackets - closeBrackets);
+    repairs.push(`Added ${openBrackets - closeBrackets} missing closing brackets`);
+  }
+  
+  if (repairs.length > 0) {
+    console.log('JSON repair attempts:', repairs.join(', '));
+  }
+  
+  return fixed;
 }
 
 /**
