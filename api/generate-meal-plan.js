@@ -43,90 +43,38 @@ export default async function handler(req, res) {
     // Build feedback summary
     const feedbackSummary = buildFeedbackSummary(feedbackHistory || []);
 
-    // Construct the system prompt
+    // Construct the system prompt - streamlined for performance
     const systemPrompt = `${baseSpec}
+${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}` : ''}
 
-${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}\n` : ''}
+Generate a meal plan. Return ONLY valid JSON. No markdown. Escape quotes with \\".`;
 
-Generate a meal plan following the specification above. Return ONLY valid JSON matching the structure below. Do not include any markdown formatting or code blocks.
+    // Construct the user prompt - streamlined for performance
+    const userMessage = `Week: ${getNextWeekDate()}
+Budget: $${budgetTarget} | Store: ${store === 'coles-caulfield' ? 'Coles Caulfield' : 'Woolworths Carnegie'}
+${userPrompt ? `Preferences: ${userPrompt}` : ''}
 
-CRITICAL JSON REQUIREMENTS:
-1. All strings in the JSON must be properly escaped. Use \\" for quotes inside string values.
-2. All property values must be followed by commas (except the last property in an object).
-3. All arrays and objects must be properly closed with ] and }.
-4. No trailing commas before closing brackets or braces.
-5. The JSON must be completely valid and parseable - test it mentally before returning.
-6. Double-check that every opening { has a closing } and every opening [ has a closing ].`;
-
-    // Construct the user prompt
-    const userMessage = `Generate a meal plan for the week of ${getNextWeekDate()}.
-
-User preferences for this week:
-${userPrompt || 'No specific preferences provided.'}
-
-Constraints:
-- Budget: $${budgetTarget} max
-- Store: ${store === 'coles-caulfield' ? 'Coles Caulfield Village (Store ID: 7724)' : 'Woolworths Carnegie North'}
-
-CRITICAL JSON FORMATTING REQUIREMENTS:
-- Return ONLY valid, parseable JSON
-- All string values must have quotes properly escaped (use \\" for quotes inside strings)
-- No unescaped newlines in string values (use \\n)
-- No trailing commas
-- All brackets and braces must be properly closed
-- The JSON must be complete and valid - test it mentally before returning
-
-Output required (JSON format):
+Return JSON with this EXACT structure:
 {
   "week_of": "YYYY-MM-DD",
+  "shopping_list": [{"item": "name", "quantity": "amount", "category": "Produce|Dairy|Proteins|Grains|Pantry|Bakery", "estimated_price": 0.00, "aisle": 1}],
   "roland_meals": {
-    "sunday": {
-      "breakfast": {"name": "...", "time": "8:00 AM"},
-      "lunch": {"name": "...", "time": "12:30 PM"},
-      "dinner": {"name": "...", "time": "5:30 PM"},
-      "recipes": [
-        {
-          "name": "Meal Name",
-          "ing": ["ingredient 1 with quantity", "ingredient 2 with quantity", ...],
-          "steps": ["step 1", "step 2", ...]
-        }
-      ]
-    },
-    ...
+    "sunday": {"breakfast": {"name": "...", "time": "8:00 AM"}, "lunch": {"name": "...", "time": "12:30 PM"}, "dinner": {"name": "...", "time": "5:30 PM"}, "recipes": [{"name": "...", "ing": ["item qty"], "steps": ["step"]}]},
+    "monday": {...}, "tuesday": {...}, "wednesday": {...}, "thursday": {...}, "friday": {...}, "saturday": {...}
   },
-  "maia_meals": {
-    "sunday": {
-      "lunch": {"name": "...", "time": "12:30 PM"},
-      "dinner": {"name": "...", "time": "5:30 PM"}
-    },
-    ...
-  },
-  "shopping_list": [
-    {"item": "Item name", "quantity": "amount", "category": "Produce|Dairy|Proteins|etc", "estimated_price": 0.00, "aisle": 1}
-  ],
-  "prep_tasks": {
-    "sunday": {
-      "roland": {"morning": ["task 1", "task 2"], "evening": ["task 1", "task 2"]},
-      "maia": {"morning": ["task 1"], "evening": ["task 1"]}
-    },
-    ...
-  },
+  "maia_meals": {"sunday": {"lunch": {...}, "dinner": {...}}, "monday": {"breakfast": {...}, "lunch": {...}, "dinner": {...}}, ...},
+  "prep_tasks": {"sunday": {"roland": {"morning": [], "evening": []}, "maia": {"morning": [], "evening": []}}, ...},
   "budget_estimate": 0.00,
-  "notes": "..."
+  "notes": ""
 }
 
-IMPORTANT:
-- Include detailed recipes for Roland's meals (lunch and dinner) with ingredients (ing array) and steps (steps array)
-- Shopping list should be a flat array with each item having: item, quantity, category, estimated_price, and aisle
-- Prep tasks should be specific and actionable
-- Ensure all meals follow the Diet Compass protocol and Maia's preferences
-
-FINAL CHECK BEFORE RETURNING:
-1. Verify every property has a comma after its value (except the last one in each object/array)
-2. Verify all strings are properly quoted and escaped
-3. Verify all brackets [ ] and braces { } are properly matched and closed
-4. Verify there are no trailing commas
-5. The JSON must parse successfully - if you're unsure, simplify the content rather than risk invalid JSON`;
+CRITICAL REQUIREMENTS:
+1. Plan all meals first, then compile a COMPLETE shopping_list with 25-40 items
+2. The shopping_list MUST include every ingredient needed for all meals
+3. Include recipes with ing[] and steps[] for Roland's lunch/dinner
+4. Thursday: early lunch 12PM, NO dinner (fast day)
+5. Friday: coffee only breakfast, late lunch 1PM
+6. DO NOT truncate or skip the shopping_list - it is essential`;
 
     // Call Claude API
     const response = await fetch('https://api.anthropic.com/v1/messages', {
@@ -138,7 +86,7 @@ FINAL CHECK BEFORE RETURNING:
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-5-20250929',
-        max_tokens: 4000,
+        max_tokens: 8000,
         system: systemPrompt,
         messages: [
           {
@@ -261,6 +209,13 @@ FINAL CHECK BEFORE RETURNING:
           `If the issue persists, check the server logs for more details.`;
         throw new Error(errorMsg);
       }
+    }
+
+    // Validate shopping list exists and has items
+    if (!mealPlan.shopping_list || !Array.isArray(mealPlan.shopping_list) || mealPlan.shopping_list.length === 0) {
+      console.warn('Shopping list is empty or missing, generating default placeholder');
+      // Generate a basic shopping list based on the meals if missing
+      mealPlan.shopping_list = generateFallbackShoppingList(mealPlan);
     }
 
     // Return the meal plan
@@ -522,4 +477,70 @@ function getNextWeekDate() {
   };
   
   return `${formatDate(nextSunday)} - ${formatDate(nextSaturday)}, ${nextSunday.getFullYear()}`;
+}
+
+/**
+ * Generate a fallback shopping list by extracting ingredients from recipes
+ */
+function generateFallbackShoppingList(mealPlan) {
+  const ingredients = new Map();
+  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  
+  // Extract ingredients from Roland's recipes
+  days.forEach(day => {
+    const rolandDay = mealPlan.roland_meals?.[day];
+    if (rolandDay?.recipes && Array.isArray(rolandDay.recipes)) {
+      rolandDay.recipes.forEach(recipe => {
+        if (recipe.ing && Array.isArray(recipe.ing)) {
+          recipe.ing.forEach(ing => {
+            if (ing && !ingredients.has(ing.toLowerCase())) {
+              ingredients.set(ing.toLowerCase(), {
+                item: ing,
+                quantity: '1',
+                category: guessCategoryFromIngredient(ing),
+                estimated_price: 5.00,
+                aisle: guessAisleFromIngredient(ing)
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+  
+  return Array.from(ingredients.values());
+}
+
+/**
+ * Guess category from ingredient name
+ */
+function guessCategoryFromIngredient(ing) {
+  const ingLower = ing.toLowerCase();
+  if (ingLower.includes('salmon') || ingLower.includes('tuna') || ingLower.includes('fish') || 
+      ingLower.includes('tofu') || ingLower.includes('tempeh') || ingLower.includes('protein')) {
+    return 'Proteins';
+  }
+  if (ingLower.includes('milk') || ingLower.includes('yogurt') || ingLower.includes('cheese') || 
+      ingLower.includes('kefir') || ingLower.includes('cream')) {
+    return 'Dairy';
+  }
+  if (ingLower.includes('spinach') || ingLower.includes('kale') || ingLower.includes('broccoli') || 
+      ingLower.includes('carrot') || ingLower.includes('tomato') || ingLower.includes('salad') ||
+      ingLower.includes('vegetable') || ingLower.includes('avocado') || ingLower.includes('lemon')) {
+    return 'Produce';
+  }
+  if (ingLower.includes('rice') || ingLower.includes('quinoa') || ingLower.includes('bread') || 
+      ingLower.includes('oat') || ingLower.includes('grain')) {
+    return 'Grains';
+  }
+  return 'Pantry';
+}
+
+/**
+ * Guess aisle from ingredient name
+ */
+function guessAisleFromIngredient(ing) {
+  const category = guessCategoryFromIngredient(ing);
+  const aisleMap = { 'Produce': 1, 'Bakery': 2, 'Dairy': 3, 'Proteins': 4, 'Grains': 5, 'Pantry': 5 };
+  return aisleMap[category] || 5;
 }

@@ -3,7 +3,7 @@
  * Shows both Roland's and Maia's meal plans for the entire week
  */
 
-import { DAY_ORDER, DAY_NAMES, WEEK_INFO, BUDGET_TARGET } from '../data/mealPlanData.js';
+import { DAY_ORDER, DAY_NAMES, WEEK_INFO } from '../data/mealPlanData.js';
 import { getMealPlanData } from '../data/mealPlanLoader.js';
 
 export function renderWeeklyOverview() {

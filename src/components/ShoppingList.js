@@ -3,7 +3,6 @@
  * Displays aisle-optimized shopping list with prices, checkboxes and progress tracking
  */
 
-import { BUDGET_TARGET } from '../data/mealPlanData.js';
 import { getMealPlanData } from '../data/mealPlanLoader.js';
 import { appState } from '../utils/state.js';
 
@@ -15,16 +14,66 @@ export function renderShopping() {
   const MEAL_PLAN_DATA = getMealPlanData();
   const state = appState;
   
+  // Check if shopping list exists and has items
+  if (!MEAL_PLAN_DATA.shopping || MEAL_PLAN_DATA.shopping.length === 0) {
+    return `
+      <div class="container">
+        <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
+        <h1 class="page-title">🛒 Shopping List</h1>
+        
+        <div class="card" style="background:#fef3c7;border:2px solid #fbbf24">
+          <div style="font-weight:600;color:#92400e;margin-bottom:8px">📝 No Shopping List Yet</div>
+          <div style="font-size:0.9rem;color:#92400e">
+            The shopping list hasn't been generated yet. Generate a new meal plan to create a shopping list.
+          </div>
+          <button 
+            class="btn" 
+            style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:white;margin-top:16px"
+            onclick="navigateTo('generate')"
+          >
+            <span>✨ Generate Meal Plan</span>
+            <span>→</span>
+          </button>
+        </div>
+      </div>
+    `;
+  }
+  
   // Flatten all items with their metadata
   const all = MEAL_PLAN_DATA.shopping.flatMap(c => 
-    c.items.map((item, i) => ({
+    (c.items || []).map((item, i) => ({
       id: `${c.cat}-${i}`,
       cat: c.cat,
-      name: typeof item === 'string' ? item : item.name,
-      price: typeof item === 'string' ? null : item.price,
+      name: typeof item === 'string' ? item : (item.name || item.item || 'Unknown item'),
+      price: typeof item === 'string' ? null : (item.price || item.estimated_price || null),
       aisle: typeof item === 'string' ? null : item.aisle
     }))
   );
+  
+  // If no items after flattening, show empty state
+  if (all.length === 0) {
+    return `
+      <div class="container">
+        <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
+        <h1 class="page-title">🛒 Shopping List</h1>
+        
+        <div class="card" style="background:#fef3c7;border:2px solid #fbbf24">
+          <div style="font-weight:600;color:#92400e;margin-bottom:8px">📝 Shopping List Empty</div>
+          <div style="font-size:0.9rem;color:#92400e">
+            The shopping list is empty. Try generating a new meal plan.
+          </div>
+          <button 
+            class="btn" 
+            style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:white;margin-top:16px"
+            onclick="navigateTo('generate')"
+          >
+            <span>✨ Generate Meal Plan</span>
+            <span>→</span>
+          </button>
+        </div>
+      </div>
+    `;
+  }
   
   const vis = state.hideChecked 
     ? all.filter(i => !state.isChecked(i.id)) 

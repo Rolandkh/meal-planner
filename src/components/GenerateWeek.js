@@ -3,12 +3,9 @@
  * UI for generating a new meal plan with preferences using Claude API
  */
 
-import { getApiKey } from '../utils/claudeApi.js';
 import { handleGenerate } from '../utils/generateHandler.js';
 
 export function renderGenerateWeek() {
-  const savedApiKey = getApiKey();
-  
   return `
     <div class="container">
       <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
