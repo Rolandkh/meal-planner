@@ -1,34 +1,48 @@
 /**
- * Vercel Serverless Function
- * Proxies requests to Claude API with server-side API key
- * Uses Claude streaming for faster time-to-first-byte
+ * Vercel Edge Function
+ * Proxies requests to Claude API with streaming support
+ * Returns real-time progress via Server-Sent Events
  */
 
-export default async function handler(req, res) {
+export const config = {
+  runtime: 'edge',
+};
+
+export default async function handler(req) {
   // Only allow POST requests
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), {
+      status: 405,
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
 
   // Get API key from environment variable
-  const apiKey = (process.env.ANTHROPIC_API_KEY || process.env.anthropic_api_key || process.env.Anthropic_Api_Key)?.trim();
+  const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
 
   if (!apiKey) {
-    return res.status(500).json({ 
+    return new Response(JSON.stringify({ 
       error: 'API key not configured. Please set ANTHROPIC_API_KEY in Vercel environment variables.' 
+    }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
     });
   }
 
   if (!apiKey.startsWith('sk-ant-')) {
-    return res.status(500).json({ 
-      error: `Invalid API key format. The key should start with "sk-ant-".` 
+    return new Response(JSON.stringify({ 
+      error: 'Invalid API key format. The key should start with "sk-ant-".' 
+    }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
     });
   }
 
   try {
-    const { userPrompt, budgetTarget, store, feedbackHistory } = req.body;
+    const body = await req.json();
+    const { userPrompt, budgetTarget, store, feedbackHistory, stream: wantStream } = body;
 
-    const baseSpec = await loadBaseSpecification();
+    const baseSpec = loadBaseSpecification();
     const feedbackSummary = buildFeedbackSummary(feedbackHistory || []);
 
     const systemPrompt = `${baseSpec}
@@ -62,7 +76,7 @@ CRITICAL REQUIREMENTS:
 5. Friday: coffee only breakfast, late lunch 1PM
 6. DO NOT truncate or skip the shopping_list - it is essential`;
 
-    // Call Claude API with streaming for faster response
+    // Call Claude API with streaming
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -80,23 +94,139 @@ CRITICAL REQUIREMENTS:
     });
 
     if (!response.ok) {
-      const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
-      const errorMessage = errorData.error?.message || errorData.error || `API error: ${response.status}`;
-      return res.status(response.status).json({ error: errorMessage });
+      const errorText = await response.text();
+      let errorMessage = `API error: ${response.status}`;
+      try {
+        const errorData = JSON.parse(errorText);
+        errorMessage = errorData.error?.message || errorData.error || errorMessage;
+      } catch (e) {
+        errorMessage = errorText || errorMessage;
+      }
+      return new Response(JSON.stringify({ error: errorMessage }), {
+        status: response.status,
+        headers: { 'Content-Type': 'application/json' }
+      });
     }
 
-    // Collect all chunks from the stream
+    // If client wants streaming, return SSE stream
+    if (wantStream) {
+      const encoder = new TextEncoder();
+      const decoder = new TextDecoder();
+      
+      // Estimated total characters for a typical meal plan response
+      const ESTIMATED_TOTAL_CHARS = 14000;
+      
+      // Section markers to detect progress
+      const sectionMarkers = [
+        { key: 'shopping_list', label: 'Shopping list' },
+        { key: '"sunday"', label: 'Sunday meals', day: true },
+        { key: '"monday"', label: 'Monday meals', day: true },
+        { key: '"tuesday"', label: 'Tuesday meals', day: true },
+        { key: '"wednesday"', label: 'Wednesday meals', day: true },
+        { key: '"thursday"', label: 'Thursday meals', day: true },
+        { key: '"friday"', label: 'Friday meals', day: true },
+        { key: '"saturday"', label: 'Saturday meals', day: true },
+        { key: 'maia_meals', label: 'Maia\'s meals' },
+        { key: 'prep_tasks', label: 'Prep tasks' },
+        { key: 'budget_estimate', label: 'Finalizing' }
+      ];
+      
+      let fullContent = '';
+      let detectedSections = new Set();
+      let currentSection = 'Starting generation...';
+      
+      const stream = new ReadableStream({
+        async start(controller) {
+          const reader = response.body.getReader();
+          
+          try {
+            while (true) {
+              const { done, value } = await reader.read();
+              if (done) break;
+              
+              const chunk = decoder.decode(value, { stream: true });
+              const lines = chunk.split('\n');
+              
+              for (const line of lines) {
+                if (line.startsWith('data: ')) {
+                  const data = line.slice(6);
+                  if (data === '[DONE]') continue;
+                  
+                  try {
+                    const parsed = JSON.parse(data);
+                    if (parsed.type === 'content_block_delta' && parsed.delta?.text) {
+                      fullContent += parsed.delta.text;
+                      
+                      // Detect which section we're in
+                      for (const marker of sectionMarkers) {
+                        if (!detectedSections.has(marker.key) && fullContent.includes(marker.key)) {
+                          detectedSections.add(marker.key);
+                          currentSection = marker.label;
+                        }
+                      }
+                      
+                      // Calculate progress based on character count
+                      const percent = Math.min(95, Math.round((fullContent.length / ESTIMATED_TOTAL_CHARS) * 100));
+                      
+                      // Send progress update
+                      const progressData = JSON.stringify({
+                        type: 'progress',
+                        percent,
+                        chars: fullContent.length,
+                        section: currentSection
+                      });
+                      controller.enqueue(encoder.encode(`data: ${progressData}\n\n`));
+                    }
+                  } catch (e) {
+                    // Skip unparseable lines
+                  }
+                }
+              }
+            }
+            
+            // Parse and validate the final response
+            const mealPlan = parseAndValidateMealPlan(fullContent, budgetTarget);
+            
+            // Send complete message
+            const completeData = JSON.stringify({
+              type: 'complete',
+              data: mealPlan
+            });
+            controller.enqueue(encoder.encode(`data: ${completeData}\n\n`));
+            controller.close();
+            
+          } catch (error) {
+            const errorData = JSON.stringify({
+              type: 'error',
+              error: error.message
+            });
+            controller.enqueue(encoder.encode(`data: ${errorData}\n\n`));
+            controller.close();
+          }
+        }
+      });
+      
+      return new Response(stream, {
+        headers: {
+          'Content-Type': 'text/event-stream',
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive'
+        }
+      });
+    }
+    
+    // Non-streaming: collect full response
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
     let fullContent = '';
-
+    
     while (true) {
       const { done, value } = await reader.read();
       if (done) break;
-
+      
       const chunk = decoder.decode(value, { stream: true });
       const lines = chunk.split('\n');
-
+      
       for (const line of lines) {
         if (line.startsWith('data: ')) {
           const data = line.slice(6);
@@ -113,15 +243,19 @@ CRITICAL REQUIREMENTS:
         }
       }
     }
-
-    // Parse and validate the complete response
+    
     const mealPlan = parseAndValidateMealPlan(fullContent, budgetTarget);
-    return res.status(200).json(mealPlan);
+    return new Response(JSON.stringify(mealPlan), {
+      headers: { 'Content-Type': 'application/json' }
+    });
 
   } catch (error) {
     console.error('Claude API error:', error);
-    return res.status(500).json({ 
+    return new Response(JSON.stringify({ 
       error: error.message || 'Failed to generate meal plan.' 
+    }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
     });
   }
 }
@@ -149,7 +283,7 @@ function parseAndValidateMealPlan(content, budgetTarget) {
     mealPlan = JSON.parse(jsonText);
   } catch (parseError) {
     // Try to repair common JSON issues
-    const fixedJson = attemptJsonRepair(jsonText, parseError);
+    const fixedJson = attemptJsonRepair(jsonText);
     mealPlan = JSON.parse(fixedJson);
   }
 
@@ -164,8 +298,7 @@ function parseAndValidateMealPlan(content, budgetTarget) {
 /**
  * Load base specification
  */
-async function loadBaseSpecification() {
-  // Return key parts of the spec with detailed requirements
+function loadBaseSpecification() {
   return `Meal Planner App Specification
 
 ## ROLAND'S MEAL PLAN
@@ -257,12 +390,8 @@ function buildFeedbackSummary(feedbackHistory) {
 /**
  * Attempt to repair common JSON issues
  */
-function attemptJsonRepair(jsonText, parseError) {
+function attemptJsonRepair(jsonText) {
   let fixed = jsonText;
-  
-  // Extract error position from error message if available
-  const positionMatch = parseError?.message?.match(/position (\d+)/);
-  const errorPosition = positionMatch ? parseInt(positionMatch[1]) : null;
   
   // Fix 1: Remove trailing commas before closing brackets/braces
   fixed = fixed.replace(/,(\s*[}\]])/g, '$1');
@@ -316,7 +445,6 @@ function generateFallbackShoppingList(mealPlan) {
   const ingredients = new Map();
   const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
   
-  // Extract ingredients from Roland's recipes
   days.forEach(day => {
     const rolandDay = mealPlan.roland_meals?.[day];
     if (rolandDay?.recipes && Array.isArray(rolandDay.recipes)) {

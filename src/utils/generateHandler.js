@@ -32,12 +32,14 @@ export async function handleGenerate() {
     // Load feedback history
     const feedbackHistory = JSON.parse(localStorage.getItem('mealPlannerFeedback') || '[]');
     
-    // Progress callback - receives percentage (0-100)
-    const onProgress = (percent) => {
+    // Progress callback - receives percentage and current section
+    const onProgress = (percent, section) => {
       const elapsed = Math.round((Date.now() - startTime) / 1000);
       
       if (progressText) {
-        progressText.textContent = `Generating... ${Math.round(percent)}% (${elapsed}s)`;
+        progressText.textContent = section 
+          ? `${section}... ${Math.round(percent)}% (${elapsed}s)`
+          : `Generating... ${Math.round(percent)}% (${elapsed}s)`;
       }
       if (progressBar) {
         progressBar.style.width = `${percent}%`;

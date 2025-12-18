@@ -1,52 +1,83 @@
 /**
  * Claude API Service
  * Handles communication with the serverless API for meal plan generation
+ * Supports real streaming with progress tracking
  */
 
 /**
- * Generate a meal plan using the serverless API
+ * Generate a meal plan using the serverless API with real streaming
  * @param {string} _apiKey - Deprecated, not used (API key is stored server-side)
  * @param {string} userPrompt - User's weekly preferences
  * @param {number} budgetTarget - Budget target in dollars
  * @param {string} store - Store identifier
  * @param {Array} feedbackHistory - Previous feedback (last 8 weeks)
- * @param {Function} onProgress - Callback for progress simulation
+ * @param {Function} onProgress - Callback for progress updates: (percent, section) => void
  * @returns {Promise<Object>} Generated meal plan data
  */
 export async function generateMealPlan(_apiKey, userPrompt, budgetTarget, store, feedbackHistory = [], onProgress = null) {
-  // Start progress simulation if callback provided
-  let progressInterval = null;
-  let simulatedProgress = 0;
-  
-  if (onProgress) {
-    progressInterval = setInterval(() => {
-      // Simulate progress up to 90% (never reach 100 until complete)
-      simulatedProgress = Math.min(90, simulatedProgress + Math.random() * 8);
-      onProgress(simulatedProgress);
-    }, 500);
+  const response = await fetch('/api/generate-meal-plan', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ 
+      userPrompt, 
+      budgetTarget, 
+      store, 
+      feedbackHistory,
+      stream: !!onProgress  // Request streaming if progress callback provided
+    })
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({ error: `API error: ${response.status}` }));
+    throw new Error(errorData.error || errorData.message || `API error: ${response.status}`);
   }
 
-  try {
-    const response = await fetch('/api/generate-meal-plan', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userPrompt, budgetTarget, store, feedbackHistory })
-    });
+  // If streaming response, read the event stream
+  if (onProgress && response.headers.get('content-type')?.includes('text/event-stream')) {
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let mealPlan = null;
+    let buffer = '';
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({ error: `API error: ${response.status}` }));
-      throw new Error(errorData.error || errorData.message || `API error: ${response.status}`);
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop() || ''; // Keep incomplete line in buffer
+
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          try {
+            const data = JSON.parse(line.slice(6));
+            
+            if (data.type === 'progress') {
+              onProgress(data.percent, data.section);
+            } else if (data.type === 'complete') {
+              mealPlan = data.data;
+              onProgress(100, 'Complete!');
+            } else if (data.type === 'error') {
+              throw new Error(data.error);
+            }
+          } catch (e) {
+            if (e.message && !e.message.includes('JSON')) throw e;
+          }
+        }
+      }
     }
 
-    const mealPlan = await response.json();
-    
-    // Signal completion
-    if (onProgress) onProgress(100);
-    
+    if (!mealPlan) {
+      throw new Error('No meal plan received from stream');
+    }
+
     return addBudgetInfo(mealPlan, budgetTarget);
-  } finally {
-    if (progressInterval) clearInterval(progressInterval);
   }
+
+  // Non-streaming response (fallback)
+  const mealPlan = await response.json();
+  if (onProgress) onProgress(100, 'Complete!');
+  return addBudgetInfo(mealPlan, budgetTarget);
 }
 
 /**
