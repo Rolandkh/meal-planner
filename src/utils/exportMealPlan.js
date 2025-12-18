@@ -89,14 +89,18 @@ export function generateExportDocument() {
 
 `;
 
-  // Daily meal plans
-  DAY_ORDER.forEach((dayKey, index) => {
+  // Day order starting from shopping day (Saturday)
+  const WEEK_ORDER = ['saturday', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
+  const WEEK_NAMES = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+  // Daily meal plans - iterate in week order (Saturday first)
+  WEEK_ORDER.forEach((dayKey, index) => {
     const day = MEAL_PLAN_DATA.days[dayKey];
     if (!day) return;
     
     const roland = day.roland;
     const maia = day.maia;
-    const dayName = DAY_NAMES[index];
+    const dayName = WEEK_NAMES[index];
     const dayDate = day.date || getDayDate(dayKey);
     const todayNote = isToday(dayKey) ? ' (Today' + (dayKey === 'sunday' ? ' - Protein Bar Prep Day' : '') + ')' : '';
     
@@ -160,12 +164,9 @@ export function generateExportDocument() {
       }
     }
     
-    // Today's tasks - protein bars made on shopping day (Saturday) or Sunday
-    if (dayKey === 'saturday' || dayKey === 'sunday') {
-      const prepTask = dayKey === 'saturday' 
-        ? `- **Today's Task:** Make protein bars (recipe below)\n`
-        : (day?.roland?.prep?.morning?.length > 0 ? '' : ''); // Only add Sunday task if no morning prep exists
-      if (prepTask) doc += prepTask;
+    // Today's task - protein bars made on shopping day (Saturday)
+    if (dayKey === 'saturday') {
+      doc += `- **Prep Task:** Make protein bars (see recipe below)\n`;
     }
     
     doc += `\n`;
@@ -178,69 +179,51 @@ export function generateExportDocument() {
 
 `;
   
-  // Protein bar recipe (special section) - check both Saturday and Sunday since either could be prep day
-  const saturdayRecipes = MEAL_PLAN_DATA.days?.saturday?.roland?.recipes || [];
-  const sundayRecipes = MEAL_PLAN_DATA.days?.sunday?.roland?.recipes || [];
-  const allPrepRecipes = [...saturdayRecipes, ...sundayRecipes];
-  const proteinBarRecipe = allPrepRecipes.find(r => r && r.name && (r.name.toLowerCase().includes('protein bar') || r.name.toLowerCase().includes('protein')));
-  
-  if (proteinBarRecipe && proteinBarRecipe.ing && Array.isArray(proteinBarRecipe.ing) && proteinBarRecipe.ing.length > 0) {
-    doc += `## PROTEIN BAR RECIPE
-**Make today (Sunday) - yields 12 bars**
+  // Hardcoded protein bar recipe (always included - saves API tokens)
+  doc += `### PROTEIN BAR RECIPE
+**Make on Saturday - yields 12 bars**
+
+#### DRY INGREDIENTS:
+- [ ] 200g rolled oats
+- [ ] 100g walnuts, chopped
+- [ ] 80g plant protein powder
+- [ ] 30g cacao powder
+- [ ] 15g maca powder
+- [ ] 50g chia seeds
+- [ ] 30g oat flour
+- [ ] 100g dried blueberries
+- [ ] 10g Lion's Mane powder
+- [ ] 5g Reishi powder
+- [ ] 5g turmeric powder
+- [ ] 20g ground flaxseed
+
+#### WET INGREDIENTS:
+- [ ] 260g almond butter
+- [ ] 100ml maple syrup
+- [ ] 2 ripe bananas (200g), mashed
+- [ ] 60ml plant milk
+- [ ] 5g fresh ginger, grated
+
+#### CHOCOLATE COATING:
+- [ ] 200-250g dark chocolate
+- [ ] 30-40g coconut oil
+
+#### METHOD:
+1. Line 20×20cm tin with parchment
+2. Melt 100-125g chocolate with 15-20g coconut oil
+3. Pour into tin, spread evenly, refrigerate 10 min
+4. Mix all dry ingredients in large bowl
+5. Warm 260g almond butter, 100ml maple syrup, and 60ml plant milk until smooth
+6. Remove from heat, stir in 200g mashed bananas and 5g grated ginger
+7. Pour wet into dry, mix until sticky
+8. Spread over set chocolate, press VERY firmly
+9. Refrigerate 2-3 hours
+10. Melt remaining chocolate with remaining coconut oil
+11. Pour over top, spread evenly, refrigerate 30 min
+12. Cut into 12 bars (warm knife between cuts)
+13. Wrap individually, store in fridge up to 2 weeks
 
 `;
-    
-    // Separate ingredients into dry and wet if possible
-    const dryIngredients = [];
-    const wetIngredients = [];
-    const chocolateIngredients = [];
-    
-    if (Array.isArray(proteinBarRecipe.ing)) {
-      proteinBarRecipe.ing.forEach(ing => {
-        if (!ing) return;
-        const ingLower = ing.toLowerCase();
-        if (ingLower.includes('chocolate') || ingLower.includes('coconut oil') || ingLower.includes('cacao')) {
-          chocolateIngredients.push(ing);
-        } else if (ingLower.includes('butter') || ingLower.includes('syrup') || ingLower.includes('banana') || ingLower.includes('milk') || ingLower.includes('ginger')) {
-          wetIngredients.push(ing);
-        } else {
-          dryIngredients.push(ing);
-        }
-      });
-    }
-    
-    if (dryIngredients.length > 0) {
-      doc += `### DRY INGREDIENTS:\n`;
-      dryIngredients.forEach(ing => {
-        doc += `- [ ] ${ing}\n`;
-      });
-      doc += `\n`;
-    }
-    
-    if (wetIngredients.length > 0) {
-      doc += `### WET INGREDIENTS:\n`;
-      wetIngredients.forEach(ing => {
-        doc += `- [ ] ${ing}\n`;
-      });
-      doc += `\n`;
-    }
-    
-    if (chocolateIngredients.length > 0) {
-      doc += `### CHOCOLATE LAYERS:\n`;
-      chocolateIngredients.forEach(ing => {
-        doc += `- [ ] ${ing}\n`;
-      });
-      doc += `\n`;
-    }
-    
-    if (proteinBarRecipe.steps && proteinBarRecipe.steps.length > 0) {
-      doc += `### METHOD:\n`;
-      proteinBarRecipe.steps.forEach((step, i) => {
-        doc += `${i + 1}. ${step}\n`;
-      });
-      doc += `\n`;
-    }
-  }
   
   // Other recipes from all days
   const allRecipes = [];
@@ -478,7 +461,7 @@ export function generateExportDocument() {
   const aisleMap = {
     1: 'PRODUCE SECTION',
     2: 'BAKERY',
-    3: 'REFRIGERATED SECTION',
+    3: 'DAIRY & REFRIGERATED',
     4: 'FISH COUNTER/AISLE',
     5: 'CANNED GOODS / PANTRY',
     6: 'HEALTH FOOD/ORGANIC SECTION',
@@ -491,20 +474,34 @@ export function generateExportDocument() {
     99: 'OTHER ITEMS'
   };
   
+  // Category to aisle mapping for fallback
+  const categoryToAisle = {
+    'Produce': 1,
+    'Bakery': 2,
+    'Dairy': 3,
+    'Proteins': 4,
+    'Protein': 4,
+    'Grains': 5,
+    'Pantry': 5,
+    'Protein Bars': 6
+  };
+  
   const byAisle = {};
   MEAL_PLAN_DATA.shopping.forEach(category => {
+    const categoryAisle = categoryToAisle[category.cat] || 99;
+    
     (category.items || []).forEach(item => {
       // Handle both string and object items
       const itemObj = typeof item === 'string' 
-        ? { name: item, aisle: 99, price: null }
+        ? { name: item, aisle: categoryAisle, price: null }
         : { 
             name: item.name || item.item || 'Unknown item',
-            aisle: item.aisle || 99,
+            aisle: item.aisle || categoryAisle,
             price: item.price || item.estimated_price || null,
             quantity: item.quantity || null
           };
       
-      const aisle = itemObj.aisle || 99;
+      const aisle = itemObj.aisle || categoryAisle;
       if (!byAisle[aisle]) {
         byAisle[aisle] = [];
       }
@@ -533,16 +530,22 @@ export function generateExportDocument() {
 
 `;
   
-  DAY_ORDER.forEach(dayKey => {
+  WEEK_ORDER.forEach((dayKey, index) => {
     const day = MEAL_PLAN_DATA.days[dayKey];
     if (!day) return;
     
-    const dayName = DAY_NAMES[DAY_ORDER.indexOf(dayKey)];
+    const dayName = WEEK_NAMES[index];
     const prep = day.roland?.prep || {};
     const hasPrep = (prep.morning && prep.morning.length > 0) || (prep.evening && prep.evening.length > 0);
     
-    if (hasPrep || dayKey === 'sunday') {
+    // Saturday is the main prep day (shopping day)
+    if (hasPrep || dayKey === 'saturday') {
       doc += `### ${dayName.toUpperCase()}\n`;
+      
+      // Always add protein bar task on Saturday
+      if (dayKey === 'saturday') {
+        doc += `- [ ] Make protein bars (see recipe above)\n`;
+      }
       
       if (prep.morning && prep.morning.length > 0) {
         prep.morning.forEach(task => {
@@ -554,10 +557,6 @@ export function generateExportDocument() {
         prep.evening.forEach(task => {
           doc += `- [ ] ${task}\n`;
         });
-      }
-      
-      if (!hasPrep && dayKey === 'sunday') {
-        doc += `- [ ] Make protein bars\n`;
       }
       
       doc += `\n`;
@@ -600,7 +599,7 @@ ${budget.estimated ? `**Difference:** $${Math.abs(budget.target - budget.estimat
 
 ## WEEKLY SUCCESS CHECKLIST
 
-- [ ] Sunday: Protein bars made and ready
+- [ ] Saturday: Protein bars made and ready
 - [ ] Daily: Ate only during 8 AM - 6 PM window
 - [ ] Daily: No snacking between meals
 - [ ] Daily: 10-minute walk after lunch

@@ -256,12 +256,9 @@ You MUST generate:
 3. 25-40 shopping items covering all ingredients
 4. Prep tasks for meal preparation
 
-## PROTEIN BAR RECIPE (Make on Saturday/Sunday)
-Include this in saturday or sunday recipes:
-- Base: oats, protein powder, nut butter, maple syrup, mashed banana
-- Add-ins: walnuts, chia seeds, cacao, dried berries
-- Chocolate coating: dark chocolate, coconut oil
-- Makes 12 bars for the week`;
+## PROTEIN BAR (Pre-made recipe - DO NOT generate)
+The protein bar recipe is hardcoded in the app. Do NOT include a protein bar recipe in your response.
+Just reference "Protein Bar" for breakfast meals.`;
 }
 
 /**
