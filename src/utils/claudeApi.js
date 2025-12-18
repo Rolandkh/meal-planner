@@ -1,78 +1,52 @@
 /**
  * Claude API Service
  * Handles communication with the serverless API for meal plan generation
- * Supports streaming for real-time progress updates
  */
 
 /**
- * Generate a meal plan using the serverless API with streaming
+ * Generate a meal plan using the serverless API
  * @param {string} _apiKey - Deprecated, not used (API key is stored server-side)
  * @param {string} userPrompt - User's weekly preferences
  * @param {number} budgetTarget - Budget target in dollars
  * @param {string} store - Store identifier
  * @param {Array} feedbackHistory - Previous feedback (last 8 weeks)
- * @param {Function} onProgress - Callback for progress updates (chars generated)
+ * @param {Function} onProgress - Callback for progress simulation
  * @returns {Promise<Object>} Generated meal plan data
  */
 export async function generateMealPlan(_apiKey, userPrompt, budgetTarget, store, feedbackHistory = [], onProgress = null) {
-  const response = await fetch('/api/generate-meal-plan', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ 
-      userPrompt, 
-      budgetTarget, 
-      store, 
-      feedbackHistory,
-      stream: !!onProgress  // Request streaming if progress callback provided
-    })
-  });
-
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => ({ error: `API error: ${response.status}` }));
-    throw new Error(errorData.error || errorData.message || `API error: ${response.status}`);
+  // Start progress simulation if callback provided
+  let progressInterval = null;
+  let simulatedProgress = 0;
+  
+  if (onProgress) {
+    progressInterval = setInterval(() => {
+      // Simulate progress up to 90% (never reach 100 until complete)
+      simulatedProgress = Math.min(90, simulatedProgress + Math.random() * 8);
+      onProgress(simulatedProgress);
+    }, 500);
   }
 
-  // If streaming, read the event stream
-  if (onProgress && response.headers.get('content-type')?.includes('text/event-stream')) {
-    const reader = response.body.getReader();
-    const decoder = new TextDecoder();
-    let mealPlan = null;
+  try {
+    const response = await fetch('/api/generate-meal-plan', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userPrompt, budgetTarget, store, feedbackHistory })
+    });
 
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-
-      const chunk = decoder.decode(value, { stream: true });
-      const lines = chunk.split('\n');
-
-      for (const line of lines) {
-        if (line.startsWith('data: ')) {
-          try {
-            const data = JSON.parse(line.slice(6));
-            if (data.type === 'progress') {
-              onProgress(data.length);
-            } else if (data.type === 'complete') {
-              mealPlan = data.data;
-            } else if (data.type === 'error') {
-              throw new Error(data.error);
-            }
-          } catch (e) {
-            if (e.message && !e.message.includes('JSON')) throw e;
-          }
-        }
-      }
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ error: `API error: ${response.status}` }));
+      throw new Error(errorData.error || errorData.message || `API error: ${response.status}`);
     }
 
-    if (!mealPlan) {
-      throw new Error('No meal plan received from stream');
-    }
-
+    const mealPlan = await response.json();
+    
+    // Signal completion
+    if (onProgress) onProgress(100);
+    
     return addBudgetInfo(mealPlan, budgetTarget);
+  } finally {
+    if (progressInterval) clearInterval(progressInterval);
   }
-
-  // Non-streaming response
-  const mealPlan = await response.json();
-  return addBudgetInfo(mealPlan, budgetTarget);
 }
 
 /**

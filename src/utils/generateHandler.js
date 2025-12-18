@@ -1,13 +1,13 @@
 /**
  * Generate Handler
- * Handles the meal plan generation process with streaming progress
+ * Handles the meal plan generation process with progress indicator
  */
 
 import { generateMealPlan } from './claudeApi.js';
 import { transformClaudeResponse } from './mealPlanTransformer.js';
 
 /**
- * Handle meal plan generation with streaming progress
+ * Handle meal plan generation with progress indicator
  */
 export async function handleGenerate() {
   const preferences = document.getElementById('preferences-input')?.value || '';
@@ -26,28 +26,25 @@ export async function handleGenerate() {
   if (loadingIndicator) loadingIndicator.style.display = 'block';
   if (errorMessage) errorMessage.style.display = 'none';
   
-  // Estimated total characters for progress (rough estimate)
-  const estimatedTotal = 15000;
-  let startTime = Date.now();
+  const startTime = Date.now();
   
   try {
     // Load feedback history
     const feedbackHistory = JSON.parse(localStorage.getItem('mealPlannerFeedback') || '[]');
     
-    // Progress callback for streaming
-    const onProgress = (charsGenerated) => {
-      const percent = Math.min(95, Math.round((charsGenerated / estimatedTotal) * 100));
+    // Progress callback - receives percentage (0-100)
+    const onProgress = (percent) => {
       const elapsed = Math.round((Date.now() - startTime) / 1000);
       
       if (progressText) {
-        progressText.textContent = `Generating... ${percent}% (${elapsed}s)`;
+        progressText.textContent = `Generating... ${Math.round(percent)}% (${elapsed}s)`;
       }
       if (progressBar) {
         progressBar.style.width = `${percent}%`;
       }
     };
     
-    // Generate meal plan with streaming
+    // Generate meal plan
     const response = await generateMealPlan(null, preferences, budget, store, feedbackHistory, onProgress);
     
     // Update progress to 100%

@@ -1,7 +1,7 @@
 /**
  * Vercel Serverless Function
  * Proxies requests to Claude API with server-side API key
- * Supports streaming responses for better UX
+ * Uses Claude streaming for faster time-to-first-byte
  */
 
 export default async function handler(req, res) {
@@ -26,7 +26,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { userPrompt, budgetTarget, store, feedbackHistory, stream: wantStream } = req.body;
+    const { userPrompt, budgetTarget, store, feedbackHistory } = req.body;
 
     const baseSpec = await loadBaseSpecification();
     const feedbackSummary = buildFeedbackSummary(feedbackHistory || []);
@@ -62,7 +62,7 @@ CRITICAL REQUIREMENTS:
 5. Friday: coffee only breakfast, late lunch 1PM
 6. DO NOT truncate or skip the shopping_list - it is essential`;
 
-    // Call Claude API with streaming
+    // Call Claude API with streaming for faster response
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -85,84 +85,38 @@ CRITICAL REQUIREMENTS:
       return res.status(response.status).json({ error: errorMessage });
     }
 
-    // If client wants streaming, forward the stream
-    if (wantStream) {
-      res.setHeader('Content-Type', 'text/event-stream');
-      res.setHeader('Cache-Control', 'no-cache');
-      res.setHeader('Connection', 'keep-alive');
+    // Collect all chunks from the stream
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let fullContent = '';
 
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder();
-      let fullContent = '';
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
 
-      try {
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
+      const chunk = decoder.decode(value, { stream: true });
+      const lines = chunk.split('\n');
 
-          const chunk = decoder.decode(value, { stream: true });
-          const lines = chunk.split('\n');
-
-          for (const line of lines) {
-            if (line.startsWith('data: ')) {
-              const data = line.slice(6);
-              if (data === '[DONE]') continue;
-              
-              try {
-                const parsed = JSON.parse(data);
-                if (parsed.type === 'content_block_delta' && parsed.delta?.text) {
-                  fullContent += parsed.delta.text;
-                  // Send progress update to client
-                  res.write(`data: ${JSON.stringify({ type: 'progress', text: parsed.delta.text, length: fullContent.length })}\n\n`);
-                }
-              } catch (e) {
-                // Skip unparseable lines
-              }
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          const data = line.slice(6);
+          if (data === '[DONE]') continue;
+          
+          try {
+            const parsed = JSON.parse(data);
+            if (parsed.type === 'content_block_delta' && parsed.delta?.text) {
+              fullContent += parsed.delta.text;
             }
-          }
-        }
-
-        // Parse and validate final content
-        const mealPlan = parseAndValidateMealPlan(fullContent, budgetTarget);
-        res.write(`data: ${JSON.stringify({ type: 'complete', data: mealPlan })}\n\n`);
-        res.end();
-      } catch (streamError) {
-        res.write(`data: ${JSON.stringify({ type: 'error', error: streamError.message })}\n\n`);
-        res.end();
-      }
-    } else {
-      // Non-streaming: collect all chunks and return final JSON
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder();
-      let fullContent = '';
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-
-        const chunk = decoder.decode(value, { stream: true });
-        const lines = chunk.split('\n');
-
-        for (const line of lines) {
-          if (line.startsWith('data: ')) {
-            const data = line.slice(6);
-            if (data === '[DONE]') continue;
-            
-            try {
-              const parsed = JSON.parse(data);
-              if (parsed.type === 'content_block_delta' && parsed.delta?.text) {
-                fullContent += parsed.delta.text;
-              }
-            } catch (e) {
-              // Skip unparseable lines
-            }
+          } catch (e) {
+            // Skip unparseable lines
           }
         }
       }
-
-      const mealPlan = parseAndValidateMealPlan(fullContent, budgetTarget);
-      return res.status(200).json(mealPlan);
     }
+
+    // Parse and validate the complete response
+    const mealPlan = parseAndValidateMealPlan(fullContent, budgetTarget);
+    return res.status(200).json(mealPlan);
 
   } catch (error) {
     console.error('Claude API error:', error);
