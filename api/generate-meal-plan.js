@@ -112,7 +112,7 @@ EXAMPLE (partial - you must complete ALL days):
 DO NOT use "..." or placeholders. Generate REAL meal names and REAL recipes for ALL 7 days.`;
 
     // Call Claude API (non-streaming for reliability)
-    // Using higher max_tokens to ensure complete response with all meals and recipes
+    // Claude 3.5 Haiku max output is 8192 tokens
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -122,7 +122,7 @@ DO NOT use "..." or placeholders. Generate REAL meal names and REAL recipes for 
       },
       body: JSON.stringify({
         model: 'claude-3-5-haiku-20241022',
-        max_tokens: 12000,
+        max_tokens: 8192,
         system: systemPrompt,
         messages: [{ role: 'user', content: userMessage }]
       })
