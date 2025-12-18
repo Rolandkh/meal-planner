@@ -37,37 +37,82 @@ ${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}` : ''}
 
 Generate a meal plan. Return ONLY valid JSON. No markdown code blocks. Escape quotes with \\".`;
 
-    const userMessage = `Generate meal plan for: ${weekInfo.rangeStr}
+    const userMessage = `Generate a COMPLETE meal plan for: ${weekInfo.rangeStr}
 Budget: $${budgetTarget} | Store: ${store === 'coles-caulfield' ? 'Coles Caulfield' : 'Woolworths Carnegie'}
 ${userPrompt ? `Preferences: ${userPrompt}` : ''}
 
-CRITICAL: 
-- The year is ${weekInfo.year}
-- Use week_of: "${weekInfo.isoDate}"
-- Shopping day is ${weekInfo.shoppingDayName}
-${weekInfo.isPartialWeek ? `- This is a PARTIAL week regeneration. Only generate meals for: ${weekInfo.daysToGenerate.join(', ')}. Leave other days empty.` : `- Generate full week from ${weekInfo.shoppingDayName} to ${weekInfo.endDayName}`}
+CRITICAL REQUIREMENTS:
+- Year: ${weekInfo.year}
+- week_of: "${weekInfo.isoDate}"
+- Shopping day: ${weekInfo.shoppingDayName}
+${weekInfo.isPartialWeek ? `- PARTIAL WEEK: Only generate for: ${weekInfo.daysToGenerate.join(', ')}` : `- Generate FULL 7-day week`}
 
-Return this JSON structure:
+YOU MUST RETURN COMPLETE JSON with ALL of the following:
+
+1. shopping_list: Array of 25-40 items. Each item: {"item": "name", "quantity": "amount", "category": "Produce|Proteins|Dairy|Grains|Pantry|Bakery", "estimated_price": number, "aisle": number}
+
+2. roland_meals: EVERY day (saturday through friday) MUST have:
+   - breakfast: {"name": "Protein Bar", "time": "8:00 AM"}
+   - lunch: {"name": "ACTUAL MEAL NAME", "time": "12:30 PM"} - NOT "..." but real meal names like "Hummus Power Bowl", "Lentil Soup with Bread", etc.
+   - dinner: {"name": "ACTUAL MEAL NAME", "time": "5:30 PM"} - Real names like "Grilled Salmon with Vegetables", "Tofu Stir-Fry", etc.
+   - recipes: Array with 2-3 recipes per day, each having: {"name": "Recipe Name", "ing": ["100g ingredient 1", "200g ingredient 2", ...], "steps": ["Step 1 instruction", "Step 2 instruction", ...]}
+
+SPECIAL DAYS:
+- Thursday: lunch at 12:00 PM (last meal), dinner: null (fast begins)
+- Friday: breakfast is coffee only, lunch at 1:00 PM (break fast)
+
+3. maia_meals: Sunday-Wednesday only (null for Thu-Sat)
+   - Sunday: lunch and dinner
+   - Monday-Tuesday: breakfast (crumpet), packed lunch, dinner
+   - Wednesday: breakfast, lunch with Roland, dinner at mum's (null)
+
+4. prep_tasks: Each day has {"roland": {"morning": ["task 1", ...], "evening": ["task 1", ...]}, "maia": {...}}
+
+5. budget_estimate: Total estimated cost (number)
+
+EXAMPLE (partial - you must complete ALL days):
 {
   "week_of": "${weekInfo.isoDate}",
-  "shopping_list": [{"item": "Salmon fillet", "quantity": "300g", "category": "Proteins", "estimated_price": 12.00, "aisle": 4}],
+  "shopping_list": [
+    {"item": "Salmon fillet", "quantity": "400g", "category": "Proteins", "estimated_price": 15.00, "aisle": 4},
+    {"item": "Firm tofu", "quantity": "400g", "category": "Proteins", "estimated_price": 4.50, "aisle": 3},
+    {"item": "Mixed salad greens", "quantity": "4 bags", "category": "Produce", "estimated_price": 12.00, "aisle": 1},
+    {"item": "Broccoli", "quantity": "500g", "category": "Produce", "estimated_price": 4.00, "aisle": 1},
+    {"item": "Avocados", "quantity": "3", "category": "Produce", "estimated_price": 5.00, "aisle": 1},
+    {"item": "Hummus", "quantity": "400g", "category": "Dairy", "estimated_price": 6.00, "aisle": 3}
+  ],
   "roland_meals": {
-    "sunday": {"breakfast": {"name": "Protein Bar", "time": "8:00 AM"}, "lunch": {"name": "...", "time": "12:30 PM"}, "dinner": {"name": "...", "time": "5:30 PM"}, "recipes": [{"name": "...", "ing": ["120g salmon"], "steps": ["Step 1"]}]},
-    "monday": {...}, "tuesday": {...}, "wednesday": {...}, "thursday": {...}, "friday": {...}, "saturday": {...}
+    "saturday": {
+      "breakfast": {"name": "Protein Bar", "time": "8:00 AM"},
+      "lunch": {"name": "Mediterranean Hummus Bowl", "time": "12:30 PM"},
+      "dinner": {"name": "Pan-Seared Salmon with Roasted Vegetables", "time": "5:30 PM"},
+      "recipes": [
+        {"name": "Mediterranean Hummus Bowl", "ing": ["150g hummus", "200g mixed greens", "100g chickpeas", "50g feta", "15ml olive oil"], "steps": ["Arrange greens in bowl", "Add hummus and chickpeas", "Top with feta", "Drizzle olive oil"]},
+        {"name": "Pan-Seared Salmon", "ing": ["150g salmon fillet", "200g broccoli", "100g asparagus", "15ml olive oil", "lemon"], "steps": ["Season salmon with salt and pepper", "Pan-sear 4 min each side", "Steam vegetables", "Serve with lemon"]}
+      ]
+    },
+    "sunday": {
+      "breakfast": {"name": "Protein Bar", "time": "8:00 AM"},
+      "lunch": {"name": "Greek Salad with Chickpeas", "time": "12:30 PM"},
+      "dinner": {"name": "Grilled Tofu with Stir-Fried Vegetables", "time": "5:30 PM"},
+      "recipes": [...]
+    }
   },
-  "maia_meals": {"sunday": {"lunch": {...}, "dinner": {...}}, "monday": {...}, ...},
-  "prep_tasks": {"sunday": {"roland": {"morning": [], "evening": []}, "maia": {...}}, ...},
-  "budget_estimate": 140.00,
-  "notes": ""
+  "maia_meals": {
+    "sunday": {"lunch": {"name": "Pasta with butter", "time": "12:30 PM"}, "dinner": {"name": "Tofu portion with rice", "time": "5:30 PM"}},
+    "monday": {"breakfast": {"name": "Crumpet with strawberries", "time": "8:00 AM"}, "lunch": {"name": "Packed lunch: sandwich, fruit, yogurt", "time": "12:30 PM"}, "dinner": {"name": "Shared dinner with Roland", "time": "5:30 PM"}}
+  },
+  "prep_tasks": {
+    "saturday": {"roland": {"morning": ["Make protein bars for the week", "Wash and prep salad greens"], "evening": []}, "maia": {"morning": [], "evening": []}}
+  },
+  "budget_estimate": 142.50,
+  "notes": "Focus on anti-inflammatory foods this week"
 }
 
-REQUIREMENTS:
-1. shopping_list MUST have 25-40 items covering ALL meals
-2. Include recipes with ing[] and steps[] for Roland's lunch/dinner
-3. Thursday: lunch at 12PM, NO dinner (fast day)
-4. Friday: coffee only breakfast, lunch at 1PM`;
+DO NOT use "..." or placeholders. Generate REAL meal names and REAL recipes for ALL 7 days.`;
 
     // Call Claude API (non-streaming for reliability)
+    // Using higher max_tokens to ensure complete response with all meals and recipes
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -77,7 +122,7 @@ REQUIREMENTS:
       },
       body: JSON.stringify({
         model: 'claude-3-5-haiku-20241022',
-        max_tokens: 8000,
+        max_tokens: 12000,
         system: systemPrompt,
         messages: [{ role: 'user', content: userMessage }]
       })
@@ -134,6 +179,7 @@ function parseAndValidateMealPlan(content, budgetTarget, weekOf) {
     mealPlan = JSON.parse(jsonText);
   } catch (parseError) {
     console.error('JSON parse error, attempting repair:', parseError.message);
+    console.error('Raw JSON (first 500 chars):', jsonText.substring(0, 500));
     const fixedJson = attemptJsonRepair(jsonText);
     mealPlan = JSON.parse(fixedJson);
   }
@@ -141,10 +187,26 @@ function parseAndValidateMealPlan(content, budgetTarget, weekOf) {
   // Ensure correct week_of date
   mealPlan.week_of = weekOf;
 
+  // Log what we received for debugging
+  const days = ['saturday', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
+  console.log('Received meal plan structure:');
+  days.forEach(day => {
+    const rolandDay = mealPlan.roland_meals?.[day];
+    console.log(`  ${day}: breakfast=${rolandDay?.breakfast?.name || 'MISSING'}, lunch=${rolandDay?.lunch?.name || 'MISSING'}, dinner=${rolandDay?.dinner?.name || 'MISSING'}, recipes=${rolandDay?.recipes?.length || 0}`);
+  });
+
   // Validate shopping list exists
   if (!mealPlan.shopping_list || !Array.isArray(mealPlan.shopping_list) || mealPlan.shopping_list.length === 0) {
     console.warn('Shopping list missing, generating fallback');
     mealPlan.shopping_list = generateFallbackShoppingList(mealPlan);
+  } else {
+    console.log(`Shopping list has ${mealPlan.shopping_list.length} items`);
+  }
+
+  // Ensure roland_meals exists
+  if (!mealPlan.roland_meals) {
+    console.warn('roland_meals missing from response');
+    mealPlan.roland_meals = {};
   }
 
   return { ...mealPlan, budget_target: budgetTarget };
@@ -154,29 +216,37 @@ function parseAndValidateMealPlan(content, budgetTarget, weekOf) {
  * Load base specification
  */
 function loadBaseSpecification() {
-  return `Meal Planner Specification
+  return `You are a meal planning assistant generating detailed weekly meal plans.
 
-## ROLAND'S MEALS
-- Breakfast 8:00 AM: Protein bar
-- Lunch 12:30 PM: Protein bar + meal (~600 cal)
-- Dinner 5:30 PM: 120-150g protein (fish/tofu) + 200-300g vegetables + healthy fat. NO carbs.
-- Thursday: Early lunch 12:00 PM, NO dinner (24hr fast begins)
-- Friday: Coffee only for breakfast, Late lunch 1:00 PM
+## ROLAND'S DIETARY REQUIREMENTS
+- Focus: Anti-inflammatory, gut health, high protein, low carb for dinners
+- Breakfast 8:00 AM: Always a protein bar (homemade)
+- Lunch 12:30 PM: Balanced meal with protein bar (~600 cal total)
+- Dinner 5:30 PM: 120-150g protein (fish: salmon, sardines, mackerel, tuna OR plant: tofu, tempeh) + 200-300g vegetables + healthy fats (olive oil, avocado). NO carbs at dinner.
+- Preferred proteins: Wild salmon, sardines, mackerel, firm tofu, tempeh
+- Include fermented foods: sauerkraut, kimchi, kefir, Greek yogurt
+- Thursday: FAST DAY - Early lunch at 12:00 PM is LAST MEAL, NO dinner
+- Friday: POST-FAST - Coffee only for breakfast, Break fast with light lunch at 1:00 PM
 
-## MAIA'S MEALS
-- Sunday: Lunch and dinner with Roland
-- Monday-Tuesday: Breakfast (crumpet), Packed lunch, Dinner with Roland
-- Wednesday: Breakfast (crumpet), Lunch with Roland, At mum's for dinner
-- Thursday-Saturday: No meals
+## MAIA (6 YEAR OLD) - Simple Kid-Friendly Meals
+- Sunday: Lunch (pasta, simple) and dinner with Roland (plain portion of his meal)
+- Monday-Tuesday: Breakfast (crumpet with fruit), Packed school lunch (sandwich, yogurt, fruit, crackers), Dinner with Roland
+- Wednesday: Breakfast, Lunch with Roland, At mum's for dinner (no meal needed)
+- Thursday-Saturday: Not with Roland (no meals needed)
 
-## RECIPES
-Include detailed recipes for Roland's lunch and dinner with:
-- ing: array of ingredients with quantities
-- steps: array of cooking steps
+## REQUIRED OUTPUT FORMAT
+You MUST generate:
+1. Complete meals for ALL 7 days (breakfast, lunch, dinner for each)
+2. 2-3 detailed recipes per day with full ingredients list and cooking steps
+3. 25-40 shopping items covering all ingredients
+4. Prep tasks for meal preparation
 
-## SHOPPING LIST
-Include ALL ingredients needed for the week with:
-- item, quantity, category (Produce/Dairy/Proteins/Bakery/Pantry/Grains), estimated_price, aisle`;
+## PROTEIN BAR RECIPE (Make on Saturday/Sunday)
+Include this in saturday or sunday recipes:
+- Base: oats, protein powder, nut butter, maple syrup, mashed banana
+- Add-ins: walnuts, chia seeds, cacao, dried berries
+- Chocolate coating: dark chocolate, coconut oil
+- Makes 12 bars for the week`;
 }
 
 /**

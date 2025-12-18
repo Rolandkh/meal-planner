@@ -43,16 +43,39 @@ export function generateExportDocument() {
   const weekRange = `${formatDate(startDate)} - ${formatDate(endDate)}, ${startDate.getFullYear()}`;
   const today = new Date();
   const isToday = (dayKey) => {
-    const dayIndex = DAY_ORDER.indexOf(dayKey);
+    // Week starts from shopping day (Saturday), not Sunday
+    const shoppingDay = 6; // Saturday
+    const weekOrderFromShoppingDay = [];
+    for (let i = 0; i < 7; i++) {
+      const dayIdx = (shoppingDay + i) % 7;
+      const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+      weekOrderFromShoppingDay.push(dayNames[dayIdx]);
+    }
+    
+    const dayOffset = weekOrderFromShoppingDay.indexOf(dayKey);
+    if (dayOffset === -1) return false;
+    
     const dayDate = new Date(startDate);
-    dayDate.setDate(startDate.getDate() + dayIndex);
+    dayDate.setDate(startDate.getDate() + dayOffset);
     return dayDate.toDateString() === today.toDateString();
   };
   
   const getDayDate = (dayKey) => {
-    const dayIndex = DAY_ORDER.indexOf(dayKey);
+    // Week starts from shopping day (Saturday), not Sunday
+    // So we need to calculate offset based on actual week order
+    const shoppingDay = 6; // Saturday
+    const weekOrderFromShoppingDay = [];
+    for (let i = 0; i < 7; i++) {
+      const dayIndex = (shoppingDay + i) % 7;
+      const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+      weekOrderFromShoppingDay.push(dayNames[dayIndex]);
+    }
+    
+    const dayOffset = weekOrderFromShoppingDay.indexOf(dayKey);
+    if (dayOffset === -1) return 'Unknown';
+    
     const dayDate = new Date(startDate);
-    dayDate.setDate(startDate.getDate() + dayIndex);
+    dayDate.setDate(startDate.getDate() + dayOffset);
     return formatDateShort(dayDate);
   };
   
@@ -89,26 +112,28 @@ export function generateExportDocument() {
     
     // Roland's meals
     if (roland?.meals) {
-      if (roland.meals.b) {
+      // Breakfast
+      if (roland.meals.b && roland.meals.b.name) {
         // Friday special case - coffee only, no breakfast label
-        if (dayKey === 'friday') {
+        if (dayKey === 'friday' && (roland.meals.b.name.toLowerCase().includes('coffee') || roland.meals.b.name.toLowerCase().includes('tea'))) {
           doc += `- **Coffee only** (no breakfast)\n`;
         } else {
           doc += `- **${roland.meals.b.time || '8:00 AM'} Breakfast:** ${roland.meals.b.name}\n`;
         }
       }
-      if (roland.meals.l) {
-        const lunchTime = dayKey === 'thursday' ? '12:00 PM' : (roland.meals.l.time || '12:30 PM');
-        const lunchNote = dayKey === 'thursday' ? ' (EARLY - LAST MEAL)' : (dayKey !== 'thursday' ? ' + 10-min walk' : '');
+      
+      // Lunch
+      if (roland.meals.l && roland.meals.l.name) {
+        const lunchTime = dayKey === 'thursday' ? '12:00 PM' : (dayKey === 'friday' ? '1:00 PM' : (roland.meals.l.time || '12:30 PM'));
+        const lunchNote = dayKey === 'thursday' ? ' (EARLY - LAST MEAL)' : (dayKey === 'friday' ? ' (Break fast - eat slowly)' : ' + 10-min walk');
         doc += `- **${lunchTime} Lunch:** ${roland.meals.l.name}${lunchNote}\n`;
       }
-      if (roland.meals.d) {
-        if (dayKey === 'thursday') {
+      
+      // Dinner
+      if (roland.meals.d && roland.meals.d.name) {
+        if (dayKey === 'thursday' || roland.meals.d.name.includes('NO DINNER') || roland.meals.d.name.includes('FAST')) {
           doc += `- **NO DINNER - FAST BEGINS**\n`;
           doc += `- **Evening:** Water, black coffee, herbal tea only\n`;
-        } else if (dayKey === 'friday') {
-          // Friday dinner
-          doc += `- **${roland.meals.d.time || '5:30 PM'} Dinner:** ${roland.meals.d.name} + walk\n`;
         } else {
           doc += `- **${roland.meals.d.time || '5:30 PM'} Dinner:** ${roland.meals.d.name} + walk\n`;
         }
@@ -135,9 +160,12 @@ export function generateExportDocument() {
       }
     }
     
-    // Today's tasks
-    if (dayKey === 'sunday') {
-      doc += `- **Today's Task:** Make protein bars (recipe below)\n`;
+    // Today's tasks - protein bars made on shopping day (Saturday) or Sunday
+    if (dayKey === 'saturday' || dayKey === 'sunday') {
+      const prepTask = dayKey === 'saturday' 
+        ? `- **Today's Task:** Make protein bars (recipe below)\n`
+        : (day?.roland?.prep?.morning?.length > 0 ? '' : ''); // Only add Sunday task if no morning prep exists
+      if (prepTask) doc += prepTask;
     }
     
     doc += `\n`;
@@ -150,9 +178,11 @@ export function generateExportDocument() {
 
 `;
   
-  // Protein bar recipe (special section)
+  // Protein bar recipe (special section) - check both Saturday and Sunday since either could be prep day
+  const saturdayRecipes = MEAL_PLAN_DATA.days?.saturday?.roland?.recipes || [];
   const sundayRecipes = MEAL_PLAN_DATA.days?.sunday?.roland?.recipes || [];
-  const proteinBarRecipe = sundayRecipes.find(r => r && r.name && (r.name.toLowerCase().includes('protein bar') || r.name.toLowerCase().includes('protein')));
+  const allPrepRecipes = [...saturdayRecipes, ...sundayRecipes];
+  const proteinBarRecipe = allPrepRecipes.find(r => r && r.name && (r.name.toLowerCase().includes('protein bar') || r.name.toLowerCase().includes('protein')));
   
   if (proteinBarRecipe && proteinBarRecipe.ing && Array.isArray(proteinBarRecipe.ing) && proteinBarRecipe.ing.length > 0) {
     doc += `## PROTEIN BAR RECIPE
