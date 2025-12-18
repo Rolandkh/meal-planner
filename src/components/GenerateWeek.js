@@ -6,6 +6,14 @@
 import { handleGenerate } from '../utils/generateHandler.js';
 
 export function renderGenerateWeek() {
+  const savedShoppingDay = localStorage.getItem('shoppingDay') || '6';
+  
+  // After render, set the saved shopping day value
+  setTimeout(() => {
+    const select = document.getElementById('shopping-day-input');
+    if (select) select.value = savedShoppingDay;
+  }, 0);
+  
   return `
     <div class="container">
       <button class="back-btn" onclick="navigateTo('home')" style="margin-bottom:8px">← Back to Home</button>
@@ -59,6 +67,26 @@ export function renderGenerateWeek() {
             <option value="coles-caulfield">Coles Caulfield Village</option>
             <option value="woolworths-carnegie">Woolworths Carnegie North</option>
           </select>
+        </div>
+        
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-weight:600;margin-bottom:8px">Shopping Day</label>
+          <select 
+            id="shopping-day-input"
+            style="width:100%;padding:12px;border:2px solid #e5e7eb;border-radius:8px;font-size:1rem"
+            onchange="localStorage.setItem('shoppingDay', this.value)"
+          >
+            <option value="0">Sunday</option>
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6" selected>Saturday</option>
+          </select>
+          <div style="font-size:0.8rem;color:#718096;margin-top:4px">
+            Week runs from shopping day to the day before. Mid-week regeneration only updates remaining days.
+          </div>
         </div>
         
         <button 

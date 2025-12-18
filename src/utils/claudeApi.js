@@ -11,9 +11,10 @@
  * @param {string} store - Store identifier
  * @param {Array} feedbackHistory - Previous feedback (last 8 weeks)
  * @param {Function} onProgress - Callback for progress updates: (percent, section) => void
+ * @param {number} shoppingDay - Day of week for shopping (0=Sunday, 6=Saturday)
  * @returns {Promise<Object>} Generated meal plan data
  */
-export async function generateMealPlan(_apiKey, userPrompt, budgetTarget, store, feedbackHistory = [], onProgress = null) {
+export async function generateMealPlan(_apiKey, userPrompt, budgetTarget, store, feedbackHistory = [], onProgress = null, shoppingDay = 6) {
   // Simulated progress with section names
   let progressInterval = null;
   let progress = 0;
@@ -53,7 +54,7 @@ export async function generateMealPlan(_apiKey, userPrompt, budgetTarget, store,
     const response = await fetch('/api/generate-meal-plan', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userPrompt, budgetTarget, store, feedbackHistory })
+      body: JSON.stringify({ userPrompt, budgetTarget, store, feedbackHistory, shoppingDay })
     });
 
     if (!response.ok) {

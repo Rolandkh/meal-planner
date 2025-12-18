@@ -26,11 +26,11 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { userPrompt, budgetTarget, store, feedbackHistory } = req.body;
+    const { userPrompt, budgetTarget, store, feedbackHistory, shoppingDay = 6 } = req.body; // 6 = Saturday
 
     const baseSpec = loadBaseSpecification();
     const feedbackSummary = buildFeedbackSummary(feedbackHistory || []);
-    const weekInfo = getNextWeekDate();
+    const weekInfo = getWeekInfo(shoppingDay);
 
     const systemPrompt = `${baseSpec}
 ${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}` : ''}
@@ -41,7 +41,11 @@ Generate a meal plan. Return ONLY valid JSON. No markdown code blocks. Escape qu
 Budget: $${budgetTarget} | Store: ${store === 'coles-caulfield' ? 'Coles Caulfield' : 'Woolworths Carnegie'}
 ${userPrompt ? `Preferences: ${userPrompt}` : ''}
 
-CRITICAL: The year is ${weekInfo.year}. Use week_of: "${weekInfo.isoDate}"
+CRITICAL: 
+- The year is ${weekInfo.year}
+- Use week_of: "${weekInfo.isoDate}"
+- Shopping day is ${weekInfo.shoppingDayName}
+${weekInfo.isPartialWeek ? `- This is a PARTIAL week regeneration. Only generate meals for: ${weekInfo.daysToGenerate.join(', ')}. Leave other days empty.` : `- Generate full week from ${weekInfo.shoppingDayName} to ${weekInfo.endDayName}`}
 
 Return this JSON structure:
 {
@@ -210,22 +214,75 @@ function attemptJsonRepair(jsonText) {
 }
 
 /**
- * Get next week's date info
+ * Get week info based on shopping day
+ * @param {number} shoppingDay - Day of week (0=Sunday, 6=Saturday)
  */
-function getNextWeekDate() {
-  const today = new Date();
-  const nextSunday = new Date(today);
-  const daysUntilSunday = today.getDay() === 0 ? 7 : 7 - today.getDay(); // Next Sunday (not today)
-  nextSunday.setDate(today.getDate() + daysUntilSunday);
-  
-  const nextSaturday = new Date(nextSunday);
-  nextSaturday.setDate(nextSunday.getDate() + 6);
-  
+function getWeekInfo(shoppingDay = 6) {
+  const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  const dayNamesCapitalized = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const rangeStr = `${months[nextSunday.getMonth()]} ${nextSunday.getDate()} - ${months[nextSaturday.getMonth()]} ${nextSaturday.getDate()}, ${nextSunday.getFullYear()}`;
-  const isoDate = `${nextSunday.getFullYear()}-${String(nextSunday.getMonth() + 1).padStart(2, '0')}-${String(nextSunday.getDate()).padStart(2, '0')}`;
   
-  return { rangeStr, isoDate, year: nextSunday.getFullYear() };
+  const today = new Date();
+  const todayDayOfWeek = today.getDay();
+  
+  // Calculate the start of the current meal plan week (most recent shopping day)
+  const weekStart = new Date(today);
+  let daysSinceShoppingDay = (todayDayOfWeek - shoppingDay + 7) % 7;
+  
+  // If today is shopping day, this is a new week
+  const isShoppingDay = todayDayOfWeek === shoppingDay;
+  
+  if (isShoppingDay) {
+    // Today is shopping day - generate full week starting today
+    daysSinceShoppingDay = 0;
+  }
+  
+  weekStart.setDate(today.getDate() - daysSinceShoppingDay);
+  
+  // Week ends the day before the next shopping day
+  const weekEnd = new Date(weekStart);
+  weekEnd.setDate(weekStart.getDate() + 6);
+  
+  // Determine if this is a partial week regeneration (mid-week)
+  const isPartialWeek = !isShoppingDay && daysSinceShoppingDay > 0;
+  
+  // Build list of days to generate
+  const daysToGenerate = [];
+  const allDaysInOrder = [];
+  
+  // Create ordered list of days starting from shopping day
+  for (let i = 0; i < 7; i++) {
+    const dayIndex = (shoppingDay + i) % 7;
+    allDaysInOrder.push(dayNames[dayIndex]);
+  }
+  
+  if (isPartialWeek) {
+    // Only generate from today until the day before shopping day
+    for (let i = daysSinceShoppingDay; i < 7; i++) {
+      const dayIndex = (shoppingDay + i) % 7;
+      daysToGenerate.push(dayNamesCapitalized[dayIndex]);
+    }
+  } else {
+    // Full week
+    daysToGenerate.push(...allDaysInOrder.map(d => d.charAt(0).toUpperCase() + d.slice(1)));
+  }
+  
+  // Format date strings
+  const rangeStr = `${months[weekStart.getMonth()]} ${weekStart.getDate()} - ${months[weekEnd.getMonth()]} ${weekEnd.getDate()}, ${weekStart.getFullYear()}`;
+  const isoDate = `${weekStart.getFullYear()}-${String(weekStart.getMonth() + 1).padStart(2, '0')}-${String(weekStart.getDate()).padStart(2, '0')}`;
+  
+  return {
+    rangeStr,
+    isoDate,
+    year: weekStart.getFullYear(),
+    shoppingDay,
+    shoppingDayName: dayNamesCapitalized[shoppingDay],
+    endDayName: dayNamesCapitalized[(shoppingDay + 6) % 7],
+    isPartialWeek,
+    daysToGenerate,
+    allDaysInOrder,
+    daysSinceShoppingDay
+  };
 }
 
 /**

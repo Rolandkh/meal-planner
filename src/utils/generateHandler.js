@@ -13,6 +13,7 @@ export async function handleGenerate() {
   const preferences = document.getElementById('preferences-input')?.value || '';
   const budget = parseFloat(document.getElementById('budget-input')?.value || '150');
   const store = document.getElementById('store-input')?.value || 'coles-caulfield';
+  const shoppingDay = parseInt(localStorage.getItem('shoppingDay') || '6'); // Default: Saturday (6)
   
   // Get UI elements
   const generateBtn = document.getElementById('generate-btn');
@@ -47,7 +48,7 @@ export async function handleGenerate() {
     };
     
     // Generate meal plan
-    const response = await generateMealPlan(null, preferences, budget, store, feedbackHistory, onProgress);
+    const response = await generateMealPlan(null, preferences, budget, store, feedbackHistory, onProgress, shoppingDay);
     
     // Update progress to complete
     if (progressText) progressText.textContent = 'Complete!';
