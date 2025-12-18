@@ -72,9 +72,12 @@ export function renderGenerateWeek() {
         </button>
         
         <div id="loading-indicator" style="display:none;text-align:center;padding:16px;color:#718096">
-          <div style="font-size:1.2rem;margin-bottom:8px">⏳</div>
-          <div>Generating your meal plan with Claude AI...</div>
-          <div style="font-size:0.85rem;margin-top:4px">This may take 30-60 seconds</div>
+          <div style="font-size:1.5rem;margin-bottom:12px">✨</div>
+          <div id="progress-text" style="font-weight:600;margin-bottom:12px">Generating your meal plan...</div>
+          <div style="background:#e5e7eb;border-radius:999px;height:8px;overflow:hidden;margin-bottom:8px">
+            <div id="progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg, #667eea, #764ba2);transition:width 0.3s ease"></div>
+          </div>
+          <div style="font-size:0.85rem;color:#a0aec0">Using Claude Haiku for faster generation</div>
         </div>
         
         <div id="error-message" style="display:none;background:#fee;border:2px solid #fcc;color:#c33;padding:12px;border-radius:8px;margin-top:12px"></div>

@@ -1,7 +1,7 @@
 /**
  * Vercel Serverless Function
  * Proxies requests to Claude API with server-side API key
- * This keeps the API key secure and never exposes it to the client
+ * Supports streaming responses for better UX
  */
 
 export default async function handler(req, res) {
@@ -10,46 +10,32 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // Get API key from environment variable (set in Vercel dashboard)
-  // Try both possible variable names (Vercel sometimes uses different casing)
+  // Get API key from environment variable
   const apiKey = (process.env.ANTHROPIC_API_KEY || process.env.anthropic_api_key || process.env.Anthropic_Api_Key)?.trim();
 
   if (!apiKey) {
-    console.error('ANTHROPIC_API_KEY is not set or is empty');
-    console.error('Available env vars:', Object.keys(process.env).filter(k => k.toLowerCase().includes('anthropic')));
     return res.status(500).json({ 
-      error: 'API key not configured. Please set ANTHROPIC_API_KEY in Vercel environment variables and redeploy. Visit /api/check-env to verify.' 
+      error: 'API key not configured. Please set ANTHROPIC_API_KEY in Vercel environment variables.' 
     });
   }
 
-  // Validate API key format
   if (!apiKey.startsWith('sk-ant-')) {
-    console.error('API key format is invalid (should start with sk-ant-)');
-    console.error('Key starts with:', apiKey.substring(0, 10));
     return res.status(500).json({ 
-      error: `Invalid API key format. The key should start with "sk-ant-". Found: "${apiKey.substring(0, 10)}...". Please check your Vercel environment variable.` 
+      error: `Invalid API key format. The key should start with "sk-ant-".` 
     });
   }
-
-  // Log key info (first 10 and last 4 chars only for security)
-  console.log('Using API key:', apiKey.substring(0, 10) + '...' + apiKey.substring(apiKey.length - 4));
 
   try {
-    const { userPrompt, budgetTarget, store, feedbackHistory } = req.body;
+    const { userPrompt, budgetTarget, store, feedbackHistory, stream: wantStream } = req.body;
 
-    // Load base specification
     const baseSpec = await loadBaseSpecification();
-
-    // Build feedback summary
     const feedbackSummary = buildFeedbackSummary(feedbackHistory || []);
 
-    // Construct the system prompt - streamlined for performance
     const systemPrompt = `${baseSpec}
 ${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}` : ''}
 
 Generate a meal plan. Return ONLY valid JSON. No markdown. Escape quotes with \\".`;
 
-    // Construct the user prompt - streamlined for performance
     const userMessage = `Week: ${getNextWeekDate()}
 Budget: $${budgetTarget} | Store: ${store === 'coles-caulfield' ? 'Coles Caulfield' : 'Woolworths Carnegie'}
 ${userPrompt ? `Preferences: ${userPrompt}` : ''}
@@ -76,7 +62,7 @@ CRITICAL REQUIREMENTS:
 5. Friday: coffee only breakfast, late lunch 1PM
 6. DO NOT truncate or skip the shopping_list - it is essential`;
 
-    // Call Claude API
+    // Call Claude API with streaming
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -85,158 +71,140 @@ CRITICAL REQUIREMENTS:
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-5-20250929',
+        model: 'claude-3-5-haiku-20241022',
         max_tokens: 8000,
+        stream: true,
         system: systemPrompt,
-        messages: [
-          {
-            role: 'user',
-            content: userMessage
-          }
-        ]
+        messages: [{ role: 'user', content: userMessage }]
       })
     });
 
     if (!response.ok) {
-      let errorData;
+      const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+      const errorMessage = errorData.error?.message || errorData.error || `API error: ${response.status}`;
+      return res.status(response.status).json({ error: errorMessage });
+    }
+
+    // If client wants streaming, forward the stream
+    if (wantStream) {
+      res.setHeader('Content-Type', 'text/event-stream');
+      res.setHeader('Cache-Control', 'no-cache');
+      res.setHeader('Connection', 'keep-alive');
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let fullContent = '';
+
       try {
-        errorData = await response.json();
-      } catch (e) {
-        errorData = { error: { message: await response.text() } };
-      }
-      
-      console.error('Claude API error response:', JSON.stringify(errorData, null, 2));
-      console.error('Status:', response.status);
-      console.error('Status text:', response.statusText);
-      
-      // Extract error message properly - Anthropic API error format
-      let errorMessage = 'Unknown error';
-      
-      // Anthropic API returns errors in format: { error: { type: "...", message: "..." } }
-      if (errorData.error) {
-        if (typeof errorData.error === 'string') {
-          errorMessage = errorData.error;
-        } else if (errorData.error.message) {
-          errorMessage = errorData.error.message;
-        } else if (errorData.error.type) {
-          errorMessage = `${errorData.error.type}: ${errorData.error.message || JSON.stringify(errorData.error)}`;
-        } else {
-          errorMessage = JSON.stringify(errorData.error);
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          const chunk = decoder.decode(value, { stream: true });
+          const lines = chunk.split('\n');
+
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const data = line.slice(6);
+              if (data === '[DONE]') continue;
+              
+              try {
+                const parsed = JSON.parse(data);
+                if (parsed.type === 'content_block_delta' && parsed.delta?.text) {
+                  fullContent += parsed.delta.text;
+                  // Send progress update to client
+                  res.write(`data: ${JSON.stringify({ type: 'progress', text: parsed.delta.text, length: fullContent.length })}\n\n`);
+                }
+              } catch (e) {
+                // Skip unparseable lines
+              }
+            }
+          }
         }
-      } else if (errorData.message) {
-        errorMessage = errorData.message;
-      } else if (errorData.type) {
-        errorMessage = `${errorData.type}: ${errorData.message || ''}`;
-      } else {
-        // Show full error for debugging
-        errorMessage = `API error (${response.status}): ${JSON.stringify(errorData)}`;
+
+        // Parse and validate final content
+        const mealPlan = parseAndValidateMealPlan(fullContent, budgetTarget);
+        res.write(`data: ${JSON.stringify({ type: 'complete', data: mealPlan })}\n\n`);
+        res.end();
+      } catch (streamError) {
+        res.write(`data: ${JSON.stringify({ type: 'error', error: streamError.message })}\n\n`);
+        res.end();
       }
-      
-      // Provide more helpful error messages
-      if (errorMessage.includes('invalid x-api-key') || errorMessage.includes('authentication') || errorMessage.includes('401')) {
-        errorMessage = 'Invalid API key. Please check that ANTHROPIC_API_KEY is set correctly in Vercel environment variables. Make sure there are no extra spaces or characters.';
-      } else if (errorMessage.includes('model') || errorMessage.includes('invalid')) {
-        errorMessage = `Claude API error: ${errorMessage}. Please check the model name and API version.`;
+    } else {
+      // Non-streaming: collect all chunks and return final JSON
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let fullContent = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value, { stream: true });
+        const lines = chunk.split('\n');
+
+        for (const line of lines) {
+          if (line.startsWith('data: ')) {
+            const data = line.slice(6);
+            if (data === '[DONE]') continue;
+            
+            try {
+              const parsed = JSON.parse(data);
+              if (parsed.type === 'content_block_delta' && parsed.delta?.text) {
+                fullContent += parsed.delta.text;
+              }
+            } catch (e) {
+              // Skip unparseable lines
+            }
+          }
+        }
       }
-      
-      return res.status(response.status).json({ 
-        error: errorMessage 
-      });
-    }
 
-    const data = await response.json();
-    const content = data.content[0].text;
-
-    // Extract JSON from response
-    let jsonText = content.trim();
-    
-    // Remove markdown code blocks if present
-    if (jsonText.startsWith('```')) {
-      jsonText = jsonText.replace(/^```json\n?/i, '').replace(/```\s*$/i, '').trim();
+      const mealPlan = parseAndValidateMealPlan(fullContent, budgetTarget);
+      return res.status(200).json(mealPlan);
     }
-    
-    // Remove any leading/trailing text that's not JSON
-    // Look for the first { and last } to extract just the JSON object
-    const firstBrace = jsonText.indexOf('{');
-    const lastBrace = jsonText.lastIndexOf('}');
-    if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
-      jsonText = jsonText.substring(firstBrace, lastBrace + 1);
-    }
-    
-    // Log the extracted JSON length for debugging
-    console.log('Extracted JSON length:', jsonText.length);
-
-    let mealPlan;
-    try {
-      mealPlan = JSON.parse(jsonText);
-    } catch (parseError) {
-      // Log the problematic JSON for debugging
-      console.error('JSON parse error:', parseError.message);
-      const positionMatch = parseError.message.match(/position (\d+)/);
-      const position = positionMatch ? parseInt(positionMatch[1]) : null;
-      
-      console.error('JSON length:', jsonText.length);
-      if (position !== null) {
-        console.error('Error at position:', position);
-        const start = Math.max(0, position - 300);
-        const end = Math.min(jsonText.length, position + 300);
-        const context = jsonText.substring(start, end);
-        console.error('Context around error (characters', start, 'to', end, '):');
-        console.error(context);
-        console.error('Character at error position:', JSON.stringify(jsonText[position]));
-        
-        // Try to find the line number
-        const beforeError = jsonText.substring(0, position);
-        const lineNumber = (beforeError.match(/\n/g) || []).length + 1;
-        const columnNumber = position - beforeError.lastIndexOf('\n');
-        console.error('Approximate line:', lineNumber, 'column:', columnNumber);
-      }
-      
-      // Log a sample of the JSON to help identify the issue
-      console.error('First 500 characters:', jsonText.substring(0, 500));
-      console.error('Last 500 characters:', jsonText.substring(Math.max(0, jsonText.length - 500)));
-      
-      // Try to repair common JSON issues
-      let fixedJson = attemptJsonRepair(jsonText, parseError, position);
-      
-      try {
-        mealPlan = JSON.parse(fixedJson);
-        console.log('Successfully parsed JSON after repair attempt');
-      } catch (repairError) {
-        // If repair didn't work, throw the original error with context
-        const errorMsg = `Failed to parse JSON response from Claude: ${parseError.message}. ` +
-          `The AI response contains invalid JSON. Please try generating the meal plan again. ` +
-          `If the issue persists, check the server logs for more details.`;
-        throw new Error(errorMsg);
-      }
-    }
-
-    // Validate shopping list exists and has items
-    if (!mealPlan.shopping_list || !Array.isArray(mealPlan.shopping_list) || mealPlan.shopping_list.length === 0) {
-      console.warn('Shopping list is empty or missing, generating default placeholder');
-      // Generate a basic shopping list based on the meals if missing
-      mealPlan.shopping_list = generateFallbackShoppingList(mealPlan);
-    }
-
-    // Return the meal plan
-    return res.status(200).json({
-      ...mealPlan,
-      budget_target: budgetTarget
-    });
 
   } catch (error) {
     console.error('Claude API error:', error);
-    console.error('Error details:', {
-      message: error.message,
-      stack: error.stack,
-      apiKeyPresent: !!process.env.ANTHROPIC_API_KEY,
-      apiKeyLength: process.env.ANTHROPIC_API_KEY?.length
-    });
-    
     return res.status(500).json({ 
-      error: error.message || 'Failed to generate meal plan. Check server logs for details.' 
+      error: error.message || 'Failed to generate meal plan.' 
     });
   }
+}
+
+/**
+ * Parse and validate the meal plan JSON
+ */
+function parseAndValidateMealPlan(content, budgetTarget) {
+  let jsonText = content.trim();
+  
+  // Remove markdown code blocks if present
+  if (jsonText.startsWith('```')) {
+    jsonText = jsonText.replace(/^```json\n?/i, '').replace(/```\s*$/i, '').trim();
+  }
+  
+  // Extract just the JSON object
+  const firstBrace = jsonText.indexOf('{');
+  const lastBrace = jsonText.lastIndexOf('}');
+  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+    jsonText = jsonText.substring(firstBrace, lastBrace + 1);
+  }
+
+  let mealPlan;
+  try {
+    mealPlan = JSON.parse(jsonText);
+  } catch (parseError) {
+    // Try to repair common JSON issues
+    const fixedJson = attemptJsonRepair(jsonText, parseError);
+    mealPlan = JSON.parse(fixedJson);
+  }
+
+  // Validate shopping list exists
+  if (!mealPlan.shopping_list || !Array.isArray(mealPlan.shopping_list) || mealPlan.shopping_list.length === 0) {
+    mealPlan.shopping_list = generateFallbackShoppingList(mealPlan);
+  }
+
+  return { ...mealPlan, budget_target: budgetTarget };
 }
 
 /**
@@ -335,126 +303,34 @@ function buildFeedbackSummary(feedbackHistory) {
 /**
  * Attempt to repair common JSON issues
  */
-function attemptJsonRepair(jsonText, parseError, errorPosition) {
+function attemptJsonRepair(jsonText, parseError) {
   let fixed = jsonText;
-  let repairs = [];
+  
+  // Extract error position from error message if available
+  const positionMatch = parseError?.message?.match(/position (\d+)/);
+  const errorPosition = positionMatch ? parseInt(positionMatch[1]) : null;
   
   // Fix 1: Remove trailing commas before closing brackets/braces
-  const trailingCommaMatches = fixed.match(/,(\s*[}\]])/g);
-  if (trailingCommaMatches) {
-    fixed = fixed.replace(/,(\s*[}\]])/g, '$1');
-    repairs.push('Removed trailing commas');
-  }
+  fixed = fixed.replace(/,(\s*[}\]])/g, '$1');
   
-  // Fix 2: Remove comments (single line and multi-line)
-  const commentMatches = fixed.match(/\/\/.*$|\/\*[\s\S]*?\*\//g);
-  if (commentMatches) {
-    fixed = fixed.replace(/\/\/.*$/gm, ''); // Single line comments
-    fixed = fixed.replace(/\/\*[\s\S]*?\*\//g, ''); // Multi-line comments
-    repairs.push('Removed comments');
-  }
+  // Fix 2: Remove comments
+  fixed = fixed.replace(/\/\/.*$/gm, '');
+  fixed = fixed.replace(/\/\*[\s\S]*?\*\//g, '');
   
-  // Fix 3: Remove any control characters that might break JSON
+  // Fix 3: Remove control characters
   fixed = fixed.replace(/[\x00-\x1F\x7F]/g, '');
   
-  // Fix 4: If error mentions missing comma or closing brace, try to fix it
-  if ((parseError.message.includes("Expected ','") || parseError.message.includes("Expected '}'")) && errorPosition !== null) {
-    // Look at context around the error - expand the search area
-    const contextStart = Math.max(0, errorPosition - 200);
-    const contextEnd = Math.min(fixed.length, errorPosition + 200);
-    const context = fixed.substring(contextStart, contextEnd);
-    const relativeErrorPos = errorPosition - contextStart;
-    
-    console.log('Context around error:', context);
-    console.log('Relative error position in context:', relativeErrorPos);
-    
-    // Try multiple patterns to find where the comma/brace is missing
-    
-    // Pattern 1: String value followed by closing brace/bracket without comma
-    // Look backwards from error position for: "value" } or "value" ]
-    let searchStart = Math.max(0, relativeErrorPos - 50);
-    let searchEnd = Math.min(context.length, relativeErrorPos + 10);
-    let searchContext = context.substring(searchStart, searchEnd);
-    
-    // Look for pattern: "..." } or "..." ] (missing comma)
-    const missingCommaAfterString = /("(?:[^"\\]|\\.)*")\s*([}\]])/;
-    let match = searchContext.match(missingCommaAfterString);
-    if (match) {
-      const matchStart = contextStart + searchStart + searchContext.indexOf(match[0]);
-      const insertPos = matchStart + match[1].length;
-      fixed = fixed.substring(0, insertPos) + ',' + fixed.substring(insertPos);
-      repairs.push('Added missing comma after string value');
-      return fixed; // Return early since we made a fix
-    }
-    
-    // Pattern 2: Number or boolean/null value followed by closing brace/bracket
-    const missingCommaAfterValue = /([\d\w]+)\s*([}\]])/;
-    match = searchContext.match(missingCommaAfterValue);
-    if (match && (match[1] === 'true' || match[1] === 'false' || match[1] === 'null' || /^\d+$/.test(match[1]))) {
-      const matchStart = contextStart + searchStart + searchContext.indexOf(match[0]);
-      const insertPos = matchStart + match[1].length;
-      fixed = fixed.substring(0, insertPos) + ',' + fixed.substring(insertPos);
-      repairs.push('Added missing comma after value');
-      return fixed;
-    }
-    
-    // Pattern 3: Property value followed by another property without comma
-    const missingCommaBetweenProps = /(["\}\]\]])\s*"([^"]+)":/;
-    match = searchContext.match(missingCommaBetweenProps);
-    if (match) {
-      const matchStart = contextStart + searchStart + searchContext.indexOf(match[0]);
-      const insertPos = matchStart + match[1].length;
-      fixed = fixed.substring(0, insertPos) + ',' + fixed.substring(insertPos);
-      repairs.push('Added missing comma between properties');
-      return fixed;
-    }
-    
-    // Pattern 4: Array element followed by closing bracket without comma
-    const missingCommaInArray = /(["\d\]\]])\s*(\])/;
-    match = searchContext.match(missingCommaInArray);
-    if (match) {
-      const matchStart = contextStart + searchStart + searchContext.indexOf(match[0]);
-      const insertPos = matchStart + match[1].length;
-      fixed = fixed.substring(0, insertPos) + ',' + fixed.substring(insertPos);
-      repairs.push('Added missing comma in array');
-      return fixed;
-    }
-    
-    // Pattern 5: If error says "Expected '}'", maybe there's a missing closing brace
-    if (parseError.message.includes("Expected '}'")) {
-      // Count braces up to error position
-      const beforeError = fixed.substring(0, errorPosition);
-      const openCount = (beforeError.match(/{/g) || []).length;
-      const closeCount = (beforeError.match(/}/g) || []).length;
-      if (openCount > closeCount) {
-        // Try to insert closing brace at error position
-        fixed = fixed.substring(0, errorPosition) + '}' + fixed.substring(errorPosition);
-        repairs.push('Added missing closing brace');
-        return fixed;
-      }
-    }
-  }
-  
-  // Fix 5: Ensure proper closing of brackets/braces
+  // Fix 4: Ensure proper closing of brackets/braces
   const openBraces = (fixed.match(/{/g) || []).length;
   const closeBraces = (fixed.match(/}/g) || []).length;
   const openBrackets = (fixed.match(/\[/g) || []).length;
   const closeBrackets = (fixed.match(/\]/g) || []).length;
   
-  // Add missing closing braces
   if (openBraces > closeBraces) {
     fixed += '}'.repeat(openBraces - closeBraces);
-    repairs.push(`Added ${openBraces - closeBraces} missing closing braces`);
   }
-  
-  // Add missing closing brackets
   if (openBrackets > closeBrackets) {
     fixed += ']'.repeat(openBrackets - closeBrackets);
-    repairs.push(`Added ${openBrackets - closeBrackets} missing closing brackets`);
-  }
-  
-  if (repairs.length > 0) {
-    console.log('JSON repair attempts:', repairs.join(', '));
   }
   
   return fixed;
