@@ -35,7 +35,12 @@ export default async function handler(req, res) {
     const systemPrompt = `${baseSpec}
 ${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}` : ''}
 
-Generate a meal plan. Return ONLY valid JSON. No markdown code blocks. Escape quotes with \\".`;
+CRITICAL OUTPUT RULES:
+- You MUST output ONLY a JSON object starting with { and ending with }
+- Do NOT include any text before or after the JSON
+- Do NOT say "I understand", "Here is", "Sure", or any other preamble
+- Do NOT wrap in markdown code blocks
+- Start your response with the { character immediately`;
 
     const userMessage = `Generate a COMPLETE meal plan for: ${weekInfo.rangeStr}
 Budget: $${budgetTarget} | Store: ${store === 'coles-caulfield' ? 'Coles Caulfield' : 'Woolworths Carnegie'}
@@ -109,7 +114,9 @@ EXAMPLE (partial - you must complete ALL days):
   "notes": "Focus on anti-inflammatory foods this week"
 }
 
-DO NOT use "..." or placeholders. Generate REAL meal names and REAL recipes for ALL 7 days.`;
+DO NOT use "..." or placeholders. Generate REAL meal names and REAL recipes for ALL 7 days.
+
+IMPORTANT: Start your response with { immediately. No preamble text.`;
 
     // Call Claude API (non-streaming for reliability)
     // Claude 3.5 Haiku max output is 8192 tokens
@@ -162,24 +169,32 @@ DO NOT use "..." or placeholders. Generate REAL meal names and REAL recipes for 
 function parseAndValidateMealPlan(content, budgetTarget, weekOf) {
   let jsonText = content.trim();
   
+  console.log('Raw response (first 200 chars):', jsonText.substring(0, 200));
+  
   // Remove markdown code blocks if present
-  if (jsonText.startsWith('```')) {
-    jsonText = jsonText.replace(/^```json?\n?/i, '').replace(/```\s*$/i, '').trim();
+  if (jsonText.includes('```')) {
+    jsonText = jsonText.replace(/```json?\n?/gi, '').replace(/```/g, '').trim();
   }
   
-  // Extract just the JSON object
+  // Extract just the JSON object - find the first { and last }
   const firstBrace = jsonText.indexOf('{');
   const lastBrace = jsonText.lastIndexOf('}');
-  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
-    jsonText = jsonText.substring(firstBrace, lastBrace + 1);
+  
+  if (firstBrace === -1 || lastBrace === -1 || lastBrace <= firstBrace) {
+    console.error('No valid JSON object found in response');
+    console.error('Full response:', jsonText);
+    throw new Error('Claude did not return valid JSON. Please try again.');
   }
+  
+  jsonText = jsonText.substring(firstBrace, lastBrace + 1);
+  console.log('Extracted JSON (first 200 chars):', jsonText.substring(0, 200));
 
   let mealPlan;
   try {
     mealPlan = JSON.parse(jsonText);
   } catch (parseError) {
     console.error('JSON parse error, attempting repair:', parseError.message);
-    console.error('Raw JSON (first 500 chars):', jsonText.substring(0, 500));
+    console.error('JSON around error (first 1000 chars):', jsonText.substring(0, 1000));
     const fixedJson = attemptJsonRepair(jsonText);
     mealPlan = JSON.parse(fixedJson);
   }
