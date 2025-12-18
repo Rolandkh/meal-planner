@@ -212,7 +212,7 @@ export const MEAL_PLAN_DATA = {
           }
         ]
       },
-      maia: {
+      maya: {
         meals: {
           b: null, // No breakfast on Sunday
           l: { name: 'Pasta with butter + steamed vegetables', time: '12:30 PM' },
@@ -273,7 +273,7 @@ export const MEAL_PLAN_DATA = {
           }
         ]
       },
-      maia: {
+      maya: {
         meals: {
           b: { name: 'Crumpet + strawberries', time: '8:00 AM' },
           l: { name: 'Packed Lunch: Pasta salad, yogurt, berries, crackers', time: '12:30 PM' },
@@ -346,7 +346,7 @@ export const MEAL_PLAN_DATA = {
           }
         ]
       },
-      maia: {
+      maya: {
         meals: {
           b: { name: 'Crumpet + blueberries', time: '8:00 AM' },
           l: { name: 'Packed Lunch: Sandwich, fruit, yogurt, carrot sticks', time: '12:30 PM' },
@@ -417,7 +417,7 @@ export const MEAL_PLAN_DATA = {
           }
         ]
       },
-      maia: {
+      maya: {
         meals: {
           b: { name: 'Crumpet + fruit', time: '8:00 AM' },
           l: { name: 'Hummus + crackers + veg sticks', time: '12:30 PM' },
@@ -471,7 +471,7 @@ export const MEAL_PLAN_DATA = {
           }
         ]
       },
-      maia: {
+      maya: {
         meals: {
           b: null,
           l: null,
@@ -536,7 +536,7 @@ export const MEAL_PLAN_DATA = {
           }
         ]
       },
-      maia: {
+      maya: {
         meals: {
           b: null,
           l: null,
@@ -600,7 +600,7 @@ export const MEAL_PLAN_DATA = {
           }
         ]
       },
-      maia: {
+      maya: {
         meals: {
           b: null,
           l: null,

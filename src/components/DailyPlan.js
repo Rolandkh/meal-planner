@@ -90,7 +90,7 @@ export function renderDay(dayKey) {
   }
   
   const roland = day.roland;
-  const maia = day.maia;
+  const maya = day.maya;
   
   return `
     <div class="container">
@@ -119,17 +119,17 @@ export function renderDay(dayKey) {
         ${renderMeal(roland.meals.d, '🍽️', 'Dinner')}
       </div>
       
-      ${maia && (maia.meals.b || maia.meals.l || maia.meals.d) ? `
+      ${maya && (maya.meals.b || maya.meals.l || maya.meals.d) ? `
         <div class="card">
-          <h2 style="color:#db2777;border-bottom:2px solid #ec4899;padding-bottom:8px;margin-bottom:16px">MAIA</h2>
-          ${maia.meals.b ? renderMeal(maia.meals.b, '🌅', 'Breakfast') : ''}
-          ${maia.meals.l ? renderMeal(maia.meals.l, '🍱', maia.meals.l.name.includes('Packed') ? 'Packed Lunch' : 'Lunch') : ''}
-          ${maia.meals.d ? renderMeal(maia.meals.d, '🍽️', 'Dinner') : maia.meals.d === null && (maia.meals.b || maia.meals.l) ? '<div style="color:#718096;font-style:italic">At mum\'s for dinner</div>' : ''}
+          <h2 style="color:#db2777;border-bottom:2px solid #ec4899;padding-bottom:8px;margin-bottom:16px">MAYA</h2>
+          ${maya.meals.b ? renderMeal(maya.meals.b, '🌅', 'Breakfast') : ''}
+          ${maya.meals.l ? renderMeal(maya.meals.l, '🍱', maya.meals.l.name.includes('Packed') ? 'Packed Lunch' : 'Lunch') : ''}
+          ${maya.meals.d ? renderMeal(maya.meals.d, '🍽️', 'Dinner') : maya.meals.d === null && (maya.meals.b || maya.meals.l) ? '<div style="color:#718096;font-style:italic">At mum\'s for dinner</div>' : ''}
         </div>
       ` : ''}
       
       ${renderPrepTasks(roland.prep, dayKey, 'roland')}
-      ${maia && renderPrepTasks(maia.prep, dayKey, 'maia')}
+      ${maya && renderPrepTasks(maya.prep, dayKey, 'maya')}
       
       ${roland.recipes ? roland.recipes.map(recipe => `
         <div class="card">

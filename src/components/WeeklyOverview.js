@@ -35,7 +35,7 @@ export function renderWeeklyOverview() {
       ${DAY_ORDER.map((dayKey, index) => {
         const day = MEAL_PLAN_DATA.days[dayKey];
         const roland = day.roland;
-        const maia = day.maia;
+        const maya = day.maya;
         const special = day.isFast || day.isPost;
         
         return `
@@ -54,13 +54,13 @@ export function renderWeeklyOverview() {
               </div>
             </div>
             
-            ${maia && (maia.meals.b || maia.meals.l || maia.meals.d) ? `
+            ${maya && (maya.meals.b || maya.meals.l || maya.meals.d) ? `
               <div>
-                <div style="font-weight:600;color:#db2777;margin-bottom:6px">MAIA</div>
+                <div style="font-weight:600;color:#db2777;margin-bottom:6px">MAYA</div>
                 <div style="font-size:0.9rem;color:#374151">
-                  ${maia.meals.b ? `<div>🌅 ${maia.meals.b.name}</div>` : ''}
-                  ${maia.meals.l ? `<div>🍱 ${maia.meals.l.name}</div>` : ''}
-                  ${maia.meals.d ? `<div>🍽️ ${maia.meals.d.name}</div>` : maia.meals.d === null && (maia.meals.b || maia.meals.l) ? '<div style="font-style:italic;color:#718096">At mum\'s for dinner</div>' : ''}
+                  ${maya.meals.b ? `<div>🌅 ${maya.meals.b.name}</div>` : ''}
+                  ${maya.meals.l ? `<div>🍱 ${maya.meals.l.name}</div>` : ''}
+                  ${maya.meals.d ? `<div>🍽️ ${maya.meals.d.name}</div>` : maya.meals.d === null && (maya.meals.b || maya.meals.l) ? '<div style="font-style:italic;color:#718096">At mum\'s for dinner</div>' : ''}
                 </div>
               </div>
             ` : ''}

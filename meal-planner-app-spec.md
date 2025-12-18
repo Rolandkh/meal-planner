@@ -778,7 +778,7 @@ Output required:
     },
     ...
   },
-  "maia_meals": {
+  "maya_meals": {
     "sunday": {
       "lunch": {...},
       "dinner": {...}

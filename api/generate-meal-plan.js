@@ -66,12 +66,13 @@ SPECIAL DAYS:
 - Thursday: lunch at 12:00 PM (last meal), dinner: null (fast begins)
 - Friday: breakfast is coffee only, lunch at 1:00 PM (break fast)
 
-3. maia_meals: Sunday-Wednesday only (null for Thu-Sat)
+3. maya_meals: Sunday-Wednesday only (null for Thu-Sat)
+   CRITICAL: Use "maya_meals" as the JSON key (Maya with a Y, not Maia with an I)
    - Sunday: lunch and dinner
    - Monday-Tuesday: breakfast (crumpet), packed lunch, dinner
    - Wednesday: breakfast, lunch with Roland, dinner at mum's (null)
 
-4. prep_tasks: Each day has {"roland": {"morning": ["task 1", ...], "evening": ["task 1", ...]}, "maia": {...}}
+4. prep_tasks: Each day has {"roland": {"morning": ["task 1", ...], "evening": ["task 1", ...]}, "maya": {...}}
 
 5. budget_estimate: Total estimated cost (number)
 
@@ -103,12 +104,12 @@ EXAMPLE (partial - you must complete ALL days):
       "recipes": [...]
     }
   },
-  "maia_meals": {
+  "maya_meals": {
     "sunday": {"lunch": {"name": "Pasta with butter", "time": "12:30 PM"}, "dinner": {"name": "Tofu portion with rice", "time": "5:30 PM"}},
     "monday": {"breakfast": {"name": "Crumpet with strawberries", "time": "8:00 AM"}, "lunch": {"name": "Packed lunch: sandwich, fruit, yogurt", "time": "12:30 PM"}, "dinner": {"name": "Shared dinner with Roland", "time": "5:30 PM"}}
   },
   "prep_tasks": {
-    "saturday": {"roland": {"morning": ["Make protein bars for the week", "Wash and prep salad greens"], "evening": []}, "maia": {"morning": [], "evening": []}}
+    "saturday": {"roland": {"morning": ["Make protein bars for the week", "Wash and prep salad greens"], "evening": []}, "maya": {"morning": [], "evening": []}}
   },
   "budget_estimate": 142.50,
   "notes": "Focus on anti-inflammatory foods this week"
@@ -243,7 +244,8 @@ function loadBaseSpecification() {
 - Thursday: FAST DAY - Early lunch at 12:00 PM is LAST MEAL, NO dinner
 - Friday: POST-FAST - Coffee only for breakfast, Break fast with light lunch at 1:00 PM
 
-## MAIA (6 YEAR OLD) - Simple Kid-Friendly Meals
+## MAYA (4 YEAR OLD DAUGHTER) - Simple Kid-Friendly Meals
+IMPORTANT: Her name is spelled "Maya" with a Y (not "Maia" with an I)
 - Sunday: Lunch (pasta, simple) and dinner with Roland (plain portion of his meal)
 - Monday-Tuesday: Breakfast (crumpet with fruit), Packed school lunch (sandwich, yogurt, fruit, crackers), Dinner with Roland
 - Wednesday: Breakfast, Lunch with Roland, At mum's for dinner (no meal needed)

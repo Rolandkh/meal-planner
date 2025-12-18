@@ -99,7 +99,7 @@ export function generateExportDocument() {
     if (!day) return;
     
     const roland = day.roland;
-    const maia = day.maia;
+    const maya = day.maya;
     const dayName = WEEK_NAMES[index];
     const dayDate = day.date || getDayDate(dayKey);
     const todayNote = isToday(dayKey) ? ' (Today' + (dayKey === 'sunday' ? ' - Protein Bar Prep Day' : '') + ')' : '';
@@ -145,21 +145,21 @@ export function generateExportDocument() {
     }
     
     // Maya's meals - format on separate lines for readability
-    if (maia?.meals && (maia.meals.b || maia.meals.l || maia.meals.d)) {
+    if (maya?.meals && (maya.meals.b || maya.meals.l || maya.meals.d)) {
       doc += `- **Maya:**\n`;
-      if (maia.meals.b) {
-        doc += `  - ${maia.meals.b.time || '8:00 AM'} Breakfast: ${maia.meals.b.name}\n`;
+      if (maya.meals.b) {
+        doc += `  - ${maya.meals.b.time || '8:00 AM'} Breakfast: ${maya.meals.b.name}\n`;
       }
-      if (maia.meals.l) {
-        const lunchLabel = maia.meals.l.name.includes('Packed') ? 'Packed Lunch' : 'Lunch';
-        doc += `  - ${maia.meals.l.time || '12:30 PM'} ${lunchLabel}: ${maia.meals.l.name}\n`;
+      if (maya.meals.l) {
+        const lunchLabel = maya.meals.l.name.includes('Packed') ? 'Packed Lunch' : 'Lunch';
+        doc += `  - ${maya.meals.l.time || '12:30 PM'} ${lunchLabel}: ${maya.meals.l.name}\n`;
       }
-      if (maia.meals.d) {
+      if (maya.meals.d) {
         if (dayKey === 'wednesday') {
           doc += `  - Dinner: At mum's\n`;
         } else {
-          const sharedNote = maia.meals.d.name && maia.meals.d.name.includes('shared') ? '' : ' (shared with Roland)';
-          doc += `  - ${maia.meals.d.time || '5:30 PM'} Dinner: ${maia.meals.d.name}${sharedNote}\n`;
+          const sharedNote = maya.meals.d.name && maya.meals.d.name.includes('shared') ? '' : ' (shared with Roland)';
+          doc += `  - ${maya.meals.d.time || '5:30 PM'} Dinner: ${maya.meals.d.name}${sharedNote}\n`;
         }
       }
     }

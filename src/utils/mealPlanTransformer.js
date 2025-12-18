@@ -48,7 +48,7 @@ export function transformClaudeResponse(claudeResponse) {
   // Transform Roland's meals
   DAY_ORDER.forEach(dayKey => {
     const rolandDay = claudeResponse.roland_meals?.[dayKey];
-    const maiaDay = claudeResponse.maia_meals?.[dayKey];
+    const mayaDay = claudeResponse.maya_meals?.[dayKey] || claudeResponse.maia_meals?.[dayKey]; // Support both spellings for backward compatibility
     const prepTasks = claudeResponse.prep_tasks?.[dayKey] || {};
 
     // Debug: log what we received for each day
@@ -110,24 +110,24 @@ export function transformClaudeResponse(claudeResponse) {
         },
         recipes: rolandDay?.recipes || []
       },
-      maia: {
+      maya: {
         meals: {
-          b: maiaDay?.breakfast ? {
-            name: maiaDay.breakfast.name,
-            time: maiaDay.breakfast.time
+          b: mayaDay?.breakfast ? {
+            name: mayaDay.breakfast.name,
+            time: mayaDay.breakfast.time
           } : (shouldHaveMayaBreakfast(dayKey) ? { name: 'Crumpet with fruit', time: '8:00 AM' } : undefined),
-          l: maiaDay?.lunch ? {
-            name: maiaDay.lunch.name,
-            time: maiaDay.lunch.time
+          l: mayaDay?.lunch ? {
+            name: mayaDay.lunch.name,
+            time: mayaDay.lunch.time
           } : (shouldHaveMayaLunch(dayKey) ? { name: 'Packed lunch', time: '12:30 PM' } : undefined),
-          d: maiaDay?.dinner ? {
-            name: maiaDay.dinner.name,
-            time: maiaDay.dinner.time
+          d: mayaDay?.dinner ? {
+            name: mayaDay.dinner.name,
+            time: mayaDay.dinner.time
           } : (shouldHaveMayaDinner(dayKey) ? { name: 'Shared dinner with Roland', time: '5:30 PM' } : undefined)
         },
         prep: {
-          morning: prepTasks.maia?.morning || [],
-          evening: prepTasks.maia?.evening || []
+          morning: prepTasks.maya?.morning || prepTasks.maia?.morning || [], // Support both spellings
+          evening: prepTasks.maya?.evening || prepTasks.maia?.evening || [] // Support both spellings
         }
       }
     };
