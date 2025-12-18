@@ -49,8 +49,8 @@ export async function handleGenerate() {
     // Generate meal plan
     const response = await generateMealPlan(null, preferences, budget, store, feedbackHistory, onProgress);
     
-    // Update progress to 100%
-    if (progressText) progressText.textContent = 'Processing...';
+    // Update progress to complete
+    if (progressText) progressText.textContent = 'Complete!';
     if (progressBar) progressBar.style.width = '100%';
     
     // Transform response
@@ -59,12 +59,10 @@ export async function handleGenerate() {
     // Save to localStorage
     localStorage.setItem('currentMealPlan', JSON.stringify(transformedPlan));
     
-    // Calculate total time
-    const totalTime = Math.round((Date.now() - startTime) / 1000);
-    
-    // Navigate to home (which will load the new plan)
-    alert(`Meal plan generated in ${totalTime} seconds!`);
-    navigateTo('home');
+    // Brief delay to show "Complete!" then navigate to home
+    setTimeout(() => {
+      navigateTo('home');
+    }, 500);
     
   } catch (error) {
     console.error('Generation error:', error);
