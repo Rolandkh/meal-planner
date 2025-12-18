@@ -101,7 +101,7 @@ ENTRANCE
 
 **Common items:**
 - Frozen stir-fry vegetable mix
-- Frozen berries (for protein bars and Maia's snacks)
+- Frozen berries (for protein bars and Maya's snacks)
 - Frozen vegetables
 - Ice cream
 - Frozen meals
@@ -126,7 +126,7 @@ ENTRANCE
 - **Other:** Oat flour
 
 **Meal plan items from Aisle 1:**
-- Crumpets (Maia's breakfast)
+- Crumpets (Maya's breakfast)
 - Quinoa (Roland's buddha bowls)
 - Whole grain wraps (Roland's lunch option)
 - Chia seeds (protein bars, yogurt toppings)
@@ -186,7 +186,7 @@ ENTRANCE
 - Snack foods
 - Chocolate bars (individual)
 
-**Note for meal plan:** This aisle is typically SKIPPED as the Diet Compass plan avoids processed snacks. Only visit if needed for special occasions or Maia's preferences.
+**Note for meal plan:** This aisle is typically SKIPPED as the Diet Compass plan avoids processed snacks. Only visit if needed for special occasions or Maya's preferences.
 
 ---
 
@@ -195,7 +195,7 @@ ENTRANCE
 
 **Products:**
 - **Canned legumes:** Chickpeas, lentils, beans
-- **Pasta:** Spaghetti, penne, fusilli (for Maia)
+- **Pasta:** Spaghetti, penne, fusilli (for Maya)
 - **Rice:** Basmati, jasmine, brown rice
 - **Sauces:** Tamari/soy sauce
 - **Fermented foods:** Kimchi, sauerkraut
@@ -206,7 +206,7 @@ ENTRANCE
 **Meal plan items from Aisle 5:**
 - Canned chickpeas (lunches, salads)
 - Canned lentils (for soups)
-- Pasta (Maia's dinners)
+- Pasta (Maya's dinners)
 - Tamari sauce (stir-fries)
 - Kimchi (dinner sides)
 - Sauerkraut (dinner sides)
@@ -312,7 +312,7 @@ For the **Diet Compass Meal Plan**, follow this route for maximum efficiency:
 
 6. **Aisle 5**
    - Canned chickpeas, lentils
-   - Pasta (for Maia)
+   - Pasta (for Maya)
    - Tamari, kimchi, sauerkraut
    - Turmeric powder
    - Ready-made soups (lentil, vegetable)
@@ -455,10 +455,10 @@ const PRODUCT_OVERRIDES = {
 - Fresh Produce: Salad greens (4 bags), vegetables, fruits
 - Dairy: Greek yogurt (2-3 x 1kg), kefir, tofu, hummus
 - Meat & Seafood: Salmon, other fish
-- Aisle 5: Canned chickpeas, pasta (for Maia), kimchi/sauerkraut
+- Aisle 5: Canned chickpeas, pasta (for Maya), kimchi/sauerkraut
 - Aisle 6: Canned fish (sardines, tuna)
 - Frozen: Vegetables, berries
-- Aisle 1: Crumpets (for Maia), quinoa, wraps
+- Aisle 1: Crumpets (for Maya), quinoa, wraps
 
 ### Pantry Restock (Monthly)
 **Only when running low:**

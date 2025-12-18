@@ -60,7 +60,7 @@ export function renderHome() {
         const special = day.isFast || day.isPost;
         const rolandMeals = day.roland?.meals;
         const maiaMeals = day.maia?.meals;
-        const hasMaia = maiaMeals && (maiaMeals.b || maiaMeals.l || maiaMeals.d);
+        const hasMaya = maiaMeals && (maiaMeals.b || maiaMeals.l || maiaMeals.d);
         
         return `
           <button class="btn ${special ? 'special' : ''}" onclick="navigateTo('${dayKey}')">
@@ -69,7 +69,7 @@ export function renderHome() {
               <div style="font-size:0.85rem;color:#718096;margin-top:4px">
                 Roland: ${rolandMeals?.b?.name || '—'} • ${rolandMeals?.l?.name || '—'}
               </div>
-              ${hasMaia ? `<div style="font-size:0.75rem;color:#db2777;margin-top:2px">Maia: ${maiaMeals.b?.name || maiaMeals.l?.name || maiaMeals.d?.name || '—'}</div>` : ''}
+              ${hasMaya ? `<div style="font-size:0.75rem;color:#db2777;margin-top:2px">Maya: ${maiaMeals.b?.name || maiaMeals.l?.name || maiaMeals.d?.name || '—'}</div>` : ''}
               ${special ? `<div style="font-size:0.75rem;color:#a855f7;font-weight:600;margin-top:4px">${day.isFast ? '⚡ Fast Day' : '🌅 Post-Fast'}</div>` : ''}
             </div>
             <span>→</span>

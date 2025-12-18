@@ -1,6 +1,6 @@
 /**
  * Daily Plan Component
- * Displays detailed day view with meals for both Roland and Maia, prep tasks, recipes, and reminders
+ * Displays detailed day view with meals for both Roland and Maya, prep tasks, recipes, and reminders
  */
 
 import { getMealPlanData } from '../data/mealPlanLoader.js';

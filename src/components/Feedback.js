@@ -30,7 +30,7 @@ export function renderFeedback() {
         <h2>👍 Loved</h2>
         <textarea 
           id="loved-input" 
-          placeholder="Which meals did you love? (e.g., Salmon dinner, Buddha bowl, Maia's pasta night)"
+          placeholder="Which meals did you love? (e.g., Salmon dinner, Buddha bowl, Maya's pasta night)"
           style="width:100%;min-height:80px;padding:12px;border:2px solid #e5e7eb;border-radius:8px;font-family:inherit;font-size:0.95rem;resize:vertical"
         ></textarea>
       </div>
@@ -39,7 +39,7 @@ export function renderFeedback() {
         <h2>👎 Didn't Work</h2>
         <textarea 
           id="didnt-work-input" 
-          placeholder="Which meals didn't work? (e.g., Mackerel - too fishy for Maia, Lentil soup was bland)"
+          placeholder="Which meals didn't work? (e.g., Mackerel - too fishy for Maya, Lentil soup was bland)"
           style="width:100%;min-height:80px;padding:12px;border:2px solid #e5e7eb;border-radius:8px;font-family:inherit;font-size:0.95rem;resize:vertical"
         ></textarea>
       </div>
@@ -66,7 +66,7 @@ export function renderFeedback() {
         <h2>Notes for Next Week</h2>
         <textarea 
           id="notes-input" 
-          placeholder="Any specific requests or preferences for next week? (e.g., Less mackerel. Maia loved the pasta night - keep that. Need more variety in lunches.)"
+          placeholder="Any specific requests or preferences for next week? (e.g., Less mackerel. Maya loved the pasta night - keep that. Need more variety in lunches.)"
           style="width:100%;min-height:120px;padding:12px;border:2px solid #e5e7eb;border-radius:8px;font-family:inherit;font-size:0.95rem;resize:vertical"
         ></textarea>
       </div>

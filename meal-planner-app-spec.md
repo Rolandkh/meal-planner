@@ -7,7 +7,7 @@
 ## 1. OVERVIEW
 
 ### Purpose
-A one-click weekly meal planning app that generates personalized meal plans for Roland (Diet Compass protocol) and Maia (4-year-old daughter), creates an ingredient-efficient shopping list optimized by store aisle, and provides daily prep guidance.
+A one-click weekly meal planning app that generates personalized meal plans for Roland (Diet Compass protocol) and Maya (4-year-old daughter), creates an ingredient-efficient shopping list optimized by store aisle, and provides daily prep guidance.
 
 ### Core Workflow
 ```
@@ -32,7 +32,7 @@ A one-click weekly meal planning app that generates personalized meal plans for 
                                     ↓
 ┌─────────────────────────────────────────────────────────────────────┐
 │  4. OUTPUT                                                          │
-│     - Weekly meal plan view (Roland + Maia)                         │
+│     - Weekly meal plan view (Roland + Maya)                         │
 │     - Aisle-optimized shopping list with prices                     │
 │     - Daily prep checklists                                         │
 │     - Budget summary                                                │
@@ -171,7 +171,7 @@ Must be portable, finger-food friendly:
 
 **No allergies**
 
-### Maia-Friendly Meal Ideas
+### Maya-Friendly Meal Ideas
 
 **Dinners (can share components with Roland's meals):**
 - Plain pasta with butter/parmesan + steamed vegetables on side
@@ -200,24 +200,24 @@ Must be portable, finger-food friendly:
 ## 4. INGREDIENT EFFICIENCY RULES
 
 ### Core Principle
-Maximize ingredient overlap between Roland's and Maia's meals, and across the week, to minimize waste and shopping costs.
+Maximize ingredient overlap between Roland's and Maya's meals, and across the week, to minimize waste and shopping costs.
 
 ### Strategies
 
 **1. Shared Base Ingredients**
 Plan meals around common ingredients that work for both:
-- Hummus (Roland's lunches + Maia's snacks)
-- Greek yogurt (Roland's bowls + Maia's snacks)
-- Carrots, cucumber, capsicum (salads + Maia's finger food)
-- Pasta (Maia's dinner base, Roland can skip carb but share sauce prep)
-- Salmon/fish (cook extra, Maia gets plain portion)
-- Chickpeas (Roland's salads + can mash for Maia)
-- Berries (protein bars + Maia's fruit)
+- Hummus (Roland's lunches + Maya's snacks)
+- Greek yogurt (Roland's bowls + Maya's snacks)
+- Carrots, cucumber, capsicum (salads + Maya's finger food)
+- Pasta (Maya's dinner base, Roland can skip carb but share sauce prep)
+- Salmon/fish (cook extra, Maya gets plain portion)
+- Chickpeas (Roland's salads + can mash for Maya)
+- Berries (protein bars + Maya's fruit)
 
 **2. Batch Cooking Leverage**
 - Roland's Sunday protein bar batch uses bananas, berries, oats
 - Cook extra grains on Sunday for both meal plans
-- Roast vegetables in bulk (Roland's bowls, Maia's sides)
+- Roast vegetables in bulk (Roland's bowls, Maya's sides)
 
 **3. "Use It Up" Priority**
 - Fresh produce used within 3-4 days
@@ -489,7 +489,7 @@ get_woolworths_products({ query: "Greek yogurt 1kg" })
 ### Prep Task Categories
 
 **Morning Prep** (before leaving house)
-- Pack Maia's lunch (Monday, Wednesday)
+- Pack Maya's lunch (Monday, Wednesday)
 - Defrost items if needed
 - Quick breakfast prep
 
@@ -502,14 +502,14 @@ get_woolworths_products({ query: "Greek yogurt 1kg" })
 - Make protein bars (every 2 weeks)
 - Cook grains for the week
 - Wash and prep vegetables
-- Portion snacks for Maia
+- Portion snacks for Maya
 
 ### Prep Display Format
 ```
 MONDAY PREP
 
 Morning (10 mins):
-☐ Pack Maia's lunchbox:
+☐ Pack Maya's lunchbox:
   - Strawberries in container
   - Crackers + hummus pot
   - Yogurt pouch
@@ -538,7 +538,7 @@ Evening (15 mins):
 │  │  This week's preferences:       │   │
 │  │  ─────────────────────────────  │   │
 │  │  I have leftover salmon to      │   │
-│  │  use up. Maia wants pasta       │   │
+│  │  use up. Maya wants pasta       │   │
 │  │  twice this week.               │   │
 │  │                                 │   │
 │  └─────────────────────────────────┘   │
@@ -549,7 +549,7 @@ Evening (15 mins):
 │                                         │
 │  ───────────────────────────────────   │
 │  Quick prompts:                         │
-│  [Use up: ___] [Maia wants: ___]       │
+│  [Use up: ___] [Maya wants: ___]       │
 │  [Budget: tight/normal] [More fish]    │
 │                                         │
 └─────────────────────────────────────────┘
@@ -572,7 +572,7 @@ Evening (15 mins):
 │  ───────────────────────────────────   │
 │  Roland: Protein bar | Hummus Bowl |   │
 │          Salmon & Greens                │
-│  Maia:   — | Pasta + veg | Fish +      │
+│  Maya:   — | Pasta + veg | Fish +      │
 │          mashed potato                  │
 │  Prep: Make protein bars, cook grains  │
 │  ───────────────────────────────────   │
@@ -645,7 +645,7 @@ Evening (15 mins):
 │  📋 TODAY'S PREP                        │
 │  ──────────────────────────────────    │
 │  Morning:                               │
-│  ☐ Pack Maia's lunchbox                │
+│  ☐ Pack Maya's lunchbox                │
 │                                         │
 │  Evening:                               │
 │  ☐ Defrost tofu for tomorrow           │
@@ -708,7 +708,7 @@ Evening (15 mins):
 │  [Salmon dinner] [Buddha bowl]         │
 │                                         │
 │  👎 Didn't work                         │
-│  [Mackerel - too fishy for Maia]       │
+│  [Mackerel - too fishy for Maya]       │
 │                                         │
 │  ──────────────────────────────────    │
 │  SHOPPING                               │
@@ -721,7 +721,7 @@ Evening (15 mins):
 │  NOTES FOR NEXT WEEK                    │
 │  ──────────────────────────────────    │
 │  ┌─────────────────────────────────┐   │
-│  │ Less mackerel. Maia loved the   │   │
+│  │ Less mackerel. Maya loved the   │   │
 │  │ pasta night - keep that. Need   │   │
 │  │ more variety in my lunches.     │   │
 │  └─────────────────────────────────┘   │
@@ -738,7 +738,7 @@ Evening (15 mins):
 ### System Prompt (Base Specification)
 The full specification document (this document) serves as the system prompt, providing:
 - Roland's Diet Compass rules
-- Maia's meal requirements and schedule
+- Maya's meal requirements and schedule
 - Ingredient efficiency rules
 - Budget constraints
 - Meal options and recipes
@@ -760,7 +760,7 @@ Constraints:
 
 Output required:
 1. Roland's meals (Sun-Sat) with recipes
-2. Maia's meals (Sun lunch/dinner, Mon all, Tue all, Wed breakfast/lunch)
+2. Maya's meals (Sun lunch/dinner, Mon all, Tue all, Wed breakfast/lunch)
 3. Combined shopping list with quantities
 4. Daily prep tasks
 5. Estimated budget breakdown
@@ -815,13 +815,13 @@ Store last 8 weeks of feedback, summarized into:
 FEEDBACK HISTORY (fed into AI generation):
 
 Recent patterns:
-- Maia consistently dislikes: mackerel, strong fish flavors
+- Maya consistently dislikes: mackerel, strong fish flavors
 - Roland favorites: Buddha bowl, Salmon & greens
 - Budget consistently under $145 ✓
 - Common issue: Over-buying salad greens
 
 Specific requests carried forward:
-- "More pasta variety for Maia"
+- "More pasta variety for Maya"
 - "Try new lunch options for Roland"
 ```
 
@@ -1047,7 +1047,7 @@ async function queryShoppingList(items) {
 - Multi-store price comparison
 - Delivery integration (Coles/Woolworths online)
 - Meal photo logging
-- Share meal plans with Maia's mum
+- Share meal plans with Maya's mum
 
 ---
 
@@ -1078,11 +1078,11 @@ async function queryShoppingList(items) {
 
 ### Week of December 15, 2025
 
-**User Prompt:** "I have half a cabbage to use up. Maia wants spaghetti this week."
+**User Prompt:** "I have half a cabbage to use up. Maya wants spaghetti this week."
 
 **Generated Plan:**
 
-| Day | Roland Lunch | Roland Dinner | Maia Meals |
+| Day | Roland Lunch | Roland Dinner | Maya Meals |
 |-----|--------------|---------------|------------|
 | Sun | Hummus Bowl | Salmon + cabbage slaw | Spaghetti bolognese, fruit |
 | Mon | Lentil Soup | Tofu stir-fry w/ cabbage | Crumpet / Packed: pasta salad, yogurt, berries / Dinner: Leftover spaghetti |
@@ -1094,7 +1094,7 @@ async function queryShoppingList(items) {
 
 **Budget:** $138.50 / $150 ✓
 **Cabbage:** Used across 3 meals ✓
-**Spaghetti:** Sunday dinner for Maia, leftovers Monday ✓
+**Spaghetti:** Sunday dinner for Maya, leftovers Monday ✓
 
 ---
 

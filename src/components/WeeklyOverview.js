@@ -1,6 +1,6 @@
 /**
  * Weekly Overview Component
- * Shows both Roland's and Maia's meal plans for the entire week
+ * Shows both Roland's and Maya's meal plans for the entire week
  */
 
 import { DAY_ORDER, DAY_NAMES, WEEK_INFO } from '../data/mealPlanData.js';

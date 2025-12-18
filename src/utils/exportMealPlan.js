@@ -144,9 +144,9 @@ export function generateExportDocument() {
       }
     }
     
-    // Maia's meals - format on separate lines for readability
+    // Maya's meals - format on separate lines for readability
     if (maia?.meals && (maia.meals.b || maia.meals.l || maia.meals.d)) {
-      doc += `- **Maia:**\n`;
+      doc += `- **Maya:**\n`;
       if (maia.meals.b) {
         doc += `  - ${maia.meals.b.time || '8:00 AM'} Breakfast: ${maia.meals.b.name}\n`;
       }

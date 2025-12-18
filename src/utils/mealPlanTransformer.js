@@ -115,15 +115,15 @@ export function transformClaudeResponse(claudeResponse) {
           b: maiaDay?.breakfast ? {
             name: maiaDay.breakfast.name,
             time: maiaDay.breakfast.time
-          } : (shouldHaveMaiaBreakfast(dayKey) ? { name: 'Crumpet with fruit', time: '8:00 AM' } : undefined),
+          } : (shouldHaveMayaBreakfast(dayKey) ? { name: 'Crumpet with fruit', time: '8:00 AM' } : undefined),
           l: maiaDay?.lunch ? {
             name: maiaDay.lunch.name,
             time: maiaDay.lunch.time
-          } : (shouldHaveMaiaLunch(dayKey) ? { name: 'Packed lunch', time: '12:30 PM' } : undefined),
+          } : (shouldHaveMayaLunch(dayKey) ? { name: 'Packed lunch', time: '12:30 PM' } : undefined),
           d: maiaDay?.dinner ? {
             name: maiaDay.dinner.name,
             time: maiaDay.dinner.time
-          } : (shouldHaveMaiaDinner(dayKey) ? { name: 'Shared dinner with Roland', time: '5:30 PM' } : undefined)
+          } : (shouldHaveMayaDinner(dayKey) ? { name: 'Shared dinner with Roland', time: '5:30 PM' } : undefined)
         },
         prep: {
           morning: prepTasks.maia?.morning || [],
@@ -239,23 +239,23 @@ function getDayDate(dayKey, weekOf, shoppingDay = 6) {
 }
 
 /**
- * Check if Maia should have breakfast on this day
+ * Check if Maya should have breakfast on this day
  */
-function shouldHaveMaiaBreakfast(dayKey) {
+function shouldHaveMayaBreakfast(dayKey) {
   return ['monday', 'tuesday', 'wednesday'].includes(dayKey);
 }
 
 /**
- * Check if Maia should have lunch on this day
+ * Check if Maya should have lunch on this day
  */
-function shouldHaveMaiaLunch(dayKey) {
+function shouldHaveMayaLunch(dayKey) {
   return ['sunday', 'monday', 'tuesday', 'wednesday'].includes(dayKey);
 }
 
 /**
- * Check if Maia should have dinner on this day
+ * Check if Maya should have dinner on this day
  */
-function shouldHaveMaiaDinner(dayKey) {
+function shouldHaveMayaDinner(dayKey) {
   // Sunday-Tuesday dinner with Roland, Wednesday at mum's (no dinner needed), Thu-Sat not with Roland
   return ['sunday', 'monday', 'tuesday'].includes(dayKey);
 }

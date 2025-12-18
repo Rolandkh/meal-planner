@@ -22,7 +22,7 @@ export function renderGenerateWeek() {
       <div class="card" style="background:#f0f9ff;border:2px solid #0ea5e9;margin-bottom:24px">
         <div style="font-weight:600;color:#0369a1;margin-bottom:8px">💡 How it works</div>
         <div style="font-size:0.9rem;color:#0c4a6e">
-          Enter your preferences for the week, and Claude AI will generate personalized meal plans for both Roland and Maia, 
+          Enter your preferences for the week, and Claude AI will generate personalized meal plans for both Roland and Maya, 
           create an optimized shopping list, and calculate the budget.
         </div>
       </div>
@@ -42,7 +42,7 @@ export function renderGenerateWeek() {
         <h2>Weekly Preferences</h2>
         <textarea 
           id="preferences-input" 
-          placeholder="e.g., I have leftover salmon to use up. Maia wants pasta twice this week. Budget is tight this week."
+          placeholder="e.g., I have leftover salmon to use up. Maya wants pasta twice this week. Budget is tight this week."
           style="width:100%;min-height:120px;padding:12px;border:2px solid #e5e7eb;border-radius:8px;font-family:inherit;font-size:0.95rem;resize:vertical;margin-bottom:16px"
         ></textarea>
         
@@ -115,7 +115,7 @@ export function renderGenerateWeek() {
         <div style="font-weight:600;margin-bottom:8px">📝 Quick Prompts</div>
         <div style="font-size:0.9rem;color:#92400e">
           <div style="margin-bottom:8px">• "Use up: [ingredient]" - Prioritize using specific ingredients</div>
-          <div style="margin-bottom:8px">• "Maia wants: [food]" - Include specific foods for Maia</div>
+          <div style="margin-bottom:8px">• "Maya wants: [food]" - Include specific foods for Maya</div>
           <div style="margin-bottom:8px">• "More fish/vegetables/pasta" - Increase certain food types</div>
           <div>• "Budget: tight/normal/flexible" - Adjust budget constraints</div>
         </div>

@@ -1,7 +1,7 @@
 /**
  * Meal Plan Data
  * Contains all the meal planning data including shopping lists, daily plans, and recipes
- * Enhanced to support both Roland's and Maia's meal plans per spec
+ * Enhanced to support both Roland's and Maya's meal plans per spec
  */
 
 // Aisle mapping for Coles Caulfield Village (from spec)
@@ -82,7 +82,7 @@ export const MEAL_PLAN_DATA = {
         { name: 'Bulgur 100g', price: 2.50, aisle: 5 },
         { name: 'Whole grain bread', price: 4.50, aisle: 2 },
         { name: 'Whole grain wraps', price: 4.00, aisle: 2 },
-        { name: 'Pasta (for Maia)', price: 2.50, aisle: 5 },
+        { name: 'Pasta (for Maya)', price: 2.50, aisle: 5 },
         { name: 'Crackers', price: 3.50, aisle: 5 }
       ]
     },
@@ -92,7 +92,7 @@ export const MEAL_PLAN_DATA = {
         { name: 'Greek yogurt 1kg', price: 7.00, aisle: 3 },
         { name: 'Kefir 500ml', price: 5.50, aisle: 3 },
         { name: 'Sauerkraut 500g', price: 4.50, aisle: 3 },
-        { name: 'Yogurt pouches (for Maia)', price: 5.00, aisle: 3 }
+        { name: 'Yogurt pouches (for Maya)', price: 5.00, aisle: 3 }
       ]
     },
     {
@@ -220,7 +220,7 @@ export const MEAL_PLAN_DATA = {
         },
         prep: {
           morning: [],
-          evening: ['Cook extra salmon for Maia', 'Prepare pasta for lunch']
+          evening: ['Cook extra salmon for Maya', 'Prepare pasta for lunch']
         }
       }
     },
@@ -281,7 +281,7 @@ export const MEAL_PLAN_DATA = {
         },
         prep: {
           morning: [
-            'Pack Maia\'s lunchbox:',
+            'Pack Maya\'s lunchbox:',
             '  - Pasta salad in container',
             '  - Yogurt pouch',
             '  - Strawberries/blueberries',
@@ -354,7 +354,7 @@ export const MEAL_PLAN_DATA = {
         },
         prep: {
           morning: [
-            'Pack Maia\'s lunchbox:',
+            'Pack Maya\'s lunchbox:',
             '  - Simple sandwich (cheese/ham)',
             '  - Fruit (strawberries/blueberries)',
             '  - Yogurt pouch',
