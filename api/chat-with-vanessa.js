@@ -130,7 +130,7 @@ export default async function handler(req) {
         // Create streaming request to Claude
         const streamPromise = (async () => {
           const streamResponse = await anthropic.messages.stream({
-            model: 'claude-3-5-sonnet-20240620',
+            model: 'claude-sonnet-4-5-20250929',
             system: SYSTEM_PROMPT,
             messages,
             max_tokens: 1000,
