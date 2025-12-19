@@ -1,0 +1,300 @@
+/**
+ * Meal Plan Transformer
+ * Transforms Claude's raw JSON output into normalized storage format
+ */
+
+import { generateRecipeId, generateMealId, generateMealPlanId, deduplicateRecipes } from './storage.js';
+
+/**
+ * Create a hash for recipe deduplication
+ * @param {Object} recipe - Recipe object
+ * @returns {string} Hash string
+ */
+function createRecipeHash(recipe) {
+  const name = (recipe.name || '').toLowerCase().trim();
+  
+  const ingredientsStr = (recipe.ingredients || [])
+    .map(ing => {
+      const ingName = (ing.name || '').toLowerCase().trim();
+      const quantity = ing.quantity || '';
+      const unit = (ing.unit || '').toLowerCase().trim();
+      return `${ingName}:${quantity}:${unit}`;
+    })
+    .sort()
+    .join('|');
+  
+  return `${name}::${ingredientsStr}`;
+}
+
+/**
+ * Extract and deduplicate recipes from Claude's output
+ * @param {Array} days - Array of day objects from Claude
+ * @returns {Object} { recipes: Array, recipeMap: Map }
+ */
+function extractRecipes(days) {
+  const recipeMap = new Map(); // hash -> { recipe, recipeId }
+  const recipes = [];
+
+  if (!Array.isArray(days)) {
+    console.warn('extractRecipes: days is not an array');
+    return { recipes, recipeMap };
+  }
+
+  // Iterate through all days and meal types
+  for (const day of days) {
+    if (!day || typeof day !== 'object') continue;
+
+    const mealTypes = ['breakfast', 'lunch', 'dinner'];
+    for (const mealType of mealTypes) {
+      const recipe = day[mealType];
+      
+      if (!recipe || typeof recipe !== 'object') continue;
+
+      // Create hash for deduplication
+      const hash = createRecipeHash(recipe);
+
+      if (!recipeMap.has(hash)) {
+        // New unique recipe
+        const recipeId = generateRecipeId();
+        
+        const normalizedRecipe = {
+          recipeId,
+          name: recipe.name || 'Untitled Recipe',
+          ingredients: Array.isArray(recipe.ingredients) ? recipe.ingredients.map(ing => ({
+            name: ing.name || 'Unknown ingredient',
+            quantity: ing.quantity || 1,
+            unit: ing.unit || '',
+            category: ing.category || 'other'
+          })) : [],
+          instructions: recipe.instructions || '',
+          prepTime: recipe.prepTime || 0,
+          cookTime: recipe.cookTime || 0,
+          servings: recipe.servings || 2,
+          tags: Array.isArray(recipe.tags) ? recipe.tags : [],
+          source: 'generated',
+          rating: null,
+          createdAt: new Date().toISOString()
+        };
+
+        recipeMap.set(hash, { recipe: normalizedRecipe, recipeId });
+        recipes.push(normalizedRecipe);
+      }
+    }
+  }
+
+  return { recipes, recipeMap };
+}
+
+/**
+ * Create meals array from days and recipe map
+ * @param {Array} days - Array of day objects from Claude
+ * @param {Map} recipeMap - Map of recipe hashes to recipe IDs
+ * @param {number} defaultServings - Default servings if not specified
+ * @returns {Array} Array of meal objects
+ */
+function createMeals(days, recipeMap, defaultServings = 2) {
+  const meals = [];
+
+  if (!Array.isArray(days)) {
+    console.warn('createMeals: days is not an array');
+    return meals;
+  }
+
+  for (const day of days) {
+    if (!day || typeof day !== 'object') continue;
+
+    const date = day.date || '';
+    const mealTypes = ['breakfast', 'lunch', 'dinner'];
+
+    for (const mealType of mealTypes) {
+      const recipe = day[mealType];
+      
+      if (!recipe || typeof recipe !== 'object') continue;
+
+      // Find matching recipe ID
+      const hash = createRecipeHash(recipe);
+      const recipeData = recipeMap.get(hash);
+
+      if (!recipeData) {
+        console.warn(`No recipe found for ${mealType} on ${date}`);
+        continue;
+      }
+
+      // Create meal object
+      const meal = {
+        mealId: generateMealId(),
+        recipeId: recipeData.recipeId,
+        mealType: mealType,
+        date: date,
+        eaterIds: [], // Will be populated later if needed
+        servings: recipe.servings || defaultServings,
+        notes: recipe.notes || ''
+      };
+
+      meals.push(meal);
+    }
+  }
+
+  return meals;
+}
+
+/**
+ * Calculate next Saturday from today
+ * @returns {string} Date in YYYY-MM-DD format
+ */
+function getNextSaturday() {
+  const today = new Date();
+  const daysUntilSaturday = (6 - today.getDay() + 7) % 7 || 7;
+  const nextSaturday = new Date(today);
+  nextSaturday.setDate(today.getDate() + daysUntilSaturday);
+  return nextSaturday.toISOString().split('T')[0];
+}
+
+/**
+ * Calculate week end date (following Friday)
+ * @param {string} weekOf - Week start date (Saturday)
+ * @returns {string} Date in YYYY-MM-DD format
+ */
+function getWeekEnd(weekOf) {
+  const startDate = new Date(weekOf);
+  startDate.setDate(startDate.getDate() + 6); // Saturday + 6 days = Friday
+  return startDate.toISOString().split('T')[0];
+}
+
+/**
+ * Calculate estimated budget from recipes
+ * @param {Array} recipes - Array of recipe objects
+ * @returns {number} Estimated budget
+ */
+function calculateBudget(recipes) {
+  // Simple estimation: ~$5-8 per recipe based on complexity
+  return recipes.reduce((total, recipe) => {
+    const ingredientCount = recipe.ingredients?.length || 0;
+    const basePrice = 5;
+    const pricePerIngredient = 0.5;
+    return total + basePrice + (ingredientCount * pricePerIngredient);
+  }, 0);
+}
+
+/**
+ * Transform Claude's output into normalized storage format
+ * @param {Object} claudeOutput - Raw JSON from Claude
+ * @returns {Object} { recipes: Array, meals: Array, mealPlan: Object }
+ */
+export function transformGeneratedPlan(claudeOutput) {
+  try {
+    // Validate input
+    if (!claudeOutput || typeof claudeOutput !== 'object') {
+      throw new Error('Invalid Claude output: must be an object');
+    }
+
+    if (!Array.isArray(claudeOutput.days) || claudeOutput.days.length === 0) {
+      throw new Error('Invalid Claude output: missing or empty days array');
+    }
+
+    // Extract and deduplicate recipes
+    const { recipes, recipeMap } = extractRecipes(claudeOutput.days);
+
+    if (recipes.length === 0) {
+      throw new Error('No valid recipes found in Claude output');
+    }
+
+    // Create meals from days
+    const meals = createMeals(claudeOutput.days, recipeMap);
+
+    if (meals.length === 0) {
+      throw new Error('No valid meals found in Claude output');
+    }
+
+    // Determine week dates
+    const weekOf = claudeOutput.weekOf || getNextSaturday();
+    const weekEnd = getWeekEnd(weekOf);
+
+    // Calculate budget
+    const targetBudget = claudeOutput.budget?.target || 0;
+    const estimatedBudget = claudeOutput.budget?.estimated || calculateBudget(recipes);
+
+    // Build meal plan object
+    const mealPlan = {
+      _schemaVersion: 1,
+      mealPlanId: generateMealPlanId(weekOf),
+      weekOf,
+      weekEnd,
+      createdAt: new Date().toISOString(),
+      mealIds: meals.map(m => m.mealId),
+      budget: {
+        target: targetBudget,
+        estimated: Math.round(estimatedBudget)
+      },
+      weeklyPreferences: '', // Can be populated from user input later
+      conversation: {
+        messages: [] // Can be populated with chat history
+      }
+    };
+
+    console.log(`Transformed meal plan: ${recipes.length} recipes, ${meals.length} meals`);
+
+    return {
+      recipes,
+      meals,
+      mealPlan
+    };
+
+  } catch (error) {
+    console.error('Error transforming meal plan:', error);
+    throw error;
+  }
+}
+
+/**
+ * Validate transformed data structure
+ * @param {Object} data - Transformed data { recipes, meals, mealPlan }
+ * @returns {boolean} True if valid
+ */
+export function validateTransformedData(data) {
+  try {
+    // Check top-level structure
+    if (!data || typeof data !== 'object') {
+      throw new Error('Data must be an object');
+    }
+
+    const { recipes, meals, mealPlan } = data;
+
+    // Validate recipes
+    if (!Array.isArray(recipes) || recipes.length === 0) {
+      throw new Error('recipes must be a non-empty array');
+    }
+
+    recipes.forEach((recipe, i) => {
+      if (!recipe.recipeId || !recipe.name) {
+        throw new Error(`Recipe ${i} missing required fields`);
+      }
+    });
+
+    // Validate meals
+    if (!Array.isArray(meals) || meals.length === 0) {
+      throw new Error('meals must be a non-empty array');
+    }
+
+    meals.forEach((meal, i) => {
+      if (!meal.mealId || !meal.recipeId) {
+        throw new Error(`Meal ${i} missing required fields`);
+      }
+    });
+
+    // Validate mealPlan
+    if (!mealPlan || typeof mealPlan !== 'object') {
+      throw new Error('mealPlan must be an object');
+    }
+
+    if (!mealPlan.mealPlanId || !mealPlan.weekOf) {
+      throw new Error('mealPlan missing required fields');
+    }
+
+    return true;
+
+  } catch (error) {
+    console.error('Validation error:', error);
+    return false;
+  }
+}

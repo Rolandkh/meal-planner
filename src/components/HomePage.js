@@ -1,11 +1,31 @@
 /**
  * HomePage Component
  * Landing page with introduction and chat button
+ * Shows meal plan summary if one exists
  */
+
+import { loadCurrentMealPlan, loadMeals, loadRecipes } from '../utils/storage.js';
 
 export class HomePage {
   constructor() {
-    // No router dependency needed - we'll use custom events
+    this.mealPlan = null;
+    this.meals = [];
+    this.recipes = [];
+  }
+
+  /**
+   * Load meal plan data from storage
+   */
+  loadMealPlanData() {
+    this.mealPlan = loadCurrentMealPlan();
+    this.meals = loadMeals();
+    this.recipes = loadRecipes();
+    
+    console.log('Loaded meal plan data:', {
+      hasPlan: !!this.mealPlan,
+      mealsCount: this.meals.length,
+      recipesCount: this.recipes.length
+    });
   }
 
   /**
@@ -13,17 +33,37 @@ export class HomePage {
    * @returns {HTMLElement} The rendered home page
    */
   render() {
+    // Load meal plan data
+    this.loadMealPlanData();
+
     // Create main container
     const container = document.createElement('div');
     container.className = 'flex flex-col items-center justify-center min-h-screen p-4 bg-gradient-to-br from-blue-50 to-indigo-100';
 
     // Create content wrapper
     const content = document.createElement('div');
-    content.className = 'max-w-2xl mx-auto text-center';
+    content.className = 'max-w-2xl mx-auto';
 
-    // Hero section
+    // Render appropriate view based on whether meal plan exists
+    if (this.mealPlan) {
+      content.appendChild(this.renderMealPlanView());
+    } else {
+      content.appendChild(this.renderHeroView());
+    }
+
+    // Add to main container
+    container.appendChild(content);
+
+    return container;
+  }
+
+  /**
+   * Render hero view (no meal plan)
+   * @returns {HTMLElement} Hero view element
+   */
+  renderHeroView() {
     const heroSection = document.createElement('div');
-    heroSection.className = 'mb-12 fade-in';
+    heroSection.className = 'text-center mb-12 fade-in';
 
     // Title
     const title = document.createElement('h1');
@@ -76,7 +116,7 @@ export class HomePage {
     `.trim().replace(/\s+/g, ' ');
     chatButton.textContent = '💬 Chat with Vanessa';
     
-    // Add click handler to dispatch custom event
+    // Add click handler
     chatButton.addEventListener('click', () => {
       console.log('Chat button clicked - dispatching toggle-chat event');
       document.dispatchEvent(new CustomEvent('toggle-chat', { 
@@ -91,13 +131,122 @@ export class HomePage {
     heroSection.appendChild(features);
     heroSection.appendChild(chatButton);
 
-    // Add to content wrapper
-    content.appendChild(heroSection);
+    return heroSection;
+  }
 
-    // Add to main container
-    container.appendChild(content);
+  /**
+   * Render meal plan view (has meal plan)
+   * @returns {HTMLElement} Meal plan view element
+   */
+  renderMealPlanView() {
+    const planSection = document.createElement('div');
+    planSection.className = 'fade-in';
 
-    return container;
+    // Header
+    const header = document.createElement('div');
+    header.className = 'text-center mb-8';
+
+    const title = document.createElement('h1');
+    title.className = 'text-4xl md:text-5xl font-bold mb-4 text-gray-800';
+    
+    const weekOf = new Date(this.mealPlan.weekOf);
+    const weekEnd = new Date(this.mealPlan.weekEnd);
+    const formattedWeek = `${weekOf.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - ${weekEnd.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+    
+    title.textContent = `Your Meal Plan`;
+
+    const subtitle = document.createElement('p');
+    subtitle.className = 'text-xl text-gray-600';
+    subtitle.textContent = `Week of ${formattedWeek}`;
+
+    header.appendChild(title);
+    header.appendChild(subtitle);
+
+    // Stats card
+    const statsCard = document.createElement('div');
+    statsCard.className = 'bg-white rounded-2xl shadow-xl p-8 mb-6';
+
+    const statsGrid = document.createElement('div');
+    statsGrid.className = 'grid grid-cols-1 md:grid-cols-3 gap-6';
+
+    const stats = [
+      { label: 'Total Meals', value: this.meals.length, icon: '🍽️' },
+      { label: 'Unique Recipes', value: this.recipes.length, icon: '📖' },
+      { label: 'Est. Budget', value: `$${this.mealPlan.budget.estimated}`, icon: '💰' }
+    ];
+
+    stats.forEach(stat => {
+      const statDiv = document.createElement('div');
+      statDiv.className = 'text-center';
+      statDiv.innerHTML = `
+        <div class="text-4xl mb-2">${stat.icon}</div>
+        <div class="text-3xl font-bold text-gray-800 mb-1">${stat.value}</div>
+        <div class="text-sm text-gray-600">${stat.label}</div>
+      `;
+      statsGrid.appendChild(statDiv);
+    });
+
+    statsCard.appendChild(statsGrid);
+
+    // Action buttons
+    const buttonsContainer = document.createElement('div');
+    buttonsContainer.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
+
+    // Chat button
+    const chatBtn = this.createButton('💬 Chat with Vanessa', 'secondary', () => {
+      document.dispatchEvent(new CustomEvent('toggle-chat', { detail: { open: true } }));
+    });
+
+    // Generate new button
+    const generateBtn = this.createButton('✨ Generate New Week', 'primary', () => {
+      window.location.hash = '#/generating';
+    });
+
+    buttonsContainer.appendChild(chatBtn);
+    buttonsContainer.appendChild(generateBtn);
+
+    // Assemble
+    planSection.appendChild(header);
+    planSection.appendChild(statsCard);
+    planSection.appendChild(buttonsContainer);
+
+    return planSection;
+  }
+
+  /**
+   * Create a button element
+   * @param {string} text - Button text
+   * @param {string} style - 'primary' or 'secondary'
+   * @param {Function} onClick - Click handler
+   * @returns {HTMLElement} Button element
+   */
+  createButton(text, style, onClick) {
+    const button = document.createElement('button');
+    
+    if (style === 'primary') {
+      button.className = `
+        bg-gradient-to-r from-green-500 to-emerald-600
+        hover:from-green-600 hover:to-emerald-700
+        text-white font-semibold py-4 px-6 rounded-lg
+        shadow-lg hover:shadow-xl
+        transition-all transform hover:scale-105
+        text-lg
+      `.trim().replace(/\s+/g, ' ');
+    } else {
+      button.className = `
+        bg-gradient-to-r from-blue-600 to-indigo-600
+        hover:from-blue-700 hover:to-indigo-700
+        text-white font-semibold py-4 px-6 rounded-lg
+        shadow-lg hover:shadow-xl
+        transition-all transform hover:scale-105
+        text-lg
+      `.trim().replace(/\s+/g, ' ');
+    }
+
+    button.textContent = text;
+    button.addEventListener('click', onClick);
+
+    return button;
   }
 
   /**

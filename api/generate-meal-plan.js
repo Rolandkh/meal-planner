@@ -1,415 +1,353 @@
 /**
- * Vercel Serverless Function
- * Proxies requests to Claude API with server-side API key
- * Uses non-streaming for reliability
+ * Generate Meal Plan API Endpoint
+ * Creates a weekly meal plan using Claude AI with SSE progress streaming
  */
 
-export default async function handler(req, res) {
-  // Only allow POST requests
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
+import Anthropic from '@anthropic-ai/sdk';
 
-  // Get API key from environment variable
-  const apiKey = (process.env.ANTHROPIC_API_KEY || process.env.anthropic_api_key)?.trim();
+// Configure for Vercel Edge Runtime
+export const config = {
+  runtime: 'edge',
+};
 
-  if (!apiKey) {
-    return res.status(500).json({ 
-      error: 'API key not configured. Please set ANTHROPIC_API_KEY in Vercel environment variables.' 
-    });
-  }
+// Environment variables
+const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
-  if (!apiKey.startsWith('sk-ant-')) {
-    return res.status(500).json({ 
-      error: 'Invalid API key format. The key should start with "sk-ant-".' 
-    });
-  }
+// Default eater if none provided
+const DEFAULT_EATER = {
+  name: 'User',
+  preferences: 'no restrictions',
+  schedule: 'home for dinner'
+};
 
-  try {
-    const { userPrompt, budgetTarget, store, feedbackHistory, shoppingDay = 6 } = req.body; // 6 = Saturday
+// System prompt for meal plan generation
+const SYSTEM_PROMPT = `You are Vanessa, an expert meal planning assistant. Generate a complete 7-day meal plan based on user preferences.
 
-    const baseSpec = loadBaseSpecification();
-    const feedbackSummary = buildFeedbackSummary(feedbackHistory || []);
-    const weekInfo = getWeekInfo(shoppingDay);
+CRITICAL: Your response must be ONLY valid JSON in this EXACT format with NO additional text:
 
-    const systemPrompt = `${baseSpec}
-${feedbackSummary ? `\n## FEEDBACK HISTORY\n${feedbackSummary}` : ''}
-
-CRITICAL OUTPUT RULES:
-- You MUST output ONLY a JSON object starting with { and ending with }
-- Do NOT include any text before or after the JSON
-- Do NOT say "I understand", "Here is", "Sure", or any other preamble
-- Do NOT wrap in markdown code blocks
-- Start your response with the { character immediately`;
-
-    const userMessage = `Generate a COMPLETE meal plan for: ${weekInfo.rangeStr}
-Budget: $${budgetTarget} | Store: ${store === 'coles-caulfield' ? 'Coles Caulfield' : 'Woolworths Carnegie'}
-${userPrompt ? `Preferences: ${userPrompt}` : ''}
-
-CRITICAL REQUIREMENTS:
-- Year: ${weekInfo.year}
-- week_of: "${weekInfo.isoDate}"
-- Shopping day: ${weekInfo.shoppingDayName}
-${weekInfo.isPartialWeek ? `- PARTIAL WEEK: Only generate for: ${weekInfo.daysToGenerate.join(', ')}` : `- Generate FULL 7-day week`}
-
-YOU MUST RETURN COMPLETE JSON with ALL of the following:
-
-1. shopping_list: Array of 25-40 items. Each item: {"item": "name", "quantity": "amount", "category": "Produce|Proteins|Dairy|Grains|Pantry|Bakery", "estimated_price": number, "aisle": number}
-
-2. roland_meals: EVERY day (saturday through friday) MUST have:
-   - breakfast: {"name": "Protein Bar", "time": "8:00 AM"}
-   - lunch: {"name": "ACTUAL MEAL NAME", "time": "12:30 PM"} - NOT "..." but real meal names like "Hummus Power Bowl", "Lentil Soup with Bread", etc.
-   - dinner: {"name": "ACTUAL MEAL NAME", "time": "5:30 PM"} - Real names like "Grilled Salmon with Vegetables", "Tofu Stir-Fry", etc.
-   - recipes: Array with 2-3 recipes per day, each having: {"name": "Recipe Name", "ing": ["100g ingredient 1", "200g ingredient 2", ...], "steps": ["Step 1 instruction", "Step 2 instruction", ...]}
-
-SPECIAL DAYS:
-- Thursday: lunch at 12:00 PM (last meal), dinner: null (fast begins)
-- Friday: breakfast is coffee only, lunch at 1:00 PM (break fast)
-
-3. maya_meals: Sunday-Wednesday only (null for Thu-Sat)
-   CRITICAL: Use "maya_meals" as the JSON key (Maya with a Y, not Maia with an I)
-   - Sunday: lunch and dinner
-   - Monday-Tuesday: breakfast (crumpet), packed lunch, dinner
-   - Wednesday: breakfast, lunch with Roland, dinner at mum's (null)
-
-4. prep_tasks: Each day has {"roland": {"morning": ["task 1", ...], "evening": ["task 1", ...]}, "maya": {...}}
-
-5. budget_estimate: Total estimated cost (number)
-
-EXAMPLE (partial - you must complete ALL days):
 {
-  "week_of": "${weekInfo.isoDate}",
-  "shopping_list": [
-    {"item": "Salmon fillet", "quantity": "400g", "category": "Proteins", "estimated_price": 15.00, "aisle": 4},
-    {"item": "Firm tofu", "quantity": "400g", "category": "Proteins", "estimated_price": 4.50, "aisle": 3},
-    {"item": "Mixed salad greens", "quantity": "4 bags", "category": "Produce", "estimated_price": 12.00, "aisle": 1},
-    {"item": "Broccoli", "quantity": "500g", "category": "Produce", "estimated_price": 4.00, "aisle": 1},
-    {"item": "Avocados", "quantity": "3", "category": "Produce", "estimated_price": 5.00, "aisle": 1},
-    {"item": "Hummus", "quantity": "400g", "category": "Dairy", "estimated_price": 6.00, "aisle": 3}
-  ],
-  "roland_meals": {
-    "saturday": {
-      "breakfast": {"name": "Protein Bar", "time": "8:00 AM"},
-      "lunch": {"name": "Mediterranean Hummus Bowl", "time": "12:30 PM"},
-      "dinner": {"name": "Pan-Seared Salmon with Roasted Vegetables", "time": "5:30 PM"},
-      "recipes": [
-        {"name": "Mediterranean Hummus Bowl", "ing": ["150g hummus", "200g mixed greens", "100g chickpeas", "50g feta", "15ml olive oil"], "steps": ["Arrange greens in bowl", "Add hummus and chickpeas", "Top with feta", "Drizzle olive oil"]},
-        {"name": "Pan-Seared Salmon", "ing": ["150g salmon fillet", "200g broccoli", "100g asparagus", "15ml olive oil", "lemon"], "steps": ["Season salmon with salt and pepper", "Pan-sear 4 min each side", "Steam vegetables", "Serve with lemon"]}
-      ]
-    },
-    "sunday": {
-      "breakfast": {"name": "Protein Bar", "time": "8:00 AM"},
-      "lunch": {"name": "Greek Salad with Chickpeas", "time": "12:30 PM"},
-      "dinner": {"name": "Grilled Tofu with Stir-Fried Vegetables", "time": "5:30 PM"},
-      "recipes": [...]
-    }
+  "weekOf": "YYYY-MM-DD",
+  "budget": {
+    "estimated": number
   },
-  "maya_meals": {
-    "sunday": {"lunch": {"name": "Pasta with butter", "time": "12:30 PM"}, "dinner": {"name": "Tofu portion with rice", "time": "5:30 PM"}},
-    "monday": {"breakfast": {"name": "Crumpet with strawberries", "time": "8:00 AM"}, "lunch": {"name": "Packed lunch: sandwich, fruit, yogurt", "time": "12:30 PM"}, "dinner": {"name": "Shared dinner with Roland", "time": "5:30 PM"}}
-  },
-  "prep_tasks": {
-    "saturday": {"roland": {"morning": ["Make protein bars for the week", "Wash and prep salad greens"], "evening": []}, "maya": {"morning": [], "evening": []}}
-  },
-  "budget_estimate": 142.50,
-  "notes": "Focus on anti-inflammatory foods this week"
-}
-
-DO NOT use "..." or placeholders. Generate REAL meal names and REAL recipes for ALL 7 days.
-
-IMPORTANT: Start your response with { immediately. No preamble text.`;
-
-    // Call Claude API (non-streaming for reliability)
-    // Claude 3.5 Haiku max output is 8192 tokens
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01'
+  "days": [
+    {
+      "date": "YYYY-MM-DD",
+      "breakfast": {
+        "name": "Recipe Name",
+        "ingredients": [
+          {
+            "name": "ingredient name",
+            "quantity": number,
+            "unit": "unit",
+            "category": "produce|meat|dairy|pantry|other"
+          }
+        ],
+        "instructions": "Step by step instructions",
+        "prepTime": number,
+        "cookTime": number,
+        "servings": number,
+        "tags": ["tag1", "tag2"]
       },
-      body: JSON.stringify({
-        model: 'claude-3-5-haiku-20241022',
-        max_tokens: 8192,
-        system: systemPrompt,
-        messages: [{ role: 'user', content: userMessage }]
-      })
-    });
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      let errorMessage = `API error: ${response.status}`;
-      try {
-        const errorData = JSON.parse(errorText);
-        errorMessage = errorData.error?.message || errorData.error || errorMessage;
-      } catch (e) {
-        errorMessage = errorText || errorMessage;
-      }
-      console.error('Claude API error:', errorMessage);
-      return res.status(response.status).json({ error: errorMessage });
+      "lunch": { /* same structure */ },
+      "dinner": { /* same structure */ }
     }
-
-    const data = await response.json();
-    const content = data.content[0].text;
-
-    // Parse and validate the response
-    const mealPlan = parseAndValidateMealPlan(content, budgetTarget, weekInfo.isoDate);
-    return res.status(200).json(mealPlan);
-
-  } catch (error) {
-    console.error('API error:', error);
-    return res.status(500).json({ 
-      error: error.message || 'Failed to generate meal plan.' 
-    });
-  }
+  ]
 }
 
-/**
- * Parse and validate the meal plan JSON
- */
-function parseAndValidateMealPlan(content, budgetTarget, weekOf) {
-  let jsonText = content.trim();
-  
-  console.log('Raw response (first 200 chars):', jsonText.substring(0, 200));
-  
-  // Remove markdown code blocks if present
-  if (jsonText.includes('```')) {
-    jsonText = jsonText.replace(/```json?\n?/gi, '').replace(/```/g, '').trim();
-  }
-  
-  // Extract just the JSON object - find the first { and last }
-  const firstBrace = jsonText.indexOf('{');
-  const lastBrace = jsonText.lastIndexOf('}');
-  
-  if (firstBrace === -1 || lastBrace === -1 || lastBrace <= firstBrace) {
-    console.error('No valid JSON object found in response');
-    console.error('Full response:', jsonText);
-    throw new Error('Claude did not return valid JSON. Please try again.');
-  }
-  
-  jsonText = jsonText.substring(firstBrace, lastBrace + 1);
-  console.log('Extracted JSON (first 200 chars):', jsonText.substring(0, 200));
-
-  let mealPlan;
-  try {
-    mealPlan = JSON.parse(jsonText);
-  } catch (parseError) {
-    console.error('JSON parse error, attempting repair:', parseError.message);
-    console.error('JSON around error (first 1000 chars):', jsonText.substring(0, 1000));
-    const fixedJson = attemptJsonRepair(jsonText);
-    mealPlan = JSON.parse(fixedJson);
-  }
-
-  // Ensure correct week_of date
-  mealPlan.week_of = weekOf;
-
-  // Log what we received for debugging
-  const days = ['saturday', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
-  console.log('Received meal plan structure:');
-  days.forEach(day => {
-    const rolandDay = mealPlan.roland_meals?.[day];
-    console.log(`  ${day}: breakfast=${rolandDay?.breakfast?.name || 'MISSING'}, lunch=${rolandDay?.lunch?.name || 'MISSING'}, dinner=${rolandDay?.dinner?.name || 'MISSING'}, recipes=${rolandDay?.recipes?.length || 0}`);
-  });
-
-  // Validate shopping list exists
-  if (!mealPlan.shopping_list || !Array.isArray(mealPlan.shopping_list) || mealPlan.shopping_list.length === 0) {
-    console.warn('Shopping list missing, generating fallback');
-    mealPlan.shopping_list = generateFallbackShoppingList(mealPlan);
-  } else {
-    console.log(`Shopping list has ${mealPlan.shopping_list.length} items`);
-  }
-
-  // Ensure roland_meals exists
-  if (!mealPlan.roland_meals) {
-    console.warn('roland_meals missing from response');
-    mealPlan.roland_meals = {};
-  }
-
-  return { ...mealPlan, budget_target: budgetTarget };
-}
+Guidelines:
+- Generate exactly 7 days of meals (21 total: breakfast, lunch, dinner each day)
+- Each recipe should be practical and detailed
+- Include realistic estimated budget in dollars
+- Consider user's dietary preferences and restrictions
+- Vary recipes throughout the week
+- Use common, accessible ingredients`;
 
 /**
- * Load base specification
+ * Validate request body
  */
-function loadBaseSpecification() {
-  return `You are a meal planning assistant generating detailed weekly meal plans.
+function validateRequest(body) {
+  const errors = [];
 
-## ROLAND'S DIETARY REQUIREMENTS
-- Focus: Anti-inflammatory, gut health, high protein, low carb for dinners
-- Breakfast 8:00 AM: Always a protein bar (homemade)
-- Lunch 12:30 PM: Balanced meal with protein bar (~600 cal total)
-- Dinner 5:30 PM: 120-150g protein (fish: salmon, sardines, mackerel, tuna OR plant: tofu, tempeh) + 200-300g vegetables + healthy fats (olive oil, avocado). NO carbs at dinner.
-- Preferred proteins: Wild salmon, sardines, mackerel, firm tofu, tempeh
-- Include fermented foods: sauerkraut, kimchi, kefir, Greek yogurt
-- Thursday: FAST DAY - Early lunch at 12:00 PM is LAST MEAL, NO dinner
-- Friday: POST-FAST - Coffee only for breakfast, Break fast with light lunch at 1:00 PM
-
-## MAYA (4 YEAR OLD DAUGHTER) - Simple Kid-Friendly Meals
-IMPORTANT: Her name is spelled "Maya" with a Y (not "Maia" with an I)
-- Sunday: Lunch (pasta, simple) and dinner with Roland (plain portion of his meal)
-- Monday-Tuesday: Breakfast (crumpet with fruit), Packed school lunch (sandwich, yogurt, fruit, crackers), Dinner with Roland
-- Wednesday: Breakfast, Lunch with Roland, At mum's for dinner (no meal needed)
-- Thursday-Saturday: Not with Roland (no meals needed)
-
-## REQUIRED OUTPUT FORMAT
-You MUST generate:
-1. Complete meals for ALL 7 days (breakfast, lunch, dinner for each)
-2. 2-3 detailed recipes per day with full ingredients list and cooking steps
-3. 25-40 shopping items covering all ingredients
-4. Prep tasks for meal preparation
-
-## PROTEIN BAR (Pre-made recipe - DO NOT generate)
-The protein bar recipe is hardcoded in the app. Do NOT include a protein bar recipe in your response.
-Just reference "Protein Bar" for breakfast meals.`;
-}
-
-/**
- * Build feedback summary
- */
-function buildFeedbackSummary(feedbackHistory) {
-  if (!feedbackHistory?.length) return null;
-  const parts = [];
-  feedbackHistory.forEach(f => {
-    if (f.loved) parts.push(`Loved: ${f.loved}`);
-    if (f.didntWork) parts.push(`Didn't work: ${f.didntWork}`);
-    if (f.notes) parts.push(`Notes: ${f.notes}`);
-  });
-  return parts.length ? parts.join('\n') : null;
-}
-
-/**
- * Attempt to repair common JSON issues
- */
-function attemptJsonRepair(jsonText) {
-  let fixed = jsonText;
-  fixed = fixed.replace(/,(\s*[}\]])/g, '$1'); // Remove trailing commas
-  fixed = fixed.replace(/[\x00-\x1F\x7F]/g, ''); // Remove control chars
-  
-  // Balance brackets/braces
-  const openBraces = (fixed.match(/{/g) || []).length;
-  const closeBraces = (fixed.match(/}/g) || []).length;
-  const openBrackets = (fixed.match(/\[/g) || []).length;
-  const closeBrackets = (fixed.match(/\]/g) || []).length;
-  
-  if (openBraces > closeBraces) fixed += '}'.repeat(openBraces - closeBraces);
-  if (openBrackets > closeBrackets) fixed += ']'.repeat(openBrackets - closeBrackets);
-  
-  return fixed;
-}
-
-/**
- * Get week info based on shopping day
- * @param {number} shoppingDay - Day of week (0=Sunday, 6=Saturday)
- */
-function getWeekInfo(shoppingDay = 6) {
-  const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-  const dayNamesCapitalized = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  
-  const today = new Date();
-  const todayDayOfWeek = today.getDay();
-  
-  // Calculate the start of the current meal plan week (most recent shopping day)
-  const weekStart = new Date(today);
-  let daysSinceShoppingDay = (todayDayOfWeek - shoppingDay + 7) % 7;
-  
-  // If today is shopping day, this is a new week
-  const isShoppingDay = todayDayOfWeek === shoppingDay;
-  
-  if (isShoppingDay) {
-    // Today is shopping day - generate full week starting today
-    daysSinceShoppingDay = 0;
-  }
-  
-  weekStart.setDate(today.getDate() - daysSinceShoppingDay);
-  
-  // Week ends the day before the next shopping day
-  const weekEnd = new Date(weekStart);
-  weekEnd.setDate(weekStart.getDate() + 6);
-  
-  // Determine if this is a partial week regeneration (mid-week)
-  const isPartialWeek = !isShoppingDay && daysSinceShoppingDay > 0;
-  
-  // Build list of days to generate
-  const daysToGenerate = [];
-  const allDaysInOrder = [];
-  
-  // Create ordered list of days starting from shopping day
-  for (let i = 0; i < 7; i++) {
-    const dayIndex = (shoppingDay + i) % 7;
-    allDaysInOrder.push(dayNames[dayIndex]);
-  }
-  
-  if (isPartialWeek) {
-    // Only generate from today until the day before shopping day
-    for (let i = daysSinceShoppingDay; i < 7; i++) {
-      const dayIndex = (shoppingDay + i) % 7;
-      daysToGenerate.push(dayNamesCapitalized[dayIndex]);
+  // Validate chatHistory
+  if (body.chatHistory !== undefined) {
+    if (!Array.isArray(body.chatHistory)) {
+      errors.push('chatHistory must be an array');
     }
-  } else {
-    // Full week
-    daysToGenerate.push(...allDaysInOrder.map(d => d.charAt(0).toUpperCase() + d.slice(1)));
   }
-  
-  // Format date strings
-  const rangeStr = `${months[weekStart.getMonth()]} ${weekStart.getDate()} - ${months[weekEnd.getMonth()]} ${weekEnd.getDate()}, ${weekStart.getFullYear()}`;
-  const isoDate = `${weekStart.getFullYear()}-${String(weekStart.getMonth() + 1).padStart(2, '0')}-${String(weekStart.getDate()).padStart(2, '0')}`;
-  
+
+  // Validate eaters
+  if (body.eaters !== undefined) {
+    if (!Array.isArray(body.eaters)) {
+      errors.push('eaters must be an array');
+    } else if (body.eaters.length > 0) {
+      body.eaters.forEach((eater, i) => {
+        if (typeof eater !== 'object' || eater === null) {
+          errors.push(`eater[${i}] must be an object`);
+        }
+      });
+    }
+  }
+
   return {
-    rangeStr,
-    isoDate,
-    year: weekStart.getFullYear(),
-    shoppingDay,
-    shoppingDayName: dayNamesCapitalized[shoppingDay],
-    endDayName: dayNamesCapitalized[(shoppingDay + 6) % 7],
-    isPartialWeek,
-    daysToGenerate,
-    allDaysInOrder,
-    daysSinceShoppingDay
+    valid: errors.length === 0,
+    errors
   };
 }
 
 /**
- * Generate fallback shopping list from recipes
+ * Build user prompt from chat history and eaters
  */
-function generateFallbackShoppingList(mealPlan) {
-  const ingredients = new Map();
-  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-  
-  days.forEach(day => {
-    const rolandDay = mealPlan.roland_meals?.[day];
-    if (rolandDay?.recipes) {
-      rolandDay.recipes.forEach(recipe => {
-        if (recipe?.ing) {
-          recipe.ing.forEach(ing => {
-            if (ing && !ingredients.has(ing.toLowerCase())) {
-              ingredients.set(ing.toLowerCase(), {
-                item: ing,
-                quantity: '1',
-                category: guessCategory(ing),
-                estimated_price: 5.00,
-                aisle: guessAisle(ing)
-              });
-            }
-          });
+function buildUserPrompt(chatHistory, eaters) {
+  // Get next Saturday as week start
+  const today = new Date();
+  const daysUntilSaturday = (6 - today.getDay() + 7) % 7 || 7;
+  const nextSaturday = new Date(today);
+  nextSaturday.setDate(today.getDate() + daysUntilSaturday);
+  const weekOf = nextSaturday.toISOString().split('T')[0];
+
+  // Extract preferences from chat history
+  const recentMessages = chatHistory.slice(-10);
+  const conversationContext = recentMessages.length > 0
+    ? `\n\nRecent conversation context:\n${recentMessages.map(msg => `${msg.role}: ${msg.content}`).join('\n')}`
+    : '';
+
+  // Format eater information
+  const eaterInfo = eaters.map(e => 
+    `- ${e.name}: ${e.preferences || 'no restrictions'}, ${e.schedule || 'home for dinner'}`
+  ).join('\n');
+
+  return `Generate a meal plan for the week starting ${weekOf}.
+
+Household members:
+${eaterInfo}
+
+${conversationContext}
+
+Please create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. Output ONLY the JSON structure specified in the system prompt, with no additional text.`;
+}
+
+/**
+ * Send SSE message
+ */
+function sendSSE(writer, encoder, data) {
+  const message = `data: ${JSON.stringify(data)}\n\n`;
+  writer.write(encoder.encode(message));
+}
+
+/**
+ * Main handler for the generate-meal-plan endpoint
+ */
+export default async function handler(req) {
+  // Only accept POST requests
+  if (req.method !== 'POST') {
+    return new Response(
+      JSON.stringify({ error: 'Method not allowed' }),
+      {
+        status: 405,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
+  }
+
+  // Check for API key
+  if (!ANTHROPIC_API_KEY) {
+    console.error('ANTHROPIC_API_KEY is not set');
+    return new Response(
+      JSON.stringify({ error: 'API key not configured' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
+  }
+
+  try {
+    // Parse request body
+    const body = await req.json();
+    
+    // Validate request
+    const validation = validateRequest(body);
+    if (!validation.valid) {
+      return new Response(
+        JSON.stringify({ error: 'Validation failed', details: validation.errors }),
+        {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
         }
-      });
+      );
     }
-  });
-  
-  return Array.from(ingredients.values());
-}
 
-function guessCategory(ing) {
-  const l = ing.toLowerCase();
-  if (/salmon|tuna|fish|tofu|tempeh|chicken|beef|protein/.test(l)) return 'Proteins';
-  if (/milk|yogurt|cheese|kefir|cream/.test(l)) return 'Dairy';
-  if (/spinach|kale|broccoli|carrot|tomato|salad|vegetable|avocado|lemon|onion|garlic/.test(l)) return 'Produce';
-  if (/rice|quinoa|bread|oat|grain|pasta/.test(l)) return 'Grains';
-  return 'Pantry';
-}
+    const { chatHistory = [], eaters = [] } = body;
 
-function guessAisle(ing) {
-  const cat = guessCategory(ing);
-  return { 'Produce': 1, 'Bakery': 2, 'Dairy': 3, 'Proteins': 4, 'Grains': 5, 'Pantry': 5 }[cat] || 5;
+    // Use default eater if none provided
+    const finalEaters = eaters.length > 0 ? eaters : [DEFAULT_EATER];
+
+    // Build user prompt
+    const userPrompt = buildUserPrompt(chatHistory, finalEaters);
+
+    // Initialize Anthropic client
+    const anthropic = new Anthropic({
+      apiKey: ANTHROPIC_API_KEY,
+    });
+
+    // Create abort controller for 60s timeout
+    const abortController = new AbortController();
+    const timeoutId = setTimeout(() => abortController.abort(), 60000);
+
+    // Set up SSE stream
+    const stream = new ReadableStream({
+      async start(controller) {
+        const encoder = new TextEncoder();
+        const writer = {
+          write: (chunk) => controller.enqueue(chunk)
+        };
+
+        try {
+          // Send initial progress
+          sendSSE(writer, encoder, {
+            type: 'progress',
+            progress: 10,
+            message: 'Analyzing your preferences...'
+          });
+
+          // Create Claude stream
+          const messageStream = await anthropic.messages.create({
+            model: 'claude-3-5-sonnet-20241022',
+            max_tokens: 4096,
+            temperature: 1,
+            system: SYSTEM_PROMPT,
+            messages: [
+              {
+                role: 'user',
+                content: userPrompt
+              }
+            ],
+            stream: true,
+          });
+
+          let accumulatedText = '';
+          let progressSteps = [25, 50, 75, 90];
+          let currentStep = 0;
+
+          // Send progress updates
+          sendSSE(writer, encoder, {
+            type: 'progress',
+            progress: 25,
+            message: 'Planning your week...'
+          });
+
+          // Process stream
+          for await (const event of messageStream) {
+            // Check for abort
+            if (abortController.signal.aborted) {
+              throw new Error('Request timeout');
+            }
+
+            if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
+              accumulatedText += event.delta.text;
+
+              // Send progress updates based on accumulated length
+              if (currentStep < progressSteps.length) {
+                const expectedLength = 8000; // Approximate JSON length
+                const currentProgress = Math.min(
+                  progressSteps[currentStep],
+                  Math.floor((accumulatedText.length / expectedLength) * 100)
+                );
+
+                if (accumulatedText.length > (expectedLength * (currentStep + 1) / progressSteps.length)) {
+                  currentStep++;
+                  const messages = [
+                    'Creating delicious recipes...',
+                    'Organizing your meals...',
+                    'Calculating your shopping list...',
+                    'Finalizing your plan...'
+                  ];
+                  sendSSE(writer, encoder, {
+                    type: 'progress',
+                    progress: progressSteps[Math.min(currentStep, progressSteps.length - 1)],
+                    message: messages[Math.min(currentStep, messages.length - 1)]
+                  });
+                }
+              }
+            }
+          }
+
+          // Clear timeout
+          clearTimeout(timeoutId);
+
+          // Send final progress
+          sendSSE(writer, encoder, {
+            type: 'progress',
+            progress: 95,
+            message: 'Preparing your meal plan...'
+          });
+
+          // Parse JSON response
+          let parsedData;
+          try {
+            // Extract JSON from response (in case there's extra text)
+            const jsonMatch = accumulatedText.match(/\{[\s\S]*\}/);
+            if (!jsonMatch) {
+              throw new Error('No valid JSON found in response');
+            }
+            parsedData = JSON.parse(jsonMatch[0]);
+          } catch (parseError) {
+            console.error('Failed to parse Claude response:', parseError);
+            console.error('Raw response:', accumulatedText.substring(0, 500));
+            throw new Error('Failed to parse meal plan data');
+          }
+
+          // Validate basic structure
+          if (!parsedData.days || !Array.isArray(parsedData.days)) {
+            throw new Error('Invalid meal plan structure');
+          }
+
+          // Send complete event with data
+          sendSSE(writer, encoder, {
+            type: 'complete',
+            data: parsedData
+          });
+
+          controller.close();
+
+        } catch (error) {
+          console.error('Generation error:', error);
+          
+          // Clear timeout
+          clearTimeout(timeoutId);
+
+          // Send error event
+          sendSSE(writer, encoder, {
+            type: 'error',
+            error: error.message || 'Generation failed'
+          });
+
+          controller.close();
+        }
+      },
+    });
+
+    // Return SSE response
+    return new Response(stream, {
+      headers: {
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
+      },
+    });
+
+  } catch (error) {
+    console.error('Endpoint error:', error);
+    return new Response(
+      JSON.stringify({ 
+        error: 'Internal server error',
+        message: error.message 
+      }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
+  }
 }

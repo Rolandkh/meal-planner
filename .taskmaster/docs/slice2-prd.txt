@@ -1,0 +1,441 @@
+SLICE 2: MEAL PLAN GENERATION
+Product Requirements Document
+Version: 1.0
+Date: December 19, 2025
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OVERVIEW
+
+Slice 2 builds on the working chat interface from Slice 1 to add the core meal 
+planning functionality. Users can now generate a full week's meal plan through 
+conversation with Vanessa, then see their plan with recipes and shopping list.
+
+SUCCESS CRITERIA
+
+✓ User can click "Generate Week" button in chat
+✓ System generates a complete 7-day meal plan using Claude
+✓ Generated plan is stored in normalized format (localStorage)
+✓ User sees progress during generation
+✓ User can view their meal plan after generation
+✓ Shopping list is automatically generated from meal plan
+
+═══════════════════════════════════════════════════════════════════════════════
+
+LEARNINGS FROM SLICE 1
+
+WHAT WORKED WELL:
+- localStorage for simple persistence (chat history)
+- SSE streaming for real-time responses
+- Centralized ErrorHandler utility
+- Component-based architecture
+- Custom events for component communication
+
+WHAT TO APPLY TO SLICE 2:
+- Use same storage pattern for meal plans
+- Use SSE for generation progress updates
+- Reuse ErrorHandler for generation errors
+- Keep components self-contained
+- Use custom events (e.g., 'plan-generated')
+
+TECHNICAL FOUNDATION:
+- ChatWidget component (working)
+- API streaming infrastructure (working)
+- Router system (working)
+- Error handling (working)
+- localStorage persistence (working)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DATA MODEL
+
+NORMALIZED STORAGE STRUCTURE
+
+localStorage keys:
+- 'eaters' - Array of household members
+- 'recipes' - Array of recipe objects
+- 'meals' - Array of meal instances
+- 'currentMealPlan' - Current week's meal plan object
+- 'baseSpecification' - User profile (exists later, not in Slice 2)
+
+EATER SCHEMA
+{
+  eaterId: "eater_[timestamp]",
+  name: string,
+  preferences: string,  // "vegetarian", "no dairy", etc.
+  schedule: string      // "home for dinner", "packed lunch", etc.
+}
+
+RECIPE SCHEMA
+{
+  recipeId: "recipe_[timestamp]",
+  name: string,
+  ingredients: [
+    {
+      name: string,
+      quantity: number,
+      unit: string,
+      category: string  // "produce", "meat", "dairy", etc.
+    }
+  ],
+  instructions: string,
+  prepTime: number,        // minutes
+  cookTime: number,        // minutes
+  servings: number,
+  tags: string[],          // ["quick", "vegetarian", "budget-friendly"]
+  source: "generated",     // Always "generated" in Slice 2
+  rating: null,            // User rating (not implemented in Slice 2)
+  createdAt: timestamp
+}
+
+MEAL SCHEMA
+{
+  mealId: "meal_[timestamp]",
+  recipeId: string,        // References recipe
+  mealType: "breakfast" | "lunch" | "dinner",
+  date: "YYYY-MM-DD",
+  eaterIds: string[],      // Which eaters this meal is for
+  servings: number,        // Actual servings for this meal
+  notes: string            // Optional notes from generation
+}
+
+MEAL PLAN SCHEMA
+{
+  _schemaVersion: 1,
+  mealPlanId: "plan_[YYYYMMDD]",
+  weekOf: "YYYY-MM-DD",    // Saturday (shopping day)
+  weekEnd: "YYYY-MM-DD",   // Following Saturday
+  createdAt: timestamp,
+  mealIds: string[],       // References to meals
+  budget: {
+    target: number,
+    estimated: number
+  },
+  weeklyPreferences: string,  // User's preferences for this week
+  conversation: {
+    messages: []  // Chat history for this meal plan
+  }
+}
+
+═══════════════════════════════════════════════════════════════════════════════
+
+USER FLOW
+
+1. USER OPENS CHAT
+   → ChatWidget loads
+   → Sees "Generate Week" button (always visible)
+   → Can chat with Vanessa (optional) or click Generate immediately
+
+2. USER CLICKS "GENERATE WEEK"
+   → Button disabled, shows loading state
+   → Navigate to /generating route
+   → GenerationStatusPage shows progress (0-100%)
+   → API call to /api/generate-meal-plan
+
+3. GENERATION IN PROGRESS
+   → Server streams progress events via SSE
+   → UI updates progress bar
+   → Shows status messages ("Planning Monday...", "Creating recipes...")
+   → Takes 30-60 seconds typically
+
+4. GENERATION COMPLETE
+   → Final progress event received
+   → Data saved to localStorage
+   → Auto-navigate to / (HomePage)
+   → HomePage now shows meal plan summary
+
+5. USER VIEWS PLAN
+   → HomePage displays: "Your meal plan for [week]"
+   → Shows quick stats (21 meals, $X budget, etc.)
+   → Links to: "View Shopping List", "Chat with Vanessa"
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPONENTS TO IMPLEMENT
+
+1. STORAGE UTILITIES (src/utils/storage.js)
+   Purpose: Centralized localStorage operations
+   Functions:
+   - loadEaters(), saveEaters(eaters)
+   - loadRecipes(), saveRecipes(recipes)
+   - loadMeals(), saveMeals(meals)
+   - loadCurrentMealPlan(), saveCurrentMealPlan(plan)
+   - safeSave(key, data) - Handles quota errors
+
+2. GENERATE BUTTON (in ChatWidget)
+   Location: src/components/ChatWidget.js
+   Changes needed:
+   - Add "Generate Week" button to chat header
+   - Button always visible, enabled
+   - On click: navigate to /generating
+   - Button styling: prominent, action-oriented
+
+3. GENERATION STATUS PAGE (src/components/GenerationStatusPage.js)
+   Purpose: Show progress during meal plan generation
+   Features:
+   - Progress bar (0-100%)
+   - Status message ("Planning your week...")
+   - Animated loading indicator
+   - Auto-navigate on completion
+   - Retry button on failure
+   State:
+   - progress: 0-100
+   - status: 'generating' | 'complete' | 'failed'
+   - message: string
+
+4. GENERATION API ENDPOINT (api/generate-meal-plan.js)
+   Purpose: Generate meal plan using Claude
+   Method: POST
+   Runtime: Edge (Vercel)
+   Input: { chatHistory, eaters }
+   Output: SSE stream with progress + final meal plan
+   
+   Process:
+   a) Validate input
+   b) Build Claude prompt with context
+   c) Stream to Claude (model: claude-sonnet-4-5-20250929)
+   d) Parse Claude's JSON response
+   e) Transform to normalized format
+   f) Stream progress events to client
+   g) Return final plan data
+
+5. DATA TRANSFORMER (src/utils/mealPlanTransformer.js)
+   Purpose: Convert Claude's output to normalized format
+   Function: transformGeneratedPlan(claudeOutput)
+   
+   Logic:
+   - Extract recipes, deduplicate by name
+   - Assign recipe IDs
+   - Create meal objects with references
+   - Calculate budget
+   - Build meal plan object
+   - Return: { recipes[], meals[], mealPlan }
+
+6. HOMEPAGE UPDATE (src/components/HomePage.js)
+   Purpose: Show meal plan or prompt to generate
+   
+   Two states:
+   
+   STATE A - No Meal Plan:
+   - Hero section
+   - "Chat with Vanessa" button
+   - Description of service
+   
+   STATE B - Has Meal Plan:
+   - "Your meal plan for [week]"
+   - Quick stats card (21 meals, budget, etc.)
+   - Action buttons:
+     * "View Shopping List"
+     * "Chat with Vanessa"
+     * "Generate New Week"
+
+7. ROUTER UPDATES (src/utils/router.js)
+   Add route: '/generating' → GenerationStatusPage
+
+═══════════════════════════════════════════════════════════════════════════════
+
+API SPECIFICATION
+
+ENDPOINT: /api/generate-meal-plan
+
+METHOD: POST
+
+RUNTIME: edge
+
+TIMEOUT: 60 seconds
+
+REQUEST BODY:
+{
+  chatHistory: [
+    { role: "user", content: "..." },
+    { role: "assistant", content: "..." }
+  ],
+  eaters: [
+    { name: "Roland", preferences: "...", schedule: "..." }
+  ]
+}
+
+RESPONSE: Server-Sent Events (text/event-stream)
+
+Progress Events:
+data: {"type": "progress", "progress": 25, "message": "Planning meals..."}
+
+Error Events:
+data: {"type": "error", "error": "Generation failed"}
+
+Complete Event:
+data: {"type": "complete", "data": { recipes: [...], meals: [...], mealPlan: {...} }}
+
+CLAUDE PROMPT STRUCTURE:
+
+System prompt:
+You are a meal planning assistant. Generate a complete 7-day meal plan 
+(breakfast, lunch, dinner for each day) based on the user's preferences.
+
+Output ONLY valid JSON in this exact format:
+{
+  "weekOf": "YYYY-MM-DD",
+  "budget": { "estimated": number },
+  "days": [
+    {
+      "date": "YYYY-MM-DD",
+      "breakfast": { recipe object },
+      "lunch": { recipe object },
+      "dinner": { recipe object }
+    }
+  ]
+}
+
+User message:
+Generate a meal plan for the week of [date].
+Preferences from conversation: [extracted preferences]
+Household: [eater details]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ERROR HANDLING
+
+GENERATION FAILURES:
+- Timeout (>60s): Show retry button
+- API error: Show error message + retry
+- Invalid response: Log error, show retry
+- Network error: Show offline message
+
+STORAGE FAILURES:
+- Quota exceeded: Use ErrorHandler.handleStorageError()
+- Save failure: Show warning, offer to retry
+- Load failure: Start fresh, log error
+
+USER RECOVERY:
+- Retry button: Re-attempt generation with same context
+- "Start Over": Clear generation state, return to chat
+- All failures logged to console for debugging
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TESTING STRATEGY
+
+UNIT TESTS (Manual):
+✓ transformGeneratedPlan() correctly normalizes data
+✓ safeSave() handles quota errors
+✓ Recipe deduplication works
+✓ Meal ID generation is unique
+
+INTEGRATION TESTS (Manual):
+✓ Generate button triggers navigation
+✓ Progress updates in real-time
+✓ Generation completes successfully
+✓ Data saves to localStorage
+✓ HomePage displays meal plan
+
+END-TO-END TESTS (Manual):
+✓ Full generation flow (click → progress → view plan)
+✓ Retry after failure works
+✓ Multiple generations don't corrupt data
+✓ Chat history persists through generation
+
+EDGE CASES:
+✓ Generation timeout handling
+✓ Corrupt/invalid Claude response
+✓ localStorage quota exceeded
+✓ Network disconnect during generation
+✓ Clicking Generate twice rapidly
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUT OF SCOPE FOR SLICE 2
+
+These features exist in the full spec but are NOT included in Slice 2:
+
+✗ Base Specification / User Profile
+✗ Onboarding flow
+✗ Recipe library browsing
+✗ Recipe search
+✗ Manual recipe addition
+✗ Shopping list page (just mention it exists)
+✗ Daily meal view page
+✗ Recipe detail page
+✗ Usage metering
+✗ Edit meal plan
+✗ Regenerate single day
+✗ Mark meals as cooked
+✗ Recipe ratings
+
+Slice 2 ONLY focuses on:
+✓ Generate button
+✓ Generation flow
+✓ Basic data model
+✓ Show generated plan exists
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TECHNICAL NOTES
+
+MODEL: claude-sonnet-4-5-20250929 (confirmed working from Slice 1)
+
+EATER DATA: For Slice 2, use hardcoded eaters or minimal prompt:
+Example: [{ name: "User", preferences: "no restrictions", schedule: "home for dinner" }]
+
+CONVERSATION CONTEXT: Use last 10 messages from chat history
+
+WEEK CALCULATION: Week starts on user's shopping day (default: Saturday)
+
+BUDGET: Simple calculation based on recipe count and typical prices
+
+PERSISTENCE: All data in localStorage, no backend database in Slice 2
+
+OFFLINE: Generation requires internet, but viewing existing plan works offline
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SUCCESS METRICS
+
+Slice 2 is complete when:
+
+✓ User can click Generate and get a meal plan
+✓ Progress shows during generation (visual feedback)
+✓ Generated plan saves to localStorage in normalized format
+✓ HomePage shows "You have a meal plan" state
+✓ No errors during happy path
+✓ Retry works after failures
+✓ Data structure matches schema
+
+NOT required for Slice 2 complete:
+✗ Shopping list page (just acknowledge it exists)
+✗ View individual recipes
+✗ Edit or customize plan
+✗ User profile/preferences
+
+═══════════════════════════════════════════════════════════════════════════════
+
+IMPLEMENTATION SEQUENCE
+
+Recommended order (Taskmaster will determine final task breakdown):
+
+1. Create storage utilities (foundation)
+2. Add Generate button to ChatWidget
+3. Create GenerationStatusPage component
+4. Implement /api/generate-meal-plan endpoint
+5. Create mealPlanTransformer utility
+6. Update HomePage to show meal plan state
+7. Add /generating route to router
+8. Test end-to-end flow
+9. Handle error cases
+10. Polish UI and messaging
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NOTES FOR AI IMPLEMENTATION
+
+- Reuse patterns from Slice 1 (SSE streaming, ErrorHandler, etc.)
+- Keep components simple and focused
+- Use Claude's structured output capabilities
+- Validate all data before saving
+- Log everything for debugging
+- Focus on happy path first, then errors
+- Test with real Claude API, not mocks
+- Keep localStorage operations safe (quota handling)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+END OF SLICE 2 PRD

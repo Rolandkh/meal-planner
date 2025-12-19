@@ -2,514 +2,670 @@
   "master": {
     "tasks": [
       {
-        "id": "16",
-        "title": "Set up app shell with Tailwind CSS",
-        "description": "Create the initial index.html file with Tailwind CSS integration and basic app structure",
-        "details": "Create an index.html file that includes:\n- Tailwind CSS via CDN\n- Basic HTML structure with appropriate meta tags for mobile responsiveness\n- Root div for mounting the app\n- ES module script imports\n\nPseudo-code:\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Vanessa - AI Meal Planning Concierge</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <style>\n    /* Any custom styles beyond Tailwind */\n  </style>\n</head>\n<body class=\"bg-gray-50 text-gray-900\">\n  <div id=\"app\" class=\"min-h-screen\"></div>\n  <script type=\"module\" src=\"/src/main.js\"></script>\n</body>\n</html>\n```\n\nCreate a basic main.js file that initializes the app and imports the router.",
-        "testStrategy": "Manually verify that:\n1. The page loads without errors\n2. Tailwind CSS is properly applied (test with a Tailwind class)\n3. The viewport meta tag is correctly set for mobile responsiveness\n4. The main.js file is properly loaded\n5. Test in at least two browsers (Chrome and Firefox)",
+        "id": "26",
+        "title": "Implement Storage Utilities",
+        "description": "Create centralized localStorage operations for eaters, recipes, meals, and current meal plan with quota error handling.",
+        "details": "Create src/utils/storage.js with functions: loadEaters(), saveEaters(eaters[]), loadRecipes(), saveRecipes(recipes[]), loadMeals(), saveMeals(meals[]), loadCurrentMealPlan(), saveCurrentMealPlan(plan), safeSave(key, data). Use try-catch for QUOTA_EXCEEDED_ERR (code 22). Implement JSON.parse/stringify with validation. Generate IDs using `crypto.randomUUID()` for recipe_[uuid], meal_[uuid], etc. Deduplicate recipes by name+ingredients hash using Map. Follow Slice 1 patterns.",
+        "testStrategy": "Unit test: save/load roundtrip for each data type, quota error simulation by filling localStorage, ID uniqueness (1000 generations), recipe deduplication with identical recipes.",
         "priority": "high",
         "dependencies": [],
         "status": "done",
         "subtasks": [
           {
             "id": 1,
-            "title": "Create index.html file with Tailwind CDN",
-            "description": "Generate the basic HTML structure including Tailwind CSS CDN link and meta tags for mobile responsiveness",
+            "title": "Implement Core CRUD Functions",
+            "description": "Create load and save functions for eaters, recipes, meals, and current meal plan using localStorage with JSON.parse/stringify.",
             "dependencies": [],
-            "details": "Use the provided pseudo-code as template. Include DOCTYPE, html lang='en', head with charset=UTF-8, viewport meta tag, title 'Vanessa - AI Meal Planning Concierge', Tailwind script src='https://cdn.tailwindcss.com', and empty style block.",
-            "status": "pending",
-            "testStrategy": "Verify HTML validates without errors and CDN link is correctly placed in head section",
-            "parentId": "undefined"
+            "details": "In src/utils/storage.js, implement loadEaters(), saveEaters(eaters[]), loadRecipes(), saveRecipes(recipes[]), loadMeals(), saveMeals(meals[]), loadCurrentMealPlan(), saveCurrentMealPlan(plan). Use specific storage keys like 'eaters', 'recipes', etc. Follow Slice 1 patterns for structure.",
+            "status": "done",
+            "testStrategy": "Unit test save/load roundtrip for each data type with sample data validation.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:02:01.068Z"
           },
           {
             "id": 2,
-            "title": "Add app root container and body styling",
-            "description": "Set up the body with Tailwind classes and create the mounting div for the app",
+            "title": "Add Error Handling and Quota Management",
+            "description": "Implement safeSave(key, data) with try-catch for QUOTA_EXCEEDED_ERR (code 22) and JSON validation.",
             "dependencies": [
               1
             ],
-            "details": "Add body class='bg-gray-50 text-gray-900', create div id='app' class='min-h-screen' inside body. Ensure proper nesting and no syntax errors.",
-            "status": "pending",
-            "testStrategy": "Check that body has correct Tailwind classes applied and #app div exists with min-h-screen class",
-            "parentId": "undefined"
+            "details": "Wrap all save operations in safeSave that catches QuotaExceededError, validates JSON.parse/stringify inputs, returns success/failure status. Add validation for array/object types before storage.",
+            "status": "done",
+            "testStrategy": "Unit test quota error simulation by pre-filling localStorage, validate error handling and fallback behavior.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:02:31.442Z"
           },
           {
             "id": 3,
-            "title": "Add ES module script import",
-            "description": "Include the module script tag that imports the main.js file",
+            "title": "Implement ID Generation and Validation",
+            "description": "Add ID generation using crypto.randomUUID() for recipe_[uuid], meal_[uuid] with uniqueness validation.",
             "dependencies": [
-              2
+              1
             ],
-            "details": "Add <script type='module' src='/src/main.js'></script> at the end of body before closing tag. Ensure type='module' attribute is present.",
-            "status": "pending",
-            "testStrategy": "Verify script tag has correct type='module' and src points to /src/main.js",
-            "parentId": "undefined"
+            "details": "Create helper functions generateRecipeId(), generateMealId(). Ensure IDs are prefixed correctly. Add validation in load functions to check ID format and regenerate if invalid.",
+            "status": "done",
+            "testStrategy": "Unit test 1000 ID generations for uniqueness, validate prefix format, test invalid ID handling.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:02:49.389Z"
           },
           {
             "id": 4,
-            "title": "Create basic main.js initialization file",
-            "description": "Generate minimal main.js file that initializes the app and imports the router",
-            "dependencies": [
-              3
-            ],
-            "details": "Create src/main.js with basic app initialization code and import statement for router from src/utils/router.js. Include error handling for module loading.",
-            "status": "pending",
-            "testStrategy": "Confirm main.js loads without console errors and router import resolves correctly",
-            "parentId": "undefined"
-          },
-          {
-            "id": 5,
-            "title": "Verify app shell setup and test Tailwind integration",
-            "description": "Test the complete app shell in multiple browsers to ensure Tailwind loads and structure works",
-            "dependencies": [
-              4
-            ],
-            "details": "Serve the app locally, test page loads without errors, verify Tailwind classes apply (add test div with bg-blue-500), check mobile viewport, confirm main.js loads, test in Chrome and Firefox.",
-            "status": "pending",
-            "testStrategy": "Follow test strategy: page loads, Tailwind applied, viewport correct, main.js loads, multi-browser testing",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 2,
-        "recommendedSubtasks": 0,
-        "expansionPrompt": "No expansion needed - straightforward HTML boilerplate creation with CDN integration.",
-        "updatedAt": "2025-12-19T11:57:19.844Z"
-      },
-      {
-        "id": "17",
-        "title": "Implement hash-based router",
-        "description": "Create a simple hash-based router to handle navigation between home and chat views",
-        "details": "Create src/utils/router.js with a minimal router implementation:\n\n```javascript\n// src/utils/router.js\nexport class Router {\n  constructor() {\n    this.routes = {};\n    this.currentRoute = '/';\n    window.addEventListener('hashchange', this.handleRouteChange.bind(this));\n  }\n\n  addRoute(path, component) {\n    this.routes[path] = component;\n  }\n\n  handleRouteChange() {\n    const hash = window.location.hash.slice(1) || '/';\n    this.navigateTo(hash);\n  }\n\n  navigateTo(path) {\n    this.currentRoute = path;\n    const component = this.routes[path] || this.routes['/'];\n    document.getElementById('app').innerHTML = '';\n    document.getElementById('app').appendChild(component.render());\n  }\n\n  init() {\n    this.handleRouteChange();\n  }\n}\n```\n\nUpdate main.js to use the router and register routes for '/' (HomePage) and '/chat' (for future use).",
-        "testStrategy": "1. Test navigation between routes by changing the URL hash\n2. Verify that the correct component renders for each route\n3. Test that direct URL access with a specific hash works\n4. Verify that the default route (/) works when no hash is present\n5. Test browser back/forward navigation",
-        "priority": "high",
-        "dependencies": [
-          "16"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Create basic Router class in src/utils/router.js",
-            "description": "Set up the Router class file with constructor, routes map, and currentRoute tracking",
-            "dependencies": [],
-            "details": "Create src/utils/router.js and implement an exported Router class with a constructor that initializes this.routes as an empty object, sets this.currentRoute to '/', and binds handleRouteChange to the instance.",
-            "status": "pending",
-            "testStrategy": null,
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Implement hashchange handling and route resolution",
-            "description": "Handle URL hash changes and resolve the correct route path",
-            "dependencies": [
-              1
-            ],
-            "details": "In Router, implement handleRouteChange() to read window.location.hash, strip the leading '#', default to '/', and call navigateTo with the resulting path. Add a window.addEventListener('hashchange', ...) in the constructor to call handleRouteChange.",
-            "status": "pending",
-            "testStrategy": null,
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "Implement route registration and navigation rendering",
-            "description": "Allow adding routes and navigating to them, updating the DOM",
+            "title": "Build Recipe Deduplication Algorithm",
+            "description": "Implement deduplication by name+ingredients hash using Map in saveRecipes and related functions.",
             "dependencies": [
               1,
-              2
-            ],
-            "details": "Add addRoute(path, component) to store a component reference in this.routes, and implement navigateTo(path) to set this.currentRoute, pick the matching component (falling back to '/'), clear the #app container, and append the result of component.render().",
-            "status": "pending",
-            "testStrategy": null,
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Initialize router on load with default route handling",
-            "description": "Ensure router initializes correctly and handles initial hash or default route",
-            "dependencies": [
-              2,
               3
             ],
-            "details": "Implement init() on Router to call handleRouteChange() so that on first load the correct component for the existing hash (or '/') is rendered. Confirm behavior when no hash is present and when an unknown hash is used.",
-            "status": "pending",
-            "testStrategy": null,
-            "parentId": "undefined"
-          },
-          {
-            "id": 5,
-            "title": "Integrate router in main.js with HomePage and /chat routes",
-            "description": "Wire the Router into main.js and register '/' and '/chat' routes",
-            "dependencies": [
-              4
-            ],
-            "details": "In main.js, import Router and the HomePage (and placeholder Chat view if needed), instantiate Router, call addRoute('/') with HomePage, addRoute('/chat') with a stub/future Chat component, call router.init(), and ensure navigation via hash changes works.",
-            "status": "pending",
-            "testStrategy": null,
-            "parentId": "undefined"
+            "details": "In saveRecipes(), create hash from recipe.name + sorted ingredients.join(','), use Map to track unique recipes, replace duplicates. Preserve original order, assign new IDs to unique recipes only.",
+            "status": "done",
+            "testStrategy": "Unit test with identical recipes (2+ same → 1 unique), different recipes preserved, hash collision resistance.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:03:16.260Z"
           }
         ],
-        "complexity": 4,
-        "recommendedSubtasks": 0,
-        "expansionPrompt": "No expansion needed - single class implementation with standard hashchange event handling and basic route mapping.",
-        "updatedAt": "2025-12-19T11:58:14.485Z"
+        "complexity": 6,
+        "recommendedSubtasks": 4,
+        "expansionPrompt": "Break down storage utilities into: 1) Core CRUD functions for each data type, 2) Error handling and quota management, 3) ID generation and validation logic, 4) Recipe deduplication algorithm with hashing.",
+        "updatedAt": "2025-12-19T14:03:16.260Z"
       },
       {
-        "id": "18",
-        "title": "Create HomePage component",
-        "description": "Build the HomePage component with a 'Chat with Vanessa' button that opens the chat widget",
-        "details": "Create src/components/HomePage.js:\n\n```javascript\n// src/components/HomePage.js\nexport class HomePage {\n  constructor(router) {\n    this.router = router;\n  }\n\n  render() {\n    const container = document.createElement('div');\n    container.className = 'flex flex-col items-center justify-center min-h-screen p-4';\n    \n    const title = document.createElement('h1');\n    title.className = 'text-3xl font-bold mb-6 text-center';\n    title.textContent = 'Vanessa - AI Meal Planning Concierge';\n    \n    const subtitle = document.createElement('p');\n    subtitle.className = 'text-xl mb-8 text-center text-gray-600';\n    subtitle.textContent = 'Your personal assistant for meal planning and recipe ideas';\n    \n    const chatButton = document.createElement('button');\n    chatButton.className = 'bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300';\n    chatButton.textContent = 'Chat with Vanessa';\n    chatButton.addEventListener('click', () => {\n      // For now, just toggle the chat widget visibility\n      // This will be updated when the ChatWidget is implemented\n      document.dispatchEvent(new CustomEvent('toggle-chat'));\n    });\n    \n    container.appendChild(title);\n    container.appendChild(subtitle);\n    container.appendChild(chatButton);\n    \n    return container;\n  }\n}\n```\n\nUpdate main.js to register the HomePage with the router.",
-        "testStrategy": "1. Verify the HomePage renders correctly with all elements\n2. Test that the 'Chat with Vanessa' button is visible and styled correctly\n3. Verify the button click dispatches the 'toggle-chat' event (use a temporary event listener to confirm)\n4. Test responsive layout on different screen sizes\n5. Verify text content matches the requirements",
+        "id": "27",
+        "title": "Add Generate Week Button to ChatWidget",
+        "description": "Add prominent 'Generate Week' button to ChatWidget header that navigates to /generating route.",
+        "details": "In src/components/ChatWidget.js, add button in header with styling: primary color, full-width, large font. On click: disable button, show loading spinner, dispatch custom event 'generate-week', navigate using router.go('/generating'). Button always visible regardless of chat state. Use existing router from Slice 1.",
+        "testStrategy": "Manual: button visible on load, click triggers navigation to /generating, button disables during generation, re-enables on return.",
         "priority": "high",
         "dependencies": [
-          "17"
+          "26"
         ],
         "status": "done",
         "subtasks": [
           {
             "id": 1,
-            "title": "Create HomePage.js file",
-            "description": "Create the src/components/HomePage.js file with the provided class implementation",
+            "title": "Add Generate Week button to ChatWidget header",
+            "description": "Insert prominent full-width button in the ChatWidget header section that is always visible regardless of chat state.",
             "dependencies": [],
-            "details": "Use the exact code provided in the task details. Create the file structure src/components/ and add the HomePage class with constructor and render method using DOM creation and Tailwind classes.",
-            "status": "pending",
-            "testStrategy": "Verify file is created in correct location with proper export and class structure",
-            "parentId": "undefined"
+            "details": "In src/components/ChatWidget.js, locate the header JSX element and add <button> element with text 'Generate Week'. Apply inline styles or CSS classes for primary color background, white text, full-width (width:100%), large font (font-size: 18px+), padding (16px 24px), border-radius 8px. Ensure button renders unconditionally outside any conditional chat state logic.",
+            "status": "done",
+            "testStrategy": "Manual: Verify button appears in header on initial page load in all chat states (empty, with messages)",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:03:53.617Z"
           },
           {
             "id": 2,
-            "title": "Implement HomePage render method",
-            "description": "Add the complete render() method with title, subtitle, and chat button elements",
+            "title": "Implement button click handler with disable and loading states",
+            "description": "Create onClick handler that disables button and shows loading spinner immediately on click.",
             "dependencies": [
               1
             ],
-            "details": "Copy the DOM element creation code exactly: container div with flex classes, h1 title, p subtitle, button with Tailwind styling and click event listener dispatching 'toggle-chat' event.",
-            "status": "pending",
-            "testStrategy": "Check that render() returns a div with correct className 'flex flex-col items-center justify-center min-h-screen p-4'",
-            "parentId": "undefined"
+            "details": "Add useState for isLoading (initial false). In onClick: setIsLoading(true). Replace button text with spinner (use existing spinner component or simple CSS spinner). Disable button with disabled={isLoading} attribute. Add conditional rendering: isLoading ? <Spinner/> : 'Generate Week'. Style spinner centered with same button dimensions.",
+            "status": "done",
+            "testStrategy": "Manual: Click button → immediately disables and shows spinner, text disappears",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:04:41.946Z"
           },
           {
             "id": 3,
-            "title": "Add chat button event listener",
-            "description": "Implement the button click handler that dispatches the custom 'toggle-chat' event",
+            "title": "Dispatch custom generate-week event on button click",
+            "description": "Dispatch 'generate-week' custom event to notify other components generation started.",
             "dependencies": [
               2
             ],
-            "details": "Add event listener to chatButton: document.dispatchEvent(new CustomEvent('toggle-chat')) on click. Ensure button has correct Tailwind classes: 'bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300'.",
-            "status": "pending",
-            "testStrategy": "Verify button click dispatches 'toggle-chat' event using temporary event listener in browser console",
-            "parentId": "undefined"
+            "details": "In onClick handler (after setIsLoading(true)), add: window.dispatchEvent(new CustomEvent('generate-week', {detail: {source: 'chatwidget'}})). Ensure event bubbles and carries relevant payload. Place before navigation to allow parallel processing.",
+            "status": "done",
+            "testStrategy": "Manual: Click button → verify console shows 'generate-week' event fired (add temporary listener)",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:04:41.948Z"
           },
           {
             "id": 4,
-            "title": "Update main.js router registration",
-            "description": "Modify main.js to import and register HomePage component with the router",
+            "title": "Implement router navigation to /generating route",
+            "description": "Navigate to /generating route using existing Slice 1 router immediately after event dispatch.",
             "dependencies": [
-              2
+              3
             ],
-            "details": "Import HomePage from './components/HomePage.js' and add router mapping for homepage route (likely router.add('/', new HomePage(router)) or similar pattern from task 17). Ensure constructor receives router instance.",
-            "status": "pending",
-            "testStrategy": "Verify HomePage can be instantiated with router parameter and no import errors in console",
-            "parentId": "undefined"
+            "details": "Import router from Slice 1 (likely useRouter hook or router instance). In onClick after dispatch: router.go('/generating') or router.push('/generating'). Ensure navigation happens synchronously after event. Handle any router errors gracefully with console.warn.",
+            "status": "done",
+            "testStrategy": "Manual: Click button → browser navigates to /generating URL, button remains disabled",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:04:41.949Z"
           },
           {
             "id": 5,
-            "title": "Test HomePage rendering and functionality",
-            "description": "Verify complete HomePage renders correctly and button works as expected",
+            "title": "Add button re-enable logic and final polish",
+            "description": "Implement logic to re-enable button when returning from /generating and apply final styling/accessibility.",
             "dependencies": [
-              3,
               4
             ],
-            "details": "Test in browser: 1) Page shows title/subtitle with proper Tailwind styling 2) Button visible and styled 3) Button click dispatches toggle-chat event 4) Responsive layout on mobile/desktop 5) No console errors.",
-            "status": "pending",
-            "testStrategy": "Manual browser testing + event verification: add temp listener document.addEventListener('toggle-chat', () => console.log('works'))",
-            "parentId": "undefined"
+            "details": "Add useEffect listening for 'focus' or route change events to setIsLoading(false). Or use router events 'route-changed'. Ensure button accessible: add aria-label='Generate your weekly meal plan', role='button'. Final styles: box-shadow, hover:transform scale(1.02), focus:outline. Test mobile responsiveness (min-height:48px).",
+            "status": "done",
+            "testStrategy": "Manual: Complete flow - click→loading→navigate→return→button re-enables and clickable again",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:04:41.950Z"
           }
         ],
         "complexity": 3,
         "recommendedSubtasks": 0,
-        "expansionPrompt": "No expansion needed - single component with DOM creation and single event dispatch.",
-        "updatedAt": "2025-12-19T11:58:59.311Z"
+        "expansionPrompt": "",
+        "updatedAt": "2025-12-19T14:04:41.950Z"
       },
       {
-        "id": "19",
-        "title": "Build ChatWidget component UI",
-        "description": "Create the ChatWidget component with message list, input field, and send button (UI only)",
-        "details": "Create src/components/ChatWidget.js with the following features:\n- Collapsible chat drawer\n- Message list for user and assistant messages\n- Text input and send button\n- Typing indicator (to be used during streaming)\n- Mobile: full-screen overlay\n- Desktop: side panel\n\n```javascript\n// src/components/ChatWidget.js\nexport class ChatWidget {\n  constructor() {\n    this.isOpen = false;\n    this.messages = [];\n    this.isTyping = false;\n    \n    // Listen for toggle event from HomePage\n    document.addEventListener('toggle-chat', this.toggle.bind(this));\n    \n    // Create DOM elements\n    this.createElements();\n    this.attachToDOM();\n  }\n  \n  createElements() {\n    // Create chat container\n    this.container = document.createElement('div');\n    this.container.className = 'fixed inset-y-0 right-0 w-full md:w-96 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50';\n    this.container.style.transform = 'translateX(100%)';\n    \n    // Create header\n    const header = document.createElement('div');\n    header.className = 'bg-blue-500 text-white p-4 flex justify-between items-center';\n    \n    const title = document.createElement('h2');\n    title.className = 'text-xl font-bold';\n    title.textContent = 'Chat with Vanessa';\n    \n    const closeButton = document.createElement('button');\n    closeButton.className = 'text-white hover:text-gray-200';\n    closeButton.innerHTML = '&times;';\n    closeButton.addEventListener('click', this.toggle.bind(this));\n    \n    header.appendChild(title);\n    header.appendChild(closeButton);\n    \n    // Create messages container\n    this.messagesContainer = document.createElement('div');\n    this.messagesContainer.className = 'flex-1 p-4 overflow-y-auto';\n    this.messagesContainer.style.height = 'calc(100% - 130px)';\n    \n    // Create typing indicator\n    this.typingIndicator = document.createElement('div');\n    this.typingIndicator.className = 'text-gray-500 p-2 hidden';\n    this.typingIndicator.textContent = 'Vanessa is typing...';\n    \n    // Create input area\n    const inputArea = document.createElement('div');\n    inputArea.className = 'border-t p-4 bg-gray-50';\n    \n    const inputForm = document.createElement('form');\n    inputForm.className = 'flex';\n    inputForm.addEventListener('submit', (e) => {\n      e.preventDefault();\n      // Will be implemented in a later task\n    });\n    \n    this.messageInput = document.createElement('input');\n    this.messageInput.className = 'flex-1 border rounded-l-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500';\n    this.messageInput.placeholder = 'Type your message...';\n    \n    const sendButton = document.createElement('button');\n    sendButton.className = 'bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600';\n    sendButton.type = 'submit';\n    sendButton.textContent = 'Send';\n    \n    inputForm.appendChild(this.messageInput);\n    inputForm.appendChild(sendButton);\n    inputArea.appendChild(inputForm);\n    \n    // Assemble the widget\n    this.container.appendChild(header);\n    this.container.appendChild(this.messagesContainer);\n    this.container.appendChild(this.typingIndicator);\n    this.container.appendChild(inputArea);\n  }\n  \n  attachToDOM() {\n    document.body.appendChild(this.container);\n  }\n  \n  toggle() {\n    this.isOpen = !this.isOpen;\n    this.container.style.transform = this.isOpen ? 'translateX(0)' : 'translateX(100%)';\n    \n    if (this.isOpen) {\n      this.messageInput.focus();\n      document.body.classList.add('overflow-hidden', 'md:overflow-auto');\n    } else {\n      document.body.classList.remove('overflow-hidden', 'md:overflow-auto');\n    }\n  }\n  \n  renderMessage(message) {\n    const messageEl = document.createElement('div');\n    messageEl.className = `mb-4 ${message.role === 'user' ? 'text-right' : ''}`;\n    \n    const bubble = document.createElement('div');\n    bubble.className = message.role === 'user' \n      ? 'inline-block bg-blue-500 text-white p-3 rounded-lg rounded-tr-none'\n      : 'inline-block bg-gray-200 p-3 rounded-lg rounded-tl-none';\n    bubble.textContent = message.content;\n    \n    messageEl.appendChild(bubble);\n    this.messagesContainer.appendChild(messageEl);\n    this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;\n  }\n  \n  showTypingIndicator() {\n    this.isTyping = true;\n    this.typingIndicator.classList.remove('hidden');\n  }\n  \n  hideTypingIndicator() {\n    this.isTyping = false;\n    this.typingIndicator.classList.add('hidden');\n  }\n}\n```\n\nUpdate main.js to initialize the ChatWidget.",
-        "testStrategy": "1. Verify the ChatWidget renders correctly when toggled\n2. Test opening and closing the chat widget\n3. Verify the UI is responsive (full-screen on mobile, side panel on desktop)\n4. Test the typing indicator appearance\n5. Verify message bubbles render correctly for both user and assistant\n6. Test input field and send button appearance\n7. Verify scrolling works in the message container\n8. Test on multiple screen sizes to ensure responsive design",
+        "id": "28",
+        "title": "Create GenerationStatusPage Component",
+        "description": "Build progress display page for meal plan generation with SSE streaming, progress bar, status messages, and auto-navigation.",
+        "details": "Create src/components/GenerationStatusPage.js. Use SSE to connect to /api/generate-meal-plan. State: progress (0-100), status ('generating'|'complete'|'failed'), message. Features: animated progress bar (CSS transitions), status text, retry button (reconnect SSE), auto-navigate to '/' on complete. Handle SSE events: 'progress', 'error', 'complete'. Use AbortController for cleanup. Reuse Slice 1 SSE patterns.",
+        "testStrategy": "Manual: progress updates in real-time (0→100), status messages change, complete auto-navigates, retry reconnects SSE, error shows retry button.",
         "priority": "high",
         "dependencies": [
-          "18"
+          "27"
         ],
         "status": "done",
         "subtasks": [
           {
             "id": 1,
-            "title": "Create DOM structure and styling for ChatWidget",
-            "description": "Implement the createElements() and attachToDOM() methods to build the complete responsive chat widget UI structure including header, messages container, typing indicator, and input area.",
+            "title": "Implement SSE connection and event handling with AbortController",
+            "description": "Create the SSE connection in GenerationStatusPage to /api/generate-meal-plan, wire up event listeners for progress, error, and complete events, and manage the AbortController lifecycle.",
             "dependencies": [],
-            "details": "Use the provided code snippet to create all DOM elements with Tailwind CSS classes for responsive design (full-screen mobile overlay, side panel desktop). Ensure proper nesting: header > messagesContainer > typingIndicator > inputArea inside container. Set correct positioning (fixed inset-y-0 right-0 w-full md:w-96) and initial transform (translateX(100%)).",
-            "status": "pending",
-            "testStrategy": "Verify DOM structure matches expected hierarchy using browser dev tools. Check Tailwind classes render correctly (mobile full-screen, desktop side panel). Confirm container is appended to body and initially hidden.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 6,
-        "recommendedSubtasks": 1,
-        "expansionPrompt": "Break into: 1) Create DOM structure and styling, 2) Implement toggle/open-close functionality, 3) Add message rendering methods.",
-        "updatedAt": "2025-12-19T12:00:00.035Z"
-      },
-      {
-        "id": "20",
-        "title": "Implement chat streaming API endpoint",
-        "description": "Create a Vercel serverless function for the /api/chat-with-vanessa endpoint that streams responses using Server-Sent Events",
-        "details": "Create api/chat-with-vanessa.js as a Vercel serverless function:\n\n```javascript\n// api/chat-with-vanessa.js\nimport { Anthropic } from '@anthropic-ai/sdk';\n\nexport const config = {\n  runtime: 'edge',\n};\n\nconst CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;\n\nconst SYSTEM_PROMPT = `\nYou are Vanessa, a friendly meal planning assistant. \nKeep responses concise (2-3 sentences).\nHelp users think about their meal planning needs.\nYou cannot generate meal plans yet - that feature is coming soon.\n`;\n\nexport default async function handler(req) {\n  if (req.method !== 'POST') {\n    return new Response(JSON.stringify({ error: 'Method not allowed' }), {\n      status: 405,\n      headers: { 'Content-Type': 'application/json' },\n    });\n  }\n\n  try {\n    const { message, chatHistory = [] } = await req.json();\n    \n    if (!message) {\n      return new Response(JSON.stringify({ error: 'Message is required' }), {\n        status: 400,\n        headers: { 'Content-Type': 'application/json' },\n      });\n    }\n\n    const anthropic = new Anthropic({\n      apiKey: CLAUDE_API_KEY,\n    });\n\n    // Format messages for Claude API\n    const messages = chatHistory.map(msg => ({\n      role: msg.role,\n      content: msg.content,\n    }));\n    \n    // Add the new user message\n    messages.push({\n      role: 'user',\n      content: message,\n    });\n\n    // Set up SSE response\n    const encoder = new TextEncoder();\n    const stream = new TransformStream();\n    const writer = stream.writable.getWriter();\n\n    // Start the Claude stream in the background\n    const streamResponse = anthropic.messages.create({\n      model: 'claude-3-sonnet-20240229',\n      system: SYSTEM_PROMPT,\n      messages,\n      max_tokens: 1000,\n      stream: true,\n    });\n\n    // Process the stream\n    (async () => {\n      try {\n        for await (const chunk of streamResponse) {\n          if (chunk.type === 'content_block_delta' && chunk.delta.text) {\n            const data = JSON.stringify({\n              type: 'token',\n              content: chunk.delta.text,\n            });\n            await writer.write(encoder.encode(`data: ${data}\\n\\n`));\n          }\n        }\n        \n        // Signal completion\n        await writer.write(encoder.encode(`data: ${JSON.stringify({ type: 'done' })}\\n\\n`));\n      } catch (error) {\n        console.error('Streaming error:', error);\n        const errorData = JSON.stringify({\n          type: 'error',\n          error: 'An error occurred during streaming',\n        });\n        await writer.write(encoder.encode(`data: ${errorData}\\n\\n`));\n      } finally {\n        await writer.close();\n      }\n    })();\n\n    return new Response(stream.readable, {\n      headers: {\n        'Content-Type': 'text/event-stream',\n        'Cache-Control': 'no-cache',\n        'Connection': 'keep-alive',\n      },\n    });\n  } catch (error) {\n    console.error('API error:', error);\n    return new Response(JSON.stringify({ error: 'Internal server error' }), {\n      status: 500,\n      headers: { 'Content-Type': 'application/json' },\n    });\n  }\n}\n```\n\nCreate a .env file with the Claude API key and ensure it's added to Vercel environment variables.",
-        "testStrategy": "1. Test the endpoint with a valid POST request containing a message\n2. Verify the SSE stream format matches the expected format (data: {\"type\": \"token\", \"content\": \"...\"}\n3. Test with various message lengths to ensure streaming works correctly\n4. Test error handling by sending invalid requests\n5. Verify the system prompt is correctly applied by checking response content\n6. Test with and without chat history to ensure context is maintained\n7. Verify the endpoint rejects non-POST methods\n8. Test with missing message to verify error handling",
-        "priority": "high",
-        "dependencies": [
-          "16"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Set up Vercel edge serverless function with input validation and environment configuration",
-            "description": "Create the /api/chat-with-vanessa edge function file, wire up the POST handler, parse and validate the request body, and configure the Claude API key via .env and Vercel project settings.",
-            "dependencies": [],
-            "details": "- Create api/chat-with-vanessa.js (or .ts) using Vercel Edge runtime config.\n- Import and initialize basic handler structure that checks req.method is POST and returns 405 otherwise.\n- Use req.json() to extract { message, chatHistory } and validate that message is a non-empty string and chatHistory (if provided) is an array of objects with role/content.\n- Return 400 with a JSON error payload for invalid inputs.\n- Add CLAUDE_API_KEY to a local .env file and reference it via process.env.CLAUDE_API_KEY.\n- Configure the same CLAUDE_API_KEY in Vercel project environment variables for production and preview.\n- Ensure correct Content-Type headers for JSON responses on non-streaming paths.\n- Verify locally that the function is reachable at /api/chat-with-vanessa and that basic validation responses work.",
-            "status": "pending",
-            "testStrategy": "- Send a POST request with a valid body and confirm it reaches the handler.\n- Send requests with missing message, wrong method, or malformed JSON and verify appropriate 4xx responses.\n- Confirm process.env.CLAUDE_API_KEY is available in the function in both local and deployed environments.",
-            "parentId": "undefined"
+            "details": "In src/components/GenerationStatusPage.js, set up the SSE client (using fetch/EventSource or existing Slice 1 helper) to connect to /api/generate-meal-plan when the component mounts. Instantiate an AbortController, pass its signal into the SSE/fetch call, and store it in a ref or state for later reuse. Add handlers for 'progress', 'error', and 'complete' events that parse event.data JSON safely, update local callbacks, and distinguish between terminal and non-terminal states. Ensure that abort() is called on unmount and when starting a new stream to avoid duplicate connections, reusing patterns from Slice 1 SSE utilities.",
+            "status": "done",
+            "testStrategy": "Manually verify that SSE connects, receives progress events at expected points, stops when aborted or on unmount, and that error/complete events arrive and are parsed without throwing.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:05:42.588Z"
           },
           {
             "id": 2,
-            "title": "Integrate Anthropic streaming with SSE, including robust error and timeout handling",
-            "description": "Wire the Anthropic SDK streaming API into the edge function, stream tokens via Server-Sent Events using TransformStream, and add defensive error and timeout handling around the streaming loop.",
+            "title": "Build UI state management and animated progress display",
+            "description": "Manage React state for progress, status, and message, and render an animated progress bar and status text that update in real time from SSE events.",
             "dependencies": [
               1
             ],
-            "details": "- Instantiate Anthropic with the CLAUDE_API_KEY inside the handler.\n- Transform chatHistory and the new user message into the Anthropic messages format and include the SYSTEM_PROMPT.\n- Call anthropic.messages.create with stream: true, appropriate model, max_tokens, and capture the async iterator.\n- Create a TransformStream, TextEncoder, and writer to emit SSE-formatted events (data: {\"type\":\"token\",\"content\":\"...\"}\\n\\n) for each content_block_delta chunk.\n- Emit a final SSE event of type \"done\" when the stream completes and then close the writer.\n- Wrap the streaming loop in try/catch/finally to send an SSE error event on failures and always close the stream.\n- Add a timeout guard (e.g., using AbortController or manual timer) so long-running Anthropic calls are aborted and return a graceful SSE error event.\n- Ensure response headers are set for SSE: text/event-stream, no-cache, keep-alive, and that the function returns the readable side of the TransformStream.\n- Confirm behavior when Anthropic returns non-stream errors or when network issues occur.",
-            "status": "pending",
-            "testStrategy": "- Use a client (or curl) to open an SSE connection and verify tokens arrive incrementally and are correctly formatted.\n- Test with long and short messages and confirm streaming continues until a final done event.\n- Simulate Anthropic/network errors (e.g., by using an invalid API key) and verify an SSE error event is sent instead of hanging.\n- Trigger a timeout scenario to confirm the guard aborts the request and emits a clear error event.\n- Verify that the stream is always closed (no resource leaks) and that the client can reconnect for subsequent requests.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 8,
-        "recommendedSubtasks": 2,
-        "expansionPrompt": "Break into: 1) Serverless function setup and input validation, 2) Anthropic SDK streaming integration with SSE, 3) Error handling and timeout management.",
-        "updatedAt": "2025-12-19T12:01:00.923Z"
-      },
-      {
-        "id": "21",
-        "title": "Connect ChatWidget to API with streaming",
-        "description": "Implement the functionality to send messages to the API and display streaming responses in the ChatWidget",
-        "details": "Update the ChatWidget.js file to add API communication and streaming response handling:\n\n```javascript\n// Add to ChatWidget.js\n\n// Add these methods to the ChatWidget class\n\nasync sendMessage(message) {\n  if (!message.trim()) return;\n  \n  // Add user message to UI\n  const userMessage = { role: 'user', content: message, timestamp: new Date().toISOString() };\n  this.messages.push(userMessage);\n  this.renderMessage(userMessage);\n  \n  // Clear input\n  this.messageInput.value = '';\n  \n  // Show typing indicator\n  this.showTypingIndicator();\n  \n  try {\n    // Create assistant message placeholder\n    const assistantMessage = { role: 'assistant', content: '', timestamp: new Date().toISOString() };\n    this.messages.push(assistantMessage);\n    \n    // Create message element for streaming\n    const messageEl = document.createElement('div');\n    messageEl.className = 'mb-4';\n    \n    const bubble = document.createElement('div');\n    bubble.className = 'inline-block bg-gray-200 p-3 rounded-lg rounded-tl-none';\n    bubble.textContent = '';\n    \n    messageEl.appendChild(bubble);\n    this.messagesContainer.appendChild(messageEl);\n    \n    // Send to API with streaming\n    const response = await fetch('/api/chat-with-vanessa', {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({\n        message,\n        chatHistory: this.messages.slice(0, -1) // Exclude the empty assistant message\n      })\n    });\n    \n    if (!response.ok) throw new Error('API request failed');\n    \n    const reader = response.body.getReader();\n    const decoder = new TextDecoder();\n    \n    // Process the stream\n    while (true) {\n      const { value, done } = await reader.read();\n      if (done) break;\n      \n      const chunk = decoder.decode(value, { stream: true });\n      const lines = chunk.split('\\n\\n');\n      \n      for (const line of lines) {\n        if (!line.trim() || !line.startsWith('data: ')) continue;\n        \n        try {\n          const data = JSON.parse(line.substring(6));\n          \n          if (data.type === 'token') {\n            // Append to the bubble and the message object\n            bubble.textContent += data.content;\n            assistantMessage.content += data.content;\n            this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;\n          } else if (data.type === 'error') {\n            throw new Error(data.error || 'Unknown streaming error');\n          }\n        } catch (e) {\n          console.error('Error parsing SSE:', e);\n        }\n      }\n    }\n    \n    // Save conversation to localStorage\n    this.saveConversation();\n    \n  } catch (error) {\n    console.error('Error sending message:', error);\n    this.showError('Failed to get response from Vanessa. Please try again.');\n  } finally {\n    this.hideTypingIndicator();\n    this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;\n  }\n}\n\nshowError(message) {\n  const errorEl = document.createElement('div');\n  errorEl.className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';\n  errorEl.textContent = message;\n  \n  this.messagesContainer.appendChild(errorEl);\n  setTimeout(() => {\n    errorEl.remove();\n  }, 5000);\n}\n\nsaveConversation() {\n  // Will be implemented in the next task\n}\n\n// Update the form submit handler in createElements method\ninputForm.addEventListener('submit', (e) => {\n  e.preventDefault();\n  const message = this.messageInput.value.trim();\n  if (message) {\n    this.sendMessage(message);\n  }\n});\n```",
-        "testStrategy": "1. Test sending a message and verify the API call is made correctly\n2. Verify streaming responses appear in real-time in the chat\n3. Test error handling by simulating API failures\n4. Verify the typing indicator shows and hides appropriately\n5. Test with long responses to ensure streaming works correctly\n6. Verify auto-scrolling works as new content streams in\n7. Test sending multiple messages in succession\n8. Verify empty messages are not sent",
-        "priority": "high",
-        "dependencies": [
-          "19",
-          "20"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Implement sendMessage API request and basic message lifecycle",
-            "description": "Wire up the ChatWidget sendMessage method to send the user message to the /api/chat-with-vanessa endpoint and manage local message objects and DOM placeholders.",
-            "dependencies": [],
-            "details": "Implement the async sendMessage(message) method to validate and early-return on empty input, push a formatted user message object into this.messages, render it via this.renderMessage, clear this.messageInput, and show the typing indicator. Then create a placeholder assistantMessage object with empty content, push it into this.messages, and create the corresponding DOM elements (messageEl with a bubble div) appended to this.messagesContainer. Finally, call fetch('/api/chat-with-vanessa', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message, chatHistory: this.messages.slice(0, -1) }) }) and handle non-ok responses by throwing an error.",
-            "status": "pending",
-            "testStrategy": "Manually trigger sendMessage via the form submit, confirm user messages appear immediately, the assistant placeholder bubble is created, and a POST request with the correct JSON body (message + chatHistory without empty assistant) is sent to /api/chat-with-vanessa.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Implement SSE stream parsing and real-time assistant bubble updates",
-            "description": "Process the ReadableStream from the API response to parse SSE-formatted chunks and update the assistant message bubble and in-memory message content in real time.",
-            "dependencies": [
-              1
-            ],
-            "details": "After a successful fetch response, obtain a reader with response.body.getReader() and a TextDecoder. Implement a read loop (while true with await reader.read()) that exits on done. For each value, decode it with decoder.decode(value, { stream: true }), split the chunk on double newlines into lines, and for each line that starts with 'data: ' and is non-empty, parse JSON from line.substring(6). If data.type === 'token', append data.content to both bubble.textContent and assistantMessage.content, and keep this.messagesContainer scrolled to the bottom. If data.type === 'error', throw an Error with data.error or a generic message. Ensure streaming updates feel continuous and smooth in the UI.",
-            "status": "pending",
-            "testStrategy": "Use the running backend to send prompts that produce multi-token responses and verify that the assistant bubble text grows incrementally as chunks arrive, without waiting for the full response. Inspect network and console to ensure SSE lines are parsed correctly and no chunks are skipped or duplicated.",
-            "parentId": "undefined"
+            "details": "Define React state variables: progress (0–100), status ('generating' | 'complete' | 'failed'), and message (string). In SSE event handlers from subtask 1, update these state values appropriately on 'progress', 'error', and 'complete' events. Implement a visual layout for GenerationStatusPage with a container, title, progress bar track and fill, and status/message text. Use CSS transitions on the progress bar width to animate changes smoothly. Conditionally render different messages and UI states based on status (e.g., loading spinner while generating, success text on complete, error text when failed). Ensure that initial state is generating with progress 0 and that rapid updates do not cause layout jumps.",
+            "status": "done",
+            "testStrategy": "Manual testing: trigger a generation and confirm the progress bar animates from 0 to 100 in steps, the status text and message update correctly for each stage, and visual transitions are smooth without console errors.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:05:42.589Z"
           },
           {
             "id": 3,
-            "title": "Add error handling, UI error feedback, and state synchronization",
-            "description": "Handle API and streaming errors gracefully, manage typing indicator and scroll state, and prepare for conversation persistence integration.",
+            "title": "Implement auto-navigation, retry behavior, and cleanup logic",
+            "description": "Add logic to navigate back to the main route on completion, provide a retry button on error or failure, and ensure all resources are cleaned up properly.",
             "dependencies": [
               1,
               2
             ],
-            "details": "Wrap the streaming logic in a try/catch/finally block: on any error (fetch failure, non-ok response, SSE parse error, data.type === 'error'), log the error and call showError('Failed to get response from Vanessa. Please try again.'). Implement showError(message) to render a styled error div in messagesContainer and auto-remove it after a timeout. In finally, always hide the typing indicator via this.hideTypingIndicator() and force messagesContainer scroll to bottom. Implement a stub saveConversation() method that will later call storage utilities to persist this.messages, and invoke it after the streaming loop completes successfully. Ensure error paths do not leave isTyping true or the UI scrolled incorrectly.",
-            "status": "pending",
-            "testStrategy": "Simulate network and server errors (e.g., force fetch to fail or return 500) and verify showError renders and auto-cleans, the typing indicator hides, and scrolling remains correct. Confirm that successful conversations call saveConversation() once streaming ends and that no unhandled exceptions are thrown in any error path.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 9,
-        "recommendedSubtasks": 3,
-        "expansionPrompt": "Break into: 1) Implement sendMessage API integration, 2) SSE stream parsing and real-time UI updates, 3) Error handling and state synchronization.",
-        "updatedAt": "2025-12-19T12:02:02.743Z"
-      },
-      {
-        "id": "22",
-        "title": "Implement conversation persistence with localStorage",
-        "description": "Add functionality to save and load conversation history using localStorage",
-        "details": "Create src/utils/storage.js for localStorage operations:\n\n```javascript\n// src/utils/storage.js\nexport const STORAGE_KEYS = {\n  CONVERSATION: 'vanessa_conversation',\n  BASE_SPECIFICATION: 'vanessa_base_specification'\n};\n\nexport function saveConversation(conversation) {\n  try {\n    localStorage.setItem(\n      STORAGE_KEYS.CONVERSATION,\n      JSON.stringify(conversation)\n    );\n    return true;\n  } catch (error) {\n    console.error('Error saving conversation to localStorage:', error);\n    return false;\n  }\n}\n\nexport function loadConversation() {\n  try {\n    const data = localStorage.getItem(STORAGE_KEYS.CONVERSATION);\n    return data ? JSON.parse(data) : null;\n  } catch (error) {\n    console.error('Error loading conversation from localStorage:', error);\n    return null;\n  }\n}\n\nexport function saveBaseSpecification(spec) {\n  try {\n    localStorage.setItem(\n      STORAGE_KEYS.BASE_SPECIFICATION,\n      JSON.stringify(spec)\n    );\n    return true;\n  } catch (error) {\n    console.error('Error saving base specification to localStorage:', error);\n    return false;\n  }\n}\n\nexport function loadBaseSpecification() {\n  try {\n    const data = localStorage.getItem(STORAGE_KEYS.BASE_SPECIFICATION);\n    return data ? JSON.parse(data) : null;\n  } catch (error) {\n    console.error('Error loading base specification from localStorage:', error);\n    return null;\n  }\n}\n\nexport function clearStorage() {\n  try {\n    localStorage.removeItem(STORAGE_KEYS.CONVERSATION);\n    localStorage.removeItem(STORAGE_KEYS.BASE_SPECIFICATION);\n    return true;\n  } catch (error) {\n    console.error('Error clearing localStorage:', error);\n    return false;\n  }\n}\n```\n\nUpdate ChatWidget.js to use these storage functions:\n\n```javascript\n// Add to ChatWidget.js imports\nimport { saveConversation, loadConversation } from '../utils/storage.js';\n\n// Update constructor to load saved conversation\nconstructor() {\n  this.isOpen = false;\n  this.messages = [];\n  this.isTyping = false;\n  \n  // Load saved conversation\n  this.loadSavedConversation();\n  \n  // Listen for toggle event from HomePage\n  document.addEventListener('toggle-chat', this.toggle.bind(this));\n  \n  // Create DOM elements\n  this.createElements();\n  this.attachToDOM();\n}\n\n// Add these methods to ChatWidget class\nloadSavedConversation() {\n  const savedConversation = loadConversation();\n  if (savedConversation && savedConversation.messages) {\n    this.messages = savedConversation.messages;\n  } else {\n    // Initialize with welcome message\n    this.messages = [{\n      role: 'assistant',\n      content: \"Hi! I'm Vanessa, your meal planning assistant. How can I help you today?\",\n      timestamp: new Date().toISOString()\n    }];\n  }\n}\n\nsaveConversation() {\n  const conversation = {\n    messages: this.messages,\n    startedAt: this.messages.length > 0 ? this.messages[0].timestamp : new Date().toISOString()\n  };\n  saveConversation(conversation);\n}\n\n// Update the toggle method to render messages when opened\ntoggle() {\n  this.isOpen = !this.isOpen;\n  this.container.style.transform = this.isOpen ? 'translateX(0)' : 'translateX(100%)';\n  \n  if (this.isOpen) {\n    this.messageInput.focus();\n    document.body.classList.add('overflow-hidden', 'md:overflow-auto');\n    \n    // Render saved messages if this is the first open\n    if (this.messagesContainer.children.length === 0 && this.messages.length > 0) {\n      this.messages.forEach(message => this.renderMessage(message));\n    }\n  } else {\n    document.body.classList.remove('overflow-hidden', 'md:overflow-auto');\n  }\n}\n```\n\nAlso, create a hardcoded base specification as specified in the PRD:\n\n```javascript\n// src/utils/baseSpecification.js\nimport { saveBaseSpecification, loadBaseSpecification } from './storage.js';\n\nexport function initializeBaseSpecification() {\n  // Check if we already have a saved specification\n  const saved = loadBaseSpecification();\n  if (saved) return saved;\n  \n  // Create default specification\n  const defaultSpec = {\n    ownerName: 'User',\n    weeklyBudget: 150,\n    shoppingDay: 6\n  };\n  \n  // Save and return\n  saveBaseSpecification(defaultSpec);\n  return defaultSpec;\n}\n```",
-        "testStrategy": "1. Test saving a conversation and verify it's stored in localStorage\n2. Test loading a conversation from localStorage\n3. Verify the conversation structure matches the required format\n4. Test persistence by reloading the page and checking if messages are restored\n5. Verify the welcome message appears for new users\n6. Test with various conversation lengths to ensure everything is saved\n7. Test the base specification initialization and storage\n8. Verify localStorage quota handling (simulate storage full)",
-        "priority": "high",
-        "dependencies": [
-          "21"
-        ],
-        "status": "pending",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Create src/utils/storage.js module",
-            "description": "Implement the complete storage utility module with all localStorage operations for conversation and base specification as provided in the task details.",
-            "dependencies": [],
-            "details": "Copy the exact storage.js code provided into src/utils/storage.js. This includes STORAGE_KEYS constant and all save/load/clear functions with proper error handling using try-catch blocks and console.error logging.",
-            "status": "pending",
-            "testStrategy": "Verify file is created at correct path, check all exports exist, test each function manually in browser console with sample data to ensure JSON serialization/deserialization works without errors.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 5,
-        "recommendedSubtasks": 1,
-        "expansionPrompt": "Break into: 1) Create storage utility module, 2) Integrate load/save into ChatWidget lifecycle."
-      },
-      {
-        "id": "23",
-        "title": "Add mobile responsiveness to chat widget",
-        "description": "Enhance the ChatWidget to be fully responsive, displaying as a full-screen overlay on mobile and a side panel on desktop",
-        "details": "Update the ChatWidget.js to improve mobile responsiveness:\n\n```javascript\n// Update the createElements method in ChatWidget.js\n\ncreateElements() {\n  // Create chat container with responsive classes\n  this.container = document.createElement('div');\n  this.container.className = 'fixed inset-0 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 flex flex-col md:inset-y-0 md:right-0 md:left-auto md:w-96';\n  this.container.style.transform = 'translateX(100%)';\n  \n  // Create header with close button\n  const header = document.createElement('div');\n  header.className = 'bg-blue-500 text-white p-4 flex justify-between items-center';\n  \n  const title = document.createElement('h2');\n  title.className = 'text-xl font-bold';\n  title.textContent = 'Chat with Vanessa';\n  \n  const closeButton = document.createElement('button');\n  closeButton.className = 'text-white hover:text-gray-200 p-2';\n  closeButton.innerHTML = '&times;';\n  closeButton.setAttribute('aria-label', 'Close chat');\n  closeButton.addEventListener('click', this.toggle.bind(this));\n  \n  header.appendChild(title);\n  header.appendChild(closeButton);\n  \n  // Create messages container\n  this.messagesContainer = document.createElement('div');\n  this.messagesContainer.className = 'flex-1 p-4 overflow-y-auto';\n  \n  // Create typing indicator\n  this.typingIndicator = document.createElement('div');\n  this.typingIndicator.className = 'text-gray-500 p-2 hidden';\n  this.typingIndicator.textContent = 'Vanessa is typing...';\n  \n  // Create input area - fixed at bottom\n  const inputArea = document.createElement('div');\n  inputArea.className = 'border-t p-4 bg-gray-50';\n  \n  const inputForm = document.createElement('form');\n  inputForm.className = 'flex';\n  inputForm.addEventListener('submit', (e) => {\n    e.preventDefault();\n    const message = this.messageInput.value.trim();\n    if (message) {\n      this.sendMessage(message);\n    }\n  });\n  \n  this.messageInput = document.createElement('input');\n  this.messageInput.className = 'flex-1 border rounded-l-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500';\n  this.messageInput.placeholder = 'Type your message...';\n  \n  const sendButton = document.createElement('button');\n  sendButton.className = 'bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600';\n  sendButton.type = 'submit';\n  sendButton.textContent = 'Send';\n  \n  inputForm.appendChild(this.messageInput);\n  inputForm.appendChild(sendButton);\n  inputArea.appendChild(inputForm);\n  \n  // Assemble the widget\n  this.container.appendChild(header);\n  this.container.appendChild(this.messagesContainer);\n  this.container.appendChild(this.typingIndicator);\n  this.container.appendChild(inputArea);\n}\n\n// Add a method to handle window resize events\nhandleResize() {\n  if (window.innerWidth < 768) { // Mobile breakpoint\n    if (this.isOpen) {\n      document.body.classList.add('overflow-hidden');\n    }\n  } else {\n    document.body.classList.remove('overflow-hidden');\n  }\n}\n\n// Update the constructor to add resize listener\nconstructor() {\n  this.isOpen = false;\n  this.messages = [];\n  this.isTyping = false;\n  \n  // Load saved conversation\n  this.loadSavedConversation();\n  \n  // Listen for toggle event from HomePage\n  document.addEventListener('toggle-chat', this.toggle.bind(this));\n  \n  // Listen for resize events\n  window.addEventListener('resize', this.handleResize.bind(this));\n  \n  // Create DOM elements\n  this.createElements();\n  this.attachToDOM();\n}\n```\n\nAdd CSS to handle mobile keyboard appearance:\n\n```javascript\n// Add to the head of index.html\n<style>\n  @media (max-width: 767px) {\n    .chat-open {\n      position: fixed;\n      width: 100%;\n      height: 100%;\n      overflow: hidden;\n    }\n  }\n</style>\n\n// Update toggle method\ntoggle() {\n  this.isOpen = !this.isOpen;\n  this.container.style.transform = this.isOpen ? 'translateX(0)' : 'translateX(100%)';\n  \n  if (this.isOpen) {\n    this.messageInput.focus();\n    if (window.innerWidth < 768) {\n      document.body.classList.add('chat-open');\n    }\n    \n    // Render saved messages if this is the first open\n    if (this.messagesContainer.children.length === 0 && this.messages.length > 0) {\n      this.messages.forEach(message => this.renderMessage(message));\n    }\n  } else {\n    document.body.classList.remove('chat-open');\n  }\n}\n```",
-        "testStrategy": "1. Test on various mobile devices and screen sizes\n2. Verify the chat appears as full-screen on mobile and side panel on desktop\n3. Test orientation changes on mobile devices\n4. Verify the virtual keyboard doesn't cause layout issues on mobile\n5. Test scrolling in the message container on both mobile and desktop\n6. Verify the fixed input area stays at the bottom on all devices\n7. Test touch interactions on mobile devices\n8. Verify the chat can be closed on all devices",
-        "priority": "medium",
-        "dependencies": [
-          "19"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Implement responsive ChatWidget container, resize handling, and body class behavior",
-            "description": "Update ChatWidget.js and related styles so the chat widget displays as a full-screen overlay on mobile and a side panel on desktop, including Tailwind-responsive container classes, window resize handling, and body class management for mobile keyboard behavior.",
-            "dependencies": [
-              23
-            ],
-            "details": "1) In ChatWidget.createElements, set the container element to use Tailwind responsive classes for a full-screen overlay on small screens and a right-side panel on desktop (e.g., fixed inset-0 on mobile, md:inset-y-0 md:right-0 md:left-auto md:w-96), and ensure initial transform is translateX(100%). 2) Implement a handleResize method that checks window.innerWidth against the 768px breakpoint and adds/removes appropriate body classes (e.g., overflow-hidden or chat-open) when the widget is open to prevent background scrolling on mobile. 3) In the constructor, bind and register the resize listener (window.addEventListener('resize', this.handleResize.bind(this))) and ensure it uses the same logic as toggle() for body class management. 4) Update the toggle method to manage the chat-open class on the body for mobile (add when opened and viewport < 768, remove when closed) and to focus the input when opening. 5) Add the provided CSS snippet (chat-open handling under max-width: 767px) into index.html or the appropriate global stylesheet so that mobile full-screen and keyboard appearance are handled without layout issues. 6) Manually test behavior across breakpoints by resizing the browser and using mobile emulation: confirm full-screen overlay on mobile, side panel on desktop, proper scroll locking, and no layout jump when the virtual keyboard appears. 7) Optionally add cleanup logic (e.g., a destroy method or beforeunload handler) to remove the resize listener if the widget can be unmounted.",
-            "status": "pending",
-            "testStrategy": "1) Open the app on mobile-sized viewports (<768px) and verify the chat widget opens as a full-screen overlay with no background scrolling when open. 2) On desktop (>=768px), confirm the widget appears as a right-side panel with the rest of the page still scrollable. 3) Resize the window while the chat is open and verify body classes update correctly (no stuck scroll lock, no missing full-screen overlay). 4) On mobile devices or devtools emulation, open the chat and focus the input so the virtual keyboard appears; verify the input area remains visible and the layout does not shift unexpectedly. 5) Ensure closing the chat removes any chat-open/overflow-hidden classes from the body and restores normal page scrolling.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 5,
-        "recommendedSubtasks": 1,
-        "expansionPrompt": "Break into: 1) Update container classes for responsive behavior, 2) Implement resize event handling and body class management.",
-        "updatedAt": "2025-12-19T12:02:42.470Z"
-      },
-      {
-        "id": "24",
-        "title": "Implement error handling",
-        "description": "Add comprehensive error handling for API calls, localStorage operations, and general app functionality",
-        "details": "Create src/utils/errorHandling.js for centralized error handling:\n\n```javascript\n// src/utils/errorHandling.js\nexport class ErrorHandler {\n  static displayError(message, container, duration = 5000) {\n    const errorEl = document.createElement('div');\n    errorEl.className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4 rounded shadow-sm';\n    \n    const errorMessage = document.createElement('p');\n    errorMessage.textContent = message;\n    \n    errorEl.appendChild(errorMessage);\n    container.appendChild(errorEl);\n    \n    // Auto-remove after duration\n    setTimeout(() => {\n      errorEl.classList.add('opacity-0', 'transition-opacity', 'duration-300');\n      setTimeout(() => errorEl.remove(), 300);\n    }, duration);\n    \n    return errorEl;\n  }\n  \n  static handleApiError(error, container) {\n    console.error('API Error:', error);\n    \n    let message = 'Failed to communicate with Vanessa. Please try again.';\n    if (error.message === 'Failed to fetch') {\n      message = 'Network error. Please check your internet connection.';\n    } else if (error.status === 429) {\n      message = 'Too many requests. Please try again in a moment.';\n    }\n    \n    return this.displayError(message, container);\n  }\n  \n  static handleStorageError(error, container) {\n    console.error('Storage Error:', error);\n    \n    let message = 'Failed to save your conversation. Your data may not persist when you close the app.';\n    if (error.name === 'QuotaExceededError') {\n      message = 'Storage is full. Please clear some browser data to continue saving conversations.';\n    }\n    \n    return this.displayError(message, container);\n  }\n}\n```\n\nUpdate the ChatWidget to use the error handler:\n\n```javascript\n// Add to ChatWidget.js imports\nimport { ErrorHandler } from '../utils/errorHandling.js';\n\n// Replace the showError method\nshowError(message) {\n  ErrorHandler.displayError(message, this.messagesContainer);\n}\n\n// Update the sendMessage method's catch block\ncatch (error) {\n  console.error('Error sending message:', error);\n  ErrorHandler.handleApiError(error, this.messagesContainer);\n}\n\n// Update the saveConversation method\nsaveConversation() {\n  try {\n    const conversation = {\n      messages: this.messages,\n      startedAt: this.messages.length > 0 ? this.messages[0].timestamp : new Date().toISOString()\n    };\n    const saved = saveConversation(conversation);\n    if (!saved) throw new Error('Failed to save conversation');\n  } catch (error) {\n    ErrorHandler.handleStorageError(error, this.messagesContainer);\n  }\n}\n```\n\nAdd error handling to the API endpoint:\n\n```javascript\n// Update the API error handling in api/chat-with-vanessa.js\n\n// Add more specific error responses\nif (!CLAUDE_API_KEY) {\n  return new Response(JSON.stringify({ error: 'API key not configured' }), {\n    status: 500,\n    headers: { 'Content-Type': 'application/json' },\n  });\n}\n\n// Add timeout handling\nlet timeoutId;\nconst timeoutPromise = new Promise((_, reject) => {\n  timeoutId = setTimeout(() => {\n    reject(new Error('Request timed out'));\n  }, 30000); // 30 second timeout\n});\n\ntry {\n  // Use Promise.race for timeout\n  const result = await Promise.race([streamResponse, timeoutPromise]);\n  // Rest of the code...\n} catch (error) {\n  if (error.message === 'Request timed out') {\n    // Handle timeout specifically\n    await writer.write(encoder.encode(`data: ${JSON.stringify({ type: 'error', error: 'The request timed out. Please try again.' })}\\n\\n`));\n  } else {\n    // Handle other errors\n    console.error('Streaming error:', error);\n    const errorData = JSON.stringify({\n      type: 'error',\n      error: 'An error occurred during streaming',\n    });\n    await writer.write(encoder.encode(`data: ${errorData}\\n\\n`));\n  }\n} finally {\n  clearTimeout(timeoutId);\n  await writer.close();\n}\n```",
-        "testStrategy": "1. Test API error handling by simulating various error conditions\n2. Verify network errors are handled gracefully\n3. Test localStorage errors by simulating quota exceeded\n4. Verify error messages are displayed to the user\n5. Test API timeout handling\n6. Verify errors are logged to the console\n7. Test error recovery (can the user continue after an error)\n8. Verify error messages auto-dismiss after the specified duration",
-        "priority": "medium",
-        "dependencies": [
-          "21",
-          "22"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Create centralized ErrorHandler utility and wire into storage layer",
-            "description": "Implement the src/utils/errorHandling.js utility and ensure it supports API, storage, and generic UI errors with consistent user-facing messaging.",
-            "dependencies": [],
-            "details": "1) Create src/utils/errorHandling.js with the ErrorHandler class as specified, including displayError, handleApiError, and handleStorageError methods. 2) Ensure displayError renders styled error messages into a provided DOM container and auto-removes them after a timeout. 3) Implement error classification in handleApiError (network errors, 429, generic failures) and handleStorageError (QuotaExceededError, generic storage failures) with clear user-facing messages. 4) Confirm the module exports ErrorHandler correctly for use across the app. 5) Optionally add a generic handler method for unknown errors if needed later, but keep scope aligned with current requirements.",
-            "status": "pending",
-            "testStrategy": "Manually trigger displayError with a test container to verify DOM structure, styles, and auto-dismiss behavior; simulate API and storage error objects in a small test harness to confirm the correct messages are produced and logged to the console.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Integrate centralized error handling into ChatWidget and chat-with-vanessa API endpoint",
-            "description": "Refactor ChatWidget and the /api/chat-with-vanessa endpoint to use the centralized ErrorHandler and improved API-side error responses and timeouts.",
-            "dependencies": [
-              1
-            ],
-            "details": "1) In ChatWidget.js, import ErrorHandler from ../utils/errorHandling.js. 2) Replace the existing showError implementation with a call to ErrorHandler.displayError(message, this.messagesContainer). 3) Update the sendMessage method catch block to use ErrorHandler.handleApiError(error, this.messagesContainer) and keep console logging minimal and consistent. 4) Wrap saveConversation in try/catch and delegate to ErrorHandler.handleStorageError(error, this.messagesContainer) on failure, as per the provided snippet. 5) In api/chat-with-vanessa.js, add a 500 response when CLAUDE_API_KEY is missing, returning a JSON body with an error field. 6) Implement a 30-second timeout using Promise.race between the streaming response and a timeoutPromise; on timeout, write an SSE error event with a user-friendly timeout message. 7) In the catch block, distinguish timeout errors from other errors, logging streaming errors to the console and sending a generic SSE error payload for non-timeout failures; ensure timeout is cleared and writer is closed in finally.",
-            "status": "pending",
-            "testStrategy": "Manually test ChatWidget by forcing API failures (e.g., invalid endpoint, offline mode) to verify ErrorHandler.handleApiError is invoked and messages display correctly; simulate localStorage quota exceeded or throw errors in saveConversation to verify handleStorageError behavior; call the /api/chat-with-vanessa endpoint with missing CLAUDE_API_KEY and malformed requests to confirm error responses; simulate long-running or hanging requests to confirm timeout errors are emitted via SSE and connections are closed properly.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 6,
-        "recommendedSubtasks": 2,
-        "expansionPrompt": "Break into: 1) Create centralized ErrorHandler utility, 2) Integrate error boundaries across ChatWidget and API endpoint.",
-        "updatedAt": "2025-12-19T12:04:08.874Z"
-      },
-      {
-        "id": "25",
-        "title": "Test and validate Slice 1 implementation",
-        "description": "Perform comprehensive testing of all Slice 1 components and functionality to ensure they meet the success criteria",
-        "details": "Create a test plan and validation checklist for Slice 1:\n\n1. Create a test plan document with the following sections:\n   - Functional testing\n   - Responsive design testing\n   - Error handling testing\n   - Performance testing\n   - Browser compatibility testing\n\n2. Implement a simple test utility for manual testing:\n\n```javascript\n// src/utils/testUtils.js\nexport class TestUtils {\n  static runTests() {\n    const results = [];\n    \n    // Test localStorage\n    try {\n      localStorage.setItem('test', 'test');\n      localStorage.removeItem('test');\n      results.push({ name: 'localStorage', passed: true });\n    } catch (e) {\n      results.push({ name: 'localStorage', passed: false, error: e.message });\n    }\n    \n    // Test fetch API\n    fetch('/api/health-check')\n      .then(() => results.push({ name: 'fetch', passed: true }))\n      .catch(e => results.push({ name: 'fetch', passed: false, error: e.message }));\n    \n    // Test SSE support\n    try {\n      new EventSource('data:,');\n      results.push({ name: 'SSE', passed: true });\n    } catch (e) {\n      results.push({ name: 'SSE', passed: false, error: e.message });\n    }\n    \n    return results;\n  }\n  \n  static validateSuccessCriteria() {\n    return [\n      { name: 'App loads with home page', check: () => document.querySelector('#app') !== null },\n      { name: 'Chat button visible', check: () => document.querySelector('button') !== null },\n      { name: 'Chat opens on click', check: () => {\n        const button = document.querySelector('button');\n        if (!button) return false;\n        button.click();\n        return document.querySelector('.chat-widget') !== null;\n      }},\n      { name: 'Can type and send message', check: () => {\n        const input = document.querySelector('input');\n        const form = document.querySelector('form');\n        if (!input || !form) return false;\n        input.value = 'Test message';\n        form.dispatchEvent(new Event('submit'));\n        return true;\n      }},\n      { name: 'Conversation persists', check: () => {\n        return localStorage.getItem('vanessa_conversation') !== null;\n      }}\n    ];\n  }\n}\n```\n\n3. Create a simple health-check API endpoint:\n\n```javascript\n// api/health-check.js\nexport default function handler(req, res) {\n  return new Response(JSON.stringify({ status: 'ok' }), {\n    status: 200,\n    headers: { 'Content-Type': 'application/json' },\n  });\n}\n```\n\n4. Create a validation checklist based on the success criteria in the PRD:\n\n```\nSlice 1 Validation Checklist:\n\n[ ] App loads with home page showing chat button\n[ ] Clicking chat opens the chat widget\n[ ] User can type and send a message\n[ ] Vanessa responds with streaming text\n[ ] Messages display in real-time as they stream\n[ ] Conversation persists after page reload\n[ ] Chat can be closed and reopened\n[ ] Works on mobile (full-screen) and desktop (side panel)\n[ ] Basic error handling (network errors show message)\n```\n\n5. Manually test each item on the checklist and document results.",
-        "testStrategy": "1. Test against each success criteria listed in the PRD\n2. Test on multiple browsers (Chrome, Firefox, Safari)\n3. Test on multiple devices (desktop, tablet, mobile)\n4. Test with network throttling to simulate slow connections\n5. Test with localStorage disabled to verify error handling\n6. Verify all user interactions work as expected\n7. Test edge cases like very long messages, rapid message sending\n8. Document any issues found and prioritize fixes",
-        "priority": "high",
-        "dependencies": [
-          "21",
-          "22",
-          "23",
-          "24"
-        ],
-        "status": "pending",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Create test utilities and health-check endpoint",
-            "description": "Implement the TestUtils class and health-check API endpoint as specified in the task details for manual testing support",
-            "dependencies": [],
-            "details": "Add src/utils/testUtils.js with runTests() and validateSuccessCriteria() methods. Implement api/health-check.js endpoint returning {status: 'ok'}. Verify integration with localStorage, fetch, and SSE tests.",
-            "status": "pending",
-            "testStrategy": "Run TestUtils.runTests() in browser console to verify all tests pass. Test health-check endpoint with curl or browser fetch.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Execute cross-browser and device testing",
-            "description": "Perform functional, responsive, error handling, performance, and compatibility tests across multiple browsers and devices using the test plan and checklist",
-            "dependencies": [
-              1
-            ],
-            "details": "Test on Chrome, Firefox, Safari across desktop, tablet, mobile. Use browser devtools for responsive testing, network throttling. Run TestUtils.validateSuccessCriteria() and manual checklist items including localStorage disabled scenarios.",
-            "status": "pending",
-            "testStrategy": "Document pass/fail for each checklist item per browser/device. Capture screenshots of failures and performance metrics (load time, FPS).",
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "Document results and create validation report",
-            "description": "Compile test results into a comprehensive test plan document and validation report, including checklist outcomes and any issues found",
-            "dependencies": [
-              2
-            ],
-            "details": "Create test plan with sections: Functional, Responsive, Error Handling, Performance, Browser Compatibility. Update Slice 1 checklist with results. Include test utility outputs, screenshots, and recommendations for fixes.",
-            "status": "pending",
-            "testStrategy": "Review report against PRD success criteria. Ensure all tests traceable to requirements. Get stakeholder sign-off on validation.",
-            "parentId": "undefined"
+            "details": "Integrate the app’s router/navigation helper to automatically navigate to '/' when status becomes 'complete', with a short optional delay if desired. Show a retry button when status is 'failed' or on SSE error; on retry, abort any existing controller, reset state (progress=0, status='generating', message=''), and re-establish the SSE connection by invoking the same setup logic from subtask 1. Ensure cleanup in useEffect return: abort active SSE, remove any event listeners, and avoid double subscriptions (following Slice 1 patterns). Verify that navigating away from /generating cancels the stream and that navigating back creates a fresh, single connection. Handle edge cases where complete and error might race by only navigating when status is definitively 'complete'.",
+            "status": "done",
+            "testStrategy": "Manual flows: (1) Successful generation auto-navigates to '/', no extra network activity remains; (2) Forced error displays retry button, retry restarts the stream and UI without page reload; (3) Navigating away via back button or another route stops the stream and does not leak connections or timers.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:05:42.591Z"
           }
         ],
         "complexity": 7,
         "recommendedSubtasks": 3,
-        "expansionPrompt": "Break into: 1) Create test utilities and health-check endpoint, 2) Execute cross-browser/device testing, 3) Document results and create validation report."
+        "expansionPrompt": "Divide into: 1) SSE connection and event handling with AbortController, 2) UI state management and progress bar animations, 3) Auto-navigation, retry logic, and cleanup.",
+        "updatedAt": "2025-12-19T14:05:42.591Z"
+      },
+      {
+        "id": "29",
+        "title": "Implement /api/generate-meal-plan Endpoint",
+        "description": "Create Edge runtime API endpoint that generates meal plan using Claude with SSE progress streaming.",
+        "details": "Create api/generate-meal-plan.js (Vercel Edge). POST body: {chatHistory[], eaters[]}. Use Anthropic SDK v1.0.0: model='claude-3-5-sonnet-20241022' (updated from PRD). System prompt enforces JSON schema. Stream Claude response, parse JSON chunks. Send SSE: progress events (10,25,50,75,90,100), final 'complete' with {recipes,meals,mealPlan}. Hardcode eaters if empty: [{name:'User',preferences:'no restrictions',schedule:'home for dinner'}]. 60s timeout. Validate input with Zod v3.23.8.",
+        "testStrategy": "Integration: POST request returns SSE stream, progress events fire, complete event has valid normalized data, timeout handled gracefully.",
+        "priority": "high",
+        "dependencies": [
+          "26",
+          "28"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Input Validation with Zod",
+            "description": "Create Zod schema validation for POST body {chatHistory[], eaters[]} with fallback for empty eaters array.",
+            "dependencies": [],
+            "details": "Define Zod schema for chatHistory (array of messages) and eaters (array of eater objects). Add fallback hardcoded eaters if empty: [{name:'User',preferences:'no restrictions',schedule:'home for dinner'}]. Use Zod v3.23.8. Validate early in handler.",
+            "status": "done",
+            "testStrategy": "Unit test: valid/invalid payloads, empty eaters fallback, Zod error messages.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:07:06.027Z"
+          },
+          {
+            "id": 2,
+            "title": "Setup Anthropic SDK Streaming with System Prompt",
+            "description": "Configure Anthropic SDK v1.0.0 for claude-3-5-sonnet-20241022 with JSON schema enforcing system prompt.",
+            "dependencies": [
+              1
+            ],
+            "details": "Initialize Anthropic client with ANTHROPIC_API_KEY env var. Create system prompt enforcing JSON output schema for {recipes,meals,mealPlan}. Start streaming messages with validated input. Handle Edge runtime compatibility.",
+            "status": "done",
+            "testStrategy": "Unit test: client init, mock stream start, system prompt format validation.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:07:06.028Z"
+          },
+          {
+            "id": 3,
+            "title": "Implement SSE Response Streaming and JSON Parsing",
+            "description": "Stream Claude response via SSE, parse JSON chunks incrementally, send final 'complete' event.",
+            "dependencies": [
+              2
+            ],
+            "details": "Set SSE headers for Edge runtime. Process stream chunks, accumulate JSON, parse when complete. Send 'complete' event with {recipes,meals,mealPlan}. Handle partial JSON parsing errors gracefully.",
+            "status": "done",
+            "testStrategy": "Integration test: mock stream yields valid JSON chunks → complete event received.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:07:06.029Z"
+          },
+          {
+            "id": 4,
+            "title": "Add Progress Event Simulation",
+            "description": "Send SSE progress events at 10,25,50,75,90,100% during generation.",
+            "dependencies": [
+              3
+            ],
+            "details": "Simulate progress by sending SSE events at token intervals or timers during stream processing. Events: {progress:10}, {progress:25}, etc. Ensure smooth client-side progress bar updates.",
+            "status": "done",
+            "testStrategy": "Integration test: verify all 6 progress events fire in order during stream.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:07:06.030Z"
+          },
+          {
+            "id": 5,
+            "title": "Implement Timeout Handling and Error Cases",
+            "description": "Add 60s timeout, error SSE events, and Edge runtime cleanup.",
+            "dependencies": [
+              1,
+              2,
+              3
+            ],
+            "details": "Use AbortController for 60s timeout on stream. Send 'error' SSE event on timeout/parsing failures. Cleanup resources properly for Edge runtime. Return 500 for unhandled errors.",
+            "status": "done",
+            "testStrategy": "Integration test: timeout after 60s → error event, stream abort cleans up.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:07:06.031Z"
+          }
+        ],
+        "complexity": 9,
+        "recommendedSubtasks": 5,
+        "expansionPrompt": "Split into: 1) Input validation with Zod, 2) Anthropic SDK streaming setup with system prompt, 3) SSE response streaming and JSON chunk parsing, 4) Progress event simulation (10,25,50,75,90,100), 5) Timeout handling and error cases.",
+        "updatedAt": "2025-12-19T14:07:06.031Z"
+      },
+      {
+        "id": "30",
+        "title": "Create Meal Plan Transformer Utility",
+        "description": "Transform Claude's raw JSON output into normalized storage format with recipe deduplication and ID assignment.",
+        "details": "Create src/utils/mealPlanTransformer.js. Function transformGeneratedPlan(claudeOutput). Steps: 1) Extract unique recipes (dedupe by name+ingredients using Map), assign recipeId=`recipe_${crypto.randomUUID()}`. 2) Create meals with mealId, reference recipeId, calculate servings from eaters. 3) Build mealPlan with weekOf (next Saturday), budget.estimated=sum(recipe costs). 4) Validate schemas with Zod. Return {recipes[], meals[], mealPlan}. Handle missing fields gracefully.",
+        "testStrategy": "Unit test: transform valid Claude JSON→normalized data, deduplication (2 identical recipes→1), invalid JSON handled, budget calculation accurate, all IDs unique.",
+        "priority": "high",
+        "dependencies": [
+          "26",
+          "29"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement recipe extraction and deduplication with stable recipe IDs",
+            "description": "Implement logic in src/utils/mealPlanTransformer.js to extract unique recipes from Claude's raw JSON output, deduplicate them using a name+ingredients hash, and assign stable recipeId values using crypto.randomUUID.",
+            "dependencies": [],
+            "details": "Create transformGeneratedPlan(claudeOutput) and inside it traverse Claude's recipe-like structures to collect recipes safely, guarding against missing or malformed fields. Build a Map keyed by a deterministic hash of lowercased recipe name plus a normalized ingredients list (e.g., sorted and trimmed) to deduplicate logically identical recipes. For each unique recipe, generate recipeId using the format `recipe_${crypto.randomUUID()}` and construct a normalized recipe object (fields like name, ingredients, instructions, cost if present), defaulting missing optional fields to safe values. Ensure the function returns an array of normalized recipes and exposes a mapping from the original recipe reference (e.g., index or name+hash) to the generated recipeId for later meal linking.",
+            "status": "done",
+            "testStrategy": "Unit test with sample Claude outputs: verify that two recipes with identical name and ingredients collapse into one entry, recipeId matches the required format, crypto.randomUUID is called per unique recipe, and missing fields (e.g., no instructions or cost) are handled without throwing.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:07:55.245Z"
+          },
+          {
+            "id": 2,
+            "title": "Create meals array with meal IDs, recipe references, and servings calculation",
+            "description": "Using the deduplicated recipes and their IDs, implement creation of normalized meal objects that reference recipeId and compute servings from eaters data.",
+            "dependencies": [
+              1
+            ],
+            "details": "Extend transformGeneratedPlan to iterate over Claude's meal entries and create a flat meals[] collection. For each meal, generate a unique mealId (e.g., `meal_${crypto.randomUUID()}`), look up the correct recipeId from the recipe deduplication map, and attach any metadata such as meal type, day, or time if present. Implement servings calculation by deriving the servings count from the eaters array or equivalent field in claudeOutput (e.g., number of eaters assigned to that meal), falling back to a default (like 1) when data is missing. Ensure that meals with missing recipe data fail gracefully (skip or attach a null-safe placeholder) rather than crashing, and preserve a consistent normalized meal shape across all entries.",
+            "status": "done",
+            "testStrategy": "Unit test that meals are created for each input meal entry, each has a unique mealId, and all recipeId fields correspond to an existing recipe in the recipes array. Verify that when multiple eaters are attached to a meal, servings equals the eater count, and that when eaters are missing, a sensible default is used. Include a case where a meal references a non-existent recipe in the raw data and assert that the transformer handles it gracefully according to the chosen behavior (e.g., skipping or defaulting).",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:07:55.247Z"
+          },
+          {
+            "id": 3,
+            "title": "Assemble mealPlan object with weekOf, budget, and Zod validation",
+            "description": "Compose the final mealPlan structure including weekOf (next Saturday), aggregated budget.estimated, run Zod validation for recipes/meals/mealPlan, and return the normalized payload.",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "In transformGeneratedPlan, compute weekOf by finding the calendar date of the next Saturday relative to the current date, format it consistently (e.g., ISO string), and build a mealPlan object that references this date and any other required metadata (such as label or createdAt if desired). Calculate budget.estimated as the sum of per-recipe costs derived from the normalized recipes array, guarding against missing or non-numeric cost fields by treating them as zero. Define Zod schemas for recipe, meal, and mealPlan objects (and possibly the overall return type) and validate the constructed data before returning. If validation fails, either throw a structured error or return a safe fallback according to project conventions, but never crash on minor missing optional fields. Finally, return an object of the form { recipes, meals, mealPlan } from the function.",
+            "status": "done",
+            "testStrategy": "Unit test end-to-end transformation: feed a valid Claude-style JSON and assert that the result matches the normalized shape, includes a weekOf date that is the next Saturday, and has budget.estimated equal to the sum of recipe costs. Add tests where some recipes lack cost to confirm they are treated as zero, and where the input violates the Zod schema to confirm that validation behavior (throw or safe fallback) works as designed.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:07:55.248Z"
+          }
+        ],
+        "complexity": 7,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Break into: 1) Recipe extraction and deduplication by name+ingredients hash, 2) Meal creation with recipe ID references and servings calculation, 3) MealPlan assembly with weekOf/budget and Zod validation.",
+        "updatedAt": "2025-12-19T14:07:55.248Z"
+      },
+      {
+        "id": "31",
+        "title": "Update HomePage for Meal Plan Display",
+        "description": "Modify HomePage to show meal plan summary when exists, or generation prompt when no plan.",
+        "details": "Update src/components/HomePage.js. On load: check loadCurrentMealPlan(). State A (no plan): hero + 'Chat with Vanessa'. State B (has plan): header 'Your meal plan for [weekOf]', stats card (21 meals, $XX budget), buttons: 'View Shopping List' (placeholder), 'Chat with Vanessa', 'Generate New Week' (triggers generate). Use loadMeals(), loadRecipes() for counts. Responsive grid layout.",
+        "testStrategy": "Manual: no-plan state shows correctly, has-plan shows stats/buttons, 'Generate New Week' navigates to chat+generate, stats calculate correctly.",
+        "priority": "medium",
+        "dependencies": [
+          "26",
+          "30"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Conditional Rendering Logic for Meal Plan States",
+            "description": "Add useEffect to load current meal plan on component mount and implement conditional rendering for no-plan (hero + Chat button) vs has-plan states using loadCurrentMealPlan() from storage utils.",
+            "dependencies": [],
+            "details": "In HomePage.js: useState for mealPlan state, useEffect calls loadCurrentMealPlan(), use ternary or if-else to render State A (hero section + 'Chat with Vanessa') or State B placeholder. Follow React best practices for clean conditional logic outside JSX.",
+            "status": "done",
+            "testStrategy": "Manual: Verify no-plan shows hero+chat, has-plan shows summary skeleton, state updates correctly on load.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:09:20.379Z"
+          },
+          {
+            "id": 2,
+            "title": "Build Stats Card, Buttons, and Responsive Grid Layout",
+            "description": "Create has-plan UI with dynamic header, stats card using loadMeals()/loadRecipes() counts and budget, plus buttons for Shopping List (placeholder), Chat, Generate New Week (triggers generation).",
+            "dependencies": [
+              1
+            ],
+            "details": "Implement responsive CSS Grid/Flexbox layout. Stats: count meals (21), recipes, calculate budget total. Buttons: View Shopping List (alert/console placeholder), Chat with Vanessa (navigate/chat), Generate New Week (call generate function/navigate). Ensure mobile-first responsive design.",
+            "status": "done",
+            "testStrategy": "Manual: Stats display correct counts/budget, all buttons trigger correct actions, layout responsive across breakpoints, Generate button navigates properly.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:09:20.380Z"
+          }
+        ],
+        "complexity": 5,
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "Divide into: 1) Conditional rendering logic for no-plan vs has-plan states using storage utils, 2) Stats calculation and responsive UI layout with buttons.",
+        "updatedAt": "2025-12-19T14:09:20.380Z"
+      },
+      {
+        "id": "32",
+        "title": "Add /generating Route to Router",
+        "description": "Extend router system to handle new /generating route mapping to GenerationStatusPage.",
+        "details": "Update src/utils/router.js. Add route: '/generating' → GenerationStatusPage. Ensure navigation from ChatWidget works. Preserve existing routes from Slice 1. Use same router pattern (history API or hash-based). Handle browser back button gracefully (don't lose generation state).",
+        "testStrategy": "Manual: navigate to /generating shows correct page, back button returns to chat, route conflicts don't break existing pages.",
+        "priority": "medium",
+        "dependencies": [
+          "28"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Review existing router implementation and routes in src/utils/router.js",
+            "description": "Inspect the current router implementation and all existing Slice 1 routes to understand the routing pattern (history API or hash-based), navigation helpers, and back-button handling.",
+            "dependencies": [],
+            "details": "Open src/utils/router.js and identify how routes are declared (e.g., route table, switch statement, or custom router object), what routing mechanism is used (window.history API vs. hashchange), and how navigation is triggered from components (e.g., custom navigate() function). Document the existing route paths (including the main chat route) and any logic related to preserving state and handling browser back/forward events so that the new /generating route can follow the same conventions.",
+            "status": "done",
+            "testStrategy": null,
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:06:06.474Z"
+          },
+          {
+            "id": 2,
+            "title": "Register /generating → GenerationStatusPage route in router configuration",
+            "description": "Add a new route entry mapping the /generating path to the GenerationStatusPage component using the same pattern as existing routes.",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "In src/utils/router.js, import GenerationStatusPage from its defined path (e.g., src/components/GenerationStatusPage) and extend the router’s route map to include a '/generating' key pointing to GenerationStatusPage. Ensure the registration syntax (object map, array of routes, or JSX-based router) matches the existing implementation and does not modify or remove any pre-existing Slice 1 route definitions. Confirm that the new route participates in the same history or hash-based behavior already in use.",
+            "status": "done",
+            "testStrategy": null,
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:06:06.476Z"
+          },
+          {
+            "id": 3,
+            "title": "Enable navigation from ChatWidget to /generating route",
+            "description": "Wire the ChatWidget component (or related trigger) to navigate programmatically to /generating when meal plan generation starts or when appropriate.",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Locate the ChatWidget component and identify where generation is initiated or where the UI should transition to the generation status view. Use the existing navigation helper (e.g., navigate('/generating') or history.push('/generating')) provided by src/utils/router.js to route to '/generating'. Ensure that the call site follows the established pattern for navigation from other components and does not break the chat flow or event handling.",
+            "status": "done",
+            "testStrategy": null,
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:06:06.478Z"
+          },
+          {
+            "id": 4,
+            "title": "Verify back-button behavior and generation state preservation for /generating",
+            "description": "Ensure that when users navigate to /generating and then use the browser back button, navigation returns to the previous chat page without losing in-progress generation state.",
+            "dependencies": [
+              2,
+              3
+            ],
+            "details": "Manually test the flow: navigate from the chat page to /generating via ChatWidget, then use the browser back button and confirm the app returns to the chat route while preserving any relevant generation state (e.g., stored in context, Redux, or localStorage). If needed, adjust router popstate/hashchange handling or state management integration so that back/forward navigation does not reset or discard the in-progress generation status. Keep any modifications consistent with existing Slice 1 back-button handling logic.",
+            "status": "done",
+            "testStrategy": "Manual: start generation from chat, confirm navigation to /generating, click browser Back, verify return to chat with generation state intact and no full reload or unexpected resets.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:06:06.479Z"
+          },
+          {
+            "id": 5,
+            "title": "Regression test all routes including new /generating mapping",
+            "description": "Perform a focused regression pass on the routing system to ensure existing routes still function and that /generating behaves correctly in combination with them.",
+            "dependencies": [
+              2,
+              3,
+              4
+            ],
+            "details": "Manually navigate to all known Slice 1 routes using both direct URL entry and in-app links, confirming pages render as before. Test entering /generating directly in the browser address bar, navigating between chat and /generating multiple times, and using browser back/forward across different routes. Check that there are no unexpected 404s, rendering errors, or route conflicts and that the router mechanism (history or hash) behaves uniformly across all routes, including the new /generating route.",
+            "status": "done",
+            "testStrategy": "Manual: smoke-test every defined route, direct-load /generating, and use Back/Forward to move between chat, /generating, and at least one other existing route to confirm no regressions.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:06:06.481Z"
+          }
+        ],
+        "complexity": 3,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "",
+        "updatedAt": "2025-12-19T14:06:06.481Z"
+      },
+      {
+        "id": "33",
+        "title": "Save Generated Data to localStorage on Completion",
+        "description": "Automatically persist complete meal plan data using storage utilities when generation finishes.",
+        "details": "In GenerationStatusPage 'complete' handler: call saveRecipes(data.recipes), saveMeals(data.meals), saveCurrentMealPlan(data.mealPlan). Dispatch custom event 'plan-generated'. Use safeSave() with ErrorHandler.handleStorageError(). Validate data before save using Zod schemas matching PRD.",
+        "testStrategy": "Integration: after complete SSE, verify localStorage contains 'recipes','meals','currentMealPlan' with correct data, quota error shows warning.",
+        "priority": "medium",
+        "dependencies": [
+          "26",
+          "30",
+          "28"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Review GenerationStatusPage complete handler and data shape",
+            "description": "Inspect the existing GenerationStatusPage component and its SSE 'complete' event handler to understand the structure of data.recipes, data.meals, and data.mealPlan and how they map to PRD requirements.",
+            "dependencies": [],
+            "details": "Open src/components/GenerationStatusPage.js (or equivalent) and locate the SSE 'complete' event handler. Confirm the payload shape for data.recipes, data.meals, and data.mealPlan coming from /api/generate-meal-plan. Cross-check these structures against the PRD so you know what the Zod schemas must validate and what the storage utilities must accept. Document any mismatches or assumptions in comments for later adjustment.",
+            "status": "done",
+            "testStrategy": null,
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:08:29.266Z"
+          },
+          {
+            "id": 2,
+            "title": "Define or update Zod schemas for recipes, meals, and mealPlan data",
+            "description": "Create or refine Zod schemas that validate the recipes, meals, and mealPlan objects returned on completion, ensuring they match the PRD data contract.",
+            "dependencies": [
+              1
+            ],
+            "details": "In the shared validation module (or a new file if needed), add or update Zod schemas for Recipe, Meal, and MealPlan collections that match the PRD fields and types. Export schemas such as RecipesSchema, MealsSchema, CurrentMealPlanSchema. Ensure schemas accept exactly the fields produced by the generate-meal-plan endpoint and used by the UI. Include safe defaults and narrowing (e.g., enums) where specified by the PRD so invalid payloads can be rejected before storage.",
+            "status": "done",
+            "testStrategy": null,
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:08:29.267Z"
+          },
+          {
+            "id": 3,
+            "title": "Integrate Zod validation into GenerationStatusPage complete handler",
+            "description": "Apply the Zod schemas to validate SSE completion data before attempting to save it to localStorage.",
+            "dependencies": [
+              2
+            ],
+            "details": "In GenerationStatusPage's 'complete' handler, import the Zod schemas and validate data.recipes, data.meals, and data.mealPlan. Use safeParse or try/catch around schema.parse to avoid throwing unhandled errors. If validation fails, log or surface an appropriate error via existing ErrorHandler patterns and skip persisting invalid sections. Keep the validation logic small and focused, reusing any shared helpers for schema validation if the project already has them.",
+            "status": "done",
+            "testStrategy": null,
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:08:29.268Z"
+          },
+          {
+            "id": 4,
+            "title": "Wire storage utilities with safeSave and storage error handling",
+            "description": "Call saveRecipes, saveMeals, and saveCurrentMealPlan using safeSave and ErrorHandler.handleStorageError within the complete handler to persist validated data.",
+            "dependencies": [
+              3
+            ],
+            "details": "Import saveRecipes, saveMeals, saveCurrentMealPlan, safeSave, and ErrorHandler.handleStorageError into GenerationStatusPage. In the 'complete' handler, after successful validation, wrap each storage call in safeSave so quota and other storage errors are caught. On failure, call ErrorHandler.handleStorageError() with the thrown error and a suitable context message. Ensure storage keys and formats match existing conventions (e.g., 'recipes', 'meals', 'currentMealPlan') and that saves are independent so one failure does not prevent others from being attempted.",
+            "status": "done",
+            "testStrategy": null,
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:08:29.269Z"
+          },
+          {
+            "id": 5,
+            "title": "Dispatch plan-generated event and verify end-to-end behavior",
+            "description": "Emit a custom 'plan-generated' event after successful saves and confirm that localStorage and event consumers behave as expected.",
+            "dependencies": [
+              4
+            ],
+            "details": "At the end of the 'complete' handler, after attempting storage operations, dispatch a CustomEvent('plan-generated', { detail: { recipes, meals, mealPlan } }) on window or the agreed event target. Then perform the integration testing described in the parent task: trigger a full SSE generation flow, confirm that localStorage contains the expected 'recipes', 'meals', and 'currentMealPlan' entries with correct serialized data, and verify that quota errors surface via the error handler (e.g., user-visible warning). If other components listen for 'plan-generated', confirm they react correctly without breaking navigation or status display.",
+            "status": "done",
+            "testStrategy": "Manual/integration: run generation flow, inspect localStorage keys and values, simulate storage quota or unavailable storage (e.g., using dev tools) to ensure ErrorHandler is called, and listen for the 'plan-generated' event in a simple test listener to confirm it fires with the correct detail payload.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:08:29.270Z"
+          }
+        ],
+        "complexity": 4,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "",
+        "updatedAt": "2025-12-19T14:08:29.270Z"
+      },
+      {
+        "id": "34",
+        "title": "Implement Error Handling and Retry Logic",
+        "description": "Add comprehensive error handling for generation failures, storage errors, and network issues.",
+        "details": "Extend GenerationStatusPage: SSE 'error'→show retry button + message. Retry: reconnect SSE with same POST body. Storage errors→ErrorHandler.handleStorageError(). Timeout (60s)→show 'Generation taking longer...' + retry. Network errors→'Connection lost, retry?'. Log all errors to console with structured data. Add 'Start Over' button clears state, navigates to '/'.",
+        "testStrategy": "Manual: simulate SSE error→retry works, storage quota exceeded→warning shown, network disconnect→retry available, timeout→retry button appears.",
+        "priority": "medium",
+        "dependencies": [
+          "28",
+          "33"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement SSE error UI, retry button, and reconnection with preserved POST body",
+            "description": "Extend GenerationStatusPage to handle SSE 'error' events by showing a clear error message and retry button, and on retry reconnect to the SSE endpoint using the original POST body.",
+            "dependencies": [],
+            "details": "Update GenerationStatusPage to subscribe to SSE error events and, when triggered, display an inline error state with a descriptive message and a dedicated Retry button. Store the original POST body used to initiate the SSE connection so that clicking Retry reconstructs and reopens the SSE connection using the same payload. Ensure the UI state (loading/progress indicators) resets appropriately on retry. Keep the implementation consistent with existing SSE wiring and state management patterns already used in the page.",
+            "status": "done",
+            "testStrategy": "Manually induce an SSE error (e.g., via mocked endpoint or dev tools) and verify that the error message and Retry button appear, that clicking Retry re-establishes the SSE connection with the same POST body, and that progress updates resume normally.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:10:00.925Z"
+          },
+          {
+            "id": 2,
+            "title": "Add timeout, network, and storage error handling with logging and 'Start Over' behavior",
+            "description": "Implement 60s timeout handling, network error messaging, storage error delegation to ErrorHandler.handleStorageError, structured console logging, and a 'Start Over' button that clears state and navigates to the home route.",
+            "dependencies": [
+              1
+            ],
+            "details": "Introduce a 60-second timer around the generation flow; when exceeded, transition the UI to a timeout state that shows a 'Generation taking longer...' message and offers a Retry option. Detect network-level failures during SSE or related requests and present a 'Connection lost, retry?' message with a retry action. For any storage-related failures encountered while saving generation results or related data, call ErrorHandler.handleStorageError() and surface any necessary user feedback according to existing patterns. For every error type (SSE, timeout, network, storage), log a structured object to console (including type, message, stack or raw error, and relevant context such as request body or timestamps). Add a 'Start Over' button that clears all in-memory generation status/state for the page and programmatically navigates the user back to the '/' route, ensuring no stale error or progress state persists.",
+            "status": "done",
+            "testStrategy": "Manually simulate: (1) a long-running generation that exceeds 60 seconds and verify the timeout message, logging, and retry behavior; (2) a network disconnect or failed request to confirm the 'Connection lost, retry?' UI and structured logs; (3) a storage quota or write error to ensure ErrorHandler.handleStorageError is invoked and errors are logged; and (4) use the 'Start Over' button to confirm state is reset and navigation to '/' occurs without residual UI state.",
+            "parentId": "undefined",
+            "updatedAt": "2025-12-19T14:10:00.926Z"
+          }
+        ],
+        "complexity": 6,
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "Split into: 1) SSE error/retry UI and reconnection logic, 2) Timeout, network, and storage error handling with logging and 'Start Over' functionality.",
+        "updatedAt": "2025-12-19T14:10:00.926Z"
+      },
+      {
+        "id": "35",
+        "title": "End-to-End Testing and Polish",
+        "description": "Test complete generation flow, add UI polish, and handle edge cases per testing strategy.",
+        "details": "Test full flow: chat→generate→progress→plan display. Edge cases: rapid double-click generate (debounce), corrupt Claude JSON (fallback message), multiple generations (overwrite currentPlan), offline viewing (load existing plan). UI polish: smooth progress animations (CSS @keyframes), loading skeletons, responsive design. Add custom event listeners for 'plan-generated' across components.",
+        "testStrategy": "E2E manual: happy path 3x, double-click generate, network disconnect mid-stream, storage quota full, corrupt API response, browser refresh during generation.",
+        "priority": "low",
+        "dependencies": [
+          "27",
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Perform E2E flow testing for happy paths and critical edge cases",
+            "description": "Manually exercise the complete chat→generate→progress→plan display flow several times, validating that it behaves correctly for the happy path and for all specified edge cases.",
+            "dependencies": [],
+            "details": "Run the full generation flow end-to-end at least three times for the happy path, verifying SSE progress updates, status transitions, and final plan rendering. Then manually test each edge case from the test strategy: rapid double-click on generate (debounce prevents duplicate requests), corrupt or malformed Claude JSON response (fallback message shown without breaking UI), multiple consecutive generations (currentPlan is correctly overwritten and old state cleared), offline or network disconnect scenarios mid-stream (existing plan loaded or appropriate retry/timeout messaging shown), storage quota full and browser refresh during generation. Document observed behavior and create or update bug tickets for any deviations from expected outcomes.",
+            "status": "pending",
+            "testStrategy": "Manual E2E execution using browser devtools and network throttling to simulate errors, following the defined test strategy items one by one and logging pass/fail per scenario.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Apply and verify UI polish for progress, skeletons, and responsiveness",
+            "description": "Refine and test the UI polish aspects of the generation flow, including animations, loading skeletons, and responsive layout behavior across viewports.",
+            "dependencies": [
+              1
+            ],
+            "details": "Implement or fine-tune CSS @keyframes for smooth progress bar and status transitions on the GenerationStatusPage and any related components. Add or adjust loading skeleton components for chat, progress view, and final plan display to ensure visually consistent placeholders while data loads. Verify responsive layouts on common breakpoints (mobile, tablet, desktop), checking that progress indicators, buttons, and plan cards do not overflow or overlap. Confirm that animations perform smoothly without jank and that they do not interfere with accessibility (e.g., reduced motion preferences if supported). Capture before/after screenshots or video for future regression comparison.",
+            "status": "pending",
+            "testStrategy": "Manual visual QA across multiple viewport sizes and browsers, validating animations, skeleton states, and responsive layout with browser devtools and design checklist.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Integrate and test event listeners and debouncing across components",
+            "description": "Wire up custom 'plan-generated' event listeners across components and ensure debounced generate actions prevent duplicate flows.",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Review the component hierarchy for the generation flow and add consistent custom event dispatching for the 'plan-generated' event at the point where a plan is successfully created. Register event listeners in all components that must react to this event (e.g., navigation, state management, offline cache), ensuring they update or clear state correctly. Implement or confirm a debouncing mechanism for the generate action to handle rapid double-clicks, ensuring only one generation request is active at a time and subsequent clicks are ignored or queued as per requirements. Test multiple quick clicks, repeated generations, and navigation back/forward to confirm listeners are not duplicated or leaked and that currentPlan is always in a coherent state.",
+            "status": "pending",
+            "testStrategy": "Manual interaction tests focused on rapid user actions and repeated generations, combined with console logging or devtools inspection to confirm single event firing, no duplicate listeners, and correct state updates.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 5,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Divide into: 1) E2E flow testing (happy path + edge cases), 2) UI polish (animations, skeletons, responsive), 3) Event listener integration and debouncing."
       }
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2025-12-19T12:04:08.875Z",
+      "lastModified": "2025-12-19T14:10:00.927Z",
       "taskCount": 10,
-      "completedCount": 8,
+      "completedCount": 9,
       "tags": [
         "master"
       ]

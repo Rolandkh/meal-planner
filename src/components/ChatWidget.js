@@ -11,6 +11,7 @@ export class ChatWidget {
     this.messages = [];
     this.isTyping = false;
     this.currentStreamingMessage = null;
+    this.isGenerating = false; // Track generation state
 
     // Listen for toggle event from HomePage or other components
     document.addEventListener('toggle-chat', (e) => {
@@ -30,6 +31,9 @@ export class ChatWidget {
     // Add resize listener for responsive behavior
     window.addEventListener('resize', () => this.handleResize());
     this.handleResize(); // Initial check
+
+    // Listen for hash changes to re-enable button when returning
+    window.addEventListener('hashchange', () => this.handleRouteChange());
 
     console.log('ChatWidget initialized');
   }
@@ -79,6 +83,26 @@ export class ChatWidget {
 
     header.appendChild(titleSection);
     header.appendChild(closeButton);
+
+    // Create Generate Week button
+    this.generateButton = document.createElement('button');
+    this.generateButton.className = `
+      w-full bg-gradient-to-r from-green-500 to-emerald-600
+      hover:from-green-600 hover:to-emerald-700
+      text-white font-semibold text-lg py-4 px-6
+      transition-all transform hover:scale-105
+      shadow-md hover:shadow-lg
+      flex items-center justify-center
+      flex-shrink-0
+      disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
+    `.trim().replace(/\s+/g, ' ');
+    this.generateButton.innerHTML = '<span class="button-text">✨ Generate Week</span>';
+    this.generateButton.setAttribute('aria-label', 'Generate your weekly meal plan');
+    this.generateButton.setAttribute('role', 'button');
+    this.generateButton.style.minHeight = '48px';
+    
+    // Add click handler for Generate button
+    this.generateButton.addEventListener('click', () => this.handleGenerateWeek());
 
     // Create messages container
     this.messagesContainer = document.createElement('div');
@@ -149,6 +173,7 @@ export class ChatWidget {
 
     // Assemble the widget
     this.container.appendChild(header);
+    this.container.appendChild(this.generateButton);
     this.container.appendChild(this.messagesContainer);
     this.container.appendChild(this.typingIndicator);
     this.container.appendChild(inputArea);
@@ -547,6 +572,72 @@ export class ChatWidget {
    */
   getMessages() {
     return this.messages;
+  }
+
+  /**
+   * Handle route changes to reset button state
+   */
+  handleRouteChange() {
+    const currentHash = window.location.hash.slice(1) || '/';
+    
+    // If we're not on /generating, reset button state
+    if (currentHash !== '/generating' && this.isGenerating) {
+      this.resetGenerateButton();
+    }
+  }
+
+  /**
+   * Reset Generate button to initial state
+   */
+  resetGenerateButton() {
+    this.isGenerating = false;
+    this.generateButton.disabled = false;
+    const buttonText = this.generateButton.querySelector('.button-text');
+    if (buttonText) {
+      buttonText.innerHTML = '✨ Generate Week';
+    }
+    console.log('Generate button reset');
+  }
+
+  /**
+   * Handle Generate Week button click
+   */
+  async handleGenerateWeek() {
+    if (this.isGenerating) {
+      console.log('Generation already in progress');
+      return;
+    }
+
+    console.log('Generate Week button clicked');
+
+    // Disable button and show loading state
+    this.isGenerating = true;
+    this.generateButton.disabled = true;
+    
+    const buttonText = this.generateButton.querySelector('.button-text');
+    buttonText.innerHTML = `
+      <div class="flex items-center justify-center">
+        <svg class="animate-spin h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        Generating...
+      </div>
+    `;
+
+    // Dispatch custom event
+    window.dispatchEvent(new CustomEvent('generate-week', {
+      detail: { source: 'chatwidget' }
+    }));
+
+    // Navigate to /generating route using hash-based router
+    try {
+      window.location.hash = '#/generating';
+    } catch (error) {
+      console.warn('Navigation error:', error);
+      // Re-enable button on navigation failure
+      this.resetGenerateButton();
+    }
   }
 
   /**

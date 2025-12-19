@@ -9,6 +9,7 @@ import { Router } from './utils/router.js';
 // Import components
 import { HomePage } from './components/HomePage.js';
 import { ChatWidget } from './components/ChatWidget.js';
+import { GenerationStatusPage } from './components/GenerationStatusPage.js';
 
 // Global error handler
 window.addEventListener('error', (event) => {
@@ -41,6 +42,7 @@ function initApp() {
   
   // Register routes
   router.addRoute('/', new HomePage());
+  router.addRoute('/generating', new GenerationStatusPage());
   
   // Future routes will be added here
   // router.addRoute('/chat', new ChatPage());
