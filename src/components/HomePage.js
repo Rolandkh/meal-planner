@@ -1,88 +1,109 @@
 /**
- * Home Page Component
- * Displays the week overview with daily meal cards, budget, and navigation
+ * HomePage Component
+ * Landing page with introduction and chat button
  */
 
-import { DAY_ORDER, DAY_NAMES, WEEK_INFO } from '../data/mealPlanData.js';
-import { getMealPlanData } from '../data/mealPlanLoader.js';
+export class HomePage {
+  constructor() {
+    // No router dependency needed - we'll use custom events
+  }
 
-/**
- * Render the home page
- * @returns {string} HTML string
- */
-export function renderHome() {
-  const MEAL_PLAN_DATA = getMealPlanData();
-  const budget = MEAL_PLAN_DATA.budget;
-  const budgetStatus = budget.estimated <= budget.target ? 'under' : 'over';
-  const budgetDiff = Math.abs(budget.target - budget.estimated);
-  
-  return `
-    <div class="container">
-      <div class="header">
-        <h1>🍎 Meal Plan</h1>
-        <p>Week of ${WEEK_INFO.startDate}-${WEEK_INFO.endDate}, ${WEEK_INFO.year}</p>
-      </div>
-      
-      <div class="card" style="background:${budgetStatus === 'under' ? '#ecfdf5' : '#fef2f2'};border:2px solid ${budgetStatus === 'under' ? '#48bb78' : '#e53e3e'};margin-bottom:16px">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <div>
-            <div style="font-size:0.85rem;color:#718096;margin-bottom:4px">Budget</div>
-            <div style="font-size:1.5rem;font-weight:700;color:${budgetStatus === 'under' ? '#059669' : '#dc2626'}">
-              $${budget.estimated.toFixed(2)} / $${budget.target}
-            </div>
-            <div style="font-size:0.75rem;color:#718096;margin-top:2px">
-              ${budgetStatus === 'under' ? `✓ Under by $${budgetDiff.toFixed(2)}` : `Over by $${budgetDiff.toFixed(2)}`}
-            </div>
-          </div>
-          <div style="font-size:2.5rem">${budgetStatus === 'under' ? '✓' : '⚠️'}</div>
-        </div>
-      </div>
-      
-      <button class="btn btn-shopping" onclick="navigateTo('shopping')">
-        <span>🛒 Shopping List</span>
-        <span>→</span>
-      </button>
-      
-      <button class="btn" style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:white" onclick="navigateTo('weekly')">
-        <span>📅 Weekly Overview</span>
-        <span>→</span>
-      </button>
-      
-      <button class="btn" style="background:#fef3c7;color:#92400e;border:2px solid #fbbf24" onclick="downloadMealPlan()">
-        <span>📄 Export & Print</span>
-        <span>↓</span>
-      </button>
-      
-      <h2 class="section-title">Daily Plans</h2>
-      
-      ${DAY_ORDER.map((dayKey, index) => {
-        const day = MEAL_PLAN_DATA.days[dayKey];
-        const special = day.isFast || day.isPost;
-        const rolandMeals = day.roland?.meals;
-        const mayaMeals = day.maya?.meals;
-        const hasMaya = mayaMeals && (mayaMeals.b || mayaMeals.l || mayaMeals.d);
-        
-        return `
-          <button class="btn ${special ? 'special' : ''}" onclick="navigateTo('${dayKey}')">
-            <div style="flex:1;text-align:left">
-              <div style="font-weight:700">${DAY_NAMES[index]}</div>
-              <div style="font-size:0.85rem;color:#718096;margin-top:4px">
-                Roland: ${rolandMeals?.b?.name || '—'} • ${rolandMeals?.l?.name || '—'}
-              </div>
-              ${hasMaya ? `<div style="font-size:0.75rem;color:#db2777;margin-top:2px">Maya: ${mayaMeals.b?.name || mayaMeals.l?.name || mayaMeals.d?.name || '—'}</div>` : ''}
-              ${special ? `<div style="font-size:0.75rem;color:#a855f7;font-weight:600;margin-top:4px">${day.isFast ? '⚡ Fast Day' : '🌅 Post-Fast'}</div>` : ''}
-            </div>
-            <span>→</span>
-          </button>
-        `;
-      }).join('')}
-      
-      <div style="margin-top:32px;text-align:center">
-        <button class="btn" style="background:#f0f4f8;color:#718096;border:2px dashed #cbd5e0" onclick="navigateTo('generate')">
-          <span>✨ Generate New Week</span>
-          <span>→</span>
-        </button>
-      </div>
-    </div>
-  `;
+  /**
+   * Render the HomePage
+   * @returns {HTMLElement} The rendered home page
+   */
+  render() {
+    // Create main container
+    const container = document.createElement('div');
+    container.className = 'flex flex-col items-center justify-center min-h-screen p-4 bg-gradient-to-br from-blue-50 to-indigo-100';
+
+    // Create content wrapper
+    const content = document.createElement('div');
+    content.className = 'max-w-2xl mx-auto text-center';
+
+    // Hero section
+    const heroSection = document.createElement('div');
+    heroSection.className = 'mb-12 fade-in';
+
+    // Title
+    const title = document.createElement('h1');
+    title.className = 'text-5xl md:text-6xl font-bold mb-6 text-gray-800 leading-tight';
+    title.innerHTML = `
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+        Vanessa
+      </span>
+    `;
+
+    // Subtitle
+    const subtitle = document.createElement('p');
+    subtitle.className = 'text-2xl md:text-3xl mb-4 text-gray-700 font-light';
+    subtitle.textContent = 'AI Meal Planning Concierge';
+
+    // Description
+    const description = document.createElement('p');
+    description.className = 'text-lg md:text-xl text-gray-600 mb-8 leading-relaxed';
+    description.textContent = 'Your personal assistant for meal planning, recipe ideas, and nutrition guidance';
+
+    // Features list
+    const features = document.createElement('div');
+    features.className = 'grid grid-cols-1 md:grid-cols-3 gap-4 mb-10';
+    
+    const featuresList = [
+      { icon: '🍽️', text: 'Weekly Meal Plans' },
+      { icon: '📝', text: 'Shopping Lists' },
+      { icon: '💡', text: 'Recipe Ideas' }
+    ];
+
+    featuresList.forEach(feature => {
+      const featureCard = document.createElement('div');
+      featureCard.className = 'bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow';
+      featureCard.innerHTML = `
+        <div class="text-4xl mb-2">${feature.icon}</div>
+        <div class="text-gray-700 font-medium">${feature.text}</div>
+      `;
+      features.appendChild(featureCard);
+    });
+
+    // Chat button
+    const chatButton = document.createElement('button');
+    chatButton.className = `
+      bg-gradient-to-r from-blue-600 to-indigo-600
+      hover:from-blue-700 hover:to-indigo-700
+      text-white font-bold py-4 px-8 rounded-full
+      shadow-xl hover:shadow-2xl
+      transition-all duration-300 transform hover:scale-105
+      text-lg
+    `.trim().replace(/\s+/g, ' ');
+    chatButton.textContent = '💬 Chat with Vanessa';
+    
+    // Add click handler to dispatch custom event
+    chatButton.addEventListener('click', () => {
+      console.log('Chat button clicked - dispatching toggle-chat event');
+      document.dispatchEvent(new CustomEvent('toggle-chat', { 
+        detail: { open: true } 
+      }));
+    });
+
+    // Assemble hero section
+    heroSection.appendChild(title);
+    heroSection.appendChild(subtitle);
+    heroSection.appendChild(description);
+    heroSection.appendChild(features);
+    heroSection.appendChild(chatButton);
+
+    // Add to content wrapper
+    content.appendChild(heroSection);
+
+    // Add to main container
+    container.appendChild(content);
+
+    return container;
+  }
+
+  /**
+   * Cleanup when component is unmounted
+   */
+  destroy() {
+    // Clean up any event listeners if needed
+  }
 }

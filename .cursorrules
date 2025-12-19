@@ -1,0 +1,152 @@
+# Cursor Rules for Meal Planner Project
+
+## Issue Review Process
+When reviewing bugs, issues, errors, or any list of items that need to be addressed:
+- Present them **one at a time**
+- Wait for user confirmation or response before proceeding to the next item
+- Number the items clearly (e.g., "Issue 1 of 15")
+- After addressing each item, ask if the user is ready to move to the next one
+
+---
+
+## Vertical Slice Development Methodology
+
+This project follows an iterative "vertical slice" approach. All agents working on this project MUST follow this methodology.
+
+### Core Principle
+**"Build thin slices end-to-end, then expand based on real learnings."**
+
+Instead of building all features in isolation, we build complete vertical slices that touch all layers (frontend → backend → storage → AI), then learn from reality before expanding.
+
+### The Slice Cycle
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  1. DEFINE SLICE                                        │
+│     - One complete end-to-end user flow                 │
+│     - Touches: UI, API, Storage, AI (if applicable)    │
+│     - Minimal but functional                            │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│  2. BUILD SLICE                                         │
+│     - Generate tasks for THIS SLICE ONLY                │
+│     - Implement until the flow works end-to-end         │
+│     - It's OK if it's ugly or incomplete               │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│  3. REALITY CHECK                                       │
+│     Ask and document:                                   │
+│     - What was awkward in this implementation?          │
+│     - What assumptions were wrong?                      │
+│     - What patterns are emerging?                       │
+│     - What should be standardized?                      │
+│     - Is the data shape right for the next slice?       │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│  4. UPDATE SPEC                                         │
+│     - Update PRD based on real learnings                │
+│     - Refine data models if needed                      │
+│     - Document patterns to follow                       │
+│     - The spec is now EARNED, not theoretical           │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│  5. NEXT SLICE                                          │
+│     - Define the next vertical slice                    │
+│     - Generate tasks for that slice                     │
+│     - Repeat the cycle                                  │
+└─────────────────────────────────────────────────────────┘
+```
+
+### Current Project Slices
+
+**SLICE 1: Chat with Vanessa** (Current)
+- User opens app → sees chat → types message → Vanessa responds (streaming) → conversation saved
+- Tasks: 16-25
+
+**SLICE 2: Meal Plan Generation** (After Slice 1 Reality Check)
+- User clicks Generate → progress page → meal plan displayed
+- Includes: Generation API, Status page, Meal display, Shopping list
+
+**SLICE 3: Recipe Library & Onboarding** (After Slice 2 Reality Check)
+- Full normalized data model, onboarding flow, recipe browsing
+
+**SLICE 4: Polish & Extended Features** (After Slice 3 Reality Check)
+- Add recipe flow, usage metering, offline mode, mobile polish
+
+### Rules for Agents
+
+1. **Stay Within Current Slice**
+   - Only work on tasks for the current slice
+   - Do NOT implement features from future slices
+   - If you notice something needed from a future slice, note it but don't build it
+
+2. **Prefer Working Code Over Perfect Code**
+   - Get the slice working end-to-end first
+   - Polish and optimize after the flow works
+   - It's OK for early slices to be "ugly but functional"
+
+3. **Document Learnings**
+   - After completing a slice, document what was learned
+   - Update the PRD with real-world findings
+   - Note any patterns that should be standardized
+
+4. **Reality Check Questions**
+   After each slice, explicitly answer:
+   - What was awkward in this implementation?
+   - What assumptions were wrong?
+   - What patterns should be standardized?
+   - Is the data shape right for the next slice?
+   - What would you do differently?
+
+5. **Spec Evolution**
+   - The spec (PRD) is a living document
+   - Update it based on implementation learnings
+   - Version changes: v0.7 → v0.8 → v0.9 → v1.0
+   - v1.0 comes AFTER multiple slices prove the architecture
+
+### File Locations
+
+- **PRD**: `.taskmaster/docs/prd.txt`
+- **Tasks**: `.taskmaster/tasks/tasks.json`
+- **Slice Learnings**: Document in PRD under "Reality Check Notes"
+
+### When Starting a New Session
+
+1. Check which slice is current (see PRD or tasks)
+2. Run `task-master list` to see current task status
+3. Run `task-master next` to find the next task
+4. Stay within the current slice's scope
+
+### When Completing a Slice
+
+1. Verify all slice success criteria are met
+2. Conduct Reality Check (answer the questions above)
+3. Update PRD with learnings
+4. Get user approval before moving to next slice
+5. Generate tasks for the next slice only
+
+---
+
+## Tech Stack Constraints
+
+- **Frontend**: Vanilla JS, HTML, Tailwind CSS (no React/Vue/etc.)
+- **No Build Step**: Static site, direct ES modules
+- **Backend**: Vercel serverless functions
+- **Storage**: localStorage (Phase 1)
+- **AI**: Claude API via server-side proxy
+
+---
+
+## Project-Specific Patterns
+
+(To be updated after each slice based on learnings)
+
+### Slice 1 Patterns
+- TBD after implementation
+
+### Slice 2 Patterns
+- TBD after implementation

@@ -1,96 +1,147 @@
 /**
- * Router Utility
- * Handles navigation and page rendering
+ * Simple hash-based router for SPA navigation
  */
 
-import { appState } from './state.js';
-import { renderHome } from '../components/HomePage.js';
-import { renderShopping } from '../components/ShoppingList.js';
-import { renderDay } from '../components/DailyPlan.js';
-import { renderWeeklyOverview } from '../components/WeeklyOverview.js';
-import { renderGenerateWeek } from '../components/GenerateWeek.js';
-import { renderFeedback } from '../components/Feedback.js';
-import { handleGenerate } from './generateHandler.js';
-import { downloadMealPlan } from './exportMealPlan.js';
-
-/**
- * Initialize the router and render the initial page
- */
-export function initRouter() {
-  // Subscribe to state changes and re-render
-  appState.subscribe(() => {
-    render();
-  });
-
-  // Initial render
-  render();
-}
-
-/**
- * Render the current page based on app state
- */
-function render() {
-  const page = appState.getCurrentPage();
-  const appElement = document.getElementById('app');
-
-  if (!appElement) {
-    console.error('App element not found');
-    return;
+export class Router {
+  constructor() {
+    this.routes = {};
+    this.currentRoute = '/';
+    this.notFoundHandler = null;
+    
+    // Bind event listener for hash changes
+    window.addEventListener('hashchange', this.handleRouteChange.bind(this));
+    
+    console.log('Router initialized');
   }
 
-  let html = '';
+  /**
+   * Register a route with its component
+   * @param {string} path - Route path (e.g., '/', '/chat')
+   * @param {Object} component - Component with a render() method
+   */
+  addRoute(path, component) {
+    this.routes[path] = component;
+    console.log(`Route registered: ${path}`);
+  }
 
-  try {
-    switch (page) {
-      case 'home':
-        html = renderHome();
-        break;
-      case 'shopping':
-        html = renderShopping();
-        break;
-      case 'weekly':
-        html = renderWeeklyOverview();
-        break;
-      case 'generate':
-        html = renderGenerateWeek();
-        break;
-      case 'feedback':
-        html = renderFeedback();
-        break;
-      default:
-        // Assume it's a day key
-        html = renderDay(page);
-        break;
+  /**
+   * Set a handler for 404 not found routes
+   * @param {Object} handler - Component with a render() method
+   */
+  setNotFoundHandler(handler) {
+    this.notFoundHandler = handler;
+  }
+
+  /**
+   * Handle hash change events
+   */
+  handleRouteChange() {
+    // Get hash without the # symbol, default to '/'
+    const hash = window.location.hash.slice(1) || '/';
+    this.navigateTo(hash);
+  }
+
+  /**
+   * Navigate to a specific route
+   * @param {string} path - Path to navigate to
+   * @param {Object} state - Optional state to pass to the component
+   */
+  navigateTo(path, state = {}) {
+    // Update current route
+    this.currentRoute = path;
+    
+    // Get the component for this route
+    const component = this.routes[path];
+    
+    if (!component) {
+      console.warn(`No route found for: ${path}`);
+      if (this.notFoundHandler) {
+        this.renderComponent(this.notFoundHandler, state);
+      } else {
+        // Fallback to home route if no 404 handler
+        const homeComponent = this.routes['/'];
+        if (homeComponent) {
+          window.location.hash = '#/';
+        }
+      }
+      return;
     }
-  } catch (error) {
-    console.error('Error rendering page:', error);
-    html = `
-      <div class="container">
-        <div class="error">
-          <h2>Error</h2>
-          <p>Something went wrong while loading this page. Please try again.</p>
-          <button class="btn" onclick="navigateTo('home')" style="margin-top: 12px">
-            Go to Home
-          </button>
-        </div>
-      </div>
-    `;
+
+    // Render the component
+    this.renderComponent(component, state);
   }
 
-  appElement.innerHTML = html;
-}
+  /**
+   * Render a component to the app container
+   * @param {Object} component - Component with render() method
+   * @param {Object} state - State to pass to component
+   */
+  renderComponent(component, state = {}) {
+    const app = document.getElementById('app');
+    
+    if (!app) {
+      console.error('App container not found');
+      return;
+    }
 
-/**
- * Navigate to a page
- * @param {string} page - Page identifier
- */
-export function navigateTo(page) {
-  appState.navigateTo(page);
-}
+    // Clear the app container
+    app.innerHTML = '';
+    
+    // Call lifecycle hook if it exists
+    if (component.beforeRender) {
+      component.beforeRender(state);
+    }
 
-// Make navigateTo available globally for onclick handlers
-window.navigateTo = navigateTo;
-window.toggleItem = (id) => appState.toggleItem(id);
-window.toggleHideChecked = () => appState.toggleHideChecked();
-window.handleGenerate = handleGenerate;
-window.downloadMealPlan = downloadMealPlan;
+    // Render the component
+    try {
+      const rendered = component.render(state);
+      
+      if (rendered instanceof HTMLElement) {
+        app.appendChild(rendered);
+      } else if (typeof rendered === 'string') {
+        app.innerHTML = rendered;
+      } else {
+        console.error('Component render() must return HTMLElement or string');
+      }
+
+      // Call lifecycle hook if it exists
+      if (component.afterRender) {
+        component.afterRender(state);
+      }
+
+      console.log(`Rendered route: ${this.currentRoute}`);
+    } catch (error) {
+      console.error('Error rendering component:', error);
+      app.innerHTML = `
+        <div class="min-h-screen flex items-center justify-center bg-gray-50">
+          <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">Rendering Error</h2>
+            <p class="text-gray-700 mb-4">Failed to render the page. Please try again.</p>
+            <button 
+              onclick="window.location.hash='#/'" 
+              class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Go Home
+            </button>
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  /**
+   * Initialize the router and navigate to current hash
+   */
+  init() {
+    console.log('Initializing router...');
+    this.handleRouteChange();
+  }
+
+  /**
+   * Get current route path
+   * @returns {string} Current route path
+   */
+  getCurrentRoute() {
+    return this.currentRoute;
+  }
+}

@@ -1,0 +1,154 @@
+---
+description: Vertical Slice Development Methodology for iterative, reality-checked development
+globs: **/*
+alwaysApply: true
+---
+
+# Vertical Slice Development Methodology
+
+This project follows an iterative "vertical slice" approach. This methodology ensures we build working software incrementally, learning from each slice before expanding.
+
+## Core Principle
+
+**"Build thin slices end-to-end, then expand based on real learnings."**
+
+A vertical slice is a complete end-to-end feature that touches all layers:
+- Frontend (UI components)
+- Backend (API endpoints)
+- Storage (database/localStorage)
+- AI integration (if applicable)
+
+## The Slice Development Cycle
+
+### Phase 1: Define Slice
+- Identify ONE complete user flow
+- Keep it minimal but functional
+- Define clear success criteria
+- Generate Taskmaster tasks for THIS SLICE ONLY
+
+### Phase 2: Build Slice
+- Implement all tasks for the current slice
+- Get the flow working end-to-end
+- It's OK if it's "ugly but functional"
+- Do NOT implement features from future slices
+
+### Phase 3: Reality Check
+After completing a slice, ALWAYS answer these questions:
+
+1. **What was awkward in this implementation?**
+   - Identify friction points, workarounds, or hacks
+   - Note anything that felt harder than expected
+
+2. **What assumptions were wrong?**
+   - Document any pre-implementation assumptions that proved incorrect
+   - Note surprises or unexpected behaviors
+
+3. **What patterns are emerging?**
+   - Identify code patterns that worked well
+   - Note patterns that should be standardized
+
+4. **What should be standardized?**
+   - Helper functions to extract
+   - Naming conventions to adopt
+   - File organization to follow
+
+5. **Is the data shape right for the next slice?**
+   - Review data structures
+   - Identify needed changes before the next slice
+
+### Phase 4: Update Spec
+- Update the PRD (`.taskmaster/docs/prd.txt`) with learnings
+- Document discovered patterns
+- Refine data models if needed
+- The spec is now EARNED, not theoretical
+
+### Phase 5: Next Slice
+- Define the next vertical slice
+- Generate Taskmaster tasks for that slice only
+- Repeat the cycle
+
+## Current Slice Status
+
+Check the PRD for current slice information. The project progresses through:
+
+- **Slice 1**: Chat with Vanessa (foundation)
+- **Slice 2**: Meal Plan Generation
+- **Slice 3**: Recipe Library & Onboarding
+- **Slice 4**: Polish & Extended Features
+
+## Agent Instructions
+
+### DO:
+- Stay within the current slice's scope
+- Document learnings after completing work
+- Ask Reality Check questions after each slice
+- Update the PRD with findings
+- Prefer working code over perfect code
+
+### DON'T:
+- Implement features from future slices
+- Skip the Reality Check phase
+- Treat the spec as immutable
+- Over-engineer early slices
+- Add "nice to have" features not in the current slice
+
+## Taskmaster Integration
+
+1. **Starting a session**: 
+   ```
+   task-master list  # See current tasks
+   task-master next  # Find next task to work on
+   ```
+
+2. **After completing a slice**:
+   - Mark all slice tasks as done
+   - Conduct Reality Check
+   - Update PRD
+   - Run `task-master parse-prd` for next slice tasks
+
+3. **Task scope**:
+   - Tasks should only be generated for the CURRENT slice
+   - Future slice tasks are generated after Reality Check
+
+## Spec Versioning
+
+The PRD evolves through implementation:
+- **v0.7**: Initial spec (enough to build, not everything)
+- **v0.8**: After Slice 1 learnings
+- **v0.9**: After Slice 2 learnings
+- **v1.0**: Architecture proven through multiple slices
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `.taskmaster/docs/prd.txt` | Living specification document |
+| `.taskmaster/tasks/tasks.json` | Current slice tasks |
+| `.cursorrules` | Project-wide rules including this methodology |
+
+## Reality Check Template
+
+After completing a slice, document answers in the PRD:
+
+```markdown
+## Slice X Reality Check Notes
+
+### What was awkward?
+- [List friction points]
+
+### Wrong assumptions?
+- [List incorrect assumptions]
+
+### Emerging patterns?
+- [List patterns to standardize]
+
+### Data shape changes needed?
+- [List any data model updates]
+
+### Recommendations for next slice?
+- [List recommendations]
+```
+
+---
+
+*This methodology ensures we build software based on reality, not theory. The spec earns its authority through implementation.*

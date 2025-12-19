@@ -1,0 +1,321 @@
+# Product Requirements Document: Vanessa Chatbot - Meal Planning Assistant
+
+## Project Overview
+
+**Product Name:** Vanessa - AI Meal Planning Concierge
+**Version:** v0.7 (Iterative Development)
+**Approach:** Vertical Slice → Reality Check → Expand
+**Technology Stack:** Vanilla JavaScript, HTML, CSS (Tailwind), Vercel serverless functions, Claude API
+
+---
+
+## Development Philosophy
+
+This project follows an iterative "vertical slice" approach:
+
+1. **Slice 1**: Build one complete end-to-end flow (chat with Vanessa)
+2. **Reality Check**: Evaluate what worked, what was awkward, update spec
+3. **Slice 2**: Add meal plan generation flow
+4. **Reality Check**: Evaluate and refine
+5. **Slice 3+**: Expand features based on learnings
+6. **Polish**: UI/UX improvements after core flows are stable
+
+---
+
+## SLICE 1: Chat with Vanessa (MVP Foundation)
+
+### Goal
+Build a working chat interface where users can talk to Vanessa and conversations persist.
+
+### End-to-End Flow
+```
+1. User opens app
+2. User sees simple home page with chat button
+3. User opens chat widget
+4. User types a message
+5. Message sent to /api/chat-with-vanessa
+6. Vanessa responds with streaming text (SSE)
+7. Response displays in real-time
+8. Conversation saved to localStorage
+9. On page reload, conversation history is restored
+```
+
+### What This Slice Includes
+
+**Frontend Components:**
+- `index.html` - App shell with Tailwind CSS
+- `HomePage.js` - Simple landing with "Chat with Vanessa" button
+- `ChatWidget.js` - Collapsible chat drawer with:
+  - Message list (user + assistant messages)
+  - Text input + send button
+  - Typing indicator during streaming
+  - Mobile: full-screen overlay
+  - Desktop: side panel
+
+**Backend:**
+- `POST /api/chat-with-vanessa` - SSE streaming endpoint
+  - Accepts: message, conversation history
+  - Returns: Server-Sent Events stream
+  - Uses Claude Sonnet API
+
+**Data Storage (localStorage):**
+- `conversation` - Array of messages with role, content, timestamp
+- `baseSpecification` - Stub user profile (hardcoded for now)
+
+**Utilities:**
+- `src/utils/storage.js` - Save/load conversation
+- `src/utils/state.js` - App state management
+- `src/utils/router.js` - Simple hash-based router (/, /chat)
+
+### What This Slice Does NOT Include
+- Normalized data model (eaters, recipes, meals) - Slice 2
+- Meal plan generation - Slice 2
+- Onboarding flow - Slice 2
+- Recipe library - Slice 3
+- Usage metering - Slice 3
+- Add recipe flow - Slice 4
+- Offline mode - Slice 4
+- Mobile polish - Final polish phase
+
+### Technical Requirements for Slice 1
+
+**Chat API Endpoint:**
+```javascript
+// POST /api/chat-with-vanessa
+// Request:
+{
+  message: string,
+  chatHistory: [{ role: 'user'|'assistant', content: string }]
+}
+
+// Response: Server-Sent Events
+data: {"type": "token", "content": "Hi"}
+data: {"type": "token", "content": " there!"}
+data: {"type": "done"}
+```
+
+**Vanessa System Prompt (Slice 1 - Simple):**
+```
+You are Vanessa, a friendly meal planning assistant. 
+Keep responses concise (2-3 sentences).
+Help users think about their meal planning needs.
+You cannot generate meal plans yet - that feature is coming soon.
+```
+
+**localStorage Structure (Slice 1):**
+```javascript
+{
+  'vanessa_conversation': {
+    messages: [
+      { role: 'assistant', content: 'Hi! I\'m Vanessa...', timestamp: '...' },
+      { role: 'user', content: 'Hello!', timestamp: '...' }
+    ],
+    startedAt: '2025-12-19T...'
+  }
+}
+```
+
+### Success Criteria for Slice 1
+- [ ] App loads with home page showing chat button
+- [ ] Clicking chat opens the chat widget
+- [ ] User can type and send a message
+- [ ] Vanessa responds with streaming text
+- [ ] Messages display in real-time as they stream
+- [ ] Conversation persists after page reload
+- [ ] Chat can be closed and reopened
+- [ ] Works on mobile (full-screen) and desktop (side panel)
+- [ ] Basic error handling (network errors show message)
+
+### Known Unknowns (to evaluate after Slice 1)
+- Is the streaming UX smooth enough?
+- Is the chat widget responsive enough on mobile?
+- Are there edge cases with SSE streaming?
+- Is the conversation storage approach scalable?
+- What patterns should be standardized before Slice 2?
+
+---
+
+## SLICE 2: Meal Plan Generation (After Slice 1 Reality Check)
+
+### Goal
+Add the ability to generate a complete weekly meal plan.
+
+### End-to-End Flow
+```
+1. User chats with Vanessa about preferences (optional)
+2. User clicks "Generate" button (always visible in chat)
+3. App navigates to generation status page
+4. Progress bar animates while API processes
+5. On success, meal plan saved and displayed
+6. On failure, automatic retry once, then show options
+```
+
+### What This Slice Adds
+- `GenerationStatusPage.js` - Progress UI with retry logic
+- `POST /api/generate-meal-plan` - Generation endpoint (60s timeout)
+- Normalized data: Meal Plans, Meals, Recipes (basic version)
+- Transform function for Claude response
+- Shopping list display
+- Daily meal view (basic)
+
+### Deferred to Later Slices
+- Full onboarding flow (use hardcoded base spec)
+- Eaters management
+- Recipe library browsing
+- Usage metering
+
+---
+
+## SLICE 3: Recipe Library & Onboarding (After Slice 2 Reality Check)
+
+### Goal
+Add recipe browsing and proper user onboarding.
+
+### What This Slice Adds
+- Full normalized data model (Eaters, Base Specification)
+- Onboarding conversation flow
+- Recipe library page with search/filter
+- Recipe detail view
+- Favorites and ratings
+
+---
+
+## SLICE 4: Polish & Extended Features
+
+### What This Slice Adds
+- Add recipe flow (paste/URL import)
+- Usage metering
+- Offline mode
+- Storage quota management
+- Mobile responsiveness polish
+- Error handling improvements
+
+---
+
+## Core Entities (Evolving)
+
+### Slice 1 Entities
+```javascript
+// Conversation (simple)
+{
+  messages: [{ role, content, timestamp }],
+  startedAt: string
+}
+
+// BaseSpecification (stub - hardcoded)
+{
+  ownerName: 'User',
+  weeklyBudget: 150,
+  shoppingDay: 6
+}
+```
+
+### Slice 2+ Entities (to be refined based on Slice 1 learnings)
+- Eaters
+- Recipes  
+- Meals
+- MealPlans
+- BaseSpecification (full)
+- UsageLimits
+
+---
+
+## High-Level Page List
+
+| Page | Slice | Description |
+|------|-------|-------------|
+| Home | 1 | Landing with chat button |
+| Chat (widget) | 1 | Collapsible chat drawer |
+| Generation Status | 2 | Progress UI during generation |
+| Day View | 2 | Single day's meals |
+| Shopping List | 2 | Grouped shopping list |
+| Recipe Library | 3 | Browse/search recipes |
+| Recipe Detail | 3 | Full recipe view |
+| Profile | 3 | User settings/preferences |
+| Add Recipe | 4 | Import recipe flow |
+
+---
+
+## Critical Happy Paths
+
+### Slice 1: Chat Flow
+1. Open app → See home page
+2. Click "Chat with Vanessa" → Chat opens
+3. Type message → Send
+4. See streaming response → Message complete
+5. Close chat → Reopen → History preserved
+
+### Slice 2: Generation Flow
+1. Open chat → Discuss preferences (optional)
+2. Click Generate → Navigate to status page
+3. See progress bar → Wait for completion
+4. Success → See meal plan
+5. (If fail) → Auto-retry → (If fail again) → Show options
+
+---
+
+## API Endpoints
+
+| Endpoint | Slice | Purpose |
+|----------|-------|---------|
+| POST /api/chat-with-vanessa | 1 | Streaming chat |
+| POST /api/generate-meal-plan | 2 | Generate meal plan |
+| POST /api/extract-recipe | 4 | Extract recipe from paste/URL |
+
+---
+
+## Tech Stack (Confirmed)
+
+- **Frontend**: Vanilla JS, HTML, Tailwind CSS
+- **Backend**: Vercel serverless functions
+- **Database**: localStorage (Phase 1), Firebase (Phase 2)
+- **AI**: Claude API (Sonnet for generation, Haiku for chat)
+- **Hosting**: Vercel
+
+---
+
+## Non-Negotiables
+
+1. **No build step** - Static site, direct ES modules
+2. **Streaming responses** - SSE for chat, better UX
+3. **Mobile-first** - Chat must work well on phones
+4. **Offline viewing** - Saved data viewable offline
+5. **Privacy** - API keys server-side only
+
+---
+
+## Questions to Answer After Each Slice
+
+### After Slice 1:
+- What was awkward in the implementation?
+- What assumptions were wrong?
+- What patterns should be standardized?
+- Is the data shape right for Slice 2?
+
+### After Slice 2:
+- Is the generation flow smooth?
+- Is the data model working?
+- What needs refactoring before expanding?
+
+### After Slice 3:
+- Is the full data model stable?
+- What UI patterns work best?
+- Ready for polish phase?
+
+---
+
+## Current Tasks: SLICE 1 ONLY
+
+Generate tasks for Slice 1 vertical slice:
+1. Set up app shell (index.html with Tailwind)
+2. Create basic router (hash-based, minimal)
+3. Build HomePage component
+4. Build ChatWidget component (UI only first)
+5. Implement chat streaming API endpoint
+6. Connect ChatWidget to API with streaming
+7. Add conversation persistence (localStorage)
+8. Add mobile responsiveness to chat
+9. Add error handling
+10. Test and validate Slice 1
+
+After Slice 1 is complete and reviewed, generate tasks for Slice 2.

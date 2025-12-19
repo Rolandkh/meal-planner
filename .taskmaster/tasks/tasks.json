@@ -1,0 +1,518 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": "16",
+        "title": "Set up app shell with Tailwind CSS",
+        "description": "Create the initial index.html file with Tailwind CSS integration and basic app structure",
+        "details": "Create an index.html file that includes:\n- Tailwind CSS via CDN\n- Basic HTML structure with appropriate meta tags for mobile responsiveness\n- Root div for mounting the app\n- ES module script imports\n\nPseudo-code:\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Vanessa - AI Meal Planning Concierge</title>\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <style>\n    /* Any custom styles beyond Tailwind */\n  </style>\n</head>\n<body class=\"bg-gray-50 text-gray-900\">\n  <div id=\"app\" class=\"min-h-screen\"></div>\n  <script type=\"module\" src=\"/src/main.js\"></script>\n</body>\n</html>\n```\n\nCreate a basic main.js file that initializes the app and imports the router.",
+        "testStrategy": "Manually verify that:\n1. The page loads without errors\n2. Tailwind CSS is properly applied (test with a Tailwind class)\n3. The viewport meta tag is correctly set for mobile responsiveness\n4. The main.js file is properly loaded\n5. Test in at least two browsers (Chrome and Firefox)",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create index.html file with Tailwind CDN",
+            "description": "Generate the basic HTML structure including Tailwind CSS CDN link and meta tags for mobile responsiveness",
+            "dependencies": [],
+            "details": "Use the provided pseudo-code as template. Include DOCTYPE, html lang='en', head with charset=UTF-8, viewport meta tag, title 'Vanessa - AI Meal Planning Concierge', Tailwind script src='https://cdn.tailwindcss.com', and empty style block.",
+            "status": "pending",
+            "testStrategy": "Verify HTML validates without errors and CDN link is correctly placed in head section",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Add app root container and body styling",
+            "description": "Set up the body with Tailwind classes and create the mounting div for the app",
+            "dependencies": [
+              1
+            ],
+            "details": "Add body class='bg-gray-50 text-gray-900', create div id='app' class='min-h-screen' inside body. Ensure proper nesting and no syntax errors.",
+            "status": "pending",
+            "testStrategy": "Check that body has correct Tailwind classes applied and #app div exists with min-h-screen class",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Add ES module script import",
+            "description": "Include the module script tag that imports the main.js file",
+            "dependencies": [
+              2
+            ],
+            "details": "Add <script type='module' src='/src/main.js'></script> at the end of body before closing tag. Ensure type='module' attribute is present.",
+            "status": "pending",
+            "testStrategy": "Verify script tag has correct type='module' and src points to /src/main.js",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Create basic main.js initialization file",
+            "description": "Generate minimal main.js file that initializes the app and imports the router",
+            "dependencies": [
+              3
+            ],
+            "details": "Create src/main.js with basic app initialization code and import statement for router from src/utils/router.js. Include error handling for module loading.",
+            "status": "pending",
+            "testStrategy": "Confirm main.js loads without console errors and router import resolves correctly",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Verify app shell setup and test Tailwind integration",
+            "description": "Test the complete app shell in multiple browsers to ensure Tailwind loads and structure works",
+            "dependencies": [
+              4
+            ],
+            "details": "Serve the app locally, test page loads without errors, verify Tailwind classes apply (add test div with bg-blue-500), check mobile viewport, confirm main.js loads, test in Chrome and Firefox.",
+            "status": "pending",
+            "testStrategy": "Follow test strategy: page loads, Tailwind applied, viewport correct, main.js loads, multi-browser testing",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 2,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - straightforward HTML boilerplate creation with CDN integration.",
+        "updatedAt": "2025-12-19T11:57:19.844Z"
+      },
+      {
+        "id": "17",
+        "title": "Implement hash-based router",
+        "description": "Create a simple hash-based router to handle navigation between home and chat views",
+        "details": "Create src/utils/router.js with a minimal router implementation:\n\n```javascript\n// src/utils/router.js\nexport class Router {\n  constructor() {\n    this.routes = {};\n    this.currentRoute = '/';\n    window.addEventListener('hashchange', this.handleRouteChange.bind(this));\n  }\n\n  addRoute(path, component) {\n    this.routes[path] = component;\n  }\n\n  handleRouteChange() {\n    const hash = window.location.hash.slice(1) || '/';\n    this.navigateTo(hash);\n  }\n\n  navigateTo(path) {\n    this.currentRoute = path;\n    const component = this.routes[path] || this.routes['/'];\n    document.getElementById('app').innerHTML = '';\n    document.getElementById('app').appendChild(component.render());\n  }\n\n  init() {\n    this.handleRouteChange();\n  }\n}\n```\n\nUpdate main.js to use the router and register routes for '/' (HomePage) and '/chat' (for future use).",
+        "testStrategy": "1. Test navigation between routes by changing the URL hash\n2. Verify that the correct component renders for each route\n3. Test that direct URL access with a specific hash works\n4. Verify that the default route (/) works when no hash is present\n5. Test browser back/forward navigation",
+        "priority": "high",
+        "dependencies": [
+          "16"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create basic Router class in src/utils/router.js",
+            "description": "Set up the Router class file with constructor, routes map, and currentRoute tracking",
+            "dependencies": [],
+            "details": "Create src/utils/router.js and implement an exported Router class with a constructor that initializes this.routes as an empty object, sets this.currentRoute to '/', and binds handleRouteChange to the instance.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement hashchange handling and route resolution",
+            "description": "Handle URL hash changes and resolve the correct route path",
+            "dependencies": [
+              1
+            ],
+            "details": "In Router, implement handleRouteChange() to read window.location.hash, strip the leading '#', default to '/', and call navigateTo with the resulting path. Add a window.addEventListener('hashchange', ...) in the constructor to call handleRouteChange.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Implement route registration and navigation rendering",
+            "description": "Allow adding routes and navigating to them, updating the DOM",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Add addRoute(path, component) to store a component reference in this.routes, and implement navigateTo(path) to set this.currentRoute, pick the matching component (falling back to '/'), clear the #app container, and append the result of component.render().",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Initialize router on load with default route handling",
+            "description": "Ensure router initializes correctly and handles initial hash or default route",
+            "dependencies": [
+              2,
+              3
+            ],
+            "details": "Implement init() on Router to call handleRouteChange() so that on first load the correct component for the existing hash (or '/') is rendered. Confirm behavior when no hash is present and when an unknown hash is used.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Integrate router in main.js with HomePage and /chat routes",
+            "description": "Wire the Router into main.js and register '/' and '/chat' routes",
+            "dependencies": [
+              4
+            ],
+            "details": "In main.js, import Router and the HomePage (and placeholder Chat view if needed), instantiate Router, call addRoute('/') with HomePage, addRoute('/chat') with a stub/future Chat component, call router.init(), and ensure navigation via hash changes works.",
+            "status": "pending",
+            "testStrategy": null,
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 4,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - single class implementation with standard hashchange event handling and basic route mapping.",
+        "updatedAt": "2025-12-19T11:58:14.485Z"
+      },
+      {
+        "id": "18",
+        "title": "Create HomePage component",
+        "description": "Build the HomePage component with a 'Chat with Vanessa' button that opens the chat widget",
+        "details": "Create src/components/HomePage.js:\n\n```javascript\n// src/components/HomePage.js\nexport class HomePage {\n  constructor(router) {\n    this.router = router;\n  }\n\n  render() {\n    const container = document.createElement('div');\n    container.className = 'flex flex-col items-center justify-center min-h-screen p-4';\n    \n    const title = document.createElement('h1');\n    title.className = 'text-3xl font-bold mb-6 text-center';\n    title.textContent = 'Vanessa - AI Meal Planning Concierge';\n    \n    const subtitle = document.createElement('p');\n    subtitle.className = 'text-xl mb-8 text-center text-gray-600';\n    subtitle.textContent = 'Your personal assistant for meal planning and recipe ideas';\n    \n    const chatButton = document.createElement('button');\n    chatButton.className = 'bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300';\n    chatButton.textContent = 'Chat with Vanessa';\n    chatButton.addEventListener('click', () => {\n      // For now, just toggle the chat widget visibility\n      // This will be updated when the ChatWidget is implemented\n      document.dispatchEvent(new CustomEvent('toggle-chat'));\n    });\n    \n    container.appendChild(title);\n    container.appendChild(subtitle);\n    container.appendChild(chatButton);\n    \n    return container;\n  }\n}\n```\n\nUpdate main.js to register the HomePage with the router.",
+        "testStrategy": "1. Verify the HomePage renders correctly with all elements\n2. Test that the 'Chat with Vanessa' button is visible and styled correctly\n3. Verify the button click dispatches the 'toggle-chat' event (use a temporary event listener to confirm)\n4. Test responsive layout on different screen sizes\n5. Verify text content matches the requirements",
+        "priority": "high",
+        "dependencies": [
+          "17"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create HomePage.js file",
+            "description": "Create the src/components/HomePage.js file with the provided class implementation",
+            "dependencies": [],
+            "details": "Use the exact code provided in the task details. Create the file structure src/components/ and add the HomePage class with constructor and render method using DOM creation and Tailwind classes.",
+            "status": "pending",
+            "testStrategy": "Verify file is created in correct location with proper export and class structure",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement HomePage render method",
+            "description": "Add the complete render() method with title, subtitle, and chat button elements",
+            "dependencies": [
+              1
+            ],
+            "details": "Copy the DOM element creation code exactly: container div with flex classes, h1 title, p subtitle, button with Tailwind styling and click event listener dispatching 'toggle-chat' event.",
+            "status": "pending",
+            "testStrategy": "Check that render() returns a div with correct className 'flex flex-col items-center justify-center min-h-screen p-4'",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Add chat button event listener",
+            "description": "Implement the button click handler that dispatches the custom 'toggle-chat' event",
+            "dependencies": [
+              2
+            ],
+            "details": "Add event listener to chatButton: document.dispatchEvent(new CustomEvent('toggle-chat')) on click. Ensure button has correct Tailwind classes: 'bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300'.",
+            "status": "pending",
+            "testStrategy": "Verify button click dispatches 'toggle-chat' event using temporary event listener in browser console",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Update main.js router registration",
+            "description": "Modify main.js to import and register HomePage component with the router",
+            "dependencies": [
+              2
+            ],
+            "details": "Import HomePage from './components/HomePage.js' and add router mapping for homepage route (likely router.add('/', new HomePage(router)) or similar pattern from task 17). Ensure constructor receives router instance.",
+            "status": "pending",
+            "testStrategy": "Verify HomePage can be instantiated with router parameter and no import errors in console",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Test HomePage rendering and functionality",
+            "description": "Verify complete HomePage renders correctly and button works as expected",
+            "dependencies": [
+              3,
+              4
+            ],
+            "details": "Test in browser: 1) Page shows title/subtitle with proper Tailwind styling 2) Button visible and styled 3) Button click dispatches toggle-chat event 4) Responsive layout on mobile/desktop 5) No console errors.",
+            "status": "pending",
+            "testStrategy": "Manual browser testing + event verification: add temp listener document.addEventListener('toggle-chat', () => console.log('works'))",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 3,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - single component with DOM creation and single event dispatch.",
+        "updatedAt": "2025-12-19T11:58:59.311Z"
+      },
+      {
+        "id": "19",
+        "title": "Build ChatWidget component UI",
+        "description": "Create the ChatWidget component with message list, input field, and send button (UI only)",
+        "details": "Create src/components/ChatWidget.js with the following features:\n- Collapsible chat drawer\n- Message list for user and assistant messages\n- Text input and send button\n- Typing indicator (to be used during streaming)\n- Mobile: full-screen overlay\n- Desktop: side panel\n\n```javascript\n// src/components/ChatWidget.js\nexport class ChatWidget {\n  constructor() {\n    this.isOpen = false;\n    this.messages = [];\n    this.isTyping = false;\n    \n    // Listen for toggle event from HomePage\n    document.addEventListener('toggle-chat', this.toggle.bind(this));\n    \n    // Create DOM elements\n    this.createElements();\n    this.attachToDOM();\n  }\n  \n  createElements() {\n    // Create chat container\n    this.container = document.createElement('div');\n    this.container.className = 'fixed inset-y-0 right-0 w-full md:w-96 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50';\n    this.container.style.transform = 'translateX(100%)';\n    \n    // Create header\n    const header = document.createElement('div');\n    header.className = 'bg-blue-500 text-white p-4 flex justify-between items-center';\n    \n    const title = document.createElement('h2');\n    title.className = 'text-xl font-bold';\n    title.textContent = 'Chat with Vanessa';\n    \n    const closeButton = document.createElement('button');\n    closeButton.className = 'text-white hover:text-gray-200';\n    closeButton.innerHTML = '&times;';\n    closeButton.addEventListener('click', this.toggle.bind(this));\n    \n    header.appendChild(title);\n    header.appendChild(closeButton);\n    \n    // Create messages container\n    this.messagesContainer = document.createElement('div');\n    this.messagesContainer.className = 'flex-1 p-4 overflow-y-auto';\n    this.messagesContainer.style.height = 'calc(100% - 130px)';\n    \n    // Create typing indicator\n    this.typingIndicator = document.createElement('div');\n    this.typingIndicator.className = 'text-gray-500 p-2 hidden';\n    this.typingIndicator.textContent = 'Vanessa is typing...';\n    \n    // Create input area\n    const inputArea = document.createElement('div');\n    inputArea.className = 'border-t p-4 bg-gray-50';\n    \n    const inputForm = document.createElement('form');\n    inputForm.className = 'flex';\n    inputForm.addEventListener('submit', (e) => {\n      e.preventDefault();\n      // Will be implemented in a later task\n    });\n    \n    this.messageInput = document.createElement('input');\n    this.messageInput.className = 'flex-1 border rounded-l-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500';\n    this.messageInput.placeholder = 'Type your message...';\n    \n    const sendButton = document.createElement('button');\n    sendButton.className = 'bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600';\n    sendButton.type = 'submit';\n    sendButton.textContent = 'Send';\n    \n    inputForm.appendChild(this.messageInput);\n    inputForm.appendChild(sendButton);\n    inputArea.appendChild(inputForm);\n    \n    // Assemble the widget\n    this.container.appendChild(header);\n    this.container.appendChild(this.messagesContainer);\n    this.container.appendChild(this.typingIndicator);\n    this.container.appendChild(inputArea);\n  }\n  \n  attachToDOM() {\n    document.body.appendChild(this.container);\n  }\n  \n  toggle() {\n    this.isOpen = !this.isOpen;\n    this.container.style.transform = this.isOpen ? 'translateX(0)' : 'translateX(100%)';\n    \n    if (this.isOpen) {\n      this.messageInput.focus();\n      document.body.classList.add('overflow-hidden', 'md:overflow-auto');\n    } else {\n      document.body.classList.remove('overflow-hidden', 'md:overflow-auto');\n    }\n  }\n  \n  renderMessage(message) {\n    const messageEl = document.createElement('div');\n    messageEl.className = `mb-4 ${message.role === 'user' ? 'text-right' : ''}`;\n    \n    const bubble = document.createElement('div');\n    bubble.className = message.role === 'user' \n      ? 'inline-block bg-blue-500 text-white p-3 rounded-lg rounded-tr-none'\n      : 'inline-block bg-gray-200 p-3 rounded-lg rounded-tl-none';\n    bubble.textContent = message.content;\n    \n    messageEl.appendChild(bubble);\n    this.messagesContainer.appendChild(messageEl);\n    this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;\n  }\n  \n  showTypingIndicator() {\n    this.isTyping = true;\n    this.typingIndicator.classList.remove('hidden');\n  }\n  \n  hideTypingIndicator() {\n    this.isTyping = false;\n    this.typingIndicator.classList.add('hidden');\n  }\n}\n```\n\nUpdate main.js to initialize the ChatWidget.",
+        "testStrategy": "1. Verify the ChatWidget renders correctly when toggled\n2. Test opening and closing the chat widget\n3. Verify the UI is responsive (full-screen on mobile, side panel on desktop)\n4. Test the typing indicator appearance\n5. Verify message bubbles render correctly for both user and assistant\n6. Test input field and send button appearance\n7. Verify scrolling works in the message container\n8. Test on multiple screen sizes to ensure responsive design",
+        "priority": "high",
+        "dependencies": [
+          "18"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create DOM structure and styling for ChatWidget",
+            "description": "Implement the createElements() and attachToDOM() methods to build the complete responsive chat widget UI structure including header, messages container, typing indicator, and input area.",
+            "dependencies": [],
+            "details": "Use the provided code snippet to create all DOM elements with Tailwind CSS classes for responsive design (full-screen mobile overlay, side panel desktop). Ensure proper nesting: header > messagesContainer > typingIndicator > inputArea inside container. Set correct positioning (fixed inset-y-0 right-0 w-full md:w-96) and initial transform (translateX(100%)).",
+            "status": "pending",
+            "testStrategy": "Verify DOM structure matches expected hierarchy using browser dev tools. Check Tailwind classes render correctly (mobile full-screen, desktop side panel). Confirm container is appended to body and initially hidden.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 6,
+        "recommendedSubtasks": 1,
+        "expansionPrompt": "Break into: 1) Create DOM structure and styling, 2) Implement toggle/open-close functionality, 3) Add message rendering methods.",
+        "updatedAt": "2025-12-19T12:00:00.035Z"
+      },
+      {
+        "id": "20",
+        "title": "Implement chat streaming API endpoint",
+        "description": "Create a Vercel serverless function for the /api/chat-with-vanessa endpoint that streams responses using Server-Sent Events",
+        "details": "Create api/chat-with-vanessa.js as a Vercel serverless function:\n\n```javascript\n// api/chat-with-vanessa.js\nimport { Anthropic } from '@anthropic-ai/sdk';\n\nexport const config = {\n  runtime: 'edge',\n};\n\nconst CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;\n\nconst SYSTEM_PROMPT = `\nYou are Vanessa, a friendly meal planning assistant. \nKeep responses concise (2-3 sentences).\nHelp users think about their meal planning needs.\nYou cannot generate meal plans yet - that feature is coming soon.\n`;\n\nexport default async function handler(req) {\n  if (req.method !== 'POST') {\n    return new Response(JSON.stringify({ error: 'Method not allowed' }), {\n      status: 405,\n      headers: { 'Content-Type': 'application/json' },\n    });\n  }\n\n  try {\n    const { message, chatHistory = [] } = await req.json();\n    \n    if (!message) {\n      return new Response(JSON.stringify({ error: 'Message is required' }), {\n        status: 400,\n        headers: { 'Content-Type': 'application/json' },\n      });\n    }\n\n    const anthropic = new Anthropic({\n      apiKey: CLAUDE_API_KEY,\n    });\n\n    // Format messages for Claude API\n    const messages = chatHistory.map(msg => ({\n      role: msg.role,\n      content: msg.content,\n    }));\n    \n    // Add the new user message\n    messages.push({\n      role: 'user',\n      content: message,\n    });\n\n    // Set up SSE response\n    const encoder = new TextEncoder();\n    const stream = new TransformStream();\n    const writer = stream.writable.getWriter();\n\n    // Start the Claude stream in the background\n    const streamResponse = anthropic.messages.create({\n      model: 'claude-3-sonnet-20240229',\n      system: SYSTEM_PROMPT,\n      messages,\n      max_tokens: 1000,\n      stream: true,\n    });\n\n    // Process the stream\n    (async () => {\n      try {\n        for await (const chunk of streamResponse) {\n          if (chunk.type === 'content_block_delta' && chunk.delta.text) {\n            const data = JSON.stringify({\n              type: 'token',\n              content: chunk.delta.text,\n            });\n            await writer.write(encoder.encode(`data: ${data}\\n\\n`));\n          }\n        }\n        \n        // Signal completion\n        await writer.write(encoder.encode(`data: ${JSON.stringify({ type: 'done' })}\\n\\n`));\n      } catch (error) {\n        console.error('Streaming error:', error);\n        const errorData = JSON.stringify({\n          type: 'error',\n          error: 'An error occurred during streaming',\n        });\n        await writer.write(encoder.encode(`data: ${errorData}\\n\\n`));\n      } finally {\n        await writer.close();\n      }\n    })();\n\n    return new Response(stream.readable, {\n      headers: {\n        'Content-Type': 'text/event-stream',\n        'Cache-Control': 'no-cache',\n        'Connection': 'keep-alive',\n      },\n    });\n  } catch (error) {\n    console.error('API error:', error);\n    return new Response(JSON.stringify({ error: 'Internal server error' }), {\n      status: 500,\n      headers: { 'Content-Type': 'application/json' },\n    });\n  }\n}\n```\n\nCreate a .env file with the Claude API key and ensure it's added to Vercel environment variables.",
+        "testStrategy": "1. Test the endpoint with a valid POST request containing a message\n2. Verify the SSE stream format matches the expected format (data: {\"type\": \"token\", \"content\": \"...\"}\n3. Test with various message lengths to ensure streaming works correctly\n4. Test error handling by sending invalid requests\n5. Verify the system prompt is correctly applied by checking response content\n6. Test with and without chat history to ensure context is maintained\n7. Verify the endpoint rejects non-POST methods\n8. Test with missing message to verify error handling",
+        "priority": "high",
+        "dependencies": [
+          "16"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Set up Vercel edge serverless function with input validation and environment configuration",
+            "description": "Create the /api/chat-with-vanessa edge function file, wire up the POST handler, parse and validate the request body, and configure the Claude API key via .env and Vercel project settings.",
+            "dependencies": [],
+            "details": "- Create api/chat-with-vanessa.js (or .ts) using Vercel Edge runtime config.\n- Import and initialize basic handler structure that checks req.method is POST and returns 405 otherwise.\n- Use req.json() to extract { message, chatHistory } and validate that message is a non-empty string and chatHistory (if provided) is an array of objects with role/content.\n- Return 400 with a JSON error payload for invalid inputs.\n- Add CLAUDE_API_KEY to a local .env file and reference it via process.env.CLAUDE_API_KEY.\n- Configure the same CLAUDE_API_KEY in Vercel project environment variables for production and preview.\n- Ensure correct Content-Type headers for JSON responses on non-streaming paths.\n- Verify locally that the function is reachable at /api/chat-with-vanessa and that basic validation responses work.",
+            "status": "pending",
+            "testStrategy": "- Send a POST request with a valid body and confirm it reaches the handler.\n- Send requests with missing message, wrong method, or malformed JSON and verify appropriate 4xx responses.\n- Confirm process.env.CLAUDE_API_KEY is available in the function in both local and deployed environments.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Integrate Anthropic streaming with SSE, including robust error and timeout handling",
+            "description": "Wire the Anthropic SDK streaming API into the edge function, stream tokens via Server-Sent Events using TransformStream, and add defensive error and timeout handling around the streaming loop.",
+            "dependencies": [
+              1
+            ],
+            "details": "- Instantiate Anthropic with the CLAUDE_API_KEY inside the handler.\n- Transform chatHistory and the new user message into the Anthropic messages format and include the SYSTEM_PROMPT.\n- Call anthropic.messages.create with stream: true, appropriate model, max_tokens, and capture the async iterator.\n- Create a TransformStream, TextEncoder, and writer to emit SSE-formatted events (data: {\"type\":\"token\",\"content\":\"...\"}\\n\\n) for each content_block_delta chunk.\n- Emit a final SSE event of type \"done\" when the stream completes and then close the writer.\n- Wrap the streaming loop in try/catch/finally to send an SSE error event on failures and always close the stream.\n- Add a timeout guard (e.g., using AbortController or manual timer) so long-running Anthropic calls are aborted and return a graceful SSE error event.\n- Ensure response headers are set for SSE: text/event-stream, no-cache, keep-alive, and that the function returns the readable side of the TransformStream.\n- Confirm behavior when Anthropic returns non-stream errors or when network issues occur.",
+            "status": "pending",
+            "testStrategy": "- Use a client (or curl) to open an SSE connection and verify tokens arrive incrementally and are correctly formatted.\n- Test with long and short messages and confirm streaming continues until a final done event.\n- Simulate Anthropic/network errors (e.g., by using an invalid API key) and verify an SSE error event is sent instead of hanging.\n- Trigger a timeout scenario to confirm the guard aborts the request and emits a clear error event.\n- Verify that the stream is always closed (no resource leaks) and that the client can reconnect for subsequent requests.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 8,
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "Break into: 1) Serverless function setup and input validation, 2) Anthropic SDK streaming integration with SSE, 3) Error handling and timeout management.",
+        "updatedAt": "2025-12-19T12:01:00.923Z"
+      },
+      {
+        "id": "21",
+        "title": "Connect ChatWidget to API with streaming",
+        "description": "Implement the functionality to send messages to the API and display streaming responses in the ChatWidget",
+        "details": "Update the ChatWidget.js file to add API communication and streaming response handling:\n\n```javascript\n// Add to ChatWidget.js\n\n// Add these methods to the ChatWidget class\n\nasync sendMessage(message) {\n  if (!message.trim()) return;\n  \n  // Add user message to UI\n  const userMessage = { role: 'user', content: message, timestamp: new Date().toISOString() };\n  this.messages.push(userMessage);\n  this.renderMessage(userMessage);\n  \n  // Clear input\n  this.messageInput.value = '';\n  \n  // Show typing indicator\n  this.showTypingIndicator();\n  \n  try {\n    // Create assistant message placeholder\n    const assistantMessage = { role: 'assistant', content: '', timestamp: new Date().toISOString() };\n    this.messages.push(assistantMessage);\n    \n    // Create message element for streaming\n    const messageEl = document.createElement('div');\n    messageEl.className = 'mb-4';\n    \n    const bubble = document.createElement('div');\n    bubble.className = 'inline-block bg-gray-200 p-3 rounded-lg rounded-tl-none';\n    bubble.textContent = '';\n    \n    messageEl.appendChild(bubble);\n    this.messagesContainer.appendChild(messageEl);\n    \n    // Send to API with streaming\n    const response = await fetch('/api/chat-with-vanessa', {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({\n        message,\n        chatHistory: this.messages.slice(0, -1) // Exclude the empty assistant message\n      })\n    });\n    \n    if (!response.ok) throw new Error('API request failed');\n    \n    const reader = response.body.getReader();\n    const decoder = new TextDecoder();\n    \n    // Process the stream\n    while (true) {\n      const { value, done } = await reader.read();\n      if (done) break;\n      \n      const chunk = decoder.decode(value, { stream: true });\n      const lines = chunk.split('\\n\\n');\n      \n      for (const line of lines) {\n        if (!line.trim() || !line.startsWith('data: ')) continue;\n        \n        try {\n          const data = JSON.parse(line.substring(6));\n          \n          if (data.type === 'token') {\n            // Append to the bubble and the message object\n            bubble.textContent += data.content;\n            assistantMessage.content += data.content;\n            this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;\n          } else if (data.type === 'error') {\n            throw new Error(data.error || 'Unknown streaming error');\n          }\n        } catch (e) {\n          console.error('Error parsing SSE:', e);\n        }\n      }\n    }\n    \n    // Save conversation to localStorage\n    this.saveConversation();\n    \n  } catch (error) {\n    console.error('Error sending message:', error);\n    this.showError('Failed to get response from Vanessa. Please try again.');\n  } finally {\n    this.hideTypingIndicator();\n    this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;\n  }\n}\n\nshowError(message) {\n  const errorEl = document.createElement('div');\n  errorEl.className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';\n  errorEl.textContent = message;\n  \n  this.messagesContainer.appendChild(errorEl);\n  setTimeout(() => {\n    errorEl.remove();\n  }, 5000);\n}\n\nsaveConversation() {\n  // Will be implemented in the next task\n}\n\n// Update the form submit handler in createElements method\ninputForm.addEventListener('submit', (e) => {\n  e.preventDefault();\n  const message = this.messageInput.value.trim();\n  if (message) {\n    this.sendMessage(message);\n  }\n});\n```",
+        "testStrategy": "1. Test sending a message and verify the API call is made correctly\n2. Verify streaming responses appear in real-time in the chat\n3. Test error handling by simulating API failures\n4. Verify the typing indicator shows and hides appropriately\n5. Test with long responses to ensure streaming works correctly\n6. Verify auto-scrolling works as new content streams in\n7. Test sending multiple messages in succession\n8. Verify empty messages are not sent",
+        "priority": "high",
+        "dependencies": [
+          "19",
+          "20"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement sendMessage API request and basic message lifecycle",
+            "description": "Wire up the ChatWidget sendMessage method to send the user message to the /api/chat-with-vanessa endpoint and manage local message objects and DOM placeholders.",
+            "dependencies": [],
+            "details": "Implement the async sendMessage(message) method to validate and early-return on empty input, push a formatted user message object into this.messages, render it via this.renderMessage, clear this.messageInput, and show the typing indicator. Then create a placeholder assistantMessage object with empty content, push it into this.messages, and create the corresponding DOM elements (messageEl with a bubble div) appended to this.messagesContainer. Finally, call fetch('/api/chat-with-vanessa', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message, chatHistory: this.messages.slice(0, -1) }) }) and handle non-ok responses by throwing an error.",
+            "status": "pending",
+            "testStrategy": "Manually trigger sendMessage via the form submit, confirm user messages appear immediately, the assistant placeholder bubble is created, and a POST request with the correct JSON body (message + chatHistory without empty assistant) is sent to /api/chat-with-vanessa.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement SSE stream parsing and real-time assistant bubble updates",
+            "description": "Process the ReadableStream from the API response to parse SSE-formatted chunks and update the assistant message bubble and in-memory message content in real time.",
+            "dependencies": [
+              1
+            ],
+            "details": "After a successful fetch response, obtain a reader with response.body.getReader() and a TextDecoder. Implement a read loop (while true with await reader.read()) that exits on done. For each value, decode it with decoder.decode(value, { stream: true }), split the chunk on double newlines into lines, and for each line that starts with 'data: ' and is non-empty, parse JSON from line.substring(6). If data.type === 'token', append data.content to both bubble.textContent and assistantMessage.content, and keep this.messagesContainer scrolled to the bottom. If data.type === 'error', throw an Error with data.error or a generic message. Ensure streaming updates feel continuous and smooth in the UI.",
+            "status": "pending",
+            "testStrategy": "Use the running backend to send prompts that produce multi-token responses and verify that the assistant bubble text grows incrementally as chunks arrive, without waiting for the full response. Inspect network and console to ensure SSE lines are parsed correctly and no chunks are skipped or duplicated.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Add error handling, UI error feedback, and state synchronization",
+            "description": "Handle API and streaming errors gracefully, manage typing indicator and scroll state, and prepare for conversation persistence integration.",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Wrap the streaming logic in a try/catch/finally block: on any error (fetch failure, non-ok response, SSE parse error, data.type === 'error'), log the error and call showError('Failed to get response from Vanessa. Please try again.'). Implement showError(message) to render a styled error div in messagesContainer and auto-remove it after a timeout. In finally, always hide the typing indicator via this.hideTypingIndicator() and force messagesContainer scroll to bottom. Implement a stub saveConversation() method that will later call storage utilities to persist this.messages, and invoke it after the streaming loop completes successfully. Ensure error paths do not leave isTyping true or the UI scrolled incorrectly.",
+            "status": "pending",
+            "testStrategy": "Simulate network and server errors (e.g., force fetch to fail or return 500) and verify showError renders and auto-cleans, the typing indicator hides, and scrolling remains correct. Confirm that successful conversations call saveConversation() once streaming ends and that no unhandled exceptions are thrown in any error path.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 9,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Break into: 1) Implement sendMessage API integration, 2) SSE stream parsing and real-time UI updates, 3) Error handling and state synchronization.",
+        "updatedAt": "2025-12-19T12:02:02.743Z"
+      },
+      {
+        "id": "22",
+        "title": "Implement conversation persistence with localStorage",
+        "description": "Add functionality to save and load conversation history using localStorage",
+        "details": "Create src/utils/storage.js for localStorage operations:\n\n```javascript\n// src/utils/storage.js\nexport const STORAGE_KEYS = {\n  CONVERSATION: 'vanessa_conversation',\n  BASE_SPECIFICATION: 'vanessa_base_specification'\n};\n\nexport function saveConversation(conversation) {\n  try {\n    localStorage.setItem(\n      STORAGE_KEYS.CONVERSATION,\n      JSON.stringify(conversation)\n    );\n    return true;\n  } catch (error) {\n    console.error('Error saving conversation to localStorage:', error);\n    return false;\n  }\n}\n\nexport function loadConversation() {\n  try {\n    const data = localStorage.getItem(STORAGE_KEYS.CONVERSATION);\n    return data ? JSON.parse(data) : null;\n  } catch (error) {\n    console.error('Error loading conversation from localStorage:', error);\n    return null;\n  }\n}\n\nexport function saveBaseSpecification(spec) {\n  try {\n    localStorage.setItem(\n      STORAGE_KEYS.BASE_SPECIFICATION,\n      JSON.stringify(spec)\n    );\n    return true;\n  } catch (error) {\n    console.error('Error saving base specification to localStorage:', error);\n    return false;\n  }\n}\n\nexport function loadBaseSpecification() {\n  try {\n    const data = localStorage.getItem(STORAGE_KEYS.BASE_SPECIFICATION);\n    return data ? JSON.parse(data) : null;\n  } catch (error) {\n    console.error('Error loading base specification from localStorage:', error);\n    return null;\n  }\n}\n\nexport function clearStorage() {\n  try {\n    localStorage.removeItem(STORAGE_KEYS.CONVERSATION);\n    localStorage.removeItem(STORAGE_KEYS.BASE_SPECIFICATION);\n    return true;\n  } catch (error) {\n    console.error('Error clearing localStorage:', error);\n    return false;\n  }\n}\n```\n\nUpdate ChatWidget.js to use these storage functions:\n\n```javascript\n// Add to ChatWidget.js imports\nimport { saveConversation, loadConversation } from '../utils/storage.js';\n\n// Update constructor to load saved conversation\nconstructor() {\n  this.isOpen = false;\n  this.messages = [];\n  this.isTyping = false;\n  \n  // Load saved conversation\n  this.loadSavedConversation();\n  \n  // Listen for toggle event from HomePage\n  document.addEventListener('toggle-chat', this.toggle.bind(this));\n  \n  // Create DOM elements\n  this.createElements();\n  this.attachToDOM();\n}\n\n// Add these methods to ChatWidget class\nloadSavedConversation() {\n  const savedConversation = loadConversation();\n  if (savedConversation && savedConversation.messages) {\n    this.messages = savedConversation.messages;\n  } else {\n    // Initialize with welcome message\n    this.messages = [{\n      role: 'assistant',\n      content: \"Hi! I'm Vanessa, your meal planning assistant. How can I help you today?\",\n      timestamp: new Date().toISOString()\n    }];\n  }\n}\n\nsaveConversation() {\n  const conversation = {\n    messages: this.messages,\n    startedAt: this.messages.length > 0 ? this.messages[0].timestamp : new Date().toISOString()\n  };\n  saveConversation(conversation);\n}\n\n// Update the toggle method to render messages when opened\ntoggle() {\n  this.isOpen = !this.isOpen;\n  this.container.style.transform = this.isOpen ? 'translateX(0)' : 'translateX(100%)';\n  \n  if (this.isOpen) {\n    this.messageInput.focus();\n    document.body.classList.add('overflow-hidden', 'md:overflow-auto');\n    \n    // Render saved messages if this is the first open\n    if (this.messagesContainer.children.length === 0 && this.messages.length > 0) {\n      this.messages.forEach(message => this.renderMessage(message));\n    }\n  } else {\n    document.body.classList.remove('overflow-hidden', 'md:overflow-auto');\n  }\n}\n```\n\nAlso, create a hardcoded base specification as specified in the PRD:\n\n```javascript\n// src/utils/baseSpecification.js\nimport { saveBaseSpecification, loadBaseSpecification } from './storage.js';\n\nexport function initializeBaseSpecification() {\n  // Check if we already have a saved specification\n  const saved = loadBaseSpecification();\n  if (saved) return saved;\n  \n  // Create default specification\n  const defaultSpec = {\n    ownerName: 'User',\n    weeklyBudget: 150,\n    shoppingDay: 6\n  };\n  \n  // Save and return\n  saveBaseSpecification(defaultSpec);\n  return defaultSpec;\n}\n```",
+        "testStrategy": "1. Test saving a conversation and verify it's stored in localStorage\n2. Test loading a conversation from localStorage\n3. Verify the conversation structure matches the required format\n4. Test persistence by reloading the page and checking if messages are restored\n5. Verify the welcome message appears for new users\n6. Test with various conversation lengths to ensure everything is saved\n7. Test the base specification initialization and storage\n8. Verify localStorage quota handling (simulate storage full)",
+        "priority": "high",
+        "dependencies": [
+          "21"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create src/utils/storage.js module",
+            "description": "Implement the complete storage utility module with all localStorage operations for conversation and base specification as provided in the task details.",
+            "dependencies": [],
+            "details": "Copy the exact storage.js code provided into src/utils/storage.js. This includes STORAGE_KEYS constant and all save/load/clear functions with proper error handling using try-catch blocks and console.error logging.",
+            "status": "pending",
+            "testStrategy": "Verify file is created at correct path, check all exports exist, test each function manually in browser console with sample data to ensure JSON serialization/deserialization works without errors.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 5,
+        "recommendedSubtasks": 1,
+        "expansionPrompt": "Break into: 1) Create storage utility module, 2) Integrate load/save into ChatWidget lifecycle."
+      },
+      {
+        "id": "23",
+        "title": "Add mobile responsiveness to chat widget",
+        "description": "Enhance the ChatWidget to be fully responsive, displaying as a full-screen overlay on mobile and a side panel on desktop",
+        "details": "Update the ChatWidget.js to improve mobile responsiveness:\n\n```javascript\n// Update the createElements method in ChatWidget.js\n\ncreateElements() {\n  // Create chat container with responsive classes\n  this.container = document.createElement('div');\n  this.container.className = 'fixed inset-0 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 flex flex-col md:inset-y-0 md:right-0 md:left-auto md:w-96';\n  this.container.style.transform = 'translateX(100%)';\n  \n  // Create header with close button\n  const header = document.createElement('div');\n  header.className = 'bg-blue-500 text-white p-4 flex justify-between items-center';\n  \n  const title = document.createElement('h2');\n  title.className = 'text-xl font-bold';\n  title.textContent = 'Chat with Vanessa';\n  \n  const closeButton = document.createElement('button');\n  closeButton.className = 'text-white hover:text-gray-200 p-2';\n  closeButton.innerHTML = '&times;';\n  closeButton.setAttribute('aria-label', 'Close chat');\n  closeButton.addEventListener('click', this.toggle.bind(this));\n  \n  header.appendChild(title);\n  header.appendChild(closeButton);\n  \n  // Create messages container\n  this.messagesContainer = document.createElement('div');\n  this.messagesContainer.className = 'flex-1 p-4 overflow-y-auto';\n  \n  // Create typing indicator\n  this.typingIndicator = document.createElement('div');\n  this.typingIndicator.className = 'text-gray-500 p-2 hidden';\n  this.typingIndicator.textContent = 'Vanessa is typing...';\n  \n  // Create input area - fixed at bottom\n  const inputArea = document.createElement('div');\n  inputArea.className = 'border-t p-4 bg-gray-50';\n  \n  const inputForm = document.createElement('form');\n  inputForm.className = 'flex';\n  inputForm.addEventListener('submit', (e) => {\n    e.preventDefault();\n    const message = this.messageInput.value.trim();\n    if (message) {\n      this.sendMessage(message);\n    }\n  });\n  \n  this.messageInput = document.createElement('input');\n  this.messageInput.className = 'flex-1 border rounded-l-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500';\n  this.messageInput.placeholder = 'Type your message...';\n  \n  const sendButton = document.createElement('button');\n  sendButton.className = 'bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600';\n  sendButton.type = 'submit';\n  sendButton.textContent = 'Send';\n  \n  inputForm.appendChild(this.messageInput);\n  inputForm.appendChild(sendButton);\n  inputArea.appendChild(inputForm);\n  \n  // Assemble the widget\n  this.container.appendChild(header);\n  this.container.appendChild(this.messagesContainer);\n  this.container.appendChild(this.typingIndicator);\n  this.container.appendChild(inputArea);\n}\n\n// Add a method to handle window resize events\nhandleResize() {\n  if (window.innerWidth < 768) { // Mobile breakpoint\n    if (this.isOpen) {\n      document.body.classList.add('overflow-hidden');\n    }\n  } else {\n    document.body.classList.remove('overflow-hidden');\n  }\n}\n\n// Update the constructor to add resize listener\nconstructor() {\n  this.isOpen = false;\n  this.messages = [];\n  this.isTyping = false;\n  \n  // Load saved conversation\n  this.loadSavedConversation();\n  \n  // Listen for toggle event from HomePage\n  document.addEventListener('toggle-chat', this.toggle.bind(this));\n  \n  // Listen for resize events\n  window.addEventListener('resize', this.handleResize.bind(this));\n  \n  // Create DOM elements\n  this.createElements();\n  this.attachToDOM();\n}\n```\n\nAdd CSS to handle mobile keyboard appearance:\n\n```javascript\n// Add to the head of index.html\n<style>\n  @media (max-width: 767px) {\n    .chat-open {\n      position: fixed;\n      width: 100%;\n      height: 100%;\n      overflow: hidden;\n    }\n  }\n</style>\n\n// Update toggle method\ntoggle() {\n  this.isOpen = !this.isOpen;\n  this.container.style.transform = this.isOpen ? 'translateX(0)' : 'translateX(100%)';\n  \n  if (this.isOpen) {\n    this.messageInput.focus();\n    if (window.innerWidth < 768) {\n      document.body.classList.add('chat-open');\n    }\n    \n    // Render saved messages if this is the first open\n    if (this.messagesContainer.children.length === 0 && this.messages.length > 0) {\n      this.messages.forEach(message => this.renderMessage(message));\n    }\n  } else {\n    document.body.classList.remove('chat-open');\n  }\n}\n```",
+        "testStrategy": "1. Test on various mobile devices and screen sizes\n2. Verify the chat appears as full-screen on mobile and side panel on desktop\n3. Test orientation changes on mobile devices\n4. Verify the virtual keyboard doesn't cause layout issues on mobile\n5. Test scrolling in the message container on both mobile and desktop\n6. Verify the fixed input area stays at the bottom on all devices\n7. Test touch interactions on mobile devices\n8. Verify the chat can be closed on all devices",
+        "priority": "medium",
+        "dependencies": [
+          "19"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement responsive ChatWidget container, resize handling, and body class behavior",
+            "description": "Update ChatWidget.js and related styles so the chat widget displays as a full-screen overlay on mobile and a side panel on desktop, including Tailwind-responsive container classes, window resize handling, and body class management for mobile keyboard behavior.",
+            "dependencies": [
+              23
+            ],
+            "details": "1) In ChatWidget.createElements, set the container element to use Tailwind responsive classes for a full-screen overlay on small screens and a right-side panel on desktop (e.g., fixed inset-0 on mobile, md:inset-y-0 md:right-0 md:left-auto md:w-96), and ensure initial transform is translateX(100%). 2) Implement a handleResize method that checks window.innerWidth against the 768px breakpoint and adds/removes appropriate body classes (e.g., overflow-hidden or chat-open) when the widget is open to prevent background scrolling on mobile. 3) In the constructor, bind and register the resize listener (window.addEventListener('resize', this.handleResize.bind(this))) and ensure it uses the same logic as toggle() for body class management. 4) Update the toggle method to manage the chat-open class on the body for mobile (add when opened and viewport < 768, remove when closed) and to focus the input when opening. 5) Add the provided CSS snippet (chat-open handling under max-width: 767px) into index.html or the appropriate global stylesheet so that mobile full-screen and keyboard appearance are handled without layout issues. 6) Manually test behavior across breakpoints by resizing the browser and using mobile emulation: confirm full-screen overlay on mobile, side panel on desktop, proper scroll locking, and no layout jump when the virtual keyboard appears. 7) Optionally add cleanup logic (e.g., a destroy method or beforeunload handler) to remove the resize listener if the widget can be unmounted.",
+            "status": "pending",
+            "testStrategy": "1) Open the app on mobile-sized viewports (<768px) and verify the chat widget opens as a full-screen overlay with no background scrolling when open. 2) On desktop (>=768px), confirm the widget appears as a right-side panel with the rest of the page still scrollable. 3) Resize the window while the chat is open and verify body classes update correctly (no stuck scroll lock, no missing full-screen overlay). 4) On mobile devices or devtools emulation, open the chat and focus the input so the virtual keyboard appears; verify the input area remains visible and the layout does not shift unexpectedly. 5) Ensure closing the chat removes any chat-open/overflow-hidden classes from the body and restores normal page scrolling.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 5,
+        "recommendedSubtasks": 1,
+        "expansionPrompt": "Break into: 1) Update container classes for responsive behavior, 2) Implement resize event handling and body class management.",
+        "updatedAt": "2025-12-19T12:02:42.470Z"
+      },
+      {
+        "id": "24",
+        "title": "Implement error handling",
+        "description": "Add comprehensive error handling for API calls, localStorage operations, and general app functionality",
+        "details": "Create src/utils/errorHandling.js for centralized error handling:\n\n```javascript\n// src/utils/errorHandling.js\nexport class ErrorHandler {\n  static displayError(message, container, duration = 5000) {\n    const errorEl = document.createElement('div');\n    errorEl.className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4 rounded shadow-sm';\n    \n    const errorMessage = document.createElement('p');\n    errorMessage.textContent = message;\n    \n    errorEl.appendChild(errorMessage);\n    container.appendChild(errorEl);\n    \n    // Auto-remove after duration\n    setTimeout(() => {\n      errorEl.classList.add('opacity-0', 'transition-opacity', 'duration-300');\n      setTimeout(() => errorEl.remove(), 300);\n    }, duration);\n    \n    return errorEl;\n  }\n  \n  static handleApiError(error, container) {\n    console.error('API Error:', error);\n    \n    let message = 'Failed to communicate with Vanessa. Please try again.';\n    if (error.message === 'Failed to fetch') {\n      message = 'Network error. Please check your internet connection.';\n    } else if (error.status === 429) {\n      message = 'Too many requests. Please try again in a moment.';\n    }\n    \n    return this.displayError(message, container);\n  }\n  \n  static handleStorageError(error, container) {\n    console.error('Storage Error:', error);\n    \n    let message = 'Failed to save your conversation. Your data may not persist when you close the app.';\n    if (error.name === 'QuotaExceededError') {\n      message = 'Storage is full. Please clear some browser data to continue saving conversations.';\n    }\n    \n    return this.displayError(message, container);\n  }\n}\n```\n\nUpdate the ChatWidget to use the error handler:\n\n```javascript\n// Add to ChatWidget.js imports\nimport { ErrorHandler } from '../utils/errorHandling.js';\n\n// Replace the showError method\nshowError(message) {\n  ErrorHandler.displayError(message, this.messagesContainer);\n}\n\n// Update the sendMessage method's catch block\ncatch (error) {\n  console.error('Error sending message:', error);\n  ErrorHandler.handleApiError(error, this.messagesContainer);\n}\n\n// Update the saveConversation method\nsaveConversation() {\n  try {\n    const conversation = {\n      messages: this.messages,\n      startedAt: this.messages.length > 0 ? this.messages[0].timestamp : new Date().toISOString()\n    };\n    const saved = saveConversation(conversation);\n    if (!saved) throw new Error('Failed to save conversation');\n  } catch (error) {\n    ErrorHandler.handleStorageError(error, this.messagesContainer);\n  }\n}\n```\n\nAdd error handling to the API endpoint:\n\n```javascript\n// Update the API error handling in api/chat-with-vanessa.js\n\n// Add more specific error responses\nif (!CLAUDE_API_KEY) {\n  return new Response(JSON.stringify({ error: 'API key not configured' }), {\n    status: 500,\n    headers: { 'Content-Type': 'application/json' },\n  });\n}\n\n// Add timeout handling\nlet timeoutId;\nconst timeoutPromise = new Promise((_, reject) => {\n  timeoutId = setTimeout(() => {\n    reject(new Error('Request timed out'));\n  }, 30000); // 30 second timeout\n});\n\ntry {\n  // Use Promise.race for timeout\n  const result = await Promise.race([streamResponse, timeoutPromise]);\n  // Rest of the code...\n} catch (error) {\n  if (error.message === 'Request timed out') {\n    // Handle timeout specifically\n    await writer.write(encoder.encode(`data: ${JSON.stringify({ type: 'error', error: 'The request timed out. Please try again.' })}\\n\\n`));\n  } else {\n    // Handle other errors\n    console.error('Streaming error:', error);\n    const errorData = JSON.stringify({\n      type: 'error',\n      error: 'An error occurred during streaming',\n    });\n    await writer.write(encoder.encode(`data: ${errorData}\\n\\n`));\n  }\n} finally {\n  clearTimeout(timeoutId);\n  await writer.close();\n}\n```",
+        "testStrategy": "1. Test API error handling by simulating various error conditions\n2. Verify network errors are handled gracefully\n3. Test localStorage errors by simulating quota exceeded\n4. Verify error messages are displayed to the user\n5. Test API timeout handling\n6. Verify errors are logged to the console\n7. Test error recovery (can the user continue after an error)\n8. Verify error messages auto-dismiss after the specified duration",
+        "priority": "medium",
+        "dependencies": [
+          "21",
+          "22"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create centralized ErrorHandler utility and wire into storage layer",
+            "description": "Implement the src/utils/errorHandling.js utility and ensure it supports API, storage, and generic UI errors with consistent user-facing messaging.",
+            "dependencies": [],
+            "details": "1) Create src/utils/errorHandling.js with the ErrorHandler class as specified, including displayError, handleApiError, and handleStorageError methods. 2) Ensure displayError renders styled error messages into a provided DOM container and auto-removes them after a timeout. 3) Implement error classification in handleApiError (network errors, 429, generic failures) and handleStorageError (QuotaExceededError, generic storage failures) with clear user-facing messages. 4) Confirm the module exports ErrorHandler correctly for use across the app. 5) Optionally add a generic handler method for unknown errors if needed later, but keep scope aligned with current requirements.",
+            "status": "pending",
+            "testStrategy": "Manually trigger displayError with a test container to verify DOM structure, styles, and auto-dismiss behavior; simulate API and storage error objects in a small test harness to confirm the correct messages are produced and logged to the console.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Integrate centralized error handling into ChatWidget and chat-with-vanessa API endpoint",
+            "description": "Refactor ChatWidget and the /api/chat-with-vanessa endpoint to use the centralized ErrorHandler and improved API-side error responses and timeouts.",
+            "dependencies": [
+              1
+            ],
+            "details": "1) In ChatWidget.js, import ErrorHandler from ../utils/errorHandling.js. 2) Replace the existing showError implementation with a call to ErrorHandler.displayError(message, this.messagesContainer). 3) Update the sendMessage method catch block to use ErrorHandler.handleApiError(error, this.messagesContainer) and keep console logging minimal and consistent. 4) Wrap saveConversation in try/catch and delegate to ErrorHandler.handleStorageError(error, this.messagesContainer) on failure, as per the provided snippet. 5) In api/chat-with-vanessa.js, add a 500 response when CLAUDE_API_KEY is missing, returning a JSON body with an error field. 6) Implement a 30-second timeout using Promise.race between the streaming response and a timeoutPromise; on timeout, write an SSE error event with a user-friendly timeout message. 7) In the catch block, distinguish timeout errors from other errors, logging streaming errors to the console and sending a generic SSE error payload for non-timeout failures; ensure timeout is cleared and writer is closed in finally.",
+            "status": "pending",
+            "testStrategy": "Manually test ChatWidget by forcing API failures (e.g., invalid endpoint, offline mode) to verify ErrorHandler.handleApiError is invoked and messages display correctly; simulate localStorage quota exceeded or throw errors in saveConversation to verify handleStorageError behavior; call the /api/chat-with-vanessa endpoint with missing CLAUDE_API_KEY and malformed requests to confirm error responses; simulate long-running or hanging requests to confirm timeout errors are emitted via SSE and connections are closed properly.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 6,
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "Break into: 1) Create centralized ErrorHandler utility, 2) Integrate error boundaries across ChatWidget and API endpoint.",
+        "updatedAt": "2025-12-19T12:04:08.874Z"
+      },
+      {
+        "id": "25",
+        "title": "Test and validate Slice 1 implementation",
+        "description": "Perform comprehensive testing of all Slice 1 components and functionality to ensure they meet the success criteria",
+        "details": "Create a test plan and validation checklist for Slice 1:\n\n1. Create a test plan document with the following sections:\n   - Functional testing\n   - Responsive design testing\n   - Error handling testing\n   - Performance testing\n   - Browser compatibility testing\n\n2. Implement a simple test utility for manual testing:\n\n```javascript\n// src/utils/testUtils.js\nexport class TestUtils {\n  static runTests() {\n    const results = [];\n    \n    // Test localStorage\n    try {\n      localStorage.setItem('test', 'test');\n      localStorage.removeItem('test');\n      results.push({ name: 'localStorage', passed: true });\n    } catch (e) {\n      results.push({ name: 'localStorage', passed: false, error: e.message });\n    }\n    \n    // Test fetch API\n    fetch('/api/health-check')\n      .then(() => results.push({ name: 'fetch', passed: true }))\n      .catch(e => results.push({ name: 'fetch', passed: false, error: e.message }));\n    \n    // Test SSE support\n    try {\n      new EventSource('data:,');\n      results.push({ name: 'SSE', passed: true });\n    } catch (e) {\n      results.push({ name: 'SSE', passed: false, error: e.message });\n    }\n    \n    return results;\n  }\n  \n  static validateSuccessCriteria() {\n    return [\n      { name: 'App loads with home page', check: () => document.querySelector('#app') !== null },\n      { name: 'Chat button visible', check: () => document.querySelector('button') !== null },\n      { name: 'Chat opens on click', check: () => {\n        const button = document.querySelector('button');\n        if (!button) return false;\n        button.click();\n        return document.querySelector('.chat-widget') !== null;\n      }},\n      { name: 'Can type and send message', check: () => {\n        const input = document.querySelector('input');\n        const form = document.querySelector('form');\n        if (!input || !form) return false;\n        input.value = 'Test message';\n        form.dispatchEvent(new Event('submit'));\n        return true;\n      }},\n      { name: 'Conversation persists', check: () => {\n        return localStorage.getItem('vanessa_conversation') !== null;\n      }}\n    ];\n  }\n}\n```\n\n3. Create a simple health-check API endpoint:\n\n```javascript\n// api/health-check.js\nexport default function handler(req, res) {\n  return new Response(JSON.stringify({ status: 'ok' }), {\n    status: 200,\n    headers: { 'Content-Type': 'application/json' },\n  });\n}\n```\n\n4. Create a validation checklist based on the success criteria in the PRD:\n\n```\nSlice 1 Validation Checklist:\n\n[ ] App loads with home page showing chat button\n[ ] Clicking chat opens the chat widget\n[ ] User can type and send a message\n[ ] Vanessa responds with streaming text\n[ ] Messages display in real-time as they stream\n[ ] Conversation persists after page reload\n[ ] Chat can be closed and reopened\n[ ] Works on mobile (full-screen) and desktop (side panel)\n[ ] Basic error handling (network errors show message)\n```\n\n5. Manually test each item on the checklist and document results.",
+        "testStrategy": "1. Test against each success criteria listed in the PRD\n2. Test on multiple browsers (Chrome, Firefox, Safari)\n3. Test on multiple devices (desktop, tablet, mobile)\n4. Test with network throttling to simulate slow connections\n5. Test with localStorage disabled to verify error handling\n6. Verify all user interactions work as expected\n7. Test edge cases like very long messages, rapid message sending\n8. Document any issues found and prioritize fixes",
+        "priority": "high",
+        "dependencies": [
+          "21",
+          "22",
+          "23",
+          "24"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create test utilities and health-check endpoint",
+            "description": "Implement the TestUtils class and health-check API endpoint as specified in the task details for manual testing support",
+            "dependencies": [],
+            "details": "Add src/utils/testUtils.js with runTests() and validateSuccessCriteria() methods. Implement api/health-check.js endpoint returning {status: 'ok'}. Verify integration with localStorage, fetch, and SSE tests.",
+            "status": "pending",
+            "testStrategy": "Run TestUtils.runTests() in browser console to verify all tests pass. Test health-check endpoint with curl or browser fetch.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Execute cross-browser and device testing",
+            "description": "Perform functional, responsive, error handling, performance, and compatibility tests across multiple browsers and devices using the test plan and checklist",
+            "dependencies": [
+              1
+            ],
+            "details": "Test on Chrome, Firefox, Safari across desktop, tablet, mobile. Use browser devtools for responsive testing, network throttling. Run TestUtils.validateSuccessCriteria() and manual checklist items including localStorage disabled scenarios.",
+            "status": "pending",
+            "testStrategy": "Document pass/fail for each checklist item per browser/device. Capture screenshots of failures and performance metrics (load time, FPS).",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Document results and create validation report",
+            "description": "Compile test results into a comprehensive test plan document and validation report, including checklist outcomes and any issues found",
+            "dependencies": [
+              2
+            ],
+            "details": "Create test plan with sections: Functional, Responsive, Error Handling, Performance, Browser Compatibility. Update Slice 1 checklist with results. Include test utility outputs, screenshots, and recommendations for fixes.",
+            "status": "pending",
+            "testStrategy": "Review report against PRD success criteria. Ensure all tests traceable to requirements. Get stakeholder sign-off on validation.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 7,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Break into: 1) Create test utilities and health-check endpoint, 2) Execute cross-browser/device testing, 3) Document results and create validation report."
+      }
+    ],
+    "metadata": {
+      "version": "1.0.0",
+      "lastModified": "2025-12-19T12:04:08.875Z",
+      "taskCount": 10,
+      "completedCount": 8,
+      "tags": [
+        "master"
+      ]
+    }
+  }
+}
