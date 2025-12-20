@@ -26,23 +26,58 @@ export class ShoppingListView {
   }
 
   /**
+   * Clean ingredient name for shopping (remove prep terms)
+   */
+  cleanIngredientName(name) {
+    let cleaned = name.toLowerCase().trim();
+    
+    // Remove preparation terms that aren't actual grocery items
+    const prepTerms = [
+      'cooked', 'leftover', 'shredded', 'diced', 'chopped', 
+      'sliced', 'minced', 'crushed', 'grated', 'fresh',
+      'frozen', 'canned', 'optional'
+    ];
+    
+    prepTerms.forEach(term => {
+      // Remove at start of string
+      cleaned = cleaned.replace(new RegExp(`^${term}\\s+`, 'i'), '');
+      // Remove in middle (e.g., "leftover roast chicken" -> "roast chicken")
+      cleaned = cleaned.replace(new RegExp(`\\s+${term}\\s+`, 'i'), ' ');
+    });
+    
+    // Trim again after removals
+    cleaned = cleaned.trim();
+    
+    // Return original case but cleaned structure
+    return cleaned;
+  }
+
+  /**
    * Normalize unit for aggregation (handles singular/plural)
    */
   normalizeUnit(unit) {
     const normalized = unit.toLowerCase().trim();
     
-    // Map plural to singular
+    // Map plural to singular and common variations
     const unitMap = {
       'cloves': 'clove',
       'cups': 'cup',
       'tablespoons': 'tablespoon',
+      'tbsp': 'tablespoon',
       'teaspoons': 'teaspoon',
+      'tsp': 'teaspoon',
       'pounds': 'pound',
+      'lbs': 'pound',
+      'lb': 'pound',
       'ounces': 'ounce',
+      'oz': 'ounce',
       'slices': 'slice',
       'pieces': 'piece',
       'whole': 'whole',
-      'wholes': 'whole'
+      'wholes': 'whole',
+      'large': 'large',
+      'medium': 'medium',
+      'small': 'small'
     };
     
     return unitMap[normalized] || normalized;
@@ -54,37 +89,60 @@ export class ShoppingListView {
    */
   generateShoppingList() {
     const ingredientMap = new Map();
+    const debugInfo = { skipped: [], combined: [], warnings: [] };
 
     // Collect all ingredients from all recipes
     this.recipes.forEach(recipe => {
       if (!recipe.ingredients) return;
 
       recipe.ingredients.forEach(ing => {
-        // Normalize name and unit for better matching
-        const normalizedName = ing.name.toLowerCase().trim();
+        // Clean and normalize the ingredient name
+        const cleanedName = this.cleanIngredientName(ing.name);
+        const normalizedName = cleanedName.toLowerCase().trim();
         const normalizedUnit = this.normalizeUnit(ing.unit || '');
         
-        // Use ONLY name as key (not unit) to aggregate all quantities
+        // Skip ingredients that are clearly prep items or leftovers
+        if (normalizedName.includes('leftover') || normalizedName.length === 0) {
+          debugInfo.skipped.push(ing.name);
+          return;
+        }
+        
+        // Use cleaned name as key for aggregation
         const key = normalizedName;
         
         if (ingredientMap.has(key)) {
-          // Add to existing quantity
+          // Ingredient already exists - aggregate it
           const existing = ingredientMap.get(key);
+          debugInfo.combined.push(`${ing.name} (${ing.quantity} ${ing.unit}) + ${existing.name} (${existing.quantity} ${existing.unit})`);
           
-          // If units match, add quantities
-          if (this.normalizeUnit(existing.unit) === normalizedUnit) {
+          const existingNormalizedUnit = this.normalizeUnit(existing.unit);
+          
+          // If units match (after normalization), add quantities
+          if (existingNormalizedUnit === normalizedUnit) {
             existing.quantity += (ing.quantity || 0);
+            existing.unit = ing.unit; // Keep the last unit format seen
           } else {
-            // Different units - keep the more common/useful one and add note
-            console.warn(`Different units for ${normalizedName}: ${existing.unit} vs ${ing.unit}`);
-            // For now, convert to the first unit seen
-            existing.quantity += (ing.quantity || 0);
-            existing.unit = existing.unit || ing.unit;
+            // Different units - create separate entry with note
+            const warningMsg = `⚠️ ${normalizedName}: mixing ${existing.unit} and ${ing.unit} - keeping separate`;
+            console.warn(warningMsg);
+            debugInfo.warnings.push(warningMsg);
+            
+            // Create a new key with unit suffix to keep them separate
+            const keyWithUnit = `${normalizedName}__${normalizedUnit}`;
+            if (!ingredientMap.has(keyWithUnit)) {
+              ingredientMap.set(keyWithUnit, {
+                name: cleanedName,
+                quantity: ing.quantity || 0,
+                unit: ing.unit || '',
+                category: ing.category || 'other',
+                displayName: `${cleanedName} (in ${ing.unit})`
+              });
+            }
           }
         } else {
           // New ingredient
           ingredientMap.set(key, {
-            name: ing.name,
+            name: cleanedName,
             quantity: ing.quantity || 0,
             unit: ing.unit || '',
             category: ing.category || 'other'
@@ -93,15 +151,22 @@ export class ShoppingListView {
       });
     });
 
-    // Convert to array and sort
+    // Convert to array
     const list = Array.from(ingredientMap.values());
     
-    console.log('Generated shopping list - unique items:', list.length);
+    // Log aggregation summary
+    console.log('=== SHOPPING LIST AGGREGATION ===');
+    console.log('Unique items:', list.length);
+    console.log('Skipped (non-purchasable):', debugInfo.skipped.length, debugInfo.skipped);
+    console.log('Combined:', debugInfo.combined.length);
+    console.log('Warnings:', debugInfo.warnings.length);
     
-    // Log any suspiciously high quantities for debugging
+    // Log any suspiciously high quantities
     list.forEach(item => {
-      if (item.quantity > 20 && item.unit.toLowerCase().includes('cup')) {
-        console.warn(`⚠️ High quantity detected: ${item.quantity} ${item.unit} ${item.name}`);
+      if (item.quantity > 20 && ['cup', 'tablespoon', 'teaspoon'].includes(item.unit.toLowerCase())) {
+        const warning = `⚠️ High quantity: ${item.quantity} ${item.unit} ${item.name}`;
+        console.warn(warning);
+        debugInfo.warnings.push(warning);
       }
     });
     
