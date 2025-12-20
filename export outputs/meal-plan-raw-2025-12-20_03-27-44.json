@@ -1,0 +1,932 @@
+{
+  "timestamp": "2025-12-20T03:27:44.175Z",
+  "rawData": {
+    "weekOf": "2025-12-27",
+    "budget": {
+      "estimated": 65
+    },
+    "days": [
+      {
+        "date": "2025-12-27",
+        "breakfast": {
+          "name": "Overnight Oats with Fresh Berries",
+          "ingredients": [
+            {
+              "name": "rolled oats",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "almond milk",
+              "quantity": 0.75,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "mixed berries",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Mix oats and almond milk in a jar the night before. Refrigerate overnight. Top with fresh berries and honey before serving.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "make-ahead",
+            "vegetarian"
+          ]
+        },
+        "lunch": {
+          "name": "Greek Chickpea Salad Bowl",
+          "ingredients": [
+            {
+              "name": "chickpeas",
+              "quantity": 1,
+              "unit": "can",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "feta cheese",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Drain and rinse chickpeas. Dice cucumber and halve tomatoes. Toss everything with crumbled feta, lemon juice, olive oil, salt and pepper.",
+          "prepTime": 10,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "cold",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Veggie Skewers with Quinoa Salad",
+          "ingredients": [
+            {
+              "name": "zucchini",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "bell peppers",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "red onion",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "quinoa",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook quinoa and let cool. Cut veggies into chunks, thread on skewers, brush with olive oil. Grill 10-12 minutes, turning occasionally. Serve over cold quinoa salad.",
+          "prepTime": 15,
+          "cookTime": 15,
+          "servings": 1,
+          "tags": [
+            "grilled",
+            "vegetarian",
+            "light"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-28",
+        "breakfast": {
+          "name": "Tropical Smoothie Bowl",
+          "ingredients": [
+            {
+              "name": "frozen mango",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "banana",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "coconut milk",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "granola",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Blend frozen mango, banana, and coconut milk until smooth. Pour into bowl and top with granola and fresh fruit.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "cold",
+            "vegetarian"
+          ]
+        },
+        "lunch": {
+          "name": "Caprese Sandwich with Pesto",
+          "ingredients": [
+            {
+              "name": "ciabatta bread",
+              "quantity": 1,
+              "unit": "roll",
+              "category": "pantry"
+            },
+            {
+              "name": "fresh mozzarella",
+              "quantity": 3,
+              "unit": "oz",
+              "category": "dairy"
+            },
+            {
+              "name": "tomato",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "fresh basil",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "pesto",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Slice bread and spread with pesto. Layer mozzarella, tomato slices, and basil leaves. Drizzle with balsamic if desired. Serve cold or at room temperature.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "vegetarian",
+            "quick"
+          ]
+        },
+        "dinner": {
+          "name": "Cold Sesame Noodles with Edamame",
+          "ingredients": [
+            {
+              "name": "soba noodles",
+              "quantity": 4,
+              "unit": "oz",
+              "category": "pantry"
+            },
+            {
+              "name": "edamame",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "sesame oil",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "soy sauce",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "scallions",
+              "quantity": 2,
+              "unit": "stalks",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook noodles and edamame, then rinse with cold water. Toss with sesame oil, soy sauce, and sliced scallions. Serve chilled.",
+          "prepTime": 5,
+          "cookTime": 10,
+          "servings": 1,
+          "tags": [
+            "cold",
+            "vegetarian",
+            "asian"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-29",
+        "breakfast": {
+          "name": "Greek Yogurt Parfait",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "granola",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "mixed berries",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Layer yogurt, granola, and berries in a glass. Drizzle with honey. Serve immediately or chill.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "vegetarian",
+            "quick"
+          ]
+        },
+        "lunch": {
+          "name": "Mediterranean Hummus Wrap",
+          "ingredients": [
+            {
+              "name": "whole wheat tortilla",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "hummus",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 0.5,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "mixed greens",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Spread hummus on tortilla. Add sliced cucumber, halved tomatoes, and greens. Roll tightly and slice in half.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "vegetarian",
+            "wrap"
+          ]
+        },
+        "dinner": {
+          "name": "Gazpacho with Grilled Bread",
+          "ingredients": [
+            {
+              "name": "tomatoes",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "cloves",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 3,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Blend tomatoes, cucumber, bell pepper, garlic, olive oil, and vinegar until smooth. Chill for 2 hours. Grill bread slices and serve alongside cold soup.",
+          "prepTime": 15,
+          "cookTime": 5,
+          "servings": 1,
+          "tags": [
+            "cold",
+            "vegetarian",
+            "soup"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-30",
+        "breakfast": {
+          "name": "Avocado Toast with Tomato",
+          "ingredients": [
+            {
+              "name": "whole grain bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "avocado",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "tomato",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 0.5,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Toast bread lightly. Mash avocado with lemon juice and spread on toast. Top with sliced tomatoes, salt, and pepper.",
+          "prepTime": 5,
+          "cookTime": 2,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "vegetarian",
+            "light"
+          ]
+        },
+        "lunch": {
+          "name": "Watermelon Feta Salad",
+          "ingredients": [
+            {
+              "name": "watermelon",
+              "quantity": 2,
+              "unit": "cups",
+              "category": "produce"
+            },
+            {
+              "name": "feta cheese",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "fresh mint",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "mixed greens",
+              "quantity": 2,
+              "unit": "cups",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cube watermelon and toss with greens, crumbled feta, and torn mint leaves. Drizzle with olive oil and a squeeze of lime.",
+          "prepTime": 10,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "cold",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Portobello Mushroom Burger",
+          "ingredients": [
+            {
+              "name": "portobello mushrooms",
+              "quantity": 2,
+              "unit": "caps",
+              "category": "produce"
+            },
+            {
+              "name": "burger bun",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "avocado",
+              "quantity": 0.5,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "tomato",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "mixed greens",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Brush mushroom caps with olive oil and grill 4-5 minutes per side. Toast bun on grill. Assemble burger with mushrooms, sliced avocado, tomato, and greens.",
+          "prepTime": 5,
+          "cookTime": 10,
+          "servings": 1,
+          "tags": [
+            "grilled",
+            "vegetarian",
+            "burger"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-31",
+        "breakfast": {
+          "name": "Chia Pudding with Mango",
+          "ingredients": [
+            {
+              "name": "chia seeds",
+              "quantity": 3,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "almond milk",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "fresh mango",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Mix chia seeds, almond milk, and honey in a jar the night before. Refrigerate overnight. Top with diced mango before serving.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "make-ahead",
+            "vegetarian"
+          ]
+        },
+        "lunch": {
+          "name": "Asian Cucumber Salad with Peanuts",
+          "ingredients": [
+            {
+              "name": "cucumber",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "peanuts",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "rice vinegar",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "sesame oil",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "scallions",
+              "quantity": 2,
+              "unit": "stalks",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Slice cucumbers thinly and toss with rice vinegar, sesame oil, and sliced scallions. Top with crushed peanuts and chill before serving.",
+          "prepTime": 10,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "cold",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Vegetable Tacos",
+          "ingredients": [
+            {
+              "name": "corn tortillas",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "bell peppers",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "red onion",
+              "quantity": 0.5,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "avocado",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Slice veggies and grill until charred, about 8 minutes. Warm tortillas on grill. Fill with grilled veggies and top with sliced avocado and lime.",
+          "prepTime": 10,
+          "cookTime": 10,
+          "servings": 1,
+          "tags": [
+            "grilled",
+            "vegetarian",
+            "tacos"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-01",
+        "breakfast": {
+          "name": "Fresh Fruit Salad with Mint",
+          "ingredients": [
+            {
+              "name": "mixed berries",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "melon",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "fresh mint",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "produce"
+            },
+            {
+              "name": "lime",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Dice melon and mix with berries. Add torn mint leaves and squeeze of lime juice. Chill before serving.",
+          "prepTime": 10,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "cold",
+            "vegetarian"
+          ]
+        },
+        "lunch": {
+          "name": "Quinoa Tabbouleh",
+          "ingredients": [
+            {
+              "name": "quinoa",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "fresh parsley",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook quinoa and cool completely. Dice cucumber and tomatoes, chop parsley. Mix everything with lemon juice and olive oil. Serve chilled.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 1,
+          "tags": [
+            "cold",
+            "vegetarian",
+            "grain-bowl"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Halloumi with Summer Salad",
+          "ingredients": [
+            {
+              "name": "halloumi cheese",
+              "quantity": 4,
+              "unit": "oz",
+              "category": "dairy"
+            },
+            {
+              "name": "mixed greens",
+              "quantity": 2,
+              "unit": "cups",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "produce"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Slice halloumi and grill 2-3 minutes per side until golden. Toss greens, tomatoes, and cucumber with olive oil. Top salad with warm grilled halloumi.",
+          "prepTime": 5,
+          "cookTime": 6,
+          "servings": 1,
+          "tags": [
+            "grilled",
+            "vegetarian",
+            "salad"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-02",
+        "breakfast": {
+          "name": "Coconut Yogurt Bowl",
+          "ingredients": [
+            {
+              "name": "coconut yogurt",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "granola",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "banana",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Spoon yogurt into bowl. Top with sliced banana, granola, and drizzle of honey. Serve immediately.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "vegetarian",
+            "quick"
+          ]
+        },
+        "lunch": {
+          "name": "Cold Peanut Noodle Bowl",
+          "ingredients": [
+            {
+              "name": "rice noodles",
+              "quantity": 4,
+              "unit": "oz",
+              "category": "pantry"
+            },
+            {
+              "name": "peanut butter",
+              "quantity": 3,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "soy sauce",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "scallions",
+              "quantity": 2,
+              "unit": "stalks",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook noodles and rinse with cold water. Mix peanut butter, soy sauce, and water to make sauce. Toss noodles with sauce, julienned cucumber, and sliced scallions.",
+          "prepTime": 5,
+          "cookTime": 8,
+          "servings": 1,
+          "tags": [
+            "cold",
+            "vegetarian",
+            "asian"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Veggie Pizza on Naan",
+          "ingredients": [
+            {
+              "name": "naan bread",
+              "quantity": 1,
+              "unit": "piece",
+              "category": "pantry"
+            },
+            {
+              "name": "mozzarella cheese",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 0.5,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 0.5,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "tomato sauce",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Grill sliced veggies until tender. Spread sauce on naan, top with grilled veggies and cheese. Grill pizza on indirect heat 5-7 minutes until cheese melts.",
+          "prepTime": 10,
+          "cookTime": 12,
+          "servings": 1,
+          "tags": [
+            "grilled",
+            "vegetarian",
+            "pizza"
+          ]
+        }
+      }
+    ]
+  }
+}

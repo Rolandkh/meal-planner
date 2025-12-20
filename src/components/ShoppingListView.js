@@ -118,7 +118,7 @@ export class ShoppingListView {
     const prepTerms = [
       'cooked', 'leftover', 'shredded', 'diced', 'chopped', 
       'sliced', 'minced', 'crushed', 'grated', 'fresh',
-      'frozen', 'canned', 'optional'
+      'frozen', 'canned', 'optional', 'crumbled'
     ];
     
     prepTerms.forEach(term => {
@@ -131,8 +131,71 @@ export class ShoppingListView {
     // Trim again after removals
     cleaned = cleaned.trim();
     
-    // Return original case but cleaned structure
     return cleaned;
+  }
+
+  /**
+   * Get ingredient config with fuzzy matching for variations
+   * @param {string} name - Normalized ingredient name
+   * @returns {Object|null} Ingredient config or null
+   */
+  getIngredientConfig(name) {
+    const normalized = name.toLowerCase().trim();
+    
+    // Direct match
+    if (this.INGREDIENT_UNITS[normalized]) {
+      return this.INGREDIENT_UNITS[normalized];
+    }
+    
+    // Fuzzy matching for common variations
+    
+    // Cheese variations (feta cheese, cheddar cheese, etc. → cheese)
+    if (normalized.includes('cheese')) {
+      return this.INGREDIENT_UNITS['cheese'] || { unit: 'g', gramsPerCup: 113, gramsPerSlice: 28 };
+    }
+    
+    // Tomato variations (cherry tomatoes, roma tomatoes → tomato)
+    if (normalized.includes('tomato') && !normalized.includes('sauce')) {
+      return this.INGREDIENT_UNITS['tomato'] || { unit: 'whole', keepWhole: true };
+    }
+    
+    // Onion variations (yellow onion, white onion → onion)
+    if (normalized.includes('onion') && !normalized.includes('green')) {
+      return this.INGREDIENT_UNITS['onion'] || { unit: 'whole', keepWhole: true };
+    }
+    
+    // Pepper variations (bell peppers → bell pepper)
+    if (normalized.includes('bell pepper')) {
+      return this.INGREDIENT_UNITS['bell pepper'] || { unit: 'whole', keepWhole: true };
+    }
+    
+    // Chicken variations (boneless chicken breast → chicken breast)
+    if (normalized.includes('chicken breast')) {
+      return this.INGREDIENT_UNITS['chicken breast'];
+    }
+    if (normalized.includes('chicken thigh')) {
+      return this.INGREDIENT_UNITS['chicken thigh'];
+    }
+    if (normalized.includes('chicken') && !normalized.includes('broth')) {
+      return this.INGREDIENT_UNITS['chicken'];
+    }
+    
+    // Milk variations (almond milk, soy milk → milk)
+    if (normalized.includes('milk')) {
+      return this.INGREDIENT_UNITS['milk'];
+    }
+    
+    // Bread variations
+    if (normalized.includes('bread') && !normalized.includes('crumb')) {
+      return this.INGREDIENT_UNITS['bread'];
+    }
+    
+    // Oil variations
+    if (normalized.includes('oil')) {
+      return this.INGREDIENT_UNITS['olive oil'] || { unit: 'ml', mlPerTbsp: 15, mlPerTsp: 5 };
+    }
+    
+    return null;
   }
 
   /**
@@ -181,8 +244,8 @@ export class ShoppingListView {
     const normalizedName = cleanName.toLowerCase().trim();
     const normalizedUnit = this.normalizeUnit(unit);
 
-    // Look up ingredient in master list
-    const ingredientConfig = this.INGREDIENT_UNITS[normalizedName];
+    // Look up ingredient in master list (with fuzzy matching)
+    const ingredientConfig = this.getIngredientConfig(normalizedName);
     
     if (!ingredientConfig) {
       // No mapping - use sensible defaults
@@ -303,6 +366,53 @@ export class ShoppingListView {
   }
 
   /**
+   * Get canonical ingredient name for grouping (handles variations)
+   * @param {string} name - Ingredient name
+   * @returns {string} Canonical name for grouping
+   */
+  getCanonicalName(name) {
+    const normalized = name.toLowerCase().trim();
+    
+    // Group cheese variations under "cheese"
+    if (normalized.includes('cheese') && !normalized.includes('cream')) {
+      return 'cheese';
+    }
+    
+    // Group tomato variations under "tomato"
+    if (normalized.includes('tomato') && !normalized.includes('sauce') && !normalized.includes('paste')) {
+      return 'tomato';
+    }
+    
+    // Group onion variations (except green onions)
+    if (normalized.includes('onion') && !normalized.includes('green') && !normalized.includes('scallion')) {
+      return 'onion';
+    }
+    
+    // Group pepper variations
+    if (normalized.includes('bell pepper') || normalized.match(/^(red|green|yellow|orange)\s+pepper$/)) {
+      return 'bell pepper';
+    }
+    
+    // Group milk variations
+    if (normalized.includes('milk')) {
+      return 'milk';
+    }
+    
+    // Group oil variations
+    if (normalized.includes('oil') && !normalized.includes('sesame')) {
+      return 'oil';
+    }
+    
+    // Group chicken variations by type
+    if (normalized.includes('chicken breast')) return 'chicken breast';
+    if (normalized.includes('chicken thigh')) return 'chicken thigh';
+    if (normalized.includes('chicken') && !normalized.includes('broth')) return 'chicken';
+    
+    // Return as-is for everything else
+    return normalized;
+  }
+
+  /**
    * Generate shopping list from all recipes
    * Aggregates ingredients and converts to supermarket units
    */
@@ -324,9 +434,13 @@ export class ShoppingListView {
           return;
         }
         
+        // Get canonical name for grouping
+        const canonicalName = this.getCanonicalName(cleanedName);
+        
         rawIngredients.push({
           name: cleanedName,
           normalizedName,
+          canonicalName,
           quantity: ing.quantity || 0,
           unit: ing.unit || '',
           category: ing.category || 'other',
@@ -335,12 +449,13 @@ export class ShoppingListView {
       });
     });
 
-    // Second pass: aggregate same ingredients (same name + unit)
+    // Second pass: aggregate same ingredients (same CANONICAL name + unit)
     const aggregatedMap = new Map();
     
     rawIngredients.forEach(ing => {
       const normalizedUnit = this.normalizeUnit(ing.unit);
-      const key = `${ing.normalizedName}::${normalizedUnit}`;
+      // Use canonical name for better grouping (e.g., all cheese types together)
+      const key = `${ing.canonicalName}::${normalizedUnit}`;
       
       if (aggregatedMap.has(key)) {
         const existing = aggregatedMap.get(key);
@@ -348,8 +463,8 @@ export class ShoppingListView {
         debugInfo.combined.push(`${ing.original} + ${existing.name}`);
       } else {
         aggregatedMap.set(key, {
-          name: ing.name,
-          normalizedName: ing.normalizedName,
+          name: ing.canonicalName, // Use canonical name for display
+          normalizedName: ing.canonicalName,
           quantity: ing.quantity,
           unit: ing.unit,
           normalizedUnit: normalizedUnit,
