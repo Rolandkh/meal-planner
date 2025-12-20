@@ -10,6 +10,7 @@ import { Router } from './utils/router.js';
 import { HomePage } from './components/HomePage.js';
 import { ChatWidget } from './components/ChatWidget.js';
 import { GenerationStatusPage } from './components/GenerationStatusPage.js';
+import { MealPlanView } from './components/MealPlanView.js';
 
 // Global error handler
 window.addEventListener('error', (event) => {
@@ -43,6 +44,7 @@ function initApp() {
   // Register routes
   router.addRoute('/', new HomePage());
   router.addRoute('/generating', new GenerationStatusPage());
+  router.addRoute('/meal-plan', new MealPlanView());
   
   // Future routes will be added here
   // router.addRoute('/chat', new ChatPage());

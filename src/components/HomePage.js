@@ -192,6 +192,11 @@ export class HomePage {
     const buttonsContainer = document.createElement('div');
     buttonsContainer.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
 
+    // View plan button (prominent)
+    const viewPlanBtn = this.createButton('📋 View Your Meal Plan', 'view', () => {
+      window.location.hash = '#/meal-plan';
+    });
+
     // Chat button
     const chatBtn = this.createButton('💬 Chat with Vanessa', 'secondary', () => {
       document.dispatchEvent(new CustomEvent('toggle-chat', { detail: { open: true } }));
@@ -202,6 +207,12 @@ export class HomePage {
       window.location.hash = '#/generating';
     });
 
+    // Add view button spanning full width
+    const viewButtonContainer = document.createElement('div');
+    viewButtonContainer.className = 'md:col-span-2';
+    viewButtonContainer.appendChild(viewPlanBtn);
+
+    buttonsContainer.appendChild(viewButtonContainer);
     buttonsContainer.appendChild(chatBtn);
     buttonsContainer.appendChild(generateBtn);
 
@@ -216,7 +227,7 @@ export class HomePage {
   /**
    * Create a button element
    * @param {string} text - Button text
-   * @param {string} style - 'primary' or 'secondary'
+   * @param {string} style - 'primary', 'secondary', or 'view'
    * @param {Function} onClick - Click handler
    * @returns {HTMLElement} Button element
    */
@@ -231,6 +242,15 @@ export class HomePage {
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-lg
+      `.trim().replace(/\s+/g, ' ');
+    } else if (style === 'view') {
+      button.className = `
+        bg-gradient-to-r from-purple-600 to-pink-600
+        hover:from-purple-700 hover:to-pink-700
+        text-white font-bold py-5 px-8 rounded-lg
+        shadow-lg hover:shadow-xl
+        transition-all transform hover:scale-105
+        text-xl
       `.trim().replace(/\s+/g, ' ');
     } else {
       button.className = `
