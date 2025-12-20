@@ -1,0 +1,812 @@
+{
+  "timestamp": "2025-12-20T04:05:29.923Z",
+  "rawData": {
+    "weekOf": "2025-12-27",
+    "budget": {
+      "estimated": 85
+    },
+    "days": [
+      {
+        "date": "2025-12-27",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 15,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "bread",
+              "quantity": 4,
+              "unit": "whole slices",
+              "category": "pantry"
+            },
+            {
+              "name": "milk",
+              "quantity": 50,
+              "unit": "ml",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Whisk eggs with milk. Melt butter in pan over medium heat, pour in eggs and gently scramble until soft. Toast bread and serve together.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Grilled Cheese Sandwich",
+          "ingredients": [
+            {
+              "name": "bread",
+              "quantity": 4,
+              "unit": "whole slices",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 100,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 20,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Butter one side of each bread slice. Place cheese between slices with buttered sides out. Grill in pan over medium heat until golden and cheese melts, about 3 minutes per side.",
+          "prepTime": 5,
+          "cookTime": 6,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Buttered Noodles with Chicken",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 250,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "butter",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Cook pasta according to package. Cut chicken into strips and pan-fry in butter until cooked through. Toss pasta with butter and cheese, serve with chicken on top.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-28",
+        "breakfast": {
+          "name": "Pancakes with Syrup",
+          "ingredients": [
+            {
+              "name": "flour",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "milk",
+              "quantity": 250,
+              "unit": "ml",
+              "category": "dairy"
+            },
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 20,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "maple syrup",
+              "quantity": 60,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Mix flour, milk, and eggs until smooth. Heat butter in pan and pour batter to make pancakes. Cook until bubbles form, flip and cook other side. Serve with syrup.",
+          "prepTime": 5,
+          "cookTime": 10,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "breakfast",
+            "sweet"
+          ]
+        },
+        "lunch": {
+          "name": "Mac and Cheese",
+          "ingredients": [
+            {
+              "name": "macaroni",
+              "quantity": 250,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 150,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "milk",
+              "quantity": 200,
+              "unit": "ml",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Cook macaroni according to package. Drain and return to pot. Stir in butter, milk, and shredded cheese over low heat until creamy and smooth.",
+          "prepTime": 5,
+          "cookTime": 12,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "comfort-food",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Chicken Nuggets with Carrots",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "bread crumbs",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "carrots",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "butter",
+              "quantity": 20,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Cut chicken into nugget-sized pieces. Dip in beaten egg, then coat with bread crumbs. Pan-fry in butter until golden and cooked through. Steam sliced carrots until tender.",
+          "prepTime": 15,
+          "cookTime": 12,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "dinner",
+            "easy"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-29",
+        "breakfast": {
+          "name": "French Toast",
+          "ingredients": [
+            {
+              "name": "bread",
+              "quantity": 4,
+              "unit": "whole slices",
+              "category": "pantry"
+            },
+            {
+              "name": "eggs",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "milk",
+              "quantity": 100,
+              "unit": "ml",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 20,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "maple syrup",
+              "quantity": 60,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs and milk together. Dip bread slices in mixture. Fry in buttered pan until golden on both sides. Serve with maple syrup.",
+          "prepTime": 5,
+          "cookTime": 8,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "breakfast",
+            "sweet"
+          ]
+        },
+        "lunch": {
+          "name": "Quesadillas",
+          "ingredients": [
+            {
+              "name": "flour tortillas",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 150,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 15,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Sprinkle cheese on half of each tortilla, fold over. Cook in buttered pan over medium heat until golden and cheese melts, about 2 minutes per side. Cut into triangles.",
+          "prepTime": 5,
+          "cookTime": 8,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Spaghetti with Meatballs",
+          "ingredients": [
+            {
+              "name": "spaghetti",
+              "quantity": 250,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "ground beef",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "tomato sauce",
+              "quantity": 400,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "bread crumbs",
+              "quantity": 50,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Mix ground beef with bread crumbs, form into small meatballs. Brown in pan, add tomato sauce and simmer 15 minutes. Cook spaghetti and serve with meatballs and sauce, topped with cheese.",
+          "prepTime": 15,
+          "cookTime": 20,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "dinner",
+            "classic"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-30",
+        "breakfast": {
+          "name": "Cereal with Banana",
+          "ingredients": [
+            {
+              "name": "cereal",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "milk",
+              "quantity": 400,
+              "unit": "ml",
+              "category": "dairy"
+            },
+            {
+              "name": "banana",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Pour cereal into bowls, add milk. Slice banana and add on top. Serve immediately.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Peanut Butter Sandwich",
+          "ingredients": [
+            {
+              "name": "bread",
+              "quantity": 4,
+              "unit": "whole slices",
+              "category": "pantry"
+            },
+            {
+              "name": "peanut butter",
+              "quantity": 80,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "banana",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Spread peanut butter on bread slices. Slice banana and place on two slices, top with remaining bread. Cut into halves.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "no-cook",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Chicken Tenders with Rice",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "bread crumbs",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "white rice",
+              "quantity": 150,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cut chicken into strips, dip in beaten egg, coat with bread crumbs. Bake at 200°C for 20 minutes until golden. Cook rice according to package and serve together.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "dinner",
+            "baked"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-31",
+        "breakfast": {
+          "name": "Yogurt with Berries",
+          "ingredients": [
+            {
+              "name": "yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "strawberries",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Divide yogurt into bowls. Slice strawberries and place on top. Drizzle with honey.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "healthy",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Mini Pizzas",
+          "ingredients": [
+            {
+              "name": "english muffins",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "tomato sauce",
+              "quantity": 100,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "mozzarella cheese",
+              "quantity": 150,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Split english muffins in half. Spread tomato sauce on each half, top with shredded mozzarella. Bake at 200°C for 8-10 minutes until cheese melts and bubbles.",
+          "prepTime": 5,
+          "cookTime": 10,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "fun",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Mild Chicken Curry with Rice",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "coconut milk",
+              "quantity": 400,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "carrots",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "white rice",
+              "quantity": 150,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cut chicken into cubes and cook in pan. Add diced carrots and coconut milk, simmer 15 minutes until vegetables are tender. Cook rice and serve curry over it.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "mild",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-01",
+        "breakfast": {
+          "name": "Scrambled Eggs with Cheese",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 50,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 15,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "bread",
+              "quantity": 4,
+              "unit": "whole slices",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs with shredded cheese. Melt butter in pan, pour in egg mixture and gently scramble until soft. Toast bread and serve alongside.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Buttered Noodles",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 250,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "butter",
+              "quantity": 40,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 40,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Cook pasta according to package directions. Drain and toss with butter and grated parmesan until well coated. Serve warm.",
+          "prepTime": 5,
+          "cookTime": 10,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Fish Sticks with Peas",
+          "ingredients": [
+            {
+              "name": "white fish fillets",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "bread crumbs",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "frozen peas",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cut fish into stick shapes, dip in beaten egg and coat with bread crumbs. Bake at 200°C for 15 minutes until golden. Cook peas according to package and serve together.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "dinner",
+            "easy"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-02",
+        "breakfast": {
+          "name": "Oatmeal with Honey",
+          "ingredients": [
+            {
+              "name": "oats",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "milk",
+              "quantity": 400,
+              "unit": "ml",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "banana",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook oats with milk according to package directions. Stir in honey. Slice banana and place on top. Serve warm.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "warm",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Cheese and Crackers Plate",
+          "ingredients": [
+            {
+              "name": "crackers",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 100,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "apple",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Slice cheese into small pieces. Slice apple into wedges. Arrange crackers, cheese, and apple slices on plates.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "no-cook",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Turkey Meatballs with Pasta",
+          "ingredients": [
+            {
+              "name": "ground turkey",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "bread crumbs",
+              "quantity": 50,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "pasta",
+              "quantity": 250,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "tomato sauce",
+              "quantity": 300,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Mix turkey with bread crumbs, form small meatballs. Brown in pan, add tomato sauce and simmer 15 minutes. Cook pasta, serve with meatballs and sauce, sprinkle with cheese.",
+          "prepTime": 15,
+          "cookTime": 20,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "dinner",
+            "mild"
+          ]
+        }
+      }
+    ]
+  }
+}

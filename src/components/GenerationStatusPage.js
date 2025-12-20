@@ -319,6 +319,12 @@ export class GenerationStatusPage {
       // Update progress message
       this.updateProgress(100, 'Complete! Redirecting...');
 
+      // Close chat widget if open
+      if (window.chatWidget && window.chatWidget.isOpen) {
+        window.chatWidget.toggle();
+        console.log('Chat widget auto-closed after generation');
+      }
+
       // Navigate to home after short delay
       setTimeout(() => {
         window.location.hash = '#/';
