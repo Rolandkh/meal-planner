@@ -62,7 +62,15 @@ Guidelines:
 - Consider user's dietary preferences and restrictions
 - Vary recipes throughout the week
 - Use 3-6 main ingredients per recipe (keep it simple)
-- Focus on practical, quick recipes`;
+- Focus on practical, quick recipes
+
+CRITICAL - Units:
+- Use ONLY metric units in ingredient quantities
+- Liquids: milliliters (ml) or liters
+- Solids: grams (g) or kilograms (kg)
+- DO NOT use: ounces, pounds, cups, tablespoons, teaspoons
+- Exception: Count items can use "whole" (e.g., "2 whole onions", "3 whole eggs")
+- Examples: "200g chicken breast", "500ml milk", "2 whole tomatoes", "100g rice"`;
 
 /**
  * Validate request body
