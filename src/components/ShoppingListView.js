@@ -11,45 +11,87 @@ export class ShoppingListView {
     this.mealPlan = null;
     this.shoppingList = [];
     
-    // Shopping unit conversions (recipe units → supermarket units)
-    this.SHOPPING_CONVERSIONS = {
-      // Vegetables sold by head/whole
-      'cabbage': { toUnit: 'head', cupsPerUnit: 4 },
-      'lettuce': { toUnit: 'head', cupsPerUnit: 6 },
-      'romaine lettuce': { toUnit: 'head', cupsPerUnit: 6 },
-      'iceberg lettuce': { toUnit: 'head', cupsPerUnit: 8 },
-      'broccoli': { toUnit: 'head', cupsPerUnit: 3 },
-      'cauliflower': { toUnit: 'head', cupsPerUnit: 4 },
+    // Master ingredient unit mapping (what unit to use at the store)
+    this.INGREDIENT_UNITS = {
+      // Dairy & Fats (by weight)
+      'butter': { unit: 'g', gramsPerTbsp: 14, gramsPerCup: 227 },
+      'milk': { unit: 'ml', mlPerCup: 240, mlPerTbsp: 15 },
+      'cream': { unit: 'ml', mlPerCup: 240 },
+      'cheese': { unit: 'g', gramsPerCup: 113, gramsPerSlice: 28 },
+      'cheddar cheese': { unit: 'g', gramsPerCup: 113, gramsPerSlice: 28 },
+      'mozzarella': { unit: 'g', gramsPerCup: 113, gramsPerSlice: 28 },
+      'parmesan': { unit: 'g', gramsPerCup: 100, gramsPerTbsp: 5 },
+      'yogurt': { unit: 'g', gramsPerCup: 245 },
+      'sour cream': { unit: 'g', gramsPerCup: 230 },
       
-      // Items sold by piece/whole
-      'onion': { toUnit: 'whole', itemsPerCup: 1 },
-      'red onion': { toUnit: 'whole', itemsPerCup: 1 },
-      'yellow onion': { toUnit: 'whole', itemsPerCup: 1 },
-      'white onion': { toUnit: 'whole', itemsPerCup: 1 },
-      'bell pepper': { toUnit: 'whole', itemsPerCup: 1 },
-      'red bell pepper': { toUnit: 'whole', itemsPerCup: 1 },
-      'green bell pepper': { toUnit: 'whole', itemsPerCup: 1 },
-      'tomato': { toUnit: 'whole', itemsPerCup: 1 },
-      'potato': { toUnit: 'whole', itemsPerCup: 1.5 },
-      'carrot': { toUnit: 'whole', itemsPerCup: 2 },
-      'cucumber': { toUnit: 'whole', itemsPerCup: 1 },
+      // Meats & Proteins (by weight)
+      'chicken breast': { unit: 'g', gramsPerPound: 454, gramsPerWhole: 200 },
+      'chicken thigh': { unit: 'g', gramsPerPound: 454, gramsPerWhole: 120 },
+      'chicken': { unit: 'g', gramsPerPound: 454 },
+      'ground beef': { unit: 'g', gramsPerPound: 454 },
+      'ground turkey': { unit: 'g', gramsPerPound: 454 },
+      'beef': { unit: 'g', gramsPerPound: 454 },
+      'pork': { unit: 'g', gramsPerPound: 454 },
+      'pork chop': { unit: 'g', gramsPerPound: 454, gramsPerWhole: 150 },
+      'bacon': { unit: 'g', gramsPerSlice: 28 },
+      'turkey': { unit: 'g', gramsPerPound: 454, gramsPerSlice: 28 },
+      'ham': { unit: 'g', gramsPerSlice: 28 },
+      'salmon': { unit: 'g', gramsPerPound: 454 },
+      'tuna': { unit: 'g', gramsPerCan: 140 },
+      'shrimp': { unit: 'g', gramsPerPound: 454 },
+      'eggs': { unit: 'whole', keepWhole: true },
       
-      // Items sold by bunch
-      'spinach': { toUnit: 'bunch', cupsPerUnit: 4 },
-      'kale': { toUnit: 'bunch', cupsPerUnit: 4 },
-      'parsley': { toUnit: 'bunch', itemsPerCup: 0.25 },
-      'cilantro': { toUnit: 'bunch', itemsPerCup: 0.25 },
-      'green onions': { toUnit: 'bunch', itemsPerCup: 0.5 },
-      'scallions': { toUnit: 'bunch', itemsPerCup: 0.5 },
+      // Vegetables - whole items
+      'onion': { unit: 'whole', keepWhole: true },
+      'red onion': { unit: 'whole', keepWhole: true },
+      'bell pepper': { unit: 'whole', keepWhole: true },
+      'red bell pepper': { unit: 'whole', keepWhole: true },
+      'tomato': { unit: 'whole', keepWhole: true },
+      'potato': { unit: 'whole', keepWhole: true },
+      'carrot': { unit: 'whole', keepWhole: true },
+      'cucumber': { unit: 'whole', keepWhole: true },
+      'garlic': { unit: 'whole', keepWhole: true }, // whole bulbs
       
-      // Herbs sold in packages
-      'basil': { toUnit: 'package', itemsPerCup: 0.5 },
-      'mint': { toUnit: 'package', itemsPerCup: 0.5 },
+      // Vegetables - by head
+      'cabbage': { unit: 'head', keepWhole: true },
+      'lettuce': { unit: 'head', keepWhole: true },
+      'romaine lettuce': { unit: 'head', keepWhole: true },
+      'broccoli': { unit: 'head', keepWhole: true },
+      'cauliflower': { unit: 'head', keepWhole: true },
       
-      // Items that should use weight
-      'mushrooms': { toUnit: 'pound', cupsPerUnit: 3 },
-      'green beans': { toUnit: 'pound', cupsPerUnit: 2 },
-      'zucchini': { toUnit: 'pound', cupsPerUnit: 2 }
+      // Vegetables - by bunch or weight
+      'spinach': { unit: 'g', gramsPerCup: 30 },
+      'kale': { unit: 'g', gramsPerCup: 20 },
+      'parsley': { unit: 'bunch', keepWhole: true },
+      'cilantro': { unit: 'bunch', keepWhole: true },
+      
+      // Spices & Seasonings (by weight)
+      'salt': { unit: 'g', gramsPerTsp: 6 },
+      'black pepper': { unit: 'g', gramsPerTsp: 2 },
+      'pepper': { unit: 'g', gramsPerTsp: 2 },
+      'paprika': { unit: 'g', gramsPerTsp: 2 },
+      'cumin': { unit: 'g', gramsPerTsp: 2 },
+      'oregano': { unit: 'g', gramsPerTsp: 1 },
+      'basil': { unit: 'g', gramsPerTsp: 1 },
+      
+      // Oils & Liquids
+      'olive oil': { unit: 'ml', mlPerTbsp: 15, mlPerTsp: 5 },
+      'vegetable oil': { unit: 'ml', mlPerTbsp: 15 },
+      'soy sauce': { unit: 'ml', mlPerTbsp: 15 },
+      
+      // Pantry items
+      'flour': { unit: 'g', gramsPerCup: 120 },
+      'sugar': { unit: 'g', gramsPerCup: 200, gramsPerTbsp: 12 },
+      'rice': { unit: 'g', gramsPerCup: 185 },
+      'pasta': { unit: 'g', gramsPerCup: 100 },
+      'spaghetti': { unit: 'g', gramsPerCup: 100 },
+      'bread': { unit: 'loaf', slicesPerLoaf: 20, showDual: true },
+      
+      // Canned/Packaged goods
+      'tomato sauce': { unit: 'can', mlPerCan: 400 },
+      'broth': { unit: 'ml', mlPerCup: 240 },
+      'chicken broth': { unit: 'ml', mlPerCup: 240 },
+      'beef broth': { unit: 'ml', mlPerCup: 240 }
     };
   }
 
@@ -128,59 +170,135 @@ export class ShoppingListView {
   }
 
   /**
-   * Convert recipe units to shopping units
+   * Convert recipe units to shopping units with comprehensive mapping
    * @param {string} name - Ingredient name
    * @param {number} quantity - Recipe quantity
    * @param {string} unit - Recipe unit
-   * @returns {Object} { quantity, unit } in shopping format
+   * @returns {Object} { quantity, unit, displayText } in shopping format
    */
   convertToShoppingUnits(name, quantity, unit) {
     const cleanName = this.cleanIngredientName(name);
     const normalizedName = cleanName.toLowerCase().trim();
     const normalizedUnit = this.normalizeUnit(unit);
 
-    // Check if we have a conversion rule for this ingredient
-    const conversion = this.SHOPPING_CONVERSIONS[normalizedName];
+    // Look up ingredient in master list
+    const ingredientConfig = this.INGREDIENT_UNITS[normalizedName];
     
-    if (!conversion) {
-      // No conversion rule - keep as-is but round nicely
+    if (!ingredientConfig) {
+      // No mapping - use sensible defaults
+      if (normalizedUnit === 'whole' || normalizedUnit === 'piece') {
+        return {
+          quantity: Math.ceil(quantity),
+          unit: 'whole',
+          displayText: null
+        };
+      }
+      // Keep as-is
       return {
-        quantity: Math.ceil(quantity * 4) / 4, // Round to nearest 0.25
-        unit: unit
+        quantity: Math.round(quantity * 100) / 100,
+        unit: unit,
+        displayText: null
       };
     }
 
-    // Convert based on rule
-    let shoppingQuantity;
-    
-    if (conversion.cupsPerUnit) {
-      // Convert cups to whole units (heads, bunches, etc.)
-      if (normalizedUnit === 'cup') {
-        shoppingQuantity = quantity / conversion.cupsPerUnit;
-        shoppingQuantity = Math.ceil(shoppingQuantity); // Always round up
-      } else {
-        shoppingQuantity = quantity;
+    // Handle keepWhole items (eggs, onions, heads of lettuce)
+    if (ingredientConfig.keepWhole) {
+      let finalQuantity = quantity;
+      
+      // Convert if not already in whole units
+      if (normalizedUnit !== 'whole' && normalizedUnit !== 'piece' && 
+          normalizedUnit !== 'head' && normalizedUnit !== 'bunch') {
+        finalQuantity = quantity; // Assume already counted
       }
-    } else if (conversion.itemsPerCup) {
-      // Convert cups to items
-      if (normalizedUnit === 'cup') {
-        shoppingQuantity = quantity / conversion.itemsPerCup;
-        shoppingQuantity = Math.ceil(shoppingQuantity);
-      } else {
-        shoppingQuantity = quantity;
-      }
-    } else {
-      shoppingQuantity = quantity;
+      
+      return {
+        quantity: Math.ceil(finalQuantity), // Always round up
+        unit: ingredientConfig.unit,
+        displayText: null
+      };
     }
 
-    // Handle 'whole' units - always round up
-    if (normalizedUnit === 'whole' || normalizedUnit === 'piece') {
-      shoppingQuantity = Math.ceil(quantity);
+    // Convert to grams
+    if (ingredientConfig.unit === 'g') {
+      let grams = 0;
+      
+      // Convert based on recipe unit
+      switch (normalizedUnit) {
+        case 'cup':
+          grams = quantity * (ingredientConfig.gramsPerCup || 120);
+          break;
+        case 'tablespoon':
+          grams = quantity * (ingredientConfig.gramsPerTbsp || 15);
+          break;
+        case 'teaspoon':
+          grams = quantity * (ingredientConfig.gramsPerTsp || 5);
+          break;
+        case 'pound':
+          grams = quantity * (ingredientConfig.gramsPerPound || 454);
+          break;
+        case 'ounce':
+          grams = quantity * 28.35;
+          break;
+        case 'slice':
+          grams = quantity * (ingredientConfig.gramsPerSlice || 30);
+          break;
+        case 'whole':
+          grams = quantity * (ingredientConfig.gramsPerWhole || 100);
+          break;
+        case 'can':
+          grams = quantity * (ingredientConfig.gramsPerCan || 400);
+          break;
+        default:
+          grams = quantity * 100; // Default assumption
+      }
+      
+      return {
+        quantity: Math.ceil(grams / 10) * 10, // Round to nearest 10g
+        unit: 'g',
+        displayText: null
+      };
     }
 
+    // Convert to milliliters
+    if (ingredientConfig.unit === 'ml') {
+      let ml = 0;
+      
+      switch (normalizedUnit) {
+        case 'cup':
+          ml = quantity * (ingredientConfig.mlPerCup || 240);
+          break;
+        case 'tablespoon':
+          ml = quantity * (ingredientConfig.mlPerTbsp || 15);
+          break;
+        case 'teaspoon':
+          ml = quantity * (ingredientConfig.mlPerTsp || 5);
+          break;
+        default:
+          ml = quantity * 240; // Assume cups
+      }
+      
+      return {
+        quantity: Math.ceil(ml / 10) * 10, // Round to nearest 10ml
+        unit: 'ml',
+        displayText: null
+      };
+    }
+
+    // Special case: bread (show both slices and loaves)
+    if (ingredientConfig.showDual && normalizedUnit === 'slice') {
+      const loaves = Math.ceil(quantity / (ingredientConfig.slicesPerLoaf || 20));
+      return {
+        quantity: loaves,
+        unit: 'loaf',
+        displayText: `(${Math.ceil(quantity)} slices)`
+      };
+    }
+
+    // Fallback
     return {
-      quantity: Math.max(1, Math.ceil(shoppingQuantity)), // Always at least 1
-      unit: conversion.toUnit
+      quantity: Math.ceil(quantity),
+      unit: ingredientConfig.unit || unit,
+      displayText: null
     };
   }
 
@@ -256,6 +374,10 @@ export class ShoppingListView {
         const existing = ingredientMap.get(shoppingKey);
         if (this.normalizeUnit(existing.unit) === this.normalizeUnit(converted.unit)) {
           existing.quantity += converted.quantity;
+          // Update displayText if it exists
+          if (converted.displayText) {
+            existing.displayText = converted.displayText;
+          }
         } else {
           // Different shopping units - keep separate
           const altKey = `${shoppingKey}__${this.normalizeUnit(converted.unit)}`;
@@ -264,6 +386,7 @@ export class ShoppingListView {
             quantity: converted.quantity,
             unit: converted.unit,
             category: item.category,
+            displayText: converted.displayText,
             displayName: `${item.name} (${converted.unit})`
           });
         }
@@ -272,15 +395,17 @@ export class ShoppingListView {
           name: item.name,
           quantity: converted.quantity,
           unit: converted.unit,
-          category: item.category
+          category: item.category,
+          displayText: converted.displayText
         });
       }
 
       // Log conversions
       if (item.unit !== converted.unit) {
-        debugInfo.converted.push(
-          `${item.name}: ${item.quantity} ${item.unit} → ${converted.quantity} ${converted.unit}`
-        );
+        const conversionText = converted.displayText ? 
+          `${item.name}: ${item.quantity} ${item.unit} → ${converted.quantity} ${converted.unit} ${converted.displayText}` :
+          `${item.name}: ${item.quantity} ${item.unit} → ${converted.quantity} ${converted.unit}`;
+        debugInfo.converted.push(conversionText);
       }
     });
 
@@ -464,13 +589,21 @@ export class ShoppingListView {
       const details = document.createElement('div');
       details.className = 'flex-1';
       
-      const quantity = item.quantity ? 
-        `${Math.round(item.quantity * 10) / 10} ${item.unit}`.trim() : 
-        '';
+      // Format quantity nicely
+      let quantityText = '';
+      if (item.quantity) {
+        const qty = Math.round(item.quantity * 10) / 10;
+        quantityText = `${qty} ${item.unit}`;
+        
+        // Add dual display text if available (e.g., "2 loaves (40 slices)")
+        if (item.displayText) {
+          quantityText += ` ${item.displayText}`;
+        }
+      }
 
       details.innerHTML = `
         <div class="font-medium text-gray-800">${item.name}</div>
-        ${quantity ? `<div class="text-sm text-gray-600">${quantity}</div>` : ''}
+        ${quantityText ? `<div class="text-sm text-gray-600">${quantityText}</div>` : ''}
       `;
 
       itemDiv.appendChild(checkbox);

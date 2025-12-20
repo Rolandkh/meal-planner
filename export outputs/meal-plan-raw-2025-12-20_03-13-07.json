@@ -1,0 +1,829 @@
+{
+  "timestamp": "2025-12-20T03:13:07.294Z",
+  "rawData": {
+    "weekOf": "2025-12-27",
+    "budget": {
+      "estimated": 85
+    },
+    "days": [
+      {
+        "date": "2025-12-27",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs with salt. Melt butter in pan over medium heat, add eggs and stir gently until cooked. Toast bread and serve alongside.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "breakfast",
+            "protein"
+          ]
+        },
+        "lunch": {
+          "name": "Grilled Cheese Sandwich",
+          "ingredients": [
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Butter one side of each bread slice. Place cheese between unbuttered sides. Cook in skillet over medium heat until golden and cheese melts, about 3 minutes per side.",
+          "prepTime": 3,
+          "cookTime": 6,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "comfort-food"
+          ]
+        },
+        "dinner": {
+          "name": "Spaghetti with Marinara",
+          "ingredients": [
+            {
+              "name": "spaghetti",
+              "quantity": 8,
+              "unit": "oz",
+              "category": "pantry"
+            },
+            {
+              "name": "marinara sauce",
+              "quantity": 1.5,
+              "unit": "cups",
+              "category": "pantry"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "garlic powder",
+              "quantity": 0.5,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook spaghetti according to package directions. Heat marinara sauce with garlic powder. Drain pasta, toss with sauce, and top with parmesan.",
+          "prepTime": 5,
+          "cookTime": 12,
+          "servings": 1,
+          "tags": [
+            "pasta",
+            "easy",
+            "vegetarian"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-28",
+        "breakfast": {
+          "name": "Oatmeal with Honey",
+          "ingredients": [
+            {
+              "name": "rolled oats",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "water",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "honey",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.125,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Bring water and salt to boil. Add oats, reduce heat and simmer 5 minutes, stirring occasionally. Remove from heat, let stand 2 minutes, then drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 7,
+          "servings": 1,
+          "tags": [
+            "healthy",
+            "breakfast",
+            "warm"
+          ]
+        },
+        "lunch": {
+          "name": "Tuna Sandwich",
+          "ingredients": [
+            {
+              "name": "canned tuna",
+              "quantity": 5,
+              "unit": "oz",
+              "category": "pantry"
+            },
+            {
+              "name": "mayonnaise",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Drain tuna and mix with mayonnaise and salt. Spread mixture on bread and make sandwich.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "protein",
+            "quick"
+          ]
+        },
+        "dinner": {
+          "name": "Pan-Seared Chicken with Rice",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 6,
+              "unit": "oz",
+              "category": "meat"
+            },
+            {
+              "name": "white rice",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.5,
+              "unit": "tsp",
+              "category": "pantry"
+            },
+            {
+              "name": "black pepper",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook rice according to package. Season chicken with salt and pepper. Heat oil in pan over medium-high heat and cook chicken 6-7 minutes per side until done. Serve over rice.",
+          "prepTime": 5,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "protein",
+            "simple",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-29",
+        "breakfast": {
+          "name": "Toast with Butter and Jam",
+          "ingredients": [
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "jam",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Toast bread until golden. Spread butter on warm toast, then top with jam.",
+          "prepTime": 2,
+          "cookTime": 3,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "breakfast",
+            "simple"
+          ]
+        },
+        "lunch": {
+          "name": "Quesadilla",
+          "ingredients": [
+            {
+              "name": "flour tortillas",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tsp",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Sprinkle cheese on one tortilla, top with second tortilla. Melt butter in skillet over medium heat and cook quesadilla 2-3 minutes per side until golden and cheese melts. Cut into wedges.",
+          "prepTime": 3,
+          "cookTime": 6,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "cheese",
+            "easy"
+          ]
+        },
+        "dinner": {
+          "name": "Ground Beef Tacos",
+          "ingredients": [
+            {
+              "name": "ground beef",
+              "quantity": 8,
+              "unit": "oz",
+              "category": "meat"
+            },
+            {
+              "name": "taco seasoning",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "flour tortillas",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "water",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Brown ground beef in skillet over medium-high heat, drain fat. Add taco seasoning and water, simmer 5 minutes. Serve in tortillas topped with cheese.",
+          "prepTime": 5,
+          "cookTime": 12,
+          "servings": 1,
+          "tags": [
+            "tacos",
+            "easy",
+            "beef"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-30",
+        "breakfast": {
+          "name": "Scrambled Eggs with Cheese",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs with salt. Melt butter in pan over medium heat, add eggs and stir gently. Add cheese when almost done and stir until melted.",
+          "prepTime": 3,
+          "cookTime": 5,
+          "servings": 1,
+          "tags": [
+            "protein",
+            "breakfast",
+            "quick"
+          ]
+        },
+        "lunch": {
+          "name": "Buttered Noodles",
+          "ingredients": [
+            {
+              "name": "egg noodles",
+              "quantity": 6,
+              "unit": "oz",
+              "category": "pantry"
+            },
+            {
+              "name": "butter",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook noodles according to package directions. Drain and toss with butter, salt, and parmesan until well coated.",
+          "prepTime": 3,
+          "cookTime": 10,
+          "servings": 1,
+          "tags": [
+            "pasta",
+            "simple",
+            "comfort-food"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Chicken Thighs with Rice",
+          "ingredients": [
+            {
+              "name": "chicken thighs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "meat"
+            },
+            {
+              "name": "white rice",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.5,
+              "unit": "tsp",
+              "category": "pantry"
+            },
+            {
+              "name": "black pepper",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Preheat oven to 425°F. Rub chicken with oil, salt, and pepper. Bake 35-40 minutes until done. Cook rice according to package and serve alongside chicken.",
+          "prepTime": 5,
+          "cookTime": 40,
+          "servings": 1,
+          "tags": [
+            "baked",
+            "chicken",
+            "easy"
+          ]
+        }
+      },
+      {
+        "date": "2025-12-31",
+        "breakfast": {
+          "name": "Honey Oatmeal",
+          "ingredients": [
+            {
+              "name": "rolled oats",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "water",
+              "quantity": 1,
+              "unit": "cup",
+              "category": "pantry"
+            },
+            {
+              "name": "honey",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.125,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Bring water and salt to boil. Add oats, reduce heat and simmer 5 minutes. Remove from heat, let stand 2 minutes, drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 7,
+          "servings": 1,
+          "tags": [
+            "healthy",
+            "warm",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Grilled Cheese with Tomato",
+          "ingredients": [
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "tomato",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Butter bread slices. Layer cheese and tomato between unbuttered sides. Cook in skillet over medium heat until golden, about 3 minutes per side.",
+          "prepTime": 4,
+          "cookTime": 6,
+          "servings": 1,
+          "tags": [
+            "sandwich",
+            "quick",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Spaghetti with Meat Sauce",
+          "ingredients": [
+            {
+              "name": "spaghetti",
+              "quantity": 8,
+              "unit": "oz",
+              "category": "pantry"
+            },
+            {
+              "name": "ground beef",
+              "quantity": 6,
+              "unit": "oz",
+              "category": "meat"
+            },
+            {
+              "name": "marinara sauce",
+              "quantity": 1.5,
+              "unit": "cups",
+              "category": "pantry"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Cook spaghetti according to package. Brown ground beef in skillet, drain fat, add marinara and simmer 5 minutes. Toss pasta with sauce and top with parmesan.",
+          "prepTime": 5,
+          "cookTime": 15,
+          "servings": 1,
+          "tags": [
+            "pasta",
+            "beef",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-01",
+        "breakfast": {
+          "name": "Fried Eggs on Toast",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Toast bread. Melt butter in pan and fry eggs to desired doneness, seasoning with salt. Serve eggs over toast.",
+          "prepTime": 3,
+          "cookTime": 5,
+          "servings": 1,
+          "tags": [
+            "breakfast",
+            "protein",
+            "simple"
+          ]
+        },
+        "lunch": {
+          "name": "Cheese Quesadilla",
+          "ingredients": [
+            {
+              "name": "flour tortillas",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tsp",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Place cheese between tortillas. Melt butter in skillet over medium heat and cook quesadilla 2-3 minutes per side until crispy and cheese melts. Cut into wedges.",
+          "prepTime": 3,
+          "cookTime": 6,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "cheese",
+            "mexican"
+          ]
+        },
+        "dinner": {
+          "name": "Pan-Seared Chicken with Noodles",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 6,
+              "unit": "oz",
+              "category": "meat"
+            },
+            {
+              "name": "egg noodles",
+              "quantity": 6,
+              "unit": "oz",
+              "category": "pantry"
+            },
+            {
+              "name": "butter",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.5,
+              "unit": "tsp",
+              "category": "pantry"
+            },
+            {
+              "name": "black pepper",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook noodles according to package. Season chicken with salt and pepper. Melt 1 tbsp butter in pan and cook chicken 6-7 minutes per side. Drain noodles, toss with remaining butter, and serve with chicken.",
+          "prepTime": 5,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "chicken",
+            "simple",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-02",
+        "breakfast": {
+          "name": "Buttered Toast with Jam",
+          "ingredients": [
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "butter",
+              "quantity": 1,
+              "unit": "tbsp",
+              "category": "dairy"
+            },
+            {
+              "name": "jam",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Toast bread until golden brown. Spread butter on warm toast, then top with your favorite jam.",
+          "prepTime": 2,
+          "cookTime": 3,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "breakfast",
+            "simple"
+          ]
+        },
+        "lunch": {
+          "name": "Tuna Salad Sandwich",
+          "ingredients": [
+            {
+              "name": "canned tuna",
+              "quantity": 5,
+              "unit": "oz",
+              "category": "pantry"
+            },
+            {
+              "name": "mayonnaise",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "slices",
+              "category": "pantry"
+            },
+            {
+              "name": "salt",
+              "quantity": 0.25,
+              "unit": "tsp",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Drain tuna and mix with mayonnaise and salt in bowl. Spread tuna mixture on bread to make sandwich.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "no-cook",
+            "sandwich",
+            "protein"
+          ]
+        },
+        "dinner": {
+          "name": "Beef Tacos",
+          "ingredients": [
+            {
+              "name": "ground beef",
+              "quantity": 8,
+              "unit": "oz",
+              "category": "meat"
+            },
+            {
+              "name": "taco seasoning",
+              "quantity": 2,
+              "unit": "tbsp",
+              "category": "pantry"
+            },
+            {
+              "name": "flour tortillas",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 0.5,
+              "unit": "cup",
+              "category": "dairy"
+            },
+            {
+              "name": "water",
+              "quantity": 0.25,
+              "unit": "cup",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Brown ground beef in skillet, drain fat. Stir in taco seasoning and water, simmer 5 minutes. Serve in warm tortillas topped with cheese.",
+          "prepTime": 5,
+          "cookTime": 12,
+          "servings": 1,
+          "tags": [
+            "tacos",
+            "beef",
+            "easy"
+          ]
+        }
+      }
+    ]
+  }
+}
