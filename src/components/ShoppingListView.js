@@ -675,12 +675,12 @@ export class ShoppingListView {
 
     // Category header
     const header = document.createElement('div');
-    header.className = 'bg-gradient-to-r from-green-600 to-emerald-600 text-white p-4 flex items-center gap-3';
+    header.className = 'bg-gradient-to-r from-emerald-400 to-teal-400 text-white p-4 flex items-center gap-3';
     header.innerHTML = `
       <span class="text-3xl">${emoji}</span>
       <div>
         <h2 class="text-xl font-bold">${displayName}</h2>
-        <p class="text-green-100 text-sm">${items.length} items</p>
+        <p class="text-emerald-50 text-sm">${items.length} items</p>
       </div>
     `;
 

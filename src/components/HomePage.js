@@ -180,8 +180,8 @@ export class HomePage {
     // Chat button
     const chatButton = document.createElement('button');
     chatButton.className = `
-      bg-gradient-to-r from-blue-600 to-indigo-600
-      hover:from-blue-700 hover:to-indigo-700
+      bg-gradient-to-r from-blue-400 to-indigo-400
+      hover:from-blue-500 hover:to-indigo-500
       text-white font-bold py-4 px-8 rounded-full
       shadow-xl hover:shadow-2xl
       transition-all duration-300 transform hover:scale-105
@@ -311,8 +311,8 @@ export class HomePage {
     
     if (style === 'primary') {
       button.className = `
-        bg-gradient-to-r from-green-500 to-emerald-600
-        hover:from-green-600 hover:to-emerald-700
+        bg-gradient-to-r from-emerald-400 to-teal-400
+        hover:from-emerald-500 hover:to-teal-500
         text-white font-semibold py-4 px-6 rounded-lg
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
@@ -320,8 +320,8 @@ export class HomePage {
       `.trim().replace(/\s+/g, ' ');
     } else if (style === 'view') {
       button.className = `
-        bg-gradient-to-r from-purple-600 to-pink-600
-        hover:from-purple-700 hover:to-pink-700
+        bg-gradient-to-r from-purple-400 to-pink-400
+        hover:from-purple-500 hover:to-pink-500
         text-white font-bold py-5 px-8 rounded-lg
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
@@ -329,8 +329,8 @@ export class HomePage {
       `.trim().replace(/\s+/g, ' ');
     } else {
       button.className = `
-        bg-gradient-to-r from-blue-600 to-indigo-600
-        hover:from-blue-700 hover:to-indigo-700
+        bg-gradient-to-r from-blue-400 to-indigo-400
+        hover:from-blue-500 hover:to-indigo-500
         text-white font-semibold py-4 px-6 rounded-lg
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105

@@ -148,7 +148,7 @@ export class MealPlanView {
     const dayDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
     const header = document.createElement('div');
-    header.className = 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6';
+    header.className = 'bg-gradient-to-r from-blue-400 to-indigo-400 text-white p-6';
     header.innerHTML = `
       <h2 class="text-2xl font-bold">${dayName}</h2>
       <p class="text-blue-100">${dayDate}</p>

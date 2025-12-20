@@ -62,7 +62,7 @@ export class GenerationStatusPage {
     
     const progressBar = document.createElement('div');
     progressBar.id = 'progress-bar';
-    progressBar.className = 'bg-gradient-to-r from-green-500 to-emerald-600 h-full rounded-full transition-all duration-500 ease-out';
+    progressBar.className = 'bg-gradient-to-r from-emerald-400 to-teal-400 h-full rounded-full transition-all duration-500 ease-out';
     progressBar.style.width = '0%';
     
     progressBarContainer.appendChild(progressBar);
@@ -92,8 +92,8 @@ export class GenerationStatusPage {
     const retryButton = document.createElement('button');
     retryButton.id = 'retry-button';
     retryButton.className = `
-      w-full bg-gradient-to-r from-blue-600 to-indigo-600
-      hover:from-blue-700 hover:to-indigo-700
+      w-full bg-gradient-to-r from-blue-400 to-indigo-400
+      hover:from-blue-500 hover:to-indigo-500
       text-white font-semibold py-4 px-6 rounded-lg
       transition-all transform hover:scale-105
       shadow-md hover:shadow-lg
@@ -386,7 +386,7 @@ export class GenerationStatusPage {
 
     if (progressBar) {
       progressBar.style.width = '0%';
-      progressBar.className = 'bg-gradient-to-r from-green-500 to-emerald-600 h-full rounded-full transition-all duration-500 ease-out';
+      progressBar.className = 'bg-gradient-to-r from-emerald-400 to-teal-400 h-full rounded-full transition-all duration-500 ease-out';
     }
 
     if (progressText) {

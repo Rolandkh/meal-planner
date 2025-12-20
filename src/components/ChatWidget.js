@@ -45,7 +45,7 @@ export class ChatWidget {
     // Create main container
     this.container = document.createElement('div');
     this.container.className = `
-      fixed inset-y-0 right-0 w-full md:w-96 bg-white shadow-2xl
+      fixed inset-y-0 right-0 w-full md:w-[500px] lg:w-[600px] bg-white shadow-2xl
       transform transition-transform duration-300 ease-in-out z-50
       flex flex-col
     `.trim().replace(/\s+/g, ' ');
@@ -53,7 +53,7 @@ export class ChatWidget {
 
     // Create header
     const header = document.createElement('div');
-    header.className = 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-4 flex justify-between items-center shadow-md flex-shrink-0';
+    header.className = 'bg-gradient-to-r from-blue-400 to-indigo-400 text-white p-4 flex justify-between items-center shadow-md flex-shrink-0';
 
     const titleSection = document.createElement('div');
     titleSection.className = 'flex items-center';
@@ -67,7 +67,7 @@ export class ChatWidget {
     title.className = 'text-xl font-bold';
     title.textContent = 'Vanessa';
     const subtitle = document.createElement('p');
-    subtitle.className = 'text-xs text-blue-100';
+    subtitle.className = 'text-xs text-blue-50';
     subtitle.textContent = 'AI Meal Planning Assistant';
     titleText.appendChild(title);
     titleText.appendChild(subtitle);
@@ -83,26 +83,6 @@ export class ChatWidget {
 
     header.appendChild(titleSection);
     header.appendChild(closeButton);
-
-    // Create Generate Week button
-    this.generateButton = document.createElement('button');
-    this.generateButton.className = `
-      w-full bg-gradient-to-r from-green-500 to-emerald-600
-      hover:from-green-600 hover:to-emerald-700
-      text-white font-semibold text-lg py-4 px-6
-      transition-all transform hover:scale-105
-      shadow-md hover:shadow-lg
-      flex items-center justify-center
-      flex-shrink-0
-      disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
-    `.trim().replace(/\s+/g, ' ');
-    this.generateButton.innerHTML = '<span class="button-text">✨ Generate Week</span>';
-    this.generateButton.setAttribute('aria-label', 'Generate your weekly meal plan');
-    this.generateButton.setAttribute('role', 'button');
-    this.generateButton.style.minHeight = '48px';
-    
-    // Add click handler for Generate button
-    this.generateButton.addEventListener('click', () => this.handleGenerateWeek());
 
     // Create messages container
     this.messagesContainer = document.createElement('div');
@@ -144,36 +124,58 @@ export class ChatWidget {
       this.handleSendMessage();
     });
 
-    this.messageInput = document.createElement('input');
-    this.messageInput.type = 'text';
+    this.messageInput = document.createElement('textarea');
+    this.messageInput.rows = 1;
     this.messageInput.className = `
       flex-1 border border-gray-300 rounded-lg p-3 
       bg-gray-50 text-gray-900
       focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white
-      transition-all
+      transition-all resize-none overflow-hidden
+      min-h-[44px] max-h-[200px]
     `.trim().replace(/\s+/g, ' ');
     this.messageInput.placeholder = 'Type your message...';
     this.messageInput.setAttribute('aria-label', 'Message input');
+    
+    // Auto-resize textarea as user types
+    this.messageInput.addEventListener('input', (e) => {
+      e.target.style.height = 'auto';
+      e.target.style.height = Math.min(e.target.scrollHeight, 200) + 'px';
+    });
 
     this.sendButton = document.createElement('button');
     this.sendButton.type = 'submit';
     this.sendButton.className = `
-      bg-gradient-to-r from-blue-600 to-indigo-600 
-      hover:from-blue-700 hover:to-indigo-700
+      bg-gradient-to-r from-blue-400 to-indigo-400 
+      hover:from-blue-500 hover:to-indigo-500
       text-white px-6 rounded-lg 
       transition-all transform hover:scale-105
-      font-medium
+      font-medium self-end
     `.trim().replace(/\s+/g, ' ');
     this.sendButton.textContent = 'Send';
     this.sendButton.setAttribute('aria-label', 'Send message');
 
     inputForm.appendChild(this.messageInput);
     inputForm.appendChild(this.sendButton);
+    
+    // Create Generate Week button (below input)
+    this.generateButton = document.createElement('button');
+    this.generateButton.className = `
+      w-full bg-gradient-to-r from-emerald-400 to-teal-400
+      hover:from-emerald-500 hover:to-teal-500
+      text-white font-semibold py-3 px-6 rounded-lg mt-3
+      transition-all transform hover:scale-[1.02]
+      shadow-md hover:shadow-lg
+      disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
+    `.trim().replace(/\s+/g, ' ');
+    this.generateButton.innerHTML = '<span class="button-text">✨ Generate Week</span>';
+    this.generateButton.setAttribute('aria-label', 'Generate your weekly meal plan');
+    this.generateButton.addEventListener('click', () => this.handleGenerateWeek());
+
     inputArea.appendChild(inputForm);
+    inputArea.appendChild(this.generateButton);
 
     // Assemble the widget
     this.container.appendChild(header);
-    this.container.appendChild(this.generateButton);
     this.container.appendChild(this.messagesContainer);
     this.container.appendChild(this.typingIndicator);
     this.container.appendChild(inputArea);
@@ -508,8 +510,8 @@ export class ChatWidget {
 
     const bubble = document.createElement('div');
     bubble.className = message.role === 'user'
-      ? 'inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-3 rounded-lg rounded-tr-none max-w-xs md:max-w-sm shadow'
-      : 'inline-block bg-white text-gray-800 p-3 rounded-lg rounded-tl-none max-w-xs md:max-w-sm shadow border border-gray-200';
+      ? 'inline-block bg-gradient-to-r from-blue-400 to-indigo-400 text-white p-3 rounded-lg rounded-tr-none max-w-xs md:max-w-md shadow'
+      : 'inline-block bg-white text-gray-800 p-3 rounded-lg rounded-tl-none max-w-xs md:max-w-md shadow border border-gray-200';
     
     bubble.textContent = message.content;
 
