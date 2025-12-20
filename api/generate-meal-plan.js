@@ -109,9 +109,16 @@ function buildUserPrompt(chatHistory, eaters) {
 
   // Extract preferences from chat history
   const recentMessages = chatHistory.slice(-10);
-  const conversationContext = recentMessages.length > 0
-    ? `\n\nRecent conversation context:\n${recentMessages.map(msg => `${msg.role}: ${msg.content}`).join('\n')}`
-    : '';
+  let conversationContext = '';
+  
+  if (recentMessages.length > 0) {
+    conversationContext = `\n\nIMPORTANT - User's conversation with Vanessa:\n`;
+    conversationContext += recentMessages.map(msg => {
+      const role = msg.role === 'user' ? 'USER' : 'VANESSA';
+      return `${role}: ${msg.content}`;
+    }).join('\n');
+    conversationContext += '\n\nPay special attention to the user\'s requests above (ingredient limits, dietary preferences, recipe complexity, etc.) and incorporate them into the meal plan.';
+  }
 
   // Format eater information
   const eaterInfo = eaters.map(e => 
@@ -122,10 +129,13 @@ function buildUserPrompt(chatHistory, eaters) {
 
 Household members:
 ${eaterInfo}
-
 ${conversationContext}
 
-Please create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. Output ONLY the JSON structure specified in the system prompt, with no additional text.`;
+Create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. 
+
+If the user specified constraints in the conversation (like "30 ingredients", "reuse ingredients", "simple recipes", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
+
+Output ONLY the JSON structure specified in the system prompt, with no additional text.`;
 }
 
 /**
