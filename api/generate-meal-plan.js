@@ -213,7 +213,7 @@ export default async function handler(req) {
 
           // Create Claude stream
           const messageStream = await anthropic.messages.create({
-            model: 'claude-3-5-sonnet-20241022',
+            model: 'claude-sonnet-4-5-20250929',
             max_tokens: 4096,
             temperature: 1,
             system: SYSTEM_PROMPT,
