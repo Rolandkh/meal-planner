@@ -26,6 +26,29 @@ export class ShoppingListView {
   }
 
   /**
+   * Normalize unit for aggregation (handles singular/plural)
+   */
+  normalizeUnit(unit) {
+    const normalized = unit.toLowerCase().trim();
+    
+    // Map plural to singular
+    const unitMap = {
+      'cloves': 'clove',
+      'cups': 'cup',
+      'tablespoons': 'tablespoon',
+      'teaspoons': 'teaspoon',
+      'pounds': 'pound',
+      'ounces': 'ounce',
+      'slices': 'slice',
+      'pieces': 'piece',
+      'whole': 'whole',
+      'wholes': 'whole'
+    };
+    
+    return unitMap[normalized] || normalized;
+  }
+
+  /**
    * Generate shopping list from all recipes
    * Aggregates ingredients and combines duplicates
    */
@@ -37,18 +60,33 @@ export class ShoppingListView {
       if (!recipe.ingredients) return;
 
       recipe.ingredients.forEach(ing => {
-        const key = `${ing.name.toLowerCase().trim()}::${ing.unit.toLowerCase().trim()}`;
+        // Normalize name and unit for better matching
+        const normalizedName = ing.name.toLowerCase().trim();
+        const normalizedUnit = this.normalizeUnit(ing.unit || '');
+        
+        // Use ONLY name as key (not unit) to aggregate all quantities
+        const key = normalizedName;
         
         if (ingredientMap.has(key)) {
           // Add to existing quantity
           const existing = ingredientMap.get(key);
-          existing.quantity += (ing.quantity || 0);
+          
+          // If units match, add quantities
+          if (this.normalizeUnit(existing.unit) === normalizedUnit) {
+            existing.quantity += (ing.quantity || 0);
+          } else {
+            // Different units - keep the more common/useful one and add note
+            console.warn(`Different units for ${normalizedName}: ${existing.unit} vs ${ing.unit}`);
+            // For now, convert to the first unit seen
+            existing.quantity += (ing.quantity || 0);
+            existing.unit = existing.unit || ing.unit;
+          }
         } else {
           // New ingredient
           ingredientMap.set(key, {
             name: ing.name,
             quantity: ing.quantity || 0,
-            unit: ing.unit,
+            unit: ing.unit || '',
             category: ing.category || 'other'
           });
         }
@@ -57,6 +95,15 @@ export class ShoppingListView {
 
     // Convert to array and sort
     const list = Array.from(ingredientMap.values());
+    
+    console.log('Generated shopping list - unique items:', list.length);
+    
+    // Log any suspiciously high quantities for debugging
+    list.forEach(item => {
+      if (item.quantity > 20 && item.unit.toLowerCase().includes('cup')) {
+        console.warn(`⚠️ High quantity detected: ${item.quantity} ${item.unit} ${item.name}`);
+      }
+    });
     
     // Sort by category, then by name
     list.sort((a, b) => {

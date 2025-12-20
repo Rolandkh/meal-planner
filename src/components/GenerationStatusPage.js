@@ -270,6 +270,17 @@ export class GenerationStatusPage {
     this.updateProgress(100, 'Complete! Saving your meal plan...');
 
     try {
+      // Save raw AI output for debugging (before transformation)
+      try {
+        localStorage.setItem('debug_raw_ai_output', JSON.stringify({
+          timestamp: new Date().toISOString(),
+          rawData: data
+        }));
+        console.log('✅ Raw AI output saved for debugging');
+      } catch (e) {
+        console.warn('Could not save debug output:', e);
+      }
+
       // Transform Claude's output to normalized format
       const transformed = transformGeneratedPlan(data);
       
