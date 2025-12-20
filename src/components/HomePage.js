@@ -197,6 +197,11 @@ export class HomePage {
       window.location.hash = '#/meal-plan';
     });
 
+    // Shopping list button (prominent)
+    const shoppingBtn = this.createButton('🛒 View Shopping List', 'view', () => {
+      window.location.hash = '#/shopping-list';
+    });
+
     // Chat button
     const chatBtn = this.createButton('💬 Chat with Vanessa', 'secondary', () => {
       document.dispatchEvent(new CustomEvent('toggle-chat', { detail: { open: true } }));
@@ -207,12 +212,9 @@ export class HomePage {
       window.location.hash = '#/generating';
     });
 
-    // Add view button spanning full width
-    const viewButtonContainer = document.createElement('div');
-    viewButtonContainer.className = 'md:col-span-2';
-    viewButtonContainer.appendChild(viewPlanBtn);
-
-    buttonsContainer.appendChild(viewButtonContainer);
+    // Add view buttons side by side
+    buttonsContainer.appendChild(viewPlanBtn);
+    buttonsContainer.appendChild(shoppingBtn);
     buttonsContainer.appendChild(chatBtn);
     buttonsContainer.appendChild(generateBtn);
 
