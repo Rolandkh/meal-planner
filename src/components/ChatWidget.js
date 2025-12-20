@@ -627,6 +627,12 @@ export class ChatWidget {
       </div>
     `;
 
+    // Close the chat widget immediately
+    if (this.isOpen) {
+      this.toggle();
+      console.log('Chat widget closed on Generate Week click');
+    }
+
     // Dispatch custom event
     window.dispatchEvent(new CustomEvent('generate-week', {
       detail: { source: 'chatwidget' }
