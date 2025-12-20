@@ -3,7 +3,8 @@
 ## Project Overview
 
 **Product Name:** Vanessa - AI Meal Planning Concierge
-**Version:** v0.7 (Iterative Development)
+**Version:** v0.8 (Slice 2 Complete)
+**Status:** Slices 1 & 2 ✅ Complete | Slice 3 Pending
 **Approach:** Vertical Slice → Reality Check → Expand
 **Technology Stack:** Vanilla JavaScript, HTML, CSS (Tailwind), Vercel serverless functions, Claude API
 
@@ -13,16 +14,16 @@
 
 This project follows an iterative "vertical slice" approach:
 
-1. **Slice 1**: Build one complete end-to-end flow (chat with Vanessa)
-2. **Reality Check**: Evaluate what worked, what was awkward, update spec
-3. **Slice 2**: Add meal plan generation flow
-4. **Reality Check**: Evaluate and refine
+1. **Slice 1**: Build one complete end-to-end flow (chat with Vanessa) ✅ **COMPLETE**
+2. **Reality Check**: Evaluate what worked, what was awkward, update spec ✅ **COMPLETE**
+3. **Slice 2**: Add meal plan generation flow ✅ **COMPLETE**
+4. **Reality Check**: Evaluate and refine ✅ **COMPLETE**
 5. **Slice 3+**: Expand features based on learnings
 6. **Polish**: UI/UX improvements after core flows are stable
 
 ---
 
-## SLICE 1: Chat with Vanessa (MVP Foundation)
+## SLICE 1: Chat with Vanessa (MVP Foundation) ✅ COMPLETE
 
 ### Goal
 Build a working chat interface where users can talk to Vanessa and conversations persist.
@@ -116,15 +117,17 @@ You cannot generate meal plans yet - that feature is coming soon.
 ```
 
 ### Success Criteria for Slice 1
-- [ ] App loads with home page showing chat button
-- [ ] Clicking chat opens the chat widget
-- [ ] User can type and send a message
-- [ ] Vanessa responds with streaming text
-- [ ] Messages display in real-time as they stream
-- [ ] Conversation persists after page reload
-- [ ] Chat can be closed and reopened
-- [ ] Works on mobile (full-screen) and desktop (side panel)
-- [ ] Basic error handling (network errors show message)
+- ✅ App loads with home page showing chat button
+- ✅ Clicking chat opens the chat widget
+- ✅ User can type and send a message
+- ✅ Vanessa responds with streaming text
+- ✅ Messages display in real-time as they stream
+- ✅ Conversation persists after page reload
+- ✅ Chat can be closed and reopened
+- ✅ Works on mobile (full-screen) and desktop (side panel)
+- ✅ Basic error handling (network errors show message)
+- ✅ "Generate Week" button always visible in chat
+- ✅ Auto-resize textarea as user types
 
 ### Known Unknowns (to evaluate after Slice 1)
 - Is the streaming UX smooth enough?
@@ -135,48 +138,767 @@ You cannot generate meal plans yet - that feature is coming soon.
 
 ---
 
-## SLICE 2: Meal Plan Generation (After Slice 1 Reality Check)
+## SLICE 2: Meal Plan Generation ✅ COMPLETE
 
 ### Goal
-Add the ability to generate a complete weekly meal plan.
+Add the ability to generate a complete weekly meal plan with shopping list.
 
-### End-to-End Flow
+### End-to-End Flow (AS BUILT)
 ```
 1. User chats with Vanessa about preferences (optional)
-2. User clicks "Generate" button (always visible in chat)
-3. App navigates to generation status page
-4. Progress bar animates while API processes
-5. On success, meal plan saved and displayed
-6. On failure, automatic retry once, then show options
+2. User clicks "✨ Generate Week" button (always visible in chat widget)
+3. Chat widget closes automatically
+4. App navigates to #/generating route
+5. GenerationStatusPage displays with animated progress bar
+6. SSE stream provides real-time progress updates (10% → 25% → 50% → 75% → 90% → 95%)
+7. Claude generates 7-day meal plan (21 meals: breakfast, lunch, dinner)
+8. Response parsed, validated, and transformed to normalized format
+9. Data saved to localStorage (recipes, meals, mealPlan)
+10. Raw AI output saved to debug_raw_ai_output for debugging
+11. Automatic redirect to home page showing meal plan summary
+12. On failure: error message with "Retry" and "Start Over" buttons
 ```
 
-### What This Slice Adds
-- `GenerationStatusPage.js` - Progress UI with retry logic
-- `POST /api/generate-meal-plan` - Generation endpoint (60s timeout)
-- Normalized data: Meal Plans, Meals, Recipes (basic version)
-- Transform function for Claude response
-- Shopping list display
-- Daily meal view (basic)
+### What This Slice Built
 
-### Deferred to Later Slices
-- Full onboarding flow (use hardcoded base spec)
-- Eaters management
+**Components:**
+- ✅ `GenerationStatusPage.js` - Full-featured progress UI with SSE streaming, retry logic, error handling
+- ✅ `MealPlanView.js` - Complete weekly meal plan display with expandable recipe details
+- ✅ `ShoppingListView.js` - Aggregated shopping list grouped by category with metric units
+- ✅ `HomePage.js` - Enhanced with meal plan summary cards and navigation buttons
+
+**Backend API:**
+- ✅ `POST /api/generate-meal-plan` - Vercel Edge Runtime, SSE streaming
+  - Uses Claude Sonnet 4.5 for generation
+  - 90-second timeout (Vercel Edge limit)
+  - Accepts: `chatHistory` (optional), `eaters` (optional, falls back to default)
+  - Returns: SSE stream with progress updates and final meal plan JSON
+  - Progress messages: "Analyzing preferences", "Planning week", "Creating recipes", etc.
+
+**Data Transformation & Storage:**
+- ✅ `mealPlanTransformer.js` - Transforms Claude's raw JSON to normalized format
+  - Recipe deduplication by name + ingredients hash
+  - Generates unique IDs (recipe_uuid, meal_uuid, plan_YYYYMMDD)
+  - Creates normalized recipes, meals, and mealPlan objects
+  - Budget estimation based on recipe complexity
+- ✅ `storage.js` - localStorage persistence with quota handling
+  - `recipes` - Array of unique Recipe objects
+  - `meals` - Array of Meal objects (21 per week)
+  - `currentMealPlan` - Active MealPlan object
+  - `debug_raw_ai_output` - Raw AI response for debugging
+  - Safe save wrapper with QUOTA_EXCEEDED error handling
+
+**Shopping List System:**
+- ✅ `ShoppingListView.js` - Comprehensive aggregation system
+  - Aggregates all ingredients from all recipes
+  - Groups identical ingredients (with fuzzy matching for variations)
+  - Converts ALL units to metric (grams/ml) or count (whole items)
+  - Deduplicates across recipes
+  - Categories: produce, meat, dairy, pantry, other
+- ✅ `unitConversions.js` - Extensive conversion mapping
+  - 70+ ingredient-specific conversion rules
+  - Imperial to metric conversions (cups→ml, oz→g, lb→kg)
+  - Count items preserved (eggs, onions, tomatoes)
+  - Dual display for bread (loaves + slices)
+  - Ingredient category classification
+  - Fuzzy matching for ingredient variations
+
+**Navigation & Routing:**
+- ✅ Updated router with 4 routes:
+  - `#/` - HomePage (shows hero or meal plan summary)
+  - `#/generating` - GenerationStatusPage (with progress)
+  - `#/meal-plan` - MealPlanView (full week view)
+  - `#/shopping-list` - ShoppingListView (aggregated list)
+
+**Chat Integration:**
+- ✅ "Generate Week" button always visible in ChatWidget
+- ✅ Chat history passed to generation API for context
+- ✅ Last 10 messages used to inform meal plan preferences
+- ✅ System prompt instructs Claude to honor conversation constraints
+
+**Error Handling:**
+- ✅ Network errors with user-friendly messages
+- ✅ JSON parse errors with fallback extraction
+- ✅ Storage quota errors with warnings
+- ✅ Retry mechanism on generation failure
+- ✅ "Start Over" option returns to home
+
+**UI/UX Enhancements:**
+- ✅ Gradient backgrounds for different sections
+- ✅ Animated progress bar with emoji (🍳)
+- ✅ Collapsible recipe details in meal plan
+- ✅ Checkboxes on shopping list (visual only, not functional yet)
+- ✅ Responsive design (mobile + desktop)
+- ✅ Loading states and disabled buttons during operations
+- ✅ Success/error feedback messages
+- ✅ Export raw AI output button for debugging
+
+### Data Model (AS IMPLEMENTED)
+
+**Recipe Object:**
+```javascript
+{
+  recipeId: 'recipe_[uuid]',
+  name: 'Recipe Name',
+  ingredients: [
+    {
+      name: 'ingredient name',
+      quantity: number,
+      unit: 'g' | 'ml' | 'whole' | etc.,
+      category: 'produce' | 'meat' | 'dairy' | 'pantry' | 'other'
+    }
+  ],
+  instructions: 'Brief instructions (2-3 sentences max)',
+  prepTime: number,        // minutes
+  cookTime: number,        // minutes
+  servings: number,
+  tags: ['tag1', 'tag2'],
+  source: 'generated',
+  rating: null,
+  createdAt: 'ISO 8601 timestamp'
+}
+```
+
+**Meal Object:**
+```javascript
+{
+  mealId: 'meal_[uuid]',
+  recipeId: 'recipe_[uuid]',
+  mealType: 'breakfast' | 'lunch' | 'dinner',
+  date: 'YYYY-MM-DD',
+  eaterIds: [],            // Empty for now, used in Slice 3
+  servings: number,
+  notes: ''
+}
+```
+
+**MealPlan Object:**
+```javascript
+{
+  _schemaVersion: 1,
+  mealPlanId: 'plan_YYYYMMDD',
+  weekOf: 'YYYY-MM-DD',    // Saturday start
+  weekEnd: 'YYYY-MM-DD',   // Friday end
+  createdAt: 'ISO 8601 timestamp',
+  mealIds: ['meal_uuid1', 'meal_uuid2', ...],  // 21 meals
+  budget: {
+    target: 0,             // Not used yet
+    estimated: number      // Calculated from recipes
+  },
+  weeklyPreferences: '',   // Empty for now
+  conversation: {
+    messages: []           // Empty for now, used in Slice 3
+  }
+}
+```
+
+### System Prompt (Meal Plan Generation)
+```
+You are Vanessa, an expert meal planning assistant. Generate a complete 7-day meal plan.
+
+CRITICAL: Your response must be ONLY valid JSON in this EXACT format with NO additional text.
+
+Guidelines:
+- Generate exactly 7 days of meals (21 total: breakfast, lunch, dinner each day)
+- Keep instructions BRIEF (2-3 sentences max per recipe)
+- Include realistic estimated budget in dollars
+- Consider user's dietary preferences and restrictions
+- Vary recipes throughout the week
+- Use 3-6 main ingredients per recipe (keep it simple)
+- Focus on practical, quick recipes
+
+CRITICAL - Units:
+- Use ONLY metric units in ingredient quantities
+- Liquids: milliliters (ml) or liters
+- Solids: grams (g) or kilograms (kg)
+- DO NOT use: ounces, pounds, cups, tablespoons, teaspoons
+- Exception: Count items can use "whole" (e.g., "2 whole onions")
+```
+
+### What This Slice Does NOT Include (Deferred)
+- Full onboarding flow (hardcoded default eater used)
+- Eaters management UI
 - Recipe library browsing
-- Usage metering
+- Recipe favorites/ratings (data structure exists, UI pending)
+- Usage metering/limits
+- Edit/modify meal plan
+- Regenerate single day
+- Shopping list check-off persistence
+- Export meal plan to PDF/markdown (debug export only)
 
 ---
 
-## SLICE 3: Recipe Library & Onboarding (After Slice 2 Reality Check)
+## REALITY CHECK: Slice 2 Learnings
+
+### What Worked Well ✅
+
+1. **SSE Streaming for Progress**
+   - Real-time progress updates provide excellent UX
+   - Users see what's happening during 30-60 second generation
+   - Pattern works well, should be reused for long operations
+
+2. **Data Transformation Layer**
+   - Clean separation between Claude's output and our storage format
+   - Recipe deduplication works perfectly (hash-based on name + ingredients)
+   - Easy to add validation and error handling in one place
+
+3. **localStorage Strategy**
+   - Simple, fast, no backend needed
+   - Quota handling prevents silent failures
+   - Debug output saved separately is invaluable for troubleshooting
+
+4. **Unit Conversion System**
+   - Comprehensive mapping handles 70+ ingredients
+   - Metric-only shopping lists are clearer for Australian users
+   - Fuzzy matching for ingredient variations works well
+
+5. **Chat Context Integration**
+   - Last 10 chat messages provide excellent context to Claude
+   - Users can specify constraints ("30 ingredients max") and they work
+   - No need for separate preference forms (yet)
+
+6. **Component Lifecycle Hooks**
+   - `afterRender()` hook perfect for triggering async operations
+   - `beforeUnload()` for cleanup works well
+   - Router's component pattern is flexible and simple
+
+### What Was Awkward / Could Improve 🤔
+
+1. **Shopping List Aggregation Complexity**
+   - The aggregation logic is quite complex (300+ lines)
+   - Multiple passes needed: collect → aggregate → convert → dedupe
+   - Hard to debug when ingredients don't combine as expected
+   - **Learning**: Consider pre-processing ingredient names during generation
+
+2. **Metric-Only Requirement**
+   - System prompt says "metric only" but Claude sometimes forgets
+   - We have fallback conversion, but adds complexity
+   - **Learning**: May need stricter validation or retry logic
+
+3. **Storage Keys Mix**
+   - Some keys namespaced (`vanessa-chat-history`), some not (`recipes`, `eaters`)
+   - Inconsistent naming convention
+   - **Learning**: Standardize on `vanessa_` prefix for all keys in Slice 3
+
+4. **No Eater Management Yet**
+   - Hardcoded default eater works, but feels incomplete
+   - Users can't specify household members yet
+   - **Learning**: Slice 3 should add eater management before recipe library
+
+5. **Error Messages Could Be Better**
+   - Some errors just say "Generation failed"
+   - No guidance on what to do (check internet? try again? contact support?)
+   - **Learning**: Add more specific error types with actionable messages
+
+6. **No Way to Modify Generated Plan**
+   - If user doesn't like one recipe, they must regenerate entire week
+   - **Learning**: Slice 3 or 4 should add "regenerate day" or "swap recipe" feature
+
+### Technical Discoveries 🔍
+
+1. **Vercel Edge Runtime Limits**
+   - 90-second timeout is hard limit
+   - 8192 max_tokens usually sufficient for 7-day plan
+   - Lower temperature (0.7) produces faster, more focused output
+
+2. **Claude Sonnet 4.5 Performance**
+   - Excellent at following JSON structure requirements
+   - Occasionally adds markdown code fences (we strip them)
+   - Honors conversation context very well
+   - Budget estimates are reasonable but not accurate
+
+3. **localStorage Quota**
+   - ~5MB limit sufficient for multiple weeks
+   - One week = ~50-100KB (recipes + meals + plan)
+   - Could store 20-30 weeks before hitting quota
+   - Debug output can fill quickly if not pruned
+
+4. **Recipe Deduplication**
+   - Hash-based approach works perfectly
+   - Same recipe across multiple days correctly shares one Recipe object
+   - Saves significant storage space
+
+### Architecture Patterns Established 📐
+
+1. **Data Flow:**
+   ```
+   User Intent → Chat Widget → API Endpoint → Claude API
+                                   ↓
+   Raw JSON → Transformer → Normalized Data → localStorage
+                                   ↓
+                          View Components → Display
+   ```
+
+2. **Component Pattern:**
+   - Each page is a class with `render()` method
+   - Optional lifecycle hooks: `beforeRender()`, `afterRender()`, `beforeUnload()`
+   - Components return HTMLElement or string
+   - Router manages mounting/unmounting
+
+3. **Error Handling:**
+   - Try/catch at every async boundary
+   - `ErrorHandler` utility for consistent messaging
+   - Graceful degradation (show error, offer retry)
+   - Log errors to console for debugging
+
+4. **Storage Pattern:**
+   - `load*()` functions return data or default (never throw)
+   - `save*()` functions return result object with success/error
+   - Validation happens before save
+   - Atomic saves (all or nothing)
+
+### Decisions Made 📝
+
+1. **Week Start = Saturday**
+   - Aligns with shopping day (Saturday morning)
+   - Plan covers Sat → Fri (7 days)
+   - Hardcoded for now, could be user preference later
+
+2. **Metric Units Only**
+   - Australian market preference
+   - Simpler for shopping (no cups/tbsp)
+   - All conversions go one direction (imperial → metric)
+
+3. **No Database Yet**
+   - localStorage sufficient for Phase 1
+   - Defer Firebase/backend until usage metering needed (Slice 4)
+   - Keeps deployment simple (static site)
+
+4. **Chat History Context Limit**
+   - Last 10 messages passed to generation
+   - Enough for recent context, not too much tokens
+   - Prevents prompt bloat
+
+5. **Debug Output Saved**
+   - Raw AI output saved to `debug_raw_ai_output`
+   - Single key (overwrites each generation)
+   - Export button on home page for debugging
+
+### Ready for Slice 3? ✅
+
+**Prerequisites Met:**
+- ✅ Core generation flow works end-to-end
+- ✅ Data model is stable and proven
+- ✅ Storage layer is robust
+- ✅ UI patterns established
+
+**What Slice 3 Needs:**
+1. Eater management (add/edit household members)
+2. Preference settings (dietary restrictions, allergies)
+3. Recipe library view (browse saved recipes)
+4. Recipe detail view with favorites/ratings
+5. Conversation history saved to meal plan
+6. Standardize storage keys
+
+**Blockers:** None. Ready to proceed.
+
+---
+
+## SLICE 3: Eaters, Profile & Recipe Library
 
 ### Goal
-Add recipe browsing and proper user onboarding.
+Add household member management, user profile system, and recipe browsing capabilities.
 
-### What This Slice Adds
-- Full normalized data model (Eaters, Base Specification)
-- Onboarding conversation flow
-- Recipe library page with search/filter
-- Recipe detail view
-- Favorites and ratings
+### End-to-End Flow (PLANNED)
+```
+FLOW A: First-Time User Onboarding
+1. User opens app (no profile exists)
+2. Sees welcome message: "Chat with Vanessa to get started"
+3. Opens chat widget
+4. Vanessa asks 5-6 essential onboarding questions:
+   - Dietary goals/restrictions
+   - Household members (eaters)
+   - Weekly budget
+   - Shopping day
+5. Profile auto-saves as conversation progresses
+6. After final question: "You're all set! Click Generate Week when ready."
+7. User can now generate meal plans
+
+FLOW B: Eater Management
+1. User navigates to #/settings
+2. Sees "Household" section with list of eaters
+3. Clicks "+ Add Member" button
+4. Fills form: name, preferences, schedule, allergies
+5. Saves → new eater added to household
+6. Can edit/delete existing eaters
+7. Future meal plans consider all household members
+
+FLOW C: Recipe Library
+1. User navigates to #/recipes (new nav link)
+2. Sees grid of all saved recipes
+3. Can search by name/ingredient
+4. Can filter: All / Favorites / High-Rated / Most Cooked
+5. Clicks recipe card → navigates to recipe detail
+6. In detail view: see full recipe, toggle favorite, rate 1-5 stars
+7. Back button returns to library
+
+FLOW D: Profile Editing
+1. User navigates to #/settings
+2. Sees sections: Household, Meal Planning, Chat Preferences
+3. Can edit: weekly budget, shopping day, dietary goals
+4. Changes save immediately (or with Save button)
+5. Success toast: "Profile updated"
+```
+
+### What This Slice Builds
+
+**New Pages/Components:**
+- ✅ `SettingsPage.js` - Unified settings/profile page
+  - Household section with eater CRUD
+  - Meal planning preferences (budget, shopping day)
+  - Chat preferences (personality, communication style)
+- ✅ `RecipeLibraryPage.js` - Browse saved recipes
+  - Search bar (searches name, ingredients, tags)
+  - Filter dropdown (All, Favorites, High-Rated, Most Cooked)
+  - Recipe grid with cards
+  - Recipe count display
+- ✅ `RecipeDetailPage.js` - Individual recipe view
+  - Full recipe display
+  - Star rating system (1-5 stars, clickable)
+  - Favorite toggle button
+  - Usage stats (times cooked, last cooked)
+  - Servings, prep/cook time
+  - Back button to library
+
+**New Data Entities:**
+- ✅ `Eater` - Household member
+  ```javascript
+  {
+    eaterId: 'eater_[uuid]',
+    name: string,
+    preferences: string,
+    allergies: string[],
+    dietaryRestrictions: string[],
+    schedule: string,
+    isDefault: boolean,
+    createdAt: 'ISO 8601',
+    updatedAt: 'ISO 8601'
+  }
+  ```
+
+- ✅ `BaseSpecification` - User profile
+  ```javascript
+  {
+    _schemaVersion: 1,
+    ownerEaterId: 'eater_[uuid]',
+    weeklyBudget: number,
+    shoppingDay: 0-6,  // 0=Sunday, 6=Saturday
+    preferredStore: string,
+    householdEaterIds: ['eater_[uuid]', ...],
+    dietaryGoals: string,
+    onboardingComplete: boolean,
+    conversation: {
+      startedAt: 'ISO 8601',
+      messages: [{role, content, timestamp}]
+    },
+    createdAt: 'ISO 8601',
+    updatedAt: 'ISO 8601'
+  }
+  ```
+
+**Enhanced Existing Entities:**
+- ✅ Update `Recipe` with rating/favorite fields (already in data model, now add UI)
+  - `isFavorite: boolean` - Toggle in recipe detail
+  - `rating: number | null` - 1-5 star rating
+  - `timesCooked: number` - Auto-increment when meal plan used
+  - `lastCooked: 'ISO 8601' | null` - Track last usage
+
+**Chat Integration:**
+- ✅ Onboarding conversation flow
+  - Vanessa asks 5-6 questions on first visit
+  - Stores responses in BaseSpecification
+  - Marks onboardingComplete when done
+- ✅ Profile update conversations
+  - User: "I want to change my budget to $200"
+  - Vanessa: "I'll update your budget to $200. Confirm?"
+  - User: "Yes"
+  - Vanessa updates baseSpecification.weeklyBudget
+
+**Storage Updates:**
+- ✅ **Standardize localStorage keys** (fix inconsistency from Slice 2):
+  - `vanessa_chat_history` (already has prefix)
+  - `vanessa_recipes` (rename from `recipes`)
+  - `vanessa_meals` (rename from `meals`)
+  - `vanessa_current_meal_plan` (rename from `currentMealPlan`)
+  - `vanessa_eaters` (new)
+  - `vanessa_base_specification` (new)
+  - `vanessa_debug_raw_output` (rename from `debug_raw_ai_output`)
+
+**Navigation Updates:**
+- ✅ Add nav links (in header or sidebar):
+  - Home (#/)
+  - Recipes (#/recipes) - NEW
+  - Shopping List (#/shopping-list)
+  - Settings (#/settings) - NEW
+- ✅ Add routes:
+  - `#/recipes` → RecipeLibraryPage
+  - `#/recipe/:id` → RecipeDetailPage
+  - `#/settings` → SettingsPage
+
+**Generation Updates:**
+- ✅ Pass eaters to generation API
+  - Load eaters from storage
+  - Include in POST body: `{chatHistory, eaters: [...]}`
+  - Claude considers all household members
+- ✅ Save conversation with meal plan
+  - Store last 10 chat messages in mealPlan.conversation
+
+**Vanessa System Prompt Updates:**
+- ✅ Include base specification context
+- ✅ Include eater information
+- ✅ Include recipe library stats
+- ✅ Profile update confirmation flow
+
+### Onboarding Flow Specification
+
+**First Visit Detection:**
+```javascript
+// On app load
+const baseSpec = loadBaseSpecification();
+if (!baseSpec || !baseSpec.onboardingComplete) {
+  // Show onboarding state
+  chatWidget.open();
+  chatWidget.showWelcomeMessage();
+}
+```
+
+**Onboarding Questions (Vanessa asks):**
+1. **Dietary Goals**
+   - "What are your main dietary goals? (e.g., lose weight, eat healthier, follow a specific diet)"
+   - Store in: `baseSpec.dietaryGoals`
+
+2. **Food Restrictions**
+   - "Are there any foods you don't eat or want to avoid?"
+   - Create owner eater, store in: `eater.preferences`
+
+3. **Household Members**
+   - "Do you cook for anyone else, like family members with different preferences?"
+   - If yes: "Tell me about them (names, ages, preferences)"
+   - Create additional eaters
+
+4. **Weekly Budget**
+   - "What's your weekly grocery budget?"
+   - Store in: `baseSpec.weeklyBudget`
+
+5. **Shopping Day**
+   - "Which day do you usually do your grocery shopping?"
+   - Store in: `baseSpec.shoppingDay` (0-6)
+
+6. **Confirmation**
+   - "Perfect! You're all set. Click Generate Week whenever you're ready to create your first meal plan."
+   - Set: `baseSpec.onboardingComplete = true`
+
+**Progressive Enhancement (Future):**
+- After first meal plan, Vanessa can ask optional questions:
+  - Preferred grocery store
+  - Eating window (intermittent fasting)
+  - Cooking skill level
+  - Time available for cooking
+
+### Recipe Library Features
+
+**Search Functionality:**
+- Real-time search (debounced 300ms)
+- Searches: recipe name, ingredients, tags
+- Case-insensitive
+- Highlights matches (future enhancement)
+
+**Filter Options:**
+```javascript
+const filters = {
+  'all': (recipe) => true,
+  'favorites': (recipe) => recipe.isFavorite === true,
+  'high-rated': (recipe) => recipe.rating >= 4,
+  'most-cooked': (recipe) => recipe.timesCooked >= 3
+};
+```
+
+**Sort Order:**
+- Default: Most cooked first (descending)
+- Then: Alphabetical by name
+
+**Recipe Card Display:**
+```javascript
+{
+  recipeImage: '🍽️', // Emoji placeholder
+  recipeName: string,
+  cookTime: number + ' min',
+  servings: number + ' servings',
+  rating: '⭐⭐⭐⭐☆' (1-5 stars),
+  favoriteIndicator: '❤️' if isFavorite,
+  timesCooked: 'Cooked X times'
+}
+```
+
+**Empty States:**
+- No recipes yet: "No recipes in your library yet. Generate a meal plan to add recipes!"
+- No search results: "No recipes match '{query}'. Try a different search."
+- No favorites: "You haven't favorited any recipes yet."
+
+### Recipe Detail Features
+
+**Display Sections:**
+1. **Header**
+   - Recipe name (large)
+   - Favorite toggle button (heart icon)
+   - Star rating (clickable stars)
+   - Back button
+
+2. **Meta Info**
+   - Prep time, cook time, total time
+   - Servings
+   - Source (generated/user/imported)
+   - Times cooked, last cooked
+
+3. **Ingredients**
+   - Grouped by category (produce, meat, dairy, pantry)
+   - Quantity + unit + name
+   - Checkbox (for shopping list, future)
+
+4. **Instructions**
+   - Step-by-step
+   - Numbered list
+   - Clear, concise
+
+5. **Tags**
+   - Clickable tag chips
+   - Example: "quick", "healthy", "vegetarian"
+
+6. **Usage History** (future)
+   - "Used in meal plans: [dates]"
+
+**Interactions:**
+- Click star → Update rating, save to storage, re-render
+- Click heart → Toggle favorite, save to storage, re-render
+- Click back → Navigate to #/recipes
+
+### Settings Page Features
+
+**Layout:**
+Three collapsible sections (or tabs):
+
+**1. Household Section**
+- **Owner Eater**
+  - Name (read-only, or editable)
+  - Dietary goals/preferences
+  - Edit button
+
+- **Other Members**
+  - List of household members
+  - Each shows: name, preferences summary
+  - Edit / Delete buttons
+  - "+ Add Member" button
+
+- **Add/Edit Eater Modal/Form:**
+  ```javascript
+  {
+    name: string (required),
+    preferences: string (textarea),
+    allergies: string[] (tags),
+    dietaryRestrictions: string[] (tags),
+    schedule: string (textarea),
+    isDefault: boolean (checkbox for owner)
+  }
+  ```
+
+**2. Meal Planning Section**
+- Weekly budget (number input with $ prefix)
+- Shopping day (dropdown: Sunday-Saturday)
+- Preferred store (text input, optional)
+- Dietary goals (textarea)
+
+**3. Chat Preferences Section** (optional for Slice 3)
+- Vanessa personality: Friendly, Professional, Casual
+- Communication style: Concise, Detailed
+- Reset onboarding button (re-triggers questions)
+
+**Save Behavior:**
+- Auto-save on blur (for text inputs)
+- OR single "Save Changes" button at bottom
+- Success toast: "Settings saved ✓"
+
+### Data Migration
+
+**From Slice 2 to Slice 3:**
+```javascript
+// Run on first load of Slice 3
+function migrateToSlice3() {
+  // 1. Rename storage keys
+  renameKey('recipes', 'vanessa_recipes');
+  renameKey('meals', 'vanessa_meals');
+  renameKey('currentMealPlan', 'vanessa_current_meal_plan');
+  renameKey('debug_raw_ai_output', 'vanessa_debug_raw_output');
+  
+  // 2. Create default eater if none exists
+  if (!loadEaters().length) {
+    const defaultEater = {
+      eaterId: 'eater_' + crypto.randomUUID(),
+      name: 'User',
+      preferences: 'no restrictions',
+      allergies: [],
+      dietaryRestrictions: [],
+      schedule: 'home for dinner',
+      isDefault: true,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    };
+    saveEaters([defaultEater]);
+  }
+  
+  // 3. Create base specification if none exists
+  if (!loadBaseSpecification()) {
+    const eaters = loadEaters();
+    const ownerEater = eaters.find(e => e.isDefault) || eaters[0];
+    
+    const baseSpec = {
+      _schemaVersion: 1,
+      ownerEaterId: ownerEater.eaterId,
+      weeklyBudget: 150,
+      shoppingDay: 6, // Saturday
+      preferredStore: '',
+      householdEaterIds: eaters.map(e => e.eaterId),
+      dietaryGoals: '',
+      onboardingComplete: false, // Will trigger onboarding
+      conversation: {
+        startedAt: new Date().toISOString(),
+        messages: []
+      },
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    };
+    saveBaseSpecification(baseSpec);
+  }
+  
+  // 4. Add rating/favorite fields to existing recipes
+  const recipes = loadRecipes();
+  const updated = recipes.map(r => ({
+    ...r,
+    isFavorite: r.isFavorite ?? false,
+    rating: r.rating ?? null,
+    timesCooked: r.timesCooked ?? 0,
+    lastCooked: r.lastCooked ?? null
+  }));
+  saveRecipes(updated);
+  
+  // 5. Set migration flag
+  localStorage.setItem('vanessa_migration_slice3', 'complete');
+}
+```
+
+### What This Slice Does NOT Include (Deferred to Slice 4)
+
+- ❌ Recipe import from URL
+- ❌ Recipe import from pasted text
+- ❌ Manual recipe creation form
+- ❌ Usage metering / limits
+- ❌ Upgrade prompts
+- ❌ Pantry system
+- ❌ Recipe editing after creation
+- ❌ Meal plan history (multiple weeks)
+- ❌ Regenerate single day
+- ❌ Export to PDF/calendar
+- ❌ Offline mode enhancements
+- ❌ Storage quota UI
 
 ---
 
@@ -192,47 +914,129 @@ Add recipe browsing and proper user onboarding.
 
 ---
 
-## Core Entities (Evolving)
+## Core Entities (As Implemented)
 
-### Slice 1 Entities
+### Slice 1 Entities ✅
 ```javascript
-// Conversation (simple)
+// Conversation (chat history in localStorage)
+// Key: 'vanessa-chat-history'
+[
+  {
+    role: 'user' | 'assistant',
+    content: string,
+    timestamp: 'ISO 8601'
+  }
+]
+```
+
+### Slice 2 Entities ✅
+```javascript
+// Recipe (stored in 'recipes' key)
 {
-  messages: [{ role, content, timestamp }],
-  startedAt: string
+  recipeId: 'recipe_[uuid]',
+  name: string,
+  ingredients: [
+    {
+      name: string,
+      quantity: number,
+      unit: string,
+      category: 'produce' | 'meat' | 'dairy' | 'pantry' | 'other'
+    }
+  ],
+  instructions: string,
+  prepTime: number,
+  cookTime: number,
+  servings: number,
+  tags: string[],
+  source: 'generated' | 'user' | 'imported',
+  rating: number | null,
+  createdAt: 'ISO 8601'
 }
 
-// BaseSpecification (stub - hardcoded)
+// Meal (stored in 'meals' key)
 {
-  ownerName: 'User',
-  weeklyBudget: 150,
-  shoppingDay: 6
+  mealId: 'meal_[uuid]',
+  recipeId: 'recipe_[uuid]',
+  mealType: 'breakfast' | 'lunch' | 'dinner',
+  date: 'YYYY-MM-DD',
+  eaterIds: string[],
+  servings: number,
+  notes: string
+}
+
+// MealPlan (stored in 'currentMealPlan' key)
+{
+  _schemaVersion: 1,
+  mealPlanId: 'plan_YYYYMMDD',
+  weekOf: 'YYYY-MM-DD',
+  weekEnd: 'YYYY-MM-DD',
+  createdAt: 'ISO 8601',
+  mealIds: string[],
+  budget: {
+    target: number,
+    estimated: number
+  },
+  weeklyPreferences: string,
+  conversation: {
+    messages: any[]
+  }
+}
+
+// Debug Output (stored in 'debug_raw_ai_output' key)
+{
+  timestamp: 'ISO 8601',
+  rawData: object  // Claude's raw JSON response
 }
 ```
 
-### Slice 2+ Entities (to be refined based on Slice 1 learnings)
-- Eaters
-- Recipes  
-- Meals
-- MealPlans
-- BaseSpecification (full)
-- UsageLimits
+### Slice 3 Entities (To Be Implemented)
+```javascript
+// Eater (stored in 'eaters' key)
+{
+  eaterId: 'eater_[uuid]',
+  name: string,
+  preferences: string,
+  allergies: string[],
+  dietaryRestrictions: string[],
+  schedule: string,
+  isDefault: boolean
+}
+
+// BaseSpecification (stored in 'baseSpecification' key)
+{
+  ownerName: string,
+  weeklyBudget: number,
+  shoppingDay: 0-6,  // 0=Sunday, 6=Saturday
+  currency: 'AUD',
+  preferredStores: string[],
+  householdSize: number
+}
+
+// UsageLimits (stored in 'usageLimits' key)
+{
+  plansGenerated: number,
+  plansLimit: number,
+  lastReset: 'ISO 8601',
+  tier: 'free' | 'paid'
+}
+```
 
 ---
 
 ## High-Level Page List
 
-| Page | Slice | Description |
-|------|-------|-------------|
-| Home | 1 | Landing with chat button |
-| Chat (widget) | 1 | Collapsible chat drawer |
-| Generation Status | 2 | Progress UI during generation |
-| Day View | 2 | Single day's meals |
-| Shopping List | 2 | Grouped shopping list |
-| Recipe Library | 3 | Browse/search recipes |
-| Recipe Detail | 3 | Full recipe view |
-| Profile | 3 | User settings/preferences |
-| Add Recipe | 4 | Import recipe flow |
+| Page | Route | Slice | Status | Description |
+|------|-------|-------|--------|-------------|
+| Home | `#/` | 1 | ✅ | Landing with chat button OR meal plan summary |
+| Chat (widget) | n/a | 1 | ✅ | Collapsible chat drawer (always available) |
+| Generation Status | `#/generating` | 2 | ✅ | Progress UI during generation with SSE updates |
+| Meal Plan View | `#/meal-plan` | 2 | ✅ | Full week view with all meals and recipes |
+| Shopping List | `#/shopping-list` | 2 | ✅ | Aggregated shopping list grouped by category |
+| Recipe Library | `#/recipes` | 3 | 📝 | Browse/search saved recipes |
+| Recipe Detail | `#/recipe/:id` | 3 | 📝 | Full recipe view with ratings |
+| Eater Management | `#/eaters` | 3 | 📝 | Manage household members |
+| Settings | `#/settings` | 3 | 📝 | User preferences and settings |
+| Add Recipe | `#/add-recipe` | 4 | 📝 | Import recipe flow |
 
 ---
 
@@ -256,11 +1060,89 @@ Add recipe browsing and proper user onboarding.
 
 ## API Endpoints
 
-| Endpoint | Slice | Purpose |
-|----------|-------|---------|
-| POST /api/chat-with-vanessa | 1 | Streaming chat |
-| POST /api/generate-meal-plan | 2 | Generate meal plan |
-| POST /api/extract-recipe | 4 | Extract recipe from paste/URL |
+| Endpoint | Slice | Status | Method | Runtime | Purpose |
+|----------|-------|--------|--------|---------|---------|
+| `/api/chat-with-vanessa` | 1 | ✅ | POST | Edge | SSE streaming chat with Claude Sonnet 4.5 |
+| `/api/generate-meal-plan` | 2 | ✅ | POST | Edge | Generate 7-day meal plan with progress updates |
+| `/api/extract-recipe` | 4 | 📝 | POST | Edge | Extract recipe from URL or text |
+| `/api/check-env` | - | ✅ | GET | Edge | Development endpoint to verify API key |
+| `/api/test-models` | - | ✅ | GET | Edge | Development endpoint to test Claude models |
+
+### API Details
+
+#### POST /api/chat-with-vanessa
+**Request:**
+```json
+{
+  "message": "string (required)",
+  "chatHistory": [
+    {
+      "role": "user | assistant",
+      "content": "string"
+    }
+  ]
+}
+```
+
+**Response:** SSE stream
+```
+data: {"type": "token", "content": "text"}
+data: {"type": "token", "content": "more text"}
+data: {"type": "done"}
+```
+
+**Errors:**
+```
+data: {"type": "error", "error": "Error message", "details": "..."}
+```
+
+**Configuration:**
+- Model: `claude-sonnet-4-5-20250929`
+- Max tokens: 1000
+- Temperature: 0.7
+- Timeout: 30 seconds
+- System prompt: Concise, friendly meal planning assistant
+
+#### POST /api/generate-meal-plan
+**Request:**
+```json
+{
+  "chatHistory": [
+    {
+      "role": "user | assistant",
+      "content": "string"
+    }
+  ],
+  "eaters": [
+    {
+      "name": "string",
+      "preferences": "string",
+      "schedule": "string"
+    }
+  ]
+}
+```
+
+**Response:** SSE stream
+```
+data: {"type": "progress", "progress": 10, "message": "Analyzing preferences..."}
+data: {"type": "progress", "progress": 25, "message": "Planning your week..."}
+...
+data: {"type": "complete", "data": { /* meal plan JSON */ }}
+```
+
+**Errors:**
+```
+data: {"type": "error", "error": "Error message"}
+```
+
+**Configuration:**
+- Model: `claude-sonnet-4-5-20250929`
+- Max tokens: 8192
+- Temperature: 0.7
+- Timeout: 90 seconds
+- System prompt: Detailed meal plan generation with JSON output
+- Returns: 7 days × 3 meals = 21 recipes with ingredients
 
 ---
 
@@ -304,19 +1186,105 @@ Add recipe browsing and proper user onboarding.
 
 ---
 
-## Current Tasks: SLICE 1 ONLY
+## Project-Specific Patterns (Learned from Slices 1 & 2)
 
-Generate tasks for Slice 1 vertical slice:
-1. Set up app shell (index.html with Tailwind)
-2. Create basic router (hash-based, minimal)
-3. Build HomePage component
-4. Build ChatWidget component (UI only first)
-5. Implement chat streaming API endpoint
-6. Connect ChatWidget to API with streaming
-7. Add conversation persistence (localStorage)
-8. Add mobile responsiveness to chat
-9. Add error handling
-10. Test and validate Slice 1
+### Component Architecture
+```javascript
+export class ComponentName {
+  constructor() {
+    // Initialize state
+  }
+  
+  // Optional lifecycle hooks
+  beforeRender(state) {
+    // Called before render
+  }
+  
+  render(state) {
+    // Return HTMLElement or string
+    const container = document.createElement('div');
+    // Build UI...
+    return container;
+  }
+  
+  afterRender(state) {
+    // Called after render (good for async operations)
+  }
+  
+  beforeUnload() {
+    // Cleanup before component unmounts
+  }
+  
+  destroy() {
+    // Final cleanup
+  }
+}
+```
 
-After Slice 1 is complete and reviewed, generate tasks for Slice 2.
+### Storage Pattern
+```javascript
+// Always return data or sensible default (never throw)
+export function loadData() {
+  try {
+    const saved = localStorage.getItem(KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      return Array.isArray(parsed) ? parsed : [];
+    }
+  } catch (error) {
+    console.error('Error loading data:', error);
+  }
+  return []; // Always return default
+}
+
+// Always return result object
+export function saveData(data) {
+  if (!Array.isArray(data)) {
+    return { success: false, error: 'INVALID_TYPE' };
+  }
+  return safeSave(KEY, data);
+}
+```
+
+### SSE Streaming Pattern
+```javascript
+// Server-side: Send SSE messages
+function sendSSE(writer, encoder, data) {
+  const message = `data: ${JSON.stringify(data)}\n\n`;
+  writer.write(encoder.encode(message));
+}
+
+// Client-side: Process SSE stream
+async processStream(response) {
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+  
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    
+    buffer += decoder.decode(value, { stream: true });
+    const lines = buffer.split('\n');
+    buffer = lines.pop() || '';
+    
+    for (const line of lines) {
+      if (!line.trim() || !line.startsWith('data: ')) continue;
+      const data = JSON.parse(line.substring(6));
+      // Handle data.type: 'progress', 'complete', 'error'
+    }
+  }
+}
+```
+
+### Naming Conventions
+- **Files**: Components use `PascalCase.js`, utilities use `camelCase.js`, APIs use `kebab-case.js`
+- **localStorage Keys**: Standardize on `vanessa_` prefix (Slice 3)
+- **IDs**: `recipe_[uuid]`, `meal_[uuid]`, `eater_[uuid]`, `plan_YYYYMMDD`
+
+### UI/UX Patterns
+- **Gradients**: Primary (`from-blue-400 to-indigo-400`), Success (`from-emerald-400 to-teal-400`)
+- **Responsive**: Mobile-first, use `md:` breakpoint (768px)
+- **Loading States**: Disable button + spinner + loading text
+
 

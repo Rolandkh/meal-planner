@@ -2,673 +2,501 @@
   "master": {
     "tasks": [
       {
-        "id": "26",
-        "title": "Implement Storage Utilities",
-        "description": "Create centralized localStorage operations for eaters, recipes, meals, and current meal plan with quota error handling.",
-        "details": "Create src/utils/storage.js with functions: loadEaters(), saveEaters(eaters[]), loadRecipes(), saveRecipes(recipes[]), loadMeals(), saveMeals(meals[]), loadCurrentMealPlan(), saveCurrentMealPlan(plan), safeSave(key, data). Use try-catch for QUOTA_EXCEEDED_ERR (code 22). Implement JSON.parse/stringify with validation. Generate IDs using `crypto.randomUUID()` for recipe_[uuid], meal_[uuid], etc. Deduplicate recipes by name+ingredients hash using Map. Follow Slice 1 patterns.",
-        "testStrategy": "Unit test: save/load roundtrip for each data type, quota error simulation by filling localStorage, ID uniqueness (1000 generations), recipe deduplication with identical recipes.",
+        "id": 36,
+        "title": "Implement Eater Management System",
+        "description": "Create the data model and UI components for managing household members (eaters) with their dietary preferences, allergies, and schedules.",
+        "details": "1. Create the Eater data model with the following structure:\n```javascript\n{\n  eaterId: 'eater_[uuid]',\n  name: string,\n  preferences: string,\n  allergies: string[],\n  dietaryRestrictions: string[],\n  schedule: string,\n  isDefault: boolean,\n  createdAt: 'ISO 8601',\n  updatedAt: 'ISO 8601'\n}\n```\n\n2. Implement storage utilities for eaters:\n```javascript\n// src/utils/storage.js\nexport function loadEaters() {\n  try {\n    const saved = localStorage.getItem('vanessa_eaters');\n    if (saved) {\n      return JSON.parse(saved);\n    }\n  } catch (error) {\n    console.error('Error loading eaters:', error);\n  }\n  return [];\n}\n\nexport function saveEaters(eaters) {\n  if (!Array.isArray(eaters)) {\n    return { success: false, error: 'INVALID_TYPE' };\n  }\n  return safeSave('vanessa_eaters', eaters);\n}\n```\n\n3. Create the UI components for the Eaters section in SettingsPage:\n- List view of all household members\n- Add/Edit/Delete functionality\n- Form for editing eater details\n\n4. Implement the eater creation flow with form validation\n5. Add default eater creation for first-time users",
+        "testStrategy": "1. Unit test the eater storage functions with various inputs including edge cases\n2. Test the UUID generation for new eaters\n3. Verify the eater form validation works correctly\n4. Test the UI rendering with different numbers of eaters (0, 1, many)\n5. Verify the default eater is created correctly for first-time users\n6. Test the edit and delete functionality\n7. Verify the isDefault property can only be set for one eater",
         "priority": "high",
         "dependencies": [],
-        "status": "done",
+        "status": "pending",
         "subtasks": [
           {
             "id": 1,
-            "title": "Implement Core CRUD Functions",
-            "description": "Create load and save functions for eaters, recipes, meals, and current meal plan using localStorage with JSON.parse/stringify.",
+            "title": "Create Eater Data Model and Storage Utilities",
+            "description": "Implement the data structure for eaters and the necessary storage functions for local persistence.",
             "dependencies": [],
-            "details": "In src/utils/storage.js, implement loadEaters(), saveEaters(eaters[]), loadRecipes(), saveRecipes(recipes[]), loadMeals(), saveMeals(meals[]), loadCurrentMealPlan(), saveCurrentMealPlan(plan). Use specific storage keys like 'eaters', 'recipes', etc. Follow Slice 1 patterns for structure.",
-            "status": "done",
-            "testStrategy": "Unit test save/load roundtrip for each data type with sample data validation.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:02:01.068Z"
+            "details": "Create the Eater data model with fields for eaterId, name, preferences, allergies, dietaryRestrictions, schedule, isDefault, createdAt, and updatedAt. Implement the loadEaters() and saveEaters() functions in the storage.js utility file. Add helper functions for creating new eaters with UUID generation and proper timestamps. Include validation to ensure data integrity when saving and loading eater information.",
+            "status": "pending",
+            "testStrategy": "Unit test the eater storage functions with various inputs including edge cases. Test the UUID generation for new eaters. Verify data validation works correctly when saving invalid eater objects."
           },
           {
             "id": 2,
-            "title": "Add Error Handling and Quota Management",
-            "description": "Implement safeSave(key, data) with try-catch for QUOTA_EXCEEDED_ERR (code 22) and JSON validation.",
+            "title": "Implement Eater List View Component",
+            "description": "Create a component to display all household members in a list format with basic information.",
             "dependencies": [
               1
             ],
-            "details": "Wrap all save operations in safeSave that catches QuotaExceededError, validates JSON.parse/stringify inputs, returns success/failure status. Add validation for array/object types before storage.",
-            "status": "done",
-            "testStrategy": "Unit test quota error simulation by pre-filling localStorage, validate error handling and fallback behavior.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:02:31.442Z"
+            "details": "Develop an EaterListComponent that renders all household members in a scrollable list. Each list item should display the eater's name, dietary restrictions, and allergies in a condensed format. Include visual indicators for the default eater. Add sorting functionality to organize the list alphabetically. Implement empty state handling when no eaters exist. The component should observe changes to the eater data and refresh automatically.",
+            "status": "pending",
+            "testStrategy": "Test the component rendering with different numbers of eaters (0, 1, many). Verify the default eater is visually distinguished. Test sorting functionality. Ensure the empty state is displayed correctly when no eaters exist."
           },
           {
             "id": 3,
-            "title": "Implement ID Generation and Validation",
-            "description": "Add ID generation using crypto.randomUUID() for recipe_[uuid], meal_[uuid] with uniqueness validation.",
+            "title": "Build Eater Form Component for Adding/Editing",
+            "description": "Create a form component for adding new eaters and editing existing eater information.",
             "dependencies": [
               1
             ],
-            "details": "Create helper functions generateRecipeId(), generateMealId(). Ensure IDs are prefixed correctly. Add validation in load functions to check ID format and regenerate if invalid.",
-            "status": "done",
-            "testStrategy": "Unit test 1000 ID generations for uniqueness, validate prefix format, test invalid ID handling.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:02:49.389Z"
+            "details": "Develop an EaterFormComponent that handles both creation and editing of eater profiles. Include form fields for all eater properties with appropriate input types (text fields, multi-select for allergies, etc.). Implement form validation to ensure required fields are completed. Add functionality to toggle the default eater status. Create save and cancel buttons with appropriate handlers. Include confirmation dialog when attempting to discard unsaved changes.",
+            "status": "pending",
+            "testStrategy": "Test form validation for required fields. Verify the form correctly loads existing eater data when editing. Test the save functionality to ensure it correctly updates the storage. Verify the cancel operation works and confirmation dialog appears when there are unsaved changes."
           },
           {
             "id": 4,
-            "title": "Build Recipe Deduplication Algorithm",
-            "description": "Implement deduplication by name+ingredients hash using Map in saveRecipes and related functions.",
-            "dependencies": [
-              1,
-              3
-            ],
-            "details": "In saveRecipes(), create hash from recipe.name + sorted ingredients.join(','), use Map to track unique recipes, replace duplicates. Preserve original order, assign new IDs to unique recipes only.",
-            "status": "done",
-            "testStrategy": "Unit test with identical recipes (2+ same → 1 unique), different recipes preserved, hash collision resistance.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:03:16.260Z"
-          }
-        ],
-        "complexity": 6,
-        "recommendedSubtasks": 4,
-        "expansionPrompt": "Break down storage utilities into: 1) Core CRUD functions for each data type, 2) Error handling and quota management, 3) ID generation and validation logic, 4) Recipe deduplication algorithm with hashing.",
-        "updatedAt": "2025-12-19T14:03:16.260Z"
-      },
-      {
-        "id": "27",
-        "title": "Add Generate Week Button to ChatWidget",
-        "description": "Add prominent 'Generate Week' button to ChatWidget header that navigates to /generating route.",
-        "details": "In src/components/ChatWidget.js, add button in header with styling: primary color, full-width, large font. On click: disable button, show loading spinner, dispatch custom event 'generate-week', navigate using router.go('/generating'). Button always visible regardless of chat state. Use existing router from Slice 1.",
-        "testStrategy": "Manual: button visible on load, click triggers navigation to /generating, button disables during generation, re-enables on return.",
-        "priority": "high",
-        "dependencies": [
-          "26"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Add Generate Week button to ChatWidget header",
-            "description": "Insert prominent full-width button in the ChatWidget header section that is always visible regardless of chat state.",
-            "dependencies": [],
-            "details": "In src/components/ChatWidget.js, locate the header JSX element and add <button> element with text 'Generate Week'. Apply inline styles or CSS classes for primary color background, white text, full-width (width:100%), large font (font-size: 18px+), padding (16px 24px), border-radius 8px. Ensure button renders unconditionally outside any conditional chat state logic.",
-            "status": "done",
-            "testStrategy": "Manual: Verify button appears in header on initial page load in all chat states (empty, with messages)",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:03:53.617Z"
-          },
-          {
-            "id": 2,
-            "title": "Implement button click handler with disable and loading states",
-            "description": "Create onClick handler that disables button and shows loading spinner immediately on click.",
-            "dependencies": [
-              1
-            ],
-            "details": "Add useState for isLoading (initial false). In onClick: setIsLoading(true). Replace button text with spinner (use existing spinner component or simple CSS spinner). Disable button with disabled={isLoading} attribute. Add conditional rendering: isLoading ? <Spinner/> : 'Generate Week'. Style spinner centered with same button dimensions.",
-            "status": "done",
-            "testStrategy": "Manual: Click button → immediately disables and shows spinner, text disappears",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:04:41.946Z"
-          },
-          {
-            "id": 3,
-            "title": "Dispatch custom generate-week event on button click",
-            "description": "Dispatch 'generate-week' custom event to notify other components generation started.",
-            "dependencies": [
-              2
-            ],
-            "details": "In onClick handler (after setIsLoading(true)), add: window.dispatchEvent(new CustomEvent('generate-week', {detail: {source: 'chatwidget'}})). Ensure event bubbles and carries relevant payload. Place before navigation to allow parallel processing.",
-            "status": "done",
-            "testStrategy": "Manual: Click button → verify console shows 'generate-week' event fired (add temporary listener)",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:04:41.948Z"
-          },
-          {
-            "id": 4,
-            "title": "Implement router navigation to /generating route",
-            "description": "Navigate to /generating route using existing Slice 1 router immediately after event dispatch.",
-            "dependencies": [
-              3
-            ],
-            "details": "Import router from Slice 1 (likely useRouter hook or router instance). In onClick after dispatch: router.go('/generating') or router.push('/generating'). Ensure navigation happens synchronously after event. Handle any router errors gracefully with console.warn.",
-            "status": "done",
-            "testStrategy": "Manual: Click button → browser navigates to /generating URL, button remains disabled",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:04:41.949Z"
-          },
-          {
-            "id": 5,
-            "title": "Add button re-enable logic and final polish",
-            "description": "Implement logic to re-enable button when returning from /generating and apply final styling/accessibility.",
-            "dependencies": [
-              4
-            ],
-            "details": "Add useEffect listening for 'focus' or route change events to setIsLoading(false). Or use router events 'route-changed'. Ensure button accessible: add aria-label='Generate your weekly meal plan', role='button'. Final styles: box-shadow, hover:transform scale(1.02), focus:outline. Test mobile responsiveness (min-height:48px).",
-            "status": "done",
-            "testStrategy": "Manual: Complete flow - click→loading→navigate→return→button re-enables and clickable again",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:04:41.950Z"
-          }
-        ],
-        "complexity": 3,
-        "recommendedSubtasks": 0,
-        "expansionPrompt": "",
-        "updatedAt": "2025-12-19T14:04:41.950Z"
-      },
-      {
-        "id": "28",
-        "title": "Create GenerationStatusPage Component",
-        "description": "Build progress display page for meal plan generation with SSE streaming, progress bar, status messages, and auto-navigation.",
-        "details": "Create src/components/GenerationStatusPage.js. Use SSE to connect to /api/generate-meal-plan. State: progress (0-100), status ('generating'|'complete'|'failed'), message. Features: animated progress bar (CSS transitions), status text, retry button (reconnect SSE), auto-navigate to '/' on complete. Handle SSE events: 'progress', 'error', 'complete'. Use AbortController for cleanup. Reuse Slice 1 SSE patterns.",
-        "testStrategy": "Manual: progress updates in real-time (0→100), status messages change, complete auto-navigates, retry reconnects SSE, error shows retry button.",
-        "priority": "high",
-        "dependencies": [
-          "27"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Implement SSE connection and event handling with AbortController",
-            "description": "Create the SSE connection in GenerationStatusPage to /api/generate-meal-plan, wire up event listeners for progress, error, and complete events, and manage the AbortController lifecycle.",
-            "dependencies": [],
-            "details": "In src/components/GenerationStatusPage.js, set up the SSE client (using fetch/EventSource or existing Slice 1 helper) to connect to /api/generate-meal-plan when the component mounts. Instantiate an AbortController, pass its signal into the SSE/fetch call, and store it in a ref or state for later reuse. Add handlers for 'progress', 'error', and 'complete' events that parse event.data JSON safely, update local callbacks, and distinguish between terminal and non-terminal states. Ensure that abort() is called on unmount and when starting a new stream to avoid duplicate connections, reusing patterns from Slice 1 SSE utilities.",
-            "status": "done",
-            "testStrategy": "Manually verify that SSE connects, receives progress events at expected points, stops when aborted or on unmount, and that error/complete events arrive and are parsed without throwing.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:05:42.588Z"
-          },
-          {
-            "id": 2,
-            "title": "Build UI state management and animated progress display",
-            "description": "Manage React state for progress, status, and message, and render an animated progress bar and status text that update in real time from SSE events.",
-            "dependencies": [
-              1
-            ],
-            "details": "Define React state variables: progress (0–100), status ('generating' | 'complete' | 'failed'), and message (string). In SSE event handlers from subtask 1, update these state values appropriately on 'progress', 'error', and 'complete' events. Implement a visual layout for GenerationStatusPage with a container, title, progress bar track and fill, and status/message text. Use CSS transitions on the progress bar width to animate changes smoothly. Conditionally render different messages and UI states based on status (e.g., loading spinner while generating, success text on complete, error text when failed). Ensure that initial state is generating with progress 0 and that rapid updates do not cause layout jumps.",
-            "status": "done",
-            "testStrategy": "Manual testing: trigger a generation and confirm the progress bar animates from 0 to 100 in steps, the status text and message update correctly for each stage, and visual transitions are smooth without console errors.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:05:42.589Z"
-          },
-          {
-            "id": 3,
-            "title": "Implement auto-navigation, retry behavior, and cleanup logic",
-            "description": "Add logic to navigate back to the main route on completion, provide a retry button on error or failure, and ensure all resources are cleaned up properly.",
-            "dependencies": [
-              1,
-              2
-            ],
-            "details": "Integrate the app’s router/navigation helper to automatically navigate to '/' when status becomes 'complete', with a short optional delay if desired. Show a retry button when status is 'failed' or on SSE error; on retry, abort any existing controller, reset state (progress=0, status='generating', message=''), and re-establish the SSE connection by invoking the same setup logic from subtask 1. Ensure cleanup in useEffect return: abort active SSE, remove any event listeners, and avoid double subscriptions (following Slice 1 patterns). Verify that navigating away from /generating cancels the stream and that navigating back creates a fresh, single connection. Handle edge cases where complete and error might race by only navigating when status is definitively 'complete'.",
-            "status": "done",
-            "testStrategy": "Manual flows: (1) Successful generation auto-navigates to '/', no extra network activity remains; (2) Forced error displays retry button, retry restarts the stream and UI without page reload; (3) Navigating away via back button or another route stops the stream and does not leak connections or timers.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:05:42.591Z"
-          }
-        ],
-        "complexity": 7,
-        "recommendedSubtasks": 3,
-        "expansionPrompt": "Divide into: 1) SSE connection and event handling with AbortController, 2) UI state management and progress bar animations, 3) Auto-navigation, retry logic, and cleanup.",
-        "updatedAt": "2025-12-19T14:05:42.591Z"
-      },
-      {
-        "id": "29",
-        "title": "Implement /api/generate-meal-plan Endpoint",
-        "description": "Create Edge runtime API endpoint that generates meal plan using Claude with SSE progress streaming.",
-        "details": "Create api/generate-meal-plan.js (Vercel Edge). POST body: {chatHistory[], eaters[]}. Use Anthropic SDK v1.0.0: model='claude-3-5-sonnet-20241022' (updated from PRD). System prompt enforces JSON schema. Stream Claude response, parse JSON chunks. Send SSE: progress events (10,25,50,75,90,100), final 'complete' with {recipes,meals,mealPlan}. Hardcode eaters if empty: [{name:'User',preferences:'no restrictions',schedule:'home for dinner'}]. 60s timeout. Validate input with Zod v3.23.8.",
-        "testStrategy": "Integration: POST request returns SSE stream, progress events fire, complete event has valid normalized data, timeout handled gracefully.",
-        "priority": "high",
-        "dependencies": [
-          "26",
-          "28"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Implement Input Validation with Zod",
-            "description": "Create Zod schema validation for POST body {chatHistory[], eaters[]} with fallback for empty eaters array.",
-            "dependencies": [],
-            "details": "Define Zod schema for chatHistory (array of messages) and eaters (array of eater objects). Add fallback hardcoded eaters if empty: [{name:'User',preferences:'no restrictions',schedule:'home for dinner'}]. Use Zod v3.23.8. Validate early in handler.",
-            "status": "done",
-            "testStrategy": "Unit test: valid/invalid payloads, empty eaters fallback, Zod error messages.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:07:06.027Z"
-          },
-          {
-            "id": 2,
-            "title": "Setup Anthropic SDK Streaming with System Prompt",
-            "description": "Configure Anthropic SDK v1.0.0 for claude-3-5-sonnet-20241022 with JSON schema enforcing system prompt.",
-            "dependencies": [
-              1
-            ],
-            "details": "Initialize Anthropic client with ANTHROPIC_API_KEY env var. Create system prompt enforcing JSON output schema for {recipes,meals,mealPlan}. Start streaming messages with validated input. Handle Edge runtime compatibility.",
-            "status": "done",
-            "testStrategy": "Unit test: client init, mock stream start, system prompt format validation.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:07:06.028Z"
-          },
-          {
-            "id": 3,
-            "title": "Implement SSE Response Streaming and JSON Parsing",
-            "description": "Stream Claude response via SSE, parse JSON chunks incrementally, send final 'complete' event.",
-            "dependencies": [
-              2
-            ],
-            "details": "Set SSE headers for Edge runtime. Process stream chunks, accumulate JSON, parse when complete. Send 'complete' event with {recipes,meals,mealPlan}. Handle partial JSON parsing errors gracefully.",
-            "status": "done",
-            "testStrategy": "Integration test: mock stream yields valid JSON chunks → complete event received.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:07:06.029Z"
-          },
-          {
-            "id": 4,
-            "title": "Add Progress Event Simulation",
-            "description": "Send SSE progress events at 10,25,50,75,90,100% during generation.",
-            "dependencies": [
-              3
-            ],
-            "details": "Simulate progress by sending SSE events at token intervals or timers during stream processing. Events: {progress:10}, {progress:25}, etc. Ensure smooth client-side progress bar updates.",
-            "status": "done",
-            "testStrategy": "Integration test: verify all 6 progress events fire in order during stream.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:07:06.030Z"
-          },
-          {
-            "id": 5,
-            "title": "Implement Timeout Handling and Error Cases",
-            "description": "Add 60s timeout, error SSE events, and Edge runtime cleanup.",
+            "title": "Implement Default Eater Creation and Management",
+            "description": "Add functionality to create a default eater for first-time users and manage default eater selection.",
             "dependencies": [
               1,
               2,
               3
             ],
-            "details": "Use AbortController for 60s timeout on stream. Send 'error' SSE event on timeout/parsing failures. Cleanup resources properly for Edge runtime. Return 500 for unhandled errors.",
-            "status": "done",
-            "testStrategy": "Integration test: timeout after 60s → error event, stream abort cleans up.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:07:06.031Z"
+            "details": "Implement logic to detect first-time users and automatically create a default eater profile. Add functionality to ensure there is always exactly one default eater in the system. Create UI controls to change which eater is the default. Implement safeguards to prevent deletion of the default eater unless another is designated. Add a confirmation dialog when changing the default eater. Update the EaterListComponent to reflect the current default eater status.",
+            "status": "pending",
+            "testStrategy": "Test the default eater creation for first-time users. Verify that changing the default eater works correctly. Test the safeguards preventing deletion of the default eater. Verify the confirmation dialog appears when changing the default eater."
           }
-        ],
-        "complexity": 9,
-        "recommendedSubtasks": 5,
-        "expansionPrompt": "Split into: 1) Input validation with Zod, 2) Anthropic SDK streaming setup with system prompt, 3) SSE response streaming and JSON chunk parsing, 4) Progress event simulation (10,25,50,75,90,100), 5) Timeout handling and error cases.",
-        "updatedAt": "2025-12-19T14:07:06.031Z"
+        ]
       },
       {
-        "id": "30",
-        "title": "Create Meal Plan Transformer Utility",
-        "description": "Transform Claude's raw JSON output into normalized storage format with recipe deduplication and ID assignment.",
-        "details": "Create src/utils/mealPlanTransformer.js. Function transformGeneratedPlan(claudeOutput). Steps: 1) Extract unique recipes (dedupe by name+ingredients using Map), assign recipeId=`recipe_${crypto.randomUUID()}`. 2) Create meals with mealId, reference recipeId, calculate servings from eaters. 3) Build mealPlan with weekOf (next Saturday), budget.estimated=sum(recipe costs). 4) Validate schemas with Zod. Return {recipes[], meals[], mealPlan}. Handle missing fields gracefully.",
-        "testStrategy": "Unit test: transform valid Claude JSON→normalized data, deduplication (2 identical recipes→1), invalid JSON handled, budget calculation accurate, all IDs unique.",
+        "id": 37,
+        "title": "Implement Base Specification System",
+        "description": "Create the user profile system (BaseSpecification) to store user preferences, dietary goals, budget, and shopping day preferences.",
+        "details": "1. Create the BaseSpecification data model:\n```javascript\n{\n  _schemaVersion: 1,\n  ownerEaterId: 'eater_[uuid]',\n  weeklyBudget: number,\n  shoppingDay: 0-6,  // 0=Sunday, 6=Saturday\n  preferredStore: string,\n  householdEaterIds: ['eater_[uuid]', ...],\n  dietaryGoals: string,\n  onboardingComplete: boolean,\n  conversation: {\n    startedAt: 'ISO 8601',\n    messages: [{role, content, timestamp}]\n  },\n  createdAt: 'ISO 8601',\n  updatedAt: 'ISO 8601'\n}\n```\n\n2. Implement storage utilities for the base specification:\n```javascript\nexport function loadBaseSpecification() {\n  try {\n    const saved = localStorage.getItem('vanessa_base_specification');\n    if (saved) {\n      return JSON.parse(saved);\n    }\n  } catch (error) {\n    console.error('Error loading base specification:', error);\n  }\n  return null;\n}\n\nexport function saveBaseSpecification(spec) {\n  if (!spec || typeof spec !== 'object') {\n    return { success: false, error: 'INVALID_TYPE' };\n  }\n  return safeSave('vanessa_base_specification', spec);\n}\n```\n\n3. Create UI components for editing base specification in SettingsPage:\n- Weekly budget input\n- Shopping day dropdown\n- Preferred store input\n- Dietary goals textarea\n\n4. Implement auto-save functionality for settings changes\n5. Add validation for numeric fields (budget)",
+        "testStrategy": "1. Unit test the base specification storage functions\n2. Test the validation of inputs (budget must be a number, shopping day must be 0-6)\n3. Verify the auto-save functionality works correctly\n4. Test the UI rendering with different base specification values\n5. Verify the default values are set correctly for first-time users\n6. Test the relationship between ownerEaterId and the eaters collection",
         "priority": "high",
         "dependencies": [
-          "26",
-          "29"
+          36
         ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Implement recipe extraction and deduplication with stable recipe IDs",
-            "description": "Implement logic in src/utils/mealPlanTransformer.js to extract unique recipes from Claude's raw JSON output, deduplicate them using a name+ingredients hash, and assign stable recipeId values using crypto.randomUUID.",
-            "dependencies": [],
-            "details": "Create transformGeneratedPlan(claudeOutput) and inside it traverse Claude's recipe-like structures to collect recipes safely, guarding against missing or malformed fields. Build a Map keyed by a deterministic hash of lowercased recipe name plus a normalized ingredients list (e.g., sorted and trimmed) to deduplicate logically identical recipes. For each unique recipe, generate recipeId using the format `recipe_${crypto.randomUUID()}` and construct a normalized recipe object (fields like name, ingredients, instructions, cost if present), defaulting missing optional fields to safe values. Ensure the function returns an array of normalized recipes and exposes a mapping from the original recipe reference (e.g., index or name+hash) to the generated recipeId for later meal linking.",
-            "status": "done",
-            "testStrategy": "Unit test with sample Claude outputs: verify that two recipes with identical name and ingredients collapse into one entry, recipeId matches the required format, crypto.randomUUID is called per unique recipe, and missing fields (e.g., no instructions or cost) are handled without throwing.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:07:55.245Z"
-          },
-          {
-            "id": 2,
-            "title": "Create meals array with meal IDs, recipe references, and servings calculation",
-            "description": "Using the deduplicated recipes and their IDs, implement creation of normalized meal objects that reference recipeId and compute servings from eaters data.",
-            "dependencies": [
-              1
-            ],
-            "details": "Extend transformGeneratedPlan to iterate over Claude's meal entries and create a flat meals[] collection. For each meal, generate a unique mealId (e.g., `meal_${crypto.randomUUID()}`), look up the correct recipeId from the recipe deduplication map, and attach any metadata such as meal type, day, or time if present. Implement servings calculation by deriving the servings count from the eaters array or equivalent field in claudeOutput (e.g., number of eaters assigned to that meal), falling back to a default (like 1) when data is missing. Ensure that meals with missing recipe data fail gracefully (skip or attach a null-safe placeholder) rather than crashing, and preserve a consistent normalized meal shape across all entries.",
-            "status": "done",
-            "testStrategy": "Unit test that meals are created for each input meal entry, each has a unique mealId, and all recipeId fields correspond to an existing recipe in the recipes array. Verify that when multiple eaters are attached to a meal, servings equals the eater count, and that when eaters are missing, a sensible default is used. Include a case where a meal references a non-existent recipe in the raw data and assert that the transformer handles it gracefully according to the chosen behavior (e.g., skipping or defaulting).",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:07:55.247Z"
-          },
-          {
-            "id": 3,
-            "title": "Assemble mealPlan object with weekOf, budget, and Zod validation",
-            "description": "Compose the final mealPlan structure including weekOf (next Saturday), aggregated budget.estimated, run Zod validation for recipes/meals/mealPlan, and return the normalized payload.",
-            "dependencies": [
-              1,
-              2
-            ],
-            "details": "In transformGeneratedPlan, compute weekOf by finding the calendar date of the next Saturday relative to the current date, format it consistently (e.g., ISO string), and build a mealPlan object that references this date and any other required metadata (such as label or createdAt if desired). Calculate budget.estimated as the sum of per-recipe costs derived from the normalized recipes array, guarding against missing or non-numeric cost fields by treating them as zero. Define Zod schemas for recipe, meal, and mealPlan objects (and possibly the overall return type) and validate the constructed data before returning. If validation fails, either throw a structured error or return a safe fallback according to project conventions, but never crash on minor missing optional fields. Finally, return an object of the form { recipes, meals, mealPlan } from the function.",
-            "status": "done",
-            "testStrategy": "Unit test end-to-end transformation: feed a valid Claude-style JSON and assert that the result matches the normalized shape, includes a weekOf date that is the next Saturday, and has budget.estimated equal to the sum of recipe costs. Add tests where some recipes lack cost to confirm they are treated as zero, and where the input violates the Zod schema to confirm that validation behavior (throw or safe fallback) works as designed.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:07:55.248Z"
-          }
-        ],
-        "complexity": 7,
-        "recommendedSubtasks": 3,
-        "expansionPrompt": "Break into: 1) Recipe extraction and deduplication by name+ingredients hash, 2) Meal creation with recipe ID references and servings calculation, 3) MealPlan assembly with weekOf/budget and Zod validation.",
-        "updatedAt": "2025-12-19T14:07:55.248Z"
+        "status": "pending",
+        "subtasks": []
       },
       {
-        "id": "31",
-        "title": "Update HomePage for Meal Plan Display",
-        "description": "Modify HomePage to show meal plan summary when exists, or generation prompt when no plan.",
-        "details": "Update src/components/HomePage.js. On load: check loadCurrentMealPlan(). State A (no plan): hero + 'Chat with Vanessa'. State B (has plan): header 'Your meal plan for [weekOf]', stats card (21 meals, $XX budget), buttons: 'View Shopping List' (placeholder), 'Chat with Vanessa', 'Generate New Week' (triggers generate). Use loadMeals(), loadRecipes() for counts. Responsive grid layout.",
-        "testStrategy": "Manual: no-plan state shows correctly, has-plan shows stats/buttons, 'Generate New Week' navigates to chat+generate, stats calculate correctly.",
+        "id": 38,
+        "title": "Create Settings Page",
+        "description": "Implement a unified settings page with sections for household members, meal planning preferences, and chat preferences.",
+        "details": "1. Create the SettingsPage component with the following structure:\n```javascript\nexport class SettingsPage {\n  constructor() {\n    this.state = {\n      eaters: [],\n      baseSpec: null,\n      activeSection: 'household' // or 'mealPlanning' or 'chatPreferences'\n    };\n  }\n  \n  beforeRender() {\n    this.state.eaters = loadEaters();\n    this.state.baseSpec = loadBaseSpecification();\n  }\n  \n  render() {\n    const container = document.createElement('div');\n    container.className = 'settings-page container mx-auto px-4 py-8';\n    \n    // Add section tabs\n    const tabs = this.renderTabs();\n    container.appendChild(tabs);\n    \n    // Render active section\n    const sectionContent = this.renderActiveSection();\n    container.appendChild(sectionContent);\n    \n    return container;\n  }\n  \n  renderTabs() {...}\n  renderActiveSection() {...}\n  renderHouseholdSection() {...}\n  renderMealPlanningSection() {...}\n  renderChatPreferencesSection() {...}\n  \n  afterRender() {\n    // Add event listeners\n  }\n}\n```\n\n2. Implement the three main sections:\n- Household section with eater management\n- Meal Planning section with budget, shopping day settings\n- Chat Preferences section with personality settings\n\n3. Add tab navigation between sections\n4. Implement form handling and validation\n5. Add success/error toast messages for actions\n6. Update router.js to include the settings route",
+        "testStrategy": "1. Test the rendering of the settings page with different state values\n2. Verify the tab navigation works correctly\n3. Test form submission and validation in each section\n4. Verify the success/error toast messages appear correctly\n5. Test the responsive design on mobile and desktop\n6. Verify that changes persist after page reload",
         "priority": "medium",
         "dependencies": [
-          "26",
-          "30"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Implement Conditional Rendering Logic for Meal Plan States",
-            "description": "Add useEffect to load current meal plan on component mount and implement conditional rendering for no-plan (hero + Chat button) vs has-plan states using loadCurrentMealPlan() from storage utils.",
-            "dependencies": [],
-            "details": "In HomePage.js: useState for mealPlan state, useEffect calls loadCurrentMealPlan(), use ternary or if-else to render State A (hero section + 'Chat with Vanessa') or State B placeholder. Follow React best practices for clean conditional logic outside JSX.",
-            "status": "done",
-            "testStrategy": "Manual: Verify no-plan shows hero+chat, has-plan shows summary skeleton, state updates correctly on load.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:09:20.379Z"
-          },
-          {
-            "id": 2,
-            "title": "Build Stats Card, Buttons, and Responsive Grid Layout",
-            "description": "Create has-plan UI with dynamic header, stats card using loadMeals()/loadRecipes() counts and budget, plus buttons for Shopping List (placeholder), Chat, Generate New Week (triggers generation).",
-            "dependencies": [
-              1
-            ],
-            "details": "Implement responsive CSS Grid/Flexbox layout. Stats: count meals (21), recipes, calculate budget total. Buttons: View Shopping List (alert/console placeholder), Chat with Vanessa (navigate/chat), Generate New Week (call generate function/navigate). Ensure mobile-first responsive design.",
-            "status": "done",
-            "testStrategy": "Manual: Stats display correct counts/budget, all buttons trigger correct actions, layout responsive across breakpoints, Generate button navigates properly.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:09:20.380Z"
-          }
-        ],
-        "complexity": 5,
-        "recommendedSubtasks": 2,
-        "expansionPrompt": "Divide into: 1) Conditional rendering logic for no-plan vs has-plan states using storage utils, 2) Stats calculation and responsive UI layout with buttons.",
-        "updatedAt": "2025-12-19T14:09:20.380Z"
-      },
-      {
-        "id": "32",
-        "title": "Add /generating Route to Router",
-        "description": "Extend router system to handle new /generating route mapping to GenerationStatusPage.",
-        "details": "Update src/utils/router.js. Add route: '/generating' → GenerationStatusPage. Ensure navigation from ChatWidget works. Preserve existing routes from Slice 1. Use same router pattern (history API or hash-based). Handle browser back button gracefully (don't lose generation state).",
-        "testStrategy": "Manual: navigate to /generating shows correct page, back button returns to chat, route conflicts don't break existing pages.",
-        "priority": "medium",
-        "dependencies": [
-          "28"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Review existing router implementation and routes in src/utils/router.js",
-            "description": "Inspect the current router implementation and all existing Slice 1 routes to understand the routing pattern (history API or hash-based), navigation helpers, and back-button handling.",
-            "dependencies": [],
-            "details": "Open src/utils/router.js and identify how routes are declared (e.g., route table, switch statement, or custom router object), what routing mechanism is used (window.history API vs. hashchange), and how navigation is triggered from components (e.g., custom navigate() function). Document the existing route paths (including the main chat route) and any logic related to preserving state and handling browser back/forward events so that the new /generating route can follow the same conventions.",
-            "status": "done",
-            "testStrategy": null,
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:06:06.474Z"
-          },
-          {
-            "id": 2,
-            "title": "Register /generating → GenerationStatusPage route in router configuration",
-            "description": "Add a new route entry mapping the /generating path to the GenerationStatusPage component using the same pattern as existing routes.",
-            "dependencies": [
-              1,
-              2
-            ],
-            "details": "In src/utils/router.js, import GenerationStatusPage from its defined path (e.g., src/components/GenerationStatusPage) and extend the router’s route map to include a '/generating' key pointing to GenerationStatusPage. Ensure the registration syntax (object map, array of routes, or JSX-based router) matches the existing implementation and does not modify or remove any pre-existing Slice 1 route definitions. Confirm that the new route participates in the same history or hash-based behavior already in use.",
-            "status": "done",
-            "testStrategy": null,
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:06:06.476Z"
-          },
-          {
-            "id": 3,
-            "title": "Enable navigation from ChatWidget to /generating route",
-            "description": "Wire the ChatWidget component (or related trigger) to navigate programmatically to /generating when meal plan generation starts or when appropriate.",
-            "dependencies": [
-              1,
-              2
-            ],
-            "details": "Locate the ChatWidget component and identify where generation is initiated or where the UI should transition to the generation status view. Use the existing navigation helper (e.g., navigate('/generating') or history.push('/generating')) provided by src/utils/router.js to route to '/generating'. Ensure that the call site follows the established pattern for navigation from other components and does not break the chat flow or event handling.",
-            "status": "done",
-            "testStrategy": null,
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:06:06.478Z"
-          },
-          {
-            "id": 4,
-            "title": "Verify back-button behavior and generation state preservation for /generating",
-            "description": "Ensure that when users navigate to /generating and then use the browser back button, navigation returns to the previous chat page without losing in-progress generation state.",
-            "dependencies": [
-              2,
-              3
-            ],
-            "details": "Manually test the flow: navigate from the chat page to /generating via ChatWidget, then use the browser back button and confirm the app returns to the chat route while preserving any relevant generation state (e.g., stored in context, Redux, or localStorage). If needed, adjust router popstate/hashchange handling or state management integration so that back/forward navigation does not reset or discard the in-progress generation status. Keep any modifications consistent with existing Slice 1 back-button handling logic.",
-            "status": "done",
-            "testStrategy": "Manual: start generation from chat, confirm navigation to /generating, click browser Back, verify return to chat with generation state intact and no full reload or unexpected resets.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:06:06.479Z"
-          },
-          {
-            "id": 5,
-            "title": "Regression test all routes including new /generating mapping",
-            "description": "Perform a focused regression pass on the routing system to ensure existing routes still function and that /generating behaves correctly in combination with them.",
-            "dependencies": [
-              2,
-              3,
-              4
-            ],
-            "details": "Manually navigate to all known Slice 1 routes using both direct URL entry and in-app links, confirming pages render as before. Test entering /generating directly in the browser address bar, navigating between chat and /generating multiple times, and using browser back/forward across different routes. Check that there are no unexpected 404s, rendering errors, or route conflicts and that the router mechanism (history or hash) behaves uniformly across all routes, including the new /generating route.",
-            "status": "done",
-            "testStrategy": "Manual: smoke-test every defined route, direct-load /generating, and use Back/Forward to move between chat, /generating, and at least one other existing route to confirm no regressions.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:06:06.481Z"
-          }
-        ],
-        "complexity": 3,
-        "recommendedSubtasks": 0,
-        "expansionPrompt": "",
-        "updatedAt": "2025-12-19T14:06:06.481Z"
-      },
-      {
-        "id": "33",
-        "title": "Save Generated Data to localStorage on Completion",
-        "description": "Automatically persist complete meal plan data using storage utilities when generation finishes.",
-        "details": "In GenerationStatusPage 'complete' handler: call saveRecipes(data.recipes), saveMeals(data.meals), saveCurrentMealPlan(data.mealPlan). Dispatch custom event 'plan-generated'. Use safeSave() with ErrorHandler.handleStorageError(). Validate data before save using Zod schemas matching PRD.",
-        "testStrategy": "Integration: after complete SSE, verify localStorage contains 'recipes','meals','currentMealPlan' with correct data, quota error shows warning.",
-        "priority": "medium",
-        "dependencies": [
-          "26",
-          "30",
-          "28"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Review GenerationStatusPage complete handler and data shape",
-            "description": "Inspect the existing GenerationStatusPage component and its SSE 'complete' event handler to understand the structure of data.recipes, data.meals, and data.mealPlan and how they map to PRD requirements.",
-            "dependencies": [],
-            "details": "Open src/components/GenerationStatusPage.js (or equivalent) and locate the SSE 'complete' event handler. Confirm the payload shape for data.recipes, data.meals, and data.mealPlan coming from /api/generate-meal-plan. Cross-check these structures against the PRD so you know what the Zod schemas must validate and what the storage utilities must accept. Document any mismatches or assumptions in comments for later adjustment.",
-            "status": "done",
-            "testStrategy": null,
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:08:29.266Z"
-          },
-          {
-            "id": 2,
-            "title": "Define or update Zod schemas for recipes, meals, and mealPlan data",
-            "description": "Create or refine Zod schemas that validate the recipes, meals, and mealPlan objects returned on completion, ensuring they match the PRD data contract.",
-            "dependencies": [
-              1
-            ],
-            "details": "In the shared validation module (or a new file if needed), add or update Zod schemas for Recipe, Meal, and MealPlan collections that match the PRD fields and types. Export schemas such as RecipesSchema, MealsSchema, CurrentMealPlanSchema. Ensure schemas accept exactly the fields produced by the generate-meal-plan endpoint and used by the UI. Include safe defaults and narrowing (e.g., enums) where specified by the PRD so invalid payloads can be rejected before storage.",
-            "status": "done",
-            "testStrategy": null,
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:08:29.267Z"
-          },
-          {
-            "id": 3,
-            "title": "Integrate Zod validation into GenerationStatusPage complete handler",
-            "description": "Apply the Zod schemas to validate SSE completion data before attempting to save it to localStorage.",
-            "dependencies": [
-              2
-            ],
-            "details": "In GenerationStatusPage's 'complete' handler, import the Zod schemas and validate data.recipes, data.meals, and data.mealPlan. Use safeParse or try/catch around schema.parse to avoid throwing unhandled errors. If validation fails, log or surface an appropriate error via existing ErrorHandler patterns and skip persisting invalid sections. Keep the validation logic small and focused, reusing any shared helpers for schema validation if the project already has them.",
-            "status": "done",
-            "testStrategy": null,
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:08:29.268Z"
-          },
-          {
-            "id": 4,
-            "title": "Wire storage utilities with safeSave and storage error handling",
-            "description": "Call saveRecipes, saveMeals, and saveCurrentMealPlan using safeSave and ErrorHandler.handleStorageError within the complete handler to persist validated data.",
-            "dependencies": [
-              3
-            ],
-            "details": "Import saveRecipes, saveMeals, saveCurrentMealPlan, safeSave, and ErrorHandler.handleStorageError into GenerationStatusPage. In the 'complete' handler, after successful validation, wrap each storage call in safeSave so quota and other storage errors are caught. On failure, call ErrorHandler.handleStorageError() with the thrown error and a suitable context message. Ensure storage keys and formats match existing conventions (e.g., 'recipes', 'meals', 'currentMealPlan') and that saves are independent so one failure does not prevent others from being attempted.",
-            "status": "done",
-            "testStrategy": null,
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:08:29.269Z"
-          },
-          {
-            "id": 5,
-            "title": "Dispatch plan-generated event and verify end-to-end behavior",
-            "description": "Emit a custom 'plan-generated' event after successful saves and confirm that localStorage and event consumers behave as expected.",
-            "dependencies": [
-              4
-            ],
-            "details": "At the end of the 'complete' handler, after attempting storage operations, dispatch a CustomEvent('plan-generated', { detail: { recipes, meals, mealPlan } }) on window or the agreed event target. Then perform the integration testing described in the parent task: trigger a full SSE generation flow, confirm that localStorage contains the expected 'recipes', 'meals', and 'currentMealPlan' entries with correct serialized data, and verify that quota errors surface via the error handler (e.g., user-visible warning). If other components listen for 'plan-generated', confirm they react correctly without breaking navigation or status display.",
-            "status": "done",
-            "testStrategy": "Manual/integration: run generation flow, inspect localStorage keys and values, simulate storage quota or unavailable storage (e.g., using dev tools) to ensure ErrorHandler is called, and listen for the 'plan-generated' event in a simple test listener to confirm it fires with the correct detail payload.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:08:29.270Z"
-          }
-        ],
-        "complexity": 4,
-        "recommendedSubtasks": 0,
-        "expansionPrompt": "",
-        "updatedAt": "2025-12-19T14:08:29.270Z"
-      },
-      {
-        "id": "34",
-        "title": "Implement Error Handling and Retry Logic",
-        "description": "Add comprehensive error handling for generation failures, storage errors, and network issues.",
-        "details": "Extend GenerationStatusPage: SSE 'error'→show retry button + message. Retry: reconnect SSE with same POST body. Storage errors→ErrorHandler.handleStorageError(). Timeout (60s)→show 'Generation taking longer...' + retry. Network errors→'Connection lost, retry?'. Log all errors to console with structured data. Add 'Start Over' button clears state, navigates to '/'.",
-        "testStrategy": "Manual: simulate SSE error→retry works, storage quota exceeded→warning shown, network disconnect→retry available, timeout→retry button appears.",
-        "priority": "medium",
-        "dependencies": [
-          "28",
-          "33"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Implement SSE error UI, retry button, and reconnection with preserved POST body",
-            "description": "Extend GenerationStatusPage to handle SSE 'error' events by showing a clear error message and retry button, and on retry reconnect to the SSE endpoint using the original POST body.",
-            "dependencies": [],
-            "details": "Update GenerationStatusPage to subscribe to SSE error events and, when triggered, display an inline error state with a descriptive message and a dedicated Retry button. Store the original POST body used to initiate the SSE connection so that clicking Retry reconstructs and reopens the SSE connection using the same payload. Ensure the UI state (loading/progress indicators) resets appropriately on retry. Keep the implementation consistent with existing SSE wiring and state management patterns already used in the page.",
-            "status": "done",
-            "testStrategy": "Manually induce an SSE error (e.g., via mocked endpoint or dev tools) and verify that the error message and Retry button appear, that clicking Retry re-establishes the SSE connection with the same POST body, and that progress updates resume normally.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:10:00.925Z"
-          },
-          {
-            "id": 2,
-            "title": "Add timeout, network, and storage error handling with logging and 'Start Over' behavior",
-            "description": "Implement 60s timeout handling, network error messaging, storage error delegation to ErrorHandler.handleStorageError, structured console logging, and a 'Start Over' button that clears state and navigates to the home route.",
-            "dependencies": [
-              1
-            ],
-            "details": "Introduce a 60-second timer around the generation flow; when exceeded, transition the UI to a timeout state that shows a 'Generation taking longer...' message and offers a Retry option. Detect network-level failures during SSE or related requests and present a 'Connection lost, retry?' message with a retry action. For any storage-related failures encountered while saving generation results or related data, call ErrorHandler.handleStorageError() and surface any necessary user feedback according to existing patterns. For every error type (SSE, timeout, network, storage), log a structured object to console (including type, message, stack or raw error, and relevant context such as request body or timestamps). Add a 'Start Over' button that clears all in-memory generation status/state for the page and programmatically navigates the user back to the '/' route, ensuring no stale error or progress state persists.",
-            "status": "done",
-            "testStrategy": "Manually simulate: (1) a long-running generation that exceeds 60 seconds and verify the timeout message, logging, and retry behavior; (2) a network disconnect or failed request to confirm the 'Connection lost, retry?' UI and structured logs; (3) a storage quota or write error to ensure ErrorHandler.handleStorageError is invoked and errors are logged; and (4) use the 'Start Over' button to confirm state is reset and navigation to '/' occurs without residual UI state.",
-            "parentId": "undefined",
-            "updatedAt": "2025-12-19T14:10:00.926Z"
-          }
-        ],
-        "complexity": 6,
-        "recommendedSubtasks": 2,
-        "expansionPrompt": "Split into: 1) SSE error/retry UI and reconnection logic, 2) Timeout, network, and storage error handling with logging and 'Start Over' functionality.",
-        "updatedAt": "2025-12-19T14:10:00.926Z"
-      },
-      {
-        "id": "35",
-        "title": "End-to-End Testing and Polish",
-        "description": "Test complete generation flow, add UI polish, and handle edge cases per testing strategy.",
-        "details": "Test full flow: chat→generate→progress→plan display. Edge cases: rapid double-click generate (debounce), corrupt Claude JSON (fallback message), multiple generations (overwrite currentPlan), offline viewing (load existing plan). UI polish: smooth progress animations (CSS @keyframes), loading skeletons, responsive design. Add custom event listeners for 'plan-generated' across components.",
-        "testStrategy": "E2E manual: happy path 3x, double-click generate, network disconnect mid-stream, storage quota full, corrupt API response, browser refresh during generation.",
-        "priority": "low",
-        "dependencies": [
-          "27",
-          "28",
-          "29",
-          "30",
-          "31",
-          "32",
-          "33",
-          "34"
+          36,
+          37
         ],
         "status": "pending",
         "subtasks": [
           {
             "id": 1,
-            "title": "Perform E2E flow testing for happy paths and critical edge cases",
-            "description": "Manually exercise the complete chat→generate→progress→plan display flow several times, validating that it behaves correctly for the happy path and for all specified edge cases.",
+            "title": "Implement Settings Page Structure and Navigation",
+            "description": "Create the basic structure of the Settings Page component with tab navigation between the three main sections.",
             "dependencies": [],
-            "details": "Run the full generation flow end-to-end at least three times for the happy path, verifying SSE progress updates, status transitions, and final plan rendering. Then manually test each edge case from the test strategy: rapid double-click on generate (debounce prevents duplicate requests), corrupt or malformed Claude JSON response (fallback message shown without breaking UI), multiple consecutive generations (currentPlan is correctly overwritten and old state cleared), offline or network disconnect scenarios mid-stream (existing plan loaded or appropriate retry/timeout messaging shown), storage quota full and browser refresh during generation. Document observed behavior and create or update bug tickets for any deviations from expected outcomes.",
+            "details": "Create the SettingsPage component with the basic structure as outlined in the task. Implement the renderTabs() method to create the navigation tabs for Household, Meal Planning, and Chat Preferences sections. Set up the tab switching logic in the renderActiveSection() method to display the appropriate section based on the activeSection state. Add event listeners in afterRender() to handle tab switching.",
             "status": "pending",
-            "testStrategy": "Manual E2E execution using browser devtools and network throttling to simulate errors, following the defined test strategy items one by one and logging pass/fail per scenario.",
-            "parentId": "undefined"
+            "testStrategy": "Test that the page renders correctly with the tabs visible. Verify that clicking on each tab changes the active section. Test that the active tab is visually highlighted."
           },
           {
             "id": 2,
-            "title": "Apply and verify UI polish for progress, skeletons, and responsiveness",
-            "description": "Refine and test the UI polish aspects of the generation flow, including animations, loading skeletons, and responsive layout behavior across viewports.",
+            "title": "Implement Household Section",
+            "description": "Create the household section with functionality to manage household members (eaters).",
             "dependencies": [
               1
             ],
-            "details": "Implement or fine-tune CSS @keyframes for smooth progress bar and status transitions on the GenerationStatusPage and any related components. Add or adjust loading skeleton components for chat, progress view, and final plan display to ensure visually consistent placeholders while data loads. Verify responsive layouts on common breakpoints (mobile, tablet, desktop), checking that progress indicators, buttons, and plan cards do not overflow or overlap. Confirm that animations perform smoothly without jank and that they do not interfere with accessibility (e.g., reduced motion preferences if supported). Capture before/after screenshots or video for future regression comparison.",
+            "details": "Implement the renderHouseholdSection() method to display the list of household members (eaters). Add functionality to add, edit, and remove household members. Include form fields for name, dietary restrictions, allergies, and preferences. Implement validation for required fields. Connect to the loadEaters() function to retrieve existing data and add functions to save changes to storage.",
             "status": "pending",
-            "testStrategy": "Manual visual QA across multiple viewport sizes and browsers, validating animations, skeleton states, and responsive layout with browser devtools and design checklist.",
-            "parentId": "undefined"
+            "testStrategy": "Test adding, editing, and removing household members. Verify form validation works correctly. Test that changes persist after page reload."
           },
           {
             "id": 3,
-            "title": "Integrate and test event listeners and debouncing across components",
-            "description": "Wire up custom 'plan-generated' event listeners across components and ensure debounced generate actions prevent duplicate flows.",
+            "title": "Implement Meal Planning Section",
+            "description": "Create the meal planning preferences section with budget and shopping day settings.",
+            "dependencies": [
+              1
+            ],
+            "details": "Implement the renderMealPlanningSection() method to display form fields for meal planning preferences. Include settings for weekly budget, preferred shopping day, number of meals per week, and dietary focus. Connect to the loadBaseSpecification() function to retrieve existing preferences and implement functions to save changes to storage. Add validation for numeric fields like budget.",
+            "status": "pending",
+            "testStrategy": "Test that meal planning preferences can be set and saved. Verify validation for budget and other numeric fields. Test that changes persist after page reload."
+          },
+          {
+            "id": 4,
+            "title": "Implement Chat Preferences Section",
+            "description": "Create the chat preferences section with settings for AI personality and interaction style.",
+            "dependencies": [
+              1
+            ],
+            "details": "Implement the renderChatPreferencesSection() method to display form fields for chat preferences. Include settings for AI personality (formal, casual, etc.), verbosity level, and preferred interaction style. Add radio buttons or dropdowns for selection options. Implement functions to save these preferences to storage and load existing preferences when the section is displayed.",
+            "status": "pending",
+            "testStrategy": "Test that chat preferences can be set and saved. Verify that all options are selectable. Test that changes persist after page reload."
+          },
+          {
+            "id": 5,
+            "title": "Add Form Handling, Validation and Route Integration",
+            "description": "Implement form submission handling, validation, success/error messages, and integrate with the router.",
+            "dependencies": [
+              2,
+              3,
+              4
+            ],
+            "details": "Add form submission handlers for all three sections. Implement client-side validation for required fields and data types. Create toast notification components for success and error messages. Update the router.js file to include the settings route and link it to the SettingsPage component. Test the entire page flow to ensure all sections work together correctly and that navigation between sections preserves form state.",
+            "status": "pending",
+            "testStrategy": "Test form submission in all sections. Verify validation errors display correctly. Test success and error toast messages. Verify the settings page is accessible via the router and that navigation works correctly."
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "title": "Implement Onboarding Conversation Flow",
+        "description": "Create a guided onboarding conversation flow where Vanessa asks new users a series of questions to set up their profile.",
+        "details": "1. Update the ChatWidget to detect first-time users:\n```javascript\nafterRender() {\n  const baseSpec = loadBaseSpecification();\n  if (!baseSpec || !baseSpec.onboardingComplete) {\n    this.startOnboarding();\n  }\n}\n\nstartOnboarding() {\n  this.open(); // Open chat widget\n  this.showWelcomeMessage();\n}\n\nshowWelcomeMessage() {\n  // Add welcome message to chat\n  this.addMessage({\n    role: 'assistant',\n    content: 'Hi! I\\'m Vanessa, your meal planning assistant. Let\\'s set up your profile with a few quick questions.',\n    timestamp: new Date().toISOString()\n  });\n  \n  // Start onboarding sequence\n  this.askOnboardingQuestion(0);\n}\n```\n\n2. Implement the onboarding question sequence:\n```javascript\nconst onboardingQuestions = [\n  'What are your main dietary goals? (e.g., lose weight, eat healthier, follow a specific diet)',\n  'Are there any foods you don\\'t eat or want to avoid?',\n  'Do you cook for anyone else, like family members with different preferences?',\n  'What\\'s your weekly grocery budget?',\n  'Which day do you usually do your grocery shopping?'\n];\n\naskOnboardingQuestion(index) {\n  if (index >= onboardingQuestions.length) {\n    this.completeOnboarding();\n    return;\n  }\n  \n  setTimeout(() => {\n    this.addMessage({\n      role: 'assistant',\n      content: onboardingQuestions[index],\n      timestamp: new Date().toISOString()\n    });\n  }, 1000); // Slight delay for better UX\n}\n```\n\n3. Implement response handling to store answers:\n```javascript\nhandleOnboardingResponse(index, response) {\n  const baseSpec = loadBaseSpecification() || createDefaultBaseSpec();\n  \n  switch(index) {\n    case 0: // Dietary goals\n      baseSpec.dietaryGoals = response;\n      break;\n    case 1: // Food restrictions\n      const owner = loadEaters().find(e => e.isDefault) || createDefaultEater();\n      owner.preferences = response;\n      saveEaters([owner]);\n      break;\n    // Handle other questions...\n  }\n  \n  saveBaseSpecification(baseSpec);\n  this.askOnboardingQuestion(index + 1);\n}\n\ncompleteOnboarding() {\n  const baseSpec = loadBaseSpecification();\n  baseSpec.onboardingComplete = true;\n  saveBaseSpecification(baseSpec);\n  \n  this.addMessage({\n    role: 'assistant',\n    content: 'Perfect! You\\'re all set. Click Generate Week whenever you\\'re ready to create your first meal plan.',\n    timestamp: new Date().toISOString()\n  });\n}\n```\n\n4. Update the system prompt to include onboarding context\n5. Add logic to detect and handle profile update requests in chat",
+        "testStrategy": "1. Test the onboarding flow with a new user (no existing profile)\n2. Verify each question is asked in sequence\n3. Test the storage of responses in the correct fields\n4. Verify the onboardingComplete flag is set correctly\n5. Test the flow with different user responses\n6. Verify the chat history is preserved during onboarding\n7. Test edge cases like page reload during onboarding",
+        "priority": "high",
+        "dependencies": [
+          36,
+          37
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement first-time user detection and welcome message",
+            "description": "Update the ChatWidget to detect first-time users and display a welcome message to start the onboarding process.",
+            "dependencies": [],
+            "details": "Modify the ChatWidget component to check if a user is new by examining the baseSpec.onboardingComplete flag. Implement the afterRender(), startOnboarding(), and showWelcomeMessage() methods to detect new users, open the chat widget automatically, and display the initial welcome message from Vanessa. Ensure the welcome message is properly formatted and includes an introduction to the onboarding process.",
+            "status": "pending",
+            "testStrategy": "Test with both new and existing users to verify correct detection. Verify the chat widget opens automatically for new users. Confirm the welcome message appears with correct formatting and content."
+          },
+          {
+            "id": 2,
+            "title": "Create onboarding question sequence and timing logic",
+            "description": "Implement the sequence of onboarding questions with appropriate timing for a natural conversation flow.",
+            "dependencies": [
+              1
+            ],
+            "details": "Define the array of onboardingQuestions covering dietary goals, food preferences, household members, budget, and shopping day. Implement the askOnboardingQuestion() method to display questions sequentially with a slight delay between questions for better user experience. Add logic to handle the end of the question sequence by calling completeOnboarding() when all questions have been asked.",
+            "status": "pending",
+            "testStrategy": "Verify all questions display in the correct sequence. Test the timing between questions for natural conversation flow. Confirm the completion function is called after the last question."
+          },
+          {
+            "id": 3,
+            "title": "Implement response handling and data storage",
+            "description": "Create handlers to process user responses to onboarding questions and store the information in the appropriate data structures.",
+            "dependencies": [
+              2
+            ],
+            "details": "Implement the handleOnboardingResponse() method to process user answers based on the question index. Update the BaseSpecification with dietary goals, shopping day, and budget information. Create or update the default Eater with food preferences and restrictions. Ensure all responses are properly saved using the existing storage utilities (saveBaseSpecification, saveEaters). Advance to the next question after storing each response.",
+            "status": "pending",
+            "testStrategy": "Test storage of each response type in the correct data structure. Verify the BaseSpecification and Eater objects are updated correctly. Test with various response formats including edge cases."
+          },
+          {
+            "id": 4,
+            "title": "Implement onboarding completion and system prompt updates",
+            "description": "Finalize the onboarding process by marking it complete and updating the system prompt with user context.",
+            "dependencies": [
+              3
+            ],
+            "details": "Implement the completeOnboarding() method to set the onboardingComplete flag to true in the BaseSpecification. Display a completion message to the user confirming their profile is set up. Update the system prompt used for chat interactions to include the user's profile information (dietary goals, preferences, etc.) for more personalized responses. Add logic to detect and handle profile update requests in future chat conversations.",
+            "status": "pending",
+            "testStrategy": "Verify the onboardingComplete flag is set correctly. Test the completion message display. Confirm the system prompt includes user profile information. Test profile update requests through chat to ensure they modify the correct data."
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "title": "Implement Recipe Library Page",
+        "description": "Create a recipe library page where users can browse, search, and filter all saved recipes.",
+        "details": "1. Create the RecipeLibraryPage component:\n```javascript\nexport class RecipeLibraryPage {\n  constructor() {\n    this.state = {\n      recipes: [],\n      filteredRecipes: [],\n      searchQuery: '',\n      activeFilter: 'all'\n    };\n  }\n  \n  beforeRender() {\n    this.state.recipes = loadRecipes();\n    this.applyFilters();\n  }\n  \n  applyFilters() {\n    let filtered = [...this.state.recipes];\n    \n    // Apply search filter\n    if (this.state.searchQuery) {\n      const query = this.state.searchQuery.toLowerCase();\n      filtered = filtered.filter(recipe => {\n        return recipe.name.toLowerCase().includes(query) ||\n          recipe.ingredients.some(i => i.name.toLowerCase().includes(query)) ||\n          recipe.tags.some(tag => tag.toLowerCase().includes(query));\n      });\n    }\n    \n    // Apply category filter\n    const filters = {\n      'all': (recipe) => true,\n      'favorites': (recipe) => recipe.isFavorite === true,\n      'high-rated': (recipe) => recipe.rating >= 4,\n      'most-cooked': (recipe) => recipe.timesCooked >= 3\n    };\n    \n    filtered = filtered.filter(filters[this.state.activeFilter] || filters.all);\n    \n    // Sort: most cooked first, then alphabetical\n    filtered.sort((a, b) => {\n      if (a.timesCooked !== b.timesCooked) {\n        return b.timesCooked - a.timesCooked;\n      }\n      return a.name.localeCompare(b.name);\n    });\n    \n    this.state.filteredRecipes = filtered;\n  }\n  \n  render() {\n    const container = document.createElement('div');\n    container.className = 'recipe-library container mx-auto px-4 py-8';\n    \n    // Add search bar\n    container.appendChild(this.renderSearchBar());\n    \n    // Add filter tabs\n    container.appendChild(this.renderFilterTabs());\n    \n    // Add recipe grid\n    container.appendChild(this.renderRecipeGrid());\n    \n    return container;\n  }\n  \n  renderSearchBar() {...}\n  renderFilterTabs() {...}\n  renderRecipeGrid() {...}\n  renderRecipeCard(recipe) {...}\n  renderEmptyState() {...}\n  \n  afterRender() {\n    // Add event listeners for search and filters\n  }\n}\n```\n\n2. Implement the search functionality with debounce:\n```javascript\nhandleSearch(event) {\n  clearTimeout(this.searchTimeout);\n  this.searchTimeout = setTimeout(() => {\n    this.state.searchQuery = event.target.value;\n    this.applyFilters();\n    this.updateRecipeGrid();\n  }, 300);\n}\n```\n\n3. Create recipe card components with:\n- Recipe name\n- Emoji placeholder for image\n- Cook time and servings\n- Star rating display\n- Favorite indicator\n- Times cooked count\n\n4. Implement empty states for different scenarios:\n- No recipes yet\n- No search results\n- No favorites\n\n5. Update router.js to include the recipes route",
+        "testStrategy": "1. Test the recipe library page rendering with different numbers of recipes\n2. Verify the search functionality works with different queries\n3. Test the filter tabs for each category\n4. Verify the sorting order is correct\n5. Test the empty states for different scenarios\n6. Verify the recipe cards display all information correctly\n7. Test the responsive design on mobile and desktop",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Search Bar and Filter Tabs",
+            "description": "Create the search bar with debounce functionality and filter tabs for the recipe library page.",
+            "dependencies": [],
+            "details": "Implement the renderSearchBar() method with proper styling and debounce functionality. Create the renderFilterTabs() method with tabs for 'all', 'favorites', 'high-rated', and 'most-cooked' categories. Ensure both components update the state and trigger re-rendering of the recipe grid when changed. Include proper event listeners in the afterRender() method.",
+            "status": "pending",
+            "testStrategy": "Test search functionality with various queries to ensure debounce works correctly. Verify filter tabs correctly filter recipes based on their categories. Test edge cases like empty search queries and switching between filters."
+          },
+          {
+            "id": 2,
+            "title": "Implement Recipe Card Component",
+            "description": "Create the recipe card component that displays recipe information in a visually appealing way.",
+            "dependencies": [
+              1
+            ],
+            "details": "Implement the renderRecipeCard(recipe) method to create a card showing recipe name, emoji placeholder for image, cook time, servings, star rating display, favorite indicator, and times cooked count. Style the cards with CSS grid or flexbox for responsive layout. Add click event listeners to navigate to the recipe detail page when a card is clicked.",
+            "status": "pending",
+            "testStrategy": "Test rendering of recipe cards with various recipe data. Verify all information displays correctly. Test responsiveness on different screen sizes. Ensure click events properly navigate to the detail page."
+          },
+          {
+            "id": 3,
+            "title": "Implement Recipe Grid Layout",
+            "description": "Create the grid layout for displaying recipe cards with proper spacing and responsiveness.",
+            "dependencies": [
+              2
+            ],
+            "details": "Implement the renderRecipeGrid() method to create a responsive grid layout for recipe cards. Use CSS grid or flexbox to ensure proper spacing and alignment. Handle different screen sizes with media queries. Implement pagination or infinite scrolling if there are many recipes. Ensure the grid updates when filters or search queries change.",
+            "status": "pending",
+            "testStrategy": "Test the grid layout with different numbers of recipes (0, few, many). Verify responsiveness on different screen sizes. Test that the grid updates correctly when filters or search queries change."
+          },
+          {
+            "id": 4,
+            "title": "Implement Empty States",
+            "description": "Create empty state displays for when there are no recipes, no search results, or no favorites.",
+            "dependencies": [
+              3
+            ],
+            "details": "Implement the renderEmptyState() method to display appropriate messages and visuals when there are no recipes to show. Create different messages for: 'No recipes yet' (when the library is empty), 'No search results' (when search returns nothing), and 'No favorites' (when favorites filter has no results). Include helpful suggestions or calls-to-action in each empty state.",
+            "status": "pending",
+            "testStrategy": "Test each empty state scenario to ensure the correct message displays. Verify that empty states are triggered appropriately based on the current filter and search query. Test that calls-to-action in empty states work correctly."
+          },
+          {
+            "id": 5,
+            "title": "Update Router and Integration",
+            "description": "Update the router to include the recipe library page and integrate with the rest of the application.",
+            "dependencies": [
+              4
+            ],
+            "details": "Update router.js to include the recipes route that renders the RecipeLibraryPage component. Ensure proper navigation between the recipe library and other pages. Add navigation links to the recipe library from relevant parts of the application. Test the complete integration of the recipe library page with the rest of the application, including navigation flow and state persistence.",
+            "status": "pending",
+            "testStrategy": "Test navigation to and from the recipe library page. Verify that the page state persists correctly when navigating away and back. Test integration with other components that might interact with the recipe library."
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "title": "Implement Recipe Detail Page",
+        "description": "Create a detailed view for individual recipes with rating, favorite toggle, and complete recipe information.",
+        "details": "1. Create the RecipeDetailPage component:\n```javascript\nexport class RecipeDetailPage {\n  constructor(params) {\n    this.recipeId = params.id;\n    this.state = {\n      recipe: null,\n      loading: true,\n      error: null\n    };\n  }\n  \n  beforeRender() {\n    const recipes = loadRecipes();\n    this.state.recipe = recipes.find(r => r.recipeId === this.recipeId);\n    this.state.loading = false;\n    \n    if (!this.state.recipe) {\n      this.state.error = 'Recipe not found';\n    }\n  }\n  \n  render() {\n    const container = document.createElement('div');\n    container.className = 'recipe-detail container mx-auto px-4 py-8';\n    \n    if (this.state.loading) {\n      container.innerHTML = '<div class=\"loading\">Loading recipe...</div>';\n      return container;\n    }\n    \n    if (this.state.error) {\n      container.innerHTML = `<div class=\"error\">${this.state.error}</div>`;\n      return container;\n    }\n    \n    // Render recipe details\n    container.appendChild(this.renderHeader());\n    container.appendChild(this.renderMetaInfo());\n    container.appendChild(this.renderIngredients());\n    container.appendChild(this.renderInstructions());\n    container.appendChild(this.renderTags());\n    \n    return container;\n  }\n  \n  renderHeader() {\n    const header = document.createElement('div');\n    header.className = 'recipe-header flex items-center justify-between mb-6';\n    \n    // Back button\n    const backBtn = document.createElement('button');\n    backBtn.className = 'back-btn text-blue-500';\n    backBtn.innerHTML = '&larr; Back to Recipes';\n    backBtn.onclick = () => window.location.hash = '#/recipes';\n    \n    // Recipe title\n    const title = document.createElement('h1');\n    title.className = 'text-3xl font-bold';\n    title.textContent = this.state.recipe.name;\n    \n    // Favorite toggle\n    const favBtn = document.createElement('button');\n    favBtn.className = 'fav-btn text-2xl';\n    favBtn.innerHTML = this.state.recipe.isFavorite ? '❤️' : '🤍';\n    favBtn.onclick = () => this.toggleFavorite();\n    \n    // Star rating\n    const rating = document.createElement('div');\n    rating.className = 'rating flex';\n    rating.appendChild(this.renderStarRating());\n    \n    header.appendChild(backBtn);\n    header.appendChild(title);\n    header.appendChild(favBtn);\n    header.appendChild(rating);\n    \n    return header;\n  }\n  \n  renderStarRating() {...}\n  renderMetaInfo() {...}\n  renderIngredients() {...}\n  renderInstructions() {...}\n  renderTags() {...}\n  \n  toggleFavorite() {\n    const recipes = loadRecipes();\n    const index = recipes.findIndex(r => r.recipeId === this.recipeId);\n    \n    if (index !== -1) {\n      recipes[index].isFavorite = !recipes[index].isFavorite;\n      saveRecipes(recipes);\n      this.state.recipe = recipes[index];\n      this.updateFavoriteButton();\n    }\n  }\n  \n  updateRating(rating) {\n    const recipes = loadRecipes();\n    const index = recipes.findIndex(r => r.recipeId === this.recipeId);\n    \n    if (index !== -1) {\n      recipes[index].rating = rating;\n      saveRecipes(recipes);\n      this.state.recipe = recipes[index];\n      this.updateRatingDisplay();\n    }\n  }\n}\n```\n\n2. Implement the star rating component with click handlers:\n```javascript\nrenderStarRating() {\n  const container = document.createElement('div');\n  container.className = 'star-rating flex';\n  \n  for (let i = 1; i <= 5; i++) {\n    const star = document.createElement('span');\n    star.className = 'star text-2xl cursor-pointer';\n    star.textContent = i <= (this.state.recipe.rating || 0) ? '⭐' : '☆';\n    star.dataset.value = i;\n    star.onclick = () => this.updateRating(i);\n    container.appendChild(star);\n  }\n  \n  return container;\n}\n```\n\n3. Create sections for displaying:\n- Meta information (prep time, cook time, servings)\n- Ingredients grouped by category\n- Step-by-step instructions\n- Tags as clickable chips\n\n4. Implement the favorite toggle functionality\n5. Add usage history display (times cooked, last cooked)\n6. Update router.js to handle the recipe/:id route",
+        "testStrategy": "1. Test the recipe detail page rendering with different recipes\n2. Verify the favorite toggle functionality works\n3. Test the star rating system\n4. Verify the back button navigation\n5. Test the page with missing recipe ID\n6. Verify all recipe information is displayed correctly\n7. Test the responsive design on mobile and desktop",
+        "priority": "medium",
+        "dependencies": [
+          40
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Recipe Header with Favorite Toggle",
+            "description": "Create the header section of the recipe detail page with title, back button, and favorite toggle functionality.",
+            "dependencies": [],
+            "details": "Complete the renderHeader() method to display the recipe title, back button, and favorite toggle. Implement the toggleFavorite() function to update the recipe's favorite status in local storage. Ensure the favorite button UI updates when toggled between favorite and non-favorite states. Add appropriate styling for the header section using the provided class names.",
+            "status": "pending",
+            "testStrategy": "Test the back button navigation to ensure it returns to the recipe list. Verify the favorite toggle correctly updates the recipe's favorite status in local storage. Test the UI update when toggling favorite status."
+          },
+          {
+            "id": 2,
+            "title": "Implement Star Rating Component",
+            "description": "Complete the star rating component with interactive functionality to allow users to rate recipes.",
+            "dependencies": [
+              1
+            ],
+            "details": "Finish the renderStarRating() method to display the current recipe rating using star icons. Implement the updateRating() function to save the new rating to local storage when a user clicks on a star. Ensure the star display updates immediately after a rating change. Add hover effects to indicate which rating will be selected before clicking.",
+            "status": "pending",
+            "testStrategy": "Test rating updates with different values (1-5). Verify the rating is saved correctly to local storage. Test the UI update when changing ratings. Verify hover effects work correctly."
+          },
+          {
+            "id": 3,
+            "title": "Implement Recipe Content Sections",
+            "description": "Create the content sections for displaying recipe details including meta information, ingredients, instructions, and tags.",
+            "dependencies": [
+              1
+            ],
+            "details": "Complete the renderMetaInfo() method to display preparation time, cooking time, and servings. Implement renderIngredients() to show ingredients grouped by category with appropriate formatting. Create renderInstructions() to display step-by-step cooking instructions with numbering. Implement renderTags() to show recipe tags as clickable chips that can filter the recipe library when clicked. Add appropriate styling for all sections.",
+            "status": "pending",
+            "testStrategy": "Test rendering with different recipe data structures. Verify all recipe information displays correctly. Test the tag chips to ensure they navigate to filtered recipe list when clicked. Verify proper formatting of ingredients and instructions."
+          },
+          {
+            "id": 4,
+            "title": "Update Router and Add Usage History",
+            "description": "Update the router to handle recipe detail routes and implement the usage history display feature.",
+            "dependencies": [
+              1,
+              2,
+              3
+            ],
+            "details": "Modify router.js to handle the '#/recipe/:id' route pattern and instantiate the RecipeDetailPage with the correct recipe ID. Add a section to the recipe detail page that displays usage history including times cooked and last cooked date. Implement functionality to update usage history when a recipe is viewed or marked as cooked. Add a 'Mark as Cooked' button that updates the usage history when clicked.",
+            "status": "pending",
+            "testStrategy": "Test router navigation to recipe detail pages with different IDs. Verify the correct recipe loads based on URL parameters. Test the usage history display with various history data. Verify the 'Mark as Cooked' functionality correctly updates the usage history."
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "title": "Enhance Recipe Data Model",
+        "description": "Update the existing Recipe data model to include new fields for favorites, ratings, and usage tracking.",
+        "details": "1. Update the Recipe data model with new fields:\n```javascript\n{\n  // Existing fields\n  recipeId: 'recipe_[uuid]',\n  name: string,\n  ingredients: [...],\n  instructions: string,\n  prepTime: number,\n  cookTime: number,\n  servings: number,\n  tags: string[],\n  source: 'generated' | 'user' | 'imported',\n  createdAt: 'ISO 8601',\n  \n  // New fields\n  isFavorite: boolean,\n  rating: number | null,  // 1-5 stars\n  timesCooked: number,\n  lastCooked: 'ISO 8601' | null\n}\n```\n\n2. Update the recipe storage utilities to handle the new fields:\n```javascript\nexport function loadRecipes() {\n  try {\n    const saved = localStorage.getItem('vanessa_recipes');\n    if (saved) {\n      return JSON.parse(saved);\n    }\n  } catch (error) {\n    console.error('Error loading recipes:', error);\n  }\n  return [];\n}\n\nexport function saveRecipes(recipes) {\n  if (!Array.isArray(recipes)) {\n    return { success: false, error: 'INVALID_TYPE' };\n  }\n  return safeSave('vanessa_recipes', recipes);\n}\n```\n\n3. Implement utility functions for recipe operations:\n```javascript\nexport function toggleFavorite(recipeId) {\n  const recipes = loadRecipes();\n  const index = recipes.findIndex(r => r.recipeId === recipeId);\n  \n  if (index !== -1) {\n    recipes[index].isFavorite = !recipes[index].isFavorite;\n    return saveRecipes(recipes);\n  }\n  \n  return { success: false, error: 'RECIPE_NOT_FOUND' };\n}\n\nexport function updateRating(recipeId, rating) {\n  const recipes = loadRecipes();\n  const index = recipes.findIndex(r => r.recipeId === recipeId);\n  \n  if (index !== -1) {\n    recipes[index].rating = rating;\n    return saveRecipes(recipes);\n  }\n  \n  return { success: false, error: 'RECIPE_NOT_FOUND' };\n}\n\nexport function incrementTimesCooked(recipeId) {\n  const recipes = loadRecipes();\n  const index = recipes.findIndex(r => r.recipeId === recipeId);\n  \n  if (index !== -1) {\n    recipes[index].timesCooked = (recipes[index].timesCooked || 0) + 1;\n    recipes[index].lastCooked = new Date().toISOString();\n    return saveRecipes(recipes);\n  }\n  \n  return { success: false, error: 'RECIPE_NOT_FOUND' };\n}\n```\n\n4. Create a migration function to update existing recipes:\n```javascript\nexport function migrateRecipes() {\n  const recipes = loadRecipes();\n  const updated = recipes.map(recipe => ({\n    ...recipe,\n    isFavorite: recipe.isFavorite ?? false,\n    rating: recipe.rating ?? null,\n    timesCooked: recipe.timesCooked ?? 0,\n    lastCooked: recipe.lastCooked ?? null\n  }));\n  \n  return saveRecipes(updated);\n}\n```\n\n5. Call the migration function on app initialization",
+        "testStrategy": "1. Test the recipe storage functions with the new fields\n2. Verify the migration function correctly updates existing recipes\n3. Test the toggleFavorite, updateRating, and incrementTimesCooked functions\n4. Verify the functions handle edge cases (recipe not found, invalid inputs)\n5. Test with a large number of recipes to ensure performance\n6. Verify the data integrity after multiple operations",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 43,
+        "title": "Standardize localStorage Keys",
+        "description": "Refactor all localStorage keys to use a consistent 'vanessa_' prefix and implement a data migration strategy.",
+        "details": "1. Define the new standardized key mapping:\n```javascript\nconst KEY_MAPPING = {\n  'recipes': 'vanessa_recipes',\n  'meals': 'vanessa_meals',\n  'currentMealPlan': 'vanessa_current_meal_plan',\n  'debug_raw_ai_output': 'vanessa_debug_raw_output'\n};\n\n// Keys that already have the prefix\nconst EXISTING_PREFIXED_KEYS = [\n  'vanessa_chat_history'\n];\n\n// New keys to be added\nconst NEW_KEYS = [\n  'vanessa_eaters',\n  'vanessa_base_specification'\n];\n```\n\n2. Create a migration function to rename existing keys:\n```javascript\nexport function migrateStorageKeys() {\n  // Check if migration already completed\n  if (localStorage.getItem('vanessa_migration_slice3') === 'complete') {\n    return { success: true, message: 'Migration already completed' };\n  }\n  \n  try {\n    // Rename existing keys\n    for (const [oldKey, newKey] of Object.entries(KEY_MAPPING)) {\n      const value = localStorage.getItem(oldKey);\n      if (value !== null) {\n        localStorage.setItem(newKey, value);\n        localStorage.removeItem(oldKey);\n        console.log(`Migrated ${oldKey} to ${newKey}`);\n      }\n    }\n    \n    // Mark migration as complete\n    localStorage.setItem('vanessa_migration_slice3', 'complete');\n    \n    return { success: true, message: 'Migration completed successfully' };\n  } catch (error) {\n    console.error('Error during storage migration:', error);\n    return { success: false, error: 'MIGRATION_FAILED', details: error.message };\n  }\n}\n```\n\n3. Update all storage utility functions to use the new keys:\n```javascript\n// Example for recipes\nexport function loadRecipes() {\n  try {\n    const saved = localStorage.getItem('vanessa_recipes');\n    if (saved) {\n      return JSON.parse(saved);\n    }\n  } catch (error) {\n    console.error('Error loading recipes:', error);\n  }\n  return [];\n}\n\nexport function saveRecipes(recipes) {\n  if (!Array.isArray(recipes)) {\n    return { success: false, error: 'INVALID_TYPE' };\n  }\n  return safeSave('vanessa_recipes', recipes);\n}\n\n// Repeat for all other storage functions\n```\n\n4. Call the migration function on app initialization:\n```javascript\n// In app.js or index.js\ndocument.addEventListener('DOMContentLoaded', () => {\n  // Run migration before initializing the app\n  const migrationResult = migrateStorageKeys();\n  if (!migrationResult.success) {\n    console.error('Storage migration failed:', migrationResult.error);\n  }\n  \n  // Initialize app\n  initRouter();\n});\n```\n\n5. Update all references to localStorage keys throughout the codebase",
+        "testStrategy": "1. Test the migration function with various scenarios (empty storage, partial data, complete data)\n2. Verify all keys are correctly renamed\n3. Test that the migration only runs once\n4. Verify all storage functions work with the new keys\n5. Test the app initialization with and without existing data\n6. Verify no data is lost during migration",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 44,
+        "title": "Update Navigation System",
+        "description": "Enhance the navigation system to include new routes for recipes, recipe details, and settings pages.",
+        "details": "1. Update the router.js file to include new routes:\n```javascript\nconst routes = {\n  '/': HomePage,\n  '/generating': GenerationStatusPage,\n  '/meal-plan': MealPlanView,\n  '/shopping-list': ShoppingListView,\n  '/recipes': RecipeLibraryPage,\n  '/recipe/:id': RecipeDetailPage,\n  '/settings': SettingsPage\n};\n```\n\n2. Enhance the router to handle parameterized routes:\n```javascript\nfunction matchRoute(path) {\n  // First try exact match\n  if (routes[path]) {\n    return { component: routes[path], params: {} };\n  }\n  \n  // Try parameterized routes\n  for (const [route, component] of Object.entries(routes)) {\n    if (route.includes(':')) {\n      const routeParts = route.split('/');\n      const pathParts = path.split('/');\n      \n      if (routeParts.length === pathParts.length) {\n        const params = {};\n        let match = true;\n        \n        for (let i = 0; i < routeParts.length; i++) {\n          if (routeParts[i].startsWith(':')) {\n            // This is a parameter\n            const paramName = routeParts[i].substring(1);\n            params[paramName] = pathParts[i];\n          } else if (routeParts[i] !== pathParts[i]) {\n            // Not a match\n            match = false;\n            break;\n          }\n        }\n        \n        if (match) {\n          return { component, params };\n        }\n      }\n    }\n  }\n  \n  // No match found\n  return { component: NotFoundPage, params: {} };\n}\n```\n\n3. Update the navigation rendering to pass params to components:\n```javascript\nfunction navigate(path) {\n  const { component, params } = matchRoute(path);\n  const root = document.getElementById('app');\n  \n  // Unmount current component\n  if (currentComponent && typeof currentComponent.beforeUnload === 'function') {\n    currentComponent.beforeUnload();\n  }\n  \n  // Create new component instance with params\n  currentComponent = new component(params);\n  \n  // Render new component\n  if (typeof currentComponent.beforeRender === 'function') {\n    currentComponent.beforeRender();\n  }\n  \n  const rendered = currentComponent.render();\n  root.innerHTML = '';\n  root.appendChild(rendered);\n  \n  if (typeof currentComponent.afterRender === 'function') {\n    currentComponent.afterRender();\n  }\n}\n```\n\n4. Create a navigation component for the header/sidebar:\n```javascript\nexport class Navigation {\n  render() {\n    const nav = document.createElement('nav');\n    nav.className = 'main-nav bg-white shadow';\n    \n    const container = document.createElement('div');\n    container.className = 'container mx-auto px-4 py-2 flex items-center justify-between';\n    \n    // Logo/Home link\n    const homeLink = document.createElement('a');\n    homeLink.href = '#/';\n    homeLink.className = 'text-xl font-bold text-blue-600';\n    homeLink.textContent = 'Vanessa';\n    \n    // Nav links\n    const links = document.createElement('div');\n    links.className = 'flex space-x-4';\n    \n    const navItems = [\n      { path: '/', label: 'Home' },\n      { path: '/recipes', label: 'Recipes' },\n      { path: '/shopping-list', label: 'Shopping List' },\n      { path: '/settings', label: 'Settings' }\n    ];\n    \n    navItems.forEach(item => {\n      const link = document.createElement('a');\n      link.href = `#${item.path}`;\n      link.className = 'nav-link';\n      link.textContent = item.label;\n      \n      // Highlight active link\n      if (window.location.hash === `#${item.path}` || \n          (item.path !== '/' && window.location.hash.startsWith(`#${item.path}`))) {\n        link.classList.add('text-blue-600', 'font-medium');\n      } else {\n        link.classList.add('text-gray-600', 'hover:text-blue-600');\n      }\n      \n      links.appendChild(link);\n    });\n    \n    container.appendChild(homeLink);\n    container.appendChild(links);\n    nav.appendChild(container);\n    \n    return nav;\n  }\n}\n```\n\n5. Add the navigation component to the app layout\n6. Create a mobile-friendly version with a hamburger menu for small screens",
+        "testStrategy": "1. Test the router with various route patterns\n2. Verify parameterized routes work correctly\n3. Test navigation between all pages\n4. Verify the active link highlighting works\n5. Test the mobile navigation on small screens\n6. Verify the beforeUnload, beforeRender, and afterRender hooks are called\n7. Test navigation with browser back/forward buttons",
+        "priority": "high",
+        "dependencies": [
+          40,
+          41,
+          38
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Update router.js with new routes and parameterized route handling",
+            "description": "Modify the router.js file to include new routes for recipes, recipe details, and settings pages, and enhance it to handle parameterized routes.",
+            "dependencies": [],
+            "details": "Update the routes object to include '/recipes', '/recipe/:id', and '/settings' paths. Implement the matchRoute function to properly handle parameterized routes by parsing the URL path, extracting parameters, and matching them against route patterns. Ensure the function returns both the component and any extracted parameters.",
+            "status": "pending",
+            "testStrategy": "Test the router with various route patterns including exact matches and parameterized routes. Verify that '/recipe/123' correctly extracts the ID parameter and returns the RecipeDetailPage component with params.id = '123'."
+          },
+          {
+            "id": 2,
+            "title": "Update navigation rendering to pass parameters to components",
+            "description": "Enhance the navigation system to properly pass extracted route parameters to components and handle component lifecycle methods.",
+            "dependencies": [
+              1
+            ],
+            "details": "Modify the navigate function to use the matchRoute result, passing the extracted parameters to the component constructor. Implement proper component lifecycle management by calling beforeUnload on the current component, creating a new component instance with params, and calling beforeRender, render, and afterRender methods in sequence.",
+            "status": "pending",
+            "testStrategy": "Test navigation between pages with and without parameters. Verify that component lifecycle methods are called in the correct order. Ensure parameters are correctly passed to components when navigating to parameterized routes."
+          },
+          {
+            "id": 3,
+            "title": "Create Navigation component with active link highlighting",
+            "description": "Develop a Navigation component for the header/sidebar that shows all navigation links and highlights the active route.",
             "dependencies": [
               1,
               2
             ],
-            "details": "Review the component hierarchy for the generation flow and add consistent custom event dispatching for the 'plan-generated' event at the point where a plan is successfully created. Register event listeners in all components that must react to this event (e.g., navigation, state management, offline cache), ensuring they update or clear state correctly. Implement or confirm a debouncing mechanism for the generate action to handle rapid double-clicks, ensuring only one generation request is active at a time and subsequent clicks are ignored or queued as per requirements. Test multiple quick clicks, repeated generations, and navigation back/forward to confirm listeners are not duplicated or leaked and that currentPlan is always in a coherent state.",
+            "details": "Create a Navigation class with a render method that generates the navigation bar HTML. Include links to Home, Recipes, Shopping List, and Settings. Implement active link highlighting by comparing the current window.location.hash with each navigation item's path. Add proper styling classes for both active and inactive states.",
             "status": "pending",
-            "testStrategy": "Manual interaction tests focused on rapid user actions and repeated generations, combined with console logging or devtools inspection to confirm single event firing, no duplicate listeners, and correct state updates.",
-            "parentId": "undefined"
+            "testStrategy": "Test the Navigation component rendering with different active routes. Verify that the correct link is highlighted when navigating between pages. Test partial path matching for nested routes (e.g., '/recipes' should be highlighted when on '/recipes/categories')."
+          },
+          {
+            "id": 4,
+            "title": "Implement mobile-friendly navigation with hamburger menu",
+            "description": "Create a responsive version of the navigation component that displays a hamburger menu on small screens.",
+            "dependencies": [
+              3
+            ],
+            "details": "Enhance the Navigation component to be responsive. For small screens, implement a hamburger menu toggle button that shows/hides the navigation links. Use CSS media queries to apply different styles based on screen size. Add JavaScript event listeners to handle the menu toggle functionality. Ensure the mobile menu closes when a link is clicked or when clicking outside the menu.",
+            "status": "pending",
+            "testStrategy": "Test the responsive behavior across different screen sizes. Verify the hamburger menu appears on small screens and functions correctly. Test touch interactions on mobile devices. Ensure accessibility standards are met with proper ARIA attributes and keyboard navigation."
           }
+        ]
+      },
+      {
+        "id": 45,
+        "title": "Update Meal Plan Generation to Use Eater Profiles",
+        "description": "Enhance the meal plan generation API to include eater profiles and preferences from the user's household.",
+        "details": "1. Update the generate-meal-plan API endpoint to accept eaters:\n```javascript\n// /api/generate-meal-plan.js\nexport default async function handler(req, res) {\n  if (req.method !== 'POST') {\n    return res.status(405).json({ error: 'Method not allowed' });\n  }\n  \n  const { chatHistory = [], eaters = [] } = req.body;\n  \n  // Set up SSE\n  res.setHeader('Content-Type', 'text/event-stream');\n  res.setHeader('Cache-Control', 'no-cache');\n  res.setHeader('Connection', 'keep-alive');\n  \n  const encoder = new TextEncoder();\n  const writer = res.body.getWriter();\n  \n  try {\n    // Send initial progress\n    sendSSE(writer, encoder, { type: 'progress', progress: 5, message: 'Starting generation...' });\n    \n    // Prepare system prompt with eater information\n    const systemPrompt = generateSystemPrompt(eaters);\n    \n    // Continue with generation...\n  } catch (error) {\n    // Handle errors\n  }\n}\n\nfunction generateSystemPrompt(eaters) {\n  let eaterInfo = '';\n  \n  if (eaters.length > 0) {\n    eaterInfo = 'Household members and their preferences:\\n';\n    eaters.forEach(eater => {\n      eaterInfo += `- ${eater.name}: ${eater.preferences || 'No specific preferences'}\\n`;\n      \n      if (eater.allergies && eater.allergies.length > 0) {\n        eaterInfo += `  Allergies: ${eater.allergies.join(', ')}\\n`;\n      }\n      \n      if (eater.dietaryRestrictions && eater.dietaryRestrictions.length > 0) {\n        eaterInfo += `  Dietary restrictions: ${eater.dietaryRestrictions.join(', ')}\\n`;\n      }\n      \n      if (eater.schedule) {\n        eaterInfo += `  Schedule: ${eater.schedule}\\n`;\n      }\n    });\n  }\n  \n  return `You are Vanessa, an expert meal planning assistant. Generate a complete 7-day meal plan.\n\n${eaterInfo}\n\nCRITICAL: Your response must be ONLY valid JSON in this EXACT format with NO additional text.\n\nGuidelines:\n- Generate exactly 7 days of meals (21 total: breakfast, lunch, dinner each day)\n- Keep instructions BRIEF (2-3 sentences max per recipe)\n- Include realistic estimated budget in dollars\n- Consider user's dietary preferences and restrictions\n- Vary recipes throughout the week\n- Use 3-6 main ingredients per recipe (keep it simple)\n- Focus on practical, quick recipes\n\nCRITICAL - Units:\n- Use ONLY metric units in ingredient quantities\n- Liquids: milliliters (ml) or liters\n- Solids: grams (g) or kilograms (kg)\n- DO NOT use: ounces, pounds, cups, tablespoons, teaspoons\n- Exception: Count items can use \"whole\" (e.g., \"2 whole onions\")`;\n}\n```\n\n2. Update the client-side generation request to include eaters:\n```javascript\nasync generateMealPlan() {\n  try {\n    // Get chat history\n    const chatHistory = loadChatHistory();\n    \n    // Get eaters\n    const eaters = loadEaters();\n    \n    // Show generating status\n    window.location.hash = '#/generating';\n    \n    // Make API request\n    const response = await fetch('/api/generate-meal-plan', {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/json'\n      },\n      body: JSON.stringify({\n        chatHistory: chatHistory.slice(-10), // Last 10 messages\n        eaters\n      })\n    });\n    \n    // Process SSE stream\n    await this.processGenerationStream(response);\n  } catch (error) {\n    console.error('Error generating meal plan:', error);\n    // Handle error\n  }\n}\n```\n\n3. Update the meal plan transformer to include eater IDs in meals:\n```javascript\ntransformMealPlan(rawData) {\n  // ... existing transformation logic\n  \n  // Get eaters\n  const eaters = loadEaters();\n  const eaterIds = eaters.map(e => e.eaterId);\n  \n  // Create meals with eater IDs\n  const meals = [];\n  for (const day of rawData.days) {\n    const date = new Date(day.date);\n    \n    for (const mealType of ['breakfast', 'lunch', 'dinner']) {\n      const recipe = day[mealType];\n      const recipeId = recipeMap[recipe.name];\n      \n      meals.push({\n        mealId: `meal_${crypto.randomUUID()}`,\n        recipeId,\n        mealType,\n        date: day.date,\n        eaterIds, // All eaters for now\n        servings: eaters.length,\n        notes: ''\n      });\n    }\n  }\n  \n  // ... continue with transformation\n}\n```\n\n4. Update the MealPlan object to include conversation context:\n```javascript\n// Save conversation context with meal plan\nconst mealPlan = {\n  _schemaVersion: 1,\n  mealPlanId: `plan_${weekOf.replace(/-/g, '')}`,\n  weekOf,\n  weekEnd,\n  createdAt: new Date().toISOString(),\n  mealIds: meals.map(m => m.mealId),\n  budget: {\n    target: baseSpec?.weeklyBudget || 0,\n    estimated: rawData.estimatedBudget || 0\n  },\n  weeklyPreferences: '',\n  conversation: {\n    messages: chatHistory.slice(-10) // Last 10 messages\n  }\n};\n```",
+        "testStrategy": "1. Test the API endpoint with different eater configurations\n2. Verify the system prompt correctly includes eater information\n3. Test the meal plan generation with dietary restrictions and allergies\n4. Verify the meals include the correct eater IDs\n5. Test the conversation context is saved with the meal plan\n6. Verify the servings count matches the number of eaters\n7. Test with edge cases (no eaters, many eaters, complex preferences)",
+        "priority": "high",
+        "dependencies": [
+          36,
+          37
         ],
-        "complexity": 5,
-        "recommendedSubtasks": 3,
-        "expansionPrompt": "Divide into: 1) E2E flow testing (happy path + edge cases), 2) UI polish (animations, skeletons, responsive), 3) Event listener integration and debouncing."
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Update API endpoint to process eater profiles",
+            "description": "Modify the generate-meal-plan API endpoint to properly process and utilize eater profile information in the system prompt.",
+            "dependencies": [],
+            "details": "Enhance the generateSystemPrompt function to better format eater information including allergies, dietary restrictions, and schedules. Add logic to handle special cases like multiple eaters with conflicting restrictions. Ensure the system prompt properly emphasizes critical dietary restrictions and allergies. Add error handling for malformed eater data.",
+            "status": "pending",
+            "testStrategy": "Test the API with various eater configurations including allergies and dietary restrictions. Verify the system prompt correctly formats eater information. Test error handling with malformed eater data."
+          },
+          {
+            "id": 2,
+            "title": "Update client-side meal plan generation to include eater profiles",
+            "description": "Modify the client-side code to load and send eater profiles when requesting meal plan generation.",
+            "dependencies": [
+              1
+            ],
+            "details": "Update the generateMealPlan function to properly load eater profiles from local storage or database. Add validation to ensure eater data is properly formatted before sending to the API. Implement UI feedback to show which eaters are included in the meal plan generation. Add error handling for cases where eater data cannot be loaded.",
+            "status": "pending",
+            "testStrategy": "Test loading eaters from different sources. Verify the API request includes the correct eater data. Test error handling when eater data is unavailable or corrupted."
+          },
+          {
+            "id": 3,
+            "title": "Update meal plan data structure to associate meals with eaters",
+            "description": "Modify the meal plan transformer to associate specific meals with eater IDs and update the MealPlan object structure.",
+            "dependencies": [
+              2
+            ],
+            "details": "Enhance the transformMealPlan function to associate meals with specific eaters based on dietary needs and preferences. Update the MealPlan object to include eater associations and serving information. Modify the data structure to track which meals are suitable for which eaters. Update the conversation context storage to include relevant eater information for future reference.",
+            "status": "pending",
+            "testStrategy": "Test the transformation with various meal plan and eater combinations. Verify meals are correctly associated with appropriate eaters. Test edge cases like meals that only some household members can eat."
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "title": "Implement Data Migration Strategy",
+        "description": "Create a comprehensive data migration system to handle schema updates and ensure backward compatibility.",
+        "details": "1. Create a migration manager utility:\n```javascript\n// src/utils/migrationManager.js\nexport class MigrationManager {\n  constructor() {\n    this.migrations = [];\n    this.currentVersion = 0;\n  }\n  \n  registerMigration(version, migrationFn) {\n    this.migrations.push({ version, migrationFn });\n    // Sort migrations by version\n    this.migrations.sort((a, b) => a.version - b.version);\n  }\n  \n  async runMigrations() {\n    try {\n      // Get current version\n      const savedVersion = localStorage.getItem('vanessa_schema_version');\n      this.currentVersion = savedVersion ? parseInt(savedVersion, 10) : 0;\n      \n      // Find migrations that need to be run\n      const pendingMigrations = this.migrations.filter(m => m.version > this.currentVersion);\n      \n      if (pendingMigrations.length === 0) {\n        console.log('No migrations needed');\n        return { success: true, message: 'No migrations needed' };\n      }\n      \n      console.log(`Running ${pendingMigrations.length} migrations...`);\n      \n      // Run migrations in order\n      for (const migration of pendingMigrations) {\n        console.log(`Running migration to version ${migration.version}...`);\n        const result = await migration.migrationFn();\n        \n        if (!result.success) {\n          console.error(`Migration to version ${migration.version} failed:`, result.error);\n          return { \n            success: false, \n            error: 'MIGRATION_FAILED', \n            version: migration.version,\n            details: result.error \n          };\n        }\n        \n        // Update version\n        this.currentVersion = migration.version;\n        localStorage.setItem('vanessa_schema_version', String(this.currentVersion));\n        console.log(`Migration to version ${migration.version} completed`);\n      }\n      \n      return { \n        success: true, \n        message: `Migrations completed. Current version: ${this.currentVersion}` \n      };\n    } catch (error) {\n      console.error('Error during migrations:', error);\n      return { success: false, error: 'MIGRATION_ERROR', details: error.message };\n    }\n  }\n}\n```\n\n2. Define specific migrations for Slice 3:\n```javascript\n// src/migrations/index.js\nimport { MigrationManager } from '../utils/migrationManager';\n\n// Create migration manager\nconst migrationManager = new MigrationManager();\n\n// Register migrations\nmigrationManager.registerMigration(1, migrateToSlice3);\n\n// Migration functions\nasync function migrateToSlice3() {\n  try {\n    // 1. Rename storage keys\n    renameStorageKey('recipes', 'vanessa_recipes');\n    renameStorageKey('meals', 'vanessa_meals');\n    renameStorageKey('currentMealPlan', 'vanessa_current_meal_plan');\n    renameStorageKey('debug_raw_ai_output', 'vanessa_debug_raw_output');\n    \n    // 2. Create default eater if none exists\n    if (!localStorage.getItem('vanessa_eaters')) {\n      const defaultEater = {\n        eaterId: `eater_${crypto.randomUUID()}`,\n        name: 'User',\n        preferences: 'No specific preferences',\n        allergies: [],\n        dietaryRestrictions: [],\n        schedule: 'Home for dinner',\n        isDefault: true,\n        createdAt: new Date().toISOString(),\n        updatedAt: new Date().toISOString()\n      };\n      localStorage.setItem('vanessa_eaters', JSON.stringify([defaultEater]));\n    }\n    \n    // 3. Create base specification if none exists\n    if (!localStorage.getItem('vanessa_base_specification')) {\n      const eaters = JSON.parse(localStorage.getItem('vanessa_eaters') || '[]');\n      const ownerEater = eaters.find(e => e.isDefault) || eaters[0] || { eaterId: null };\n      \n      const baseSpec = {\n        _schemaVersion: 1,\n        ownerEaterId: ownerEater.eaterId,\n        weeklyBudget: 150,\n        shoppingDay: 6, // Saturday\n        preferredStore: '',\n        householdEaterIds: eaters.map(e => e.eaterId),\n        dietaryGoals: '',\n        onboardingComplete: false,\n        conversation: {\n          startedAt: new Date().toISOString(),\n          messages: []\n        },\n        createdAt: new Date().toISOString(),\n        updatedAt: new Date().toISOString()\n      };\n      localStorage.setItem('vanessa_base_specification', JSON.stringify(baseSpec));\n    }\n    \n    // 4. Update recipe schema\n    const recipesJson = localStorage.getItem('vanessa_recipes');\n    if (recipesJson) {\n      const recipes = JSON.parse(recipesJson);\n      const updatedRecipes = recipes.map(recipe => ({\n        ...recipe,\n        isFavorite: recipe.isFavorite ?? false,\n        rating: recipe.rating ?? null,\n        timesCooked: recipe.timesCooked ?? 0,\n        lastCooked: recipe.lastCooked ?? null\n      }));\n      localStorage.setItem('vanessa_recipes', JSON.stringify(updatedRecipes));\n    }\n    \n    return { success: true };\n  } catch (error) {\n    return { success: false, error: error.message };\n  }\n}\n\nfunction renameStorageKey(oldKey, newKey) {\n  const value = localStorage.getItem(oldKey);\n  if (value !== null) {\n    localStorage.setItem(newKey, value);\n    localStorage.removeItem(oldKey);\n  }\n}\n\nexport default migrationManager;\n```\n\n3. Run migrations on app initialization:\n```javascript\n// In app.js or index.js\nimport migrationManager from './migrations';\n\ndocument.addEventListener('DOMContentLoaded', async () => {\n  // Run migrations before initializing the app\n  const migrationResult = await migrationManager.runMigrations();\n  if (!migrationResult.success) {\n    console.error('Migrations failed:', migrationResult.error);\n    // Show error message to user\n    showMigrationError(migrationResult);\n    return;\n  }\n  \n  // Initialize app\n  initRouter();\n});\n\nfunction showMigrationError(result) {\n  const app = document.getElementById('app');\n  app.innerHTML = `\n    <div class=\"error-container p-4 bg-red-100 border border-red-400 text-red-700 rounded\">\n      <h2 class=\"text-xl font-bold mb-2\">Data Migration Error</h2>\n      <p>There was an error updating the app data. Please try refreshing the page.</p>\n      <p class=\"text-sm mt-2\">Error: ${result.error}</p>\n      ${result.details ? `<p class=\"text-sm\">${result.details}</p>` : ''}\n      <button id=\"retry-btn\" class=\"mt-4 px-4 py-2 bg-blue-500 text-white rounded\">\n        Retry\n      </button>\n    </div>\n  `;\n  \n  document.getElementById('retry-btn').addEventListener('click', () => {\n    window.location.reload();\n  });\n}\n```",
+        "testStrategy": "1. Test the migration manager with various migration scenarios\n2. Verify each migration function works correctly\n3. Test the error handling for failed migrations\n4. Verify the version tracking works correctly\n5. Test with different initial states (empty storage, partial data, complete data)\n6. Verify the app initialization with and without migrations\n7. Test the retry functionality for failed migrations",
+        "priority": "high",
+        "dependencies": [
+          43
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Schema Version Tracking System",
+            "description": "Implement a system to track schema versions and determine when migrations need to be run.",
+            "dependencies": [],
+            "details": "Create a utility that stores and retrieves the current schema version from localStorage. Implement functions to check if migrations are needed by comparing the stored version with the latest available migration version. Add error handling for cases where version information is corrupted or missing. This will serve as the foundation for the migration system.",
+            "status": "pending",
+            "testStrategy": "Test version retrieval with various states (no version stored, valid version, invalid version). Verify version comparison logic works correctly. Test error handling for corrupted version data."
+          },
+          {
+            "id": 2,
+            "title": "Implement Migration Registration and Execution System",
+            "description": "Create a system to register migration functions and execute them in the correct order based on version numbers.",
+            "dependencies": [
+              1
+            ],
+            "details": "Build on the MigrationManager class to properly register migration functions with version numbers. Implement the runMigrations method to execute pending migrations in sequential order. Add transaction-like behavior where possible to prevent partial migrations. Implement proper logging of migration progress and results. Create helper functions for common migration operations like renaming keys or updating schemas.",
+            "status": "pending",
+            "testStrategy": "Test registration of migrations in different orders. Verify migrations execute in correct version order. Test error handling during migration execution. Verify transaction-like behavior prevents data corruption."
+          },
+          {
+            "id": 3,
+            "title": "Integrate Migration System with Application Startup",
+            "description": "Integrate the migration system with the application startup process and implement error handling UI for migration failures.",
+            "dependencies": [
+              2
+            ],
+            "details": "Modify the application initialization code to run migrations before any other app initialization. Create a user-friendly error display for migration failures with retry options. Implement a system to prevent the app from starting if critical migrations fail. Add telemetry or logging to track migration success rates and issues in production. Test the complete migration flow with various scenarios.",
+            "status": "pending",
+            "testStrategy": "Test application startup with and without pending migrations. Verify error UI displays correctly for different failure scenarios. Test retry functionality. Verify app initialization sequence with migrations."
+          }
+        ]
       }
     ],
     "metadata": {
-      "version": "1.0.0",
-      "lastModified": "2025-12-19T14:10:00.927Z",
-      "taskCount": 10,
-      "completedCount": 9,
-      "tags": [
-        "master"
-      ]
+      "created": "2025-12-20T10:00:52.175Z",
+      "updated": "2025-12-20T10:00:52.175Z",
+      "description": "Tasks for master context"
     }
   }
 }
