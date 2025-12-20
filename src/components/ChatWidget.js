@@ -651,3 +651,4 @@ export class ChatWidget {
     this.container.remove();
   }
 }
+

@@ -145,3 +145,4 @@ export class Router {
     return this.currentRoute;
   }
 }
+
