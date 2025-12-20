@@ -214,7 +214,7 @@ export default async function handler(req) {
           // Create Claude stream
           const messageStream = await anthropic.messages.create({
             model: 'claude-sonnet-4-5-20250929',
-            max_tokens: 4096,
+            max_tokens: 8192,  // Increased from 4096 to allow full meal plan
             temperature: 1,
             system: SYSTEM_PROMPT,
             messages: [
@@ -286,16 +286,31 @@ export default async function handler(req) {
           // Parse JSON response
           let parsedData;
           try {
-            // Extract JSON from response (in case there's extra text)
-            const jsonMatch = accumulatedText.match(/\{[\s\S]*\}/);
-            if (!jsonMatch) {
-              throw new Error('No valid JSON found in response');
+            // Remove markdown code fences if present
+            let cleanedText = accumulatedText.trim();
+            
+            // Strip ```json and ``` if present
+            cleanedText = cleanedText.replace(/^```json\s*/i, '');
+            cleanedText = cleanedText.replace(/^```\s*/i, '');
+            cleanedText = cleanedText.replace(/\s*```$/i, '');
+            
+            // Extract JSON object (first { to last })
+            const firstBrace = cleanedText.indexOf('{');
+            const lastBrace = cleanedText.lastIndexOf('}');
+            
+            if (firstBrace === -1 || lastBrace === -1 || firstBrace >= lastBrace) {
+              throw new Error('No valid JSON object found in response');
             }
-            parsedData = JSON.parse(jsonMatch[0]);
+            
+            const jsonStr = cleanedText.substring(firstBrace, lastBrace + 1);
+            parsedData = JSON.parse(jsonStr);
+            
+            console.log('Successfully parsed JSON response');
           } catch (parseError) {
             console.error('Failed to parse Claude response:', parseError);
-            console.error('Raw response:', accumulatedText.substring(0, 500));
-            throw new Error('Failed to parse meal plan data');
+            console.error('Raw response (first 1000 chars):', accumulatedText.substring(0, 1000));
+            console.error('Raw response (last 500 chars):', accumulatedText.substring(Math.max(0, accumulatedText.length - 500)));
+            throw new Error('Failed to parse meal plan data: ' + parseError.message);
           }
 
           // Validate basic structure
