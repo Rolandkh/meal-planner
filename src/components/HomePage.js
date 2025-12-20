@@ -51,10 +51,83 @@ export class HomePage {
       content.appendChild(this.renderHeroView());
     }
 
+    // Add debug export button if meal plan exists
+    if (this.mealPlan) {
+      const debugSection = this.createDebugSection();
+      content.appendChild(debugSection);
+    }
+
     // Add to main container
     container.appendChild(content);
 
     return container;
+  }
+
+  /**
+   * Create debug export section
+   */
+  createDebugSection() {
+    const section = document.createElement('div');
+    section.className = 'mt-8 text-center';
+
+    const exportButton = document.createElement('button');
+    exportButton.className = `
+      bg-gray-300 hover:bg-gray-400 text-gray-700 font-medium
+      py-2 px-6 rounded-lg transition-colors text-sm
+    `.trim().replace(/\s+/g, ' ');
+    exportButton.innerHTML = '📥 Export Raw AI Output';
+    exportButton.addEventListener('click', (e) => this.exportRawOutput(e.target));
+
+    section.appendChild(exportButton);
+    return section;
+  }
+
+  /**
+   * Export raw AI output as JSON file
+   */
+  exportRawOutput(buttonElement) {
+    try {
+      const debugData = localStorage.getItem('debug_raw_ai_output');
+      
+      if (!debugData) {
+        alert('No debug data found. Generate a meal plan first.');
+        return;
+      }
+
+      const parsed = JSON.parse(debugData);
+      const timestamp = parsed.timestamp || new Date().toISOString();
+      
+      // Create filename with timestamp
+      const dateStr = timestamp.split('T')[0]; // YYYY-MM-DD
+      const timeStr = timestamp.split('T')[1].split('.')[0].replace(/:/g, '-'); // HH-MM-SS
+      const filename = `meal-plan-raw-${dateStr}_${timeStr}.json`;
+
+      // Create and download blob
+      const blob = new Blob([JSON.stringify(parsed, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+
+      console.log('✅ Raw AI output downloaded:', filename);
+      
+      // Show success message briefly if button provided
+      if (buttonElement) {
+        const originalText = buttonElement.innerHTML;
+        buttonElement.innerHTML = '✅ Downloaded!';
+        buttonElement.disabled = true;
+        setTimeout(() => {
+          buttonElement.innerHTML = originalText;
+          buttonElement.disabled = false;
+        }, 2000);
+      }
+
+    } catch (error) {
+      console.error('Error exporting raw output:', error);
+      alert('Error exporting data. Check console for details.');
+    }
   }
 
   /**

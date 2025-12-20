@@ -10,6 +10,47 @@ export class ShoppingListView {
     this.recipes = [];
     this.mealPlan = null;
     this.shoppingList = [];
+    
+    // Shopping unit conversions (recipe units → supermarket units)
+    this.SHOPPING_CONVERSIONS = {
+      // Vegetables sold by head/whole
+      'cabbage': { toUnit: 'head', cupsPerUnit: 4 },
+      'lettuce': { toUnit: 'head', cupsPerUnit: 6 },
+      'romaine lettuce': { toUnit: 'head', cupsPerUnit: 6 },
+      'iceberg lettuce': { toUnit: 'head', cupsPerUnit: 8 },
+      'broccoli': { toUnit: 'head', cupsPerUnit: 3 },
+      'cauliflower': { toUnit: 'head', cupsPerUnit: 4 },
+      
+      // Items sold by piece/whole
+      'onion': { toUnit: 'whole', itemsPerCup: 1 },
+      'red onion': { toUnit: 'whole', itemsPerCup: 1 },
+      'yellow onion': { toUnit: 'whole', itemsPerCup: 1 },
+      'white onion': { toUnit: 'whole', itemsPerCup: 1 },
+      'bell pepper': { toUnit: 'whole', itemsPerCup: 1 },
+      'red bell pepper': { toUnit: 'whole', itemsPerCup: 1 },
+      'green bell pepper': { toUnit: 'whole', itemsPerCup: 1 },
+      'tomato': { toUnit: 'whole', itemsPerCup: 1 },
+      'potato': { toUnit: 'whole', itemsPerCup: 1.5 },
+      'carrot': { toUnit: 'whole', itemsPerCup: 2 },
+      'cucumber': { toUnit: 'whole', itemsPerCup: 1 },
+      
+      // Items sold by bunch
+      'spinach': { toUnit: 'bunch', cupsPerUnit: 4 },
+      'kale': { toUnit: 'bunch', cupsPerUnit: 4 },
+      'parsley': { toUnit: 'bunch', itemsPerCup: 0.25 },
+      'cilantro': { toUnit: 'bunch', itemsPerCup: 0.25 },
+      'green onions': { toUnit: 'bunch', itemsPerCup: 0.5 },
+      'scallions': { toUnit: 'bunch', itemsPerCup: 0.5 },
+      
+      // Herbs sold in packages
+      'basil': { toUnit: 'package', itemsPerCup: 0.5 },
+      'mint': { toUnit: 'package', itemsPerCup: 0.5 },
+      
+      // Items that should use weight
+      'mushrooms': { toUnit: 'pound', cupsPerUnit: 3 },
+      'green beans': { toUnit: 'pound', cupsPerUnit: 2 },
+      'zucchini': { toUnit: 'pound', cupsPerUnit: 2 }
+    };
   }
 
   /**
@@ -77,78 +118,170 @@ export class ShoppingListView {
       'wholes': 'whole',
       'large': 'large',
       'medium': 'medium',
-      'small': 'small'
+      'small': 'small',
+      'leaves': 'leaf',
+      'heads': 'head',
+      'bunches': 'bunch'
     };
     
     return unitMap[normalized] || normalized;
   }
 
   /**
+   * Convert recipe units to shopping units
+   * @param {string} name - Ingredient name
+   * @param {number} quantity - Recipe quantity
+   * @param {string} unit - Recipe unit
+   * @returns {Object} { quantity, unit } in shopping format
+   */
+  convertToShoppingUnits(name, quantity, unit) {
+    const cleanName = this.cleanIngredientName(name);
+    const normalizedName = cleanName.toLowerCase().trim();
+    const normalizedUnit = this.normalizeUnit(unit);
+
+    // Check if we have a conversion rule for this ingredient
+    const conversion = this.SHOPPING_CONVERSIONS[normalizedName];
+    
+    if (!conversion) {
+      // No conversion rule - keep as-is but round nicely
+      return {
+        quantity: Math.ceil(quantity * 4) / 4, // Round to nearest 0.25
+        unit: unit
+      };
+    }
+
+    // Convert based on rule
+    let shoppingQuantity;
+    
+    if (conversion.cupsPerUnit) {
+      // Convert cups to whole units (heads, bunches, etc.)
+      if (normalizedUnit === 'cup') {
+        shoppingQuantity = quantity / conversion.cupsPerUnit;
+        shoppingQuantity = Math.ceil(shoppingQuantity); // Always round up
+      } else {
+        shoppingQuantity = quantity;
+      }
+    } else if (conversion.itemsPerCup) {
+      // Convert cups to items
+      if (normalizedUnit === 'cup') {
+        shoppingQuantity = quantity / conversion.itemsPerCup;
+        shoppingQuantity = Math.ceil(shoppingQuantity);
+      } else {
+        shoppingQuantity = quantity;
+      }
+    } else {
+      shoppingQuantity = quantity;
+    }
+
+    // Handle 'whole' units - always round up
+    if (normalizedUnit === 'whole' || normalizedUnit === 'piece') {
+      shoppingQuantity = Math.ceil(quantity);
+    }
+
+    return {
+      quantity: Math.max(1, Math.ceil(shoppingQuantity)), // Always at least 1
+      unit: conversion.toUnit
+    };
+  }
+
+  /**
    * Generate shopping list from all recipes
-   * Aggregates ingredients and combines duplicates
+   * Aggregates ingredients and converts to supermarket units
    */
   generateShoppingList() {
     const ingredientMap = new Map();
-    const debugInfo = { skipped: [], combined: [], warnings: [] };
+    const debugInfo = { skipped: [], combined: [], converted: [], warnings: [] };
 
-    // Collect all ingredients from all recipes
+    // First pass: collect all ingredients in recipe units
+    const rawIngredients = [];
     this.recipes.forEach(recipe => {
       if (!recipe.ingredients) return;
-
       recipe.ingredients.forEach(ing => {
-        // Clean and normalize the ingredient name
         const cleanedName = this.cleanIngredientName(ing.name);
         const normalizedName = cleanedName.toLowerCase().trim();
-        const normalizedUnit = this.normalizeUnit(ing.unit || '');
         
-        // Skip ingredients that are clearly prep items or leftovers
+        // Skip prep items or leftovers
         if (normalizedName.includes('leftover') || normalizedName.length === 0) {
           debugInfo.skipped.push(ing.name);
           return;
         }
         
-        // Use cleaned name as key for aggregation
-        const key = normalizedName;
-        
-        if (ingredientMap.has(key)) {
-          // Ingredient already exists - aggregate it
-          const existing = ingredientMap.get(key);
-          debugInfo.combined.push(`${ing.name} (${ing.quantity} ${ing.unit}) + ${existing.name} (${existing.quantity} ${existing.unit})`);
-          
-          const existingNormalizedUnit = this.normalizeUnit(existing.unit);
-          
-          // If units match (after normalization), add quantities
-          if (existingNormalizedUnit === normalizedUnit) {
-            existing.quantity += (ing.quantity || 0);
-            existing.unit = ing.unit; // Keep the last unit format seen
-          } else {
-            // Different units - create separate entry with note
-            const warningMsg = `⚠️ ${normalizedName}: mixing ${existing.unit} and ${ing.unit} - keeping separate`;
-            console.warn(warningMsg);
-            debugInfo.warnings.push(warningMsg);
-            
-            // Create a new key with unit suffix to keep them separate
-            const keyWithUnit = `${normalizedName}__${normalizedUnit}`;
-            if (!ingredientMap.has(keyWithUnit)) {
-              ingredientMap.set(keyWithUnit, {
-                name: cleanedName,
-                quantity: ing.quantity || 0,
-                unit: ing.unit || '',
-                category: ing.category || 'other',
-                displayName: `${cleanedName} (in ${ing.unit})`
-              });
-            }
-          }
+        rawIngredients.push({
+          name: cleanedName,
+          normalizedName,
+          quantity: ing.quantity || 0,
+          unit: ing.unit || '',
+          category: ing.category || 'other',
+          original: ing.name
+        });
+      });
+    });
+
+    // Second pass: aggregate same ingredients (same name + unit)
+    const aggregatedMap = new Map();
+    
+    rawIngredients.forEach(ing => {
+      const normalizedUnit = this.normalizeUnit(ing.unit);
+      const key = `${ing.normalizedName}::${normalizedUnit}`;
+      
+      if (aggregatedMap.has(key)) {
+        const existing = aggregatedMap.get(key);
+        existing.quantity += ing.quantity;
+        debugInfo.combined.push(`${ing.original} + ${existing.name}`);
+      } else {
+        aggregatedMap.set(key, {
+          name: ing.name,
+          normalizedName: ing.normalizedName,
+          quantity: ing.quantity,
+          unit: ing.unit,
+          normalizedUnit: normalizedUnit,
+          category: ing.category
+        });
+      }
+    });
+
+    // Third pass: convert to shopping units
+    aggregatedMap.forEach((item, key) => {
+      const converted = this.convertToShoppingUnits(
+        item.name,
+        item.quantity,
+        item.unit
+      );
+      
+      // Create final shopping list entry
+      const shoppingKey = item.normalizedName; // Use just name for final dedup
+      
+      if (ingredientMap.has(shoppingKey)) {
+        // Same ingredient in shopping units - add quantities
+        const existing = ingredientMap.get(shoppingKey);
+        if (this.normalizeUnit(existing.unit) === this.normalizeUnit(converted.unit)) {
+          existing.quantity += converted.quantity;
         } else {
-          // New ingredient
-          ingredientMap.set(key, {
-            name: cleanedName,
-            quantity: ing.quantity || 0,
-            unit: ing.unit || '',
-            category: ing.category || 'other'
+          // Different shopping units - keep separate
+          const altKey = `${shoppingKey}__${this.normalizeUnit(converted.unit)}`;
+          ingredientMap.set(altKey, {
+            name: item.name,
+            quantity: converted.quantity,
+            unit: converted.unit,
+            category: item.category,
+            displayName: `${item.name} (${converted.unit})`
           });
         }
-      });
+      } else {
+        ingredientMap.set(shoppingKey, {
+          name: item.name,
+          quantity: converted.quantity,
+          unit: converted.unit,
+          category: item.category
+        });
+      }
+
+      // Log conversions
+      if (item.unit !== converted.unit) {
+        debugInfo.converted.push(
+          `${item.name}: ${item.quantity} ${item.unit} → ${converted.quantity} ${converted.unit}`
+        );
+      }
     });
 
     // Convert to array
@@ -157,18 +290,13 @@ export class ShoppingListView {
     // Log aggregation summary
     console.log('=== SHOPPING LIST AGGREGATION ===');
     console.log('Unique items:', list.length);
-    console.log('Skipped (non-purchasable):', debugInfo.skipped.length, debugInfo.skipped);
-    console.log('Combined:', debugInfo.combined.length);
+    console.log('Skipped (non-purchasable):', debugInfo.skipped.length);
+    console.log('Combined (same unit):', debugInfo.combined.length);
+    console.log('Converted to shopping units:', debugInfo.converted.length);
+    if (debugInfo.converted.length > 0 && debugInfo.converted.length < 20) {
+      console.log('Conversions:', debugInfo.converted);
+    }
     console.log('Warnings:', debugInfo.warnings.length);
-    
-    // Log any suspiciously high quantities
-    list.forEach(item => {
-      if (item.quantity > 20 && ['cup', 'tablespoon', 'teaspoon'].includes(item.unit.toLowerCase())) {
-        const warning = `⚠️ High quantity: ${item.quantity} ${item.unit} ${item.name}`;
-        console.warn(warning);
-        debugInfo.warnings.push(warning);
-      }
-    });
     
     // Sort by category, then by name
     list.sort((a, b) => {
