@@ -43,7 +43,7 @@ CRITICAL: Your response must be ONLY valid JSON in this EXACT format with NO add
             "category": "produce|meat|dairy|pantry|other"
           }
         ],
-        "instructions": "Step by step instructions",
+        "instructions": "Brief instructions (2-3 sentences max)",
         "prepTime": number,
         "cookTime": number,
         "servings": number,
@@ -57,11 +57,12 @@ CRITICAL: Your response must be ONLY valid JSON in this EXACT format with NO add
 
 Guidelines:
 - Generate exactly 7 days of meals (21 total: breakfast, lunch, dinner each day)
-- Each recipe should be practical and detailed
+- Keep instructions BRIEF (2-3 sentences max per recipe)
 - Include realistic estimated budget in dollars
 - Consider user's dietary preferences and restrictions
 - Vary recipes throughout the week
-- Use common, accessible ingredients`;
+- Use 3-6 main ingredients per recipe (keep it simple)
+- Focus on practical, quick recipes`;
 
 /**
  * Validate request body
@@ -191,9 +192,9 @@ export default async function handler(req) {
       apiKey: ANTHROPIC_API_KEY,
     });
 
-    // Create abort controller for 60s timeout
+    // Create abort controller for 90s timeout (Vercel Edge limit)
     const abortController = new AbortController();
-    const timeoutId = setTimeout(() => abortController.abort(), 60000);
+    const timeoutId = setTimeout(() => abortController.abort(), 90000);
 
     // Set up SSE stream
     const stream = new ReadableStream({
@@ -214,8 +215,8 @@ export default async function handler(req) {
           // Create Claude stream
           const messageStream = await anthropic.messages.create({
             model: 'claude-sonnet-4-5-20250929',
-            max_tokens: 8192,  // Increased from 4096 to allow full meal plan
-            temperature: 1,
+            max_tokens: 8192,
+            temperature: 0.7,  // Lower temp for faster, more focused generation
             system: SYSTEM_PROMPT,
             messages: [
               {
