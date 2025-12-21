@@ -128,10 +128,27 @@ function buildUserPrompt(chatHistory, eaters) {
     conversationContext += '\n\nPay special attention to the user\'s requests above (ingredient limits, dietary preferences, recipe complexity, etc.) and incorporate them into the meal plan.';
   }
 
-  // Format eater information
-  const eaterInfo = eaters.map(e => 
-    `- ${e.name}: ${e.preferences || 'no restrictions'}, ${e.schedule || 'home for dinner'}`
-  ).join('\n');
+  // Format eater information with allergies and restrictions
+  const eaterInfo = eaters.map(eater => {
+    let info = `- ${eater.name}: ${eater.preferences || 'No specific preferences'}`;
+    
+    // Add allergies (CRITICAL - must be avoided)
+    if (eater.allergies && eater.allergies.length > 0) {
+      info += `\n  ⚠️  ALLERGIES (MUST AVOID): ${eater.allergies.join(', ')}`;
+    }
+    
+    // Add dietary restrictions
+    if (eater.dietaryRestrictions && eater.dietaryRestrictions.length > 0) {
+      info += `\n  Dietary restrictions: ${eater.dietaryRestrictions.join(', ')}`;
+    }
+    
+    // Add schedule if specified
+    if (eater.schedule) {
+      info += `\n  Schedule: ${eater.schedule}`;
+    }
+    
+    return info;
+  }).join('\n\n');
 
   return `Generate a meal plan for the week starting ${weekOf}.
 

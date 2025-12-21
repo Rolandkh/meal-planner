@@ -5,11 +5,30 @@
 
 const STORAGE_KEY = 'mealPlannerApp';
 
-// Slice 2 Storage Keys
+// Slice 2 Storage Keys (will be migrated to vanessa_ prefix in Slice 3)
 const EATERS_KEY = 'eaters';
 const RECIPES_KEY = 'recipes';
 const MEALS_KEY = 'meals';
 const CURRENT_MEAL_PLAN_KEY = 'currentMealPlan';
+
+// Slice 3: Standardized Storage Keys (with vanessa_ prefix)
+const VANESSA_CHAT_HISTORY = 'vanessa_chat_history'; // Already prefixed
+const VANESSA_EATERS = 'vanessa_eaters';
+const VANESSA_RECIPES = 'vanessa_recipes';
+const VANESSA_MEALS = 'vanessa_meals';
+const VANESSA_CURRENT_MEAL_PLAN = 'vanessa_current_meal_plan';
+const VANESSA_BASE_SPECIFICATION = 'vanessa_base_specification';
+const VANESSA_DEBUG_RAW_OUTPUT = 'vanessa_debug_raw_output';
+const VANESSA_MIGRATION_SLICE3 = 'vanessa_migration_slice3';
+const VANESSA_SCHEMA_VERSION = 'vanessa_schema_version';
+
+// Key mapping for migration
+const KEY_MAPPING = {
+  'recipes': VANESSA_RECIPES,
+  'meals': VANESSA_MEALS,
+  'currentMealPlan': VANESSA_CURRENT_MEAL_PLAN,
+  'debug_raw_ai_output': VANESSA_DEBUG_RAW_OUTPUT
+};
 
 /**
  * Save checked items to localStorage
@@ -347,4 +366,575 @@ export function saveCurrentMealPlan(plan) {
     return { success: false, error: 'INVALID_TYPE', message: 'Expected object' };
   }
   return safeSave(CURRENT_MEAL_PLAN_KEY, plan);
+}
+
+// ============================================================================
+// SLICE 3: Recipe Enhancement Functions (Task 42)
+// ============================================================================
+
+/**
+ * Toggle favorite status for a recipe
+ * @param {string} recipeId - Recipe ID to toggle
+ * @returns {Object} Result object with success status
+ */
+export function toggleFavorite(recipeId) {
+  const recipes = loadRecipes();
+  const index = recipes.findIndex(r => r.recipeId === recipeId);
+  
+  if (index === -1) {
+    return { 
+      success: false, 
+      error: 'RECIPE_NOT_FOUND', 
+      message: `Recipe ${recipeId} not found` 
+    };
+  }
+  
+  recipes[index].isFavorite = !recipes[index].isFavorite;
+  recipes[index].updatedAt = new Date().toISOString();
+  
+  return saveRecipes(recipes);
+}
+
+/**
+ * Update rating for a recipe
+ * @param {string} recipeId - Recipe ID to update
+ * @param {number|null} rating - Rating value (1-5) or null to clear
+ * @returns {Object} Result object with success status
+ */
+export function updateRating(recipeId, rating) {
+  // Validate rating
+  if (rating !== null && (typeof rating !== 'number' || rating < 1 || rating > 5)) {
+    return { 
+      success: false, 
+      error: 'INVALID_RATING', 
+      message: 'Rating must be a number between 1-5 or null' 
+    };
+  }
+  
+  const recipes = loadRecipes();
+  const index = recipes.findIndex(r => r.recipeId === recipeId);
+  
+  if (index === -1) {
+    return { 
+      success: false, 
+      error: 'RECIPE_NOT_FOUND', 
+      message: `Recipe ${recipeId} not found` 
+    };
+  }
+  
+  recipes[index].rating = rating;
+  recipes[index].updatedAt = new Date().toISOString();
+  
+  return saveRecipes(recipes);
+}
+
+/**
+ * Increment times cooked counter for a recipe
+ * @param {string} recipeId - Recipe ID to increment
+ * @returns {Object} Result object with success status
+ */
+export function incrementTimesCooked(recipeId) {
+  const recipes = loadRecipes();
+  const index = recipes.findIndex(r => r.recipeId === recipeId);
+  
+  if (index === -1) {
+    return { 
+      success: false, 
+      error: 'RECIPE_NOT_FOUND', 
+      message: `Recipe ${recipeId} not found` 
+    };
+  }
+  
+  recipes[index].timesCooked = (recipes[index].timesCooked || 0) + 1;
+  recipes[index].lastCooked = new Date().toISOString();
+  recipes[index].updatedAt = new Date().toISOString();
+  
+  return saveRecipes(recipes);
+}
+
+/**
+ * Migrate existing recipes to include new fields for Slice 3
+ * Adds: isFavorite, rating, timesCooked, lastCooked, updatedAt
+ * @returns {Object} Result object with success status and migration stats
+ */
+export function migrateRecipes() {
+  const recipes = loadRecipes();
+  
+  if (recipes.length === 0) {
+    return {
+      success: true,
+      migrated: 0,
+      message: 'No recipes to migrate'
+    };
+  }
+  
+  let migratedCount = 0;
+  const updated = recipes.map(recipe => {
+    const needsMigration = 
+      recipe.isFavorite === undefined ||
+      recipe.rating === undefined ||
+      recipe.timesCooked === undefined ||
+      recipe.lastCooked === undefined ||
+      recipe.updatedAt === undefined;
+    
+    if (needsMigration) {
+      migratedCount++;
+    }
+    
+    return {
+      ...recipe,
+      isFavorite: recipe.isFavorite ?? false,
+      rating: recipe.rating ?? null,
+      timesCooked: recipe.timesCooked ?? 0,
+      lastCooked: recipe.lastCooked ?? null,
+      updatedAt: recipe.updatedAt ?? recipe.createdAt ?? new Date().toISOString()
+    };
+  });
+  
+  const result = saveRecipes(updated);
+  
+  if (result.success) {
+    return {
+      success: true,
+      migrated: migratedCount,
+      total: recipes.length,
+      message: `Migrated ${migratedCount} of ${recipes.length} recipes`
+    };
+  }
+  
+  return result;
+}
+
+// ============================================================================
+// SLICE 3: Storage Management Utilities (Task 43)
+// ============================================================================
+
+/**
+ * Migrate storage keys to standardized vanessa_ prefix
+ * @returns {Object} Result object with success status
+ */
+export function migrateStorageKeys() {
+  // Check if migration already completed
+  if (localStorage.getItem(VANESSA_MIGRATION_SLICE3) === 'complete') {
+    return { 
+      success: true, 
+      message: 'Migration already completed',
+      alreadyMigrated: true
+    };
+  }
+  
+  try {
+    const migrated = [];
+    
+    // Rename existing keys to new vanessa_ prefixed keys
+    for (const [oldKey, newKey] of Object.entries(KEY_MAPPING)) {
+      const value = localStorage.getItem(oldKey);
+      if (value !== null) {
+        localStorage.setItem(newKey, value);
+        localStorage.removeItem(oldKey);
+        migrated.push({ oldKey, newKey });
+        console.log(`✓ Migrated ${oldKey} → ${newKey}`);
+      }
+    }
+    
+    // Mark migration as complete
+    localStorage.setItem(VANESSA_MIGRATION_SLICE3, 'complete');
+    localStorage.setItem(VANESSA_SCHEMA_VERSION, '1');
+    
+    return { 
+      success: true, 
+      message: `Migration completed successfully (${migrated.length} keys migrated)`,
+      migrated
+    };
+  } catch (error) {
+    console.error('Error during storage migration:', error);
+    return { 
+      success: false, 
+      error: 'MIGRATION_FAILED', 
+      message: error.message 
+    };
+  }
+}
+
+/**
+ * Get storage quota information
+ * @returns {Object} Storage stats with usage and warning level
+ */
+export function getStorageQuota() {
+  try {
+    let totalBytes = 0;
+    
+    // Calculate total bytes used in localStorage
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      const value = localStorage.getItem(key);
+      // UTF-16 = 2 bytes per character
+      totalBytes += (key.length + value.length) * 2;
+    }
+    
+    const limitBytes = 5 * 1024 * 1024; // 5MB typical limit
+    const usedMB = totalBytes / 1024 / 1024;
+    const percentUsed = (totalBytes / limitBytes) * 100;
+    
+    return {
+      usedBytes: totalBytes,
+      usedMB: usedMB.toFixed(2),
+      limitMB: 5,
+      percentUsed: percentUsed.toFixed(1),
+      remainingMB: ((limitBytes - totalBytes) / 1024 / 1024).toFixed(2),
+      warning: percentUsed > 80 ? 'critical' : percentUsed > 60 ? 'warning' : 'ok'
+    };
+  } catch (error) {
+    console.error('Error calculating storage quota:', error);
+    return {
+      usedBytes: 0,
+      usedMB: '0.00',
+      limitMB: 5,
+      percentUsed: '0.0',
+      remainingMB: '5.00',
+      warning: 'error',
+      error: error.message
+    };
+  }
+}
+
+/**
+ * Export all app data to downloadable JSON file
+ * @returns {Object} Result object with success status and file size
+ */
+export function exportAllData() {
+  try {
+    const data = {
+      _exportVersion: 1,
+      exportedAt: new Date().toISOString(),
+      appVersion: '0.8',
+      data: {
+        chatHistory: loadChatHistory(),
+        eaters: loadEaters(),
+        recipes: loadRecipes(),
+        meals: loadMeals(),
+        currentMealPlan: loadCurrentMealPlan(),
+        baseSpecification: loadBaseSpecification()
+      }
+    };
+    
+    const json = JSON.stringify(data, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `vanessa-backup-${new Date().toISOString().split('T')[0]}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    
+    return { 
+      success: true, 
+      size: json.length,
+      sizeKB: (json.length / 1024).toFixed(2),
+      exportedAt: data.exportedAt
+    };
+  } catch (error) {
+    console.error('Error exporting data:', error);
+    return { 
+      success: false, 
+      error: 'EXPORT_FAILED', 
+      message: error.message 
+    };
+  }
+}
+
+/**
+ * Import app data from JSON file
+ * @param {File} file - JSON file to import
+ * @returns {Promise<Object>} Result object with success status
+ */
+export async function importAllData(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    
+    reader.onload = (e) => {
+      try {
+        const imported = JSON.parse(e.target.result);
+        
+        // Validate export version
+        if (imported._exportVersion !== 1) {
+          throw new Error('Incompatible backup version');
+        }
+        
+        // Restore all data using existing save functions
+        const data = imported.data || {};
+        let restored = 0;
+        
+        if (data.chatHistory) {
+          saveChatHistory(data.chatHistory);
+          restored++;
+        }
+        if (data.eaters) {
+          saveEaters(data.eaters);
+          restored++;
+        }
+        if (data.recipes) {
+          saveRecipes(data.recipes);
+          restored++;
+        }
+        if (data.meals) {
+          saveMeals(data.meals);
+          restored++;
+        }
+        if (data.currentMealPlan) {
+          saveCurrentMealPlan(data.currentMealPlan);
+          restored++;
+        }
+        if (data.baseSpecification) {
+          saveBaseSpecification(data.baseSpecification);
+          restored++;
+        }
+        
+        resolve({ 
+          success: true, 
+          restored,
+          exportedAt: imported.exportedAt,
+          message: `Restored ${restored} data collections`
+        });
+      } catch (error) {
+        reject({ 
+          success: false, 
+          error: 'IMPORT_FAILED',
+          message: error.message 
+        });
+      }
+    };
+    
+    reader.onerror = () => reject({ 
+      success: false, 
+      error: 'FILE_READ_ERROR',
+      message: 'Failed to read file' 
+    });
+    
+    reader.readAsText(file);
+  });
+}
+
+/**
+ * Delete orphaned recipes (recipes not used in any meal)
+ * @returns {Object} Result object with deletion stats
+ */
+export function deleteOrphanedRecipes() {
+  try {
+    const recipes = loadRecipes();
+    const meals = loadMeals();
+    
+    // Get all recipe IDs currently in use
+    const usedRecipeIds = new Set(meals.map(m => m.recipeId));
+    
+    // Find orphaned recipes
+    const orphaned = recipes.filter(r => !usedRecipeIds.has(r.recipeId));
+    
+    if (orphaned.length === 0) {
+      return { 
+        success: true, 
+        deleted: 0, 
+        remaining: recipes.length,
+        message: 'No orphaned recipes found'
+      };
+    }
+    
+    // Keep only used recipes
+    const remaining = recipes.filter(r => usedRecipeIds.has(r.recipeId));
+    const result = saveRecipes(remaining);
+    
+    if (result.success) {
+      return {
+        success: true,
+        deleted: orphaned.length,
+        remaining: remaining.length,
+        orphanedNames: orphaned.map(r => r.name),
+        message: `Deleted ${orphaned.length} orphaned recipe(s)`
+      };
+    }
+    
+    return result;
+  } catch (error) {
+    console.error('Error deleting orphaned recipes:', error);
+    return { 
+      success: false, 
+      error: 'DELETE_FAILED', 
+      message: error.message 
+    };
+  }
+}
+
+/**
+ * Clear old meal plans (stub for Slice 4 - multi-plan support)
+ * @param {number} keepMostRecent - Number of most recent plans to keep
+ * @returns {Object} Result object with cleanup stats
+ */
+export function clearOldMealPlans(keepMostRecent = 4) {
+  // Stub implementation - Slice 3 only supports single current meal plan
+  // Full implementation will come in Slice 4 when we add meal plan history
+  return {
+    success: true,
+    cleared: 0,
+    kept: 1,
+    spaceSaved: 0,
+    message: 'Multi-plan cleanup not yet implemented (Slice 4 feature)'
+  };
+}
+
+// ============================================================================
+// Helper functions for import/export (need to be defined)
+// ============================================================================
+
+/**
+ * Load chat history from localStorage
+ * @returns {Array} Chat history array
+ */
+export function loadChatHistory() {
+  try {
+    const saved = localStorage.getItem(VANESSA_CHAT_HISTORY);
+    if (saved) {
+      const history = JSON.parse(saved);
+      return Array.isArray(history) ? history : [];
+    }
+  } catch (error) {
+    console.error('Error loading chat history:', error);
+  }
+  return [];
+}
+
+/**
+ * Save chat history to localStorage
+ * @param {Array} history - Chat history array
+ * @returns {Object} Result object
+ */
+export function saveChatHistory(history) {
+  if (!Array.isArray(history)) {
+    return { success: false, error: 'INVALID_TYPE', message: 'Expected array' };
+  }
+  return safeSave(VANESSA_CHAT_HISTORY, history);
+}
+
+/**
+ * Load base specification from localStorage
+ * @returns {Object|null} Base specification or null
+ */
+export function loadBaseSpecification() {
+  try {
+    const saved = localStorage.getItem(VANESSA_BASE_SPECIFICATION);
+    if (saved) {
+      return JSON.parse(saved);
+    }
+  } catch (error) {
+    console.error('Error loading base specification:', error);
+  }
+  return null;
+}
+
+/**
+ * Save base specification to localStorage
+ * @param {Object} spec - Base specification object
+ * @returns {Object} Result object
+ */
+export function saveBaseSpecification(spec) {
+  if (typeof spec !== 'object' || spec === null) {
+    return { success: false, error: 'INVALID_TYPE', message: 'Expected object' };
+  }
+  
+  // Validate critical fields
+  if (spec.weeklyBudget !== null && spec.weeklyBudget !== undefined) {
+    if (typeof spec.weeklyBudget !== 'number' || spec.weeklyBudget < 0) {
+      return { 
+        success: false, 
+        error: 'INVALID_BUDGET', 
+        message: 'Weekly budget must be a positive number or null' 
+      };
+    }
+  }
+  
+  if (spec.shoppingDay !== null && spec.shoppingDay !== undefined) {
+    if (typeof spec.shoppingDay !== 'number' || spec.shoppingDay < 0 || spec.shoppingDay > 6) {
+      return { 
+        success: false, 
+        error: 'INVALID_SHOPPING_DAY', 
+        message: 'Shopping day must be 0-6 (0=Sunday, 6=Saturday)' 
+      };
+    }
+  }
+  
+  // Update timestamp
+  spec.updatedAt = new Date().toISOString();
+  
+  return safeSave(VANESSA_BASE_SPECIFICATION, spec);
+}
+
+// ============================================================================
+// SLICE 3: Base Specification Utilities (Task 37)
+// ============================================================================
+
+/**
+ * Create a default base specification
+ * @param {string} ownerEaterId - ID of the owner eater
+ * @returns {Object} Default base specification object
+ */
+export function createDefaultBaseSpecification(ownerEaterId = null) {
+  return {
+    _schemaVersion: 1,
+    ownerEaterId: ownerEaterId,
+    weeklyBudget: 150,
+    shoppingDay: 6, // Saturday
+    preferredStore: '',
+    householdEaterIds: ownerEaterId ? [ownerEaterId] : [],
+    dietaryGoals: '',
+    onboardingComplete: false,
+    conversation: {
+      startedAt: new Date().toISOString(),
+      messages: []
+    },
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  };
+}
+
+/**
+ * Get or create base specification
+ * Ensures base specification always exists
+ * @returns {Object} Base specification object
+ */
+export function getOrCreateBaseSpecification() {
+  let baseSpec = loadBaseSpecification();
+  
+  if (!baseSpec) {
+    // Get owner eater from eaters list
+    const eaters = loadEaters();
+    const ownerEater = eaters.find(e => e.isDefault) || eaters[0];
+    
+    // Create default
+    baseSpec = createDefaultBaseSpecification(ownerEater?.eaterId);
+    const result = saveBaseSpecification(baseSpec);
+    
+    if (!result.success) {
+      console.error('Failed to create default base specification:', result);
+      // Return in-memory object even if save failed
+    }
+  }
+  
+  return baseSpec;
+}
+
+/**
+ * Update specific fields in base specification
+ * @param {Object} updates - Object with fields to update
+ * @returns {Object} Result object with success status
+ */
+export function updateBaseSpecification(updates) {
+  const baseSpec = getOrCreateBaseSpecification();
+  
+  // Merge updates
+  const updated = {
+    ...baseSpec,
+    ...updates,
+    updatedAt: new Date().toISOString()
+  };
+  
+  return saveBaseSpecification(updated);
 }

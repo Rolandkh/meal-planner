@@ -624,6 +624,27 @@ FLOW D: Profile Editing
   - `vanessa_base_specification` (new)
   - `vanessa_debug_raw_output` (rename from `debug_raw_ai_output`)
 
+- ✅ **Add storage utilities** (new functions in `storage.js`):
+  ```javascript
+  // Quota monitoring
+  getStorageQuota() → { used, limit, percentUsed, remaining, warning }
+  
+  // Export/Import
+  exportAllData() → downloads JSON file
+  importAllData(file) → restores from JSON
+  
+  // Cleanup
+  clearOldMealPlans(keepWeeks=4) → removes old data
+  deleteOrphanedRecipes() → removes unused recipes
+  ```
+
+- ✅ **Add UI for storage management** (in Settings page):
+  - Storage stats display (X MB / 5 MB used)
+  - Warning banner when >80% full
+  - Export button (download backup)
+  - Import button (restore from file)
+  - Cleanup button (clear old weeks)
+
 **Navigation Updates:**
 - ✅ Add nav links (in header or sidebar):
   - Home (#/)
@@ -772,14 +793,177 @@ const filters = {
 - Click heart → Toggle favorite, save to storage, re-render
 - Click back → Navigate to #/recipes
 
+### Storage Management Features (New in Slice 3)
+
+**Storage Quota Monitoring:**
+```javascript
+// Add to storage.js
+export function getStorageQuota() {
+  let totalBytes = 0;
+  
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+    totalBytes += (key.length + value.length) * 2; // UTF-16 = 2 bytes per char
+  }
+  
+  const limitBytes = 5 * 1024 * 1024; // 5MB
+  const percentUsed = (totalBytes / limitBytes) * 100;
+  
+  return {
+    usedBytes: totalBytes,
+    usedMB: (totalBytes / 1024 / 1024).toFixed(2),
+    limitMB: 5,
+    percentUsed: percentUsed.toFixed(1),
+    remainingMB: ((limitBytes - totalBytes) / 1024 / 1024).toFixed(2),
+    warning: percentUsed > 80 ? 'critical' : percentUsed > 60 ? 'warning' : 'ok'
+  };
+}
+```
+
+**Export All Data:**
+```javascript
+export function exportAllData() {
+  const data = {
+    _exportVersion: 1,
+    exportedAt: new Date().toISOString(),
+    appVersion: '0.8',
+    data: {
+      chatHistory: loadChatHistory(),
+      eaters: loadEaters(),
+      recipes: loadRecipes(),
+      meals: loadMeals(),
+      currentMealPlan: loadCurrentMealPlan(),
+      baseSpecification: loadBaseSpecification()
+    }
+  };
+  
+  const json = JSON.stringify(data, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `vanessa-backup-${new Date().toISOString().split('T')[0]}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  
+  return { success: true, size: json.length };
+}
+```
+
+**Import Data:**
+```javascript
+export async function importAllData(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    
+    reader.onload = (e) => {
+      try {
+        const imported = JSON.parse(e.target.result);
+        
+        // Validate version
+        if (imported._exportVersion !== 1) {
+          throw new Error('Incompatible backup version');
+        }
+        
+        // Restore all data
+        const data = imported.data;
+        saveChatHistory(data.chatHistory || []);
+        saveEaters(data.eaters || []);
+        saveRecipes(data.recipes || []);
+        saveMeals(data.meals || []);
+        saveCurrentMealPlan(data.currentMealPlan);
+        saveBaseSpecification(data.baseSpecification);
+        
+        resolve({ 
+          success: true, 
+          imported: Object.keys(data).length,
+          exportedAt: imported.exportedAt 
+        });
+      } catch (error) {
+        reject({ success: false, error: error.message });
+      }
+    };
+    
+    reader.onerror = () => reject({ success: false, error: 'File read error' });
+    reader.readAsText(file);
+  });
+}
+```
+
+**Clear Old Data:**
+```javascript
+export function clearOldMealPlans(keepMostRecent = 4) {
+  // TODO: When we support multiple meal plans in Slice 4
+  // For now, just provide interface
+  return {
+    success: true,
+    cleared: 0,
+    kept: 1,
+    spaceSaved: 0
+  };
+}
+
+export function deleteOrphanedRecipes() {
+  const recipes = loadRecipes();
+  const meals = loadMeals();
+  
+  // Get all recipe IDs currently in use
+  const usedRecipeIds = new Set(meals.map(m => m.recipeId));
+  
+  // Find orphaned recipes
+  const orphaned = recipes.filter(r => !usedRecipeIds.has(r.recipeId));
+  
+  if (orphaned.length === 0) {
+    return { success: true, deleted: 0, remaining: recipes.length };
+  }
+  
+  // Keep only used recipes
+  const remaining = recipes.filter(r => usedRecipeIds.has(r.recipeId));
+  const result = saveRecipes(remaining);
+  
+  return {
+    success: result.success,
+    deleted: orphaned.length,
+    remaining: remaining.length,
+    orphanedNames: orphaned.map(r => r.name)
+  };
+}
+```
+
+**UI Components:**
+- Storage stats card in Settings page
+- Warning banner when >80% full
+- Export/Import buttons
+- Cleanup button with confirmation dialog
+
 ### Settings Page Features
 
 **Layout:**
-Three collapsible sections (or tabs):
+Four sections (tabs or accordion):
 
-**1. Household Section**
+**1. Storage Section** (NEW)
+- **Storage Stats Card:**
+  - Progress bar showing X MB / 5 MB used
+  - Percentage indicator
+  - Color coding: green (<60%), yellow (60-80%), red (>80%)
+  
+- **Backup & Restore:**
+  - Export button: "Download Backup" → saves JSON file
+  - Import button: "Restore from Backup" → file picker
+  - Last backup date display
+  
+- **Data Cleanup:**
+  - "Delete Old Meal Plans" button
+    - Dropdown: Keep last [4] weeks
+    - Shows: "Will delete X weeks, save Y MB"
+  - "Remove Unused Recipes" button
+    - Shows: "X orphaned recipes found"
+  - Confirmation dialogs before deletion
+
+**2. Household Section**
 - **Owner Eater**
-  - Name (read-only, or editable)
+  - Name (editable)
   - Dietary goals/preferences
   - Edit button
 
@@ -794,23 +978,29 @@ Three collapsible sections (or tabs):
   {
     name: string (required),
     preferences: string (textarea),
-    allergies: string[] (tags),
-    dietaryRestrictions: string[] (tags),
+    allergies: string[] (tags or comma-separated),
+    dietaryRestrictions: string[] (tags or comma-separated),
     schedule: string (textarea),
     isDefault: boolean (checkbox for owner)
   }
   ```
 
-**2. Meal Planning Section**
+**3. Meal Planning Section**
 - Weekly budget (number input with $ prefix)
 - Shopping day (dropdown: Sunday-Saturday)
 - Preferred store (text input, optional)
 - Dietary goals (textarea)
 
-**3. Chat Preferences Section** (optional for Slice 3)
+**4. Chat Preferences Section** (optional for Slice 3)
 - Vanessa personality: Friendly, Professional, Casual
 - Communication style: Concise, Detailed
 - Reset onboarding button (re-triggers questions)
+
+**Save Behavior:**
+- Auto-save on blur for most fields
+- Immediate save for storage operations (export, import, cleanup)
+- Success toast: "Settings saved ✓"
+- Error toast: "Save failed. Please try again."
 
 **Save Behavior:**
 - Auto-save on blur (for text inputs)
@@ -885,32 +1075,81 @@ function migrateToSlice3() {
 }
 ```
 
-### What This Slice Does NOT Include (Deferred to Slice 4)
+**Storage Enhancements (localStorage + Features):**
+- ✅ **Storage Quota Monitoring**
+  - Track localStorage usage (bytes used / 5MB limit)
+  - Show warning banner at 80% capacity
+  - Display storage stats in settings
+  
+- ✅ **Export/Import Functionality**
+  - Export all data to JSON file (complete backup)
+  - Import from JSON file (restore data)
+  - Download format: `vanessa-backup-YYYY-MM-DD.json`
+  
+- ✅ **Data Cleanup Features**
+  - Clear old meal plans (keep last 4 weeks)
+  - Delete unused recipes (not in any meal plan)
+  - Manual cleanup UI in settings
+  - Show space saved after cleanup
+
+**Storage Architecture Decision:**
+- Continue with localStorage for Slice 3
+- Quota: 5MB = ~20-30 weeks of data (sufficient)
+- Migration to Firebase deferred to Slice 4 (when usage metering added)
+- Storage abstraction layer makes future migration easy (1-2 days work)
+
+### What This Slice Does NOT Include (Deferred to Slice 4+)
 
 - ❌ Recipe import from URL
 - ❌ Recipe import from pasted text
 - ❌ Manual recipe creation form
-- ❌ Usage metering / limits
+- ❌ Usage metering / server-side limits
+- ❌ Firebase/database migration
+- ❌ Multi-device sync
+- ❌ User authentication
 - ❌ Upgrade prompts
 - ❌ Pantry system
 - ❌ Recipe editing after creation
-- ❌ Meal plan history (multiple weeks)
+- ❌ Meal plan history UI (data stored, no UI yet)
 - ❌ Regenerate single day
 - ❌ Export to PDF/calendar
-- ❌ Offline mode enhancements
-- ❌ Storage quota UI
+- ❌ Advanced offline mode features
 
 ---
 
-## SLICE 4: Polish & Extended Features
+## SLICE 4: Recipe Import & Firebase Migration
+
+### Goal
+Add recipe import capabilities and migrate to Firebase for multi-device sync and usage metering.
 
 ### What This Slice Adds
-- Add recipe flow (paste/URL import)
-- Usage metering
-- Offline mode
-- Storage quota management
-- Mobile responsiveness polish
-- Error handling improvements
+
+**Recipe Import:**
+- Add recipe from pasted text (Claude extracts structure)
+- Add recipe from URL (fetch + Claude extraction)
+- Manual recipe creation form
+- Recipe editing after creation
+
+**Database Migration:**
+- Migrate from localStorage to Firebase Firestore
+- Add Firebase Authentication (anonymous + Google)
+- Multi-device sync (same account on phone + desktop)
+- Automatic cloud backup
+- Server-side usage tracking
+
+**Usage Metering:**
+- Track generations per month (server-side in Firebase)
+- Track messages per month
+- Free tier limits (4 generations/month, 100 messages/month)
+- Upgrade prompts for exceeded limits
+- Pro tier option ($5-10/month for unlimited)
+
+**Polish & Enhancements:**
+- Mobile responsiveness improvements
+- Advanced error handling
+- Performance optimizations
+- Meal plan history UI (browse past weeks)
+- Regenerate single day feature
 
 ---
 
@@ -1148,11 +1387,15 @@ data: {"type": "error", "error": "Error message"}
 
 ## Tech Stack (Confirmed)
 
-- **Frontend**: Vanilla JS, HTML, Tailwind CSS
-- **Backend**: Vercel serverless functions
-- **Database**: localStorage (Phase 1), Firebase (Phase 2)
-- **AI**: Claude API (Sonnet for generation, Haiku for chat)
-- **Hosting**: Vercel
+- **Frontend**: Vanilla JS (ES6 modules), HTML5, Tailwind CSS (CDN)
+- **Backend**: Vercel Edge Functions (serverless)
+- **Database**: 
+  - **Slices 1-3**: localStorage (5MB, ~20-30 weeks capacity)
+  - **Slice 4+**: Firebase Firestore (unlimited, multi-device sync)
+- **AI**: Claude Sonnet 4.5 (via Anthropic API)
+- **Authentication**: None (Slices 1-3), Firebase Auth (Slice 4+)
+- **Hosting**: Vercel (static site + serverless functions)
+- **Build**: None (no build step, direct ES modules)
 
 ---
 

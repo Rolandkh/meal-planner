@@ -41,7 +41,10 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - **Frontend:** Vanilla JavaScript (ES6 modules), HTML, Tailwind CSS
 - **Backend:** Vercel Edge Functions (serverless)
 - **AI:** Claude Sonnet 4.5 via Anthropic API
-- **Storage:** localStorage (Phase 1)
+- **Storage:** 
+  - **Current (Slices 1-3):** localStorage (5MB limit, ~20-30 weeks)
+  - **Future (Slice 4+):** Firebase Firestore (unlimited, multi-device sync)
+- **Authentication:** None (single-user), Firebase Auth (Slice 4+)
 - **Hosting:** Vercel
 - **Build:** None (static site, direct ES modules)
 
@@ -243,10 +246,31 @@ data: {"type": "progress", "progress": 25, "message": "Planning week..."}
 data: {"type": "complete", "data": {...}}
 ```
 
+## Storage & Data Management
+
+### Current Approach (Slices 1-3)
+- **localStorage**: 5MB browser storage (~20-30 weeks capacity)
+- **Single device**: No multi-device sync
+- **Offline-first**: All data available offline
+- **Zero cost**: No database hosting fees
+
+### Slice 3 Storage Enhancements
+- ✅ **Quota monitoring**: Shows storage usage (X MB / 5 MB)
+- ✅ **Export/Import**: Backup to JSON file, restore from file
+- ✅ **Data cleanup**: Delete old meal plans to free space
+- ✅ **Warning system**: Alert at 80% capacity
+
+### Future Migration (Slice 4+)
+- **Firebase Firestore**: When usage metering or multi-device sync needed
+- **Migration effort**: 1-2 days (storage abstraction layer makes it easy)
+- **Zero feature loss**: All current functionality preserved
+
 ## Known Limitations
 
-- localStorage only (5MB limit, ~20-30 weeks of plans)
-- Single user (no authentication)
+- Single device only (no sync across phone/desktop) - *Fixed in Slice 4*
+- 5MB storage limit (~20-30 weeks) - *Monitoring + cleanup in Slice 3*
+- Manual backup (export/import) - *Automated backup in Slice 4*
+- Single user (no authentication) - *Multi-user in Slice 4*
 - Cannot modify generated plans (must regenerate entire week)
 - Metric units only (Australian market)
 - Week starts Saturday (hardcoded)

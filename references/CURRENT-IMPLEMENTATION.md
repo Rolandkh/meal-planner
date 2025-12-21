@@ -62,14 +62,38 @@ This document contains:
 
 ## 📊 Data Architecture (As Implemented)
 
-### localStorage Keys
+### Storage Architecture
+
+**Current (Slices 1-3): localStorage**
+- Browser-based storage (5MB limit)
+- ~20-30 weeks of meal plan capacity
+- Offline-first, zero cost
+- Single device only
+
+**Future (Slice 4+): Firebase Firestore**
+- Planned migration when usage metering added
+- Multi-device sync
+- Unlimited storage
+- 1-2 days migration effort (storage abstraction layer)
+
+### localStorage Keys (Slice 3 Standardized)
 ```javascript
-'vanessa-chat-history'    // Chat messages (Slice 1)
-'recipes'                 // Recipe library (Slice 2)
-'meals'                   // Meal instances (Slice 2)
-'currentMealPlan'         // Active meal plan (Slice 2)
-'debug_raw_ai_output'     // Raw AI response for debugging
+'vanessa_chat_history'           // Chat messages
+'vanessa_recipes'                // Recipe library
+'vanessa_meals'                  // Meal instances
+'vanessa_current_meal_plan'      // Active meal plan
+'vanessa_eaters'                 // Household members (Slice 3)
+'vanessa_base_specification'     // User profile (Slice 3)
+'vanessa_debug_raw_output'       // Raw AI response
+'vanessa_schema_version'         // Migration version tracker (Slice 3)
 ```
+
+**Slice 3 Enhancements:**
+- ✅ Storage quota monitoring (`getStorageQuota()`)
+- ✅ Export all data to JSON (backup)
+- ✅ Import from JSON (restore)
+- ✅ Cleanup old data (delete old weeks)
+- ✅ Warning banner at 80% capacity
 
 ### Core Entities
 - **Recipe** - Unique recipe with ingredients, instructions, metadata

@@ -3,7 +3,13 @@
  * Transforms Claude's raw JSON output into normalized storage format
  */
 
-import { generateRecipeId, generateMealId, generateMealPlanId, deduplicateRecipes } from './storage.js';
+import { 
+  generateRecipeId, 
+  generateMealId, 
+  generateMealPlanId, 
+  deduplicateRecipes,
+  loadEaters 
+} from './storage.js';
 
 /**
  * Create a hash for recipe deduplication
@@ -120,14 +126,18 @@ function createMeals(days, recipeMap, defaultServings = 2) {
         continue;
       }
 
+      // Get all eater IDs for this meal (Slice 3: all eaters for now)
+      const eaters = loadEaters();
+      const eaterIds = eaters.map(e => e.eaterId);
+      
       // Create meal object
       const meal = {
         mealId: generateMealId(),
         recipeId: recipeData.recipeId,
         mealType: mealType,
         date: date,
-        eaterIds: [], // Will be populated later if needed
-        servings: recipe.servings || defaultServings,
+        eaterIds: eaterIds, // All household members (Slice 3)
+        servings: eaters.length || recipe.servings || defaultServings,
         notes: recipe.notes || ''
       };
 

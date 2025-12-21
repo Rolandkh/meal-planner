@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Mockup - Vanessa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Mobile menu animation */
+    .mobile-menu {
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    .mobile-menu.hidden {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  
+  <!-- DESKTOP NAVIGATION -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo/Brand -->
+        <a href="#/" class="flex items-center space-x-2 text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
+          <span>🍽️</span>
+          <span>Vanessa</span>
+        </a>
+        
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#/" class="nav-link active text-blue-600 font-medium px-3 py-2 rounded-lg bg-blue-50">
+            Home
+          </a>
+          <a href="#/recipes" class="nav-link text-gray-600 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-lg transition-colors">
+            Recipes
+          </a>
+          <a href="#/shopping-list" class="nav-link text-gray-600 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-lg transition-colors">
+            Shopping List
+          </a>
+          <a href="#/settings" class="nav-link text-gray-600 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-lg transition-colors">
+            Settings
+          </a>
+        </div>
+        
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU (OVERLAY) -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden md:hidden"></div>
+  
+  <div id="mobile-menu" class="mobile-menu hidden fixed top-0 left-0 h-full w-64 bg-white shadow-2xl z-50 md:hidden">
+    <div class="p-4">
+      <!-- Close button -->
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center space-x-2 text-xl font-bold text-blue-600">
+          <span>🍽️</span>
+          <span>Vanessa</span>
+        </div>
+        <button id="mobile-menu-close" class="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile nav links -->
+      <nav class="space-y-2">
+        <a href="#/" class="mobile-nav-link active flex items-center space-x-3 px-4 py-3 rounded-lg bg-blue-50 text-blue-600 font-medium">
+          <span>🏠</span>
+          <span>Home</span>
+        </a>
+        <a href="#/recipes" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
+          <span>📚</span>
+          <span>Recipes</span>
+        </a>
+        <a href="#/shopping-list" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
+          <span>🛒</span>
+          <span>Shopping List</span>
+        </a>
+        <a href="#/settings" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
+          <span>⚙️</span>
+          <span>Settings</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- DEMO CONTENT -->
+  <main class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Navigation Mockup</h2>
+      
+      <div class="bg-white rounded-lg shadow p-6 mb-6">
+        <h3 class="font-semibold text-lg mb-4">Features:</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>✅ <strong>Desktop</strong>: Horizontal nav bar with hover states</li>
+          <li>✅ <strong>Mobile</strong>: Hamburger menu with slide-in drawer</li>
+          <li>✅ <strong>Active Highlighting</strong>: Current page highlighted in blue</li>
+          <li>✅ <strong>Sticky</strong>: Stays at top when scrolling</li>
+          <li>✅ <strong>Responsive</strong>: Breakpoint at 768px (md:)</li>
+          <li>✅ <strong>Icons</strong>: Emojis for mobile menu items</li>
+        </ul>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+        <h3 class="font-semibold text-blue-800 mb-2">Try It:</h3>
+        <ul class="space-y-1 text-blue-700 text-sm">
+          <li>• Click nav links above (they update active state)</li>
+          <li>• Resize browser to see mobile menu (hamburger icon appears &lt;768px)</li>
+          <li>• Click hamburger to open mobile menu</li>
+          <li>• Click outside overlay to close</li>
+        </ul>
+      </div>
+
+      <div class="bg-gray-50 rounded-lg p-6">
+        <h3 class="font-semibold text-gray-800 mb-4">Design Decisions:</h3>
+        <div class="space-y-3 text-gray-700 text-sm">
+          <div>
+            <strong>Logo:</strong> Emoji (🍽️) + "Vanessa" text
+          </div>
+          <div>
+            <strong>Links:</strong> Home, Recipes, Shopping List, Settings
+          </div>
+          <div>
+            <strong>Active State:</strong> Blue background + blue text
+          </div>
+          <div>
+            <strong>Hover:</strong> Light gray background on desktop
+          </div>
+          <div>
+            <strong>Mobile Drawer:</strong> 256px wide, slides from left, dark overlay
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Mock navigation highlighting
+    const navLinks = document.querySelectorAll('.nav-link');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Update active state
+        navLinks.forEach(l => {
+          l.classList.remove('active', 'text-blue-600', 'font-medium', 'bg-blue-50');
+          l.classList.add('text-gray-600');
+        });
+        link.classList.add('active', 'text-blue-600', 'font-medium', 'bg-blue-50');
+        link.classList.remove('text-gray-600');
+        
+        // Update mobile menu to match
+        const href = link.getAttribute('href');
+        mobileNavLinks.forEach(ml => {
+          if (ml.getAttribute('href') === href) {
+            ml.classList.add('active', 'bg-blue-50', 'text-blue-600', 'font-medium');
+            ml.classList.remove('text-gray-700');
+          } else {
+            ml.classList.remove('active', 'bg-blue-50', 'text-blue-600', 'font-medium');
+            ml.classList.add('text-gray-700');
+          }
+        });
+      });
+    });
+    
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    
+    function openMobileMenu() {
+      mobileMenu.classList.remove('hidden');
+      mobileMenuOverlay.classList.remove('hidden');
+      setTimeout(() => {
+        mobileMenu.style.transform = 'translateX(0)';
+        mobileMenu.style.opacity = '1';
+      }, 10);
+    }
+    
+    function closeMobileMenu() {
+      mobileMenu.style.transform = 'translateX(-100%)';
+      mobileMenu.style.opacity = '0';
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+        mobileMenuOverlay.classList.add('hidden');
+      }, 300);
+    }
+    
+    mobileMenuButton.addEventListener('click', openMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    
+    // Close mobile menu when link clicked
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeMobileMenu();
+        
+        // Update active states
+        mobileNavLinks.forEach(l => {
+          l.classList.remove('active', 'bg-blue-50', 'text-blue-600', 'font-medium');
+          l.classList.add('text-gray-700');
+        });
+        link.classList.add('active', 'bg-blue-50', 'text-blue-600', 'font-medium');
+        link.classList.remove('text-gray-700');
+        
+        // Update desktop menu to match
+        const href = link.getAttribute('href');
+        navLinks.forEach(nl => {
+          if (nl.getAttribute('href') === href) {
+            nl.classList.add('active', 'text-blue-600', 'font-medium', 'bg-blue-50');
+            nl.classList.remove('text-gray-600');
+          } else {
+            nl.classList.remove('active', 'text-blue-600', 'font-medium', 'bg-blue-50');
+            nl.classList.add('text-gray-600');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
