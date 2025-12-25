@@ -41,7 +41,7 @@ export class GenerationStatusPage {
     
     const title = document.createElement('h1');
     title.className = 'text-3xl font-bold text-gray-800 mb-2';
-    title.textContent = 'Crafting Your Perfect Week';
+    title.textContent = 'Preparing Your Meal Plan';
     
     const subtitle = document.createElement('p');
     subtitle.className = 'text-gray-600';
@@ -455,6 +455,7 @@ export class GenerationStatusPage {
     }
   }
 }
+
 
 
 
