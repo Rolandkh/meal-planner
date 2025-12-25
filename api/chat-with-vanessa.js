@@ -13,7 +13,7 @@ export const config = {
 // Environment variables
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
-// System prompt for Vanessa
+// System prompt for regular chat
 const SYSTEM_PROMPT = `You are Vanessa, a friendly AI meal planning assistant.
 
 Personality: Warm, knowledgeable, concise. Keep responses brief (1-2 sentences).
@@ -30,6 +30,50 @@ Important:
 - Guide them to click "Generate Week" when ready
 
 Keep responses short and actionable.`;
+
+// System prompt for onboarding mode
+const ONBOARDING_PROMPT = `You are Vanessa, a friendly AI meal planning assistant conducting an onboarding conversation.
+
+Your goal is to collect the user's meal planning preferences through natural conversation.
+
+CONVERSATION FLOW:
+1. The user has already been welcomed and knows this is a conversation
+2. Ask these questions IN ORDER (one at a time):
+   - Question 1: What are your main dietary goals?
+   - Question 2: What foods do you avoid or prefer not to eat?
+   - Question 3: Do you cook for anyone else in your household?
+   - Question 4: What's your typical weekly grocery budget?
+   - Question 5: Which day do you usually do your grocery shopping?
+
+3. After EACH answer:
+   - Acknowledge their response with a brief, natural paraphrase
+   - Restate what YOU understood using "you" (e.g., "So you want to lose weight and eat anti-inflammatory foods")
+   - Then IMMEDIATELY ask the next question in the SAME response
+   
+4. After ALL FIVE questions are answered:
+   - Provide a complete summary of everything they told you
+   - Ask "How does this look? Does this sound right?"
+   - Wait for their confirmation
+
+STYLE GUIDELINES:
+- Be conversational and warm, not robotic
+- Paraphrase their answers naturally (don't just repeat their exact words)
+- Keep acknowledgments brief (1 sentence)
+- Use "you" when reflecting back (not "I")
+- Show you understood, not just that you heard
+
+CURRENT STEP: {{STEP}}
+
+Remember: Acknowledge + next question in ONE message. Keep it flowing naturally!`;
+
+// Question tracking for onboarding
+const ONBOARDING_QUESTIONS = [
+  'What are your main dietary goals?',
+  'What foods do you avoid or prefer not to eat?',
+  'Do you cook for anyone else in your household?',
+  'What\'s your typical weekly grocery budget?',
+  'Which day do you usually do your grocery shopping?'
+];
 
 /**
  * Main handler for the chat endpoint
@@ -61,7 +105,7 @@ export default async function handler(req) {
   try {
     // Parse request body
     const body = await req.json();
-    const { message, chatHistory = [] } = body;
+    const { message, chatHistory = [], isOnboarding = false, onboardingStep = 0 } = body;
 
     // Validate message
     if (!message || typeof message !== 'string' || message.trim().length === 0) {
@@ -104,7 +148,18 @@ export default async function handler(req) {
       content: message.trim(),
     });
 
-    console.log(`Processing chat request with ${messages.length} messages`);
+    console.log(`Processing ${isOnboarding ? 'onboarding' : 'chat'} request with ${messages.length} messages`);
+
+    // Choose system prompt based on mode
+    let systemPrompt = SYSTEM_PROMPT;
+    if (isOnboarding) {
+      systemPrompt = ONBOARDING_PROMPT.replace('{{STEP}}', `${onboardingStep + 1}/5`);
+      
+      // Add context about what question to ask if at start of conversation
+      if (messages.length <= 1 && onboardingStep < ONBOARDING_QUESTIONS.length) {
+        systemPrompt += `\n\nYou should now ask: "${ONBOARDING_QUESTIONS[onboardingStep]}"`;
+      }
+    }
 
     // Set up SSE response stream
     const encoder = new TextEncoder();
@@ -127,9 +182,9 @@ export default async function handler(req) {
         const streamPromise = (async () => {
           const streamResponse = await anthropic.messages.stream({
             model: 'claude-sonnet-4-5-20250929',
-            system: SYSTEM_PROMPT,
+            system: systemPrompt,
             messages,
-            max_tokens: 1000,
+            max_tokens: isOnboarding ? 500 : 1000,
             temperature: 0.7,
           });
 
@@ -233,6 +288,7 @@ export default async function handler(req) {
     );
   }
 }
+
 
 
 

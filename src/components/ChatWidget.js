@@ -258,153 +258,6 @@ export class ChatWidget {
     }
   }
 
-  /**
-   * Handle send message - calls API and handles streaming response
-   */
-  async handleSendMessage() {
-    const message = this.messageInput.value.trim();
-    
-    if (!message) {
-      return;
-    }
-
-    console.log('Sending message to API:', message);
-
-    // Disable send button during processing
-    this.sendButton.disabled = true;
-    this.messageInput.disabled = true;
-
-    // Add user message to UI
-    this.addMessage({ role: 'user', content: message });
-
-    // Clear input
-    this.messageInput.value = '';
-
-    // Show typing indicator
-    this.showTypingIndicator();
-
-    try {
-      // Prepare chat history (exclude welcome message)
-      const chatHistory = this.messages
-        .filter(msg => msg.role && msg.content)
-        .map(msg => ({ role: msg.role, content: msg.content }));
-
-      console.log('Sending request with', chatHistory.length, 'previous messages');
-
-      // Call API
-      const response = await fetch('/api/chat-with-vanessa', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          message,
-          chatHistory: chatHistory.slice(0, -1), // Exclude the user message we just added
-        }),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.error || `HTTP ${response.status}: ${response.statusText}`);
-      }
-
-      // Hide typing indicator
-      this.hideTypingIndicator();
-
-      // Create assistant message for streaming
-      const assistantMessage = {
-        role: 'assistant',
-        content: '',
-        timestamp: new Date().toISOString(),
-      };
-      this.messages.push(assistantMessage);
-
-      // Create message element for streaming updates
-      const messageEl = this.createStreamingMessageElement();
-      this.messagesContainer.appendChild(messageEl);
-
-      const bubble = messageEl.querySelector('.message-bubble');
-      
-      // Process SSE stream
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder();
-      let buffer = '';
-
-      while (true) {
-        const { value, done } = await reader.read();
-        
-        if (done) {
-          console.log('Stream completed');
-          break;
-        }
-
-        // Decode chunk and add to buffer
-        buffer += decoder.decode(value, { stream: true });
-
-        // Process complete lines
-        const lines = buffer.split('\n');
-        buffer = lines.pop() || ''; // Keep incomplete line in buffer
-
-        for (const line of lines) {
-          if (!line.trim() || !line.startsWith('data: ')) {
-            continue;
-          }
-
-          try {
-            const data = JSON.parse(line.substring(6));
-
-            if (data.type === 'token') {
-              // Append token to message
-              assistantMessage.content += data.content;
-              bubble.textContent = assistantMessage.content;
-              
-              // Auto-scroll
-              this.scrollToBottom();
-            } else if (data.type === 'done') {
-              console.log('Received completion signal');
-            } else if (data.type === 'error') {
-              throw new Error(data.error || 'Stream error occurred');
-            }
-          } catch (parseError) {
-            console.error('Error parsing SSE data:', parseError, 'Line:', line);
-          }
-        }
-      }
-
-      // Add timestamp after completion
-      const timestamp = messageEl.querySelector('.message-timestamp');
-      if (timestamp) {
-        timestamp.textContent = new Date().toLocaleTimeString([], { 
-          hour: '2-digit', 
-          minute: '2-digit' 
-        });
-      }
-
-      // Save conversation to localStorage
-      this.saveConversation();
-
-      console.log('Message sent and response received successfully');
-
-    } catch (error) {
-      ErrorHandler.logError(error, 'ChatWidget.handleSendMessage');
-      
-      // Remove failed assistant message if it exists
-      if (this.messages[this.messages.length - 1]?.role === 'assistant' && 
-          !this.messages[this.messages.length - 1]?.content) {
-        this.messages.pop();
-      }
-
-      // Show error to user using ErrorHandler
-      ErrorHandler.handleApiError(error, this.messagesContainer);
-      
-    } finally {
-      // Re-enable input
-      this.sendButton.disabled = false;
-      this.messageInput.disabled = false;
-      this.hideTypingIndicator();
-      this.messageInput.focus();
-    }
-  }
 
   /**
    * Create a message element for streaming updates
@@ -709,9 +562,9 @@ export class ChatWidget {
   }
 
   /**
-   * Show onboarding welcome message
+   * Show onboarding welcome message and first question
    */
-  showWelcomeMessage() {
+  async showWelcomeMessage() {
     const welcomeMsg = {
       role: 'assistant',
       content: 'Hi! I\'m Vanessa, your meal planning assistant. 🍳\n\nLet\'s set up your profile together. This is a conversation - speak naturally and share as much detail as you\'d like. The more you tell me about your preferences, the better I can tailor your meal plans.\n\nYou can make changes or corrections at any time, so don\'t worry about getting it perfect on the first try!',
@@ -720,45 +573,124 @@ export class ChatWidget {
     
     this.addMessage(welcomeMsg);
     this.saveConversation();
-  }
-
-  /**
-   * Ask an onboarding question
-   */
-  askOnboardingQuestion(index) {
-    if (index >= this.onboardingQuestions.length) {
-      this.showFinalSummary();
-      return;
-    }
     
+    // Ask first question using AI
     setTimeout(() => {
-      const questionMsg = {
-        role: 'assistant',
-        content: this.onboardingQuestions[index],
-        timestamp: new Date().toISOString()
-      };
-      
-      this.addMessage(questionMsg);
-      this.saveConversation();
-    }, 1000);
+      this.askFirstQuestion();
+    }, 1500);
   }
 
   /**
-   * Handle onboarding response
+   * Ask the first onboarding question
    */
-  handleOnboardingResponse(response) {
-    // If awaiting final confirmation
-    if (this.awaitingFinalConfirmation) {
-      this.handleFinalConfirmation(response);
-      return;
-    }
+  async askFirstQuestion() {
+    // Simulate user asking to start (so AI responds with first question)
+    this.showTypingIndicator();
+    
+    try {
+      const chatHistory = this.messages
+        .filter(msg => msg.role && msg.content)
+        .map(msg => ({ role: msg.role, content: msg.content }));
 
-    const step = this.onboardingStep;
-    
+      const response = await fetch('/api/chat-with-vanessa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 'I\'m ready to get started',
+          chatHistory: chatHistory,
+          isOnboarding: true,
+          onboardingStep: 0
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      this.hideTypingIndicator();
+
+      // Stream the first question
+      const assistantMessage = {
+        role: 'assistant',
+        content: '',
+        timestamp: new Date().toISOString(),
+      };
+      this.messages.push(assistantMessage);
+
+      const messageEl = this.createStreamingMessageElement();
+      this.messagesContainer.appendChild(messageEl);
+      const bubble = messageEl.querySelector('.message-bubble');
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        for (const line of lines) {
+          if (!line.trim() || !line.startsWith('data: ')) continue;
+
+          try {
+            const data = JSON.parse(line.substring(6));
+            if (data.type === 'token') {
+              assistantMessage.content += data.content;
+              bubble.textContent = assistantMessage.content;
+              this.scrollToBottom();
+            }
+          } catch (e) {
+            console.error('Parse error:', e);
+          }
+        }
+      }
+
+      const timestamp = messageEl.querySelector('.message-timestamp');
+      if (timestamp) {
+        timestamp.textContent = new Date().toLocaleTimeString([], { 
+          hour: '2-digit', minute: '2-digit' 
+        });
+      }
+
+      this.saveConversation();
+
+    } catch (error) {
+      this.hideTypingIndicator();
+      console.error('Error asking first question:', error);
+    }
+  }
+
+  /**
+   * Handle onboarding response - now uses AI
+   */
+  async handleOnboardingResponse(response) {
     // Store the response
-    this.onboardingResponses[step] = response;
+    this.onboardingResponses[this.onboardingStep] = response;
     
-    // Save to storage based on question type
+    // Extract and save structured data from response
+    this.extractAndSaveOnboardingData(this.onboardingStep, response);
+    
+    // Move to next step
+    this.onboardingStep++;
+    
+    // Check if we've completed all questions
+    if (this.onboardingStep >= this.onboardingQuestions.length) {
+      // All questions answered - AI will provide final summary
+      this.awaitingFinalConfirmation = true;
+    }
+    
+    // Note: The AI response (summary + next question) will come from the API
+    // We don't need to manually trigger it here - the handleSendMessage already did
+  }
+
+  /**
+   * Extract structured data from onboarding response and save to storage
+   */
+  extractAndSaveOnboardingData(step, response) {
     const baseSpec = loadBaseSpecification();
     
     switch (step) {
@@ -766,13 +698,13 @@ export class ChatWidget {
         updateBaseSpecification({ dietaryGoals: response });
         break;
         
-      case 1: // Food restrictions
+      case 1: // Food restrictions/preferences
         const eater = getOrCreateDefaultEater();
         updateEater(eater.eaterId, { preferences: response });
         break;
         
-      case 2: // Other household members
-        // Store for summary - full household management in settings
+      case 2: // Household members
+        // Store in conversation for now - can be managed in Settings
         break;
         
       case 3: // Weekly budget
@@ -803,114 +735,6 @@ export class ChatWidget {
         }
         break;
     }
-    
-    // Generate summary and next question (or final summary)
-    this.onboardingStep++;
-    
-    if (this.onboardingStep >= this.onboardingQuestions.length) {
-      // All questions answered - show final summary
-      this.showFinalSummary();
-    } else {
-      // Show summary of this answer + next question
-      this.showSummaryAndNextQuestion(step, response);
-    }
-  }
-
-  /**
-   * Show summary of current answer + ask next question
-   */
-  showSummaryAndNextQuestion(currentStep, response) {
-    setTimeout(() => {
-      // Generate concise summary based on question type
-      let summary = '';
-      
-      switch (currentStep) {
-        case 0: // Dietary goals
-          summary = `Great! Focusing on: ${response}`;
-          break;
-        case 1: // Food restrictions
-          summary = `Noted - ${response}`;
-          break;
-        case 2: // Household members
-          summary = `Got it - ${response}`;
-          break;
-        case 3: // Budget
-          const budgetMatch = response.match(/\d+/);
-          if (budgetMatch) {
-            summary = `Perfect - $${budgetMatch[0]} weekly budget`;
-          } else {
-            summary = `Noted your budget preferences`;
-          }
-          break;
-        case 4: // Shopping day
-          summary = `Understood - ${response}`;
-          break;
-      }
-      
-      // Combine summary + next question
-      const combinedMsg = {
-        role: 'assistant',
-        content: `${summary}\n\n${this.onboardingQuestions[this.onboardingStep]}`,
-        timestamp: new Date().toISOString()
-      };
-      
-      this.addMessage(combinedMsg);
-      this.saveConversation();
-    }, 800);
-  }
-
-  /**
-   * Show final summary of all preferences
-   */
-  showFinalSummary() {
-    setTimeout(() => {
-      const baseSpec = loadBaseSpecification();
-      const eaters = loadEaters();
-      const defaultEater = eaters.find(e => e.isDefault) || eaters[0];
-      
-      // Build summary
-      let summary = 'Perfect! Let me confirm what we\'ve set up:\n\n';
-      
-      // Dietary goals
-      if (baseSpec.dietaryGoals) {
-        summary += `🎯 Goals: ${baseSpec.dietaryGoals}\n`;
-      }
-      
-      // Food preferences
-      if (defaultEater?.preferences) {
-        summary += `🥗 Food preferences: ${defaultEater.preferences}\n`;
-      }
-      
-      // Household
-      if (this.onboardingResponses[2]) {
-        summary += `👥 Household: ${this.onboardingResponses[2]}\n`;
-      }
-      
-      // Budget
-      if (baseSpec.weeklyBudget) {
-        summary += `💰 Weekly budget: $${baseSpec.weeklyBudget}\n`;
-      }
-      
-      // Shopping day
-      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-      if (baseSpec.shoppingDay !== null && baseSpec.shoppingDay !== undefined) {
-        summary += `🛒 Shopping day: ${days[baseSpec.shoppingDay]}\n`;
-      }
-      
-      summary += '\nHow does this look? Does this sound right?';
-      
-      const summaryMsg = {
-        role: 'assistant',
-        content: summary,
-        timestamp: new Date().toISOString()
-      };
-      
-      this.addMessage(summaryMsg);
-      this.saveConversation();
-      
-      // Set flag to await confirmation
-      this.awaitingFinalConfirmation = true;
-    }, 1000);
   }
 
   /**
@@ -919,26 +743,18 @@ export class ChatWidget {
   handleFinalConfirmation(response) {
     const lowerResponse = response.toLowerCase();
     
-    // Check if user is confirming or wants changes
-    const confirmWords = ['yes', 'yeah', 'yep', 'looks good', 'sounds good', 'perfect', 'correct', 'right', 'ok', 'okay'];
+    // Check if user is confirming
+    const confirmWords = ['yes', 'yeah', 'yep', 'looks good', 'sounds good', 'perfect', 'correct', 'right', 'ok', 'okay', 'great'];
     const isConfirming = confirmWords.some(word => lowerResponse.includes(word));
     
     if (isConfirming) {
       // User confirmed - complete onboarding
       this.completeOnboarding();
     } else {
-      // User wants to make changes
-      const changeMsg = {
-        role: 'assistant',
-        content: 'No problem! What would you like to change? You can tell me which preference to update and I\'ll help you adjust it.',
-        timestamp: new Date().toISOString()
-      };
-      
-      this.addMessage(changeMsg);
-      this.saveConversation();
-      
-      // Keep awaiting confirmation state so we can handle the change
-      // For simplicity, after they make a change, we'll show summary again
+      // User wants changes - let AI handle the conversation
+      this.awaitingFinalConfirmation = false;
+      // The message will go through normal chat flow
+      // After changes, we can re-show summary
     }
   }
 
@@ -981,11 +797,18 @@ export class ChatWidget {
     // Clear input
     this.messageInput.value = '';
 
-    // If in onboarding mode, handle response differently
-    if (this.isOnboarding) {
+    // If in onboarding mode, use AI for responses
+    if (this.isOnboarding && !this.awaitingFinalConfirmation) {
+      // Store response and extract data
       this.handleOnboardingResponse(message);
       this.saveConversation();
-      return;
+      
+      // Continue with AI chat below (don't return)
+    } else if (this.awaitingFinalConfirmation) {
+      // Handle final confirmation
+      this.handleFinalConfirmation(message);
+      this.saveConversation();
+      return; // Don't call AI again for simple yes/no
     }
 
     console.log('Sending message to API:', message);
@@ -1005,7 +828,7 @@ export class ChatWidget {
 
       console.log('Sending request with', chatHistory.length, 'previous messages');
 
-      // Call API
+      // Call API (with onboarding context if applicable)
       const response = await fetch('/api/chat-with-vanessa', {
         method: 'POST',
         headers: {
@@ -1014,6 +837,8 @@ export class ChatWidget {
         body: JSON.stringify({
           message,
           chatHistory: chatHistory.slice(0, -1), // Exclude the user message we just added
+          isOnboarding: this.isOnboarding,
+          onboardingStep: this.onboardingStep
         }),
       });
 
