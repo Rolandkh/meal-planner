@@ -637,3 +637,5 @@ export class ShoppingListView {
     // Clean up if needed
   }
 }
+
+

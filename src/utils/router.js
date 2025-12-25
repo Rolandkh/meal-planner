@@ -50,10 +50,10 @@ export class Router {
     // Update current route
     this.currentRoute = path;
     
-    // Get the component for this route
-    const component = this.routes[path];
+    // Try to match route (supports parameterized routes)
+    const match = this.matchRoute(path);
     
-    if (!component) {
+    if (!match.component) {
       console.warn(`No route found for: ${path}`);
       if (this.notFoundHandler) {
         this.renderComponent(this.notFoundHandler, state);
@@ -67,13 +67,57 @@ export class Router {
       return;
     }
 
-    // Render the component
-    this.renderComponent(component, state);
+    // Render the component with params
+    this.renderComponent(match.component, { ...state, ...match.params });
+  }
+
+  /**
+   * Match a path to a route (supports parameterized routes like /recipe/:id)
+   * @param {string} path - Path to match
+   * @returns {Object} { component, params }
+   */
+  matchRoute(path) {
+    // First try exact match
+    if (this.routes[path]) {
+      return { component: this.routes[path], params: {} };
+    }
+    
+    // Try parameterized routes
+    for (const [route, component] of Object.entries(this.routes)) {
+      if (route.includes(':')) {
+        const routeParts = route.split('/');
+        const pathParts = path.split('/');
+        
+        if (routeParts.length === pathParts.length) {
+          const params = {};
+          let match = true;
+          
+          for (let i = 0; i < routeParts.length; i++) {
+            if (routeParts[i].startsWith(':')) {
+              // This is a parameter
+              const paramName = routeParts[i].substring(1);
+              params[paramName] = pathParts[i];
+            } else if (routeParts[i] !== pathParts[i]) {
+              // Not a match
+              match = false;
+              break;
+            }
+          }
+          
+          if (match) {
+            return { component, params };
+          }
+        }
+      }
+    }
+    
+    // No match found
+    return { component: null, params: {} };
   }
 
   /**
    * Render a component to the app container
-   * @param {Object} component - Component with render() method
+   * @param {Object} component - Component with render() method or Component class
    * @param {Object} state - State to pass to component
    */
   renderComponent(component, state = {}) {
@@ -87,14 +131,21 @@ export class Router {
     // Clear the app container
     app.innerHTML = '';
     
+    // Check if component is a class that needs to be instantiated
+    let componentInstance = component;
+    if (typeof component === 'function') {
+      // It's a class, instantiate it with params
+      componentInstance = new component(state);
+    }
+    
     // Call lifecycle hook if it exists
-    if (component.beforeRender) {
-      component.beforeRender(state);
+    if (componentInstance.beforeRender) {
+      componentInstance.beforeRender(state);
     }
 
     // Render the component
     try {
-      const rendered = component.render(state);
+      const rendered = componentInstance.render(state);
       
       if (rendered instanceof HTMLElement) {
         app.appendChild(rendered);
@@ -105,8 +156,8 @@ export class Router {
       }
 
       // Call lifecycle hook if it exists
-      if (component.afterRender) {
-        component.afterRender(state);
+      if (componentInstance.afterRender) {
+        componentInstance.afterRender(state);
       }
 
       console.log(`Rendered route: ${this.currentRoute}`);
@@ -145,4 +196,6 @@ export class Router {
     return this.currentRoute;
   }
 }
+
+
 

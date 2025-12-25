@@ -16,6 +16,10 @@ import { ChatWidget } from './components/ChatWidget.js';
 import { GenerationStatusPage } from './components/GenerationStatusPage.js';
 import { MealPlanView } from './components/MealPlanView.js';
 import { ShoppingListView } from './components/ShoppingListView.js';
+import { SettingsPage } from './components/SettingsPage.js';
+import { RecipeLibraryPage } from './components/RecipeLibraryPage.js';
+import { RecipeDetailPage } from './components/RecipeDetailPage.js';
+import { Navigation } from './components/Navigation.js';
 
 // Global error handler
 window.addEventListener('error', (event) => {
@@ -99,6 +103,10 @@ async function initApp() {
   }
   
   // STEP 3: Initialize app components
+  // Create navigation
+  const navigation = new Navigation();
+  navigation.attach();
+  
   // Create router instance
   const router = new Router();
   
@@ -107,11 +115,9 @@ async function initApp() {
   router.addRoute('/generating', new GenerationStatusPage());
   router.addRoute('/meal-plan', new MealPlanView());
   router.addRoute('/shopping-list', new ShoppingListView());
-  
-  // Future routes will be added here (Slice 3)
-  // router.addRoute('/recipes', new RecipeLibraryPage());
-  // router.addRoute('/recipe/:id', new RecipeDetailPage());
-  // router.addRoute('/settings', new SettingsPage());
+  router.addRoute('/settings', new SettingsPage());
+  router.addRoute('/recipes', new RecipeLibraryPage());
+  router.addRoute('/recipe/:id', RecipeDetailPage); // Class for parameterized route
   
   // Initialize router
   router.init();
@@ -122,6 +128,7 @@ async function initApp() {
   // Store globally for access from components
   window.router = router;
   window.chatWidget = chatWidget;
+  window.navigation = navigation;
   
   console.log('✓ App initialized successfully');
 }

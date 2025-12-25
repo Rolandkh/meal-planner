@@ -1,9 +1,18 @@
 /**
  * ChatWidget Component
  * Collapsible chat interface for conversations with Vanessa
+ * Includes onboarding flow for first-time users
+ * Slice 3 - Tasks 36, 39
  */
 
 import { ErrorHandler } from '../utils/errorHandler.js';
+import {
+  loadBaseSpecification,
+  updateBaseSpecification,
+  loadEaters,
+  updateEater,
+  getOrCreateDefaultEater
+} from '../utils/storage.js';
 
 export class ChatWidget {
   constructor() {
@@ -12,6 +21,17 @@ export class ChatWidget {
     this.isTyping = false;
     this.currentStreamingMessage = null;
     this.isGenerating = false; // Track generation state
+    
+    // Onboarding state
+    this.isOnboarding = false;
+    this.onboardingStep = 0;
+    this.onboardingQuestions = [
+      'What are your main dietary goals? (e.g., lose weight, eat healthier, follow a specific diet)',
+      'Are there any foods you don\'t eat or want to avoid?',
+      'Do you cook for anyone else, like family members with different preferences?',
+      'What\'s your weekly grocery budget?',
+      'Which day do you usually do your grocery shopping?'
+    ];
 
     // Listen for toggle event from HomePage or other components
     document.addEventListener('toggle-chat', (e) => {
@@ -27,6 +47,9 @@ export class ChatWidget {
 
     // Load saved conversation
     this.loadConversation();
+
+    // Check if onboarding is needed
+    this.checkOnboarding();
 
     // Add resize listener for responsive behavior
     window.addEventListener('resize', () => this.handleResize());
@@ -649,6 +672,309 @@ export class ChatWidget {
   }
 
   /**
+   * Check if onboarding is needed
+   */
+  checkOnboarding() {
+    const baseSpec = loadBaseSpecification();
+    
+    if (!baseSpec || !baseSpec.onboardingComplete) {
+      console.log('Onboarding needed - starting flow');
+      this.startOnboarding();
+    } else {
+      console.log('Onboarding already completed');
+    }
+  }
+
+  /**
+   * Start onboarding flow
+   */
+  startOnboarding() {
+    this.isOnboarding = true;
+    this.onboardingStep = 0;
+    
+    // Open the chat widget
+    if (!this.isOpen) {
+      this.toggle();
+    }
+    
+    // Show welcome message
+    this.showWelcomeMessage();
+    
+    // Start asking questions after a short delay
+    setTimeout(() => {
+      this.askOnboardingQuestion(0);
+    }, 1500);
+  }
+
+  /**
+   * Show onboarding welcome message
+   */
+  showWelcomeMessage() {
+    const welcomeMsg = {
+      role: 'assistant',
+      content: 'Hi! I\'m Vanessa, your meal planning assistant. Let\'s set up your profile with a few quick questions.',
+      timestamp: new Date().toISOString()
+    };
+    
+    this.addMessage(welcomeMsg);
+    this.saveConversation();
+  }
+
+  /**
+   * Ask an onboarding question
+   */
+  askOnboardingQuestion(index) {
+    if (index >= this.onboardingQuestions.length) {
+      this.completeOnboarding();
+      return;
+    }
+    
+    setTimeout(() => {
+      const questionMsg = {
+        role: 'assistant',
+        content: this.onboardingQuestions[index],
+        timestamp: new Date().toISOString()
+      };
+      
+      this.addMessage(questionMsg);
+      this.saveConversation();
+    }, 1000);
+  }
+
+  /**
+   * Handle onboarding response
+   */
+  handleOnboardingResponse(response) {
+    const step = this.onboardingStep;
+    const baseSpec = loadBaseSpecification();
+    
+    switch (step) {
+      case 0: // Dietary goals
+        updateBaseSpecification({ dietaryGoals: response });
+        break;
+        
+      case 1: // Food restrictions
+        const eater = getOrCreateDefaultEater();
+        updateEater(eater.eaterId, { preferences: response });
+        break;
+        
+      case 2: // Other household members
+        // For now, just store as note - full household management in settings
+        // Future: parse response and create additional eaters
+        break;
+        
+      case 3: // Weekly budget
+        const budgetMatch = response.match(/\d+/);
+        if (budgetMatch) {
+          const budget = parseInt(budgetMatch[0], 10);
+          updateBaseSpecification({ weeklyBudget: budget });
+        }
+        break;
+        
+      case 4: // Shopping day
+        const dayMap = {
+          'sunday': 0, 'sun': 0,
+          'monday': 1, 'mon': 1,
+          'tuesday': 2, 'tue': 2, 'tues': 2,
+          'wednesday': 3, 'wed': 3,
+          'thursday': 4, 'thu': 4, 'thur': 4, 'thurs': 4,
+          'friday': 5, 'fri': 5,
+          'saturday': 6, 'sat': 6
+        };
+        
+        const lowerResponse = response.toLowerCase();
+        for (const [key, value] of Object.entries(dayMap)) {
+          if (lowerResponse.includes(key)) {
+            updateBaseSpecification({ shoppingDay: value });
+            break;
+          }
+        }
+        break;
+    }
+    
+    // Move to next question
+    this.onboardingStep++;
+    this.askOnboardingQuestion(this.onboardingStep);
+  }
+
+  /**
+   * Complete onboarding
+   */
+  completeOnboarding() {
+    this.isOnboarding = false;
+    
+    // Mark onboarding as complete
+    updateBaseSpecification({ onboardingComplete: true });
+    
+    // Show completion message
+    const completionMsg = {
+      role: 'assistant',
+      content: 'Perfect! You\'re all set. Click "Generate Week" whenever you\'re ready to create your first meal plan.',
+      timestamp: new Date().toISOString()
+    };
+    
+    this.addMessage(completionMsg);
+    this.saveConversation();
+    
+    console.log('Onboarding completed');
+  }
+
+  /**
+   * Modified handleSendMessage to support onboarding
+   */
+  async handleSendMessage() {
+    const message = this.messageInput.value.trim();
+    
+    if (!message) {
+      return;
+    }
+
+    // Add user message to UI
+    this.addMessage({ role: 'user', content: message });
+
+    // Clear input
+    this.messageInput.value = '';
+
+    // If in onboarding mode, handle response differently
+    if (this.isOnboarding) {
+      this.handleOnboardingResponse(message);
+      this.saveConversation();
+      return;
+    }
+
+    console.log('Sending message to API:', message);
+
+    // Disable send button during processing
+    this.sendButton.disabled = true;
+    this.messageInput.disabled = true;
+
+    // Show typing indicator
+    this.showTypingIndicator();
+
+    try {
+      // Prepare chat history (exclude welcome message)
+      const chatHistory = this.messages
+        .filter(msg => msg.role && msg.content)
+        .map(msg => ({ role: msg.role, content: msg.content }));
+
+      console.log('Sending request with', chatHistory.length, 'previous messages');
+
+      // Call API
+      const response = await fetch('/api/chat-with-vanessa', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message,
+          chatHistory: chatHistory.slice(0, -1), // Exclude the user message we just added
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || `HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      // Hide typing indicator
+      this.hideTypingIndicator();
+
+      // Create assistant message for streaming
+      const assistantMessage = {
+        role: 'assistant',
+        content: '',
+        timestamp: new Date().toISOString(),
+      };
+      this.messages.push(assistantMessage);
+
+      // Create message element for streaming updates
+      const messageEl = this.createStreamingMessageElement();
+      this.messagesContainer.appendChild(messageEl);
+
+      const bubble = messageEl.querySelector('.message-bubble');
+      
+      // Process SSE stream
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        
+        if (done) {
+          console.log('Stream completed');
+          break;
+        }
+
+        // Decode chunk and add to buffer
+        buffer += decoder.decode(value, { stream: true });
+
+        // Process complete lines
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || ''; // Keep incomplete line in buffer
+
+        for (const line of lines) {
+          if (!line.trim() || !line.startsWith('data: ')) {
+            continue;
+          }
+
+          try {
+            const data = JSON.parse(line.substring(6));
+
+            if (data.type === 'token') {
+              // Append token to message
+              assistantMessage.content += data.content;
+              bubble.textContent = assistantMessage.content;
+              
+              // Auto-scroll
+              this.scrollToBottom();
+            } else if (data.type === 'done') {
+              console.log('Received completion signal');
+            } else if (data.type === 'error') {
+              throw new Error(data.error || 'Stream error occurred');
+            }
+          } catch (parseError) {
+            console.error('Error parsing SSE data:', parseError, 'Line:', line);
+          }
+        }
+      }
+
+      // Add timestamp after completion
+      const timestamp = messageEl.querySelector('.message-timestamp');
+      if (timestamp) {
+        timestamp.textContent = new Date().toLocaleTimeString([], { 
+          hour: '2-digit', 
+          minute: '2-digit' 
+        });
+      }
+
+      // Save conversation to localStorage
+      this.saveConversation();
+
+      console.log('Message sent and response received successfully');
+
+    } catch (error) {
+      ErrorHandler.logError(error, 'ChatWidget.handleSendMessage');
+      
+      // Remove failed assistant message if it exists
+      if (this.messages[this.messages.length - 1]?.role === 'assistant' && 
+          !this.messages[this.messages.length - 1]?.content) {
+        this.messages.pop();
+      }
+
+      // Show error to user using ErrorHandler
+      ErrorHandler.handleApiError(error, this.messagesContainer);
+      
+    } finally {
+      // Re-enable input
+      this.sendButton.disabled = false;
+      this.messageInput.disabled = false;
+      this.hideTypingIndicator();
+      this.messageInput.focus();
+    }
+  }
+
+  /**
    * Destroy the widget and clean up event listeners
    */
   destroy() {
@@ -659,4 +985,6 @@ export class ChatWidget {
     this.container.remove();
   }
 }
+
+
 

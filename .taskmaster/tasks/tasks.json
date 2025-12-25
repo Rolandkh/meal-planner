@@ -9,7 +9,7 @@
         "testStrategy": "1. Unit test the eater storage functions with various inputs including edge cases\n2. Test the UUID generation for new eaters\n3. Verify the eater form validation works correctly\n4. Test the UI rendering with different numbers of eaters (0, 1, many)\n5. Verify the default eater is created correctly for first-time users\n6. Test the edit and delete functionality\n7. Verify the isDefault property can only be set for one eater",
         "priority": "high",
         "dependencies": [],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -17,9 +17,10 @@
             "description": "Implement the data structure for eaters and the necessary storage functions for local persistence.",
             "dependencies": [],
             "details": "Create the Eater data model with fields for eaterId, name, preferences, allergies, dietaryRestrictions, schedule, isDefault, createdAt, and updatedAt. Implement the loadEaters() and saveEaters() functions in the storage.js utility file. Add helper functions for creating new eaters with UUID generation and proper timestamps. Include validation to ensure data integrity when saving and loading eater information.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Unit test the eater storage functions with various inputs including edge cases. Test the UUID generation for new eaters. Verify data validation works correctly when saving invalid eater objects.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:35:09.366Z"
           },
           {
             "id": 2,
@@ -29,9 +30,10 @@
               1
             ],
             "details": "Develop an EaterListComponent that renders all household members in a scrollable list. Each list item should display the eater's name, dietary restrictions, and allergies in a condensed format. Include visual indicators for the default eater. Add sorting functionality to organize the list alphabetically. Implement empty state handling when no eaters exist. The component should observe changes to the eater data and refresh automatically.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test the component rendering with different numbers of eaters (0, 1, many). Verify the default eater is visually distinguished. Test sorting functionality. Ensure the empty state is displayed correctly when no eaters exist.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.559Z"
           },
           {
             "id": 3,
@@ -41,9 +43,10 @@
               1
             ],
             "details": "Develop an EaterFormComponent that handles both creation and editing of eater profiles. Include form fields for all eater properties with appropriate input types (text fields, multi-select for allergies, etc.). Implement form validation to ensure required fields are completed. Add functionality to toggle the default eater status. Create save and cancel buttons with appropriate handlers. Include confirmation dialog when attempting to discard unsaved changes.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test form validation for required fields. Verify the form correctly loads existing eater data when editing. Test the save functionality to ensure it correctly updates the storage. Verify the cancel operation works and confirmation dialog appears when there are unsaved changes.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.563Z"
           },
           {
             "id": 4,
@@ -55,11 +58,13 @@
               3
             ],
             "details": "Implement logic to detect first-time users and automatically create a default eater profile. Add functionality to ensure there is always exactly one default eater in the system. Create UI controls to change which eater is the default. Implement safeguards to prevent deletion of the default eater unless another is designated. Add a confirmation dialog when changing the default eater. Update the EaterListComponent to reflect the current default eater status.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test the default eater creation for first-time users. Verify that changing the default eater works correctly. Test the safeguards preventing deletion of the default eater. Verify the confirmation dialog appears when changing the default eater.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.565Z"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-25T21:39:29.565Z"
       },
       {
         "id": "37",
@@ -138,7 +143,7 @@
           "36",
           "37"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 0,
@@ -146,9 +151,10 @@
             "description": "Create the storage management section with quota monitoring, backup/restore, and data cleanup features.",
             "dependencies": [],
             "details": "Implement the renderStorageSection() method with three main components: 1) Storage Stats Card showing current usage with progress bar and color-coded warnings (green <60%, yellow 60-80%, red >80%), 2) Backup & Restore functionality with export button (downloads JSON file) and import button (file picker with validation), 3) Data Cleanup tools including Delete Old Meal Plans button (with dropdown to select weeks to keep) and Remove Unused Recipes button (shows count of orphaned recipes). Integrate with storage utility functions: getStorageQuota(), exportAllData(), importAllData(), deleteOrphanedRecipes(). Add confirmation dialogs before all destructive operations. Display success/error toasts for all operations.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test storage stats display with different usage levels. Test export functionality creates valid JSON file. Test import with valid and invalid backup files. Test orphaned recipe detection and deletion. Verify confirmation dialogs appear before destructive operations. Test warning banner appears at >80% capacity.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.568Z"
           },
           {
             "id": 1,
@@ -156,9 +162,10 @@
             "description": "Create the basic structure of the Settings Page component with tab navigation between the FOUR main sections.",
             "dependencies": [],
             "details": "Create the SettingsPage component with the basic structure as outlined in the task. Implement the renderTabs() method to create the navigation tabs for Storage, Household, Meal Planning, and Chat Preferences sections (4 tabs total). Set up the tab switching logic in the renderActiveSection() method to display the appropriate section based on the activeSection state. Add event listeners in afterRender() to handle tab switching.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test that the page renders correctly with the tabs visible. Verify that clicking on each tab changes the active section. Test that the active tab is visually highlighted.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.570Z"
           },
           {
             "id": 2,
@@ -168,9 +175,10 @@
               1
             ],
             "details": "Implement the renderHouseholdSection() method to display the list of household members (eaters). Add functionality to add, edit, and remove household members. Include form fields for name, dietary restrictions, allergies, and preferences. Implement validation for required fields. Connect to the loadEaters() function to retrieve existing data and add functions to save changes to storage.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test adding, editing, and removing household members. Verify form validation works correctly. Test that changes persist after page reload.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.571Z"
           },
           {
             "id": 3,
@@ -180,9 +188,10 @@
               1
             ],
             "details": "Implement the renderMealPlanningSection() method to display form fields for meal planning preferences. Include settings for weekly budget, preferred shopping day, number of meals per week, and dietary focus. Connect to the loadBaseSpecification() function to retrieve existing preferences and implement functions to save changes to storage. Add validation for numeric fields like budget.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test that meal planning preferences can be set and saved. Verify validation for budget and other numeric fields. Test that changes persist after page reload.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.574Z"
           },
           {
             "id": 4,
@@ -192,9 +201,10 @@
               1
             ],
             "details": "Implement the renderChatPreferencesSection() method to display form fields for chat preferences. Include settings for AI personality (formal, casual, etc.), verbosity level, and preferred interaction style. Add radio buttons or dropdowns for selection options. Implement functions to save these preferences to storage and load existing preferences when the section is displayed.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test that chat preferences can be set and saved. Verify that all options are selectable. Test that changes persist after page reload.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.576Z"
           },
           {
             "id": 5,
@@ -206,11 +216,13 @@
               4
             ],
             "details": "Add form submission handlers for all three sections. Implement client-side validation for required fields and data types. Create toast notification components for success and error messages. Update the router.js file to include the settings route and link it to the SettingsPage component. Test the entire page flow to ensure all sections work together correctly and that navigation between sections preserves form state.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test form submission in all sections. Verify validation errors display correctly. Test success and error toast messages. Verify the settings page is accessible via the router and that navigation works correctly.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.577Z"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-25T21:39:29.577Z"
       },
       {
         "id": "39",
@@ -223,7 +235,7 @@
           "36",
           "37"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -231,9 +243,10 @@
             "description": "Update the ChatWidget to detect first-time users and display a welcome message to start the onboarding process.",
             "dependencies": [],
             "details": "Modify the ChatWidget component to check if a user is new by examining the baseSpec.onboardingComplete flag. Implement the afterRender(), startOnboarding(), and showWelcomeMessage() methods to detect new users, open the chat widget automatically, and display the initial welcome message from Vanessa. Ensure the welcome message is properly formatted and includes an introduction to the onboarding process.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test with both new and existing users to verify correct detection. Verify the chat widget opens automatically for new users. Confirm the welcome message appears with correct formatting and content.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.579Z"
           },
           {
             "id": 2,
@@ -243,9 +256,10 @@
               1
             ],
             "details": "Define the array of onboardingQuestions covering dietary goals, food preferences, household members, budget, and shopping day. Implement the askOnboardingQuestion() method to display questions sequentially with a slight delay between questions for better user experience. Add logic to handle the end of the question sequence by calling completeOnboarding() when all questions have been asked.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Verify all questions display in the correct sequence. Test the timing between questions for natural conversation flow. Confirm the completion function is called after the last question.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.581Z"
           },
           {
             "id": 3,
@@ -255,9 +269,10 @@
               2
             ],
             "details": "Implement the handleOnboardingResponse() method to process user answers based on the question index. Update the BaseSpecification with dietary goals, shopping day, and budget information. Create or update the default Eater with food preferences and restrictions. Ensure all responses are properly saved using the existing storage utilities (saveBaseSpecification, saveEaters). Advance to the next question after storing each response.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test storage of each response type in the correct data structure. Verify the BaseSpecification and Eater objects are updated correctly. Test with various response formats including edge cases.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.583Z"
           },
           {
             "id": 4,
@@ -267,11 +282,13 @@
               3
             ],
             "details": "Implement the completeOnboarding() method to set the onboardingComplete flag to true in the BaseSpecification. Display a completion message to the user confirming their profile is set up. Update the system prompt used for chat interactions to include the user's profile information (dietary goals, preferences, etc.) for more personalized responses. Add logic to detect and handle profile update requests in future chat conversations.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Verify the onboardingComplete flag is set correctly. Test the completion message display. Confirm the system prompt includes user profile information. Test profile update requests through chat to ensure they modify the correct data.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:39:29.584Z"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-25T21:39:29.584Z"
       },
       {
         "id": "40",
@@ -281,7 +298,7 @@
         "testStrategy": "1. Test the recipe library page rendering with different numbers of recipes\n2. Verify the search functionality works with different queries\n3. Test the filter tabs for each category\n4. Verify the sorting order is correct\n5. Test the empty states for different scenarios\n6. Verify the recipe cards display all information correctly\n7. Test the responsive design on mobile and desktop",
         "priority": "medium",
         "dependencies": [],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -289,9 +306,10 @@
             "description": "Create the search bar with debounce functionality and filter tabs for the recipe library page.",
             "dependencies": [],
             "details": "Implement the renderSearchBar() method with proper styling and debounce functionality. Create the renderFilterTabs() method with tabs for 'all', 'favorites', 'high-rated', and 'most-cooked' categories. Ensure both components update the state and trigger re-rendering of the recipe grid when changed. Include proper event listeners in the afterRender() method.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test search functionality with various queries to ensure debounce works correctly. Verify filter tabs correctly filter recipes based on their categories. Test edge cases like empty search queries and switching between filters.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:40:57.981Z"
           },
           {
             "id": 2,
@@ -301,9 +319,10 @@
               1
             ],
             "details": "Implement the renderRecipeCard(recipe) method to create a card showing recipe name, emoji placeholder for image, cook time, servings, star rating display, favorite indicator, and times cooked count. Style the cards with CSS grid or flexbox for responsive layout. Add click event listeners to navigate to the recipe detail page when a card is clicked.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test rendering of recipe cards with various recipe data. Verify all information displays correctly. Test responsiveness on different screen sizes. Ensure click events properly navigate to the detail page.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:40:57.984Z"
           },
           {
             "id": 3,
@@ -313,9 +332,10 @@
               2
             ],
             "details": "Implement the renderRecipeGrid() method to create a responsive grid layout for recipe cards. Use CSS grid or flexbox to ensure proper spacing and alignment. Handle different screen sizes with media queries. Implement pagination or infinite scrolling if there are many recipes. Ensure the grid updates when filters or search queries change.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test the grid layout with different numbers of recipes (0, few, many). Verify responsiveness on different screen sizes. Test that the grid updates correctly when filters or search queries change.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:40:57.985Z"
           },
           {
             "id": 4,
@@ -325,9 +345,10 @@
               3
             ],
             "details": "Implement the renderEmptyState() method to display appropriate messages and visuals when there are no recipes to show. Create different messages for: 'No recipes yet' (when the library is empty), 'No search results' (when search returns nothing), and 'No favorites' (when favorites filter has no results). Include helpful suggestions or calls-to-action in each empty state.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test each empty state scenario to ensure the correct message displays. Verify that empty states are triggered appropriately based on the current filter and search query. Test that calls-to-action in empty states work correctly.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:40:57.987Z"
           },
           {
             "id": 5,
@@ -337,11 +358,13 @@
               4
             ],
             "details": "Update router.js to include the recipes route that renders the RecipeLibraryPage component. Ensure proper navigation between the recipe library and other pages. Add navigation links to the recipe library from relevant parts of the application. Test the complete integration of the recipe library page with the rest of the application, including navigation flow and state persistence.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test navigation to and from the recipe library page. Verify that the page state persists correctly when navigating away and back. Test integration with other components that might interact with the recipe library.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:40:57.989Z"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-25T21:40:57.989Z"
       },
       {
         "id": "41",
@@ -353,7 +376,7 @@
         "dependencies": [
           "40"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -361,9 +384,10 @@
             "description": "Create the header section of the recipe detail page with title, back button, and favorite toggle functionality.",
             "dependencies": [],
             "details": "Complete the renderHeader() method to display the recipe title, back button, and favorite toggle. Implement the toggleFavorite() function to update the recipe's favorite status in local storage. Ensure the favorite button UI updates when toggled between favorite and non-favorite states. Add appropriate styling for the header section using the provided class names.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test the back button navigation to ensure it returns to the recipe list. Verify the favorite toggle correctly updates the recipe's favorite status in local storage. Test the UI update when toggling favorite status.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:42:14.802Z"
           },
           {
             "id": 2,
@@ -373,9 +397,10 @@
               1
             ],
             "details": "Finish the renderStarRating() method to display the current recipe rating using star icons. Implement the updateRating() function to save the new rating to local storage when a user clicks on a star. Ensure the star display updates immediately after a rating change. Add hover effects to indicate which rating will be selected before clicking.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test rating updates with different values (1-5). Verify the rating is saved correctly to local storage. Test the UI update when changing ratings. Verify hover effects work correctly.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:42:14.805Z"
           },
           {
             "id": 3,
@@ -385,9 +410,10 @@
               1
             ],
             "details": "Complete the renderMetaInfo() method to display preparation time, cooking time, and servings. Implement renderIngredients() to show ingredients grouped by category with appropriate formatting. Create renderInstructions() to display step-by-step cooking instructions with numbering. Implement renderTags() to show recipe tags as clickable chips that can filter the recipe library when clicked. Add appropriate styling for all sections.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test rendering with different recipe data structures. Verify all recipe information displays correctly. Test the tag chips to ensure they navigate to filtered recipe list when clicked. Verify proper formatting of ingredients and instructions.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:42:14.807Z"
           },
           {
             "id": 4,
@@ -399,11 +425,13 @@
               3
             ],
             "details": "Modify router.js to handle the '#/recipe/:id' route pattern and instantiate the RecipeDetailPage with the correct recipe ID. Add a section to the recipe detail page that displays usage history including times cooked and last cooked date. Implement functionality to update usage history when a recipe is viewed or marked as cooked. Add a 'Mark as Cooked' button that updates the usage history when clicked.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test router navigation to recipe detail pages with different IDs. Verify the correct recipe loads based on URL parameters. Test the usage history display with various history data. Verify the 'Mark as Cooked' functionality correctly updates the usage history.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:42:14.809Z"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-25T21:42:14.809Z"
       },
       {
         "id": "42",
@@ -545,7 +573,7 @@
           "41",
           "38"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -553,9 +581,10 @@
             "description": "Modify the router.js file to include new routes for recipes, recipe details, and settings pages, and enhance it to handle parameterized routes.",
             "dependencies": [],
             "details": "Update the routes object to include '/recipes', '/recipe/:id', and '/settings' paths. Implement the matchRoute function to properly handle parameterized routes by parsing the URL path, extracting parameters, and matching them against route patterns. Ensure the function returns both the component and any extracted parameters.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test the router with various route patterns including exact matches and parameterized routes. Verify that '/recipe/123' correctly extracts the ID parameter and returns the RecipeDetailPage component with params.id = '123'.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:43:42.890Z"
           },
           {
             "id": 2,
@@ -565,9 +594,10 @@
               1
             ],
             "details": "Modify the navigate function to use the matchRoute result, passing the extracted parameters to the component constructor. Implement proper component lifecycle management by calling beforeUnload on the current component, creating a new component instance with params, and calling beforeRender, render, and afterRender methods in sequence.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test navigation between pages with and without parameters. Verify that component lifecycle methods are called in the correct order. Ensure parameters are correctly passed to components when navigating to parameterized routes.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:43:42.893Z"
           },
           {
             "id": 3,
@@ -578,9 +608,10 @@
               2
             ],
             "details": "Create a Navigation class with a render method that generates the navigation bar HTML. Include links to Home, Recipes, Shopping List, and Settings. Implement active link highlighting by comparing the current window.location.hash with each navigation item's path. Add proper styling classes for both active and inactive states.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test the Navigation component rendering with different active routes. Verify that the correct link is highlighted when navigating between pages. Test partial path matching for nested routes (e.g., '/recipes' should be highlighted when on '/recipes/categories').",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:43:42.894Z"
           },
           {
             "id": 4,
@@ -590,11 +621,13 @@
               3
             ],
             "details": "Enhance the Navigation component to be responsive. For small screens, implement a hamburger menu toggle button that shows/hides the navigation links. Use CSS media queries to apply different styles based on screen size. Add JavaScript event listeners to handle the menu toggle functionality. Ensure the mobile menu closes when a link is clicked or when clicking outside the menu.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Test the responsive behavior across different screen sizes. Verify the hamburger menu appears on small screens and functions correctly. Test touch interactions on mobile devices. Ensure accessibility standards are met with proper ARIA attributes and keyboard navigation.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2025-12-25T21:43:42.896Z"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-25T21:43:42.896Z"
       },
       {
         "id": "45",
@@ -704,9 +737,9 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2025-12-21T01:02:58.361Z",
+      "lastModified": "2025-12-25T21:43:42.897Z",
       "taskCount": 11,
-      "completedCount": 5,
+      "completedCount": 11,
       "tags": [
         "master"
       ]

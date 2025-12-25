@@ -254,7 +254,7 @@ export function deduplicateRecipes(recipes) {
  */
 export function loadEaters() {
   try {
-    const saved = localStorage.getItem(EATERS_KEY);
+    const saved = localStorage.getItem(VANESSA_EATERS);
     if (saved) {
       const eaters = JSON.parse(saved);
       return Array.isArray(eaters) ? eaters : [];
@@ -275,7 +275,153 @@ export function saveEaters(eaters) {
     console.error('saveEaters: expected array, got', typeof eaters);
     return { success: false, error: 'INVALID_TYPE', message: 'Expected array' };
   }
-  return safeSave(EATERS_KEY, eaters);
+  
+  // Validate eater objects
+  for (const eater of eaters) {
+    if (!eater.eaterId || !validateId(eater.eaterId, 'eater')) {
+      console.error('Invalid eater ID:', eater.eaterId);
+      return { 
+        success: false, 
+        error: 'INVALID_EATER_ID', 
+        message: 'All eaters must have valid IDs' 
+      };
+    }
+    if (!eater.name || typeof eater.name !== 'string') {
+      return { 
+        success: false, 
+        error: 'INVALID_EATER_NAME', 
+        message: 'All eaters must have a name' 
+      };
+    }
+  }
+  
+  return safeSave(VANESSA_EATERS, eaters);
+}
+
+/**
+ * Create a new eater object with default values
+ * @param {Object} data - Eater data (name, preferences, allergies, etc.)
+ * @returns {Object} New eater object with generated ID and timestamps
+ */
+export function createEater(data = {}) {
+  const now = new Date().toISOString();
+  return {
+    eaterId: generateEaterId(),
+    name: data.name || 'New Member',
+    preferences: data.preferences || '',
+    allergies: Array.isArray(data.allergies) ? data.allergies : [],
+    dietaryRestrictions: Array.isArray(data.dietaryRestrictions) ? data.dietaryRestrictions : [],
+    schedule: data.schedule || '',
+    isDefault: data.isDefault === true,
+    createdAt: now,
+    updatedAt: now
+  };
+}
+
+/**
+ * Get or create a default eater
+ * Ensures at least one default eater always exists
+ * @returns {Object} Default eater object
+ */
+export function getOrCreateDefaultEater() {
+  let eaters = loadEaters();
+  
+  // Find existing default eater
+  let defaultEater = eaters.find(e => e.isDefault);
+  
+  if (!defaultEater) {
+    // No default eater exists - create one
+    defaultEater = createEater({
+      name: 'You',
+      preferences: '',
+      isDefault: true
+    });
+    
+    eaters.push(defaultEater);
+    const result = saveEaters(eaters);
+    
+    if (!result.success) {
+      console.error('Failed to save default eater:', result);
+      // Return in-memory object even if save failed
+    }
+  }
+  
+  return defaultEater;
+}
+
+/**
+ * Update an eater by ID
+ * @param {string} eaterId - ID of eater to update
+ * @param {Object} updates - Fields to update
+ * @returns {Object} Result object with success status
+ */
+export function updateEater(eaterId, updates) {
+  const eaters = loadEaters();
+  const index = eaters.findIndex(e => e.eaterId === eaterId);
+  
+  if (index === -1) {
+    return {
+      success: false,
+      error: 'EATER_NOT_FOUND',
+      message: `Eater ${eaterId} not found`
+    };
+  }
+  
+  // If setting this eater as default, unset others
+  if (updates.isDefault === true) {
+    eaters.forEach((e, i) => {
+      if (i !== index) {
+        e.isDefault = false;
+      }
+    });
+  }
+  
+  // Apply updates
+  eaters[index] = {
+    ...eaters[index],
+    ...updates,
+    eaterId: eaters[index].eaterId, // Don't allow ID change
+    updatedAt: new Date().toISOString()
+  };
+  
+  return saveEaters(eaters);
+}
+
+/**
+ * Delete an eater by ID
+ * @param {string} eaterId - ID of eater to delete
+ * @returns {Object} Result object with success status
+ */
+export function deleteEater(eaterId) {
+  const eaters = loadEaters();
+  const eaterToDelete = eaters.find(e => e.eaterId === eaterId);
+  
+  if (!eaterToDelete) {
+    return {
+      success: false,
+      error: 'EATER_NOT_FOUND',
+      message: `Eater ${eaterId} not found`
+    };
+  }
+  
+  // Prevent deletion of default eater if it's the only one
+  if (eaterToDelete.isDefault && eaters.length === 1) {
+    return {
+      success: false,
+      error: 'CANNOT_DELETE_ONLY_EATER',
+      message: 'Cannot delete the only household member'
+    };
+  }
+  
+  // Remove the eater
+  const filtered = eaters.filter(e => e.eaterId !== eaterId);
+  
+  // If deleted eater was default, make another one default
+  if (eaterToDelete.isDefault && filtered.length > 0) {
+    filtered[0].isDefault = true;
+  }
+  
+  return saveEaters(filtered);
 }
 
 /**

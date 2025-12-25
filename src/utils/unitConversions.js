@@ -232,3 +232,5 @@ export function getIngredientCategory(name) {
   // Pantry
   return 'pantry';
 }
+
+

@@ -255,3 +255,5 @@ Using Fibonacci sequence (1, 2, 3, 5, 8, 13):
 
 **Total**: 81 story points (~3-4 weeks for 1 developer)
 
+
+
