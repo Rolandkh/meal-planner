@@ -64,6 +64,18 @@ Guidelines:
 - Use 3-6 main ingredients per recipe (keep it simple)
 - Focus on practical, quick recipes
 
+CRITICAL - Servings:
+- CAREFULLY READ THE CONVERSATION to understand household composition and schedule
+- Each meal's servings MUST match who is present for that specific meal
+- If the user mentions different people on different days (e.g., "my daughter visits Sunday-Wednesday", "dinner for 3 on Tuesday"), you MUST adjust servings accordingly
+- Pay special attention to:
+  * Which days have children present (kid-friendly recipes needed)
+  * Which meals have guests (different serving counts)
+  * Solo meals vs family meals
+- Example: If user says "Tuesday dinner is for me, my daughter, and my ex", that dinner must have servings: 3
+- Example: If user says "just me Wednesday-Saturday", those meals should have servings: 1
+- DO NOT default to 2 servings - ANALYZE THE CONVERSATION for exact household schedule
+
 CRITICAL - Units:
 - Use ONLY metric units in ingredient quantities
 - Liquids: milliliters (ml) or liters
@@ -155,6 +167,21 @@ function buildUserPrompt(chatHistory, eaters) {
 Household members:
 ${eaterInfo}
 ${conversationContext}
+
+CRITICAL - SERVINGS REQUIREMENTS:
+Read the conversation above VERY CAREFULLY to determine:
+1. How many people are eating each meal on each day
+2. When children are present (need kid-friendly recipes)
+3. When guests join (adjust servings for that specific meal)
+4. When the user is cooking just for themselves
+
+For EACH of the 21 meals (7 days × 3 meals), you MUST:
+- Analyze who is present for that specific meal based on the conversation
+- Set servings to match the exact number of people
+- Adjust ingredient quantities accordingly
+- Choose kid-friendly recipes when children are present
+
+Example: If the user said "Tuesday dinner is for me, my daughter, and my ex", then Tuesday dinner must have servings: 3, and it should be a family-friendly recipe.
 
 Create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. 
 
