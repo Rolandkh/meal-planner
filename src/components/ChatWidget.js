@@ -761,9 +761,21 @@ export class ChatWidget {
   /**
    * Complete onboarding
    */
-  completeOnboarding() {
+  async completeOnboarding() {
     this.isOnboarding = false;
     this.awaitingFinalConfirmation = false;
+    
+    // Show processing message
+    const processingMsg = {
+      role: 'assistant',
+      content: 'One moment while I set up your household profiles... 👥',
+      timestamp: new Date().toISOString()
+    };
+    this.addMessage(processingMsg);
+    this.saveConversation();
+    
+    // Extract household members from conversation using AI
+    await this.extractHouseholdMembers();
     
     // Mark onboarding as complete
     updateBaseSpecification({ onboardingComplete: true });
@@ -771,7 +783,7 @@ export class ChatWidget {
     // Show completion message
     const completionMsg = {
       role: 'assistant',
-      content: 'Excellent! You\'re all set up. 🎉\n\nWhenever you\'re ready, click "Generate Week" below to create your first personalized meal plan. I\'ll take everything you\'ve shared into account!',
+      content: 'Excellent! You\'re all set up. 🎉\n\nI\'ve created profiles for your household members - you can view and edit them in Settings → Household anytime.\n\nWhenever you\'re ready, click "Generate Week" below to create your first personalized meal plan!',
       timestamp: new Date().toISOString()
     };
     
@@ -779,6 +791,146 @@ export class ChatWidget {
     this.saveConversation();
     
     console.log('Onboarding completed');
+  }
+
+  /**
+   * Extract household members from conversation using AI
+   */
+  async extractHouseholdMembers() {
+    try {
+      // Get the household question response (question 3)
+      const householdResponse = this.onboardingResponses[2];
+      
+      if (!householdResponse || householdResponse.toLowerCase().includes('no') || 
+          householdResponse.toLowerCase().includes('just me') ||
+          householdResponse.toLowerCase().includes('only me')) {
+        console.log('No additional household members mentioned');
+        return;
+      }
+
+      console.log('Extracting household members from:', householdResponse);
+
+      // Create extraction prompt
+      const extractionPrompt = `Based on this description of household members, extract structured data:
+
+"${householdResponse}"
+
+Extract any people mentioned (children, partners, family members, etc.) and return ONLY valid JSON in this format:
+{
+  "members": [
+    {
+      "name": "Name",
+      "relationship": "daughter|son|partner|spouse|roommate|other",
+      "age": number or null,
+      "notes": "any dietary restrictions or preferences mentioned"
+    }
+  ]
+}
+
+If age isn't mentioned, use null. If no additional people are mentioned, return: {"members": []}
+
+Return ONLY the JSON, nothing else.`;
+
+      // Call Claude API for extraction
+      const response = await fetch('/api/chat-with-vanessa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: extractionPrompt,
+          chatHistory: [],
+          isOnboarding: false
+        }),
+      });
+
+      if (!response.ok) {
+        console.error('Failed to extract household members');
+        return;
+      }
+
+      // Read the full response
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let fullResponse = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value, { stream: true });
+        const lines = chunk.split('\n');
+
+        for (const line of lines) {
+          if (line.startsWith('data: ')) {
+            try {
+              const data = JSON.parse(line.substring(6));
+              if (data.type === 'token') {
+                fullResponse += data.content;
+              }
+            } catch (e) {
+              // Ignore parse errors
+            }
+          }
+        }
+      }
+
+      console.log('AI extraction response:', fullResponse);
+
+      // Parse the JSON from Claude's response
+      const jsonMatch = fullResponse.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) {
+        console.warn('No JSON found in extraction response');
+        return;
+      }
+
+      const extracted = JSON.parse(jsonMatch[0]);
+      
+      if (!extracted.members || extracted.members.length === 0) {
+        console.log('No additional members extracted');
+        return;
+      }
+
+      // Create eater profiles for each extracted member
+      const currentEaters = loadEaters();
+      let created = 0;
+
+      for (const member of extracted.members) {
+        // Check if already exists (by name)
+        const exists = currentEaters.some(e => 
+          e.name.toLowerCase() === member.name.toLowerCase()
+        );
+
+        if (!exists) {
+          const newEater = createEater({
+            name: member.name,
+            preferences: member.notes || '',
+            allergies: [],
+            dietaryRestrictions: [],
+            schedule: member.relationship === 'daughter' || member.relationship === 'son' 
+              ? `Child (${member.age ? member.age + ' years old' : 'age not specified'})`
+              : member.notes || '',
+            isDefault: false
+          });
+          
+          currentEaters.push(newEater);
+          created++;
+          console.log(`Created eater profile for ${member.name}`);
+        }
+      }
+
+      if (created > 0) {
+        saveEaters(currentEaters);
+        
+        // Update baseSpecification with all household member IDs
+        const allEaterIds = currentEaters.map(e => e.eaterId);
+        updateBaseSpecification({ householdEaterIds: allEaterIds });
+        
+        console.log(`✓ Created ${created} household member profile(s)`);
+      }
+
+    } catch (error) {
+      console.error('Error extracting household members:', error);
+      // Don't fail onboarding if extraction fails - user can add manually
+    }
   }
 
   /**
