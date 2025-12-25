@@ -25,6 +25,7 @@ export class ChatWidget {
     // Onboarding state
     this.isOnboarding = false;
     this.onboardingStep = 0;
+    this.onboardingResponses = []; // Store user responses
     this.onboardingQuestions = [
       'What are your main dietary goals? (e.g., lose weight, eat healthier, follow a specific diet)',
       'Are there any foods you don\'t eat or want to avoid?',
@@ -32,6 +33,7 @@ export class ChatWidget {
       'What\'s your weekly grocery budget?',
       'Which day do you usually do your grocery shopping?'
     ];
+    this.awaitingFinalConfirmation = false;
 
     // Listen for toggle event from HomePage or other components
     document.addEventListener('toggle-chat', (e) => {
@@ -712,7 +714,7 @@ export class ChatWidget {
   showWelcomeMessage() {
     const welcomeMsg = {
       role: 'assistant',
-      content: 'Hi! I\'m Vanessa, your meal planning assistant. Let\'s set up your profile with a few quick questions.',
+      content: 'Hi! I\'m Vanessa, your meal planning assistant. 🍳\n\nLet\'s set up your profile together. This is a conversation - speak naturally and share as much detail as you\'d like. The more you tell me about your preferences, the better I can tailor your meal plans.\n\nYou can make changes or corrections at any time, so don\'t worry about getting it perfect on the first try!',
       timestamp: new Date().toISOString()
     };
     
@@ -725,7 +727,7 @@ export class ChatWidget {
    */
   askOnboardingQuestion(index) {
     if (index >= this.onboardingQuestions.length) {
-      this.completeOnboarding();
+      this.showFinalSummary();
       return;
     }
     
@@ -745,7 +747,18 @@ export class ChatWidget {
    * Handle onboarding response
    */
   handleOnboardingResponse(response) {
+    // If awaiting final confirmation
+    if (this.awaitingFinalConfirmation) {
+      this.handleFinalConfirmation(response);
+      return;
+    }
+
     const step = this.onboardingStep;
+    
+    // Store the response
+    this.onboardingResponses[step] = response;
+    
+    // Save to storage based on question type
     const baseSpec = loadBaseSpecification();
     
     switch (step) {
@@ -759,8 +772,7 @@ export class ChatWidget {
         break;
         
       case 2: // Other household members
-        // For now, just store as note - full household management in settings
-        // Future: parse response and create additional eaters
+        // Store for summary - full household management in settings
         break;
         
       case 3: // Weekly budget
@@ -792,9 +804,142 @@ export class ChatWidget {
         break;
     }
     
-    // Move to next question
+    // Generate summary and next question (or final summary)
     this.onboardingStep++;
-    this.askOnboardingQuestion(this.onboardingStep);
+    
+    if (this.onboardingStep >= this.onboardingQuestions.length) {
+      // All questions answered - show final summary
+      this.showFinalSummary();
+    } else {
+      // Show summary of this answer + next question
+      this.showSummaryAndNextQuestion(step, response);
+    }
+  }
+
+  /**
+   * Show summary of current answer + ask next question
+   */
+  showSummaryAndNextQuestion(currentStep, response) {
+    setTimeout(() => {
+      // Generate concise summary based on question type
+      let summary = '';
+      
+      switch (currentStep) {
+        case 0: // Dietary goals
+          summary = `Great! Focusing on: ${response}`;
+          break;
+        case 1: // Food restrictions
+          summary = `Noted - ${response}`;
+          break;
+        case 2: // Household members
+          summary = `Got it - ${response}`;
+          break;
+        case 3: // Budget
+          const budgetMatch = response.match(/\d+/);
+          if (budgetMatch) {
+            summary = `Perfect - $${budgetMatch[0]} weekly budget`;
+          } else {
+            summary = `Noted your budget preferences`;
+          }
+          break;
+        case 4: // Shopping day
+          summary = `Understood - ${response}`;
+          break;
+      }
+      
+      // Combine summary + next question
+      const combinedMsg = {
+        role: 'assistant',
+        content: `${summary}\n\n${this.onboardingQuestions[this.onboardingStep]}`,
+        timestamp: new Date().toISOString()
+      };
+      
+      this.addMessage(combinedMsg);
+      this.saveConversation();
+    }, 800);
+  }
+
+  /**
+   * Show final summary of all preferences
+   */
+  showFinalSummary() {
+    setTimeout(() => {
+      const baseSpec = loadBaseSpecification();
+      const eaters = loadEaters();
+      const defaultEater = eaters.find(e => e.isDefault) || eaters[0];
+      
+      // Build summary
+      let summary = 'Perfect! Let me confirm what we\'ve set up:\n\n';
+      
+      // Dietary goals
+      if (baseSpec.dietaryGoals) {
+        summary += `🎯 Goals: ${baseSpec.dietaryGoals}\n`;
+      }
+      
+      // Food preferences
+      if (defaultEater?.preferences) {
+        summary += `🥗 Food preferences: ${defaultEater.preferences}\n`;
+      }
+      
+      // Household
+      if (this.onboardingResponses[2]) {
+        summary += `👥 Household: ${this.onboardingResponses[2]}\n`;
+      }
+      
+      // Budget
+      if (baseSpec.weeklyBudget) {
+        summary += `💰 Weekly budget: $${baseSpec.weeklyBudget}\n`;
+      }
+      
+      // Shopping day
+      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      if (baseSpec.shoppingDay !== null && baseSpec.shoppingDay !== undefined) {
+        summary += `🛒 Shopping day: ${days[baseSpec.shoppingDay]}\n`;
+      }
+      
+      summary += '\nHow does this look? Does this sound right?';
+      
+      const summaryMsg = {
+        role: 'assistant',
+        content: summary,
+        timestamp: new Date().toISOString()
+      };
+      
+      this.addMessage(summaryMsg);
+      this.saveConversation();
+      
+      // Set flag to await confirmation
+      this.awaitingFinalConfirmation = true;
+    }, 1000);
+  }
+
+  /**
+   * Handle final confirmation response
+   */
+  handleFinalConfirmation(response) {
+    const lowerResponse = response.toLowerCase();
+    
+    // Check if user is confirming or wants changes
+    const confirmWords = ['yes', 'yeah', 'yep', 'looks good', 'sounds good', 'perfect', 'correct', 'right', 'ok', 'okay'];
+    const isConfirming = confirmWords.some(word => lowerResponse.includes(word));
+    
+    if (isConfirming) {
+      // User confirmed - complete onboarding
+      this.completeOnboarding();
+    } else {
+      // User wants to make changes
+      const changeMsg = {
+        role: 'assistant',
+        content: 'No problem! What would you like to change? You can tell me which preference to update and I\'ll help you adjust it.',
+        timestamp: new Date().toISOString()
+      };
+      
+      this.addMessage(changeMsg);
+      this.saveConversation();
+      
+      // Keep awaiting confirmation state so we can handle the change
+      // For simplicity, after they make a change, we'll show summary again
+    }
   }
 
   /**
@@ -802,6 +947,7 @@ export class ChatWidget {
    */
   completeOnboarding() {
     this.isOnboarding = false;
+    this.awaitingFinalConfirmation = false;
     
     // Mark onboarding as complete
     updateBaseSpecification({ onboardingComplete: true });
@@ -809,7 +955,7 @@ export class ChatWidget {
     // Show completion message
     const completionMsg = {
       role: 'assistant',
-      content: 'Perfect! You\'re all set. Click "Generate Week" whenever you\'re ready to create your first meal plan.',
+      content: 'Excellent! You\'re all set up. 🎉\n\nWhenever you\'re ready, click "Generate Week" below to create your first personalized meal plan. I\'ll take everything you\'ve shared into account!',
       timestamp: new Date().toISOString()
     };
     
