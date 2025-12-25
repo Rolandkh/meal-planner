@@ -1,15 +1,30 @@
 /**
  * MealPlanView Component
  * Displays the generated weekly meal plan with all meals and recipes
+ * Includes household schedule grid showing who's eating when
+ * Slice 3 - Enhanced
  */
 
-import { loadCurrentMealPlan, loadMeals, loadRecipes } from '../utils/storage.js';
+import { loadCurrentMealPlan, loadMeals, loadRecipes, loadEaters } from '../utils/storage.js';
 
 export class MealPlanView {
   constructor() {
     this.mealPlan = null;
     this.meals = [];
     this.recipes = [];
+    this.eaters = [];
+    
+    // Color palette for household members
+    this.eaterColors = [
+      '#3B82F6', // Blue
+      '#10B981', // Green  
+      '#EF4444', // Red
+      '#F59E0B', // Amber
+      '#8B5CF6', // Purple
+      '#EC4899', // Pink
+      '#14B8A6', // Teal
+      '#F97316'  // Orange
+    ];
   }
 
   /**
@@ -19,6 +34,7 @@ export class MealPlanView {
     this.mealPlan = loadCurrentMealPlan();
     this.meals = loadMeals();
     this.recipes = loadRecipes();
+    this.eaters = loadEaters();
 
     if (!this.mealPlan) {
       console.warn('No meal plan found');
@@ -26,7 +42,8 @@ export class MealPlanView {
       console.log('Loaded meal plan:', {
         weekOf: this.mealPlan.weekOf,
         mealsCount: this.meals.length,
-        recipesCount: this.recipes.length
+        recipesCount: this.recipes.length,
+        eatersCount: this.eaters.length
       });
     }
   }
@@ -127,10 +144,159 @@ export class MealPlanView {
       daysContainer.appendChild(dayCard);
     });
 
+    // Household Schedule Grid (if multiple eaters or complex schedule)
+    if (this.eaters.length > 0) {
+      const scheduleGrid = this.renderHouseholdScheduleGrid();
+      content.appendChild(scheduleGrid);
+    }
+
     // Assemble
     content.appendChild(header);
     content.appendChild(daysContainer);
     container.appendChild(content);
+
+    return container;
+  }
+
+  /**
+   * Render household schedule grid showing who's eating when
+   */
+  renderHouseholdScheduleGrid() {
+    const container = document.createElement('div');
+    container.className = 'bg-white rounded-xl shadow-lg p-6 mb-8';
+
+    // Title
+    const title = document.createElement('h3');
+    title.className = 'text-lg font-semibold text-gray-900 mb-4';
+    title.textContent = 'Household Schedule';
+
+    // Get unique dates and sort
+    const dates = [...new Set(this.meals.map(m => m.date))].sort();
+
+    // Create grid
+    const gridContainer = document.createElement('div');
+    gridContainer.className = 'overflow-x-auto';
+
+    const table = document.createElement('table');
+    table.className = 'w-full border-collapse';
+
+    // Header row (days of week)
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    
+    // Empty corner cell
+    const cornerCell = document.createElement('th');
+    cornerCell.className = 'p-2 border border-gray-200 bg-gray-50';
+    headerRow.appendChild(cornerCell);
+
+    // Day headers
+    dates.forEach(date => {
+      const dateObj = new Date(date + 'T00:00:00');
+      const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'short' });
+      const dayDate = dateObj.getDate();
+      
+      const th = document.createElement('th');
+      th.className = 'p-3 border border-gray-200 bg-gray-50 text-center font-medium text-gray-700 text-sm';
+      th.innerHTML = `${dayName}<br><span class="text-xs text-gray-500">${dayDate}</span>`;
+      headerRow.appendChild(th);
+    });
+
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    // Body rows (meal types)
+    const tbody = document.createElement('tbody');
+    const mealTypes = ['breakfast', 'lunch', 'dinner'];
+    const mealLabels = {
+      breakfast: '🌅 Breakfast',
+      lunch: '☀️ Lunch',
+      dinner: '🌙 Dinner'
+    };
+
+    mealTypes.forEach(mealType => {
+      const row = document.createElement('tr');
+      
+      // Meal type label
+      const labelCell = document.createElement('td');
+      labelCell.className = 'p-3 border border-gray-200 bg-gray-50 font-medium text-gray-700 text-sm whitespace-nowrap';
+      labelCell.textContent = mealLabels[mealType];
+      row.appendChild(labelCell);
+
+      // Cells for each day
+      dates.forEach(date => {
+        const meal = this.meals.find(m => m.date === date && m.mealType === mealType);
+        const cell = document.createElement('td');
+        cell.className = 'p-3 border border-gray-200 text-center';
+
+        if (meal && meal.eaterIds && meal.eaterIds.length > 0) {
+          // Display colored dots for each eater
+          const dotsContainer = document.createElement('div');
+          dotsContainer.className = 'flex items-center justify-center gap-1 flex-wrap';
+
+          meal.eaterIds.forEach(eaterId => {
+            const eaterIndex = this.eaters.findIndex(e => e.eaterId === eaterId);
+            if (eaterIndex !== -1) {
+              const dot = document.createElement('div');
+              dot.className = 'w-4 h-4 rounded-full';
+              dot.style.backgroundColor = this.eaterColors[eaterIndex % this.eaterColors.length];
+              dot.title = this.eaters[eaterIndex].name; // Tooltip
+              dotsContainer.appendChild(dot);
+            }
+          });
+
+          cell.appendChild(dotsContainer);
+        } else {
+          // No meal or no eaters specified
+          const empty = document.createElement('span');
+          empty.className = 'text-gray-300 text-xs';
+          empty.textContent = '-';
+          cell.appendChild(empty);
+        }
+
+        row.appendChild(cell);
+      });
+
+      tbody.appendChild(row);
+    });
+
+    table.appendChild(tbody);
+    gridContainer.appendChild(table);
+
+    // Legend
+    const legend = document.createElement('div');
+    legend.className = 'mt-4 pt-4 border-t border-gray-200';
+    
+    const legendTitle = document.createElement('div');
+    legendTitle.className = 'text-sm font-medium text-gray-700 mb-2';
+    legendTitle.textContent = 'Household Members:';
+    
+    const legendItems = document.createElement('div');
+    legendItems.className = 'flex flex-wrap gap-4';
+
+    this.eaters.forEach((eater, index) => {
+      const item = document.createElement('div');
+      item.className = 'flex items-center gap-2';
+      
+      const dot = document.createElement('div');
+      dot.className = 'w-4 h-4 rounded-full flex-shrink-0';
+      dot.style.backgroundColor = this.eaterColors[index % this.eaterColors.length];
+      
+      const name = document.createElement('span');
+      name.className = 'text-sm text-gray-700';
+      name.textContent = eater.name;
+      
+      item.appendChild(dot);
+      item.appendChild(name);
+      legendItems.appendChild(item);
+    });
+
+    legend.appendChild(legendTitle);
+    legend.appendChild(legendItems);
+
+    // Assemble
+    container.appendChild(title);
+    container.appendChild(gridContainer);
+    container.appendChild(legend);
 
     return container;
   }
@@ -277,5 +443,6 @@ export class MealPlanView {
     // Clean up if needed
   }
 }
+
 
 
