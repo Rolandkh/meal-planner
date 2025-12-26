@@ -291,12 +291,86 @@ export class HomePage {
     buttonsContainer.appendChild(chatBtn);
     buttonsContainer.appendChild(generateBtn);
 
+    // Day navigation section
+    const dayNavSection = this.renderDayNavigation();
+
     // Assemble
     planSection.appendChild(header);
     planSection.appendChild(statsCard);
     planSection.appendChild(buttonsContainer);
+    planSection.appendChild(dayNavSection);
 
     return planSection;
+  }
+
+  /**
+   * Render day-of-week navigation buttons
+   * @returns {HTMLElement} Day navigation section
+   */
+  renderDayNavigation() {
+    const section = document.createElement('div');
+    section.className = 'mt-10';
+
+    // Section header
+    const sectionHeader = document.createElement('h2');
+    sectionHeader.className = 'text-2xl font-bold text-gray-800 text-center mb-6';
+    sectionHeader.textContent = 'View by Day';
+
+    // Days container
+    const daysContainer = document.createElement('div');
+    daysContainer.className = 'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3';
+
+    // Get unique dates from meals to determine which days exist
+    const dates = [...new Set(this.meals.map(m => m.date))].sort();
+    const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    
+    // Create a map of day names to dates
+    const dayDateMap = {};
+    dates.forEach(date => {
+      const dateObj = new Date(date + 'T00:00:00');
+      const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'long' });
+      dayDateMap[dayName] = date;
+    });
+
+    // Create buttons for each day
+    daysOfWeek.forEach(day => {
+      const dayButton = document.createElement('button');
+      const hasDate = dayDateMap[day];
+      
+      if (hasDate) {
+        dayButton.className = `
+          bg-gradient-to-r from-blue-400 to-indigo-400
+          hover:from-blue-500 hover:to-indigo-500
+          text-white font-semibold py-4 px-4 rounded-lg
+          shadow-md hover:shadow-lg
+          transition-all transform hover:scale-105
+          text-center
+        `.trim().replace(/\s+/g, ' ');
+        
+        dayButton.textContent = day;
+        dayButton.addEventListener('click', () => {
+          window.location.hash = `#/day/${day.toLowerCase()}`;
+        });
+      } else {
+        // Disabled style for days not in meal plan
+        dayButton.className = `
+          bg-gray-200 text-gray-400
+          font-semibold py-4 px-4 rounded-lg
+          shadow-sm cursor-not-allowed
+          text-center
+        `.trim().replace(/\s+/g, ' ');
+        
+        dayButton.textContent = day;
+        dayButton.disabled = true;
+      }
+      
+      daysContainer.appendChild(dayButton);
+    });
+
+    section.appendChild(sectionHeader);
+    section.appendChild(daysContainer);
+
+    return section;
   }
 
   /**

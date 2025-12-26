@@ -1,7 +1,7 @@
 # Vanessa - AI Meal Planning Concierge
 
-**Version:** v0.8 (Slices 1 & 2 Complete)  
-**Status:** Production-ready MVP  
+**Version:** v0.9 (Slices 1, 2 & 3 Complete)  
+**Status:** Production-ready with full profile management  
 **Created:** December 2025
 
 ---
@@ -10,17 +10,22 @@
 
 Vanessa is an AI-powered meal planning assistant that helps you:
 - 💬 Chat about your meal planning needs and preferences
-- ✨ Generate complete 7-day meal plans (breakfast, lunch, dinner)
-- 🛒 Get organized shopping lists with metric units
-- 📖 View detailed recipes with ingredients and instructions
-- 💰 Track your weekly food budget
+- 👥 Manage household members with dietary preferences and schedules
+- ✨ Generate personalized 7-day meal plans with accurate servings
+- 🛒 Get organized shopping lists with ingredient limits (30 items default)
+- 📖 Browse, search, and rate your recipe library
+- ⭐ Track recipe favorites and cooking history
+- 💰 Control your weekly food budget
+- ⚙️ Customize settings and preferences
 
-## Current Features (Slices 1 & 2)
+## Current Features (Slices 1, 2 & 3)
 
 ### ✅ Slice 1: Chat with Vanessa
 - Collapsible chat widget accessible from anywhere
 - Real-time streaming responses using Server-Sent Events (SSE)
+- AI-powered onboarding flow (5 questions)
 - Conversation history persists across sessions
+- Voice-activated generation ("plan my week" auto-triggers)
 - Mobile-responsive (full-screen on mobile, side panel on desktop)
 - Auto-resizing textarea for comfortable typing
 
@@ -29,12 +34,58 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - Real-time progress updates during generation (10% → 100%)
 - 21 meals per week (breakfast, lunch, dinner × 7 days)
 - Automatic recipe deduplication (same recipe used multiple days)
-- Shopping list with ingredient aggregation
+- Household schedule grid (visual calendar showing who eats when)
+- Accurate servings per meal based on household composition
+- Shopping list with ingredient aggregation and limits
 - Metric units only (grams, ml, whole items)
 - Comprehensive unit conversion system (70+ ingredients)
 - Shopping list grouped by category (produce, meat, dairy, pantry)
 - Budget estimation
 - Export raw AI output for debugging
+
+### ✅ Slice 3: Recipe Library & Profile Management
+
+**Onboarding System:**
+- AI-powered conversation (natural, not form-based)
+- Automatic household member extraction (creates profiles for kids, partners, etc.)
+- Weekly schedule extraction (structured servings per meal)
+- Visual progress feedback during profile setup
+- Smart confirmation with auto-generation support
+
+**Settings Page (4 Sections):**
+- **Storage Management:** Quota monitoring, export/import backups, data cleanup
+- **Household Members:** Manage family members with dietary preferences and schedules
+- **Meal Planning:** Budget, shopping list limits (30 items default), shopping day, dietary goals
+- **Chat Preferences:** Customize Vanessa's personality and communication style
+
+**Recipe Library:**
+- Browse all saved recipes
+- Search by name, ingredients, or tags (with debounce)
+- Filter: All, Favorites, High-Rated (≥4⭐), Most Cooked (≥3x)
+- Recipe cards with emojis, timing, servings, ratings
+- Sorting by popularity and name
+
+**Recipe Detail:**
+- Full recipe view with hero image placeholder
+- Interactive 5-star rating system
+- Favorite toggle (❤️/🤍)
+- Usage tracking: times cooked, last cooked
+- "Mark as Cooked" button
+- Ingredients grouped by category
+- Step-by-step instructions
+- Clickable tags
+
+**Navigation:**
+- Global nav bar: Home → Meal Plan → Recipes → Shopping → Settings
+- Mobile hamburger menu (responsive < 768px)
+- Active link highlighting
+- Sticky header
+
+**Data Management:**
+- Schema migration system (version tracking)
+- Automatic data migrations on app load
+- Storage utilities (CRUD for all entities)
+- Standardized vanessa_ key prefix
 
 ## Technology Stack
 
@@ -53,24 +104,31 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 ```
 meal-planner/
 ├── api/                          # Vercel serverless functions
-│   ├── chat-with-vanessa.js      # SSE chat endpoint
-│   ├── generate-meal-plan.js     # Meal plan generation
+│   ├── chat-with-vanessa.js      # SSE chat + onboarding endpoint
+│   ├── generate-meal-plan.js     # Meal plan generation with schedule
 │   ├── check-env.js              # Environment check (dev)
 │   └── test-models.js            # Model testing (dev)
 ├── src/
-│   ├── main.js                   # App entry point
+│   ├── main.js                   # App entry point + migration
 │   ├── components/               # UI components
 │   │   ├── HomePage.js           # Landing/meal plan summary
-│   │   ├── ChatWidget.js         # Chat interface
+│   │   ├── ChatWidget.js         # Chat + onboarding (1,400+ lines)
 │   │   ├── GenerationStatusPage.js # Progress UI
-│   │   ├── MealPlanView.js       # Weekly meal view
-│   │   └── ShoppingListView.js   # Shopping list
+│   │   ├── MealPlanView.js       # Weekly view + schedule grid
+│   │   ├── ShoppingListView.js   # Shopping list
+│   │   ├── SettingsPage.js       # 4-section settings (1,200+ lines)
+│   │   ├── RecipeLibraryPage.js  # Recipe browsing + search
+│   │   ├── RecipeDetailPage.js   # Recipe detail + ratings
+│   │   └── Navigation.js         # Global nav + mobile menu
 │   ├── utils/                    # Utilities
-│   │   ├── router.js             # Hash-based routing
-│   │   ├── storage.js            # localStorage wrapper
-│   │   ├── mealPlanTransformer.js # Data transformation
-│   │   ├── unitConversions.js    # Unit conversion system
-│   │   └── errorHandler.js       # Error handling
+│   │   ├── router.js             # Parameterized routing
+│   │   ├── storage.js            # localStorage + CRUD (1,000+ lines)
+│   │   ├── mealPlanTransformer.js # Data transformation + schedule mapping
+│   │   ├── unitConversions.js    # Unit conversion (70+ ingredients)
+│   │   ├── errorHandler.js       # Error handling
+│   │   └── migrationManager.js   # Schema migrations
+│   ├── migrations/               # Data migrations
+│   │   └── index.js              # Migration definitions
 │   └── styles/
 │       └── main.css              # Custom styles
 ├── index.html                    # App shell
@@ -138,21 +196,28 @@ meal-planner/
 |-------|------|-------------|
 | `#/` | Home | Landing page or meal plan summary |
 | `#/generating` | Generation Status | Progress during meal plan creation |
-| `#/meal-plan` | Meal Plan View | Full week with all recipes |
+| `#/meal-plan` | Meal Plan View | Full week with schedule grid + recipes |
+| `#/recipes` | Recipe Library | Browse, search, filter recipes |
+| `#/recipe/:id` | Recipe Detail | View recipe, rate, favorite, mark cooked |
 | `#/shopping-list` | Shopping List | Aggregated ingredients by category |
+| `#/settings` | Settings | 4 sections: Storage, Household, Meal Planning, Chat |
 
 ## Data Model
 
-### localStorage Keys
-- `vanessa-chat-history` - Chat conversation messages
-- `recipes` - Recipe library (unique recipes)
-- `meals` - Meal instances (21 per week)
-- `currentMealPlan` - Active week's meal plan
-- `debug_raw_ai_output` - Raw AI response (debugging)
+### localStorage Keys (Standardized with vanessa_ prefix)
+- `vanessa_chat_history` - Chat conversation messages
+- `vanessa_recipes` - Recipe library with ratings/favorites
+- `vanessa_meals` - Meal instances with eaterIds
+- `vanessa_current_meal_plan` - Active week's meal plan
+- `vanessa_eaters` - Household member profiles
+- `vanessa_base_specification` - User profile + weekly schedule
+- `vanessa_debug_raw_output` - Raw AI response (debugging)
+- `vanessa_schema_version` - Migration version tracker
+- `vanessa_migration_slice3` - Migration completion flag
 
 ### Core Entities
 
-**Recipe:**
+**Recipe (Enhanced in Slice 3):**
 ```javascript
 {
   recipeId: 'recipe_[uuid]',
@@ -166,30 +231,87 @@ meal-planner/
   servings: 2,
   tags: ['quick', 'healthy'],
   source: 'generated',
-  rating: null,
-  createdAt: '2025-12-20T...'
+  isFavorite: boolean,        // NEW
+  rating: number | null,      // NEW: 1-5 stars
+  timesCooked: number,        // NEW: Usage tracking
+  lastCooked: string | null,  // NEW: ISO 8601
+  createdAt: '2025-12-20T...',
+  updatedAt: '2025-12-26T...' // NEW
 }
 ```
 
-**Meal:**
+**Meal (Enhanced in Slice 3):**
 ```javascript
 {
   mealId: 'meal_[uuid]',
   recipeId: 'recipe_[uuid]',
   mealType: 'breakfast' | 'lunch' | 'dinner',
   date: 'YYYY-MM-DD',
-  servings: 2
+  eaterIds: ['eater_[uuid]'],  // NEW: Who's eating
+  servings: 2,
+  notes: string
 }
 ```
 
 **MealPlan:**
 ```javascript
 {
+  _schemaVersion: 1,
   mealPlanId: 'plan_YYYYMMDD',
   weekOf: 'YYYY-MM-DD',
   weekEnd: 'YYYY-MM-DD',
+  createdAt: 'ISO 8601',
   mealIds: ['meal_...', ...],  // 21 meals
-  budget: { target: 150, estimated: 142 }
+  budget: { target: 150, estimated: 142 },
+  weeklyPreferences: string,
+  conversation: { messages: [] }
+}
+```
+
+**Eater (NEW: Slice 3):**
+```javascript
+{
+  eaterId: 'eater_[uuid]',
+  name: 'Maya',
+  preferences: 'Likes simple foods',
+  allergies: [],
+  dietaryRestrictions: [],
+  schedule: 'Sunday afternoon - Wednesday morning',
+  isDefault: false,
+  createdAt: '2025-12-26T...',
+  updatedAt: '2025-12-26T...'
+}
+```
+
+**BaseSpecification (NEW: Slice 3):**
+```javascript
+{
+  _schemaVersion: 1,
+  ownerEaterId: 'eater_[uuid]',
+  weeklyBudget: 120,
+  maxShoppingListItems: 30,    // NEW: Ingredient limit
+  shoppingDay: 6,              // 0=Sunday, 6=Saturday
+  preferredStore: 'Coles',
+  householdEaterIds: ['eater_[uuid]'],
+  dietaryGoals: 'Lose weight, anti-inflammatory',
+  onboardingComplete: true,
+  weeklySchedule: {            // NEW: Structured schedule
+    tuesday: {
+      dinner: {
+        servings: 3,
+        eaterIds: ['eater_1', 'eater_2', 'eater_3'],
+        requirements: ['family-dinner', 'kid-friendly']
+      }
+    }
+    // ... other days/meals
+  },
+  chatPreferences: {
+    personality: 'friendly',
+    communicationStyle: 'detailed'
+  },
+  conversation: { startedAt: '...', messages: [] },
+  createdAt: '2025-12-26T...',
+  updatedAt: '2025-12-26T...'
 }
 ```
 
@@ -204,22 +326,31 @@ This project follows a **vertical slice methodology**:
 5. Move to next slice
 
 **Current Status:**
-- ✅ Slice 1: Chat with Vanessa
-- ✅ Slice 2: Meal Plan Generation
-- 📝 Slice 3: Recipe Library & Eater Management (planned)
+- ✅ Slice 1: Chat with Vanessa (Complete)
+- ✅ Slice 2: Meal Plan Generation (Complete)
+- ✅ Slice 3: Recipe Library & Profile Management (Complete)
+- 📝 Slice 4: Polish & Extended Features (Planned)
 
-See `.taskmaster/docs/prd.txt` for complete specifications and learnings.
+**Methodology Benefits:**
+- Build working features incrementally
+- Learn from reality, not theory
+- Spec evolves based on implementation
+- Each slice is testable end-to-end
+
+See `.taskmaster/docs/prd.txt` for complete specifications and Reality Check learnings.
 
 ## API Endpoints
 
 ### POST /api/chat-with-vanessa
-Streams chat responses from Vanessa using SSE.
+Streams chat responses from Vanessa using SSE. Supports onboarding mode.
 
 **Request:**
 ```json
 {
   "message": "string",
-  "chatHistory": [{"role": "user|assistant", "content": "string"}]
+  "chatHistory": [{"role": "user|assistant", "content": "string"}],
+  "isOnboarding": boolean,     // Optional: onboarding mode
+  "onboardingStep": number      // Optional: current question (0-4)
 }
 ```
 
@@ -229,14 +360,38 @@ data: {"type": "token", "content": "text"}
 data: {"type": "done"}
 ```
 
+**Special Markers:**
+- `[ACTION:GENERATE_WEEK]` - Triggers auto-generation when detected
+
 ### POST /api/generate-meal-plan
-Generates a complete 7-day meal plan with progress updates.
+Generates a complete 7-day meal plan with progress updates and schedule support.
 
 **Request:**
 ```json
 {
   "chatHistory": [...],
-  "eaters": [{"name": "User", "preferences": "...", "schedule": "..."}]
+  "eaters": [
+    {
+      "name": "You",
+      "preferences": "...",
+      "allergies": [],
+      "dietaryRestrictions": [],
+      "schedule": "..."
+    }
+  ],
+  "baseSpecification": {
+    "weeklySchedule": {           // Optional: explicit schedule
+      "tuesday": {
+        "dinner": {
+          "servings": 3,
+          "eaterIds": ["..."],
+          "requirements": ["family-dinner"]
+        }
+      }
+    },
+    "maxShoppingListItems": 30,   // Optional: ingredient limit
+    "weeklyBudget": 120
+  }
 }
 ```
 
@@ -245,6 +400,11 @@ Generates a complete 7-day meal plan with progress updates.
 data: {"type": "progress", "progress": 25, "message": "Planning week..."}
 data: {"type": "complete", "data": {...}}
 ```
+
+**Schedule Processing:**
+- Maps day names → actual dates
+- Sends explicit servings per date/meal to Claude
+- Ensures accurate serving sizes
 
 ## Storage & Data Management
 
@@ -268,22 +428,27 @@ data: {"type": "complete", "data": {...}}
 ## Known Limitations
 
 - Single device only (no sync across phone/desktop) - *Fixed in Slice 4*
-- 5MB storage limit (~20-30 weeks) - *Monitoring + cleanup in Slice 3*
-- Manual backup (export/import) - *Automated backup in Slice 4*
+- 5MB storage limit (~20-30 weeks) - *Monitored with warnings*
+- Manual backup/restore (export/import available) - *Auto-backup in Slice 4*
 - Single user (no authentication) - *Multi-user in Slice 4*
-- Cannot modify generated plans (must regenerate entire week)
+- Cannot modify generated plans (must regenerate entire week) - *Slice 4*
+- Single active meal plan (no history) - *Multiple weeks in Slice 4*
 - Metric units only (Australian market)
-- Week starts Saturday (hardcoded)
+- Week starts Saturday (hardcoded for shopping preference)
 
-## Future Enhancements (Slice 3+)
+## Future Enhancements (Slice 4+)
 
-- Eater management (household members with preferences)
-- Recipe library with search and favorites
-- Recipe ratings and usage tracking
+- ✅ ~~Eater management~~ (Complete in Slice 3)
+- ✅ ~~Recipe library with search and favorites~~ (Complete in Slice 3)
+- ✅ ~~Recipe ratings and usage tracking~~ (Complete in Slice 3)
+- ✅ ~~User preferences and settings~~ (Complete in Slice 3)
+- Add recipe flow (manual recipe creation)
 - Edit/modify generated plans
-- Multiple week storage
-- User preferences and settings
+- Multiple week storage with history
+- Usage metering and limits
 - Firebase backend with authentication
+- Multi-device sync
+- Offline mode enhancements
 
 ## Contributing
 
@@ -295,5 +460,24 @@ Private project - not licensed for redistribution.
 
 ---
 
-**Last Updated:** December 20, 2025  
-**Documentation:** See `.taskmaster/docs/prd.txt` for detailed specifications
+## 🎉 Slice 3 Completion Summary
+
+**Completed:** December 26, 2025
+
+**What Was Built:**
+- 6 new components (3,500+ lines of code)
+- 4-section Settings page
+- AI-powered onboarding with extraction
+- Recipe library and detail pages
+- Global navigation system
+- Data migration infrastructure
+- Storage management utilities
+- Household schedule grid
+- Shopping list limits
+
+**All 11 Taskmaster tasks completed:** 45/45 subtasks done
+
+---
+
+**Last Updated:** December 26, 2025  
+**Documentation:** See `.taskmaster/docs/prd.txt` for detailed specifications and Reality Check learnings

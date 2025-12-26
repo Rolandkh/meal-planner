@@ -1,7 +1,7 @@
 # Current Implementation Reference
 
-**Last Updated:** December 20, 2025  
-**Version:** v0.8 (Slices 1 & 2 Complete)
+**Last Updated:** December 26, 2025  
+**Version:** v0.9 (Slices 1, 2 & 3 Complete)
 
 ---
 
@@ -23,16 +23,18 @@ This document contains:
 
 ---
 
-## 🏗️ What We Built (Slices 1 & 2)
+## 🏗️ What We Built (Slices 1, 2 & 3)
 
 ### Slice 1: Chat with Vanessa
 **Status:** ✅ Complete
 
 - `ChatWidget.js` - Collapsible chat interface (mobile + desktop)
-- `POST /api/chat-with-vanessa` - SSE streaming endpoint
+- `POST /api/chat-with-vanessa` - SSE streaming endpoint with onboarding support
 - Conversation persistence in localStorage
+- AI-powered onboarding flow (5 questions)
 - Mobile-responsive design
 - Error handling
+- Voice-activated generation ("plan my week" triggers generation)
 
 **Key Files:**
 - `/src/components/ChatWidget.js`
@@ -43,12 +45,13 @@ This document contains:
 **Status:** ✅ Complete
 
 - `GenerationStatusPage.js` - Progress UI with SSE updates
-- `MealPlanView.js` - Weekly meal display
+- `MealPlanView.js` - Weekly meal display with household schedule grid
 - `ShoppingListView.js` - Aggregated shopping list
-- `POST /api/generate-meal-plan` - Generation endpoint
+- `POST /api/generate-meal-plan` - Generation endpoint with schedule support
 - Data transformation and normalization
 - Unit conversion system (70+ ingredients)
 - Recipe deduplication
+- Structured schedule extraction for accurate servings
 
 **Key Files:**
 - `/src/components/GenerationStatusPage.js`
@@ -57,6 +60,53 @@ This document contains:
 - `/api/generate-meal-plan.js`
 - `/src/utils/mealPlanTransformer.js`
 - `/src/utils/unitConversions.js`
+
+### Slice 3: Recipe Library & Onboarding
+**Status:** ✅ Complete
+
+**Eater Management:**
+- Household member profiles (name, preferences, allergies, schedule)
+- CRUD operations for eaters
+- Default eater management
+- AI-powered extraction from onboarding conversation
+
+**Settings Page (4 Sections):**
+- Storage Management: Quota monitoring, export/import, cleanup
+- Household Members: Full eater management with modal forms
+- Meal Planning: Budget, shopping day, max ingredients, dietary goals
+- Chat Preferences: Personality, style, reset onboarding
+
+**Recipe Features:**
+- Recipe library with search and filtering
+- Recipe detail pages with ratings and favorites
+- Usage tracking (times cooked, last cooked)
+- "Mark as Cooked" functionality
+
+**Onboarding System:**
+- AI-powered 5-question conversation
+- Automatic household member extraction
+- Weekly schedule extraction and structuring
+- Natural language confirmation with auto-generation
+
+**Navigation:**
+- Global navigation bar with mobile hamburger menu
+- Active link highlighting
+- Parameterized routes support (`/recipe/:id`)
+
+**Data Migration:**
+- Schema version tracking
+- Automatic migration system
+- Backward compatibility
+
+**Key Files:**
+- `/src/components/SettingsPage.js` (1,200+ lines)
+- `/src/components/RecipeLibraryPage.js`
+- `/src/components/RecipeDetailPage.js`
+- `/src/components/Navigation.js`
+- `/src/utils/storage.js` (enhanced with eater utilities)
+- `/src/utils/router.js` (parameterized routes)
+- `/src/utils/migrationManager.js`
+- `/src/migrations/index.js`
 
 ---
 
@@ -79,29 +129,124 @@ This document contains:
 ### localStorage Keys (Slice 3 Standardized)
 ```javascript
 'vanessa_chat_history'           // Chat messages
-'vanessa_recipes'                // Recipe library
-'vanessa_meals'                  // Meal instances
+'vanessa_recipes'                // Recipe library with ratings/favorites
+'vanessa_meals'                  // Meal instances with eaterIds
 'vanessa_current_meal_plan'      // Active meal plan
-'vanessa_eaters'                 // Household members (Slice 3)
-'vanessa_base_specification'     // User profile (Slice 3)
+'vanessa_eaters'                 // Household members
+'vanessa_base_specification'     // User profile + weeklySchedule
 'vanessa_debug_raw_output'       // Raw AI response
-'vanessa_schema_version'         // Migration version tracker (Slice 3)
+'vanessa_schema_version'         // Migration version tracker
+'vanessa_migration_slice3'       // Migration completion flag
 ```
 
-**Slice 3 Enhancements:**
+**Slice 3 Storage Enhancements:**
 - ✅ Storage quota monitoring (`getStorageQuota()`)
 - ✅ Export all data to JSON (backup)
 - ✅ Import from JSON (restore)
-- ✅ Cleanup old data (delete old weeks)
-- ✅ Warning banner at 80% capacity
+- ✅ Delete orphaned recipes (`deleteOrphanedRecipes()`)
+- ✅ Warning banner at 60% (warning) and 80% (critical) capacity
+- ✅ Safe save with quota exceeded handling
 
 ### Core Entities
-- **Recipe** - Unique recipe with ingredients, instructions, metadata
-- **Meal** - Instance of a recipe on a specific date/mealType
-- **MealPlan** - Collection of 21 meals for one week
-- **Conversation** - Chat message history
 
-See PRD for complete schemas.
+**Recipe (Enhanced in Slice 3)**
+```javascript
+{
+  recipeId: 'recipe_[uuid]',
+  name: string,
+  ingredients: [{name, quantity, unit, category}],
+  instructions: string,
+  prepTime: number,
+  cookTime: number,
+  servings: number,
+  tags: string[],
+  source: 'generated' | 'user' | 'imported',
+  isFavorite: boolean,        // NEW: Slice 3
+  rating: number | null,      // NEW: 1-5 stars
+  timesCooked: number,        // NEW: Usage tracking
+  lastCooked: string | null,  // NEW: ISO 8601
+  createdAt: 'ISO 8601',
+  updatedAt: 'ISO 8601'       // NEW: Slice 3
+}
+```
+
+**Meal (Enhanced in Slice 3)**
+```javascript
+{
+  mealId: 'meal_[uuid]',
+  recipeId: 'recipe_[uuid]',
+  mealType: 'breakfast' | 'lunch' | 'dinner',
+  date: 'YYYY-MM-DD',
+  eaterIds: ['eater_[uuid]'],  // NEW: Who's eating this meal
+  servings: number,
+  notes: string
+}
+```
+
+**MealPlan**
+```javascript
+{
+  _schemaVersion: 1,
+  mealPlanId: 'plan_YYYYMMDD',
+  weekOf: 'YYYY-MM-DD',
+  weekEnd: 'YYYY-MM-DD',
+  createdAt: 'ISO 8601',
+  mealIds: ['meal_[uuid]'],
+  budget: { target: number, estimated: number },
+  weeklyPreferences: string,
+  conversation: { messages: [] }
+}
+```
+
+**Eater (NEW: Slice 3)**
+```javascript
+{
+  eaterId: 'eater_[uuid]',
+  name: string,
+  preferences: string,
+  allergies: string[],
+  dietaryRestrictions: string[],
+  schedule: string,
+  isDefault: boolean,
+  createdAt: 'ISO 8601',
+  updatedAt: 'ISO 8601'
+}
+```
+
+**BaseSpecification (NEW: Slice 3)**
+```javascript
+{
+  _schemaVersion: 1,
+  ownerEaterId: 'eater_[uuid]',
+  weeklyBudget: number,
+  shoppingDay: 0-6,  // 0=Sunday
+  preferredStore: string,
+  maxShoppingListItems: number,  // NEW: Dec 26
+  householdEaterIds: ['eater_[uuid]'],
+  dietaryGoals: string,
+  onboardingComplete: boolean,
+  weeklySchedule: {              // NEW: Structured schedule
+    sunday: {
+      breakfast: { servings, eaterIds, requirements },
+      lunch: { servings, eaterIds, requirements },
+      dinner: { servings, eaterIds, requirements }
+    },
+    // ... other days
+  },
+  chatPreferences: {
+    personality: 'friendly' | 'professional' | 'casual',
+    communicationStyle: 'concise' | 'detailed'
+  },
+  conversation: {
+    startedAt: 'ISO 8601',
+    messages: []
+  },
+  createdAt: 'ISO 8601',
+  updatedAt: 'ISO 8601'
+}
+```
+
+See PRD for complete schemas and relationships.
 
 ---
 
@@ -113,6 +258,15 @@ See PRD for complete schemas.
 | `#/generating` | GenerationStatusPage | ✅ |
 | `#/meal-plan` | MealPlanView | ✅ |
 | `#/shopping-list` | ShoppingListView | ✅ |
+| `#/recipes` | RecipeLibraryPage | ✅ Slice 3 |
+| `#/recipe/:id` | RecipeDetailPage | ✅ Slice 3 (parameterized) |
+| `#/settings` | SettingsPage | ✅ Slice 3 |
+
+**Navigation:**
+- Global nav bar: Home → Meal Plan → Recipes → Shopping → Settings
+- Mobile hamburger menu (< 768px)
+- Active link highlighting
+- Sticky header
 
 ---
 
@@ -219,31 +373,169 @@ See implemented examples in:
 
 ---
 
-## 🎯 Next Steps (Slice 3)
+## 🎯 Next Steps (Slice 4)
 
-See PRD for Slice 3 planning:
-1. Eater management (household members)
-2. Preference settings
-3. Recipe library browsing
-4. Recipe detail view with ratings
-5. Standardize storage keys (`vanessa_` prefix)
+See PRD for Slice 4 planning:
+1. Add recipe flow (manual recipe creation)
+2. Usage metering and limits
+3. Offline mode support
+4. Mobile app polish
+5. Firebase migration (multi-device sync)
+
+---
+
+## ✨ Slice 3 Features in Detail
+
+### AI-Powered Onboarding
+**5-Question Conversation Flow:**
+1. Dietary goals
+2. Food preferences/restrictions
+3. Household members
+4. Weekly budget
+5. Shopping day
+
+**Smart Features:**
+- Natural conversation (not a rigid form)
+- AI paraphrases responses using "you" (not echoing with "I")
+- Summary + next question in same message (smooth flow)
+- Final comprehensive summary with confirmation
+- Voice-activated generation ("plan my week" auto-triggers)
+- Visual progress indicators (typing dots, progress messages)
+
+**Automatic Extraction:**
+- **Household Members:** AI extracts names, relationships, ages
+  - Creates eater profiles automatically (Maya, Cathie, etc.)
+  - Failsafe: Creates profiles even if AI parsing fails
+- **Weekly Schedule:** AI extracts structured meal schedule
+  - Maps who eats when (per day, per meal)
+  - Calculates exact servings needed
+  - Saves to baseSpecification.weeklySchedule
+
+### Settings Page (4 Sections)
+
+**1. Storage Management**
+- Real-time quota monitoring with color-coded progress bar
+- Export all data to JSON backup file
+- Import data from backup
+- Delete orphaned recipes
+- Warning banners at 60% and 80% capacity
+
+**2. Household Members**
+- List all household members with dietary info
+- Add/edit/delete with modal forms
+- Default eater management (always exactly one default)
+- Visual indicators for default eater
+- Prevents deletion of only eater
+
+**3. Meal Planning**
+- Weekly budget (min: 0)
+- Maximum shopping list items (15-100, default: 30)
+- Shopping day dropdown (Sunday-Saturday)
+- Preferred store (optional)
+- Dietary goals textarea
+- Auto-save with 300ms debounce
+- Visual save confirmation
+
+**4. Chat Preferences**
+- Vanessa personality: Friendly, Professional, Casual
+- Communication style: Concise, Detailed
+- Reset onboarding button
+
+### Recipe Library
+- Browse all saved recipes
+- Search by name, ingredients, or tags (300ms debounce)
+- Filter tabs: All, Favorites, High-Rated (≥4 stars), Most Cooked (≥3 times)
+- Recipe cards with emoji placeholders
+- Sorting: Most cooked first, then alphabetical
+- Empty states for each scenario
+- Click card → Navigate to recipe detail
+
+### Recipe Detail Page
+- Hero image with emoji placeholder
+- Interactive 5-star rating system
+- Favorite toggle (❤️/🤍)
+- Meta info: prep time, cook time, servings
+- Ingredients grouped by category
+- Step-by-step instructions
+- Clickable tag chips
+- Usage history: times cooked, last cooked
+- "Mark as Cooked" button (increments counter)
+- Back navigation to library
+
+### Meal Plan View Enhancements
+- **Household Schedule Grid:** Visual calendar showing who eats when
+  - Color-coded dots per person
+  - Shows attendance for each meal
+  - Legend with household member names
+  - Empty cells for skipped meals
+- Positioned after header, before day cards
+- Smart eaterIds assignment based on schedule
+
+### Navigation System
+- Sticky header navigation bar
+- Links: Home → Meal Plan → Recipes → Shopping → Settings
+- Active link highlighting (blue underline)
+- Mobile hamburger menu (< 768px breakpoint)
+- Parameterized route support (`/recipe/:id`)
+- Browser back/forward support
+
+### Data Migration System
+- MigrationManager with version tracking
+- Automatic schema updates on app load
+- Migration v1 (Slice 3):
+  - Renames keys to vanessa_ prefix
+  - Creates default eater
+  - Creates base specification
+  - Updates recipe schema
+- Error UI with retry button
+- Idempotent migrations (safe to run multiple times)
 
 ---
 
 ## 🐛 Known Issues
 
-None currently blocking. See GitHub issues or PRD for enhancement ideas.
+**Current (Non-Blocking):**
+- Tailwind CDN warning (cosmetic - can install PostCSS later)
+- Chrome extension message errors (browser extension conflicts - harmless)
+
+**Testing Blocked Until Jan 1, 2026:**
+- Anthropic API quota exhausted
+- All features built and ready to test when quota resets
 
 ---
 
-## 💡 Key Learnings from Slices 1 & 2
+## 💡 Key Learnings from Slices 1, 2 & 3
 
+**Slice 1 & 2 Learnings:**
 1. **SSE streaming provides excellent UX** for long operations
 2. **Recipe deduplication works perfectly** with hash-based approach
 3. **localStorage is sufficient** for Phase 1 (no backend needed yet)
 4. **Unit conversion system is complex** but essential for shopping lists
 5. **Chat context integration** eliminates need for separate preference forms
 6. **Component lifecycle hooks** provide clean async operation handling
+
+**Slice 3 Learnings:**
+1. **Two-phase AI extraction is essential** for reliable data parsing
+   - Phase 1: Extract structured schedule
+   - Phase 2: Generate with explicit requirements
+2. **Free-form conversation + structured output** is best UX
+   - Natural onboarding conversation
+   - AI extracts structured data automatically
+3. **Visual feedback is critical** during long AI operations
+   - Typing indicators prevent "is it broken?" moments
+   - Progress messages show what's happening
+4. **Date-to-day mapping is crucial** for schedule accuracy
+   - Schedule uses day names (Sunday, Monday)
+   - Generation uses dates (2025-12-29)
+   - Must map explicitly in prompts
+5. **Ingredient limits dramatically improve usability**
+   - 46 items → overwhelming
+   - 30 items → manageable
+   - Constraint forces intelligent reuse
+6. **Household schedule grid provides instant clarity**
+   - Visual overview of complex schedules
+   - Color-coded dots per person
+   - Eliminates confusion about serving sizes
 
 See PRD "Reality Check" section for complete learnings.
 

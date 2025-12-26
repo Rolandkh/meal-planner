@@ -19,6 +19,7 @@ import { ShoppingListView } from './components/ShoppingListView.js';
 import { SettingsPage } from './components/SettingsPage.js';
 import { RecipeLibraryPage } from './components/RecipeLibraryPage.js';
 import { RecipeDetailPage } from './components/RecipeDetailPage.js';
+import { DayView } from './components/DayView.js';
 import { Navigation } from './components/Navigation.js';
 
 // Global error handler
@@ -118,6 +119,7 @@ async function initApp() {
   router.addRoute('/settings', new SettingsPage());
   router.addRoute('/recipes', new RecipeLibraryPage());
   router.addRoute('/recipe/:id', RecipeDetailPage); // Class for parameterized route
+  router.addRoute('/day/:day', DayView); // Class for parameterized day route
   
   // Initialize router
   router.init();
