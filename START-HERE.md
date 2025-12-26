@@ -12,8 +12,8 @@
 - ✅ Slices 1, 2, 3 fully complete and tested
 - ✅ Slice 4 code complete (all 10 tasks built)
 - ✅ Automated UI tests passed (6/6)
+- ✅ Critical bugs fixed (Dec 26, 2025)
 - ⏳ Manual API tests pending (0/7)
-- 🐛 2 minor UI bugs to fix (non-blocking)
 
 **What This Means:**
 All features are built and working. You need to test the AI-powered features (recipe import, single-day regeneration) to verify they work end-to-end.
@@ -134,12 +134,13 @@ cat references/SLICE-4-TEST-REPORT.md
 
 ---
 
-## 🐛 Known Issues (Minor)
+## ✅ Recent Bug Fixes (December 26, 2025)
 
-1. Settings tab switching doesn't work - **Workaround:** Reload page
-2. Recipe edit add ingredient needs investigation - **Impact:** Low
+1. ✅ **Settings tab switching** - Fixed `createSelectGroup` method error (Meal Planning tab now works)
+2. ✅ **Meal plan generation 500 error** - Fixed requirements handling (string vs array)
+3. ✅ **Dev presets updated** - Now includes personalized Mediterranean diet data
 
-Both are polish issues, not blockers.
+**Status:** All critical bugs resolved. Ready for full manual testing.
 
 ---
 

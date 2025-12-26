@@ -1,9 +1,9 @@
 # Vanessa - AI Meal Planning Concierge
 
-**Version:** v1.0-rc1 (Slice 4 Code Complete)  
-**Status:** All features built, automated tests passed, manual API tests pending  
+**Version:** v1.0-rc1 (Slice 4 Code Complete + Bug Fixes)  
+**Status:** All features built, critical bugs fixed, ready for manual testing  
 **Created:** December 2025  
-**Last Updated:** December 26, 2025
+**Last Updated:** December 26, 2025 (Evening - Bug Fixes Complete)
 
 ---
 
@@ -95,10 +95,12 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - Storage utilities (CRUD for all entities)
 - Standardized vanessa_ key prefix
 
-**Development Tools (NEW: Dec 26):**
+**Development Tools (UPDATED: Dec 26 Evening):**
 - **Dev Preset Import:** One-click bypass of onboarding for rapid testing
-- Pre-configured household (Roland, Maya, Cathie)
-- Sample meal plan with 5 recipes and 21 meals
+- **Personalized Data:** Mediterranean diet, actual schedule with Maya & Cathie
+- Pre-configured household with real preferences and dietary restrictions
+- Sample meal plan with 6 Mediterranean recipes and 21 meals
+- $120 weekly budget, ingredient reuse strategy
 - Speeds up development iteration from 5+ minutes to 2 seconds
 
 ### ✅ Slice 4: Recipe Management & History (Code Complete: Dec 26, 2025)
@@ -574,6 +576,8 @@ Extracts structured recipe data from raw text using AI.
 - Single user (no authentication) - *Multi-user in Slice 6*
 - ✅ ~~Cannot modify generated plans~~ - Can now edit recipes and regenerate single days (Slice 4)
 - ✅ ~~Single active meal plan (no history)~~ - History system implemented in Slice 4
+- ✅ ~~Settings tab switching broken~~ - Fixed December 26, 2025
+- ✅ ~~Meal plan generation 500 errors~~ - Fixed December 26, 2025
 - Metric units only (Australian market)
 - Week starts Saturday (hardcoded for shopping preference)
 - Cannot import from URL yet - *Coming in Slice 5*
@@ -640,7 +644,7 @@ Private project - not licensed for redistribution.
 - Recipe library and settings
 - Household schedule system
 
-### Slice 4 (December 26, 2025) - Code Complete
+### Slice 4 (December 26, 2025) - Code Complete + Bug Fixes
 - 10 tasks, 20 subtasks
 - 6 new files (~1,800 lines)
 - 10 enhanced files (~700 lines)
@@ -648,7 +652,11 @@ Private project - not licensed for redistribution.
 - Single day regeneration
 - Meal plan history with auto-archive
 - Recipe import from text
-- **Status:** Code complete, automated tests passed, manual API tests pending
+- **Bug Fixes (Evening):**
+  - Fixed Settings Meal Planning tab (method error)
+  - Fixed meal plan generation 500 error (requirements handling)
+  - Updated dev presets with personalized Mediterranean data
+- **Status:** Code complete, bugs fixed, ready for manual testing
 
 ---
 

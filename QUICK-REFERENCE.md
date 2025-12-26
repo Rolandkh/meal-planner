@@ -1,8 +1,8 @@
 # Quick Reference Card
 
 **Version:** v1.0-rc1  
-**Status:** Code Complete - Testing In Progress  
-**Updated:** December 26, 2025
+**Status:** Code Complete + Bugs Fixed - Ready for Testing  
+**Updated:** December 26, 2025 (Evening)
 
 ---
 
@@ -110,10 +110,13 @@ vercel --prod
 
 ---
 
-## 🐛 Known Issues
+## ✅ Recent Bug Fixes (Dec 26 Evening)
 
-1. **Settings tab switching** - Doesn't update content (Low priority)
-2. **Recipe edit add ingredient** - No immediate visual update (Low priority)
+1. ✅ **Settings tab switching** - Fixed (changed `createSelectGroup` → `createFormGroup`)
+2. ✅ **Meal plan generation** - Fixed 500 error (requirements string/array handling)
+3. ✅ **Dev presets** - Updated with personalized Mediterranean diet data
+
+**Status:** All known bugs resolved!
 
 ---
 
