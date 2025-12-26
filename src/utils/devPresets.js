@@ -20,10 +20,10 @@ export const DEV_PRESET = {
     {
       eaterId: 'eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6',
       name: 'Roland',
-      preferences: 'Varied diet, enjoys trying new recipes',
+      preferences: 'Mediterranean diet, anti-inflammatory foods, minimal red meat, loves fish and vegetables, prefers simple meal prep. Dislikes passion fruit and kiwi.',
       allergies: [],
-      dietaryRestrictions: [],
-      schedule: 'Works from home, flexible meal times',
+      dietaryRestrictions: ['No caffeine', 'Limit dairy (yogurt ok, milk/cream not preferred)', 'Minimal red meat'],
+      schedule: 'Has Maya Sun afternoon-Wed morning. Meal prep on Saturdays.',
       isDefault: true,
       createdAt: '2025-12-26T00:00:00.000Z',
       updatedAt: '2025-12-26T00:00:00.000Z'
@@ -31,10 +31,10 @@ export const DEV_PRESET = {
     {
       eaterId: 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7',
       name: 'Maya',
-      preferences: 'Likes simple, familiar foods',
+      preferences: '4 years old, likes simple kid-friendly foods',
       allergies: [],
       dietaryRestrictions: [],
-      schedule: 'School days, dinner at home',
+      schedule: 'With dad Sunday afternoon through Wednesday morning',
       isDefault: false,
       createdAt: '2025-12-26T00:00:00.000Z',
       updatedAt: '2025-12-26T00:00:00.000Z'
@@ -42,10 +42,10 @@ export const DEV_PRESET = {
     {
       eaterId: 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8',
       name: 'Cathie',
-      preferences: 'Healthy options, Mediterranean style',
+      preferences: 'Mediterranean style, healthy options',
       allergies: [],
       dietaryRestrictions: [],
-      schedule: 'Variable, not always home for meals',
+      schedule: 'Visits Tuesday evenings for dinner',
       isDefault: false,
       createdAt: '2025-12-26T00:00:00.000Z',
       updatedAt: '2025-12-26T00:00:00.000Z'
@@ -55,48 +55,48 @@ export const DEV_PRESET = {
   baseSpecification: {
     _schemaVersion: 1,
     ownerEaterId: 'eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6',
-    weeklyBudget: 150,
+    weeklyBudget: 120,
     shoppingDay: 6, // Saturday
     preferredStore: 'Coles Caulfield',
     maxShoppingListItems: 30,
     householdEaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'],
-    dietaryGoals: 'Balanced diet with variety, keep it practical and budget-friendly',
+    dietaryGoals: 'Weight loss, anti-inflammatory Mediterranean diet following Food Compass guidelines. Focus on fish, vegetables, legumes, yogurt. Minimal red meat. No caffeine. Reuse ingredients mid-week to minimize cost. Simple Saturday meal prep.',
     onboardingComplete: true,
     weeklySchedule: {
       sunday: {
-        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: '' },
-        lunch: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
+        breakfast: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland, Maya arrives for lunch' },
+        lunch: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Kid-friendly' },
+        dinner: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Kid-friendly' }
       },
       monday: {
-        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick, easy, kid-friendly' },
+        lunch: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Simple, kid-friendly' },
+        dinner: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Kid-friendly' }
       },
       tuesday: {
-        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick, easy, kid-friendly' },
+        lunch: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Simple, kid-friendly' },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: 'Cathie visits, nice Mediterranean meal' }
       },
       wednesday: {
-        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick, easy, kid-friendly - Maya leaves after breakfast' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland, use leftovers' },
+        dinner: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland' }
       },
       thursday: {
-        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
+        breakfast: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland, quick' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland, use leftovers' },
+        dinner: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland' }
       },
       friday: {
-        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
+        breakfast: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland, quick' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland, use leftovers' },
+        dinner: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland' }
       },
       saturday: {
-        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: '' },
-        lunch: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
+        breakfast: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland, shopping and meal prep day' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland' },
+        dinner: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: 'Just Roland' }
       }
     },
     chatPreferences: {
@@ -114,114 +114,100 @@ export const DEV_PRESET = {
   recipes: [
     {
       recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9',
-      name: 'Quick Scrambled Eggs',
+      name: 'Greek Yogurt Breakfast Bowl',
       ingredients: [
-        { name: 'eggs', quantity: 4, unit: 'whole', category: 'dairy' },
-        { name: 'butter', quantity: 15, unit: 'g', category: 'dairy' },
-        { name: 'milk', quantity: 50, unit: 'ml', category: 'dairy' },
-        { name: 'salt', quantity: 2, unit: 'g', category: 'pantry' }
+        { name: 'Greek yogurt', quantity: 400, unit: 'g', category: 'dairy' },
+        { name: 'honey', quantity: 20, unit: 'ml', category: 'pantry' },
+        { name: 'mixed berries', quantity: 200, unit: 'g', category: 'produce' },
+        { name: 'walnuts', quantity: 50, unit: 'g', category: 'pantry' },
+        { name: 'chia seeds', quantity: 15, unit: 'g', category: 'pantry' }
       ],
-      instructions: 'Beat eggs with milk. Melt butter in pan over medium heat. Pour in eggs, stir gently until just set. Season with salt.',
-      prepTime: 3,
-      cookTime: 5,
+      instructions: 'Divide Greek yogurt into bowls. Top with fresh berries, crushed walnuts, and chia seeds. Drizzle with honey. Mix before eating.',
+      prepTime: 5,
+      cookTime: 0,
       servings: 2,
-      tags: ['quick', 'breakfast', 'vegetarian'],
+      tags: ['quick', 'breakfast', 'vegetarian', 'mediterranean', 'kid-friendly'],
       source: 'generated',
-      isFavorite: false,
-      rating: null,
-      timesCooked: 0,
-      lastCooked: null,
+      isFavorite: true,
+      rating: 5,
+      timesCooked: 8,
+      lastCooked: '2025-12-22T00:00:00.000Z',
       createdAt: '2025-12-26T00:00:00.000Z',
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
       recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0',
-      name: 'Chicken Stir Fry',
+      name: 'Mediterranean Baked Salmon',
       ingredients: [
-        { name: 'chicken breast', quantity: 500, unit: 'g', category: 'meat' },
-        { name: 'mixed vegetables', quantity: 400, unit: 'g', category: 'produce' },
-        { name: 'soy sauce', quantity: 30, unit: 'ml', category: 'pantry' },
-        { name: 'garlic', quantity: 3, unit: 'whole', category: 'produce' },
-        { name: 'ginger', quantity: 15, unit: 'g', category: 'produce' },
-        { name: 'rice', quantity: 300, unit: 'g', category: 'pantry' }
+        { name: 'salmon fillets', quantity: 600, unit: 'g', category: 'seafood' },
+        { name: 'cherry tomatoes', quantity: 300, unit: 'g', category: 'produce' },
+        { name: 'kalamata olives', quantity: 100, unit: 'g', category: 'pantry' },
+        { name: 'lemon', quantity: 2, unit: 'whole', category: 'produce' },
+        { name: 'garlic', quantity: 4, unit: 'whole', category: 'produce' },
+        { name: 'olive oil', quantity: 45, unit: 'ml', category: 'pantry' },
+        { name: 'fresh dill', quantity: 10, unit: 'g', category: 'produce' },
+        { name: 'baby potatoes', quantity: 500, unit: 'g', category: 'produce' }
       ],
-      instructions: 'Cook rice. Slice chicken and stir-fry until golden. Add vegetables, garlic, ginger. Stir-fry 5 minutes. Add soy sauce, toss well. Serve over rice.',
+      instructions: 'Preheat oven to 200°C. Place salmon in baking dish with halved baby potatoes. Top with cherry tomatoes, olives, sliced garlic, and lemon slices. Drizzle with olive oil, season with salt and pepper. Bake 20 minutes. Garnish with fresh dill.',
       prepTime: 10,
-      cookTime: 15,
+      cookTime: 20,
       servings: 3,
-      tags: ['quick', 'dinner', 'healthy'],
+      tags: ['dinner', 'seafood', 'mediterranean', 'anti-inflammatory', 'prep-ahead'],
       source: 'generated',
       isFavorite: true,
       rating: 5,
-      timesCooked: 3,
-      lastCooked: '2025-12-20T00:00:00.000Z',
+      timesCooked: 6,
+      lastCooked: '2025-12-19T00:00:00.000Z',
       createdAt: '2025-12-26T00:00:00.000Z',
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
       recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1',
-      name: 'Greek Salad',
+      name: 'Chickpea & Vegetable Stew',
       ingredients: [
-        { name: 'cucumber', quantity: 200, unit: 'g', category: 'produce' },
-        { name: 'tomatoes', quantity: 300, unit: 'g', category: 'produce' },
-        { name: 'feta cheese', quantity: 150, unit: 'g', category: 'dairy' },
-        { name: 'olives', quantity: 100, unit: 'g', category: 'pantry' },
-        { name: 'red onion', quantity: 1, unit: 'whole', category: 'produce' },
+        { name: 'chickpeas (canned)', quantity: 800, unit: 'g', category: 'pantry' },
+        { name: 'diced tomatoes (canned)', quantity: 800, unit: 'g', category: 'pantry' },
+        { name: 'carrots', quantity: 300, unit: 'g', category: 'produce' },
+        { name: 'zucchini', quantity: 300, unit: 'g', category: 'produce' },
+        { name: 'onion', quantity: 2, unit: 'whole', category: 'produce' },
+        { name: 'garlic', quantity: 4, unit: 'whole', category: 'produce' },
         { name: 'olive oil', quantity: 40, unit: 'ml', category: 'pantry' },
-        { name: 'lemon juice', quantity: 20, unit: 'ml', category: 'pantry' }
+        { name: 'cumin', quantity: 5, unit: 'g', category: 'pantry' },
+        { name: 'paprika', quantity: 5, unit: 'g', category: 'pantry' },
+        { name: 'vegetable stock', quantity: 500, unit: 'ml', category: 'pantry' }
       ],
-      instructions: 'Chop cucumber, tomatoes, and onion. Combine in bowl. Add olives and crumbled feta. Drizzle with olive oil and lemon juice. Toss gently.',
-      prepTime: 10,
-      cookTime: 0,
-      servings: 2,
-      tags: ['quick', 'vegetarian', 'lunch', 'healthy'],
+      instructions: 'Sauté diced onion and garlic in olive oil. Add diced carrots, cook 5 min. Add zucchini, cumin, paprika. Stir in chickpeas, tomatoes, and stock. Simmer 25 minutes until vegetables are tender. Season with salt and pepper. Serve with crusty bread.',
+      prepTime: 15,
+      cookTime: 30,
+      servings: 6,
+      tags: ['dinner', 'vegetarian', 'mediterranean', 'batch-cook', 'kid-friendly', 'legumes', 'anti-inflammatory'],
       source: 'generated',
-      isFavorite: false,
-      rating: 4,
-      timesCooked: 1,
-      lastCooked: null,
+      isFavorite: true,
+      rating: 5,
+      timesCooked: 4,
+      lastCooked: '2025-12-15T00:00:00.000Z',
       createdAt: '2025-12-26T00:00:00.000Z',
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
       recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2',
-      name: 'Spaghetti Bolognese',
+      name: 'Lemon Herb Chicken with Roasted Vegetables',
       ingredients: [
-        { name: 'ground beef', quantity: 500, unit: 'g', category: 'meat' },
-        { name: 'spaghetti', quantity: 400, unit: 'g', category: 'pantry' },
-        { name: 'tomato sauce', quantity: 500, unit: 'ml', category: 'pantry' },
-        { name: 'onion', quantity: 1, unit: 'whole', category: 'produce' },
-        { name: 'garlic', quantity: 3, unit: 'whole', category: 'produce' },
-        { name: 'olive oil', quantity: 20, unit: 'ml', category: 'pantry' }
+        { name: 'chicken breast', quantity: 500, unit: 'g', category: 'meat' },
+        { name: 'bell peppers', quantity: 300, unit: 'g', category: 'produce' },
+        { name: 'red onion', quantity: 2, unit: 'whole', category: 'produce' },
+        { name: 'zucchini', quantity: 300, unit: 'g', category: 'produce' },
+        { name: 'lemon', quantity: 2, unit: 'whole', category: 'produce' },
+        { name: 'garlic', quantity: 4, unit: 'whole', category: 'produce' },
+        { name: 'olive oil', quantity: 40, unit: 'ml', category: 'pantry' },
+        { name: 'dried oregano', quantity: 5, unit: 'g', category: 'pantry' },
+        { name: 'fresh parsley', quantity: 15, unit: 'g', category: 'produce' }
       ],
-      instructions: 'Cook spaghetti. Sauté onion and garlic in oil. Add beef, brown well. Pour in tomato sauce, simmer 20 minutes. Season to taste. Serve over spaghetti.',
-      prepTime: 10,
+      instructions: 'Marinate chicken in lemon juice, olive oil, oregano, and garlic for 30 min (or prep ahead). Chop vegetables into chunks. Preheat oven to 200°C. Arrange chicken and vegetables on baking tray. Roast 25-30 minutes until chicken is cooked through. Garnish with fresh parsley.',
+      prepTime: 15,
       cookTime: 30,
       servings: 3,
-      tags: ['dinner', 'pasta', 'family-favorite'],
-      source: 'generated',
-      isFavorite: true,
-      rating: 5,
-      timesCooked: 5,
-      lastCooked: '2025-12-18T00:00:00.000Z',
-      createdAt: '2025-12-26T00:00:00.000Z',
-      updatedAt: '2025-12-26T00:00:00.000Z'
-    },
-    {
-      recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3',
-      name: 'Avocado Toast',
-      ingredients: [
-        { name: 'bread', quantity: 4, unit: 'slices', category: 'pantry' },
-        { name: 'avocado', quantity: 2, unit: 'whole', category: 'produce' },
-        { name: 'lemon juice', quantity: 10, unit: 'ml', category: 'pantry' },
-        { name: 'salt', quantity: 2, unit: 'g', category: 'pantry' },
-        { name: 'pepper', quantity: 1, unit: 'g', category: 'pantry' }
-      ],
-      instructions: 'Toast bread. Mash avocado with lemon juice, salt, and pepper. Spread generously on toast. Optional: top with cherry tomatoes or eggs.',
-      prepTime: 5,
-      cookTime: 2,
-      servings: 2,
-      tags: ['quick', 'breakfast', 'vegetarian', 'healthy'],
+      tags: ['dinner', 'mediterranean', 'anti-inflammatory', 'prep-ahead'],
       source: 'generated',
       isFavorite: false,
       rating: 4,
@@ -229,44 +215,95 @@ export const DEV_PRESET = {
       lastCooked: null,
       createdAt: '2025-12-26T00:00:00.000Z',
       updatedAt: '2025-12-26T00:00:00.000Z'
+    },
+    {
+      recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3',
+      name: 'Hummus Pasta with Cherry Tomatoes',
+      ingredients: [
+        { name: 'whole wheat pasta', quantity: 300, unit: 'g', category: 'pantry' },
+        { name: 'hummus', quantity: 200, unit: 'g', category: 'pantry' },
+        { name: 'cherry tomatoes', quantity: 300, unit: 'g', category: 'produce' },
+        { name: 'baby spinach', quantity: 150, unit: 'g', category: 'produce' },
+        { name: 'garlic', quantity: 2, unit: 'whole', category: 'produce' },
+        { name: 'olive oil', quantity: 30, unit: 'ml', category: 'pantry' },
+        { name: 'lemon juice', quantity: 20, unit: 'ml', category: 'pantry' },
+        { name: 'pine nuts', quantity: 40, unit: 'g', category: 'pantry' }
+      ],
+      instructions: 'Cook pasta according to package directions. In a pan, sauté garlic and halved cherry tomatoes in olive oil until softened. Add spinach, wilt briefly. Drain pasta, reserving 1 cup pasta water. Toss pasta with hummus, adding pasta water to create creamy sauce. Mix in tomatoes and spinach. Top with toasted pine nuts and lemon juice.',
+      prepTime: 10,
+      cookTime: 15,
+      servings: 2,
+      tags: ['quick', 'vegetarian', 'lunch', 'dinner', 'kid-friendly', 'mediterranean', 'legumes'],
+      source: 'generated',
+      isFavorite: true,
+      rating: 5,
+      timesCooked: 7,
+      lastCooked: '2025-12-21T00:00:00.000Z',
+      createdAt: '2025-12-26T00:00:00.000Z',
+      updatedAt: '2025-12-26T00:00:00.000Z'
+    },
+    {
+      recipeId: 'recipe_c9d0e1f2-a3b4-45c6-d7e8-f9a0b1c2d3e4',
+      name: 'Mediterranean White Fish with Green Beans',
+      ingredients: [
+        { name: 'white fish fillets (cod or snapper)', quantity: 600, unit: 'g', category: 'seafood' },
+        { name: 'green beans', quantity: 400, unit: 'g', category: 'produce' },
+        { name: 'lemon', quantity: 2, unit: 'whole', category: 'produce' },
+        { name: 'garlic', quantity: 3, unit: 'whole', category: 'produce' },
+        { name: 'olive oil', quantity: 40, unit: 'ml', category: 'pantry' },
+        { name: 'fresh parsley', quantity: 15, unit: 'g', category: 'produce' },
+        { name: 'almonds (sliced)', quantity: 40, unit: 'g', category: 'pantry' }
+      ],
+      instructions: 'Steam green beans until tender-crisp, about 8 minutes. Pan-fry fish in olive oil with minced garlic, 4-5 minutes per side until flaky. Squeeze fresh lemon juice over fish. Toss green beans with olive oil, toasted almond slices, and parsley. Serve together.',
+      prepTime: 10,
+      cookTime: 12,
+      servings: 3,
+      tags: ['quick', 'dinner', 'seafood', 'mediterranean', 'anti-inflammatory'],
+      source: 'generated',
+      isFavorite: false,
+      rating: null,
+      timesCooked: 0,
+      lastCooked: null,
+      createdAt: '2025-12-26T00:00:00.000Z',
+      updatedAt: '2025-12-26T00:00:00.000Z'
     }
   ],
 
   meals: [
-    // Saturday
-    { mealId: 'meal_c9d0e1f2-a3b4-45c6-d7e8-f9a0b1c2d3e4', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
-    { mealId: 'meal_d0e1f2a3-b4c5-46d7-e8f9-a0b1c2d3e4f5', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
-    { mealId: 'meal_e1f2a3b4-c5d6-47e8-f9a0-b1c2d3e4f5a6', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
+    // Saturday (meal prep day, just Roland)
+    { mealId: 'meal_sat1', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Prep chickpea stew for the week' },
+    { mealId: 'meal_sat2', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'lunch', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Quick lunch while prepping' },
+    { mealId: 'meal_sat3', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'dinner', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 2, notes: 'Make 6 servings chickpea stew for week' },
     
-    // Sunday
-    { mealId: 'meal_f2a3b4c5-d6e7-48f9-a0b1-c2d3e4f5a6b7', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'breakfast', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
-    { mealId: 'meal_a3b4c5d6-e7f8-49a0-b1c2-d3e4f5a6b7c8', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
-    { mealId: 'meal_b4c5d6e7-f8a9-40b1-c2d3-e4f5a6b7c8d9', recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2', mealType: 'dinner', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
+    // Sunday (Maya arrives for lunch)
+    { mealId: 'meal_sun1', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Just Roland before Maya arrives' },
+    { mealId: 'meal_sun2', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'lunch', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: 'Maya-friendly quick lunch' },
+    { mealId: 'meal_sun3', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: 'Healthy salmon dinner' },
     
-    // Monday
-    { mealId: 'meal_c5d6e7f8-a9b0-41c2-d3e4-f5a6b7c8d9e0', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
-    { mealId: 'meal_d6e7f8a9-b0c1-42d3-e4f5-a6b7c8d9e0f1', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
-    { mealId: 'meal_e7f8a9b0-c1d2-43e4-f5a6-b7c8d9e0f1a2', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
+    // Monday (all day with Maya)
+    { mealId: 'meal_mon1', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: 'Quick breakfast' },
+    { mealId: 'meal_mon2', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: 'Leftover chickpea stew' },
+    { mealId: 'meal_mon3', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'dinner', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: 'Maya-friendly pasta' },
     
-    // Tuesday
-    { mealId: 'meal_f8a9b0c1-d2e3-44f5-a6b7-c8d9e0f1a2b3', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'breakfast', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
-    { mealId: 'meal_a9b0c1d2-e3f4-45a6-b7c8-d9e0f1a2b3c4', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
-    { mealId: 'meal_b0c1d2e3-f4a5-46b7-c8d9-e0f1a2b3c4d5', recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2', mealType: 'dinner', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
+    // Tuesday (Maya all day, Cathie for dinner)
+    { mealId: 'meal_tue1', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: 'Quick breakfast' },
+    { mealId: 'meal_tue2', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: 'Leftover chickpea stew' },
+    { mealId: 'meal_tue3', recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2', mealType: 'dinner', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: 'Nice dinner with Cathie' },
     
-    // Wednesday
-    { mealId: 'meal_c1d2e3f4-a5b6-47c8-d9e0-f1a2b3c4d5e6', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
-    { mealId: 'meal_d2e3f4a5-b6c7-48d9-e0f1-a2b3c4d5e6f7', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
-    { mealId: 'meal_e3f4a5b6-c7d8-49e0-f1a2-b3c4d5e6f7a8', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
+    // Wednesday (Maya until breakfast, then just Roland)
+    { mealId: 'meal_wed1', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: 'Last breakfast with Maya' },
+    { mealId: 'meal_wed2', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Leftover chickpea stew' },
+    { mealId: 'meal_wed3', recipeId: 'recipe_c9d0e1f2-a3b4-45c6-d7e8-f9a0b1c2d3e4', mealType: 'dinner', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Light fish dinner' },
     
-    // Thursday
-    { mealId: 'meal_f4a5b6c7-d8e9-40f1-a2b3-c4d5e6f7a8b9', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'breakfast', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
-    { mealId: 'meal_a5b6c7d8-e9f0-41a2-b3c4-d5e6f7a8b9c0', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
-    { mealId: 'meal_b6c7d8e9-f0a1-42b3-c4d5-e6f7a8b9c0d1', recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2', mealType: 'dinner', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
+    // Thursday (just Roland)
+    { mealId: 'meal_thu1', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
+    { mealId: 'meal_thu2', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Leftover chickpea stew' },
+    { mealId: 'meal_thu3', recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2', mealType: 'dinner', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Leftover chicken' },
     
-    // Friday
-    { mealId: 'meal_c7d8e9f0-a1b2-43c4-d5e6-f7a8b9c0d1e2', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
-    { mealId: 'meal_d8e9f0a1-b2c3-44d5-e6f7-a8b9c0d1e2f3', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
-    { mealId: 'meal_e9f0a1b2-c3d4-45e6-f7a8-b9c0d1e2f3a4', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' }
+    // Friday (just Roland)
+    { mealId: 'meal_fri1', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
+    { mealId: 'meal_fri2', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'lunch', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Quick pasta' },
+    { mealId: 'meal_fri3', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: 'Salmon dinner' }
   ],
 
   mealPlan: {
@@ -276,19 +313,19 @@ export const DEV_PRESET = {
     weekEnd: '2026-01-03', // Friday
     createdAt: '2025-12-26T00:00:00.000Z',
     mealIds: [
-      'meal_c9d0e1f2-a3b4-45c6-d7e8-f9a0b1c2d3e4', 'meal_d0e1f2a3-b4c5-46d7-e8f9-a0b1c2d3e4f5', 'meal_e1f2a3b4-c5d6-47e8-f9a0-b1c2d3e4f5a6',
-      'meal_f2a3b4c5-d6e7-48f9-a0b1-c2d3e4f5a6b7', 'meal_a3b4c5d6-e7f8-49a0-b1c2-d3e4f5a6b7c8', 'meal_b4c5d6e7-f8a9-40b1-c2d3-e4f5a6b7c8d9',
-      'meal_c5d6e7f8-a9b0-41c2-d3e4-f5a6b7c8d9e0', 'meal_d6e7f8a9-b0c1-42d3-e4f5-a6b7c8d9e0f1', 'meal_e7f8a9b0-c1d2-43e4-f5a6-b7c8d9e0f1a2',
-      'meal_f8a9b0c1-d2e3-44f5-a6b7-c8d9e0f1a2b3', 'meal_a9b0c1d2-e3f4-45a6-b7c8-d9e0f1a2b3c4', 'meal_b0c1d2e3-f4a5-46b7-c8d9-e0f1a2b3c4d5',
-      'meal_c1d2e3f4-a5b6-47c8-d9e0-f1a2b3c4d5e6', 'meal_d2e3f4a5-b6c7-48d9-e0f1-a2b3c4d5e6f7', 'meal_e3f4a5b6-c7d8-49e0-f1a2-b3c4d5e6f7a8',
-      'meal_f4a5b6c7-d8e9-40f1-a2b3-c4d5e6f7a8b9', 'meal_a5b6c7d8-e9f0-41a2-b3c4-d5e6f7a8b9c0', 'meal_b6c7d8e9-f0a1-42b3-c4d5-e6f7a8b9c0d1',
-      'meal_c7d8e9f0-a1b2-43c4-d5e6-f7a8b9c0d1e2', 'meal_d8e9f0a1-b2c3-44d5-e6f7-a8b9c0d1e2f3', 'meal_e9f0a1b2-c3d4-45e6-f7a8-b9c0d1e2f3a4'
+      'meal_sat1', 'meal_sat2', 'meal_sat3',
+      'meal_sun1', 'meal_sun2', 'meal_sun3',
+      'meal_mon1', 'meal_mon2', 'meal_mon3',
+      'meal_tue1', 'meal_tue2', 'meal_tue3',
+      'meal_wed1', 'meal_wed2', 'meal_wed3',
+      'meal_thu1', 'meal_thu2', 'meal_thu3',
+      'meal_fri1', 'meal_fri2', 'meal_fri3'
     ],
     budget: {
-      target: 150,
-      estimated: 145
+      target: 120,
+      estimated: 115
     },
-    weeklyPreferences: 'Balanced diet with variety, practical and budget-friendly',
+    weeklyPreferences: 'Mediterranean diet focused on weight loss and anti-inflammatory foods. Following Food Compass guidelines with emphasis on fish, vegetables, legumes, and yogurt. Minimal red meat, no caffeine. Simple Saturday meal prep with ingredient reuse to minimize costs. Kid-friendly meals for Maya (4yo) Sun-Wed morning.',
     conversation: {
       messages: []
     }
@@ -323,7 +360,7 @@ export function importDevPreset() {
     if (!recipesResult.success) {
       throw new Error('Failed to save recipes: ' + recipesResult.error);
     }
-    console.log('✓ Imported 5 recipes');
+    console.log('✓ Imported 6 Mediterranean recipes');
     
     // Import meals
     const mealsResult = saveMeals(DEV_PRESET.meals);
@@ -343,7 +380,7 @@ export function importDevPreset() {
     
     return {
       success: true,
-      message: 'Development preset loaded: 3 eaters, 5 recipes, 21 meals, 1 week meal plan'
+      message: 'Development preset loaded: 3 eaters (Roland, Maya, Cathie), 6 Mediterranean recipes, 21 meals, 1 week meal plan ($120 budget)'
     };
     
   } catch (error) {
