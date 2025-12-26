@@ -1,0 +1,657 @@
+# Slice 4: Quick Wins & User-Requested Features
+
+## Overview
+
+**Goal:** Build the most requested features that provide immediate value without major infrastructure changes. Focus on recipe management, meal plan flexibility, and viewing history.
+
+**Strategy:** After Slice 3's complexity (AI extraction, migrations, settings), Slice 4 focuses on quick wins - features users will want immediately after onboarding. Each feature is relatively simple (1-2 days) and can ship independently.
+
+**Duration:** 3-4 weeks (4 major features)
+
+---
+
+## Feature 1: Recipe Editing System
+
+### User Story
+As a user, I want to edit recipes after they're generated so I can adjust ingredients, instructions, or timing to match my preferences.
+
+### End-to-End Flow
+1. User views recipe detail page
+2. Clicks "Edit Recipe" button
+3. Form opens with all current values populated
+4. User changes name, ingredients, or instructions
+5. Clicks "Save" → Recipe updates in storage
+6. All meals using this recipe automatically reference updated version
+7. Success toast: "Recipe updated ✓"
+8. Page refreshes with new data
+
+### Technical Implementation
+
+**New Component:**
+- `RecipeEditPage.js` - Route: `#/recipe/:id/edit`
+- Pre-populated form with all current recipe values
+- Dynamic ingredient rows (add/remove)
+- Validation: name required, ingredients required (min 1), quantities must be numbers
+- Auto-save draft to localStorage every 30 seconds (prevent data loss)
+- "Discard Changes" button with confirmation dialog
+
+**Form Fields:**
+- Recipe name (text input, required)
+- Ingredients (dynamic array):
+  - Each row: name (text), quantity (number), unit (dropdown: g, ml, whole, etc.)
+  - "+ Add Ingredient" button
+  - "Remove" button per row (disabled if only 1 ingredient)
+- Instructions (textarea, required)
+- Prep time (number input, minutes)
+- Cook time (number input, minutes)
+- Servings (number input)
+- Tags (comma-separated text input)
+
+**Storage Update Pattern:**
+```javascript
+function updateRecipe(recipeId, updatedData) {
+  const recipes = loadRecipes();
+  const index = recipes.findIndex(r => r.recipeId === recipeId);
+  
+  if (index !== -1) {
+    recipes[index] = {
+      ...recipes[index],
+      ...updatedData,
+      updatedAt: new Date().toISOString()
+    };
+    // DO NOT change recipeId - meals reference it
+    return saveRecipes(recipes);
+  }
+  
+  return { success: false, error: 'Recipe not found' };
+}
+```
+
+**Validation Rules:**
+- Name: 3-100 characters
+- Ingredients: minimum 1, maximum 30
+- Ingredient quantities: positive numbers only
+- Instructions: minimum 10 characters
+- Times: non-negative numbers
+
+**Navigation:**
+- Add "Edit" button to RecipeDetailPage header
+- After save: navigate back to recipe detail
+- "Cancel" button: navigate back without saving
+
+---
+
+## Feature 2: Regenerate Single Day
+
+### User Story
+As a user, I want to regenerate a single day's meals so I can replace meals I don't like without losing the entire week's plan.
+
+### End-to-End Flow
+1. User views day or meal plan
+2. Clicks "Regenerate Day" button on a specific day (e.g., Tuesday)
+3. Modal: "Regenerate Tuesday? This will create 3 new meals (breakfast, lunch, dinner)"
+4. User confirms → Navigate to generation status page
+5. SSE stream shows progress (similar to full week generation)
+6. Claude generates 3 meals for Tuesday only
+7. System replaces Tuesday's meals, keeps other 18 meals
+8. Updates shopping list automatically
+9. Success → Returns to meal plan view
+
+### Technical Implementation
+
+**API Enhancement:**
+Modify `/api/generate-meal-plan` to accept new parameters:
+```javascript
+{
+  chatHistory: [],
+  eaters: [],
+  baseSpecification: {},
+  regenerateDay: 'tuesday',      // NEW: day name to regenerate
+  dateForDay: '2025-12-31',      // NEW: specific date for that day
+  existingMeals: []              // NEW: other 18 meals to avoid duplication
+}
+```
+
+**System Prompt Enhancement:**
+```
+You are regenerating meals for TUESDAY, December 31, 2025.
+
+Generate 3 meals for this day only:
+- Breakfast
+- Lunch  
+- Dinner
+
+IMPORTANT:
+- The user already has meals for the other 6 days this week
+- Avoid repeating these recipes: [list of existing recipe names]
+- Ensure variety across the full week
+- Follow all other constraints (budget, preferences, schedule)
+
+[Rest of prompt...]
+```
+
+**UI Components:**
+- Add "Regenerate Day" icon button to each day card in MealPlanView
+- Add "Regenerate Day" button to DayView header
+- Confirmation modal:
+  - Title: "Regenerate [Day Name]?"
+  - Message: "This will create 3 new meals (breakfast, lunch, dinner) for [day]"
+  - Show current meals that will be replaced
+  - Buttons: "Cancel", "Regenerate"
+
+**Data Update Pattern:**
+```javascript
+async function regenerateDay(dayName, date) {
+  // 1. Get current meal plan
+  const mealPlan = loadCurrentMealPlan();
+  const meals = loadMeals();
+  
+  // 2. Find meals for this day
+  const dayMeals = meals.filter(m => m.date === date);
+  const otherMeals = meals.filter(m => m.date !== date);
+  
+  // 3. Generate new meals for this day
+  const newMeals = await generateDayMeals(dayName, date, otherMeals);
+  
+  // 4. Replace day meals
+  const updatedMeals = [...otherMeals, ...newMeals];
+  saveMeals(updatedMeals);
+  
+  // 5. Update meal plan
+  mealPlan.mealIds = updatedMeals.map(m => m.mealId);
+  mealPlan.updatedAt = new Date().toISOString();
+  saveCurrentMealPlan(mealPlan);
+  
+  // 6. Cleanup orphaned recipes
+  deleteOrphanedRecipes();
+  
+  return { success: true };
+}
+```
+
+**Progress Messages:**
+- "Analyzing your preferences..."
+- "Creating breakfast for Tuesday..."
+- "Planning lunch..."
+- "Preparing dinner..."
+- "Updating your meal plan..."
+
+**Navigation:**
+- From DayView: Return to same DayView after success
+- From MealPlanView: Return to MealPlanView after success
+- Error: Show retry option, stay on current page
+
+---
+
+## Feature 3: Meal Plan History
+
+### User Story
+As a user, I want to view my past meal plans so I can see what I cooked before, reuse favorites, or reference old shopping lists.
+
+### End-to-End Flow
+1. User navigates to new "History" page (#/history)
+2. Sees list of past meal plans (cards with week dates)
+3. Each card shows: week range, budget, meal count, creation date
+4. User clicks a past week → Views that week's meals (read-only)
+5. Can view recipes, shopping list from that week
+6. "Use as Template" button (future) creates new plan with same structure
+7. Back button returns to history list
+
+### Technical Implementation
+
+**New Page:**
+- `MealPlanHistoryPage.js` - Route: `#/history`
+- Lists all past meal plans from localStorage
+- Card layout with week range, budget, meal count, creation date
+- Click card → Navigate to `#/history/:planId`
+
+**Historical Plan View:**
+- `MealPlanHistoryDetailPage.js` - Route: `#/history/:planId`
+- Read-only view of past week (no edit buttons)
+- Tabs: Weekly View, Shopping List (no Regenerate options)
+- Show "Archived" badge
+- "Back to History" button
+
+**Data Structure:**
+New localStorage key: `vanessa_meal_plan_history`
+```javascript
+[
+  {
+    // Same as MealPlan structure
+    mealPlanId: 'plan_20251221',
+    weekOf: '2025-12-21',
+    weekEnd: '2025-12-27',
+    createdAt: '2025-12-21T10:00:00Z',
+    archivedAt: '2025-12-28T10:00:00Z',  // NEW
+    mealIds: [...],
+    budget: {...},
+    // Snapshot of meals and recipes at time of archival
+    mealsSnapshot: [...],     // NEW: frozen copy of meals
+    recipesSnapshot: [...]    // NEW: frozen copy of recipes
+  }
+]
+```
+
+**Auto-Archive Pattern:**
+```javascript
+function saveNewMealPlan(newMealPlan) {
+  // 1. Get current meal plan
+  const current = loadCurrentMealPlan();
+  
+  if (current) {
+    // 2. Create snapshot with meals and recipes
+    const meals = loadMeals();
+    const recipes = loadRecipes();
+    const mealRecipeIds = meals.map(m => m.recipeId);
+    const usedRecipes = recipes.filter(r => mealRecipeIds.includes(r.recipeId));
+    
+    const archived = {
+      ...current,
+      archivedAt: new Date().toISOString(),
+      mealsSnapshot: meals,
+      recipesSnapshot: usedRecipes
+    };
+    
+    // 3. Add to history
+    addToHistory(archived);
+    
+    // 4. Cleanup old history (keep last 4 weeks)
+    cleanupHistory(4);
+  }
+  
+  // 5. Save new plan as current
+  saveCurrentMealPlan(newMealPlan);
+}
+```
+
+**History Cleanup:**
+```javascript
+function cleanupHistory(keepWeeks = 4) {
+  const history = loadMealPlanHistory();
+  
+  // Sort by archivedAt (newest first)
+  history.sort((a, b) => new Date(b.archivedAt) - new Date(a.archivedAt));
+  
+  // Keep only last N weeks
+  const kept = history.slice(0, keepWeeks);
+  const removed = history.slice(keepWeeks);
+  
+  saveMealPlanHistory(kept);
+  
+  return {
+    kept: kept.length,
+    removed: removed.length,
+    spaceSaved: calculateSize(removed)
+  };
+}
+```
+
+**Settings Integration:**
+- Add "History Retention" setting in Settings → Meal Planning
+- Dropdown: Keep last 1, 2, 4, 8, 12 weeks (default: 4)
+- Manual cleanup button: "Clean Up Old Plans"
+- Show storage impact in quota monitor
+
+**Navigation:**
+- Add "History" link to main navigation
+- Show badge with count of saved plans
+- Mobile: Include in hamburger menu
+
+---
+
+## Feature 4: Recipe Import from Text
+
+### User Story
+As a user, I want to paste recipe text from blogs, emails, or messages and have Vanessa extract it into a structured recipe so I don't have to manually type everything.
+
+### End-to-End Flow
+1. User navigates to Recipe Library
+2. Clicks "+ Add Recipe" button
+3. Modal appears with options: "Import from Text", "Create Manually" (disabled - Slice 5)
+4. Selects "Import from Text"
+5. Large textarea appears: "Paste your recipe here..."
+6. User pastes recipe text from anywhere (blog, email, etc.)
+7. Clicks "Import" → Shows loading state
+8. AI extracts structured recipe (name, ingredients, instructions, times)
+9. Preview modal: "Does this look right?" with editable fields
+10. User can edit extracted data before saving
+11. Clicks "Save" → Recipe added to library
+12. Success toast: "Recipe added ✓"
+13. Navigates to recipe detail page
+
+### Technical Implementation
+
+**New API Endpoint:**
+`POST /api/extract-recipe`
+
+Request:
+```javascript
+{
+  text: string  // Raw recipe text (max 5000 chars)
+}
+```
+
+Response:
+```javascript
+{
+  success: true,
+  recipe: {
+    name: "Extracted Recipe Name",
+    ingredients: [
+      { name: "ingredient", quantity: 200, unit: "g", category: "produce" }
+    ],
+    instructions: "Step-by-step instructions",
+    prepTime: 15,
+    cookTime: 30,
+    servings: 4,
+    tags: ["italian", "pasta", "quick"],
+    confidence: 0.85  // AI confidence score
+  }
+}
+```
+
+Error Response:
+```javascript
+{
+  success: false,
+  error: "EXTRACTION_FAILED",
+  message: "Could not extract a valid recipe from this text. Please try manual entry.",
+  partialData: {...}  // Whatever was extracted
+}
+```
+
+**System Prompt for Extraction:**
+```
+You are a recipe extraction assistant. Extract structured recipe data from the following text.
+
+CRITICAL: Return ONLY valid JSON in this exact format:
+{
+  "name": "Recipe Name",
+  "ingredients": [
+    {
+      "name": "ingredient name",
+      "quantity": number,
+      "unit": "g" | "ml" | "whole",
+      "category": "produce" | "meat" | "dairy" | "pantry" | "other"
+    }
+  ],
+  "instructions": "Clear step-by-step instructions",
+  "prepTime": number (minutes),
+  "cookTime": number (minutes),
+  "servings": number,
+  "tags": ["tag1", "tag2"]
+}
+
+Guidelines:
+- Convert ALL quantities to metric (grams, milliliters, or whole items)
+- If missing data, use reasonable defaults
+- Instructions should be clear, numbered steps
+- Tags: extract cuisine, dietary info, cooking method
+- Category: classify each ingredient
+- If text is not a recipe, return {"error": "NOT_A_RECIPE"}
+
+Input text:
+{user_pasted_text}
+```
+
+**New Modal Component:**
+`RecipeImportModal.js`
+
+**Step 1: Method Selection**
+- Radio buttons: "Import from Text" (enabled), "Create Manually" (disabled)
+- Help text: "Paste recipe text from blogs, emails, or messages"
+
+**Step 2: Paste Text**
+- Large textarea (10 rows)
+- Character count: "0 / 5000"
+- Placeholder: "Paste your recipe here... (from blogs, emails, etc.)"
+- "Cancel" and "Import" buttons
+- Loading state: "Extracting recipe..." with spinner
+
+**Step 3: Preview & Edit**
+- Show extracted recipe in form
+- All fields editable (same as RecipeEditPage form)
+- Confidence indicator: "Extraction confidence: 85%"
+- If low confidence (<70%): Warning message
+- "Discard" and "Save to Library" buttons
+
+**Form Validation:**
+- Name: required, 3-100 characters
+- Ingredients: minimum 1, maximum 30
+- Instructions: minimum 10 characters
+- Times: non-negative numbers
+- All same as RecipeEditPage validation
+
+**Error Handling:**
+- Text too short (<50 chars): "Please paste a complete recipe (at least 50 characters)"
+- Text too long (>5000 chars): "Text is too long. Please paste one recipe at a time."
+- Not a recipe: "This doesn't look like a recipe. Please check the text and try again."
+- Extraction failed: "Could not extract recipe. Would you like to try manual entry?"
+- Network error: "Connection error. Please check your internet and try again."
+
+**Storage:**
+```javascript
+function saveImportedRecipe(extractedRecipe) {
+  const recipe = {
+    recipeId: `recipe_${crypto.randomUUID()}`,
+    ...extractedRecipe,
+    source: 'imported',
+    isFavorite: false,
+    rating: null,
+    timesCooked: 0,
+    lastCooked: null,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  };
+  
+  const recipes = loadRecipes();
+  recipes.push(recipe);
+  return saveRecipes(recipes);
+}
+```
+
+**UI Integration:**
+- Add "+ Add Recipe" button to RecipeLibraryPage header
+- Button opens RecipeImportModal
+- Mobile: Floating action button (FAB)
+- Desktop: Primary button in header
+
+---
+
+## Success Criteria
+
+### Recipe Editing
+- ✅ User can edit any recipe field (name, ingredients, instructions, times)
+- ✅ Changes save and persist after page reload
+- ✅ All meals using the recipe automatically reference updated version
+- ✅ No broken references or missing recipes
+- ✅ Validation prevents invalid data (empty name, negative times, etc.)
+
+### Regenerate Single Day
+- ✅ User can regenerate any single day (Monday-Sunday)
+- ✅ Only 3 meals replaced (breakfast, lunch, dinner for that day)
+- ✅ Other 18 meals remain unchanged
+- ✅ Shopping list updates correctly (aggregates all 21 meals)
+- ✅ Generation completes in <60 seconds
+- ✅ No duplicate recipes across the week
+
+### Meal Plan History
+- ✅ Past meal plans accessible from History page
+- ✅ Can view all details (meals, recipes, shopping list) in read-only mode
+- ✅ Storage quota managed (auto-cleanup keeps last 4 weeks)
+- ✅ History retention configurable in settings (1-12 weeks)
+- ✅ Manual cleanup option available
+
+### Recipe Import
+- ✅ Can paste recipe text from any source (blogs, emails, etc.)
+- ✅ AI extracts structure accurately (>80% success rate)
+- ✅ Preview shows extracted data with edit capability
+- ✅ Recipe saves to library correctly with source='imported'
+- ✅ Error handling for invalid text, network failures, etc.
+
+---
+
+## Technical Requirements
+
+### API Endpoints
+```javascript
+POST /api/generate-meal-plan
+// Enhanced with regenerate params
+{
+  chatHistory: [],
+  eaters: [],
+  baseSpecification: {},
+  regenerateDay: 'tuesday' | null,  // NEW
+  dateForDay: '2025-12-31' | null,  // NEW
+  existingMeals: []                 // NEW
+}
+
+POST /api/extract-recipe
+{
+  text: string  // Raw recipe text (max 5000 chars)
+}
+```
+
+### localStorage Updates
+```javascript
+// New key
+'vanessa_meal_plan_history': [
+  {
+    ...MealPlan,
+    archivedAt: 'ISO 8601',
+    mealsSnapshot: Meal[],
+    recipesSnapshot: Recipe[]
+  }
+]
+
+// New setting in BaseSpecification
+baseSpecification.historyRetentionWeeks = 4  // default
+```
+
+### Routes
+```javascript
+'#/recipe/:id/edit' → RecipeEditPage
+'#/history' → MealPlanHistoryPage
+'#/history/:planId' → MealPlanHistoryDetailPage
+```
+
+### Component Lifecycle
+```javascript
+// RecipeEditPage
+beforeUnload() {
+  // Save draft if changes exist
+  if (this.hasUnsavedChanges()) {
+    this.saveDraft();
+  }
+}
+
+// RecipeImportModal
+beforeUnload() {
+  // Clear any temporary data
+  this.clearDraft();
+}
+```
+
+---
+
+## Implementation Timeline
+
+**Week 1: Recipe Editing**
+- Days 1-2: RecipeEditPage component with form
+- Day 3: Validation, save logic, error handling
+- Day 4: Testing, edge cases, integration
+
+**Week 2: Regenerate Single Day**
+- Days 1-2: API enhancement for single day generation
+- Day 3: UI buttons, confirmation modal, navigation
+- Day 4: Data update logic, testing, integration
+
+**Week 3: Meal Plan History**
+- Days 1-2: History page, storage, auto-archive
+- Day 3: Detail view (read-only), settings integration
+- Day 4: Auto-cleanup, quota management, testing
+
+**Week 4: Recipe Import**
+- Days 1-2: API endpoint, AI extraction, system prompt
+- Day 3: Import modal, preview, validation
+- Day 4: Error handling, integration, testing
+
+**Total: 3-4 weeks for Slice 4**
+
+---
+
+## Dependencies
+
+### From Slice 3 (Already Built)
+- ✅ Recipe storage system (vanessa_recipes)
+- ✅ Meal storage system (vanessa_meals)
+- ✅ Settings page infrastructure
+- ✅ Navigation system with parameterized routes
+- ✅ Storage quota monitoring
+- ✅ Modal pattern (used in Settings)
+
+### New Dependencies
+- None - All features build on existing infrastructure
+
+---
+
+## Risks & Mitigations
+
+### Risk 1: Recipe Import AI Accuracy
+**Risk:** AI extraction might fail or be inaccurate for unusual recipe formats
+**Mitigation:** 
+- Show confidence score
+- Allow user to edit before saving
+- Provide "manual entry" fallback option
+- Test with variety of recipe formats
+
+### Risk 2: Storage Quota with History
+**Risk:** Storing snapshots of meals/recipes could fill localStorage quickly
+**Mitigation:**
+- Auto-cleanup (keep only last 4 weeks)
+- Configurable retention period
+- Show storage impact in quota monitor
+- Manual cleanup option
+
+### Risk 3: Regenerate Day Complexity
+**Risk:** Replacing single day while maintaining week cohesion could be complex
+**Mitigation:**
+- Pass existing meals to AI to avoid duplication
+- Comprehensive testing with various scenarios
+- Clear progress messages to user
+- Fallback: regenerate full week if single day fails
+
+### Risk 4: Recipe Edit Breaking Meal References
+**Risk:** Editing recipe could break meal plan if not handled correctly
+**Mitigation:**
+- Never change recipeId (meals reference it)
+- Update recipe in-place (same object, new values)
+- Test that meals automatically use updated recipe
+- Add validation to prevent ID changes
+
+---
+
+## Testing Strategy
+
+### Unit Tests
+- Recipe validation functions
+- Storage update patterns
+- History cleanup logic
+- Extraction parsing
+
+### Integration Tests
+- Edit recipe → View in meal plan (updated)
+- Regenerate day → Shopping list updates
+- Archive plan → History accessible
+- Import recipe → Appears in library
+
+### User Acceptance Tests
+- Complete onboarding → Edit a recipe → Verify in meal
+- Generate plan → Regenerate Tuesday → Verify other days unchanged
+- Generate 2 plans → View history → Verify both accessible
+- Paste recipe text → Import → Verify extraction accurate
+
+---
+
+This completes the Slice 4 specification. All features are focused on quick wins that provide immediate value to users without requiring major infrastructure changes.
+

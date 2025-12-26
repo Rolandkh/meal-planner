@@ -36,6 +36,8 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - Automatic recipe deduplication (same recipe used multiple days)
 - Household schedule grid (visual calendar showing who eats when)
 - Accurate servings per meal based on household composition
+- **Day-specific views:** Individual pages for each day of the week (NEW: Dec 26)
+- **Quick day navigation:** 7 large buttons on home page for Mon-Sun (NEW: Dec 26)
 - Shopping list with ingredient aggregation and limits
 - Metric units only (grams, ml, whole items)
 - Comprehensive unit conversion system (70+ ingredients)
@@ -88,6 +90,12 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - Storage utilities (CRUD for all entities)
 - Standardized vanessa_ key prefix
 
+**Development Tools (NEW: Dec 26):**
+- **Dev Preset Import:** One-click bypass of onboarding for rapid testing
+- Pre-configured household (Roland, Maya, Cathie)
+- Sample meal plan with 5 recipes and 21 meals
+- Speeds up development iteration from 5+ minutes to 2 seconds
+
 ## Technology Stack
 
 - **Frontend:** Vanilla JavaScript (ES6 modules), HTML, Tailwind CSS
@@ -112,10 +120,11 @@ meal-planner/
 ├── src/
 │   ├── main.js                   # App entry point + migration
 │   ├── components/               # UI components
-│   │   ├── HomePage.js           # Landing/meal plan summary
+│   │   ├── HomePage.js           # Landing/meal plan summary + day nav
 │   │   ├── ChatWidget.js         # Chat + onboarding (1,400+ lines)
 │   │   ├── GenerationStatusPage.js # Progress UI
 │   │   ├── MealPlanView.js       # Weekly view + schedule grid
+│   │   ├── DayView.js            # Single day view (NEW: Dec 26)
 │   │   ├── ShoppingListView.js   # Shopping list
 │   │   ├── SettingsPage.js       # 4-section settings (1,200+ lines)
 │   │   ├── RecipeLibraryPage.js  # Recipe browsing + search
@@ -127,7 +136,8 @@ meal-planner/
 │   │   ├── mealPlanTransformer.js # Data transformation + schedule mapping
 │   │   ├── unitConversions.js    # Unit conversion (70+ ingredients)
 │   │   ├── errorHandler.js       # Error handling
-│   │   └── migrationManager.js   # Schema migrations
+│   │   ├── migrationManager.js   # Schema migrations
+│   │   └── devPresets.js         # Dev preset data (NEW: Dec 26)
 │   ├── migrations/               # Data migrations
 │   │   └── index.js              # Migration definitions
 │   └── styles/
@@ -173,6 +183,13 @@ meal-planner/
    ```
    
    The app will be available at `http://localhost:3000`
+
+5. **Fast Testing Setup (NEW: Dec 26)**
+   - Open the app
+   - Scroll to bottom of home page
+   - Click "🔧 Import Dev Preset"
+   - Instantly have a complete household setup with meal plan ready to test!
+   - Bypasses 5+ minute onboarding process
 
 ### Vercel Deployment
 
@@ -443,6 +460,13 @@ data: {"type": "complete", "data": {...}}
 - ✅ ~~Recipe library with search and favorites~~ (Complete in Slice 3)
 - ✅ ~~Recipe ratings and usage tracking~~ (Complete in Slice 3)
 - ✅ ~~User preferences and settings~~ (Complete in Slice 3)
+- ✅ ~~Day-specific navigation and views~~ (Complete: Dec 26, 2025)
+- ✅ ~~Development presets for rapid testing~~ (Complete: Dec 26, 2025)
+- **Meal Prep Optimization System** (Specification complete: Dec 26, 2025)
+  - Three prep strategies (Fresh Only, Batch Cooking, Hybrid)
+  - Prep day scheduling with component reuse
+  - Time savings calculator
+  - Enhanced recipe metadata
 - Add recipe flow (manual recipe creation)
 - Edit/modify generated plans
 - Multiple week storage with history

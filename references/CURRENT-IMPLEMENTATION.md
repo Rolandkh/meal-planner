@@ -46,16 +46,19 @@ This document contains:
 
 - `GenerationStatusPage.js` - Progress UI with SSE updates
 - `MealPlanView.js` - Weekly meal display with household schedule grid
+- `DayView.js` - Single day view with all meals for that day (NEW: Dec 26)
 - `ShoppingListView.js` - Aggregated shopping list
 - `POST /api/generate-meal-plan` - Generation endpoint with schedule support
 - Data transformation and normalization
 - Unit conversion system (70+ ingredients)
 - Recipe deduplication
 - Structured schedule extraction for accurate servings
+- Day-of-week navigation buttons on home page (NEW: Dec 26)
 
 **Key Files:**
 - `/src/components/GenerationStatusPage.js`
 - `/src/components/MealPlanView.js`
+- `/src/components/DayView.js` (NEW: Dec 26)
 - `/src/components/ShoppingListView.js`
 - `/api/generate-meal-plan.js`
 - `/src/utils/mealPlanTransformer.js`
@@ -91,12 +94,19 @@ This document contains:
 **Navigation:**
 - Global navigation bar with mobile hamburger menu
 - Active link highlighting
-- Parameterized routes support (`/recipe/:id`)
+- Parameterized routes support (`/recipe/:id`, `/day/:day`)
+- Day-of-week quick access buttons (7 buttons on home page)
 
 **Data Migration:**
 - Schema version tracking
 - Automatic migration system
 - Backward compatibility
+
+**Development Tools (NEW: Dec 26):**
+- Dev preset import feature (bypass onboarding for testing)
+- Pre-configured household data (Roland, Maya, Cathie)
+- Sample meal plan with 5 recipes and 21 meals
+- One-click import button on home page
 
 **Key Files:**
 - `/src/components/SettingsPage.js` (1,200+ lines)
@@ -107,6 +117,7 @@ This document contains:
 - `/src/utils/router.js` (parameterized routes)
 - `/src/utils/migrationManager.js`
 - `/src/migrations/index.js`
+- `/src/utils/devPresets.js` (NEW: Dec 26)
 
 ---
 
@@ -252,23 +263,26 @@ See PRD for complete schemas and relationships.
 
 ## 🚦 Routes
 
-| Route | Component | Status |
-|-------|-----------|--------|
-| `#/` | HomePage | ✅ |
-| `#/generating` | GenerationStatusPage | ✅ |
-| `#/meal-plan` | MealPlanView | ✅ |
-| `#/day/:day` | DayView | ✅ (parameterized) |
-| `#/shopping-list` | ShoppingListView | ✅ |
-| `#/recipes` | RecipeLibraryPage | ✅ Slice 3 |
-| `#/recipe/:id` | RecipeDetailPage | ✅ Slice 3 (parameterized) |
-| `#/settings` | SettingsPage | ✅ Slice 3 |
+| Route | Component | Status | Notes |
+|-------|-----------|--------|-------|
+| `#/` | HomePage | ✅ | Includes day navigation buttons |
+| `#/generating` | GenerationStatusPage | ✅ | SSE streaming progress |
+| `#/meal-plan` | MealPlanView | ✅ | Full week view |
+| `#/day/:day` | DayView | ✅ | Single day view (NEW: Dec 26) |
+| `#/shopping-list` | ShoppingListView | ✅ | Aggregated shopping list |
+| `#/recipes` | RecipeLibraryPage | ✅ | Slice 3 |
+| `#/recipe/:id` | RecipeDetailPage | ✅ | Slice 3 (parameterized) |
+| `#/settings` | SettingsPage | ✅ | Slice 3 |
 
 **Navigation:**
 - Global nav bar: Home → Meal Plan → Recipes → Shopping → Settings
 - Mobile hamburger menu (< 768px)
 - Active link highlighting
 - Sticky header
-- **NEW:** Day-of-week navigation buttons on home page (Monday-Sunday)
+- **Day Navigation (NEW Dec 26):** 7 large buttons on home page for quick day access
+  - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+  - Same size as main action buttons
+  - Disabled/grayed out for days not in current meal plan
 
 ---
 
@@ -375,14 +389,19 @@ See implemented examples in:
 
 ---
 
-## 🎯 Next Steps (Slice 4)
+## 🎯 Next Steps (Slice 4+)
 
-See PRD for Slice 4 planning:
-1. Add recipe flow (manual recipe creation)
-2. Usage metering and limits
-3. Offline mode support
-4. Mobile app polish
-5. Firebase migration (multi-device sync)
+See PRD for Slice 4+ planning:
+1. **Meal Prep Optimization System** (NEW: Spec complete in PRD)
+   - Three strategies: Fresh Only, Batch Cooking, Hybrid
+   - Prep day scheduling and component reuse
+   - Time optimization for busy vs. light days
+   - Enhanced recipe metadata for prep planning
+2. Add recipe flow (manual recipe creation)
+3. Usage metering and limits
+4. Offline mode support
+5. Mobile app polish
+6. Firebase migration (multi-device sync)
 
 ---
 
@@ -538,6 +557,16 @@ See PRD for Slice 4 planning:
    - Visual overview of complex schedules
    - Color-coded dots per person
    - Eliminates confusion about serving sizes
+
+**Development Experience (Dec 26):**
+1. **Dev presets dramatically speed up testing**
+   - Onboarding takes 5+ minutes every test
+   - Dev preset loads everything in 2 seconds
+   - Essential for rapid feature iteration
+2. **Day-specific views improve usability**
+   - Full week view can be overwhelming
+   - Single day view focuses on what's needed now
+   - Quick navigation buttons provide easy access
 
 See PRD "Reality Check" section for complete learnings.
 
