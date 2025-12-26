@@ -369,9 +369,9 @@ export class HomePage {
     sectionHeader.className = 'text-2xl font-bold text-gray-800 text-center mb-6';
     sectionHeader.textContent = 'View by Day';
 
-    // Days container
+    // Days container - same grid as main action buttons
     const daysContainer = document.createElement('div');
-    daysContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4';
+    daysContainer.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
 
     // Get unique dates from meals to determine which days exist
     const dates = [...new Set(this.meals.map(m => m.date))].sort();
@@ -394,10 +394,10 @@ export class HomePage {
         dayButton.className = `
           bg-gradient-to-r from-blue-400 to-indigo-400
           hover:from-blue-500 hover:to-indigo-500
-          text-white font-bold py-5 px-8 rounded-lg
+          text-white font-semibold py-4 px-6 rounded-lg
           shadow-lg hover:shadow-xl
           transition-all transform hover:scale-105
-          text-center text-xl
+          text-lg
         `.trim().replace(/\s+/g, ' ');
         
         dayButton.textContent = day;
@@ -408,9 +408,8 @@ export class HomePage {
         // Disabled style for days not in meal plan
         dayButton.className = `
           bg-gray-200 text-gray-400
-          font-bold py-5 px-8 rounded-lg
+          font-semibold py-4 px-6 rounded-lg
           shadow-sm cursor-not-allowed
-          text-center text-xl
         `.trim().replace(/\s+/g, ' ');
         
         dayButton.textContent = day;
