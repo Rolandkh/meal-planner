@@ -519,9 +519,10 @@ See PRD for Slice 4+ planning:
 - Tailwind CDN warning (cosmetic - can install PostCSS later)
 - Chrome extension message errors (browser extension conflicts - harmless)
 
-**Testing Blocked Until Jan 1, 2026:**
-- Anthropic API quota exhausted
-- All features built and ready to test when quota resets
+**Testing Status:**
+- ✅ API quota increased - testing available now!
+- ✅ All Slice 3 features built and ready to test
+- ✅ All Slice 4 features built and ready to test
 
 ---
 
