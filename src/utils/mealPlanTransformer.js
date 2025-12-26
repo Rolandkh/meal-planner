@@ -8,7 +8,8 @@ import {
   generateMealId, 
   generateMealPlanId, 
   deduplicateRecipes,
-  loadEaters 
+  loadEaters,
+  loadBaseSpecification 
 } from './storage.js';
 
 /**
@@ -126,9 +127,33 @@ function createMeals(days, recipeMap, defaultServings = 2) {
         continue;
       }
 
-      // Get all eater IDs for this meal (Slice 3: all eaters for now)
+      // Get eater IDs for this specific meal based on schedule
       const eaters = loadEaters();
-      const eaterIds = eaters.map(e => e.eaterId);
+      const baseSpec = loadBaseSpecification();
+      let eaterIds = [];
+      let servings = recipe.servings || defaultServings;
+      
+      // Try to get eaterIds from schedule
+      if (baseSpec?.weeklySchedule && date) {
+        const mealDate = new Date(date + 'T00:00:00');
+        const dayOfWeek = mealDate.getDay(); // 0 = Sunday
+        const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        const dayName = dayNames[dayOfWeek];
+        
+        const daySchedule = baseSpec.weeklySchedule[dayName];
+        if (daySchedule && daySchedule[mealType]) {
+          eaterIds = daySchedule[mealType].eaterIds || [];
+          servings = daySchedule[mealType].servings || recipe.servings || 1;
+          console.log(`📅 ${date} (${dayName}) ${mealType}: ${servings} servings, ${eaterIds.length} eater(s)`);
+        }
+      }
+      
+      // Fallback: if no schedule or no eaterIds, use all eaters
+      if (eaterIds.length === 0) {
+        eaterIds = eaters.map(e => e.eaterId);
+        servings = recipe.servings || eaters.length || defaultServings;
+        console.log(`⚠️  No schedule for ${date} ${mealType}, using all eaters (${eaterIds.length})`);
+      }
       
       // Create meal object
       const meal = {
@@ -136,8 +161,8 @@ function createMeals(days, recipeMap, defaultServings = 2) {
         recipeId: recipeData.recipeId,
         mealType: mealType,
         date: date,
-        eaterIds: eaterIds, // All household members (Slice 3)
-        servings: eaters.length || recipe.servings || defaultServings,
+        eaterIds: eaterIds,
+        servings: servings,
         notes: recipe.notes || ''
       };
 

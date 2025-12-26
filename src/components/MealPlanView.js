@@ -144,14 +144,15 @@ export class MealPlanView {
       daysContainer.appendChild(dayCard);
     });
 
-    // Household Schedule Grid (if multiple eaters or complex schedule)
-    if (this.eaters.length > 0) {
+    // Assemble
+    content.appendChild(header);
+    
+    // Household Schedule Grid (after header, before days)
+    if (this.eaters.length > 1) {
       const scheduleGrid = this.renderHouseholdScheduleGrid();
       content.appendChild(scheduleGrid);
     }
-
-    // Assemble
-    content.appendChild(header);
+    
     content.appendChild(daysContainer);
     container.appendChild(content);
 

@@ -162,30 +162,45 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null) {
   
   if (baseSpec?.weeklySchedule) {
     scheduleRequirements = '\n\nCRITICAL - EXACT SERVINGS SCHEDULE (FOLLOW PRECISELY):\n';
-    scheduleRequirements += 'You MUST generate meals with these EXACT servings counts:\n\n';
+    scheduleRequirements += 'You MUST generate meals with these EXACT servings counts for each DATE:\n\n';
     
-    const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    // Map day names to actual dates in the week
+    const weekStart = new Date(weekOf + 'T00:00:00');
+    const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
     const mealTypes = ['breakfast', 'lunch', 'dinner'];
     
-    days.forEach(day => {
-      if (baseSpec.weeklySchedule[day]) {
-        scheduleRequirements += `${day.toUpperCase()}:\n`;
+    // Generate schedule for each of the 7 days
+    for (let i = 0; i < 7; i++) {
+      const currentDate = new Date(weekStart);
+      currentDate.setDate(weekStart.getDate() + i);
+      const dateStr = currentDate.toISOString().split('T')[0];
+      const dayOfWeek = currentDate.getDay(); // 0 = Sunday, 6 = Saturday
+      const dayName = dayNames[dayOfWeek];
+      const dayDisplayName = dayName.toUpperCase();
+      
+      const daySchedule = baseSpec.weeklySchedule[dayName];
+      
+      if (daySchedule) {
+        scheduleRequirements += `${dateStr} (${dayDisplayName}):\n`;
         
         mealTypes.forEach(mealType => {
-          const mealData = baseSpec.weeklySchedule[day][mealType];
+          const mealData = daySchedule[mealType];
           if (mealData) {
             const requirements = mealData.requirements?.length > 0 
-              ? ` (${mealData.requirements.join(', ')})` 
+              ? ` - ${mealData.requirements.join(', ')}` 
               : '';
             scheduleRequirements += `  - ${mealType}: ${mealData.servings} serving${mealData.servings !== 1 ? 's' : ''}${requirements}\n`;
           }
         });
         
         scheduleRequirements += '\n';
+      } else {
+        // Fallback if no schedule for this day
+        scheduleRequirements += `${dateStr} (${dayDisplayName}): 1 serving per meal (default)\n\n`;
       }
-    });
+    }
     
-    scheduleRequirements += 'DO NOT DEVIATE FROM THESE SERVINGS. Match them exactly.\n';
+    scheduleRequirements += 'These servings are CRITICAL - match them EXACTLY to each date.\n';
   } else {
     // Fallback to conversation-based requirements
     scheduleRequirements = `\n\nCRITICAL - SERVINGS REQUIREMENTS:

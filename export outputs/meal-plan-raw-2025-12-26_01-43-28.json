@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-25T23:31:12.037Z",
+  "timestamp": "2025-12-26T01:43:28.990Z",
   "rawData": {
     "weekOf": "2025-12-27",
     "budget": {
@@ -9,79 +9,79 @@
       {
         "date": "2025-12-27",
         "breakfast": {
-          "name": "Greek Yogurt with Honey and Berries",
+          "name": "Greek Yogurt with Honey and Almonds",
           "ingredients": [
             {
-              "name": "greek yogurt",
-              "quantity": 400,
+              "name": "Greek yogurt",
+              "quantity": 200,
               "unit": "g",
               "category": "dairy"
             },
             {
-              "name": "mixed berries",
-              "quantity": 150,
-              "unit": "g",
-              "category": "produce"
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
             },
             {
-              "name": "honey",
-              "quantity": 30,
+              "name": "sliced almonds",
+              "quantity": 20,
               "unit": "g",
               "category": "pantry"
             }
           ],
-          "instructions": "Divide yogurt between two bowls. Top with fresh berries and drizzle with honey.",
-          "prepTime": 5,
+          "instructions": "Spoon Greek yogurt into a bowl. Drizzle with honey and sprinkle sliced almonds on top.",
+          "prepTime": 3,
           "cookTime": 0,
-          "servings": 2,
+          "servings": 1,
           "tags": [
+            "simple",
             "mediterranean",
-            "quick",
-            "kid-friendly"
+            "quick"
           ]
         },
         "lunch": {
-          "name": "Chickpea and Vegetable Pasta",
+          "name": "Tuna and White Bean Salad",
           "ingredients": [
             {
-              "name": "whole wheat pasta",
+              "name": "canned tuna in water",
               "quantity": 200,
               "unit": "g",
               "category": "pantry"
             },
             {
-              "name": "canned chickpeas",
+              "name": "white beans",
               "quantity": 240,
               "unit": "g",
               "category": "pantry"
             },
             {
               "name": "cherry tomatoes",
-              "quantity": 200,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "spinach",
-              "quantity": 100,
+              "quantity": 150,
               "unit": "g",
               "category": "produce"
             },
             {
               "name": "olive oil",
-              "quantity": 30,
+              "quantity": 20,
               "unit": "ml",
               "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "produce"
             }
           ],
-          "instructions": "Cook pasta according to package. Sauté chickpeas and tomatoes in olive oil, add spinach until wilted, toss with pasta.",
-          "prepTime": 10,
-          "cookTime": 15,
+          "instructions": "Drain tuna and beans, mix in a bowl with halved cherry tomatoes. Drizzle with olive oil and lemon juice, toss gently.",
+          "prepTime": 8,
+          "cookTime": 0,
           "servings": 2,
           "tags": [
+            "kid-friendly",
             "mediterranean",
-            "vegetarian",
-            "kid-friendly"
+            "no-cook"
           ]
         },
         "dinner": {
@@ -89,50 +89,50 @@
           "ingredients": [
             {
               "name": "salmon fillets",
-              "quantity": 400,
+              "quantity": 300,
               "unit": "g",
               "category": "meat"
             },
             {
               "name": "zucchini",
-              "quantity": 300,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "bell peppers",
               "quantity": 200,
               "unit": "g",
               "category": "produce"
             },
             {
+              "name": "bell peppers",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
               "name": "olive oil",
-              "quantity": 30,
+              "quantity": 25,
               "unit": "ml",
               "category": "pantry"
             },
             {
-              "name": "lemon",
-              "quantity": 1,
+              "name": "garlic",
+              "quantity": 2,
               "unit": "whole",
               "category": "produce"
             }
           ],
-          "instructions": "Season salmon with lemon juice. Chop vegetables, toss with olive oil. Bake everything at 200°C for 20 minutes.",
+          "instructions": "Preheat oven to 200°C. Place salmon and chopped vegetables on a baking sheet, drizzle with olive oil and minced garlic. Bake for 20 minutes until salmon is cooked through.",
           "prepTime": 10,
           "cookTime": 20,
           "servings": 2,
           "tags": [
+            "kid-friendly",
             "mediterranean",
-            "fish",
-            "healthy"
+            "omega-3"
           ]
         }
       },
       {
         "date": "2025-12-28",
         "breakfast": {
-          "name": "Oatmeal with Banana and Almonds",
+          "name": "Oatmeal with Berries and Walnuts",
           "ingredients": [
             {
               "name": "rolled oats",
@@ -141,133 +141,127 @@
               "category": "pantry"
             },
             {
-              "name": "banana",
-              "quantity": 1,
-              "unit": "whole",
-              "category": "produce"
-            },
-            {
-              "name": "almonds",
-              "quantity": 30,
-              "unit": "g",
+              "name": "water",
+              "quantity": 400,
+              "unit": "ml",
               "category": "pantry"
             },
             {
-              "name": "honey",
-              "quantity": 20,
+              "name": "mixed berries",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "walnuts",
+              "quantity": 30,
               "unit": "g",
               "category": "pantry"
             }
           ],
-          "instructions": "Cook oats with water according to package. Top with sliced banana, chopped almonds, and drizzle with honey.",
-          "prepTime": 5,
+          "instructions": "Cook oats in water for 5 minutes until creamy. Top with berries and chopped walnuts.",
+          "prepTime": 2,
           "cookTime": 5,
           "servings": 2,
           "tags": [
+            "kid-friendly",
             "mediterranean",
-            "quick",
-            "kid-friendly"
+            "fiber-rich"
           ]
         },
         "lunch": {
-          "name": "White Bean and Vegetable Soup",
+          "name": "Chickpea and Veggie Pita",
           "ingredients": [
             {
-              "name": "canned white beans",
-              "quantity": 400,
+              "name": "chickpeas",
+              "quantity": 240,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "whole wheat pita",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "Greek yogurt",
+              "quantity": 60,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Mash chickpeas lightly with a fork. Stuff pitas with chickpeas, diced cucumber, halved tomatoes, and a dollop of Greek yogurt.",
+          "prepTime": 10,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "mediterranean",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Mediterranean Lentil Soup",
+          "ingredients": [
+            {
+              "name": "red lentils",
+              "quantity": 200,
               "unit": "g",
               "category": "pantry"
             },
             {
               "name": "carrots",
-              "quantity": 200,
+              "quantity": 150,
               "unit": "g",
               "category": "produce"
             },
             {
-              "name": "celery",
+              "name": "spinach",
               "quantity": 100,
               "unit": "g",
               "category": "produce"
             },
             {
               "name": "vegetable broth",
-              "quantity": 500,
+              "quantity": 800,
               "unit": "ml",
               "category": "pantry"
             },
             {
-              "name": "olive oil",
-              "quantity": 20,
-              "unit": "ml",
-              "category": "pantry"
-            }
-          ],
-          "instructions": "Sauté chopped carrots and celery in olive oil. Add broth and beans, simmer 15 minutes until vegetables are tender.",
-          "prepTime": 10,
-          "cookTime": 20,
-          "servings": 2,
-          "tags": [
-            "mediterranean",
-            "vegetarian",
-            "make-ahead"
-          ]
-        },
-        "dinner": {
-          "name": "Greek-Style Chicken with Quinoa",
-          "ingredients": [
-            {
-              "name": "chicken breast",
-              "quantity": 400,
-              "unit": "g",
-              "category": "meat"
-            },
-            {
-              "name": "quinoa",
-              "quantity": 150,
-              "unit": "g",
-              "category": "pantry"
-            },
-            {
-              "name": "cucumber",
-              "quantity": 200,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "cherry tomatoes",
-              "quantity": 150,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "olive oil",
-              "quantity": 30,
-              "unit": "ml",
-              "category": "pantry"
-            },
-            {
-              "name": "lemon",
-              "quantity": 1,
+              "name": "garlic",
+              "quantity": 2,
               "unit": "whole",
               "category": "produce"
             }
           ],
-          "instructions": "Cook quinoa per package. Season chicken with lemon and herbs, bake at 190°C for 25 minutes. Serve with chopped cucumber and tomatoes.",
-          "prepTime": 10,
+          "instructions": "Sauté minced garlic and diced carrots for 3 minutes. Add lentils and broth, simmer 20 minutes, then stir in spinach until wilted.",
+          "prepTime": 8,
           "cookTime": 25,
           "servings": 2,
           "tags": [
+            "kid-friendly",
             "mediterranean",
-            "healthy",
-            "kid-friendly"
+            "plant-based"
           ]
         }
       },
       {
         "date": "2025-12-29",
         "breakfast": {
-          "name": "Scrambled Eggs with Whole Wheat Toast",
+          "name": "Scrambled Eggs with Spinach",
           "ingredients": [
             {
               "name": "eggs",
@@ -276,45 +270,45 @@
               "category": "dairy"
             },
             {
-              "name": "whole wheat bread",
-              "quantity": 4,
-              "unit": "whole",
-              "category": "pantry"
-            },
-            {
               "name": "spinach",
-              "quantity": 50,
+              "quantity": 80,
               "unit": "g",
               "category": "produce"
             },
             {
               "name": "olive oil",
-              "quantity": 15,
+              "quantity": 10,
               "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "whole wheat bread",
+              "quantity": 2,
+              "unit": "whole",
               "category": "pantry"
             }
           ],
-          "instructions": "Scramble eggs with chopped spinach in olive oil. Toast bread and serve alongside.",
+          "instructions": "Heat olive oil, add spinach until wilted. Whisk eggs and scramble with spinach for 3-4 minutes. Serve with toasted whole wheat bread.",
           "prepTime": 5,
-          "cookTime": 5,
+          "cookTime": 6,
           "servings": 2,
           "tags": [
-            "quick",
             "kid-friendly",
-            "protein"
+            "protein-rich",
+            "quick"
           ]
         },
         "lunch": {
           "name": "Tuna and White Bean Salad",
           "ingredients": [
             {
-              "name": "canned tuna",
-              "quantity": 240,
+              "name": "canned tuna in water",
+              "quantity": 200,
               "unit": "g",
-              "category": "meat"
+              "category": "pantry"
             },
             {
-              "name": "canned white beans",
+              "name": "white beans",
               "quantity": 240,
               "unit": "g",
               "category": "pantry"
@@ -326,40 +320,40 @@
               "category": "produce"
             },
             {
-              "name": "red onion",
-              "quantity": 50,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
               "name": "olive oil",
-              "quantity": 30,
+              "quantity": 20,
               "unit": "ml",
               "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "produce"
             }
           ],
-          "instructions": "Combine drained tuna and beans with halved tomatoes and diced onion. Dress with olive oil and lemon juice.",
-          "prepTime": 10,
+          "instructions": "Drain tuna and beans, mix with halved cherry tomatoes. Drizzle with olive oil and lemon juice, toss gently.",
+          "prepTime": 8,
           "cookTime": 0,
           "servings": 2,
           "tags": [
+            "kid-friendly",
             "mediterranean",
-            "no-cook",
-            "quick"
+            "no-cook"
           ]
         },
         "dinner": {
-          "name": "Mediterranean Baked Cod with Vegetables",
+          "name": "Baked Cod with Roasted Vegetables",
           "ingredients": [
             {
               "name": "cod fillets",
-              "quantity": 500,
+              "quantity": 450,
               "unit": "g",
               "category": "meat"
             },
             {
               "name": "zucchini",
-              "quantity": 300,
+              "quantity": 250,
               "unit": "g",
               "category": "produce"
             },
@@ -380,33 +374,27 @@
               "quantity": 1,
               "unit": "whole",
               "category": "produce"
-            },
-            {
-              "name": "garlic",
-              "quantity": 2,
-              "unit": "whole",
-              "category": "produce"
             }
           ],
-          "instructions": "Place cod and chopped vegetables in baking dish. Drizzle with olive oil, add minced garlic and lemon slices. Bake at 200°C for 20 minutes.",
+          "instructions": "Preheat oven to 200°C. Place cod and chopped vegetables on a baking sheet, drizzle with olive oil and lemon juice. Bake for 18-20 minutes.",
           "prepTime": 10,
           "cookTime": 20,
           "servings": 3,
           "tags": [
-            "mediterranean",
-            "fish",
-            "family-friendly"
+            "kid-friendly",
+            "family-dinner",
+            "mediterranean"
           ]
         }
       },
       {
         "date": "2025-12-30",
         "breakfast": {
-          "name": "Greek Yogurt Parfait",
+          "name": "Greek Yogurt with Berries and Almonds",
           "ingredients": [
             {
-              "name": "greek yogurt",
-              "quantity": 200,
+              "name": "Greek yogurt",
+              "quantity": 400,
               "unit": "g",
               "category": "dairy"
             },
@@ -417,90 +405,90 @@
               "category": "produce"
             },
             {
-              "name": "almonds",
-              "quantity": 20,
+              "name": "sliced almonds",
+              "quantity": 40,
               "unit": "g",
               "category": "pantry"
             },
             {
               "name": "honey",
-              "quantity": 15,
-              "unit": "g",
-              "category": "pantry"
-            }
-          ],
-          "instructions": "Layer yogurt with berries and chopped almonds. Drizzle with honey.",
-          "prepTime": 5,
-          "cookTime": 0,
-          "servings": 1,
-          "tags": [
-            "mediterranean",
-            "quick",
-            "healthy"
-          ]
-        },
-        "lunch": {
-          "name": "Chickpea and Spinach Stew",
-          "ingredients": [
-            {
-              "name": "canned chickpeas",
-              "quantity": 400,
-              "unit": "g",
-              "category": "pantry"
-            },
-            {
-              "name": "spinach",
-              "quantity": 200,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "canned tomatoes",
-              "quantity": 400,
-              "unit": "g",
-              "category": "pantry"
-            },
-            {
-              "name": "onion",
-              "quantity": 1,
-              "unit": "whole",
-              "category": "produce"
-            },
-            {
-              "name": "olive oil",
-              "quantity": 30,
+              "quantity": 20,
               "unit": "ml",
               "category": "pantry"
             }
           ],
-          "instructions": "Sauté diced onion in olive oil. Add chickpeas, tomatoes, and spinach. Simmer 15 minutes.",
-          "prepTime": 10,
-          "cookTime": 20,
-          "servings": 1,
+          "instructions": "Divide Greek yogurt into bowls. Top with berries, almonds, and a drizzle of honey.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "servings": 2,
           "tags": [
+            "kid-friendly",
             "mediterranean",
-            "vegetarian",
-            "make-ahead"
+            "quick"
           ]
         },
-        "dinner": {
-          "name": "Grilled Salmon with Roasted Broccoli",
+        "lunch": {
+          "name": "Chickpea Salad Bowl",
           "ingredients": [
             {
-              "name": "salmon fillet",
-              "quantity": 200,
+              "name": "chickpeas",
+              "quantity": 120,
               "unit": "g",
-              "category": "meat"
+              "category": "pantry"
             },
             {
-              "name": "broccoli",
-              "quantity": 300,
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
               "unit": "g",
               "category": "produce"
             },
             {
               "name": "olive oil",
-              "quantity": 30,
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Combine chickpeas, diced cucumber, and halved tomatoes in a bowl. Dress with olive oil and lemon juice.",
+          "prepTime": 8,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "simple",
+            "mediterranean",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Sardines with Arugula",
+          "ingredients": [
+            {
+              "name": "sardines",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "arugula",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
               "unit": "ml",
               "category": "pantry"
             },
@@ -511,200 +499,176 @@
               "category": "produce"
             }
           ],
-          "instructions": "Season salmon with lemon. Toss broccoli with olive oil. Bake both at 200°C for 18 minutes.",
-          "prepTime": 8,
-          "cookTime": 18,
+          "instructions": "Grill sardines for 3-4 minutes per side. Serve over fresh arugula dressed with olive oil and lemon juice.",
+          "prepTime": 5,
+          "cookTime": 8,
           "servings": 1,
           "tags": [
+            "simple",
             "mediterranean",
-            "fish",
-            "healthy"
+            "omega-3"
           ]
         }
       },
       {
         "date": "2025-12-31",
         "breakfast": {
-          "name": "Avocado Toast with Tomatoes",
+          "name": "Oatmeal with Walnuts",
           "ingredients": [
             {
-              "name": "whole wheat bread",
-              "quantity": 2,
-              "unit": "whole",
+              "name": "rolled oats",
+              "quantity": 50,
+              "unit": "g",
               "category": "pantry"
             },
             {
-              "name": "avocado",
-              "quantity": 1,
-              "unit": "whole",
-              "category": "produce"
+              "name": "water",
+              "quantity": 200,
+              "unit": "ml",
+              "category": "pantry"
             },
             {
-              "name": "cherry tomatoes",
-              "quantity": 100,
+              "name": "walnuts",
+              "quantity": 20,
               "unit": "g",
-              "category": "produce"
+              "category": "pantry"
             },
             {
-              "name": "olive oil",
+              "name": "honey",
               "quantity": 10,
               "unit": "ml",
               "category": "pantry"
             }
           ],
-          "instructions": "Toast bread. Mash avocado and spread on toast. Top with halved tomatoes and drizzle with olive oil.",
-          "prepTime": 5,
-          "cookTime": 3,
+          "instructions": "Cook oats in water for 5 minutes. Top with chopped walnuts and honey.",
+          "prepTime": 2,
+          "cookTime": 5,
           "servings": 1,
           "tags": [
+            "simple",
             "mediterranean",
-            "quick",
-            "vegetarian"
+            "fiber-rich"
           ]
         },
         "lunch": {
-          "name": "Lentil and Vegetable Soup",
+          "name": "Mediterranean Lentil Bowl",
           "ingredients": [
             {
               "name": "red lentils",
-              "quantity": 150,
-              "unit": "g",
-              "category": "pantry"
-            },
-            {
-              "name": "carrots",
-              "quantity": 150,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "celery",
               "quantity": 100,
               "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "spinach",
+              "quantity": 60,
+              "unit": "g",
               "category": "produce"
             },
             {
-              "name": "vegetable broth",
-              "quantity": 500,
-              "unit": "ml",
-              "category": "pantry"
+              "name": "cherry tomatoes",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
             },
             {
               "name": "olive oil",
-              "quantity": 20,
+              "quantity": 15,
               "unit": "ml",
               "category": "pantry"
             }
           ],
-          "instructions": "Sauté chopped vegetables in olive oil. Add lentils and broth, simmer 25 minutes until lentils are tender.",
-          "prepTime": 10,
-          "cookTime": 30,
+          "instructions": "Cook lentils in water for 15 minutes. Mix with fresh spinach and halved tomatoes, drizzle with olive oil.",
+          "prepTime": 5,
+          "cookTime": 15,
           "servings": 1,
           "tags": [
+            "simple",
             "mediterranean",
-            "vegetarian",
-            "make-ahead"
+            "plant-based"
           ]
         },
         "dinner": {
-          "name": "Baked White Fish with Green Beans",
+          "name": "Pan-Seared Salmon with Asparagus",
           "ingredients": [
             {
-              "name": "white fish fillet",
-              "quantity": 200,
+              "name": "salmon fillet",
+              "quantity": 150,
               "unit": "g",
               "category": "meat"
             },
             {
-              "name": "green beans",
-              "quantity": 250,
+              "name": "asparagus",
+              "quantity": 150,
               "unit": "g",
               "category": "produce"
             },
             {
               "name": "olive oil",
-              "quantity": 30,
+              "quantity": 15,
               "unit": "ml",
               "category": "pantry"
             },
             {
               "name": "garlic",
-              "quantity": 2,
-              "unit": "whole",
-              "category": "produce"
-            },
-            {
-              "name": "lemon",
               "quantity": 1,
               "unit": "whole",
               "category": "produce"
             }
           ],
-          "instructions": "Season fish with lemon and garlic. Toss green beans with olive oil. Bake together at 200°C for 18 minutes.",
-          "prepTime": 8,
-          "cookTime": 18,
+          "instructions": "Heat olive oil in a pan, sear salmon 4 minutes per side. Sauté asparagus with minced garlic for 5 minutes.",
+          "prepTime": 5,
+          "cookTime": 10,
           "servings": 1,
           "tags": [
+            "simple",
             "mediterranean",
-            "fish",
-            "healthy"
+            "omega-3"
           ]
         }
       },
       {
         "date": "2026-01-01",
         "breakfast": {
-          "name": "Banana Almond Smoothie Bowl",
+          "name": "Greek Yogurt with Honey",
           "ingredients": [
             {
-              "name": "banana",
-              "quantity": 2,
-              "unit": "whole",
-              "category": "produce"
-            },
-            {
-              "name": "greek yogurt",
+              "name": "Greek yogurt",
               "quantity": 200,
               "unit": "g",
               "category": "dairy"
             },
             {
-              "name": "almonds",
-              "quantity": 30,
-              "unit": "g",
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
               "category": "pantry"
             },
             {
-              "name": "mixed berries",
-              "quantity": 100,
+              "name": "walnuts",
+              "quantity": 20,
               "unit": "g",
-              "category": "produce"
+              "category": "pantry"
             }
           ],
-          "instructions": "Blend banana with yogurt until smooth. Pour into bowl and top with chopped almonds and berries.",
-          "prepTime": 5,
+          "instructions": "Spoon yogurt into a bowl, drizzle with honey and sprinkle chopped walnuts on top.",
+          "prepTime": 3,
           "cookTime": 0,
           "servings": 1,
           "tags": [
+            "simple",
             "mediterranean",
-            "quick",
-            "healthy"
+            "quick"
           ]
         },
         "lunch": {
-          "name": "Mediterranean Quinoa Bowl",
+          "name": "White Bean and Tomato Salad",
           "ingredients": [
             {
-              "name": "quinoa",
-              "quantity": 100,
+              "name": "white beans",
+              "quantity": 120,
               "unit": "g",
               "category": "pantry"
-            },
-            {
-              "name": "cucumber",
-              "quantity": 150,
-              "unit": "g",
-              "category": "produce"
             },
             {
               "name": "cherry tomatoes",
@@ -713,46 +677,169 @@
               "category": "produce"
             },
             {
-              "name": "canned chickpeas",
-              "quantity": 200,
-              "unit": "g",
-              "category": "pantry"
-            },
-            {
-              "name": "olive oil",
-              "quantity": 30,
-              "unit": "ml",
-              "category": "pantry"
-            }
-          ],
-          "instructions": "Cook quinoa per package. Mix with chopped vegetables and chickpeas. Dress with olive oil and lemon.",
-          "prepTime": 10,
-          "cookTime": 15,
-          "servings": 1,
-          "tags": [
-            "mediterranean",
-            "vegetarian",
-            "make-ahead"
-          ]
-        },
-        "dinner": {
-          "name": "Herb-Crusted Salmon with Asparagus",
-          "ingredients": [
-            {
-              "name": "salmon fillet",
-              "quantity": 200,
-              "unit": "g",
-              "category": "meat"
-            },
-            {
-              "name": "asparagus",
-              "quantity": 250,
+              "name": "arugula",
+              "quantity": 60,
               "unit": "g",
               "category": "produce"
             },
             {
               "name": "olive oil",
-              "quantity": 30,
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Combine beans, halved tomatoes, and arugula in a bowl. Drizzle with olive oil and toss.",
+          "prepTime": 6,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "simple",
+            "mediterranean",
+            "no-cook"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Mackerel with Vegetables",
+          "ingredients": [
+            {
+              "name": "mackerel fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 120,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell peppers",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Preheat oven to 200°C. Place mackerel and chopped vegetables on a baking sheet, drizzle with olive oil. Bake for 18 minutes.",
+          "prepTime": 8,
+          "cookTime": 18,
+          "servings": 1,
+          "tags": [
+            "simple",
+            "mediterranean",
+            "omega-3"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-02",
+        "breakfast": {
+          "name": "Oatmeal with Berries",
+          "ingredients": [
+            {
+              "name": "rolled oats",
+              "quantity": 50,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "water",
+              "quantity": 200,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "mixed berries",
+              "quantity": 60,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "almonds",
+              "quantity": 15,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook oats in water for 5 minutes until creamy. Top with berries and sliced almonds.",
+          "prepTime": 2,
+          "cookTime": 5,
+          "servings": 1,
+          "tags": [
+            "simple",
+            "mediterranean",
+            "fiber-rich"
+          ]
+        },
+        "lunch": {
+          "name": "Chickpea and Spinach Bowl",
+          "ingredients": [
+            {
+              "name": "chickpeas",
+              "quantity": 120,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "spinach",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Mix chickpeas, fresh spinach, and diced cucumber in a bowl. Dress with olive oil and lemon juice.",
+          "prepTime": 7,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "simple",
+            "mediterranean",
+            "plant-based"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Sardines with Greens",
+          "ingredients": [
+            {
+              "name": "sardines",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "mixed greens",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
               "unit": "ml",
               "category": "pantry"
             },
@@ -763,137 +850,14 @@
               "category": "produce"
             }
           ],
-          "instructions": "Season salmon with herbs and lemon. Toss asparagus with olive oil. Bake together at 200°C for 18 minutes.",
-          "prepTime": 8,
-          "cookTime": 18,
-          "servings": 1,
-          "tags": [
-            "mediterranean",
-            "fish",
-            "healthy"
-          ]
-        }
-      },
-      {
-        "date": "2026-01-02",
-        "breakfast": {
-          "name": "Whole Wheat Toast with Almond Butter",
-          "ingredients": [
-            {
-              "name": "whole wheat bread",
-              "quantity": 2,
-              "unit": "whole",
-              "category": "pantry"
-            },
-            {
-              "name": "almond butter",
-              "quantity": 40,
-              "unit": "g",
-              "category": "pantry"
-            },
-            {
-              "name": "banana",
-              "quantity": 1,
-              "unit": "whole",
-              "category": "produce"
-            }
-          ],
-          "instructions": "Toast bread. Spread with almond butter and top with sliced banana.",
+          "instructions": "Grill sardines for 3-4 minutes per side until cooked. Serve over mixed greens dressed with olive oil and lemon juice.",
           "prepTime": 5,
-          "cookTime": 3,
+          "cookTime": 8,
           "servings": 1,
           "tags": [
-            "quick",
-            "vegetarian",
-            "simple"
-          ]
-        },
-        "lunch": {
-          "name": "White Bean and Kale Soup",
-          "ingredients": [
-            {
-              "name": "canned white beans",
-              "quantity": 400,
-              "unit": "g",
-              "category": "pantry"
-            },
-            {
-              "name": "kale",
-              "quantity": 150,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "carrots",
-              "quantity": 100,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "vegetable broth",
-              "quantity": 500,
-              "unit": "ml",
-              "category": "pantry"
-            },
-            {
-              "name": "olive oil",
-              "quantity": 20,
-              "unit": "ml",
-              "category": "pantry"
-            }
-          ],
-          "instructions": "Sauté chopped carrots in olive oil. Add broth, beans, and chopped kale. Simmer 15 minutes.",
-          "prepTime": 10,
-          "cookTime": 20,
-          "servings": 1,
-          "tags": [
+            "simple",
             "mediterranean",
-            "vegetarian",
-            "make-ahead"
-          ]
-        },
-        "dinner": {
-          "name": "Grilled Shrimp with Zucchini Noodles",
-          "ingredients": [
-            {
-              "name": "shrimp",
-              "quantity": 250,
-              "unit": "g",
-              "category": "meat"
-            },
-            {
-              "name": "zucchini",
-              "quantity": 400,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "cherry tomatoes",
-              "quantity": 150,
-              "unit": "g",
-              "category": "produce"
-            },
-            {
-              "name": "olive oil",
-              "quantity": 30,
-              "unit": "ml",
-              "category": "pantry"
-            },
-            {
-              "name": "garlic",
-              "quantity": 2,
-              "unit": "whole",
-              "category": "produce"
-            }
-          ],
-          "instructions": "Spiralize zucchini into noodles. Sauté shrimp with garlic and tomatoes in olive oil. Toss with zucchini noodles and serve.",
-          "prepTime": 10,
-          "cookTime": 10,
-          "servings": 1,
-          "tags": [
-            "mediterranean",
-            "low-carb",
-            "quick"
+            "omega-3"
           ]
         }
       }
