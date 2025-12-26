@@ -18,7 +18,7 @@ import {
 export const DEV_PRESET = {
   eaters: [
     {
-      eaterId: 'eater_dev_001',
+      eaterId: 'eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6',
       name: 'Roland',
       preferences: 'Varied diet, enjoys trying new recipes',
       allergies: [],
@@ -29,7 +29,7 @@ export const DEV_PRESET = {
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
-      eaterId: 'eater_dev_002',
+      eaterId: 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7',
       name: 'Maya',
       preferences: 'Likes simple, familiar foods',
       allergies: [],
@@ -40,7 +40,7 @@ export const DEV_PRESET = {
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
-      eaterId: 'eater_dev_003',
+      eaterId: 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8',
       name: 'Cathie',
       preferences: 'Healthy options, Mediterranean style',
       allergies: [],
@@ -54,49 +54,49 @@ export const DEV_PRESET = {
 
   baseSpecification: {
     _schemaVersion: 1,
-    ownerEaterId: 'eater_dev_001',
+    ownerEaterId: 'eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6',
     weeklyBudget: 150,
     shoppingDay: 6, // Saturday
     preferredStore: 'Coles Caulfield',
     maxShoppingListItems: 30,
-    householdEaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'],
+    householdEaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'],
     dietaryGoals: 'Balanced diet with variety, keep it practical and budget-friendly',
     onboardingComplete: true,
     weeklySchedule: {
       sunday: {
-        breakfast: { servings: 2, eaterIds: ['eater_dev_001', 'eater_dev_002'], requirements: '' },
-        lunch: { servings: 2, eaterIds: ['eater_dev_001', 'eater_dev_002'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: '' },
+        lunch: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: '' },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
       },
       monday: {
-        breakfast: { servings: 2, eaterIds: ['eater_dev_001', 'eater_dev_002'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_dev_001'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
       },
       tuesday: {
-        breakfast: { servings: 2, eaterIds: ['eater_dev_001', 'eater_dev_002'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_dev_001'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
       },
       wednesday: {
-        breakfast: { servings: 2, eaterIds: ['eater_dev_001', 'eater_dev_002'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_dev_001'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
       },
       thursday: {
-        breakfast: { servings: 2, eaterIds: ['eater_dev_001', 'eater_dev_002'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_dev_001'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
       },
       friday: {
-        breakfast: { servings: 2, eaterIds: ['eater_dev_001', 'eater_dev_002'], requirements: 'Quick breakfast' },
-        lunch: { servings: 1, eaterIds: ['eater_dev_001'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: 'Quick breakfast' },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: '' },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
       },
       saturday: {
-        breakfast: { servings: 2, eaterIds: ['eater_dev_001', 'eater_dev_002'], requirements: '' },
-        lunch: { servings: 3, eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], requirements: '' },
-        dinner: { servings: 3, eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], requirements: '' }
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: '' },
+        lunch: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: '' }
       }
     },
     chatPreferences: {
@@ -113,7 +113,7 @@ export const DEV_PRESET = {
 
   recipes: [
     {
-      recipeId: 'recipe_dev_001',
+      recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9',
       name: 'Quick Scrambled Eggs',
       ingredients: [
         { name: 'eggs', quantity: 4, unit: 'whole', category: 'dairy' },
@@ -135,7 +135,7 @@ export const DEV_PRESET = {
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
-      recipeId: 'recipe_dev_002',
+      recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0',
       name: 'Chicken Stir Fry',
       ingredients: [
         { name: 'chicken breast', quantity: 500, unit: 'g', category: 'meat' },
@@ -159,7 +159,7 @@ export const DEV_PRESET = {
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
-      recipeId: 'recipe_dev_003',
+      recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1',
       name: 'Greek Salad',
       ingredients: [
         { name: 'cucumber', quantity: 200, unit: 'g', category: 'produce' },
@@ -184,7 +184,7 @@ export const DEV_PRESET = {
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
-      recipeId: 'recipe_dev_004',
+      recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2',
       name: 'Spaghetti Bolognese',
       ingredients: [
         { name: 'ground beef', quantity: 500, unit: 'g', category: 'meat' },
@@ -208,7 +208,7 @@ export const DEV_PRESET = {
       updatedAt: '2025-12-26T00:00:00.000Z'
     },
     {
-      recipeId: 'recipe_dev_005',
+      recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3',
       name: 'Avocado Toast',
       ingredients: [
         { name: 'bread', quantity: 4, unit: 'slices', category: 'pantry' },
@@ -234,39 +234,39 @@ export const DEV_PRESET = {
 
   meals: [
     // Saturday
-    { mealId: 'meal_dev_001', recipeId: 'recipe_dev_001', mealType: 'breakfast', date: '2025-12-28', eaterIds: ['eater_dev_001', 'eater_dev_002'], servings: 2, notes: '' },
-    { mealId: 'meal_dev_002', recipeId: 'recipe_dev_003', mealType: 'lunch', date: '2025-12-28', eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], servings: 3, notes: '' },
-    { mealId: 'meal_dev_003', recipeId: 'recipe_dev_002', mealType: 'dinner', date: '2025-12-28', eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], servings: 3, notes: '' },
+    { mealId: 'meal_c9d0e1f2-a3b4-45c6-d7e8-f9a0b1c2d3e4', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
+    { mealId: 'meal_d0e1f2a3-b4c5-46d7-e8f9-a0b1c2d3e4f5', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
+    { mealId: 'meal_e1f2a3b4-c5d6-47e8-f9a0-b1c2d3e4f5a6', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2025-12-28', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
     
     // Sunday
-    { mealId: 'meal_dev_004', recipeId: 'recipe_dev_005', mealType: 'breakfast', date: '2025-12-29', eaterIds: ['eater_dev_001', 'eater_dev_002'], servings: 2, notes: '' },
-    { mealId: 'meal_dev_005', recipeId: 'recipe_dev_003', mealType: 'lunch', date: '2025-12-29', eaterIds: ['eater_dev_001', 'eater_dev_002'], servings: 2, notes: '' },
-    { mealId: 'meal_dev_006', recipeId: 'recipe_dev_004', mealType: 'dinner', date: '2025-12-29', eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], servings: 3, notes: '' },
+    { mealId: 'meal_f2a3b4c5-d6e7-48f9-a0b1-c2d3e4f5a6b7', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'breakfast', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
+    { mealId: 'meal_a3b4c5d6-e7f8-49a0-b1c2-d3e4f5a6b7c8', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
+    { mealId: 'meal_b4c5d6e7-f8a9-40b1-c2d3-e4f5a6b7c8d9', recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2', mealType: 'dinner', date: '2025-12-29', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
     
     // Monday
-    { mealId: 'meal_dev_007', recipeId: 'recipe_dev_001', mealType: 'breakfast', date: '2025-12-30', eaterIds: ['eater_dev_001', 'eater_dev_002'], servings: 2, notes: '' },
-    { mealId: 'meal_dev_008', recipeId: 'recipe_dev_003', mealType: 'lunch', date: '2025-12-30', eaterIds: ['eater_dev_001'], servings: 1, notes: '' },
-    { mealId: 'meal_dev_009', recipeId: 'recipe_dev_002', mealType: 'dinner', date: '2025-12-30', eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], servings: 3, notes: '' },
+    { mealId: 'meal_c5d6e7f8-a9b0-41c2-d3e4-f5a6b7c8d9e0', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
+    { mealId: 'meal_d6e7f8a9-b0c1-42d3-e4f5-a6b7c8d9e0f1', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
+    { mealId: 'meal_e7f8a9b0-c1d2-43e4-f5a6-b7c8d9e0f1a2', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2025-12-30', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
     
     // Tuesday
-    { mealId: 'meal_dev_010', recipeId: 'recipe_dev_005', mealType: 'breakfast', date: '2025-12-31', eaterIds: ['eater_dev_001', 'eater_dev_002'], servings: 2, notes: '' },
-    { mealId: 'meal_dev_011', recipeId: 'recipe_dev_003', mealType: 'lunch', date: '2025-12-31', eaterIds: ['eater_dev_001'], servings: 1, notes: '' },
-    { mealId: 'meal_dev_012', recipeId: 'recipe_dev_004', mealType: 'dinner', date: '2025-12-31', eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], servings: 3, notes: '' },
+    { mealId: 'meal_f8a9b0c1-d2e3-44f5-a6b7-c8d9e0f1a2b3', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'breakfast', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
+    { mealId: 'meal_a9b0c1d2-e3f4-45a6-b7c8-d9e0f1a2b3c4', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
+    { mealId: 'meal_b0c1d2e3-f4a5-46b7-c8d9-e0f1a2b3c4d5', recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2', mealType: 'dinner', date: '2025-12-31', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
     
     // Wednesday
-    { mealId: 'meal_dev_013', recipeId: 'recipe_dev_001', mealType: 'breakfast', date: '2026-01-01', eaterIds: ['eater_dev_001', 'eater_dev_002'], servings: 2, notes: '' },
-    { mealId: 'meal_dev_014', recipeId: 'recipe_dev_003', mealType: 'lunch', date: '2026-01-01', eaterIds: ['eater_dev_001'], servings: 1, notes: '' },
-    { mealId: 'meal_dev_015', recipeId: 'recipe_dev_002', mealType: 'dinner', date: '2026-01-01', eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], servings: 3, notes: '' },
+    { mealId: 'meal_c1d2e3f4-a5b6-47c8-d9e0-f1a2b3c4d5e6', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
+    { mealId: 'meal_d2e3f4a5-b6c7-48d9-e0f1-a2b3c4d5e6f7', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
+    { mealId: 'meal_e3f4a5b6-c7d8-49e0-f1a2-b3c4d5e6f7a8', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2026-01-01', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
     
     // Thursday
-    { mealId: 'meal_dev_016', recipeId: 'recipe_dev_005', mealType: 'breakfast', date: '2026-01-02', eaterIds: ['eater_dev_001', 'eater_dev_002'], servings: 2, notes: '' },
-    { mealId: 'meal_dev_017', recipeId: 'recipe_dev_003', mealType: 'lunch', date: '2026-01-02', eaterIds: ['eater_dev_001'], servings: 1, notes: '' },
-    { mealId: 'meal_dev_018', recipeId: 'recipe_dev_004', mealType: 'dinner', date: '2026-01-02', eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], servings: 3, notes: '' },
+    { mealId: 'meal_f4a5b6c7-d8e9-40f1-a2b3-c4d5e6f7a8b9', recipeId: 'recipe_b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3', mealType: 'breakfast', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
+    { mealId: 'meal_a5b6c7d8-e9f0-41a2-b3c4-d5e6f7a8b9c0', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
+    { mealId: 'meal_b6c7d8e9-f0a1-42b3-c4d5-e6f7a8b9c0d1', recipeId: 'recipe_a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2', mealType: 'dinner', date: '2026-01-02', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' },
     
     // Friday
-    { mealId: 'meal_dev_019', recipeId: 'recipe_dev_001', mealType: 'breakfast', date: '2026-01-03', eaterIds: ['eater_dev_001', 'eater_dev_002'], servings: 2, notes: '' },
-    { mealId: 'meal_dev_020', recipeId: 'recipe_dev_003', mealType: 'lunch', date: '2026-01-03', eaterIds: ['eater_dev_001'], servings: 1, notes: '' },
-    { mealId: 'meal_dev_021', recipeId: 'recipe_dev_002', mealType: 'dinner', date: '2026-01-03', eaterIds: ['eater_dev_001', 'eater_dev_002', 'eater_dev_003'], servings: 3, notes: '' }
+    { mealId: 'meal_c7d8e9f0-a1b2-43c4-d5e6-f7a8b9c0d1e2', recipeId: 'recipe_d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9', mealType: 'breakfast', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], servings: 2, notes: '' },
+    { mealId: 'meal_d8e9f0a1-b2c3-44d5-e6f7-a8b9c0d1e2f3', recipeId: 'recipe_f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1', mealType: 'lunch', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], servings: 1, notes: '' },
+    { mealId: 'meal_e9f0a1b2-c3d4-45e6-f7a8-b9c0d1e2f3a4', recipeId: 'recipe_e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0', mealType: 'dinner', date: '2026-01-03', eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], servings: 3, notes: '' }
   ],
 
   mealPlan: {
@@ -276,13 +276,13 @@ export const DEV_PRESET = {
     weekEnd: '2026-01-03', // Friday
     createdAt: '2025-12-26T00:00:00.000Z',
     mealIds: [
-      'meal_dev_001', 'meal_dev_002', 'meal_dev_003',
-      'meal_dev_004', 'meal_dev_005', 'meal_dev_006',
-      'meal_dev_007', 'meal_dev_008', 'meal_dev_009',
-      'meal_dev_010', 'meal_dev_011', 'meal_dev_012',
-      'meal_dev_013', 'meal_dev_014', 'meal_dev_015',
-      'meal_dev_016', 'meal_dev_017', 'meal_dev_018',
-      'meal_dev_019', 'meal_dev_020', 'meal_dev_021'
+      'meal_c9d0e1f2-a3b4-45c6-d7e8-f9a0b1c2d3e4', 'meal_d0e1f2a3-b4c5-46d7-e8f9-a0b1c2d3e4f5', 'meal_e1f2a3b4-c5d6-47e8-f9a0-b1c2d3e4f5a6',
+      'meal_f2a3b4c5-d6e7-48f9-a0b1-c2d3e4f5a6b7', 'meal_a3b4c5d6-e7f8-49a0-b1c2-d3e4f5a6b7c8', 'meal_b4c5d6e7-f8a9-40b1-c2d3-e4f5a6b7c8d9',
+      'meal_c5d6e7f8-a9b0-41c2-d3e4-f5a6b7c8d9e0', 'meal_d6e7f8a9-b0c1-42d3-e4f5-a6b7c8d9e0f1', 'meal_e7f8a9b0-c1d2-43e4-f5a6-b7c8d9e0f1a2',
+      'meal_f8a9b0c1-d2e3-44f5-a6b7-c8d9e0f1a2b3', 'meal_a9b0c1d2-e3f4-45a6-b7c8-d9e0f1a2b3c4', 'meal_b0c1d2e3-f4a5-46b7-c8d9-e0f1a2b3c4d5',
+      'meal_c1d2e3f4-a5b6-47c8-d9e0-f1a2b3c4d5e6', 'meal_d2e3f4a5-b6c7-48d9-e0f1-a2b3c4d5e6f7', 'meal_e3f4a5b6-c7d8-49e0-f1a2-b3c4d5e6f7a8',
+      'meal_f4a5b6c7-d8e9-40f1-a2b3-c4d5e6f7a8b9', 'meal_a5b6c7d8-e9f0-41a2-b3c4-d5e6f7a8b9c0', 'meal_b6c7d8e9-f0a1-42b3-c4d5-e6f7a8b9c0d1',
+      'meal_c7d8e9f0-a1b2-43c4-d5e6-f7a8b9c0d1e2', 'meal_d8e9f0a1-b2c3-44d5-e6f7-a8b9c0d1e2f3', 'meal_e9f0a1b2-c3d4-45e6-f7a8-b9c0d1e2f3a4'
     ],
     budget: {
       target: 150,
