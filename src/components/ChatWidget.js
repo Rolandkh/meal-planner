@@ -10,6 +10,8 @@ import {
   loadBaseSpecification,
   updateBaseSpecification,
   loadEaters,
+  saveEaters,
+  createEater,
   updateEater,
   getOrCreateDefaultEater
 } from '../utils/storage.js';
