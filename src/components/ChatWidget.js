@@ -768,14 +768,17 @@ export class ChatWidget {
     // Show processing message
     const processingMsg = {
       role: 'assistant',
-      content: 'One moment while I set up your household profiles... 👥',
+      content: 'One moment while I set up your profile... 👥',
       timestamp: new Date().toISOString()
     };
     this.addMessage(processingMsg);
     this.saveConversation();
     
-    // Extract household members from conversation using AI
+    // Phase 1: Extract household members from conversation using AI
     await this.extractHouseholdMembers();
+    
+    // Phase 2: Extract weekly schedule from conversation using AI
+    await this.extractWeeklySchedule();
     
     // Mark onboarding as complete
     updateBaseSpecification({ onboardingComplete: true });
@@ -783,7 +786,7 @@ export class ChatWidget {
     // Show completion message
     const completionMsg = {
       role: 'assistant',
-      content: 'Excellent! You\'re all set up. 🎉\n\nI\'ve created profiles for your household members - you can view and edit them in Settings → Household anytime.\n\nWhenever you\'re ready, click "Generate Week" below to create your first personalized meal plan!',
+      content: 'Excellent! You\'re all set up. 🎉\n\nI\'ve created profiles for your household members and mapped out your weekly meal schedule. You can view and edit everything in Settings anytime.\n\nWhenever you\'re ready, click "Generate Week" below to create your first personalized meal plan!',
       timestamp: new Date().toISOString()
     };
     
@@ -931,6 +934,161 @@ Return ONLY the JSON, nothing else.`;
       console.error('Error extracting household members:', error);
       // Don't fail onboarding if extraction fails - user can add manually
     }
+  }
+
+  /**
+   * Extract weekly meal schedule from conversation using AI
+   * Creates structured schedule with exact servings per meal
+   */
+  async extractWeeklySchedule() {
+    try {
+      console.log('Extracting weekly schedule from conversation...');
+
+      // Get relevant conversation parts (household question + responses)
+      const householdResponse = this.onboardingResponses[2] || '';
+      const allResponses = this.onboardingResponses.join('\n\n');
+
+      // Create extraction prompt
+      const extractionPrompt = `Based on this conversation about household and meal planning, extract the weekly meal schedule.
+
+CONVERSATION:
+${allResponses}
+
+Analyze who is eating which meals on which days. Extract a structured schedule.
+
+Return ONLY valid JSON in this EXACT format (no other text):
+{
+  "schedule": {
+    "sunday": {
+      "breakfast": { "servings": number, "attendees": ["Name1", "Name2"], "requirements": ["kid-friendly", "etc"] },
+      "lunch": { "servings": number, "attendees": ["Name1"], "requirements": [] },
+      "dinner": { "servings": number, "attendees": ["Name1", "Name2"], "requirements": [] }
+    },
+    "monday": { /* same structure for all 3 meals */ },
+    "tuesday": { /* same structure */ },
+    "wednesday": { /* same structure */ },
+    "thursday": { /* same structure */ },
+    "friday": { /* same structure */ },
+    "saturday": { /* same structure */ }
+  }
+}
+
+RULES:
+- servings = number of people eating that meal
+- attendees = array of names (use "You" for the main user)
+- requirements = ["kid-friendly"] if children present, ["family-dinner"] for special meals, ["simple"] for solo meals, etc.
+- If not mentioned, assume servings: 1 and attendees: ["You"]
+- Pay close attention to schedules (e.g., "daughter Sunday-Wednesday morning", "ex visits Tuesday dinner")
+
+Return ONLY the JSON, nothing else.`;
+
+      // Call Claude for extraction
+      const response = await fetch('/api/chat-with-vanessa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: extractionPrompt,
+          chatHistory: [],
+          isOnboarding: false
+        }),
+      });
+
+      if (!response.ok) {
+        console.error('Failed to extract schedule');
+        return;
+      }
+
+      // Read the full response
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let fullResponse = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value, { stream: true });
+        const lines = chunk.split('\n');
+
+        for (const line of lines) {
+          if (line.startsWith('data: ')) {
+            try {
+              const data = JSON.parse(line.substring(6));
+              if (data.type === 'token') {
+                fullResponse += data.content;
+              }
+            } catch (e) {
+              // Ignore parse errors
+            }
+          }
+        }
+      }
+
+      console.log('Schedule extraction response:', fullResponse);
+
+      // Parse the JSON from Claude's response
+      const jsonMatch = fullResponse.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) {
+        console.warn('No JSON found in schedule extraction response');
+        return;
+      }
+
+      const extracted = JSON.parse(jsonMatch[0]);
+      
+      if (!extracted.schedule) {
+        console.warn('No schedule found in extraction');
+        return;
+      }
+
+      // Map attendee names to eater IDs
+      const eaters = loadEaters();
+      const scheduleWithIds = this.mapAttendeesToIds(extracted.schedule, eaters);
+
+      // Save to baseSpecification
+      updateBaseSpecification({ weeklySchedule: scheduleWithIds });
+      
+      console.log('✓ Weekly schedule extracted and saved');
+
+    } catch (error) {
+      console.error('Error extracting weekly schedule:', error);
+      // Don't fail onboarding if extraction fails
+    }
+  }
+
+  /**
+   * Map attendee names to eater IDs in schedule
+   */
+  mapAttendeesToIds(schedule, eaters) {
+    const scheduleWithIds = {};
+
+    for (const [day, meals] of Object.entries(schedule)) {
+      scheduleWithIds[day] = {};
+
+      for (const [mealType, mealData] of Object.entries(meals)) {
+        // Find eater IDs for each attendee name
+        const eaterIds = (mealData.attendees || []).map(name => {
+          const lowerName = name.toLowerCase();
+          
+          // Match "You" or "User" to default eater
+          if (lowerName === 'you' || lowerName === 'user') {
+            const defaultEater = eaters.find(e => e.isDefault);
+            return defaultEater?.eaterId;
+          }
+          
+          // Match by name
+          const eater = eaters.find(e => e.name.toLowerCase() === lowerName);
+          return eater?.eaterId;
+        }).filter(id => id); // Remove nulls
+
+        scheduleWithIds[day][mealType] = {
+          servings: mealData.servings || 1,
+          eaterIds: eaterIds,
+          requirements: mealData.requirements || []
+        };
+      }
+    }
+
+    return scheduleWithIds;
   }
 
   /**

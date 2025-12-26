@@ -117,9 +117,9 @@ function validateRequest(body) {
 }
 
 /**
- * Build user prompt from chat history and eaters
+ * Build user prompt from chat history, eaters, and optional structured schedule
  */
-function buildUserPrompt(chatHistory, eaters) {
+function buildUserPrompt(chatHistory, eaters, baseSpec = null) {
   // Get next Saturday as week start
   const today = new Date();
   const daysUntilSaturday = (6 - today.getDay() + 7) % 7 || 7;
@@ -132,12 +132,12 @@ function buildUserPrompt(chatHistory, eaters) {
   let conversationContext = '';
   
   if (recentMessages.length > 0) {
-    conversationContext = `\n\nIMPORTANT - User's conversation with Vanessa:\n`;
+    conversationContext = `\n\nUser's conversation with Vanessa:\n`;
     conversationContext += recentMessages.map(msg => {
       const role = msg.role === 'user' ? 'USER' : 'VANESSA';
       return `${role}: ${msg.content}`;
     }).join('\n');
-    conversationContext += '\n\nPay special attention to the user\'s requests above (ingredient limits, dietary preferences, recipe complexity, etc.) and incorporate them into the meal plan.';
+    conversationContext += '\n\nPay special attention to dietary preferences, recipe complexity, ingredient constraints, etc.';
   }
 
   // Format eater information with allergies and restrictions
@@ -154,21 +154,41 @@ function buildUserPrompt(chatHistory, eaters) {
       info += `\n  Dietary restrictions: ${eater.dietaryRestrictions.join(', ')}`;
     }
     
-    // Add schedule if specified
-    if (eater.schedule) {
-      info += `\n  Schedule: ${eater.schedule}`;
-    }
-    
     return info;
   }).join('\n\n');
 
-  return `Generate a meal plan for the week starting ${weekOf}.
-
-Household members:
-${eaterInfo}
-${conversationContext}
-
-CRITICAL - SERVINGS REQUIREMENTS:
+  // Build explicit schedule requirements if available
+  let scheduleRequirements = '';
+  
+  if (baseSpec?.weeklySchedule) {
+    scheduleRequirements = '\n\nCRITICAL - EXACT SERVINGS SCHEDULE (FOLLOW PRECISELY):\n';
+    scheduleRequirements += 'You MUST generate meals with these EXACT servings counts:\n\n';
+    
+    const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    const mealTypes = ['breakfast', 'lunch', 'dinner'];
+    
+    days.forEach(day => {
+      if (baseSpec.weeklySchedule[day]) {
+        scheduleRequirements += `${day.toUpperCase()}:\n`;
+        
+        mealTypes.forEach(mealType => {
+          const mealData = baseSpec.weeklySchedule[day][mealType];
+          if (mealData) {
+            const requirements = mealData.requirements?.length > 0 
+              ? ` (${mealData.requirements.join(', ')})` 
+              : '';
+            scheduleRequirements += `  - ${mealType}: ${mealData.servings} serving${mealData.servings !== 1 ? 's' : ''}${requirements}\n`;
+          }
+        });
+        
+        scheduleRequirements += '\n';
+      }
+    });
+    
+    scheduleRequirements += 'DO NOT DEVIATE FROM THESE SERVINGS. Match them exactly.\n';
+  } else {
+    // Fallback to conversation-based requirements
+    scheduleRequirements = `\n\nCRITICAL - SERVINGS REQUIREMENTS:
 Read the conversation above VERY CAREFULLY to determine:
 1. How many people are eating each meal on each day
 2. When children are present (need kid-friendly recipes)
@@ -180,12 +200,19 @@ For EACH of the 21 meals (7 days × 3 meals), you MUST:
 - Set servings to match the exact number of people
 - Adjust ingredient quantities accordingly
 - Choose kid-friendly recipes when children are present
+`;
+  }
 
-Example: If the user said "Tuesday dinner is for me, my daughter, and my ex", then Tuesday dinner must have servings: 3, and it should be a family-friendly recipe.
+  return `Generate a meal plan for the week starting ${weekOf}.
+
+Household members:
+${eaterInfo}
+${conversationContext}
+${scheduleRequirements}
 
 Create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. 
 
-If the user specified constraints in the conversation (like "30 ingredients", "reuse ingredients", "simple recipes", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
+If the user specified constraints in the conversation (like "reuse ingredients", "simple recipes", "meal prep on Saturday", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
 
 Output ONLY the JSON structure specified in the system prompt, with no additional text.`;
 }
@@ -241,13 +268,13 @@ export default async function handler(req) {
       );
     }
 
-    const { chatHistory = [], eaters = [] } = body;
+    const { chatHistory = [], eaters = [], baseSpecification = null } = body;
 
     // Use default eater if none provided
     const finalEaters = eaters.length > 0 ? eaters : [DEFAULT_EATER];
 
-    // Build user prompt
-    const userPrompt = buildUserPrompt(chatHistory, finalEaters);
+    // Build user prompt (with optional baseSpecification for structured schedule)
+    const userPrompt = buildUserPrompt(chatHistory, finalEaters, baseSpecification);
 
     // Initialize Anthropic client
     const anthropic = new Anthropic({

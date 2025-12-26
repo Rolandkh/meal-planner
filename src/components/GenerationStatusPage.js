@@ -4,7 +4,7 @@
  */
 
 import { ErrorHandler } from '../utils/errorHandler.js';
-import { loadEaters, saveRecipes, saveMeals, saveCurrentMealPlan } from '../utils/storage.js';
+import { loadEaters, loadBaseSpecification, saveRecipes, saveMeals, saveCurrentMealPlan } from '../utils/storage.js';
 import { transformGeneratedPlan } from '../utils/mealPlanTransformer.js';
 
 export class GenerationStatusPage {
@@ -150,8 +150,9 @@ export class GenerationStatusPage {
         { name: 'User', preferences: 'no restrictions', schedule: 'home for dinner' }
       ];
 
-      // Load chat history if available
+      // Load chat history and base specification
       const chatHistory = this.loadChatHistory();
+      const baseSpecification = loadBaseSpecification();
 
       // Make POST request with SSE
       const response = await fetch('/api/generate-meal-plan', {
@@ -161,7 +162,8 @@ export class GenerationStatusPage {
         },
         body: JSON.stringify({
           chatHistory,
-          eaters: defaultEaters
+          eaters: defaultEaters,
+          baseSpecification
         }),
         signal: this.abortController.signal
       });
