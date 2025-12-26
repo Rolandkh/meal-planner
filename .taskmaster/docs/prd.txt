@@ -3,8 +3,8 @@
 ## Project Overview
 
 **Product Name:** Vanessa - AI Meal Planning Concierge
-**Version:** v0.9 (Slice 3 Complete)
-**Status:** Slices 1, 2 & 3 ✅ Complete | Slice 4 Pending
+**Version:** v1.0-rc1 (Slice 4 Code Complete)
+**Status:** Slices 1, 2, 3 ✅ Complete | Slice 4 ✅ Code Complete (Testing In Progress)
 **Approach:** Vertical Slice → Reality Check → Expand
 **Technology Stack:** Vanilla JavaScript, HTML, CSS (Tailwind), Vercel serverless functions, Claude API
 
@@ -20,8 +20,10 @@ This project follows an iterative "vertical slice" approach:
 4. **Reality Check**: Evaluate and refine ✅ **COMPLETE**
 5. **Slice 3**: Recipe library, settings, onboarding ✅ **COMPLETE**
 6. **Reality Check**: Evaluate and refine ✅ **COMPLETE**
-7. **Slice 4+**: Expand features based on learnings
-8. **Polish**: UI/UX improvements after core flows are stable
+7. **Slice 4**: Quick wins (recipe management, history, import) ✅ **CODE COMPLETE**
+8. **Testing Phase**: Manual testing of AI features ⏳ **IN PROGRESS**
+9. **Slice 5+**: Expand features based on learnings
+10. **Polish**: UI/UX improvements after core flows are stable
 
 ---
 
@@ -1387,7 +1389,39 @@ Build the most requested features that provide immediate value without major inf
 ### Strategy
 After Slice 3's complexity (AI extraction, migrations, settings), Slice 4 focuses on **quick wins** - features users will want immediately after onboarding. Each feature is relatively simple (1-2 days) and can ship independently.
 
-### End-to-End Flows
+**Feature 1: Recipe Editing System** ✅
+- RecipeEditPage.js component (400 lines)
+- updateRecipe() storage function with ID preservation
+- Auto-save drafts every 30 seconds
+- BeforeUnload protection
+- Form validation (name, ingredients, times, servings)
+- Dynamic ingredient rows (add/remove)
+
+**Feature 2: Regenerate Single Day** ✅
+- Enhanced API with regenerateDay, dateForDay parameters
+- regenerateDay.js utility (250 lines)
+- Buttons in MealPlanView and DayView
+- Confirmation modal with current meals preview
+- Recipe duplication avoidance
+- Context-aware navigation
+
+**Feature 3: Meal Plan History** ✅
+- MealPlanHistoryPage and MealPlanHistoryDetailPage (450 lines)
+- Auto-archive system (saveNewMealPlan wrapper)
+- Snapshot creation (frozen meals + recipes)
+- History retention settings (1-12 weeks, default 4)
+- Auto-cleanup on retention change
+- Read-only historical views
+
+**Feature 4: Recipe Import from Text** ✅
+- /api/extract-recipe endpoint (300 lines)
+- RecipeImportModal component (400 lines)
+- 3-step import flow (method → paste → preview/edit)
+- AI extraction with confidence scoring
+- Character counter (50-5000 chars)
+- Preview with editable fields
+
+### End-to-End Flows (As Implemented)
 
 **FLOW A: Edit a Recipe**
 ```

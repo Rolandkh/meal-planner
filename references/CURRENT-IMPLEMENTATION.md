@@ -1,7 +1,8 @@
 # Current Implementation Reference
 
 **Last Updated:** December 26, 2025  
-**Version:** v0.9 (Slices 1, 2 & 3 Complete)
+**Version:** v1.0-rc1 (Slice 4 Code Complete)  
+**Status:** All features built, automated tests passed, manual API tests pending
 
 ---
 
@@ -23,7 +24,7 @@ This document contains:
 
 ---
 
-## 🏗️ What We Built (Slices 1, 2 & 3)
+## 🏗️ What We Built (Slices 1, 2, 3 & 4)
 
 ### Slice 1: Chat with Vanessa
 **Status:** ✅ Complete
@@ -65,7 +66,7 @@ This document contains:
 - `/src/utils/unitConversions.js`
 
 ### Slice 3: Recipe Library & Onboarding
-**Status:** ✅ Complete
+**Status:** ✅ Complete (December 26, 2025)
 
 **Eater Management:**
 - Household member profiles (name, preferences, allergies, schedule)
@@ -119,6 +120,47 @@ This document contains:
 - `/src/migrations/index.js`
 - `/src/utils/devPresets.js` (NEW: Dec 26)
 
+### Slice 4: Recipe Management & History
+**Status:** ✅ Code Complete (December 26, 2025) - Testing In Progress
+
+**Recipe Editing:**
+- Full edit form for existing recipes
+- Dynamic ingredient rows (add/remove)
+- Auto-save drafts every 30 seconds
+- Form validation and error display
+- BeforeUnload protection
+
+**Single Day Regeneration:**
+- Regenerate any single day (3 meals)
+- Buttons in MealPlanView and DayView
+- Confirmation modal with meal preview
+- Recipe duplication avoidance
+- Fast generation (~20-30 seconds)
+
+**Meal Plan History:**
+- Auto-archive on new plan generation
+- Browse past meal plans
+- Read-only historical views
+- Configurable retention (1-12 weeks)
+- Snapshot system (frozen data)
+
+**Recipe Import:**
+- Import from pasted text (blogs, emails, etc.)
+- AI extraction with Claude
+- Confidence scoring (0-100%)
+- Preview/edit before save
+- Character limits (50-5000 chars)
+
+**Key Files:**
+- `/api/extract-recipe.js` (NEW - 300 lines)
+- `/src/components/RecipeEditPage.js` (NEW - 400 lines)
+- `/src/components/MealPlanHistoryPage.js` (NEW - 200 lines)
+- `/src/components/MealPlanHistoryDetailPage.js` (NEW - 250 lines)
+- `/src/components/RecipeImportModal.js` (NEW - 400 lines)
+- `/src/utils/regenerateDay.js` (NEW - 250 lines)
+- `/src/utils/storage.js` (enhanced +330 lines)
+- `/api/generate-meal-plan.js` (enhanced +80 lines)
+
 ---
 
 ## 📊 Data Architecture (As Implemented)
@@ -137,17 +179,19 @@ This document contains:
 - Unlimited storage
 - 1-2 days migration effort (storage abstraction layer)
 
-### localStorage Keys (Slice 3 Standardized)
+### localStorage Keys (Slice 3 Standardized, Slice 4 Enhanced)
 ```javascript
 'vanessa_chat_history'           // Chat messages
 'vanessa_recipes'                // Recipe library with ratings/favorites
 'vanessa_meals'                  // Meal instances with eaterIds
 'vanessa_current_meal_plan'      // Active meal plan
+'vanessa_meal_plan_history'      // Archived meal plans (NEW: Slice 4)
 'vanessa_eaters'                 // Household members
-'vanessa_base_specification'     // User profile + weeklySchedule
+'vanessa_base_specification'     // User profile + weeklySchedule + historyRetentionWeeks
 'vanessa_debug_raw_output'       // Raw AI response
 'vanessa_schema_version'         // Migration version tracker
 'vanessa_migration_slice3'       // Migration completion flag
+'recipe_draft_[recipeId]'        // Auto-save drafts (NEW: Slice 4, temporary)
 ```
 
 **Slice 3 Storage Enhancements:**
@@ -157,6 +201,15 @@ This document contains:
 - ✅ Delete orphaned recipes (`deleteOrphanedRecipes()`)
 - ✅ Warning banner at 60% (warning) and 80% (critical) capacity
 - ✅ Safe save with quota exceeded handling
+
+**Slice 4 Storage Enhancements:**
+- ✅ Recipe update with ID preservation (`updateRecipe()`)
+- ✅ Meal plan history storage (`loadMealPlanHistory()`, `saveMealPlanHistory()`)
+- ✅ Auto-archive system (`saveNewMealPlan()` - replaces old `saveCurrentMealPlan` in generation)
+- ✅ Snapshot creation (`createMealPlanSnapshot()` - frozen meals + recipes)
+- ✅ History cleanup (`cleanupHistory()` - keeps last N weeks)
+- ✅ Historical plan loading (`loadHistoricalPlan()`)
+- ✅ History retention settings (`getHistoryRetentionWeeks()`)
 
 ### Core Entities
 
@@ -224,7 +277,7 @@ This document contains:
 }
 ```
 
-**BaseSpecification (NEW: Slice 3)**
+**BaseSpecification (Slice 3, Enhanced in Slice 4)**
 ```javascript
 {
   _schemaVersion: 1,
@@ -232,11 +285,12 @@ This document contains:
   weeklyBudget: number,
   shoppingDay: 0-6,  // 0=Sunday
   preferredStore: string,
-  maxShoppingListItems: number,  // NEW: Dec 26
+  maxShoppingListItems: number,  // Slice 3
+  historyRetentionWeeks: number, // NEW: Slice 4 (default: 4)
   householdEaterIds: ['eater_[uuid]'],
   dietaryGoals: string,
   onboardingComplete: boolean,
-  weeklySchedule: {              // NEW: Structured schedule
+  weeklySchedule: {              // Slice 3: Structured schedule
     sunday: {
       breakfast: { servings, eaterIds, requirements },
       lunch: { servings, eaterIds, requirements },
@@ -257,22 +311,35 @@ This document contains:
 }
 ```
 
+**Archived Meal Plan (NEW: Slice 4)**
+```javascript
+{
+  // All MealPlan fields, plus:
+  archivedAt: 'ISO 8601',        // When archived
+  mealsSnapshot: Meal[],          // Frozen copy of meals
+  recipesSnapshot: Recipe[]       // Frozen copy of recipes
+}
+```
+
 See PRD for complete schemas and relationships.
 
 ---
 
 ## 🚦 Routes
 
-| Route | Component | Status | Notes |
-|-------|-----------|--------|-------|
-| `#/` | HomePage | ✅ | Includes day navigation buttons |
-| `#/generating` | GenerationStatusPage | ✅ | SSE streaming progress |
-| `#/meal-plan` | MealPlanView | ✅ | Full week view |
-| `#/day/:day` | DayView | ✅ | Single day view (NEW: Dec 26) |
-| `#/shopping-list` | ShoppingListView | ✅ | Aggregated shopping list |
-| `#/recipes` | RecipeLibraryPage | ✅ | Slice 3 |
-| `#/recipe/:id` | RecipeDetailPage | ✅ | Slice 3 (parameterized) |
-| `#/settings` | SettingsPage | ✅ | Slice 3 |
+| Route | Component | Status | Slice | Notes |
+|-------|-----------|--------|-------|-------|
+| `#/` | HomePage | ✅ | 1 | Includes day navigation buttons |
+| `#/generating` | GenerationStatusPage | ✅ | 2 | SSE streaming progress, auto-archive |
+| `#/meal-plan` | MealPlanView | ✅ | 2 | Full week view, regenerate buttons |
+| `#/day/:day` | DayView | ✅ | 2 | Single day view, regenerate button |
+| `#/shopping-list` | ShoppingListView | ✅ | 2 | Aggregated shopping list |
+| `#/recipes` | RecipeLibraryPage | ✅ | 3 | Browse recipes, Add Recipe button |
+| `#/recipe/:id` | RecipeDetailPage | ✅ | 3 | Recipe detail, Edit button |
+| `#/recipe/:id/edit` | RecipeEditPage | ✅ | 4 | Edit recipe form (NEW) |
+| `#/history` | MealPlanHistoryPage | ✅ | 4 | Browse past plans (NEW) |
+| `#/history/:id` | MealPlanHistoryDetailPage | ✅ | 4 | View archived plan (NEW) |
+| `#/settings` | SettingsPage | ✅ | 3 | Settings with history retention |
 
 **Navigation:**
 - Global nav bar: Home → Meal Plan → Recipes → Shopping → Settings
@@ -389,19 +456,51 @@ See implemented examples in:
 
 ---
 
-## 🎯 Next Steps (Slice 4+)
+## 🎯 Next Steps
 
-See PRD for Slice 4+ planning:
-1. **Meal Prep Optimization System** (NEW: Spec complete in PRD)
+### Immediate (Testing Phase)
+1. **Manual API Testing** - Test all AI-powered features
+   - Recipe import from text (various formats)
+   - Single day regeneration (all 7 days)
+   - Auto-archive system (generate multiple plans)
+   - Recipe editing (edit and verify persistence)
+
+2. **Bug Fixes** - Fix issues found during testing
+   - Settings tab switching (known issue)
+   - Recipe edit add ingredient re-render (known issue)
+   - Any issues found during manual testing
+
+3. **Polish** - Based on testing feedback
+   - UI/UX improvements
+   - Error message refinements
+   - Performance optimizations
+
+### Slice 5+ (Future Features)
+
+See PRD for Slice 5+ planning:
+1. **Recipe Management Pro**
+   - Manual recipe creation (from scratch)
+   - Recipe import from URL
+   - Recipe duplication/copying
+   - Recipe categories and advanced tagging
+
+2. **Meal Prep Optimization System** (Spec complete in PRD)
    - Three strategies: Fresh Only, Batch Cooking, Hybrid
    - Prep day scheduling and component reuse
    - Time optimization for busy vs. light days
    - Enhanced recipe metadata for prep planning
-2. Add recipe flow (manual recipe creation)
-3. Usage metering and limits
-4. Offline mode support
-5. Mobile app polish
-6. Firebase migration (multi-device sync)
+
+3. **Firebase Migration & Sync**
+   - Migrate from localStorage to Firestore
+   - Multi-device sync
+   - Usage metering (free tier: 4 generations/month)
+   - Cloud backup
+
+4. **Advanced Features**
+   - Offline mode enhancements
+   - Mobile app polish
+   - Nutrition tracking
+   - Meal plan templates
 
 ---
 

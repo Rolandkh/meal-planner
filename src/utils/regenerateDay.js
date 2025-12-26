@@ -360,3 +360,4 @@ export function getDayName(date) {
   return dayNames[dateObj.getDay()];
 }
 
+
