@@ -740,16 +740,39 @@ export class ChatWidget {
   /**
    * Handle final confirmation response
    */
-  handleFinalConfirmation(response) {
+  async handleFinalConfirmation(response) {
     const lowerResponse = response.toLowerCase();
     
     // Check if user is confirming
     const confirmWords = ['yes', 'yeah', 'yep', 'looks good', 'sounds good', 'perfect', 'correct', 'right', 'ok', 'okay', 'great'];
     const isConfirming = confirmWords.some(word => lowerResponse.includes(word));
     
+    // Check if user also wants to generate
+    const generateWords = ['generate', 'plan my week', 'create', 'make my meal plan', 'let\'s do this', 'start'];
+    const wantsGenerate = generateWords.some(word => lowerResponse.includes(word));
+    
     if (isConfirming) {
       // User confirmed - complete onboarding
-      this.completeOnboarding();
+      await this.completeOnboarding();
+      
+      // If they also requested generation, trigger it after onboarding completes
+      if (wantsGenerate) {
+        console.log('User confirmed AND requested generation - auto-triggering...');
+        
+        // Add confirmation message
+        const genMsg = {
+          role: 'assistant',
+          content: 'Great! Let me create your first meal plan now... 🎉',
+          timestamp: new Date().toISOString()
+        };
+        this.addMessage(genMsg);
+        this.saveConversation();
+        
+        // Trigger generation after a brief delay
+        setTimeout(() => {
+          this.handleGenerateWeek();
+        }, 1500);
+      }
     } else {
       // User wants changes - let AI handle the conversation
       this.awaitingFinalConfirmation = false;
