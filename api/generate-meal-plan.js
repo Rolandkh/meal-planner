@@ -207,9 +207,15 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = n
         mealTypes.forEach(mealType => {
           const mealData = daySchedule[mealType];
           if (mealData) {
-            const requirements = mealData.requirements?.length > 0 
-              ? ` - ${mealData.requirements.join(', ')}` 
-              : '';
+            // Handle requirements as either string or array
+            let requirements = '';
+            if (mealData.requirements) {
+              if (typeof mealData.requirements === 'string' && mealData.requirements.length > 0) {
+                requirements = ` - ${mealData.requirements}`;
+              } else if (Array.isArray(mealData.requirements) && mealData.requirements.length > 0) {
+                requirements = ` - ${mealData.requirements.join(', ')}`;
+              }
+            }
             scheduleRequirements += `  - ${mealType}: ${mealData.servings} serving${mealData.servings !== 1 ? 's' : ''}${requirements}\n`;
           }
         });
