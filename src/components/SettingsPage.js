@@ -584,7 +584,7 @@ export class SettingsPage {
     form.appendChild(goalsGroup);
     
     // Slice 4: History Retention (Task 54)
-    const historyRetentionGroup = this.createSelectGroup(
+    const historyRetentionGroup = this.createFormGroup(
       'History Retention',
       'select',
       'historyRetentionWeeks',
