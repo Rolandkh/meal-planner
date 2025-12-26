@@ -218,16 +218,33 @@ For EACH of the 21 meals (7 days × 3 meals), you MUST:
 `;
   }
 
+  // Build ingredient constraint
+  let ingredientConstraint = '';
+  const maxItems = baseSpec?.maxShoppingListItems || 30;
+  
+  ingredientConstraint = `\n\nCRITICAL - INGREDIENT LIMIT:
+The shopping list must have NO MORE THAN ${maxItems} unique ingredients total across all 21 meals.
+
+To achieve this:
+- REUSE ingredients across multiple meals (e.g., use salmon 3 times instead of salmon, cod, tuna, sardines, mackerel)
+- Choose recipes with overlapping ingredients
+- Use pantry staples (olive oil, salt, pepper, etc.) across many meals
+- Limit variety in proteins (pick 2-3 fish types, not 5)
+- Reuse vegetables (if you use zucchini Monday, use it again Wednesday)
+
+This constraint is CRITICAL for keeping shopping simple and costs down.`;
+
   return `Generate a meal plan for the week starting ${weekOf}.
 
 Household members:
 ${eaterInfo}
 ${conversationContext}
 ${scheduleRequirements}
+${ingredientConstraint}
 
 Create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. 
 
-If the user specified constraints in the conversation (like "reuse ingredients", "simple recipes", "meal prep on Saturday", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
+If the user specified constraints in the conversation (like "simple recipes", "meal prep on Saturday", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
 
 Output ONLY the JSON structure specified in the system prompt, with no additional text.`;
 }

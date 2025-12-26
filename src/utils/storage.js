@@ -1029,6 +1029,7 @@ export function createDefaultBaseSpecification(ownerEaterId = null) {
     weeklyBudget: 150,
     shoppingDay: 6, // Saturday
     preferredStore: '',
+    maxShoppingListItems: 30, // Maximum unique ingredients
     householdEaterIds: ownerEaterId ? [ownerEaterId] : [],
     dietaryGoals: '',
     onboardingComplete: false,

@@ -520,6 +520,24 @@ export class SettingsPage {
     budgetGroup.querySelector('input').step = '1';
     form.appendChild(budgetGroup);
 
+    // Max Shopping List Items
+    const maxItemsGroup = this.createFormGroup(
+      'Maximum Shopping List Items',
+      'number',
+      'maxShoppingListItems',
+      spec.maxShoppingListItems || 30,
+      'Limit unique ingredients for simpler shopping'
+    );
+    const maxItemsInput = maxItemsGroup.querySelector('input');
+    maxItemsInput.min = '15';
+    maxItemsInput.max = '100';
+    maxItemsInput.step = '5';
+    const maxItemsHelp = document.createElement('p');
+    maxItemsHelp.className = 'text-xs text-gray-500 mt-1';
+    maxItemsHelp.textContent = 'Fewer items = simpler shopping and more ingredient reuse. Recommended: 25-35 items.';
+    maxItemsGroup.appendChild(maxItemsHelp);
+    form.appendChild(maxItemsGroup);
+
     // Shopping Day
     const shoppingGroup = this.createFormGroup(
       'Shopping Day',
@@ -877,6 +895,7 @@ export class SettingsPage {
     const formData = new FormData(form);
     const updates = {
       weeklyBudget: parseInt(formData.get('weeklyBudget'), 10),
+      maxShoppingListItems: parseInt(formData.get('maxShoppingListItems'), 10),
       shoppingDay: parseInt(formData.get('shoppingDay'), 10),
       preferredStore: formData.get('preferredStore'),
       dietaryGoals: formData.get('dietaryGoals')
