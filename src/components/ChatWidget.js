@@ -1071,6 +1071,21 @@ Return ONLY the JSON, nothing else.`;
         });
       }
 
+      // Check if response contains generation trigger
+      if (assistantMessage.content.includes('[ACTION:GENERATE_WEEK]')) {
+        console.log('Generation action detected in response');
+        
+        // Remove the marker from displayed message
+        assistantMessage.content = assistantMessage.content.replace('[ACTION:GENERATE_WEEK]', '').trim();
+        bubble.textContent = assistantMessage.content;
+        
+        // Trigger generation after a brief delay
+        setTimeout(() => {
+          console.log('Auto-triggering meal plan generation...');
+          this.handleGenerateWeek();
+        }, 1500);
+      }
+
       // Save conversation to localStorage
       this.saveConversation();
 
