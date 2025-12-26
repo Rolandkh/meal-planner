@@ -1250,28 +1250,34 @@ Return ONLY the JSON, nothing else.`;
     // Clear input
     this.messageInput.value = '';
 
+    // Disable send button and show typing early for better UX
+    this.sendButton.disabled = true;
+    this.messageInput.disabled = true;
+    this.showTypingIndicator();
+
     // If in onboarding mode, use AI for responses
     if (this.isOnboarding && !this.awaitingFinalConfirmation) {
       // Store response and extract data
       this.handleOnboardingResponse(message);
       this.saveConversation();
       
+      // Check if this was the last question
+      if (this.awaitingFinalConfirmation) {
+        console.log('💭 Generating final summary...');
+      }
+      
       // Continue with AI chat below (don't return)
     } else if (this.awaitingFinalConfirmation) {
       // Handle final confirmation
+      this.hideTypingIndicator(); // Hide for sync confirmation handling
       this.handleFinalConfirmation(message);
       this.saveConversation();
+      this.sendButton.disabled = false;
+      this.messageInput.disabled = false;
       return; // Don't call AI again for simple yes/no
     }
 
     console.log('Sending message to API:', message);
-
-    // Disable send button during processing
-    this.sendButton.disabled = true;
-    this.messageInput.disabled = true;
-
-    // Show typing indicator
-    this.showTypingIndicator();
 
     try {
       // Prepare chat history (exclude welcome message)
