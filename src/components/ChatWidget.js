@@ -748,7 +748,7 @@ export class ChatWidget {
     const isConfirming = confirmWords.some(word => lowerResponse.includes(word));
     
     // Check if user also wants to generate
-    const generateWords = ['generate', 'plan my week', 'create', 'make my meal plan', 'let\'s do this', 'start'];
+    const generateWords = ['generate', 'organise', 'organize', 'plan', 'create', 'make', 'build', 'let\'s do this', 'start', 'go ahead', 'do it'];
     const wantsGenerate = generateWords.some(word => lowerResponse.includes(word));
     
     if (isConfirming) {
