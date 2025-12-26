@@ -1153,6 +1153,579 @@ Add recipe import capabilities and migrate to Firebase for multi-device sync and
 
 ---
 
+## MEAL PREP OPTIMIZATION SYSTEM
+
+### Overview
+The meal prep system allows users to optimize their weekly cooking schedule by identifying batch-cooking opportunities, make-ahead meals, and prep day activities. This reduces daily cooking time while maintaining meal variety and freshness.
+
+### User Meal Prep Strategies
+
+Users can select their preferred meal prep style in Settings:
+
+1. **Fresh Only** (Default)
+   - Prepare each meal from raw ingredients before eating
+   - Minimal advance preparation
+   - Maximum freshness
+   - Suitable for: Users with time each day, prefer fresh cooking
+
+2. **Batch Cooking**
+   - Dedicate 1-2 days per week to bulk meal preparation
+   - Cook large quantities, portion, and store
+   - Minimal daily cooking (mostly reheating/assembly)
+   - Suitable for: Busy weekdays, prefer efficiency over daily cooking
+
+3. **Hybrid** (Recommended)
+   - Strategic mix of fresh and make-ahead
+   - Prep components on designated days (e.g., Saturday)
+   - Quick assembly on busy days, fresh cooking on lighter days
+   - Suitable for: Most users, balanced approach
+
+### Recipe Metadata for Prep Planning
+
+**Enhanced Recipe Schema:**
+```javascript
+{
+  recipeId: 'recipe_[uuid]',
+  name: string,
+  ingredients: [...],
+  instructions: string,
+  prepTime: number,
+  cookTime: number,
+  servings: number,
+  
+  // NEW: Meal prep fields
+  prepStrategy: {
+    type: 'fresh-only' | 'make-ahead' | 'batch-friendly' | 'components',
+    storageTime: number,        // Days recipe keeps well (0-7)
+    reheatTime: number,         // Minutes to reheat (if applicable)
+    prepAheadInstructions: string,  // Special instructions for advance prep
+    components: [               // For 'components' type
+      {
+        name: 'cooked chicken',
+        prepTime: 20,
+        storageTime: 3,
+        usedIn: ['meal1', 'meal2']  // Which meals use this component
+      }
+    ]
+  },
+  
+  complexity: 'simple' | 'moderate' | 'complex',  // Influences prep day scheduling
+  tags: [..., 'quick-assembly', 'freezer-friendly', 'meal-prep'],
+  
+  // Existing fields
+  source: 'generated' | 'user' | 'imported',
+  rating: number | null,
+  createdAt: 'ISO 8601'
+}
+```
+
+### Prep Schedule Generation
+
+**MealPlan Enhancement:**
+```javascript
+{
+  _schemaVersion: 2,
+  mealPlanId: 'plan_YYYYMMDD',
+  weekOf: 'YYYY-MM-DD',
+  weekEnd: 'YYYY-MM-DD',
+  createdAt: 'ISO 8601',
+  mealIds: [...],
+  budget: {...},
+  
+  // NEW: Prep schedule
+  prepSchedule: {
+    prepDays: ['saturday'],  // User's designated prep days
+    strategy: 'hybrid',      // User's selected strategy
+    schedule: [
+      {
+        date: '2025-01-04',  // Saturday
+        dayName: 'Saturday',
+        isPrepDay: true,
+        tasks: [
+          {
+            taskId: 'prep_task_1',
+            type: 'batch-cook',
+            name: 'Cook chicken breast (3 portions)',
+            recipeIds: ['recipe_1', 'recipe_5'],  // Used in these recipes
+            estimatedTime: 25,
+            usedOn: ['2025-01-05', '2025-01-07', '2025-01-09'],  // Mon, Wed, Fri
+            storageInstructions: 'Refrigerate in airtight container, use within 3 days',
+            component: 'cooked chicken'
+          },
+          {
+            taskId: 'prep_task_2',
+            type: 'chop-vegetables',
+            name: 'Chop vegetables (onions, peppers, carrots)',
+            recipeIds: ['recipe_2', 'recipe_6', 'recipe_8'],
+            estimatedTime: 15,
+            usedOn: ['2025-01-05', '2025-01-06', '2025-01-08'],
+            storageInstructions: 'Store in containers, use within 3-4 days'
+          },
+          {
+            taskId: 'prep_task_3',
+            type: 'make-ahead-meal',
+            name: 'Prepare lasagna',
+            recipeIds: ['recipe_10'],
+            estimatedTime: 45,
+            usedOn: ['2025-01-08'],  // Wednesday
+            storageInstructions: 'Cover and refrigerate, bake Wednesday evening'
+          }
+        ],
+        totalEstimatedTime: 85,  // minutes
+        summary: '3 prep tasks for the week ahead'
+      },
+      {
+        date: '2025-01-05',  // Monday
+        dayName: 'Monday',
+        isPrepDay: false,
+        tasks: [],
+        assemblyTasks: [
+          {
+            mealId: 'meal_1',
+            mealType: 'dinner',
+            recipeName: 'Chicken Stir Fry',
+            assemblyTime: 10,
+            instructions: 'Use prepped chicken and vegetables, stir-fry with sauce'
+          }
+        ],
+        totalEstimatedTime: 25,  // Including assembly
+        summary: 'Quick assembly using Saturday prep'
+      }
+      // ... other days
+    ],
+    weekSummary: {
+      totalPrepTime: 85,           // Minutes on prep day
+      averageDailyTime: 20,        // Average minutes per non-prep day
+      timeSaved: 120,              // Estimated minutes saved vs. fresh cooking
+      prepDayCount: 1,
+      batchCookTasks: 2,
+      makeAheadMeals: 1
+    }
+  },
+  
+  weeklyPreferences: string,
+  conversation: {...}
+}
+```
+
+### User Settings for Meal Prep
+
+**BaseSpecification Enhancement:**
+```javascript
+{
+  _schemaVersion: 2,
+  ownerEaterId: 'eater_[uuid]',
+  weeklyBudget: number,
+  shoppingDay: 0-6,
+  preferredStore: string,
+  householdEaterIds: [...],
+  dietaryGoals: string,
+  onboardingComplete: boolean,
+  
+  // NEW: Meal prep preferences
+  mealPrepPreferences: {
+    strategy: 'fresh-only' | 'batch-cooking' | 'hybrid',  // Default: 'hybrid'
+    prepDays: [6],           // Array of day indices (0=Sun, 6=Sat). Default: [6]
+    maxPrepTime: 120,        // Max minutes willing to spend on prep day. Default: 120
+    busyDays: [1, 2, 3, 4],  // Days that need quick meals (0=Sun). Default: weekdays
+    lightDays: [0, 5, 6],    // Days with more time to cook. Default: weekends
+    preferences: {
+      preferFreshBreakfast: true,      // Always fresh breakfast. Default: true
+      allowFrozenMeals: false,         // Use freezer for longer storage. Default: false
+      batchCookingEnabled: true,       // Allow batch cooking of components. Default: true
+      makeAheadMealsEnabled: true      // Allow fully prepared make-ahead meals. Default: true
+    }
+  },
+  
+  weeklySchedule: {...},
+  chatPreferences: {...},
+  conversation: {...},
+  createdAt: 'ISO 8601',
+  updatedAt: 'ISO 8601'
+}
+```
+
+### AI Prompt Enhancement for Meal Prep
+
+**Generation System Prompt Update:**
+```
+You are Vanessa, an expert meal planning assistant. Generate a complete 7-day meal plan
+optimized for the user's meal prep strategy.
+
+USER MEAL PREP PREFERENCES:
+- Strategy: {strategy} (fresh-only | batch-cooking | hybrid)
+- Prep Days: {prepDays} (e.g., Saturday)
+- Busy Days: {busyDays} (e.g., Mon-Fri)
+- Light Days: {lightDays} (e.g., weekends)
+- Max Prep Day Time: {maxPrepTime} minutes
+- Batch Cooking Enabled: {batchCookingEnabled}
+- Make-Ahead Enabled: {makeAheadMealsEnabled}
+
+MEAL PREP OPTIMIZATION RULES:
+
+1. **For "fresh-only" strategy:**
+   - All meals should be quick-cooking (< 30 min prep+cook)
+   - Use simple recipes with minimal prep
+   - No advance preparation required
+   - Focus on fresh ingredients
+
+2. **For "batch-cooking" strategy:**
+   - Prioritize recipes that scale well and store well
+   - Identify components that can be batch-cooked (proteins, grains, sauces)
+   - Schedule complex recipes on prep day
+   - Quick assembly meals on busy days (< 15 min)
+   - Ensure all batch-cooked items used within safe storage time
+
+3. **For "hybrid" strategy (RECOMMENDED):**
+   - Balance of fresh and make-ahead
+   - Batch-cook 2-3 key components on prep day (e.g., protein, grains, chopped vegetables)
+   - Use prepped components in multiple meals throughout week
+   - Fresh, simple meals on light days
+   - Quick assembly meals on busy days
+   - 1-2 fully make-ahead meals (e.g., casseroles, lasagna)
+
+COMPONENT REUSE STRATEGY:
+- If batch-cooking chicken, use in 2-3 different recipes (stir-fry, salad, wrap)
+- If chopping vegetables, use across multiple days
+- If making sauce/dressing, portion for multiple meals
+- Ensure variety despite component reuse (different cuisines, flavor profiles)
+
+PREP DAY SCHEDULE:
+- Total prep time should not exceed {maxPrepTime} minutes
+- Organize tasks by type (proteins → vegetables → assembly)
+- Provide clear storage instructions
+- Indicate which days/meals use each prepped component
+
+BUSY DAY MEALS:
+- Must be < 20 minutes total time on busy days
+- Use prepped components for quick assembly
+- Or use make-ahead meals that just need reheating
+- Simple cooking methods (stir-fry, salad, sandwich, reheated casserole)
+
+LIGHT DAY MEALS:
+- Can be more complex, longer cooking time (30-60 min)
+- Fresh cooking encouraged
+- Opportunity for meal prep for upcoming week
+
+STORAGE & SAFETY:
+- Cooked proteins: 3-4 days refrigerated
+- Chopped vegetables: 3-5 days refrigerated
+- Cooked grains/pasta: 4-5 days refrigerated
+- Fully prepared meals: 3-4 days refrigerated
+- Soups/stews: 4-5 days refrigerated
+- Indicate if recipe is freezer-friendly (2-3 months)
+
+OUTPUT FORMAT:
+For each recipe, include:
+```json
+{
+  "name": "Recipe Name",
+  "ingredients": [...],
+  "instructions": "...",
+  "prepTime": 15,
+  "cookTime": 25,
+  "servings": 4,
+  "prepStrategy": {
+    "type": "batch-friendly",  // or "make-ahead", "fresh-only", "components"
+    "storageTime": 3,          // days
+    "reheatTime": 5,           // minutes (if applicable)
+    "prepAheadInstructions": "Cook chicken on Saturday, store in airtight container",
+    "components": [            // if type is "components"
+      {
+        "name": "cooked chicken",
+        "prepTime": 20,
+        "storageTime": 3
+      }
+    ]
+  },
+  "complexity": "moderate",
+  "tags": ["quick-assembly", "meal-prep", "batch-friendly"]
+}
+```
+
+CRITICAL: Generate recipes that align with user's strategy and minimize daily cooking time
+on busy days while maximizing variety and freshness.
+```
+
+### UI Components for Meal Prep
+
+**1. Settings Page - Meal Prep Section**
+```javascript
+// New section in SettingsPage.js
+<div class="meal-prep-section">
+  <h2>Meal Prep Preferences</h2>
+  
+  <!-- Strategy Selection -->
+  <div class="strategy-selector">
+    <label>Meal Prep Strategy</label>
+    <select name="strategy">
+      <option value="fresh-only">Fresh Only (cook each meal)</option>
+      <option value="hybrid" selected>Hybrid (recommended)</option>
+      <option value="batch-cooking">Batch Cooking (prep days)</option>
+    </select>
+    <p class="help-text">Choose how you prefer to prepare meals</p>
+  </div>
+  
+  <!-- Prep Days -->
+  <div class="prep-days">
+    <label>Prep Days</label>
+    <div class="day-checkboxes">
+      <label><input type="checkbox" value="0"> Sunday</label>
+      <label><input type="checkbox" value="6" checked> Saturday</label>
+    </div>
+    <p class="help-text">Which days can you dedicate to meal prep?</p>
+  </div>
+  
+  <!-- Max Prep Time -->
+  <div class="max-prep-time">
+    <label>Max Prep Time (minutes)</label>
+    <input type="number" value="120" min="30" max="300" step="15">
+    <p class="help-text">Maximum time you're willing to spend on prep day</p>
+  </div>
+  
+  <!-- Busy Days -->
+  <div class="busy-days">
+    <label>Busy Days (need quick meals)</label>
+    <div class="day-checkboxes">
+      <label><input type="checkbox" value="1" checked> Mon</label>
+      <label><input type="checkbox" value="2" checked> Tue</label>
+      <label><input type="checkbox" value="3" checked> Wed</label>
+      <label><input type="checkbox" value="4" checked> Thu</label>
+      <label><input type="checkbox" value="5" checked> Fri</label>
+    </div>
+  </div>
+  
+  <!-- Advanced Options -->
+  <div class="advanced-options">
+    <label><input type="checkbox" checked> Allow batch cooking of components</label>
+    <label><input type="checkbox" checked> Allow make-ahead meals</label>
+    <label><input type="checkbox"> Use freezer for longer storage</label>
+    <label><input type="checkbox" checked> Prefer fresh breakfast always</label>
+  </div>
+</div>
+```
+
+**2. Meal Plan View - Prep Schedule Tab**
+```javascript
+// New tab in MealPlanView.js
+<div class="meal-plan-tabs">
+  <button class="tab active">Weekly View</button>
+  <button class="tab">Prep Schedule</button>  <!-- NEW -->
+  <button class="tab">Shopping List</button>
+</div>
+
+<!-- Prep Schedule View -->
+<div class="prep-schedule-view">
+  <h2>Your Meal Prep Schedule</h2>
+  
+  <!-- Week Summary Card -->
+  <div class="prep-summary-card">
+    <h3>This Week's Prep Plan</h3>
+    <div class="stats">
+      <div class="stat">
+        <span class="value">85 min</span>
+        <span class="label">Prep Day Time</span>
+      </div>
+      <div class="stat">
+        <span class="value">20 min</span>
+        <span class="label">Avg Daily Time</span>
+      </div>
+      <div class="stat">
+        <span class="value">2 hrs</span>
+        <span class="label">Time Saved</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Prep Day Details -->
+  <div class="prep-day-card">
+    <div class="header">
+      <h3>Saturday, January 4 - Prep Day</h3>
+      <span class="time-badge">~85 minutes</span>
+    </div>
+    
+    <!-- Prep Tasks -->
+    <div class="prep-tasks">
+      <div class="task">
+        <div class="task-header">
+          <span class="icon">🍗</span>
+          <h4>Cook chicken breast (3 portions)</h4>
+          <span class="time">25 min</span>
+        </div>
+        <p class="used-in">Used in: Mon dinner, Wed lunch, Fri dinner</p>
+        <p class="storage">📦 Store in airtight container, refrigerate, use within 3 days</p>
+      </div>
+      
+      <div class="task">
+        <div class="task-header">
+          <span class="icon">🥕</span>
+          <h4>Chop vegetables (onions, peppers, carrots)</h4>
+          <span class="time">15 min</span>
+        </div>
+        <p class="used-in">Used in: Mon dinner, Tue lunch, Thu dinner</p>
+        <p class="storage">📦 Store in containers, refrigerate, use within 3-4 days</p>
+      </div>
+      
+      <div class="task">
+        <div class="task-header">
+          <span class="icon">🍝</span>
+          <h4>Prepare lasagna (make-ahead)</h4>
+          <span class="time">45 min</span>
+        </div>
+        <p class="used-in">For: Wed dinner</p>
+        <p class="storage">📦 Cover and refrigerate, bake Wednesday evening (30 min)</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Other Days -->
+  <div class="regular-day-card">
+    <h3>Monday, January 5</h3>
+    <div class="assembly-tasks">
+      <p class="quick-badge">⚡ Quick Assembly Day</p>
+      <div class="meal">
+        <h4>Dinner: Chicken Stir Fry</h4>
+        <p>Using: Prepped chicken + prepped vegetables</p>
+        <span class="time">~10 min assembly</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ... more days ... -->
+</div>
+```
+
+**3. Day View - Prep Status Indicators**
+```javascript
+// Enhancement to DayView.js
+<div class="day-view">
+  <h1>Monday, January 5</h1>
+  
+  <!-- Prep Status Banner (if applicable) -->
+  <div class="prep-status-banner">
+    ⚡ Quick Day! Most ingredients prepped on Saturday. 
+    Total cooking time today: ~25 minutes
+  </div>
+  
+  <!-- Meal with prep indicators -->
+  <div class="meal-card">
+    <h2>Dinner: Chicken Stir Fry</h2>
+    
+    <!-- Prep Status -->
+    <div class="prep-indicators">
+      <span class="badge prepped">✓ Chicken prepped</span>
+      <span class="badge prepped">✓ Vegetables prepped</span>
+      <span class="badge fresh">Fresh: sauce, rice</span>
+    </div>
+    
+    <div class="time-info">
+      <span>Assembly: 10 min</span>
+      <span>Cook rice: 15 min</span>
+      <span>Total: 25 min</span>
+    </div>
+    
+    <!-- Instructions adapted for prepped ingredients -->
+    <div class="instructions">
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Cook rice (15 min)</li>
+        <li>Get prepped chicken and vegetables from fridge</li>
+        <li>Heat wok, stir-fry prepped ingredients (8 min)</li>
+        <li>Add sauce, serve over rice</li>
+      </ol>
+    </div>
+  </div>
+</div>
+```
+
+**4. Recipe Detail Page - Prep Information**
+```javascript
+// Enhancement to RecipeDetailPage.js
+<div class="recipe-detail">
+  <h1>Chicken Stir Fry</h1>
+  
+  <!-- Prep Strategy Badge -->
+  <div class="recipe-badges">
+    <span class="badge batch-friendly">🔄 Batch-Friendly</span>
+    <span class="badge meal-prep">📦 Meal Prep</span>
+    <span class="badge quick-assembly">⚡ Quick Assembly</span>
+  </div>
+  
+  <!-- Time Info with Prep Details -->
+  <div class="time-breakdown">
+    <div>
+      <strong>If prepped:</strong> 10 min assembly
+    </div>
+    <div>
+      <strong>From scratch:</strong> 35 min total
+    </div>
+  </div>
+  
+  <!-- Prep Ahead Instructions (collapsible) -->
+  <div class="prep-ahead-section">
+    <h3>Meal Prep Instructions</h3>
+    <p><strong>Prep Day (Saturday):</strong></p>
+    <ul>
+      <li>Cook and dice chicken breast (20 min) - stores 3 days</li>
+      <li>Chop vegetables (10 min) - stores 3-4 days</li>
+    </ul>
+    <p><strong>Day of (Monday):</strong></p>
+    <ul>
+      <li>Retrieve prepped chicken and vegetables</li>
+      <li>Stir-fry with sauce (8 min)</li>
+      <li>Serve over rice</li>
+    </ul>
+  </div>
+</div>
+```
+
+### Implementation Priority
+
+**Phase 1 (Foundation):**
+1. Add meal prep preferences to BaseSpecification schema
+2. Add meal prep UI section to Settings page
+3. Update data migration to include new fields
+
+**Phase 2 (Generation):**
+1. Enhance AI prompt with meal prep optimization
+2. Update Recipe schema with prepStrategy fields
+3. Generate prep-aware recipes
+
+**Phase 3 (Scheduling):**
+1. Build prep schedule generator (analyze recipes, identify reusable components)
+2. Add prepSchedule to MealPlan schema
+3. Calculate time savings and efficiency metrics
+
+**Phase 4 (UI):**
+1. Add "Prep Schedule" tab to Meal Plan View
+2. Add prep status indicators to Day View
+3. Add prep badges and instructions to Recipe Detail
+4. Show prep timeline and tasks
+
+**Phase 5 (Polish):**
+1. Add prep day reminders/notifications
+2. Allow manual adjustment of prep schedule
+3. Track actual vs. estimated prep time
+4. Learn user's prep patterns over time
+
+### Success Metrics
+
+- **Time Efficiency:** Average daily cooking time reduced by 40-60% on busy days
+- **User Satisfaction:** Users report meal prep reduces stress and decision fatigue
+- **Adoption Rate:** 60%+ of users enable hybrid or batch-cooking strategy
+- **Completion Rate:** 80%+ of users who set prep day preferences follow through
+
+### Future Enhancements (Post-Slice 4)
+
+- **Smart Prep Suggestions:** AI learns user's actual cooking patterns and adjusts
+- **Leftover Integration:** Automatically plan meals using previous meals' components
+- **Freezer Planning:** Extended prep for 2-4 weeks using freezer storage
+- **Prep Day Calendar:** Sync prep tasks to Google Calendar with reminders
+- **Prep Videos:** Video tutorials for batch cooking techniques
+- **Nutrition Balancing:** Ensure prep strategy maintains nutritional goals
+
+---
+
 ## Core Entities (As Implemented)
 
 ### Slice 1 Entities ✅
@@ -1266,16 +1839,17 @@ Add recipe import capabilities and migrate to Firebase for multi-device sync and
 
 | Page | Route | Slice | Status | Description |
 |------|-------|-------|--------|-------------|
-| Home | `#/` | 1 | ✅ | Landing with chat button OR meal plan summary |
+| Home | `#/` | 1 | ✅ | Landing with chat button OR meal plan summary + day navigation |
 | Chat (widget) | n/a | 1 | ✅ | Collapsible chat drawer (always available) |
 | Generation Status | `#/generating` | 2 | ✅ | Progress UI during generation with SSE updates |
 | Meal Plan View | `#/meal-plan` | 2 | ✅ | Full week view with all meals and recipes |
+| Day View | `#/day/:day` | 2 | ✅ | Single day view with all meals for that day |
 | Shopping List | `#/shopping-list` | 2 | ✅ | Aggregated shopping list grouped by category |
-| Recipe Library | `#/recipes` | 3 | 📝 | Browse/search saved recipes |
-| Recipe Detail | `#/recipe/:id` | 3 | 📝 | Full recipe view with ratings |
-| Eater Management | `#/eaters` | 3 | 📝 | Manage household members |
-| Settings | `#/settings` | 3 | 📝 | User preferences and settings |
+| Recipe Library | `#/recipes` | 3 | ✅ | Browse/search saved recipes |
+| Recipe Detail | `#/recipe/:id` | 3 | ✅ | Full recipe view with ratings |
+| Settings | `#/settings` | 3 | ✅ | User preferences and settings |
 | Add Recipe | `#/add-recipe` | 4 | 📝 | Import recipe flow |
+| Prep Schedule | `#/prep-schedule` | 4+ | 📝 | Meal prep schedule and tasks (NEW feature) |
 
 ---
 

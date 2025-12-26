@@ -80,6 +80,7 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - Mobile hamburger menu (responsive < 768px)
 - Active link highlighting
 - Sticky header
+- **Day-of-week navigation:** Quick access buttons for each day (Mon-Sun) on home page
 
 **Data Management:**
 - Schema migration system (version tracking)

@@ -257,6 +257,7 @@ See PRD for complete schemas and relationships.
 | `#/` | HomePage | ✅ |
 | `#/generating` | GenerationStatusPage | ✅ |
 | `#/meal-plan` | MealPlanView | ✅ |
+| `#/day/:day` | DayView | ✅ (parameterized) |
 | `#/shopping-list` | ShoppingListView | ✅ |
 | `#/recipes` | RecipeLibraryPage | ✅ Slice 3 |
 | `#/recipe/:id` | RecipeDetailPage | ✅ Slice 3 (parameterized) |
@@ -267,6 +268,7 @@ See PRD for complete schemas and relationships.
 - Mobile hamburger menu (< 768px)
 - Active link highlighting
 - Sticky header
+- **NEW:** Day-of-week navigation buttons on home page (Monday-Sunday)
 
 ---
 
