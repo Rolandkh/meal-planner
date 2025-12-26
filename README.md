@@ -1,8 +1,9 @@
 # Vanessa - AI Meal Planning Concierge
 
-**Version:** v0.9 (Slices 1, 2 & 3 Complete)  
-**Status:** Production-ready with full profile management  
-**Created:** December 2025
+**Version:** v1.0-rc1 (Slice 4 Code Complete)  
+**Status:** All features built, automated tests passed, manual API tests pending  
+**Created:** December 2025  
+**Last Updated:** December 26, 2025
 
 ---
 
@@ -12,13 +13,17 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - 💬 Chat about your meal planning needs and preferences
 - 👥 Manage household members with dietary preferences and schedules
 - ✨ Generate personalized 7-day meal plans with accurate servings
+- 🔄 Regenerate single days without losing the whole week (NEW: Slice 4)
+- ✏️ Edit recipes after generation (NEW: Slice 4)
+- 📥 Import recipes from text (blogs, emails, etc.) (NEW: Slice 4)
+- 📅 Browse meal plan history (NEW: Slice 4)
 - 🛒 Get organized shopping lists with ingredient limits (30 items default)
 - 📖 Browse, search, and rate your recipe library
 - ⭐ Track recipe favorites and cooking history
 - 💰 Control your weekly food budget
 - ⚙️ Customize settings and preferences
 
-## Current Features (Slices 1, 2 & 3)
+## Current Features (Slices 1, 2, 3 & 4)
 
 ### ✅ Slice 1: Chat with Vanessa
 - Collapsible chat widget accessible from anywhere
@@ -96,15 +101,53 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - Sample meal plan with 5 recipes and 21 meals
 - Speeds up development iteration from 5+ minutes to 2 seconds
 
+### ✅ Slice 4: Recipe Management & History (Code Complete: Dec 26, 2025)
+
+**Recipe Editing:**
+- Edit any recipe after generation
+- Full form with dynamic ingredient rows (add/remove)
+- Auto-save drafts every 30 seconds
+- BeforeUnload protection for unsaved changes
+- Comprehensive validation (name, ingredients, times, servings)
+- Changes persist in active meal plans
+
+**Single Day Regeneration:**
+- Regenerate any single day (3 meals) without losing the week
+- Buttons on each day card in Meal Plan View
+- Button in DayView header
+- Confirmation modal showing current meals
+- Recipe duplication avoidance across the week
+- Fast generation (~20-30 seconds vs 60-90s for full week)
+- Context-aware navigation (returns to origin page)
+
+**Meal Plan History:**
+- Auto-archive old plans when generating new
+- Browse all past meal plans
+- Read-only historical views (meals, recipes, shopping lists)
+- Configurable retention (1-12 weeks, default: 4)
+- Automatic cleanup based on retention setting
+- Snapshot system (frozen data prevents corruption)
+
+**Recipe Import from Text:**
+- Import recipes from pasted text (blogs, emails, messages)
+- AI extraction using Claude Sonnet 4.5
+- Confidence scoring (0-100%)
+- Preview/edit screen before saving
+- Character limits (50-5000 chars)
+- Comprehensive error handling
+- Validates and converts to metric units
+
+**Status:** All code complete, automated UI tests passed, manual API tests pending
+
 ## Technology Stack
 
 - **Frontend:** Vanilla JavaScript (ES6 modules), HTML, Tailwind CSS
 - **Backend:** Vercel Edge Functions (serverless)
 - **AI:** Claude Sonnet 4.5 via Anthropic API
 - **Storage:** 
-  - **Current (Slices 1-3):** localStorage (5MB limit, ~20-30 weeks)
-  - **Future (Slice 4+):** Firebase Firestore (unlimited, multi-device sync)
-- **Authentication:** None (single-user), Firebase Auth (Slice 4+)
+  - **Current (Slices 1-4):** localStorage (5MB limit, ~20-30 weeks with auto-cleanup)
+  - **Future (Slice 5+):** Firebase Firestore (unlimited, multi-device sync)
+- **Authentication:** None (single-user), Firebase Auth (Slice 6+)
 - **Hosting:** Vercel
 - **Build:** None (static site, direct ES modules)
 
@@ -114,7 +157,8 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 meal-planner/
 ├── api/                          # Vercel serverless functions
 │   ├── chat-with-vanessa.js      # SSE chat + onboarding endpoint
-│   ├── generate-meal-plan.js     # Meal plan generation with schedule
+│   ├── generate-meal-plan.js     # Meal plan generation (full week + single day)
+│   ├── extract-recipe.js         # Recipe import AI extraction (NEW: Slice 4)
 │   ├── check-env.js              # Environment check (dev)
 │   └── test-models.js            # Model testing (dev)
 ├── src/
@@ -122,22 +166,27 @@ meal-planner/
 │   ├── components/               # UI components
 │   │   ├── HomePage.js           # Landing/meal plan summary + day nav
 │   │   ├── ChatWidget.js         # Chat + onboarding (1,400+ lines)
-│   │   ├── GenerationStatusPage.js # Progress UI
-│   │   ├── MealPlanView.js       # Weekly view + schedule grid
-│   │   ├── DayView.js            # Single day view (NEW: Dec 26)
+│   │   ├── GenerationStatusPage.js # Progress UI + auto-archive
+│   │   ├── MealPlanView.js       # Weekly view + regenerate buttons
+│   │   ├── DayView.js            # Single day view + regenerate button
 │   │   ├── ShoppingListView.js   # Shopping list
 │   │   ├── SettingsPage.js       # 4-section settings (1,200+ lines)
-│   │   ├── RecipeLibraryPage.js  # Recipe browsing + search
-│   │   ├── RecipeDetailPage.js   # Recipe detail + ratings
-│   │   └── Navigation.js         # Global nav + mobile menu
+│   │   ├── RecipeLibraryPage.js  # Recipe browsing + Add Recipe button
+│   │   ├── RecipeDetailPage.js   # Recipe detail + Edit button
+│   │   ├── RecipeEditPage.js     # Edit recipe form (NEW: Slice 4)
+│   │   ├── MealPlanHistoryPage.js # History list (NEW: Slice 4)
+│   │   ├── MealPlanHistoryDetailPage.js # Historical plan detail (NEW: Slice 4)
+│   │   ├── RecipeImportModal.js  # Import modal (NEW: Slice 4)
+│   │   └── Navigation.js         # Global nav + History link
 │   ├── utils/                    # Utilities
 │   │   ├── router.js             # Parameterized routing
-│   │   ├── storage.js            # localStorage + CRUD (1,000+ lines)
+│   │   ├── storage.js            # localStorage + CRUD (1,300+ lines)
+│   │   ├── regenerateDay.js      # Single day regeneration (NEW: Slice 4)
 │   │   ├── mealPlanTransformer.js # Data transformation + schedule mapping
 │   │   ├── unitConversions.js    # Unit conversion (70+ ingredients)
 │   │   ├── errorHandler.js       # Error handling
 │   │   ├── migrationManager.js   # Schema migrations
-│   │   └── devPresets.js         # Dev preset data (NEW: Dec 26)
+│   │   └── devPresets.js         # Dev preset data
 │   ├── migrations/               # Data migrations
 │   │   └── index.js              # Migration definitions
 │   └── styles/
@@ -145,9 +194,13 @@ meal-planner/
 ├── index.html                    # App shell
 ├── package.json                  # Dependencies
 ├── vercel.json                   # Vercel configuration
+├── TESTING-GUIDE.md              # Manual testing instructions (NEW: Slice 4)
 └── .taskmaster/
-    └── docs/
-        └── prd.txt               # **Main specification document**
+    ├── docs/
+    │   ├── prd.txt               # **Main specification document**
+    │   └── slice-4-prd.txt       # Slice 4 detailed spec
+    └── tasks/
+        └── tasks.json            # Taskmaster tasks (all complete)
 ```
 
 ## Getting Started
@@ -214,9 +267,13 @@ meal-planner/
 |-------|------|-------------|
 | `#/` | Home | Landing page or meal plan summary |
 | `#/generating` | Generation Status | Progress during meal plan creation |
-| `#/meal-plan` | Meal Plan View | Full week with schedule grid + recipes |
-| `#/recipes` | Recipe Library | Browse, search, filter recipes |
-| `#/recipe/:id` | Recipe Detail | View recipe, rate, favorite, mark cooked |
+| `#/meal-plan` | Meal Plan View | Full week with schedule grid + regenerate buttons |
+| `#/day/:day` | Day View | Single day view with regenerate button |
+| `#/recipes` | Recipe Library | Browse, search, filter recipes + Add Recipe button |
+| `#/recipe/:id` | Recipe Detail | View recipe, rate, favorite, mark cooked, edit |
+| `#/recipe/:id/edit` | Recipe Edit | Edit recipe form (NEW: Slice 4) |
+| `#/history` | History | Browse past meal plans (NEW: Slice 4) |
+| `#/history/:id` | Historical Plan | View archived plan (NEW: Slice 4) |
 | `#/shopping-list` | Shopping List | Aggregated ingredients by category |
 | `#/settings` | Settings | 4 sections: Storage, Household, Meal Planning, Chat |
 
@@ -227,11 +284,13 @@ meal-planner/
 - `vanessa_recipes` - Recipe library with ratings/favorites
 - `vanessa_meals` - Meal instances with eaterIds
 - `vanessa_current_meal_plan` - Active week's meal plan
+- `vanessa_meal_plan_history` - Archived meal plans (NEW: Slice 4)
 - `vanessa_eaters` - Household member profiles
-- `vanessa_base_specification` - User profile + weekly schedule
+- `vanessa_base_specification` - User profile + weekly schedule + history retention
 - `vanessa_debug_raw_output` - Raw AI response (debugging)
 - `vanessa_schema_version` - Migration version tracker
 - `vanessa_migration_slice3` - Migration completion flag
+- `recipe_draft_[recipeId]` - Auto-save drafts (NEW: Slice 4, temporary)
 
 ### Core Entities
 
@@ -301,19 +360,20 @@ meal-planner/
 }
 ```
 
-**BaseSpecification (NEW: Slice 3):**
+**BaseSpecification (Slice 3, Enhanced in Slice 4):**
 ```javascript
 {
   _schemaVersion: 1,
   ownerEaterId: 'eater_[uuid]',
   weeklyBudget: 120,
-  maxShoppingListItems: 30,    // NEW: Ingredient limit
-  shoppingDay: 6,              // 0=Sunday, 6=Saturday
+  maxShoppingListItems: 30,      // Slice 3: Ingredient limit
+  historyRetentionWeeks: 4,      // NEW: Slice 4 (default: 4)
+  shoppingDay: 6,                // 0=Sunday, 6=Saturday
   preferredStore: 'Coles',
   householdEaterIds: ['eater_[uuid]'],
   dietaryGoals: 'Lose weight, anti-inflammatory',
   onboardingComplete: true,
-  weeklySchedule: {            // NEW: Structured schedule
+  weeklySchedule: {              // Slice 3: Structured schedule
     tuesday: {
       dinner: {
         servings: 3,
@@ -333,6 +393,16 @@ meal-planner/
 }
 ```
 
+**Archived Meal Plan (NEW: Slice 4):**
+```javascript
+{
+  // All MealPlan fields, plus:
+  archivedAt: 'ISO 8601',        // When archived
+  mealsSnapshot: Meal[],          // Frozen copy of meals at archive time
+  recipesSnapshot: Recipe[]       // Frozen copy of recipes at archive time
+}
+```
+
 ## Development Approach
 
 This project follows a **vertical slice methodology**:
@@ -347,7 +417,7 @@ This project follows a **vertical slice methodology**:
 - ✅ Slice 1: Chat with Vanessa (Complete)
 - ✅ Slice 2: Meal Plan Generation (Complete)
 - ✅ Slice 3: Recipe Library & Profile Management (Complete)
-- 📝 Slice 4: Polish & Extended Features (Planned)
+- ✅ Slice 4: Recipe Management & History (Code Complete - Testing In Progress)
 
 **Methodology Benefits:**
 - Build working features incrementally
@@ -382,9 +452,9 @@ data: {"type": "done"}
 - `[ACTION:GENERATE_WEEK]` - Triggers auto-generation when detected
 
 ### POST /api/generate-meal-plan
-Generates a complete 7-day meal plan with progress updates and schedule support.
+Generates a complete 7-day meal plan OR single-day regeneration with progress updates and schedule support.
 
-**Request:**
+**Request (Full Week):**
 ```json
 {
   "chatHistory": [...],
@@ -413,6 +483,18 @@ Generates a complete 7-day meal plan with progress updates and schedule support.
 }
 ```
 
+**Request (Single Day - NEW: Slice 4):**
+```json
+{
+  "chatHistory": [...],
+  "eaters": [...],
+  "baseSpecification": {...},
+  "regenerateDay": "tuesday",      // Day name to regenerate
+  "dateForDay": "2025-12-31",      // Specific date
+  "existingMeals": [...]           // Other 18 meals (for duplication avoidance)
+}
+```
+
 **Response:** SSE stream
 ```
 data: {"type": "progress", "progress": 25, "message": "Planning week..."}
@@ -423,6 +505,40 @@ data: {"type": "complete", "data": {...}}
 - Maps day names → actual dates
 - Sends explicit servings per date/meal to Claude
 - Ensures accurate serving sizes
+
+### POST /api/extract-recipe (NEW: Slice 4)
+Extracts structured recipe data from raw text using AI.
+
+**Request:**
+```json
+{
+  "text": "Recipe text from blog, email, etc. (50-5000 chars)"
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "recipe": {
+    "name": "Recipe Name",
+    "ingredients": [{name, quantity, unit, category}],
+    "instructions": "...",
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "tags": ["italian", "quick"],
+    "confidence": 85  // Extraction confidence 0-100%
+  }
+}
+```
+
+**Error Responses:**
+- `TEXT_TOO_SHORT` - Less than 50 characters
+- `TEXT_TOO_LONG` - More than 5000 characters
+- `NOT_A_RECIPE` - AI detected text is not a recipe
+- `VALIDATION_FAILED` - Extracted data invalid
+- `PARSE_ERROR` - Failed to parse AI response
 
 ## Storage & Data Management
 
@@ -435,8 +551,15 @@ data: {"type": "complete", "data": {...}}
 ### Slice 3 Storage Enhancements
 - ✅ **Quota monitoring**: Shows storage usage (X MB / 5 MB)
 - ✅ **Export/Import**: Backup to JSON file, restore from file
-- ✅ **Data cleanup**: Delete old meal plans to free space
+- ✅ **Data cleanup**: Delete orphaned recipes
 - ✅ **Warning system**: Alert at 80% capacity
+
+### Slice 4 Storage Enhancements
+- ✅ **Recipe updates**: Edit recipes while preserving meal references
+- ✅ **Auto-archive**: Old plans automatically saved when generating new
+- ✅ **History storage**: Browse past meal plans with snapshots
+- ✅ **Configurable retention**: Keep 1-12 weeks (default: 4)
+- ✅ **Automatic cleanup**: Removes old plans based on retention setting
 
 ### Future Migration (Slice 4+)
 - **Firebase Firestore**: When usage metering or multi-device sync needed
@@ -445,35 +568,58 @@ data: {"type": "complete", "data": {...}}
 
 ## Known Limitations
 
-- Single device only (no sync across phone/desktop) - *Fixed in Slice 4*
-- 5MB storage limit (~20-30 weeks) - *Monitored with warnings*
-- Manual backup/restore (export/import available) - *Auto-backup in Slice 4*
-- Single user (no authentication) - *Multi-user in Slice 4*
-- Cannot modify generated plans (must regenerate entire week) - *Slice 4*
-- Single active meal plan (no history) - *Multiple weeks in Slice 4*
+- Single device only (no sync across phone/desktop) - *Will be fixed in Slice 6 (Firebase)*
+- 5MB storage limit (~20-30 weeks with auto-cleanup) - *Monitored with warnings*
+- ✅ ~~Manual backup/restore~~ - Auto-archive implemented in Slice 4
+- Single user (no authentication) - *Multi-user in Slice 6*
+- ✅ ~~Cannot modify generated plans~~ - Can now edit recipes and regenerate single days (Slice 4)
+- ✅ ~~Single active meal plan (no history)~~ - History system implemented in Slice 4
 - Metric units only (Australian market)
 - Week starts Saturday (hardcoded for shopping preference)
+- Cannot import from URL yet - *Coming in Slice 5*
+- Cannot create recipes manually yet - *Coming in Slice 5*
 
-## Future Enhancements (Slice 4+)
+## Future Enhancements (Slice 5+)
 
-- ✅ ~~Eater management~~ (Complete in Slice 3)
-- ✅ ~~Recipe library with search and favorites~~ (Complete in Slice 3)
-- ✅ ~~Recipe ratings and usage tracking~~ (Complete in Slice 3)
-- ✅ ~~User preferences and settings~~ (Complete in Slice 3)
-- ✅ ~~Day-specific navigation and views~~ (Complete: Dec 26, 2025)
-- ✅ ~~Development presets for rapid testing~~ (Complete: Dec 26, 2025)
-- **Meal Prep Optimization System** (Specification complete: Dec 26, 2025)
-  - Three prep strategies (Fresh Only, Batch Cooking, Hybrid)
-  - Prep day scheduling with component reuse
-  - Time savings calculator
-  - Enhanced recipe metadata
-- Add recipe flow (manual recipe creation)
-- Edit/modify generated plans
-- Multiple week storage with history
-- Usage metering and limits
-- Firebase backend with authentication
+**Completed:**
+- ✅ ~~Eater management~~ (Slice 3)
+- ✅ ~~Recipe library with search and favorites~~ (Slice 3)
+- ✅ ~~Recipe ratings and usage tracking~~ (Slice 3)
+- ✅ ~~User preferences and settings~~ (Slice 3)
+- ✅ ~~Day-specific navigation and views~~ (Slice 3)
+- ✅ ~~Development presets for rapid testing~~ (Slice 3)
+- ✅ ~~Recipe editing~~ (Slice 4)
+- ✅ ~~Single day regeneration~~ (Slice 4)
+- ✅ ~~Meal plan history~~ (Slice 4)
+- ✅ ~~Recipe import from text~~ (Slice 4)
+
+**Planned:**
+
+**Slice 5: Recipe Management Pro**
+- Manual recipe creation (from scratch form)
+- Recipe import from URL
+- Recipe duplication/copying
+- Recipe categories and advanced tagging
+- Recipe notes and variations
+
+**Slice 6: Firebase Migration & Sync**
+- Migrate to Firebase Firestore
+- Firebase Authentication (anonymous + Google)
 - Multi-device sync
-- Offline mode enhancements
+- Usage metering (free tier: 4 generations/month)
+- Cloud backup
+
+**Slice 7: Meal Prep Optimization** (Specification complete)
+- Three prep strategies (Fresh Only, Batch Cooking, Hybrid)
+- Prep day scheduling with component reuse
+- Time savings calculator
+- Enhanced recipe metadata for prep planning
+
+**Slice 8+: Advanced Features**
+- Nutrition tracking
+- Meal plan templates
+- Social sharing
+- Mobile app (React Native)
 
 ## Contributing
 
@@ -485,24 +631,36 @@ Private project - not licensed for redistribution.
 
 ---
 
-## 🎉 Slice 3 Completion Summary
+## 🎉 Recent Completions
 
-**Completed:** December 26, 2025
-
-**What Was Built:**
-- 6 new components (3,500+ lines of code)
-- 4-section Settings page
+### Slice 3 (December 26, 2025)
+- 11 tasks, 45 subtasks
+- 6 new components (3,500+ lines)
 - AI-powered onboarding with extraction
-- Recipe library and detail pages
-- Global navigation system
-- Data migration infrastructure
-- Storage management utilities
-- Household schedule grid
-- Shopping list limits
+- Recipe library and settings
+- Household schedule system
 
-**All 11 Taskmaster tasks completed:** 45/45 subtasks done
+### Slice 4 (December 26, 2025) - Code Complete
+- 10 tasks, 20 subtasks
+- 6 new files (~1,800 lines)
+- 10 enhanced files (~700 lines)
+- Recipe editing with auto-save
+- Single day regeneration
+- Meal plan history with auto-archive
+- Recipe import from text
+- **Status:** Code complete, automated tests passed, manual API tests pending
+
+---
+
+## 📚 Documentation
+
+- **Main Spec:** `.taskmaster/docs/prd.txt` - Complete PRD with all slices and Reality Checks
+- **Implementation:** `references/CURRENT-IMPLEMENTATION.md` - Current state and architecture
+- **Testing Guide:** `TESTING-GUIDE.md` - Manual testing instructions
+- **Test Reports:** `references/SLICE-4-TEST-REPORT.md` - Automated test results
 
 ---
 
 **Last Updated:** December 26, 2025  
-**Documentation:** See `.taskmaster/docs/prd.txt` for detailed specifications and Reality Check learnings
+**Version:** v1.0-rc1 (Release Candidate 1)  
+**Next:** Manual API testing, bug fixes, then v1.0 release

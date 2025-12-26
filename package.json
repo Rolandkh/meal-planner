@@ -1,7 +1,7 @@
 {
   "name": "meal-planner-app",
-  "version": "1.0.0",
-  "description": "Weekly meal planning application with shopping lists and recipes",
+  "version": "1.0.0-rc1",
+  "description": "AI-powered weekly meal planning with recipe management and history",
   "main": "index.html",
   "scripts": {
     "dev": "npx serve .",
