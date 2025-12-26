@@ -1,0 +1,386 @@
+# Slice 4 Remaining Work - PRD for Completion Tasks
+
+## Overview
+
+**Current State:** All Slice 4 code complete (10 tasks done), automated tests passed  
+**Remaining:** Manual testing, bug fixes, Reality Check, polish  
+**Timeline:** 1-2 days of work when you return from holiday  
+**Goal:** Complete Slice 4 and mark as fully done
+
+---
+
+## Task 1: Manual Testing - Recipe Import from Text
+
+**Priority:** HIGH (Critical AI feature)  
+**Estimated Time:** 30-45 minutes  
+**Dependencies:** None
+
+### Description
+Test the recipe import feature with various text formats to verify AI extraction accuracy and user flow.
+
+### Test Cases
+1. **Test 1a:** Import well-formatted recipe from food blog
+   - Use sample: Chicken Tikka Masala (in TESTING-GUIDE.md)
+   - Verify: Name, ingredients, quantities, units, instructions extracted
+   - Check: Confidence score 80-95%
+   - Confirm: Can edit in preview
+   - Validate: Saves to library correctly
+
+2. **Test 1b:** Import simple recipe format
+   - Use sample: Easy Pasta Carbonara (in TESTING-GUIDE.md)
+   - Verify: Extracts despite minimal formatting
+   - Check: Confidence score 70-85%
+
+3. **Test 1c:** Import invalid text
+   - Use: "This is not a recipe. Just some random text."
+   - Verify: Shows "NOT_A_RECIPE" error gracefully
+   - Check: Error message is user-friendly
+
+4. **Test 1d:** Import text too short
+   - Use: "Pasta" (< 50 chars)
+   - Verify: Shows character limit error
+   - Check: Prevents API call
+
+### Success Criteria
+- [ ] AI extraction works with 80%+ accuracy
+- [ ] Confidence score is meaningful and displayed
+- [ ] Preview/edit step allows corrections
+- [ ] Recipe saves to library successfully
+- [ ] Error handling works for all cases
+- [ ] User flow is intuitive
+
+### Known Risks
+- AI accuracy may vary (80-90% expected)
+- Some recipe formats may be challenging
+- Metric conversion might have edge cases
+
+---
+
+## Task 2: Manual Testing - Single Day Regeneration
+
+**Priority:** HIGH (Critical functionality)  
+**Estimated Time:** 30 minutes  
+**Dependencies:** None (can use existing meal plan)
+
+### Description
+Test regenerating individual days to verify only target day changes and other days remain intact.
+
+### Test Cases
+1. **Test 2a:** Regenerate Tuesday from Meal Plan View
+   - Note current Tuesday meals (3 meals)
+   - Click 🔄 button on Tuesday card
+   - Confirm in modal
+   - Wait for generation (~20-30 seconds)
+   - Verify: Only Tuesday changed (breakfast, lunch, dinner)
+   - Verify: Other 18 meals unchanged
+   - Verify: Shopping list updated
+
+2. **Test 2b:** Regenerate Friday from Day View
+   - Navigate to Friday (#/day/friday)
+   - Click "Regenerate Friday" button in header
+   - Confirm
+   - Wait for generation
+   - Verify: Returns to Friday day view
+   - Verify: Shows new meals
+
+3. **Test 2c:** Verify recipe duplication avoidance
+   - After regenerating a day
+   - Check: New recipes don't duplicate existing week
+   - Verify: All 21 meals have variety
+
+### Success Criteria
+- [ ] Single day regeneration completes successfully
+- [ ] Only target day's 3 meals change
+- [ ] Other 6 days (18 meals) completely unchanged
+- [ ] No recipe duplication across the week
+- [ ] Shopping list updates correctly
+- [ ] Navigation returns to correct page
+- [ ] Generation is fast (~20-30s vs 60-90s full week)
+
+### Known Risks
+- AI might occasionally duplicate recipes despite constraints
+- Shopping list aggregation needs verification
+
+---
+
+## Task 3: Manual Testing - Recipe Editing
+
+**Priority:** MEDIUM (Important functionality)  
+**Estimated Time:** 20-30 minutes  
+**Dependencies:** None
+
+### Description
+Test recipe editing functionality including save, auto-save, and persistence in meal plans.
+
+### Test Cases
+1. **Test 3a:** Edit recipe and save
+   - Go to Recipe Library
+   - Click "Spaghetti Bolognese"
+   - Click "Edit Recipe"
+   - Change name to "Spaghetti Bolognese (Family Recipe)"
+   - Change prep time from 10 to 15
+   - Change first ingredient quantity from 500g to 600g
+   - Click "Save Recipe"
+   - Verify: Success message appears
+   - Navigate back to recipe detail
+   - Verify: Changes persisted
+
+2. **Test 3b:** Verify changes in meal plan
+   - Go to Meal Plan View
+   - Find meal using Spaghetti Bolognese
+   - Verify: Shows updated name
+   - Click to expand
+   - Verify: Shows updated quantities
+
+3. **Test 3c:** Test auto-save
+   - Edit a recipe
+   - Make changes but don't click save
+   - Wait 30 seconds
+   - Check: Auto-save indicator appears
+   - Close browser tab without saving
+   - Reopen edit page
+   - Verify: Draft restore prompt appears
+   - Confirm restore
+   - Verify: Changes are present
+
+4. **Test 3d:** Test validation
+   - Edit a recipe
+   - Clear the recipe name
+   - Try to save
+   - Verify: Error message shows "Name required"
+   - Test other validation rules
+
+### Success Criteria
+- [ ] Recipe edits save successfully
+- [ ] Changes persist after page reload
+- [ ] Recipe updates in meal plan (same ID)
+- [ ] Auto-save works after 30 seconds
+- [ ] Draft restore works after browser close
+- [ ] Validation prevents invalid data
+- [ ] No broken recipe references in meals
+
+---
+
+## Task 4: Manual Testing - Auto-Archive System
+
+**Priority:** MEDIUM (Data integrity)  
+**Estimated Time:** 15-20 minutes  
+**Dependencies:** None (can generate new plan)
+
+### Description
+Test that old meal plans automatically archive when generating new plans.
+
+### Test Cases
+1. **Test 4a:** Generate new plan and verify archival
+   - Note current plan: Dec 28 - Jan 3
+   - Click "Generate New Week"
+   - Wait for generation to complete
+   - Navigate to History (#/history)
+   - Verify: Old plan appears as card
+   - Check: Shows correct week range
+   - Check: Shows meal count, recipe count, budget
+
+2. **Test 4b:** View archived plan details
+   - Click on archived plan card
+   - Verify: Opens detail view
+   - Check: Shows "Archived" badge
+   - Verify: Can see all meals
+   - Verify: Can see shopping list
+   - Check: No edit/regenerate buttons (read-only)
+
+3. **Test 4c:** Test retention cleanup
+   - Go to Settings → Meal Planning
+   - Change history retention from 4 to 2 weeks
+   - Generate 3 more plans (total: 4 archived)
+   - Check History page
+   - Verify: Only 2 most recent plans shown
+   - Verify: Older plans removed automatically
+
+### Success Criteria
+- [ ] Old plan archives automatically on new generation
+- [ ] History page shows archived plans
+- [ ] Archived plan detail view works
+- [ ] All historical data intact (meals, recipes, shopping)
+- [ ] Read-only mode prevents edits
+- [ ] Retention cleanup works correctly
+- [ ] Storage quota managed properly
+
+---
+
+## Task 5: Bug Fix - Settings Tab Switching
+
+**Priority:** LOW (Minor UI issue)  
+**Estimated Time:** 15-30 minutes  
+**Dependencies:** None
+
+### Description
+Fix the issue where clicking "Meal Planning" tab in Settings doesn't update the content area.
+
+### Implementation
+The issue is likely in the SettingsPage tab click handler. Need to:
+1. Check if click handler properly updates `this.state.activeSection`
+2. Ensure render updates when state changes
+3. Add re-render call after state change if missing
+
+### Location
+- File: `src/components/SettingsPage.js`
+- Method: Tab click handlers (around line 170-180)
+
+### Testing
+After fix, verify:
+- [ ] Clicking each tab switches content
+- [ ] Active tab highlighting updates
+- [ ] Form data persists when switching tabs
+- [ ] No console errors
+
+---
+
+## Task 6: Bug Fix - Recipe Edit Add Ingredient
+
+**Priority:** LOW (Minor UX issue)  
+**Estimated Time:** 15-30 minutes  
+**Dependencies:** None
+
+### Description
+Fix the issue where clicking "+ Add Ingredient" doesn't immediately show the new ingredient row.
+
+### Implementation
+The issue is likely that addIngredient() updates state but doesn't trigger a re-render. Need to:
+1. Check if render() is called after state update
+2. Add explicit re-render call if missing
+3. Or refactor to use updateModal() pattern
+
+### Location
+- File: `src/components/RecipeEditPage.js`
+- Method: `addIngredient()` (around line 120)
+
+### Testing
+After fix, verify:
+- [ ] Clicking "+ Add Ingredient" immediately shows new row
+- [ ] New row has empty/default values
+- [ ] Remove button works on new row
+- [ ] Can add multiple ingredients in sequence
+
+---
+
+## Task 7: Slice 4 Reality Check Documentation
+
+**Priority:** MEDIUM (Completes slice)  
+**Estimated Time:** 1-2 hours  
+**Dependencies:** Tasks 1-4 complete (testing done)
+
+### Description
+Conduct Slice 4 Reality Check and document learnings in PRD.
+
+### Reality Check Questions
+Answer these based on testing experience:
+
+1. **What was awkward in this implementation?**
+   - Identify friction points, workarounds, hacks
+   - Note anything harder than expected
+   - Document API limitations or issues
+
+2. **What assumptions were wrong?**
+   - Document pre-implementation assumptions that proved incorrect
+   - Note surprises or unexpected behaviors
+   - Identify design decisions to reconsider
+
+3. **What patterns are emerging?**
+   - Identify code patterns that worked well
+   - Note patterns that should be standardized
+   - Document reusable solutions
+
+4. **What should be standardized?**
+   - Helper functions to extract
+   - Naming conventions to adopt
+   - File organization to follow
+   - UI patterns to reuse
+
+5. **Is the data shape right for the next slice?**
+   - Review data structures
+   - Identify needed changes before Slice 5
+   - Consider migration requirements
+
+### Deliverables
+- [ ] Add "REALITY CHECK: Slice 4 Learnings" section to PRD
+- [ ] Document answers to all 5 questions
+- [ ] Update version to v1.0
+- [ ] Create SLICE-4-COMPLETION.md summary
+- [ ] Update CURRENT-IMPLEMENTATION.md with final status
+
+---
+
+## Task 8: Polish and Refinement
+
+**Priority:** LOW (Nice-to-have)  
+**Estimated Time:** 2-4 hours  
+**Dependencies:** Tasks 1-6 complete
+
+### Description
+Polish features based on testing feedback and improve UX.
+
+### Potential Improvements
+1. **Recipe Import:**
+   - Add example recipe templates
+   - Improve error messages
+   - Add loading progress for extraction
+   - Consider adding retry on low confidence
+
+2. **Single Day Regeneration:**
+   - Add "Regenerate All Days" option
+   - Improve progress messages
+   - Add undo option (regenerate back to original)
+
+3. **Recipe Editing:**
+   - Add keyboard shortcuts (Ctrl+S to save)
+   - Improve ingredient row UX
+   - Add recipe preview before save
+   - Consider side-by-side edit/preview
+
+4. **History:**
+   - Add search/filter to history
+   - Add "Use as Template" feature
+   - Show diff between plans
+   - Add export historical plan option
+
+### Success Criteria
+- [ ] All polish items implemented or deferred
+- [ ] UX improvements documented
+- [ ] Any new patterns added to PRD
+- [ ] User feedback incorporated
+
+---
+
+## Success Criteria for Slice 4 Completion
+
+**Slice 4 is 100% complete when:**
+- ✅ All code written (DONE)
+- ✅ Automated tests passed (DONE)
+- ✅ Documentation updated (DONE)
+- ⏳ Manual tests passed (Tasks 1-4)
+- ⏳ Known bugs fixed (Tasks 5-6)
+- ⏳ Reality Check documented (Task 7)
+- ⏳ Polish completed or deferred (Task 8)
+
+**Then:** Ready to deploy v1.0 or plan Slice 5
+
+---
+
+## Estimated Timeline
+
+**When you return from holiday:**
+
+**Day 1 (4-6 hours):**
+- Morning: Manual testing (Tasks 1-4)
+- Afternoon: Bug fixes (Tasks 5-6)
+
+**Day 2 (2-4 hours):**
+- Morning: Reality Check (Task 7)
+- Afternoon: Polish (Task 8) or deploy v1.0
+
+**Total:** 1-2 days to complete Slice 4
+
+---
+
+This PRD section will be used to generate Taskmaster tasks for tracking the remaining work.
+
