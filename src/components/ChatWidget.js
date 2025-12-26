@@ -552,13 +552,8 @@ export class ChatWidget {
       this.toggle();
     }
     
-    // Show welcome message
+    // Show welcome message and first question
     this.showWelcomeMessage();
-    
-    // Start asking questions after a short delay
-    setTimeout(() => {
-      this.askOnboardingQuestion(0);
-    }, 1500);
   }
 
   /**
@@ -824,36 +819,41 @@ export class ChatWidget {
    */
   async extractHouseholdMembers() {
     try {
-      // Get the household question response (question 3)
-      const householdResponse = this.onboardingResponses[2];
+      // Get ALL onboarding responses (household info might span multiple answers)
+      const allResponses = this.onboardingResponses.join('\n\n');
       
-      if (!householdResponse || householdResponse.toLowerCase().includes('no') || 
-          householdResponse.toLowerCase().includes('just me') ||
-          householdResponse.toLowerCase().includes('only me')) {
-        console.log('No additional household members mentioned');
+      if (!allResponses || allResponses.trim().length === 0) {
+        console.log('No onboarding responses to extract from');
         return;
       }
 
-      console.log('Extracting household members from:', householdResponse);
+      console.log('Extracting household members from all responses:', this.onboardingResponses.length, 'responses');
 
       // Create extraction prompt
-      const extractionPrompt = `Based on this description of household members, extract structured data:
+      const extractionPrompt = `Based on this conversation about household and meal planning, extract information about OTHER people (not the main user) who the user cooks for:
 
-"${householdResponse}"
+CONVERSATION:
+${allResponses}
 
-Extract any people mentioned (children, partners, family members, etc.) and return ONLY valid JSON in this format:
+Extract any people mentioned (children, partners, family members, guests, etc.) and return ONLY valid JSON in this format:
 {
   "members": [
     {
       "name": "Name",
-      "relationship": "daughter|son|partner|spouse|roommate|other",
+      "relationship": "daughter|son|partner|spouse|ex|guest|roommate|other",
       "age": number or null,
-      "notes": "any dietary restrictions or preferences mentioned"
+      "notes": "schedule or dietary info (e.g., 'visits Tuesday dinners', 'age 4')"
     }
   ]
 }
 
-If age isn't mentioned, use null. If no additional people are mentioned, return: {"members": []}
+RULES:
+- Do NOT include the main user themselves
+- DO include children, partners, ex-partners, guests who are mentioned
+- Extract names when mentioned (e.g., "my daughter Maya" → name: "Maya")
+- Extract ages when mentioned (e.g., "four-year-old" → age: 4)
+- Include schedule info in notes (e.g., "ex visits Tuesday" → notes: "Visits Tuesday dinners")
+- If no other people mentioned, return: {"members": []}
 
 Return ONLY the JSON, nothing else.`;
 
@@ -901,45 +901,82 @@ Return ONLY the JSON, nothing else.`;
 
       console.log('AI extraction response:', fullResponse);
 
-      // Parse the JSON from Claude's response
-      const jsonMatch = fullResponse.match(/\{[\s\S]*\}/);
-      if (!jsonMatch) {
-        console.warn('No JSON found in extraction response');
-        return;
+      // Parse the JSON from Claude's response (handle markdown code blocks)
+      let jsonText = fullResponse;
+      
+      // Remove markdown code blocks if present
+      if (fullResponse.includes('```')) {
+        const codeBlockMatch = fullResponse.match(/```(?:json)?\s*(\{[\s\S]*?\})\s*```/);
+        if (codeBlockMatch) {
+          jsonText = codeBlockMatch[1];
+        }
+      } else {
+        const jsonMatch = fullResponse.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          jsonText = jsonMatch[0];
+        } else {
+          console.warn('No JSON found in extraction response');
+          return;
+        }
       }
 
-      const extracted = JSON.parse(jsonMatch[0]);
+      const extracted = JSON.parse(jsonText);
+      console.log('Parsed household extraction:', extracted);
       
       if (!extracted.members || extracted.members.length === 0) {
-        console.log('No additional members extracted');
+        console.log('No additional members extracted from response');
         return;
       }
+      
+      console.log(`Found ${extracted.members.length} household member(s) to create:`, extracted.members);
 
       // Create eater profiles for each extracted member
       const currentEaters = loadEaters();
       let created = 0;
 
       for (const member of extracted.members) {
+        if (!member.name) {
+          console.warn('Skipping member with no name:', member);
+          continue;
+        }
+
         // Check if already exists (by name)
         const exists = currentEaters.some(e => 
           e.name.toLowerCase() === member.name.toLowerCase()
         );
 
         if (!exists) {
+          // Build schedule text based on relationship
+          let scheduleText = '';
+          if (member.relationship === 'daughter' || member.relationship === 'son') {
+            scheduleText = member.age 
+              ? `Child, ${member.age} years old. ${member.notes || ''}`
+              : `Child. ${member.notes || ''}`;
+          } else if (member.relationship === 'ex' || member.relationship === 'partner') {
+            scheduleText = member.notes || `${member.relationship.charAt(0).toUpperCase() + member.relationship.slice(1)}`;
+          } else {
+            scheduleText = member.notes || '';
+          }
+
           const newEater = createEater({
             name: member.name,
-            preferences: member.notes || '',
+            preferences: '', // Preferences stored in baseSpec, not individual eaters
             allergies: [],
             dietaryRestrictions: [],
-            schedule: member.relationship === 'daughter' || member.relationship === 'son' 
-              ? `Child (${member.age ? member.age + ' years old' : 'age not specified'})`
-              : member.notes || '',
+            schedule: scheduleText.trim(),
             isDefault: false
           });
           
           currentEaters.push(newEater);
           created++;
-          console.log(`Created eater profile for ${member.name}`);
+          console.log(`✓ Created eater profile:`, {
+            name: member.name,
+            relationship: member.relationship,
+            age: member.age,
+            schedule: scheduleText.trim()
+          });
+        } else {
+          console.log(`Skipped ${member.name} - already exists`);
         }
       }
 
