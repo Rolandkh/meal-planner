@@ -132,6 +132,10 @@ export class DayView {
       <p class="text-xl text-gray-600 mb-6">${formattedDate}</p>
     `;
 
+    // Action buttons container
+    const buttonsContainer = document.createElement('div');
+    buttonsContainer.className = 'flex items-center justify-center space-x-4';
+    
     // Back button
     const backButton = document.createElement('button');
     backButton.className = `
@@ -142,7 +146,25 @@ export class DayView {
     backButton.addEventListener('click', () => {
       window.location.hash = '#/';
     });
-    header.appendChild(backButton);
+    buttonsContainer.appendChild(backButton);
+    
+    // Slice 4: Regenerate Day button (Task 50)
+    const regenerateButton = document.createElement('button');
+    regenerateButton.id = 'regenerate-day-btn';
+    regenerateButton.className = `
+      bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg
+      transition-colors font-semibold flex items-center space-x-2
+    `.trim().replace(/\s+/g, ' ');
+    regenerateButton.innerHTML = `
+      <span>🔄</span>
+      <span>Regenerate ${this.dayName}</span>
+    `;
+    regenerateButton.addEventListener('click', () => {
+      this.showRegenerateModal(date);
+    });
+    buttonsContainer.appendChild(regenerateButton);
+    
+    header.appendChild(buttonsContainer);
 
     // Day card
     const dayCard = document.createElement('div');
@@ -274,10 +296,88 @@ export class DayView {
   }
 
   /**
+   * Show regenerate day confirmation modal (Slice 4: Task 50)
+   */
+  showRegenerateModal(date) {
+    const meals = this.getMealsForDate(date);
+    const dayNameCap = this.dayName.charAt(0).toUpperCase() + this.dayName.slice(1);
+    
+    // Create modal overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'regenerate-modal-overlay';
+    overlay.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    
+    // Create modal
+    const modal = document.createElement('div');
+    modal.className = 'bg-white rounded-lg shadow-xl max-w-md w-full p-6';
+    modal.innerHTML = `
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">
+        Regenerate ${dayNameCap}?
+      </h2>
+      
+      <p class="text-gray-700 mb-4">
+        This will create 3 new meals (breakfast, lunch, dinner) for ${dayNameCap}.
+      </p>
+      
+      <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+        <p class="text-sm font-medium text-amber-900 mb-2">Current meals that will be replaced:</p>
+        <ul class="text-sm text-amber-800 space-y-1">
+          ${meals.map(m => {
+            const recipe = this.getRecipe(m.recipeId);
+            return `<li>• ${m.mealType.charAt(0).toUpperCase() + m.mealType.slice(1)}: ${recipe?.name || 'Unknown'}</li>`;
+          }).join('')}
+        </ul>
+      </div>
+      
+      <div class="flex items-center justify-end space-x-4">
+        <button
+          id="modal-cancel-btn"
+          class="px-6 py-2 text-gray-700 hover:bg-gray-100 border border-gray-300 rounded-lg font-medium transition-colors"
+        >
+          Cancel
+        </button>
+        <button
+          id="modal-confirm-btn"
+          class="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors"
+        >
+          Regenerate
+        </button>
+      </div>
+    `;
+    
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+    
+    // Event listeners
+    const cancelBtn = document.getElementById('modal-cancel-btn');
+    const confirmBtn = document.getElementById('modal-confirm-btn');
+    
+    cancelBtn.addEventListener('click', () => {
+      overlay.remove();
+    });
+    
+    confirmBtn.addEventListener('click', () => {
+      overlay.remove();
+      // Navigate to generation page with regenerate params
+      sessionStorage.setItem('regenerate_day', this.dayName);
+      sessionStorage.setItem('regenerate_date', date);
+      window.location.hash = '#/generating';
+    });
+    
+    // Close on overlay click
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        overlay.remove();
+      }
+    });
+  }
+
+  /**
    * Cleanup
    */
   destroy() {
     // Clean up if needed
   }
 }
+
 

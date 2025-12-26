@@ -109,6 +109,26 @@ function validateRequest(body) {
       });
     }
   }
+  
+  // Slice 4: Validate single-day regeneration parameters
+  if (body.regenerateDay !== undefined) {
+    const validDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    if (typeof body.regenerateDay !== 'string' || !validDays.includes(body.regenerateDay.toLowerCase())) {
+      errors.push('regenerateDay must be a valid day name (sunday-saturday)');
+    }
+    
+    if (!body.dateForDay) {
+      errors.push('dateForDay is required when regenerateDay is specified');
+    } else if (!/^\d{4}-\d{2}-\d{2}$/.test(body.dateForDay)) {
+      errors.push('dateForDay must be in YYYY-MM-DD format');
+    }
+  }
+  
+  if (body.existingMeals !== undefined) {
+    if (!Array.isArray(body.existingMeals)) {
+      errors.push('existingMeals must be an array');
+    }
+  }
 
   return {
     valid: errors.length === 0,
@@ -118,8 +138,9 @@ function validateRequest(body) {
 
 /**
  * Build user prompt from chat history, eaters, and optional structured schedule
+ * Slice 4: Enhanced to support single-day regeneration
  */
-function buildUserPrompt(chatHistory, eaters, baseSpec = null) {
+function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = null, dateForDay = null, existingMeals = []) {
   // Get next Saturday as week start
   const today = new Date();
   const daysUntilSaturday = (6 - today.getDay() + 7) % 7 || 7;
@@ -234,6 +255,46 @@ To achieve this:
 
 This constraint is CRITICAL for keeping shopping simple and costs down.`;
 
+  // Slice 4: Handle single-day regeneration
+  if (regenerateDay && dateForDay) {
+    const dayNameUpper = regenerateDay.toUpperCase();
+    
+    // Extract existing recipe names to avoid duplication
+    const existingRecipeNames = existingMeals
+      .map(m => m.recipeName || '')
+      .filter(name => name.length > 0);
+    
+    const avoidDuplication = existingRecipeNames.length > 0
+      ? `\n\nIMPORTANT - AVOID DUPLICATION:
+The user already has meals for the other 6 days this week with these recipes:
+${existingRecipeNames.map(name => `- ${name}`).join('\n')}
+
+DO NOT repeat any of these recipes for ${dayNameUpper}.
+Ensure variety across the full week by choosing completely different recipes.`
+      : '';
+    
+    return `Generate meals for ${dayNameUpper}, ${dateForDay} ONLY.
+
+This is a single-day regeneration. The user wants to replace meals for this day only.
+
+Generate ONLY 3 meals for ${dayNameUpper}:
+- Breakfast
+- Lunch
+- Dinner
+
+Household members:
+${eaterInfo}
+${conversationContext}
+${scheduleRequirements}
+${ingredientConstraint}
+${avoidDuplication}
+
+If the user specified constraints in the conversation (like "simple recipes", "meal prep on Saturday", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
+
+Output ONLY the JSON structure specified in the system prompt. Since this is a single-day regeneration, include ONLY ONE day in the "days" array (${dateForDay}).`;
+  }
+  
+  // Full week generation (default)
   return `Generate a meal plan for the week starting ${weekOf}.
 
 Household members:
@@ -300,13 +361,28 @@ export default async function handler(req) {
       );
     }
 
-    const { chatHistory = [], eaters = [], baseSpecification = null } = body;
+    const { 
+      chatHistory = [], 
+      eaters = [], 
+      baseSpecification = null,
+      regenerateDay = null,
+      dateForDay = null,
+      existingMeals = []
+    } = body;
 
     // Use default eater if none provided
     const finalEaters = eaters.length > 0 ? eaters : [DEFAULT_EATER];
 
     // Build user prompt (with optional baseSpecification for structured schedule)
-    const userPrompt = buildUserPrompt(chatHistory, finalEaters, baseSpecification);
+    // Slice 4: Include regeneration parameters
+    const userPrompt = buildUserPrompt(
+      chatHistory, 
+      finalEaters, 
+      baseSpecification,
+      regenerateDay,
+      dateForDay,
+      existingMeals
+    );
 
     // Initialize Anthropic client
     const anthropic = new Anthropic({

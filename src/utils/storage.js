@@ -430,7 +430,7 @@ export function deleteEater(eaterId) {
  */
 export function loadRecipes() {
   try {
-    const saved = localStorage.getItem(RECIPES_KEY);
+    const saved = localStorage.getItem(VANESSA_RECIPES);
     if (saved) {
       const recipes = JSON.parse(saved);
       return Array.isArray(recipes) ? recipes : [];
@@ -451,7 +451,7 @@ export function saveRecipes(recipes) {
     console.error('saveRecipes: expected array, got', typeof recipes);
     return { success: false, error: 'INVALID_TYPE', message: 'Expected array' };
   }
-  return safeSave(RECIPES_KEY, recipes);
+  return safeSave(VANESSA_RECIPES, recipes);
 }
 
 /**
@@ -460,7 +460,7 @@ export function saveRecipes(recipes) {
  */
 export function loadMeals() {
   try {
-    const saved = localStorage.getItem(MEALS_KEY);
+    const saved = localStorage.getItem(VANESSA_MEALS);
     if (saved) {
       const meals = JSON.parse(saved);
       return Array.isArray(meals) ? meals : [];
@@ -481,7 +481,7 @@ export function saveMeals(meals) {
     console.error('saveMeals: expected array, got', typeof meals);
     return { success: false, error: 'INVALID_TYPE', message: 'Expected array' };
   }
-  return safeSave(MEALS_KEY, meals);
+  return safeSave(VANESSA_MEALS, meals);
 }
 
 /**
@@ -490,7 +490,7 @@ export function saveMeals(meals) {
  */
 export function loadCurrentMealPlan() {
   try {
-    const saved = localStorage.getItem(CURRENT_MEAL_PLAN_KEY);
+    const saved = localStorage.getItem(VANESSA_CURRENT_MEAL_PLAN);
     if (saved) {
       const plan = JSON.parse(saved);
       return typeof plan === 'object' && plan !== null ? plan : null;
@@ -511,7 +511,7 @@ export function saveCurrentMealPlan(plan) {
     console.error('saveCurrentMealPlan: expected object, got', typeof plan);
     return { success: false, error: 'INVALID_TYPE', message: 'Expected object' };
   }
-  return safeSave(CURRENT_MEAL_PLAN_KEY, plan);
+  return safeSave(VANESSA_CURRENT_MEAL_PLAN, plan);
 }
 
 // ============================================================================
@@ -596,6 +596,105 @@ export function incrementTimesCooked(recipeId) {
   recipes[index].updatedAt = new Date().toISOString();
   
   return saveRecipes(recipes);
+}
+
+/**
+ * Update a recipe by ID (Slice 4: Task 48)
+ * Preserves recipeId to maintain references from meals
+ * @param {string} recipeId - Recipe ID to update
+ * @param {Object} updatedData - Fields to update
+ * @returns {Object} Result object with success status and updated recipe
+ */
+export function updateRecipe(recipeId, updatedData) {
+  // Validate recipeId
+  if (!recipeId || !validateId(recipeId, 'recipe')) {
+    return {
+      success: false,
+      error: 'INVALID_RECIPE_ID',
+      message: 'Invalid recipe ID format'
+    };
+  }
+  
+  // Load all recipes
+  const recipes = loadRecipes();
+  const index = recipes.findIndex(r => r.recipeId === recipeId);
+  
+  if (index === -1) {
+    return {
+      success: false,
+      error: 'RECIPE_NOT_FOUND',
+      message: `Recipe ${recipeId} not found`
+    };
+  }
+  
+  // Validate critical fields if present
+  if (updatedData.name !== undefined) {
+    if (typeof updatedData.name !== 'string' || updatedData.name.length < 3 || updatedData.name.length > 100) {
+      return {
+        success: false,
+        error: 'INVALID_NAME',
+        message: 'Recipe name must be 3-100 characters'
+      };
+    }
+  }
+  
+  if (updatedData.ingredients !== undefined) {
+    if (!Array.isArray(updatedData.ingredients) || updatedData.ingredients.length < 1) {
+      return {
+        success: false,
+        error: 'INVALID_INGREDIENTS',
+        message: 'At least one ingredient is required'
+      };
+    }
+    if (updatedData.ingredients.length > 30) {
+      return {
+        success: false,
+        error: 'TOO_MANY_INGREDIENTS',
+        message: 'Maximum 30 ingredients allowed'
+      };
+    }
+  }
+  
+  if (updatedData.instructions !== undefined) {
+    if (typeof updatedData.instructions !== 'string' || updatedData.instructions.length < 10) {
+      return {
+        success: false,
+        error: 'INVALID_INSTRUCTIONS',
+        message: 'Instructions must be at least 10 characters'
+      };
+    }
+  }
+  
+  if (updatedData.prepTime !== undefined || updatedData.cookTime !== undefined) {
+    if ((updatedData.prepTime !== undefined && (typeof updatedData.prepTime !== 'number' || updatedData.prepTime < 0)) ||
+        (updatedData.cookTime !== undefined && (typeof updatedData.cookTime !== 'number' || updatedData.cookTime < 0))) {
+      return {
+        success: false,
+        error: 'INVALID_TIME',
+        message: 'Prep and cook times must be non-negative numbers'
+      };
+    }
+  }
+  
+  // Update recipe while preserving its ID
+  recipes[index] = {
+    ...recipes[index],
+    ...updatedData,
+    recipeId: recipes[index].recipeId, // CRITICAL: Never change the ID
+    updatedAt: new Date().toISOString()
+  };
+  
+  const result = saveRecipes(recipes);
+  
+  if (result.success) {
+    return {
+      success: true,
+      recipe: recipes[index],
+      message: 'Recipe updated successfully'
+    };
+  }
+  
+  return result;
 }
 
 /**
@@ -910,21 +1009,246 @@ export function deleteOrphanedRecipes() {
   }
 }
 
+// ============================================================================
+// SLICE 4: Meal Plan History & Archive System (Tasks 53, 54)
+// ============================================================================
+
+// Storage key for meal plan history
+const VANESSA_MEAL_PLAN_HISTORY = 'vanessa_meal_plan_history';
+
 /**
- * Clear old meal plans (stub for Slice 4 - multi-plan support)
+ * Load meal plan history from localStorage
+ * @returns {Array} Array of archived meal plan objects
+ */
+export function loadMealPlanHistory() {
+  try {
+    const saved = localStorage.getItem(VANESSA_MEAL_PLAN_HISTORY);
+    if (saved) {
+      const history = JSON.parse(saved);
+      return Array.isArray(history) ? history : [];
+    }
+  } catch (error) {
+    console.error('Error loading meal plan history:', error);
+  }
+  return [];
+}
+
+/**
+ * Save meal plan history to localStorage
+ * @param {Array} history - Array of archived meal plan objects
+ * @returns {Object} Result object with success status
+ */
+export function saveMealPlanHistory(history) {
+  if (!Array.isArray(history)) {
+    return { success: false, error: 'INVALID_TYPE', message: 'Expected array' };
+  }
+  return safeSave(VANESSA_MEAL_PLAN_HISTORY, history);
+}
+
+/**
+ * Get history retention weeks setting from base specification
+ * @returns {number} Number of weeks to keep (default: 4)
+ */
+export function getHistoryRetentionWeeks() {
+  const baseSpec = loadBaseSpecification();
+  return baseSpec?.historyRetentionWeeks || 4;
+}
+
+/**
+ * Add archived meal plan to history
+ * @param {Object} archivedPlan - Archived meal plan object
+ * @returns {Object} Result object with success status
+ */
+export function addToHistory(archivedPlan) {
+  try {
+    const history = loadMealPlanHistory();
+    history.push(archivedPlan);
+    return saveMealPlanHistory(history);
+  } catch (error) {
+    console.error('Error adding to history:', error);
+    return {
+      success: false,
+      error: 'ADD_TO_HISTORY_FAILED',
+      message: error.message
+    };
+  }
+}
+
+/**
+ * Clean up old meal plan history, keeping only last N weeks
+ * @param {number} keepWeeks - Number of most recent weeks to keep
+ * @returns {Object} Result object with cleanup stats
+ */
+export function cleanupHistory(keepWeeks = 4) {
+  try {
+    const history = loadMealPlanHistory();
+    
+    if (history.length === 0) {
+      return {
+        success: true,
+        kept: 0,
+        removed: 0,
+        message: 'No history to clean up'
+      };
+    }
+    
+    // Sort by archivedAt (newest first)
+    history.sort((a, b) => {
+      const dateA = new Date(b.archivedAt || b.createdAt);
+      const dateB = new Date(a.archivedAt || a.createdAt);
+      return dateA - dateB;
+    });
+    
+    // Keep only last N weeks
+    const kept = history.slice(0, keepWeeks);
+    const removed = history.length - kept.length;
+    
+    if (removed > 0) {
+      const result = saveMealPlanHistory(kept);
+      if (result.success) {
+        return {
+          success: true,
+          kept: kept.length,
+          removed,
+          message: `Removed ${removed} old meal plan(s), kept ${kept.length}`
+        };
+      }
+      return result;
+    }
+    
+    return {
+      success: true,
+      kept: kept.length,
+      removed: 0,
+      message: 'No plans to remove'
+    };
+  } catch (error) {
+    console.error('Error cleaning up history:', error);
+    return {
+      success: false,
+      error: 'CLEANUP_FAILED',
+      message: error.message
+    };
+  }
+}
+
+/**
+ * Create snapshot of current meal plan with meals and recipes
+ * @param {Object} mealPlan - Current meal plan object
+ * @returns {Object} Archived plan with snapshots
+ */
+export function createMealPlanSnapshot(mealPlan) {
+  try {
+    const meals = loadMeals();
+    const recipes = loadRecipes();
+    
+    // Get recipe IDs used by current meals
+    const mealRecipeIds = meals.map(m => m.recipeId);
+    const usedRecipes = recipes.filter(r => mealRecipeIds.includes(r.recipeId));
+    
+    // Create archived plan with snapshots
+    const archived = {
+      ...mealPlan,
+      archivedAt: new Date().toISOString(),
+      mealsSnapshot: meals,
+      recipesSnapshot: usedRecipes
+    };
+    
+    return archived;
+  } catch (error) {
+    console.error('Error creating meal plan snapshot:', error);
+    throw error;
+  }
+}
+
+/**
+ * Save new meal plan and auto-archive current plan (Slice 4: Task 53)
+ * @param {Object} newMealPlan - New meal plan to save as current
+ * @returns {Object} Result object with success status and archive info
+ */
+export function saveNewMealPlan(newMealPlan) {
+  try {
+    // Validate new meal plan
+    if (!newMealPlan || typeof newMealPlan !== 'object') {
+      return {
+        success: false,
+        error: 'INVALID_MEAL_PLAN',
+        message: 'Invalid meal plan object'
+      };
+    }
+    
+    // Get current meal plan
+    const current = loadCurrentMealPlan();
+    let archived = false;
+    
+    if (current) {
+      // Create snapshot with meals and recipes
+      const archivedPlan = createMealPlanSnapshot(current);
+      
+      // Add to history
+      const historyResult = addToHistory(archivedPlan);
+      if (!historyResult.success) {
+        console.warn('Failed to archive current plan:', historyResult);
+        // Continue anyway - don't block new plan save
+      } else {
+        archived = true;
+      }
+      
+      // Cleanup old history (keep last N weeks)
+      const cleanupResult = cleanupHistory(getHistoryRetentionWeeks());
+      if (!cleanupResult.success) {
+        console.warn('Failed to cleanup history:', cleanupResult);
+        // Continue anyway
+      }
+    }
+    
+    // Save new plan as current
+    const result = saveCurrentMealPlan(newMealPlan);
+    
+    if (result.success) {
+      return {
+        success: true,
+        archived,
+        message: archived 
+          ? 'New meal plan saved, previous plan archived'
+          : 'New meal plan saved'
+      };
+    }
+    
+    return result;
+  } catch (error) {
+    console.error('Error saving new meal plan:', error);
+    return {
+      success: false,
+      error: 'SAVE_FAILED',
+      message: error.message
+    };
+  }
+}
+
+/**
+ * Load a specific historical meal plan by ID
+ * @param {string} planId - Meal plan ID to load
+ * @returns {Object|null} Archived meal plan or null if not found
+ */
+export function loadHistoricalPlan(planId) {
+  try {
+    const history = loadMealPlanHistory();
+    return history.find(plan => plan.mealPlanId === planId) || null;
+  } catch (error) {
+    console.error('Error loading historical plan:', error);
+    return null;
+  }
+}
+
+/**
+ * Clear old meal plans (Slice 4: implemented)
  * @param {number} keepMostRecent - Number of most recent plans to keep
  * @returns {Object} Result object with cleanup stats
  */
 export function clearOldMealPlans(keepMostRecent = 4) {
-  // Stub implementation - Slice 3 only supports single current meal plan
-  // Full implementation will come in Slice 4 when we add meal plan history
-  return {
-    success: true,
-    cleared: 0,
-    kept: 1,
-    spaceSaved: 0,
-    message: 'Multi-plan cleanup not yet implemented (Slice 4 feature)'
-  };
+  // Now implemented - uses cleanupHistory
+  return cleanupHistory(keepMostRecent);
 }
 
 // ============================================================================

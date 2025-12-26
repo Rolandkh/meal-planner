@@ -139,13 +139,28 @@ export class RecipeDetailPage {
 
     const inner = document.createElement('div');
     inner.className = 'container mx-auto px-4 py-4 max-w-4xl';
+    
+    // Slice 4: Add flex container for multiple buttons
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'flex items-center justify-between';
 
     const backBtn = document.createElement('button');
     backBtn.className = 'text-blue-600 hover:text-blue-700 font-medium flex items-center gap-2';
     backBtn.innerHTML = '← Back to Recipes';
     backBtn.onclick = () => window.location.hash = '#/recipes';
+    
+    // Slice 4: Edit button (Task 47)
+    const editBtn = document.createElement('button');
+    editBtn.className = 'bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium flex items-center space-x-2 transition-colors';
+    editBtn.innerHTML = `
+      <span>✏️</span>
+      <span>Edit Recipe</span>
+    `;
+    editBtn.onclick = () => window.location.hash = `#/recipe/${this.recipeId}/edit`;
 
-    inner.appendChild(backBtn);
+    buttonContainer.appendChild(backBtn);
+    buttonContainer.appendChild(editBtn);
+    inner.appendChild(buttonContainer);
     header.appendChild(inner);
 
     return header;

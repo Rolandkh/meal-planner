@@ -37,6 +37,7 @@ export class Navigation {
       { path: '/', label: 'Home', icon: '🏠' },
       { path: '/meal-plan', label: 'Meal Plan', icon: '📋' },
       { path: '/recipes', label: 'Recipes', icon: '📖' },
+      { path: '/history', label: 'History', icon: '📅' }, // Slice 4: Task 52
       { path: '/shopping-list', label: 'Shopping', icon: '🛒' },
       { path: '/settings', label: 'Settings', icon: '⚙️' }
     ];

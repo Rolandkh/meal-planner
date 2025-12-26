@@ -7,6 +7,7 @@
 import {
   loadRecipes
 } from '../utils/storage.js';
+import { RecipeImportModal } from './RecipeImportModal.js';
 
 export class RecipeLibraryPage {
   constructor() {
@@ -153,14 +154,31 @@ export class RecipeLibraryPage {
     titleDiv.appendChild(title);
     titleDiv.appendChild(subtitle);
 
+    // Action buttons
+    const actionsDiv = document.createElement('div');
+    actionsDiv.className = 'flex items-center space-x-3';
+    
     // Back button
     const backBtn = document.createElement('button');
     backBtn.className = 'text-blue-600 hover:text-blue-700 font-medium flex items-center gap-2';
     backBtn.innerHTML = '← Back to Home';
     backBtn.onclick = () => window.location.hash = '#/';
+    actionsDiv.appendChild(backBtn);
+    
+    // Slice 4: Add Recipe button (Task 56)
+    const addBtn = document.createElement('button');
+    addBtn.id = 'add-recipe-btn';
+    addBtn.className = 'bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium flex items-center space-x-2 transition-colors';
+    addBtn.innerHTML = `
+      <span class="text-xl">+</span>
+      <span>Add Recipe</span>
+    `;
+    actionsDiv.appendChild(addBtn);
+    
+    const backBtn_old = backBtn; // Keep reference for later insertion
 
     titleRow.appendChild(titleDiv);
-    titleRow.appendChild(backBtn);
+    titleRow.appendChild(actionsDiv);
     inner.appendChild(titleRow);
     header.appendChild(inner);
 
@@ -463,6 +481,33 @@ export class RecipeLibraryPage {
    */
   afterRender() {
     console.log('Recipe library page rendered');
+    
+    // Slice 4: Add event listener for Add Recipe button (Task 56)
+    const addRecipeBtn = document.getElementById('add-recipe-btn');
+    if (addRecipeBtn) {
+      addRecipeBtn.addEventListener('click', () => {
+        this.showImportModal();
+      });
+    }
+  }
+  
+  /**
+   * Show recipe import modal (Slice 4: Task 56)
+   */
+  showImportModal() {
+    const modal = new RecipeImportModal(
+      (recipe) => {
+        // On success callback
+        console.log('Recipe imported:', recipe);
+        // Page will navigate to recipe detail, so no need to refresh here
+      },
+      () => {
+        // On close callback
+        console.log('Modal closed');
+      }
+    );
+    
+    modal.show();
   }
 }
 

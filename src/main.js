@@ -21,6 +21,10 @@ import { RecipeLibraryPage } from './components/RecipeLibraryPage.js';
 import { RecipeDetailPage } from './components/RecipeDetailPage.js';
 import { DayView } from './components/DayView.js';
 import { Navigation } from './components/Navigation.js';
+// Slice 4: New components
+import { RecipeEditPage } from './components/RecipeEditPage.js';
+import { MealPlanHistoryPage } from './components/MealPlanHistoryPage.js';
+import { MealPlanHistoryDetailPage } from './components/MealPlanHistoryDetailPage.js';
 
 // Global error handler
 window.addEventListener('error', (event) => {
@@ -120,6 +124,10 @@ async function initApp() {
   router.addRoute('/recipes', new RecipeLibraryPage());
   router.addRoute('/recipe/:id', RecipeDetailPage); // Class for parameterized route
   router.addRoute('/day/:day', DayView); // Class for parameterized day route
+  // Slice 4: New routes
+  router.addRoute('/recipe/:id/edit', RecipeEditPage); // Recipe edit page
+  router.addRoute('/history', new MealPlanHistoryPage()); // History list
+  router.addRoute('/history/:id', MealPlanHistoryDetailPage); // Historical plan detail
   
   // Initialize router
   router.init();

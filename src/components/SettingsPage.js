@@ -582,6 +582,31 @@ export class SettingsPage {
     goalsGroup.appendChild(goalsLabel);
     goalsGroup.appendChild(goalsTextarea);
     form.appendChild(goalsGroup);
+    
+    // Slice 4: History Retention (Task 54)
+    const historyRetentionGroup = this.createSelectGroup(
+      'History Retention',
+      'select',
+      'historyRetentionWeeks',
+      spec.historyRetentionWeeks || 4,
+      'How many weeks of meal plan history to keep'
+    );
+    const historySelect = historyRetentionGroup.querySelector('select');
+    const retentionOptions = [
+      { value: 1, label: '1 week' },
+      { value: 2, label: '2 weeks' },
+      { value: 4, label: '4 weeks (recommended)' },
+      { value: 8, label: '8 weeks' },
+      { value: 12, label: '12 weeks' }
+    ];
+    retentionOptions.forEach(opt => {
+      const option = document.createElement('option');
+      option.value = opt.value;
+      option.textContent = opt.label;
+      option.selected = (spec.historyRetentionWeeks || 4) === opt.value;
+      historySelect.appendChild(option);
+    });
+    form.appendChild(historyRetentionGroup);
 
     // Add change listeners for auto-save
     form.querySelectorAll('input, select, textarea').forEach(input => {
@@ -898,7 +923,8 @@ export class SettingsPage {
       maxShoppingListItems: parseInt(formData.get('maxShoppingListItems'), 10),
       shoppingDay: parseInt(formData.get('shoppingDay'), 10),
       preferredStore: formData.get('preferredStore'),
-      dietaryGoals: formData.get('dietaryGoals')
+      dietaryGoals: formData.get('dietaryGoals'),
+      historyRetentionWeeks: parseInt(formData.get('historyRetentionWeeks'), 10) // Slice 4: Task 54
     };
 
     // Clear existing timeout

@@ -4,7 +4,7 @@
  */
 
 import { ErrorHandler } from '../utils/errorHandler.js';
-import { loadEaters, loadBaseSpecification, saveRecipes, saveMeals, saveCurrentMealPlan } from '../utils/storage.js';
+import { loadEaters, loadBaseSpecification, saveRecipes, saveMeals, saveNewMealPlan } from '../utils/storage.js';
 import { transformGeneratedPlan } from '../utils/mealPlanTransformer.js';
 
 export class GenerationStatusPage {
@@ -153,6 +153,39 @@ export class GenerationStatusPage {
       // Load chat history and base specification
       const chatHistory = this.loadChatHistory();
       const baseSpecification = loadBaseSpecification();
+      
+      // Slice 4: Check for single-day regeneration parameters (Task 50)
+      const regenerateDay = sessionStorage.getItem('regenerate_day');
+      const regenerateDate = sessionStorage.getItem('regenerate_date');
+      
+      let requestBody = {
+        chatHistory,
+        eaters: defaultEaters,
+        baseSpecification
+      };
+      
+      // If regenerating a single day, add parameters and get existing meals
+      if (regenerateDay && regenerateDate) {
+        console.log(`Regenerating single day: ${regenerateDay} (${regenerateDate})`);
+        
+        const meals = loadMeals();
+        const existingMeals = meals.filter(m => m.date !== regenerateDate);
+        
+        requestBody.regenerateDay = regenerateDay;
+        requestBody.dateForDay = regenerateDate;
+        requestBody.existingMeals = existingMeals;
+        
+        // Update heading text
+        const heading = document.getElementById('generation-heading');
+        if (heading) {
+          const dayNameCap = regenerateDay.charAt(0).toUpperCase() + regenerateDay.slice(1);
+          heading.textContent = `Regenerating ${dayNameCap}...`;
+        }
+        
+        // Clear session storage after reading
+        sessionStorage.removeItem('regenerate_day');
+        sessionStorage.removeItem('regenerate_date');
+      }
 
       // Make POST request with SSE
       const response = await fetch('/api/generate-meal-plan', {
@@ -160,11 +193,7 @@ export class GenerationStatusPage {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          chatHistory,
-          eaters: defaultEaters,
-          baseSpecification
-        }),
+        body: JSON.stringify(requestBody),
         signal: this.abortController.signal
       });
 
@@ -296,7 +325,7 @@ export class GenerationStatusPage {
       const saveResults = {
         recipes: saveRecipes(transformed.recipes),
         meals: saveMeals(transformed.meals),
-        mealPlan: saveCurrentMealPlan(transformed.mealPlan)
+        mealPlan: saveNewMealPlan(transformed.mealPlan) // Slice 4: Auto-archive old plan
       };
 
       // Check for any save failures

@@ -2,14 +2,14 @@
   "master": {
     "tasks": [
       {
-        "id": 47,
+        "id": "47",
         "title": "Implement Recipe Edit Page Component",
         "description": "Create a new component for editing existing recipes with all form fields and validation logic",
         "details": "Build the RecipeEditPage.js component with route #/recipe/:id/edit that allows users to modify all aspects of a recipe. The form should include fields for recipe name, dynamic ingredient rows (with add/remove functionality), instructions, prep time, cook time, servings, and tags. Implement form validation for all fields: name (3-100 chars), ingredients (min 1, max 30), quantities (positive numbers), instructions (min 10 chars), and times (non-negative). Add auto-save draft functionality to localStorage every 30 seconds to prevent data loss. Include 'Discard Changes' button with confirmation dialog. Pre-populate the form with current recipe values from storage.\n\nPseudo-code:\n```javascript\nclass RecipeEditPage extends Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      recipe: null,\n      loading: true,\n      errors: {},\n      isDirty: false,\n      lastSaved: null\n    };\n    this.autoSaveInterval = null;\n  }\n\n  componentDidMount() {\n    const recipeId = this.props.match.params.id;\n    this.loadRecipe(recipeId);\n    this.setupAutoSave();\n    window.addEventListener('beforeunload', this.handleBeforeUnload);\n  }\n\n  componentWillUnmount() {\n    clearInterval(this.autoSaveInterval);\n    window.removeEventListener('beforeunload', this.handleBeforeUnload);\n  }\n\n  loadRecipe(recipeId) {\n    const recipes = loadRecipes();\n    const recipe = recipes.find(r => r.recipeId === recipeId);\n    if (recipe) {\n      this.setState({ recipe, loading: false });\n    } else {\n      this.setState({ error: 'Recipe not found', loading: false });\n    }\n  }\n\n  setupAutoSave() {\n    this.autoSaveInterval = setInterval(() => {\n      if (this.state.isDirty) {\n        this.saveDraft();\n      }\n    }, 30000);\n  }\n\n  saveDraft() {\n    localStorage.setItem('recipe_draft_' + this.state.recipe.recipeId, \n      JSON.stringify(this.state.recipe));\n    this.setState({ lastSaved: new Date() });\n  }\n\n  handleBeforeUnload(e) {\n    if (this.state.isDirty) {\n      this.saveDraft();\n      e.preventDefault();\n      e.returnValue = '';\n    }\n  }\n\n  validateForm() {\n    const errors = {};\n    const { recipe } = this.state;\n    \n    if (!recipe.name || recipe.name.length < 3 || recipe.name.length > 100) {\n      errors.name = 'Name must be between 3-100 characters';\n    }\n    \n    if (!recipe.ingredients || recipe.ingredients.length < 1) {\n      errors.ingredients = 'At least one ingredient is required';\n    } else if (recipe.ingredients.length > 30) {\n      errors.ingredients = 'Maximum 30 ingredients allowed';\n    }\n    \n    // More validation...\n    \n    return errors;\n  }\n\n  handleSubmit = (e) => {\n    e.preventDefault();\n    const errors = this.validateForm();\n    \n    if (Object.keys(errors).length === 0) {\n      this.saveRecipe();\n    } else {\n      this.setState({ errors });\n    }\n  }\n\n  saveRecipe() {\n    const result = updateRecipe(this.state.recipe.recipeId, this.state.recipe);\n    if (result.success) {\n      // Show success toast\n      // Navigate back to recipe detail\n    } else {\n      this.setState({ error: result.error });\n    }\n  }\n\n  render() {\n    // Render form with all fields\n  }\n}\n```",
         "testStrategy": "1. Unit test the form validation logic with various inputs (valid and invalid)\n2. Test auto-save functionality by simulating time passage and checking localStorage\n3. Verify the recipe update function correctly preserves the recipeId while updating other fields\n4. Test the form submission with both valid and invalid data\n5. Verify the discard changes confirmation dialog appears when there are unsaved changes\n6. Test that navigation away from the page with unsaved changes triggers the beforeunload handler\n7. Verify that all form fields are correctly populated with the existing recipe data\n8. Test the dynamic ingredient rows (add/remove functionality)",
         "priority": "high",
         "dependencies": [],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -18,7 +18,8 @@
             "dependencies": [],
             "details": "Extend React.Component with constructor initializing state. Implement componentDidMount to extract recipeId from props.match.params.id and setup initial event listeners. Add componentWillUnmount for cleanup.",
             "status": "pending",
-            "testStrategy": "Test component mounts without crashing, verifies route param extraction, and confirms cleanup on unmount."
+            "testStrategy": "Test component mounts without crashing, verifies route param extraction, and confirms cleanup on unmount.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -29,7 +30,8 @@
             ],
             "details": "Use loadRecipes() utility to find recipe by recipeId. Set state with recipe data and loading=false. Display error message if recipe not found. Pre-populate all form fields with existing values.",
             "status": "pending",
-            "testStrategy": "Unit test loadRecipe with existing/non-existing IDs, verify state updates correctly with all recipe fields."
+            "testStrategy": "Unit test loadRecipe with existing/non-existing IDs, verify state updates correctly with all recipe fields.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -41,7 +43,8 @@
             ],
             "details": "Create validateForm() checking: name(3-100 chars), ingredients(1-30), quantities(positive), instructions(10+ chars), times(non-negative). Render input fields with error display. Add ingredient row management buttons.",
             "status": "pending",
-            "testStrategy": "Test all validation rules with edge cases (empty, min/max, invalid formats). Verify dynamic ingredient add/remove updates state correctly."
+            "testStrategy": "Test all validation rules with edge cases (empty, min/max, invalid formats). Verify dynamic ingredient add/remove updates state correctly.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -54,7 +57,8 @@
             ],
             "details": "Setup autoSaveInterval in componentDidMount. Implement saveDraft() using 'recipe_draft_[id]' key. Track isDirty state changes. Add handleBeforeUnload warning. Create discard confirmation modal.",
             "status": "pending",
-            "testStrategy": "Simulate 30s intervals to verify localStorage saves. Test discard restores original data. Verify beforeunload saves draft."
+            "testStrategy": "Simulate 30s intervals to verify localStorage saves. Test discard restores original data. Verify beforeunload saves draft.",
+            "parentId": "undefined"
           },
           {
             "id": 5,
@@ -68,59 +72,64 @@
             ],
             "details": "Implement handleSubmit calling validateForm then updateRecipe. Show toast notifications. Navigate to recipe detail on success. Add loading states and final styling. Integrate with Task 48's updateRecipe function.",
             "status": "pending",
-            "testStrategy": "Test full submit flow: validation pass/fail, updateRecipe success/error, navigation, toast display. Verify recipeId preservation."
+            "testStrategy": "Test full submit flow: validation pass/fail, updateRecipe success/error, navigation, toast display. Verify recipeId preservation.",
+            "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-26T08:04:37.193Z"
       },
       {
-        "id": 48,
+        "id": "48",
         "title": "Implement Recipe Update Storage Pattern",
         "description": "Create the storage update pattern for modifying recipes while maintaining references from meals",
         "details": "Implement the updateRecipe function that handles updating a recipe in localStorage while preserving its recipeId to maintain references from meals. The function should find the recipe by ID in the recipes array, update its properties with the new data, add an updatedAt timestamp, and save the updated array back to localStorage. The function should return a success object or an error if the recipe is not found.\n\nPseudo-code:\n```javascript\nfunction updateRecipe(recipeId, updatedData) {\n  // Load all recipes from localStorage\n  const recipes = loadRecipes();\n  \n  // Find the index of the recipe to update\n  const index = recipes.findIndex(r => r.recipeId === recipeId);\n  \n  if (index !== -1) {\n    // Update the recipe while preserving its ID\n    recipes[index] = {\n      ...recipes[index],\n      ...updatedData,\n      updatedAt: new Date().toISOString()\n    };\n    \n    // Save the updated recipes array back to localStorage\n    const saveResult = saveRecipes(recipes);\n    \n    return { \n      success: true, \n      recipe: recipes[index] \n    };\n  }\n  \n  return { \n    success: false, \n    error: 'Recipe not found' \n  };\n}\n\nfunction loadRecipes() {\n  const recipesJson = localStorage.getItem('vanessa_recipes');\n  return recipesJson ? JSON.parse(recipesJson) : [];\n}\n\nfunction saveRecipes(recipes) {\n  try {\n    localStorage.setItem('vanessa_recipes', JSON.stringify(recipes));\n    return { success: true };\n  } catch (error) {\n    return { \n      success: false, \n      error: error.message || 'Failed to save recipes'\n    };\n  }\n}\n```",
         "testStrategy": "1. Unit test the updateRecipe function with various scenarios:\n   - Updating an existing recipe (verify all fields update correctly)\n   - Attempting to update a non-existent recipe (verify error returned)\n   - Verify the recipeId remains unchanged after update\n   - Check that updatedAt timestamp is set correctly\n2. Integration test to verify that meals referencing the recipe still work after update\n3. Test error handling when localStorage is full or unavailable\n4. Verify that only the intended recipe is modified (no side effects on other recipes)\n5. Performance test with a large number of recipes to ensure efficient updates",
         "priority": "high",
         "dependencies": [
-          47
+          "47"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-12-26T08:04:37.205Z"
       },
       {
-        "id": 49,
+        "id": "49",
         "title": "Enhance API for Single Day Regeneration",
         "description": "Modify the meal plan generation API to support regenerating a single day while preserving the rest of the week",
         "details": "Enhance the /api/generate-meal-plan endpoint to accept new parameters for regenerating a single day: regenerateDay (day name), dateForDay (specific date), and existingMeals (array of other meals to avoid duplication). Update the system prompt to focus on generating only 3 meals for the specified day while maintaining variety across the full week and avoiding repeating recipes from the other 6 days.\n\nAPI Request Structure:\n```javascript\n{\n  chatHistory: [],\n  eaters: [],\n  baseSpecification: {},\n  regenerateDay: 'tuesday',      // NEW: day name to regenerate\n  dateForDay: '2025-12-31',      // NEW: specific date for that day\n  existingMeals: []              // NEW: other 18 meals to avoid duplication\n}\n```\n\nSystem Prompt Enhancement:\n```\nYou are regenerating meals for TUESDAY, December 31, 2025.\n\nGenerate 3 meals for this day only:\n- Breakfast\n- Lunch  \n- Dinner\n\nIMPORTANT:\n- The user already has meals for the other 6 days this week\n- Avoid repeating these recipes: [list of existing recipe names]\n- Ensure variety across the full week\n- Follow all other constraints (budget, preferences, schedule)\n\n[Rest of prompt...]\n```\n\nImplement the server-side logic to handle these new parameters and modify the generation process to only create meals for the specified day.",
         "testStrategy": "1. Unit test the API endpoint with various combinations of the new parameters\n2. Test the system prompt generation with different day names and dates\n3. Verify that only 3 meals are generated when regenerateDay is specified\n4. Test that the generated meals don't duplicate recipes from existingMeals\n5. Verify error handling for invalid parameters (non-existent day name, invalid date format)\n6. Performance test to ensure single day generation is faster than full week generation\n7. Integration test with the full meal plan system to verify correct meal replacement",
         "priority": "high",
         "dependencies": [],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-12-26T08:04:37.214Z"
       },
       {
-        "id": 50,
+        "id": "50",
         "title": "Implement Regenerate Day UI Components",
         "description": "Create UI components for the regenerate day feature including buttons, confirmation modal, and progress indicators",
         "details": "Add 'Regenerate Day' buttons to both the MealPlanView (icon button on each day card) and DayView (button in header). Implement a confirmation modal that shows the current meals that will be replaced and asks for user confirmation. Create a progress indicator similar to the full week generation that shows the status of generating breakfast, lunch, and dinner for the specified day.\n\nUI Components to implement:\n1. Add 'Regenerate Day' icon button to each day card in MealPlanView\n2. Add 'Regenerate Day' button to DayView header\n3. Create confirmation modal with:\n   - Title: \"Regenerate [Day Name]?\"\n   - Message: \"This will create 3 new meals (breakfast, lunch, dinner) for [day]\"\n   - List of current meals that will be replaced\n   - Buttons: \"Cancel\", \"Regenerate\"\n4. Implement progress indicator with messages:\n   - \"Analyzing your preferences...\"\n   - \"Creating breakfast for [day]...\"\n   - \"Planning lunch...\"\n   - \"Preparing dinner...\"\n   - \"Updating your meal plan...\"\n5. Handle navigation after regeneration:\n   - From DayView: Return to same DayView after success\n   - From MealPlanView: Return to MealPlanView after success\n   - Error: Show retry option, stay on current page",
         "testStrategy": "1. Unit test each UI component (buttons, modal, progress indicator)\n2. Test the confirmation modal with different day names and meal data\n3. Verify that the progress indicator correctly shows all stages of generation\n4. Test navigation after successful regeneration and after errors\n5. Verify that the UI is responsive and works on both desktop and mobile\n6. Test accessibility of all components (keyboard navigation, screen reader support)\n7. User acceptance testing with various scenarios (regenerating different days, canceling regeneration)",
         "priority": "medium",
         "dependencies": [
-          49
+          "49"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-12-26T08:04:37.217Z"
       },
       {
-        "id": 51,
+        "id": "51",
         "title": "Implement Single Day Regeneration Logic",
         "description": "Create the data update pattern for regenerating a single day's meals while preserving the rest of the week",
         "details": "Implement the regenerateDay function that handles replacing meals for a specific day while keeping the other days intact. The function should get the current meal plan, find meals for the specified day, generate new meals for that day, replace the old day meals with the new ones, update the meal plan, and clean up any orphaned recipes.\n\nPseudo-code:\n```javascript\nasync function regenerateDay(dayName, date) {\n  // 1. Get current meal plan\n  const mealPlan = loadCurrentMealPlan();\n  const meals = loadMeals();\n  \n  // 2. Find meals for this day\n  const dayMeals = meals.filter(m => m.date === date);\n  const otherMeals = meals.filter(m => m.date !== date);\n  \n  // 3. Generate new meals for this day\n  const newMeals = await generateDayMeals(dayName, date, otherMeals);\n  \n  // 4. Replace day meals\n  const updatedMeals = [...otherMeals, ...newMeals];\n  saveMeals(updatedMeals);\n  \n  // 5. Update meal plan\n  mealPlan.mealIds = updatedMeals.map(m => m.mealId);\n  mealPlan.updatedAt = new Date().toISOString();\n  saveCurrentMealPlan(mealPlan);\n  \n  // 6. Cleanup orphaned recipes\n  deleteOrphanedRecipes();\n  \n  return { success: true };\n}\n\nasync function generateDayMeals(dayName, date, existingMeals) {\n  // Call the enhanced API endpoint\n  const response = await fetch('/api/generate-meal-plan', {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      chatHistory: [],\n      eaters: loadEaters(),\n      baseSpecification: loadBaseSpecification(),\n      regenerateDay: dayName,\n      dateForDay: date,\n      existingMeals: existingMeals\n    })\n  });\n  \n  const data = await response.json();\n  if (!data.success) {\n    throw new Error(data.error || 'Failed to generate meals');\n  }\n  \n  return data.meals;\n}\n\nfunction deleteOrphanedRecipes() {\n  const meals = loadMeals();\n  const recipes = loadRecipes();\n  \n  // Get all recipe IDs used by meals\n  const usedRecipeIds = new Set(meals.map(m => m.recipeId));\n  \n  // Filter out recipes that are not used by any meal\n  const activeRecipes = recipes.filter(r => \n    usedRecipeIds.has(r.recipeId) || r.isFavorite\n  );\n  \n  // Save the filtered recipes back to storage\n  saveRecipes(activeRecipes);\n}\n```",
         "testStrategy": "1. Unit test the regenerateDay function with various day names and dates\n2. Test the meal filtering logic to ensure correct separation of day meals and other meals\n3. Mock the API call to generateDayMeals and verify correct parameters are passed\n4. Test the meal replacement logic to ensure only the specified day's meals are replaced\n5. Verify that the meal plan is correctly updated with the new meal IDs\n6. Test the orphaned recipe cleanup to ensure unused recipes are removed\n7. Integration test with the full meal plan system to verify end-to-end functionality\n8. Test error handling for API failures and other edge cases",
         "priority": "high",
         "dependencies": [
-          49,
-          50
+          "49",
+          "50"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -129,7 +138,8 @@
             "dependencies": [],
             "details": "Implement loadCurrentMealPlan() and loadMeals() functions using localStorage.getItem() with proper JSON parsing and error handling for missing data. Ensure they return complete objects matching the expected data structures.",
             "status": "pending",
-            "testStrategy": "Unit test both functions: verify they return correct data structures, handle empty/missing storage gracefully, and parse JSON without errors."
+            "testStrategy": "Unit test both functions: verify they return correct data structures, handle empty/missing storage gracefully, and parse JSON without errors.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -140,7 +150,8 @@
             ],
             "details": "Within regenerateDay, implement filtering: dayMeals = meals.filter(m => m.date === date); otherMeals = meals.filter(m => m.date !== date). Ensure date comparison uses strict equality and handles various date formats.",
             "status": "pending",
-            "testStrategy": "Unit test filtering with sample meals data: verify correct separation for valid dates, no meals found scenarios, and multiple meals per day."
+            "testStrategy": "Unit test filtering with sample meals data: verify correct separation for valid dates, no meals found scenarios, and multiple meals per day.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -151,7 +162,8 @@
             ],
             "details": "Build async function with fetch to '/api/generate-meal-plan' POST, including body with chatHistory:[], eaters, baseSpecification, regenerateDay, dateForDay, and existingMeals. Handle response parsing, success checks, and error throwing.",
             "status": "pending",
-            "testStrategy": "Mock fetch response: test successful meal generation, error cases, correct parameter serialization, and validation of returned meals array."
+            "testStrategy": "Mock fetch response: test successful meal generation, error cases, correct parameter serialization, and validation of returned meals array.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -163,7 +175,8 @@
             ],
             "details": "Create updatedMeals = [...otherMeals, ...newMeals]; update mealPlan.mealIds = updatedMeals.map(m => m.mealId); set mealPlan.updatedAt; implement saveMeals() and saveCurrentMealPlan() using localStorage.setItem with JSON.stringify.",
             "status": "pending",
-            "testStrategy": "Unit test replacement logic: verify updatedMeals array length and contents, mealIds mapping correctness, timestamp format, and storage persistence."
+            "testStrategy": "Unit test replacement logic: verify updatedMeals array length and contents, mealIds mapping correctness, timestamp format, and storage persistence.",
+            "parentId": "undefined"
           },
           {
             "id": 5,
@@ -175,32 +188,35 @@
             ],
             "details": "Load meals and recipes, collect usedRecipeIds Set from meals.map(m => m.recipeId), filter recipes to keep used or isFavorite ones, then saveRecipes(activeRecipes). Call at end of regenerateDay.",
             "status": "pending",
-            "testStrategy": "Unit test with sample data: verify correct identification of orphans, preservation of favorites and used recipes, accurate filtering, and storage update."
+            "testStrategy": "Unit test with sample data: verify correct identification of orphans, preservation of favorites and used recipes, accurate filtering, and storage update.",
+            "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-26T08:04:37.221Z"
       },
       {
-        "id": 52,
+        "id": "52",
         "title": "Create Meal Plan History Pages",
         "description": "Implement the history page components for viewing past meal plans",
         "details": "Create two new page components: MealPlanHistoryPage for listing all past meal plans, and MealPlanHistoryDetailPage for viewing a specific archived meal plan. The history page should display cards for each archived plan with week range, budget, meal count, and creation date. The detail page should show a read-only view of the past week's meals and shopping list with an 'Archived' badge.\n\nNew Routes:\n- `#/history` → MealPlanHistoryPage\n- `#/history/:planId` → MealPlanHistoryDetailPage\n\nMealPlanHistoryPage should:\n1. Load all past meal plans from localStorage (vanessa_meal_plan_history)\n2. Display them as cards with week range, budget, meal count, creation date\n3. Sort by date (newest first)\n4. Allow clicking a card to navigate to the detail page\n5. Show empty state if no history exists\n\nMealPlanHistoryDetailPage should:\n1. Load the specific archived plan by ID\n2. Show a read-only view similar to the current meal plan view\n3. Display an 'Archived' badge\n4. Include tabs for Weekly View and Shopping List\n5. Disable all edit/regenerate options\n6. Provide a 'Back to History' button\n\nPseudo-code for loading history:\n```javascript\nfunction loadMealPlanHistory() {\n  const historyJson = localStorage.getItem('vanessa_meal_plan_history');\n  return historyJson ? JSON.parse(historyJson) : [];\n}\n\nfunction loadHistoricalPlan(planId) {\n  const history = loadMealPlanHistory();\n  return history.find(plan => plan.mealPlanId === planId);\n}\n```",
         "testStrategy": "1. Unit test the history page components with various data scenarios\n2. Test loading and displaying multiple archived meal plans\n3. Verify sorting of meal plans by date\n4. Test navigation between history list and detail views\n5. Verify that the detail view correctly displays all meal plan data (meals, recipes, shopping list)\n6. Test the read-only nature of the detail view (no edit buttons should be functional)\n7. Verify empty state handling when no history exists\n8. Test responsive design on various screen sizes",
         "priority": "medium",
         "dependencies": [],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-12-26T08:04:37.227Z"
       },
       {
-        "id": 53,
+        "id": "53",
         "title": "Implement Meal Plan Auto-Archive System",
         "description": "Create the system for automatically archiving meal plans when a new plan is created",
         "details": "Implement the auto-archive pattern that saves the current meal plan to history when a new plan is created. The function should create a snapshot of the current plan with all its meals and recipes, add an archivedAt timestamp, and save it to the history array in localStorage. It should also implement a cleanup function to keep only the last N weeks of history to manage storage quota.\n\nData Structure for archived plans:\n```javascript\n{\n  // Same as MealPlan structure\n  mealPlanId: 'plan_20251221',\n  weekOf: '2025-12-21',\n  weekEnd: '2025-12-27',\n  createdAt: '2025-12-21T10:00:00Z',\n  archivedAt: '2025-12-28T10:00:00Z',  // NEW\n  mealIds: [...],\n  budget: {...},\n  // Snapshot of meals and recipes at time of archival\n  mealsSnapshot: [...],     // NEW: frozen copy of meals\n  recipesSnapshot: [...]    // NEW: frozen copy of recipes\n}\n```\n\nPseudo-code for auto-archive:\n```javascript\nfunction saveNewMealPlan(newMealPlan) {\n  // 1. Get current meal plan\n  const current = loadCurrentMealPlan();\n  \n  if (current) {\n    // 2. Create snapshot with meals and recipes\n    const meals = loadMeals();\n    const recipes = loadRecipes();\n    const mealRecipeIds = meals.map(m => m.recipeId);\n    const usedRecipes = recipes.filter(r => mealRecipeIds.includes(r.recipeId));\n    \n    const archived = {\n      ...current,\n      archivedAt: new Date().toISOString(),\n      mealsSnapshot: meals,\n      recipesSnapshot: usedRecipes\n    };\n    \n    // 3. Add to history\n    addToHistory(archived);\n    \n    // 4. Cleanup old history (keep last 4 weeks)\n    cleanupHistory(getHistoryRetentionWeeks());\n  }\n  \n  // 5. Save new plan as current\n  saveCurrentMealPlan(newMealPlan);\n}\n\nfunction addToHistory(archivedPlan) {\n  const history = loadMealPlanHistory();\n  history.push(archivedPlan);\n  saveMealPlanHistory(history);\n}\n\nfunction cleanupHistory(keepWeeks = 4) {\n  const history = loadMealPlanHistory();\n  \n  // Sort by archivedAt (newest first)\n  history.sort((a, b) => new Date(b.archivedAt) - new Date(a.archivedAt));\n  \n  // Keep only last N weeks\n  const kept = history.slice(0, keepWeeks);\n  \n  saveMealPlanHistory(kept);\n  \n  return {\n    kept: kept.length,\n    removed: history.length - kept.length\n  };\n}\n\nfunction getHistoryRetentionWeeks() {\n  const baseSpec = loadBaseSpecification();\n  return baseSpec.historyRetentionWeeks || 4; // Default to 4 weeks\n}\n```",
         "testStrategy": "1. Unit test the saveNewMealPlan function with various scenarios\n2. Test the archiving process to ensure all data is correctly captured in the snapshot\n3. Verify that the archivedAt timestamp is set correctly\n4. Test the cleanup function with different retention settings\n5. Verify that the oldest plans are removed when the history exceeds the retention limit\n6. Test storage quota management by simulating limited localStorage\n7. Integration test with the meal plan generation flow to verify automatic archiving\n8. Test edge cases like archiving when no current plan exists",
         "priority": "medium",
         "dependencies": [
-          52
+          "52"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -209,7 +225,8 @@
             "dependencies": [],
             "details": "Implement logic to load current meal plan, conditionally create archive snapshot if current exists, call addToHistory and cleanupHistory, then save the new meal plan using provided pseudo-code structure.",
             "status": "pending",
-            "testStrategy": "Unit test with scenarios: no current plan (no archive), with current plan (archive created), verify new plan saved correctly after archive."
+            "testStrategy": "Unit test with scenarios: no current plan (no archive), with current plan (archive created), verify new plan saved correctly after archive.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -220,7 +237,8 @@
             ],
             "details": "Load meals and recipes from storage, filter usedRecipes by meal recipeIds, create archived object by spreading current plan properties, adding archivedAt: new Date().toISOString(), mealsSnapshot, and recipesSnapshot.",
             "status": "pending",
-            "testStrategy": "Test snapshot creation: verify mealsSnapshot matches current meals, recipesSnapshot only includes used recipes, archivedAt is valid ISO timestamp."
+            "testStrategy": "Test snapshot creation: verify mealsSnapshot matches current meals, recipesSnapshot only includes used recipes, archivedAt is valid ISO timestamp.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -231,7 +249,8 @@
             ],
             "details": "Define loadMealPlanHistory() and saveMealPlanHistory(history) using localStorage with appropriate keys, implement addToHistory to push new archived plan and persist.",
             "status": "pending",
-            "testStrategy": "Test addToHistory: verify history array grows correctly, archived plan appended with correct data, localStorage persists accurately."
+            "testStrategy": "Test addToHistory: verify history array grows correctly, archived plan appended with correct data, localStorage persists accurately.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -242,32 +261,35 @@
             ],
             "details": "Implement cleanupHistory(keepWeeks=4): load history, sort descending by archivedAt, slice(0, keepWeeks), save kept plans, return {kept, removed} counts; integrate getHistoryRetentionWeeks() from baseSpec.",
             "status": "pending",
-            "testStrategy": "Test cleanup: with 10 entries verify keeps exactly N newest, sorts correctly by date, returns accurate kept/removed counts, handles empty history."
+            "testStrategy": "Test cleanup: with 10 entries verify keeps exactly N newest, sorts correctly by date, returns accurate kept/removed counts, handles empty history.",
+            "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-26T08:04:37.232Z"
       },
       {
-        "id": 54,
+        "id": "54",
         "title": "Implement History Retention Settings",
         "description": "Add settings for controlling meal plan history retention and manual cleanup",
         "details": "Enhance the Settings page to include options for history retention. Add a 'History Retention' setting in the Meal Planning section with a dropdown to select how many weeks of history to keep (1, 2, 4, 8, or 12 weeks, with 4 as the default). Also add a manual cleanup button to allow users to immediately clean up old plans. Show the storage impact in the quota monitor.\n\nSettings Integration:\n1. Add 'History Retention' setting to Settings → Meal Planning section\n2. Create dropdown with options: 1, 2, 4, 8, 12 weeks (default: 4)\n3. Add 'Clean Up Old Plans' button with confirmation dialog\n4. Update BaseSpecification to include historyRetentionWeeks property\n5. Show storage usage information in quota monitor\n\nPseudo-code for settings integration:\n```javascript\nfunction updateHistoryRetention(weeks) {\n  const baseSpec = loadBaseSpecification();\n  baseSpec.historyRetentionWeeks = weeks;\n  saveBaseSpecification(baseSpec);\n  \n  // Run cleanup with new retention setting\n  const result = cleanupHistory(weeks);\n  \n  return result;\n}\n\nfunction manualCleanup() {\n  const weeks = getHistoryRetentionWeeks();\n  return cleanupHistory(weeks);\n}\n\nfunction calculateHistoryStorageUsage() {\n  const history = loadMealPlanHistory();\n  const historyJson = JSON.stringify(history);\n  \n  return {\n    items: history.length,\n    bytes: new Blob([historyJson]).size,\n    percentage: calculatePercentageOfQuota(historyJson.length)\n  };\n}\n```\n\nUI Components:\n1. Add History Retention setting with dropdown\n2. Add Clean Up button with confirmation dialog\n3. Show storage usage in quota monitor section\n4. Add info tooltip explaining history retention",
         "testStrategy": "1. Unit test the updateHistoryRetention function with different week values\n2. Test the manualCleanup function and verify it removes the correct plans\n3. Verify that changing the retention setting immediately applies the new limit\n4. Test the storage usage calculation to ensure accurate reporting\n5. Verify that the settings are correctly saved and loaded from localStorage\n6. Test the confirmation dialog for manual cleanup\n7. Integration test with the history page to verify changes are reflected\n8. Test edge cases like setting retention to 1 week when multiple weeks exist",
         "priority": "low",
         "dependencies": [
-          53
+          "53"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-12-26T08:04:37.235Z"
       },
       {
-        "id": 55,
+        "id": "55",
         "title": "Create Recipe Import API Endpoint",
         "description": "Implement the API endpoint for extracting structured recipe data from raw text",
         "details": "Create a new API endpoint /api/extract-recipe that accepts raw recipe text and uses AI to extract structured recipe data. The endpoint should validate the input text, send it to the AI model with an appropriate system prompt, parse the response, and return a structured recipe object or an error if extraction fails.\n\nAPI Endpoint Specification:\n- Route: POST /api/extract-recipe\n- Request body: { text: string } (max 5000 chars)\n- Response: { success: true, recipe: {...} } or { success: false, error: string }\n\nSystem Prompt for Extraction:\n```\nYou are a recipe extraction assistant. Extract structured recipe data from the following text.\n\nCRITICAL: Return ONLY valid JSON in this exact format:\n{\n  \"name\": \"Recipe Name\",\n  \"ingredients\": [\n    {\n      \"name\": \"ingredient name\",\n      \"quantity\": number,\n      \"unit\": \"g\" | \"ml\" | \"whole\",\n      \"category\": \"produce\" | \"meat\" | \"dairy\" | \"pantry\" | \"other\"\n    }\n  ],\n  \"instructions\": \"Clear step-by-step instructions\",\n  \"prepTime\": number (minutes),\n  \"cookTime\": number (minutes),\n  \"servings\": number,\n  \"tags\": [\"tag1\", \"tag2\"]\n}\n\nGuidelines:\n- Convert ALL quantities to metric (grams, milliliters, or whole items)\n- If missing data, use reasonable defaults\n- Instructions should be clear, numbered steps\n- Tags: extract cuisine, dietary info, cooking method\n- Category: classify each ingredient\n- If text is not a recipe, return {\"error\": \"NOT_A_RECIPE\"}\n\nInput text:\n{user_pasted_text}\n```\n\nPseudo-code for API implementation:\n```javascript\nasync function extractRecipe(req, res) {\n  try {\n    const { text } = req.body;\n    \n    // Validate input\n    if (!text || text.length < 50) {\n      return res.status(400).json({\n        success: false,\n        error: 'TEXT_TOO_SHORT',\n        message: 'Please provide a complete recipe (at least 50 characters)'\n      });\n    }\n    \n    if (text.length > 5000) {\n      return res.status(400).json({\n        success: false,\n        error: 'TEXT_TOO_LONG',\n        message: 'Text is too long. Please paste one recipe at a time.'\n      });\n    }\n    \n    // Create system prompt\n    const systemPrompt = `You are a recipe extraction assistant...`;\n    \n    // Call AI model\n    const aiResponse = await callAIModel(systemPrompt, text);\n    \n    // Parse response\n    try {\n      const extractedRecipe = JSON.parse(aiResponse);\n      \n      // Check if AI detected this is not a recipe\n      if (extractedRecipe.error === 'NOT_A_RECIPE') {\n        return res.status(400).json({\n          success: false,\n          error: 'NOT_A_RECIPE',\n          message: 'This doesn\\'t look like a recipe. Please check the text and try again.'\n        });\n      }\n      \n      // Validate extracted data\n      const validationResult = validateExtractedRecipe(extractedRecipe);\n      if (!validationResult.valid) {\n        return res.status(422).json({\n          success: false,\n          error: 'EXTRACTION_FAILED',\n          message: validationResult.message,\n          partialData: extractedRecipe\n        });\n      }\n      \n      // Calculate confidence score based on completeness\n      const confidence = calculateConfidence(extractedRecipe);\n      extractedRecipe.confidence = confidence;\n      \n      return res.json({\n        success: true,\n        recipe: extractedRecipe\n      });\n    } catch (parseError) {\n      return res.status(422).json({\n        success: false,\n        error: 'INVALID_AI_RESPONSE',\n        message: 'Failed to parse AI response'\n      });\n    }\n  } catch (error) {\n    return res.status(500).json({\n      success: false,\n      error: 'SERVER_ERROR',\n      message: 'An unexpected error occurred'\n    });\n  }\n}\n```",
         "testStrategy": "1. Unit test the API endpoint with various input texts (valid recipes, non-recipes, edge cases)\n2. Test input validation for text length (too short, too long)\n3. Mock the AI model call and test parsing of different response formats\n4. Test error handling for various failure scenarios (invalid AI response, not a recipe)\n5. Verify confidence score calculation with different levels of recipe completeness\n6. Test extraction quality with real recipe texts from various sources (blogs, cookbooks, etc.)\n7. Performance test with large recipe texts approaching the 5000 character limit\n8. Integration test with the frontend to verify end-to-end functionality",
         "priority": "high",
         "dependencies": [],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -276,7 +298,8 @@
             "dependencies": [],
             "details": "Implement validateExtractedRecipe() function using a schema library like Joi or Zod. Validate name (string), ingredients array (each with name, quantity number, unit enum, category enum), instructions string, prepTime/cookTime/servings numbers, tags array. Return {valid: boolean, message: string} on failure.",
             "status": "pending",
-            "testStrategy": "Unit test validation with valid recipe, missing fields, invalid types, invalid enums, empty arrays, malformed data"
+            "testStrategy": "Unit test validation with valid recipe, missing fields, invalid types, invalid enums, empty arrays, malformed data",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -285,7 +308,8 @@
             "dependencies": [],
             "details": "Implement callAIModel(systemPrompt, userText) that constructs full prompt with the exact system prompt template, calls your AI provider (OpenAI/Groq/etc.), returns raw response string. Include proper error handling for API failures and timeouts.",
             "status": "pending",
-            "testStrategy": "Mock AI provider, test with valid/invalid prompts, test timeout handling, test rate limit errors, verify prompt construction matches template"
+            "testStrategy": "Mock AI provider, test with valid/invalid prompts, test timeout handling, test rate limit errors, verify prompt construction matches template",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -296,7 +320,8 @@
             ],
             "details": "Implement calculateConfidence(recipe) returning 0-100 score. Factors: ingredient completeness (80%+ weight), presence of times/servings (10%), instruction length/quality (5%), tag count (5%). Use thresholds for partial credit on missing fields.",
             "status": "pending",
-            "testStrategy": "Test complete recipes (100), missing ingredients (60), no times (40), minimal data (20), invalid data (0), edge cases with empty fields"
+            "testStrategy": "Test complete recipes (100), missing ingredients (60), no times (40), minimal data (20), invalid data (0), edge cases with empty fields",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -309,7 +334,8 @@
             ],
             "details": "Set up POST /api/extract-recipe route. Implement input validation (50-5000 chars), call AI model, JSON.parse response, handle NOT_A_RECIPE error, validate data, add confidence score, return structured success/error responses per spec.",
             "status": "pending",
-            "testStrategy": "Integration test full flow with Supertest: valid recipe text, too short/long text, NOT_A_RECIPE response, parse failures, validation failures"
+            "testStrategy": "Integration test full flow with Supertest: valid recipe text, too short/long text, NOT_A_RECIPE response, parse failures, validation failures",
+            "parentId": "undefined"
           },
           {
             "id": 5,
@@ -320,7 +346,8 @@
             ],
             "details": "Add Winston/Morgan logging for requests, AI calls, errors. Standardize all error responses with success:false, error:ENUM_CODE, message:string. Handle AI timeouts, network errors, JSON parse failures, server crashes. Include request ID for debugging.",
             "status": "pending",
-            "testStrategy": "Test all error paths: 400 (validation), 422 (extraction/parse), 500 (server), verify log output contains request IDs and error details"
+            "testStrategy": "Test all error paths: 400 (validation), 422 (extraction/parse), 500 (server), verify log output contains request IDs and error details",
+            "parentId": "undefined"
           },
           {
             "id": 6,
@@ -332,28 +359,35 @@
             ],
             "details": "Write Jest tests for validation (10+ cases), AI mock (5+ cases), confidence calc (8+ cases), full endpoint (15+ cases incl edge cases). Add Swagger/OpenAPI docs with request/response examples, error codes. Include Postman collection.",
             "status": "pending",
-            "testStrategy": "Run full test suite achieving 95%+ coverage. Test coverage includes happy path, all error conditions, malformed AI responses, network failures, validates all response formats match spec"
+            "testStrategy": "Run full test suite achieving 95%+ coverage. Test coverage includes happy path, all error conditions, malformed AI responses, network failures, validates all response formats match spec",
+            "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2025-12-26T08:04:37.240Z"
       },
       {
-        "id": 56,
+        "id": "56",
         "title": "Implement Recipe Import Modal and UI",
         "description": "Create the modal and UI components for importing recipes from text",
         "details": "Implement the RecipeImportModal component with three steps: method selection, text input, and preview/edit. The modal should allow users to paste recipe text, send it to the API for extraction, preview the extracted data, edit if needed, and save to the recipe library.\n\nRecipeImportModal Component:\n1. Step 1: Method Selection\n   - Radio buttons: \"Import from Text\" (enabled), \"Create Manually\" (disabled)\n   - Help text explaining the import process\n2. Step 2: Paste Text\n   - Large textarea (10 rows) with character counter\n   - Placeholder text and instructions\n   - \"Cancel\" and \"Import\" buttons\n   - Loading state during extraction\n3. Step 3: Preview & Edit\n   - Show extracted recipe in editable form\n   - All fields editable (same as RecipeEditPage form)\n   - Confidence indicator\n   - Warning for low confidence (<70%)\n   - \"Discard\" and \"Save to Library\" buttons\n\nUI Integration:\n- Add \"+ Add Recipe\" button to RecipeLibraryPage header\n- Button opens RecipeImportModal\n- Mobile: Floating action button (FAB)\n- Desktop: Primary button in header\n\nPseudo-code for RecipeImportModal:\n```javascript\nclass RecipeImportModal extends Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      step: 1, // 1: Method, 2: Paste, 3: Preview\n      method: 'import', // 'import' or 'manual'\n      text: '',\n      loading: false,\n      extractedRecipe: null,\n      error: null,\n      editedRecipe: null\n    };\n  }\n  \n  handleTextChange = (e) => {\n    this.setState({ text: e.target.value });\n  }\n  \n  handleImport = async () => {\n    this.setState({ loading: true, error: null });\n    \n    try {\n      const response = await fetch('/api/extract-recipe', {\n        method: 'POST',\n        headers: {\n          'Content-Type': 'application/json'\n        },\n        body: JSON.stringify({ text: this.state.text })\n      });\n      \n      const data = await response.json();\n      \n      if (data.success) {\n        this.setState({\n          extractedRecipe: data.recipe,\n          editedRecipe: data.recipe, // Copy for editing\n          step: 3,\n          loading: false\n        });\n      } else {\n        this.setState({\n          error: data.message || 'Failed to extract recipe',\n          loading: false\n        });\n      }\n    } catch (error) {\n      this.setState({\n        error: 'Connection error. Please check your internet and try again.',\n        loading: false\n      });\n    }\n  }\n  \n  handleSave = () => {\n    const recipe = {\n      recipeId: `recipe_${crypto.randomUUID()}`,\n      ...this.state.editedRecipe,\n      source: 'imported',\n      isFavorite: false,\n      rating: null,\n      timesCooked: 0,\n      lastCooked: null,\n      createdAt: new Date().toISOString(),\n      updatedAt: new Date().toISOString()\n    };\n    \n    const result = saveImportedRecipe(recipe);\n    \n    if (result.success) {\n      this.props.onSuccess(recipe);\n      this.props.onClose();\n    } else {\n      this.setState({ error: result.error });\n    }\n  }\n  \n  render() {\n    // Render different content based on this.state.step\n  }\n}\n```",
         "testStrategy": "1. Unit test the RecipeImportModal component with various state combinations\n2. Test the text input validation (character limits, empty text)\n3. Mock the API call and test handling of success and error responses\n4. Test the preview/edit functionality with different extracted recipes\n5. Verify the confidence indicator displays correctly based on the confidence score\n6. Test the save functionality and verify the recipe is correctly added to the library\n7. Test responsive design on various screen sizes\n8. Verify accessibility of the modal (keyboard navigation, screen reader support)",
         "priority": "medium",
         "dependencies": [
-          55
+          "55"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-12-26T08:04:37.245Z"
       }
     ],
     "metadata": {
-      "created": "2025-12-26T03:21:10.717Z",
-      "updated": "2025-12-26T03:21:10.717Z",
-      "description": "Tasks for master context"
+      "version": "1.0.0",
+      "lastModified": "2025-12-26T08:04:37.247Z",
+      "taskCount": 10,
+      "completedCount": 10,
+      "tags": [
+        "master"
+      ]
     }
   }
 }
