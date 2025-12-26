@@ -5,6 +5,7 @@
  */
 
 import { loadCurrentMealPlan, loadMeals, loadRecipes } from '../utils/storage.js';
+import { importDevPreset } from '../utils/devPresets.js';
 
 export class HomePage {
   constructor() {
@@ -51,11 +52,9 @@ export class HomePage {
       content.appendChild(this.renderHeroView());
     }
 
-    // Add debug export button if meal plan exists
-    if (this.mealPlan) {
-      const debugSection = this.createDebugSection();
-      content.appendChild(debugSection);
-    }
+    // Add debug section (always visible for dev preset import)
+    const debugSection = this.createDebugSection();
+    content.appendChild(debugSection);
 
     // Add to main container
     container.appendChild(content);
@@ -68,18 +67,72 @@ export class HomePage {
    */
   createDebugSection() {
     const section = document.createElement('div');
-    section.className = 'mt-8 text-center';
+    section.className = 'mt-8 flex justify-center gap-4 flex-wrap';
 
-    const exportButton = document.createElement('button');
-    exportButton.className = `
-      bg-gray-300 hover:bg-gray-400 text-gray-700 font-medium
+    // Import dev preset button (always enabled)
+    const importButton = document.createElement('button');
+    importButton.className = `
+      bg-purple-300 hover:bg-purple-400 text-purple-900 font-medium
       py-2 px-6 rounded-lg transition-colors text-sm
     `.trim().replace(/\s+/g, ' ');
-    exportButton.innerHTML = '📥 Export Raw AI Output';
-    exportButton.addEventListener('click', (e) => this.exportRawOutput(e.target));
+    importButton.innerHTML = '🔧 Import Dev Preset';
+    importButton.addEventListener('click', (e) => this.importDevPreset(e.target));
+    section.appendChild(importButton);
 
-    section.appendChild(exportButton);
+    // Export button (only if meal plan exists)
+    if (this.mealPlan) {
+      const exportButton = document.createElement('button');
+      exportButton.className = `
+        bg-gray-300 hover:bg-gray-400 text-gray-700 font-medium
+        py-2 px-6 rounded-lg transition-colors text-sm
+      `.trim().replace(/\s+/g, ' ');
+      exportButton.innerHTML = '📥 Export Raw AI Output';
+      exportButton.addEventListener('click', (e) => this.exportRawOutput(e.target));
+      section.appendChild(exportButton);
+    }
+
     return section;
+  }
+
+  /**
+   * Import development preset (base spec + sample meal plan)
+   */
+  importDevPreset(buttonElement) {
+    try {
+      // Show loading state
+      if (buttonElement) {
+        const originalText = buttonElement.innerHTML;
+        buttonElement.innerHTML = '⏳ Loading...';
+        buttonElement.disabled = true;
+        
+        // Small delay to show loading state
+        setTimeout(() => {
+          const result = importDevPreset();
+          
+          if (result.success) {
+            console.log('✅ Dev preset imported:', result.message);
+            buttonElement.innerHTML = '✅ Loaded!';
+            
+            // Reload the page to show imported data
+            setTimeout(() => {
+              window.location.reload();
+            }, 1000);
+          } else {
+            console.error('❌ Import failed:', result.error);
+            alert('Failed to import dev preset: ' + result.error);
+            buttonElement.innerHTML = originalText;
+            buttonElement.disabled = false;
+          }
+        }, 100);
+      }
+    } catch (error) {
+      console.error('Error importing dev preset:', error);
+      alert('Error importing dev preset. Check console for details.');
+      if (buttonElement) {
+        buttonElement.innerHTML = '🔧 Import Dev Preset';
+        buttonElement.disabled = false;
+      }
+    }
   }
 
   /**
@@ -318,7 +371,7 @@ export class HomePage {
 
     // Days container
     const daysContainer = document.createElement('div');
-    daysContainer.className = 'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3';
+    daysContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4';
 
     // Get unique dates from meals to determine which days exist
     const dates = [...new Set(this.meals.map(m => m.date))].sort();
@@ -341,10 +394,10 @@ export class HomePage {
         dayButton.className = `
           bg-gradient-to-r from-blue-400 to-indigo-400
           hover:from-blue-500 hover:to-indigo-500
-          text-white font-semibold py-4 px-4 rounded-lg
-          shadow-md hover:shadow-lg
+          text-white font-bold py-5 px-8 rounded-lg
+          shadow-lg hover:shadow-xl
           transition-all transform hover:scale-105
-          text-center
+          text-center text-xl
         `.trim().replace(/\s+/g, ' ');
         
         dayButton.textContent = day;
@@ -355,9 +408,9 @@ export class HomePage {
         // Disabled style for days not in meal plan
         dayButton.className = `
           bg-gray-200 text-gray-400
-          font-semibold py-4 px-4 rounded-lg
+          font-bold py-5 px-8 rounded-lg
           shadow-sm cursor-not-allowed
-          text-center
+          text-center text-xl
         `.trim().replace(/\s+/g, ' ');
         
         dayButton.textContent = day;
