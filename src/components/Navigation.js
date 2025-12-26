@@ -35,6 +35,7 @@ export class Navigation {
 
     const navItems = [
       { path: '/', label: 'Home', icon: '🏠' },
+      { path: '/meal-plan', label: 'Meal Plan', icon: '📋' },
       { path: '/recipes', label: 'Recipes', icon: '📖' },
       { path: '/shopping-list', label: 'Shopping', icon: '🛒' },
       { path: '/settings', label: 'Settings', icon: '⚙️' }
