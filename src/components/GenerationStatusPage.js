@@ -4,7 +4,7 @@
  */
 
 import { ErrorHandler } from '../utils/errorHandler.js';
-import { loadEaters, loadBaseSpecification, saveRecipes, saveMeals, saveNewMealPlan } from '../utils/storage.js';
+import { loadEaters, loadBaseSpecification, loadMeals, saveRecipes, saveMeals, saveNewMealPlan } from '../utils/storage.js';
 import { transformGeneratedPlan } from '../utils/mealPlanTransformer.js';
 
 export class GenerationStatusPage {
