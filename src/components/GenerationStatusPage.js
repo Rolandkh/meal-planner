@@ -4,7 +4,7 @@
  */
 
 import { ErrorHandler } from '../utils/errorHandler.js';
-import { loadEaters, loadBaseSpecification, loadMeals, saveRecipes, saveMeals, saveNewMealPlan } from '../utils/storage.js';
+import { loadEaters, loadBaseSpecification, loadMeals, loadRecipes, saveRecipes, saveMeals, saveNewMealPlan, saveCurrentMealPlan } from '../utils/storage.js';
 import { transformGeneratedPlan } from '../utils/mealPlanTransformer.js';
 
 export class GenerationStatusPage {
@@ -14,6 +14,8 @@ export class GenerationStatusPage {
     this.message = 'Initializing meal plan generation...';
     this.abortController = null;
     this.container = null;
+    this.isSingleDayRegeneration = false; // Track if regenerating single day
+    this.regeneratingDate = null; // Store the date being regenerated
     
     console.log('GenerationStatusPage initialized');
   }
@@ -168,6 +170,10 @@ export class GenerationStatusPage {
       if (regenerateDay && regenerateDate) {
         console.log(`Regenerating single day: ${regenerateDay} (${regenerateDate})`);
         
+        // Store for later use in handleComplete
+        this.isSingleDayRegeneration = true;
+        this.regeneratingDate = regenerateDate;
+        
         const meals = loadMeals();
         const existingMeals = meals.filter(m => m.date !== regenerateDate);
         
@@ -321,11 +327,53 @@ export class GenerationStatusPage {
         mealPlanId: transformed.mealPlan.mealPlanId
       });
 
+      // CRITICAL FIX: For single-day regeneration, merge with existing meals
+      let mealsToSave = transformed.meals;
+      let recipesToSave = transformed.recipes;
+      
+      if (this.isSingleDayRegeneration && this.regeneratingDate) {
+        console.log(`🔄 Single-day regeneration: merging with existing meals`);
+        
+        // Load existing meals and filter out the regenerated day
+        const existingMeals = loadMeals();
+        const otherDayMeals = existingMeals.filter(m => m.date !== this.regeneratingDate);
+        
+        // Merge: keep other days + new day
+        mealsToSave = [...otherDayMeals, ...transformed.meals];
+        
+        console.log(`✅ Preserved ${otherDayMeals.length} meals from other days, added ${transformed.meals.length} new meals`);
+        
+        // Also merge recipes (avoid duplicates)
+        const existingRecipes = loadRecipes();
+        const recipeMap = new Map();
+        
+        // Add existing recipes first
+        existingRecipes.forEach(r => {
+          recipeMap.set(r.recipeId, r);
+        });
+        
+        // Add new recipes (may override if same ID)
+        transformed.recipes.forEach(r => {
+          recipeMap.set(r.recipeId, r);
+        });
+        
+        recipesToSave = Array.from(recipeMap.values());
+      }
+
+      // Update meal plan mealIds to include all meals (for single-day regen)
+      if (this.isSingleDayRegeneration) {
+        // Update mealIds to include all meals (old + new)
+        transformed.mealPlan.mealIds = mealsToSave.map(m => m.mealId);
+        console.log(`📝 Updated meal plan with ${transformed.mealPlan.mealIds.length} total meal IDs`);
+      }
+
       // Save to localStorage
       const saveResults = {
-        recipes: saveRecipes(transformed.recipes),
-        meals: saveMeals(transformed.meals),
-        mealPlan: saveNewMealPlan(transformed.mealPlan) // Slice 4: Auto-archive old plan
+        recipes: saveRecipes(recipesToSave),
+        meals: saveMeals(mealsToSave),
+        mealPlan: this.isSingleDayRegeneration 
+          ? saveCurrentMealPlan(transformed.mealPlan) // Update existing plan
+          : saveNewMealPlan(transformed.mealPlan) // Create new plan (archives old)
       };
 
       // Check for any save failures

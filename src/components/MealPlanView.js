@@ -323,12 +323,12 @@ export class MealPlanView {
           <p class="text-blue-100">${dayDate}</p>
         </div>
         <button
-          class="regenerate-day-btn hover:bg-white/20 p-2 rounded-lg transition-colors"
+          class="make-changes-btn hover:bg-white/20 p-2 rounded-lg transition-colors"
           data-date="${date}"
           data-day-name="${dayName}"
-          title="Regenerate this day"
+          title="Make changes to this day"
         >
-          <span class="text-2xl">🔄</span>
+          <span class="text-2xl">✏️</span>
         </button>
       </div>
     `;
@@ -453,95 +453,48 @@ export class MealPlanView {
    * Cleanup
    */
   /**
-   * Attach event listeners after render (Slice 4: Task 50)
+   * Attach event listeners after render (Task 58: Updated for conversational workflow)
    */
   afterRender() {
-    // Add event listeners to all regenerate day buttons
-    const regenerateButtons = document.querySelectorAll('.regenerate-day-btn');
-    regenerateButtons.forEach(btn => {
+    // Add event listeners to all make changes buttons
+    const makeChangesButtons = document.querySelectorAll('.make-changes-btn');
+    makeChangesButtons.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation(); // Prevent card click
         const date = btn.dataset.date;
         const dayName = btn.dataset.dayName;
-        this.showRegenerateModal(date, dayName);
+        this.openChatForDayChanges(date, dayName);
       });
     });
   }
 
   /**
-   * Show regenerate day confirmation modal (Slice 4: Task 50)
+   * Task 58: Open chat with day-specific context for conversational changes
+   * @param {string} date - Date in YYYY-MM-DD format
+   * @param {string} dayName - Day name (e.g., "Monday")
    */
-  showRegenerateModal(date, dayName) {
+  openChatForDayChanges(date, dayName) {
     const meals = this.meals.filter(m => m.date === date);
     
-    // Create modal overlay
-    const overlay = document.createElement('div');
-    overlay.id = 'regenerate-modal-overlay';
-    overlay.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    // Build context about current meals
+    const mealsContext = meals.map(m => {
+      const recipe = this.getRecipe(m.recipeId);
+      return `${m.mealType.charAt(0).toUpperCase() + m.mealType.slice(1)}: ${recipe?.name || 'Unknown'}`;
+    }).join(', ');
     
-    // Create modal
-    const modal = document.createElement('div');
-    modal.className = 'bg-white rounded-lg shadow-xl max-w-md w-full p-6';
-    modal.innerHTML = `
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">
-        Regenerate ${dayName}?
-      </h2>
-      
-      <p class="text-gray-700 mb-4">
-        This will create 3 new meals (breakfast, lunch, dinner) for ${dayName}.
-      </p>
-      
-      <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
-        <p class="text-sm font-medium text-amber-900 mb-2">Current meals that will be replaced:</p>
-        <ul class="text-sm text-amber-800 space-y-1">
-          ${meals.map(m => {
-            const recipe = this.getRecipe(m.recipeId);
-            return `<li>• ${m.mealType.charAt(0).toUpperCase() + m.mealType.slice(1)}: ${recipe?.name || 'Unknown'}</li>`;
-          }).join('')}
-        </ul>
-      </div>
-      
-      <div class="flex items-center justify-end space-x-4">
-        <button
-          id="modal-cancel-btn"
-          class="px-6 py-2 text-gray-700 hover:bg-gray-100 border border-gray-300 rounded-lg font-medium transition-colors"
-        >
-          Cancel
-        </button>
-        <button
-          id="modal-confirm-btn"
-          class="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors"
-        >
-          Regenerate
-        </button>
-      </div>
-    `;
-    
-    overlay.appendChild(modal);
-    document.body.appendChild(overlay);
-    
-    // Event listeners
-    const cancelBtn = document.getElementById('modal-cancel-btn');
-    const confirmBtn = document.getElementById('modal-confirm-btn');
-    
-    cancelBtn.addEventListener('click', () => {
-      overlay.remove();
-    });
-    
-    confirmBtn.addEventListener('click', () => {
-      overlay.remove();
-      // Navigate to generation page with regenerate params
-      sessionStorage.setItem('regenerate_day', dayName.toLowerCase());
-      sessionStorage.setItem('regenerate_date', date);
-      window.location.hash = '#/generating';
-    });
-    
-    // Close on overlay click
-    overlay.addEventListener('click', (e) => {
-      if (e.target === overlay) {
-        overlay.remove();
+    // Dispatch event to open chat with day context
+    document.dispatchEvent(new CustomEvent('toggle-chat', {
+      detail: {
+        open: true,
+        dayContext: {
+          dayName: dayName.toLowerCase(),
+          dayNameCapitalized: dayName,
+          date: date,
+          meals: meals,
+          mealsContext: mealsContext
+        }
       }
-    });
+    }));
   }
 
   destroy() {

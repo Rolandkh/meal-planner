@@ -193,7 +193,7 @@ export class ChatWidget {
     inputForm.appendChild(this.messageInput);
     inputForm.appendChild(this.sendButton);
     
-    // Create Generate Week button (below input)
+    // Create Generate button (context-aware: Week or Day)
     this.generateButton = document.createElement('button');
     this.generateButton.className = `
       w-full bg-gradient-to-r from-emerald-400 to-teal-400
@@ -203,8 +203,7 @@ export class ChatWidget {
       shadow-md hover:shadow-lg
       disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
     `.trim().replace(/\s+/g, ' ');
-    this.generateButton.innerHTML = '<span class="button-text">✨ Generate Week</span>';
-    this.generateButton.setAttribute('aria-label', 'Generate your weekly meal plan');
+    this.updateGenerateButtonText(); // Set initial text based on context
     this.generateButton.addEventListener('click', () => this.handleGenerateWeek());
 
     inputArea.appendChild(inputForm);
@@ -501,6 +500,28 @@ Just tell me what you'd like to do.`
     // Store day context in a temporary variable for regeneration
     sessionStorage.setItem('regenerate_day', this.dayContext.dayName);
     sessionStorage.setItem('regenerate_date', this.dayContext.date);
+    
+    // Update button text since we're now in day-regeneration mode
+    this.updateGenerateButtonText();
+  }
+
+  /**
+   * Update Generate button text based on context
+   */
+  updateGenerateButtonText() {
+    if (!this.generateButton) return;
+    
+    const regenerateDay = sessionStorage.getItem('regenerate_day');
+    
+    if (regenerateDay) {
+      // Single-day regeneration mode
+      this.generateButton.innerHTML = '<span class="button-text">✨ Generate</span>';
+      this.generateButton.setAttribute('aria-label', 'Generate meals for this day');
+    } else {
+      // Full week generation mode
+      this.generateButton.innerHTML = '<span class="button-text">✨ Generate Week</span>';
+      this.generateButton.setAttribute('aria-label', 'Generate your weekly meal plan');
+    }
   }
 
   /**
@@ -521,10 +542,7 @@ Just tell me what you'd like to do.`
   resetGenerateButton() {
     this.isGenerating = false;
     this.generateButton.disabled = false;
-    const buttonText = this.generateButton.querySelector('.button-text');
-    if (buttonText) {
-      buttonText.innerHTML = '✨ Generate Week';
-    }
+    this.updateGenerateButtonText(); // Reset to context-appropriate text
     console.log('Generate button reset');
   }
 
