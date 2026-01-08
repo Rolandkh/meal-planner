@@ -64,6 +64,15 @@ Guidelines:
 - Use 3-6 main ingredients per recipe (keep it simple)
 - Focus on practical, quick recipes
 
+RECIPE SELECTION STRATEGY (Slice 5):
+- The user has a LOCAL CATALOG of 607 professionally-tested recipes with health scores
+- PREFER selecting recipes from common cuisines that are likely in the catalog: Italian, Mexican, Chinese, Indian, Thai, Mediterranean, American
+- PREFER recipes that match common dietary patterns: vegetarian, vegan, gluten-free, keto
+- Examples of catalog-style recipes: "Chicken Tikka Masala", "Spaghetti Carbonara", "Greek Salad", "Vegetable Stir Fry", "Lentil Soup"
+- When creating recipes, use SIMPLE, COMMON recipe names that might exist in a standard recipe database
+- Avoid overly creative or unique recipe names - stick to classics and standards
+- The system will match your recipes to the catalog when possible to use pre-scored health data
+
 CRITICAL - Servings:
 - CAREFULLY READ THE CONVERSATION to understand household composition and schedule
 - Each meal's servings MUST match who is present for that specific meal

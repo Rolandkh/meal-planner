@@ -11,6 +11,7 @@ import {
   loadEaters,
   loadBaseSpecification 
 } from './storage.js';
+import { getRecipeCatalogSync } from './catalogStorage.js';
 
 /**
  * Create a hash for recipe deduplication
@@ -34,18 +35,56 @@ function createRecipeHash(recipe) {
 }
 
 /**
+ * Try to match a recipe name to catalog (Slice 5)
+ * @param {string} recipeName - Recipe name from Claude
+ * @param {Array} catalog - Catalog recipes
+ * @returns {Object|null} Catalog recipe or null
+ */
+function matchCatalogRecipe(recipeName, catalog) {
+  if (!recipeName || !catalog || catalog.length === 0) return null;
+  
+  const searchName = recipeName.toLowerCase().trim();
+  
+  // Exact match
+  let match = catalog.find(r => r.name.toLowerCase() === searchName);
+  if (match) {
+    console.log(`  ✅ Catalog match (exact): "${recipeName}" → "${match.name}"`);
+    return match;
+  }
+  
+  // Fuzzy match (contains)
+  match = catalog.find(r => {
+    const catalogName = r.name.toLowerCase();
+    return catalogName.includes(searchName) || searchName.includes(catalogName);
+  });
+  
+  if (match) {
+    console.log(`  ✅ Catalog match (fuzzy): "${recipeName}" → "${match.name}"`);
+    return match;
+  }
+  
+  return null;
+}
+
+/**
  * Extract and deduplicate recipes from Claude's output
+ * Slice 5: Now checks catalog FIRST before creating new recipes
  * @param {Array} days - Array of day objects from Claude
- * @returns {Object} { recipes: Array, recipeMap: Map }
+ * @returns {Object} { recipes: Array, recipeMap: Map, catalogMatches: number }
  */
 function extractRecipes(days) {
   const recipeMap = new Map(); // hash -> { recipe, recipeId }
   const recipes = [];
+  let catalogMatches = 0;
 
   if (!Array.isArray(days)) {
     console.warn('extractRecipes: days is not an array');
-    return { recipes, recipeMap };
+    return { recipes, recipeMap, catalogMatches };
   }
+
+  // Load catalog once (Slice 5)
+  const catalog = getRecipeCatalogSync();
+  console.log(`📚 Checking catalog (${catalog.length} recipes) for matches...`);
 
   // Iterate through all days and meal types
   for (const day of days) {
@@ -57,7 +96,23 @@ function extractRecipes(days) {
       
       if (!recipe || typeof recipe !== 'object') continue;
 
-      // Create hash for deduplication
+      // SLICE 5: Try to match recipe name to catalog FIRST
+      const catalogRecipe = matchCatalogRecipe(recipe.name, catalog);
+      
+      if (catalogRecipe) {
+        // Use catalog recipe!
+        const hash = createRecipeHash(catalogRecipe);
+        if (!recipeMap.has(hash)) {
+          recipeMap.set(hash, { 
+            recipe: catalogRecipe, 
+            recipeId: catalogRecipe.recipeId 
+          });
+          catalogMatches++;
+        }
+        continue;  // Skip creating new recipe
+      }
+
+      // No catalog match - create new recipe as before
       const hash = createRecipeHash(recipe);
 
       if (!recipeMap.has(hash)) {
@@ -89,7 +144,9 @@ function extractRecipes(days) {
     }
   }
 
-  return { recipes, recipeMap };
+  console.log(`📊 Catalog usage: ${catalogMatches} matches, ${recipes.length} new recipes created`);
+
+  return { recipes, recipeMap, catalogMatches };
 }
 
 /**
@@ -227,10 +284,10 @@ export function transformGeneratedPlan(claudeOutput) {
       throw new Error('Invalid Claude output: missing or empty days array');
     }
 
-    // Extract and deduplicate recipes
-    const { recipes, recipeMap } = extractRecipes(claudeOutput.days);
+    // Extract and deduplicate recipes (Slice 5: checks catalog first!)
+    const { recipes, recipeMap, catalogMatches } = extractRecipes(claudeOutput.days);
 
-    if (recipes.length === 0) {
+    if (recipes.length === 0 && recipeMap.size === 0) {
       throw new Error('No valid recipes found in Claude output');
     }
 
@@ -265,10 +322,16 @@ export function transformGeneratedPlan(claudeOutput) {
       weeklyPreferences: '', // Can be populated from user input later
       conversation: {
         messages: [] // Can be populated with chat history
+      },
+      // Slice 5: Track catalog usage
+      _catalogStats: {
+        catalogMatches,
+        newRecipes: recipes.length,
+        catalogPercentage: Math.round((catalogMatches / (catalogMatches + recipes.length)) * 100)
       }
     };
 
-    console.log(`Transformed meal plan: ${recipes.length} recipes, ${meals.length} meals`);
+    console.log(`✅ Meal plan: ${catalogMatches} from catalog, ${recipes.length} generated (${mealPlan._catalogStats.catalogPercentage}% catalog)`);
 
     return {
       recipes,

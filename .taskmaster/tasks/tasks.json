@@ -566,7 +566,7 @@
           "64",
           "70"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -616,7 +616,8 @@
             "testStrategy": "Create a combined test harness that runs the transformer on: (a) a legacy full-week JSON and snapshot-tests the resulting Meals and Recipes against a known-good fixture, and (b) multiple new-format plans that intentionally reuse recipes with the same name/ingredients but different Diet Compass scores. Verify via assertions that deduplicated recipes have consistent IDs, that intentional variants remain separate when score differences exceed the threshold, and that all new fields (targetEaters/dietProfileTags/prepTasks) are populated as expected.",
             "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T12:25:42.146Z"
       },
       {
         "id": "72",
@@ -1049,14 +1050,14 @@
           "82",
           "83"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
             "title": "Analyze existing week generation function and catalog loading approach",
             "description": "Identify the current Vercel serverless function(s) responsible for week/meal plan generation and assess how data, constraints, and history are currently passed and processed, then design how the local `vanessa_recipe_catalog` will be loaded per request with optional in-memory caching.",
             "dependencies": [],
-            "details": "Locate the active endpoint (e.g. `/api/generate-week` or equivalent) and read through its handler, types, and any helper modules involved in meal generation and history/shopping list creation. Document current inputs (eaters, dietProfiles, mealPrepSettings, history, etc.) and how they map to meal slots. Design a small catalog service module that knows how to load `vanessa_recipe_catalog` into memory for a request, with an internal singleton or module-level cache that respects Vercel’s execution model (warm vs cold starts) and guards against excessive memory growth. Define the public interface (e.g. `getCatalogRecipes()`, `getRecipeById()`) to be used by the generator.",
+            "details": "Locate the active endpoint (e.g. `/api/generate-week` or equivalent) and read through its handler, types, and any helper modules involved in meal generation and history/shopping list creation. Document current inputs (eaters, dietProfiles, mealPrepSettings, history, etc.) and how they map to meal slots. Design a small catalog service module that knows how to load `vanessa_recipe_catalog` into memory for a request, with an internal singleton or module-level cache that respects Vercel’s execution model (warm vs cold starts) and guards against excessive memory growth. Define the public interface (e.g. `getCatalogRecipes()`, `getRecipeById()`) to be used by the generator.\n<info added on 2026-01-08T12:23:01.825Z>\nI've analyzed the current meal generation API and begun implementing the catalog-first approach. The existing `/api/generate-meal-plan.js` endpoint currently:\n\n1. Accepts user constraints (eaters, diet profiles, prep settings, history)\n2. Passes these directly to Claude for recipe generation\n3. Processes Claude's response into structured meal plans\n\nFor the catalog-first implementation, I've created a new `catalogService.js` module with:\n- A singleton pattern that respects Vercel's execution model\n- Memory-efficient caching with LRU eviction policy\n- Methods: `getCatalogRecipes()`, `getRecipeById()`, `filterRecipesByCriteria()`\n\nModified the generation flow to:\n1. Load catalog via catalogService\n2. Apply constraint filters to catalog recipes per meal slot\n3. Score and rank filtered recipes using the existing scoring engine\n4. Select highest-scoring recipes that meet all constraints\n5. Only call Claude when no suitable catalog recipes exist or when explicitly requested\n\nInitial testing shows successful catalog loading and filtering, with proper fallback to Claude generation when needed.\n</info added on 2026-01-08T12:23:01.825Z>",
             "status": "pending",
             "testStrategy": "Add a minimal unit test for the catalog service module that verifies it loads the catalog, returns recipes in expected shape, and that repeated calls reuse cached data when the environment allows.",
             "parentId": "undefined"
@@ -1122,7 +1123,8 @@
             "testStrategy": "Create API-level tests that hit the generation endpoint with various household configurations and history states while mocking out external services. Assert that: (1) catalog recipes are used when available, (2) Claude is called only when needed or explicitly requested, (3) multi-profile constraints result in valid meal assignments, and (4) generated meal plans still produce valid shopping lists and history entries.",
             "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T12:25:42.150Z"
       },
       {
         "id": "86",
@@ -1384,9 +1386,9 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-08T11:59:56.568Z",
+      "lastModified": "2026-01-08T12:25:42.151Z",
       "taskCount": 40,
-      "completedCount": 21,
+      "completedCount": 23,
       "tags": [
         "master"
       ]
