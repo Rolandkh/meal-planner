@@ -109,9 +109,11 @@ function extractRecipes(days) {
             recipe: catalogRecipe, 
             recipeId: catalogRecipe.recipeId 
           });
+          // CRITICAL FIX 2: Add catalog recipe to recipes array so it gets saved!
+          recipes.push(catalogRecipe);
           catalogMatches++;
         }
-        continue;  // Skip creating new recipe
+        continue;  // Skip creating new recipe from AI data
       }
 
       // No catalog match - create new recipe as before
