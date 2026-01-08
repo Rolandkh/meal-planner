@@ -233,8 +233,8 @@ export class HomePage {
     // Chat button
     const chatButton = document.createElement('button');
     chatButton.className = `
-      bg-gradient-to-r from-gray-400 to-gray-450
-      hover:from-gray-450 hover:to-gray-500
+      bg-gradient-to-r from-gray-400 to-gray-420
+      hover:from-gray-420 hover:to-gray-450
       text-gray-900 font-bold py-4 px-8 rounded-full
       border border-gray-300
       shadow-xl hover:shadow-2xl
@@ -393,8 +393,8 @@ export class HomePage {
       
       if (hasDate) {
         dayButton.className = `
-          bg-gradient-to-r from-gray-400 to-gray-450
-          hover:from-gray-450 hover:to-gray-500
+          bg-gradient-to-r from-gray-400 to-gray-420
+          hover:from-gray-420 hover:to-gray-450
           text-gray-900 font-semibold py-4 px-6 rounded-lg
           border border-gray-300
           shadow-lg hover:shadow-xl
@@ -448,10 +448,10 @@ export class HomePage {
         text-lg
       `.trim().replace(/\s+/g, ' ');
     } else if (style === 'view') {
-      // Gray gradient for view buttons
+      // Gray gradient for view buttons - subtle gradient
       button.className = `
-        bg-gradient-to-r from-gray-400 to-gray-450
-        hover:from-gray-450 hover:to-gray-500
+        bg-gradient-to-r from-gray-400 to-gray-420
+        hover:from-gray-420 hover:to-gray-450
         text-gray-900 font-bold py-5 px-8 rounded-lg
         border border-gray-300
         shadow-lg hover:shadow-xl
@@ -459,10 +459,10 @@ export class HomePage {
         text-xl
       `.trim().replace(/\s+/g, ' ');
     } else {
-      // Gray gradient for secondary buttons (chat, etc.)
+      // Gray gradient for secondary buttons (chat, etc.) - subtle gradient
       button.className = `
-        bg-gradient-to-r from-gray-400 to-gray-450
-        hover:from-gray-450 hover:to-gray-500
+        bg-gradient-to-r from-gray-400 to-gray-420
+        hover:from-gray-420 hover:to-gray-450
         text-gray-900 font-semibold py-4 px-6 rounded-lg
         border border-gray-300
         shadow-lg hover:shadow-xl
