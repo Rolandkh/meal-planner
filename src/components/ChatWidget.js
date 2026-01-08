@@ -13,7 +13,8 @@ import {
   saveEaters,
   createEater,
   updateEater,
-  getOrCreateDefaultEater
+  getOrCreateDefaultEater,
+  loadRecipes
 } from '../utils/storage.js';
 
 export class ChatWidget {
@@ -408,7 +409,12 @@ export class ChatWidget {
       ? 'inline-block bg-gradient-to-r from-blue-400 to-indigo-400 text-white p-3 rounded-lg rounded-tr-none max-w-xs md:max-w-md shadow'
       : 'inline-block bg-white text-gray-800 p-3 rounded-lg rounded-tl-none max-w-xs md:max-w-md shadow border border-gray-200';
     
-    bubble.textContent = message.content;
+    // Task 58: Support formatted content for better readability
+    if (message.formatted) {
+      bubble.innerHTML = message.content; // Use innerHTML for formatted messages
+    } else {
+      bubble.textContent = message.content; // Use textContent for safety
+    }
 
     // Add timestamp
     const timestamp = document.createElement('div');
@@ -477,22 +483,49 @@ export class ChatWidget {
   addDayContextMessage() {
     if (!this.dayContext) return;
     
-    const { dayNameCapitalized, mealsContext, date } = this.dayContext;
+    const { dayNameCapitalized, meals, date } = this.dayContext;
+    
+    // Load recipes to get meal names
+    const recipes = loadRecipes();
+    
+    // Build formatted meal list with nice structure
+    const mealsList = meals
+      .sort((a, b) => {
+        const order = { breakfast: 0, lunch: 1, dinner: 2 };
+        return order[a.mealType] - order[b.mealType];
+      })
+      .map(m => {
+        const recipe = recipes.find(r => r.recipeId === m.recipeId);
+        const mealTypeFormatted = m.mealType.charAt(0).toUpperCase() + m.mealType.slice(1);
+        const recipeName = recipe?.name || 'Unknown';
+        return `<div class="mb-2">
+          <strong class="text-gray-900">${mealTypeFormatted}:</strong>
+          <span class="ml-2 text-gray-700">${recipeName}</span>
+        </div>`;
+      }).join('');
     
     const contextMessage = {
       role: 'assistant',
-      content: `So you want to make changes to ${dayNameCapitalized}'s menu! 🍽️
-
-Currently you have: ${mealsContext}
-
-What would you like to change? For example, you could:
-• Replace a specific meal
-• Change ingredients based on what you have available
-• Adjust for dietary restrictions
-• Make it quicker/easier to prepare
-• Or anything else!
-
-Just tell me what you'd like to do.`
+      formatted: true, // Flag to use innerHTML for formatting
+      content: `<div class="space-y-3">
+        <p class="text-base">So you want to make changes to <strong>${dayNameCapitalized}'s</strong> menu! 🍽️</p>
+        
+        <div class="bg-blue-50 rounded-lg p-3 my-2">
+          <p class="text-sm font-semibold text-blue-900 mb-2">Current plan:</p>
+          ${mealsList}
+        </div>
+        
+        <p class="text-base">What would you like to change? For example:</p>
+        <ul class="text-sm text-gray-600 space-y-1 ml-4">
+          <li>• Replace a specific meal</li>
+          <li>• Use ingredients you already have</li>
+          <li>• Adjust for dietary needs</li>
+          <li>• Make it quicker to prepare</li>
+          <li>• Or anything else!</li>
+        </ul>
+        
+        <p class="text-base mt-2">Just tell me what you'd like to do.</p>
+      </div>`
     };
     
     this.addMessage(contextMessage);
