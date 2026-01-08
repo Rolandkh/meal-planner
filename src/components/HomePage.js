@@ -233,13 +233,14 @@ export class HomePage {
     // Chat button
     const chatButton = document.createElement('button');
     chatButton.className = `
-      bg-gradient-to-r from-gray-400 to-gray-450
-      hover:from-gray-450 hover:to-gray-500
+      bg-gradient-to-r from-gray-350 to-gray-400
+      hover:from-gray-400 hover:to-gray-450
       text-gray-900 font-bold py-4 px-8 rounded-full
       border border-gray-300
       shadow-xl hover:shadow-2xl
       transition-all duration-300 transform hover:scale-105
       text-lg
+      opacity-100
     `.trim().replace(/\s+/g, ' ');
     chatButton.textContent = '💬 Chat with Vanessa';
     
@@ -393,13 +394,14 @@ export class HomePage {
       
       if (hasDate) {
         dayButton.className = `
-          bg-gradient-to-r from-gray-400 to-gray-450
-          hover:from-gray-450 hover:to-gray-500
+          bg-gradient-to-r from-gray-350 to-gray-400
+          hover:from-gray-400 hover:to-gray-450
           text-gray-900 font-semibold py-4 px-6 rounded-lg
           border border-gray-300
           shadow-lg hover:shadow-xl
           transition-all transform hover:scale-105
           text-lg
+          opacity-100
         `.trim().replace(/\s+/g, ' ');
         
         dayButton.textContent = day;
@@ -448,26 +450,28 @@ export class HomePage {
         text-lg
       `.trim().replace(/\s+/g, ' ');
     } else if (style === 'view') {
-      // Gray gradient for view buttons - darker
+      // Gray gradient for view buttons
       button.className = `
-        bg-gradient-to-r from-gray-400 to-gray-450
-        hover:from-gray-450 hover:to-gray-500
+        bg-gradient-to-r from-gray-350 to-gray-400
+        hover:from-gray-400 hover:to-gray-450
         text-gray-900 font-bold py-5 px-8 rounded-lg
         border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-xl
+        opacity-100
       `.trim().replace(/\s+/g, ' ');
     } else {
-      // Gray gradient for secondary buttons (chat, etc.) - darker
+      // Gray gradient for secondary buttons (chat, etc.)
       button.className = `
-        bg-gradient-to-r from-gray-400 to-gray-450
-        hover:from-gray-450 hover:to-gray-500
+        bg-gradient-to-r from-gray-350 to-gray-400
+        hover:from-gray-400 hover:to-gray-450
         text-gray-900 font-semibold py-4 px-6 rounded-lg
         border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-lg
+        opacity-100
       `.trim().replace(/\s+/g, ' ');
     }
 

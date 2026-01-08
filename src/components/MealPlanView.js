@@ -323,7 +323,7 @@ export class MealPlanView {
           <p class="text-blue-100">${dayDate}</p>
         </div>
         <button
-          class="make-changes-btn bg-white hover:bg-gray-50 px-4 py-2 rounded-lg transition-all text-gray-900 font-semibold text-sm border border-gray-300 shadow-md"
+          class="make-changes-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg transition-all text-gray-900 font-semibold text-sm border border-gray-300 shadow-md"
           data-date="${date}"
           data-day-name="${dayName}"
           title="Make changes to this day"
