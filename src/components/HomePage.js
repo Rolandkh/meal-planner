@@ -236,7 +236,7 @@ export class HomePage {
       bg-gradient-to-r from-gray-300 to-gray-350
       hover:from-gray-350 hover:to-gray-400
       text-gray-800 font-bold py-4 px-8 rounded-full
-      border border-gray-400
+      border border-gray-300
       shadow-xl hover:shadow-2xl
       transition-all duration-300 transform hover:scale-105
       text-lg
@@ -396,7 +396,7 @@ export class HomePage {
           bg-gradient-to-r from-gray-300 to-gray-350
           hover:from-gray-350 hover:to-gray-400
           text-gray-800 font-semibold py-4 px-6 rounded-lg
-          border border-gray-400
+          border border-gray-300
           shadow-lg hover:shadow-xl
           transition-all transform hover:scale-105
           text-lg
@@ -453,7 +453,7 @@ export class HomePage {
         bg-gradient-to-r from-gray-300 to-gray-350
         hover:from-gray-350 hover:to-gray-400
         text-gray-800 font-bold py-5 px-8 rounded-lg
-        border border-gray-400
+        border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-xl
@@ -464,7 +464,7 @@ export class HomePage {
         bg-gradient-to-r from-gray-300 to-gray-350
         hover:from-gray-350 hover:to-gray-400
         text-gray-800 font-semibold py-4 px-6 rounded-lg
-        border border-gray-400
+        border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-lg
