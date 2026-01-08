@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Test - Meal Planner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+  <div class="max-w-4xl mx-auto">
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">🧪 API Configuration Test</h1>
+      <p class="text-gray-600 mb-8">Test your Spoonacular and Anthropic API keys in both local and deployed environments.</p>
+
+      <!-- Spoonacular Test Section -->
+      <div class="mb-8">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-semibold text-gray-800">Spoonacular API</h2>
+          <button 
+            id="testSpoonacular"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+          >
+            Test Spoonacular
+          </button>
+        </div>
+        <div id="spoonacularResult" class="hidden">
+          <!-- Results will be inserted here -->
+        </div>
+      </div>
+
+      <!-- Anthropic Test Section -->
+      <div class="mb-8">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-semibold text-gray-800">Anthropic API (Claude)</h2>
+          <button 
+            id="testAnthropic"
+            class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+          >
+            Test Anthropic
+          </button>
+        </div>
+        <div id="anthropicResult" class="hidden">
+          <!-- Results will be inserted here -->
+        </div>
+      </div>
+
+      <!-- Environment Info -->
+      <div class="mt-8 p-4 bg-gray-100 rounded-lg">
+        <h3 class="font-semibold text-gray-700 mb-2">Environment Info</h3>
+        <p class="text-sm text-gray-600" id="envInfo">
+          Testing from: <span class="font-mono" id="currentUrl">...</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    // Display current URL
+    document.getElementById('currentUrl').textContent = window.location.origin;
+
+    // Test Spoonacular API
+    document.getElementById('testSpoonacular').addEventListener('click', async () => {
+      const button = document.getElementById('testSpoonacular');
+      const resultDiv = document.getElementById('spoonacularResult');
+      
+      // Show loading
+      button.disabled = true;
+      button.textContent = 'Testing...';
+      resultDiv.classList.remove('hidden');
+      resultDiv.innerHTML = `
+        <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+          <div class="flex items-center">
+            <svg class="animate-spin h-5 w-5 text-blue-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span class="text-blue-700 font-medium">Testing Spoonacular API...</span>
+          </div>
+        </div>
+      `;
+
+      try {
+        const response = await fetch('/api/test-spoonacular');
+        const data = await response.json();
+
+        if (data.success) {
+          // Success display
+          resultDiv.innerHTML = `
+            <div class="p-6 bg-green-50 border-2 border-green-500 rounded-lg">
+              <div class="flex items-center mb-4">
+                <svg class="h-6 w-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-green-800">${data.message}</h3>
+              </div>
+              
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="bg-white p-3 rounded">
+                  <p class="text-sm text-gray-600">API Key</p>
+                  <p class="font-mono text-sm text-gray-900">${data.envCheck.keyPreview}</p>
+                </div>
+                <div class="bg-white p-3 rounded">
+                  <p class="text-sm text-gray-600">Response Time</p>
+                  <p class="font-semibold text-gray-900">${data.apiTest.responseTime}</p>
+                </div>
+                <div class="bg-white p-3 rounded">
+                  <p class="text-sm text-gray-600">Recipes Available</p>
+                  <p class="font-semibold text-gray-900">${data.apiTest.recipesFound.toLocaleString()}</p>
+                </div>
+                <div class="bg-white p-3 rounded">
+                  <p class="text-sm text-gray-600">Quota</p>
+                  <p class="font-semibold text-gray-900">${data.quota.pointsUsed || 'N/A'} / ${data.quota.pointsLimit || 'N/A'}</p>
+                </div>
+              </div>
+
+              ${data.apiTest.sampleRecipe ? `
+                <div class="bg-white p-4 rounded-lg border border-green-200">
+                  <p class="font-semibold text-gray-700 mb-2">Sample Recipe Retrieved:</p>
+                  <p class="text-lg font-bold text-gray-900">${data.apiTest.sampleRecipe.title}</p>
+                  <div class="grid grid-cols-3 gap-2 mt-2 text-sm text-gray-600">
+                    <span>⏱️ ${data.apiTest.sampleRecipe.readyInMinutes} min</span>
+                    <span>🍽️ ${data.apiTest.sampleRecipe.servings} servings</span>
+                    <span>🆔 ID: ${data.apiTest.sampleRecipe.id}</span>
+                  </div>
+                  ${data.apiTest.sampleRecipe.image ? `
+                    <img src="${data.apiTest.sampleRecipe.image}" alt="${data.apiTest.sampleRecipe.title}" class="mt-3 rounded-lg w-full max-w-xs">
+                  ` : ''}
+                </div>
+              ` : ''}
+            </div>
+          `;
+        } else {
+          // Error display
+          resultDiv.innerHTML = `
+            <div class="p-6 bg-red-50 border-2 border-red-500 rounded-lg">
+              <div class="flex items-center mb-4">
+                <svg class="h-6 w-6 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-red-800">API Test Failed</h3>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg mb-3">
+                <p class="text-sm font-semibold text-gray-700">Error:</p>
+                <p class="text-red-700 font-mono text-sm mt-1">${data.error}</p>
+              </div>
+
+              ${data.details ? `
+                <div class="bg-white p-4 rounded-lg mb-3">
+                  <p class="text-sm font-semibold text-gray-700">Details:</p>
+                  <pre class="text-red-600 font-mono text-xs mt-1 overflow-auto">${data.details}</pre>
+                </div>
+              ` : ''}
+
+              ${data.envCheck ? `
+                <div class="bg-white p-4 rounded-lg">
+                  <p class="text-sm font-semibold text-gray-700">Environment Check:</p>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Has API Key: <span class="font-semibold">${data.envCheck.hasKey ? '✅ Yes' : '❌ No'}</span>
+                  </p>
+                  ${data.envCheck.keyPreview ? `
+                    <p class="text-sm text-gray-600">Key: <code>${data.envCheck.keyPreview}</code></p>
+                  ` : ''}
+                </div>
+              ` : ''}
+
+              <div class="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded">
+                <p class="text-sm text-yellow-800">
+                  <strong>💡 Troubleshooting:</strong><br>
+                  • Verify SPOONACULAR_API_KEY is set in Vercel environment variables<br>
+                  • Check for extra spaces or quotes in the key<br>
+                  • Confirm you've saved and redeployed after adding the env var
+                </p>
+              </div>
+            </div>
+          `;
+        }
+      } catch (error) {
+        resultDiv.innerHTML = `
+          <div class="p-6 bg-red-50 border-2 border-red-500 rounded-lg">
+            <h3 class="text-xl font-bold text-red-800 mb-3">Network Error</h3>
+            <p class="text-red-700">${error.message}</p>
+          </div>
+        `;
+      } finally {
+        button.disabled = false;
+        button.textContent = 'Test Spoonacular';
+      }
+    });
+
+    // Test Anthropic API
+    document.getElementById('testAnthropic').addEventListener('click', async () => {
+      const button = document.getElementById('testAnthropic');
+      const resultDiv = document.getElementById('anthropicResult');
+      
+      // Show loading
+      button.disabled = true;
+      button.textContent = 'Testing...';
+      resultDiv.classList.remove('hidden');
+      resultDiv.innerHTML = `
+        <div class="p-4 bg-purple-50 border border-purple-200 rounded-lg">
+          <div class="flex items-center">
+            <svg class="animate-spin h-5 w-5 text-purple-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span class="text-purple-700 font-medium">Testing Anthropic API...</span>
+          </div>
+        </div>
+      `;
+
+      try {
+        const response = await fetch('/api/check-env');
+        const data = await response.json();
+
+        if (data.hasApiKey) {
+          // Success display
+          resultDiv.innerHTML = `
+            <div class="p-6 bg-green-50 border-2 border-green-500 rounded-lg">
+              <div class="flex items-center mb-4">
+                <svg class="h-6 w-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-green-800">✅ Anthropic API Key Configured</h3>
+              </div>
+              
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white p-3 rounded">
+                  <p class="text-sm text-gray-600">API Key Status</p>
+                  <p class="font-semibold text-green-700">✅ Set</p>
+                </div>
+                <div class="bg-white p-3 rounded">
+                  <p class="text-sm text-gray-600">Key Length</p>
+                  <p class="font-mono text-sm text-gray-900">${data.keyLength} characters</p>
+                </div>
+              </div>
+              
+              <div class="mt-4 bg-white p-4 rounded-lg">
+                <p class="text-sm text-gray-600 mb-1">Key Preview:</p>
+                <code class="text-sm font-mono text-gray-900">${data.keyStartsWith}${data.keyEndsWith}</code>
+              </div>
+            </div>
+          `;
+        } else {
+          // Error display
+          resultDiv.innerHTML = `
+            <div class="p-6 bg-yellow-50 border-2 border-yellow-500 rounded-lg">
+              <h3 class="text-xl font-bold text-yellow-800 mb-3">⚠️ API Key Not Found</h3>
+              <p class="text-yellow-700 mb-4">${data.message}</p>
+              <div class="p-3 bg-white rounded border border-yellow-200">
+                <p class="text-sm text-gray-700">Add ANTHROPIC_API_KEY to your Vercel environment variables.</p>
+              </div>
+            </div>
+          `;
+        }
+      } catch (error) {
+        resultDiv.innerHTML = `
+          <div class="p-6 bg-red-50 border-2 border-red-500 rounded-lg">
+            <h3 class="text-xl font-bold text-red-800 mb-3">Network Error</h3>
+            <p class="text-red-700">${error.message}</p>
+          </div>
+        `;
+      } finally {
+        button.disabled = false;
+        button.textContent = 'Test Anthropic';
+      }
+    });
+
+    // Test Both APIs
+    const testAllButton = document.createElement('button');
+    testAllButton.textContent = 'Test All APIs';
+    testAllButton.className = 'w-full mt-8 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold text-lg transition-all';
+    testAllButton.addEventListener('click', () => {
+      document.getElementById('testSpoonacular').click();
+      setTimeout(() => {
+        document.getElementById('testAnthropic').click();
+      }, 500);
+    });
+    document.querySelector('.bg-white.rounded-lg.shadow-lg').appendChild(testAllButton);
+  </script>
+</body>
+</html>
