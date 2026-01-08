@@ -290,31 +290,15 @@ export class HomePage {
     header.appendChild(title);
     header.appendChild(subtitle);
 
-    // Stats card
-    const statsCard = document.createElement('div');
-    statsCard.className = 'bg-white rounded-2xl shadow-xl p-8 mb-6';
+    // Summary card
+    const summaryCard = document.createElement('div');
+    summaryCard.className = 'bg-white rounded-2xl shadow-xl p-8 mb-6 text-center';
 
-    const statsGrid = document.createElement('div');
-    statsGrid.className = 'grid grid-cols-1 md:grid-cols-3 gap-6';
+    const summaryText = document.createElement('p');
+    summaryText.className = 'text-2xl md:text-3xl font-semibold text-gray-700 italic';
+    summaryText.textContent = this.mealPlan.summary || 'Weekly meal plan';
 
-    const stats = [
-      { label: 'Total Meals', value: this.meals.length, icon: '🍽️' },
-      { label: 'Unique Recipes', value: this.recipes.length, icon: '📖' },
-      { label: 'Est. Budget', value: `$${this.mealPlan.budget.estimated}`, icon: '💰' }
-    ];
-
-    stats.forEach(stat => {
-      const statDiv = document.createElement('div');
-      statDiv.className = 'text-center';
-      statDiv.innerHTML = `
-        <div class="text-4xl mb-2">${stat.icon}</div>
-        <div class="text-3xl font-bold text-gray-800 mb-1">${stat.value}</div>
-        <div class="text-sm text-gray-600">${stat.label}</div>
-      `;
-      statsGrid.appendChild(statDiv);
-    });
-
-    statsCard.appendChild(statsGrid);
+    summaryCard.appendChild(summaryText);
 
     // Action buttons
     const buttonsContainer = document.createElement('div');
@@ -351,7 +335,7 @@ export class HomePage {
 
     // Assemble
     planSection.appendChild(header);
-    planSection.appendChild(statsCard);
+    planSection.appendChild(summaryCard);
     planSection.appendChild(buttonsContainer);
     planSection.appendChild(dayNavSection);
 

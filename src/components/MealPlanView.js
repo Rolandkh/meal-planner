@@ -101,23 +101,12 @@ export class MealPlanView {
     const weekEnd = new Date(this.mealPlan.weekEnd);
     const formattedWeek = `${weekOf.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} - ${weekEnd.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
 
+    const summary = this.mealPlan.summary || 'Weekly meal plan';
+
     header.innerHTML = `
       <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Your Meal Plan</h1>
-      <p class="text-xl text-gray-600 mb-6">${formattedWeek}</p>
-      <div class="flex justify-center gap-4 flex-wrap">
-        <div class="bg-white rounded-lg px-6 py-3 shadow-md">
-          <span class="text-2xl font-bold text-blue-600">${this.meals.length}</span>
-          <span class="text-gray-600 ml-2">Meals</span>
-        </div>
-        <div class="bg-white rounded-lg px-6 py-3 shadow-md">
-          <span class="text-2xl font-bold text-green-600">${this.recipes.length}</span>
-          <span class="text-gray-600 ml-2">Recipes</span>
-        </div>
-        <div class="bg-white rounded-lg px-6 py-3 shadow-md">
-          <span class="text-2xl font-bold text-purple-600">$${this.mealPlan.budget.estimated}</span>
-          <span class="text-gray-600 ml-2">Budget</span>
-        </div>
-      </div>
+      <p class="text-xl text-gray-600 mb-4">${formattedWeek}</p>
+      <p class="text-2xl font-semibold text-gray-700 italic mb-6">${summary}</p>
     `;
 
     // Back button

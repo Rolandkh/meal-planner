@@ -112,6 +112,64 @@ export class MealPlanHistoryPage {
     return container;
   }
 
+  /**
+   * Task 59: Generate AI summary for a meal plan
+   * Client-side analysis of recipes and meals
+   */
+  generateSummary(plan) {
+    if (!plan.recipesSnapshot || plan.recipesSnapshot.length === 0) {
+      return 'Weekly meal plan with variety of dishes';
+    }
+    
+    const recipes = plan.recipesSnapshot;
+    
+    // Extract common ingredients and patterns
+    const allIngredients = recipes.flatMap(r => r.ingredients || []).map(i => i.name.toLowerCase());
+    const ingredientCounts = {};
+    allIngredients.forEach(ing => {
+      ingredientCounts[ing] = (ingredientCounts[ing] || 0) + 1;
+    });
+    
+    // Find most common ingredients (appearing in 3+ recipes)
+    const commonIngredients = Object.entries(ingredientCounts)
+      .filter(([_, count]) => count >= 3)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .map(([ing, _]) => ing);
+    
+    // Analyze tags
+    const allTags = recipes.flatMap(r => r.tags || []).map(t => t.toLowerCase());
+    const tagCounts = {};
+    allTags.forEach(tag => {
+      tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    });
+    
+    const topTags = Object.entries(tagCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 2)
+      .map(([tag, _]) => tag);
+    
+    // Build natural summary
+    const summaryParts = [];
+    
+    if (topTags.length > 0) {
+      const tagsStr = topTags.join(' and ');
+      summaryParts.push(`Featuring ${tagsStr} dishes`);
+    }
+    
+    if (commonIngredients.length > 0) {
+      const ingsStr = commonIngredients.slice(0, 2).join(' and ');
+      summaryParts.push(`lots of ${ingsStr}`);
+    }
+    
+    // Fallback
+    if (summaryParts.length === 0) {
+      return `${recipes.length} unique recipes with diverse flavors`;
+    }
+    
+    return summaryParts.join(' with ');
+  }
+
   renderPlanCard(plan) {
     const card = document.createElement('div');
     card.className = 'bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer overflow-hidden';
@@ -119,8 +177,8 @@ export class MealPlanHistoryPage {
       window.location.hash = `#/history/${plan.mealPlanId}`;
     };
     
-    const mealCount = plan.mealsSnapshot?.length || plan.mealIds?.length || 21;
-    const recipeCount = plan.recipesSnapshot?.length || 0;
+    // Task 59: Generate summary if not present
+    const summary = plan.summary || this.generateSummary(plan);
     
     card.innerHTML = `
       <div class="bg-gradient-to-r from-purple-400 to-pink-400 px-6 py-4">
@@ -133,27 +191,25 @@ export class MealPlanHistoryPage {
       </div>
       
       <div class="p-6">
-        <div class="grid grid-cols-2 gap-4 mb-4">
-          <div>
-            <p class="text-sm text-gray-500">Meals</p>
-            <p class="text-2xl font-bold text-gray-900">${mealCount}</p>
-          </div>
-          <div>
-            <p class="text-sm text-gray-500">Recipes</p>
-            <p class="text-2xl font-bold text-gray-900">${recipeCount}</p>
-          </div>
-        </div>
-        
-        <div class="pt-4 border-t border-gray-200">
-          <p class="text-sm text-gray-500">Budget</p>
-          <p class="text-lg font-semibold text-gray-900">
-            $${plan.budget?.estimated || 0}
-            ${plan.budget?.target > 0 ? `<span class="text-sm text-gray-500">/ $${plan.budget.target}</span>` : ''}
+        <div class="mb-4">
+          <p class="text-base text-gray-700 italic leading-relaxed">
+            ${summary}
           </p>
         </div>
         
+        <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+          <div class="bg-blue-50 rounded-lg p-3">
+            <p class="text-blue-900 font-semibold">Budget</p>
+            <p class="text-blue-700 text-lg">$${plan.budget?.estimated || 0}</p>
+          </div>
+          <div class="bg-green-50 rounded-lg p-3">
+            <p class="text-green-900 font-semibold">Meals</p>
+            <p class="text-green-700 text-lg">${plan.mealsSnapshot?.length || 21}</p>
+          </div>
+        </div>
+        
         <div class="mt-4 flex items-center justify-between text-sm">
-          <span class="text-gray-600">Click to view →</span>
+          <span class="text-blue-600 font-medium hover:text-blue-700">Click to view →</span>
           <span class="inline-block px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">
             Archived
           </span>

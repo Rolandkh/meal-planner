@@ -224,17 +224,33 @@ export class MealPlanHistoryDetailPage {
         if (recipe) {
           const mealDiv = document.createElement('div');
           mealDiv.className = 'pb-4 border-b last:border-b-0 last:pb-0';
+          
+          // Task 59: Make recipe names clickable
+          const recipeLink = document.createElement('a');
+          recipeLink.href = `#/recipe/${recipe.recipeId}`;
+          recipeLink.className = 'text-lg text-blue-600 hover:text-blue-700 hover:underline cursor-pointer font-medium';
+          recipeLink.textContent = recipe.name;
+          
           mealDiv.innerHTML = `
             <div class="flex items-center justify-between mb-2">
               <h3 class="font-semibold text-gray-900 capitalize">${mealType}</h3>
               <span class="text-sm text-gray-500">${meal.servings} serving${meal.servings !== 1 ? 's' : ''}</span>
             </div>
-            <p class="text-lg text-gray-800 mb-2">${recipe.name}</p>
-            <div class="flex items-center space-x-4 text-sm text-gray-600">
-              <span>⏱️ ${recipe.prepTime + recipe.cookTime} min</span>
-              <span>🍽️ ${recipe.servings} servings</span>
-            </div>
           `;
+          
+          const recipeContainer = document.createElement('div');
+          recipeContainer.className = 'mb-2';
+          recipeContainer.appendChild(recipeLink);
+          mealDiv.appendChild(recipeContainer);
+          
+          const infoDiv = document.createElement('div');
+          infoDiv.className = 'flex items-center space-x-4 text-sm text-gray-600';
+          infoDiv.innerHTML = `
+            <span>⏱️ ${recipe.prepTime + recipe.cookTime} min</span>
+            <span>🍽️ ${recipe.servings} servings</span>
+          `;
+          mealDiv.appendChild(infoDiv);
+          
           mealsContainer.appendChild(mealDiv);
         }
       }

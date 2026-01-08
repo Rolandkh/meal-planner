@@ -501,12 +501,23 @@ export class ShoppingListView {
       `Week of ${new Date(this.mealPlan.weekOf).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}` : 
       'Your Shopping List';
 
+    const budget = this.mealPlan ? this.mealPlan.budget : { estimated: 0, target: 0 };
+    const budgetDisplay = budget.target > 0 
+      ? `$${budget.estimated} / $${budget.target}` 
+      : `$${budget.estimated}`;
+
     header.innerHTML = `
       <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">🛒 Shopping List</h1>
       <p class="text-xl text-gray-600 mb-4">${weekInfo}</p>
-      <div class="bg-white rounded-lg px-6 py-3 shadow-md inline-block">
-        <span class="text-2xl font-bold text-green-600">${this.shoppingList.length}</span>
-        <span class="text-gray-600 ml-2">Items</span>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="bg-white rounded-lg px-6 py-3 shadow-md">
+          <span class="text-2xl font-bold text-purple-600">${budgetDisplay}</span>
+          <span class="text-gray-600 ml-2">Budget</span>
+        </div>
+        <div class="bg-white rounded-lg px-6 py-3 shadow-md">
+          <span class="text-2xl font-bold text-green-600">${this.shoppingList.length}</span>
+          <span class="text-gray-600 ml-2">Items</span>
+        </div>
       </div>
     `;
 

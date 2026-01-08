@@ -325,6 +325,7 @@ export const DEV_PRESET = {
       target: 120,
       estimated: 115
     },
+    summary: 'Mediterranean weight loss week',
     weeklyPreferences: 'Mediterranean diet focused on weight loss and anti-inflammatory foods. Following Food Compass guidelines with emphasis on fish, vegetables, legumes, and yogurt. Minimal red meat, no caffeine. Simple Saturday meal prep with ingredient reuse to minimize costs. Kid-friendly meals for Maya (4yo) Sun-Wed morning.',
     conversation: {
       messages: []

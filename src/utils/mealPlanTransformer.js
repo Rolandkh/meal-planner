@@ -261,6 +261,7 @@ export function transformGeneratedPlan(claudeOutput) {
         target: targetBudget,
         estimated: Math.round(estimatedBudget)
       },
+      summary: claudeOutput.summary || 'Weekly meal plan', // Brief 5-6 word summary
       weeklyPreferences: '', // Can be populated from user input later
       conversation: {
         messages: [] // Can be populated with chat history

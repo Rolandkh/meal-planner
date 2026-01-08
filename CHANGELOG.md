@@ -1,5 +1,98 @@
 # Changelog
 
+## [v1.0-rc2] - January 8, 2026 - UI Polish & Summary Feature
+
+### 🎨 UI Improvements
+
+#### Button Styling Updates
+**Enhancement:** Modernized button appearance with softer corners and refined gradient.
+
+**Changes:**
+- **Border Radius:** Increased from 8px (`rounded-lg`) to 12px (`rounded-xl`)
+  - Affects all primary, view, and secondary buttons
+  - More modern, softer appearance
+- **Gradient Color:** Lighter, more subtle gradient
+  - Old: `rgba(134, 139, 152, 1) 39%, rgba(121, 125, 134, 0.59) 100%`
+  - New: `rgba(156, 163, 175, 1) 52%, rgba(156, 163, 175, 0.32) 100%`
+  - Lighter gray tones with more transparency
+
+**Files Changed:**
+- `src/components/HomePage.js` - Updated button classes
+- `index.html` - Added `.btn-custom-gradient` styles
+
+**Impact:** Cleaner, more professional button appearance across the app.
+
+---
+
+### ✨ New Feature: Meal Plan Summary
+
+#### Concept Change
+**Before:** Displayed numerical statistics (Total Meals, Unique Recipes, Budget)  
+**After:** Display brief 5-6 word descriptive summary of the meal plan theme
+
+**Rationale:**
+- Numbers are data, summaries are meaning
+- Total meals is always 21 (redundant)
+- Unique recipes isn't actionable
+- Summaries help users remember and differentiate meal plans
+- Examples: "Mediterranean weight loss week", "Guest dinner week", "Vegan budget meals"
+
+**Changes:**
+
+1. **Data Structure**
+   - Added `summary` field to meal plan object
+   - Falls back to "Weekly meal plan" if not provided
+   - Claude will generate contextual summaries during plan generation
+
+2. **HomePage Summary Card**
+   - Replaced 3-column stats grid with single centered summary
+   - Large italic text (text-2xl md:text-3xl)
+   - Shows meal plan theme at a glance
+
+3. **History Cards**
+   - Replaced Meals/Recipes/Budget grid with summary text
+   - Cleaner card layout focused on what made that week special
+
+4. **Full Meal Plan View**
+   - Summary displayed below date range instead of stat badges
+   - Streamlined header with personality
+
+5. **Shopping List Enhancement**
+   - **Moved budget display to Shopping List** (where it's most relevant)
+   - Shows alongside item count: "$115 / $120 Budget  •  32 Items"
+   - More contextual for actual shopping decisions
+
+**Files Changed:**
+- `src/utils/mealPlanTransformer.js` - Added summary field to data structure
+- `src/utils/devPresets.js` - Added example summary
+- `src/components/HomePage.js` - Summary card instead of stats
+- `src/components/MealPlanView.js` - Summary display
+- `src/components/MealPlanHistoryPage.js` - Summary in cards
+- `src/components/ShoppingListView.js` - Budget + items display
+
+**Impact:** 
+- More personality and context in meal plan displays
+- Budget information positioned where it's most useful
+- Cleaner, less data-heavy interface
+- Better storytelling about each meal plan
+
+---
+
+### 🐛 Bug Fix: CSS Loading
+
+**Issue:** `.btn-custom-gradient` styles were not being applied.
+
+**Root Cause:** `src/styles/main.css` was never imported into the application.
+
+**Fix:** Added custom gradient styles directly to `index.html` inline styles section.
+
+**Files Changed:**
+- `index.html` - Added `.btn-custom-gradient` class definition
+
+**Impact:** Button gradients now render correctly.
+
+---
+
 ## [v1.0-rc1] - December 26, 2025 (Evening) - Bug Fixes
 
 ### 🐛 Bug Fixes

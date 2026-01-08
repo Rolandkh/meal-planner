@@ -1,9 +1,9 @@
 # Vanessa - AI Meal Planning Concierge
 
-**Version:** v1.0-rc1 (Slice 4 Code Complete + Bug Fixes)  
-**Status:** All features built, critical bugs fixed, ready for manual testing  
+**Version:** v1.0-rc3 (Testing Feedback Fixes)  
+**Status:** Core features tested and debugged, Task 59 pending  
 **Created:** December 2025  
-**Last Updated:** December 26, 2025 (Evening - Bug Fixes Complete)
+**Last Updated:** January 8, 2026 11:45 PM (Testing fixes applied)
 
 ---
 
@@ -13,8 +13,8 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - 💬 Chat about your meal planning needs and preferences
 - 👥 Manage household members with dietary preferences and schedules
 - ✨ Generate personalized 7-day meal plans with accurate servings
-- 🔄 Regenerate single days without losing the whole week (NEW: Slice 4)
-- ✏️ Edit recipes after generation (NEW: Slice 4)
+- 🔄 Regenerate single days with conversational workflow - preserves other days (NEW: Slice 4, FIXED: Jan 8)
+- ✏️ Edit recipes with visual save confirmation (NEW: Slice 4, FIXED: Jan 8)
 - 📥 Import recipes from text (blogs, emails, etc.) (NEW: Slice 4)
 - 📅 Browse meal plan history (NEW: Slice 4)
 - 🛒 Get organized shopping lists with ingredient limits (30 items default)
@@ -342,6 +342,7 @@ meal-planner/
   createdAt: 'ISO 8601',
   mealIds: ['meal_...', ...],  // 21 meals
   budget: { target: 150, estimated: 142 },
+  summary: 'Mediterranean weight loss week',  // NEW: Brief 5-6 word description
   weeklyPreferences: string,
   conversation: { messages: [] }
 }

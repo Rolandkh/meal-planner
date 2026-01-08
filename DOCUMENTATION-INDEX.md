@@ -1,8 +1,8 @@
 # Documentation Index
 
 **Project:** Vanessa - AI Meal Planning Concierge  
-**Version:** v1.0-rc1  
-**Last Updated:** December 26, 2025
+**Version:** v1.0-rc2  
+**Last Updated:** January 8, 2026
 
 This document provides a complete index of all project documentation.
 
@@ -321,13 +321,22 @@ This document provides a complete index of all project documentation.
 
 ---
 
-**All Documentation Current as of:** December 26, 2025 (Evening - After Bug Fixes)  
+**All Documentation Current as of:** January 8, 2026 (UI Polish & Summary Feature)  
 **Next Update:** After Slice 4 manual testing complete
 
 ---
 
-## 🎉 Recent Updates (December 26, 2025 - Evening)
+## 🎉 Recent Updates
 
+### January 8, 2026 - UI Polish & Summary Feature
+- ✅ Refined button styling (12px border-radius, lighter gradient)
+- ✅ Added meal plan summary feature (replaces numerical stats)
+- ✅ Moved budget to Shopping List (more contextual)
+- ✅ Updated data model with summary field
+- ✅ Updated all documentation
+- ✅ Created TODAYS-UPDATES.md
+
+### December 26, 2025 - Evening (Bug Fixes)
 - ✅ Added CHANGELOG.md with complete bug fix documentation
 - ✅ Updated all documentation to reflect bug fixes
 - ✅ Updated dev presets with personalized data
