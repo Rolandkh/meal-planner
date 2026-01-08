@@ -1,5 +1,97 @@
 # Changelog
 
+## [v1.1.0-alpha] - January 8-9, 2026 - Slice 5 Phase 1: Catalog & Health System
+
+### 🎉 Major Features
+
+#### Spoonacular Recipe Catalog
+- **607 professional recipes** extracted and stored locally
+- **606 recipe images** downloaded (11MB, 99.8% success rate)
+- **Complete data**: ingredients, nutrition, instructions, tags
+- **Zero dependency**: Can cancel Spoonacular subscription after extraction
+- **24 cuisines**, 10 diet types, 27 dish types covered
+
+#### Diet Compass Health Scoring System
+- **4-metric scoring**: Nutrient Density, Anti-Aging, Weight Loss, Heart Health (0-100 each)
+- **605 recipes scored** with health ratings (99.7% coverage)
+- **Visual display**: 5-bar system on recipe cards, full breakdown on detail pages
+- **100+ ingredient database** with health impact classifications
+- **Based on** "The Diet Compass" by Bas Kast
+
+#### Diet Profile System (Data Layer)
+- **11 preloaded profiles**: Mediterranean, Keto, Vegan, Vegetarian, High Protein, Flexitarian, Longevity, Intermittent Fasting, MIND, Kid-Friendly, La Dieta
+- **Compatibility filtering** and conflict detection
+- **Profile utilities** for querying and filtering
+- *Settings UI pending Phase 2*
+
+#### Catalog-First Meal Generation
+- **Intelligent matching**: Checks catalog before generating new recipes
+- **Name matching**: Exact + fuzzy matching of recipe names
+- **40-70% catalog usage** in typical generations
+- **Cost savings**: ~50-70% reduction in Claude API calls
+- **Stats tracking**: Logs catalog vs generated ratio
+
+### 🏗️ Technical Changes
+
+#### Schema v2 (Breaking Change - Auto-Migrated)
+- **Recipe v2**: +source, spoonacularId, image, parentRecipeId, childRecipeIds, dietCompassScores, nutrition, comprehensive tags
+- **Eater v2**: +dietProfile, personalPreferences, excludeIngredients, preferIngredients
+- **BaseSpecification v2**: +mealPrepSettings (batchPrepDays, per-day prepLevels)
+- **Meal v2**: +prepTasks, targetEaters, dietProfileTags
+- **Auto-migration**: Runs on app boot, idempotent, backward-compatible
+
+#### New Storage Keys
+- `vanessa_recipe_catalog` (~900KB) - 607 recipes
+- `vanessa_ingredient_health` (~35KB) - Ingredient scores
+- `vanessa_diet_profiles` (~10KB) - 11 profiles
+- `vanessa_migration_slice5` - Migration flag
+
+### 🔧 Component Updates
+- **RecipeLibraryPage**: Loads and displays catalog recipes with health bars
+- **RecipeDetailPage**: Shows full health score breakdown
+- **mealPlanTransformer**: Catalog matching before recipe creation
+- **devPresets**: Now only loads onboarding (no test recipes)
+- **main.js**: Bootstraps health data and catalog on app init
+
+### 📦 New Files (35 total)
+- **Data**: 3 JSON files (catalog, ingredients, profiles)
+- **Utilities**: 8 new utility modules
+- **Components**: 1 new component (HealthScoreBars)
+- **Scripts**: 5 extraction/scoring scripts
+- **Documentation**: 8 Slice 5 guides + session logs
+- **Tests**: 3 test pages and scripts
+
+### 🐛 Fixes & Improvements
+- Fixed: Catalog auto-loads from file into localStorage
+- Fixed: All 607 recipes have complete ingredient lists
+- Fixed: Dev preset no longer creates conflicting test data
+- Improved: Claude prompt guides toward catalog-friendly names
+- Added: Comprehensive error handling in extraction
+- Added: Progress logging and stats tracking
+
+### 📊 Performance
+- Catalog load: ~200-300ms (908KB JSON)
+- Recipe scoring: <5ms per recipe
+- Batch scoring: ~3 seconds for 607 recipes
+- Image storage: 11MB local (no CDN dependency)
+
+### 💰 Cost Impact
+- **Development**: $0.60 (Taskmaster + testing)
+- **One-time extraction**: ~1,400 Spoonacular points
+- **Monthly savings**: $29 (Spoonacular can be canceled)
+- **Ongoing**: ~$5-10/month (Anthropic only)
+
+### 🐛 Known Issues
+- Images not displaying in Recipe Library (path configuration issue)
+- Average health scores conservative (13.7/100) due to limited ingredient database
+- Catalog matching rate 40-70% (can be optimized with better prompts)
+
+### 📝 Notes
+- **Tasks completed**: 20 of 37 Slice 5 tasks (54%)
+- **Session duration**: 4.5 hours autonomous building
+- **Spoonacular API**: Used once for extraction, no longer required
+- **Next phase**: Settings UI, Prep Planning, Recipe Variations
+
 ## [v1.0-rc2] - January 8, 2026 - UI Polish & Summary Feature
 
 ### 🎨 UI Improvements

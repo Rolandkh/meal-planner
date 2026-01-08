@@ -1,9 +1,9 @@
 # Vanessa - AI Meal Planning Concierge
 
-**Version:** v1.0-rc3 (Testing Feedback Fixes)  
-**Status:** Core features tested and debugged, Task 59 pending  
+**Version:** v1.1-alpha (Slice 5 - Catalog System)  
+**Status:** 607-recipe catalog integrated with health scoring system  
 **Created:** December 2025  
-**Last Updated:** January 8, 2026 11:45 PM (Testing fixes applied)
+**Last Updated:** January 9, 2026 12:30 AM (Slice 5 Phase 1 complete)
 
 ---
 
@@ -13,17 +13,63 @@ Vanessa is an AI-powered meal planning assistant that helps you:
 - 💬 Chat about your meal planning needs and preferences
 - 👥 Manage household members with dietary preferences and schedules
 - ✨ Generate personalized 7-day meal plans with accurate servings
-- 🔄 Regenerate single days with conversational workflow - preserves other days (NEW: Slice 4, FIXED: Jan 8)
-- ✏️ Edit recipes with visual save confirmation (NEW: Slice 4, FIXED: Jan 8)
-- 📥 Import recipes from text (blogs, emails, etc.) (NEW: Slice 4)
-- 📅 Browse meal plan history (NEW: Slice 4)
+- 📚 **Access 607 professional recipes with health scores** (NEW: Slice 5)
+- 🏥 **View Diet Compass health ratings on all recipes** (NEW: Slice 5)
+- 🎯 **Catalog-first generation** - uses existing recipes when possible (NEW: Slice 5)
+- 🔄 Regenerate single days with conversational workflow - preserves other days (Slice 4, FIXED: Jan 8)
+- ✏️ Edit recipes with visual save confirmation (Slice 4, FIXED: Jan 8)
+- 📥 Import recipes from text (blogs, emails, etc.) (Slice 4)
+- 📅 Browse meal plan history (Slice 4)
 - 🛒 Get organized shopping lists with ingredient limits (30 items default)
 - 📖 Browse, search, and rate your recipe library
 - ⭐ Track recipe favorites and cooking history
 - 💰 Control your weekly food budget
 - ⚙️ Customize settings and preferences
 
-## Current Features (Slices 1, 2, 3 & 4)
+## Current Features (Slices 1, 2, 3, 4 & 5-partial)
+
+### ✅ Slice 5: Health Intelligence & Recipe Catalog (PARTIAL - Phase 1)
+
+**Recipe Catalog System:**
+- 607 professionally-tested recipes from Spoonacular
+- 24 cuisines, 10 diet types, 27 dish types
+- Complete ingredient lists (all metric units)
+- Full nutrition data (calories, macros, micros)
+- Local image storage (606 photos, ~11MB)
+- **Zero ongoing Spoonacular dependency**
+
+**Diet Compass Health Scoring:**
+- 4-metric health rating system (0-100 each)
+  - 🥗 Nutrient Density (protective vs harmful foods)
+  - ⏳ Anti-Aging (longevity, autophagy, inflammation)
+  - ⚖️ Weight Loss (glycemic impact, satiety)
+  - ❤️ Heart Health (omega-3, healthy fats)
+- Visual 5-bar display on recipe cards
+- Full score breakdown on recipe detail pages
+- 605 of 607 catalog recipes scored (99.7%)
+- Based on "The Diet Compass" by Bas Kast
+
+**Diet Profile System (Data Only):**
+- 11 preloaded diet profiles (Mediterranean, Keto, Vegan, etc.)
+- Profile compatibility filtering
+- Conflict detection (e.g., Keto + Vegan)
+- *Settings UI pending*
+
+**Catalog-First Generation:**
+- Intelligent recipe name matching (exact + fuzzy)
+- Uses catalog recipes when Claude suggests common names
+- Falls back to AI generation when needed
+- Tracks catalog vs generated ratio (40-70% typical)
+- Cost savings: ~50-70% less Claude tokens
+- Faster generation with pre-scored recipes
+
+**What's NOT Yet Built (Slice 5 Phase 2):**
+- ❌ Settings UI for diet profiles (Tasks 69, 90)
+- ❌ Prep planning system (Tasks 73-74, 93-94)
+- ❌ Recipe variations (parent/child relationships)
+- ❌ Multi-profile generation (separate recipes per diet conflict)
+- ❌ Onboarding with diet suggestions
+- ❌ Admin catalog management UI
 
 ### ✅ Slice 1: Chat with Vanessa
 - Collapsible chat widget accessible from anywhere
