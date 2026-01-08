@@ -6,13 +6,52 @@
 import { STORAGE_KEYS } from '../types/schemas.js';
 
 /**
- * Load recipe catalog from localStorage
+ * Load recipe catalog from localStorage or static file
  * @returns {Array} Array of catalog recipes
  */
-export function getRecipeCatalog() {
+export async function getRecipeCatalog() {
+  try {
+    // Try localStorage first
+    const stored = localStorage.getItem(STORAGE_KEYS.RECIPE_CATALOG);
+    if (stored) {
+      const data = JSON.parse(stored);
+      return data.recipes || [];
+    }
+
+    // If not in localStorage, try to load from static file
+    console.log('📦 Catalog not in localStorage, loading from file...');
+    try {
+      const response = await fetch('/src/data/vanessa_recipe_catalog.json');
+      if (response.ok) {
+        const catalogData = await response.json();
+        
+        // Save to localStorage for faster future loads
+        localStorage.setItem(STORAGE_KEYS.RECIPE_CATALOG, JSON.stringify(catalogData));
+        console.log(`✅ Loaded ${catalogData.recipes?.length || 0} recipes from catalog file`);
+        
+        return catalogData.recipes || [];
+      }
+    } catch (fetchError) {
+      console.warn('Could not load catalog from file:', fetchError);
+    }
+
+    return [];
+    
+  } catch (error) {
+    console.error('Error loading recipe catalog:', error);
+    return [];
+  }
+}
+
+/**
+ * Synchronous version - loads from localStorage only
+ * @returns {Array} Array of catalog recipes
+ */
+export function getRecipeCatalogSync() {
   try {
     const stored = localStorage.getItem(STORAGE_KEYS.RECIPE_CATALOG);
     if (!stored) {
+      console.warn('⚠️ Catalog not in localStorage - use loadCatalogFromFile() first');
       return [];
     }
 
@@ -22,6 +61,34 @@ export function getRecipeCatalog() {
   } catch (error) {
     console.error('Error loading recipe catalog:', error);
     return [];
+  }
+}
+
+/**
+ * Load catalog from file into localStorage (one-time import)
+ * @returns {Promise<boolean>} Success
+ */
+export async function loadCatalogFromFile() {
+  try {
+    console.log('📂 Loading catalog from file...');
+    const response = await fetch('/src/data/vanessa_recipe_catalog.json');
+    
+    if (!response.ok) {
+      console.error('Catalog file not found');
+      return false;
+    }
+
+    const catalogData = await response.json();
+    
+    // Save to localStorage
+    localStorage.setItem(STORAGE_KEYS.RECIPE_CATALOG, JSON.stringify(catalogData));
+    console.log(`✅ Loaded ${catalogData.recipes?.length || 0} recipes into localStorage`);
+    
+    return true;
+    
+  } catch (error) {
+    console.error('Error loading catalog from file:', error);
+    return false;
   }
 }
 

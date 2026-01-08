@@ -8,7 +8,7 @@ import {
   loadRecipes
 } from '../utils/storage.js';
 import { RecipeImportModal } from './RecipeImportModal.js';
-import { getRecipeCatalog } from '../utils/catalogStorage.js';
+import { getRecipeCatalogSync } from '../utils/catalogStorage.js';
 
 export class RecipeLibraryPage {
   constructor() {
@@ -29,8 +29,8 @@ export class RecipeLibraryPage {
     // Load user recipes
     const userRecipes = loadRecipes();
     
-    // Load catalog recipes
-    const catalogRecipes = this.state.showCatalog ? getRecipeCatalog() : [];
+    // Load catalog recipes (synchronous - catalog should be in localStorage by now)
+    const catalogRecipes = this.state.showCatalog ? getRecipeCatalogSync() : [];
     
     // Combine both (catalog first, then user recipes)
     this.state.recipes = [...catalogRecipes, ...userRecipes];

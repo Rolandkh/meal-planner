@@ -95,6 +95,22 @@ async function initApp() {
     console.warn('⚠️ Could not bootstrap health data:', error);
   }
   
+  // STEP 0.5: Load catalog from file into localStorage (Slice 5)
+  try {
+    const { loadCatalogFromFile, getRecipeCatalogSync } = await import('./utils/catalogStorage.js');
+    
+    // Check if catalog already in localStorage
+    const existing = getRecipeCatalogSync();
+    if (existing.length === 0) {
+      console.log('📦 Loading catalog from file...');
+      await loadCatalogFromFile();
+    } else {
+      console.log(`✅ Catalog already loaded: ${existing.length} recipes`);
+    }
+  } catch (error) {
+    console.warn('⚠️ Could not load catalog:', error);
+  }
+  
   // STEP 1: Run all schema migrations
   console.log('Running schema migrations...');
   const migrationResult = await migrationManager.runMigrations();

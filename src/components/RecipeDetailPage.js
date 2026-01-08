@@ -10,7 +10,7 @@ import {
   updateRating,
   incrementTimesCooked
 } from '../utils/storage.js';
-import { getRecipeCatalog } from '../utils/catalogStorage.js';
+import { getRecipeCatalogSync } from '../utils/catalogStorage.js';
 
 export class RecipeDetailPage {
   constructor(params) {
@@ -33,7 +33,7 @@ export class RecipeDetailPage {
     
     // If not found, try catalog
     if (!this.state.recipe) {
-      const catalog = getRecipeCatalog();
+      const catalog = getRecipeCatalogSync();
       this.state.recipe = catalog.find(r => r.recipeId === this.recipeId);
       this.state.isCatalogRecipe = !!this.state.recipe;
     }
