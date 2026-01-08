@@ -1,0 +1,846 @@
+{
+  "timestamp": "2026-01-08T23:21:08.289Z",
+  "rawData": {
+    "weekOf": "2026-01-10",
+    "budget": {
+      "estimated": 85
+    },
+    "days": [
+      {
+        "date": "2026-01-10",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey and Walnuts",
+          "ingredients": [
+            {
+              "name": "Greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "walnuts",
+              "quantity": 30,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place Greek yogurt in a bowl. Drizzle with honey and top with chopped walnuts.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "anti-inflammatory"
+          ]
+        },
+        "lunch": {
+          "name": "Mediterranean Chickpea Salad",
+          "ingredients": [
+            {
+              "name": "chickpeas",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Drain chickpeas and combine with diced cucumber and halved cherry tomatoes. Dress with olive oil and lemon juice, season with salt and pepper.",
+          "prepTime": 10,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "vegetarian",
+            "quick"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Salmon with Roasted Vegetables",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Season salmon with salt, pepper, and minced garlic. Chop vegetables and toss with olive oil. Bake everything at 200°C for 20 minutes.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "anti-inflammatory",
+            "fish"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-11",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey and Walnuts",
+          "ingredients": [
+            {
+              "name": "Greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "walnuts",
+              "quantity": 30,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place Greek yogurt in a bowl. Drizzle with honey and top with chopped walnuts.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "anti-inflammatory"
+          ]
+        },
+        "lunch": {
+          "name": "Pasta with Tomato Sauce",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook pasta according to package directions. Sauté garlic in olive oil, add halved cherry tomatoes and cook until soft. Toss with pasta.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "mediterranean",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Chicken with Rice and Vegetables",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "white rice",
+              "quantity": 150,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Season chicken with olive oil, salt, and pepper. Bake at 200°C for 25 minutes. Cook rice and steam zucchini. Serve together.",
+          "prepTime": 10,
+          "cookTime": 25,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "mediterranean"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-12",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "whole wheat bread",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs and scramble in olive oil over medium heat. Toast bread. Serve together.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "quick",
+            "kid-friendly",
+            "protein"
+          ]
+        },
+        "lunch": {
+          "name": "Chickpea and Vegetable Soup",
+          "ingredients": [
+            {
+              "name": "chickpeas",
+              "quantity": 300,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "carrot",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté diced carrot, zucchini, and garlic in olive oil. Add chickpeas and 500ml water. Simmer for 15 minutes.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "vegetarian",
+            "mediterranean"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Salmon with Roasted Vegetables",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "carrot",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Season salmon with lemon juice, salt, and pepper. Chop vegetables and toss with olive oil. Bake everything at 200°C for 20 minutes.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 2,
+          "tags": [
+            "mediterranean",
+            "anti-inflammatory",
+            "fish"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-13",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "whole wheat bread",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs and scramble in olive oil over medium heat. Toast bread. Serve together.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "quick",
+            "kid-friendly",
+            "protein"
+          ]
+        },
+        "lunch": {
+          "name": "Pasta with Tomato Sauce",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook pasta according to package directions. Sauté garlic in olive oil, add halved cherry tomatoes and cook until soft. Toss with pasta.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "mediterranean",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Greek Style Baked Fish with Vegetables",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 450,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 300,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 300,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Arrange salmon and chopped vegetables in a baking dish. Drizzle with olive oil, lemon juice, and minced garlic. Bake at 200°C for 25 minutes.",
+          "prepTime": 15,
+          "cookTime": 25,
+          "servings": 3,
+          "tags": [
+            "mediterranean",
+            "anti-inflammatory",
+            "fish",
+            "entertaining"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-14",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "whole wheat bread",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs and scramble in olive oil over medium heat. Toast bread. Serve together.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "quick",
+            "kid-friendly",
+            "protein"
+          ]
+        },
+        "lunch": {
+          "name": "Mediterranean Chickpea Salad",
+          "ingredients": [
+            {
+              "name": "chickpeas",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Drain chickpeas and combine with diced cucumber and halved cherry tomatoes. Dress with olive oil and lemon juice, season with salt and pepper.",
+          "prepTime": 10,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "vegetarian",
+            "quick"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Chicken with Rice and Vegetables",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "white rice",
+              "quantity": 75,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Season chicken with olive oil, salt, and pepper. Bake at 200°C for 25 minutes. Cook rice and steam bell pepper. Serve together.",
+          "prepTime": 10,
+          "cookTime": 25,
+          "servings": 1,
+          "tags": [
+            "simple",
+            "mediterranean"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-15",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey and Walnuts",
+          "ingredients": [
+            {
+              "name": "Greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "walnuts",
+              "quantity": 30,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place Greek yogurt in a bowl. Drizzle with honey and top with chopped walnuts.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "anti-inflammatory"
+          ]
+        },
+        "lunch": {
+          "name": "Chickpea and Vegetable Soup",
+          "ingredients": [
+            {
+              "name": "chickpeas",
+              "quantity": 150,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "carrot",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "garlic",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté diced carrot, zucchini, and garlic in olive oil. Add chickpeas and 300ml water. Simmer for 15 minutes.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 1,
+          "tags": [
+            "vegetarian",
+            "mediterranean"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Chicken with Rice and Vegetables",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "white rice",
+              "quantity": 75,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "carrot",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Season chicken with olive oil, salt, and pepper. Bake at 200°C for 25 minutes. Cook rice and steam carrot. Serve together.",
+          "prepTime": 10,
+          "cookTime": 25,
+          "servings": 1,
+          "tags": [
+            "simple",
+            "mediterranean"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-16",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey and Walnuts",
+          "ingredients": [
+            {
+              "name": "Greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "walnuts",
+              "quantity": 30,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place Greek yogurt in a bowl. Drizzle with honey and top with chopped walnuts.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "anti-inflammatory"
+          ]
+        },
+        "lunch": {
+          "name": "Mediterranean Chickpea Salad",
+          "ingredients": [
+            {
+              "name": "chickpeas",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Drain chickpeas and combine with diced cucumber and halved cherry tomatoes. Dress with olive oil and lemon juice, season with salt and pepper.",
+          "prepTime": 10,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "vegetarian",
+            "quick"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Salmon with Roasted Vegetables",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Season salmon with salt, pepper, and minced garlic. Chop vegetables and toss with olive oil. Bake everything at 200°C for 20 minutes.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "anti-inflammatory",
+            "fish"
+          ]
+        }
+      }
+    ]
+  }
+}

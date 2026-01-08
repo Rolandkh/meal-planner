@@ -101,7 +101,9 @@ function extractRecipes(days) {
       
       if (catalogRecipe) {
         // Use catalog recipe!
-        const hash = createRecipeHash(catalogRecipe);
+        // CRITICAL FIX: Use the AI recipe's hash as the key, not catalog recipe's hash
+        // This ensures createMeals() can find it later
+        const hash = createRecipeHash(recipe);
         if (!recipeMap.has(hash)) {
           recipeMap.set(hash, { 
             recipe: catalogRecipe, 

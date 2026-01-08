@@ -465,6 +465,9 @@ Output ONLY the JSON structure specified in the system prompt. Since this is a s
   // Full week generation (default)
   return `Generate a meal plan for the week starting ${weekOf}.
 
+CRITICAL: Generate EXACTLY 7 DAYS of meals (Saturday through Friday).
+Your response must include ALL 7 days in the "days" array.
+
 Household members:
 ${eaterInfo}
 ${conversationContext}
@@ -473,6 +476,11 @@ ${ingredientConstraint}
 ${catalogInfo}
 
 Create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. 
+
+IMPORTANT: 
+- Generate ALL 7 days (21 meals total)
+- Do NOT stop early or truncate
+- Keep instructions brief (2-3 sentences max per recipe) to fit all 7 days
 
 If the user specified constraints in the conversation (like "simple recipes", "meal prep on Saturday", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
 
@@ -603,7 +611,7 @@ export default async function handler(req) {
           // Create Claude stream
           const messageStream = await anthropic.messages.create({
             model: 'claude-sonnet-4-5-20250929',
-            max_tokens: 8192,
+            max_tokens: 12288,  // Increased for Slice 5 (was 8192)
             temperature: 0.7,  // Lower temp for faster, more focused generation
             system: SYSTEM_PROMPT,
             messages: [
