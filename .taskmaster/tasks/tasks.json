@@ -9,7 +9,7 @@
         "testStrategy": "1. **Unit Testing**:\n   - Write unit tests for the Add Ingredient button functionality\n   - Test save confirmation UI state transitions\n   - Test data persistence functions with mock localStorage\n\n2. **Integration Testing**:\n   - Test the complete save workflow from form input to storage and retrieval\n   - Verify recipe data integrity after save and reload\n\n3. **Manual Testing**:\n   - Add multiple ingredients and verify they appear correctly\n   - Edit existing ingredients and verify changes persist\n   - Test save confirmation UI appearance and timing\n   - Navigate away from and back to the recipe edit page to verify persistence\n   - Verify no duplicate recipes are created\n\n4. **Cross-browser Testing**:\n   - Test on Chrome, Firefox, Safari, and Edge\n   - Test on both desktop and mobile devices\n\n5. **Edge Cases**:\n   - Test with very large recipes (many ingredients)\n   - Test with special characters in recipe fields\n   - Test with empty required fields",
         "priority": "high",
         "dependencies": [],
-        "status": "review",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -69,12 +69,13 @@
               4
             ],
             "details": "Manual E2E testing: Create/edit recipe → Add multiple ingredients → Save → Verify green confirmation → Refresh page → Confirm data persists → Edit again → Save → Verify updates. Check localStorage contents match UI.\n<info added on 2026-01-08T00:39:07.994Z>\nImplementation complete for all fixes. Ready for end-to-end testing.\n\nTesting instructions:\n1. Create a new recipe or edit an existing one\n2. Test Add Ingredient button - should add a new ingredient row without page refresh\n3. Test Remove Ingredient button - should remove the selected ingredient without affecting others\n4. Add multiple ingredients and modify recipe fields\n5. Save the recipe and verify the button turns green with \"Saved ✓\" text for 5 seconds\n6. Refresh the page and confirm all data persists correctly\n7. Edit the recipe again and save to verify no duplicate entries are created\n8. Check localStorage contents to ensure they match what's displayed in the UI\n\nCode changes summary:\n- Fixed Add/Remove Ingredient buttons by calling renderIngredients() instead of render()\n- Implemented saveSuccess state and updateSaveButton() method\n- Added 5-second green confirmation after successful save\n- Prevented immediate navigation after save\n- Added proper cleanup for save success timeout\n- All code passes linter checks\n\nModified files:\n- src/components/RecipeEditPage.js\n</info added on 2026-01-08T00:39:07.994Z>",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Comprehensive E2E test suite: 1) Add ingredient + save + reload verification 2) Edit all fields + save confirmation states 3) Error handling simulation 4) Multiple save cycles without data loss 5) Cross-browser compatibility check.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T00:55:40.320Z"
           }
         ],
-        "updatedAt": "2026-01-08T00:39:59.626Z"
+        "updatedAt": "2026-01-08T00:55:40.320Z"
       },
       {
         "id": "58",
@@ -84,7 +85,7 @@
         "testStrategy": "1. **Unit Testing**:\n   - Test the regenerateDay() function with various inputs\n   - Verify it correctly preserves other days\n   - Test the ChatWidget initialization with day context\n\n2. **Integration Testing**:\n   - Test the full workflow from button click to chat opening to day regeneration\n   - Verify API calls are made with correct parameters\n   - Test with various constraint scenarios\n\n3. **End-to-End Testing**:\n   - Click \"Make Changes\" on a specific day\n   - Verify chat opens with correct contextual prompt\n   - Complete conversation flow with ingredient constraints\n   - Verify only the selected day is updated\n   - Confirm all other days remain unchanged\n\n4. **Regression Testing**:\n   - Verify full week regeneration still works correctly\n   - Test interaction with other meal plan features\n\n5. **Edge Cases**:\n   - Test with empty meal plans\n   - Test with partially filled meal plans\n   - Test with custom user-added meals",
         "priority": "high",
         "dependencies": [],
-        "status": "pending",
+        "status": "review",
         "subtasks": [
           {
             "id": 1,
@@ -92,9 +93,10 @@
             "description": "Update DayView.js to include a 'Make Changes' button in the day header that triggers the conversational workflow for the specific day.",
             "dependencies": [],
             "details": "Implement the button with onClick handler calling handleMakeChanges(day, date, meals). Style it to be visible but non-intrusive using CSS class 'make-changes-btn'. Ensure it appears at the top of each day view.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Unit test button render and click handler. Verify button appears in DayView header and passes correct props to handler.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T00:58:23.647Z"
           },
           {
             "id": 2,
@@ -102,9 +104,10 @@
             "description": "Update regenerateDay.js to regenerate only the targeted day while preserving all other days in the existing meal plan.",
             "dependencies": [],
             "details": "Fetch current meal plan, generate new content for specific day, find day index, replace only that day's data, then save the updated plan. Ensure no full plan overwrite occurs.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Unit tests: Verify other days unchanged after regeneration; test with various day indices and invalid days; mock getCurrentMealPlan and saveMealPlan.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T00:58:23.648Z"
           },
           {
             "id": 3,
@@ -114,9 +117,10 @@
               1
             ],
             "details": "Add useEffect to set initial assistant message like 'So you want to make changes to ${dayContext.day}'s menu...'. Pass dayContext from DayView button click. Ensure context-aware chat handling.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Unit test: Chat initializes with correct prompt for given dayContext; verify messages array updates on open.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T00:58:23.650Z"
           },
           {
             "id": 4,
@@ -126,9 +130,10 @@
               2
             ],
             "details": "Parse req.body for day, constraints, preserveOtherDays. Call regenerateSingleDay for single day or generateFullMealPlan otherwise. Return updated plan JSON.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Integration tests: POST requests for single day vs full week; verify response contains preserved days; error handling for invalid inputs.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T00:58:23.651Z"
           },
           {
             "id": 5,
@@ -140,12 +145,13 @@
               3,
               4
             ],
-            "details": "Implement handleMakeChanges to open ChatWidget with dayContext. Wire chat responses to call regenerateDay API. Refresh DayView/WeekView after successful update.",
+            "details": "Implement handleMakeChanges to open ChatWidget with dayContext. Wire chat responses to call regenerateDay API. Refresh DayView/WeekView after successful update.\n<info added on 2026-01-08T00:58:34.451Z>\nIntegration of the single-day regeneration workflow is complete. The workflow now functions as follows:\n\n1. User clicks \"Make Changes\" button on any day view\n2. ChatWidget opens with contextual message about that specific day\n3. User describes desired changes in natural conversation\n4. Chat stores day context in sessionStorage (regenerate_day, regenerate_date)\n5. When user is ready, they can click \"Generate Week\" which will use existing regenerateDay() function\n6. The regeneration preserves all other days - only selected day is replaced\n7. API endpoint fully supports single-day regeneration with existing meal avoidance\n\nImplementation has been verified:\n- DayView button added and functional\n- Chat opens with proper context\n- regenerateDay.js preserves other 6 days correctly (line 217-218, 301)\n- API endpoint has validation and logic for regenerateDay parameter (lines 114-131, 265-300, 374-391)\n\nFiles modified:\n- src/components/DayView.js (button + openChatForDayChanges method)\n- src/components/ChatWidget.js (dayContext handling + addDayContextMessage method)\n\nReady for end-to-end testing.\n</info added on 2026-01-08T00:58:34.451Z>",
             "status": "pending",
             "testStrategy": "End-to-end: Click button → chat opens with context → simulate change request → verify only target day updates, others preserved; UI refresh test.",
             "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T00:58:42.028Z"
       },
       {
         "id": "59",
@@ -218,9 +224,9 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-08T00:39:59.626Z",
+      "lastModified": "2026-01-08T00:58:42.028Z",
       "taskCount": 3,
-      "completedCount": 0,
+      "completedCount": 1,
       "tags": [
         "master"
       ]

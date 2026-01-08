@@ -24,6 +24,9 @@ export class ChatWidget {
     this.currentStreamingMessage = null;
     this.isGenerating = false; // Track generation state
     
+    // Task 58: Day-specific context for regeneration workflow
+    this.dayContext = null; // Stores day info when opened for changes
+    
     // Onboarding state
     this.isOnboarding = false;
     this.onboardingStep = 0;
@@ -40,6 +43,12 @@ export class ChatWidget {
     // Listen for toggle event from HomePage or other components
     document.addEventListener('toggle-chat', (e) => {
       const shouldOpen = e.detail?.open !== undefined ? e.detail.open : !this.isOpen;
+      
+      // Task 58: Check for day context
+      if (e.detail?.dayContext) {
+        this.dayContext = e.detail.dayContext;
+      }
+      
       if (shouldOpen !== this.isOpen) {
         this.toggle();
       }
@@ -223,6 +232,13 @@ export class ChatWidget {
     this.container.style.transform = this.isOpen ? 'translateX(0)' : 'translateX(100%)';
 
     if (this.isOpen) {
+      // Task 58: If opened with day context, add contextual prompt
+      if (this.dayContext) {
+        this.addDayContextMessage();
+        // Clear context after using it
+        this.dayContext = null;
+      }
+      
       // Focus input (delayed slightly to ensure keyboard appears correctly on mobile)
       setTimeout(() => {
         this.messageInput.focus();
@@ -454,6 +470,37 @@ export class ChatWidget {
    */
   getMessages() {
     return this.messages;
+  }
+
+  /**
+   * Task 58: Add day-specific context message when opening for changes
+   */
+  addDayContextMessage() {
+    if (!this.dayContext) return;
+    
+    const { dayNameCapitalized, mealsContext, date } = this.dayContext;
+    
+    const contextMessage = {
+      role: 'assistant',
+      content: `So you want to make changes to ${dayNameCapitalized}'s menu! 🍽️
+
+Currently you have: ${mealsContext}
+
+What would you like to change? For example, you could:
+• Replace a specific meal
+• Change ingredients based on what you have available
+• Adjust for dietary restrictions
+• Make it quicker/easier to prepare
+• Or anything else!
+
+Just tell me what you'd like to do.`
+    };
+    
+    this.addMessage(contextMessage);
+    
+    // Store day context in a temporary variable for regeneration
+    sessionStorage.setItem('regenerate_day', this.dayContext.dayName);
+    sessionStorage.setItem('regenerate_date', this.dayContext.date);
   }
 
   /**
