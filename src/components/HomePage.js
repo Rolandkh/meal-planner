@@ -233,9 +233,9 @@ export class HomePage {
     // Chat button
     const chatButton = document.createElement('button');
     chatButton.className = `
-      bg-gradient-to-r from-gray-300 to-gray-350
-      hover:from-gray-350 hover:to-gray-400
-      text-gray-800 font-bold py-4 px-8 rounded-full
+      bg-gradient-to-r from-gray-400 to-gray-450
+      hover:from-gray-450 hover:to-gray-500
+      text-gray-900 font-bold py-4 px-8 rounded-full
       border border-gray-300
       shadow-xl hover:shadow-2xl
       transition-all duration-300 transform hover:scale-105
@@ -393,9 +393,9 @@ export class HomePage {
       
       if (hasDate) {
         dayButton.className = `
-          bg-gradient-to-r from-gray-300 to-gray-350
-          hover:from-gray-350 hover:to-gray-400
-          text-gray-800 font-semibold py-4 px-6 rounded-lg
+          bg-gradient-to-r from-gray-400 to-gray-450
+          hover:from-gray-450 hover:to-gray-500
+          text-gray-900 font-semibold py-4 px-6 rounded-lg
           border border-gray-300
           shadow-lg hover:shadow-xl
           transition-all transform hover:scale-105
@@ -448,22 +448,22 @@ export class HomePage {
         text-lg
       `.trim().replace(/\s+/g, ' ');
     } else if (style === 'view') {
-      // Gray gradient for view buttons
+      // Gray gradient for view buttons - darker
       button.className = `
-        bg-gradient-to-r from-gray-300 to-gray-350
-        hover:from-gray-350 hover:to-gray-400
-        text-gray-800 font-bold py-5 px-8 rounded-lg
+        bg-gradient-to-r from-gray-400 to-gray-450
+        hover:from-gray-450 hover:to-gray-500
+        text-gray-900 font-bold py-5 px-8 rounded-lg
         border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-xl
       `.trim().replace(/\s+/g, ' ');
     } else {
-      // Gray gradient for secondary buttons (chat, etc.)
+      // Gray gradient for secondary buttons (chat, etc.) - darker
       button.className = `
-        bg-gradient-to-r from-gray-300 to-gray-350
-        hover:from-gray-350 hover:to-gray-400
-        text-gray-800 font-semibold py-4 px-6 rounded-lg
+        bg-gradient-to-r from-gray-400 to-gray-450
+        hover:from-gray-450 hover:to-gray-500
+        text-gray-900 font-semibold py-4 px-6 rounded-lg
         border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
