@@ -3,8 +3,8 @@
 ## Project Overview
 
 **Product Name:** Vanessa - AI Meal Planning Concierge
-**Version:** v1.0-rc1 (Slice 4 Code Complete)
-**Status:** Slices 1, 2, 3 ✅ Complete | Slice 4 ✅ Code Complete (Testing In Progress)
+**Version:** v1.0-rc2 (Slice 4 Complete)
+**Status:** Slices 1, 2, 3, 4 ✅ Complete | Ready for Slice 5 Planning
 **Approach:** Vertical Slice → Reality Check → Expand
 **Technology Stack:** Vanilla JavaScript, HTML, CSS (Tailwind), Vercel serverless functions, Claude API
 
@@ -20,9 +20,9 @@ This project follows an iterative "vertical slice" approach:
 4. **Reality Check**: Evaluate and refine ✅ **COMPLETE**
 5. **Slice 3**: Recipe library, settings, onboarding ✅ **COMPLETE**
 6. **Reality Check**: Evaluate and refine ✅ **COMPLETE**
-7. **Slice 4**: Quick wins (recipe management, history, import) ✅ **CODE COMPLETE**
-8. **Testing Phase**: Manual testing of AI features ⏳ **IN PROGRESS**
-9. **Slice 5+**: Expand features based on learnings
+7. **Slice 4**: Quick wins (recipe management, history, import) ✅ **COMPLETE**
+8. **Reality Check**: Document learnings and patterns ✅ **COMPLETE**
+9. **Slice 5**: Plan next features based on learnings ⏳ **READY TO PLAN**
 10. **Polish**: UI/UX improvements after core flows are stable
 
 ---
@@ -1727,28 +1727,1658 @@ function saveNewMealPlan(mealPlan) {
 
 ---
 
-## SLICE 5+: Future Features (Deferred)
+## REALITY CHECK: Slice 4 Learnings
 
-### Slice 5: Recipe Management Pro
-- Manual recipe creation (from scratch)
-- Recipe import from URL
-- Recipe duplication/copying
-- Recipe categories and tagging
-- Recipe notes and variations
+**Date:** January 8, 2026  
+**Version:** v1.0-rc2  
+**Code Written:** ~2,700 lines (2,500 new + 200 fixes)  
+**Time Spent:** ~12 hours total (8 hours build + 4 hours testing/fixes)
 
-### Slice 6: Firebase Migration & Sync
+### What Worked Exceptionally Well ✅
+
+1. **Vertical Slice Methodology Proven**
+   - Built 4 complete features in ~1 week
+   - Each feature independently shippable
+   - Testing revealed issues early, fixed quickly
+   - **Learning:** Slice-by-slice approach enables rapid iteration with quality
+   - **Pattern Established:** Build → Test → Fix → Document → Next Slice
+
+2. **Autonomous Development with Testing Checkpoints**
+   - AI built all 10 tasks autonomously (~2 hours)
+   - User testing found 3 critical bugs
+   - All bugs fixed within 4 hours
+   - **Learning:** AI can build quickly, but user testing is essential for catching logic bugs
+   - **Pattern:** Autonomous build → Manual test → Targeted fixes → Re-test
+
+3. **SessionStorage for Navigation Context**
+   - Used sessionStorage to pass regeneration parameters between components
+   - Clean, automatic cleanup
+   - No URL pollution
+   - **Learning:** Perfect for temporary navigation state that shouldn't persist
+   - **Pattern Established:** Use sessionStorage for cross-component temporary data
+
+4. **Conversational Workflows Over Modals**
+   - Replaced modal-based regeneration with chat-based workflow
+   - Users describe changes naturally
+   - Vanessa clarifies and confirms
+   - More flexible than rigid forms
+   - **Learning:** Natural language is more user-friendly than structured forms for complex operations
+   - **Pattern:** Chat integration > Modals for user intent capture
+
+5. **Message Formatting with HTML**
+   - Enabled HTML rendering in chat messages
+   - Bold headings, colored boxes, bullet points
+   - Dramatically improved readability
+   - **Learning:** Structured formatting is crucial for complex information in chat
+   - **Pattern:** Use HTML formatting for multi-part chat messages
+
+6. **Auto-Archive with Snapshot Pattern**
+   - Old meal plans automatically archived on new generation
+   - Frozen snapshots prevent data corruption
+   - Clean separation between active and historical data
+   - **Learning:** Snapshot pattern ensures historical data integrity
+   - **Pattern Established:** Create immutable copies for archival
+
+7. **Component Re-Render Strategies**
+   - Learned to use targeted updates (renderIngredients()) vs full re-render
+   - Prevents DOM recreation and improves performance
+   - **Learning:** Partial updates better than full component re-renders
+   - **Pattern:** Create targeted render methods for dynamic sections
+
+8. **Visual Feedback Essential**
+   - Save confirmation (green button) prevents user confusion
+   - Context-aware button text ("Generate" vs "Generate Week")
+   - Loading states during AI operations
+   - **Learning:** Users need immediate visual confirmation for all actions
+   - **Pattern:** Every action requires visual state feedback
+
+### What Was Awkward / Could Improve 🤔
+
+1. **Data Merging Complexity**
+   - **Challenge:** GenerationStatusPage had to merge new day's meals with existing 6 days
+   - Initial implementation replaced all meals (critical bug)
+   - Required careful state tracking (isSingleDayRegeneration, regeneratingDate)
+   - **Root Issue:** No clear pattern for partial vs full data updates
+   - **Learning:** Need explicit merge strategy when updating partial datasets
+   - **Future Solution:** Create standardized merge utilities for common operations
+   - **Pattern Needed:** updatePartialData(existing, new, mergeKey)
+
+2. **State Management Across Components**
+   - **Challenge:** Passing day context from DayView → ChatWidget → GenerationStatusPage → back
+   - Used sessionStorage as band-aid solution
+   - No centralized state management
+   - **Root Issue:** Vanilla JS lacks state management framework
+   - **Learning:** As app grows, lack of state management becomes friction point
+   - **Future Consideration:** May need lightweight state manager (Zustand, Nanostores) for Slice 5+
+   - **Current Workaround:** SessionStorage + component props works, but getting complex
+
+3. **Component Lifecycle Complexity**
+   - **Challenge:** RecipeEditPage needed auto-save, draft management, beforeUnload
+   - Multiple timers to track (saveTimeout, saveSuccessTimeout)
+   - Manual cleanup required
+   - **Root Issue:** No built-in lifecycle management
+   - **Learning:** Complex components need explicit cleanup patterns
+   - **Pattern Established:** Track all timers in component state, cleanup in destroy()
+
+4. **Testing Automation Gap**
+   - **Challenge:** Automated browser tests caught UI issues but missed logic bugs
+   - Critical bugs only found during manual user testing
+   - No automated tests for data merging logic
+   - **Learning:** Need unit tests for critical data operations, not just UI tests
+   - **Future:** Add Jest/Vitest for unit testing storage and transformation logic
+
+5. **API Endpoint Complexity Growth**
+   - **Challenge:** generate-meal-plan.js now handles full week + single day + various parameters
+   - 400+ lines in single endpoint
+   - Validation spread throughout
+   - **Learning:** API endpoints becoming monolithic
+   - **Future Refactor:** Consider splitting into multiple endpoints or extracting shared logic
+
+6. **UI Iterations Required**
+   - **Challenge:** Took 6+ iterations to get button colors right
+   - Gradient transparency issues on colored backgrounds
+   - Trial-and-error approach
+   - **Learning:** UI polish requires iteration, but slows development
+   - **Pattern:** Defer visual polish until feature complete, then batch refine
+
+7. **Documentation Lag**
+   - **Challenge:** Documentation written after implementation
+   - Easy to miss details or forget context
+   - Had to reconstruct learnings from code
+   - **Learning:** Document learnings immediately, not at end of slice
+   - **Pattern:** Create LEARNINGS.md during development, update in real-time
+
+### Technical Discoveries 🔍
+
+1. **RecipeEditPage Re-Render Bug**
+   - Calling `this.render()` created new DOM container but didn't replace old one
+   - Solution: Create targeted update methods (renderIngredients())
+   - **Discovery:** Full component re-renders don't work in vanilla JS component pattern
+   - **Fix:** Partial DOM updates via targeted methods
+
+2. **MealPlan History Snapshot Requirements**
+   - Must freeze meals AND recipes together
+   - Recipe references can change, breaking historical plans
+   - Solution: Store complete snapshots with embedded recipe data
+   - **Discovery:** Relational data needs denormalization for archival
+
+3. **Save Confirmation UX Pattern**
+   - Button color change + text change + timeout = clear feedback
+   - 5 seconds is optimal (long enough to see, short enough not to annoy)
+   - **Discovery:** State transitions need visual + temporal components
+
+4. **SessionStorage Auto-Cleanup**
+   - Perfect for single-use parameters
+   - Automatically cleared on generation completion
+   - No manual cleanup needed
+   - **Discovery:** SessionStorage ideal for one-time navigation context
+
+5. **Recipe Import Confidence Scoring**
+   - AI extraction accuracy varies widely by source
+   - Preview/edit step essential for low-confidence (<70%)
+   - **Discovery:** Always show preview for AI-extracted data, regardless of confidence
+
+6. **Single-Day Generation Speed**
+   - Only 3 meals vs 21 meals
+   - Takes ~20-30 seconds vs 60-90 seconds
+   - Users prefer faster partial updates
+   - **Discovery:** Granular operations improve UX even if technically more complex
+
+### Architecture Patterns Established 📐
+
+1. **Merge Strategy Pattern:**
+   ```javascript
+   // For partial updates of array data
+   const mergePartialData = (existing, newItems, matchKey, matchValue) => {
+     const filtered = existing.filter(item => item[matchKey] !== matchValue);
+     return [...filtered, ...newItems];
+   };
+   
+   // Example: Merge single day's meals
+   const existingMeals = loadMeals();
+   const otherDays = existingMeals.filter(m => m.date !== regeneratingDate);
+   const updated = [...otherDays, ...newMeals];
+   ```
+
+2. **Snapshot Archival Pattern:**
+   ```javascript
+   // Create immutable historical snapshot
+   const createSnapshot = (mealPlan) => {
+     const meals = loadMeals().filter(m => 
+       mealPlan.mealIds.includes(m.mealId)
+     );
+     const recipeIds = [...new Set(meals.map(m => m.recipeId))];
+     const recipes = loadRecipes().filter(r => 
+       recipeIds.includes(r.recipeId)
+     );
+     
+     return {
+       ...mealPlan,
+       archivedAt: new Date().toISOString(),
+       mealsSnapshot: meals,      // Frozen copy
+       recipesSnapshot: recipes   // Frozen copy
+     };
+   };
+   ```
+
+3. **Targeted Re-Render Pattern:**
+   ```javascript
+   class Component {
+     // Full render (initial only)
+     render() {
+       const container = document.createElement('div');
+       container.innerHTML = this.template();
+       this.attachEventListeners(container);
+       return container;
+     }
+     
+     // Targeted updates (after initial render)
+     renderSection() {
+       const section = document.getElementById('section-id');
+       section.innerHTML = this.sectionTemplate();
+       this.attachSectionListeners(section);
+     }
+   }
+   ```
+
+4. **Save Confirmation Pattern:**
+   ```javascript
+   class EditPage {
+     async handleSave() {
+       this.saveSuccess = false;
+       this.updateSaveButton(); // Blue "Save Changes"
+       
+       await saveData();
+       
+       this.saveSuccess = true;
+       this.updateSaveButton(); // Green "Saved ✓"
+       
+       this.saveSuccessTimeout = setTimeout(() => {
+         this.saveSuccess = false;
+         this.updateSaveButton(); // Back to blue
+       }, 5000);
+     }
+     
+     destroy() {
+       clearTimeout(this.saveSuccessTimeout);
+     }
+   }
+   ```
+
+5. **SessionStorage Navigation Context Pattern:**
+   ```javascript
+   // Component A: Set context
+   openChatForDayChanges(day, date, meals) {
+     sessionStorage.setItem('regenerate_day', day);
+     sessionStorage.setItem('regenerate_date', date);
+     sessionStorage.setItem('regenerate_meals', JSON.stringify(meals));
+     // Open chat or navigate
+   }
+   
+   // Component B: Read context
+   const dayContext = sessionStorage.getItem('regenerate_day');
+   if (dayContext) {
+     // Handle single-day regeneration
+     sessionStorage.removeItem('regenerate_day'); // Cleanup after use
+   }
+   ```
+
+### Decisions Made 📝
+
+1. **Conversational Over Modal for Complex Changes**
+   - Replaced "Regenerate Day" modal with "Make Changes" chat workflow
+   - Natural language more flexible than form fields
+   - Users can describe nuances
+   - **Rationale:** Better UX for non-deterministic operations
+
+2. **Merge Not Replace for Partial Updates**
+   - Always merge new data with existing when updating subset
+   - Never replace entire dataset for partial operation
+   - **Rationale:** Prevents data loss bugs
+
+3. **Summary Over Stats for Meal Plans**
+   - Removed numerical stats (21 meals, 6 recipes, $115)
+   - Added descriptive summary ("Mediterranean weight loss week")
+   - Moved budget to Shopping List where it's actionable
+   - **Rationale:** Storytelling > Data, Context > Numbers
+
+4. **Solid Backgrounds for Buttons on Colored Surfaces**
+   - Gradient buttons had transparency issues on colored backgrounds
+   - Switched to solid backgrounds for those contexts
+   - **Rationale:** Avoid visual bleeding, ensure readability
+
+5. **5-Second Save Confirmation**
+   - Long enough to see feedback
+   - Short enough not to be annoying
+   - Auto-resets without user action
+   - **Rationale:** Balance visibility with UX flow
+
+6. **SessionStorage for Single-Use Context**
+   - Used for regeneration day parameters
+   - Automatically cleaned up after use
+   - **Rationale:** Simpler than props drilling or state management
+
+7. **Separate Edit Page from Detail Page**
+   - Could have made RecipeDetailPage editable
+   - Chose separate RecipeEditPage instead
+   - **Rationale:** Cleaner separation, easier state management
+
+8. **Auto-Archive on Generation**
+   - Every new meal plan archives the previous one
+   - No manual save required
+   - **Rationale:** Preserves history automatically, reduces user burden
+
+### Bugs Found & Fixed 🐛
+
+**Critical Bugs (3):**
+
+1. **Week Deletion on Single-Day Regeneration**
+   - **Symptom:** Regenerating one day deleted entire week
+   - **Root Cause:** `saveMeals(newMeals)` replaced all instead of merging
+   - **Fix:** Merge strategy - filter out target day, merge with new day
+   - **Impact:** High - data loss
+   - **Prevention:** Unit tests for data merge operations
+
+2. **Add Ingredient Button Non-Functional**
+   - **Symptom:** Clicking did nothing
+   - **Root Cause:** Called `render()` which created new DOM but didn't attach
+   - **Fix:** Created `renderIngredients()` for targeted update
+   - **Impact:** High - feature unusable
+   - **Prevention:** Test dynamic UI interactions
+
+3. **No Save Confirmation**
+   - **Symptom:** Users unsure if save worked
+   - **Root Cause:** No visual state feedback
+   - **Fix:** Added save state + green button confirmation
+   - **Impact:** Medium - UX confusion
+   - **Prevention:** Always provide visual feedback for actions
+
+**UI/UX Issues (6):**
+
+4. Confusing button text (always "Generate Week")
+5. Unformatted chat messages (hard to read)
+6. Button transparency bleeding on colored backgrounds
+7. Chat message width wasted space
+8. Unclear button labels (emoji only)
+9. Recipe changes appeared not to persist (actually did, just no feedback)
+
+**All Fixed:** 100% resolution rate
+
+### Testing Insights 🧪
+
+1. **Automated UI Tests Miss Logic Bugs**
+   - Browser tests verified UI rendered
+   - Didn't catch data merging logic bug
+   - **Lesson:** Need unit tests for business logic, not just integration tests
+
+2. **User Testing Essential**
+   - All 3 critical bugs found by user testing
+   - Automated tests passed but features broken
+   - **Lesson:** AI-built code needs human verification
+
+3. **Test Both Entry Points**
+   - Single-day regeneration accessible from DayView AND MealPlanView
+   - Initial test only checked one
+   - **Lesson:** Test all access paths for multi-entry features
+
+4. **Edge Cases in Real Usage**
+   - "Add ingredient then remove last one" scenario
+   - Validation only triggered when tried by user
+   - **Lesson:** Real usage patterns reveal edge cases automation misses
+
+### Performance Observations 📊
+
+1. **Recipe Edit Auto-Save:**
+   - 30-second interval chosen (not too aggressive)
+   - Debounced to prevent excessive saves
+   - Minimal performance impact
+
+2. **History Page Loading:**
+   - Snapshot approach adds ~50KB per archived week
+   - 4-week retention = ~200KB
+   - Acceptable for localStorage
+
+3. **Single-Day Generation:**
+   - 20-30 seconds (vs 60-90s full week)
+   - Users much prefer shorter wait
+   - Worth the technical complexity
+
+4. **Chat Message Rendering:**
+   - HTML parsing in messages adds minimal overhead
+   - Improved readability worth the cost
+
+### Code Quality Metrics 📈
+
+**Slice 4 Final Stats:**
+- **Total Lines:** ~2,700 (including fixes)
+- **Linter Errors:** 0 (clean build)
+- **Files Created:** 6
+- **Files Modified:** 13 (including fixes)
+- **Components:** 4 new pages
+- **Utilities:** 2 new helpers
+- **API Endpoints:** 1 new, 1 enhanced
+- **Bug Fix Time:** 4 hours (all 3 critical bugs)
+- **Testing Time:** 2 hours (user manual testing)
+
+### localStorage Impact 📦
+
+**Current Usage Analysis:**
+- Recipe Edit Drafts: ~10KB per draft (temporary)
+- History Archives: ~50KB per week × 4 = 200KB
+- Recipe Import: Minimal impact
+- **Total New Data:** ~200KB average
+- **Remaining Capacity:** ~4.5MB (90% available)
+- **Conclusion:** localStorage still viable for Slice 5
+
+### Ready for Slice 5? ✅
+
+**Prerequisites Met:**
+- ✅ Core editing workflows complete
+- ✅ History system functional
+- ✅ Import system working
+- ✅ All critical bugs resolved
+- ✅ Architecture patterns established
+- ✅ Component patterns proven
+
+**What Slice 5 Can Build On:**
+1. Manual recipe creation (form-based)
+2. Recipe import from URL (fetch + extract)
+3. Recipe duplication/cloning
+4. Advanced recipe management (batch operations)
+5. Export features (PDF, calendar sync)
+6. Nutrition info integration (external API)
+
+**Architectural Considerations for Slice 5:**
+- **State Management:** Consider lightweight solution (Zustand) if complexity grows
+- **API Structure:** Refactor monolithic endpoints into smaller, focused services
+- **Testing Strategy:** Add unit tests for critical data operations
+- **Documentation:** Update in real-time, not at end of slice
+
+**Blockers:** None. System is stable and ready for expansion.
+
+**Recommended Next Steps:**
+1. Deploy Slice 4 to production (Vercel)
+2. Gather user feedback on new features
+3. Plan Slice 5 based on usage patterns
+4. Consider technical debt items (testing, refactoring)
+
+---
+
+## SLICE 5: Health Intelligence & Recipe Catalog
+
+### Goal
+Transform Vanessa from a meal generator into a health-intelligent system with comprehensive recipe database, nutritional scoring, diet profile support, and prep planning.
+
+### Strategy
+Slice 5 is the largest slice yet, establishing the foundation for health-conscious meal planning. It integrates four major subsystems that work together to provide personalized, health-optimized meal plans.
+
+---
+
+## Feature Overview
+
+### **Feature 1: Recipe Database & Spoonacular Integration** 🗄️
+
+**User Value:** Access to ~800 professionally-tested recipes instead of AI-generated every time
+
+**What It Builds:**
+1. **Spoonacular API Integration**
+   - Extract ~800 recipes using systematic search protocol
+   - Full specification: `references/spoonacular-recipe-extraction-protocol.md`
+   - Comprehensive tagging across all dimensions (cuisine, diet, protein, effort, etc.)
+   - Includes nutrition data, images (multiple sizes), instructions
+
+2. **Recipe Catalog Storage**
+   - New localStorage key: `vanessa_recipe_catalog`
+   - Indexed by Spoonacular ID for deduplication
+   - Tagged across 10+ dimensions for intelligent filtering
+   - Includes Diet Compass scoring for each recipe
+
+3. **Catalog Management UI**
+   - Admin/dev page to trigger extraction
+   - Progress tracking during extraction
+   - Gap analysis (identify missing coverage)
+   - Manual recipe additions to catalog
+
+**Technical Requirements:**
+- API: `POST /api/extract-spoonacular-catalog` (bulk extraction endpoint)
+- Extraction script: Execute 66 searches, deduplicate, tag, store
+- Estimated API cost: ~$29/month (Cook tier) for extraction
+- ~2-3MB storage for 800 recipes (JSON format)
+
+**Generation Behavior Change:**
+- **Primary:** Use catalog recipes (filter by constraints)
+- **Fallback:** Generate new recipe if no catalog match
+- **User Request:** Generate new if user specifically asks
+
+---
+
+### **Feature 2: Diet Compass Health Rating System** 📊
+
+**User Value:** Understand health impact of every recipe across 4 key dimensions
+
+**What It Builds:**
+1. **4-Metric Scoring System**
+   - Full specification: `references/diet-compass-health-rating-system.md`
+   - Based on "The Diet Compass" by Bas Kast
+   - Metrics:
+     - **Nutrient Density** (0-100): Protective vs harmful foods
+     - **Anti-Aging** (0-100): mTOR, autophagy, inflammation
+     - **Weight Loss** (0-100): Glycemic impact, satiety, insulin
+     - **Heart Health** (0-100): Omega-3, healthy fats, blood pressure
+   - **Overall Score:** Weighted composite (0-100)
+
+2. **Ingredient Database for Scoring**
+   - Classify 200+ common ingredients by health impact
+   - Point values for each metric
+   - Portion-based multipliers
+   - Score caps for particularly harmful ingredients
+
+3. **Score Calculation Engine**
+   - Calculate scores for all catalog recipes during extraction
+   - Recalculate for user-created/imported recipes
+   - Store scores with recipe data
+   - Update scores if recipe is edited
+
+4. **Visual Display Components**
+   - **Recipe Detail Page:** Full metric names + actual scores
+     - "Nutrient Density: 85"
+     - "Anti-Aging: 72"
+     - "Weight Loss: 68"
+     - "Heart Health: 91"
+   
+   - **Recipe Cards (Library) & Meal Plan View:** Visual 5-bar system
+     - Icon per metric: 🥗 ⏳ ⚖️ ❤️
+     - 5-segment bars (filled = green, empty = gray)
+     - Score ranges: 0-20=1, 20-40=2, 40-60=3, 60-80=4, 80-100=5
+     - Display under recipe title
+
+**Technical Requirements:**
+- Scoring engine: `src/utils/dietCompassScoring.js`
+- Ingredient database: `src/data/ingredientHealthData.json`
+- Visual components: Update RecipeDetailPage, RecipeCard, MealPlanView
+- Storage: Add scores to Recipe schema
+
+---
+
+### **Feature 3: Diet Profiles System** 🥗
+
+**User Value:** Personalized meal plans based on established dietary approaches
+
+**What It Builds:**
+1. **10 Preloaded Diet Profiles**
+   - Full specification: `references/diet-profiles.md`
+   - Profiles:
+     1. Mediterranean
+     2. Keto / Low-Carb
+     3. Vegetarian
+     4. High Protein
+     5. Flexitarian
+     6. Longevity Protocol (Diet Compass-based)
+     7. Intermittent Fasting
+     8. Vegan
+     9. MIND (brain health)
+     10. Kid-Friendly
+     11. La Dieta (ceremonial preparation)
+   
+   - Each includes: principles, foods to emphasize/avoid, macros, special considerations
+
+2. **Profile Assignment in Onboarding**
+   - AI asks about eating preferences and goals
+   - Suggests best-fit preloaded profile
+   - Example: "Based on what you've said, Mediterranean diet seems to fit you well. We'll assign this diet profile with notes to exclude eggplant and tomatoes. Does that sound good?"
+   - Stores: Base profile + personal preferences/exclusions
+
+3. **Profile Settings per Eater**
+   - Each household member gets profile assignment
+   - Dropdown selector in Settings → Household → [Eater]
+   - Shows profile description on hover/select
+   - Personal preferences field (additions to base profile)
+   - Example: Profile = "Mediterranean", Preferences = "No eggplant, no blue cheese, extra fish"
+
+4. **Multi-Profile Meal Generation**
+   - AI attempts to accommodate ALL profiles at each meal
+   - If fundamental conflicts exist (Keto + Vegan), generate multiple recipes
+   - Display: Show each recipe separately with eater name
+     ```
+     Tuesday Dinner:
+     - Dad: Tofu Stir Fry (Vegan)
+     - Mom: Salmon with Asparagus (Keto)
+     ```
+
+**Data Schema Updates:**
+```javascript
+// Eater (enhanced)
+{
+  eaterId: 'eater_[uuid]',
+  name: string,
+  dietProfile: 'mediterranean' | 'keto' | 'vegetarian' | ... | null,
+  personalPreferences: string,  // "No eggplant, extra fish"
+  excludeIngredients: string[],  // ["eggplant", "tomatoes", "blue cheese"]
+  allergies: string[],
+  // ... existing fields
+}
+
+// Generation uses profile data to filter catalog and guide AI
+```
+
+**Technical Requirements:**
+- Profile data: `src/data/dietProfiles.json`
+- Profile selector component in SettingsPage
+- Enhanced onboarding flow with profile suggestion
+- Generation API: Filter catalog by profile compatibility
+- Multi-recipe generation for conflicting profiles
+
+---
+
+### **Feature 4: Parent-Child Recipe System** 👨‍👧
+
+**User Value:** Track recipe variations and substitutions elegantly
+
+**What It Builds:**
+1. **Recipe Relationship Schema**
+   ```javascript
+   {
+     recipeId: 'recipe_[uuid]',
+     name: 'Spaghetti Bolognese',
+     parentRecipeId: null,  // This is a parent
+     childRecipeIds: ['recipe_abc', 'recipe_def'],  // Links to children
+     // ... rest of recipe
+   }
+   
+   // Child recipe:
+   {
+     recipeId: 'recipe_abc',
+     name: 'Spaghetti Bolognese (Vegetarian)',
+     parentRecipeId: 'recipe_[uuid]',  // Links back to parent
+     childRecipeIds: [],
+     variationNote: 'Substituted lentils for beef',
+     // ... rest of recipe
+   }
+   ```
+
+2. **Recipe Detail Page Enhancement**
+   - If parent: Show "Variations" section listing child recipes
+   - If child: Show "Based on: [Parent Recipe Name]" link at top
+   - Navigation between parent and children
+
+3. **Amendment Workflow**
+   - "Create Variation" button on RecipeDetailPage
+   - Opens RecipeEditPage with pre-filled data
+   - User edits ingredients/instructions
+   - Save creates child recipe with parent link
+   - Automatically names: "[Parent Name] (Variation)" or user custom
+
+**Technical Requirements:**
+- Update Recipe schema with parent/child fields
+- "Create Variation" button and workflow
+- RecipeDetailPage displays relationships
+- Storage functions: `getRecipeFamily(recipeId)` returns parent + all children
+
+---
+
+### **Feature 5: Day Prep Section** 🍳
+
+**User Value:** See at a glance what needs to be prepped today to execute meals
+
+**What It Builds:**
+1. **Prep Task Generation**
+   - AI analyzes day's 3 recipes (breakfast, lunch, dinner)
+   - Extracts prep tasks based on user's prep level settings
+   - Considers:
+     - User's prep capacity for this day/meal type
+     - What can be prepped in advance vs day-of
+     - Batch opportunities (prep for multiple meals)
+     - Time constraints
+
+2. **Day View Enhancement**
+   - New "📋 Prep for Today" section at TOP of day view
+   - Above Breakfast, Lunch, Dinner sections
+   - Shows:
+     - Prep task list with estimated times
+     - Which meals each task supports
+     - Total estimated prep time for the day
+   
+   **Example:**
+   ```
+   MONDAY, January 13
+   
+   📋 Prep for Today (~25 minutes)
+   - Chop 2 onions, 1 bell pepper (10 min) → for lunch & dinner
+   - Marinate chicken breast (5 min, refrigerate 2 hours) → for dinner
+   - Cook 2 cups rice (10 min) → for lunch
+   
+   🌅 Breakfast: Oatmeal with berries
+   🌞 Lunch: Chicken stir fry
+   🌙 Dinner: Mediterranean bowl
+   ```
+
+3. **Prep Level Settings (Single-User MVP)**
+   - Located in Settings → Meal Prep
+   - Day-specific table (7 days × 3 meals = 21 settings)
+   
+   **Table Format:**
+   ```
+   Prep Level Legend:
+   - Minimal: Simple assembly/heat
+   - Medium: Cooking one or two items
+   - Full: Chopping, preparing multiple ingredients, extended cooking
+   
+           Breakfast    Lunch       Dinner
+   Mon     [Minimal]    [Minimal]   [Medium]
+   Tue     [Minimal]    [Minimal]   [Full]
+   Wed     [Minimal]    [Minimal]   [Medium]
+   Thu     [Minimal]    [Minimal]   [Full]
+   Fri     [Medium]     [Medium]    [Full]
+   Sat     [Full]       [Full]      [Full]
+   Sun     [Full]       [Medium]    [Medium]
+   
+   Batch Prep Days: [☑ Saturday] [☐ Sunday] [☐ Monday] ...
+   ```
+
+4. **AI Prompt Enhancement**
+   - Include prep level constraints in generation prompt
+   - Example: "Monday lunch needs minimal prep (workplace - can only heat)"
+   - Claude generates recipes matching prep constraints
+   - Prep tasks reflect actual user capacity
+
+**Data Schema Updates:**
+```javascript
+// BaseSpecification (enhanced)
+{
+  // ... existing fields
+  mealPrepSettings: {
+    batchPrepDays: [6],  // Array of day indices (0=Sun, 6=Sat)
+    prepLevels: {
+      monday: { breakfast: 'minimal', lunch: 'minimal', dinner: 'medium' },
+      tuesday: { breakfast: 'minimal', lunch: 'minimal', dinner: 'full' },
+      // ... all 7 days
+    }
+  }
+}
+
+// Meal (enhanced)
+{
+  mealId: 'meal_[uuid]',
+  recipeId: 'recipe_[uuid]',
+  // ... existing fields
+  prepTasks: [  // NEW: AI-generated prep tasks
+    {
+      task: 'Chop 2 onions, 1 bell pepper',
+      estimatedTime: 10,  // minutes
+      timing: 'before_cooking',  // or 'day_before', 'morning_of'
+      usedIn: ['lunch', 'dinner']  // Which meals use this prep
+    }
+  ]
+}
+```
+
+**Technical Requirements:**
+- Settings page: Prep level table component
+- AI prompt: Include prep constraints
+- Prep task extraction from recipe instructions
+- DayView: Prep section at top
+- Storage: Save prep settings and tasks
+
+**Future Enhancement (Slice 7 - Multi-User):**
+- Each user has own prep settings
+- Meals assigned to specific preparer
+- Users see only their prep tasks
+- Household coordination features
+
+---
+
+### **Feature 6: Personal Preferences & Exclusions** ⚙️
+
+**User Value:** Fine-tune diet profiles with personal likes/dislikes
+
+**What It Builds:**
+1. **Preferences Data Structure**
+   - Separate from base diet profile
+   - Stored per eater
+   - Categories:
+     - Exclude ingredients (allergies, dislikes)
+     - Prefer ingredients (favorites, extra servings)
+     - Free-text notes
+
+2. **Settings UI Enhancement**
+   - In Settings → Household → [Eater] → Edit
+   - Below diet profile dropdown
+   - Fields:
+     - "Foods to Exclude" (comma-separated or tag chips)
+     - "Foods to Prefer" (comma-separated or tag chips)
+     - "Additional Notes" (textarea)
+
+3. **Generation Integration**
+   - Pass to AI: Base profile + personal preferences
+   - Claude filters out excluded ingredients
+   - Prioritizes preferred ingredients
+   - Respects both profile rules AND personal preferences
+
+**Example:**
+```
+Eater: Roland
+Diet Profile: Mediterranean
+Personal Preferences:
+  - Exclude: eggplant, tomatoes, blue cheese
+  - Prefer: extra fish, walnuts, dark chocolate
+  - Notes: "Prefer dinner to be high-protein"
+```
+
+---
+
+## End-to-End Flows
+
+### **FLOW A: Onboarding with Diet Profile Assignment**
+```
+1. User opens app (first time)
+2. Vanessa: "Let me learn about your eating preferences"
+3. Vanessa asks: "What do you value in meals? What do you like eating? What would you prefer to avoid?"
+4. User responds with preferences
+5. Vanessa analyzes and suggests: "Based on what you've said, Mediterranean diet seems to fit you well. We'll assign this diet profile with notes to exclude eggplant and tomatoes. Does that sound good?"
+6. User confirms
+7. Profile saved: dietProfile="mediterranean", excludeIngredients=["eggplant","tomatoes"]
+8. Continue onboarding (household members, budget, etc.)
+```
+
+### **FLOW B: Generating with Recipe Catalog**
+```
+1. User clicks "Generate Week"
+2. System loads:
+   - Household eaters with diet profiles
+   - Recipe catalog (~800 recipes)
+   - Prep level settings
+   - Personal preferences
+3. AI receives:
+   - Catalog recipes (filtered by diet profiles)
+   - Household schedule
+   - Diet constraints
+   - Prep constraints per day/meal
+4. AI selects from catalog OR creates new if no match
+5. For conflicting profiles (Keto + Vegan):
+   - Generates 2 recipes for that meal
+   - Labels each with eater name
+6. Meal plan returned with:
+   - Recipes (catalog or generated)
+   - Diet Compass scores (pre-calculated for catalog)
+   - Prep tasks per day
+7. Display shows health scores under each recipe name
+```
+
+### **FLOW C: Viewing Day with Prep Section**
+```
+1. User clicks "Monday" from meal plan
+2. DayView loads and displays:
+
+   MONDAY, January 13
+   
+   📋 Prep for Today (~25 minutes)
+   ├─ Chop 2 onions, 1 bell pepper (10 min) → for lunch & dinner
+   ├─ Marinate chicken (5 min) → for dinner
+   └─ Cook 2 cups rice (10 min) → for lunch
+   
+   🌅 Breakfast: Oatmeal with Berries
+   [🥗 ■■■■□] [⏳ ■■■□□] [⚖️ ■■■■□] [❤️ ■■■■□]
+   
+   🌞 Lunch: Chicken Stir Fry
+   [🥗 ■■■■■] [⏳ ■■■□□] [⚖️ ■■■■□] [❤️ ■■■■■]
+   
+   🌙 Dinner: Mediterranean Bowl
+   [🥗 ■■■■■] [⏳ ■■■■□] [⚖️ ■■■■□] [❤️ ■■■■■]
+
+3. User sees prep needs first, then meals with health scores
+```
+
+### **FLOW D: Recipe Variation Creation**
+```
+1. User views "Spaghetti Bolognese" recipe detail
+2. Clicks "Create Variation" button
+3. RecipeEditPage opens with pre-filled data
+4. User modifies: Replaces beef with lentils
+5. Adds variation note: "Vegetarian version"
+6. Saves as "Spaghetti Bolognese (Vegetarian)"
+7. System creates:
+   - New child recipe with unique ID
+   - Links: parent ← → child
+8. Original recipe now shows "Variations (1)" section
+9. Child recipe shows "Based on: Spaghetti Bolognese" at top
+10. Diet Compass scores recalculated (vegetarian version likely scores higher)
+```
+
+### **FLOW E: Multi-Profile Household Generation**
+```
+Given:
+- Mom: Keto diet profile
+- Dad: Vegan diet profile
+- Kids: Kid-Friendly profile
+
+Tuesday Dinner (all three eating):
+- AI analyzes: Keto + Vegan = fundamental conflict
+- Generates 2 recipes:
+  - Recipe 1: Salmon with Asparagus (Keto) → for Mom
+  - Recipe 2: Tofu Buddha Bowl (Vegan) → for Dad
+- Kids can eat either (Kid-Friendly allows both)
+- Display shows both recipes separately with names
+- Shopping list includes ingredients for BOTH recipes
+```
+
+---
+
+## Data Schema Updates
+
+### **Recipe (Enhanced for Slice 5)**
+```javascript
+{
+  recipeId: 'recipe_[uuid]',
+  name: string,
+  
+  // SOURCE & RELATIONSHIPS
+  source: 'spoonacular' | 'generated' | 'user' | 'imported',
+  spoonacularId: number | null,  // NEW: Link to Spoonacular
+  parentRecipeId: 'recipe_[uuid]' | null,  // NEW: Parent-child relationships
+  childRecipeIds: ['recipe_[uuid]'],  // NEW: List of variations
+  variationNote: string | null,  // NEW: How this differs from parent
+  
+  // INGREDIENTS & INSTRUCTIONS
+  ingredients: [
+    {
+      name: string,
+      quantity: number,
+      unit: string,
+      category: 'produce' | 'meat' | 'dairy' | 'pantry' | 'other',
+      healthImpact: 'protective' | 'neutral' | 'harmful'  // NEW: For scoring
+    }
+  ],
+  instructions: string,
+  prepTime: number,
+  cookTime: number,
+  servings: number,
+  
+  // HEALTH & NUTRITION
+  dietCompassScores: {  // NEW: Full health scoring
+    overall: number,  // 0-100
+    nutrientDensity: number,
+    antiAging: number,
+    weightLoss: number,
+    heartHealth: number
+  },
+  nutrition: {  // NEW: Comprehensive nutrition data
+    calories: number,
+    protein: number,
+    fat: number,
+    carbs: number,
+    fiber: number,
+    sugar: number,
+    saturatedFat: number,
+    omega3: number,
+    omega6: number,
+    sodium: number,
+    // ... full nutrition profile
+  },
+  
+  // TAGGING & FILTERING
+  tags: {  // NEW: Comprehensive tagging
+    cuisines: string[],
+    diets: string[],  // Compatible diet profiles
+    dishTypes: string[],
+    mealSlots: string[],
+    proteinSources: string[],
+    cookingMethods: string[],
+    carbBases: string[],
+    effortLevel: 'quick' | 'easy' | 'medium' | 'project',
+    spiceLevel: 'none' | 'mild' | 'medium' | 'hot',
+    budgetTier: 'budget' | 'moderate' | 'premium',
+    kidFriendly: boolean,
+    makeAhead: boolean,
+    protectiveFoods: string[]  // Which Diet Compass protective foods present
+  },
+  
+  // EXISTING FIELDS
+  isFavorite: boolean,
+  rating: number | null,
+  timesCooked: number,
+  lastCooked: string | null,
+  createdAt: string,
+  updatedAt: string
+}
+```
+
+### **Meal (Enhanced for Slice 5)**
+```javascript
+{
+  mealId: 'meal_[uuid]',
+  recipeId: 'recipe_[uuid]',
+  mealType: 'breakfast' | 'lunch' | 'dinner',
+  date: 'YYYY-MM-DD',
+  eaterIds: string[],
+  servings: number,
+  notes: string,
+  
+  // NEW: Prep tasks for this meal
+  prepTasks: [
+    {
+      task: string,  // "Chop 2 onions"
+      estimatedTime: number,  // minutes
+      timing: 'before_cooking' | 'day_before' | 'morning_of',
+      usedIn: string[]  // Which meals use this prep (if shared)
+    }
+  ],
+  
+  // NEW: For multi-profile households
+  targetEaters: string[],  // Specific eaters this recipe is for
+  dietProfileTags: string[]  // Which profiles this recipe satisfies
+}
+```
+
+### **BaseSpecification (Enhanced for Slice 5)**
+```javascript
+{
+  _schemaVersion: 2,  // Bump version
+  ownerEaterId: 'eater_[uuid]',
+  weeklyBudget: number,
+  shoppingDay: 0-6,
+  preferredStore: string,
+  maxShoppingListItems: number,
+  householdEaterIds: string[],
+  dietaryGoals: string,
+  onboardingComplete: boolean,
+  
+  // NEW: Meal prep settings (single-user MVP)
+  mealPrepSettings: {
+    batchPrepDays: number[],  // [6] = Saturday
+    prepLevels: {
+      monday: { breakfast: 'minimal' | 'medium' | 'full', lunch: '...', dinner: '...' },
+      tuesday: { breakfast: '...', lunch: '...', dinner: '...' },
+      // ... all 7 days
+    }
+  },
+  
+  // EXISTING FIELDS
+  weeklySchedule: {...},
+  chatPreferences: {...},
+  conversation: {...},
+  historyRetentionWeeks: number,
+  createdAt: string,
+  updatedAt: string
+}
+```
+
+### **localStorage Keys (New in Slice 5)**
+```javascript
+'vanessa_recipe_catalog'      // Array of ~800 Spoonacular recipes
+'vanessa_ingredient_health'   // Ingredient health scoring database
+'vanessa_diet_profiles'       // 10 preloaded diet profile definitions
+```
+
+---
+
+## Technical Implementation
+
+### **1. Spoonacular Extraction Script**
+**File:** `scripts/extractSpoonacularCatalog.js`
+**Purpose:** One-time extraction of ~800 recipes
+
+**Process:**
+1. Execute 66 searches from protocol
+2. Deduplicate by Spoonacular ID
+3. Apply comprehensive tagging
+4. Calculate Diet Compass scores
+5. Transform to our Recipe schema
+6. Save to catalog file
+7. Generate coverage report
+
+**Estimated Runtime:** 2-3 hours (rate limiting)
+
+---
+
+### **2. Diet Compass Scoring Engine**
+**File:** `src/utils/dietCompassScoring.js`
+
+**Functions:**
+```javascript
+// Calculate all 4 metric scores + overall
+calculateRecipeScores(recipe) → {
+  overall: number,
+  nutrientDensity: number,
+  antiAging: number,
+  weightLoss: number,
+  heartHealth: number,
+  breakdown: {...}  // Detailed point attribution
+}
+
+// Get ingredient health data
+getIngredientHealthData(ingredientName) → {
+  nutrientDensityPoints: number,
+  antiAgingPoints: number,
+  weightLossPoints: number,
+  heartHealthPoints: number,
+  flags: {...}
+}
+
+// Convert score to bar segments (0-100 → 1-5 bars)
+scoreToBarSegments(score) → number  // 1-5
+```
+
+---
+
+### **3. Diet Profile Filter**
+**File:** `src/utils/dietProfileFilter.js`
+
+**Functions:**
+```javascript
+// Filter catalog recipes compatible with profile
+filterByDietProfile(catalog, profileId) → Recipe[]
+
+// Check if recipe compatible with multiple profiles
+isCompatibleWithProfiles(recipe, profileIds) → boolean
+
+// Detect fundamental conflicts
+hasProfileConflicts(profileIds) → {
+  hasConflicts: boolean,
+  conflictPairs: [['keto', 'vegan'], ...]
+}
+```
+
+---
+
+### **4. Prep Task Generator**
+**File:** `src/utils/prepTaskGenerator.js`
+
+**Functions:**
+```javascript
+// Generate prep tasks for a day based on recipes and prep levels
+generateDayPrepTasks(dayRecipes, prepLevelSettings) → PrepTask[]
+
+// Analyze recipe for prep requirements
+analyzeRecipePrepNeeds(recipe, prepLevel) → PrepTask[]
+
+// Identify batch prep opportunities
+findBatchPrepOpportunities(weekRecipes, batchPrepDays) → PrepTask[]
+```
+
+---
+
+## API Endpoint Updates
+
+### **POST /api/generate-meal-plan (Enhanced)**
+
+**New Request Parameters:**
+```javascript
+{
+  chatHistory: [],
+  eaters: [
+    {
+      name: string,
+      dietProfile: 'mediterranean' | 'keto' | ...,
+      personalPreferences: string,
+      excludeIngredients: string[],
+      schedule: {...}
+    }
+  ],
+  baseSpecification: {
+    mealPrepSettings: {...},
+    // ... other fields
+  },
+  
+  // EXISTING
+  regenerateDay: string | null,
+  dateForDay: string | null,
+  existingMeals: Meal[]
+}
+```
+
+**Enhanced AI System Prompt:**
+```
+You are Vanessa, an expert meal planning assistant.
+
+HOUSEHOLD MEMBERS & DIET PROFILES:
+{for each eater}
+- {name}: {dietProfile} diet
+  Foods to EXCLUDE: {excludeIngredients}
+  Preferences: {personalPreferences}
+  Schedule: {when they eat which meals}
+
+MEAL PREP CONSTRAINTS:
+{for each day}
+- {day} Breakfast: {prepLevel} prep (minimal/medium/full)
+- {day} Lunch: {prepLevel} prep
+- {day} Dinner: {prepLevel} prep
+
+BATCH PREP DAYS: {batchPrepDays}
+
+RECIPE SOURCES:
+- PRIMARILY use recipes from provided catalog
+- Filter catalog by diet profile compatibility
+- CREATE new recipe ONLY if:
+  - No catalog recipe meets all constraints
+  - User specifically requested custom recipe
+  - Conflicting diet profiles require it
+
+DIET PROFILE CONFLICTS:
+{if multiple profiles with conflicts}
+- {eater1} follows {profile1}
+- {eater2} follows {profile2}
+- These profiles conflict on {conflictPoint}
+- SOLUTION: Generate SEPARATE recipes for this meal
+  - Recipe 1: For {eater1} ({profile1} compliant)
+  - Recipe 2: For {eater2} ({profile2} compliant)
+
+PREP TASK REQUIREMENTS:
+For each recipe, based on the meal's prep level:
+- MINIMAL: Recipes requiring only assembly/heating
+  - Pre-cooked proteins, simple salads, sandwiches, heat-and-eat
+  - Instructions: "Heat pre-cooked chicken, assemble bowl"
+  - Prep tasks: Minimal chopping, no extended cooking
+  
+- MEDIUM: Recipes with 1-2 cooking steps
+  - Cook one protein item, prepare simple side
+  - Instructions: "Cook chicken breast, steam broccoli"
+  - Prep tasks: Basic chopping, 20-30 min total
+  
+- FULL: Complex recipes with multiple components
+  - Multiple chopping tasks, complex assembly, extended cooking
+  - Instructions: Full recipe with all steps
+  - Prep tasks: Extensive chopping, marinating, multi-step cooking
+
+CATALOG RECIPE FORMAT:
+{provide catalog as JSON array}
+
+OUTPUT FORMAT:
+{for each meal}
+{
+  "recipes": [  // Array for multi-profile households
+    {
+      "recipeId": "catalog_12345" OR "recipe_[uuid]" (if new),
+      "fromCatalog": true/false,
+      "targetEaters": ["Mom", "Dad"],
+      "dietProfiles": ["keto"],
+      "prepTasks": [
+        {
+          "task": "Chop onions and peppers",
+          "estimatedTime": 10,
+          "timing": "before_cooking"
+        }
+      ],
+      // ... recipe data (if new) or just ID (if catalog)
+    }
+  ]
+}
+```
+
+**Response Enhancement:**
+- If using catalog recipe: Return just ID + any amendments
+- If creating new: Return full recipe data
+- Include prep tasks for each recipe
+- Include Diet Compass scores (pre-calculated for catalog)
+
+---
+
+### **POST /api/calculate-diet-compass-score (New)**
+
+**Purpose:** Calculate health scores for user-created/imported recipes
+
+**Request:**
+```javascript
+{
+  recipe: {
+    ingredients: [...],
+    instructions: string,
+    nutrition: {...}  // Optional, can calculate if missing
+  }
+}
+```
+
+**Response:**
+```javascript
+{
+  scores: {
+    overall: number,
+    nutrientDensity: number,
+    antiAging: number,
+    weightLoss: number,
+    heartHealth: number
+  },
+  breakdown: {
+    nutrientDensity: {
+      base: 50,
+      bonuses: [{ingredient: 'salmon', points: 20}, ...],
+      penalties: [{ingredient: 'bacon', points: -25}, ...],
+      final: 85
+    },
+    // ... other metrics
+  },
+  rating: 'Excellent' | 'Good' | 'Moderate' | 'Poor' | 'Avoid',
+  highlights: [
+    "Rich in omega-3 fatty acids",
+    "High in protective whole grains"
+  ],
+  improvements: [
+    "Consider reducing added sugar",
+    "Replace white rice with brown rice for higher score"
+  ]
+}
+```
+
+---
+
+## UI Component Updates
+
+### **1. SettingsPage - New Meal Prep Section**
+
+**Location:** Settings → Meal Prep (new tab/section)
+
+**Components:**
+- Batch prep days multi-select
+- Prep level table (7 days × 3 meals)
+- Legend explaining prep levels
+- Auto-save on change
+- Visual grid layout (mobile-responsive)
+
+**Example Layout:**
+```
+╔════════════════════════════════════════════╗
+║ Meal Prep Settings                         ║
+╠════════════════════════════════════════════╣
+║                                            ║
+║ Batch Prep Days:                           ║
+║ [☑ Sat] [☐ Sun] [☐ Mon] [☐ Tue] [☐ Wed]  ║
+║ [☐ Thu] [☐ Fri]                           ║
+║                                            ║
+║ ──────────────────────────────────────────║
+║                                            ║
+║ Prep Level Guide:                          ║
+║ • Minimal: Simple assembly/heat            ║
+║ • Medium: Cooking 1-2 items                ║
+║ • Full: Chopping, multiple ingredients     ║
+║                                            ║
+║ ──────────────────────────────────────────║
+║                                            ║
+║         Breakfast    Lunch      Dinner     ║
+║ Mon     [Minimal▾]  [Minimal▾] [Medium▾]  ║
+║ Tue     [Minimal▾]  [Minimal▾] [Full▾]    ║
+║ Wed     [Minimal▾]  [Minimal▾] [Medium▾]  ║
+║ Thu     [Minimal▾]  [Minimal▾] [Full▾]    ║
+║ Fri     [Medium▾]   [Medium▾]  [Full▾]    ║
+║ Sat     [Full▾]     [Full▾]    [Full▾]    ║
+║ Sun     [Full▾]     [Medium▾]  [Medium▾]  ║
+║                                            ║
+╚════════════════════════════════════════════╝
+```
+
+---
+
+### **2. SettingsPage - Diet Profile Selection (Enhanced)**
+
+**Location:** Settings → Household → [Eater] → Edit
+
+**Components:**
+- Diet profile dropdown (11 options)
+- Profile description display
+- Personal preferences fields:
+  - Exclude ingredients (tag chips)
+  - Prefer ingredients (tag chips)
+  - Additional notes (textarea)
+
+**Example Layout:**
+```
+╔════════════════════════════════════════════╗
+║ Edit: Roland                               ║
+╠════════════════════════════════════════════╣
+║                                            ║
+║ Diet Profile:                              ║
+║ [Mediterranean ▾]                          ║
+║                                            ║
+║ ℹ️ Mediterranean Diet: A heart-healthy    ║
+║ eating pattern rich in olive oil, fish,   ║
+║ vegetables, and whole grains.             ║
+║                                            ║
+║ ──────────────────────────────────────────║
+║                                            ║
+║ Personal Preferences:                      ║
+║                                            ║
+║ Foods to Exclude:                          ║
+║ [eggplant ×] [tomatoes ×] [+ Add]         ║
+║                                            ║
+║ Foods to Prefer:                           ║
+║ [salmon ×] [walnuts ×] [+ Add]            ║
+║                                            ║
+║ Additional Notes:                          ║
+║ [Prefer high-protein dinners              ]║
+║ [                                         ]║
+║                                            ║
+╚════════════════════════════════════════════╝
+```
+
+---
+
+### **3. DayView - Prep Section at Top**
+
+**Enhancement:** Add prep section above meals
+
+**Layout:**
+```
+╔════════════════════════════════════════════╗
+║ MONDAY, January 13                         ║
+╠════════════════════════════════════════════╣
+║                                            ║
+║ 📋 Prep for Today (~25 minutes)           ║
+║ ┌──────────────────────────────────────┐  ║
+║ │ • Chop 2 onions, 1 bell pepper      │  ║
+║ │   (10 min) → for lunch & dinner      │  ║
+║ │                                      │  ║
+║ │ • Marinate chicken breast            │  ║
+║ │   (5 min, refrigerate 2hrs) → dinner │  ║
+║ │                                      │  ║
+║ │ • Cook 2 cups rice                   │  ║
+║ │   (10 min) → for lunch               │  ║
+║ └──────────────────────────────────────┘  ║
+║                                            ║
+║ ──────────────────────────────────────────║
+║                                            ║
+║ 🌅 Breakfast: Oatmeal with Berries        ║
+║ [🥗 ■■■■□] [⏳ ■■■□□] [⚖️ ■■■■□] [❤️ ■■■■□] ║
+║ ┌──────────────────────────────────────┐  ║
+║ │ Quick and nutritious start...         │  ║
+║ └──────────────────────────────────────┘  ║
+║                                            ║
+║ 🌞 Lunch: Chicken Stir Fry                ║
+║ [🥗 ■■■■■] [⏳ ■■■□□] [⚖️ ■■■■□] [❤️ ■■■■■] ║
+║                                            ║
+║ 🌙 Dinner: Mediterranean Bowl              ║
+║ [🥗 ■■■■■] [⏳ ■■■■□] [⚖️ ■■■■□] [❤️ ■■■■■] ║
+║                                            ║
+╚════════════════════════════════════════════╝
+```
+
+---
+
+### **4. RecipeDetailPage - Health Scores & Variations**
+
+**Enhancements:**
+- Full Diet Compass scores at top
+- Variation section (if parent)
+- Parent link (if child)
+- "Create Variation" button
+
+**Layout:**
+```
+╔════════════════════════════════════════════╗
+║ Spaghetti Bolognese                        ║
+║                                            ║
+║ Based on: [None - Original Recipe]        ║
+║                          OR                ║
+║ Based on: Spaghetti Bolognese (Original)  ║
+║                                            ║
+║ ──────────────────────────────────────────║
+║                                            ║
+║ DIET COMPASS HEALTH SCORE                  ║
+║                                            ║
+║ Overall: 72 (Good)                         ║
+║                                            ║
+║ 🥗 Nutrient Density:  85                   ║
+║ ⏳ Anti-Aging:        68                   ║
+║ ⚖️ Weight Loss:       65                   ║
+║ ❤️ Heart Health:      78                   ║
+║                                            ║
+║ ──────────────────────────────────────────║
+║                                            ║
+║ Variations (2):                            ║
+║ • Spaghetti Bolognese (Vegetarian)        ║
+║ • Spaghetti Bolognese (Low Carb)          ║
+║                                            ║
+║ [Create Variation] [Edit Recipe]          ║
+║                                            ║
+║ ──────────────────────────────────────────║
+║                                            ║
+║ Ingredients, Instructions, etc...          ║
+║                                            ║
+╚════════════════════════════════════════════╝
+```
+
+---
+
+### **5. Recipe Cards - Health Score Bars**
+
+**Enhancement:** Add Diet Compass bars under recipe name
+
+**Layout:**
+```
+┌────────────────────────────┐
+│ [Recipe Image]             │
+│                            │
+│ Chicken Stir Fry           │
+│ [🥗 ■■■■■] [⏳ ■■■□□]      │
+│ [⚖️ ■■■■□] [❤️ ■■■■■]      │
+│                            │
+│ 25 min • 4 servings        │
+│ ⭐⭐⭐⭐☆ • Cooked 3x       │
+└────────────────────────────┘
+```
+
+---
+
+## Migration & Backward Compatibility
+
+### **Data Migration (Slice 4 → Slice 5)**
+
+**Script:** `src/migrations/migrateToSlice5.js`
+
+**Steps:**
+1. **Add mealPrepSettings to BaseSpecification**
+   - Default: All meals = 'medium', batchPrepDays = [6] (Saturday)
+
+2. **Add dietProfile to each Eater**
+   - Default: null (unassigned)
+   - personalPreferences = "" (empty)
+   - excludeIngredients = []
+
+3. **Enhance existing Recipe objects**
+   - Add parentRecipeId = null
+   - Add childRecipeIds = []
+   - Add variationNote = null
+   - Calculate Diet Compass scores for existing recipes
+   - Add comprehensive tags
+   - Add nutrition data (calculate if missing)
+
+4. **Create new localStorage keys**
+   - vanessa_recipe_catalog (empty initially)
+   - vanessa_ingredient_health (from bundled data)
+   - vanessa_diet_profiles (from bundled data)
+
+5. **Update schema version**
+   - BaseSpecification._schemaVersion = 2
+   - Recipe._schemaVersion = 2 (if we add this)
+
+**Backward Compatibility:**
+- Existing recipes work without scores (scores = null)
+- Existing meal plans display without prep section
+- No data loss
+- Gradual enhancement as features are used
+
+---
+
+## Success Criteria for Slice 5
+
+### **Recipe Catalog:**
+- ✅ ~800 recipes extracted from Spoonacular
+- ✅ All recipes have comprehensive tags
+- ✅ All recipes have Diet Compass scores
+- ✅ All recipes have full nutrition data
+- ✅ Catalog searchable/filterable
+
+### **Health Scoring:**
+- ✅ All recipes display Diet Compass scores
+- ✅ Visual bars work on cards and meal plan
+- ✅ Full scores on detail pages
+- ✅ Score calculation accurate and consistent
+
+### **Diet Profiles:**
+- ✅ 11 preloaded profiles available
+- ✅ Onboarding suggests best-fit profile
+- ✅ Personal preferences stored separately
+- ✅ Generation respects profile constraints
+- ✅ Multi-profile households work (multiple recipes if needed)
+
+### **Prep Planning:**
+- ✅ Users can set prep levels (day-specific, 21 settings)
+- ✅ Day view shows prep tasks at top
+- ✅ Prep tasks relevant to user's capacity
+- ✅ Estimated times shown
+- ✅ Batch prep days identified
+
+### **Recipe Variations:**
+- ✅ Can create child recipes from parent
+- ✅ Parent-child links displayed
+- ✅ Variations browsable from parent
+- ✅ Diet Compass scores recalculated for children
+
+### **Overall:**
+- ✅ Generation uses catalog primarily
+- ✅ Creates new recipes only when needed
+- ✅ Conflicting profiles handled gracefully
+- ✅ All health data accurate
+- ✅ Mobile-responsive
+- ✅ No performance degradation with large catalog
+
+---
+
+## What This Slice Does NOT Include (Deferred)
+
+### **Deferred to Slice 6:**
+- ❌ Multi-user accounts with individual logins
+- ❌ Meal preparer assignment per meal
+- ❌ User-specific prep task visibility
+- ❌ Household coordination features
+
+### **Deferred to Slice 7:**
+- ❌ Firebase migration
+- ❌ Multi-device sync
+- ❌ Usage metering
+- ❌ Cloud backup
+
+### **Deferred to Slice 8+:**
+- ❌ Community diet profile sharing
+- ❌ Custom user-created diet profiles
+- ❌ Nutrition goal tracking over time
+- ❌ Advanced meal prep optimization (component reuse, batch cooking schedule)
+- ❌ Export features (PDF, calendar sync)
+- ❌ Pantry system integration
+
+---
+
+## Estimated Scope
+
+### **Complexity Assessment:**
+**Slice 5 is the LARGEST slice yet** — encompasses 6 major subsystems working together.
+
+**Estimated Tasks:** 15-20 tasks  
+**Estimated Subtasks:** 50-70 subtasks  
+**Estimated Timeline:** 6-8 weeks  
+**Estimated Lines of Code:** 5,000-7,000 lines
+
+**Breakdown:**
+1. Spoonacular extraction: 1-2 weeks (script + API + storage)
+2. Diet Compass scoring: 1-2 weeks (engine + display + testing)
+3. Diet profiles: 1 week (data + UI + generation integration)
+4. Prep planning: 1-2 weeks (settings + generation + display)
+5. Parent-child recipes: 1 week (schema + UI + workflow)
+6. Integration & testing: 1-2 weeks (gluing it all together)
+
+**Risk Assessment:**
+- **Medium Risk:** Large scope, many interdependencies
+- **High Value:** Transforms app from basic generator to health intelligence system
+- **Recommendation:** Build incrementally, test each subsystem independently
+
+---
+
+## SLICE 6+: Future Features (Deferred)
+
+### Slice 6: Multi-User & Household Coordination
+- Individual user logins (Firebase Auth)
+- Meal preparer assignment
+- User-specific task visibility
+- Household meal planning coordination
+- Multi-user prep settings
+
+### Slice 7: Firebase Migration & Infrastructure
 - Migrate to Firebase Firestore
-- Firebase Authentication (anonymous + Google)
 - Multi-device sync
-- Usage metering (free tier: 4 generations/month)
+- Usage metering (free tier limits)
 - Cloud backup
+- Real-time collaboration
 
-### Slice 7: Meal Prep Optimization
-- (Already fully spec'd in PRD above)
-- Add prep preferences to settings
-- Generate prep-aware recipes
-- Build prep schedule generator
-- Add prep UI components
+### Slice 8: Advanced Meal Prep Optimization
+- Component reuse across meals
+- Batch cooking schedules
+- Prep day task lists
+- Time savings calculations
+- Leftover integration
+
+### Slice 9: Polish & Extensions
+- Nutrition goal tracking
+- Community features
+- Export to PDF/calendar
+- Pantry system
+- Performance optimizations
 
 ---
 
