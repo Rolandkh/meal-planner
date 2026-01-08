@@ -194,11 +194,11 @@ export class ChatWidget {
     inputForm.appendChild(this.messageInput);
     inputForm.appendChild(this.sendButton);
     
-    // Create Generate button (context-aware: Week or Day) - Rainbow gradient!
+    // Create Generate button (context-aware: Week or Day) - Deep saturated rainbow gradient!
     this.generateButton = document.createElement('button');
     this.generateButton.className = `
-      w-full bg-gradient-to-r from-red-400 via-orange-400 via-yellow-400 via-green-400 via-blue-400 via-indigo-400 to-purple-400
-      hover:from-red-500 hover:via-orange-500 hover:via-yellow-500 hover:via-green-500 hover:via-blue-500 hover:via-indigo-500 hover:to-purple-500
+      w-full bg-gradient-to-r from-red-600 via-orange-600 via-yellow-600 via-green-600 via-blue-600 via-indigo-600 to-purple-600
+      hover:from-red-700 hover:via-orange-700 hover:via-yellow-700 hover:via-green-700 hover:via-blue-700 hover:via-indigo-700 hover:to-purple-700
       text-white font-semibold py-3 px-6 rounded-lg mt-3
       transition-all transform hover:scale-[1.02]
       shadow-md hover:shadow-lg

@@ -424,16 +424,14 @@ export class HomePage {
     const button = document.createElement('button');
     
     if (style === 'primary') {
-      // Gray gradient for Generate Week button (same as view buttons)
+      // Very deep saturated rainbow gradient for Generate Week button
       button.className = `
-        btn-custom-gradient
-        bg-gradient-to-r from-gray-400 to-gray-420
-        hover:from-gray-420 hover:to-gray-450
-        text-gray-900 font-bold py-5 px-8 rounded-xl
-        border border-gray-300
+        bg-gradient-to-r from-red-600 via-orange-600 via-yellow-600 via-green-600 via-blue-600 via-indigo-600 to-purple-600
+        hover:from-red-700 hover:via-orange-700 hover:via-yellow-700 hover:via-green-700 hover:via-blue-700 hover:via-indigo-700 hover:to-purple-700
+        text-white font-semibold py-4 px-6 rounded-lg
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
-        text-xl
+        text-lg
       `.trim().replace(/\s+/g, ' ');
     } else if (style === 'view') {
       // Gray gradient for view buttons - subtle gradient
