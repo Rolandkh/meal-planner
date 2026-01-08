@@ -233,6 +233,7 @@ export class HomePage {
     // Chat button
     const chatButton = document.createElement('button');
     chatButton.className = `
+      btn-custom-gradient
       bg-gradient-to-r from-gray-400 to-gray-420
       hover:from-gray-420 hover:to-gray-450
       text-gray-900 font-bold py-4 px-8 rounded-full
@@ -393,6 +394,7 @@ export class HomePage {
       
       if (hasDate) {
         dayButton.className = `
+          btn-custom-gradient
           bg-gradient-to-r from-gray-400 to-gray-420
           hover:from-gray-420 hover:to-gray-450
           text-gray-900 font-semibold py-4 px-6 rounded-lg
@@ -438,21 +440,24 @@ export class HomePage {
     const button = document.createElement('button');
     
     if (style === 'primary') {
-      // Rainbow gradient for Generate Week button
+      // Gray gradient for Generate Week button (same as view buttons)
       button.className = `
-        bg-gradient-to-r from-red-400 via-orange-400 via-yellow-400 via-green-400 via-blue-400 via-indigo-400 to-purple-400
-        hover:from-red-500 hover:via-orange-500 hover:via-yellow-500 hover:via-green-500 hover:via-blue-500 hover:via-indigo-500 hover:to-purple-500
-        text-white font-semibold py-4 px-6 rounded-lg
+        btn-custom-gradient
+        bg-gradient-to-r from-gray-400 to-gray-420
+        hover:from-gray-420 hover:to-gray-450
+        text-gray-900 font-bold py-5 px-8 rounded-xl
+        border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
-        text-lg
+        text-xl
       `.trim().replace(/\s+/g, ' ');
     } else if (style === 'view') {
       // Gray gradient for view buttons - subtle gradient
       button.className = `
+        btn-custom-gradient
         bg-gradient-to-r from-gray-400 to-gray-420
         hover:from-gray-420 hover:to-gray-450
-        text-gray-900 font-bold py-5 px-8 rounded-lg
+        text-gray-900 font-bold py-5 px-8 rounded-xl
         border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
@@ -461,9 +466,10 @@ export class HomePage {
     } else {
       // Gray gradient for secondary buttons (chat, etc.) - subtle gradient
       button.className = `
+        btn-custom-gradient
         bg-gradient-to-r from-gray-400 to-gray-420
         hover:from-gray-420 hover:to-gray-450
-        text-gray-900 font-semibold py-4 px-6 rounded-lg
+        text-gray-900 font-semibold py-4 px-6 rounded-xl
         border border-gray-300
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105

@@ -199,6 +199,11 @@ body {
   color: #1e40af;
 }
 
+/* Custom gradient for gray buttons */
+.btn-custom-gradient {
+  background: linear-gradient(54deg, rgba(156, 163, 175, 1) 52%, rgba(156, 163, 175, 0.32) 100%) !important;
+}
+
 /* Accessibility improvements */
 .btn:focus,
 .back-btn:focus,
