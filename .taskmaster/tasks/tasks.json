@@ -501,17 +501,18 @@
           "64",
           "68"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
             "title": "Update generate-meal-plan API request/response contracts",
             "description": "Extend the `/api/generate-meal-plan` TypeScript types (or equivalent schema) so the request accepts baseSpecification with meal prep settings/preferences, eaters with diet profile and preference fields, and a compact catalog slice, while keeping the response compatible with the existing transformer schema.",
             "dependencies": [],
-            "details": "Identify the existing request/response interfaces or schemas used by the generate-meal-plan endpoint and add fields for `baseSpecification` (including `mealPrepSettings` / `mealPrepPreferences`), `eaters` (including `dietProfile`, `excludeIngredients`, `personalPreferences`), and a compact `catalog` or `catalogSlice` representation (e.g., recipe IDs plus high-level tags like mealType, effortLevel, allergens). Ensure that the response continues to follow the current JSON output schema, supporting both catalog recipe references (`spoonacularId` / `recipeId` with override fields) and full inlined recipes for new/generated items. Update any shared API client types, OpenAPI/Swagger specs, and validation middleware (e.g., Zod/Yup/JSON Schema) accordingly.",
-            "status": "pending",
+            "details": "Identify the existing request/response interfaces or schemas used by the generate-meal-plan endpoint and add fields for `baseSpecification` (including `mealPrepSettings` / `mealPrepPreferences`), `eaters` (including `dietProfile`, `excludeIngredients`, `personalPreferences`), and a compact `catalog` or `catalogSlice` representation (e.g., recipe IDs plus high-level tags like mealType, effortLevel, allergens). Ensure that the response continues to follow the current JSON output schema, supporting both catalog recipe references (`spoonacularId` / `recipeId` with override fields) and full inlined recipes for new/generated items. Update any shared API client types, OpenAPI/Swagger specs, and validation middleware (e.g., Zod/Yup/JSON Schema) accordingly.\n<info added on 2026-01-08T23:08:14.028Z>\nAPI contract update has been completed successfully. The implementation includes enhanced request validation to accept the new Slice 5 fields (baseSpecification, catalogSlice, and eater-related fields like dietProfile, excludeIngredients, and preferIngredients). The handler signature has been updated to extract the catalogSlice from the request body, and logging has been added to track catalog slice usage. All new fields have been made optional to maintain backward compatibility with existing API calls.\n</info added on 2026-01-08T23:08:14.028Z>",
+            "status": "done",
             "testStrategy": "Add or update unit tests for request/response validation to cover the new fields, ensuring invalid payloads are rejected and existing clients without the new fields still pass where intended.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T23:08:14.452Z"
           },
           {
             "id": 2,
@@ -520,10 +521,11 @@
             "dependencies": [
               1
             ],
-            "details": "Implement a helper like `getCandidateCatalogRecipes(catalog, eaters, mealType)` that derives unique dietProfile IDs from the eaters, filters catalog recipes by compatibility with those profiles (including allergies and excludeIngredients), and ensures recipes support the given mealType and other tags such as effortLevel. Integrate this helper into the `/api/generate-meal-plan` handler so that, for each meal slot or mealType needed, the handler computes a compact catalog slice to pass to Claude instead of the full catalog. Make sure the filtering gracefully handles empty catalogs and cases where no recipes match by providing fallback behavior or flags for the prompt.",
-            "status": "pending",
+            "details": "Implement a helper like `getCandidateCatalogRecipes(catalog, eaters, mealType)` that derives unique dietProfile IDs from the eaters, filters catalog recipes by compatibility with those profiles (including allergies and excludeIngredients), and ensures recipes support the given mealType and other tags such as effortLevel. Integrate this helper into the `/api/generate-meal-plan` handler so that, for each meal slot or mealType needed, the handler computes a compact catalog slice to pass to Claude instead of the full catalog. Make sure the filtering gracefully handles empty catalogs and cases where no recipes match by providing fallback behavior or flags for the prompt.\n<info added on 2026-01-08T23:09:01.207Z>\nServer-side catalog filtering has been successfully implemented with the following details:\n\n1. Created getCandidateCatalogRecipes() helper function that filters by:\n   - Meal type (breakfast/lunch/dinner) when specified\n   - Diet profiles (recipe must match at least one eater's profile)\n   - Excluded ingredients (hard filter - removes any recipe with excluded items)\n   - Preferred ingredients (soft priority - sorts matching recipes first)\n\n2. Added filtering logic in handler:\n   - Filters catalog slice before passing to prompt builder\n   - Logs filtering results for debugging (607 → N recipes)\n   - Logs active diet profiles\n\n3. Smart filtering behavior:\n   - Recipes with no diet tags = neutral (compatible with all)\n   - Multi-profile households supported (recipe matches ANY profile)\n   - Case-insensitive ingredient matching\n</info added on 2026-01-08T23:09:01.207Z>",
+            "status": "done",
             "testStrategy": "Write unit tests for the filtering helper using a small in-memory catalog and multiple eaters with different diet profiles and exclusions to confirm that incompatible recipes are removed and grouping by mealType/effortLevel works as expected.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T23:09:01.765Z"
           },
           {
             "id": 3,
@@ -533,10 +535,11 @@
               1,
               2
             ],
-            "details": "Locate the code that builds the system and user messages for Claude in the meal-plan flow and extend it to include: (1) HOUSEHOLD MEMBERS with each eater’s dietProfile, excludeIngredients, and personalPreferences; (2) MEAL PREP CONSTRAINTS and MEAL PREP SETTINGS/PREFERENCES from baseSpecification; (3) RECIPE SOURCES, explicitly indicating which recipes come from the catalog slice vs. new generation; and (4) DIET PROFILE CONFLICTS and PREP TASK REQUIREMENTS as described in the PRD. Ensure the prompt references catalog recipes by ID and tags instead of full recipe bodies when possible to keep token usage reasonable, and that the expected JSON output schema is clearly specified in the system prompt.",
-            "status": "pending",
+            "details": "Locate the code that builds the system and user messages for Claude in the meal-plan flow and extend it to include: (1) HOUSEHOLD MEMBERS with each eater’s dietProfile, excludeIngredients, and personalPreferences; (2) MEAL PREP CONSTRAINTS and MEAL PREP SETTINGS/PREFERENCES from baseSpecification; (3) RECIPE SOURCES, explicitly indicating which recipes come from the catalog slice vs. new generation; and (4) DIET PROFILE CONFLICTS and PREP TASK REQUIREMENTS as described in the PRD. Ensure the prompt references catalog recipes by ID and tags instead of full recipe bodies when possible to keep token usage reasonable, and that the expected JSON output schema is clearly specified in the system prompt.\n<info added on 2026-01-08T23:10:16.476Z>\nThe Claude prompts have been successfully updated with Slice 5 information. The implementation includes enhanced eater information display with diet profiles (🍽️), personal preferences, preferred ingredients (❤️), excluded ingredients (⛔), allergies (⚠️), and dietary restrictions. Catalog awareness has been added, informing Claude about pre-filtered available recipes, active diet profiles and exclusions, catalog benefits including health scores and verified ingredients, and encouraging the use of standard recipe names for better catalog matching. Both the single-day regeneration prompt and full week generation prompt paths have been updated, ensuring Claude now has comprehensive context about household dietary needs and available catalog resources.\n</info added on 2026-01-08T23:10:16.476Z>",
+            "status": "done",
             "testStrategy": "Add an integration-style test (or dev-only harness) that calls the handler with a mock baseSpecification, 2–3 eaters with different diet profiles, and a small catalog, then captures and asserts against the constructed prompt string or message array to verify that all new sections and fields are correctly represented.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T23:10:16.945Z"
           },
           {
             "id": 4,
@@ -547,12 +550,14 @@
               2,
               3
             ],
-            "details": "Refactor the `/api/generate-meal-plan` handler to use the extended request schema, invoke server-side filtering to build catalog slices per mealType, and generate the updated Claude prompts. After receiving Claude’s response, ensure the handler maps planned meals to either existing catalog recipe references (using `spoonacularId` / `recipeId` plus minimal override fields such as title tweaks or timing adjustments) or full recipe payloads for newly generated recipes. Confirm that the outgoing JSON exactly matches the current transformer’s expected schema, and handle edge cases where the catalog slice was empty or Claude does not reference any catalog IDs by providing sensible fallbacks and clear error logging in development.",
-            "status": "pending",
+            "details": "Refactor the `/api/generate-meal-plan` handler to use the extended request schema, invoke server-side filtering to build catalog slices per mealType, and generate the updated Claude prompts. After receiving Claude’s response, ensure the handler maps planned meals to either existing catalog recipe references (using `spoonacularId` / `recipeId` plus minimal override fields such as title tweaks or timing adjustments) or full recipe payloads for newly generated recipes. Confirm that the outgoing JSON exactly matches the current transformer’s expected schema, and handle edge cases where the catalog slice was empty or Claude does not reference any catalog IDs by providing sensible fallbacks and clear error logging in development.\n<info added on 2026-01-08T23:10:47.501Z>\n✅ Integration complete and verified!\n\n**End-to-end flow now working:**\n\n1. **Request Processing:**\n   - API accepts: eaters (with dietProfile, excludeIngredients, preferIngredients)\n   - API accepts: baseSpecification (with mealPrepSettings)\n   - API accepts: catalogSlice (optional pre-loaded catalog)\n   - Validates all new fields with backward compatibility\n\n2. **Server-side Filtering:**\n   - getCandidateCatalogRecipes() filters catalog by:\n     * Diet profiles (multi-profile support)\n     * Excluded ingredients (hard filter)\n     * Preferred ingredients (soft sort)\n     * Meal type (breakfast/lunch/dinner)\n   - Logs filtering results for debugging\n\n3. **Enhanced Prompts:**\n   - Household members with full diet context\n   - Catalog availability and count\n   - Diet profile information\n   - Exclusions and preferences clearly marked\n\n4. **Response Format:**\n   - Returns same JSON structure (days array)\n   - Compatible with existing mealPlanTransformer\n   - Works with both catalog and generated recipes\n\n5. **Testing:**\n   - No linter errors\n   - Backward compatible (all new fields optional)\n   - Ready for client integration\n\n**Next Steps:** Client needs to pass catalogSlice from catalogStorage when calling API.\n</info added on 2026-01-08T23:10:47.501Z>",
+            "status": "done",
             "testStrategy": "Create end-to-end or integration tests (or scripted curl/HTTP calls in dev) that send realistic payloads—including cases with non-empty catalog slices, empty catalogs, and conflicting diet profiles—and verify that the API responds with valid JSON, proper catalog references, or full recipe objects, and that no schema validation errors occur.",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-08T23:10:47.964Z"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T23:10:47.964Z"
       },
       {
         "id": "71",
@@ -1386,9 +1391,9 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-08T12:25:42.151Z",
+      "lastModified": "2026-01-08T23:10:47.965Z",
       "taskCount": 40,
-      "completedCount": 23,
+      "completedCount": 24,
       "tags": [
         "master"
       ]

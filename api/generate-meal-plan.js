@@ -106,7 +106,7 @@ function validateRequest(body) {
     }
   }
 
-  // Validate eaters
+  // Validate eaters (Slice 5: now includes diet profiles and preferences)
   if (body.eaters !== undefined) {
     if (!Array.isArray(body.eaters)) {
       errors.push('eaters must be an array');
@@ -115,7 +115,28 @@ function validateRequest(body) {
         if (typeof eater !== 'object' || eater === null) {
           errors.push(`eater[${i}] must be an object`);
         }
+        // Slice 5: Validate new eater fields (optional)
+        if (eater.excludeIngredients !== undefined && !Array.isArray(eater.excludeIngredients)) {
+          errors.push(`eater[${i}].excludeIngredients must be an array`);
+        }
+        if (eater.preferIngredients !== undefined && !Array.isArray(eater.preferIngredients)) {
+          errors.push(`eater[${i}].preferIngredients must be an array`);
+        }
       });
+    }
+  }
+  
+  // Slice 5: Validate baseSpecification (optional but expected)
+  if (body.baseSpecification !== undefined) {
+    if (typeof body.baseSpecification !== 'object' || body.baseSpecification === null) {
+      errors.push('baseSpecification must be an object');
+    }
+  }
+  
+  // Slice 5: Validate catalog slice (optional)
+  if (body.catalogSlice !== undefined) {
+    if (!Array.isArray(body.catalogSlice)) {
+      errors.push('catalogSlice must be an array');
     }
   }
   
@@ -146,10 +167,91 @@ function validateRequest(body) {
 }
 
 /**
+ * Slice 5: Filter catalog recipes by diet profiles and constraints
+ * @param {Array} catalog - Full recipe catalog
+ * @param {Array} eaters - Array of eater objects
+ * @param {string} mealType - Optional meal type filter (breakfast|lunch|dinner)
+ * @returns {Array} Filtered recipes
+ */
+function getCandidateCatalogRecipes(catalog, eaters, mealType = null) {
+  if (!catalog || catalog.length === 0) {
+    return [];
+  }
+
+  // Extract unique diet profiles from eaters
+  const profileIds = [...new Set(eaters.map(e => e.dietProfile).filter(Boolean))];
+  
+  // Collect all exclusions from all eaters (must avoid these)
+  const allExclusions = eaters.flatMap(e => e.excludeIngredients || []).map(ex => ex.toLowerCase());
+  
+  // Collect all preferences (nice to have)
+  const allPreferences = eaters.flatMap(e => e.preferIngredients || []).map(pref => pref.toLowerCase());
+
+  let filtered = catalog;
+
+  // Filter by meal type if specified
+  if (mealType) {
+    filtered = filtered.filter(recipe => {
+      const mealSlots = recipe.tags?.mealSlots || [];
+      return mealSlots.length === 0 || mealSlots.includes(mealType);
+    });
+  }
+
+  // Filter by diet profiles (recipe must be compatible with at least one profile)
+  if (profileIds.length > 0) {
+    filtered = filtered.filter(recipe => {
+      const recipeDiets = recipe.tags?.diets || [];
+      
+      // If recipe has no diet tags, it's neutral (compatible with all)
+      if (recipeDiets.length === 0) return true;
+      
+      // Recipe is compatible if it matches any eater's diet profile
+      return profileIds.some(profileId => recipeDiets.includes(profileId));
+    });
+  }
+
+  // Filter out recipes with excluded ingredients
+  if (allExclusions.length > 0) {
+    filtered = filtered.filter(recipe => {
+      const ingredientNames = (recipe.ingredients || [])
+        .map(i => i.name.toLowerCase());
+      
+      // Check if any ingredient contains an excluded item
+      const hasExcluded = allExclusions.some(excluded =>
+        ingredientNames.some(name => name.includes(excluded))
+      );
+      
+      return !hasExcluded;
+    });
+  }
+
+  // Sort by preferences (recipes with preferred ingredients first)
+  if (allPreferences.length > 0) {
+    filtered.sort((a, b) => {
+      const aIngredients = (a.ingredients || []).map(i => i.name.toLowerCase());
+      const bIngredients = (b.ingredients || []).map(i => i.name.toLowerCase());
+      
+      const aMatches = allPreferences.filter(pref =>
+        aIngredients.some(name => name.includes(pref))
+      ).length;
+      
+      const bMatches = allPreferences.filter(pref =>
+        bIngredients.some(name => name.includes(pref))
+      ).length;
+      
+      return bMatches - aMatches; // Higher matches first
+    });
+  }
+
+  return filtered;
+}
+
+/**
  * Build user prompt from chat history, eaters, and optional structured schedule
  * Slice 4: Enhanced to support single-day regeneration
+ * Slice 5: Enhanced with diet profiles and catalog awareness
  */
-function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = null, dateForDay = null, existingMeals = []) {
+function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = null, dateForDay = null, existingMeals = [], catalogSlice = null) {
   // Get next Saturday as week start
   const today = new Date();
   const daysUntilSaturday = (6 - today.getDay() + 7) % 7 || 7;
@@ -170,9 +272,34 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = n
     conversationContext += '\n\nPay special attention to dietary preferences, recipe complexity, ingredient constraints, etc.';
   }
 
-  // Format eater information with allergies and restrictions
+  // Slice 5: Format eater information with diet profiles and preferences
   const eaterInfo = eaters.map(eater => {
-    let info = `- ${eater.name}: ${eater.preferences || 'No specific preferences'}`;
+    let info = `- ${eater.name}`;
+    
+    // Add diet profile (Slice 5)
+    if (eater.dietProfile) {
+      info += `\n  🍽️  Diet Profile: ${eater.dietProfile}`;
+    }
+    
+    // Add general preferences
+    if (eater.preferences && eater.preferences !== 'no restrictions') {
+      info += `\n  Preferences: ${eater.preferences}`;
+    }
+    
+    // Add personal preferences (Slice 5)
+    if (eater.personalPreferences) {
+      info += `\n  Personal notes: ${eater.personalPreferences}`;
+    }
+    
+    // Add preferred ingredients (Slice 5)
+    if (eater.preferIngredients && eater.preferIngredients.length > 0) {
+      info += `\n  ❤️  Prefers: ${eater.preferIngredients.join(', ')}`;
+    }
+    
+    // Add excluded ingredients (Slice 5 - CRITICAL)
+    if (eater.excludeIngredients && eater.excludeIngredients.length > 0) {
+      info += `\n  ⛔ MUST EXCLUDE: ${eater.excludeIngredients.join(', ')}`;
+    }
     
     // Add allergies (CRITICAL - must be avoided)
     if (eater.allergies && eater.allergies.length > 0) {
@@ -182,6 +309,10 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = n
     // Add dietary restrictions
     if (eater.dietaryRestrictions && eater.dietaryRestrictions.length > 0) {
       info += `\n  Dietary restrictions: ${eater.dietaryRestrictions.join(', ')}`;
+    }
+    
+    if (!eater.dietProfile && !eater.preferences && !eater.personalPreferences) {
+      info += ': No specific preferences';
     }
     
     return info;
@@ -270,6 +401,27 @@ To achieve this:
 
 This constraint is CRITICAL for keeping shopping simple and costs down.`;
 
+  // Slice 5: Add catalog information to prompt
+  let catalogInfo = '';
+  if (catalogSlice && catalogSlice.length > 0) {
+    catalogInfo = `\n\nAVAILABLE RECIPE CATALOG:
+We have ${catalogSlice.length} pre-filtered recipes from a professional catalog that match the household's diet profiles.
+These recipes have been:
+- Filtered to match the diet profiles: ${eaters.map(e => e.dietProfile).filter(Boolean).join(', ') || 'none specified'}
+- Filtered to exclude: ${eaters.flatMap(e => e.excludeIngredients || []).join(', ') || 'no exclusions'}
+- Already scored for health and nutrition
+
+IMPORTANT: When selecting recipes, PRIORITIZE using simple, standard recipe names that would exist in a professional recipe database.
+Examples: "Greek Salad", "Chicken Tikka Masala", "Vegetable Stir Fry", "Lentil Soup", "Spaghetti Bolognese"
+
+The system will automatically match your recipes to the catalog when possible, giving users:
+- Pre-calculated health scores
+- Verified ingredient lists
+- Professional recipe quality
+
+Generate recipes using COMMON, STANDARD names that are likely in our ${catalogSlice.length}-recipe catalog.`;
+  }
+
   // Slice 4: Handle single-day regeneration
   if (regenerateDay && dateForDay) {
     const dayNameUpper = regenerateDay.toUpperCase();
@@ -302,6 +454,7 @@ ${eaterInfo}
 ${conversationContext}
 ${scheduleRequirements}
 ${ingredientConstraint}
+${catalogInfo}
 ${avoidDuplication}
 
 If the user specified constraints in the conversation (like "simple recipes", "meal prep on Saturday", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
@@ -317,6 +470,7 @@ ${eaterInfo}
 ${conversationContext}
 ${scheduleRequirements}
 ${ingredientConstraint}
+${catalogInfo}
 
 Create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. 
 
@@ -380,6 +534,7 @@ export default async function handler(req) {
       chatHistory = [], 
       eaters = [], 
       baseSpecification = null,
+      catalogSlice = null,  // Slice 5: Pre-filtered catalog recipes
       regenerateDay = null,
       dateForDay = null,
       existingMeals = []
@@ -387,16 +542,37 @@ export default async function handler(req) {
 
     // Use default eater if none provided
     const finalEaters = eaters.length > 0 ? eaters : [DEFAULT_EATER];
+    
+    // Slice 5: Log catalog slice info if provided
+    if (catalogSlice && catalogSlice.length > 0) {
+      console.log(`📚 Using catalog slice with ${catalogSlice.length} recipes`);
+    }
+
+    // Slice 5: Filter catalog if available (server-side pre-filtering)
+    let filteredCatalog = null;
+    if (catalogSlice && catalogSlice.length > 0) {
+      // Apply diet profile and exclusion filtering
+      filteredCatalog = getCandidateCatalogRecipes(catalogSlice, finalEaters);
+      console.log(`🔍 Filtered catalog: ${catalogSlice.length} → ${filteredCatalog.length} recipes`);
+      
+      // Log diet profiles for debugging
+      const profiles = finalEaters.map(e => e.dietProfile).filter(Boolean);
+      if (profiles.length > 0) {
+        console.log(`👥 Diet profiles: ${profiles.join(', ')}`);
+      }
+    }
 
     // Build user prompt (with optional baseSpecification for structured schedule)
     // Slice 4: Include regeneration parameters
+    // Slice 5: Include catalog slice
     const userPrompt = buildUserPrompt(
       chatHistory, 
       finalEaters, 
       baseSpecification,
       regenerateDay,
       dateForDay,
-      existingMeals
+      existingMeals,
+      filteredCatalog  // Slice 5: Pass filtered catalog
     );
 
     // Initialize Anthropic client
