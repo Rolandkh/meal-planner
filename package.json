@@ -3,10 +3,12 @@
   "version": "1.0.0-rc1",
   "description": "AI-powered weekly meal planning with recipe management and history",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "dev": "npx serve .",
     "start": "npx serve .",
-    "build": "echo 'No build step required - static site'"
+    "build": "echo 'No build step required - static site'",
+    "extract-catalog": "node scripts/extractSpoonacularCatalog.js"
   },
   "keywords": [
     "meal-planning",
@@ -17,6 +19,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "dotenv": "^16.4.5",
     "task-master-ai": "^0.39.0",
     "vercel": "^50.1.3"
   },

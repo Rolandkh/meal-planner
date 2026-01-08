@@ -2,7 +2,7 @@
   "master": {
     "tasks": [
       {
-        "id": 57,
+        "id": "57",
         "title": "Fix Recipe Edit Page Critical Bugs",
         "description": "Address three critical bugs in the Recipe Edit page: non-functional Add Ingredient button, missing save confirmation feedback, and data persistence issues.",
         "details": "This task involves fixing three critical bugs in the Recipe Edit page:\n\n1. **Fix Add Ingredient Button**:\n- Debug the click handler in RecipeEditPage.js\n- Implement functionality to add a new blank ingredient row with empty fields for name, amount, unit, and category\n- Ensure the new row is immediately editable\n\n```javascript\n// Example implementation for Add Ingredient button handler\nconst handleAddIngredient = () => {\n  setIngredients(prevIngredients => [\n    ...prevIngredients,\n    { name: '', amount: '', unit: '', category: '' }\n  ]);\n};\n```\n\n2. **Implement Save Confirmation UI**:\n- Add visual feedback when save is clicked\n- Update button state management (blue → green → blue)\n- Change button text from \"Save Changes\" to \"Saved ✓\" on success\n- Implement a 5-second timer for auto-reset\n- Add error state handling if save fails\n\n```javascript\n// Example implementation for save confirmation\nconst handleSave = async () => {\n  setSaveState('saving'); // Could be 'idle', 'saving', 'success', 'error'\n  try {\n    await saveRecipe(recipeData);\n    setSaveState('success');\n    // Reset after 5 seconds\n    setTimeout(() => setSaveState('idle'), 5000);\n  } catch (error) {\n    setSaveState('error');\n    console.error('Failed to save recipe:', error);\n    // Reset after 5 seconds\n    setTimeout(() => setSaveState('idle'), 5000);\n  }\n};\n```\n\n3. **Fix Data Persistence**:\n- Debug storage integration to ensure `saveRecipes()` or `updateRecipe()` is being called correctly\n- Verify recipe ID is preserved to prevent duplicates\n- Ensure all field changes are captured and persisted to localStorage\n- Verify data is correctly read back on page load\n\n```javascript\n// Example implementation for data persistence\nconst saveRecipe = (recipeData) => {\n  // Get existing recipes from localStorage\n  const existingRecipes = JSON.parse(localStorage.getItem('recipes') || '[]');\n  \n  // Find if recipe already exists\n  const recipeIndex = existingRecipes.findIndex(r => r.id === recipeData.id);\n  \n  if (recipeIndex >= 0) {\n    // Update existing recipe\n    existingRecipes[recipeIndex] = recipeData;\n  } else {\n    // Add new recipe\n    existingRecipes.push(recipeData);\n  }\n  \n  // Save back to localStorage\n  localStorage.setItem('recipes', JSON.stringify(existingRecipes));\n};\n```",
@@ -78,7 +78,7 @@
         "updatedAt": "2026-01-08T00:55:40.320Z"
       },
       {
-        "id": 58,
+        "id": "58",
         "title": "Implement Single-Day Regeneration Workflow",
         "description": "Fix the data loss bug in single-day regeneration and implement a conversational workflow for making changes to a specific day's meal plan while preserving the rest of the week.",
         "details": "This task involves fixing the critical issue where regenerating a single day causes the entire week to be deleted. The implementation will create a conversational workflow for updating a single day:\n\n1. **Add \"Make Changes\" Button to DayView**:\n- Update DayView.js to include a \"Make Changes\" button at the top of each day view\n- Style the button to be visible but not intrusive\n\n```javascript\n// Example implementation in DayView.js\nconst DayView = ({ day, date, meals }) => {\n  return (\n    <div className=\"day-view\">\n      <div className=\"day-header\">\n        <h2>{day} - {formatDate(date)}</h2>\n        <button \n          className=\"make-changes-btn\"\n          onClick={() => handleMakeChanges(day, date, meals)}\n        >\n          Make Changes\n        </button>\n      </div>\n      {/* Rest of day view */}\n    </div>\n  );\n};\n```\n\n2. **Update regenerateDay() Function**:\n- Modify regenerateDay.js to preserve other days in the meal plan\n- Ensure only the targeted day gets replaced\n\n```javascript\n// Example implementation in regenerateDay.js\nconst regenerateDay = async (dayToUpdate, userConstraints) => {\n  // Get current meal plan\n  const currentMealPlan = getCurrentMealPlan();\n  \n  // Generate new day content\n  const newDayContent = await generateDayMealPlan(dayToUpdate, userConstraints);\n  \n  // Find the index of the day to update\n  const dayIndex = currentMealPlan.days.findIndex(day => day.name === dayToUpdate);\n  \n  if (dayIndex >= 0) {\n    // Replace only that specific day\n    currentMealPlan.days[dayIndex] = {\n      ...currentMealPlan.days[dayIndex],\n      ...newDayContent\n    };\n  }\n  \n  // Save updated meal plan\n  saveMealPlan(currentMealPlan);\n  \n  return currentMealPlan;\n};\n```\n\n3. **Extend ChatWidget for Day-Specific Changes**:\n- Update ChatWidget.js to handle day-specific change requests\n- Add context awareness so Vanessa knows which day is being modified\n\n```javascript\n// Example implementation in ChatWidget.js\nconst ChatWidget = ({ isOpen, onClose, dayContext }) => {\n  useEffect(() => {\n    if (isOpen && dayContext) {\n      // Initialize chat with contextual prompt\n      const initialPrompt = `So you want to make changes to ${dayContext.day}'s menu. What would you like to change?`;\n      setMessages(prev => [...prev, { role: 'assistant', content: initialPrompt }]);\n    }\n  }, [isOpen, dayContext]);\n  \n  // Rest of chat widget implementation\n};\n```\n\n4. **Update API Endpoint**:\n- Modify api/generate-meal-plan.js to support partial meal plan updates\n- Add parameters for day-specific regeneration\n\n```javascript\n// Example API endpoint update\nasync function handler(req, res) {\n  const { day, constraints, preserveOtherDays = true } = req.body;\n  \n  try {\n    if (day && preserveOtherDays) {\n      // Single day regeneration\n      const updatedMealPlan = await regenerateSingleDay(day, constraints);\n      res.status(200).json(updatedMealPlan);\n    } else {\n      // Full week regeneration (existing functionality)\n      const newMealPlan = await generateFullMealPlan(constraints);\n      res.status(200).json(newMealPlan);\n    }\n  } catch (error) {\n    res.status(500).json({ error: error.message });\n  }\n}\n```",
@@ -155,7 +155,7 @@
         "updatedAt": "2026-01-08T03:24:53.703Z"
       },
       {
-        "id": 59,
+        "id": "59",
         "title": "Enhance Meal Plan History Pages",
         "description": "Improve the meal plan history pages by adding AI-generated weekly summaries and restructuring the history detail page with a two-tab interface showing shopping list and weekly overview.",
         "details": "This task involves enhancing the meal plan history pages to provide more value and better organization:\n\n1. **History List Page Improvements** (MealPlanHistoryPage.js):\n- Add AI-generated weekly summaries for each archived meal plan\n- Update the display format to include date range, summary, budget, and meal count\n\n```javascript\n// Example implementation for history list item\nconst MealPlanHistoryItem = ({ mealPlan }) => {\n  return (\n    <div className=\"history-item\">\n      <div className=\"date-range\">{formatDateRange(mealPlan.startDate, mealPlan.endDate)}</div>\n      <div className=\"ai-summary\">{mealPlan.aiSummary || 'No summary available'}</div>\n      <div className=\"budget-summary\">Budget: ${mealPlan.budgetSummary || 'N/A'}</div>\n      <div className=\"meal-count\">Meals: {countMeals(mealPlan)}</div>\n    </div>\n  );\n};\n\n// Function to generate AI summary (could be client or server-side)\nconst generateAISummary = async (mealPlan) => {\n  // Extract key information from meal plan\n  const mealTypes = extractMealTypes(mealPlan);\n  const ingredients = extractCommonIngredients(mealPlan);\n  const specialMeals = findSpecialMeals(mealPlan);\n  \n  // Generate summary using AI service or predefined templates\n  const summary = await aiService.generateSummary({\n    mealTypes,\n    ingredients,\n    specialMeals\n  });\n  \n  return summary;\n};\n```\n\n2. **History Detail Page Restructure** (MealPlanHistoryDetailPage.js):\n- Implement a two-tab interface with Shopping List and Weekly Overview tabs\n- Create day card components showing all meals for the Weekly Overview tab\n- Make meal names clickable links to recipe details\n\n```javascript\n// Example implementation for two-tab interface\nconst MealPlanHistoryDetailPage = ({ mealPlanId }) => {\n  const [activeTab, setActiveTab] = useState('weekly'); // 'weekly' or 'shopping'\n  const [mealPlan, setMealPlan] = useState(null);\n  \n  useEffect(() => {\n    // Fetch complete meal plan data including all 7 days\n    const fetchMealPlan = async () => {\n      const data = await getMealPlanById(mealPlanId);\n      setMealPlan(data);\n    };\n    \n    fetchMealPlan();\n  }, [mealPlanId]);\n  \n  if (!mealPlan) return <Loading />;\n  \n  return (\n    <div className=\"meal-plan-history-detail\">\n      <h1>{formatDateRange(mealPlan.startDate, mealPlan.endDate)}</h1>\n      <p className=\"ai-summary\">{mealPlan.aiSummary}</p>\n      \n      <div className=\"tabs\">\n        <button \n          className={`tab ${activeTab === 'weekly' ? 'active' : ''}`}\n          onClick={() => setActiveTab('weekly')}\n        >\n          Weekly Overview\n        </button>\n        <button \n          className={`tab ${activeTab === 'shopping' ? 'active' : ''}`}\n          onClick={() => setActiveTab('shopping')}\n        >\n          Shopping List\n        </button>\n      </div>\n      \n      <div className=\"tab-content\">\n        {activeTab === 'weekly' ? (\n          <WeeklyOverview days={mealPlan.days} />\n        ) : (\n          <ShoppingList items={mealPlan.shoppingList} />\n        )}\n      </div>\n    </div>\n  );\n};\n\n// Example day card component for Weekly Overview\nconst DayCard = ({ day }) => {\n  return (\n    <div className=\"day-card\">\n      <h3>{day.name}</h3>\n      <p>{formatDate(day.date)}</p>\n      <div className=\"meals\">\n        <div className=\"meal\">\n          <span>Breakfast:</span>\n          <Link to={`/recipe/${day.breakfast.id}`}>{day.breakfast.name}</Link>\n        </div>\n        <div className=\"meal\">\n          <span>Lunch:</span>\n          <Link to={`/recipe/${day.lunch.id}`}>{day.lunch.name}</Link>\n        </div>\n        <div className=\"meal\">\n          <span>Dinner:</span>\n          <Link to={`/recipe/${day.dinner.id}`}>{day.dinner.name}</Link>\n        </div>\n      </div>\n    </div>\n  );\n};\n```\n\n3. **Fix Data Loading**:\n- Update the data fetching logic to include all 7 days, not just one\n- Ensure complete meal data is available for display\n\n```javascript\n// Example data fetching function\nconst getMealPlanById = async (id) => {\n  try {\n    // Fetch complete meal plan with all days\n    const response = await fetch(`/api/meal-plans/${id}?include=all_days`);\n    if (!response.ok) throw new Error('Failed to fetch meal plan');\n    \n    const data = await response.json();\n    \n    // Generate AI summary if not already present\n    if (!data.aiSummary) {\n      data.aiSummary = await generateAISummary(data);\n      // Optionally save the summary back to the database\n      await saveMealPlanSummary(id, data.aiSummary);\n    }\n    \n    return data;\n  } catch (error) {\n    console.error('Error fetching meal plan:', error);\n    throw error;\n  }\n};\n```",
@@ -229,54 +229,57 @@
         "updatedAt": "2026-01-08T03:33:07.135Z"
       },
       {
-        "id": 60,
+        "id": "60",
         "title": "Establish Slice 5 tech baseline & external dependencies",
         "description": "Confirm and document final tech stack, Claude model/version, and Spoonacular API usage patterns for Slice 5 features.",
         "details": "Implementation details:\n- Continue using **Vanilla JS ES modules + HTML + Tailwind via CDN** for frontend, and **Vercel Edge Functions** for backend endpoints, matching existing slices.\n- Confirm current **Anthropic Claude Sonnet 3.5/4.1-equivalent model** naming from Anthropic docs and update env var (e.g. `ANTHROPIC_MODEL=claude-3-5-sonnet-latest`) while keeping temperatures and token limits consistent with prior slices.\n- Review Spoonacular API docs for current endpoints and quotas; plan to use:\n  - `/recipes/complexSearch` with `addRecipeInformation=true&addNutrition=true&number=100&offset=N` for paginated catalog extraction.\n  - Respect Spoonacular **rate limits and 429 handling**; plan exponential backoff and daily cap aligned to budget (Cook tier).\n- Define environment variables in Vercel project: `SPOONACULAR_API_KEY`, `ANTHROPIC_API_KEY`, `SPOONACULAR_BASE_URL`.\n- Decide JSON catalog storage format: **single compressed JSON file in repo for initial seed** plus **localStorage key `vanessa_recipe_catalog`** for client-side cache; design versioning field `catalogVersion`.\n- Choose lightweight bundling of static health data (`ingredientHealthData.json`, `dietProfiles.json`) as **static JSON under `src/data/`** loaded via ES module import to avoid extra network calls.\n- Document all of the above in a short `docs/slice5-tech-notes.md` for future slices.\nPseudo-code (Edge env config check):\n```js\nexport function assertEnv() {\n  const required = ['ANTHROPIC_API_KEY', 'SPOONACULAR_API_KEY'];\n  required.forEach(name => {\n    if (!process.env[name]) {\n      throw new Error(`Missing env var: ${name}`);\n    }\n  });\n}\n```\n",
         "testStrategy": "- Verify Vercel project has required env vars and that `GET /api/check-env` returns OK.\n- Call a minimal Anthropic chat from a dev-only endpoint and confirm model name works and latency is acceptable.\n- Call Spoonacular `complexSearch` in a dev-only script and confirm authentication and response shape.\n- Manually confirm static JSON imports (`dietProfiles.json`, `ingredientHealthData.json`) work in a minimal test component without bundler errors.",
         "priority": "high",
         "dependencies": [],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T08:49:45.360Z"
       },
       {
-        "id": 61,
+        "id": "61",
         "title": "Design and persist enhanced Recipe schema for Slice 5",
         "description": "Extend the Recipe schema to support catalog linkage, health scores, variations, nutrition, and tags, and update storage utilities accordingly.",
         "details": "Implementation details:\n- Extend Recipe type in a central `src/types/recipe.js` JSDoc or TS typedef to include fields from PRD:\n  - Catalog linkage: `source`, `spoonacularId`, `parentRecipeId`, `childRecipeIds`, `variationNote`.\n  - Health: `dietCompassScores` (overall + 4 metrics), `nutrition` macro/micro fields.\n  - Tagging: nested `tags` object with cuisines, diets, dishTypes, proteinSources, cookingMethods, carbBases, effortLevel, spiceLevel, budgetTier, kidFriendly, makeAhead, protectiveFoods.\n  - Prep: `prepStrategy`, `complexity`, `tags` additions like `quick-assembly`, `meal-prep`.\n- Update `storage.js` helpers `loadRecipes` / `saveRecipes` (now using `vanessa_recipes`) to:\n  - Always attach defaults for new fields when loading older records.\n  - Guarantee `_schemaVersion` on each recipe object (e.g. `2`).\n- Keep IDs and existing fields backward compatible to avoid breaking `meals` and `mealPlan` references.\n- Add a small `normalizeRecipe(recipe)` function that:\n  - Ensures all new fields exist with safe defaults.\n  - Is called inside `loadRecipes()` mapping over stored array.\nPseudo-code:\n```js\nexport function normalizeRecipe(r) {\n  return {\n    _schemaVersion: r._schemaVersion ?? 2,\n    parentRecipeId: r.parentRecipeId ?? null,\n    childRecipeIds: r.childRecipeIds ?? [],\n    variationNote: r.variationNote ?? null,\n    dietCompassScores: r.dietCompassScores ?? {\n      overall: null,\n      nutrientDensity: null,\n      antiAging: null,\n      weightLoss: null,\n      heartHealth: null\n    },\n    nutrition: r.nutrition ?? null,\n    tags: {\n      cuisines: [], diets: [], dishTypes: [], mealSlots: [],\n      proteinSources: [], cookingMethods: [], carbBases: [],\n      effortLevel: 'medium', spiceLevel: 'none', budgetTier: 'moderate',\n      kidFriendly: false, makeAhead: false, protectiveFoods: [],\n      ...(r.tags || {})\n    },\n    prepStrategy: r.prepStrategy ?? null,\n    complexity: r.complexity ?? 'moderate',\n    ...r\n  };\n}\n```\n",
         "testStrategy": "- Add unit-style tests (or a dev script) that loads existing `vanessa_recipes` from a Slice 4 dataset and asserts no exceptions and presence of new fields.\n- Verify that new recipes created via generation or import persist and reload with all added fields.\n- Manually inspect a sample stored recipe JSON in dev tools to confirm schema matches PRD.",
         "priority": "high",
         "dependencies": [
-          60
+          "60"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T08:59:36.648Z"
       },
       {
-        "id": 62,
+        "id": "62",
         "title": "Implement data migration to Slice 5 schemas",
         "description": "Create a one-time migration routine to upgrade existing localStorage data to Slice 5-compatible schemas.",
         "details": "Implementation details:\n- Add `migrateToSlice5()` function in `src/migrations/migrateToSlice5.js` and call it early in app bootstrap (after storage.js is loaded, before any views mount).\n- Responsibilities:\n  1. Read `vanessa_base_specification`; if present and `_schemaVersion < 2`, augment with:\n     - `mealPrepSettings` (or `mealPrepPreferences` per PRD) defaults: batchPrepDays `[6]`, all days/slots `\"medium\"`.\n     - `mealPrepPreferences` (strategy, prepDays, maxPrepTime, busyDays, lightDays, preferences flags) if using extended prep system.\n     - Bump `_schemaVersion` to `2`.\n  2. For recipes (`vanessa_recipes`):\n     - Map through `normalizeRecipe` from Task 61.\n     - Optionally compute provisional `dietCompassScores` = null for now (will be populated once scoring engine runs) but ensure object present.\n  3. For meals and meal plans:\n     - Ensure new fields such as `prepTasks`, `targetEaters`, `dietProfileTags` exist with defaults.\n  4. Initialize new keys if missing: `vanessa_recipe_catalog` (empty array), `vanessa_ingredient_health` (from static data), `vanessa_diet_profiles` (from static data).\n  5. Persist changes and set `localStorage['vanessa_migration_slice5']='complete'` to avoid re-running.\nPseudo-code:\n```js\nexport function migrateToSlice5() {\n  if (localStorage.getItem('vanessa_migration_slice5') === 'complete') return;\n  const base = loadBaseSpecification();\n  if (base && (base._schemaVersion ?? 1) < 2) {\n    base.mealPrepSettings = base.mealPrepSettings ?? getDefaultMealPrepSettings();\n    base._schemaVersion = 2;\n    saveBaseSpecification(base);\n  }\n  const recipes = loadRecipes();\n  saveRecipes(recipes.map(normalizeRecipe));\n  // similar for meals, meal plans\n  if (!loadRecipeCatalog()) saveRecipeCatalog([]);\n  if (!loadDietProfiles()) saveDietProfiles(defaultProfiles);\n  localStorage.setItem('vanessa_migration_slice5', 'complete');\n}\n```\n",
         "testStrategy": "- In a dev environment with pre-Slice-5 sample data, clear migration flags and reload the app; check console for errors.\n- Inspect `vanessa_base_specification`, `vanessa_recipes`, `vanessa_current_meal_plan`, and new keys in Application → Local Storage to confirm new fields.\n- Re-run app reloads to ensure idempotency (no further modifications when flag is set).",
         "priority": "high",
         "dependencies": [
-          61
+          "61"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:00:23.707Z"
       },
       {
-        "id": 63,
+        "id": "63",
         "title": "Implement Spoonacular catalog extraction Edge function",
         "description": "Create `/api/extract-spoonacular-catalog` Edge function to bulk-fetch, normalize, and persist ~800 Spoonacular recipes into a catalog JSON format.",
         "details": "Implementation details:\n- Create `api/extract-spoonacular-catalog.js` (or `.ts`) using Vercel Edge runtime.\n- Accept a **dev/admin-only** POST body like `{ secret: string }` and validate against `process.env.CATALOG_BUILD_SECRET` to avoid public use.\n- Implement paginated fetch loop over `complexSearch` with `addRecipeInformation=true&addNutrition=true` and filters from the protocol document (e.g., various cuisines and diets) until ~800 unique recipes collected.\n- Deduplicate via `spoonacularId` (i.e., `id` from API), maintain a `Map<number, Recipe>`.\n- Transform to internal Recipe schema using a `mapSpoonacularToRecipe(spRecipe)` helper which:\n  - Maps ingredients to metric using existing `unitConversions` plus Spoonacular’s metric fields (`sp.nutrition.ingredients` etc.).\n  - Fills `nutrition` macros and micro nutrients from Spoonacular `nutrition` field.\n  - Derives tags from Spoonacular properties (`diets`, `dishTypes`, `readyInMinutes`, `veryHealthy`, etc.).\n  - Sets `source='spoonacular'` and `spoonacularId`.\n- Persist catalog as a JSON response that can be **downloaded and manually committed** into `src/data/vanessa_recipe_catalog.json`, OR optionally push to a storage bucket; for v1 keep it manual to avoid write access issues on client.\n- Include basic progress logging in the response for dev use (e.g. total fetched, duplicates skipped).\nPseudo-code (core loop):\n```js\nlet offset = 0;\nconst pageSize = 100;\nconst recipes = new Map();\nwhile (recipes.size < 800 && offset < 2000) {\n  const url = new URL('/recipes/complexSearch', SPOON_BASE);\n  url.searchParams.set('number', pageSize);\n  url.searchParams.set('offset', offset);\n  url.searchParams.set('addRecipeInformation', 'true');\n  url.searchParams.set('addNutrition', 'true');\n  const res = await fetch(url, { headers: { 'x-api-key': apiKey }});\n  if (res.status === 429) { await sleep(1000); continue; }\n  const json = await res.json();\n  json.results.forEach(sp => {\n    if (!recipes.has(sp.id)) recipes.set(sp.id, mapSpoonacularToRecipe(sp));\n  });\n  offset += pageSize;\n}\nreturn new Response(JSON.stringify({ count: recipes.size, recipes: [...recipes.values()] }), { status: 200 });\n```\n",
         "testStrategy": "- Call `/api/extract-spoonacular-catalog` in a protected dev environment with a small `number` (e.g., 10) and inspect returned JSON shape.\n- Validate that normalization yields valid internal Recipe objects (passes through `normalizeRecipe`).\n- Manually check several recipes for correct metric units, tags, and nutrition mapping.\n- Ensure the endpoint respects Spoonacular rate limits by simulating multiple pages and verifying backoff logic.",
         "priority": "high",
         "dependencies": [
-          60,
-          61
+          "60",
+          "61"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -285,7 +288,8 @@
             "dependencies": [],
             "details": "Create the API route file (e.g., src/app/api/extract-spoonacular-catalog/route.ts for Next.js App Router or api/extract-spoonacular-catalog.ts for legacy routes) and configure it to use the Vercel Edge runtime (e.g., export const config = { runtime: 'edge' } or equivalent). Define the entry handler (e.g., export async function POST(req: Request)) and return a basic JSON Response to confirm the route is reachable. Ensure TypeScript types compile (if using TS) and that the route is only accessible via POST requests.",
             "status": "pending",
-            "testStrategy": "Hit /api/extract-spoonacular-catalog locally with a simple POST (no body) and confirm a 200 JSON response and that the function is running on the Edge runtime (via logs or Vercel dev output)."
+            "testStrategy": "Hit /api/extract-spoonacular-catalog locally with a simple POST (no body) and confirm a 200 JSON response and that the function is running on the Edge runtime (via logs or Vercel dev output).",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -296,7 +300,8 @@
             ],
             "details": "Parse the POST request body as JSON and expect a shape like { secret: string }. Look up process.env.CATALOG_BUILD_SECRET (or equivalent runtime env accessor) and compare it to the provided secret. If the secret is missing or does not match, return a 401 or 403 JSON response with an error message and do not execute any extraction logic. For successful validation, proceed to the extraction flow. Handle JSON parse errors gracefully with a 400 response.",
             "status": "pending",
-            "testStrategy": "Send POST requests with: (1) no body, (2) malformed JSON, (3) wrong secret, (4) correct secret. Verify that only the correct secret yields a non-error response, and all other cases return appropriate HTTP status codes and error messages."
+            "testStrategy": "Send POST requests with: (1) no body, (2) malformed JSON, (3) wrong secret, (4) correct secret. Verify that only the correct secret yields a non-error response, and all other cases return appropriate HTTP status codes and error messages.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -307,7 +312,8 @@
             ],
             "details": "Inside the validated handler, implement the loop outlined in the pseudo-code: initialize offset=0, pageSize=100, and recipes= new Map<number, SpoonacularRecipe | InternalRecipe>. Build the complexSearch URL with required query parameters: number, offset, addRecipeInformation=true, addNutrition=true, and protocol-specified filters (cuisines, diets, etc.). Use fetch with the Spoonacular API base URL and include the x-api-key header from an environment variable. On HTTP 429, wait (e.g., await sleep(1000)) and retry without incrementing offset. For 200 responses, parse JSON, iterate json.results, and, before mapping, ensure uniqueness by checking recipes.has(sp.id); only add unseen IDs. Continue until recipes.size >= 800 or offset reaches a configurable safety cap (e.g., 2000). Collect basic stats: totalFetched, duplicatesSkipped, pagesRequested.",
             "status": "pending",
-            "testStrategy": "Temporarily lower the target recipe count (e.g., 20) and pageSize (e.g., 5) via local config to speed up dev tests. Log or return metrics such as totalFetched, uniqueCount, duplicatesSkipped, and lastOffset. Manually inspect a sample of raw Spoonacular responses to ensure filters and pagination parameters behave as expected and that 429 handling does not crash the function."
+            "testStrategy": "Temporarily lower the target recipe count (e.g., 20) and pageSize (e.g., 5) via local config to speed up dev tests. Log or return metrics such as totalFetched, uniqueCount, duplicatesSkipped, and lastOffset. Manually inspect a sample of raw Spoonacular responses to ensure filters and pagination parameters behave as expected and that 429 handling does not crash the function.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -316,9 +322,10 @@
             "dependencies": [
               3
             ],
-            "details": "Define a function mapSpoonacularToRecipe(spRecipe) in a shared module (e.g., src/utils/spoonacularMapper.ts) and import it into the Edge function. Within the mapper, use existing unitConversions utilities and Spoonacular’s metric fields (e.g., spRecipe.nutrition.ingredients, metric measures) to normalize ingredients into metric units. Populate the internal nutrition structure (macros and key micronutrients) from spRecipe.nutrition. Derive internal tags (e.g., tags.diets, tags.cuisines, tags.dishTypes, health-related flags) from Spoonacular properties like diets, dishTypes, cuisine fields, readyInMinutes, veryHealthy, vegetarian, vegan, etc. Set source='spoonacular' and spoonacularId=spRecipe.id, ensuring type compatibility with the existing internal Recipe type/interface. Handle missing or partial data defensively, providing sensible defaults where necessary.",
+            "details": "Define a function mapSpoonacularToRecipe(spRecipe) in a shared module (e.g., src/utils/spoonacularMapper.ts) and import it into the Edge function. Within the mapper, use existing unitConversions utilities and Spoonacular’s metric fields (e.g., spRecipe.nutrition.ingredients, metric measures) to normalize ingredients into metric units. Populate the internal nutrition structure (macros and key micronutrients) from spRecipe.nutrition. Derive internal tags (e.g., tags.diets, tags.cuisines, tags.dishTypes, health-related flags) from Spoonacular properties like diets, dishTypes, cuisine fields, readyInMinutes, veryHealthy, vegetarian, vegan, etc. Set source='spoonacular' and spoonacularId=spRecipe.id, ensuring type compatibility with the existing internal Recipe type/interface. Handle missing or partial data defensively, providing sensible defaults where necessary.\n<info added on 2026-01-08T08:47:27.880Z>\nThe mapSpoonacularToRecipe helper must also handle image processing to support offline functionality. When transforming Spoonacular recipe data, extract the image URL from the Spoonacular recipe object (either sp.image or sp.imageUrl field). Store both the original Spoonacular image URL as spoonacularImageUrl and create a placeholder for the local image path as image. The local path should follow a consistent pattern that will be used when images are downloaded during the extraction script execution. This dual-storage approach ensures that during the extraction process, images can be downloaded from Spoonacular's CDN and stored locally, with the paths in the recipe objects being updated accordingly. The final catalog will only reference local image paths, eliminating dependency on Spoonacular's CDN and enabling the application to function properly offline.\n</info added on 2026-01-08T08:47:27.880Z>",
             "status": "pending",
-            "testStrategy": "Write unit-style tests or a small dev harness that loads a saved Spoonacular sample JSON and runs mapSpoonacularToRecipe on it, asserting that: (1) ingredients are converted to metric units, (2) nutrition fields are populated, (3) tags reflect diets/dishTypes correctly, and (4) source and spoonacularId are set. Optionally pipe a mapped recipe through normalizeRecipe and confirm it passes validation without errors."
+            "testStrategy": "Write unit-style tests or a small dev harness that loads a saved Spoonacular sample JSON and runs mapSpoonacularToRecipe on it, asserting that: (1) ingredients are converted to metric units, (2) nutrition fields are populated, (3) tags reflect diets/dishTypes correctly, and (4) source and spoonacularId are set. Optionally pipe a mapped recipe through normalizeRecipe and confirm it passes validation without errors.",
+            "parentId": "undefined"
           },
           {
             "id": 5,
@@ -330,7 +337,8 @@
             ],
             "details": "After the fetch loop completes, map over recipes.values() to produce an array of internal Recipe objects, ensuring all entries have already been transformed via mapSpoonacularToRecipe. Build a JSON object such as { count, totalFetched, duplicatesSkipped, recipes } and return it using new Response(JSON.stringify(payload), { status: 200, headers: { 'content-type': 'application/json', 'content-disposition': 'attachment; filename=\"vanessa_recipe_catalog.json\"' } }). Include simple progress/debug information (e.g., pagesRequested, lastOffset, rateLimitHits) to help devs understand run outcomes. Ensure the payload matches or is easily transformable into the structure expected for src/data/vanessa_recipe_catalog.json so it can be manually downloaded and committed.",
             "status": "pending",
-            "testStrategy": "Run the function in a protected dev environment with a reduced target count (e.g., 10–20 recipes). Download the JSON response, verify the content-disposition header triggers a file download (where supported), and inspect the file to ensure it matches the internal catalog schema (or can be trivially saved as vanessa_recipe_catalog.json). Confirm that progress fields (counts, offsets, duplicates) look reasonable and that the JSON is valid and parseable."
+            "testStrategy": "Run the function in a protected dev environment with a reduced target count (e.g., 10–20 recipes). Download the JSON response, verify the content-disposition header triggers a file download (where supported), and inspect the file to ensure it matches the internal catalog schema (or can be trivially saved as vanessa_recipe_catalog.json). Confirm that progress fields (counts, offsets, duplicates) look reasonable and that the JSON is valid and parseable.",
+            "parentId": "undefined"
           },
           {
             "id": 6,
@@ -341,48 +349,52 @@
             ],
             "details": "Optionally pass each mapped recipe through the existing normalizeRecipe (or equivalent) function before adding it to the final array, logging or skipping any that fail validation. Ensure the final catalog structure is compatible with existing consumers that load src/data/vanessa_recipe_catalog.json. Add brief developer documentation (e.g., in README or a /docs file) that explains: required env vars (SPOONACULAR_API_KEY, CATALOG_BUILD_SECRET), how to call POST /api/extract-spoonacular-catalog with the secret, how to adjust the target count during development, and the steps to download the response and save/replace src/data/vanessa_recipe_catalog.json. Mention any known Edge runtime constraints (e.g., long-running fetches and potential need to run in smaller batches).",
             "status": "pending",
-            "testStrategy": "Run the full extraction flow in dev, save the resulting JSON as src/data/vanessa_recipe_catalog.json, restart the app, and verify that existing catalog consumers load and use the data without runtime errors. Spot-check several recipes in the app (or via console) to ensure normalization, tags, and nutrition appear correctly and that no downstream code breaks when using the new catalog."
+            "testStrategy": "Run the full extraction flow in dev, save the resulting JSON as src/data/vanessa_recipe_catalog.json, restart the app, and verify that existing catalog consumers load and use the data without runtime errors. Spot-check several recipes in the app (or via console) to ensure normalization, tags, and nutrition appear correctly and that no downstream code breaks when using the new catalog.",
+            "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T09:07:39.708Z"
       },
       {
-        "id": 64,
+        "id": "64",
         "title": "Add client-side recipe catalog loading & storage layer",
         "description": "Load the extracted catalog into the client, cache in localStorage under `vanessa_recipe_catalog`, and expose querying utilities.",
         "details": "Implementation details:\n- Create `src/storage/catalogStorage.js` with:\n  - `loadRecipeCatalog()` → reads from `localStorage['vanessa_recipe_catalog']` or falls back to static `vanessa_recipe_catalog.json` imported from `src/data` on first run, then caches to localStorage.\n  - `saveRecipeCatalog(catalog)` → safe save with quota checks.\n  - `getCatalogVersion()` and `setCatalogVersion()` to track updates.\n- Design catalog record format to mirror Recipe schema but mark them with `source: 'spoonacular'` and possibly `isCatalog: true` for clarity.\n- Implement simple query helpers: `findCatalogRecipesByTags(filters)`, `getCatalogRecipeById(spoonacularId)`.\n- Ensure catalog load is **lazy** to avoid blocking initial paint: load on first generation-related interaction or from a `preloadCatalog()` call in Home/Settings after render.\nPseudo-code:\n```js\nlet inMemoryCatalog = null;\n\nexport function loadRecipeCatalog() {\n  if (inMemoryCatalog) return inMemoryCatalog;\n  const stored = localStorage.getItem('vanessa_recipe_catalog');\n  if (stored) {\n    inMemoryCatalog = JSON.parse(stored);\n    return inMemoryCatalog;\n  }\n  // fallback to bundled static file\n  inMemoryCatalog = defaultCatalog; // imported JSON\n  safeSave('vanessa_recipe_catalog', inMemoryCatalog);\n  return inMemoryCatalog;\n}\n```\n",
         "testStrategy": "- In dev, clear `vanessa_recipe_catalog` from localStorage and reload app; confirm first call to `loadRecipeCatalog()` populates from static JSON.\n- Simulate quota near limit to ensure `safeSave` surfaces warnings but does not crash.\n- Call query helpers from console with various filters and verify returned arrays match expectations (tag-based filtering, ID lookup).",
         "priority": "high",
         "dependencies": [
-          62,
-          63
+          "62",
+          "63"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:03:58.221Z"
       },
       {
-        "id": 65,
+        "id": "65",
         "title": "Implement Diet Compass ingredient health database",
         "description": "Create and load a structured health metadata database for common ingredients used in scoring recipes.",
         "details": "Implementation details:\n- Add `src/data/ingredientHealthData.json` structured as:\n```json\n{\n  \"salmon\": {\n    \"nutrientDensityPoints\": 30,\n    \"antiAgingPoints\": 25,\n    \"weightLossPoints\": 20,\n    \"heartHealthPoints\": 30,\n    \"flags\": {\"omega3Rich\": true, \"redMeat\": false}\n  },\n  \"white sugar\": { ... }\n}\n```\n- Cover at least the top ~200 ingredients by frequency from Spoonacular catalog plus typical generated recipes.\n- Add `src/utils/ingredientHealthData.js` that:\n  - Imports the JSON.\n  - Exposes `getIngredientHealthData(name)` performing **case-insensitive fuzzy lookup** (e.g., strip descriptors like \"chopped\", \"fresh\", brand names).\n  - Optionally handles common plurals (tomato vs tomatoes) and synonyms (garbanzo vs chickpea).\n- Implement simple normalization helper `normalizeIngredientName(raw)` (lowercase, remove punctuation, remove preparation terms from a stopword list like `['chopped','diced','fresh','frozen']`).\nPseudo-code:\n```js\nconst data = ingredientHealthJson;\n\nexport function getIngredientHealthData(rawName) {\n  const name = normalizeIngredientName(rawName);\n  if (data[name]) return data[name];\n  // basic fallback: try singularization or splitting first word\n  const parts = name.split(' ');\n  if (data[parts.slice(-1)[0]]) return data[parts.slice(-1)[0]];\n  return null; // caller will handle neutral scoring\n}\n```\n",
         "testStrategy": "- Create a small dev page or console script that calls `getIngredientHealthData` with variants (\"Fresh Salmon Fillet\", \"SALMON\", \"salmon\") and validate identical results.\n- Ensure unknown ingredients return `null` without throwing.\n- Spot-check scoring values against Diet Compass spec document to confirm qualitative correctness (e.g., leafy greens high nutrient density, processed meats penalized).",
         "priority": "high",
         "dependencies": [
-          61
+          "61"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:03:03.205Z"
       },
       {
-        "id": 66,
+        "id": "66",
         "title": "Build Diet Compass scoring engine",
         "description": "Implement `dietCompassScoring.js` to compute 4 metric scores and overall health score for any recipe using ingredient health data and nutrition info.",
         "details": "Implementation details:\n- Create `src/utils/dietCompassScoring.js` exporting:\n  - `calculateRecipeScores(recipe)` returning `{ overall, nutrientDensity, antiAging, weightLoss, heartHealth, breakdown }`.\n  - `scoreToBarSegments(score)` mapping 0–100 to 1–5 bars as per PRD.\n- Algorithm sketch:\n  - Iterate `recipe.ingredients` and for each ingredient:\n    - Retrieve health metadata via `getIngredientHealthData(ingredient.name)`.\n    - Weight points by approximate contribution proportion. When precise grams are available, weight by `quantity` against total grams in recipe (cap extremes).\n  - Aggregate per-metric points with reasonable caps (e.g., clamp 0–100).\n  - Apply penalties for harmful flags (e.g., processed meats, refined sugar) using the `flags` field and possibly `nutrition` macros (high sugar, saturated fat, sodium).\n  - Compute `overall` as weighted average of four metrics (weights from Diet Compass spec, e.g., nutrientDensity 0.35, heartHealth 0.25, weightLoss 0.2, antiAging 0.2).\n- Mutate or return a new recipe-like object with `dietCompassScores` filled but keep scoring pure-functional inside engine to simplify tests.\nPseudo-code:\n```js\nexport function calculateRecipeScores(recipe) {\n  let agg = { nd: 0, aa: 0, wl: 0, hh: 0 };\n  let totalWeight = 0;\n  for (const ing of recipe.ingredients || []) {\n    const meta = getIngredientHealthData(ing.name);\n    const w = ing.quantity && ing.unit === 'g' ? ing.quantity : 1;\n    totalWeight += w;\n    if (!meta) continue;\n    agg.nd += meta.nutrientDensityPoints * w;\n    agg.aa += meta.antiAgingPoints * w;\n    agg.wl += meta.weightLossPoints * w;\n    agg.hh += meta.heartHealthPoints * w;\n  }\n  const norm = totalWeight || 1;\n  const nd = clamp(agg.nd / norm, 0, 100);\n  // similar for others\n  const overall = Math.round(nd*0.35 + aa*0.2 + wl*0.2 + hh*0.25);\n  return { overall, nutrientDensity: nd, antiAging: aa, weightLoss: wl, heartHealth: hh, breakdown: {/* optional */} };\n}\n```\n",
         "testStrategy": "- Write a small test harness that feeds in hand-constructed recipes: a vegetable-heavy dish, a sugary dessert, a processed-meat pizza, and ensure monotonic relationships (veg dish scores higher nutrientDensity than dessert, etc.).\n- Validate `scoreToBarSegments` mapping boundaries (0, 20, 21, 40, 41, etc.) produce correct 1–5 bar values.\n- Run scoring across a subset of catalog recipes and ensure performance is acceptable (<10ms per recipe in browser dev tools).",
         "priority": "high",
         "dependencies": [
-          65
+          "65"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -391,7 +403,8 @@
             "dependencies": [],
             "details": "Review the Diet Compass spec and PRD to finalize exact weights for overall score, per-metric caps, and penalty rules for harmful ingredients and nutrition thresholds. Define the expected recipe shape (ingredients, quantity, unit, nutrition fields) and the dietCompassScores output schema including the breakdown field structure (e.g., per-ingredient or per-metric contributions). Specify and, if needed, implement or stub helper utilities such as getIngredientHealthData, clamp, normalization of ingredient names, and any constants (e.g., WEIGHTS, PENALTY_RULES, SCORE_CAPS). Document these contracts in code comments or a short README within src/utils so that other tasks (like batch scoring and UI components) can rely on a stable interface.",
             "status": "pending",
-            "testStrategy": "Manual review of spec vs constants and function signatures; optionally add a small type or JSDoc-style check to ensure the recipe and output shapes are consistent."
+            "testStrategy": "Manual review of spec vs constants and function signatures; optionally add a small type or JSDoc-style check to ensure the recipe and output shapes are consistent.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -402,7 +415,8 @@
             ],
             "details": "Create src/utils/dietCompassScoring.js and implement calculateRecipeScores(recipe) following the provided pseudo-code but with finalized rules. For each ingredient in recipe.ingredients, call getIngredientHealthData(ingredient.name); determine a weight using grams when unit === 'g' and quantity is provided, otherwise fall back to a default weight of 1. Accumulate nutrientDensity, antiAging, weightLoss, and heartHealth points by multiplying ingredient points by the weight, tracking totalWeight. After the loop, normalize each metric by totalWeight (or 1 if zero), clamp to 0–100, and then apply penalty adjustments based on ingredient flags (e.g., harmful, processed, sugary, redMeat) and recipe-level nutrition macros such as high sugar, saturated fat, or sodium, respecting any defined scoreCaps. Compute overall as a weighted average of the four metrics using the Diet Compass weights and round to an integer. Construct and return an object { overall, nutrientDensity, antiAging, weightLoss, heartHealth, breakdown } where breakdown includes useful diagnostic info (e.g., per-ingredient contributions or penalty breakdown) while keeping the function pure (no external state mutation).",
             "status": "pending",
-            "testStrategy": "Write unit tests for calculateRecipeScores using hand-crafted recipes: a vegetable-heavy dish, a sugary dessert, a processed-meat pizza, and a heart-healthy oily fish dish. Assert monotonic relationships (e.g., veg dish has higher nutrientDensity than dessert; dessert has lower weightLoss than veg dish; processed meat pizza has lower heartHealth than fish dish). Also test edge cases such as recipe with no ingredients, unknown ingredients returning null metadata, and extreme weights or penalties to confirm clamping between 0 and 100."
+            "testStrategy": "Write unit tests for calculateRecipeScores using hand-crafted recipes: a vegetable-heavy dish, a sugary dessert, a processed-meat pizza, and a heart-healthy oily fish dish. Assert monotonic relationships (e.g., veg dish has higher nutrientDensity than dessert; dessert has lower weightLoss than veg dish; processed meat pizza has lower heartHealth than fish dish). Also test edge cases such as recipe with no ingredients, unknown ingredients returning null metadata, and extreme weights or penalties to confirm clamping between 0 and 100.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -414,7 +428,8 @@
             ],
             "details": "In src/utils/dietCompassScoring.js (or a closely related utility file), implement scoreToBarSegments(score) as a pure function. Clamp or validate the input score to 0–100, then map it into an integer number of bars from 1 to 5 based on the PRD boundary rules (e.g., 0–20 → 1 bar, 21–40 → 2 bars, etc., adjusting exact cutoffs to match the spec). Ensure the function handles non-integer scores (e.g., 73.5) correctly by flooring or rounding per spec. Export this function alongside calculateRecipeScores for use in UI components such as RecipeDetailPage and RecipeCard. Include clear comments documenting the threshold scheme so visual components can remain consistent.",
             "status": "pending",
-            "testStrategy": "Add unit tests that feed representative scores at, below, and above each boundary (e.g., 0, 1, 20, 21, 40, 41, 60, 61, 80, 81, 100) and verify the returned bar count matches the PRD mapping. Include tests for out-of-range inputs (e.g., -5, 150) to ensure they are clamped into valid bar counts."
+            "testStrategy": "Add unit tests that feed representative scores at, below, and above each boundary (e.g., 0, 1, 20, 21, 40, 41, 60, 61, 80, 81, 100) and verify the returned bar count matches the PRD mapping. Include tests for out-of-range inputs (e.g., -5, 150) to ensure they are clamped into valid bar counts.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -426,61 +441,64 @@
             ],
             "details": "Decide whether calculateRecipeScores should purely return scores or optionally return an augmented recipe object; implement a thin wrapper or helper (if needed) that attaches dietCompassScores to a recipe while keeping the core calculation function pure. Verify compatibility with downstream tasks like batch scoring (Task 67) and UI components (Task 86) by ensuring the exported API is stable: calculateRecipeScores(recipe) returns the score object, and consumers can set recipe.dietCompassScores = scores as needed. Add any necessary guards so that missing fields (e.g., no nutrition data, partial ingredient lists) do not throw errors but yield reasonable default scores. Update or create minimal inline documentation so that other modules know how and when to call the scoring engine.",
             "status": "pending",
-            "testStrategy": "Create a small dev-only harness or unit test that constructs sample recipe objects resembling those in the catalog, calls calculateRecipeScores, assigns the result to recipe.dietCompassScores, and verifies that no unexpected mutations occur on unrelated fields. Confirm that the returned scores are non-null for valid recipes and that recipes lacking certain data still produce stable, clamped outputs."
+            "testStrategy": "Create a small dev-only harness or unit test that constructs sample recipe objects resembling those in the catalog, calls calculateRecipeScores, assigns the result to recipe.dietCompassScores, and verifies that no unexpected mutations occur on unrelated fields. Confirm that the returned scores are non-null for valid recipes and that recipes lacking certain data still produce stable, clamped outputs.",
+            "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T09:02:58.457Z"
       },
       {
-        "id": 67,
+        "id": "67",
         "title": "Batch-apply Diet Compass scores to catalog and existing recipes",
         "description": "Populate dietCompassScores for spoonacular catalog recipes and backfill for existing generated/imported recipes.",
         "details": "Implementation details:\n- Add a dev-only script `scripts/scoreCatalog.js` (Node or Edge script) that:\n  - Imports `vanessa_recipe_catalog.json`.\n  - Runs `calculateRecipeScores` on each recipe.\n  - Writes back updated JSON with `dietCompassScores` filled.\n- In the client `storage.js` or `catalogStorage.js`, add a guarded initializer:\n  - On first load after Slice 5 migration, detect recipes with `dietCompassScores.overall == null`.\n  - Lazily compute scores in small batches (e.g., 20 per tick) to avoid blocking main thread, then save back.\n- For user-created/imported recipes, call scoring engine immediately after creation or edit and store results in the recipe record.\nPseudo-code (client lazy backfill):\n```js\nexport async function backfillRecipeScores() {\n  const recipes = loadRecipes();\n  const needs = recipes.filter(r => !r.dietCompassScores || r.dietCompassScores.overall == null);\n  for (const r of needs) {\n    const scores = calculateRecipeScores(r);\n    r.dietCompassScores = scores;\n  }\n  saveRecipes(recipes);\n}\n```\n",
         "testStrategy": "- Run the Node/Edge script against catalog JSON and verify no errors and that every record gets non-null scores.\n- In dev, inspect a few recipes in the Recipe Library UI for the new score values.\n- Create or import a new recipe and confirm that scores appear immediately and persist after reload.\n- Stress test lazy backfill with ~200 recipes to ensure UI remains responsive (use performance profiling).",
         "priority": "medium",
         "dependencies": [
-          64,
-          66
+          "64",
+          "66"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 68,
+        "id": "68",
         "title": "Implement diet profiles data and storage",
         "description": "Create canonical diet profile definitions and wire them into storage and Eater schema fields.",
         "details": "Implementation details:\n- Add `src/data/dietProfiles.json` capturing the 11 profiles from PRD (Mediterranean, Keto, Vegetarian, High Protein, Flexitarian, Longevity, Intermittent Fasting, Vegan, MIND, Kid-Friendly, La Dieta) with fields:\n```json\n{\n  \"id\": \"mediterranean\",\n  \"name\": \"Mediterranean\",\n  \"summary\": \"Heart-healthy, plant-forward diet rich in olive oil and fish.\",\n  \"allowed\": { \"foods\": [...], \"macros\": {...} },\n  \"avoid\": { \"foods\": [...], \"rules\": [...] },\n  \"notes\": \"Short description for UI and prompts.\"\n}\n```\n- Create `src/storage/dietProfileStorage.js` with `loadDietProfiles()` returning static data (or localStorage override), and helper `getDietProfileById(id)`.\n- Extend `Eater` schema (in comments and runtime normalizer) with `dietProfile`, `personalPreferences`, `excludeIngredients` as per PRD.\n- Update `loadEaters`/`saveEaters` to default these new fields when missing.\nPseudo-code:\n```js\nexport function normalizeEater(e) {\n  return {\n    dietProfile: e.dietProfile ?? null,\n    personalPreferences: e.personalPreferences ?? '',\n    excludeIngredients: e.excludeIngredients ?? [],\n    ...e\n  };\n}\n```\n",
         "testStrategy": "- Load `loadDietProfiles()` in console and ensure all profiles are accessible by ID.\n- Verify that existing eater records get normalized with new fields and that editing/saving in Settings still works without errors.\n- Manually assign a diet profile to an eater via Settings UI (after later tasks) and confirm persistence in localStorage JSON.",
         "priority": "high",
         "dependencies": [
-          62
+          "62"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:05:39.887Z"
       },
       {
-        "id": 69,
+        "id": "69",
         "title": "Enhance Settings Household UI with diet profile & preferences controls",
         "description": "Extend the Settings → Household eater edit form to support diet profile selection and personal preference fields.",
         "details": "Implementation details:\n- In `SettingsPage.js` eater edit modal/form, add:\n  - A `select` element populated from `loadDietProfiles()` with `dietProfile` IDs.\n  - A read-only description box below showing selected profile’s `summary` and key rules.\n  - Two chip/tag-style inputs or comma-separated text inputs for `excludeIngredients` and `preferIngredients`.\n  - A textarea for `personalPreferences` / additional notes.\n- Wire change handlers to update Eater objects and call existing debounced auto-save logic.\n- Ensure owner eater’s profile is editable but defaults to a reasonable choice (e.g., none) until onboarding upgrades are implemented.\n- Keep UI mobile-friendly using Tailwind utility classes consistent with existing Settings layout.\nPseudo-code (profile select handler):\n```js\nhandleDietProfileChange(eaterId, profileId) {\n  const eaters = loadEaters();\n  const eater = eaters.find(e => e.eaterId === eaterId);\n  eater.dietProfile = profileId || null;\n  saveEaters(eaters);\n  this.showSuccessToast();\n}\n```\n",
         "testStrategy": "- In the browser, open Settings → Household, edit an eater and assign several different diet profiles, saving between edits; confirm persistence across reloads.\n- Enter lists of excluded and preferred ingredients and ensure arrays are correctly represented in localStorage (`excludeIngredients`, optional `preferIngredients`).\n- Check that auto-save debounce still behaves correctly (no excessive writes, success toast appears).",
         "priority": "medium",
         "dependencies": [
-          68
+          "68"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 70,
+        "id": "70",
         "title": "Extend generate-meal-plan API to accept catalog, diet profiles, and prep metadata",
         "description": "Augment `/api/generate-meal-plan` request/response contracts and server implementation to use recipe catalog, eater diet profiles, and prep preferences in prompts.",
         "details": "Implementation details:\n- Update the API handler signature to accept extra request fields:\n  - `baseSpecification` (including `mealPrepSettings` / `mealPrepPreferences`).\n  - `eaters` including `dietProfile`, `excludeIngredients`, `personalPreferences`.\n  - A compact **catalog slice**: instead of sending all ~800 recipes, pre-filter a subset on server or pass only **IDs + high-level tags** to Claude to keep tokens reasonable.\n- Implement server-side filtering before calling Claude:\n  - Use diet profiles and allergies to filter catalog recipes into candidate pools per profile.\n  - Optionally group by mealType and effortLevel for faster selection.\n- Update system prompt according to PRD section (HOUSEHOLD MEMBERS, MEAL PREP CONSTRAINTS, RECIPE SOURCES, DIET PROFILE CONFLICTS, PREP TASK REQUIREMENTS).\n- Keep JSON output schema compliant with current transformer; ensure we either\n  - Return catalog recipe references (`spoonacularId` / `recipeId`) plus minimal override fields; or\n  - Return full recipes for new/generated items.\nPseudo-code (server prefilter sketch):\n```js\nfunction getCandidateCatalogRecipes(catalog, eaters, mealType) {\n  const profileIds = [...new Set(eaters.map(e => e.dietProfile).filter(Boolean))];\n  return catalog.filter(r => isCompatibleWithProfiles(r, profileIds) && r.tags.mealSlots.includes(mealType));\n}\n```\n",
         "testStrategy": "- Write integration tests (or manual curl calls) to `/api/generate-meal-plan` with mock minimal catalog and 2–3 eaters with differing profiles and confirm prompt construction (log to console in dev).\n- Validate that when catalog is empty or no matches are found, the API gracefully instructs Claude to generate new recipes.\n- Ensure Edge function execution time remains under 90s for full-week generation; profile CPU usage in Vercel logs.",
         "priority": "high",
         "dependencies": [
-          60,
-          64,
-          68
+          "60",
+          "64",
+          "68"
         ],
         "status": "pending",
         "subtasks": [
@@ -491,7 +509,8 @@
             "dependencies": [],
             "details": "Identify the existing request/response interfaces or schemas used by the generate-meal-plan endpoint and add fields for `baseSpecification` (including `mealPrepSettings` / `mealPrepPreferences`), `eaters` (including `dietProfile`, `excludeIngredients`, `personalPreferences`), and a compact `catalog` or `catalogSlice` representation (e.g., recipe IDs plus high-level tags like mealType, effortLevel, allergens). Ensure that the response continues to follow the current JSON output schema, supporting both catalog recipe references (`spoonacularId` / `recipeId` with override fields) and full inlined recipes for new/generated items. Update any shared API client types, OpenAPI/Swagger specs, and validation middleware (e.g., Zod/Yup/JSON Schema) accordingly.",
             "status": "pending",
-            "testStrategy": "Add or update unit tests for request/response validation to cover the new fields, ensuring invalid payloads are rejected and existing clients without the new fields still pass where intended."
+            "testStrategy": "Add or update unit tests for request/response validation to cover the new fields, ensuring invalid payloads are rejected and existing clients without the new fields still pass where intended.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -502,7 +521,8 @@
             ],
             "details": "Implement a helper like `getCandidateCatalogRecipes(catalog, eaters, mealType)` that derives unique dietProfile IDs from the eaters, filters catalog recipes by compatibility with those profiles (including allergies and excludeIngredients), and ensures recipes support the given mealType and other tags such as effortLevel. Integrate this helper into the `/api/generate-meal-plan` handler so that, for each meal slot or mealType needed, the handler computes a compact catalog slice to pass to Claude instead of the full catalog. Make sure the filtering gracefully handles empty catalogs and cases where no recipes match by providing fallback behavior or flags for the prompt.",
             "status": "pending",
-            "testStrategy": "Write unit tests for the filtering helper using a small in-memory catalog and multiple eaters with different diet profiles and exclusions to confirm that incompatible recipes are removed and grouping by mealType/effortLevel works as expected."
+            "testStrategy": "Write unit tests for the filtering helper using a small in-memory catalog and multiple eaters with different diet profiles and exclusions to confirm that incompatible recipes are removed and grouping by mealType/effortLevel works as expected.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -514,7 +534,8 @@
             ],
             "details": "Locate the code that builds the system and user messages for Claude in the meal-plan flow and extend it to include: (1) HOUSEHOLD MEMBERS with each eater’s dietProfile, excludeIngredients, and personalPreferences; (2) MEAL PREP CONSTRAINTS and MEAL PREP SETTINGS/PREFERENCES from baseSpecification; (3) RECIPE SOURCES, explicitly indicating which recipes come from the catalog slice vs. new generation; and (4) DIET PROFILE CONFLICTS and PREP TASK REQUIREMENTS as described in the PRD. Ensure the prompt references catalog recipes by ID and tags instead of full recipe bodies when possible to keep token usage reasonable, and that the expected JSON output schema is clearly specified in the system prompt.",
             "status": "pending",
-            "testStrategy": "Add an integration-style test (or dev-only harness) that calls the handler with a mock baseSpecification, 2–3 eaters with different diet profiles, and a small catalog, then captures and asserts against the constructed prompt string or message array to verify that all new sections and fields are correctly represented."
+            "testStrategy": "Add an integration-style test (or dev-only harness) that calls the handler with a mock baseSpecification, 2–3 eaters with different diet profiles, and a small catalog, then captures and asserts against the constructed prompt string or message array to verify that all new sections and fields are correctly represented.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -527,21 +548,22 @@
             ],
             "details": "Refactor the `/api/generate-meal-plan` handler to use the extended request schema, invoke server-side filtering to build catalog slices per mealType, and generate the updated Claude prompts. After receiving Claude’s response, ensure the handler maps planned meals to either existing catalog recipe references (using `spoonacularId` / `recipeId` plus minimal override fields such as title tweaks or timing adjustments) or full recipe payloads for newly generated recipes. Confirm that the outgoing JSON exactly matches the current transformer’s expected schema, and handle edge cases where the catalog slice was empty or Claude does not reference any catalog IDs by providing sensible fallbacks and clear error logging in development.",
             "status": "pending",
-            "testStrategy": "Create end-to-end or integration tests (or scripted curl/HTTP calls in dev) that send realistic payloads—including cases with non-empty catalog slices, empty catalogs, and conflicting diet profiles—and verify that the API responds with valid JSON, proper catalog references, or full recipe objects, and that no schema validation errors occur."
+            "testStrategy": "Create end-to-end or integration tests (or scripted curl/HTTP calls in dev) that send realistic payloads—including cases with non-empty catalog slices, empty catalogs, and conflicting diet profiles—and verify that the API responds with valid JSON, proper catalog references, or full recipe objects, and that no schema validation errors occur.",
+            "parentId": "undefined"
           }
         ]
       },
       {
-        "id": 71,
+        "id": "71",
         "title": "Update mealPlanTransformer to support catalog references and multi-profile meals",
         "description": "Adapt the transformation layer to handle catalog-based recipes, multiple recipes per meal when profiles conflict, and new meal fields.",
         "details": "Implementation details:\n- Extend `mealPlanTransformer.js` to:\n  - Accept AI output where each meal contains `recipes: [ ... ]` rather than a single recipe.\n  - For recipes referencing catalog entries by `spoonacularId` or internal `recipeId`, look up in `vanessa_recipe_catalog` and:\n    - Either reference existing `recipeId` if already imported, or\n    - Create/import a new Recipe object in local `vanessa_recipes` with `source='spoonacular'` and keep `spoonacularId`.\n  - For newly generated recipes (no catalog link), use existing deduplication by name+ingredients hash, now enriched with Diet Compass scores.\n- Create `Meal` objects that may represent:\n  - One meal per (date, mealType, eater group), with fields `targetEaters` and `dietProfileTags` to reflect which eaters each recipe serves.\n  - Or multiple `Meal` entries for same slot if modelling per-recipe; choose the simpler pattern consistent with existing UI (likely one `Meal` per recipe per slot).\n- Fill new `prepTasks` field per meal from AI output.\n- Maintain backward compatibility with prior full-week plans that don’t include multi-recipe structure (assume single recipe array element).\nPseudo-code:\n```js\nfor (const day of ai.week) {\n  for (const slot of ['breakfast','lunch','dinner']) {\n    const slotData = day[slot];\n    const recipesArr = slotData.recipes || [slotData.recipe];\n    for (const r of recipesArr) {\n      const recipeId = importOrLinkRecipe(r);\n      const mealId = `meal_${crypto.randomUUID()}`;\n      meals.push({\n        mealId,\n        recipeId,\n        mealType: slot,\n        date: day.date,\n        eaterIds: mapNamesToEaterIds(r.targetEaters),\n        prepTasks: r.prepTasks || [],\n        // ...\n      });\n      mealIds.push(mealId);\n    }\n  }\n}\n```\n",
         "testStrategy": "- Feed the transformer with:\n  - A legacy Slice 4-style JSON response and confirm it still produces 21 meals.\n  - A new-style multi-recipe JSON snippet with conflicting diet profiles and confirm multiple meals or multi-targetEaters are correctly created.\n- Verify that catalog-linked recipes are not duplicated unnecessarily and that generated recipes are deduplicated by hash as before.\n- Check resulting `meals`, `recipes`, and `currentMealPlan` objects in localStorage for schema compliance and absence of orphan references.",
         "priority": "high",
         "dependencies": [
-          61,
-          64,
-          70
+          "61",
+          "64",
+          "70"
         ],
         "status": "pending",
         "subtasks": [
@@ -552,7 +574,8 @@
             "dependencies": [],
             "details": "Modify the core transformation loop in mealPlanTransformer.js so that for each day and meal slot (e.g., breakfast, lunch, dinner), it reads slotData.recipes when present and falls back to [slotData.recipe] for legacy outputs. Ensure that all downstream logic (meal creation, eater mapping, prepTasks extraction, etc.) iterates over this normalized recipesArr. Keep existing behavior unchanged for legacy Slice 4-style JSON by testing with a prior full-week plan and confirming the same 21 meals are produced. Update any helper functions that previously assumed a single recipe per slot to work with the array abstraction without altering their external contract.",
             "status": "pending",
-            "testStrategy": "Feed the transformer a legacy Slice 4-style JSON response that uses a single recipe per slot and verify the transformer still outputs 21 meals with identical fields and IDs format to the pre-refactor version."
+            "testStrategy": "Feed the transformer a legacy Slice 4-style JSON response that uses a single recipe per slot and verify the transformer still outputs 21 meals with identical fields and IDs format to the pre-refactor version.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -563,7 +586,8 @@
             ],
             "details": "Within mealPlanTransformer.js, implement an importOrLinkRecipe(recipeJson) helper that: (1) checks if recipeJson has a recipeId or spoonacularId; (2) queries vanessa_recipe_catalog for a matching entry; (3) when a corresponding local vanessa_recipes object already exists, returns its recipeId; (4) when no local recipe exists but the catalog entry does, creates a new Recipe in vanessa_recipes with source='spoonacular', spoonacularId, and any available metadata; and (5) when there is no catalog link, delegates to existing deduplication logic by name+ingredients hash enriched with Diet Compass scores. Ensure the helper is idempotent so repeated calls for the same catalog recipe do not create duplicates. Wire this helper into the main transformation loop so each meal recipe gets a resolved recipeId before Meal creation.",
             "status": "pending",
-            "testStrategy": "Create fixture inputs that cover: (a) recipeJson with existing internal recipeId, (b) recipeJson with spoonacularId linked to a catalog entry that already has a local vanessa_recipes record, (c) recipeJson with spoonacularId present in vanessa_recipe_catalog but no local recipe yet, and (d) recipeJson with no catalog identifiers. Run the transformer and assert that in cases (a)-(c) the same recipeId is reused across multiple meals, and that no duplicate Recipe records are created for repeated references."
+            "testStrategy": "Create fixture inputs that cover: (a) recipeJson with existing internal recipeId, (b) recipeJson with spoonacularId linked to a catalog entry that already has a local vanessa_recipes record, (c) recipeJson with spoonacularId present in vanessa_recipe_catalog but no local recipe yet, and (d) recipeJson with no catalog identifiers. Run the transformer and assert that in cases (a)-(c) the same recipeId is reused across multiple meals, and that no duplicate Recipe records are created for repeated references.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -575,7 +599,8 @@
             ],
             "details": "Rework the section of mealPlanTransformer.js that pushes Meal objects so that for each recipe in recipesArr it decides on the chosen modeling pattern (likely one Meal per recipe per slot, consistent with existing UI). For each Meal, set mealId (e.g., using crypto.randomUUID), recipeId from importOrLinkRecipe, mealType, date, and mapNamesToEaterIds(recipe.targetEaters) into a new targetEaters or eaterIds field as per the updated Meal schema. Add support for dietProfileTags coming from the recipe’s diet profile info. Populate prepTasks on each Meal using recipe.prepTasks or an empty array when absent. Ensure multiple recipes for the same (date, mealType) either result in multiple Meals or a single Meal with per-recipe targeting, and document the chosen approach in code comments. Preserve compatibility when AI output contains only a single recipe by continuing to produce the same Meal shape as before, just with additional optional fields.",
             "status": "pending",
-            "testStrategy": "Use a new-style multi-recipe JSON snippet where a single (date, mealType) has two recipes with conflicting diet profiles and overlapping eaters. Run the transformer and assert that the resulting Meals match the chosen representation (e.g., two separate Meals per slot), each with correct recipeId, targetEaters/eaterIds, dietProfileTags, and prepTasks. Also verify that older single-recipe inputs still generate structurally valid Meals without errors."
+            "testStrategy": "Use a new-style multi-recipe JSON snippet where a single (date, mealType) has two recipes with conflicting diet profiles and overlapping eaters. Run the transformer and assert that the resulting Meals match the chosen representation (e.g., two separate Meals per slot), each with correct recipeId, targetEaters/eaterIds, dietProfileTags, and prepTasks. Also verify that older single-recipe inputs still generate structurally valid Meals without errors.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -587,47 +612,48 @@
             ],
             "details": "Extend the name+ingredients hash–based deduplication logic used for newly generated recipes to factor in Diet Compass scores so that recipes with identical names and ingredients but materially different scores can be distinguished when appropriate. Decide and document the exact comparison rule (e.g., treat as same recipe when scores are identical or within a small tolerance). Update or add unit tests to cover cases where similar recipes should merge versus cases where they should remain distinct. Finally, run an end-to-end test suite that feeds both legacy Slice 4 weekly plans and new multi-recipe, catalog-linked plans through mealPlanTransformer, confirming that: (1) legacy plans still produce the expected number of Meals and Recipes, and (2) new plans correctly handle catalog references, multi-profile meals, new Meal fields, and do not introduce duplicate recipes unintentionally.",
             "status": "pending",
-            "testStrategy": "Create a combined test harness that runs the transformer on: (a) a legacy full-week JSON and snapshot-tests the resulting Meals and Recipes against a known-good fixture, and (b) multiple new-format plans that intentionally reuse recipes with the same name/ingredients but different Diet Compass scores. Verify via assertions that deduplicated recipes have consistent IDs, that intentional variants remain separate when score differences exceed the threshold, and that all new fields (targetEaters/dietProfileTags/prepTasks) are populated as expected."
+            "testStrategy": "Create a combined test harness that runs the transformer on: (a) a legacy full-week JSON and snapshot-tests the resulting Meals and Recipes against a known-good fixture, and (b) multiple new-format plans that intentionally reuse recipes with the same name/ingredients but different Diet Compass scores. Verify via assertions that deduplicated recipes have consistent IDs, that intentional variants remain separate when score differences exceed the threshold, and that all new fields (targetEaters/dietProfileTags/prepTasks) are populated as expected.",
+            "parentId": "undefined"
           }
         ]
       },
       {
-        "id": 72,
+        "id": "72",
         "title": "Implement diet profile–aware catalog filter utility",
         "description": "Create utilities to determine recipe compatibility with diet profiles and detect profile conflicts for a household.",
         "details": "Implementation details:\n- Add `src/utils/dietProfileFilter.js` implementing:\n  - `filterByDietProfile(catalog, profileId)` → recipes whose `tags.diets` includes the profile or that pass custom rules from `dietProfiles.json`.\n  - `isCompatibleWithProfiles(recipe, profileIds)` → true if recipe satisfies all non-conflicting profiles.\n  - `hasProfileConflicts(profileIds)` → returns `{ hasConflicts, conflictPairs }` relying on a static matrix (e.g., Keto vs Vegan).\n- Use diet profile metadata (e.g., forbidden foods, macro constraints) to supplement tag-based checks when catalog tags are insufficient.\n- Consider personal exclusions by removing any recipe whose ingredient list intersects eater `excludeIngredients`.\nPseudo-code:\n```js\nexport function isRecipeOkForEater(recipe, eater, profiles) {\n  const profile = profiles[eater.dietProfile];\n  if (!profile) return true;\n  if (recipe.tags.diets && !recipe.tags.diets.includes(profile.id)) return false;\n  if (eater.excludeIngredients?.length) {\n    const names = recipe.ingredients.map(i => i.name.toLowerCase());\n    if (eater.excludeIngredients.some(ex => names.some(n => n.includes(ex.toLowerCase())))) return false;\n  }\n  return true;\n}\n```\n",
         "testStrategy": "- Use a small mock catalog with labelled diet tags (keto, vegan, kid-friendly) and verify that filters return expected subsets.\n- Create synthetic households with conflicting profiles (Keto + Vegan) and confirm `hasProfileConflicts` surfaces the pair.\n- Ensure exclusion rules correctly filter out recipes containing disallowed ingredients (case-insensitive, partial match).",
         "priority": "medium",
         "dependencies": [
-          64,
-          68
+          "64",
+          "68"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 73,
+        "id": "73",
         "title": "Add prep preferences & strategy fields to BaseSpecification and Settings UI",
         "description": "Expose meal prep strategy, prep days, max prep time, and busy/light day preferences in Settings and wire them into storage.",
         "details": "Implementation details:\n- Align with PRD: either use `mealPrepSettings` (day×slot levels) or `mealPrepPreferences` (strategy + days + flags); implement at least the MVP described (strategy, prepDays, maxPrepTime, busyDays, lightDays, preferences flags).\n- Extend BaseSpecification normalizer to inject defaults if fields missing.\n- In `SettingsPage.js`, add a new **Meal Prep** section with:\n  - Strategy select: `fresh-only`, `hybrid`, `batch-cooking`.\n  - Multi-select buttons for prep days (Sun–Sat) with simple toggle styling.\n  - Numeric input for `maxPrepTime` in minutes with min/max validation.\n  - Checkbox grids for busy days and basic preferences (allowBatchCooking, allowMakeAhead, useFreezer, preferFreshBreakfast).\n- Hook inputs into existing auto-save mechanism updating BaseSpecification.\nPseudo-code:\n```js\nfunction getDefaultMealPrepPreferences() {\n  return {\n    strategy: 'hybrid',\n    prepDays: [6],\n    maxPrepTime: 120,\n    busyDays: [1,2,3,4,5],\n    lightDays: [0,6],\n    preferences: {\n      preferFreshBreakfast: true,\n      allowFrozenMeals: false,\n      batchCookingEnabled: true,\n      makeAheadMealsEnabled: true\n    }\n  };\n}\n```\n",
         "testStrategy": "- Manually change each control in the Meal Prep section and confirm the corresponding BaseSpecification fields are updated and persisted in localStorage.\n- Reload the app and verify UI reflects stored choices.\n- Test invalid values for `maxPrepTime` (e.g., negative, extremely high) and ensure they are clamped or corrected gracefully.",
         "priority": "medium",
         "dependencies": [
-          62
+          "62"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 74,
+        "id": "74",
         "title": "Generate and attach day-level prep tasks in mealPlanTransformer",
         "description": "Derive per-day prep tasks and attach them to `Meal` and/or `MealPlan.prepSchedule` based on recipes and prep preferences.",
         "details": "Implementation details:\n- Implement `src/utils/prepTaskGenerator.js` with:\n  - `generateDayPrepTasks(dayMeals, prepLevelSettings, prepPreferences)` which analyzes recipes for a date and produces normalized `PrepTask[]` objects as outlined in PRD.\n  - Optional `generateWeekPrepSchedule(weekMeals, baseSpec)` to build `mealPlan.prepSchedule` including prep days, tasks, and week summary.\n- Heuristics:\n  - Identify reusable components (e.g., same main protein or grain across multiple meals) and batch them.\n  - For batch/hybrid strategies, push substantial cooking and chopping tasks onto prep days subject to `maxPrepTime`.\n  - For fresh-only, keep tasks attached close to each meal as `prepTasks` with minimal `timing` shifting.\n- Integrate with `mealPlanTransformer`: after meals created, call schedule generator and attach:\n```js\nconst prepSchedule = generateWeekPrepSchedule(meals, baseSpec);\nmealPlan.prepSchedule = prepSchedule;\n// also set meal.prepTasks where appropriate\n```\n",
         "testStrategy": "- Using a mock week of meals with repeated ingredients (e.g., chicken used on Mon/Wed/Fri), verify that generated prep schedule consolidates into a single batch task on prep day.\n- Toggle strategy from `fresh-only` to `batch-cooking` and ensure prep tasks shift from day-of to prepDay with corresponding time estimates.\n- Confirm `prepSchedule.weekSummary` values (totalPrepTime, averageDailyTime, timeSaved) are reasonable by hand-calculating for a simple scenario.",
         "priority": "medium",
         "dependencies": [
-          71,
-          73
+          "71",
+          "73"
         ],
         "status": "pending",
         "subtasks": [
@@ -638,7 +664,8 @@
             "dependencies": [],
             "details": "Inspect the PRD section describing PrepTask fields (e.g., id, label, ingredients, effort, timing, targetMeals) and how they attach to Meal and MealPlan.prepSchedule. Enumerate all supported prep strategies (fresh-only, batch-cooking, hybrid) and document decision rules for when tasks are moved to prep days versus left on the meal day, including how to respect maxPrepTime and identify reusable components (shared proteins/grains across meals). Capture this in a short design doc or inline JSDoc that will guide implementation of generateDayPrepTasks and generateWeekPrepSchedule.",
             "status": "pending",
-            "testStrategy": "Peer-review the PrepTask type and heuristic rules against the PRD to confirm all required fields and strategy behaviors are covered."
+            "testStrategy": "Peer-review the PrepTask type and heuristic rules against the PRD to confirm all required fields and strategy behaviors are covered.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -649,7 +676,8 @@
             ],
             "details": "Add a new module src/utils/prepTaskGenerator.js exporting generateDayPrepTasks(dayMeals, prepLevelSettings, prepPreferences). Implement logic to: scan each meal’s recipes and ingredients; detect reusable components across the day (e.g., same main protein or grain); group them into batchable tasks when strategy allows; and generate PrepTask objects with correct structure and timing metadata. Respect prepLevelSettings and prepPreferences (fresh-only vs batch/hybrid) when deciding whether to combine tasks or keep them meal-specific. Ensure the function is pure and does not mutate input meals.",
             "status": "pending",
-            "testStrategy": "Write unit tests with synthetic dayMeals fixtures covering: (1) repeated ingredients across meals leading to a single batched PrepTask, (2) fresh-only strategy producing per-meal prep tasks without batching, and (3) edge cases like a single meal day or no-prep-required recipes."
+            "testStrategy": "Write unit tests with synthetic dayMeals fixtures covering: (1) repeated ingredients across meals leading to a single batched PrepTask, (2) fresh-only strategy producing per-meal prep tasks without batching, and (3) edge cases like a single meal day or no-prep-required recipes.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -660,7 +688,8 @@
             ],
             "details": "Extend src/utils/prepTaskGenerator.js with generateWeekPrepSchedule(weekMeals, baseSpec). For each day, call generateDayPrepTasks to get preliminary PrepTasks, then apply week-level rules: choose designated prep days from baseSpec.mealPrepSettings, shift eligible tasks from meal days to prep days subject to maxPrepTime, and aggregate a week summary (e.g., total prep time, task counts). Return a structure suitable for mealPlan.prepSchedule, and also determine which tasks should remain attached directly to meals as meal.prepTasks when strategy is fresh-only or when tasks cannot be shifted.",
             "status": "pending",
-            "testStrategy": "Create weekMeals fixtures with repeated ingredients across non-adjacent days (e.g., chicken on Mon/Wed/Fri) and verify that: (1) batch/hybrid strategies consolidate into prep-day tasks within maxPrepTime, (2) fresh-only keeps tasks near each meal, and (3) the returned prepSchedule contains per-day task lists plus a coherent week summary."
+            "testStrategy": "Create weekMeals fixtures with repeated ingredients across non-adjacent days (e.g., chicken on Mon/Wed/Fri) and verify that: (1) batch/hybrid strategies consolidate into prep-day tasks within maxPrepTime, (2) fresh-only keeps tasks near each meal, and (3) the returned prepSchedule contains per-day task lists plus a coherent week summary.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -671,103 +700,105 @@
             ],
             "details": "Update mealPlanTransformer.js to import generateWeekPrepSchedule from src/utils/prepTaskGenerator.js. After the transformer has constructed the meals array and has access to baseSpec (including mealPrepSettings and prepPreferences), call generateWeekPrepSchedule(meals, baseSpec) and assign the result to mealPlan.prepSchedule. For any tasks that should be attached directly to meals, populate meal.prepTasks on the corresponding Meal objects. Ensure the transformer still works for existing callers and that behavior is conditional on prep metadata being present.",
             "status": "pending",
-            "testStrategy": "Add or extend transformer-level tests using a mock mealPlan AI output and baseSpec: confirm that calling the transformer produces meals with expected prepTasks and a mealPlan.prepSchedule matching the scenarios from the prepTaskGenerator tests, and that existing non-prep flows remain unchanged."
+            "testStrategy": "Add or extend transformer-level tests using a mock mealPlan AI output and baseSpec: confirm that calling the transformer produces meals with expected prepTasks and a mealPlan.prepSchedule matching the scenarios from the prepTaskGenerator tests, and that existing non-prep flows remain unchanged.",
+            "parentId": "undefined"
           }
         ]
       },
       {
-        "id": 75,
+        "id": "75",
         "title": "Update MealPlan and Day views with health scores and prep sections",
         "description": "Enhance MealPlanView, DayView, and RecipeDetailPage to display Diet Compass scores, prep sections, and variation relationships.",
         "details": "Implementation details:\n- **Recipe cards (RecipeLibraryPage & MealPlanView)**:\n  - Add four small icon+bar indicators under recipe name using `scoreToBarSegments` and `dietCompassScores` (🥗, ⏳, ⚖️, ❤️ with Tailwind colored segments).\n  - Fallback gracefully when scores are null (hide or show placeholder).\n- **DayView**:\n  - Insert a top-of-page `Prep for Today` section showing aggregated tasks from `meal.prepTasks` and/or `mealPlan.prepSchedule.schedule` for that date.\n  - Show total estimated prep time and which meals tasks support.\n  - For each meal card, display badges like `✓ Chicken prepped`, `✓ Veggies prepped`, `Fresh components` derived from `prepTasks` metadata.\n- **RecipeDetailPage**:\n  - Add a Diet Compass section at top with full scores and an overall qualitative rating (Excellent/Good/Moderate/Poor/Avoid based on thresholds).\n  - Show variation relationships:\n    - If `parentRecipeId`, render a link \"Based on: [parent name]\".\n    - If `childRecipeIds.length > 0`, render a Variations list with clickable children.\n  - Add a `Create Variation` button, navigating to RecipeEditPage with query/flag to create a child recipe while copying parent fields.\n",
         "testStrategy": "- Open several recipes in the Recipe Library and MealPlan and visually verify that bars reflect stored scores (e.g., `overall` > 80 gives 4–5 segments for most metrics).\n- For a day with generated prepSchedule, ensure `Prep for Today` section appears and matches data in `mealPlan.prepSchedule.schedule`.\n- Create a variation via RecipeDetail → Create Variation flow and confirm parent/child links render correctly on both pages and that dietCompassScores are recalculated for the child.\n- Test layouts on mobile and desktop to ensure no overflow or clipping issues.",
         "priority": "medium",
         "dependencies": [
-          67,
-          71,
-          74
+          "67",
+          "71",
+          "74"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 76,
+        "id": "76",
         "title": "Implement recipe parent–child variation creation workflow",
         "description": "Enable users to create variations of existing recipes that maintain parent/child links and reuse most data.",
         "details": "Implementation details:\n- Extend `RecipeEditPage` to support a `mode` parameter: `edit` vs `create-variation`.\n- When navigated with a route like `#/recipe/:id/variation`:\n  - Load parent recipe; pre-fill all editable fields.\n  - On save, create a **new** recipe with:\n    - new `recipeId`, `parentRecipeId` set to parent’s ID.\n    - parent’s `childRecipeIds` extended to include new child ID (update parent in storage).\n    - `variationNote` from a dedicated input (e.g., “Vegetarian version”).\n    - `source` set appropriately (likely `user`).\n  - Call Diet Compass scoring engine to compute child scores.\n- Ensure `saveRecipes` handles atomic updates of both parent and child; consider a helper `saveRecipeFamily(parent, child)`.\nPseudo-code:\n```js\nfunction saveVariation(parentId, formData) {\n  const recipes = loadRecipes();\n  const parent = recipes.find(r => r.recipeId === parentId);\n  const childId = `recipe_${crypto.randomUUID()}`;\n  const child = { ...parent, ...formData, recipeId: childId, parentRecipeId: parentId, childRecipeIds: [], variationNote: formData.variationNote || null };\n  parent.childRecipeIds = [...(parent.childRecipeIds || []), childId];\n  child.dietCompassScores = calculateRecipeScores(child);\n  saveRecipes(recipes.filter(r => r.recipeId !== parentId).concat(parent, child));\n}\n```\n",
         "testStrategy": "- From RecipeDetailPage, create a variation, adjust a few ingredients, save, and confirm:\n  - Parent still exists and lists the new variation under Variations.\n  - Child shows correct `Based on` parent link and owns its own `childRecipeIds` array.\n  - Both recipes have valid Diet Compass scores.\n- Verify that any existing meals referencing the parent remain unchanged.\n- Attempt multiple variations from the same parent and ensure `childRecipeIds` grows correctly without duplicates.",
         "priority": "medium",
         "dependencies": [
-          61,
-          75
+          "61",
+          "75"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 77,
+        "id": "77",
         "title": "Extend onboarding and chat flows with diet profile suggestion (MVP)",
         "description": "Integrate basic diet profile suggestion and assignment into the existing conversational onboarding flow.",
         "details": "Implementation details:\n- Update Vanessa’s system prompt for chat onboarding to include:\n  - Short descriptions of each diet profile and when to recommend them.\n  - Instructions to explicitly suggest a profile after collecting goals and preferences, e.g.: \"Based on what you've said, X diet seems to fit you well. I'll set that as your diet profile if you confirm.\".\n- On client side, in onboarding state handler:\n  - Listen for a structured marker in Vanessa’s messages indicating chosen profile (e.g., JSON snippet or a special tag like `[[diet_profile: mediterranean]]`).\n  - When marker detected and user confirms, update owner eater’s `dietProfile` and associated `excludeIngredients`/`personalPreferences` from parsed content.\n- Keep this implementation minimal for Slice 5 (one profile per owner); multi-eater suggestions can be added later.\nPseudo-code (marker parsing):\n```js\nfunction parseDietProfileMarker(message) {\n  const match = message.content.match(/\\[\\[diet_profile:\\s*(\\w+)\\s*\\]\\]/i);\n  return match ? match[1].toLowerCase() : null;\n}\n```\n",
         "testStrategy": "- In dev, run through onboarding conversation with sample text that should map to Mediterranean, Keto, etc., and verify Vanessa suggests a profile and emits the marker.\n- Confirm that upon user confirmation, the owner eater record and BaseSpecification are updated with `dietProfile` and notes.\n- Ensure that existing users with completed onboarding are not forced through this flow unless they click a “Re-run diet setup” option.",
         "priority": "low",
         "dependencies": [
-          68,
-          69,
-          70
+          "68",
+          "69",
+          "70"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 78,
+        "id": "78",
         "title": "Implement health scoring API endpoint for ad-hoc recipes",
         "description": "Expose `/api/calculate-diet-compass-score` to compute health scores server-side for user-created or imported recipes when needed.",
         "details": "Implementation details:\n- Create `api/calculate-diet-compass-score.js` Edge function that:\n  - Accepts POST body `{ recipe: { ingredients, instructions, nutrition? } }`.\n  - Optionally uses Claude to enrich nutrition data if missing (low priority; core scoring can be local).\n  - Calls shared scoring engine `calculateRecipeScores` imported from shared module (or re-implemented for Node-compatible environment) and returns `{ scores, breakdown, rating, highlights, improvements }` as per PRD.\n- Map `overall` score to qualitative rating and highlight/improvement bullet points via heuristic rules:\n  - e.g., `overall >= 80` → \"Excellent\", highlight protective foods; `overall < 40` → \"Poor\", suggest reducing sugar or saturated fat.\n- Use this endpoint when importing recipes from text or creating manual recipes to show feedback without requiring client to run full scoring logic (optional if code-sharing is complex; may still be useful for future server-only environments).\nPseudo-code:\n```js\nexport default async function handler(req) {\n  const { recipe } = await req.json();\n  const scores = calculateRecipeScores(recipe);\n  const rating = scoreToLabel(scores.overall);\n  const { highlights, improvements } = buildInsights(recipe, scores);\n  return new Response(JSON.stringify({ scores, breakdown: null, rating, highlights, improvements }), { status: 200 });\n}\n```\n",
         "testStrategy": "- Post a small test recipe body from a REST client and confirm returned scores and rating.\n- Cross-validate returned scores against client-side `calculateRecipeScores` (if both exist) on a sample recipe; they should match or closely align.\n- Check error handling by sending invalid payloads and confirm 4xx with descriptive messages rather than 500s.",
         "priority": "low",
         "dependencies": [
-          66,
-          60
+          "66",
+          "60"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 79,
+        "id": "79",
         "title": "Add unit-style tests and dev harnesses for core Slice 5 utilities",
         "description": "Introduce lightweight test harnesses for scoring, catalog filtering, and prep schedule logic to prevent regressions.",
         "details": "Implementation details:\n- Since there is no bundler/test runner currently, implement **dev-only harness pages or console scripts**:\n  - `dev/test-scoring.html` that imports `dietCompassScoring.js` and runs a set of hard-coded cases, logging expected vs actual.\n  - `dev/test-diet-profile-filter.html` to exercise `dietProfileFilter.js` with a small mock catalog and households.\n  - `dev/test-prep-schedule.html` to visualize generated prep schedules for a simple synthetic week.\n- Optionally add a minimal Node-based test using `node --experimental-modules` for pure functions; keep them out of production build.\n- Document how to run these harnesses in `docs/testing-slice5.md`.\nPseudo-code (dev harness snippet):\n```js\nimport { calculateRecipeScores } from '../src/utils/dietCompassScoring.js';\n\nconst sample = { ingredients: [ { name: 'salmon', quantity: 150, unit: 'g' } ] };\nconsole.log('Sample salmon dish scores', calculateRecipeScores(sample));\n```\n",
         "testStrategy": "- Manually open each dev harness in the browser and verify console output matches hand-calculated expectations.\n- Intentionally tweak input data (e.g., add processed meat) and confirm score decreases as expected.\n- Use these harnesses when refactoring to ensure core outputs remain stable across changes.",
         "priority": "medium",
         "dependencies": [
-          66,
-          72,
-          74
+          "66",
+          "72",
+          "74"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 80,
+        "id": "80",
         "title": "Update data schemas and migration for Slice 5",
         "description": "Extend Recipe, Meal, BaseSpecification, and Eater schemas for Slice 5 and implement migration from Slice 4 data.",
         "details": "Implementation details:\n- Tech stack: continue using vanilla JS modules with existing data access utilities and localStorage; no new framework.\n- Update JS schema definitions / TypeScript-like JSDoc where they live (likely in a central models or types file) to match the PRD structures for Recipe, Meal, BaseSpecification, and Eater.\n- Recipe: add fields source, spoonacularId, parentRecipeId, childRecipeIds, variationNote, dietCompassScores, nutrition, tags (with all subfields), plus healthImpact on ingredients.\n- Meal: add prepTasks array, targetEaters, dietProfileTags.\n- BaseSpecification: bump _schemaVersion to 2, add mealPrepSettings with batchPrepDays and per-day prepLevels.\n- Eater: add dietProfile, personalPreferences, excludeIngredients, preferIngredients.\n- Implement migration script `src/migrations/migrateToSlice5.js`:\n  - Read existing BaseSpecification from localStorage; if _schemaVersion < 2 or missing, apply defaults.\n  - For BaseSpecification: if mealPrepSettings missing, set batchPrepDays:[6] and all 7×3 prepLevels to 'medium'.\n  - For each Eater: if dietProfile missing, set to null, personalPreferences to \"\", excludeIngredients and preferIngredients to [].\n  - For each Recipe: ensure new relationship fields initialized (parentRecipeId:null, childRecipeIds:[], variationNote:null).\n  - Ensure dietCompassScores and tags and nutrition exist; may be set to null or minimal defaults for now; later passes (catalog extraction or rescoring) will fill them.\n  - Create new localStorage keys if absent: 'vanessa_recipe_catalog' (empty array), 'vanessa_ingredient_health' and 'vanessa_diet_profiles' (will be populated by bootstrap tasks).\n- Guard migration so it is idempotent and runs on app boot before any read of these structures.\n- Consider versioning helpers, e.g. `ensureSchemaVersion(2)` to centralize.\n- Avoid blocking UI: migration should be synchronous but fast; avoid heavy computation (scoring existing recipes can be a later step in Diet Compass task instead of in migration if it would slow load noticeably).",
         "testStrategy": "- Create sample Slice 4 localStorage snapshot with minimal BaseSpecification, Eater(s), Recipe(s), and Meals lacking new fields.\n- Run app boot and verify `migrateToSlice5` is invoked once and completes without errors.\n- Assert BaseSpecification._schemaVersion === 2 and mealPrepSettings are present with correct defaults.\n- Assert each Eater has new diet-related fields with defaults.\n- Assert each Recipe instance has new relationship and health fields present (even if null/default) and no undefined properties.\n- Verify localStorage now contains 'vanessa_recipe_catalog', 'vanessa_ingredient_health', and 'vanessa_diet_profiles' keys.\n- Regression test: run migration against already-migrated data to ensure it is idempotent (no duplication, no field reset of user-edited data).",
         "priority": "high",
         "dependencies": [],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:00:23.703Z"
       },
       {
-        "id": 81,
+        "id": "81",
         "title": "Implement Spoonacular catalog extraction API and script",
         "description": "Create serverless endpoint and Node script to extract ~800 recipes from Spoonacular per protocol and persist them to catalog format.",
         "details": "Implementation details:\n- Use Spoonacular REST API with API key stored in Vercel environment variable (e.g. SPOONACULAR_API_KEY) and never exposed client-side.\n- Implement Vercel serverless function `pages/api/extract-spoonacular-catalog.js` (or `api/` depending on current layout) responding to POST and protected by a simple admin token (X-Admin-Token header from env) to avoid public abuse.\n- Inside handler, orchestrate long-running extraction by:\n  - Reading search definitions from `references/spoonacular-recipe-extraction-protocol.md` converted into a JS array (e.g. `src/data/spoonacularSearches.json`) that lists 66 queries and parameters.\n  - Sequentially or batched-fetching results while respecting Spoonacular rate limits; implement delay between requests (e.g. 900ms–1s) and max retries/backoff on 429 or 5xx.\n  - For each recipe response, normalize to an internal intermediate format including: spoonacularId, title, extendedIngredients, analyzedInstructions, nutrition, cuisines, diets, dishTypes, occasions, image URLs, readyInMinutes, servings.\n  - Deduplicate by spoonacularId using a Map keyed by ID.\n- Move heavy extraction to a separate Node script `scripts/extractSpoonacularCatalog.js` that can be run locally for the initial 2–3 hour extraction; it will:\n  - Use Node fetch (or axios) and the same search definitions.\n  - After deduplication, call tagging (Feature 1) and Diet Compass scoring (Feature 2 engine) to produce full Recipe schema per PRD.\n  - Write output JSON file to `public/data/spoonacularCatalog.json` for bundling, and optionally a coverage report JSON (tag distribution, cuisines/diets coverage counts).\n- For the POST /api/extract-spoonacular-catalog endpoint, support two modes:\n  - Trigger server extraction with limited subset for dev/test (e.g. first 10 searches) and write to a Vercel KV-like storage or return in response; or\n  - In production, serve from pre-generated static JSON catalog built by the Node script.\n- Ensure spoonacularId is preserved and used as stable key for de-dup and future updates.\n- Size constraint: monitor resulting JSON size (~2–3MB) so it fits comfortably within localStorage and network budgets; if close to limits, consider gzip compression for static serving and only expanding in-memory before saving.\n- Security: never log full API key, handle HTTP errors gracefully, and expose only aggregated reports to admin UI.\n- Use modern fetch API and async/await syntax, with clear separation of concerns (fetch, transform, persist).",
         "testStrategy": "- Unit test lower-level fetch-and-transform functions with mocked Spoonacular responses to confirm mapping to the internal schema (including nested fields and conversions) is correct.\n- Run the Node script with a small subset of searches (2–3 queries) to validate deduplication and end-to-end flow, inspecting output JSON for correct structure and field presence.\n- For the serverless POST endpoint, exercise via curl/Postman with a valid admin token and confirm:\n  - Unauthorized requests are rejected with 401/403.\n  - On success, endpoint returns progress summary (e.g. recipesFound, recipesDeduped).\n- Validate that generated catalog JSON file size is roughly in the 2–3MB range and that loading it into the browser and saving to localStorage works without quota exceptions in Chrome/Firefox.\n- Simulate network errors and 429 responses by mocking fetch to ensure retry/backoff logic works and does not exceed rate limits.\n- Smoke test recipe import into the app by loading the catalog and browsing a few entries in any dev catalog UI (from Feature 1 UI task).",
         "priority": "high",
         "dependencies": [
-          80
+          "80"
         ],
         "status": "pending",
         "subtasks": [
@@ -778,7 +809,8 @@
             "dependencies": [],
             "details": "Convert `references/spoonacular-recipe-extraction-protocol.md` into a structured JSON file (e.g. `src/data/spoonacularSearches.json`) capturing all ~66 Spoonacular search queries and parameters such as query term, cuisine, diet, number, and offset. Define a shared TS/JS type or JSDoc for the intermediate recipe schema including fields: `spoonacularId`, `title`, `extendedIngredients`, `analyzedInstructions`, `nutrition`, `cuisines`, `diets`, `dishTypes`, `occasions`, `image`, `readyInMinutes`, `servings`. Add a small helper module (e.g. `src/utils/spoonacularSchema.js`) exporting this schema definition and any normalization helpers (e.g. mapping from Spoonacular response fields to internal names) to be reused by both the serverless function and the Node script.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -789,7 +821,8 @@
             ],
             "details": "Add a module (e.g. `src/utils/spoonacularClient.js`) that exports functions such as `fetchRecipesForSearch(definition, options)`, `fetchRecipeDetails(id)`, and `normalizeRecipe(raw)` using the environment variable `SPOONACULAR_API_KEY` read from `process.env`. Implement HTTP calls with `fetch`/`node-fetch` or axios to the appropriate Spoonacular endpoints, building query strings from the search definitions. Include a rate limiter that enforces a delay (e.g. 900–1000ms) between outbound requests and a retry/backoff mechanism on 429 and 5xx responses with a configurable max retries. Implement deduplication by maintaining a `Map<number, NormalizedRecipe>` keyed by `spoonacularId` while iterating over all search results. Ensure `normalizeRecipe` maps all required fields and preserves `spoonacularId` exactly as returned by Spoonacular.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -799,9 +832,10 @@
               1,
               2
             ],
-            "details": "Implement a Node script `scripts/extractSpoonacularCatalog.js` that imports the search definitions and the shared Spoonacular utilities. Orchestrate sequential or batched execution of all ~66 searches, accumulating normalized recipes in a deduplicated map. After fetching, call existing Feature 1 tagging and Feature 2 Diet Compass scoring functions to transform the intermediate schema into the final Recipe schema defined in the PRD. Monitor approximate in-memory size while building the collection and log warnings if approaching the 2–3MB target. Write the final catalog array as pretty-printed JSON to `public/data/spoonacularCatalog.json` and, optionally, a separate coverage report JSON summarizing tag distributions and counts by cuisine, diets, and dish types. Ensure the script exits with non-zero status codes on unhandled errors for CI/local automation.",
+            "details": "Implement a Node script `scripts/extractSpoonacularCatalog.js` that imports the search definitions and the shared Spoonacular utilities. Orchestrate sequential or batched execution of all ~66 searches, accumulating normalized recipes in a deduplicated map. After fetching, call existing Feature 1 tagging and Feature 2 Diet Compass scoring functions to transform the intermediate schema into the final Recipe schema defined in the PRD. Monitor approximate in-memory size while building the collection and log warnings if approaching the 2–3MB target. Write the final catalog array as pretty-printed JSON to `public/data/spoonacularCatalog.json` and, optionally, a separate coverage report JSON summarizing tag distributions and counts by cuisine, diets, and dish types. Ensure the script exits with non-zero status codes on unhandled errors for CI/local automation.\n<info added on 2026-01-08T08:47:21.557Z>\nEnhance the extraction script to download and store recipe images locally:\n\n1. Create a `public/images/recipes/` directory structure at the start of the script\n2. Implement image downloading functionality for each recipe:\n   - Download the 312x231 (card) size image from Spoonacular\n   - Save images to `public/images/recipes/{spoonacularId}.jpg`\n   - Update recipe.image field to point to local path: `/images/recipes/{spoonacularId}.jpg`\n3. Add robust error handling:\n   - Implement retry logic (up to 3 attempts)\n   - Log failures but continue processing\n   - Fallback to original URL if download fails\n4. Track and display download progress (e.g., \"Downloaded images: 450/800\")\n5. Ensure the directory exists before writing files\n6. Handle potential network issues gracefully\n7. Add estimated storage requirements (~50-100MB for 800 images) to documentation\n\nThis modification ensures the application works independently of Spoonacular's CDN after extraction is complete.\n</info added on 2026-01-08T08:47:21.557Z>",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -813,7 +847,8 @@
             ],
             "details": "Add a Vercel API route file (e.g. `pages/api/extract-spoonacular-catalog.js` or `api/extract-spoonacular-catalog/route.js` depending on framework) that only accepts POST. Read an `X-Admin-Token` header and compare it to an env-configured admin token; return 401/403 on mismatch. In dev mode, implement a branch that runs a limited extraction using the shared utilities with a subset of searches (e.g. first 10 definitions), deduplicates by `spoonacularId`, and either writes results to a server-side storage (e.g. filesystem or KV-like adapter) or returns them directly in the JSON response. In production mode, return data from the static `public/data/spoonacularCatalog.json` file generated by the Node script, avoiding any live Spoonacular calls. Handle HTTP and internal errors gracefully with structured error responses and never log the raw API key or sensitive headers.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 5,
@@ -825,7 +860,8 @@
             ],
             "details": "Implement a small persistence layer or helper (e.g. `src/utils/catalogStorage.js`) that abstracts reading the static JSON from `public/data/spoonacularCatalog.json` and, for dev/test, optionally writing or reading from a simple KV-like storage or temporary file. Add logic to estimate and, if needed, log the catalog JSON size during generation and when serving responses, ensuring it remains around 2–3MB. Optionally add gzip compression configuration for static serving if supported by the hosting stack, ensuring decompression only occurs in memory before any client-side localStorage usage. Review and update logging so that no full Spoonacular responses or any secrets (API key, admin token) are logged, only aggregated statistics and high-level reports. Ensure HTTP error handling paths sanitize messages before returning to the client.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 6,
@@ -839,20 +875,21 @@
             ],
             "details": "Write unit tests for the lower-level utilities in `spoonacularClient` and normalization helpers using mocked Spoonacular responses to verify correct mapping into the intermediate schema, including nested fields such as `extendedIngredients` and `analyzedInstructions`. Add unit or integration tests for the deduplication logic to ensure multiple searches returning the same `spoonacularId` only produce one catalog entry. Implement a small end-to-end test or script that runs the Node extractor with 2–3 search definitions, asserts non-empty output, and checks that tagging and Diet Compass scoring fields exist on resulting recipes. For the serverless endpoint, add tests using a test runner or API client that validate admin token checks, dev-mode limited extraction behavior, and production-mode static file serving with correct HTTP status codes and error handling.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           }
         ]
       },
       {
-        "id": 82,
+        "id": "82",
         "title": "Design and persist local recipe catalog with tagging and Diet Compass scores",
         "description": "Transform Spoonacular and existing recipes into the enhanced Recipe schema, including tagging across 10+ dimensions and storing in `vanessa_recipe_catalog`.",
         "details": "Implementation details:\n- Create a catalog loader module `src/data/recipeCatalog.js` that abstracts reading/writing `vanessa_recipe_catalog` from localStorage.\n  - API examples: `getRecipeCatalog()`, `saveRecipeCatalog(recipes)`, `upsertCatalogRecipes(newRecipes)`, `findRecipeBySpoonacularId(id)`.\n- Define a transformation function `spoonacularToRecipe(spoonData)` that maps Spoonacular data to Slice 5 Recipe schema:\n  - source:'spoonacular', spoonacularId, generated UUID for recipeId, name from title.\n  - Map ingredients: name, quantity, unit, category (derived from Spoonacular aisles or classifications), healthImpact to be filled by Diet Compass ingredient DB.\n  - instructions from analyzedInstructions combined into a string or structured blocks per existing app conventions.\n  - prepTime/cookTime from readyInMinutes split heuristically or stored as prepTime=readyInMinutes, cookTime=0 if no clear separation.\n  - nutrition from Spoonacular `nutrition` object fields into calories, protein, carbs, fat, fiber, etc., with nulls for unavailable items.\n  - tags object: cuisines/diets/dishTypes from Spoonacular fields; derive mealSlots (e.g. breakfast/lunch/dinner) using dishTypes and internal heuristics; proteinSources from main ingredients; cookingMethods from instructions keywords; carbBases from main carb ingredient; effortLevel from readyInMinutes and step count; spiceLevel from ingredients and cuisines; budgetTier approximate from ingredient types; kidFriendly boolean and makeAhead boolean based on dishTypes and instructions; protectiveFoods from Diet Compass spec.\n- Integrate Diet Compass scoring engine (task 83) into this pipeline:\n  - After mapping ingredients and calling `getIngredientHealthData` to set per-ingredient healthImpact, compute dietCompassScores via `calculateRecipeScores` and attach to recipe.\n- When running the Node extraction script, apply `spoonacularToRecipe` and produce a full array of Recipe objects, then in the admin UI (task 84) import this into localStorage.\n- For existing non-Spoonacular recipes (user/imported/generated), write a utility `normalizeExistingRecipe(recipe)` to ensure all Slice 5 fields and tags exist and compute Diet Compass scores using available ingredients and any existing nutrition.\n- Catalog should be indexed by spoonacularId when present to avoid duplicates, but internally the app uses recipeId for reference.\n- Ensure the final array size and JSON serialization are efficient (avoid unnecessary large blobs like raw Spoonacular source when not needed).\n- Consider adding light-weight derived indexes in memory (e.g. by tag, by cuisine) for faster filtering without persisting indexes to localStorage to keep things simple.",
         "testStrategy": "- Unit test `spoonacularToRecipe` using a variety of mocked Spoonacular recipe payloads (different cuisines, diets, missing nutrition) to ensure all required fields are present and correctly derived.\n- Verify that calling `saveRecipeCatalog` and `getRecipeCatalog` round-trips the array without mutation; test with a catalog near 800 entries.\n- Create fixtures for existing user recipes and run `normalizeExistingRecipe`, then assert that dietCompassScores, nutrition placeholders, and tags are attached as expected.\n- Performance check: profile loading and parsing of the 800-recipe catalog on mid-range mobile via dev tools to confirm acceptable latency (e.g. <500ms parsing time); if necessary, adjust serialization or lazy-load patterns.\n- Manual QA: after import, open recipe detail and library views to inspect several catalog recipes for plausible tags and scores.\n- Confirm deduplication by adding the same Spoonacular recipe twice and ensuring only one entry with that spoonacularId exists in the catalog.",
         "priority": "high",
         "dependencies": [
-          80,
-          81
+          "80",
+          "81"
         ],
         "status": "pending",
         "subtasks": [
@@ -863,7 +900,8 @@
             "dependencies": [],
             "details": "Implement a module `src/data/recipeCatalog.js` that encapsulates all access to the `vanessa_recipe_catalog` localStorage key. Expose functions like `getRecipeCatalog()` (returning a parsed array with sensible defaults when missing or invalid), `saveRecipeCatalog(recipes)` (serializing with JSON and handling errors), `upsertCatalogRecipes(newRecipes)` (merge by spoonacularId or recipeId to avoid duplicates), and `findRecipeBySpoonacularId(id)` (efficient lookup or linear scan). Ensure the module does not leak raw localStorage usage elsewhere in the app and that it gracefully handles empty catalogs and JSON parse failures.",
             "status": "pending",
-            "testStrategy": "Write unit tests with mocked localStorage to verify that saving and loading round-trip an array without mutation, that upserting adds new recipes and updates existing ones by spoonacularId/recipeId, and that missing or corrupt localStorage values are handled without throwing."
+            "testStrategy": "Write unit tests with mocked localStorage to verify that saving and loading round-trip an array without mutation, that upserting adds new recipes and updates existing ones by spoonacularId/recipeId, and that missing or corrupt localStorage values are handled without throwing.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -874,7 +912,8 @@
             ],
             "details": "Create a pure function `spoonacularToRecipe(spoonData)` that returns a fully-populated Slice 5 Recipe object. Map basic fields: set `source` to 'spoonacular', copy `spoonacularId`, generate a UUID for `recipeId`, and set `name` from Spoonacular `title`. Map ingredients into the schema with name, quantity, unit, and a derived `category` from Spoonacular aisles or other classifications; leave `healthImpact` null for now. Build `instructions` from `analyzedInstructions` according to existing app conventions (combined string or structured blocks). Derive `prepTime` and `cookTime` from `readyInMinutes`, using a heuristic split or defaulting prepTime to readyInMinutes and cookTime to 0 when the split is not available. Map the `nutrition` object into standard macro fields (calories, protein, carbs, fat, fiber, etc.) inserting nulls where data is missing. Construct the nested `tags` object using Spoonacular cuisines/diets/dishTypes and internal heuristics to derive `mealSlots`, `proteinSources`, `cookingMethods`, `carbBases`, `effortLevel`, `spiceLevel`, `budgetTier`, `kidFriendly`, `makeAhead`, and placeholders for `protectiveFoods`. Ensure the output matches the enhanced Recipe schema from Slice 5 and does not include unnecessary raw Spoonacular blobs.",
             "status": "pending",
-            "testStrategy": "Create unit tests with varied mocked Spoonacular payloads (different cuisines, diets, missing fields, complex instructions) to assert that all required Recipe schema fields exist, tags are populated consistently, nutrition falls back to nulls when absent, and that no extraneous large raw payloads are retained."
+            "testStrategy": "Create unit tests with varied mocked Spoonacular payloads (different cuisines, diets, missing fields, complex instructions) to assert that all required Recipe schema fields exist, tags are populated consistently, nutrition falls back to nulls when absent, and that no extraneous large raw payloads are retained.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -885,7 +924,8 @@
             ],
             "details": "Extend the transformation flow so that after ingredients are mapped, the pipeline calls `getIngredientHealthData` for each ingredient to populate its `healthImpact` field using the `vanessa_ingredient_health` data. Then invoke `calculateRecipeScores` (from task 83) with the normalized ingredients and any available nutrition to compute dietCompassScores and attach the resulting overall and component scores to the Recipe object. Ensure this integration is used both by `spoonacularToRecipe` and by other transformation utilities via a shared helper (e.g., `applyDietCompassScoring(recipe)`) so logic is centralized. Handle missing health data gracefully by skipping or defaulting while still producing a valid scores object where possible.",
             "status": "pending",
-            "testStrategy": "Add focused tests that feed in recipes with known ingredient health entries and verify that `healthImpact` is set on ingredients and that `dietCompassScores` are present and stable for the same inputs. Include cases where some ingredients lack health data to ensure the scoring engine degrades gracefully without throwing."
+            "testStrategy": "Add focused tests that feed in recipes with known ingredient health entries and verify that `healthImpact` is set on ingredients and that `dietCompassScores` are present and stable for the same inputs. Include cases where some ingredients lack health data to ensure the scoring engine degrades gracefully without throwing.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -897,7 +937,8 @@
             ],
             "details": "Create a utility function `normalizeExistingRecipe(recipe)` that takes any existing non-Spoonacular recipe (user-created, imported, AI-generated) and returns a fully normalized Slice 5 Recipe. Ensure all new schema fields (catalog linkage, nutrition, tags, dietCompassScores) are present with sensible defaults when missing. Derive or backfill tags (cuisines, diets, dishTypes, mealSlots, etc.) from any known metadata or heuristics similar to those used for Spoonacular recipes. Reuse the Diet Compass integration helper to populate ingredient `healthImpact` and overall `dietCompassScores` using available ingredients and nutrition. Guarantee idempotence so calling normalize multiple times on the same recipe does not duplicate work or corrupt data.",
             "status": "pending",
-            "testStrategy": "Write unit tests using representative legacy recipe objects from previous slices to confirm that normalizeExistingRecipe returns objects matching the Slice 5 Recipe schema, that missing fields are added with defaults, that existing fields are preserved, and that Diet Compass scores are computed when enough ingredient/nutrition data is present."
+            "testStrategy": "Write unit tests using representative legacy recipe objects from previous slices to confirm that normalizeExistingRecipe returns objects matching the Slice 5 Recipe schema, that missing fields are added with defaults, that existing fields are preserved, and that Diet Compass scores are computed when enough ingredient/nutrition data is present.",
+            "parentId": "undefined"
           },
           {
             "id": 5,
@@ -911,21 +952,22 @@
             ],
             "details": "Update the Node-based extraction script so that it ingests Spoonacular API results, runs each through `spoonacularToRecipe`, and produces a complete array of normalized Recipe objects ready for storage. In the admin UI, add logic to import this array into localStorage by calling `saveRecipeCatalog` or `upsertCatalogRecipes` from `recipeCatalog.js`. Ensure catalog entries are deduplicated by `spoonacularId` when present while keeping `recipeId` as the internal reference key. Implement optional in-memory lightweight indexes (e.g., objects or maps keyed by cuisine, tags, or mealSlots) immediately after loading the catalog to speed up filtering within the UI without persisting these indexes. Verify that JSON serialization remains efficient by excluding unnecessary large fields and by only storing what is required for runtime use.",
             "status": "pending",
-            "testStrategy": "Create integration-style tests or a dev script that runs the Node extraction on a sample Spoonacular dump, loads the resulting catalog in the admin UI environment, and verifies that recipes are accessible via find and filter operations. Measure or assert catalog size boundaries and manually or programmatically confirm that no redundant large payloads (like raw Spoonacular responses) are persisted."
+            "testStrategy": "Create integration-style tests or a dev script that runs the Node extraction on a sample Spoonacular dump, loads the resulting catalog in the admin UI environment, and verifies that recipes are accessible via find and filter operations. Measure or assert catalog size boundaries and manually or programmatically confirm that no redundant large payloads (like raw Spoonacular responses) are persisted.",
+            "parentId": "undefined"
           }
         ]
       },
       {
-        "id": 83,
+        "id": "83",
         "title": "Build Diet Compass ingredient health database and scoring engine",
         "description": "Implement ingredient health data store and Diet Compass scoring engine in `src/utils/dietCompassScoring.js` and `src/data/ingredientHealthData.json`.",
         "details": "Implementation details:\n- Create `src/data/ingredientHealthData.json` seeded from the PRD-linked spec (`references/diet-compass-health-rating-system.md`):\n  - Each entry keyed by normalized ingredient name (lowercase, singular) with fields: nutrientDensityPoints, antiAgingPoints, weightLossPoints, heartHealthPoints, flags (e.g. harmful, processed, redMeat, sugary, protectiveSuperfood), scoreCaps for harmful ingredients.\n  - Cover at least 200+ common ingredients; for unknown ingredients use default neutral profile in scoring.\n- Implement `src/utils/dietCompassScoring.js` exposing:\n  - `getIngredientHealthData(ingredientName)` which normalizes the name (strip adjectives, size, brand, combined descriptors), performs fuzzy matching for close variants (e.g. \"baby spinach\" → \"spinach\"), and returns the data object or a default.\n  - `calculateRecipeScores(recipe)` which:\n    - Iterates recipe.ingredients; for each, fetches health data and weighs contribution by quantity (simple heuristic: per-serving quantity or relative grams approximation based on unit).\n    - Aggregates the four metrics using the rules from the spec, applies penalties/bonuses for red-flag or gold-star ingredients, and enforces per-metric and overall caps.\n    - Returns `{ overall, nutrientDensity, antiAging, weightLoss, heartHealth, breakdown }`.\n  - `scoreToBarSegments(score)` converting 0–100 into 1–5 bars using PRD-defined ranges.\n- Add helper to set ingredient-level `healthImpact` field during recipe normalization: classify as 'protective' | 'neutral' | 'harmful' based on ingredientHealthData flags and points.\n- Ensure the scoring engine is deterministic and pure (no side-effects), suitable for reuse in extraction, migration, and on-the-fly rescoring.\n- Keep logic in vanilla JS with clear comments aligning to Diet Compass concepts to aid later tuning.\n- Optimize for speed: scoring a single recipe should be sub-millisecond on desktop; precompute and cache normalization of ingredient names and lookup tables in memory.\n- Security/robustness: handle missing or malformed recipe data gracefully by returning default scores (e.g. all 0 or null) and logging in dev builds only.",
         "testStrategy": "- Create a set of unit tests for `getIngredientHealthData` to validate normalization and fuzzy mapping (e.g. \"chopped walnuts\", \"walnut halves\" → \"walnuts\").\n- Build several controlled recipe fixtures (e.g. high-vegetable, high-sugar dessert, red meat-heavy dish, oily fish dish) with known-expected score patterns and assert that `calculateRecipeScores` orders them plausibly and within expected ranges.\n- Test `scoreToBarSegments` against boundary values (0, 1, 20, 21, 40, 60, 80, 100) to ensure correct bar counts per PRD.\n- Performance test: score 1,000 recipes in a tight loop and ensure execution time is acceptable for batch extraction and migration.\n- Run end-to-end scoring on a subset of catalog recipes and manually inspect a sample within the UI to see that healthImpact and scores make sense (e.g. salads high scores, sugary snacks low).",
         "priority": "high",
         "dependencies": [
-          80
+          "80"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -934,7 +976,8 @@
             "dependencies": [],
             "details": "Review `references/diet-compass-health-rating-system.md` and any related PRD materials to finalize the exact fields for each ingredient entry, including nutrientDensityPoints, antiAgingPoints, weightLossPoints, heartHealthPoints, flags, and optional scoreCaps. Create `src/data/ingredientHealthData.json` with entries keyed by normalized ingredient name (lowercase, singular). Seed the file with an initial, coherent subset of ingredients (e.g., 30–50 covering vegetables, fruits, grains, proteins, fats, sugars, processed items) to validate the structure. Ensure default profiles for unknown ingredients are clearly defined (e.g., neutral points and no harmful flags) and document these defaults in comments or a short README for later expansion to 200+ ingredients.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -945,7 +988,8 @@
             ],
             "details": "In `src/utils/dietCompassScoring.js`, import `ingredientHealthData.json` and implement a pure function `getIngredientHealthData(ingredientName)` that: (1) normalizes the input by lowercasing, stripping adjectives (e.g., fresh, chopped), sizes, brands, and combined descriptors; (2) applies simple fuzzy/alias mapping for close variants (e.g., mapping `baby spinach`, `spinach leaves` → `spinach`; `walnut halves`, `chopped walnuts` → `walnut` or `walnuts` depending on schema); (3) safely handles null/undefined or non-string inputs; and (4) returns the matched ingredient entry or a default neutral profile when no match exists. Implement an in-memory cache of normalized names to underlying JSON keys for fast repeated lookup, ensuring the helper remains deterministic and side-effect-free (no external logging except possibly gated to dev mode). Add clear comments explaining normalization rules and fuzzy matching strategy.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -956,7 +1000,8 @@
             ],
             "details": "Extend `src/utils/dietCompassScoring.js` to add `calculateRecipeScores(recipe)` that: (1) validates and safely reads `recipe.ingredients`, returning a default all-zero or null score object if data is missing or malformed; (2) iterates ingredients, calling `getIngredientHealthData` and estimating each ingredient’s contribution using a simple quantity heuristic (e.g., per-serving amount or unit-based weight approximation); (3) aggregates nutrientDensity, antiAging, weightLoss, and heartHealth points according to the spec, applying bonuses/penalties for flags (harmful, processed, redMeat, sugary, protectiveSuperfood, etc.) and enforcing per-metric and overall caps; (4) returns a structured result `{ overall, nutrientDensity, antiAging, weightLoss, heartHealth, breakdown }`, where `breakdown` captures per-ingredient contributions for debugging/tuning. Implement `scoreToBarSegments(score)` to map a 0–100 score into 1–5 bar segments based on PRD-defined thresholds, ensuring clear boundary handling. Keep both functions pure and optimized (e.g., reuse caches, avoid unnecessary allocations) so that scoring a single recipe runs in sub-millisecond on typical desktops, and add comments tying score logic back to Diet Compass concepts for future tuning.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -968,35 +1013,37 @@
             ],
             "details": "Within the recipe normalization pipeline (or in a dedicated utility referenced there), add a pure helper that, for each normalized ingredient, calls `getIngredientHealthData` and derives a categorical `healthImpact` value of `'protective'`, `'neutral'`, or `'harmful'`. Base classification on the ingredient’s points and flags from `ingredientHealthData.json` (e.g., protectiveSuperfood and positive metric totals → `protective`; strong harmful/processed/redMeat/sugary flags or negative net effects where applicable → `harmful`; otherwise `neutral`). Ensure the helper integrates cleanly with existing normalization flow without side effects, handles unknown or malformed ingredients gracefully by assigning a sensible default (likely `neutral`), and keeps logic and thresholds clearly commented for future adjustment.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T09:03:02.759Z"
       },
       {
-        "id": 84,
+        "id": "84",
         "title": "Implement admin recipe catalog management UI",
         "description": "Create an internal/admin UI to trigger Spoonacular extraction/import, view progress, run gap analysis, and add manual catalog recipes.",
         "details": "Implementation details:\n- Add a protected route or page, e.g. `/admin/catalog`, accessible only in development or when an admin flag is enabled (e.g. query param plus environment guard) to avoid exposure to normal users.\n- UI sections:\n  - **Extraction Control**: button \"Extract Spoonacular Catalog\" that calls POST `/api/extract-spoonacular-catalog` with admin token, shows a modal/section with progress updates (percentage, recipes processed). For long-running local Node script, provide instructions and a \"Import Catalog File\" file input to upload `spoonacularCatalog.json` for local dev.\n  - **Catalog Summary**: show counts (total recipes, cuisines, diets, average scores) and a tiny table or chart of coverage by cuisine and diet using the data from `vanessa_recipe_catalog`.\n  - **Gap Analysis**: highlight underrepresented cuisines/diets/mealSlots by comparing against a target matrix defined in JS (e.g. from protocol) and catalog tags; list missing combos so future extraction can be tuned.\n  - **Manual Add/Edit**: a simplified recipe creation form limited to key fields (name, source, tags, core nutrition, ingredients, instructions). On save, normalize the record, compute Diet Compass scores, assign recipeId, and store in `vanessa_recipe_catalog` with source:'user'.\n- Implement in vanilla JS and Tailwind: use existing layout components & card styles for consistency.\n- For progress tracking, if using serverless, consider polling an in-memory/static progress endpoint during dev only, or for the Node script route, show last import timestamp and stats stored in localStorage (e.g. 'vanessa_recipe_catalog_meta'). Keep architecture simple as this is an internal tool.\n- Provide a button to run catalog validation: iterates locally over catalog and checks for missing key fields, invalid tags or scores, and reports counts in a log section.\n- Ensure that manual adds get dietProfile compatibility tags computed where possible (e.g. a helper in dietProfileFilter).",
         "testStrategy": "- Manual QA: open `/admin/catalog` in dev mode and verify that the extraction button calls the API and shows appropriate success/failure messages.\n- Use mocked responses for POST `/api/extract-spoonacular-catalog` in development to test progress UI and error display.\n- After importing a small catalog subset, verify the summary and gap analysis numbers (e.g. total recipes equals the length of the catalog in localStorage).\n- Add a manual recipe via the form, then confirm it appears in the main recipe library (after catalog integration) with correct tags and Diet Compass scores.\n- Validate that the page is not reachable in production/staging without admin flag or token (try direct URL).",
         "priority": "medium",
         "dependencies": [
-          81,
-          82,
-          83
+          "81",
+          "82",
+          "83"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 85,
+        "id": "85",
         "title": "Integrate catalog-first behavior into meal generation API",
         "description": "Update the generation flow so meal plans primarily use catalog recipes filtered by constraints, with AI generation only as fallback or on explicit user request.",
         "details": "Implementation details:\n- Identify the existing Vercel serverless function handling week generation (e.g. `/api/generate-week` or similar) and extend its logic to:\n  - Load the local catalog (from `vanessa_recipe_catalog`) into memory for the current request. For performance, consider caching in-memory across invocations when allowed by Vercel.\n  - For each meal slot in the week, derive constraints:\n    - Diet profiles per eater (from Eater objects and dietProfiles data).\n    - Personal exclusions/preferences (excludeIngredients, preferIngredients, preferIngredients list).\n    - Prep level constraints per day/meal from BaseSpecification.mealPrepSettings.\n  - Use the diet profile filter utilities (task 88) to obtain a pool of compatible recipes for each meal, filtering also by excluded ingredients and basic prep complexity (effortLevel, makeAhead, cookingMethods) to respect prep levels.\n  - Select recipes from this pool using simple heuristics: avoid recent repeats from history, vary cuisines and proteinSources, prefer recipes containing preferred ingredients.\n- Only when no suitable catalog recipes are found for a meal slot, or when the user explicitly asks \"generate a new recipe\", call Claude API to generate a new recipe:\n  - Pass the constraints and relevant catalog examples as few-shot context if helpful, but keep cost under control.\n  - Normalize AI-generated recipe into Recipe schema with source:'generated', compute Diet Compass scores, and store it in existing recipes storage (not necessarily catalog) for reuse.\n- Update the generation prompt to emphasize health optimization and Diet Compass scores, but keep the scoring logic on the client/server using our engine to avoid relying on model for numeric scoring.\n- Ensure multi-profile households and conflicting profiles are respected by interacting with dietProfileFilter (task 88) to generate separate recipes as needed.\n- Maintain compatibility with existing history and shopping list generation.\n- Guard memory usage by not serializing the entire 800-recipe catalog into the prompt; use only derived constraints and recipe IDs.\n- Avoid over-engineering: use straightforward filtering and random/round-robin selection rather than complex optimization for now.",
         "testStrategy": "- Write integration tests for the generation function using a mocked catalog of ~20 recipes with diverse tags and scores.\n- Scenarios:\n  - Single-profile household where multiple catalog recipes match; confirm that a catalog recipe is selected and no Claude API call is made.\n  - Case where constraints are very strict (e.g. rare diet + many exclusions) and no catalog match exists; verify the Claude API is invoked and a generated recipe is returned and normalized.\n  - Explicit user request to \"generate new\" (simulate the flag in request body) should force Claude usage even when catalog matches exist.\n- Add assertions that selected recipes respect exclusions, diet profiles, and prep level constraints for several days.\n- Monitor serverless logs during test runs or staging usage to ensure Claude API usage volume drops compared to pre-catalog behavior.\n- Manual QA: generate multiple weeks with different settings and visually confirm catalog recipes dominate, with reasonable variety and correct display.",
         "priority": "high",
         "dependencies": [
-          82,
-          83
+          "82",
+          "83"
         ],
         "status": "pending",
         "subtasks": [
@@ -1007,7 +1054,8 @@
             "dependencies": [],
             "details": "Locate the active endpoint (e.g. `/api/generate-week` or equivalent) and read through its handler, types, and any helper modules involved in meal generation and history/shopping list creation. Document current inputs (eaters, dietProfiles, mealPrepSettings, history, etc.) and how they map to meal slots. Design a small catalog service module that knows how to load `vanessa_recipe_catalog` into memory for a request, with an internal singleton or module-level cache that respects Vercel’s execution model (warm vs cold starts) and guards against excessive memory growth. Define the public interface (e.g. `getCatalogRecipes()`, `getRecipeById()`) to be used by the generator.",
             "status": "pending",
-            "testStrategy": "Add a minimal unit test for the catalog service module that verifies it loads the catalog, returns recipes in expected shape, and that repeated calls reuse cached data when the environment allows."
+            "testStrategy": "Add a minimal unit test for the catalog service module that verifies it loads the catalog, returns recipes in expected shape, and that repeated calls reuse cached data when the environment allows.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -1018,7 +1066,8 @@
             ],
             "details": "Within the generation handler (or a dedicated helper), introduce a function such as `buildMealSlotConstraints(slot, eaters, dietProfiles, baseSpecification)` that constructs a constraint object per meal. Use `Eater` objects and `dietProfiles` to collect applicable diet rules per eater, then merge them for the slot while flagging conflicts for multi-profile households. Include personal `excludeIngredients`, `preferIngredients`, and any preference lists, ensuring they are all normalized (e.g. lowercased, deduplicated). From `BaseSpecification.mealPrepSettings`, derive allowed `effortLevel`, `makeAhead`, and `cookingMethods` for that slot. Keep the structure compatible with `dietProfileFilter` (task 88) so it can be passed directly into that utility without further transformation.",
             "status": "pending",
-            "testStrategy": "Write unit tests for `buildMealSlotConstraints` that cover: single-profile eater, multi-profile with overlapping diets, conflicting diets (expect a clear representation of conflict), and various prep level settings. Verify output structures match what `dietProfileFilter` expects."
+            "testStrategy": "Write unit tests for `buildMealSlotConstraints` that cover: single-profile eater, multi-profile with overlapping diets, conflicting diets (expect a clear representation of conflict), and various prep level settings. Verify output structures match what `dietProfileFilter` expects.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -1029,7 +1078,8 @@
             ],
             "details": "Create a function such as `getCompatibleCatalogRecipes(constraints, catalog, historyContext)` that first invokes the `dietProfileFilter` utility (task 88) to enforce diet rules for each relevant eater, then filters further by excluded ingredients, required/preferred ingredients, and basic prep fields like `effortLevel`, `makeAhead`, and `cookingMethods`. Ensure multi-profile households are handled by either intersecting acceptable recipes across profiles or returning separate recipe options per profile, depending on how the generator is meant to behave. Keep the filtering logic straightforward and transparent for debugging. Confirm that the function returns a deterministic list of candidate recipes (e.g. sorted or stable order) to feed into the selection heuristic.",
             "status": "pending",
-            "testStrategy": "Create unit tests with a mocked catalog of ~20 recipes covering diverse diets, ingredients, and prep attributes. Assert that the filter correctly removes recipes violating diet rules, excluded ingredients, or prep constraints, and that multi-profile cases either return intersected or properly separated pools as per the chosen behavior."
+            "testStrategy": "Create unit tests with a mocked catalog of ~20 recipes covering diverse diets, ingredients, and prep attributes. Assert that the filter correctly removes recipes violating diet rules, excluded ingredients, or prep constraints, and that multi-profile cases either return intersected or properly separated pools as per the chosen behavior.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -1040,7 +1090,8 @@
             ],
             "details": "Implement a function such as `selectRecipeForSlot(candidates, slotContext, history)` that takes the filtered pool and applies simple rules: remove recipes used very recently based on history; score or prioritize recipes that contain `preferIngredients`; attempt variety by rotating or randomizing over `cuisine` and `proteinSources`; and fall back to random/round-robin selection when no strong preference exists. Maintain a per-week context to avoid duplicating recipes across the generated week unless necessary. Ensure no external optimization engine is introduced; logic should rely on basic scoring or ordered filters for now. Integrate this selection into the main generation loop so each meal slot first tries catalog selection before considering AI generation.",
             "status": "pending",
-            "testStrategy": "Extend integration tests using the mocked catalog to validate that when multiple catalog recipes are available: (a) none from the most recent history period are chosen, (b) plans show variety in cuisine and protein where possible, and (c) recipes containing preferred ingredients are selected more often than those without. Also add unit tests that simulate limited candidate pools to confirm graceful degradation (e.g. when only recently used recipes exist)."
+            "testStrategy": "Extend integration tests using the mocked catalog to validate that when multiple catalog recipes are available: (a) none from the most recent history period are chosen, (b) plans show variety in cuisine and protein where possible, and (c) recipes containing preferred ingredients are selected more often than those without. Also add unit tests that simulate limited candidate pools to confirm graceful degradation (e.g. when only recently used recipes exist).",
+            "parentId": "undefined"
           },
           {
             "id": 5,
@@ -1051,7 +1102,8 @@
             ],
             "details": "In the main generation flow, detect conditions where the catalog pool is empty or the user has explicitly requested a new recipe for a slot, and in those cases call the Claude API with a prompt that encodes the derived constraints and, optionally, a few representative catalog examples without embedding the full catalog (only IDs and key attributes). Implement a `generateAndNormalizeRecipe(constraints, examples)` helper that: triggers Claude, parses the response, maps it into the canonical `Recipe` schema with `source: 'generated'`, computes Diet Compass scores using the existing scoring engine (server/client-side, not via the model), and persists the recipe into existing recipe storage for reuse. Ensure that the prompt text highlights health optimization and Diet Compass alignment while keeping numeric scoring outside the model. Respect memory limits by passing only minimal context, not the entire 800-recipe catalog.",
             "status": "pending",
-            "testStrategy": "Add integration tests that stub the Claude API: (a) when constraints yield no compatible catalog recipes, confirm a Claude call is made and the resulting recipe is normalized and stored; (b) when a user flag like \"generate a new recipe\" is set, confirm Claude is called even if catalog options exist. Verify that Diet Compass scores are computed by the internal engine and that generated recipes can be selected in subsequent runs without further AI calls."
+            "testStrategy": "Add integration tests that stub the Claude API: (a) when constraints yield no compatible catalog recipes, confirm a Claude call is made and the resulting recipe is normalized and stored; (b) when a user flag like \"generate a new recipe\" is set, confirm Claude is called even if catalog options exist. Verify that Diet Compass scores are computed by the internal engine and that generated recipes can be selected in subsequent runs without further AI calls.",
+            "parentId": "undefined"
           },
           {
             "id": 6,
@@ -1063,91 +1115,94 @@
             ],
             "details": "Review how multi-profile households and conflicting diet profiles are handled today and ensure the new constraint derivation and filtering logic respects these patterns, including cases where separate recipes per eater or per group are required. Confirm that existing history structures (used to avoid recent repeats) and shopping list generation logic continue to work with both catalog and AI-generated recipes, including those newly stored from Claude. Update any affected types or serializers to handle `source: 'generated'` consistently. Implement end-to-end tests for the `/api/generate-week` (or equivalent) route using a mocked catalog and mocked Claude client: cover single-profile, multi-profile with no conflicts, multi-profile with conflicts requiring separate recipes, catalog-satisfied plans with no Claude calls, and fallback-to-AI scenarios. Validate that shopping list outputs remain structurally unchanged and correct.",
             "status": "pending",
-            "testStrategy": "Create API-level tests that hit the generation endpoint with various household configurations and history states while mocking out external services. Assert that: (1) catalog recipes are used when available, (2) Claude is called only when needed or explicitly requested, (3) multi-profile constraints result in valid meal assignments, and (4) generated meal plans still produce valid shopping lists and history entries."
+            "testStrategy": "Create API-level tests that hit the generation endpoint with various household configurations and history states while mocking out external services. Assert that: (1) catalog recipes are used when available, (2) Claude is called only when needed or explicitly requested, (3) multi-profile constraints result in valid meal assignments, and (4) generated meal plans still produce valid shopping lists and history entries.",
+            "parentId": "undefined"
           }
         ]
       },
       {
-        "id": 86,
+        "id": "86",
         "title": "Implement Diet Compass visual components on recipe detail and cards",
         "description": "Add Diet Compass score display to RecipeDetailPage, RecipeCard, and MealPlanView using numeric scores and 5-segment bar icons.",
         "details": "Implementation details:\n- Reuse existing component structure: implement small, reusable vanilla JS/Tailwind snippet(s) for health score display, e.g. `renderDietCompassScores(container, scores)`.\n- On **RecipeDetailPage**:\n  - Under the recipe title or within a \"Health Profile\" section, show full metric names and numeric scores: Nutrient Density, Anti-Aging, Weight Loss, Heart Health, and Overall score.\n  - Layout: simple grid or stacked cards with Tailwind (e.g. `grid grid-cols-2 gap-2` for desktop, stacked on mobile).\n- On **RecipeCard** and **MealPlanView meal rows**:\n  - Implement compact 5-bar system per metric as in PRD:\n    - Use four labeled icons: 🥗, ⏳, ⚖️, ❤️ next to mini 5-segment bars.\n    - Represent segments as small DIVs (e.g. `w-2 h-2 rounded-sm`) repeated 5 times; fill color green for filled, gray for empty; compute bar count using `scoreToBarSegments`.\n    - Place the row of four metrics below recipe title; consider showing only icons + bars without numbers for compactness.\n- Handle missing scores: if `dietCompassScores` is null or incomplete, either hide the component or show a subtle \"No health data yet\" note.\n- Ensure mobile responsiveness: limit width, allow wrapping; test in narrow viewport.\n- Keep implementation accessible: add `aria-label`s on each metric (e.g. \"Nutrient Density: 85 out of 100, 4 out of 5 bars\").\n- All rendering implemented in vanilla JS using existing page lifecycle hooks; avoid adding frameworks. Tailwind classes should use existing config; no new plugins required.",
         "testStrategy": "- Unit-test the pure rendering helper for bar segments with a container created via `document.createElement`, verifying the number of filled vs empty segments for specific scores (e.g. 0, 10, 35, 55, 75, 95).\n- Add UI regression tests (via Playwright or Cypress if already used; otherwise manual) to:\n  - Open a recipe detail page with known scores and confirm numeric values match the underlying data and are formatted correctly.\n  - Open recipe library and weekly meal plan views; visually check bar displays on multiple cards, including edge cases (very low and very high scores).\n- Accessibility check: run aXe or browser accessibility tools to ensure labels are present and contrast between green/gray segments meets standards.\n- Responsiveness: manually test on simulated mobile widths to ensure bars wrap and do not overflow card width.",
         "priority": "medium",
         "dependencies": [
-          83,
-          82
+          "83",
+          "82"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 87,
+        "id": "87",
         "title": "Bootstrap and manage diet profile definitions data",
         "description": "Create and load 11 preconfigured diet profiles in `src/data/dietProfiles.json` and expose utilities for accessing them in the app.",
         "details": "Implementation details:\n- Define `src/data/dietProfiles.json` according to `references/diet-profiles.md` with 11 profiles:\n  - Mediterranean, keto/low-carb, vegetarian, high protein, flexitarian, longevity, intermittent fasting, vegan, MIND, kid-friendly, la-dieta.\n- Each profile object should include:\n  - id (e.g. 'mediterranean'), displayName, high-level principles, foodsToEmphasize (string[]), foodsToAvoid (string[]), macroGuidance (high-level ranges or tags), specialConsiderations (text), and any compatibility tags that help filtering.\n- Implement `src/utils/dietProfiles.js` with helper functions:\n  - `getAllDietProfiles()` returning array from JSON.\n  - `getDietProfileById(id)`.\n  - `suggestDietProfileFromText(userText)` leveraging a simple rule-based matcher using keywords from the reference spec (prefer deterministic approach over LLM for now; conversational LLM integration handled in prompt engineering later).\n- On app initialization, write the JSON into localStorage under key `vanessa_diet_profiles` if not already present, using migration or bootstrap logic to allow future updates.\n- Keep data structured but lightweight; avoid extremely long prose that would bloat bundle/localStorage; summary strings are sufficient with a link to more details in UI if needed.\n- Ensure IDs align with those specified in Eater.dietProfile enum in PRD (e.g. 'high-protein' rather than 'high protein').",
         "testStrategy": "- Unit test the utility functions against the JSON fixture to ensure all expected 11 profile IDs are present and retrievable.\n- Add tests for `suggestDietProfileFromText` with example onboarding inputs (e.g. \"love olive oil and fish\" → mediterranean; \"no animal products\" → vegan) to confirm it returns a plausible primary and possibly alternatives.\n- After bootstrap, open browser dev tools to confirm `vanessa_diet_profiles` exists in localStorage and matches the JSON definitions.\n- Manual QA: display a simple debug list of profiles in settings or an internal page to ensure content appears correctly and IDs line up with selectors and filters later.",
         "priority": "high",
         "dependencies": [
-          80
+          "80"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:03:22.278Z"
       },
       {
-        "id": 88,
+        "id": "88",
         "title": "Implement diet profile compatibility and filtering utilities",
         "description": "Create `src/utils/dietProfileFilter.js` to evaluate recipe compatibility with diet profiles and detect conflicts for multi-profile households.",
         "details": "Implementation details:\n- Implement `filterByDietProfile(catalog, profileId)`:\n  - Prefer using recipe.tags.diets and other tags to quickly determine compatibility, based on mapping defined from `dietProfiles.json`.\n  - Fallback: analyze ingredients for animal products, grains, sugars, etc., using ingredientHealthData and simple inclusion/exclusion lists if tags are incomplete.\n- Implement `isCompatibleWithProfiles(recipe, profileIds)`:\n  - Return true if the recipe is compatible with all given profiles.\n  - Use short-circuit evaluation; for performance, avoid expensive checks once a conflict is detected.\n- Implement `hasProfileConflicts(profileIds)`:\n  - Use a precomputed compatibility/conflict matrix from `references/diet-profiles.md` embedded in code or a small JSON map (e.g. keto vs vegan are conflicting; kid-friendly is broadly compatible).\n  - Return `{ hasConflicts, conflictPairs }` as in PRD.\n- Add helper `getRecipeDietProfileTags(recipe)` to infer and store `dietProfileTags` on Recipe (and Meal) from tags.diets and actual compatibility checks for key profiles.\n- Use these utilities in both generation (task 85) and UI (e.g. filtering catalog by profile in recipe library if appropriate).\n- Keep implementations explicit and simple; avoid introducing additional external libraries. All in vanilla JS.\n- Ensure functions are pure and easily testable; they should not access localStorage directly.",
         "testStrategy": "- Unit-test `filterByDietProfile` using a mock catalog with recipes tagged for specific diets and multiple edge cases (e.g. ambiguous tags, missing tags).\n- Build test suites for `isCompatibleWithProfiles` including combinations like keto+vegan (expect mostly false), mediterranean+kid-friendly (often true), and vegetarian+vegan (vegan is more strict, so vegetarian recipe that uses dairy should fail for vegan).\n- Test `hasProfileConflicts` for known conflicting pairs from the spec and confirm `hasConflicts` and `conflictPairs` contents are correct.\n- Run an integration test for a small multi-profile household: feed profiles and a small catalog into the utilities and verify that the number of shared-compatible recipes matches manual expectations.\n- Validate that `dietProfileTags` generated for a sample recipe align with its true properties (e.g. a vegan recipe has 'vegan' and likely 'vegetarian', but not 'keto' unless macros fit).",
         "priority": "high",
         "dependencies": [
-          83,
-          87
+          "83",
+          "87"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:04:34.970Z"
       },
       {
-        "id": 89,
+        "id": "89",
         "title": "Extend onboarding flow for diet profile suggestion and persistence",
         "description": "Enhance onboarding chat to gather preferences, suggest a diet profile, and save profile plus exclusions to each Eater.",
         "details": "Implementation details:\n- Locate the onboarding conversation flow with Claude and extend prompts to ask:\n  - What the user values in meals.\n  - Foods they like and dislike.\n  - Any dietary goals.\n- Update the Claude system/user prompts to instruct the model to:\n  - Propose one primary diet profile ID from the 11 predefined ones based on answers.\n  - Suggest initial exclusions (e.g. eggplant, tomatoes) and optionally preferred foods.\n  - Return this in a structured JSON snippet in the assistant message (e.g. `{\"dietProfile\":\"mediterranean\",\"excludeIngredients\":[...],\"preferIngredients\":[...]}`) for easy parsing by the client, in addition to natural language text.\n- On client side, parse this JSON and show a confirmation UI matching PRD example: \"Based on what you've said, Mediterranean diet seems to fit you well...\" with Yes/Change.\n- On confirmation, set for the ownerEater:\n  - eater.dietProfile, excludeIngredients, preferIngredients, and personalPreferences (free-text summary string); ensure these are written to Eater storage and localStorage.\n- Allow user override: a dropdown of all profiles (from dietProfiles.json) if they disagree with the suggestion.\n- For household onboarding where multiple eaters are later added, provide a simple selection step per eater (not necessarily full conversational AI per person in this slice) but allow setting dietProfile and preferences.\n- Ensure that the new fields integrate seamlessly with existing onboarding steps like budget and schedule.\n- Keep implementation in vanilla JS, reusing existing chat UI components. Parse the JSON part robustly (e.g. regex or by searching for a fenced code block) to handle minor LLM formatting variations.",
         "testStrategy": "- Mock Claude API responses during development/testing to return controlled JSON with a suggested profile; verify the client parses it correctly and populates the confirmation UI.\n- Test standard onboarding happy path: user describes preferences, sees a reasonable suggestion, confirms, and the resulting Eater object in localStorage contains the expected dietProfile and excludeIngredients.\n- Test override path: user chooses a different diet from dropdown; verify this overrides the suggested profile and is saved.\n- Check that onboarding can be resumed or repeated without duplicating eater records or losing previous settings.\n- Regression test: ensure existing onboarding without diet profile (for older users) still works and that Slice 5 fields default sensibly.",
         "priority": "medium",
         "dependencies": [
-          80,
-          87
+          "80",
+          "87"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 90,
+        "id": "90",
         "title": "Add diet profile selection and personal preferences UI in Settings → Household",
         "description": "Enhance Household settings so each Eater has diet profile dropdown and preference fields (exclude, prefer, notes).",
         "details": "Implementation details:\n- In the Settings → Household → [Eater] edit view, add new UI elements:\n  - Diet profile dropdown populated from `getAllDietProfiles()` (id + displayName) with current eater.dietProfile selected or null.\n  - Hover or info tooltip showing profile description and key principles when a profile is selected.\n  - Text/tag inputs for \"Foods to Exclude\" and \"Foods to Prefer\":\n    - For MVP, use simple comma-separated input fields; optionally enhance with chip-style tokens using vanilla JS.\n    - On blur/save, split on commas, trim whitespace, lowercase, and store arrays in excludeIngredients and preferIngredients.\n  - \"Additional Notes\" textarea bound to personalPreferences string.\n- Ensure styling uses Tailwind and matches existing Settings aesthetic.\n- Update save logic for the Eater edit form to persist new fields along with existing ones in localStorage.\n- Make sure allergies field remains separate but conceptually similar; optionally pre-populate Exclude from allergies on first edit, without overwriting user input.\n- If ownerEater is treated specially, ensure their settings also show and persist diet profile and preferences.\n- Avoid adding new dependencies; rely on vanilla JS event listeners and DOM manipulation.",
         "testStrategy": "- Manual tests: open Settings → Household, edit an Eater, assign different diet profiles and lists of exclude/prefer ingredients; save and reload the page, verifying that the UI reflects persisted values.\n- Edge cases: enter empty strings, extra spaces, and multiple commas; confirm parsing cleans input and yields correct arrays.\n- Verify that changing diet profile and preferences updates subsequent generation behavior indirectly (via integration tests with meal generation) and no errors occur if some eaters have null dietProfile.\n- Regression: ensure existing Eater edits (name, allergies, schedule) still save correctly and are not affected by new fields.",
         "priority": "medium",
         "dependencies": [
-          80,
-          87,
-          88
+          "80",
+          "87",
+          "88"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 91,
+        "id": "91",
         "title": "Implement multi-profile meal generation and display per eater",
         "description": "Update meal plan generation and UI to support multiple recipes per meal when diet profiles conflict, and label them per eater.",
         "details": "Implementation details:\n- In the generation API (same as task 85), extend logic for each meal slot:\n  - Group eaters by compatible subsets where `hasProfileConflicts` indicates conflicts; e.g. {ketoGroup, veganGroup, flexibleGroup}.\n  - For each incompatible group, select a compatible recipe using the catalog filter; assign `targetEaters` on the resulting Meal entries to that group’s eater IDs and set dietProfileTags accordingly.\n  - If some eaters (e.g. kids) can eat multiple group recipes (kid-friendly profile), add them to both or to the \"most inclusive\" dish as per spec.\n- Adapt the Meal schema usage when persisting the generated plan so each Meal can represent a recipe mapped to its targetEaters.\n- In the Day/Week view UI:\n  - For each date+mealType, render one or more recipes; under each recipe name, list the eater names it is for (e.g. \"Mom, Kids\"), matching the PRD example.\n  - Ensure sorting is stable and clear; unified label like \"Tuesday Dinner:\" followed by bullet list of recipes.\n- For shopping list calculations, ensure all recipes in the plan are included; if eaters overlap on dishes, account for correct servings.\n- Keep logic straightforward; do not attempt highly complex optimization beyond ensuring everyone has at least one compatible option.\n- Use the dietProfileFilter utilities to decide conflicts and compatibility; avoid embedding hard-coded diet logic elsewhere.",
         "testStrategy": "- Construct automated tests where:\n  - Household has Mom (keto), Dad (vegan), Kids (kid-friendly). Verify generation returns two Meal entries for Tuesday dinner, with correct targetEaters for each as per PRD example.\n  - Household with all Mediterranean should yield a single recipe per meal and one Meal entry.\n- Confirm that generated shopping list includes ingredients for all recipes assigned to any eater and that servings are correct for the sum of targetEaters.\n- Manual QA: visually inspect the week and day views for multi-profile households to see per-eater labels and multiple recipes under the same meal slot.\n- Regression: generate plans for a single eater and ensure UI remains simple with one recipe per meal as before.",
         "priority": "high",
         "dependencies": [
-          85,
-          88,
-          90
+          "85",
+          "88",
+          "90"
         ],
         "status": "pending",
         "subtasks": [
@@ -1158,7 +1213,8 @@
             "dependencies": [],
             "details": "In the generation API, iterate per date+mealType and collect all eater IDs for the household. Use the dietProfileFilter utilities (e.g., hasProfileConflicts, isCompatibleWithProfiles) to partition eaters into compatible groups such as ketoGroup, veganGroup, flexibleGroup. For each group, filter the catalog via filterByDietProfile using the group’s diet profile IDs, pick a compatible recipe according to existing selection logic, and create a Meal entry with recipeId, targetEaters set to that group’s eater IDs, and dietProfileTags populated from the chosen recipe and profiles. Ensure that groups with no conflicts are merged into a single group, and that grouping logic is kept straightforward and deterministic.",
             "status": "pending",
-            "testStrategy": "Add unit tests for the grouping helper that, given a set of eaters and their diet profiles, returns the expected partitioning for various combinations (all compatible, keto+vegan conflict, three-way mixes). Add API-level tests to verify that for a conflicting household, multiple Meal entries are produced for the same date+mealType, each with the correct targetEaters and dietProfileTags."
+            "testStrategy": "Add unit tests for the grouping helper that, given a set of eaters and their diet profiles, returns the expected partitioning for various combinations (all compatible, keto+vegan conflict, three-way mixes). Add API-level tests to verify that for a conflicting household, multiple Meal entries are produced for the same date+mealType, each with the correct targetEaters and dietProfileTags.",
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -1169,7 +1225,8 @@
             ],
             "details": "Extend the grouping/assignment logic to detect eaters whose profiles allow them to eat more than one group’s recipes (e.g., kid-friendly or flexible profiles). Based on the product spec, either attach such eaters to multiple Meal entries or to the most inclusive dish as a deterministic rule, and keep this logic centralized and simple. When persisting the plan, ensure each Meal document or record represents a single recipe tied to a subset of eaters via targetEaters, rather than assuming one recipe per date+mealType. Update any plan serialization or DB write helpers so they do not collapse multiple Meals for the same slot and maintain stable ordering (e.g., by recipe name or group key). Verify that downstream consumers (like shopping list and UI loaders) read the updated structure without breaking.",
             "status": "pending",
-            "testStrategy": "Create integration-style tests around the plan persistence layer: generate a plan for a household with Mom (keto), Dad (vegan), and Kids (kid-friendly) and assert that the stored plan includes two Meal entries for the same date+mealType with Kids included per the selected rule. Add regression tests to ensure households with uniform profiles still persist a single Meal per slot and that legacy reads do not throw."
+            "testStrategy": "Create integration-style tests around the plan persistence layer: generate a plan for a household with Mom (keto), Dad (vegan), and Kids (kid-friendly) and assert that the stored plan includes two Meal entries for the same date+mealType with Kids included per the selected rule. Add regression tests to ensure households with uniform profiles still persist a single Meal per slot and that legacy reads do not throw.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -1180,7 +1237,8 @@
             ],
             "details": "Refactor the UI data mapping for DayView/WeekView so that it groups Meal entries by date+mealType and then iterates through all recipes in that group. For each group, render a unified label like \"Tuesday Dinner:\" once, followed by a bullet list where each list item shows the recipe title and a comma-separated list of eater display names derived from targetEaters. Ensure sorting of recipes within a slot is stable (e.g., by recipe title or original generation order) and that eater names are consistently ordered. Adjust any existing assumptions that there is only one Meal per slot, including prop types and selectors. Match the PRD example layout as closely as possible while keeping the design consistent with current styling.",
             "status": "pending",
-            "testStrategy": "Add component tests for DayView/WeekView using mocked props where a single date+mealType has multiple Meal entries. Assert that the UI renders a single header for the meal (e.g., \"Tuesday Dinner:\") and multiple bullet items, each with the correct recipe name and eater names. Perform a manual QA pass in the browser to visually confirm formatting and stable sorting across different household configurations."
+            "testStrategy": "Add component tests for DayView/WeekView using mocked props where a single date+mealType has multiple Meal entries. Assert that the UI renders a single header for the meal (e.g., \"Tuesday Dinner:\") and multiple bullet items, each with the correct recipe name and eater names. Perform a manual QA pass in the browser to visually confirm formatting and stable sorting across different household configurations.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -1191,50 +1249,51 @@
             ],
             "details": "Review the shopping list generation logic and update it to iterate over all Meal entries in the stored plan rather than assuming one recipe per date+mealType. For each Meal, determine the serving count based on the number of targetEaters and any per-eater serving rules, and scale ingredient quantities accordingly. When an eater appears in multiple recipes for the same meal (e.g., kid-friendly overlap), ensure servings are computed according to the chosen business rule (e.g., they get full servings of both or only one). Aggregate ingredients across all Meals, combining identical items and units where possible so that overlapping recipes contribute correctly to the totals. Keep the algorithm simple and transparent, avoiding complex optimization while guaranteeing every eater has at least one compatible option included.",
             "status": "pending",
-            "testStrategy": "Extend or add unit tests for the shopping list generator using plans that include multiple Meals per date+mealType. Verify that all recipes are included and that total ingredient quantities match the expected sum of servings across all targetEaters. Include a test where an eater is present in multiple recipes to confirm that quantities follow the defined rule and there are no double-counting or omission errors."
+            "testStrategy": "Extend or add unit tests for the shopping list generator using plans that include multiple Meals per date+mealType. Verify that all recipes are included and that total ingredient quantities match the expected sum of servings across all targetEaters. Include a test where an eater is present in multiple recipes to confirm that quantities follow the defined rule and there are no double-counting or omission errors.",
+            "parentId": "undefined"
           }
         ]
       },
       {
-        "id": 92,
+        "id": "92",
         "title": "Implement parent-child recipe relationships and variation workflow",
         "description": "Extend recipe storage and UI to support parent-child relationships, variation notes, and navigation between related recipes.",
         "details": "Implementation details:\n- Ensure Recipe schema fields from migration (parentRecipeId, childRecipeIds, variationNote) are used in CRUD operations.\n- Implement helper function `getRecipeFamily(recipeId)`:\n  - Looks up the recipe by ID, then finds its parent (if parentRecipeId set) and all children with matching parentRecipeId from the recipes store (including catalog and user recipes as appropriate).\n  - Returns `{parent, children}`.\n- On **RecipeDetailPage**:\n  - If recipe.parentRecipeId is not null, display a small \"Based on: [Parent Recipe Name]\" link at the top that navigates to the parent’s detail page.\n  - If recipe.childRecipeIds is non-empty, display a \"Variations\" section listing linked child recipes with their names and key tags/scores.\n- Add a \"Create Variation\" button:\n  - On click, open RecipeEditPage with the current recipe pre-populated:\n    - Clone all fields but clear recipeId and adjust name to `\"[Parent Name] (Variation)\"` as default.\n  - On save, generate a new recipeId, set parentRecipeId to parent’s ID, initialize childRecipeIds to [], set variationNote from a dedicated input field (e.g. \"Variation Note\" in Edit form), and persist.\n  - Update the parent recipe’s childRecipeIds array to include the new child’s ID and save parent.\n- Ensure Diet Compass scores are recalculated for the new variation using the scoring engine so differences in ingredients reflect in scores.\n- Update any recipe listings (library, history) to optionally show a subtle badge if a recipe is a variation or has variations.\n- All logic implemented in vanilla JS; avoid circular references beyond ID pointers already defined.",
         "testStrategy": "- Unit test `getRecipeFamily` with an in-memory set of recipes: parent, two children, and a grandchild (if supported), ensuring correct parent/child resolution and that unrelated recipes are not included.\n- Manual QA scenario per PRD Flow D:\n  - Open a base recipe, click \"Create Variation\", modify main protein, add variation note, and save.\n  - Confirm new recipe appears in library with updated name and parent linkage.\n  - Confirm parent RecipeDetailPage shows \"Variations (1)\" and child lists parent link.\n  - Confirm child detail page shows \"Based on: [Parent Recipe Name]\" link.\n- Verify that Diet Compass scores for the child differ appropriately when major ingredients are changed.\n- Regression: editing an existing recipe without creating a variation should not change parent/child relationships.",
         "priority": "medium",
         "dependencies": [
-          80,
-          82,
-          83
+          "80",
+          "82",
+          "83"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 93,
+        "id": "93",
         "title": "Implement meal prep settings UI in Settings → Meal Prep",
         "description": "Create a Meal Prep settings section allowing users to configure prep levels per day/meal and batch prep days.",
         "details": "Implementation details:\n- Add a new Settings section/tab \"Meal Prep\" accessible from existing Settings navigation.\n- Build a 7×3 table UI as described in PRD:\n  - Rows for days Monday–Sunday, columns for Breakfast/Lunch/Dinner.\n  - For each cell, provide a segmented control or dropdown with options 'Minimal', 'Medium', 'Full', mapped to the enum values 'minimal' | 'medium' | 'full'.\n- Below the table, add \"Batch Prep Days\" as a row of day-of-week checkboxes; store selected indices (0=Sun..6=Sat) in BaseSpecification.mealPrepSettings.batchPrepDays.\n- Use Tailwind classes for table and controls; keep layout mobile-friendly (stacked days or scrollable table on small screens).\n- Bind the UI to BaseSpecification.mealPrepSettings:\n  - On load, read settings from localStorage and populate the table and checkboxes.\n  - On change, immediately or on Save button, update BaseSpecification and write back to localStorage.\n- Default values should reflect migration script (all 'medium', Saturday as default batch day) and present them on first open.\n- Keep logic simple; no per-user variation in this slice (single-user MVP).",
         "testStrategy": "- Manual QA: adjust several cells in the prep level table and batch prep days, then navigate away and back to ensure persistence.\n- Validate that internal stored values are correct by checking localStorage BaseSpecification JSON and ensuring enum values ('minimal','medium','full') align with UI labels.\n- Edge cases: test on small screen widths, ensuring the table remains usable and does not overflow or misalign labels.\n- Integration: generate a new meal plan after changing prep settings and verify via logging that the generation request includes updated prep constraints (used by tasks 94 & 85).",
         "priority": "medium",
         "dependencies": [
-          80
+          "80"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 94,
+        "id": "94",
         "title": "Implement prep task generator and DayView prep section",
         "description": "Create a prep task generation utility and enhance the day view UI to show \"Prep for Today\" tasks at the top.",
         "details": "Implementation details:\n- Implement `src/utils/prepTaskGenerator.js` with:\n  - `analyzeRecipePrepNeeds(recipe, prepLevel)`:\n    - Parse recipe.instructions and tags (effortLevel, makeAhead) to infer prep tasks (e.g. chopping, marinating, precooking grains).\n    - For 'minimal' prepLevel, bias towards same-day simple tasks; for 'full', allow more complex and advance tasks.\n    - Return an array of PrepTask objects `{ task, estimatedTime, timing, usedIn: [] }`.\n  - `generateDayPrepTasks(dayMeals, prepLevelSettings)`:\n    - For a given date, read its breakfast/lunch/dinner recipes and call analyzeRecipePrepNeeds.\n    - Consolidate similar tasks across meals (e.g. chopping onions for lunch and dinner) into one task with combined usedIn array and adjusted estimatedTime.\n  - `findBatchPrepOpportunities(weekMeals, batchPrepDays)` (optional initial implementation): identify tasks that can be done on batch days and tag timing as 'day_before' or similar.\n- Extend generation flow so when a weekly plan is created, after recipes are selected:\n  - For each date, compute prep tasks using the above functions and store them directly on the Meal objects’ prepTasks arrays where appropriate (or attach a per-day structure if existing architecture prefers).\n- Update DayView component:\n  - At the top of the day view, insert a \"📋 Prep for Today\" section with a total estimated minutes (sum of tasks) and a list of bullet items showing task, estimatedTime, and which meals it supports, matching PRD example.\n  - If no prepTasks exist for that day, hide the section or show a subtle \"No special prep needed today\" message.\n- Ensure tasks are recomputed whenever a meal plan is regenerated or a meal’s recipe is changed significantly (e.g. via regeneration of a single day).\n- Keep parsing heuristics simple and maintainable; they can be refined later based on user feedback. Prefer keyword-based parsing over ML at this stage.",
         "testStrategy": "- Unit tests for `analyzeRecipePrepNeeds` using sample instructions texts representing chopping, marinating, long-cooking grains, etc., to confirm tasks and estimated times are generated plausibly.\n- Unit tests for `generateDayPrepTasks` to ensure identical or similar tasks from multiple meals are merged and usedIn arrays reflect all relevant mealTypes.\n- Manual QA using PRD Flow C:\n  - Generate a plan, open Monday, and verify that Prep for Today section lists consolidated tasks and total time.\n- Edge cases: day with only simple, minimal-prep recipes should generate few or no tasks; confirm UI handles that gracefully.\n- Regression test that DayView still shows meals correctly and that adding prep tasks does not break existing layout or navigation.",
         "priority": "high",
         "dependencies": [
-          80,
-          83,
-          93,
-          85
+          "80",
+          "83",
+          "93",
+          "85"
         ],
         "status": "pending",
         "subtasks": [
@@ -1245,7 +1304,8 @@
             "dependencies": [],
             "details": "Clarify and document the PrepTask interface `{ task, estimatedTime, timing, usedIn }` including allowed values for `timing` (e.g. `today`, `day_before`, `batch_day`) and how `estimatedTime` is represented (number of minutes, integer). Enumerate the main categories of prep tasks to support initially (e.g. chopping vegetables, marinating proteins, precooking grains/beans, making sauces). For each category, define simple keyword/phrase lists to match in `recipe.instructions` (e.g. `chop`, `dice`, `slice`, `marinate`, `soak`, `simmer 30 minutes`) and how tags like `effortLevel` and `makeAhead` affect whether a task is created and its `timing`. Specify how `prepLevel` values like `minimal` vs `full` change which tasks are emitted and how far in advance they can be scheduled. Capture these decisions in comments or a short design doc to guide implementation of `analyzeRecipePrepNeeds` and related utilities.",
             "status": "pending",
-            "testStrategy": null
+            "testStrategy": null,
+            "parentId": "undefined"
           },
           {
             "id": 2,
@@ -1256,7 +1316,8 @@
             ],
             "details": "Add a new module `src/utils/prepTaskGenerator.js`. Implement `analyzeRecipePrepNeeds(recipe, prepLevel)` to: read `recipe.instructions` and relevant tags (e.g. `effortLevel`, `makeAhead`), apply the keyword heuristics from the design, and return an array of PrepTask objects with populated `task`, `estimatedTime`, `timing`, and empty `usedIn`. Implement `generateDayPrepTasks(dayMeals, prepLevelSettings)` to: iterate breakfast/lunch/dinner (or equivalent) meals for a given day, call `analyzeRecipePrepNeeds` for each recipe using the correct prep level, and then consolidate similar tasks (e.g. identical `task` and `timing`) by merging `usedIn` with meal identifiers and summing `estimatedTime`. Add an optional initial `findBatchPrepOpportunities(weekMeals, batchPrepDays)` that scans all days, detects tasks that can be moved to a batch day (e.g. chopping onions for multiple days), updates their `timing` to `day_before` or a batch tag, and returns an updated structure. Include clear JSDoc comments and keep the logic straightforward so it can be refined later.",
             "status": "pending",
-            "testStrategy": "Write unit tests for `analyzeRecipePrepNeeds` covering different instruction snippets (chopping-only recipe, marinating overnight, long-cooking grains) and both `minimal` and `full` prep levels to verify tasks, timings, and estimated minutes are plausible. Add tests for `generateDayPrepTasks` to ensure tasks from multiple meals are deduplicated, `usedIn` is populated with all contributing meals, and total estimated time equals the sum of component tasks. Optionally add a basic test for `findBatchPrepOpportunities` to confirm tasks are reassigned to batch days when appropriate."
+            "testStrategy": "Write unit tests for `analyzeRecipePrepNeeds` covering different instruction snippets (chopping-only recipe, marinating overnight, long-cooking grains) and both `minimal` and `full` prep levels to verify tasks, timings, and estimated minutes are plausible. Add tests for `generateDayPrepTasks` to ensure tasks from multiple meals are deduplicated, `usedIn` is populated with all contributing meals, and total estimated time equals the sum of component tasks. Optionally add a basic test for `findBatchPrepOpportunities` to confirm tasks are reassigned to batch days when appropriate.",
+            "parentId": "undefined"
           },
           {
             "id": 3,
@@ -1267,7 +1328,8 @@
             ],
             "details": "Locate the existing flow that creates weekly plans and selects recipes (e.g. planner service or thunk). After recipes are assigned for each date, invoke `generateDayPrepTasks` for that day using the configured prep level settings and attach the resulting tasks to the appropriate data structure (`meal.prepTasks` arrays or a per-day `prepTasks` field, matching current architecture). Ensure that when a single day is regenerated (existing workflow from Task 58), prep tasks for that day are recomputed and persisted without affecting other days’ prep tasks. Also hook into any other flows where recipes for a day can be changed significantly (e.g. manual recipe replacement) so prep tasks are refreshed. Add guards so missing or malformed recipes result in an empty tasks array rather than errors.",
             "status": "pending",
-            "testStrategy": "Add integration or higher-level unit tests around the weekly plan generation function to assert that each day in the resulting plan includes a non-null `prepTasks` collection with content matching what `generateDayPrepTasks` would return for its meals. Extend existing single-day regeneration tests to verify that regenerating one day updates that day’s `prepTasks` while leaving other days’ prepTasks untouched. Where feasible, use fixture recipes with known instructions so expected prep tasks can be asserted explicitly."
+            "testStrategy": "Add integration or higher-level unit tests around the weekly plan generation function to assert that each day in the resulting plan includes a non-null `prepTasks` collection with content matching what `generateDayPrepTasks` would return for its meals. Extend existing single-day regeneration tests to verify that regenerating one day updates that day’s `prepTasks` while leaving other days’ prepTasks untouched. Where feasible, use fixture recipes with known instructions so expected prep tasks can be asserted explicitly.",
+            "parentId": "undefined"
           },
           {
             "id": 4,
@@ -1278,45 +1340,51 @@
             ],
             "details": "In the DayView component (e.g. `DayView.js`), read the per-day or per-meal `prepTasks` computed earlier and insert a new top-of-view section titled \"📋 Prep for Today\". Compute the total estimated minutes by summing `estimatedTime` across all tasks and display this total alongside the header. Render a bullet list where each item shows the task description, its estimated minutes, and a human-readable list of the meals it supports using the `usedIn` metadata (e.g. \"chop onions – 10 min (for Lunch, Dinner)\"). If there are no prep tasks for that day, either hide the section entirely or render a subtle text such as \"No special prep needed today\" according to UX guidance. Ensure the layout and styling are consistent with existing DayView patterns and that the section updates correctly when the underlying plan data or prepTasks change (e.g., after single-day regeneration).",
             "status": "pending",
-            "testStrategy": "Add component tests for DayView using mocked props: one case with multiple prep tasks to verify the header, total minutes calculation, and bullet list contents; another case with an empty prepTasks collection to confirm the section is hidden or shows the fallback message. Optionally include a snapshot test to detect unintended changes in the prep section’s structure and verify that updates to prepTasks props are reflected in the rendered output."
+            "testStrategy": "Add component tests for DayView using mocked props: one case with multiple prep tasks to verify the header, total minutes calculation, and bullet list contents; another case with an empty prepTasks collection to confirm the section is hidden or shows the fallback message. Optionally include a snapshot test to detect unintended changes in the prep section’s structure and verify that updates to prepTasks props are reflected in the rendered output.",
+            "parentId": "undefined"
           }
         ]
       },
       {
-        "id": 95,
+        "id": "95",
         "title": "Enhance generation prompts to include prep constraints and personal preferences",
         "description": "Update Claude prompt construction to incorporate meal prep levels, batch prep, and per-eater preferences/exclusions.",
         "details": "Implementation details:\n- In the serverless or client-side code that prepares prompts for Claude during meal generation:\n  - Collect, per day and mealType, the prep level from BaseSpecification.mealPrepSettings and include concise descriptions in the prompt (e.g. \"Monday lunch: minimal prep (only reheating possible)\").\n  - Summarize batch prep days and constraints to guide recipe selection and prep suggestions.\n  - For each eater, gather dietProfile, excludeIngredients, preferIngredients, allergies, and personalPreferences notes; construct a compact structured text or JSON-like block that Claude can interpret.\n- Update the system/user messages to:\n  - Emphasize that recipes should match prep constraints, avoid excluded ingredients, and where possible incorporate preferred ingredients.\n  - Ask Claude to produce or respect prep tasks hints if it is still used for prep extraction (even though main prep tasks are computed by our heuristics) to keep outputs aligned.\n- Ensure prompt length is controlled: avoid sending full catalog recipes; instead, describe constraints and mention that the system will select catalog recipes or that AI should only generate when requested.\n- For single-day regeneration flows, include the same enhanced prep and preference context.\n- Keep Claude API version and parameters aligned with current best practices (e.g. temperature tuned for determinism where structure is important; but exact versioning left as per existing project conventions).",
         "testStrategy": "- Log sample prompts in a secure dev environment (without user PII) to verify that all necessary prep level and preference information is included and formatted cleanly.\n- With Claude in staging, run a set of generation requests and inspect outputs to confirm:\n  - No excluded ingredients appear in recipes.\n  - Recipes for minimal-prep meals do not require elaborate cooking steps.\n- Regression test that changing prep levels or preferences in Settings materially changes the generated recipes or AI responses.\n- Ensure that prompt size stays within API limits and no truncation errors occur. If needed, test with many eaters and complex preferences.",
         "priority": "medium",
         "dependencies": [
-          85,
-          90,
-          93
+          "85",
+          "90",
+          "93"
         ],
         "status": "pending",
         "subtasks": []
       },
       {
-        "id": 96,
+        "id": "96",
         "title": "Persist and load ingredient health data and diet profiles into localStorage",
         "description": "Initialize and manage `vanessa_ingredient_health` and `vanessa_diet_profiles` localStorage keys from bundled JSON data.",
         "details": "Implementation details:\n- On app startup (ideally before any scoring or profile usage), add a bootstrap function `initializeHealthAndProfileData()` that:\n  - Checks localStorage for 'vanessa_ingredient_health' and 'vanessa_diet_profiles'.\n  - If missing or schema version inside is outdated, loads the bundled `src/data/ingredientHealthData.json` and `src/data/dietProfiles.json` via import or fetch (if placed in public) and writes them into localStorage with minimal metadata (e.g. version tag).\n- Ensure this runs after migration to Slice 5 but before any calls to dietCompassScoring or dietProfiles utilities.\n- Consider adding a small `_dataVersion` field inside each JSON file and in localStorage entries to allow future upgrades or corrections.\n- Keep implementation synchronous for simplicity if import-based; for fetch-based loading, guard actions that depend on the data until it is loaded (e.g. by returning promises from initialization and awaiting in entry point).\n- Avoid writing on every load to reduce wear and unnecessary operations; only update when missing or version mismatch.\n- No external libraries required; use vanilla JS and the existing localStorage wrapper if one exists.",
         "testStrategy": "- Unit/integration tests where localStorage is cleared, then app initialization is run and verified that both keys are created with expected structure.\n- Simulate an older `_dataVersion` in localStorage and confirm that initialization replaces it with the bundled contents.\n- After initialization, run a simple Diet Compass scoring call and diet profile lookup to ensure no missing-data errors occur.\n- Manual check via dev tools: verify content and size of 'vanessa_ingredient_health' and 'vanessa_diet_profiles' after first app load on a fresh environment.",
         "priority": "high",
         "dependencies": [
-          80,
-          83,
-          87
+          "80",
+          "83",
+          "87"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:03:58.218Z"
       }
     ],
     "metadata": {
-      "created": "2026-01-08T07:50:27.009Z",
-      "updated": "2026-01-08T07:59:42.525Z",
-      "description": "Tasks for master context"
+      "version": "1.0.0",
+      "lastModified": "2026-01-08T09:07:39.709Z",
+      "taskCount": 40,
+      "completedCount": 16,
+      "tags": [
+        "master"
+      ]
     }
   }
 }

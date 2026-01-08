@@ -87,6 +87,14 @@ function showMigrationError(result) {
 async function initApp() {
   console.log('Initializing Vanessa app...');
   
+  // STEP 0: Bootstrap health data (Slice 5)
+  try {
+    const { bootstrapHealthData } = await import('./utils/initializeHealthData.js');
+    await bootstrapHealthData();
+  } catch (error) {
+    console.warn('⚠️ Could not bootstrap health data:', error);
+  }
+  
   // STEP 1: Run all schema migrations
   console.log('Running schema migrations...');
   const migrationResult = await migrationManager.runMigrations();

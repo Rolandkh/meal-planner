@@ -112,9 +112,14 @@ function renameStorageKey(oldKey, newKey) {
 // Register all migrations
 migrationManager.registerMigration(1, migrateToSlice3);
 
+// Slice 5 migration (schema v2)
+import { migrateToSlice5, isSlice5Migrated } from './migrateToSlice5.js';
+if (!isSlice5Migrated()) {
+  migrateToSlice5();
+}
+
 // Future migrations will be registered here
-// migrationManager.registerMigration(2, migrateToSlice4);
-// migrationManager.registerMigration(3, migrateToSlice5);
+// migrationManager.registerMigration(3, migrateToSlice6);
 
 export default migrationManager;
 

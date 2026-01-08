@@ -1,0 +1,311 @@
+{
+  "_dataVersion": "1.0.0",
+  "_lastUpdated": "2026-01-08T00:00:00Z",
+  "_description": "Preloaded diet profile definitions for personalized meal planning",
+  "_source": "Based on established dietary approaches and nutritional science",
+  
+  "profiles": [
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean",
+      "summary": "Heart-healthy eating pattern rich in olive oil, fish, vegetables, and whole grains.",
+      "principles": [
+        "Abundant vegetables and fruits",
+        "Olive oil as primary fat",
+        "Fish and seafood regularly",
+        "Moderate dairy (especially yogurt and cheese)",
+        "Whole grains over refined",
+        "Nuts and legumes daily",
+        "Limit red meat"
+      ],
+      "foodsToEmphasize": [
+        "olive oil", "fish", "vegetables", "fruits", "whole grains",
+        "nuts", "legumes", "yogurt", "herbs", "garlic"
+      ],
+      "foodsToAvoid": [
+        "processed meats", "refined sugars", "white bread", "butter"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (40-50%)",
+        "protein": "moderate (15-20%)",
+        "fat": "moderate-high (30-40%, mostly monounsaturated)"
+      },
+      "specialConsiderations": "One of the most studied and recommended diets for longevity and heart health.",
+      "compatibleWith": ["flexitarian", "pescatarian"]
+    },
+    {
+      "id": "keto",
+      "name": "Keto / Low-Carb",
+      "summary": "Very low carbohydrate, high fat diet that induces ketosis for metabolic benefits.",
+      "principles": [
+        "Minimize carbohydrates (<20-50g/day)",
+        "High healthy fats (70-80% calories)",
+        "Moderate protein (20-25%)",
+        "Focus on whole foods",
+        "Avoid grains, sugars, starchy vegetables"
+      ],
+      "foodsToEmphasize": [
+        "fatty fish", "eggs", "cheese", "avocado", "nuts", "seeds",
+        "olive oil", "coconut oil", "non-starchy vegetables", "meat"
+      ],
+      "foodsToAvoid": [
+        "grains", "bread", "pasta", "rice", "potatoes", "sugar",
+        "beans", "most fruits", "processed foods"
+      ],
+      "macroGuidance": {
+        "carbs": "very low (<10%)",
+        "protein": "moderate (20-25%)",
+        "fat": "high (70-80%)"
+      },
+      "specialConsiderations": "Requires careful monitoring. Not suitable for everyone. May conflict with plant-based diets.",
+      "conflictsWith": ["vegan", "vegetarian", "high-carb"]
+    },
+    {
+      "id": "vegetarian",
+      "name": "Vegetarian",
+      "summary": "Plant-based diet that excludes meat and fish but includes dairy and eggs.",
+      "principles": [
+        "No meat or fish",
+        "Abundant vegetables and fruits",
+        "Legumes and beans for protein",
+        "Whole grains",
+        "Dairy and eggs allowed",
+        "Variety of plant proteins"
+      ],
+      "foodsToEmphasize": [
+        "vegetables", "fruits", "legumes", "beans", "lentils",
+        "whole grains", "nuts", "seeds", "tofu", "tempeh",
+        "dairy", "eggs"
+      ],
+      "foodsToAvoid": [
+        "meat", "poultry", "fish", "seafood", "gelatin"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate-high (45-60%)",
+        "protein": "moderate (15-20%, from plants and dairy)",
+        "fat": "moderate (25-35%)"
+      },
+      "specialConsiderations": "Ensure adequate B12, iron, and omega-3 from plant sources or supplements.",
+      "compatibleWith": ["flexitarian", "mediterranean"]
+    },
+    {
+      "id": "high-protein",
+      "name": "High Protein",
+      "summary": "Emphasizes protein-rich foods for muscle building, satiety, and weight management.",
+      "principles": [
+        "High protein intake (25-35% of calories)",
+        "Lean meats, fish, eggs, dairy",
+        "Plant proteins (legumes, tofu)",
+        "Moderate carbs and fats",
+        "Focus on whole foods"
+      ],
+      "foodsToEmphasize": [
+        "chicken breast", "fish", "eggs", "greek yogurt", "cottage cheese",
+        "lean beef", "turkey", "tofu", "tempeh", "legumes", "protein powder"
+      ],
+      "foodsToAvoid": [
+        "processed meats", "fried foods", "refined carbs", "excessive fats"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (30-40%)",
+        "protein": "high (30-40%)",
+        "fat": "moderate (25-30%)"
+      },
+      "specialConsiderations": "Ensure adequate hydration. Monitor kidney health with very high protein.",
+      "compatibleWith": ["mediterranean", "flexitarian", "keto"]
+    },
+    {
+      "id": "flexitarian",
+      "name": "Flexitarian",
+      "summary": "Primarily plant-based with occasional meat and fish for flexibility.",
+      "principles": [
+        "Plants as foundation",
+        "Meat and fish occasionally (1-2x/week)",
+        "Focus on whole foods",
+        "Sustainable and ethical choices",
+        "Flexible approach"
+      ],
+      "foodsToEmphasize": [
+        "vegetables", "fruits", "whole grains", "legumes", "nuts", "seeds",
+        "occasional fish", "occasional poultry", "eggs", "dairy"
+      ],
+      "foodsToAvoid": [
+        "processed meats", "excessive red meat", "refined sugars"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate-high (45-55%)",
+        "protein": "moderate (15-25%)",
+        "fat": "moderate (25-35%)"
+      },
+      "specialConsiderations": "Very compatible with most other diets. Great for gradual transitions.",
+      "compatibleWith": ["mediterranean", "vegetarian", "high-protein"]
+    },
+    {
+      "id": "longevity",
+      "name": "Longevity Protocol",
+      "summary": "Science-based diet optimized for lifespan extension based on Diet Compass research.",
+      "principles": [
+        "Maximize protective foods",
+        "Minimize mTOR activation",
+        "Support autophagy",
+        "Reduce inflammation",
+        "Plant-forward with fish",
+        "Time-restricted eating"
+      ],
+      "foodsToEmphasize": [
+        "leafy greens", "cruciferous vegetables", "berries", "nuts",
+        "fatty fish", "olive oil", "whole grains", "legumes", "fermented foods"
+      ],
+      "foodsToAvoid": [
+        "processed foods", "red meat", "refined sugars", "excessive protein",
+        "trans fats", "high-glycemic foods"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (40-50%, low-glycemic)",
+        "protein": "moderate (15-20%, not excessive)",
+        "fat": "moderate (30-40%, healthy fats)"
+      },
+      "specialConsiderations": "Emphasizes Diet Compass protective foods and anti-aging mechanisms.",
+      "compatibleWith": ["mediterranean", "flexitarian"]
+    },
+    {
+      "id": "intermittent-fasting",
+      "name": "Intermittent Fasting",
+      "summary": "Time-restricted eating pattern that cycles between fasting and eating periods.",
+      "principles": [
+        "Eat within 8-hour window",
+        "Fast for 16 hours",
+        "Focus on nutrient-dense foods",
+        "Hydration during fasting",
+        "Quality over quantity"
+      ],
+      "foodsToEmphasize": [
+        "nutrient-dense foods", "vegetables", "lean proteins",
+        "healthy fats", "whole grains", "hydration"
+      ],
+      "foodsToAvoid": [
+        "eating outside window", "processed foods", "excessive calories"
+      ],
+      "macroGuidance": {
+        "carbs": "flexible",
+        "protein": "adequate (15-25%)",
+        "fat": "moderate (25-35%)"
+      },
+      "specialConsiderations": "Timing matters more than specific foods. Compatible with other diets.",
+      "compatibleWith": ["any"]
+    },
+    {
+      "id": "vegan",
+      "name": "Vegan",
+      "summary": "Entirely plant-based diet excluding all animal products.",
+      "principles": [
+        "No animal products",
+        "Abundant vegetables and fruits",
+        "Legumes and beans for protein",
+        "Whole grains",
+        "Nuts and seeds",
+        "Fortified foods for B12"
+      ],
+      "foodsToEmphasize": [
+        "vegetables", "fruits", "legumes", "beans", "lentils",
+        "whole grains", "nuts", "seeds", "tofu", "tempeh",
+        "nutritional yeast", "plant milks"
+      ],
+      "foodsToAvoid": [
+        "meat", "poultry", "fish", "seafood", "dairy", "eggs",
+        "honey", "gelatin", "animal-derived ingredients"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate-high (50-60%)",
+        "protein": "moderate (15-20%, all plant-based)",
+        "fat": "moderate (25-30%)"
+      },
+      "specialConsiderations": "Supplement B12. Ensure adequate protein variety, iron, and omega-3 (from algae).",
+      "conflictsWith": ["keto", "high-protein with animal sources"]
+    },
+    {
+      "id": "mind",
+      "name": "MIND Diet",
+      "summary": "Brain-health focused diet combining Mediterranean and DASH for cognitive function.",
+      "principles": [
+        "Berries (especially blueberries)",
+        "Leafy greens daily",
+        "Nuts regularly",
+        "Olive oil primary fat",
+        "Whole grains",
+        "Fish weekly",
+        "Limit butter, cheese, red meat"
+      ],
+      "foodsToEmphasize": [
+        "blueberries", "strawberries", "leafy greens", "vegetables",
+        "nuts", "beans", "whole grains", "fish", "poultry", "olive oil", "wine (moderate)"
+      ],
+      "foodsToAvoid": [
+        "red meat", "butter", "cheese", "pastries", "fried foods",
+        "fast food", "refined grains"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (40-50%)",
+        "protein": "moderate (15-20%)",
+        "fat": "moderate (30-35%, healthy fats)"
+      },
+      "specialConsiderations": "Specifically designed for brain health and dementia prevention.",
+      "compatibleWith": ["mediterranean", "flexitarian"]
+    },
+    {
+      "id": "kid-friendly",
+      "name": "Kid-Friendly",
+      "summary": "Nutritious, familiar foods that children typically enjoy and parents approve.",
+      "principles": [
+        "Familiar flavors and textures",
+        "Balanced nutrition",
+        "Age-appropriate portions",
+        "Hidden vegetables",
+        "Fun presentation",
+        "Limited spice"
+      ],
+      "foodsToEmphasize": [
+        "chicken", "pasta", "cheese", "fruits", "yogurt",
+        "whole grain bread", "mild vegetables", "eggs", "milk"
+      ],
+      "foodsToAvoid": [
+        "very spicy foods", "exotic flavors", "strong fish",
+        "bitter vegetables (unless hidden)", "complex textures"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate-high (50-60%)",
+        "protein": "moderate (15-20%)",
+        "fat": "moderate (25-30%)"
+      },
+      "specialConsiderations": "Broadly compatible. Focus on nutrients and palatability over strict rules.",
+      "compatibleWith": ["most diets"]
+    },
+    {
+      "id": "la-dieta",
+      "name": "La Dieta",
+      "summary": "Ceremonial preparation approach emphasizing mindfulness, gratitude, and intentional eating.",
+      "principles": [
+        "Prepare with intention",
+        "Express gratitude",
+        "Mindful eating",
+        "Quality ingredients",
+        "Seasonal and local",
+        "Shared meals"
+      ],
+      "foodsToEmphasize": [
+        "seasonal produce", "local ingredients", "whole foods",
+        "traditional preparations", "quality over quantity"
+      ],
+      "foodsToAvoid": [
+        "highly processed foods", "rushed meals", "mindless eating"
+      ],
+      "macroGuidance": {
+        "carbs": "flexible",
+        "protein": "flexible",
+        "fat": "flexible"
+      },
+      "specialConsiderations": "More about HOW you eat than WHAT you eat. Compatible with any dietary approach.",
+      "compatibleWith": ["any"]
+    }
+  ]
+}
