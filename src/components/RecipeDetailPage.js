@@ -350,6 +350,80 @@ export class RecipeDetailPage {
   }
 
   /**
+   * Render health scores section (Slice 5)
+   */
+  renderHealthScoresSection() {
+    const section = document.createElement('div');
+    section.className = 'bg-white rounded-lg p-6 shadow-sm mb-6 border border-gray-200';
+
+    const scores = this.state.recipe.dietCompassScores;
+
+    section.innerHTML = `
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">🏥 Diet Compass Health Score</h2>
+      
+      <div class="mb-6 pb-6 border-b border-gray-200">
+        <div class="flex items-baseline gap-3">
+          <span class="text-5xl font-bold ${scores.overall >= 60 ? 'text-green-600' : scores.overall >= 40 ? 'text-yellow-600' : 'text-gray-500'}">${scores.overall}</span>
+          <span class="text-gray-400 text-xl">/100</span>
+          <span class="ml-3 px-3 py-1 rounded-lg text-sm font-semibold ${
+            scores.overall >= 80 ? 'bg-green-100 text-green-800' :
+            scores.overall >= 60 ? 'bg-green-50 text-green-700' :
+            scores.overall >= 40 ? 'bg-yellow-100 text-yellow-800' :
+            'bg-orange-100 text-orange-800'
+          }">
+            ${scores.overall >= 80 ? 'Excellent' : scores.overall >= 60 ? 'Good' : scores.overall >= 40 ? 'Moderate' : 'Fair'}
+          </span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">Overall health rating based on ingredients and nutritional profile</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🥗</span>
+            <span class="text-sm font-medium text-gray-700">Nutrient Density</span>
+          </div>
+          <span class="text-2xl font-bold ${scores.nutrientDensity >= 60 ? 'text-green-600' : 'text-gray-500'}">${scores.nutrientDensity}</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">⏳</span>
+            <span class="text-sm font-medium text-gray-700">Anti-Aging</span>
+          </div>
+          <span class="text-2xl font-bold ${scores.antiAging >= 60 ? 'text-green-600' : 'text-gray-500'}">${scores.antiAging}</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">⚖️</span>
+            <span class="text-sm font-medium text-gray-700">Weight Loss</span>
+          </div>
+          <span class="text-2xl font-bold ${scores.weightLoss >= 60 ? 'text-green-600' : 'text-gray-500'}">${scores.weightLoss}</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">❤️</span>
+            <span class="text-sm font-medium text-gray-700">Heart Health</span>
+          </div>
+          <span class="text-2xl font-bold ${scores.heartHealth >= 60 ? 'text-green-600' : 'text-gray-500'}">${scores.heartHealth}</span>
+        </div>
+      </div>
+      
+      ${this.state.recipe.source === 'spoonacular' ? `
+        <div class="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+          <p class="text-xs text-blue-700">
+            <strong>📊 From Spoonacular Catalog</strong> - Professional recipe with verified nutrition data
+          </p>
+        </div>
+      ` : ''}
+    `;
+
+    return section;
+  }
+
+  /**
    * Render ingredients section
    */
   renderIngredientsSection() {

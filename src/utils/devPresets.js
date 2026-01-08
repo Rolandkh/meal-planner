@@ -335,53 +335,38 @@ export const DEV_PRESET = {
 
 /**
  * Import development preset data
- * Loads pre-configured base spec, eaters, recipes, meals, and meal plan
+ * Slice 5 UPDATE: Only loads onboarding data (eaters + base spec)
+ * Does NOT create recipes/meals - those will come from catalog when you generate!
  * @returns {Object} Result object with success status
  */
 export function importDevPreset() {
   try {
-    console.log('🔧 Importing development preset...');
+    console.log('🔧 Importing development preset (ONBOARDING ONLY)...');
     
     // Import eaters
     const eatersResult = saveEaters(DEV_PRESET.eaters);
     if (!eatersResult.success) {
       throw new Error('Failed to save eaters: ' + eatersResult.error);
     }
-    console.log('✓ Imported 3 eaters');
+    console.log('✓ Imported 3 eaters (Roland, Maya, Cathie)');
     
     // Import base specification
     const baseSpecResult = saveBaseSpecification(DEV_PRESET.baseSpecification);
     if (!baseSpecResult.success) {
       throw new Error('Failed to save base specification: ' + baseSpecResult.error);
     }
-    console.log('✓ Imported base specification');
+    console.log('✓ Imported base specification (preferences, schedule, budget)');
     
-    // Import recipes
-    const recipesResult = saveRecipes(DEV_PRESET.recipes);
-    if (!recipesResult.success) {
-      throw new Error('Failed to save recipes: ' + recipesResult.error);
-    }
-    console.log('✓ Imported 6 Mediterranean recipes');
-    
-    // Import meals
-    const mealsResult = saveMeals(DEV_PRESET.meals);
-    if (!mealsResult.success) {
-      throw new Error('Failed to save meals: ' + mealsResult.error);
-    }
-    console.log('✓ Imported 21 meals');
-    
-    // Import meal plan
-    const mealPlanResult = saveCurrentMealPlan(DEV_PRESET.mealPlan);
-    if (!mealPlanResult.success) {
-      throw new Error('Failed to save meal plan: ' + mealPlanResult.error);
-    }
-    console.log('✓ Imported meal plan');
+    // SLICE 5 CHANGE: Skip recipes, meals, and meal plan
+    // User will generate fresh meal plan using the catalog!
+    console.log('⏭️  Skipped recipes/meals (will use catalog when you generate)');
     
     console.log('✅ Development preset imported successfully');
+    console.log('📋 Next step: Click "Generate Week" to create meal plan from catalog!');
     
     return {
       success: true,
-      message: 'Development preset loaded: 3 eaters (Roland, Maya, Cathie), 6 Mediterranean recipes, 21 meals, 1 week meal plan ($120 budget)'
+      message: '✅ Onboarding complete! 3 eaters loaded (Roland, Maya, Cathie). Ready to generate meal plan from 607-recipe catalog!'
     };
     
   } catch (error) {
