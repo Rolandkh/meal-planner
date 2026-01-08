@@ -194,11 +194,11 @@ export class ChatWidget {
     inputForm.appendChild(this.messageInput);
     inputForm.appendChild(this.sendButton);
     
-    // Create Generate button (context-aware: Week or Day)
+    // Create Generate button (context-aware: Week or Day) - Rainbow gradient!
     this.generateButton = document.createElement('button');
     this.generateButton.className = `
-      w-full bg-gradient-to-r from-emerald-400 to-teal-400
-      hover:from-emerald-500 hover:to-teal-500
+      w-full bg-gradient-to-r from-red-400 via-orange-400 via-yellow-400 via-green-400 via-blue-400 via-indigo-400 to-purple-400
+      hover:from-red-500 hover:via-orange-500 hover:via-yellow-500 hover:via-green-500 hover:via-blue-500 hover:via-indigo-500 hover:to-purple-500
       text-white font-semibold py-3 px-6 rounded-lg mt-3
       transition-all transform hover:scale-[1.02]
       shadow-md hover:shadow-lg
@@ -406,8 +406,8 @@ export class ChatWidget {
 
     const bubble = document.createElement('div');
     bubble.className = message.role === 'user'
-      ? 'inline-block bg-gradient-to-r from-blue-400 to-indigo-400 text-white p-3 rounded-lg rounded-tr-none max-w-xs md:max-w-md shadow'
-      : 'inline-block bg-white text-gray-800 p-3 rounded-lg rounded-tl-none max-w-xs md:max-w-md shadow border border-gray-200';
+      ? 'inline-block bg-gradient-to-r from-blue-400 to-indigo-400 text-white p-3 rounded-lg rounded-tr-none max-w-[85%] shadow'
+      : 'inline-block bg-white text-gray-800 p-3 rounded-lg rounded-tl-none max-w-[85%] shadow border border-gray-200';
     
     // Task 58: Support formatted content for better readability
     if (message.formatted) {

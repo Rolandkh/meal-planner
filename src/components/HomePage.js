@@ -233,9 +233,9 @@ export class HomePage {
     // Chat button
     const chatButton = document.createElement('button');
     chatButton.className = `
-      bg-gradient-to-r from-blue-400 to-indigo-400
-      hover:from-blue-500 hover:to-indigo-500
-      text-white font-bold py-4 px-8 rounded-full
+      bg-gradient-to-r from-gray-300 to-gray-400
+      hover:from-gray-400 hover:to-gray-500
+      text-gray-800 font-bold py-4 px-8 rounded-full
       shadow-xl hover:shadow-2xl
       transition-all duration-300 transform hover:scale-105
       text-lg
@@ -392,9 +392,9 @@ export class HomePage {
       
       if (hasDate) {
         dayButton.className = `
-          bg-gradient-to-r from-blue-400 to-indigo-400
-          hover:from-blue-500 hover:to-indigo-500
-          text-white font-semibold py-4 px-6 rounded-lg
+          bg-gradient-to-r from-gray-300 to-gray-400
+          hover:from-gray-400 hover:to-gray-500
+          text-gray-800 font-semibold py-4 px-6 rounded-lg
           shadow-lg hover:shadow-xl
           transition-all transform hover:scale-105
           text-lg
@@ -436,28 +436,31 @@ export class HomePage {
     const button = document.createElement('button');
     
     if (style === 'primary') {
+      // Rainbow gradient for Generate Week button
       button.className = `
-        bg-gradient-to-r from-emerald-400 to-teal-400
-        hover:from-emerald-500 hover:to-teal-500
+        bg-gradient-to-r from-red-400 via-orange-400 via-yellow-400 via-green-400 via-blue-400 via-indigo-400 to-purple-400
+        hover:from-red-500 hover:via-orange-500 hover:via-yellow-500 hover:via-green-500 hover:via-blue-500 hover:via-indigo-500 hover:to-purple-500
         text-white font-semibold py-4 px-6 rounded-lg
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-lg
       `.trim().replace(/\s+/g, ' ');
     } else if (style === 'view') {
+      // Gray gradient for view buttons
       button.className = `
-        bg-gradient-to-r from-purple-400 to-pink-400
-        hover:from-purple-500 hover:to-pink-500
-        text-white font-bold py-5 px-8 rounded-lg
+        bg-gradient-to-r from-gray-300 to-gray-400
+        hover:from-gray-400 hover:to-gray-500
+        text-gray-800 font-bold py-5 px-8 rounded-lg
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-xl
       `.trim().replace(/\s+/g, ' ');
     } else {
+      // Gray gradient for secondary buttons (chat, etc.)
       button.className = `
-        bg-gradient-to-r from-blue-400 to-indigo-400
-        hover:from-blue-500 hover:to-indigo-500
-        text-white font-semibold py-4 px-6 rounded-lg
+        bg-gradient-to-r from-gray-300 to-gray-400
+        hover:from-gray-400 hover:to-gray-500
+        text-gray-800 font-semibold py-4 px-6 rounded-lg
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-lg
