@@ -10,6 +10,7 @@ import {
   updateRating,
   incrementTimesCooked
 } from '../utils/storage.js';
+import { getRecipeCatalog } from '../utils/catalogStorage.js';
 
 export class RecipeDetailPage {
   constructor(params) {
@@ -17,7 +18,8 @@ export class RecipeDetailPage {
     this.state = {
       recipe: null,
       loading: true,
-      error: null
+      error: null,
+      isCatalogRecipe: false
     };
   }
 
@@ -25,15 +27,24 @@ export class RecipeDetailPage {
    * Load recipe data before rendering
    */
   beforeRender() {
-    const recipes = loadRecipes();
+    // Try user recipes first
+    let recipes = loadRecipes();
     this.state.recipe = recipes.find(r => r.recipeId === this.recipeId);
+    
+    // If not found, try catalog
+    if (!this.state.recipe) {
+      const catalog = getRecipeCatalog();
+      this.state.recipe = catalog.find(r => r.recipeId === this.recipeId);
+      this.state.isCatalogRecipe = !!this.state.recipe;
+    }
+    
     this.state.loading = false;
     
     if (!this.state.recipe) {
       this.state.error = 'Recipe not found';
       console.error('Recipe not found:', this.recipeId);
     } else {
-      console.log('Recipe loaded:', this.state.recipe.name);
+      console.log('Recipe loaded:', this.state.recipe.name, this.state.isCatalogRecipe ? '(from catalog)' : '(user recipe)');
     }
   }
 
@@ -70,6 +81,12 @@ export class RecipeDetailPage {
     // Meta information
     const metaInfo = this.renderMetaInfo();
     main.appendChild(metaInfo);
+
+    // Health scores section (Slice 5)
+    if (this.state.recipe.dietCompassScores) {
+      const healthScores = this.renderHealthScoresSection();
+      main.appendChild(healthScores);
+    }
 
     // Ingredients section
     const ingredients = this.renderIngredientsSection();
@@ -256,6 +273,80 @@ export class RecipeDetailPage {
     });
 
     return content;
+  }
+
+  /**
+   * Render health scores section (Slice 5)
+   */
+  renderHealthScoresSection() {
+    const section = document.createElement('div');
+    section.className = 'bg-white rounded-lg p-6 shadow-sm mb-6 border border-gray-200';
+
+    const scores = this.state.recipe.dietCompassScores;
+
+    section.innerHTML = `
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">🏥 Diet Compass Health Score</h2>
+      
+      <div class="mb-6 pb-6 border-b border-gray-200">
+        <div class="flex items-baseline gap-3">
+          <span class="text-5xl font-bold ${scores.overall >= 60 ? 'text-green-600' : scores.overall >= 40 ? 'text-yellow-600' : 'text-gray-500'}">${scores.overall}</span>
+          <span class="text-gray-400 text-xl">/100</span>
+          <span class="ml-3 px-3 py-1 rounded-lg text-sm font-semibold ${
+            scores.overall >= 80 ? 'bg-green-100 text-green-800' :
+            scores.overall >= 60 ? 'bg-green-50 text-green-700' :
+            scores.overall >= 40 ? 'bg-yellow-100 text-yellow-800' :
+            'bg-orange-100 text-orange-800'
+          }">
+            ${scores.overall >= 80 ? 'Excellent' : scores.overall >= 60 ? 'Good' : scores.overall >= 40 ? 'Moderate' : 'Fair'}
+          </span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">Overall health rating based on ingredients and nutritional profile</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🥗</span>
+            <span class="text-sm font-medium text-gray-700">Nutrient Density</span>
+          </div>
+          <span class="text-2xl font-bold ${scores.nutrientDensity >= 60 ? 'text-green-600' : 'text-gray-500'}">${scores.nutrientDensity}</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">⏳</span>
+            <span class="text-sm font-medium text-gray-700">Anti-Aging</span>
+          </div>
+          <span class="text-2xl font-bold ${scores.antiAging >= 60 ? 'text-green-600' : 'text-gray-500'}">${scores.antiAging}</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">⚖️</span>
+            <span class="text-sm font-medium text-gray-700">Weight Loss</span>
+          </div>
+          <span class="text-2xl font-bold ${scores.weightLoss >= 60 ? 'text-green-600' : 'text-gray-500'}">${scores.weightLoss}</span>
+        </div>
+        
+        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">❤️</span>
+            <span class="text-sm font-medium text-gray-700">Heart Health</span>
+          </div>
+          <span class="text-2xl font-bold ${scores.heartHealth >= 60 ? 'text-green-600' : 'text-gray-500'}">${scores.heartHealth}</span>
+        </div>
+      </div>
+      
+      ${this.state.recipe.source === 'spoonacular' ? `
+        <div class="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+          <p class="text-xs text-blue-700">
+            <strong>📊 From Spoonacular Catalog</strong> - Professional recipe with verified nutrition data
+          </p>
+        </div>
+      ` : ''}
+    `;
+
+    return section;
   }
 
   /**

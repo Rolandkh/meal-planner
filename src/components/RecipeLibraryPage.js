@@ -8,6 +8,7 @@ import {
   loadRecipes
 } from '../utils/storage.js';
 import { RecipeImportModal } from './RecipeImportModal.js';
+import { getRecipeCatalog } from '../utils/catalogStorage.js';
 
 export class RecipeLibraryPage {
   constructor() {
@@ -16,7 +17,8 @@ export class RecipeLibraryPage {
       filteredRecipes: [],
       searchQuery: '',
       activeFilter: 'all',
-      searchTimeout: null
+      searchTimeout: null,
+      showCatalog: true  // Show catalog recipes by default
     };
   }
 
@@ -24,10 +26,20 @@ export class RecipeLibraryPage {
    * Load recipes before rendering
    */
   beforeRender() {
-    this.state.recipes = loadRecipes();
+    // Load user recipes
+    const userRecipes = loadRecipes();
+    
+    // Load catalog recipes
+    const catalogRecipes = this.state.showCatalog ? getRecipeCatalog() : [];
+    
+    // Combine both (catalog first, then user recipes)
+    this.state.recipes = [...catalogRecipes, ...userRecipes];
+    
     this.applyFilters();
     
     console.log('Recipe library loaded:', {
+      catalog: catalogRecipes.length,
+      user: userRecipes.length,
       total: this.state.recipes.length,
       filtered: this.state.filteredRecipes.length
     });
@@ -274,10 +286,22 @@ export class RecipeLibraryPage {
     card.className = 'bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition-shadow cursor-pointer overflow-hidden';
     card.onclick = () => this.handleRecipeClick(recipe);
 
-    // Image placeholder
-    const imagePlaceholder = document.createElement('div');
-    imagePlaceholder.className = 'h-48 bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center text-6xl';
-    imagePlaceholder.textContent = this.getRecipeEmoji(recipe);
+    // Image (use local image if available, otherwise placeholder)
+    const imageContainer = document.createElement('div');
+    imageContainer.className = 'h-48 bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center overflow-hidden';
+    
+    if (recipe.image) {
+      const img = document.createElement('img');
+      img.src = recipe.image;
+      img.alt = recipe.name;
+      img.className = 'w-full h-full object-cover';
+      img.onerror = () => {
+        imageContainer.innerHTML = `<span class="text-6xl">${this.getRecipeEmoji(recipe)}</span>`;
+      };
+      imageContainer.appendChild(img);
+    } else {
+      imageContainer.innerHTML = `<span class="text-6xl">${this.getRecipeEmoji(recipe)}</span>`;
+    }
 
     // Content
     const content = document.createElement('div');
@@ -311,17 +335,40 @@ export class RecipeLibraryPage {
     meta.appendChild(prepTime);
     meta.appendChild(servings);
 
+    content.appendChild(titleRow);
+    content.appendChild(meta);
+
+    // Health scores (Slice 5)
+    if (recipe.dietCompassScores) {
+      const healthBars = document.createElement('div');
+      healthBars.className = 'flex flex-wrap gap-2 items-center mb-3';
+      
+      const metrics = [
+        { icon: '🥗', score: recipe.dietCompassScores.nutrientDensity },
+        { icon: '⏳', score: recipe.dietCompassScores.antiAging },
+        { icon: '⚖️', score: recipe.dietCompassScores.weightLoss },
+        { icon: '❤️', score: recipe.dietCompassScores.heartHealth }
+      ];
+      
+      metrics.forEach(({ icon, score }) => {
+        const metricDiv = document.createElement('div');
+        metricDiv.className = 'flex items-center gap-1';
+        metricDiv.innerHTML = `
+          <span class="text-xs">${icon}</span>
+          ${this.renderMiniBar(score)}
+        `;
+        healthBars.appendChild(metricDiv);
+      });
+      
+      content.appendChild(healthBars);
+    }
+
     // Rating
     if (recipe.rating) {
       const rating = document.createElement('div');
       rating.className = 'flex items-center gap-1 mb-3';
       rating.innerHTML = this.renderStars(recipe.rating);
-      content.appendChild(titleRow);
-      content.appendChild(meta);
       content.appendChild(rating);
-    } else {
-      content.appendChild(titleRow);
-      content.appendChild(meta);
     }
 
     // Times cooked
@@ -344,10 +391,27 @@ export class RecipeLibraryPage {
       content.appendChild(tags);
     }
 
-    card.appendChild(imagePlaceholder);
+    card.appendChild(imageContainer);
     card.appendChild(content);
 
     return card;
+  }
+
+  /**
+   * Render mini health bar (5 segments)
+   * @param {number} score - Health score (0-100)
+   * @returns {string} HTML for mini bar
+   */
+  renderMiniBar(score) {
+    const segments = score >= 80 ? 5 : score >= 60 ? 4 : score >= 40 ? 3 : score >= 20 ? 2 : 1;
+    const color = score >= 60 ? 'bg-green-500' : score >= 40 ? 'bg-yellow-500' : 'bg-gray-400';
+    
+    let html = '<div class="flex gap-0.5">';
+    for (let i = 1; i <= 5; i++) {
+      html += `<div class="w-1.5 h-3 rounded-sm ${i <= segments ? color : 'bg-gray-200'}"></div>`;
+    }
+    html += '</div>';
+    return html;
   }
 
   /**
