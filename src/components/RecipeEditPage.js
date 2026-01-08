@@ -16,10 +16,12 @@ export class RecipeEditPage {
       errors: {},
       isDirty: false,
       lastSaved: null,
-      saving: false
+      saving: false,
+      saveSuccess: false // NEW: Track successful save for visual feedback
     };
     this.autoSaveInterval = null;
     this.draftKey = `recipe_draft_${this.recipeId}`;
+    this.saveSuccessTimeout = null; // NEW: Track timeout for save feedback
   }
 
   // Subtask 1: Component setup and routing
@@ -167,12 +169,15 @@ export class RecipeEditPage {
     
     if (Object.keys(errors).length > 0) {
       this.state.errors = errors;
-      this.render();
+      this.updateSaveButton();
+      this.showToast('Please fix the errors before saving', 'error');
       return;
     }
     
     this.state.saving = true;
     this.state.errors = {};
+    this.state.saveSuccess = false;
+    this.updateSaveButton();
     
     // Update recipe
     const result = updateRecipe(this.recipeId, this.state.recipe);
@@ -181,18 +186,57 @@ export class RecipeEditPage {
       // Clear draft
       this.clearDraft();
       this.state.isDirty = false;
+      this.state.saving = false;
+      this.state.saveSuccess = true;
       
-      // Show success message
+      // Update button to show success state
+      this.updateSaveButton();
+      
+      // Show success toast
       this.showToast('Recipe updated successfully!', 'success');
       
-      // Navigate back to recipe detail
-      setTimeout(() => {
-        window.location.hash = `#/recipe/${this.recipeId}`;
-      }, 1000);
+      // Clear save success timeout if it exists
+      if (this.saveSuccessTimeout) {
+        clearTimeout(this.saveSuccessTimeout);
+      }
+      
+      // Reset to normal state after 5 seconds
+      this.saveSuccessTimeout = setTimeout(() => {
+        this.state.saveSuccess = false;
+        this.updateSaveButton();
+      }, 5000);
+      
+      // Don't navigate away - let user stay on page
     } else {
       this.state.saving = false;
+      this.state.saveSuccess = false;
+      this.updateSaveButton();
       this.showToast(result.message || 'Failed to update recipe', 'error');
-      this.render();
+    }
+  }
+  
+  // NEW: Update save button appearance based on state
+  updateSaveButton() {
+    const saveBtn = document.querySelector('button[type="submit"]');
+    if (!saveBtn) return;
+    
+    const { saving, saveSuccess } = this.state;
+    
+    if (saveSuccess) {
+      // Green success state
+      saveBtn.className = 'px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors font-medium';
+      saveBtn.textContent = 'Saved ✓';
+      saveBtn.disabled = false;
+    } else if (saving) {
+      // Blue saving state
+      saveBtn.className = 'px-6 py-2 bg-blue-600 text-white rounded-lg font-medium opacity-50 cursor-not-allowed';
+      saveBtn.textContent = 'Saving...';
+      saveBtn.disabled = true;
+    } else {
+      // Normal blue state
+      saveBtn.className = 'px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium';
+      saveBtn.textContent = 'Save Recipe';
+      saveBtn.disabled = false;
     }
   }
 
@@ -246,14 +290,16 @@ export class RecipeEditPage {
     });
     
     this.state.isDirty = true;
-    this.render();
+    // FIX: Call renderIngredients() instead of render() to update just the ingredients section
+    this.renderIngredients();
   }
 
   removeIngredient(index) {
     if (this.state.recipe.ingredients.length > 1) {
       this.state.recipe.ingredients.splice(index, 1);
       this.state.isDirty = true;
-      this.render();
+      // FIX: Call renderIngredients() instead of render() to update just the ingredients section
+      this.renderIngredients();
     }
   }
 
@@ -682,6 +728,10 @@ export class RecipeEditPage {
     // Subtask 4: Cleanup
     if (this.autoSaveInterval) {
       clearInterval(this.autoSaveInterval);
+    }
+    
+    if (this.saveSuccessTimeout) {
+      clearTimeout(this.saveSuccessTimeout);
     }
     
     if (this.beforeUnloadHandler) {

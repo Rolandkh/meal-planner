@@ -1,0 +1,175 @@
+# Testing Feedback Fixes PRD
+
+## Overview
+After Slice 4 testing, three critical issues were discovered that need immediate attention before the slice can be considered complete.
+
+## Issue #1: Single-Day Regeneration Data Loss Bug
+
+### Current Behavior
+When regenerating a single day (e.g., Monday), the entire week gets deleted and only the regenerated day remains.
+
+### Required Solution
+Implement a conversational single-day update workflow:
+
+1. **UI Component**: Add "Make Changes" button at the top of each day view (DayView.js)
+2. **Conversation Flow**: 
+   - Clicking opens Vanessa chat widget
+   - Vanessa initiates with contextual prompt: "So you want to make changes to [Day]'s menu. What would you like to change?"
+   - User explains desired changes
+3. **Ingredient Constraint Check**:
+   - Vanessa asks if user can shop for new ingredients
+   - Or if she should work with existing pantry items
+4. **Targeted Update**:
+   - Regenerate only the specific day
+   - **CRITICAL**: Preserve all other days in the week
+   - Replace only the updated day in current meal plan
+
+### Technical Requirements
+- Update `regenerateDay()` function in regenerateDay.js to preserve other days
+- Add "Make Changes" button component to DayView.js
+- Extend ChatWidget.js to handle day-specific change requests with context awareness
+- Update API endpoint (api/generate-meal-plan.js) to support partial meal plan updates
+- Pass day context to Vanessa so she knows which day is being modified
+
+### Success Criteria
+- User can click "Make Changes" on any day
+- Chat opens with contextual prompt about that specific day
+- Only that day gets regenerated
+- All other 6 days remain unchanged
+- Meal plan maintains integrity
+
+---
+
+## Issue #2: Meal Plan History Pages Incomplete
+
+### Current Behavior
+- Clicking on archived meal plan only shows one day (Tuesday)
+- Shows only meal headings, not full content
+- Says "weekly view" but doesn't show full week
+- No clear value proposition for browsing history
+
+### Required Solution
+
+#### **History List Page Improvements** (MealPlanHistoryPage.js):
+1. **AI-Generated Weekly Summary**:
+   - Each archived week gets a concise summary
+   - Examples: "Lots of fish dishes this week" / "Lentil-heavy meals" / "Guest dinner on Friday" / "Quick meals due to busy schedule"
+   - Captures unique features and personality of that week
+   - Makes history browsing meaningful
+
+2. **Display Format**:
+   - Date range (e.g., "Jan 1-7, 2026")
+   - AI summary (2-3 sentences max)
+   - Budget summary
+   - Meal count
+
+#### **History Detail Page Restructure** (MealPlanHistoryDetailPage.js):
+
+**Two-Tab Interface**:
+
+**Tab 1: Shopping List**
+- Display complete shopping list for that archived week
+- Same format as current meal plan shopping list
+- Read-only
+
+**Tab 2: Weekly Overview**
+- Show all 7 days as cards/buttons
+- Each day card displays:
+  - Day name (e.g., "Monday")
+  - Date (e.g., "Jan 1, 2026")
+  - Meal summaries:
+    - Breakfast: [Recipe name] ← clickable link
+    - Lunch: [Recipe name] ← clickable link
+    - Dinner: [Recipe name] ← clickable link
+- Clicking any recipe name navigates to recipe detail page
+
+### Technical Requirements
+- Add AI summary generation (new API endpoint or client-side)
+- Store summaries with archived meal plans or generate on-demand
+- Complete restructure of MealPlanHistoryDetailPage.js with tab navigation
+- Create day card components showing all meals
+- Make meal names clickable links to recipe details
+- Fix data loading to include all 7 days (not just one)
+
+### Success Criteria
+- History list shows meaningful AI summaries for each week
+- Clicking into a week shows all 7 days clearly
+- Can view shopping list for any past week
+- All recipe names are clickable and navigate correctly
+
+---
+
+## Issue #3: Recipe Edit Page Critical Bugs
+
+### Current Behavior
+Three critical bugs preventing recipe editing:
+
+1. **Add Ingredient button doesn't work** - clicking does nothing
+2. **No save confirmation feedback** - users don't know if save succeeded
+3. **Changes don't persist** - data loss bug, edits are lost on navigation
+
+### Required Solution
+
+#### **Bug Fix 3A: Add Ingredient Functionality**
+- Debug and fix the "Add Ingredient" button click handler
+- Should add a new blank ingredient row to the form
+- New row should have empty fields for: name, amount, unit, category
+- Row should be immediately editable
+
+#### **Bug Fix 3B: Save Confirmation UI**
+Add visual confirmation when save is clicked:
+- Button changes from blue to green
+- Text changes from "Save Changes" to "Saved ✓"
+- Stays green for 5 seconds
+- Automatically returns to blue "Save Changes" state
+- Consider adding red error state if save fails
+
+#### **Bug Fix 3C: Data Persistence Fix**
+Fix the save functionality to actually persist changes to localStorage:
+- Ensure all field changes are captured:
+  - Recipe title, description, prepTime, cookTime
+  - Ingredients (name, amount, unit, category)
+  - Instructions
+  - servingSize, tags, notes
+- Verify data is correctly written to storage
+- Verify data is correctly read back on page load
+- Ensure recipe ID is preserved (not creating duplicates)
+
+### Technical Requirements
+- Update RecipeEditPage.js event handlers:
+  - Add Ingredient button click handler
+  - Save button click handler
+  - Form data collection
+- Debug storage integration:
+  - Verify `saveRecipes()` or `updateRecipe()` is being called correctly
+  - Check if recipe ID is being preserved
+  - Ensure recipe is being updated, not creating duplicate
+- Add save confirmation UI:
+  - Button state management (blue → green → blue)
+  - Timer for auto-reset after 5 seconds
+  - Error state handling
+
+### Success Criteria
+- Add Ingredient button creates new blank row
+- Clicking Save shows green "Saved ✓" feedback
+- All edits persist after navigation away and back
+- Recipe library shows updated data
+- No duplicate recipes created
+
+---
+
+## Implementation Priority
+All three issues are HIGH/CRITICAL priority and should be fixed before Slice 4 is considered complete.
+
+Recommended order:
+1. Issue #3 (Recipe Edit) - Critical data loss bug
+2. Issue #1 (Single-Day Regen) - Prevents users from making day changes
+3. Issue #2 (History Pages) - UX improvement, less critical
+
+## Testing Strategy
+After fixes:
+1. Full regression testing of all three features
+2. Verify no new bugs introduced
+3. Test on both desktop and mobile
+4. User acceptance testing with real workflows
+
