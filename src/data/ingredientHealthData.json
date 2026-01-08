@@ -471,8 +471,680 @@
         "plantProtein": true,
         "fiberRich": true
       }
+    },
+    "flour": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 5,
+      "heartHealthPoints": 5,
+      "flags": { "refinedGrain": true }
+    },
+    "whole wheat flour": {
+      "nutrientDensityPoints": 16,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 12,
+      "flags": { "wholeGrain": true }
+    },
+    "salt": {
+      "nutrientDensityPoints": 0,
+      "antiAgingPoints": 0,
+      "weightLossPoints": 0,
+      "heartHealthPoints": -5,
+      "flags": { "moderationRequired": true }
+    },
+    "pepper": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 3,
+      "heartHealthPoints": 5,
+      "flags": { "antiInflammatory": true }
+    },
+    "black pepper": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 3,
+      "heartHealthPoints": 5,
+      "flags": { "antiInflammatory": true }
+    },
+    "olive": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 22,
+      "flags": { "protectiveSuperfood": true, "healthyFat": true }
+    },
+    "olives": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 22,
+      "flags": { "protectiveSuperfood": true, "healthyFat": true }
+    },
+    "lemon": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 12,
+      "flags": { "vitaminCRich": true }
+    },
+    "lime": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 12,
+      "flags": { "vitaminCRich": true }
+    },
+    "parsley": {
+      "nutrientDensityPoints": 25,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 15,
+      "heartHealthPoints": 18,
+      "flags": { "protectiveSuperfood": true, "herb": true }
+    },
+    "basil": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 15,
+      "flags": { "protectiveSuperfood": true, "herb": true }
+    },
+    "cilantro": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 15,
+      "flags": { "protectiveSuperfood": true, "herb": true }
+    },
+    "oregano": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 20,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 18,
+      "flags": { "protectiveSuperfood": true, "herb": true, "antiInflammatory": true }
+    },
+    "thyme": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 15,
+      "flags": { "protectiveSuperfood": true, "herb": true }
+    },
+    "rosemary": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 22,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 18,
+      "flags": { "protectiveSuperfood": true, "herb": true, "antiInflammatory": true }
+    },
+    "ginger": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 25,
+      "weightLossPoints": 15,
+      "heartHealthPoints": 22,
+      "flags": { "protectiveSuperfood": true, "antiInflammatory": true }
+    },
+    "turmeric": {
+      "nutrientDensityPoints": 25,
+      "antiAgingPoints": 30,
+      "weightLossPoints": 18,
+      "heartHealthPoints": 25,
+      "flags": { "protectiveSuperfood": true, "antiInflammatory": true }
+    },
+    "cumin": {
+      "nutrientDensityPoints": 15,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 12,
+      "flags": { "spice": true }
+    },
+    "paprika": {
+      "nutrientDensityPoints": 15,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 12,
+      "flags": { "spice": true, "antioxidantRich": true }
+    },
+    "cinnamon": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 20,
+      "weightLossPoints": 15,
+      "heartHealthPoints": 18,
+      "flags": { "protectiveSuperfood": true, "antiInflammatory": true }
+    },
+    "vanilla": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 5,
+      "heartHealthPoints": 5,
+      "flags": {}
+    },
+    "cocoa": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 25,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 22,
+      "flags": { "antioxidantRich": true }
+    },
+    "rice": {
+      "nutrientDensityPoints": 10,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 8,
+      "heartHealthPoints": 8,
+      "flags": { "refinedGrain": true }
+    },
+    "bread": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 5,
+      "heartHealthPoints": 5,
+      "flags": { "refinedGrain": true }
+    },
+    "wheat": {
+      "nutrientDensityPoints": 15,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 10,
+      "flags": { "wholeGrain": true }
+    },
+    "corn": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 10,
+      "flags": {}
+    },
+    "oil": {
+      "nutrientDensityPoints": 10,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 8,
+      "heartHealthPoints": 12,
+      "flags": {}
+    },
+    "vegetable oil": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 5,
+      "heartHealthPoints": 8,
+      "flags": {}
+    },
+    "coconut oil": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 10,
+      "flags": { "saturatedFat": true }
+    },
+    "water": {
+      "nutrientDensityPoints": 0,
+      "antiAgingPoints": 0,
+      "weightLossPoints": 0,
+      "heartHealthPoints": 0,
+      "flags": {}
+    },
+    "stock": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 5,
+      "heartHealthPoints": 5,
+      "flags": {}
+    },
+    "broth": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 8,
+      "heartHealthPoints": 8,
+      "flags": {}
+    },
+    "chicken": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 20,
+      "heartHealthPoints": 12,
+      "flags": { "leanProtein": true }
+    },
+    "turkey": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 22,
+      "heartHealthPoints": 14,
+      "flags": { "leanProtein": true }
+    },
+    "pork": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 8,
+      "flags": { "redMeat": true }
+    },
+    "shrimp": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 22,
+      "heartHealthPoints": 20,
+      "flags": { "leanProtein": true, "omega3Rich": true }
+    },
+    "crab": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 20,
+      "heartHealthPoints": 20,
+      "flags": { "leanProtein": true }
+    },
+    "lobster": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 14,
+      "weightLossPoints": 20,
+      "heartHealthPoints": 18,
+      "flags": { "leanProtein": true }
+    },
+    "scallops": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 22,
+      "heartHealthPoints": 20,
+      "flags": { "leanProtein": true }
+    },
+    "mushrooms": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 15,
+      "heartHealthPoints": 15,
+      "flags": { "protectiveSuperfood": true }
+    },
+    "zucchini": {
+      "nutrientDensityPoints": 15,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 12,
+      "flags": {}
+    },
+    "eggplant": {
+      "nutrientDensityPoints": 14,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 12,
+      "flags": {}
+    },
+    "cucumber": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 10,
+      "flags": {}
+    },
+    "lettuce": {
+      "nutrientDensityPoints": 15,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 15,
+      "heartHealthPoints": 12,
+      "flags": { "leafyGreen": true }
+    },
+    "cabbage": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 16,
+      "heartHealthPoints": 14,
+      "flags": { "cruciferous": true }
+    },
+    "cauliflower": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 16,
+      "weightLossPoints": 18,
+      "heartHealthPoints": 15,
+      "flags": { "cruciferous": true }
+    },
+    "brussels sprouts": {
+      "nutrientDensityPoints": 25,
+      "antiAgingPoints": 20,
+      "weightLossPoints": 20,
+      "heartHealthPoints": 18,
+      "flags": { "protectiveSuperfood": true, "cruciferous": true }
+    },
+    "asparagus": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 16,
+      "weightLossPoints": 16,
+      "heartHealthPoints": 15,
+      "flags": {}
+    },
+    "green beans": {
+      "nutrientDensityPoints": 16,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 12,
+      "flags": {}
+    },
+    "peas": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 14,
+      "weightLossPoints": 16,
+      "heartHealthPoints": 14,
+      "flags": { "fiberRich": true }
+    },
+    "corn": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 10,
+      "flags": {}
+    },
+    "celery": {
+      "nutrientDensityPoints": 14,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 12,
+      "flags": {}
+    },
+    "beets": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 16,
+      "heartHealthPoints": 20,
+      "flags": { "protectiveSuperfood": true }
+    },
+    "radish": {
+      "nutrientDensityPoints": 14,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 12,
+      "flags": { "cruciferous": true }
+    },
+    "squash": {
+      "nutrientDensityPoints": 16,
+      "antiAgingPoints": 14,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 12,
+      "flags": {}
+    },
+    "pumpkin": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 15,
+      "heartHealthPoints": 14,
+      "flags": { "vitaminARich": true }
+    },
+    "soy sauce": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 3,
+      "heartHealthPoints": 0,
+      "flags": { "highSodium": true }
+    },
+    "vinegar": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 8,
+      "heartHealthPoints": 8,
+      "flags": {}
+    },
+    "balsamic vinegar": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 8,
+      "heartHealthPoints": 10,
+      "flags": { "antioxidantRich": true }
+    },
+    "wine": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 3,
+      "heartHealthPoints": 12,
+      "flags": { "moderationRequired": true, "antioxidantRich": true }
+    },
+    "red wine": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 5,
+      "heartHealthPoints": 18,
+      "flags": { "moderationRequired": true, "antioxidantRich": true }
+    },
+    "white wine": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 3,
+      "heartHealthPoints": 10,
+      "flags": { "moderationRequired": true }
+    },
+    "beer": {
+      "nutrientDensityPoints": 3,
+      "antiAgingPoints": 3,
+      "weightLossPoints": 0,
+      "heartHealthPoints": 3,
+      "flags": { "moderationRequired": true }
+    },
+    "cream": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 3,
+      "heartHealthPoints": 5,
+      "flags": { "highSaturatedFat": true }
+    },
+    "heavy cream": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 3,
+      "weightLossPoints": 0,
+      "heartHealthPoints": 3,
+      "flags": { "highSaturatedFat": true }
+    },
+    "sour cream": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 5,
+      "heartHealthPoints": 5,
+      "flags": { "saturatedFat": true }
+    },
+    "cream cheese": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 5,
+      "heartHealthPoints": 5,
+      "flags": { "saturatedFat": true }
+    },
+    "mozzarella": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 8,
+      "flags": {}
+    },
+    "parmesan": {
+      "nutrientDensityPoints": 14,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 10,
+      "flags": {}
+    },
+    "cheddar": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 8,
+      "flags": { "saturatedFat": true }
+    },
+    "feta": {
+      "nutrientDensityPoints": 14,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 12,
+      "flags": {}
+    },
+    "goat cheese": {
+      "nutrientDensityPoints": 14,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 12,
+      "flags": {}
+    },
+    "yogurt": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 16,
+      "heartHealthPoints": 12,
+      "flags": { "probiotic": true }
+    },
+    "coconut milk": {
+      "nutrientDensityPoints": 10,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 8,
+      "heartHealthPoints": 8,
+      "flags": { "saturatedFat": true }
+    },
+    "soy milk": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 12,
+      "flags": { "plantBased": true }
+    },
+    "oat milk": {
+      "nutrientDensityPoints": 12,
+      "antiAgingPoints": 10,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 12,
+      "flags": { "plantBased": true }
+    },
+    "peanut": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 18,
+      "flags": { "proteinRich": true }
+    },
+    "peanuts": {
+      "nutrientDensityPoints": 18,
+      "antiAgingPoints": 15,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 18,
+      "flags": { "proteinRich": true }
+    },
+    "peanut butter": {
+      "nutrientDensityPoints": 16,
+      "antiAgingPoints": 14,
+      "weightLossPoints": 12,
+      "heartHealthPoints": 16,
+      "flags": { "proteinRich": true }
+    },
+    "cashews": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 16,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 20,
+      "flags": { "healthyFat": true }
+    },
+    "pecans": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 22,
+      "flags": { "protectiveSuperfood": true, "healthyFat": true }
+    },
+    "pistachios": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 16,
+      "heartHealthPoints": 22,
+      "flags": { "protectiveSuperfood": true, "healthyFat": true }
+    },
+    "sunflower seeds": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 15,
+      "heartHealthPoints": 20,
+      "flags": { "vitaminERich": true }
+    },
+    "pumpkin seeds": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 20,
+      "weightLossPoints": 16,
+      "heartHealthPoints": 22,
+      "flags": { "protectiveSuperfood": true }
+    },
+    "chia seeds": {
+      "nutrientDensityPoints": 28,
+      "antiAgingPoints": 22,
+      "weightLossPoints": 20,
+      "heartHealthPoints": 28,
+      "flags": { "protectiveSuperfood": true, "omega3Rich": true, "fiberRich": true }
+    },
+    "flax seeds": {
+      "nutrientDensityPoints": 28,
+      "antiAgingPoints": 24,
+      "weightLossPoints": 20,
+      "heartHealthPoints": 30,
+      "flags": { "protectiveSuperfood": true, "omega3Rich": true, "fiberRich": true }
+    },
+    "sesame seeds": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 15,
+      "heartHealthPoints": 20,
+      "flags": { "calciumRich": true }
+    },
+    "tahini": {
+      "nutrientDensityPoints": 20,
+      "antiAgingPoints": 18,
+      "weightLossPoints": 14,
+      "heartHealthPoints": 20,
+      "flags": { "healthyFat": true }
+    },
+    "hummus": {
+      "nutrientDensityPoints": 22,
+      "antiAgingPoints": 16,
+      "weightLossPoints": 18,
+      "heartHealthPoints": 18,
+      "flags": { "protectiveSuperfood": true, "plantProtein": true }
+    },
+    "mayonnaise": {
+      "nutrientDensityPoints": 3,
+      "antiAgingPoints": 3,
+      "weightLossPoints": 0,
+      "heartHealthPoints": 3,
+      "flags": { "processed": true }
+    },
+    "ketchup": {
+      "nutrientDensityPoints": 3,
+      "antiAgingPoints": 3,
+      "weightLossPoints": 0,
+      "heartHealthPoints": 3,
+      "flags": { "sugary": true, "processed": true }
+    },
+    "mustard": {
+      "nutrientDensityPoints": 8,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 8,
+      "heartHealthPoints": 8,
+      "flags": {}
+    },
+    "hot sauce": {
+      "nutrientDensityPoints": 10,
+      "antiAgingPoints": 12,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 10,
+      "flags": { "antiInflammatory": true }
+    },
+    "maple syrup": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 8,
+      "weightLossPoints": 2,
+      "heartHealthPoints": 5,
+      "flags": { "sugary": true, "natural": true }
+    },
+    "agave": {
+      "nutrientDensityPoints": 3,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 0,
+      "heartHealthPoints": 3,
+      "flags": { "sugary": true }
+    },
+    "stevia": {
+      "nutrientDensityPoints": 5,
+      "antiAgingPoints": 5,
+      "weightLossPoints": 10,
+      "heartHealthPoints": 5,
+      "flags": { "artificial": true }
     }
   },
   
-  "_note": "This is an initial seed with ~40 common ingredients. Will be expanded to 200+ during implementation."
+  "_note": "Expanded ingredient database for comprehensive recipe scoring. Currently 100+ ingredients."
 }

@@ -322,7 +322,7 @@
             "dependencies": [
               3
             ],
-            "details": "Define a function mapSpoonacularToRecipe(spRecipe) in a shared module (e.g., src/utils/spoonacularMapper.ts) and import it into the Edge function. Within the mapper, use existing unitConversions utilities and Spoonacular’s metric fields (e.g., spRecipe.nutrition.ingredients, metric measures) to normalize ingredients into metric units. Populate the internal nutrition structure (macros and key micronutrients) from spRecipe.nutrition. Derive internal tags (e.g., tags.diets, tags.cuisines, tags.dishTypes, health-related flags) from Spoonacular properties like diets, dishTypes, cuisine fields, readyInMinutes, veryHealthy, vegetarian, vegan, etc. Set source='spoonacular' and spoonacularId=spRecipe.id, ensuring type compatibility with the existing internal Recipe type/interface. Handle missing or partial data defensively, providing sensible defaults where necessary.\n<info added on 2026-01-08T08:47:27.880Z>\nThe mapSpoonacularToRecipe helper must also handle image processing to support offline functionality. When transforming Spoonacular recipe data, extract the image URL from the Spoonacular recipe object (either sp.image or sp.imageUrl field). Store both the original Spoonacular image URL as spoonacularImageUrl and create a placeholder for the local image path as image. The local path should follow a consistent pattern that will be used when images are downloaded during the extraction script execution. This dual-storage approach ensures that during the extraction process, images can be downloaded from Spoonacular's CDN and stored locally, with the paths in the recipe objects being updated accordingly. The final catalog will only reference local image paths, eliminating dependency on Spoonacular's CDN and enabling the application to function properly offline.\n</info added on 2026-01-08T08:47:27.880Z>",
+            "details": "Define a function mapSpoonacularToRecipe(spRecipe) in a shared module (e.g., src/utils/spoonacularMapper.ts) and import it into the Edge function. Within the mapper, use existing unitConversions utilities and Spoonacular’s metric fields (e.g., spRecipe.nutrition.ingredients, metric measures) to normalize ingredients into metric units. Populate the internal nutrition structure (macros and key micronutrients) from spRecipe.nutrition. Derive internal tags (e.g., tags.diets, tags.cuisines, tags.dishTypes, health-related flags) from Spoonacular properties like diets, dishTypes, cuisine fields, readyInMinutes, veryHealthy, vegetarian, vegan, etc. Set source='spoonacular' and spoonacularId=spRecipe.id, ensuring type compatibility with the existing internal Recipe type/interface. Handle missing or partial data defensively, providing sensible defaults where necessary.\n<info added on 2026-01-08T08:47:27.880Z>\nThe mapSpoonacularToRecipe helper must also handle image processing to support offline functionality. When transforming Spoonacular recipe data, extract the image URL from the Spoonacular recipe object (either sp.image or sp.imageUrl field). Store both the original Spoonacular image URL as spoonacularImageUrl and create a placeholder for the local image path as image. The local path should follow a consistent pattern that will be used when images are downloaded during the extraction script execution. This dual-storage approach ensures that during the extraction process, images can be downloaded from Spoonacular's CDN and stored locally, with the paths in the recipe objects being updated accordingly. The final catalog will only reference local image paths, eliminating dependency on Spoonacular's CDN and enabling the application to function properly offline.\n</info added on 2026-01-08T08:47:27.880Z>\n<info added on 2026-01-08T09:34:47.577Z>\nIMPORTANT NOTE: The mapSpoonacularToRecipe helper should handle the case where extendedIngredients array may be empty in Spoonacular API responses. This is a known issue with the current extraction process. The helper should implement defensive coding to check for the existence and validity of extendedIngredients before attempting to process them. If extendedIngredients is empty or missing, the helper should still create a valid Recipe object with available data (name, images, basic metadata) while setting nutrition and ingredient-derived fields to reasonable defaults or empty arrays as appropriate. This approach allows us to proceed with catalog integration without health scores for now, while maintaining the ability to enhance recipes with proper ingredient and nutrition data in a future iteration when we resolve the Spoonacular API parameter issue.\n</info added on 2026-01-08T09:34:47.577Z>",
             "status": "pending",
             "testStrategy": "Write unit-style tests or a small dev harness that loads a saved Spoonacular sample JSON and runs mapSpoonacularToRecipe on it, asserting that: (1) ingredients are converted to metric units, (2) nutrition fields are populated, (3) tags reflect diets/dishTypes correctly, and (4) source and spoonacularId are set. Optionally pipe a mapped recipe through normalizeRecipe and confirm it passes validation without errors.",
             "parentId": "undefined"
@@ -458,8 +458,9 @@
           "64",
           "66"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:45:46.343Z"
       },
       {
         "id": "68",
@@ -800,7 +801,7 @@
         "dependencies": [
           "80"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -878,7 +879,8 @@
             "testStrategy": null,
             "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T09:45:47.113Z"
       },
       {
         "id": "82",
@@ -891,7 +893,7 @@
           "80",
           "81"
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -955,7 +957,8 @@
             "testStrategy": "Create integration-style tests or a dev script that runs the Node extraction on a sample Spoonacular dump, loads the resulting catalog in the admin UI environment, and verifies that recipes are accessible via find and filter operations. Measure or assert catalog size boundaries and manually or programmatically confirm that no redundant large payloads (like raw Spoonacular responses) are persisted.",
             "parentId": "undefined"
           }
-        ]
+        ],
+        "updatedAt": "2026-01-08T09:45:47.116Z"
       },
       {
         "id": "83",
@@ -1131,8 +1134,9 @@
           "83",
           "82"
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2026-01-08T09:47:05.940Z"
       },
       {
         "id": "87",
@@ -1379,9 +1383,9 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-08T09:07:39.709Z",
+      "lastModified": "2026-01-08T09:47:05.941Z",
       "taskCount": 40,
-      "completedCount": 16,
+      "completedCount": 20,
       "tags": [
         "master"
       ]

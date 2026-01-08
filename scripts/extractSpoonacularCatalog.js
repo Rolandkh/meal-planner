@@ -253,12 +253,12 @@ async function extractCatalog() {
     imageUrl: sp.image?.startsWith('/images') ? null : sp.image,  // Original URL if not local
     
     ingredients: (sp.extendedIngredients || []).map(ing => ({
-      name: ing.name || ing.originalName,
-      quantity: ing.measures?.metric?.amount || ing.amount || 0,
-      unit: ing.measures?.metric?.unitShort || ing.unit || '',
+      name: ing.nameClean || ing.name || ing.originalName || 'unknown',
+      quantity: parseFloat(ing.measures?.metric?.amount || ing.amount || 0),
+      unit: ing.measures?.metric?.unitShort || ing.measures?.metric?.unitLong || ing.unit || '',
       category: 'other',
       healthImpact: 'neutral'
-    })),
+    })).filter(ing => ing.name !== 'unknown'),
     
     instructions: sp.instructions || 'No instructions available',
     prepTime: sp.preparationMinutes || Math.round((sp.readyInMinutes || 30) * 0.3),
