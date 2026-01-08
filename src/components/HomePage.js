@@ -233,9 +233,10 @@ export class HomePage {
     // Chat button
     const chatButton = document.createElement('button');
     chatButton.className = `
-      bg-gradient-to-r from-gray-300 to-gray-400
-      hover:from-gray-400 hover:to-gray-500
+      bg-gradient-to-r from-gray-300 to-gray-350
+      hover:from-gray-350 hover:to-gray-400
       text-gray-800 font-bold py-4 px-8 rounded-full
+      border border-gray-400
       shadow-xl hover:shadow-2xl
       transition-all duration-300 transform hover:scale-105
       text-lg
@@ -392,9 +393,10 @@ export class HomePage {
       
       if (hasDate) {
         dayButton.className = `
-          bg-gradient-to-r from-gray-300 to-gray-400
-          hover:from-gray-400 hover:to-gray-500
+          bg-gradient-to-r from-gray-300 to-gray-350
+          hover:from-gray-350 hover:to-gray-400
           text-gray-800 font-semibold py-4 px-6 rounded-lg
+          border border-gray-400
           shadow-lg hover:shadow-xl
           transition-all transform hover:scale-105
           text-lg
@@ -448,9 +450,10 @@ export class HomePage {
     } else if (style === 'view') {
       // Gray gradient for view buttons
       button.className = `
-        bg-gradient-to-r from-gray-300 to-gray-400
-        hover:from-gray-400 hover:to-gray-500
+        bg-gradient-to-r from-gray-300 to-gray-350
+        hover:from-gray-350 hover:to-gray-400
         text-gray-800 font-bold py-5 px-8 rounded-lg
+        border border-gray-400
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-xl
@@ -458,9 +461,10 @@ export class HomePage {
     } else {
       // Gray gradient for secondary buttons (chat, etc.)
       button.className = `
-        bg-gradient-to-r from-gray-300 to-gray-400
-        hover:from-gray-400 hover:to-gray-500
+        bg-gradient-to-r from-gray-300 to-gray-350
+        hover:from-gray-350 hover:to-gray-400
         text-gray-800 font-semibold py-4 px-6 rounded-lg
+        border border-gray-400
         shadow-lg hover:shadow-xl
         transition-all transform hover:scale-105
         text-lg
