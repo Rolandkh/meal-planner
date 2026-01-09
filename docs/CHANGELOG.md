@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.3.2-alpha] - January 10, 2026 - Shopping List Fixes
+## [v1.3.2-alpha] - January 10, 2026 - Shopping List Fixes & Performance Tracking
 
 ### 🛒 Major Shopping List Improvements
 
@@ -47,12 +47,53 @@
 - Unit conversion warnings eliminated
 - Proper servings scaling across multiple recipe uses
 
+### ⏱️ Performance Tracking Added
+
+#### Comprehensive Timing Metrics
+- **Generation process:**
+  - Data loading times (eaters, chat history, recipe catalog)
+  - API connection time
+  - Streaming processing time
+  - Total generation time with human-readable timestamps
+- **Post-processing:**
+  - Raw output save time
+  - Data transformation time
+  - localStorage save time
+  - Total processing time
+- **Shopping list:**
+  - Recipe loading time
+  - Meal plan extraction time
+  - Shopping list generation time
+  - Total shopping list generation time
+
+#### Console Output Format
+```
+🚀 Starting meal plan generation...
+⏱️ Start time: 9:37:12 PM
+  ⏱️ Loaded 3 eater(s) in 2ms
+  ⏱️ Loaded chat history (8 messages) and base spec in 5ms
+  ⏱️ Loaded recipe index: 622 recipes in 12ms
+  📡 Sending request to API...
+  ⏱️ API connection established in 234ms
+  ⏱️ Stream processing completed in 15678ms
+✅ Total generation time: 15931ms (15.9s)
+⏱️ End time: 9:37:28 PM
+```
+
+#### Error Handling Enhanced
+- Comprehensive try-catch in shopping list generation
+- Detailed logging at each step for debugging
+- Missing recipe warnings with meal location details
+- Stack traces on errors for easier troubleshooting
+
 ### 📝 Technical Details
 - `ShoppingListView.getRecipesFromMealPlan()`: Filters to meal plan recipes only
 - `ShoppingListView.getRecipeUsageCounts()`: Tracks usage and scales servings
 - `ShoppingListView.cleanIngredientName()`: Smarter branded/obscure item detection
 - `ShoppingListView.getCanonicalName()`: Simplified to preserve specificity
 - Rounding logic: `Math.round(converted)` for whole numbers minimum 1g
+- Performance tracking: `performance.now()` for high-precision timing
+- All timing logged in milliseconds with human-readable formatting
 
 ---
 

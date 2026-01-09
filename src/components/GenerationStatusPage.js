@@ -140,26 +140,33 @@ export class GenerationStatusPage {
    * Start meal plan generation with SSE
    */
   async startGeneration() {
-    console.log('Starting meal plan generation...');
+    const generationStartTime = performance.now();
+    console.log('🚀 Starting meal plan generation...');
+    console.log(`⏱️ Start time: ${new Date().toLocaleTimeString()}`);
 
     // Create new AbortController for this request
     this.abortController = new AbortController();
 
     try {
       // Load eaters from storage (or use default)
+      const t1 = performance.now();
       const eaters = loadEaters();
       const defaultEaters = eaters.length > 0 ? eaters : [
         { name: 'User', preferences: 'no restrictions', schedule: 'home for dinner' }
       ];
+      console.log(`  ⏱️ Loaded ${defaultEaters.length} eater(s) in ${Math.round(performance.now() - t1)}ms`);
 
       // Load chat history and base specification
+      const t2 = performance.now();
       const chatHistory = this.loadChatHistory();
       const baseSpecification = loadBaseSpecification();
+      console.log(`  ⏱️ Loaded chat history (${chatHistory.length} messages) and base spec in ${Math.round(performance.now() - t2)}ms`);
       
       // Slice 5: Load lightweight recipe index for meal plan generation
+      const t3 = performance.now();
       const { getRecipeIndexSync } = await import('../utils/catalogStorage.js');
       const catalog = getRecipeIndexSync();
-      console.log(`📚 Loaded recipe index: ${catalog.length} recipes (lightweight)`);
+      console.log(`  ⏱️ Loaded recipe index: ${catalog.length} recipes in ${Math.round(performance.now() - t3)}ms`);
       
       // Slice 4: Check for single-day regeneration parameters (Task 50)
       const regenerateDay = sessionStorage.getItem('regenerate_day');
@@ -200,6 +207,8 @@ export class GenerationStatusPage {
       }
 
       // Make POST request with SSE
+      const apiStartTime = performance.now();
+      console.log('  📡 Sending request to API...');
       const response = await fetch('/api/generate-meal-plan', {
         method: 'POST',
         headers: {
@@ -212,9 +221,17 @@ export class GenerationStatusPage {
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
+      
+      console.log(`  ⏱️ API connection established in ${Math.round(performance.now() - apiStartTime)}ms`);
 
       // Process SSE stream
+      const streamStartTime = performance.now();
       await this.processStream(response);
+      console.log(`  ⏱️ Stream processing completed in ${Math.round(performance.now() - streamStartTime)}ms`);
+      
+      const totalTime = Math.round(performance.now() - generationStartTime);
+      console.log(`✅ Total generation time: ${totalTime}ms (${(totalTime / 1000).toFixed(1)}s)`);
+      console.log(`⏱️ End time: ${new Date().toLocaleTimeString()}`);
 
     } catch (error) {
       if (error.name === 'AbortError') {
@@ -306,7 +323,8 @@ export class GenerationStatusPage {
    * Handle generation complete
    */
   handleComplete(data) {
-    console.log('Generation complete!', data);
+    const completeStartTime = performance.now();
+    console.log('📦 Generation complete! Processing data...', data);
     
     this.status = 'complete';
     this.progress = 100;
@@ -314,20 +332,21 @@ export class GenerationStatusPage {
 
     try {
       // Save raw AI output for debugging (before transformation)
+      const t1 = performance.now();
       try {
         localStorage.setItem('debug_raw_ai_output', JSON.stringify({
           timestamp: new Date().toISOString(),
           rawData: data
         }));
-        console.log('✅ Raw AI output saved for debugging');
+        console.log(`  ⏱️ Saved raw AI output in ${Math.round(performance.now() - t1)}ms`);
       } catch (e) {
         console.warn('Could not save debug output:', e);
       }
 
       // Transform Claude's output to normalized format
+      const t2 = performance.now();
       const transformed = transformGeneratedPlan(data);
-      
-      console.log('Transformed data:', {
+      console.log(`  ⏱️ Transformed data in ${Math.round(performance.now() - t2)}ms:`, {
         recipes: transformed.recipes.length,
         meals: transformed.meals.length,
         mealPlanId: transformed.mealPlan.mealPlanId
@@ -374,6 +393,7 @@ export class GenerationStatusPage {
       }
 
       // Save to localStorage
+      const t3 = performance.now();
       const saveResults = {
         recipes: saveRecipes(recipesToSave),
         meals: saveMeals(mealsToSave),
@@ -381,6 +401,7 @@ export class GenerationStatusPage {
           ? saveCurrentMealPlan(transformed.mealPlan) // Update existing plan
           : saveNewMealPlan(transformed.mealPlan) // Create new plan (archives old)
       };
+      console.log(`  ⏱️ Saved data to localStorage in ${Math.round(performance.now() - t3)}ms`);
 
       // Check for any save failures
       if (!saveResults.recipes.success || !saveResults.meals.success || !saveResults.mealPlan.success) {
@@ -393,7 +414,8 @@ export class GenerationStatusPage {
           ErrorHandler.handleStorageError(new Error('QUOTA_EXCEEDED'), document.body);
         }
       } else {
-        console.log('All data saved successfully');
+        const totalProcessingTime = Math.round(performance.now() - completeStartTime);
+        console.log(`✅ All data saved successfully in ${totalProcessingTime}ms`);
       }
 
       // Dispatch event for other components
