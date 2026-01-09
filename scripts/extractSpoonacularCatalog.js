@@ -41,7 +41,7 @@ const CONFIG = {
   imageDelay: 100,    // Between image downloads
   maxRetries: 3,
   imageParallel: 10,  // Download 10 images at once
-  imageSize: '312x231',  // Card size
+  imageSize: '636x393',  // High-res size (was 312x231)
   outputDir: path.join(PROJECT_ROOT, 'src/data'),
   imageDir: path.join(PROJECT_ROOT, 'public/images/recipes')
 };
@@ -155,6 +155,45 @@ async function fetchRecipes(query, offset = 0) {
 }
 
 /**
+ * Fetch full recipe information including ingredients and instructions
+ */
+async function fetchRecipeDetails(recipeId) {
+  const url = new URL(`/recipes/${recipeId}/information`, CONFIG.baseUrl);
+  url.searchParams.set('includeNutrition', 'true');
+  url.searchParams.set('apiKey', CONFIG.apiKey);
+
+  for (let attempt = 0; attempt < CONFIG.maxRetries; attempt++) {
+    try {
+      const response = await fetch(url.toString());
+      
+      if (response.status === 429) {
+        const waitTime = 2000 * Math.pow(2, attempt);
+        console.log(`⚠️  Rate limited (recipe ${recipeId}), waiting ${waitTime}ms...`);
+        await sleep(waitTime);
+        continue;
+      }
+      
+      if (!response.ok) {
+        console.warn(`⚠️  Failed to fetch recipe ${recipeId}: HTTP ${response.status}`);
+        return null;
+      }
+      
+      const data = await response.json();
+      return data;
+      
+    } catch (error) {
+      if (attempt === CONFIG.maxRetries - 1) {
+        console.error(`❌ Failed to fetch recipe ${recipeId}:`, error.message);
+        return null;
+      }
+      await sleep(1000 * (attempt + 1));
+    }
+  }
+  
+  return null;
+}
+
+/**
  * Download recipe image
  */
 async function downloadImage(spoonacularId, imageUrl) {
@@ -246,6 +285,34 @@ async function extractCatalog() {
   console.log(`   Total fetched: ${totalFetched}`);
   console.log(`   Unique recipes: ${uniqueRecipes.length}`);
   console.log(`   Duplicates skipped: ${duplicatesSkipped}\n`);
+
+  // Fetch full recipe details (ingredients + instructions)
+  console.log('📋 Fetching full recipe details (ingredients + instructions)...\n');
+  let detailsFetched = 0;
+  let detailsFailed = 0;
+  
+  for (let i = 0; i < uniqueRecipes.length; i++) {
+    const recipe = uniqueRecipes[i];
+    const details = await fetchRecipeDetails(recipe.id);
+    
+    if (details) {
+      // Merge detailed information
+      uniqueRecipes[i] = { ...recipe, ...details };
+      detailsFetched++;
+    } else {
+      detailsFailed++;
+    }
+    
+    // Progress update every 50 recipes
+    if ((i + 1) % 50 === 0) {
+      console.log(`  Fetched: ${i + 1}/${uniqueRecipes.length} (${detailsFailed} failed)`);
+    }
+    
+    // Rate limit delay
+    await sleep(CONFIG.requestDelay);
+  }
+  
+  console.log(`\n✅ Recipe details complete: ${detailsFetched} success, ${detailsFailed} failed\n`);
 
   // Download images
   console.log('📸 Downloading recipe images...\n');
