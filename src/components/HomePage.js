@@ -111,11 +111,11 @@ export class HomePage {
           
           if (result.success) {
             console.log('✅ Dev preset imported:', result.message);
-            buttonElement.innerHTML = '✅ Loaded!';
+            buttonElement.innerHTML = '🚀 Generating...';
             
-            // Reload the page to show imported data
+            // Short delay to show success state, then redirect to generation
             setTimeout(() => {
-              window.location.reload();
+              window.location.hash = '#/generating';
             }, 1000);
           } else {
             console.error('❌ Import failed:', result.error);
