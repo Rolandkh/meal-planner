@@ -109,20 +109,34 @@ async function initApp() {
     console.warn('⚠️ Could not initialize debug helpers:', error);
   }
   
-  // STEP 0.5: Load catalog from file into localStorage (Slice 5)
+  // STEP 0.5: Load catalog and recipe index from file into localStorage (Slice 5)
   try {
-    const { loadCatalogFromFile, getRecipeCatalogSync } = await import('./utils/catalogStorage.js');
+    const { 
+      loadCatalogFromFile, 
+      getRecipeCatalogSync,
+      loadRecipeIndexFromFile,
+      getRecipeIndexSync
+    } = await import('./utils/catalogStorage.js');
     
     // Check if catalog already in localStorage
-    const existing = getRecipeCatalogSync();
-    if (existing.length === 0) {
+    const existingCatalog = getRecipeCatalogSync();
+    if (existingCatalog.length === 0) {
       console.log('📦 Loading catalog from file...');
       await loadCatalogFromFile();
     } else {
-      console.log(`✅ Catalog already loaded: ${existing.length} recipes`);
+      console.log(`✅ Catalog already loaded: ${existingCatalog.length} recipes`);
+    }
+    
+    // Check if recipe index already in localStorage
+    const existingIndex = getRecipeIndexSync();
+    if (existingIndex.length === 0) {
+      console.log('📦 Loading recipe index from file...');
+      await loadRecipeIndexFromFile();
+    } else {
+      console.log(`✅ Recipe index already loaded: ${existingIndex.length} recipes`);
     }
   } catch (error) {
-    console.warn('⚠️ Could not load catalog:', error);
+    console.warn('⚠️ Could not load catalog/index:', error);
   }
   
   // STEP 1: Run all schema migrations
