@@ -152,22 +152,31 @@ export class SettingsPage {
       { id: 'household', label: '👥 Household', icon: '👥' },
       { id: 'mealPlanning', label: '🍽️ Meal Planning', icon: '🍽️' },
       { id: 'mealPrep', label: '🔪 Meal Prep', icon: '🔪' },
-      { id: 'chatPreferences', label: '💬 Chat', icon: '💬' }
+      { id: 'chatPreferences', label: '💬 Chat', icon: '💬' },
+      { id: 'dietProfiles', label: '📋 Diet Profiles', icon: '📋', isLink: true, href: '#/diet-profiles' }
     ];
 
     tabs.forEach(tab => {
-      const button = document.createElement('button');
-      button.className = `
-        flex-1 py-3 px-4 rounded-md font-medium transition-colors
-        ${this.state.activeSection === tab.id
-          ? 'bg-blue-500 text-white shadow-sm'
-          : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-        }
-      `.trim().replace(/\s+/g, ' ');
-      button.textContent = tab.label;
-      button.onclick = () => this.switchSection(tab.id);
-      button.setAttribute('data-tab', tab.id);
-      tabsList.appendChild(button);
+      if (tab.isLink) {
+        const link = document.createElement('a');
+        link.href = tab.href;
+        link.className = 'flex-1 py-3 px-4 rounded-md font-medium transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center';
+        link.textContent = tab.label;
+        tabsList.appendChild(link);
+      } else {
+        const button = document.createElement('button');
+        button.className = `
+          flex-1 py-3 px-4 rounded-md font-medium transition-colors
+          ${this.state.activeSection === tab.id
+            ? 'bg-blue-500 text-white shadow-sm'
+            : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+          }
+        `.trim().replace(/\s+/g, ' ');
+        button.textContent = tab.label;
+        button.onclick = () => this.switchSection(tab.id);
+        button.setAttribute('data-tab', tab.id);
+        tabsList.appendChild(button);
+      }
     });
 
     tabsContainer.appendChild(tabsList);

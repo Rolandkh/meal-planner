@@ -25,6 +25,8 @@ import { Navigation } from './components/Navigation.js';
 import { RecipeEditPage } from './components/RecipeEditPage.js';
 import { MealPlanHistoryPage } from './components/MealPlanHistoryPage.js';
 import { MealPlanHistoryDetailPage } from './components/MealPlanHistoryDetailPage.js';
+// Slice 5: Diet Profiles
+import { DietProfilesPage } from './components/DietProfilesPage.js';
 
 // Global error handler
 window.addEventListener('error', (event) => {
@@ -164,6 +166,8 @@ async function initApp() {
   router.addRoute('/recipe/:id/edit', RecipeEditPage); // Recipe edit page
   router.addRoute('/history', new MealPlanHistoryPage()); // History list
   router.addRoute('/history/:id', MealPlanHistoryDetailPage); // Historical plan detail
+  // Slice 5: Diet Profiles
+  router.addRoute('/diet-profiles', new DietProfilesPage()); // Diet profiles library
   
   // Initialize router
   router.init();
