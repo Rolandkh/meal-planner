@@ -156,6 +156,11 @@ export class GenerationStatusPage {
       const chatHistory = this.loadChatHistory();
       const baseSpecification = loadBaseSpecification();
       
+      // Slice 5: Load recipe catalog for catalog-first generation (Task 70)
+      const { getRecipeCatalogSync } = await import('../utils/catalogStorage.js');
+      const catalog = getRecipeCatalogSync();
+      console.log(`📚 Loaded catalog: ${catalog.length} recipes`);
+      
       // Slice 4: Check for single-day regeneration parameters (Task 50)
       const regenerateDay = sessionStorage.getItem('regenerate_day');
       const regenerateDate = sessionStorage.getItem('regenerate_date');
@@ -163,7 +168,8 @@ export class GenerationStatusPage {
       let requestBody = {
         chatHistory,
         eaters: defaultEaters,
-        baseSpecification
+        baseSpecification,
+        catalogSlice: catalog  // Slice 5: Pass catalog to API
       };
       
       // If regenerating a single day, add parameters and get existing meals

@@ -78,6 +78,11 @@ export async function generateDayMeals(dayName, date, existingMeals = []) {
     const baseSpec = loadBaseSpecification();
     const chatHistory = loadChatHistory();
     
+    // Slice 5: Load recipe catalog for catalog-first generation (Task 70)
+    const { getRecipeCatalogSync } = await import('../utils/catalogStorage.js');
+    const catalog = getRecipeCatalogSync();
+    console.log(`📚 Loaded catalog for day regeneration: ${catalog.length} recipes`);
+    
     // Extract recipe names from existing meals
     const recipes = loadRecipes();
     const existingMealsWithNames = existingMeals.map(meal => {
@@ -98,6 +103,7 @@ export async function generateDayMeals(dayName, date, existingMeals = []) {
         chatHistory: chatHistory.slice(-10),
         eaters,
         baseSpecification: baseSpec,
+        catalogSlice: catalog,  // Slice 5: Pass catalog to API
         regenerateDay: dayName.toLowerCase(),
         dateForDay: date,
         existingMeals: existingMealsWithNames
