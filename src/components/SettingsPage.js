@@ -31,6 +31,8 @@ import {
   getDietProfileById 
 } from '../utils/dietProfiles.js';
 
+import { ensureDietProfiles, checkDietProfiles } from '../utils/forceDietProfilesInit.js';
+
 export class SettingsPage {
   constructor() {
     this.state = {
@@ -49,6 +51,13 @@ export class SettingsPage {
    * Load data before rendering
    */
   beforeRender() {
+    // Ensure diet profiles are initialized (critical for household section)
+    ensureDietProfiles();
+    
+    // Check and log diet profile status
+    const profileStatus = checkDietProfiles();
+    console.log('📋 Diet Profiles Status:', profileStatus);
+    
     this.state.eaters = loadEaters();
     this.state.baseSpec = getOrCreateBaseSpecification();
     this.state.storageStats = getStorageQuota();
@@ -56,7 +65,8 @@ export class SettingsPage {
     console.log('Settings loaded:', {
       eatersCount: this.state.eaters.length,
       hasBaseSpec: !!this.state.baseSpec,
-      storageUsed: this.state.storageStats.percentUsed + '%'
+      storageUsed: this.state.storageStats.percentUsed + '%',
+      dietProfiles: profileStatus.count
     });
   }
 

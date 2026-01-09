@@ -93,6 +93,18 @@ async function initApp() {
     await bootstrapHealthData();
   } catch (error) {
     console.warn('⚠️ Could not bootstrap health data:', error);
+    console.log('💡 Trying fallback initialization...');
+    // Fallback: use hardcoded profiles
+    const { forceDietProfilesInit } = await import('./utils/forceDietProfilesInit.js');
+    forceDietProfilesInit();
+  }
+  
+  // Initialize debug helpers (accessible via window.debug)
+  try {
+    const { initDebugHelpers } = await import('./utils/debugHelpers.js');
+    initDebugHelpers();
+  } catch (error) {
+    console.warn('⚠️ Could not initialize debug helpers:', error);
   }
   
   // STEP 0.5: Load catalog from file into localStorage (Slice 5)
