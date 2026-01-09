@@ -3,7 +3,7 @@
   "outputDirectory": ".",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!src/data/).*)",
       "destination": "/index.html"
     }
   ],

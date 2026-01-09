@@ -80,11 +80,27 @@ export async function bootstrapHealthData() {
     // Load data using fetch (more compatible than import with assert)
     const [ingredientData, profileData] = await Promise.all([
       fetch('/src/data/ingredientHealthData.json')
-        .then(r => r.json())
-        .catch(() => ({ ingredients: {}, _dataVersion: '1.0.0' })),
+        .then(async r => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}: ${r.statusText}`);
+          const data = await r.json();
+          console.log('📦 Loaded ingredient data:', Object.keys(data.ingredients || {}).length, 'ingredients');
+          return data;
+        })
+        .catch(err => {
+          console.error('Failed to load ingredient data:', err.message);
+          return { ingredients: {}, _dataVersion: '1.0.0' };
+        }),
       fetch('/src/data/dietProfiles.json')
-        .then(r => r.json())
-        .catch(() => ({ profiles: [], _dataVersion: '1.0.0' }))
+        .then(async r => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}: ${r.statusText}`);
+          const data = await r.json();
+          console.log('📦 Loaded diet profiles data:', data.profiles?.length || 0, 'profiles, version:', data._dataVersion);
+          return data;
+        })
+        .catch(err => {
+          console.error('Failed to load diet profiles:', err.message);
+          return { profiles: [], _dataVersion: '1.0.0' };
+        })
     ]);
 
     await Promise.all([
