@@ -690,6 +690,13 @@ export class SettingsPage {
     const section = document.createElement('div');
     section.className = 'space-y-6';
 
+    // Prep Strategy Card
+    const strategyCard = this.createCard(
+      'Meal Prep Strategy',
+      this.renderPrepStrategy()
+    );
+    section.appendChild(strategyCard);
+
     const prepGridCard = this.createCard(
       'Daily Prep Levels',
       this.renderPrepLevelsGrid(),
@@ -702,6 +709,20 @@ export class SettingsPage {
       this.renderBatchPrepDays()
     );
     section.appendChild(batchDaysCard);
+
+    // Schedule Preferences Card
+    const scheduleCard = this.createCard(
+      'Schedule & Time Preferences',
+      this.renderSchedulePreferences()
+    );
+    section.appendChild(scheduleCard);
+
+    // Additional Preferences Card
+    const preferencesCard = this.createCard(
+      'Cooking Preferences',
+      this.renderCookingPreferences()
+    );
+    section.appendChild(preferencesCard);
 
     return section;
   }
@@ -852,6 +873,271 @@ export class SettingsPage {
   }
 
   /**
+   * Render prep strategy selection
+   */
+  renderPrepStrategy() {
+    const container = document.createElement('div');
+    container.className = 'space-y-4';
+
+    const intro = document.createElement('p');
+    intro.className = 'text-sm text-gray-600 mb-4';
+    intro.textContent = 'Choose how you prefer to prepare your meals throughout the week.';
+    container.appendChild(intro);
+
+    const spec = this.state.baseSpec;
+    const preferences = spec.mealPrepPreferences || {
+      strategy: 'hybrid',
+      prepDays: [6],
+      maxPrepTime: 120,
+      busyDays: [1, 2, 3, 4, 5],
+      lightDays: [0, 6],
+      preferences: {
+        preferFreshBreakfast: true,
+        allowFrozenMeals: false,
+        batchCookingEnabled: true,
+        makeAheadMealsEnabled: true
+      }
+    };
+
+    const strategies = [
+      {
+        value: 'fresh-only',
+        label: 'Fresh Only',
+        desc: 'Cook everything fresh each day. Minimal prep ahead.',
+        icon: '🥗'
+      },
+      {
+        value: 'hybrid',
+        label: 'Hybrid (Recommended)',
+        desc: 'Mix of batch prep and fresh cooking for balance.',
+        icon: '⚖️'
+      },
+      {
+        value: 'batch-cooking',
+        label: 'Batch Cooking',
+        desc: 'Maximize batch prep on designated days.',
+        icon: '🍱'
+      }
+    ];
+
+    strategies.forEach(strategy => {
+      const option = document.createElement('div');
+      option.className = `
+        border-2 rounded-lg p-4 cursor-pointer transition-all
+        ${preferences.strategy === strategy.value 
+          ? 'border-blue-500 bg-blue-50' 
+          : 'border-gray-200 hover:border-gray-300'}
+      `.trim().replace(/\s+/g, ' ');
+      option.onclick = () => this.handleStrategyChange(strategy.value);
+
+      option.innerHTML = `
+        <div class="flex items-start gap-3">
+          <div class="text-2xl">${strategy.icon}</div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2">
+              <h4 class="font-semibold text-gray-900">${strategy.label}</h4>
+              ${preferences.strategy === strategy.value 
+                ? '<span class="text-xs bg-blue-500 text-white px-2 py-0.5 rounded-full">Selected</span>' 
+                : ''}
+            </div>
+            <p class="text-sm text-gray-600 mt-1">${strategy.desc}</p>
+          </div>
+        </div>
+      `;
+      container.appendChild(option);
+    });
+
+    const status = document.createElement('div');
+    status.id = 'strategy-save-status';
+    status.className = 'mt-2 text-sm text-gray-600 min-h-[20px]';
+    container.appendChild(status);
+
+    return container;
+  }
+
+  /**
+   * Render schedule preferences (max prep time, busy/light days)
+   */
+  renderSchedulePreferences() {
+    const container = document.createElement('div');
+    container.className = 'space-y-6';
+
+    const spec = this.state.baseSpec;
+    const preferences = spec.mealPrepPreferences || {
+      strategy: 'hybrid',
+      prepDays: [6],
+      maxPrepTime: 120,
+      busyDays: [1, 2, 3, 4, 5],
+      lightDays: [0, 6],
+      preferences: {}
+    };
+
+    // Max Prep Time
+    const maxPrepGroup = document.createElement('div');
+    maxPrepGroup.innerHTML = `
+      <label class="block text-sm font-medium text-gray-700 mb-2">
+        Maximum Prep Time (minutes)
+      </label>
+      <div class="flex items-center gap-4">
+        <input 
+          type="number" 
+          id="maxPrepTime" 
+          min="15" 
+          max="300" 
+          step="15"
+          value="${preferences.maxPrepTime || 120}"
+          class="w-32 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        />
+        <span class="text-sm text-gray-600">
+          ${Math.floor((preferences.maxPrepTime || 120) / 60)}h ${(preferences.maxPrepTime || 120) % 60}m per batch prep session
+        </span>
+      </div>
+      <p class="text-xs text-gray-500 mt-1">How much time can you dedicate to meal prep on batch days?</p>
+    `;
+    const input = maxPrepGroup.querySelector('#maxPrepTime');
+    input.onchange = (e) => this.handleMaxPrepTimeChange(parseInt(e.target.value));
+    container.appendChild(maxPrepGroup);
+
+    // Busy Days
+    const busyDaysGroup = document.createElement('div');
+    busyDaysGroup.className = 'space-y-2';
+    const busyLabel = document.createElement('label');
+    busyLabel.className = 'block text-sm font-medium text-gray-700';
+    busyLabel.textContent = 'Busy Days (prefer quick/minimal prep)';
+    busyDaysGroup.appendChild(busyLabel);
+
+    const busyGrid = document.createElement('div');
+    busyGrid.className = 'flex flex-wrap gap-2';
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const busyDays = preferences.busyDays || [1, 2, 3, 4, 5];
+
+    dayNames.forEach((name, index) => {
+      const isSelected = busyDays.includes(index);
+      const button = document.createElement('button');
+      button.className = `
+        px-3 py-1.5 rounded-lg text-sm font-medium transition-colors border
+        ${isSelected 
+          ? 'bg-orange-500 text-white border-orange-600' 
+          : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}
+      `.trim().replace(/\s+/g, ' ');
+      button.textContent = name;
+      button.onclick = () => this.toggleBusyDay(index);
+      busyGrid.appendChild(button);
+    });
+    busyDaysGroup.appendChild(busyGrid);
+    container.appendChild(busyDaysGroup);
+
+    // Light Days
+    const lightDaysGroup = document.createElement('div');
+    lightDaysGroup.className = 'space-y-2';
+    const lightLabel = document.createElement('label');
+    lightLabel.className = 'block text-sm font-medium text-gray-700';
+    lightLabel.textContent = 'Light Days (prefer simpler meals)';
+    lightDaysGroup.appendChild(lightLabel);
+
+    const lightGrid = document.createElement('div');
+    lightGrid.className = 'flex flex-wrap gap-2';
+    const lightDays = preferences.lightDays || [0, 6];
+
+    dayNames.forEach((name, index) => {
+      const isSelected = lightDays.includes(index);
+      const button = document.createElement('button');
+      button.className = `
+        px-3 py-1.5 rounded-lg text-sm font-medium transition-colors border
+        ${isSelected 
+          ? 'bg-green-500 text-white border-green-600' 
+          : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}
+      `.trim().replace(/\s+/g, ' ');
+      button.textContent = name;
+      button.onclick = () => this.toggleLightDay(index);
+      lightGrid.appendChild(button);
+    });
+    lightDaysGroup.appendChild(lightGrid);
+    container.appendChild(lightDaysGroup);
+
+    const status = document.createElement('div');
+    status.id = 'schedule-prefs-save-status';
+    status.className = 'mt-2 text-sm text-gray-600 min-h-[20px]';
+    container.appendChild(status);
+
+    return container;
+  }
+
+  /**
+   * Render cooking preferences checkboxes
+   */
+  renderCookingPreferences() {
+    const container = document.createElement('div');
+    container.className = 'space-y-3';
+
+    const spec = this.state.baseSpec;
+    const preferences = spec.mealPrepPreferences?.preferences || {
+      preferFreshBreakfast: true,
+      allowFrozenMeals: false,
+      batchCookingEnabled: true,
+      makeAheadMealsEnabled: true
+    };
+
+    const options = [
+      {
+        key: 'preferFreshBreakfast',
+        label: 'Prefer Fresh Breakfast',
+        desc: 'Always cook breakfast fresh, even on busy days'
+      },
+      {
+        key: 'allowFrozenMeals',
+        label: 'Allow Frozen Meals',
+        desc: 'Include recipes that can be frozen and reheated'
+      },
+      {
+        key: 'batchCookingEnabled',
+        label: 'Enable Batch Cooking',
+        desc: 'Allow cooking multiple servings at once'
+      },
+      {
+        key: 'makeAheadMealsEnabled',
+        label: 'Enable Make-Ahead Meals',
+        desc: 'Include recipes that can be prepared in advance'
+      }
+    ];
+
+    options.forEach(option => {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'flex items-start gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50';
+
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.id = `pref-${option.key}`;
+      checkbox.checked = preferences[option.key] !== false;
+      checkbox.className = 'mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 rounded';
+      checkbox.onchange = (e) => this.handlePreferenceChange(option.key, e.target.checked);
+
+      const labelDiv = document.createElement('div');
+      labelDiv.className = 'flex-1';
+      const label = document.createElement('label');
+      label.htmlFor = checkbox.id;
+      label.className = 'block font-medium text-gray-900 cursor-pointer';
+      label.textContent = option.label;
+      const desc = document.createElement('p');
+      desc.className = 'text-sm text-gray-500 mt-0.5';
+      desc.textContent = option.desc;
+      labelDiv.appendChild(label);
+      labelDiv.appendChild(desc);
+
+      wrapper.appendChild(checkbox);
+      wrapper.appendChild(labelDiv);
+      container.appendChild(wrapper);
+    });
+
+    const status = document.createElement('div');
+    status.id = 'cooking-prefs-save-status';
+    status.className = 'mt-2 text-sm text-gray-600 min-h-[20px]';
+    container.appendChild(status);
+
+    return container;
+  }
+
+  /**
    * Event Handlers for Prep Settings
    */
 
@@ -915,6 +1201,138 @@ export class SettingsPage {
       statusEl.textContent = '✗ Save failed';
       statusEl.className = 'mt-4 text-sm text-red-600 min-h-[20px]';
     }
+  }
+
+  saveMealPrepPreferences(statusId) {
+    const result = updateBaseSpecification({ 
+      mealPrepPreferences: this.state.baseSpec.mealPrepPreferences 
+    });
+    
+    const statusEl = document.getElementById(statusId);
+    if (result.success && statusEl) {
+      statusEl.textContent = '✓ Saved';
+      statusEl.className = 'mt-2 text-sm text-green-600 min-h-[20px]';
+      setTimeout(() => {
+        statusEl.textContent = '';
+      }, 2000);
+    } else if (statusEl) {
+      statusEl.textContent = '✗ Save failed';
+      statusEl.className = 'mt-2 text-sm text-red-600 min-h-[20px]';
+    }
+  }
+
+  handleStrategyChange(strategy) {
+    const spec = this.state.baseSpec;
+    if (!spec.mealPrepPreferences) {
+      spec.mealPrepPreferences = {
+        strategy: 'hybrid',
+        prepDays: [6],
+        maxPrepTime: 120,
+        busyDays: [1, 2, 3, 4, 5],
+        lightDays: [0, 6],
+        preferences: {
+          preferFreshBreakfast: true,
+          allowFrozenMeals: false,
+          batchCookingEnabled: true,
+          makeAheadMealsEnabled: true
+        }
+      };
+    }
+
+    spec.mealPrepPreferences.strategy = strategy;
+    this.saveMealPrepPreferences('strategy-save-status');
+    this.rerender();
+  }
+
+  handleMaxPrepTimeChange(value) {
+    const spec = this.state.baseSpec;
+    if (!spec.mealPrepPreferences) {
+      spec.mealPrepPreferences = {
+        strategy: 'hybrid',
+        prepDays: [6],
+        maxPrepTime: 120,
+        busyDays: [1, 2, 3, 4, 5],
+        lightDays: [0, 6],
+        preferences: {}
+      };
+    }
+
+    // Clamp value between 15 and 300
+    const clampedValue = Math.max(15, Math.min(300, value));
+    spec.mealPrepPreferences.maxPrepTime = clampedValue;
+    
+    this.saveMealPrepPreferences('schedule-prefs-save-status');
+  }
+
+  toggleBusyDay(dayIndex) {
+    const spec = this.state.baseSpec;
+    if (!spec.mealPrepPreferences) {
+      spec.mealPrepPreferences = {
+        strategy: 'hybrid',
+        prepDays: [6],
+        maxPrepTime: 120,
+        busyDays: [1, 2, 3, 4, 5],
+        lightDays: [0, 6],
+        preferences: {}
+      };
+    }
+
+    let busyDays = spec.mealPrepPreferences.busyDays || [];
+    if (busyDays.includes(dayIndex)) {
+      busyDays = busyDays.filter(d => d !== dayIndex);
+    } else {
+      busyDays.push(dayIndex);
+    }
+    
+    spec.mealPrepPreferences.busyDays = busyDays;
+    this.saveMealPrepPreferences('schedule-prefs-save-status');
+    this.rerender();
+  }
+
+  toggleLightDay(dayIndex) {
+    const spec = this.state.baseSpec;
+    if (!spec.mealPrepPreferences) {
+      spec.mealPrepPreferences = {
+        strategy: 'hybrid',
+        prepDays: [6],
+        maxPrepTime: 120,
+        busyDays: [1, 2, 3, 4, 5],
+        lightDays: [0, 6],
+        preferences: {}
+      };
+    }
+
+    let lightDays = spec.mealPrepPreferences.lightDays || [];
+    if (lightDays.includes(dayIndex)) {
+      lightDays = lightDays.filter(d => d !== dayIndex);
+    } else {
+      lightDays.push(dayIndex);
+    }
+    
+    spec.mealPrepPreferences.lightDays = lightDays;
+    this.saveMealPrepPreferences('schedule-prefs-save-status');
+    this.rerender();
+  }
+
+  handlePreferenceChange(key, value) {
+    const spec = this.state.baseSpec;
+    if (!spec.mealPrepPreferences) {
+      spec.mealPrepPreferences = {
+        strategy: 'hybrid',
+        prepDays: [6],
+        maxPrepTime: 120,
+        busyDays: [1, 2, 3, 4, 5],
+        lightDays: [0, 6],
+        preferences: {}
+      };
+    }
+
+    if (!spec.mealPrepPreferences.preferences) {
+      spec.mealPrepPreferences.preferences = {};
+    }
+
+    spec.mealPrepPreferences.preferences[key] = value;
+    this.saveMealPrepPreferences('cooking-prefs-save-status');
   }
 
   /**

@@ -481,13 +481,13 @@ MEAT & SEAFOOD
 
 ### Recipe Catalog System
 
-**Status:** ✅ Phase 1 Complete
+**Status:** ✅ Phase 2 Complete (Expanded)
 
-**Description:** 607 professionally-tested recipes from Spoonacular, stored locally with zero ongoing API dependency.
+**Description:** 622 professionally-tested recipes from Spoonacular, stored locally with zero ongoing API dependency.
 
 **Features:**
-- **607 recipes:**
-  - 24 cuisines (Mediterranean, Italian, Asian, Mexican, etc.)
+- **622 recipes** (26% increase from Phase 1):
+  - 28 cuisines (Mediterranean, Italian, Asian, Mexican, Middle Eastern, African, Spanish, etc.)
   - 10 diet types (Vegetarian, Vegan, Keto, Paleo, etc.)
   - 27 dish types (Main, Appetizer, Dessert, Soup, Salad, etc.)
 - **Complete data:**
@@ -498,27 +498,47 @@ MEAT & SEAFOOD
   - Comprehensive tags
   - Full nutrition data (calories, macros, micros)
 - **Local images:**
-  - 606 of 607 photos downloaded
-  - ~11MB total storage
-  - ~18KB average per image
+  - 620 of 622 photos downloaded (99.7% success)
+  - ~15MB total storage
+  - ~24KB average per image
   - No CDN dependency
 - **Zero ongoing cost:**
-  - One-time extraction (~1,400 Spoonacular points)
+  - One-time extraction (~1,800 Spoonacular points total)
   - No monthly subscription required
   - All data cached locally
 
 **Catalog coverage:**
-- Mediterranean: 85 recipes
+- Mediterranean: 105 recipes (17% of catalog)
+- Middle Eastern: 28 recipes
+- Salads: 73 recipes (protein-packed options)
+- Kid-friendly: 20 recipes
 - Italian: 72 recipes
-- Asian: 68 recipes
-- Mexican: 45 recipes
-- And 20 more cuisines...
+- Asian: 68+ recipes
+- And 22 more cuisines...
+
+**Phase 2 Expansion Highlights:**
+- Added 128 recipes focusing on:
+  - Mediterranean & Middle Eastern cuisines
+  - Roasted vegetable dishes
+  - Legume-based meals (chickpeas, lentils)
+  - Simple fish preparations
+  - Protein-packed salads
+  - Kid-friendly recipes
 
 **Technical:**
-- `vanessa_recipe_catalog` in localStorage (~900KB)
-- Loads once on app boot (~200-300ms)
+- `vanessa_recipe_catalog` in localStorage (~1.7MB)
+- `vanessa_recipe_index` lightweight version (~410KB, 84.6% smaller)
+- Loads once on app boot (~250-350ms)
 - Cached for session
 - Images in `/public/images/recipes/`
+
+**Cache Refresh:**
+To see new recipes after catalog updates, clear cache:
+```javascript
+localStorage.removeItem('vanessa_recipe_catalog');
+localStorage.removeItem('vanessa_recipe_index');
+location.reload();
+```
 
 ---
 

@@ -85,7 +85,8 @@ vanessa_current_meal_plan     - Active week
 vanessa_meal_plan_history     - Archived plans
 vanessa_eaters                - Household members
 vanessa_base_specification    - User profile + settings
-vanessa_recipe_catalog        - 607 professional recipes (~900KB)
+vanessa_recipe_catalog        - 622 professional recipes (~1.7MB)
+vanessa_recipe_index          - Lightweight index (~410KB, 84.6% smaller)
 vanessa_ingredient_health     - Health scoring data (~35KB)
 vanessa_diet_profiles         - 11 diet profiles (~10KB)
 vanessa_schema_version        - Migration tracker

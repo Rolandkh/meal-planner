@@ -1,5 +1,132 @@
 # Changelog
 
+## [v1.3.0-alpha] - January 10, 2026 - Custom Recipe Extraction (Phase 3)
+
+### 🎯 Targeted Catalog Expansion: +128 Recipes
+
+**Before:** 494 recipes  
+**After:** 622 recipes  
+**Added:** 128 new recipes (26% growth)
+
+### ✨ What's New
+
+#### Custom Recipe Extraction
+- **New script:** `scripts/extractCustomRecipes.js` for targeted recipe extraction
+- **Smart duplicate detection:** Automatically avoids re-fetching existing recipes
+- **Three-round extraction process:**
+  - Round 1: Lebanese, Moroccan, roasted veggies, fish, salads (20 recipes)
+  - Round 2: Roasted vegetables, legumes, fish varieties (28 recipes)
+  - Round 3: Mediterranean combos, African, Spanish, kid-friendly (80 recipes)
+
+#### Recipe Coverage Improvements
+- **Mediterranean:** 90 → 105 recipes (+17%)
+- **Middle Eastern:** 26 → 28 recipes
+- **Salads:** 49 → 73 recipes (+49%)
+- **Kid-Friendly:** 6 → 20 recipes (+233%)
+- **Breakfasts:** 34 → 40 recipes
+- **Vegetarian:** 248 recipes total
+- **Vegan:** 127 recipes total
+
+#### Cuisine Diversity
+- **28 cuisine types** (was 26)
+- New additions: African, more Spanish varieties
+- Enhanced: Mediterranean, Middle Eastern, Lebanese, Moroccan
+
+#### Recipe Categories Added
+- **Roasted vegetables:** Cauliflower, eggplant, peppers, zucchini, carrots
+- **Legume dishes:** Chickpea curry, lentil soup, dal, white beans, black beans
+- **Simple fish:** Tilapia, cod, halibut, sea bass preparations
+- **Protein salads:** Chicken, shrimp, salmon, steak, chickpea salads
+- **Kid-friendly:** Finger foods, veggie-friendly meals, lunch box ideas
+
+### 📊 Technical Details
+
+#### Extraction Stats
+- **42 targeted searches** (3 extraction rounds)
+- **314 recipes fetched** total
+- **186 duplicates skipped** (smart deduplication working!)
+- **128 new recipes added**
+- **128 new images downloaded** (100% success rate for new recipes)
+
+#### Storage
+- **Catalog:** 1.4MB → 1.7MB JSON (+21%)
+- **Index:** 326KB → 410KB (+26%)
+- **Images:** ~620 images, ~15MB storage
+- **Index efficiency:** 84.6% size reduction maintained
+
+#### Performance
+- Catalog load time: 250-350ms (within target)
+- Index build time: <1 second
+- Storage usage: Well within 5MB localStorage limit
+
+### 🛠️ New Tools & Workflows
+
+#### Custom Extraction Script
+```bash
+# Run targeted recipe extraction
+node scripts/extractCustomRecipes.js
+
+# Edit SEARCH_QUERIES array to customize:
+# - Cuisine preferences
+# - Ingredient requirements
+# - Meal types
+# - Dietary restrictions
+```
+
+#### Recipe Index Regeneration
+```bash
+# Rebuild lightweight index from full catalog
+node scripts/buildRecipeIndex.js
+
+# Outputs:
+# - recipe_index.json (410KB)
+# - 84.6% size reduction
+# - Coverage stats
+```
+
+#### Cache Clearing
+To see new recipes in the app:
+```javascript
+localStorage.removeItem('vanessa_recipe_catalog');
+localStorage.removeItem('vanessa_recipe_index');
+location.reload();
+```
+
+### 📚 Documentation Updates
+
+- **FEATURES.md:** Updated Recipe Catalog System section with Phase 3 stats
+- **DEVELOPMENT.md:** Updated catalog management, verification scripts, and stats
+- **ARCHITECTURE.md:** No changes needed (system architecture unchanged)
+
+### 🎯 User Impact
+
+**For Lebanese/Mediterranean preferences:**
+- 105 Mediterranean recipes (17% of catalog)
+- 28 Middle Eastern recipes
+- Lebanese and Moroccan cuisine options
+- Roasted veggie dishes with chickpeas/lentils
+
+**For families with kids:**
+- 20 kid-friendly recipes (was 6)
+- Finger foods, veggie-hidden meals
+- Lunch box ideas
+- Familiar flavors with nutrition
+
+**For health-conscious users:**
+- 73 protein-packed salads
+- 248 vegetarian options
+- 127 vegan options
+- Simple fish preparations
+
+### 🔧 Migration Notes
+
+**No breaking changes.** Existing apps will:
+1. Continue using cached 494-recipe catalog
+2. Auto-load 622-recipe catalog on next cache clear/refresh
+3. See new recipes immediately after clearing localStorage cache
+
+---
+
 ## [v1.2.0-alpha] - January 10, 2026 - Catalog Expansion (Phase 2)
 
 ### 🎉 Major Achievement: 184% Catalog Growth

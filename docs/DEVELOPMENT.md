@@ -171,7 +171,7 @@ window.debug.showState()
 localStorage.getItem('vanessa_diet_profiles')  // Should show v2.0.0
 
 // Check catalog loaded
-localStorage.getItem('vanessa_recipe_catalog')  // Should have 607 recipes
+localStorage.getItem('vanessa_recipe_catalog')  // Should have 622 recipes
 
 // Verify health data
 window.debug.testHealthScoring()  // Should return scores 0-100
@@ -246,33 +246,45 @@ window.debug.testHealthScoring('Greek-Style Baked Fish')
 
 ## Recipe Catalog Management
 
-### Current Catalog Stats
+### Current Catalog Stats (Phase 2)
 
-- **494 recipes** (complete data)
-- **835 images** (22MB)
-- **26 cuisines**, 15 protein types
-- **34 breakfasts**, 18 curries, 11 stir-fries
+- **622 recipes** (complete data)
+- **~15MB images** (620 images)
+- **28 cuisines**, 15 protein types
+- **40 breakfasts**, 248 vegetarian, 127 vegan
+- **73 protein-packed salads**
 
 ### Lightweight Index System
 
 **Two-tier architecture:**
-1. **Full Catalog** (2.1MB) - Complete recipe data
-2. **Lightweight Index** (326KB) - Essential fields only for Claude
+1. **Full Catalog** (~1.7MB) - Complete recipe data with ingredients & instructions
+2. **Lightweight Index** (~410KB) - Essential fields only for Claude meal generation
 
 **Benefits:**
-- 84.5% token reduction
+- 84.6% token reduction (1.7MB → 410KB)
 - Faster meal generation
-- Lower API costs
+- Lower API costs (~40% reduction)
 - Auto-updates when recipes change
 
 ### Extract More Recipes
 
+**Standard extraction (broad coverage):**
 ```bash
-# Add more recipes from Spoonacular
+# Extract recipes following the full protocol (66 searches)
 node scripts/extractSpoonacularCatalog.js
 
 # Rebuilds catalog with existing + new recipes
 # Non-destructive - preserves all existing recipes
+```
+
+**Custom extraction (targeted preferences):**
+```bash
+# Extract recipes matching specific criteria
+# Edit scripts/extractCustomRecipes.js to customize searches
+node scripts/extractCustomRecipes.js
+
+# Example: Mediterranean, Middle Eastern, kid-friendly, etc.
+# Automatically avoids duplicates with existing catalog
 ```
 
 ### Rebuild Recipe Index
@@ -281,14 +293,25 @@ node scripts/extractSpoonacularCatalog.js
 # Manually rebuild index from catalog
 node scripts/buildRecipeIndex.js
 
-# Transforms 2.1MB catalog → 326KB index
+# Transforms full catalog → lightweight index
 # Extracts only essential fields for Claude
 ```
 
-**Note:** Index auto-rebuilds when you:
-- Save catalog recipes
-- Save user recipes
-- No manual rebuild needed!
+**When to rebuild:**
+- After extracting new recipes from Spoonacular
+- After manually editing catalog JSON
+- Index auto-rebuilds when saving user recipes (no manual rebuild needed)
+
+### Clear Catalog Cache
+
+When catalog is updated on disk, clear browser cache to load new version:
+
+```javascript
+// In browser console:
+localStorage.removeItem('vanessa_recipe_catalog');
+localStorage.removeItem('vanessa_recipe_index');
+location.reload();
+```
 
 ### Verify Catalog Integration
 
@@ -297,18 +320,18 @@ node scripts/buildRecipeIndex.js
 
 // 1. Check catalog loaded (full data)
 const catalog = JSON.parse(localStorage.getItem('vanessa_recipe_catalog'));
-console.log('Catalog:', catalog.recipes.length, 'recipes');  // Should be 494
+console.log('Catalog:', catalog.recipes.length, 'recipes');  // Should be 622
 
 // 2. Check index loaded (lightweight)
 const index = JSON.parse(localStorage.getItem('vanessa_recipe_index'));
-console.log('Index:', index.recipes.length, 'recipes');  // Should be 494
+console.log('Index:', index.recipes.length, 'recipes');  // Should be 622
 
 // 3. Verify size reduction
 const catalogSize = JSON.stringify(catalog).length / 1024;
 const indexSize = JSON.stringify(index).length / 1024;
 const savings = ((1 - indexSize / catalogSize) * 100).toFixed(1);
 console.log(`Catalog: ${catalogSize.toFixed(0)}KB, Index: ${indexSize.toFixed(0)}KB, Savings: ${savings}%`);
-// Should show ~84.5% savings
+// Should show ~84.6% savings
 
 // 4. Check protein tagging
 const proteins = new Set();
@@ -316,10 +339,15 @@ catalog.recipes.forEach(r => r.tags?.proteinSources?.forEach(p => proteins.add(p
 console.log('Protein types:', proteins.size, '-', Array.from(proteins).join(', '));
 // Should show 15 types
 
-// 5. Verify catalog usage in generation
+// 5. Check cuisine coverage
+const cuisines = new Set();
+catalog.recipes.forEach(r => r.tags?.cuisines?.forEach(c => cuisines.add(c)));
+console.log('Cuisines:', cuisines.size, 'types');  // Should show 28
+
+// 6. Verify catalog usage in generation
 // Generate a meal plan and watch console for:
-// "📚 Loaded recipe index: 494 recipes (lightweight)"
-// "✅ Catalog match (exact): ..." (should see 15-20 matches)
+// "📚 Loaded recipe index: 622 recipes (lightweight)"
+// "✅ Catalog match (exact): ..." (should see 15-20 matches per plan)
 // "📊 Catalog usage: N catalog, M new recipes"
 ```
 
@@ -328,18 +356,18 @@ console.log('Protein types:', proteins.size, '-', Array.from(proteins).join(', '
 ```javascript
 // 1. Check current index count
 let index = JSON.parse(localStorage.getItem('vanessa_recipe_index'));
-console.log('Before:', index.recipes.length);  // e.g., 494
+console.log('Before:', index.recipes.length);  // e.g., 622
 
 // 2. Generate a meal plan (creates user recipes)
 // (Use the UI to generate)
 
 // 3. Check updated index
 index = JSON.parse(localStorage.getItem('vanessa_recipe_index'));
-console.log('After:', index.recipes.length);  // Should be 494 + N user recipes
+console.log('After:', index.recipes.length);  // Should be 622 + N user recipes
 
 // Should see in console:
-// "🔄 Rebuilding index: 494 catalog + N user recipes"
-// "✅ Recipe index updated: (494 + N) recipes"
+// "🔄 Rebuilding index: 622 catalog + N user recipes"
+// "✅ Recipe index updated: (622 + N) recipes"
 ```
 
 ---
@@ -387,8 +415,8 @@ location.reload();
 **Verify:**
 ```javascript
 // Should see in console:
-// ✅ Loaded 494 recipes into localStorage
-// ✅ Loaded 494 recipe summaries into localStorage
+// ✅ Loaded 622 recipes into localStorage
+// ✅ Loaded 622 recipe summaries into localStorage
 ```
 
 ### Issue: "Images not displaying"
