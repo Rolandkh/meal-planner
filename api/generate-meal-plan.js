@@ -404,22 +404,80 @@ This constraint is CRITICAL for keeping shopping simple and costs down.`;
   // Slice 5: Add catalog information to prompt
   let catalogInfo = '';
   if (catalogSlice && catalogSlice.length > 0) {
-    catalogInfo = `\n\nAVAILABLE RECIPE CATALOG:
-We have ${catalogSlice.length} pre-filtered recipes from a professional catalog that match the household's diet profiles.
-These recipes have been:
-- Filtered to match the diet profiles: ${eaters.map(e => e.dietProfile).filter(Boolean).join(', ') || 'none specified'}
-- Filtered to exclude: ${eaters.flatMap(e => e.excludeIngredients || []).join(', ') || 'no exclusions'}
-- Already scored for health and nutrition
+    // Helper to format recipe with metadata
+    const formatRecipe = (recipe) => {
+      const diets = recipe.tags?.diets || [];
+      const cuisines = recipe.tags?.cuisines || [];
+      const mainIngredients = (recipe.ingredients || []).slice(0, 4).map(i => i.name);
+      const prepTime = recipe.prepTime || 0;
+      const healthScore = recipe.dietCompassScores?.overall || 0;
+      
+      // Build compact metadata string
+      let metadata = [];
+      if (diets.length > 0) metadata.push(`${diets.join(', ')}`);
+      if (cuisines.length > 0) metadata.push(`${cuisines.join(', ')}`);
+      if (healthScore > 0) metadata.push(`health: ${Math.round(healthScore)}/100`);
+      if (prepTime > 0) metadata.push(`${prepTime}min`);
+      
+      const metaStr = metadata.length > 0 ? `[${metadata.join(' | ')}]` : '';
+      const ingredients = mainIngredients.length > 0 ? `(${mainIngredients.join(', ')})` : '';
+      
+      return `• ${recipe.name} ${metaStr} ${ingredients}`.trim();
+    };
+    
+    // Group recipes by meal type for better organization
+    const byMealType = {
+      breakfast: catalogSlice.filter(r => r.tags?.mealSlots?.includes('breakfast') || false),
+      lunch: catalogSlice.filter(r => r.tags?.mealSlots?.includes('lunch') || false),
+      dinner: catalogSlice.filter(r => r.tags?.mealSlots?.includes('dinner') || false),
+      any: catalogSlice.filter(r => !r.tags?.mealSlots || r.tags.mealSlots.length === 0)
+    };
+    
+    // If too many recipes, sample them to fit in prompt
+    const maxPerMeal = 60; // Reduced due to richer format
+    const sampleRecipes = (list) => {
+      if (list.length <= maxPerMeal) return list;
+      // Prioritize high health scores and variety of diets
+      const sorted = [...list].sort((a, b) => {
+        const scoreA = a.dietCompassScores?.overall || 0;
+        const scoreB = b.dietCompassScores?.overall || 0;
+        return scoreB - scoreA; // Higher scores first
+      });
+      // Take top 60
+      return sorted.slice(0, maxPerMeal);
+    };
+    
+    const breakfastSample = sampleRecipes(byMealType.breakfast);
+    const lunchSample = sampleRecipes(byMealType.lunch);
+    const dinnerSample = sampleRecipes(byMealType.dinner);
+    const anySample = sampleRecipes(byMealType.any);
+    
+    catalogInfo = `\n\n🍽️ AVAILABLE RECIPE CATALOG (${catalogSlice.length} recipes):
 
-IMPORTANT: When selecting recipes, PRIORITIZE using simple, standard recipe names that would exist in a professional recipe database.
-Examples: "Greek Salad", "Chicken Tikka Masala", "Vegetable Stir Fry", "Lentil Soup", "Spaghetti Bolognese"
+CRITICAL: SELECT recipes FROM THIS LIST by using their EXACT names.
+These recipes are pre-filtered for the household's diet profiles and exclusions.
 
-The system will automatically match your recipes to the catalog when possible, giving users:
-- Pre-calculated health scores
-- Verified ingredient lists
-- Professional recipe quality
+FORMAT: Recipe Name [diet profiles | cuisines | health score | prep time] (main ingredients)
 
-Generate recipes using COMMON, STANDARD names that are likely in our ${catalogSlice.length}-recipe catalog.`;
+Breakfast Options (${breakfastSample.length} shown):
+${breakfastSample.map(formatRecipe).join('\n')}
+
+Lunch Options (${lunchSample.length} shown):
+${lunchSample.map(formatRecipe).join('\n')}
+
+Dinner Options (${dinnerSample.length} shown):
+${dinnerSample.map(formatRecipe).join('\n')}
+
+${anySample.length > 0 ? `Flexible (Any Meal) Options (${anySample.length} shown):\n${anySample.map(formatRecipe).join('\n')}\n` : ''}
+
+SELECTION INSTRUCTIONS:
+1. Match recipes to household diet profiles shown in brackets [vegetarian, mediterranean, etc.]
+2. Avoid recipes with ingredients that household members exclude
+3. Prioritize recipes with higher health scores (shown as health: X/100)
+4. Consider prep time constraints (shown in minutes)
+5. Use EXACT recipe names from the list above for catalog matching
+6. You can generate NEW recipes ONLY if catalog options don't meet all requirements
+7. When using catalog recipes, still provide full ingredients and instructions (system will verify against catalog)`;
   }
 
   // Slice 4: Handle single-day regeneration
