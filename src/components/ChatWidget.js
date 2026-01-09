@@ -633,8 +633,13 @@ export class ChatWidget {
     const baseSpec = loadBaseSpecification();
     
     if (!baseSpec || !baseSpec.onboardingComplete) {
-      console.log('Onboarding needed - starting flow');
-      this.startOnboarding();
+      // Only start onboarding if chat is empty (avoid duplicate messages on refresh)
+      if (this.messages.length === 0) {
+        console.log('Onboarding needed - starting flow');
+        this.startOnboarding();
+      } else {
+        console.log('Onboarding in progress - messages already loaded');
+      }
     } else {
       console.log('Onboarding already completed');
     }
