@@ -26,6 +26,11 @@ import {
   clearOldMealPlans
 } from '../utils/storage.js';
 
+import { 
+  getAllDietProfiles, 
+  getDietProfileById 
+} from '../utils/dietProfiles.js';
+
 export class SettingsPage {
   constructor() {
     this.state = {
@@ -136,6 +141,7 @@ export class SettingsPage {
       { id: 'storage', label: '💾 Storage', icon: '💾' },
       { id: 'household', label: '👥 Household', icon: '👥' },
       { id: 'mealPlanning', label: '🍽️ Meal Planning', icon: '🍽️' },
+      { id: 'mealPrep', label: '🔪 Meal Prep', icon: '🔪' },
       { id: 'chatPreferences', label: '💬 Chat', icon: '💬' }
     ];
 
@@ -174,6 +180,9 @@ export class SettingsPage {
         break;
       case 'mealPlanning':
         wrapper.appendChild(this.renderMealPlanningSection());
+        break;
+      case 'mealPrep':
+        wrapper.appendChild(this.renderMealPrepSection());
         break;
       case 'chatPreferences':
         wrapper.appendChild(this.renderChatPreferencesSection());
@@ -441,6 +450,38 @@ export class SettingsPage {
       info.appendChild(restrictions);
     }
 
+    // Diet Profile (Slice 5)
+    if (eater.dietProfile) {
+      const profileName = getDietProfileById(eater.dietProfile)?.name || eater.dietProfile;
+      const profile = document.createElement('p');
+      profile.className = 'text-sm text-blue-600 font-medium mb-1';
+      profile.textContent = `🍽️ Profile: ${profileName}`;
+      info.appendChild(profile);
+    }
+
+    // Exclusions/Preferences (Slice 5)
+    if ((eater.excludeIngredients && eater.excludeIngredients.length > 0) || 
+        (eater.preferIngredients && eater.preferIngredients.length > 0)) {
+      const tags = document.createElement('div');
+      tags.className = 'flex flex-wrap gap-1 mt-1 mb-2';
+      
+      (eater.excludeIngredients || []).forEach(ex => {
+        const span = document.createElement('span');
+        span.className = 'bg-red-50 text-red-600 text-xs px-1.5 py-0.5 rounded border border-red-100';
+        span.textContent = `⛔ ${ex}`;
+        tags.appendChild(span);
+      });
+
+      (eater.preferIngredients || []).forEach(pref => {
+        const span = document.createElement('span');
+        span.className = 'bg-green-50 text-green-600 text-xs px-1.5 py-0.5 rounded border border-green-100';
+        span.textContent = `❤️ ${pref}`;
+        tags.appendChild(span);
+      });
+
+      info.appendChild(tags);
+    }
+
     // Schedule
     if (eater.schedule) {
       const schedule = document.createElement('p');
@@ -624,7 +665,238 @@ export class SettingsPage {
   }
 
   /**
-   * SECTION 4: Chat Preferences
+   * SECTION 4: Meal Prep Settings (Slice 5)
+   */
+  renderMealPrepSection() {
+    const section = document.createElement('div');
+    section.className = 'space-y-6';
+
+    const prepGridCard = this.createCard(
+      'Daily Prep Levels',
+      this.renderPrepLevelsGrid(),
+      this.renderPrepLevelsLegend()
+    );
+    section.appendChild(prepGridCard);
+
+    const batchDaysCard = this.createCard(
+      'Batch Prep Days',
+      this.renderBatchPrepDays()
+    );
+    section.appendChild(batchDaysCard);
+
+    return section;
+  }
+
+  /**
+   * Render 7x3 grid for prep levels
+   */
+  renderPrepLevelsGrid() {
+    const container = document.createElement('div');
+    container.className = 'overflow-x-auto';
+
+    const spec = this.state.baseSpec;
+    const prepSettings = spec.mealPrepSettings || {
+      batchPrepDays: [6],
+      prepLevels: {
+        monday: { breakfast: 'medium', lunch: 'medium', dinner: 'medium' },
+        tuesday: { breakfast: 'medium', lunch: 'medium', dinner: 'medium' },
+        wednesday: { breakfast: 'medium', lunch: 'medium', dinner: 'medium' },
+        thursday: { breakfast: 'medium', lunch: 'medium', dinner: 'medium' },
+        friday: { breakfast: 'medium', lunch: 'medium', dinner: 'medium' },
+        saturday: { breakfast: 'medium', lunch: 'medium', dinner: 'medium' },
+        sunday: { breakfast: 'medium', lunch: 'medium', dinner: 'medium' }
+      }
+    };
+
+    const table = document.createElement('table');
+    table.className = 'w-full text-sm text-left';
+
+    // Table Header
+    const thead = document.createElement('thead');
+    thead.className = 'text-xs text-gray-700 uppercase bg-gray-50';
+    thead.innerHTML = `
+      <tr>
+        <th class="px-4 py-3">Day</th>
+        <th class="px-4 py-3 text-center">Breakfast</th>
+        <th class="px-4 py-3 text-center">Lunch</th>
+        <th class="px-4 py-3 text-center">Dinner</th>
+      </tr>
+    `;
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+    const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    const slots = ['breakfast', 'lunch', 'dinner'];
+
+    days.forEach(day => {
+      const row = document.createElement('tr');
+      row.className = 'bg-white border-b hover:bg-gray-50';
+      
+      const dayCell = document.createElement('td');
+      dayCell.className = 'px-4 py-4 font-medium text-gray-900 capitalize';
+      dayCell.textContent = day;
+      row.appendChild(dayCell);
+
+      slots.forEach(slot => {
+        const cell = document.createElement('td');
+        cell.className = 'px-4 py-4';
+        
+        const select = document.createElement('select');
+        select.className = 'w-full bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2';
+        
+        ['minimal', 'medium', 'full'].forEach(level => {
+          const option = document.createElement('option');
+          option.value = level;
+          option.textContent = level.charAt(0).toUpperCase() + level.slice(1);
+          option.selected = prepSettings.prepLevels[day][slot] === level;
+          select.appendChild(option);
+        });
+
+        select.onchange = (e) => this.handlePrepLevelChange(day, slot, e.target.value);
+        cell.appendChild(select);
+        row.appendChild(cell);
+      });
+
+      tbody.appendChild(row);
+    });
+
+    table.appendChild(tbody);
+    container.appendChild(table);
+
+    // Save status
+    const status = document.createElement('div');
+    status.id = 'prep-grid-save-status';
+    status.className = 'mt-4 text-sm text-gray-600 min-h-[20px]';
+    container.appendChild(status);
+
+    return container;
+  }
+
+  /**
+   * Render legend for prep levels
+   */
+  renderPrepLevelsLegend() {
+    const container = document.createElement('div');
+    container.className = 'text-xs text-gray-500 space-y-1';
+    container.innerHTML = `
+      <p><strong>Minimal:</strong> Only reheating or < 5 mins assembly.</p>
+      <p><strong>Medium:</strong> Basic cooking/chopping (15-30 mins).</p>
+      <p><strong>Full:</strong> Elaborate cooking or from-scratch prep (45+ mins).</p>
+    `;
+    return container;
+  }
+
+  /**
+   * Render batch prep days row
+   */
+  renderBatchPrepDays() {
+    const container = document.createElement('div');
+    container.className = 'space-y-4';
+
+    const intro = document.createElement('p');
+    intro.className = 'text-sm text-gray-600';
+    intro.textContent = 'Which days do you dedicate to "Batch Prepping"? Vanessa will move time-consuming tasks like chopping and marinating to these days.';
+    container.appendChild(intro);
+
+    const grid = document.createElement('div');
+    grid.className = 'flex flex-wrap gap-2';
+
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const spec = this.state.baseSpec;
+    const batchDays = spec.mealPrepSettings?.batchPrepDays || [6];
+
+    dayNames.forEach((name, index) => {
+      const isSelected = batchDays.includes(index);
+      const button = document.createElement('button');
+      button.className = `
+        px-4 py-2 rounded-full text-sm font-medium transition-colors border
+        ${isSelected 
+          ? 'bg-blue-500 text-white border-blue-600 shadow-sm' 
+          : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}
+      `.trim().replace(/\s+/g, ' ');
+      button.textContent = name;
+      button.onclick = () => this.toggleBatchDay(index);
+      grid.appendChild(button);
+    });
+
+    container.appendChild(grid);
+
+    const status = document.createElement('div');
+    status.id = 'batch-days-save-status';
+    status.className = 'mt-2 text-sm text-gray-600 min-h-[20px]';
+    container.appendChild(status);
+
+    return container;
+  }
+
+  /**
+   * Event Handlers for Prep Settings
+   */
+
+  handlePrepLevelChange(day, slot, level) {
+    const spec = this.state.baseSpec;
+    if (!spec.mealPrepSettings) {
+      spec.mealPrepSettings = {
+        batchPrepDays: [6],
+        prepLevels: {}
+      };
+    }
+    
+    // Ensure all days exist
+    const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    days.forEach(d => {
+      if (!spec.mealPrepSettings.prepLevels[d]) {
+        spec.mealPrepSettings.prepLevels[d] = { breakfast: 'medium', lunch: 'medium', dinner: 'medium' };
+      }
+    });
+
+    spec.mealPrepSettings.prepLevels[day][slot] = level;
+    
+    this.saveMealPrepSettings('prep-grid-save-status');
+  }
+
+  toggleBatchDay(dayIndex) {
+    const spec = this.state.baseSpec;
+    if (!spec.mealPrepSettings) {
+      spec.mealPrepSettings = {
+        batchPrepDays: [6],
+        prepLevels: {}
+      };
+    }
+
+    let batchDays = spec.mealPrepSettings.batchPrepDays || [];
+    if (batchDays.includes(dayIndex)) {
+      batchDays = batchDays.filter(d => d !== dayIndex);
+    } else {
+      batchDays.push(dayIndex);
+    }
+    
+    spec.mealPrepSettings.batchPrepDays = batchDays;
+    
+    this.saveMealPrepSettings('batch-days-save-status');
+    this.rerender(); // Re-render to update button styles
+  }
+
+  saveMealPrepSettings(statusId) {
+    const result = updateBaseSpecification({ 
+      mealPrepSettings: this.state.baseSpec.mealPrepSettings 
+    });
+    
+    const statusEl = document.getElementById(statusId);
+    if (result.success && statusEl) {
+      statusEl.textContent = '✓ Saved';
+      statusEl.className = 'mt-4 text-sm text-green-600 min-h-[20px]';
+      setTimeout(() => {
+        statusEl.textContent = '';
+      }, 2000);
+    } else if (statusEl) {
+      statusEl.textContent = '✗ Save failed';
+      statusEl.className = 'mt-4 text-sm text-red-600 min-h-[20px]';
+    }
+  }
+
+  /**
+   * SECTION 5: Chat Preferences
    */
   renderChatPreferencesSection() {
     const section = document.createElement('div');
@@ -1089,6 +1361,108 @@ export class SettingsPage {
     );
     form.appendChild(scheduleGroup);
 
+    // --- SLICE 5: Diet Profile & Preferences ---
+    const slice5Header = document.createElement('div');
+    slice5Header.className = 'pt-4 border-t border-gray-200 mt-4';
+    slice5Header.innerHTML = '<h4 class="text-md font-semibold text-gray-900 mb-2">Dietary Profile (Slice 5)</h4>';
+    form.appendChild(slice5Header);
+
+    // Diet Profile Dropdown
+    const profiles = getAllDietProfiles();
+    const profileGroup = this.createFormGroup(
+      'Diet Profile',
+      'select',
+      'eaterDietProfile',
+      eater?.dietProfile || '',
+      'Select a diet profile'
+    );
+    const profileSelect = profileGroup.querySelector('select');
+    
+    // Add "None" option
+    const noneOption = document.createElement('option');
+    noneOption.value = '';
+    noneOption.textContent = 'None / Personalized';
+    profileSelect.appendChild(noneOption);
+
+    profiles.forEach(p => {
+      const option = document.createElement('option');
+      option.value = p.id;
+      option.textContent = p.name;
+      option.selected = eater?.dietProfile === p.id;
+      profileSelect.appendChild(option);
+    });
+    form.appendChild(profileGroup);
+
+    // Profile Description Box
+    const profileDescBox = document.createElement('div');
+    profileDescBox.id = 'profile-description-box';
+    profileDescBox.className = 'bg-blue-50 border border-blue-100 rounded-lg p-3 text-sm text-blue-800 mb-4 hidden';
+    form.appendChild(profileDescBox);
+
+    const updateProfileDesc = (profileId) => {
+      const profile = getDietProfileById(profileId);
+      if (profile) {
+        profileDescBox.innerHTML = `
+          <p class="font-semibold">${profile.name}</p>
+          <p class="mt-1">${profile.summary}</p>
+          <div class="mt-2 flex flex-wrap gap-1">
+            ${(profile.foodsToEmphasize || []).slice(0, 5).map(f => `<span class="bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded-sm text-xs">❤️ ${f}</span>`).join('')}
+          </div>
+        `;
+        profileDescBox.classList.remove('hidden');
+      } else {
+        profileDescBox.classList.add('hidden');
+      }
+    };
+
+    profileSelect.onchange = (e) => updateProfileDesc(e.target.value);
+    // Initial update
+    if (eater?.dietProfile) updateProfileDesc(eater.dietProfile);
+
+    // Exclude Ingredients
+    const excludeGroup = this.createFormGroup(
+      'Exclude Ingredients (Hard Filter)',
+      'text',
+      'eaterExcludeIngredients',
+      eater?.excludeIngredients?.join(', ') || '',
+      'e.g., eggplant, tomatoes, shellfish'
+    );
+    const excludeHelp = document.createElement('p');
+    excludeHelp.className = 'text-xs text-gray-500 mt-1';
+    excludeHelp.textContent = 'Vanessa will NEVER include these in your plan.';
+    excludeGroup.appendChild(excludeHelp);
+    form.appendChild(excludeGroup);
+
+    // Prefer Ingredients
+    const preferGroup = this.createFormGroup(
+      'Prefer Ingredients (Soft Priority)',
+      'text',
+      'eaterPreferIngredients',
+      eater?.preferIngredients?.join(', ') || '',
+      'e.g., salmon, avocado, blueberries'
+    );
+    const preferHelp = document.createElement('p');
+    preferHelp.className = 'text-xs text-gray-500 mt-1';
+    preferHelp.textContent = 'Vanessa will try to prioritize these where possible.';
+    preferGroup.appendChild(preferHelp);
+    form.appendChild(preferGroup);
+
+    // Personal Preferences Textarea
+    const personalPrefGroup = document.createElement('div');
+    personalPrefGroup.className = 'form-group';
+    const personalPrefLabel = document.createElement('label');
+    personalPrefLabel.className = 'block text-sm font-medium text-gray-700 mb-2';
+    personalPrefLabel.textContent = 'Additional Notes / Preferences';
+    const personalPrefTextarea = document.createElement('textarea');
+    personalPrefTextarea.className = 'w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent';
+    personalPrefTextarea.name = 'eaterPersonalPreferences';
+    personalPrefTextarea.rows = 3;
+    personalPrefTextarea.value = eater?.personalPreferences || '';
+    personalPrefTextarea.placeholder = 'e.g., loves spicy food, prefers hot breakfast, avoids complex textures';
+    personalPrefGroup.appendChild(personalPrefLabel);
+    personalPrefGroup.appendChild(personalPrefTextarea);
+    form.appendChild(personalPrefGroup);
+
     // Is Default checkbox
     const defaultGroup = document.createElement('div');
     defaultGroup.className = 'flex items-center';
@@ -1161,6 +1535,18 @@ export class SettingsPage {
     const schedule = formData.get('eaterSchedule').trim();
     const isDefault = formData.get('eaterIsDefault') === 'on';
 
+    // Slice 5 fields
+    const dietProfile = formData.get('eaterDietProfile') || null;
+    const excludeIngredients = formData.get('eaterExcludeIngredients')
+      .split(',')
+      .map(a => a.trim())
+      .filter(a => a.length > 0);
+    const preferIngredients = formData.get('eaterPreferIngredients')
+      .split(',')
+      .map(a => a.trim())
+      .filter(a => a.length > 0);
+    const personalPreferences = formData.get('eaterPersonalPreferences').trim();
+
     if (!name) {
       this.showToast('Name is required', 'error');
       return;
@@ -1176,7 +1562,11 @@ export class SettingsPage {
         allergies,
         dietaryRestrictions,
         schedule,
-        isDefault
+        isDefault,
+        dietProfile,
+        excludeIngredients,
+        preferIngredients,
+        personalPreferences
       });
     } else {
       // Create new eater
@@ -1186,7 +1576,11 @@ export class SettingsPage {
         allergies,
         dietaryRestrictions,
         schedule,
-        isDefault
+        isDefault,
+        dietProfile,
+        excludeIngredients,
+        preferIngredients,
+        personalPreferences
       });
 
       const eaters = loadEaters();

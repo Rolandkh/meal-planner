@@ -313,6 +313,13 @@ export function createEater(data = {}) {
     dietaryRestrictions: Array.isArray(data.dietaryRestrictions) ? data.dietaryRestrictions : [],
     schedule: data.schedule || '',
     isDefault: data.isDefault === true,
+    
+    // Slice 5 fields
+    dietProfile: data.dietProfile || null,
+    personalPreferences: data.personalPreferences || '',
+    excludeIngredients: Array.isArray(data.excludeIngredients) ? data.excludeIngredients : [],
+    preferIngredients: Array.isArray(data.preferIngredients) ? data.preferIngredients : [],
+    
     createdAt: now,
     updatedAt: now
   };
