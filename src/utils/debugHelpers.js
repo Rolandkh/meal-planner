@@ -31,10 +31,10 @@ export const debugHelpers = {
   },
 
   /**
-   * Force reinitialize diet profiles
+   * Force reinitialize diet profiles (simple fallback)
    */
   fixProfiles() {
-    console.log('🔧 Force initializing diet profiles...');
+    console.log('🔧 Force initializing diet profiles (fallback)...');
     const result = forceDietProfilesInit(true);
     if (result) {
       console.log('✅ Diet profiles reinitialized successfully');
@@ -43,6 +43,18 @@ export const debugHelpers = {
       console.error('❌ Failed to reinitialize diet profiles');
     }
     return result;
+  },
+  
+  /**
+   * Clear and reload profiles (RECOMMENDED for updates)
+   */
+  refreshProfiles() {
+    console.log('🔄 Clearing diet profiles and reloading page...');
+    console.log('This will reload the latest profiles from the JSON file.');
+    localStorage.removeItem(STORAGE_KEYS.DIET_PROFILES);
+    setTimeout(() => {
+      location.reload();
+    }, 500);
   },
 
   /**
@@ -87,17 +99,21 @@ export const debugHelpers = {
     console.log(`
 🛠️ Debug Helper Functions (accessible via window.debug):
 
-  checkProfiles()   - Check if diet profiles are loaded
-  fixProfiles()     - Force reinitialize diet profiles
-  listProfiles()    - List all available profiles
-  clearProfiles()   - Remove profiles from localStorage
-  showStorage()     - Show all localStorage keys
-  help()            - Show this help message
+  checkProfiles()    - Check if diet profiles are loaded
+  refreshProfiles()  - Clear and reload (RECOMMENDED for updates) ⭐
+  fixProfiles()      - Force reinitialize with fallback
+  listProfiles()     - List all available profiles
+  clearProfiles()    - Remove profiles from localStorage
+  showStorage()      - Show all localStorage keys
+  help()             - Show this help message
 
 Example usage:
-  window.debug.checkProfiles()   // Check status
-  window.debug.fixProfiles()     // Fix if profiles missing
-  window.debug.listProfiles()    // See all 11 profiles
+  window.debug.checkProfiles()    // Check status
+  window.debug.refreshProfiles()  // ⭐ BEST: Clear and reload page
+  window.debug.listProfiles()     // See all profiles
+  
+To update to latest profiles (v2.0.0, 17 profiles):
+  window.debug.refreshProfiles()  // Clears and reloads automatically
     `);
   }
 };

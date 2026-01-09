@@ -7,11 +7,11 @@ import { STORAGE_KEYS } from '../types/schemas.js';
 
 /**
  * Hardcoded diet profiles as fallback
- * Copy of the data from dietProfiles.json
+ * Copy of basic data from dietProfiles.json v2.0.0
  */
 const FALLBACK_DIET_PROFILES = {
-  "_dataVersion": "1.0.0",
-  "_lastUpdated": "2026-01-08T00:00:00Z",
+  "_dataVersion": "2.0.0",
+  "_lastUpdated": "2026-01-09T00:00:00Z",
   "profiles": [
     {
       "id": "mediterranean",
@@ -93,15 +93,20 @@ export function forceDietProfilesInit(force = false) {
     
     if (existing && !force) {
       const data = JSON.parse(existing);
-      if (data.profiles && data.profiles.length > 0) {
-        console.log(`✅ Diet profiles already exist: ${data.profiles.length} profiles`);
+      const existingVersion = data._dataVersion || '0.0.0';
+      
+      // Check if we need to update
+      if (data.profiles && data.profiles.length > 0 && existingVersion === FALLBACK_DIET_PROFILES._dataVersion) {
+        console.log(`✅ Diet profiles already exist: ${data.profiles.length} profiles (v${existingVersion})`);
         return true;
       }
+      
+      console.log(`🔄 Updating diet profiles: v${existingVersion} → v${FALLBACK_DIET_PROFILES._dataVersion}`);
     }
     
     // Initialize with fallback data
     localStorage.setItem(STORAGE_KEYS.DIET_PROFILES, JSON.stringify(FALLBACK_DIET_PROFILES));
-    console.log(`✅ Force initialized ${FALLBACK_DIET_PROFILES.profiles.length} diet profiles`);
+    console.log(`✅ Force initialized ${FALLBACK_DIET_PROFILES.profiles.length} diet profiles (v${FALLBACK_DIET_PROFILES._dataVersion})`);
     return true;
     
   } catch (error) {

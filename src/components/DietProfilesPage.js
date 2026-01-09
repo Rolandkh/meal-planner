@@ -12,6 +12,8 @@ import {
   importDietProfile
 } from '../utils/dietProfiles.js';
 
+import { STORAGE_KEYS } from '../types/schemas.js';
+
 export class DietProfilesPage {
   constructor() {
     this.state = {
@@ -24,8 +26,41 @@ export class DietProfilesPage {
   }
 
   beforeRender() {
+    // Check for profile version and warn if outdated
+    this.checkProfileVersion();
+    
     this.state.profiles = getAllDietProfiles();
-    console.log('Loaded diet profiles:', this.state.profiles.length);
+    console.log('📋 Diet Profiles Page loaded:', this.state.profiles.length, 'profiles');
+  }
+  
+  /**
+   * Check diet profile version and show warning if outdated
+   */
+  checkProfileVersion() {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEYS.DIET_PROFILES);
+      if (!stored) {
+        console.warn('⚠️ No diet profiles in localStorage!');
+        return;
+      }
+      
+      const data = JSON.parse(stored);
+      const currentVersion = data._dataVersion || '0.0.0';
+      const profileCount = data.profiles?.length || 0;
+      
+      console.log(`📊 Diet Profiles: v${currentVersion}, ${profileCount} profiles`);
+      
+      // Check if outdated
+      if (currentVersion !== '2.0.0' || profileCount < 15) {
+        console.warn(`⚠️ Diet profiles may be outdated!`);
+        console.warn(`   Current: v${currentVersion}, ${profileCount} profiles`);
+        console.warn(`   Expected: v2.0.0, 17 profiles`);
+        console.warn(`   Solution: Clear localStorage and reload page`);
+        console.warn(`   Run: localStorage.removeItem('vanessa_diet_profiles'); location.reload();`);
+      }
+    } catch (error) {
+      console.error('Error checking profile version:', error);
+    }
   }
 
   render() {

@@ -1,0 +1,95 @@
+---
+description: Do not create documentation files unless explicitly requested or functionally required
+globs: **/*
+alwaysApply: true
+---
+
+# No Unnecessary Documentation Files
+
+## Core Rule
+
+**DO NOT create documentation files (.md, .txt, README, guides, summaries, etc.) unless:**
+1. The user explicitly asks for documentation
+2. Required by Taskmaster (tasks.json, PRD files in .taskmaster/)
+3. Required for the app to function (e.g., user-facing help docs in the UI)
+
+## What NOT to Create
+
+**❌ NEVER create these without explicit request:**
+- Summary documents (SUMMARY.md, REVIEW.md, etc.)
+- How-to guides (HOW-TO-*.md)
+- Fix documentation (FIX.md, FIXES.md)
+- Session logs (SESSION-*.md)
+- Progress reports (PROGRESS.md, STATUS.md)
+- Testing checklists (TESTING-*.md, CHECKLIST.md)
+- Reference guides (REFERENCE.md, GUIDE.md)
+- Implementation notes (IMPLEMENTATION-*.md)
+- Change logs beyond CHANGELOG.md (no UPDATES.md, CHANGES.md)
+
+**Instead:**
+- Communicate findings directly in chat response
+- Use console.log() for debugging info
+- Add inline code comments where needed
+- Update existing README.md if absolutely necessary
+
+## What IS Allowed
+
+**✅ These are OK to create:**
+- `.taskmaster/` folder contents (tasks.json, PRD, etc.)
+- `README.md` (if explicitly requested or missing)
+- User-facing documentation that displays in the app UI
+- Configuration files (package.json, vercel.json, etc.)
+- Code files (.js, .html, .css, etc.)
+
+## Examples
+
+### ❌ BAD: Creating summary docs
+```
+User: "I fixed the diet profiles issue"
+Agent: Creates DIET-PROFILES-FIX.md with 200 lines
+```
+
+### ✅ GOOD: Explain in chat
+```
+User: "I fixed the diet profiles issue"  
+Agent: "I fixed it by updating the version to 2.0.0 and
+        adding better version checking. Clear localStorage
+        to see the changes: 
+        localStorage.removeItem('vanessa_diet_profiles');
+        location.reload();"
+```
+
+### ❌ BAD: Creating testing guides
+```
+After implementing feature, creates TESTING-CHECKLIST.md
+```
+
+### ✅ GOOD: Explain tests in chat
+```
+After implementing: "Test by: 1) Go to Settings, 
+2) Click Diet Profiles, 3) Verify 17 profiles show up"
+```
+
+## Rationale
+
+- **Save tokens** - Documentation files consume context
+- **Reduce clutter** - Fewer files to manage
+- **Chat is sufficient** - User can scroll back if needed
+- **Keep it simple** - Less is more
+
+## Exceptions
+
+If the user says:
+- "Can you document this?"
+- "Create a guide for..."
+- "Write up instructions for..."
+- "Make a README for..."
+
+Then create the documentation they requested.
+
+## Token Conservation
+
+- Prioritize functional code over documentation
+- Use chat responses for explanations
+- Keep inline comments minimal and relevant
+- Let the code speak for itself when clear

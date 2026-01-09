@@ -45,16 +45,22 @@ export async function initializeDietProfiles(bundledData) {
     const existing = localStorage.getItem(STORAGE_KEYS.DIET_PROFILES);
     if (existing) {
       const data = JSON.parse(existing);
-      // Check version - only update if bundled is newer
-      if (data._dataVersion === bundledData._dataVersion) {
-        console.log('✅ Diet profiles already up to date');
+      const existingVersion = data._dataVersion || '0.0.0';
+      const bundledVersion = bundledData._dataVersion || '0.0.0';
+      
+      // Only skip if bundled version is NOT newer
+      if (existingVersion === bundledVersion) {
+        console.log(`✅ Diet profiles already up to date (v${existingVersion})`);
         return true;
       }
+      
+      // Bundled is newer - update it
+      console.log(`🔄 Updating diet profiles: v${existingVersion} → v${bundledVersion}`);
     }
 
-    // Save bundled data to localStorage
+    // Save bundled data to localStorage (new install or update)
     localStorage.setItem(STORAGE_KEYS.DIET_PROFILES, JSON.stringify(bundledData));
-    console.log(`✅ Initialized ${bundledData.profiles?.length || 0} diet profiles`);
+    console.log(`✅ Initialized ${bundledData.profiles?.length || 0} diet profiles (v${bundledData._dataVersion})`);
     return true;
     
   } catch (error) {
