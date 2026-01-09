@@ -4,6 +4,15 @@
 
 ### 🛒 Major Shopping List Improvements
 
+#### Fixed Critical Data Structure Bug (Slice 5 Migration)
+- **Problem:** Shopping list expected old structure with `mealPlan.days[]` array
+- **Reality:** Slice 5 changed structure - meal plan now has `mealIds[]`, meals stored separately
+- **Fix:** Updated `getRecipesFromMealPlan()` and `getRecipeUsageCounts()` to:
+  - Load meals from `loadMeals()` (separate storage)
+  - Filter meals by `mealPlan.mealIds`
+  - Extract recipes from filtered meals via `recipeName` field
+- **Result:** Shopping list now works with Slice 5 data structure
+
 #### Fixed Critical Duplication Bug
 - **Problem:** Shopping list included ingredients from ALL 622 recipes in storage, not just the 8-13 recipes in current meal plan
 - **Root cause:** `loadRecipes()` loaded entire catalog, then aggregated everything
