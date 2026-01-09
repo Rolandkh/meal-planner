@@ -1,12 +1,39 @@
 # Current Implementation Reference
 
-**Last Updated:** January 8, 2026  
-**Version:** v1.0-rc2 (Slice 4 Code Complete + UI Polish)  
-**Status:** All features built, UI polished, automated tests passed, manual API tests pending
+**Last Updated:** January 9, 2026  
+**Version:** v1.1-alpha (Slice 5 Foundation Complete)  
+**Status:** Slice 4 complete, Slice 5 60% complete (24/40 tasks), API integration tested
 
 ---
 
-## 🆕 Recent Updates (January 8, 2026)
+## 🆕 Recent Updates (January 9, 2026)
+
+### Slice 5: Recipe Catalog & Diet Profile Integration
+
+**Task 70 Complete: API Integration** ✅
+- **Server-side catalog filtering:** Filters 607-recipe catalog by diet profiles, exclusions, preferences
+- **Enhanced Claude prompts:** Includes household diet context, catalog availability, personalization
+- **Multi-profile support:** API handles households with different diet profiles (keto + vegan, etc.)
+- **Catalog matching:** 5-15% of recipes matched to catalog (improving with better names)
+
+**Foundation Complete:**
+- ✅ Recipe catalog system (607 Spoonacular recipes)
+- ✅ Diet Compass scoring engine (4 health metrics)
+- ✅ Diet profile definitions (10 profiles: Mediterranean, Keto, Vegan, etc.)
+- ✅ Ingredient health database (200+ ingredients)
+- ✅ Data schema migration to Slice 5
+- ✅ Catalog storage and loading utilities
+
+**Bugs Fixed:**
+- Fixed catalog recipe hash mismatch causing missing meals
+- Fixed catalog recipes not being persisted to localStorage
+- Increased Claude max_tokens (8192 → 12288) to prevent 6-day truncation
+
+**Impact:** Meal plans now leverage professional recipe catalog with health scores and can respect personalized diet preferences
+
+---
+
+## 🆕 Previous Updates (January 8, 2026)
 
 ### UI Polish & Summary Feature
 - **Button Styling:** Refined with 12px border-radius and lighter gradient
@@ -15,9 +42,75 @@
 - **Budget Relocation:** Moved to Shopping List for better context
 - **CSS Fix:** Custom gradient styles now properly loaded in index.html
 
-**Impact:** Cleaner UI with more personality and better user storytelling
+---
 
-**See:** `TODAYS-UPDATES.md` for complete details
+## 🔧 Slice 5: API Enhancements (Task 70)
+
+### Generate Meal Plan API (`/api/generate-meal-plan`)
+
+**New Capabilities:**
+1. **Diet Profile Integration**
+   - Accepts `eaters` with `dietProfile`, `excludeIngredients`, `preferIngredients`
+   - Server-side filtering by profile compatibility
+   - Multi-profile household support
+
+2. **Recipe Catalog Integration**
+   - Accepts `catalogSlice` (pre-filtered recipes)
+   - Matches Claude output to catalog recipes
+   - Catalog recipes persist to localStorage
+   - 5-15% catalog usage (improving)
+
+3. **Enhanced Prompts**
+   - Rich dietary context (profiles, exclusions, preferences)
+   - Catalog awareness (count, benefits, examples)
+   - Meal prep settings (future expansion ready)
+
+**Request Format (Enhanced):**
+```javascript
+{
+  eaters: [
+    {
+      name: "Mom",
+      dietProfile: "mediterranean",        // NEW
+      excludeIngredients: ["eggplant"],   // NEW
+      preferIngredients: ["salmon"],      // NEW
+      personalPreferences: "..."          // NEW
+    }
+  ],
+  baseSpecification: { ... },             // Enhanced
+  catalogSlice: [ ... ],                  // NEW
+  chatHistory: [ ... ],                   // Existing
+  regenerateDay: "monday",                // Existing (Slice 4)
+  dateForDay: "2026-01-13",              // Existing (Slice 4)
+  existingMeals: [ ... ]                  // Existing (Slice 4)
+}
+```
+
+**Server-Side Processing:**
+```javascript
+// New filtering pipeline
+catalogSlice (607 recipes)
+  → filter by diet profiles
+  → filter by excluded ingredients
+  → prioritize by preferred ingredients
+  → filter by meal type
+  ↓
+filteredCatalog (200-400 recipes)
+  → pass to Claude prompt
+  → Claude generates with awareness
+  → transformer matches output to catalog
+  ↓
+Final: ~5-15% catalog recipes + ~85-95% AI-generated
+```
+
+**Key Functions:**
+- `getCandidateCatalogRecipes(catalog, eaters, mealType)` - server-side filtering
+- `matchCatalogRecipe(recipeName, catalog)` - fuzzy name matching
+- Enhanced `buildUserPrompt()` - diet context inclusion
+
+**Files Modified:**
+- `api/generate-meal-plan.js` - API handler and prompts
+- `src/utils/mealPlanTransformer.js` - catalog matching and persistence
 
 ---
 

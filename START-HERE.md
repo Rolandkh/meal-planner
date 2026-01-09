@@ -1,57 +1,62 @@
 # 🎯 START HERE - Vanessa Meal Planner
 
-**Version:** v1.0-rc3 (Release Candidate 3)  
-**Date:** January 8, 2026  
-**Status:** ✅ Testing Complete - Bugs Fixed - Task 59 Pending
+**Version:** v1.1-alpha (Slice 5 In Progress)  
+**Date:** January 9, 2026  
+**Status:** ✅ Slice 4 Complete - Slice 5 Foundation Built
 
 ---
 
 ## 📍 You Are Here
 
 **Current State:**
-- ✅ Slices 1, 2, 3 fully complete and tested
-- ✅ Slice 4 code complete (all 10 original tasks built)
-- ✅ Testing feedback fixes complete (Tasks 57, 58 done)
-- ✅ Recipe editing: All bugs fixed and tested
-- ✅ Single-day regeneration: Working correctly, preserves other days
-- ✅ UI polish: Button colors refined, chat messages formatted
-- ⏳ Task 59: Meal plan history enhancement pending
+- ✅ Slices 1, 2, 3, 4 fully complete and tested
+- ✅ Slice 5 foundation complete (24/40 tasks - 60%)
+- ✅ Task 70: API Integration complete and tested
+- ✅ Recipe catalog system (607 recipes) operational
+- ✅ Diet Compass scoring engine built
+- ✅ Diet profile filtering working
+- 🚧 Settings UI for diet profiles (next up)
 
 **What This Means:**
-Core Slice 4 features are built, tested, and working. One enhancement (history pages) remains before Slice 4 Reality Check.
+Core Slice 5 foundation is built. The API now supports diet profiles, catalog filtering, and personalized preferences. Settings UI and remaining features are next.
 
 ---
 
 ## 🚀 What To Do Next
 
-### Option 1: Implement Task 59 (Recommended)
-**Time:** 5-7 hours  
-**Status:** Ready to implement
+### Option 1: Continue Slice 5 (Recommended)
+**Time:** 2-3 hours per task  
+**Status:** Foundation complete, UI tasks next
 
-**Task 59: Enhance Meal Plan History Pages**
-- Add AI-generated weekly summaries
-- Restructure detail page with two tabs
-- Fix 7-day display bug (currently only shows 1 day)
-- Make recipe names clickable
+**Next Task (69): Settings UI for Diet Profiles**
+- Add diet profile dropdown to household member editor
+- Add exclude/prefer ingredient fields
+- Add personal preferences textarea
+- Wire up auto-save logic
 
-**Start:** Agent is ready to implement autonomously
+**After Task 69:** Meal prep settings, multi-profile generation, recipe variations
 
----
-
-### Option 2: Final Testing & Reality Check
-**Time:** 1-2 hours after Task 59
-
-**Complete Testing:**
-1. ✅ Recipe editing - TESTED & WORKING
-2. ✅ Single-day regeneration - TESTED & WORKING
-3. ⏳ History pages - After Task 59 implementation
-4. ⏳ Full regression test
-
-**Then:** Conduct Slice 4 Reality Check and update PRD
+**Start:** Ready to implement
 
 ---
 
-### Option 2: Review Documentation
+### Option 2: Review Recent Changes
+**Time:** 10 minutes
+
+**Just Completed (January 9, 2026):**
+- ✅ Task 70: API Integration with catalog and diet profiles
+- ✅ Server-side recipe filtering by diet profiles
+- ✅ Enhanced Claude prompts with dietary context
+- ✅ Catalog matching (1-3 recipes per generation)
+
+**Bugs Fixed:**
+- Fixed hash mismatch causing missing meals
+- Fixed catalog recipes not being saved
+- Increased max_tokens to prevent truncation
+
+---
+
+### Option 3: Review Documentation
 **Time:** 15-20 minutes  
 **File:** `DOCUMENTATION-INDEX.md`
 
@@ -161,15 +166,15 @@ cat references/SLICE-4-TEST-REPORT.md
 
 ## 📊 By The Numbers
 
-- **Lines of Code:** ~15,000 total (~2,500 in Slice 4)
+- **Lines of Code:** ~16,500 total (~2,500 in Slice 4, ~1,500 in Slice 5)
 - **Components:** 14 (6 new in Slice 4)
-- **API Endpoints:** 3 (1 new in Slice 4)
-- **Routes:** 11 (3 new in Slice 4)
-- **Tasks Completed:** 21 (10 in Slice 4)
-- **Subtasks Completed:** 65 (20 in Slice 4)
-- **Build Time:** ~3.5 hours (planning → code → docs)
-- **Automated Tests:** 6/6 passed
-- **Manual Tests:** 0/7 completed
+- **API Endpoints:** 3 (enhanced in Slice 5)
+- **Routes:** 11
+- **Tasks Completed:** 24/40 Slice 5 (60%)
+- **Recipe Catalog:** 607 recipes loaded
+- **Diet Profiles:** 10 profiles defined
+- **Catalog Matching:** 5-15% per generation (improving)
+- **Build Time:** ~6 hours total (Slices 4-5)
 
 ---
 
