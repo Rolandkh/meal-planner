@@ -371,18 +371,44 @@ export class DietProfilesPage {
     const body = document.createElement('div');
     body.className = 'p-6 space-y-6';
 
-    // Summary
-    if (profile.summary) {
+    // Summary & Description
+    if (profile.summary || profile.description) {
       const summarySection = document.createElement('div');
       const summaryLabel = document.createElement('h3');
       summaryLabel.className = 'text-lg font-semibold text-gray-900 mb-2';
       summaryLabel.textContent = 'Overview';
-      const summaryText = document.createElement('p');
-      summaryText.className = 'text-gray-700';
-      summaryText.textContent = profile.summary;
-      summarySection.appendChild(summaryLabel);
-      summarySection.appendChild(summaryText);
+      
+      if (profile.summary) {
+        const summaryText = document.createElement('p');
+        summaryText.className = 'text-gray-700 font-medium';
+        summaryText.textContent = profile.summary;
+        summarySection.appendChild(summaryLabel);
+        summarySection.appendChild(summaryText);
+      }
+      
+      if (profile.description) {
+        const descText = document.createElement('p');
+        descText.className = 'text-gray-600 mt-2';
+        descText.textContent = profile.description;
+        summarySection.appendChild(descText);
+      }
+      
       body.appendChild(summarySection);
+    }
+    
+    // Special banner for temporary diets
+    if (profile.profileType === 'temporary') {
+      const tempBanner = document.createElement('div');
+      tempBanner.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded';
+      tempBanner.innerHTML = `
+        <p class="font-semibold text-yellow-800">⚠️ Temporary Diet Protocol</p>
+        <p class="text-sm text-yellow-700 mt-1">
+          ${profile.requiresRetreatDate ? 'Requires retreat date. ' : ''}
+          Duration: ${profile.minimumDuration || 'Varies'}
+          ${profile.recommendedDuration ? `. Recommended: ${profile.recommendedDuration}` : ''}
+        </p>
+      `;
+      body.appendChild(tempBanner);
     }
 
     // Principles
@@ -485,6 +511,167 @@ export class DietProfilesPage {
       body.appendChild(specialSection);
     }
 
+    // Meal Structure (if available)
+    if (profile.mealStructure) {
+      const mealSection = document.createElement('div');
+      const mealLabel = document.createElement('h3');
+      mealLabel.className = 'text-lg font-semibold text-gray-900 mb-3';
+      mealLabel.textContent = '🍽️ Meal Structure';
+      mealSection.appendChild(mealLabel);
+      
+      const mealGrid = document.createElement('div');
+      mealGrid.className = 'grid grid-cols-1 md:grid-cols-2 gap-3';
+      
+      Object.entries(profile.mealStructure).forEach(([meal, description]) => {
+        if (typeof description === 'string') {
+          const mealCard = document.createElement('div');
+          mealCard.className = 'bg-gray-50 p-3 rounded-lg border border-gray-200';
+          mealCard.innerHTML = `
+            <div class="font-medium text-gray-700 text-sm capitalize mb-1">${meal}</div>
+            <div class="text-xs text-gray-600">${description}</div>
+          `;
+          mealGrid.appendChild(mealCard);
+        }
+      });
+      
+      mealSection.appendChild(mealGrid);
+      body.appendChild(mealSection);
+    }
+    
+    // Daily Targets (if available)
+    if (profile.dailyTargets) {
+      const targetsSection = document.createElement('div');
+      const targetsLabel = document.createElement('h3');
+      targetsLabel.className = 'text-lg font-semibold text-gray-900 mb-3';
+      targetsLabel.textContent = '🎯 Daily Targets';
+      targetsSection.appendChild(targetsLabel);
+      
+      const targetsList = document.createElement('div');
+      targetsList.className = 'bg-blue-50 p-4 rounded-lg border border-blue-200 space-y-1';
+      
+      Object.entries(profile.dailyTargets).forEach(([key, value]) => {
+        const item = document.createElement('div');
+        item.className = 'text-sm';
+        item.innerHTML = `<span class="font-medium text-gray-700 capitalize">${key.replace(/([A-Z])/g, ' $1').trim()}:</span> <span class="text-gray-600">${value}</span>`;
+        targetsList.appendChild(item);
+      });
+      
+      targetsSection.appendChild(targetsList);
+      body.appendChild(targetsSection);
+    }
+    
+    // Tier System (for Longevity Protocol)
+    if (profile.tierSystem) {
+      const tierSection = document.createElement('div');
+      const tierLabel = document.createElement('h3');
+      tierLabel.className = 'text-lg font-semibold text-gray-900 mb-3';
+      tierLabel.textContent = '📊 Food Tier System';
+      tierSection.appendChild(tierLabel);
+      
+      const tiersList = document.createElement('div');
+      tiersList.className = 'space-y-3';
+      
+      Object.entries(profile.tierSystem).forEach(([tier, data]) => {
+        const tierCard = document.createElement('div');
+        tierCard.className = 'bg-gray-50 p-3 rounded-lg border border-gray-200';
+        tierCard.innerHTML = `
+          <div class="font-semibold text-gray-800 text-sm mb-1">${data.label}</div>
+          <div class="text-xs text-gray-600">${data.foods.join(', ')}</div>
+        `;
+        tiersList.appendChild(tierCard);
+      });
+      
+      tierSection.appendChild(tiersList);
+      body.appendChild(tierSection);
+    }
+    
+    // Phases (for La Dieta and other progressive diets)
+    if (profile.phases) {
+      const phasesSection = document.createElement('div');
+      const phasesLabel = document.createElement('h3');
+      phasesLabel.className = 'text-lg font-semibold text-gray-900 mb-3';
+      phasesLabel.textContent = '📅 Progressive Phases';
+      phasesSection.appendChild(phasesLabel);
+      
+      const phasesList = document.createElement('div');
+      phasesList.className = 'space-y-4';
+      
+      Object.entries(profile.phases).forEach(([phaseKey, phase]) => {
+        const phaseCard = document.createElement('div');
+        phaseCard.className = 'border-l-4 border-purple-400 bg-purple-50 p-4 rounded-r-lg';
+        
+        let phaseHTML = `
+          <div class="font-semibold text-purple-900 mb-1">${phase.name}</div>
+          <div class="text-xs text-purple-700 mb-2">⏰ ${phase.timing}</div>
+          <div class="text-sm text-gray-700 mb-2">${phase.description}</div>
+        `;
+        
+        if (phase.foodsToInclude) {
+          phaseHTML += `<div class="text-xs text-gray-600 mt-2"><strong>Include:</strong> ${phase.foodsToInclude.slice(0, 3).join('; ')}${phase.foodsToInclude.length > 3 ? '...' : ''}</div>`;
+        }
+        
+        if (phase.additionalRestrictions) {
+          phaseHTML += `<div class="text-xs text-red-700 mt-1"><strong>Additional restrictions:</strong> ${phase.additionalRestrictions.slice(0, 3).join(', ')}${phase.additionalRestrictions.length > 3 ? '...' : ''}</div>`;
+        }
+        
+        phaseCard.innerHTML = phaseHTML;
+        phasesList.appendChild(phaseCard);
+      });
+      
+      phasesSection.appendChild(phasesList);
+      body.appendChild(phasesSection);
+    }
+    
+    // Scientific Score (if available)
+    if (profile.dietCompassScore) {
+      const scoreSection = document.createElement('div');
+      const scoreLabel = document.createElement('h3');
+      scoreLabel.className = 'text-lg font-semibold text-gray-900 mb-3';
+      scoreLabel.textContent = '📈 Diet Compass Score';
+      scoreSection.appendChild(scoreLabel);
+      
+      const scoreCard = document.createElement('div');
+      scoreCard.className = 'bg-green-50 p-4 rounded-lg border border-green-200';
+      
+      const overall = document.createElement('div');
+      overall.className = 'text-center mb-3 pb-3 border-b border-green-300';
+      overall.innerHTML = `
+        <div class="text-3xl font-bold text-green-700">${profile.dietCompassScore.overall}/100</div>
+        <div class="text-sm text-green-600">Overall Score</div>
+      `;
+      scoreCard.appendChild(overall);
+      
+      const metrics = document.createElement('div');
+      metrics.className = 'grid grid-cols-2 gap-2 text-sm';
+      
+      const metricLabels = {
+        nutrientDensity: 'Nutrient Density',
+        longevity: 'Longevity',
+        weightLoss: 'Weight Loss',
+        heartHealth: 'Heart Health'
+      };
+      
+      Object.entries(metricLabels).forEach(([key, label]) => {
+        if (profile.dietCompassScore[key] !== undefined) {
+          const metric = document.createElement('div');
+          metric.innerHTML = `<span class="text-gray-700">${label}:</span> <span class="font-semibold text-green-700">${profile.dietCompassScore[key]}/10</span>`;
+          metrics.appendChild(metric);
+        }
+      });
+      
+      scoreCard.appendChild(metrics);
+      
+      if (profile.dietCompassScore.notes) {
+        const notes = document.createElement('div');
+        notes.className = 'text-xs text-gray-600 mt-3 pt-3 border-t border-green-300';
+        notes.textContent = profile.dietCompassScore.notes;
+        scoreCard.appendChild(notes);
+      }
+      
+      scoreSection.appendChild(scoreCard);
+      body.appendChild(scoreSection);
+    }
+    
     // Compatible/Conflicting profiles
     if ((profile.compatibleWith && profile.compatibleWith.length > 0) || 
         (profile.conflictsWith && profile.conflictsWith.length > 0)) {
@@ -492,21 +679,26 @@ export class DietProfilesPage {
       const compatLabel = document.createElement('h3');
       compatLabel.className = 'text-lg font-semibold text-gray-900 mb-2';
       compatLabel.textContent = '🔗 Compatibility';
+      compatSection.appendChild(compatLabel);
+      
+      const compatBox = document.createElement('div');
+      compatBox.className = 'bg-gray-50 p-3 rounded-lg border border-gray-200 space-y-2';
       
       if (profile.compatibleWith && profile.compatibleWith.length > 0) {
         const compatDiv = document.createElement('div');
-        compatDiv.className = 'mb-2';
-        compatDiv.innerHTML = `<span class="text-sm text-gray-600">✅ Compatible with: ${profile.compatibleWith.join(', ')}</span>`;
-        compatSection.appendChild(compatDiv);
+        compatDiv.className = 'text-sm';
+        compatDiv.innerHTML = `<span class="font-medium text-gray-700">✅ Compatible with:</span> <span class="text-gray-600">${profile.compatibleWith.join(', ')}</span>`;
+        compatBox.appendChild(compatDiv);
       }
       
       if (profile.conflictsWith && profile.conflictsWith.length > 0) {
         const conflictDiv = document.createElement('div');
-        conflictDiv.innerHTML = `<span class="text-sm text-gray-600">⚠️ Conflicts with: ${profile.conflictsWith.join(', ')}</span>`;
-        compatSection.appendChild(conflictDiv);
+        conflictDiv.className = 'text-sm';
+        conflictDiv.innerHTML = `<span class="font-medium text-gray-700">⚠️ Conflicts with:</span> <span class="text-gray-600">${profile.conflictsWith.join(', ')}</span>`;
+        compatBox.appendChild(conflictDiv);
       }
       
-      compatSection.appendChild(compatLabel);
+      compatSection.appendChild(compatBox);
       body.appendChild(compatSection);
     }
 

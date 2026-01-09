@@ -1,311 +1,1054 @@
 {
-  "_dataVersion": "1.0.0",
-  "_lastUpdated": "2026-01-08T00:00:00Z",
-  "_description": "Preloaded diet profile definitions for personalized meal planning",
-  "_source": "Based on established dietary approaches and nutritional science",
+  "_dataVersion": "2.0.0",
+  "_lastUpdated": "2026-01-09T00:00:00Z",
+  "_description": "Comprehensive diet profile definitions with detailed guidelines",
+  "_source": "Based on Diet Compass research, nutritional science, and established dietary approaches",
   
   "profiles": [
     {
       "id": "mediterranean",
       "name": "Mediterranean",
       "summary": "Heart-healthy eating pattern rich in olive oil, fish, vegetables, and whole grains.",
+      "description": "The Mediterranean diet is one of the most studied and recommended eating patterns for longevity and heart health. It emphasizes whole foods, healthy fats, and a plant-forward approach while including moderate amounts of fish, dairy, and wine.",
       "principles": [
-        "Abundant vegetables and fruits",
-        "Olive oil as primary fat",
-        "Fish and seafood regularly",
+        "Abundant vegetables and fruits daily",
+        "Olive oil as primary fat source",
+        "Fish and seafood 2-3 times per week",
         "Moderate dairy (especially yogurt and cheese)",
-        "Whole grains over refined",
-        "Nuts and legumes daily",
-        "Limit red meat"
+        "Whole grains over refined grains",
+        "Nuts and legumes consumed daily",
+        "Limit red meat to occasional consumption",
+        "Wine in moderation with meals (optional)"
       ],
       "foodsToEmphasize": [
         "olive oil", "fish", "vegetables", "fruits", "whole grains",
-        "nuts", "legumes", "yogurt", "herbs", "garlic"
+        "nuts", "legumes", "yogurt", "herbs", "garlic", 
+        "tomatoes", "leafy greens", "chickpeas", "lentils", "almonds"
       ],
       "foodsToAvoid": [
-        "processed meats", "refined sugars", "white bread", "butter"
+        "processed meats", "refined sugars", "white bread", "butter",
+        "trans fats", "heavily processed foods", "excessive red meat"
       ],
       "macroGuidance": {
         "carbs": "moderate (40-50%)",
         "protein": "moderate (15-20%)",
         "fat": "moderate-high (30-40%, mostly monounsaturated)"
       },
-      "specialConsiderations": "One of the most studied and recommended diets for longevity and heart health.",
-      "compatibleWith": ["flexitarian", "pescatarian"]
+      "mealStructure": {
+        "breakfast": "Greek yogurt with nuts and fruit, or whole grain bread with olive oil and tomatoes",
+        "lunch": "Large meal - fish or legumes with vegetables and whole grains",
+        "dinner": "Lighter meal - salad with protein, vegetables, olive oil",
+        "snacks": "Nuts, fresh fruit, vegetables with hummus"
+      },
+      "specialConsiderations": "One of the most studied and recommended diets for longevity and heart health. Linked to reduced risk of cardiovascular disease, diabetes, and cognitive decline. Very sustainable long-term.",
+      "scientificBasis": "Extensive research from Mediterranean populations showing reduced mortality and chronic disease rates. Rich in polyphenols, omega-3 fatty acids, and fiber.",
+      "compatibleWith": ["flexitarian", "pescatarian", "longevity"],
+      "tags": ["heart-health", "longevity", "sustainable", "well-researched"]
+    },
+    {
+      "id": "longevity",
+      "name": "Longevity Protocol (Diet Compass)",
+      "summary": "Science-based diet optimized for lifespan extension based on Diet Compass research by Bas Kast.",
+      "description": "This protocol implements four key scientific mechanisms: Protein-Leverage Effect, mTOR Modulation, Anti-Inflammatory Balance, and Gut Microbiome Support. Built on extensive longevity research compiled in 'The Diet Compass'.",
+      "principles": [
+        "Eat real food your great-grandmother would recognize",
+        "Plants as main course - vegetables are the meal, protein is the complement",
+        "Protein moderation: ~15% of calories (60-75g daily), prioritize plant and fish sources",
+        "Quality fats: Olive oil, nuts, seeds, oily fish (omega-3 focus)",
+        "Slow carbohydrates only: Legumes, whole grains, vegetables (avoid fast carbs)",
+        "Fermentation priority: Yoghurt > milk; include sauerkraut, kimchi, kefir",
+        "Time-restricted eating: 10-14 hour eating window (e.g., 8 AM - 6 PM)",
+        "mTOR inhibitors daily: Coffee, olive oil, green tea, turmeric",
+        "Weekly 24-hour fast for autophagy activation (optional but recommended)",
+        "Post-meal movement: 10-minute walks after lunch and dinner",
+        "No snacking between meals to maintain insulin sensitivity",
+        "Fish 3-4x/week, red meat rarely (few times yearly)"
+      ],
+      "foodsToEmphasize": [
+        "leafy greens", "cruciferous vegetables", "legumes (lentils, chickpeas, beans)",
+        "oily fish (salmon, sardines, mackerel)", "nuts (walnuts, almonds)", 
+        "seeds (chia, flax)", "fermented yogurt", "kefir", "olive oil",
+        "berries (blueberries, strawberries)", "whole grains (oats, quinoa, bulgur)",
+        "sauerkraut", "kimchi", "green tea", "black coffee", "turmeric", "ginger"
+      ],
+      "foodsToAvoid": [
+        "processed meats (bacon, sausages, ham)", "ultra-processed foods",
+        "added sugars", "soft drinks", "refined carbohydrates (white bread, pastries)",
+        "deep-fried foods", "trans fats", "excessive red meat", "late-night eating"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (40-50%, from slow-release sources)",
+        "protein": "moderate (15%, ~60-75g daily)",
+        "fat": "moderate (30-40%, emphasize omega-3 and monounsaturated)"
+      },
+      "dailyTargets": {
+        "calories": "1,500-1,600 (adjust for individual needs)",
+        "protein": "60-75g (~15% of calories)",
+        "omega3": "5.5-7g (exceptional - from fish, chia, flax, walnuts)",
+        "fiber": "35-45g (from vegetables, legumes, whole grains)",
+        "water": "2-3L daily"
+      },
+      "mealStructure": {
+        "breakfast": "Nutrient-dense start - Greek yogurt with berries and nuts, or protein-rich bar with omega-3",
+        "lunch": "Largest meal - Legume-based (hummus bowl, lentil soup, chickpea salad) with whole grains and fermented dairy. Always followed by 10-minute walk.",
+        "dinner": "Lighter, early (5-6 PM) - Fish or plant protein with abundant vegetables, NO carbs. Followed by walk.",
+        "eatingWindow": "8 AM - 6 PM only (14-hour fast overnight)",
+        "snacks": "NONE - no eating between meals to maintain insulin sensitivity"
+      },
+      "weeklyFast": {
+        "enabled": true,
+        "description": "24-hour fast from Thursday lunch (12 PM) to Friday lunch (1 PM)",
+        "allowed": "Water, black coffee, herbal tea, green tea only",
+        "notAllowed": "Any food, milk, cream, sweeteners, bone broth",
+        "breakFastMeal": "Light - protein bar and salad with hummus",
+        "benefits": "Activates autophagy, enhances mTOR inhibition, improves metabolic flexibility"
+      },
+      "tierSystem": {
+        "tier1": {
+          "label": "HIGHLY PROTECTIVE (Daily Foundation)",
+          "foods": ["vegetables (leafy greens, cruciferous)", "legumes", "nuts and seeds", "oily fish", "fermented dairy", "olive oil", "berries", "whole grains"]
+        },
+        "tier2": {
+          "label": "BENEFICIAL (Include Regularly)",
+          "foods": ["eggs (up to 7/week)", "poultry (free-range)", "other fruits", "cheese (fermented)", "green tea", "coffee", "dark chocolate (70%+)"]
+        },
+        "tier3": {
+          "label": "LIMIT (Occasional Only)",
+          "foods": ["red meat (grass-fed, few times yearly)", "milk (1-2 glasses max/day)", "white rice", "potatoes", "butter (small amounts)"]
+        },
+        "tier4": {
+          "label": "AVOID (Eliminate)",
+          "foods": ["processed meats", "ultra-processed foods", "added sugars and soft drinks", "refined carbs", "deep-fried foods", "trans fats"]
+        }
+      },
+      "scientificMechanisms": {
+        "proteinLeverage": "Eat until protein needs met (~15%). High-quality protein = earlier satiety = fewer calories.",
+        "mTORModulation": "Plant proteins and certain foods (coffee, olive oil, green tea, turmeric) inhibit mTOR, slowing aging.",
+        "antiInflammatory": "Omega-3s, fermented foods, plant compounds reduce chronic inflammation.",
+        "gutMicrobiome": "Fermented foods and fiber feed beneficial bacteria, improving metabolism and immunity."
+      },
+      "dietCompassScore": {
+        "overall": 88,
+        "nutrientDensity": 9,
+        "longevity": 9,
+        "weightLoss": 9,
+        "heartHealth": 8,
+        "notes": "Exceptional omega-3 (5.5-7g), high fiber (35-45g), plant-forward, mTOR inhibitors daily"
+      },
+      "specialConsiderations": "Based on 'The Diet Compass' by Bas Kast. Emphasizes protective foods, mTOR inhibition, and autophagy activation. Includes optional weekly 24-hour fast. Adjust carbs based on personal metabolic response. Not a quick fix - designed as sustainable lifestyle.",
+      "compatibleWith": ["mediterranean", "flexitarian", "pescatarian", "intermittent-fasting"],
+      "tags": ["science-based", "longevity", "anti-aging", "fasting", "omega-3-rich"]
+    },
+    {
+      "id": "la-dieta",
+      "name": "La Dieta",
+      "summary": "Temporary cleansing protocol for preparation before plant medicine retreats.",
+      "description": "La Dieta is a progressive cleansing diet designed to prepare the body, mind, and spirit for deep healing work. It operates on a reverse timeline from a specific retreat date, with restrictions increasing as the retreat approaches. This is NOT a long-term diet but a temporary preparation protocol.",
+      "profileType": "temporary",
+      "requiresRetreatDate": true,
+      "minimumDuration": "7 days",
+      "recommendedDuration": "14-30 days for deeper cleansing",
+      "principles": [
+        "The lighter the food, the easier access to deep healing",
+        "Start as early as possible (minimum 7 days before retreat)",
+        "Progressive restriction increases closer to retreat date",
+        "Focus on clean, fresh, unprocessed foods",
+        "Physical cleansing removes stimulants and toxins",
+        "Energetic preparation for spiritual connection",
+        "Eliminate foods that could create adverse interactions",
+        "Digestive rest through progressive lightening"
+      ],
+      "phases": {
+        "phase1": {
+          "name": "Base Cleansing Phase",
+          "timing": "At least 7 days before retreat (can start weeks or months earlier)",
+          "description": "Initial cleansing phase - remove stimulants, processed foods, and heavy proteins",
+          "foodsToInclude": [
+            "Grains: basmati rice, black rice, red rice, quinoa, couscous, millet, buckwheat",
+            "Proteins: free-range chicken, fresh fish, sardines, eggs",
+            "Vegetables: all fresh vegetables",
+            "Fruits: all fresh fruits",
+            "Fats: olive oil, seeds (sunflower, chia), macca powder",
+            "Limited dairy: good quality probiotic yoghurt (small amounts)",
+            "Bread: good quality sourdough bread",
+            "Sweeteners: honey (natural, unprocessed)",
+            "Salt: land-based salt (moderate)",
+            "Beverages: lemon water (drink lots), herbal teas, dandelion coffee, almond milk (unsweetened), coconut water"
+          ],
+          "foodsToAvoid": [
+            "Red meat and pork products",
+            "Salami and cured meats",
+            "Smoked products",
+            "Brown rice",
+            "All processed foods",
+            "Alcohol",
+            "Coffee and caffeine",
+            "Chocolate",
+            "Sugar and sugar products",
+            "Aspartame",
+            "Protein powders and supplements",
+            "Large amounts of dairy",
+            "Iodised salt",
+            "Strong spices",
+            "Nuts (except almonds)",
+            "Yeast products (Vegemite, etc.)"
+          ]
+        },
+        "phase2": {
+          "name": "Enhanced Restriction Phase",
+          "timing": "Final 3 days before retreat",
+          "description": "All Phase 1 restrictions continue, PLUS additional eliminations for deeper cleansing",
+          "additionalRestrictions": [
+            "ALL fermented products (soy, sauerkraut, vinegars, pickles, kombucha, miso)",
+            "Yoghurt (previously allowed, now restricted)",
+            "All salt (even land-based)",
+            "Ripe avocado (especially with brown bits)",
+            "Ripe banana (especially with brown bits)",
+            "Coconut and coconut products (including coconut water)",
+            "Figs"
+          ],
+          "emphasis": "Continue fresh vegetables, fresh fruit, clean proteins, simple grains - but lighter, simpler preparations"
+        },
+        "phase3": {
+          "name": "Minimal Food Phase",
+          "timing": "Day of retreat",
+          "description": "Strict timing and minimal food intake for optimal preparation",
+          "allowedFoods": [
+            "Light clear broths and soups",
+            "Eggs",
+            "Fish",
+            "Chicken",
+            "Fruit smoothies"
+          ],
+          "mealTiming": {
+            "morning": "Good breakfast from allowed foods",
+            "lunch": "Light lunch ~1 PM from allowed foods",
+            "afternoon": "1-2 PM: Only fresh fruit",
+            "evening": "After 2 PM: ONLY water, lemon juice, light herbal teas",
+            "critical": "NO solid food after 2 PM"
+          }
+        }
+      },
+      "foodsToEmphasize": [
+        "fresh vegetables", "fresh fruits", "basmati rice", "quinoa", 
+        "fresh fish", "free-range chicken", "eggs", "olive oil",
+        "lemon water", "herbal teas", "simple grains"
+      ],
+      "foodsToAvoid": [
+        "caffeine", "alcohol", "chocolate", "processed foods", "red meat",
+        "fermented foods (Phase 2+)", "strong spices", "late-night eating"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (from clean grains and vegetables)",
+        "protein": "moderate (from fish, chicken, eggs)",
+        "fat": "light (mainly olive oil)"
+      },
+      "additionalRestrictions": {
+        "medications": "Must stop 4 weeks prior: antidepressants, sleep meds, barbiturates, beta-blockers, steroids, antibiotics (1 week min). Only Advil permitted.",
+        "substances": "Avoid 4 weeks before and after: psychedelics, street drugs. Marijuana 1 week minimum.",
+        "lifestyle": "3 days before and after: sexual abstinence, avoid violent/disturbing media"
+      },
+      "vanessaGuidelines": {
+        "alwaysAsk": "Retreat date (essential for timeline calculation)",
+        "calculatePhase": "Determine current phase based on days until retreat",
+        "mealPlanning": "Phase 1: varied and substantial. Phase 2: lighter, simpler. Phase 3: strict timing.",
+        "hydration": "Emphasize lemon water and herbal teas, increase closer to retreat",
+        "progressiveSimplification": "Meals should get lighter and simpler as retreat approaches",
+        "timing": "Phase 3 timing is CRITICAL - no solid food after 2 PM on retreat day"
+      },
+      "specialConsiderations": "TEMPORARY cleansing diet for retreat preparation. NOT for long-term use. Requires retreat date for proper timeline calculation. The earlier you start (beyond minimum 7 days), the more thorough the cleansing. Consult retreat organizers with questions.",
+      "compatibleWith": ["none - standalone preparation protocol"],
+      "tags": ["temporary", "cleansing", "retreat-prep", "progressive", "spiritual"]
     },
     {
       "id": "keto",
       "name": "Keto / Low-Carb",
       "summary": "Very low carbohydrate, high fat diet that induces ketosis for metabolic benefits.",
+      "description": "The ketogenic diet drastically reduces carbohydrate intake to induce a metabolic state called ketosis, where the body burns fat for fuel instead of glucose. This can lead to rapid weight loss, improved mental clarity, and better blood sugar control.",
       "principles": [
-        "Minimize carbohydrates (<20-50g/day)",
-        "High healthy fats (70-80% calories)",
-        "Moderate protein (20-25%)",
-        "Focus on whole foods",
-        "Avoid grains, sugars, starchy vegetables"
+        "Minimize carbohydrates (<20-50g/day for ketosis)",
+        "High healthy fats (70-80% of calories)",
+        "Moderate protein (20-25% - too much kicks you out of ketosis)",
+        "Focus on whole, unprocessed foods",
+        "Avoid all grains, sugars, and starchy vegetables",
+        "Track net carbs (total carbs minus fiber)",
+        "Stay hydrated and supplement electrolytes",
+        "Monitor ketone levels to confirm ketosis"
       ],
       "foodsToEmphasize": [
-        "fatty fish", "eggs", "cheese", "avocado", "nuts", "seeds",
-        "olive oil", "coconut oil", "non-starchy vegetables", "meat"
+        "fatty fish (salmon, mackerel)", "eggs", "cheese", "avocado", 
+        "nuts (macadamia, pecans, walnuts)", "seeds", "olive oil", "coconut oil",
+        "butter", "ghee", "non-starchy vegetables (leafy greens, broccoli, cauliflower)",
+        "meat (grass-fed beef, pork, lamb)", "poultry", "heavy cream"
       ],
       "foodsToAvoid": [
-        "grains", "bread", "pasta", "rice", "potatoes", "sugar",
-        "beans", "most fruits", "processed foods"
+        "grains (bread, pasta, rice, oats)", "sugar and sweeteners", "potatoes",
+        "beans and legumes", "most fruits (except small portions of berries)",
+        "processed foods", "low-fat products", "beer and sweet alcohols",
+        "milk (high in carbs)", "root vegetables"
       ],
       "macroGuidance": {
-        "carbs": "very low (<10%)",
+        "carbs": "very low (<5-10%, <20-50g/day)",
         "protein": "moderate (20-25%)",
         "fat": "high (70-80%)"
       },
-      "specialConsiderations": "Requires careful monitoring. Not suitable for everyone. May conflict with plant-based diets.",
-      "conflictsWith": ["vegan", "vegetarian", "high-carb"]
+      "mealStructure": {
+        "breakfast": "Eggs with avocado and bacon, or bulletproof coffee with MCT oil",
+        "lunch": "Salad with fatty protein (salmon, chicken thighs) and olive oil dressing",
+        "dinner": "Meat or fish with non-starchy vegetables cooked in butter/oil",
+        "snacks": "Cheese, nuts, olives, hard-boiled eggs"
+      },
+      "dailyTargets": {
+        "carbs": "<20-50g net carbs",
+        "protein": "0.8-1g per pound of lean body mass",
+        "fat": "Remainder of calories",
+        "water": "3-4L (important for ketosis)",
+        "electrolytes": "Supplement sodium, potassium, magnesium"
+      },
+      "specialConsiderations": "Requires careful monitoring and adaptation period (keto flu). Not suitable for everyone. May conflict with plant-based diets. Consult healthcare provider before starting, especially if you have diabetes or kidney issues. Track ketones to confirm ketosis.",
+      "conflictsWith": ["vegan", "vegetarian", "high-carb", "longevity"],
+      "tags": ["low-carb", "high-fat", "ketosis", "weight-loss", "metabolic"]
     },
     {
       "id": "vegetarian",
       "name": "Vegetarian",
       "summary": "Plant-based diet that excludes meat and fish but includes dairy and eggs.",
+      "description": "A vegetarian diet emphasizes plant foods while allowing eggs and dairy products. It provides health benefits of plant-based eating while offering flexibility with protein sources and nutrients like B12 and calcium.",
       "principles": [
-        "No meat or fish",
-        "Abundant vegetables and fruits",
-        "Legumes and beans for protein",
-        "Whole grains",
-        "Dairy and eggs allowed",
-        "Variety of plant proteins"
+        "No meat, poultry, or fish",
+        "Abundant vegetables and fruits daily",
+        "Legumes and beans as primary protein sources",
+        "Whole grains preferred over refined grains",
+        "Dairy and eggs allowed and encouraged for nutrients",
+        "Variety of plant proteins to ensure complete amino acids",
+        "Include iron-rich plants with vitamin C for absorption",
+        "Consider B12 supplementation or fortified foods"
       ],
       "foodsToEmphasize": [
-        "vegetables", "fruits", "legumes", "beans", "lentils",
-        "whole grains", "nuts", "seeds", "tofu", "tempeh",
-        "dairy", "eggs"
+        "vegetables (all varieties)", "fruits", "legumes (chickpeas, lentils, black beans)",
+        "beans", "tofu", "tempeh", "whole grains (quinoa, brown rice, oats)",
+        "nuts and seeds", "dairy (milk, cheese, yogurt)", "eggs",
+        "nutritional yeast", "fortified plant milks", "leafy greens (iron)"
       ],
       "foodsToAvoid": [
-        "meat", "poultry", "fish", "seafood", "gelatin"
+        "meat (beef, pork, lamb)", "poultry (chicken, turkey)", 
+        "fish and seafood", "gelatin", "meat-based broths",
+        "lard", "animal rennet (check cheese labels)"
       ],
       "macroGuidance": {
         "carbs": "moderate-high (45-60%)",
         "protein": "moderate (15-20%, from plants and dairy)",
         "fat": "moderate (25-35%)"
       },
-      "specialConsiderations": "Ensure adequate B12, iron, and omega-3 from plant sources or supplements.",
-      "compatibleWith": ["flexitarian", "mediterranean"]
+      "mealStructure": {
+        "breakfast": "Oatmeal with nuts and fruit, eggs with vegetables, or yogurt parfait",
+        "lunch": "Legume-based meals (bean burrito, lentil soup, chickpea curry) with grains",
+        "dinner": "Tofu/tempeh stir-fry, pasta with vegetables, or grain bowls",
+        "snacks": "Hummus with vegetables, cheese, nuts, fruit"
+      },
+      "nutrientConsiderations": {
+        "b12": "Supplement or eat fortified foods daily (critical)",
+        "iron": "Combine plant sources (beans, spinach) with vitamin C (tomatoes, citrus)",
+        "omega3": "Include walnuts, flax seeds, chia seeds, or algae supplement",
+        "protein": "Combine different plant proteins (beans + rice, hummus + pita)",
+        "calcium": "Dairy, fortified plant milks, leafy greens",
+        "zinc": "Legumes, nuts, seeds, whole grains"
+      },
+      "specialConsiderations": "Ensure adequate B12, iron, and omega-3 from supplements or fortified foods. Combine plant proteins for complete amino acids. Very compatible with other healthy eating patterns.",
+      "compatibleWith": ["flexitarian", "mediterranean", "lacto-ovo"],
+      "tags": ["plant-based", "ethical", "sustainable", "dairy-friendly"]
     },
     {
       "id": "high-protein",
       "name": "High Protein",
       "summary": "Emphasizes protein-rich foods for muscle building, satiety, and weight management.",
+      "description": "A high-protein diet increases protein intake to 25-35% of calories to support muscle growth, enhance satiety, and promote weight loss. It's particularly effective for active individuals and those looking to preserve muscle while losing fat.",
       "principles": [
         "High protein intake (25-35% of calories)",
-        "Lean meats, fish, eggs, dairy",
-        "Plant proteins (legumes, tofu)",
-        "Moderate carbs and fats",
-        "Focus on whole foods"
+        "Lean meats, fish, eggs, and dairy emphasized",
+        "Plant proteins included (legumes, tofu, tempeh)",
+        "Moderate carbs and fats for balance",
+        "Focus on whole, minimally processed foods",
+        "Distribute protein across all meals (20-40g per meal)",
+        "Combine with strength training for best results",
+        "Ensure adequate hydration (protein metabolism needs water)"
       ],
       "foodsToEmphasize": [
-        "chicken breast", "fish", "eggs", "greek yogurt", "cottage cheese",
-        "lean beef", "turkey", "tofu", "tempeh", "legumes", "protein powder"
+        "chicken breast", "turkey", "fish (salmon, tuna, cod)", "eggs", 
+        "Greek yogurt", "cottage cheese", "lean beef", "protein powder (whey or plant)",
+        "tofu", "tempeh", "edamame", "legumes (lentils, chickpeas)",
+        "quinoa", "seafood", "low-fat dairy"
       ],
       "foodsToAvoid": [
-        "processed meats", "fried foods", "refined carbs", "excessive fats"
+        "processed meats (even if high protein)", "fried foods", 
+        "refined carbs", "excessive fats (if combined with high protein)",
+        "sugary foods", "alcohol (interferes with protein synthesis)"
       ],
       "macroGuidance": {
         "carbs": "moderate (30-40%)",
-        "protein": "high (30-40%)",
+        "protein": "high (30-40%, 1.6-2.2g per kg body weight)",
         "fat": "moderate (25-30%)"
       },
-      "specialConsiderations": "Ensure adequate hydration. Monitor kidney health with very high protein.",
-      "compatibleWith": ["mediterranean", "flexitarian", "keto"]
+      "mealStructure": {
+        "breakfast": "Eggs with vegetables, Greek yogurt with protein granola, or protein smoothie",
+        "lunch": "Grilled chicken/fish with quinoa and vegetables, or large protein-rich salad",
+        "dinner": "Lean protein (150-200g) with vegetables and small portion of complex carbs",
+        "snacks": "Protein shake, cottage cheese, hard-boiled eggs, protein bars"
+      },
+      "dailyTargets": {
+        "protein": "1.6-2.2g per kg body weight (or 0.7-1g per pound)",
+        "distribution": "20-40g protein per meal",
+        "water": "3-4L daily (crucial for protein metabolism)",
+        "timing": "Protein within 2 hours post-workout for muscle synthesis"
+      },
+      "specialConsiderations": "Ensure adequate hydration (3-4L water daily). Monitor kidney health with very high protein intake. Best combined with strength training. May need to adjust based on activity level. Not recommended for those with kidney disease.",
+      "compatibleWith": ["mediterranean", "flexitarian", "keto", "paleo"],
+      "tags": ["muscle-building", "weight-loss", "athletic", "satiety"]
     },
     {
       "id": "flexitarian",
       "name": "Flexitarian",
       "summary": "Primarily plant-based with occasional meat and fish for flexibility.",
+      "description": "The flexitarian diet offers the health benefits of vegetarianism while maintaining the flexibility to include meat and fish occasionally. It's ideal for those transitioning to plant-based eating or wanting a balanced, sustainable approach.",
       "principles": [
-        "Plants as foundation",
-        "Meat and fish occasionally (1-2x/week)",
-        "Focus on whole foods",
-        "Sustainable and ethical choices",
-        "Flexible approach"
+        "Plants as foundation of every meal",
+        "Meat and fish occasionally (1-3 times per week)",
+        "Focus on whole, minimally processed foods",
+        "Quality over quantity when choosing animal products",
+        "Sustainable and ethical food choices",
+        "Flexible approach - no strict rules",
+        "Emphasize variety and seasonal produce",
+        "Listen to your body's needs"
       ],
       "foodsToEmphasize": [
-        "vegetables", "fruits", "whole grains", "legumes", "nuts", "seeds",
-        "occasional fish", "occasional poultry", "eggs", "dairy"
+        "vegetables (aim for 50% of plate)", "fruits", "whole grains", 
+        "legumes (primary protein)", "nuts and seeds", "tofu", "tempeh",
+        "occasional fish (wild-caught preferred)", "occasional poultry (free-range)",
+        "eggs (pasture-raised)", "dairy (organic, fermented preferred)",
+        "olive oil", "herbs and spices"
       ],
       "foodsToAvoid": [
-        "processed meats", "excessive red meat", "refined sugars"
+        "processed meats", "excessive red meat (limit to rare occasions)", 
+        "refined sugars", "ultra-processed foods", "trans fats"
       ],
       "macroGuidance": {
-        "carbs": "moderate-high (45-55%)",
-        "protein": "moderate (15-25%)",
-        "fat": "moderate (25-35%)"
+        "carbs": "moderate-high (45-55%, from whole sources)",
+        "protein": "moderate (15-25%, mostly plant-based)",
+        "fat": "moderate (25-35%, healthy sources)"
       },
-      "specialConsiderations": "Very compatible with most other diets. Great for gradual transitions.",
-      "compatibleWith": ["mediterranean", "vegetarian", "high-protein"]
-    },
-    {
-      "id": "longevity",
-      "name": "Longevity Protocol",
-      "summary": "Science-based diet optimized for lifespan extension based on Diet Compass research.",
-      "principles": [
-        "Maximize protective foods",
-        "Minimize mTOR activation",
-        "Support autophagy",
-        "Reduce inflammation",
-        "Plant-forward with fish",
-        "Time-restricted eating"
-      ],
-      "foodsToEmphasize": [
-        "leafy greens", "cruciferous vegetables", "berries", "nuts",
-        "fatty fish", "olive oil", "whole grains", "legumes", "fermented foods"
-      ],
-      "foodsToAvoid": [
-        "processed foods", "red meat", "refined sugars", "excessive protein",
-        "trans fats", "high-glycemic foods"
-      ],
-      "macroGuidance": {
-        "carbs": "moderate (40-50%, low-glycemic)",
-        "protein": "moderate (15-20%, not excessive)",
-        "fat": "moderate (30-40%, healthy fats)"
+      "mealStructure": {
+        "breakfast": "Oatmeal with nuts and berries, or eggs with vegetables (2-3x/week)",
+        "lunch": "Legume-based meals (lentil curry, chickpea salad) or occasional fish",
+        "dinner": "Plant-forward meals with occasional animal protein as side",
+        "snacks": "Nuts, fruits, vegetables with hummus, yogurt"
       },
-      "specialConsiderations": "Emphasizes Diet Compass protective foods and anti-aging mechanisms.",
-      "compatibleWith": ["mediterranean", "flexitarian"]
+      "meatGuidelines": {
+        "frequency": "1-3 times per week maximum",
+        "portions": "3-4 oz (85-115g) when included",
+        "quality": "Grass-fed, free-range, wild-caught preferred",
+        "types": "Fish > poultry > red meat (rare)",
+        "preparation": "Grilled, baked, or steamed - not fried"
+      },
+      "specialConsiderations": "Very compatible with most other diets. Great for gradual transitions to plant-based eating. Flexible enough for social situations. Environmentally sustainable. Lower cost than heavy meat-based diets.",
+      "compatibleWith": ["mediterranean", "vegetarian", "high-protein", "longevity"],
+      "tags": ["flexible", "plant-forward", "sustainable", "transition-friendly"]
     },
     {
       "id": "intermittent-fasting",
       "name": "Intermittent Fasting",
       "summary": "Time-restricted eating pattern that cycles between fasting and eating periods.",
+      "description": "Intermittent fasting focuses on WHEN you eat rather than WHAT you eat. The most common approach is 16:8 (16 hours fasting, 8 hour eating window), which aligns with circadian rhythms and promotes metabolic health.",
       "principles": [
-        "Eat within 8-hour window",
-        "Fast for 16 hours",
-        "Focus on nutrient-dense foods",
-        "Hydration during fasting",
-        "Quality over quantity"
+        "Eat within consistent 8-hour window (e.g., 12 PM - 8 PM or 10 AM - 6 PM)",
+        "Fast for 16 hours (including sleep time)",
+        "Focus on nutrient-dense foods during eating window",
+        "Hydration during fasting (water, black coffee, tea)",
+        "Quality over quantity - make every meal count",
+        "No snacking outside eating window",
+        "Align eating window with your lifestyle and circadian rhythm",
+        "Break fast with balanced meal, not junk food"
       ],
       "foodsToEmphasize": [
-        "nutrient-dense foods", "vegetables", "lean proteins",
-        "healthy fats", "whole grains", "hydration"
+        "nutrient-dense whole foods", "vegetables", "lean proteins", 
+        "healthy fats (avocado, nuts, olive oil)", "whole grains", 
+        "fruits", "legumes", "eggs", "fish", "water (during fasting)"
       ],
       "foodsToAvoid": [
-        "eating outside window", "processed foods", "excessive calories"
+        "eating outside your window", "processed foods", 
+        "excessive calories (fasting doesn't mean binge eating)",
+        "sugary foods that spike insulin", "alcohol during fasting"
       ],
       "macroGuidance": {
-        "carbs": "flexible",
-        "protein": "adequate (15-25%)",
-        "fat": "moderate (25-35%)"
+        "carbs": "flexible (30-50%, from whole sources)",
+        "protein": "adequate (20-30%)",
+        "fat": "moderate (25-35%, healthy sources)"
       },
-      "specialConsiderations": "Timing matters more than specific foods. Compatible with other diets.",
-      "compatibleWith": ["any"]
+      "fastingSchedules": {
+        "16_8": {
+          "name": "16:8 (Most Popular)",
+          "fasting": "16 hours",
+          "eating": "8 hours",
+          "example": "Fast: 8 PM - 12 PM. Eat: 12 PM - 8 PM",
+          "difficulty": "Moderate - skip breakfast or late dinner"
+        },
+        "14_10": {
+          "name": "14:10 (Beginner Friendly)",
+          "fasting": "14 hours", 
+          "eating": "10 hours",
+          "example": "Fast: 8 PM - 10 AM. Eat: 10 AM - 8 PM",
+          "difficulty": "Easy - good for starting"
+        },
+        "18_6": {
+          "name": "18:6 (Advanced)",
+          "fasting": "18 hours",
+          "eating": "6 hours",
+          "example": "Fast: 6 PM - 12 PM. Eat: 12 PM - 6 PM",
+          "difficulty": "Challenging - enhanced autophagy"
+        },
+        "20_4": {
+          "name": "20:4 / Warrior Diet",
+          "fasting": "20 hours",
+          "eating": "4 hours",
+          "example": "One large meal in evening",
+          "difficulty": "Very challenging - not for beginners"
+        }
+      },
+      "duringFasting": {
+        "allowed": ["water (essential)", "black coffee", "green tea", "herbal tea", "sparkling water (unflavored)", "electrolyte supplements (zero calorie)"],
+        "notAllowed": ["any food", "milk or cream", "sweeteners (including artificial)", "bone broth", "diet sodas", "juice", "alcohol"]
+      },
+      "benefits": {
+        "metabolic": "Improved insulin sensitivity, enhanced fat burning, cellular autophagy",
+        "cognitive": "Increased mental clarity, focus, and brain-derived neurotrophic factor (BDNF)",
+        "longevity": "Activates anti-aging pathways, reduces inflammation, promotes cellular repair",
+        "weightLoss": "Natural calorie restriction, preserved muscle mass, targeted fat loss"
+      },
+      "specialConsiderations": "Timing matters more than specific foods. Compatible with other dietary approaches (can do keto IF, vegan IF, etc.). Not recommended for pregnant/nursing women, children, or those with eating disorders. May take 1-2 weeks to adapt.",
+      "compatibleWith": ["any - can combine with other diet approaches", "longevity", "keto", "mediterranean"],
+      "tags": ["timing-based", "flexible", "autophagy", "metabolic-health"]
     },
     {
       "id": "vegan",
       "name": "Vegan",
       "summary": "Entirely plant-based diet excluding all animal products.",
+      "description": "A vegan diet eliminates all animal products including meat, fish, dairy, eggs, and honey. When well-planned, it can provide all necessary nutrients while offering ethical, environmental, and health benefits.",
       "principles": [
-        "No animal products",
-        "Abundant vegetables and fruits",
+        "No animal products of any kind",
+        "Abundant vegetables and fruits daily",
         "Legumes and beans for protein",
-        "Whole grains",
-        "Nuts and seeds",
-        "Fortified foods for B12"
+        "Whole grains for energy and nutrients",
+        "Nuts and seeds for healthy fats and protein",
+        "Fortified foods for B12, D, and calcium",
+        "Variety is key for complete nutrition",
+        "Plan meals to ensure adequate protein and nutrients"
       ],
       "foodsToEmphasize": [
-        "vegetables", "fruits", "legumes", "beans", "lentils",
-        "whole grains", "nuts", "seeds", "tofu", "tempeh",
-        "nutritional yeast", "plant milks"
+        "vegetables (all varieties)", "fruits", "legumes (lentils, chickpeas, black beans)",
+        "beans", "tofu", "tempeh", "edamame", "whole grains", "nuts", "seeds",
+        "nutritional yeast (B12)", "plant milks (fortified)", "tahini",
+        "leafy greens (calcium, iron)", "berries", "avocado", "quinoa"
       ],
       "foodsToAvoid": [
-        "meat", "poultry", "fish", "seafood", "dairy", "eggs",
-        "honey", "gelatin", "animal-derived ingredients"
+        "meat and poultry", "fish and seafood", "dairy (milk, cheese, yogurt, butter)",
+        "eggs", "honey", "gelatin", "animal-derived ingredients (whey, casein, etc.)",
+        "bone broth", "fish sauce", "oyster sauce"
       ],
       "macroGuidance": {
-        "carbs": "moderate-high (50-60%)",
+        "carbs": "moderate-high (50-60%, from whole sources)",
         "protein": "moderate (15-20%, all plant-based)",
-        "fat": "moderate (25-30%)"
+        "fat": "moderate (25-30%, from nuts, seeds, avocado)"
       },
-      "specialConsiderations": "Supplement B12. Ensure adequate protein variety, iron, and omega-3 (from algae).",
-      "conflictsWith": ["keto", "high-protein with animal sources"]
+      "mealStructure": {
+        "breakfast": "Oatmeal with plant milk, nuts, and fruit, or tofu scramble with vegetables",
+        "lunch": "Buddha bowls with grains, legumes, vegetables, tahini dressing",
+        "dinner": "Stir-fries, curries, pasta dishes, or grain bowls with plant protein",
+        "snacks": "Hummus with vegetables, fruit with nut butter, energy balls"
+      },
+      "proteinSources": {
+        "legumes": "Lentils (18g per cup), chickpeas (15g), black beans (15g)",
+        "soy": "Tofu (20g per cup), tempeh (31g per cup), edamame (17g per cup)",
+        "grains": "Quinoa (8g per cup), oats (6g per cup)",
+        "nuts": "Almonds (6g per oz), peanuts (7g per oz)",
+        "seeds": "Hemp seeds (10g per oz), pumpkin seeds (9g per oz)",
+        "target": "Aim for 0.8-1g protein per kg body weight from varied sources"
+      },
+      "criticalNutrients": {
+        "b12": "MUST supplement or eat fortified foods daily (2.4 mcg/day)",
+        "vitaminD": "Supplement recommended (1000-2000 IU), or fortified foods",
+        "omega3": "Algae supplement (EPA/DHA) or emphasize flax, chia, walnuts (ALA)",
+        "iron": "Combine plant sources with vitamin C, consider supplement if deficient",
+        "calcium": "Fortified plant milks, tofu, leafy greens, or supplement",
+        "zinc": "Legumes, nuts, seeds, whole grains",
+        "iodine": "Seaweed, iodized salt, or supplement"
+      },
+      "specialConsiderations": "Supplement B12 is ESSENTIAL (not optional). Ensure adequate protein variety and quantity. Combine iron-rich foods with vitamin C. Consider omega-3 (EPA/DHA) from algae. Well-planned vegan diet is healthy for all life stages per Academy of Nutrition and Dietetics.",
+      "conflictsWith": ["keto", "high-protein with animal sources", "paleo"],
+      "tags": ["plant-based", "ethical", "environmental", "requires-planning"]
     },
     {
       "id": "mind",
       "name": "MIND Diet",
-      "summary": "Brain-health focused diet combining Mediterranean and DASH for cognitive function.",
+      "summary": "Brain-health focused diet combining Mediterranean and DASH approaches for cognitive function.",
+      "description": "The MIND diet (Mediterranean-DASH Intervention for Neurodegenerative Delay) specifically targets brain health and dementia prevention. Research shows it can reduce Alzheimer's risk by up to 53% when followed closely.",
       "principles": [
-        "Berries (especially blueberries)",
-        "Leafy greens daily",
-        "Nuts regularly",
-        "Olive oil primary fat",
-        "Whole grains",
-        "Fish weekly",
-        "Limit butter, cheese, red meat"
+        "Berries (especially blueberries) at least 2 servings/week",
+        "Leafy greens daily (6+ servings/week)",
+        "Nuts regularly (5+ servings/week)",
+        "Olive oil as primary fat",
+        "Whole grains daily (3+ servings)",
+        "Fish at least once per week",
+        "Beans and legumes frequently (3+ servings/week)",
+        "Poultry at least twice per week",
+        "Limit butter (<1 tablespoon/day)",
+        "Limit cheese (<1 serving/week)",
+        "Limit red meat (<4 servings/week)",
+        "Avoid fried foods, pastries, and sweets"
       ],
       "foodsToEmphasize": [
-        "blueberries", "strawberries", "leafy greens", "vegetables",
-        "nuts", "beans", "whole grains", "fish", "poultry", "olive oil", "wine (moderate)"
+        "blueberries (most neuroprotective)", "strawberries", "leafy greens (kale, spinach, collards)",
+        "vegetables (all types)", "nuts (especially walnuts)", "beans and legumes",
+        "whole grains (oats, quinoa, brown rice)", "fish (salmon, sardines)", 
+        "poultry", "olive oil", "wine (optional, 1 glass/day)", "herbs and spices"
       ],
       "foodsToAvoid": [
-        "red meat", "butter", "cheese", "pastries", "fried foods",
+        "red meat (limit to <4x/week)", "butter and margarine (limit)", 
+        "cheese (limit to <1x/week)", "pastries and sweets", "fried foods",
         "fast food", "refined grains"
       ],
       "macroGuidance": {
-        "carbs": "moderate (40-50%)",
+        "carbs": "moderate (40-50%, from whole grains)",
         "protein": "moderate (15-20%)",
-        "fat": "moderate (30-35%, healthy fats)"
+        "fat": "moderate (30-35%, emphasize olive oil and omega-3)"
       },
-      "specialConsiderations": "Specifically designed for brain health and dementia prevention.",
-      "compatibleWith": ["mediterranean", "flexitarian"]
+      "mealStructure": {
+        "breakfast": "Oatmeal with berries and walnuts, or whole grain toast with avocado",
+        "lunch": "Large salad with leafy greens, beans, vegetables, olive oil dressing",
+        "dinner": "Fish or poultry with vegetables and whole grain side",
+        "snacks": "Berries, nuts, vegetables"
+      },
+      "brainHealthFoods": {
+        "tier1": "Blueberries, leafy greens, walnuts (most neuroprotective)",
+        "tier2": "Olive oil, fish, beans, whole grains",
+        "tier3": "Other vegetables, poultry, nuts",
+        "antioxidants": "Berries provide anthocyanins for brain protection",
+        "omega3": "Fish and walnuts for DHA (brain structure)",
+        "vitamin E": "Nuts and olive oil (cognitive protection)"
+      },
+      "servingGuidelines": {
+        "leafyGreens": "6+ servings/week (daily is ideal)",
+        "otherVegetables": "1+ serving daily",
+        "berries": "2+ servings/week (more is better)",
+        "nuts": "5+ servings/week",
+        "beans": "3+ meals/week",
+        "wholeGrains": "3+ servings daily",
+        "fish": "1+ serving/week",
+        "poultry": "2+ servings/week",
+        "oliveOil": "Use as primary cooking/dressing fat",
+        "wine": "Optional: 1 glass daily with meals"
+      },
+      "specialConsiderations": "Specifically designed for brain health and dementia prevention. Research shows 53% reduced Alzheimer's risk with adherence. Emphasizes foods with neuroprotective compounds. Compatible with most dietary preferences.",
+      "scientificBasis": "Rush University research on aging and cognition. Combines Mediterranean diet and DASH diet principles targeting brain health specifically.",
+      "compatibleWith": ["mediterranean", "flexitarian", "longevity"],
+      "tags": ["brain-health", "cognitive", "dementia-prevention", "research-backed"]
     },
     {
       "id": "kid-friendly",
       "name": "Kid-Friendly",
       "summary": "Nutritious, familiar foods that children typically enjoy and parents approve.",
+      "description": "A kid-friendly diet focuses on providing complete nutrition through foods with familiar flavors and textures that children find appealing. It emphasizes whole foods while accommodating children's preferences and developmental needs.",
       "principles": [
-        "Familiar flavors and textures",
-        "Balanced nutrition",
-        "Age-appropriate portions",
-        "Hidden vegetables",
-        "Fun presentation",
-        "Limited spice"
+        "Familiar flavors and textures children recognize",
+        "Balanced nutrition for growth and development",
+        "Age-appropriate portions and preparations",
+        "Hide or blend vegetables when needed",
+        "Fun, colorful presentation",
+        "Limited spice and complex flavors",
+        "Involve kids in meal selection when possible",
+        "Establish healthy eating patterns early"
       ],
       "foodsToEmphasize": [
-        "chicken", "pasta", "cheese", "fruits", "yogurt",
-        "whole grain bread", "mild vegetables", "eggs", "milk"
+        "chicken (mild, not spicy)", "pasta (whole grain when possible)", 
+        "cheese", "fruits (all types)", "yogurt", "whole grain bread",
+        "mild vegetables (carrots, cucumbers, corn, peas)", "eggs",
+        "milk", "rice", "potatoes (baked, mashed)", "turkey",
+        "fish sticks or mild fish", "peanut butter", "beans (mild preparations)"
       ],
       "foodsToAvoid": [
-        "very spicy foods", "exotic flavors", "strong fish",
-        "bitter vegetables (unless hidden)", "complex textures"
+        "very spicy foods", "exotic or unfamiliar flavors", 
+        "strong-flavored fish", "bitter vegetables (unless disguised)",
+        "complex textures (may cause rejection)", "excessive sugar (but some flexibility)",
+        "artificial colors and flavors", "choking hazards for young children"
       ],
       "macroGuidance": {
-        "carbs": "moderate-high (50-60%)",
-        "protein": "moderate (15-20%)",
-        "fat": "moderate (25-30%)"
+        "carbs": "moderate-high (50-60%, for energy)",
+        "protein": "moderate (15-20%, for growth)",
+        "fat": "moderate (25-30%, for brain development)"
+      ],
+      "mealStructure": {
+        "breakfast": "Cereal with milk, pancakes, eggs, or yogurt with fruit",
+        "lunch": "Sandwiches, pasta with mild sauce, chicken nuggets with vegetables",
+        "dinner": "Mild proteins (chicken, fish) with familiar sides (rice, pasta, potatoes)",
+        "snacks": "Fruit, cheese, crackers, yogurt, vegetables with dip"
       },
-      "specialConsiderations": "Broadly compatible. Focus on nutrients and palatability over strict rules.",
-      "compatibleWith": ["most diets"]
+      "ageGuidelines": {
+        "toddlers": "Small portions, soft textures, finger foods, variety for exposure",
+        "preschool": "Involve in prep, colorful plates, consistent routine",
+        "schoolAge": "Balanced meals, pack nutritious lunches, limit processed snacks",
+        "teens": "Increased portions, protein for growth, healthy convenience options"
+      },
+      "hiddenVegetables": {
+        "strategies": [
+          "Blend into smoothies with fruit",
+          "Puree into pasta sauces",
+          "Bake into muffins or pancakes (zucchini, carrot)",
+          "Add to meatballs or burgers",
+          "Make vegetable-based 'mac and cheese' sauce"
+        ]
+      },
+      "specialConsiderations": "Broadly compatible with family meals. Focus on nutrients and palatability over strict dietary rules. Avoid forcing foods - offer variety and let children explore. Model healthy eating. Keep it positive and pressure-free.",
+      "compatibleWith": ["most diets - adapts to family needs"],
+      "tags": ["family-friendly", "balanced", "growth-focused", "flexible"]
     },
     {
-      "id": "la-dieta",
-      "name": "La Dieta",
-      "summary": "Ceremonial preparation approach emphasizing mindfulness, gratitude, and intentional eating.",
+      "id": "pescatarian",
+      "name": "Pescatarian",
+      "summary": "Plant-based diet that includes fish and seafood but excludes other meats.",
+      "description": "Pescatarian eating combines the health benefits of a vegetarian diet with the nutritional advantages of fish and seafood, particularly omega-3 fatty acids. It's associated with longevity and heart health benefits.",
       "principles": [
-        "Prepare with intention",
-        "Express gratitude",
-        "Mindful eating",
-        "Quality ingredients",
-        "Seasonal and local",
-        "Shared meals"
+        "No meat or poultry - fish and seafood only",
+        "Emphasize fatty fish for omega-3 (2-3 times per week)",
+        "Plant foods as foundation",
+        "Include variety of seafood (fish, shellfish, mollusks)",
+        "Eggs and dairy allowed",
+        "Whole grains and legumes for plant protein",
+        "Choose sustainable, wild-caught fish when possible",
+        "Vary fish types to minimize mercury exposure"
       ],
       "foodsToEmphasize": [
-        "seasonal produce", "local ingredients", "whole foods",
-        "traditional preparations", "quality over quantity"
+        "fatty fish (salmon, mackerel, sardines, herring)", "white fish (cod, haddock, tilapia)",
+        "shellfish (shrimp, crab, lobster)", "mollusks (clams, mussels, oysters)",
+        "vegetables", "fruits", "legumes", "whole grains", "nuts and seeds",
+        "eggs", "dairy", "olive oil", "seaweed"
       ],
       "foodsToAvoid": [
-        "highly processed foods", "rushed meals", "mindless eating"
+        "meat (beef, pork, lamb)", "poultry (chicken, turkey, duck)",
+        "processed meats", "meat broths", "gelatin"
       ],
       "macroGuidance": {
-        "carbs": "flexible",
-        "protein": "flexible",
-        "fat": "flexible"
+        "carbs": "moderate (40-50%)",
+        "protein": "moderate (20-25%, from fish and plants)",
+        "fat": "moderate (30-35%, emphasize omega-3)"
       },
-      "specialConsiderations": "More about HOW you eat than WHAT you eat. Compatible with any dietary approach.",
-      "compatibleWith": ["any"]
+      "mealStructure": {
+        "breakfast": "Eggs with vegetables, Greek yogurt with fruit, or oatmeal",
+        "lunch": "Tuna salad, sardine toast, or legume-based meals",
+        "dinner": "Grilled/baked fish with vegetables and grains",
+        "snacks": "Nuts, fruit, vegetables with hummus, cheese"
+      },
+      "fishGuidelines": {
+        "frequency": "2-4 times per week for optimal omega-3",
+        "portions": "120-150g per serving",
+        "bestChoices": "Salmon, sardines, mackerel, herring, anchovies (high omega-3, low mercury)",
+        "goodChoices": "Cod, haddock, tilapia, trout, mussels, clams",
+        "limitChoices": "Tuna (moderate mercury), swordfish, shark (high mercury)",
+        "sustainability": "Look for MSC certified or local sustainable sources"
+      },
+      "nutrientAdvantages": {
+        "omega3": "Excellent EPA/DHA from fish (no conversion needed like plant omega-3)",
+        "vitaminD": "Good sources from fatty fish",
+        "vitaminB12": "From fish, eggs, and dairy",
+        "iodine": "From fish and seaweed",
+        "selenium": "From fish and seafood",
+        "zinc": "From shellfish and legumes"
+      },
+      "specialConsiderations": "Offers omega-3 advantages over vegetarian diet. Pescatarian pattern associated with highest longevity in research. Vary fish types to minimize mercury. Choose sustainable sources. Generally easier to follow than vegan (no B12 supplementation needed).",
+      "compatibleWith": ["mediterranean", "flexitarian", "longevity"],
+      "tags": ["fish-based", "heart-health", "omega-3", "sustainable", "longevity"]
+    },
+    {
+      "id": "paleo",
+      "name": "Paleo",
+      "summary": "Eating pattern based on foods available to our Paleolithic ancestors.",
+      "description": "The Paleo diet focuses on whole, unprocessed foods similar to what hunter-gatherers ate: meats, fish, vegetables, fruits, nuts, and seeds. It excludes grains, legumes, dairy, and processed foods.",
+      "principles": [
+        "Eat whole, unprocessed foods only",
+        "No grains, legumes, or dairy",
+        "Emphasize quality meats (grass-fed, wild)",
+        "Abundant vegetables and some fruits",
+        "Healthy fats from natural sources",
+        "No refined sugars or processed foods",
+        "Focus on food quality and sourcing",
+        "Movement and lifestyle matter too"
+      ],
+      "foodsToEmphasize": [
+        "grass-fed meat", "wild-caught fish", "free-range poultry", "eggs",
+        "vegetables (all types)", "fruits (moderate amounts)", "nuts and seeds",
+        "healthy fats (avocado, coconut oil, olive oil)", "sweet potatoes",
+        "herbs and spices"
+      ],
+      "foodsToAvoid": [
+        "grains (wheat, rice, oats, etc.)", "legumes (beans, lentils, peanuts)",
+        "dairy (milk, cheese, yogurt)", "processed foods", "refined sugar",
+        "vegetable oils (canola, soybean)", "artificial sweeteners", "alcohol"
+      ],
+      "macroGuidance": {
+        "carbs": "low-moderate (20-40%, from vegetables and fruit)",
+        "protein": "moderate-high (25-35%)",
+        "fat": "moderate-high (30-40%)"
+      },
+      "mealStructure": {
+        "breakfast": "Eggs with vegetables and avocado, or sweet potato hash with meat",
+        "lunch": "Salad with grilled chicken or fish, vegetables, and nuts",
+        "dinner": "Meat or fish with roasted vegetables",
+        "snacks": "Nuts, fruit, vegetables, hard-boiled eggs"
+      },
+      "specialConsiderations": "Controversial elimination of legumes and grains (nutrient-dense foods). May be expensive (quality meats). Can be high in saturated fat if not careful. Athletic individuals may need more carbs. Not suitable for vegetarians/vegans.",
+      "compatibleWith": ["keto", "high-protein"],
+      "conflictsWith": ["vegetarian", "vegan", "grain-based"],
+      "tags": ["whole-foods", "grain-free", "ancestral", "low-carb"]
+    },
+    {
+      "id": "dash",
+      "name": "DASH Diet",
+      "summary": "Dietary Approaches to Stop Hypertension - designed to lower blood pressure.",
+      "description": "The DASH diet was developed to prevent and treat high blood pressure through dietary changes. It emphasizes fruits, vegetables, whole grains, and low-fat dairy while limiting sodium, saturated fat, and added sugars.",
+      "principles": [
+        "Reduce sodium to <2,300mg/day (ideally <1,500mg)",
+        "Emphasize potassium-rich foods",
+        "Include calcium and magnesium sources",
+        "Lots of fruits and vegetables (8-10 servings/day)",
+        "Whole grains over refined",
+        "Lean proteins preferred",
+        "Low-fat or fat-free dairy",
+        "Limit saturated fats and added sugars"
+      ],
+      "foodsToEmphasize": [
+        "fruits (all types)", "vegetables (especially leafy greens, potatoes)",
+        "whole grains", "low-fat dairy", "lean proteins (fish, poultry)",
+        "nuts and seeds", "legumes", "beans", "low-sodium options"
+      ],
+      "foodsToAvoid": [
+        "high-sodium foods (processed meats, canned soups, chips)",
+        "fatty meats", "full-fat dairy", "tropical oils (coconut, palm)",
+        "added sugars", "alcohol (limit)", "excessive salt"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate-high (55%)",
+        "protein": "moderate (18%)",
+        "fat": "low-moderate (27%, mostly unsaturated)"
+      },
+      "servingGuidelines": {
+        "grains": "6-8 servings/day (whole grains preferred)",
+        "vegetables": "4-5 servings/day",
+        "fruits": "4-5 servings/day",
+        "dairy": "2-3 servings/day (low-fat)",
+        "leanProtein": "6 oz or less/day",
+        "nutsSeeds": "4-5 servings/week",
+        "fatsOils": "2-3 servings/day (heart-healthy)",
+        "sodium": "<2,300mg/day (target <1,500mg)"
+      },
+      "specialConsiderations": "Clinically proven to lower blood pressure in 2 weeks. Also reduces cholesterol and supports weight loss. Endorsed by American Heart Association. High potassium intake (from fruits/vegetables) is key. Read labels for sodium.",
+      "scientificBasis": "National Heart, Lung, and Blood Institute research. Gold standard for hypertension management through diet.",
+      "compatibleWith": ["mediterranean", "mind", "vegetarian"],
+      "tags": ["blood-pressure", "heart-health", "evidence-based", "clinical"]
+    },
+    {
+      "id": "anti-inflammatory",
+      "name": "Anti-Inflammatory",
+      "summary": "Diet designed to reduce chronic inflammation through food choices.",
+      "description": "Chronic inflammation is linked to many diseases including heart disease, cancer, and autoimmune conditions. This diet emphasizes anti-inflammatory foods while eliminating inflammatory triggers.",
+      "principles": [
+        "Emphasize omega-3 fatty acids",
+        "Include antioxidant-rich foods daily",
+        "Eliminate inflammatory triggers",
+        "Focus on colorful fruits and vegetables",
+        "Choose whole grains over refined",
+        "Include herbs and spices (turmeric, ginger)",
+        "Limit omega-6 fatty acids",
+        "Avoid processed and fried foods"
+      ],
+      "foodsToEmphasize": [
+        "fatty fish (omega-3 rich)", "leafy greens", "berries (high antioxidants)",
+        "turmeric", "ginger", "olive oil", "nuts (walnuts, almonds)",
+        "tomatoes", "cherries", "beets", "cruciferous vegetables",
+        "green tea", "dark chocolate (70%+)", "fermented foods", "garlic"
+      ],
+      "foodsToAvoid": [
+        "refined carbs (white bread, pastries)", "fried foods", 
+        "processed meats", "excessive omega-6 oils (corn, soybean)",
+        "trans fats", "added sugars", "alcohol (excess)",
+        "processed snacks", "artificial additives"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (40-45%, from whole sources)",
+        "protein": "moderate (20-25%)",
+        "fat": "moderate-high (30-40%, emphasize omega-3 and monounsaturated)"
+      },
+      "antiInflammatoryFoods": {
+        "topTier": "Turmeric (with black pepper), fatty fish, berries, leafy greens",
+        "herbs": "Ginger, garlic, rosemary, oregano, cinnamon",
+        "oils": "Extra virgin olive oil, flaxseed oil",
+        "beverages": "Green tea, water with lemon",
+        "supplements": "Omega-3 (if not eating fish), turmeric/curcumin"
+      },
+      "omega3VsOmega6": {
+        "target": "Ratio of 1:4 or better (omega-3 to omega-6)",
+        "omega3Sources": "Fish, flaxseeds, chia seeds, walnuts",
+        "limitOmega6": "Reduce vegetable oils (corn, soybean, sunflower)"
+      },
+      "specialConsiderations": "Particularly beneficial for autoimmune conditions, arthritis, inflammatory bowel disease. Turmeric + black pepper combination increases absorption 2000%. Focus on colorful variety. May see benefits in 2-4 weeks.",
+      "compatibleWith": ["mediterranean", "longevity", "pescatarian"],
+      "tags": ["anti-inflammatory", "therapeutic", "autoimmune-friendly", "omega-3"]
+    },
+    {
+      "id": "low-fodmap",
+      "name": "Low FODMAP",
+      "summary": "Therapeutic diet for managing IBS and digestive sensitivities.",
+      "description": "Low FODMAP diet restricts fermentable carbohydrates that can trigger digestive symptoms in sensitive individuals. It's a temporary elimination diet (4-6 weeks) followed by systematic reintroduction to identify triggers.",
+      "principles": [
+        "Eliminate high-FODMAP foods for 4-6 weeks",
+        "Systematically reintroduce foods one at a time",
+        "Identify personal trigger foods",
+        "NOT a long-term diet - reintroduce as many foods as tolerated",
+        "Work with dietitian for proper implementation",
+        "Keep food and symptom diary",
+        "Ensure adequate nutrition despite restrictions"
+      ],
+      "foodsToEmphasize": [
+        "low-FODMAP vegetables (carrots, cucumber, spinach, zucchini, bell peppers)",
+        "low-FODMAP fruits (banana, blueberries, strawberries, oranges)",
+        "proteins (meat, fish, eggs, tofu - firm)",
+        "lactose-free dairy or hard cheeses",
+        "gluten-free grains (rice, quinoa, oats)",
+        "nuts (almonds, macadamia, peanuts in moderation)",
+        "olive oil", "maple syrup (small amounts)"
+      ],
+      "foodsToAvoid": [
+        "high-FODMAP vegetables (onions, garlic, cauliflower, mushrooms)",
+        "high-FODMAP fruits (apples, pears, watermelon, dried fruits)",
+        "wheat and rye products",
+        "legumes (most beans, chickpeas, lentils)",
+        "lactose-containing dairy (milk, soft cheeses, ice cream)",
+        "honey and high-fructose corn syrup",
+        "artificial sweeteners ending in -ol"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (40-50%, from allowed sources)",
+        "protein": "moderate (20-25%)",
+        "fat": "moderate (30-35%)"
+      },
+      "phases": {
+        "elimination": "4-6 weeks strict low-FODMAP",
+        "reintroduction": "6-8 weeks systematically testing foods",
+        "personalization": "Long-term modified diet with known triggers avoided"
+      },
+      "specialConsiderations": "MUST be temporary - not nutritionally complete long-term. Work with registered dietitian familiar with FODMAP protocol. Keep detailed food diary. Reintroduce foods systematically. Goal is to identify triggers, not avoid forever. IBS-D, IBS-C, and IBS-M may respond differently.",
+      "compatibleWith": ["can be adapted to most diets with guidance"],
+      "tags": ["therapeutic", "digestive-health", "IBS", "temporary", "elimination"]
+    },
+    {
+      "id": "whole30",
+      "name": "Whole30",
+      "summary": "30-day elimination diet focusing on whole, unprocessed foods to reset eating habits.",
+      "description": "Whole30 is a strict 30-day elimination program designed to reset your relationship with food, identify sensitivities, and establish healthy eating patterns. After 30 days, foods are systematically reintroduced.",
+      "principles": [
+        "30 days of strict adherence (no cheating - restart if you slip)",
+        "Eat whole, unprocessed foods only",
+        "No sugar, alcohol, grains, legumes, or dairy for 30 days",
+        "No recreating baked goods with approved ingredients",
+        "No stepping on scale during the 30 days",
+        "Focus on non-scale victories (energy, sleep, mood)",
+        "Systematic reintroduction after 30 days to identify sensitivities"
+      ],
+      "foodsToEmphasize": [
+        "meat and poultry", "seafood", "eggs", "vegetables (all types)",
+        "fruits (moderate amounts)", "nuts and seeds (except peanuts)",
+        "healthy fats (avocado, olive oil, coconut oil, ghee)",
+        "herbs and spices", "compliant sauces (check ingredients)"
+      ],
+      "foodsToAvoid": [
+        "added sugar or sweeteners (including honey, maple syrup, stevia)",
+        "alcohol (in any form, even for cooking)",
+        "grains (wheat, rice, oats, corn, quinoa)",
+        "legumes (beans, lentils, peanuts, soy)",
+        "dairy (milk, cheese, yogurt, butter - ghee is OK)",
+        "carrageenan, MSG, sulfites",
+        "baked goods or treats (even with compliant ingredients)",
+        "weighing yourself or taking measurements"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate (30-40%, from vegetables and fruit)",
+        "protein": "moderate-high (25-35%)",
+        "fat": "moderate (30-40%)"
+      },
+      "thirtyDayRules": {
+        "commitment": "Full 30 days, no exceptions - one slip means restart",
+        "noRecreations": "Don't make Paleo pancakes, bread, etc.",
+        "noScale": "Don't weigh yourself during the 30 days",
+        "focusOn": "How you feel, energy levels, sleep quality, mental clarity",
+        "afterThirty": "Systematic reintroduction of food groups one at a time"
+      },
+      "reintroductionProtocol": {
+        "day31": "Reintroduce legumes for one day, then back to Whole30 for 2 days",
+        "day34": "Reintroduce non-gluten grains, then back to Whole30 for 2 days",
+        "day37": "Reintroduce dairy, then back to Whole30 for 2 days",
+        "day40": "Reintroduce gluten grains",
+        "observe": "Track symptoms, energy, digestion, sleep for each reintroduction"
+      },
+      "specialConsiderations": "Designed as a 30-day reset, not long-term diet. Very strict - requires meal planning and label reading. Social situations can be challenging. Eliminates nutrient-dense foods (legumes, whole grains) temporarily. Not sustainable long-term but useful for identifying sensitivities.",
+      "compatibleWith": ["paleo (long-term version)", "keto"],
+      "tags": ["elimination", "30-day", "reset", "strict", "temporary"]
+    },
+    {
+      "id": "gut-health",
+      "name": "Gut Health Protocol",
+      "summary": "Diet optimized for digestive health and microbiome diversity.",
+      "description": "This protocol focuses on feeding beneficial gut bacteria, reducing inflammation in the digestive tract, and promoting a diverse, healthy microbiome through specific food choices.",
+      "principles": [
+        "Emphasize prebiotic foods (feed good bacteria)",
+        "Include probiotic foods daily (provide good bacteria)",
+        "Maximize fiber diversity (30+ plant foods per week)",
+        "Limit inflammatory foods",
+        "Support gut lining integrity",
+        "Manage stress (gut-brain axis)",
+        "Stay hydrated",
+        "Consider food sensitivities"
+      ],
+      "foodsToEmphasize": [
+        "fermented foods (yogurt, kefir, sauerkraut, kimchi, miso, tempeh)",
+        "prebiotic foods (garlic, onions, leeks, asparagus, bananas, oats)",
+        "high-fiber foods (vegetables, fruits, whole grains, legumes)",
+        "diverse plant foods (aim for 30+ different plants per week)",
+        "bone broth (for gut lining)", "ginger and turmeric (anti-inflammatory)",
+        "omega-3 sources", "polyphenol-rich foods (berries, dark chocolate, green tea)"
+      ],
+      "foodsToAvoid": [
+        "processed foods", "artificial sweeteners (harm microbiome)",
+        "excessive alcohol", "unnecessary antibiotics",
+        "high-sugar foods (feed bad bacteria)", "trans fats",
+        "emulsifiers and additives (if sensitive)", "potential trigger foods (gluten, dairy if sensitive)"
+      ],
+      "macroGuidance": {
+        "carbs": "moderate-high (45-55%, from fiber-rich sources)",
+        "protein": "moderate (15-25%)",
+        "fat": "moderate (25-35%, anti-inflammatory fats)"
+      },
+      "microbiomeDiversity": {
+        "goal": "30+ different plant foods per week",
+        "strategy": "Rotate vegetables, fruits, grains, legumes, nuts, seeds, herbs",
+        "benefit": "More diverse microbiome = better health outcomes"
+      },
+      "prebioticFoods": [
+        "Jerusalem artichokes", "garlic", "onions", "leeks", "asparagus",
+        "bananas (slightly green)", "oats", "apples", "chicory root", "flaxseeds"
+      ],
+      "probioticFoods": [
+        "yogurt (live cultures)", "kefir", "sauerkraut (unpasteurized)",
+        "kimchi", "miso", "tempeh", "kombucha", "pickles (naturally fermented)"
+      ],
+      "specialConsiderations": "Work with healthcare provider if you have diagnosed gut conditions (IBD, SIBO, etc.). May need to modify for FODMAP sensitivity. Gradually increase fiber to avoid bloating. Stress management is crucial (gut-brain axis). Sleep and exercise also impact gut health.",
+      "compatibleWith": ["mediterranean", "vegetarian", "flexitarian"],
+      "tags": ["digestive-health", "microbiome", "fermented-foods", "fiber-rich"]
     }
   ]
 }
