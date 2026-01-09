@@ -58,6 +58,22 @@
 - Quantities round to whole numbers (no more 0.2g)
 - Unit conversion warnings eliminated
 - Proper servings scaling across multiple recipe uses
+- Enhanced ingredient deduplication (conservative approach):
+  - Splits compound ingredients ("salt and pepper" → just "salt")
+  - Normalizes ONLY truly equivalent ingredients:
+    - Black pepper / white pepper / ground pepper → "pepper"
+    - Sea salt / kosher salt / table salt → "salt"  
+    - "Basil leaves" → "basil" (same herb, different form)
+    - "Extra virgin olive oil" → "olive oil"
+  - **PRESERVES variety distinctions that matter:**
+    - Cherry tomatoes ≠ Roma tomatoes ≠ regular tomatoes
+    - Red onion ≠ yellow onion ≠ white onion
+    - Russet potatoes ≠ red potatoes ≠ Yukon gold
+    - Different cheese types kept separate
+  - Only generalizes branded items to their actual type:
+    - "Campari tomatoes" → "cherry tomatoes" (Campari is a brand)
+    - "San Marzano" → "plum tomatoes" (specific variety)
+  - Research-backed approach following meal planning app best practices
 
 ### ⏱️ Performance Tracking Added
 

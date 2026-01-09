@@ -143,28 +143,61 @@ export class ShoppingListView {
   cleanIngredientName(name) {
     let cleaned = name.toLowerCase().trim();
     
+    // Handle compound ingredients (split "salt and pepper" into just "salt")
+    // We'll handle pepper separately
+    if (cleaned.includes(' and ')) {
+      const parts = cleaned.split(' and ');
+      // Take the first ingredient
+      cleaned = parts[0].trim();
+    }
+    
     // Remove preparation terms that aren't actual grocery items
     const prepTerms = [
       'cooked', 'leftover', 'shredded', 'diced', 'chopped', 
       'sliced', 'minced', 'crushed', 'grated', 'fresh',
       'frozen', 'canned', 'optional', 'crumbled', 'raw',
-      'peeled', 'deveined', 'boneless', 'skinless'
+      'peeled', 'deveined', 'boneless', 'skinless', 'dried',
+      'ground', 'whole', 'to taste', 'for serving'
     ];
     
     prepTerms.forEach(term => {
       // Remove at start of string
       cleaned = cleaned.replace(new RegExp(`^${term}\\s+`, 'i'), '');
+      // Remove at end of string
+      cleaned = cleaned.replace(new RegExp(`\\s+${term}$`, 'i'), '');
       // Remove in middle (e.g., "leftover roast chicken" -> "roast chicken")
       cleaned = cleaned.replace(new RegExp(`\\s+${term}\\s+`, 'i'), ' ');
     });
     
-    // Only generalize branded/obscure/overly-specific items
-    // Keep common specifics like "feta cheese", "chicken breast", "cherry tomatoes"
+    // Normalize ONLY truly equivalent variations
+    // Keep specificity for ingredients that matter in recipes
+    
+    // Pepper: Normalize ground/whole variations
+    if (cleaned.match(/^black pepper$|^white pepper$|^ground black pepper$|^ground white pepper$/i)) {
+      cleaned = 'pepper';
+    }
+    
+    // Basil: Only normalize form variations (leaves vs dried)
+    if (cleaned.match(/^basil leaves?$/i)) {
+      cleaned = 'basil';
+    }
+    
+    // Garlic: Normalize form variations
+    if (cleaned.match(/^garlic cloves?$/i)) {
+      cleaned = 'garlic';
+    }
+    
+    // Olive oil: Normalize quality variations (extra virgin vs regular)
+    if (cleaned.match(/^extra virgin olive oil$|^evoo$/i)) {
+      cleaned = 'olive oil';
+    }
+    
+    // Only generalize branded/obscure items to their common equivalent
+    // Keep variety distinctions (cherry vs roma vs regular)
     const generalizations = {
-      // Branded tomato varieties → generic variety
-      'campari tomatoes': 'cherry tomatoes',
-      'kumato tomatoes': 'tomatoes',
-      'san marzano tomatoes': 'plum tomatoes',
+      // Branded tomato varieties → their actual type (NOT generic "tomatoes")
+      'campari tomatoes': 'cherry tomatoes',  // Campari is a brand of cherry tomato
+      'san marzano tomatoes': 'plum tomatoes', // San Marzano is a variety of plum tomato
       
       // Obscure cheese → common equivalent
       'pecorino romano': 'parmesan cheese',
@@ -194,8 +227,8 @@ export class ShoppingListView {
       cleaned = generalizations[cleaned];
     }
     
-    // Trim again after all transformations
-    cleaned = cleaned.trim();
+    // Remove extra spaces and trim
+    cleaned = cleaned.replace(/\s+/g, ' ').trim();
     
     return cleaned;
   }
@@ -293,7 +326,9 @@ export class ShoppingListView {
     // Map plural to singular and common variations
     const unitMap = {
       'cloves': 'clove',
+      'clove': 'clove',
       'cups': 'cup',
+      'cup': 'cup',
       'tablespoons': 'tablespoon',
       'tablespoon': 'tablespoon',
       'tbsp': 'tablespoon',
@@ -308,7 +343,9 @@ export class ShoppingListView {
       'ounces': 'ounce',
       'oz': 'ounce',
       'slices': 'slice',
+      'slice': 'slice',
       'pieces': 'piece',
+      'piece': 'piece',
       'whole': 'whole',
       'wholes': 'whole',
       'large': 'large',
@@ -317,9 +354,15 @@ export class ShoppingListView {
       'leaves': 'leaf',
       'leaf': 'leaf',
       'heads': 'head',
+      'head': 'head',
       'bunches': 'bunch',
-      'servings': 'serving',
-      'serving': 'serving'
+      'bunch': 'bunch',
+      'servings': 'whole',  // "1 serving" → "1 whole" (count item)
+      'serving': 'whole',
+      'pinch': 'pinch',
+      'pinches': 'pinch',
+      'dash': 'dash',
+      'dashes': 'dash'
     };
     
     return unitMap[normalized] || normalized;
@@ -412,25 +455,48 @@ export class ShoppingListView {
 
   /**
    * Get canonical ingredient name for grouping (handles variations)
-   * Keep reasonable specifics like "feta cheese", "chicken breast", "cherry tomatoes"
-   * Only group when same ingredient in different forms
-   * @param {string} name - Ingredient name
+   * Conservative approach: Only group truly equivalent ingredients
+   * Preserve specificity for varieties that aren't interchangeable
+   * @param {string} name - Ingredient name (already cleaned)
    * @returns {string} Canonical name for grouping
    */
   getCanonicalName(name) {
     const normalized = name.toLowerCase().trim();
     
-    // Only group exact duplicates with different forms
-    // Don't group different cheese types - keep feta separate from parmesan
-    // Don't group chicken breast separate from chicken thigh
-    // Keep specific varieties like cherry tomatoes, roma tomatoes separate
+    // ONLY group ingredients that are truly equivalent/interchangeable
     
-    // Remove trailing 's' for plurals only
-    const singular = normalized.replace(/s$/, '');
+    // Pepper: Group variations of the same spice
+    if (normalized.match(/^black pepper$|^white pepper$|^ground pepper$|^peppercorns?$/)) {
+      return 'pepper';
+    }
     
-    // Return as-is - let exact name matching handle duplicates
-    // This preserves "feta cheese" vs "parmesan cheese" as separate items
-    return normalized;
+    // Salt: Group equivalent salt types
+    if (normalized.match(/^salt$|^sea salt$|^kosher salt$|^table salt$|^iodized salt$/)) {
+      return 'salt';
+    }
+    
+    // Herbs: Group only if truly the same herb (different forms)
+    if (normalized === 'basil' || normalized === 'basil leaves') return 'basil';
+    if (normalized === 'parsley' || normalized === 'parsley leaves') return 'parsley';
+    if (normalized === 'oregano' || normalized === 'oregano leaves') return 'oregano';
+    if (normalized === 'thyme' || normalized === 'thyme leaves') return 'thyme';
+    
+    // Garlic: Only group identical forms
+    if (normalized === 'garlic' || normalized === 'garlic cloves') return 'garlic';
+    
+    // Olive oil: Group quality variations
+    if (normalized.match(/^olive oil$|^extra virgin olive oil$|^evoo$/)) {
+      return 'olive oil';
+    }
+    
+    // DO NOT group different varieties:
+    // - Cherry tomatoes ≠ Roma tomatoes ≠ tomatoes ≠ tomato sauce
+    // - Russet potatoes ≠ red potatoes ≠ Yukon gold potatoes
+    // - Yellow onion ≠ red onion ≠ white onion (they taste different!)
+    // - Feta cheese ≠ parmesan cheese ≠ cheddar cheese
+    
+    // Remove trailing 's' for plurals to catch simple duplicates
+    return normalized.replace(/s$/, '');
   }
 
   /**
