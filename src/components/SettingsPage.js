@@ -748,7 +748,10 @@ export class SettingsPage {
           const option = document.createElement('option');
           option.value = level;
           option.textContent = level.charAt(0).toUpperCase() + level.slice(1);
-          option.selected = prepSettings.prepLevels[day][slot] === level;
+          
+          // Defensive check for nested prepLevels
+          const currentLevel = prepSettings.prepLevels?.[day]?.[slot] || 'medium';
+          option.selected = currentLevel === level;
           select.appendChild(option);
         });
 
@@ -1494,7 +1497,7 @@ export class SettingsPage {
 
     const saveBtn = document.createElement('button');
     saveBtn.type = 'submit';
-    saveBtn.form = 'eater-form';
+    saveBtn.setAttribute('form', 'eater-form');
     saveBtn.className = 'px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors';
     saveBtn.textContent = isEdit ? 'Save Changes' : 'Add Member';
 
