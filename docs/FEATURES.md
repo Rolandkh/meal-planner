@@ -109,32 +109,72 @@ Complete guide to all features in Vanessa, organized by slice and category.
 
 **Status:** ✅ Complete
 
-**Description:** Aggregated ingredient list organized by category with quantity consolidation.
+**Description:** Aggregated ingredient list organized by category with quantity consolidation and intelligent deduplication.
 
 **Features:**
 - **Category grouping** - Produce, Meat, Dairy, Pantry, Other
 - **Quantity aggregation** - Combines same ingredients across meals
+- **Smart deduplication** - Research-backed ingredient grouping
+- **Mode selection** - Chef-centric or Pantry-centric grouping (✅ Complete)
 - **Unit conversion** - 70+ ingredients with smart conversion
-- **Ingredient limits** - Default 30 items, configurable in Settings
+- **Whole number quantities** - Rounded to whole grams/ml (not 0.2g!)
 - **Budget display** - Shows estimated cost vs target
 - **Metric units** - All quantities in grams, ml, or whole items
+- **Performance tracking** - Generation time logged in console
 
-**Example:**
+**Deduplication Strategy:**
+
+Currently: **Chef-Centric Mode** (Preserve variety distinctions)
+- Groups truly equivalent ingredients (sea salt = kosher salt)
+- **Preserves functional differences:**
+  - Cherry tomatoes ≠ Roma tomatoes ≠ plum tomatoes
+  - Red onion ≠ yellow onion ≠ white onion
+  - Russet potatoes ≠ red potatoes ≠ yukon gold
+  - Bread flour ≠ all-purpose flour ≠ cake flour
+  - Long-grain rice ≠ short-grain rice ≠ arborio rice
+- Based on production meal planning app research
+- Respects recipe integrity and cooking properties
+
+✅ **Pantry-Centric Mode** (Fewer items)
+- Groups all tomato varieties → "tomatoes"
+- Groups all potato varieties → "potatoes"  
+- Groups all onion colors → "onions"
+- User toggle in Settings
+- Reduces list length by ~30-40%
+- Better for flexible cooks with pantry staples
+
+**Example (Chef Mode):**
 ```
 PRODUCE
-☐ 2400g Cherry tomatoes
-☐ 800g Spinach
-☐ 6 whole Onions
+☐ 400g Cherry tomatoes
+☐ 300g Roma tomatoes
+☐ 2 whole Red onions
+☐ 3 whole Yellow onions
 
 MEAT & SEAFOOD
-☐ 1200g Salmon fillet
-☐ 600g Chicken breast
+☐ 600g Salmon fillet
+☐ 400g Chicken breast
+```
+
+**Example (Pantry Mode - Planned):**
+```
+PRODUCE
+☐ 700g Tomatoes (cherry + roma)
+☐ 5 whole Onions (red + yellow)
+
+MEAT & SEAFOOD
+☐ 600g Salmon fillet
+☐ 400g Chicken breast
 ```
 
 **Technical:**
-- Smart aggregation algorithm
+- Research-backed deduplication algorithm
+- Strict variety ingredients list (10+ items)
 - Unit conversion system (70+ ingredients)
 - Category classification
+- Recipe ID-based lookup (Slice 5 structure)
+- Servings scaling across multiple uses
+- Performance metrics logged
 
 **Routes:**
 - `#/shopping-list`
@@ -267,6 +307,10 @@ MEAT & SEAFOOD
 - Shopping day preference (Sunday-Saturday)
 - Preferred store name
 - History retention (1-12 weeks, default: 4)
+- ✅ **Shopping list mode**:
+  - Chef Mode: Keep variety distinctions (default)
+  - Pantry Mode: Group similar items for shorter lists
+  - Toggle in Settings → Meal Planning section
 - Info box: Directs to Household tab for dietary preferences (no duplication)
 
 **4. Meal Prep**

@@ -1,6 +1,32 @@
 # Changelog
 
-## [v1.3.2-alpha] - January 10, 2026 - Shopping List Fixes & Performance Tracking
+## [v1.3.2-alpha] - January 10, 2026 - Shopping List Fixes & Mode Toggle
+
+### ✨ New Feature: Shopping List Mode Toggle
+
+#### Chef Mode vs Pantry Mode
+- **New Setting:** "Shopping List Style" in Settings → Meal Planning
+- **Two modes available:**
+  - **👨‍🍳 Chef Mode (Default):** Preserves variety distinctions for recipe accuracy
+    - Cherry tomatoes ≠ Roma tomatoes
+    - Red onion ≠ yellow onion
+    - Russet potatoes ≠ red potatoes
+    - Bread flour ≠ all-purpose flour
+  - **🏪 Pantry Mode:** Groups similar items for shorter lists (~30-40% fewer items)
+    - All tomato varieties → "tomatoes"
+    - All onion colors → "onions"
+    - All potato types → "potatoes"
+- **User control:** Toggle in Settings, persists across sessions
+- **Visual feedback:** Selected mode highlighted in green
+- **Toast notification:** Confirms mode change
+- **Based on:** Production meal planning app research
+
+#### Implementation
+- New storage functions: `getShoppingListMode()`, `setShoppingListMode()`
+- Storage key: `vanessa_shopping_list_mode`
+- Mode-aware canonical grouping in `ShoppingListView.getCanonicalName()`
+- Radio button UI with descriptions and examples
+- Default: Chef mode (respects recipe integrity)
 
 ### 🛒 Major Shopping List Improvements
 
@@ -58,22 +84,29 @@
 - Quantities round to whole numbers (no more 0.2g)
 - Unit conversion warnings eliminated
 - Proper servings scaling across multiple recipe uses
-- Enhanced ingredient deduplication (conservative approach):
-  - Splits compound ingredients ("salt and pepper" → just "salt")
-  - Normalizes ONLY truly equivalent ingredients:
-    - Black pepper / white pepper / ground pepper → "pepper"
+- Enhanced ingredient deduplication (production app research-backed):
+  - **Strategy:** "Chef-centric" mode preserving variety distinctions
+  - **Splits compound ingredients:** "salt and pepper" → just "salt"
+  - **Normalizes ONLY truly equivalent ingredients:**
+    - Black pepper / white pepper / ground pepper → "pepper (spice)"
     - Sea salt / kosher salt / table salt → "salt"  
     - "Basil leaves" → "basil" (same herb, different form)
     - "Extra virgin olive oil" → "olive oil"
-  - **PRESERVES variety distinctions that matter:**
-    - Cherry tomatoes ≠ Roma tomatoes ≠ regular tomatoes
-    - Red onion ≠ yellow onion ≠ white onion
-    - Russet potatoes ≠ red potatoes ≠ Yukon gold
-    - Different cheese types kept separate
-  - Only generalizes branded items to their actual type:
-    - "Campari tomatoes" → "cherry tomatoes" (Campari is a brand)
+  - **STRICT VARIETY INGREDIENTS (never merge):**
+    Based on production meal planning apps, these are functionally different:
+    - Apples: Granny Smith ≠ Gala (different uses/flavors)
+    - Rice: long-grain ≠ short-grain ≠ arborio (behave differently)
+    - Flour: bread flour ≠ all-purpose ≠ cake flour (NOT interchangeable)
+    - Onions: red ≠ yellow ≠ white (different flavors/cooking properties)
+    - Cheese: feta ≠ parmesan ≠ cheddar (very distinct)
+    - Tomatoes: cherry ≠ roma ≠ regular (different uses/sizes)
+    - Potatoes: russet ≠ red ≠ yukon gold (different cooking properties)
+    - Peppers: bell ≠ jalapeño ≠ habanero (completely different)
+  - **Branded items generalized to actual type:**
+    - "Campari tomatoes" → "cherry tomatoes" (brand name)
     - "San Marzano" → "plum tomatoes" (specific variety)
-  - Research-backed approach following meal planning app best practices
+  - **Research source:** Perplexity AI with high detail level
+  - **Future:** Can add "generic/pantry-centric" mode toggle if users want fewer items
 
 ### ⏱️ Performance Tracking Added
 

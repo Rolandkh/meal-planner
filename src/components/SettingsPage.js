@@ -14,6 +14,8 @@ import {
   createEater,
   updateEater,
   deleteEater,
+  getShoppingListMode,
+  setShoppingListMode,
   getOrCreateDefaultEater,
   loadBaseSpecification,
   saveBaseSpecification,
@@ -645,9 +647,78 @@ export class SettingsPage {
     );
     form.appendChild(storeGroup);
 
+    // Shopping List Mode (NEW FEATURE)
+    const currentMode = getShoppingListMode();
+    const modeGroup = document.createElement('div');
+    modeGroup.className = 'space-y-2';
+    
+    const modeLabel = document.createElement('label');
+    modeLabel.className = 'block text-sm font-medium text-gray-700 mb-2';
+    modeLabel.textContent = 'Shopping List Style';
+    modeGroup.appendChild(modeLabel);
+    
+    const modeOptions = document.createElement('div');
+    modeOptions.className = 'space-y-3';
+    
+    // Chef Mode Radio
+    const chefOption = document.createElement('label');
+    chefOption.className = 'flex items-start gap-3 p-3 border-2 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors ' + 
+      (currentMode === 'chef' ? 'border-green-500 bg-green-50' : 'border-gray-200');
+    chefOption.innerHTML = `
+      <input type="radio" name="shoppingListMode" value="chef" ${currentMode === 'chef' ? 'checked' : ''}
+        class="mt-1 w-4 h-4 text-green-600">
+      <div class="flex-1">
+        <div class="font-semibold text-gray-900">👨‍🍳 Chef Mode (Default)</div>
+        <div class="text-sm text-gray-600 mt-1">
+          Preserves variety distinctions for recipe accuracy
+        </div>
+        <div class="text-xs text-gray-500 mt-1">
+          Example: "Cherry tomatoes" and "Roma tomatoes" stay separate
+        </div>
+      </div>
+    `;
+    
+    // Pantry Mode Radio
+    const pantryOption = document.createElement('label');
+    pantryOption.className = 'flex items-start gap-3 p-3 border-2 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors ' + 
+      (currentMode === 'pantry' ? 'border-green-500 bg-green-50' : 'border-gray-200');
+    pantryOption.innerHTML = `
+      <input type="radio" name="shoppingListMode" value="pantry" ${currentMode === 'pantry' ? 'checked' : ''}
+        class="mt-1 w-4 h-4 text-green-600">
+      <div class="flex-1">
+        <div class="font-semibold text-gray-900">🏪 Pantry Mode</div>
+        <div class="text-sm text-gray-600 mt-1">
+          Groups similar items for shorter, simpler shopping lists
+        </div>
+        <div class="text-xs text-gray-500 mt-1">
+          Example: All tomato varieties group into "Tomatoes"
+        </div>
+      </div>
+    `;
+    
+    modeOptions.appendChild(chefOption);
+    modeOptions.appendChild(pantryOption);
+    modeGroup.appendChild(modeOptions);
+    
+    // Help text
+    const modeHelp = document.createElement('div');
+    modeHelp.className = 'text-xs text-gray-500 mt-2 p-2 bg-gray-50 rounded';
+    modeHelp.innerHTML = `
+      <strong>Chef Mode:</strong> Keeps recipe integrity (red onion ≠ yellow onion)<br>
+      <strong>Pantry Mode:</strong> ~30-40% fewer items (all onions → "onions")
+    `;
+    modeGroup.appendChild(modeHelp);
+    
+    // Add change listener
+    modeGroup.querySelectorAll('input[type="radio"]').forEach(radio => {
+      radio.addEventListener('change', (e) => this.handleShoppingModeChange(e.target.value));
+    });
+    
+    form.appendChild(modeGroup);
+
     // Help text explaining dietary preferences are per-member
     const dietaryNote = document.createElement('div');
-    dietaryNote.className = 'bg-blue-50 border border-blue-100 rounded-lg p-3 text-sm text-blue-800';
+    dietaryNote.className = 'bg-blue-50 border border-blue-100 rounded-lg p-3 text-sm text-blue-800 mt-4';
     dietaryNote.innerHTML = `
       <p><strong>💡 Dietary Preferences:</strong> Set individual dietary preferences, allergies, and diet profiles for each household member in the <strong>Household</strong> tab.</p>
     `;
@@ -1657,6 +1728,40 @@ export class SettingsPage {
       this.rerender();
     } else {
       this.showToast(`Error: ${result.message}`, 'error');
+    }
+  }
+
+  /**
+   * Handle shopping list mode change
+   */
+  handleShoppingModeChange(newMode) {
+    const result = setShoppingListMode(newMode);
+    
+    if (result.success) {
+      console.log(`✅ Shopping list mode changed to: ${newMode}`);
+      this.showToast(
+        `Shopping list mode: ${newMode === 'chef' ? '👨‍🍳 Chef (varieties separate)' : '🏪 Pantry (group similar)'}`,
+        'success'
+      );
+      
+      // Update UI to show selected state
+      const form = document.getElementById('meal-planning-form');
+      if (form) {
+        form.querySelectorAll('label').forEach(label => {
+          const radio = label.querySelector('input[type="radio"]');
+          if (radio && radio.name === 'shoppingListMode') {
+            if (radio.value === newMode) {
+              label.classList.add('border-green-500', 'bg-green-50');
+              label.classList.remove('border-gray-200');
+            } else {
+              label.classList.remove('border-green-500', 'bg-green-50');
+              label.classList.add('border-gray-200');
+            }
+          }
+        });
+      }
+    } else {
+      this.showToast('Failed to save shopping list mode', 'error');
     }
   }
 

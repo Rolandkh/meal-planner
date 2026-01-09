@@ -21,6 +21,7 @@ const VANESSA_BASE_SPECIFICATION = 'vanessa_base_specification';
 const VANESSA_DEBUG_RAW_OUTPUT = 'vanessa_debug_raw_output';
 const VANESSA_MIGRATION_SLICE3 = 'vanessa_migration_slice3';
 const VANESSA_SCHEMA_VERSION = 'vanessa_schema_version';
+const VANESSA_SHOPPING_LIST_MODE = 'vanessa_shopping_list_mode'; // Chef or Pantry mode
 
 // Key mapping for migration
 const KEY_MAPPING = {
@@ -605,6 +606,48 @@ export function updateRating(recipeId, rating) {
   recipes[index].updatedAt = new Date().toISOString();
   
   return saveRecipes(recipes);
+}
+
+/**
+ * Get shopping list mode preference
+ * @returns {string} 'chef' or 'pantry' (default: 'chef')
+ */
+export function getShoppingListMode() {
+  try {
+    const mode = localStorage.getItem(VANESSA_SHOPPING_LIST_MODE);
+    return (mode === 'chef' || mode === 'pantry') ? mode : 'chef';
+  } catch (error) {
+    console.error('Error loading shopping list mode:', error);
+    return 'chef'; // Default to chef mode
+  }
+}
+
+/**
+ * Set shopping list mode preference
+ * @param {string} mode - 'chef' or 'pantry'
+ * @returns {Object} Result object with success status
+ */
+export function setShoppingListMode(mode) {
+  if (mode !== 'chef' && mode !== 'pantry') {
+    return {
+      success: false,
+      error: 'INVALID_MODE',
+      message: 'Mode must be "chef" or "pantry"'
+    };
+  }
+  
+  try {
+    localStorage.setItem(VANESSA_SHOPPING_LIST_MODE, mode);
+    console.log(`✅ Shopping list mode set to: ${mode}`);
+    return { success: true };
+  } catch (error) {
+    console.error('Error saving shopping list mode:', error);
+    return {
+      success: false,
+      error: 'STORAGE_ERROR',
+      message: error.message
+    };
+  }
 }
 
 /**

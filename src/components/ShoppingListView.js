@@ -4,7 +4,7 @@
  * Converts all units to metric supermarket format
  */
 
-import { loadRecipes, loadCurrentMealPlan, loadMeals } from '../utils/storage.js';
+import { loadRecipes, loadCurrentMealPlan, loadMeals, getShoppingListMode } from '../utils/storage.js';
 import { INGREDIENT_SHOPPING_UNITS, convertToMetric } from '../utils/unitConversions.js';
 
 export class ShoppingListView {
@@ -19,7 +19,11 @@ export class ShoppingListView {
    */
   loadData() {
     const startTime = performance.now();
-    console.log('🛒 Starting shopping list generation...');
+    
+    // Load user's preferred mode
+    this.mode = getShoppingListMode();
+    const modeLabel = this.mode === 'chef' ? 'Chef Mode (varieties separate)' : 'Pantry Mode (group similar)';
+    console.log(`🛒 Starting shopping list generation... [${modeLabel}]`);
     
     try {
       // Step 1: Load all recipes
@@ -50,7 +54,7 @@ export class ShoppingListView {
         return;
       }
 
-      // Step 4: Generate shopping list
+      // Step 4: Generate shopping list with selected mode
       const t4 = performance.now();
       this.shoppingList = this.generateShoppingList();
       console.log(`  ⏱️ Generated shopping list in ${Math.round(performance.now() - t4)}ms`);
@@ -455,45 +459,93 @@ export class ShoppingListView {
 
   /**
    * Get canonical ingredient name for grouping (handles variations)
-   * Conservative approach: Only group truly equivalent ingredients
-   * Preserve specificity for varieties that aren't interchangeable
+   * Based on production meal planning app research
+   * 
+   * Two modes:
+   * - "chef": Preserve variety distinctions (cherry tomatoes ≠ roma tomatoes)
+   * - "pantry": Group similar items for shorter lists (all tomatoes together)
+   * 
    * @param {string} name - Ingredient name (already cleaned)
    * @returns {string} Canonical name for grouping
    */
   getCanonicalName(name) {
     const normalized = name.toLowerCase().trim();
+    const mode = this.mode || 'chef'; // Use instance mode or default to chef
     
-    // ONLY group ingredients that are truly equivalent/interchangeable
+    // Strict variety ingredients (from production app research):
+    // In CHEF mode, these NEVER merge across varieties
+    // In PANTRY mode, these DO merge to reduce list length
+    const STRICT_VARIETY_INGREDIENTS = {
+      // Apples: Granny Smith vs Gala are very different
+      'apple': 'apple',
+      'apples': 'apple',
+      // Rice: long-grain vs short-grain vs arborio behave differently
+      'rice': 'rice',
+      // Flour: bread flour vs all-purpose vs cake flour are NOT interchangeable
+      'flour': 'flour',
+      // Onions: red vs yellow vs white have different flavors/uses
+      'onion': 'onion',
+      'onions': 'onion',
+      // Cheese: varieties are very distinct
+      'cheese': 'cheese',
+      // Peppers: bell vs jalapeño vs habanero are completely different
+      'pepper': 'bell pepper', // Vegetable peppers
+      'peppers': 'bell pepper',
+      'bell pepper': 'bell pepper',
+      // Chocolate: dark vs milk vs white are distinct
+      'chocolate': 'chocolate',
+      // Tomatoes: cherry vs roma vs regular have different uses
+      'tomato': 'tomato',
+      'tomatoes': 'tomato',
+      // Potatoes: russet vs red vs yukon gold behave differently
+      'potato': 'potato',
+      'potatoes': 'potato'
+    };
     
-    // Pepper: Group variations of the same spice
-    if (normalized.match(/^black pepper$|^white pepper$|^ground pepper$|^peppercorns?$/)) {
-      return 'pepper';
+    // Check if this is a strict variety ingredient
+    if (mode === 'chef') {
+      // CHEF MODE: Keep variety distinctions
+      for (const strictItem in STRICT_VARIETY_INGREDIENTS) {
+        if (normalized.includes(strictItem)) {
+          // Keep the full variety distinction
+          return normalized.replace(/s$/, '');
+        }
+      }
+    } else if (mode === 'pantry') {
+      // PANTRY MODE: Group by canonical type
+      for (const strictItem in STRICT_VARIETY_INGREDIENTS) {
+        if (normalized.includes(strictItem)) {
+          // Return canonical type (merge varieties)
+          return STRICT_VARIETY_INGREDIENTS[strictItem];
+        }
+      }
     }
     
-    // Salt: Group equivalent salt types
+    // ALWAYS group these (in both modes) - truly equivalent/interchangeable:
+    
+    // Salt: Group equivalent salt types (kosher = sea = table for shopping)
     if (normalized.match(/^salt$|^sea salt$|^kosher salt$|^table salt$|^iodized salt$/)) {
       return 'salt';
     }
     
-    // Herbs: Group only if truly the same herb (different forms)
+    // Black/white pepper (as spice, not vegetable peppers)
+    if (normalized.match(/^black pepper$|^white pepper$|^ground pepper$/) && !normalized.includes('bell')) {
+      return 'pepper (spice)';
+    }
+    
+    // Herbs: Group only form variations (leaves vs dried)
     if (normalized === 'basil' || normalized === 'basil leaves') return 'basil';
     if (normalized === 'parsley' || normalized === 'parsley leaves') return 'parsley';
     if (normalized === 'oregano' || normalized === 'oregano leaves') return 'oregano';
     if (normalized === 'thyme' || normalized === 'thyme leaves') return 'thyme';
     
-    // Garlic: Only group identical forms
+    // Garlic: Only group form variations
     if (normalized === 'garlic' || normalized === 'garlic cloves') return 'garlic';
     
     // Olive oil: Group quality variations
     if (normalized.match(/^olive oil$|^extra virgin olive oil$|^evoo$/)) {
       return 'olive oil';
     }
-    
-    // DO NOT group different varieties:
-    // - Cherry tomatoes ≠ Roma tomatoes ≠ tomatoes ≠ tomato sauce
-    // - Russet potatoes ≠ red potatoes ≠ Yukon gold potatoes
-    // - Yellow onion ≠ red onion ≠ white onion (they taste different!)
-    // - Feta cheese ≠ parmesan cheese ≠ cheddar cheese
     
     // Remove trailing 's' for plurals to catch simple duplicates
     return normalized.replace(/s$/, '');
