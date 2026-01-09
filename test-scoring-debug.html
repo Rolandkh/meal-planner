@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoring Debug Test</title>
+</head>
+<body>
+  <h1>Diet Compass Scoring Debug</h1>
+  <button onclick="runTest()">Test Scoring</button>
+  <pre id="output"></pre>
+
+  <script type="module">
+    import { debugRecipeScore, getIngredientHealthData } from './src/utils/dietCompassScoring.js';
+    import { getRecipeCatalogSync } from './src/utils/catalogStorage.js';
+
+    window.runTest = function() {
+      const output = document.getElementById('output');
+      output.textContent = 'Running test...\n\n';
+      
+      // Get first 3 recipes from catalog
+      const catalog = getRecipeCatalogSync();
+      const testRecipes = catalog.slice(0, 3);
+      
+      output.textContent += `Testing ${testRecipes.length} recipes:\n\n`;
+      
+      testRecipes.forEach(recipe => {
+        output.textContent += `\n${'='.repeat(60)}\n`;
+        output.textContent += `Recipe: ${recipe.name}\n`;
+        output.textContent += `Current scores: ${JSON.stringify(recipe.dietCompassScores)}\n\n`;
+        
+        // Test each ingredient
+        output.textContent += 'Ingredient Matches:\n';
+        recipe.ingredients.forEach(ing => {
+          const data = getIngredientHealthData(ing.name);
+          output.textContent += `  ${ing.name} (${ing.quantity} ${ing.unit}): `;
+          output.textContent += data ? '✅ FOUND\n' : '❌ NOT FOUND\n';
+        });
+        
+        output.textContent += '\nRecalculating with debug:\n';
+        const score = debugRecipeScore(recipe);
+      });
+      
+      output.textContent += '\n\nTest complete! Check console for detailed logs.';
+    };
+  </script>
+</body>
+</html>

@@ -190,10 +190,8 @@ export class RecipeDetailPage {
     const hero = document.createElement('div');
     hero.className = 'bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden mb-6';
 
-    // Image placeholder
-    const imagePlaceholder = document.createElement('div');
-    imagePlaceholder.className = 'h-64 bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center text-8xl';
-    imagePlaceholder.textContent = this.getRecipeEmoji(this.state.recipe);
+    // Image section - actual image or fallback to emoji placeholder
+    const imageElement = this.renderRecipeImage();
 
     // Content
     const content = document.createElement('div');
@@ -233,10 +231,44 @@ export class RecipeDetailPage {
     content.appendChild(titleRow);
     content.appendChild(ratingContainer);
 
-    hero.appendChild(imagePlaceholder);
+    hero.appendChild(imageElement);
     hero.appendChild(content);
 
     return hero;
+  }
+
+  /**
+   * Render recipe image with fallback to emoji placeholder
+   */
+  renderRecipeImage() {
+    // If recipe has an image path, try to render it
+    if (this.state.recipe.image) {
+      const img = document.createElement('img');
+      img.src = this.state.recipe.image;
+      img.alt = this.state.recipe.name;
+      img.className = 'w-full h-64 object-cover';
+      
+      // Fallback to emoji if image fails to load
+      img.onerror = () => {
+        const placeholder = this.createEmojiPlaceholder();
+        img.replaceWith(placeholder);
+      };
+      
+      return img;
+    }
+    
+    // No image available, use emoji placeholder
+    return this.createEmojiPlaceholder();
+  }
+
+  /**
+   * Create emoji placeholder for recipes without images
+   */
+  createEmojiPlaceholder() {
+    const placeholder = document.createElement('div');
+    placeholder.className = 'h-64 bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center text-8xl';
+    placeholder.textContent = this.getRecipeEmoji(this.state.recipe);
+    return placeholder;
   }
 
   /**

@@ -195,10 +195,13 @@ export function calculateRecipeScores(recipe) {
   const norm = totalWeight || 1;
   
   // Calculate individual metric scores (0-100)
-  const nd = clamp(Math.round(agg.nd / norm), 0, 100);
-  const aa = clamp(Math.round(agg.aa / norm), 0, 100);
-  const wl = clamp(Math.round(agg.wl / norm), 0, 100);
-  const hh = clamp(Math.round(agg.hh / norm), 0, 100);
+  // Apply 2.5x scaling factor to bring scores into better range
+  // (Base points of 15-35 * 2.5 = 37-87, which is more appropriate)
+  const SCORE_SCALING = 2.5;
+  const nd = clamp(Math.round((agg.nd / norm) * SCORE_SCALING), 0, 100);
+  const aa = clamp(Math.round((agg.aa / norm) * SCORE_SCALING), 0, 100);
+  const wl = clamp(Math.round((agg.wl / norm) * SCORE_SCALING), 0, 100);
+  const hh = clamp(Math.round((agg.hh / norm) * SCORE_SCALING), 0, 100);
   
   // Calculate weighted overall score
   const overall = clamp(
@@ -278,6 +281,67 @@ export function classifyIngredientHealthImpact(ingredientName) {
   if (avg > 15) return 'protective';
   if (avg < -5) return 'harmful';
   return 'neutral';
+}
+
+/**
+ * Debug recipe scoring with detailed breakdown
+ * @param {Object} recipe - Recipe to analyze
+ * @returns {Object} Score with detailed debug info
+ */
+export function debugRecipeScore(recipe) {
+  console.log('\n=== DIET COMPASS SCORING DEBUG ===');
+  console.log('Recipe:', recipe.name);
+  console.log('Total ingredients:', recipe.ingredients?.length || 0);
+  
+  const agg = { nd: 0, aa: 0, wl: 0, hh: 0 };
+  let totalWeight = 0;
+  let scoredCount = 0;
+  let unknownCount = 0;
+  
+  console.log('\nIngredient Analysis:');
+  for (const ing of recipe.ingredients || []) {
+    const healthData = getIngredientHealthData(ing.name);
+    const weight = (ing.quantity && ing.unit === 'g') ? ing.quantity : 1;
+    
+    if (!healthData) {
+      console.log(`  ❌ ${ing.name} (${ing.quantity} ${ing.unit}): NO DATA`);
+      unknownCount++;
+      continue;
+    }
+    
+    console.log(`  ✅ ${ing.name} (weight: ${weight}):`, {
+      nd: healthData.nutrientDensityPoints,
+      aa: healthData.antiAgingPoints,
+      wl: healthData.weightLossPoints,
+      hh: healthData.heartHealthPoints
+    });
+    
+    totalWeight += weight;
+    scoredCount++;
+    
+    agg.nd += (healthData.nutrientDensityPoints || 0) * weight;
+    agg.aa += (healthData.antiAgingPoints || 0) * weight;
+    agg.wl += (healthData.weightLossPoints || 0) * weight;
+    agg.hh += (healthData.heartHealthPoints || 0) * weight;
+  }
+  
+  console.log('\nSummary:');
+  console.log('  Ingredients scored:', scoredCount);
+  console.log('  Ingredients unknown:', unknownCount);
+  console.log('  Total weight:', totalWeight);
+  console.log('  Raw totals:', agg);
+  console.log('  Normalized (÷ weight):', {
+    nd: (agg.nd / totalWeight).toFixed(2),
+    aa: (agg.aa / totalWeight).toFixed(2),
+    wl: (agg.wl / totalWeight).toFixed(2),
+    hh: (agg.hh / totalWeight).toFixed(2)
+  });
+  
+  const finalScore = calculateRecipeScores(recipe);
+  console.log('  Final scores:', finalScore);
+  console.log('================================\n');
+  
+  return finalScore;
 }
 
 /**

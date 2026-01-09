@@ -79,6 +79,39 @@ const SEARCH_QUERIES = [
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 /**
+ * Extract and format instructions from Spoonacular analyzedInstructions
+ * @param {Object} spoonacularRecipe - Recipe object from Spoonacular API
+ * @returns {string} Formatted instructions
+ */
+function extractInstructions(spoonacularRecipe) {
+  // First try the simple instructions field
+  if (spoonacularRecipe.instructions && typeof spoonacularRecipe.instructions === 'string') {
+    const cleaned = spoonacularRecipe.instructions.trim();
+    if (cleaned && cleaned.length > 20) {
+      return cleaned;
+    }
+  }
+  
+  // Otherwise parse analyzedInstructions
+  if (!spoonacularRecipe.analyzedInstructions || !Array.isArray(spoonacularRecipe.analyzedInstructions)) {
+    return 'No instructions available';
+  }
+  
+  // Combine all instruction sections
+  const allSteps = spoonacularRecipe.analyzedInstructions
+    .flatMap(section => {
+      const steps = section.steps || [];
+      return steps;
+    })
+    .filter(step => step && step.step)
+    .sort((a, b) => (a.number || 0) - (b.number || 0))
+    .map(step => `${step.number}. ${step.step}`)
+    .join('\n\n');
+  
+  return allSteps || 'No instructions available';
+}
+
+/**
  * Fetch recipes from Spoonacular
  */
 async function fetchRecipes(query, offset = 0) {
@@ -260,7 +293,7 @@ async function extractCatalog() {
       healthImpact: 'neutral'
     })).filter(ing => ing.name !== 'unknown'),
     
-    instructions: sp.instructions || 'No instructions available',
+    instructions: extractInstructions(sp),
     prepTime: sp.preparationMinutes || Math.round((sp.readyInMinutes || 30) * 0.3),
     cookTime: sp.cookingMinutes || Math.round((sp.readyInMinutes || 30) * 0.7),
     servings: sp.servings || 4,
