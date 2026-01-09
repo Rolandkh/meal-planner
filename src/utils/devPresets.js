@@ -87,6 +87,43 @@ export const DEV_PRESET = {
     householdEaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'],
     dietaryGoals: 'Weight loss, anti-inflammatory Mediterranean diet following Food Compass guidelines. Focus on fish, vegetables, legumes, yogurt. Minimal red meat. No caffeine. Reuse ingredients mid-week to minimize cost. Simple Saturday meal prep.',
     onboardingComplete: true,
+    weeklySchedule: {
+      sunday: {
+        breakfast: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] },
+        lunch: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: ['kid-friendly'] },
+        dinner: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: ['kid-friendly'] }
+      },
+      monday: {
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: ['kid-friendly'] },
+        lunch: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: ['kid-friendly'] },
+        dinner: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: ['kid-friendly'] }
+      },
+      tuesday: {
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: ['kid-friendly'] },
+        lunch: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: ['kid-friendly'] },
+        dinner: { servings: 3, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7', 'eater_c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8'], requirements: ['family-dinner', 'special'] }
+      },
+      wednesday: {
+        breakfast: { servings: 2, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6', 'eater_b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7'], requirements: ['kid-friendly'] },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] },
+        dinner: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] }
+      },
+      thursday: {
+        breakfast: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] },
+        dinner: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] }
+      },
+      friday: {
+        breakfast: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] },
+        dinner: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] }
+      },
+      saturday: {
+        breakfast: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] },
+        lunch: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] },
+        dinner: { servings: 1, eaterIds: ['eater_a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6'], requirements: [] }
+      }
+    },
     mealPrepSettings: {
       batchPrepDays: [6],
       prepLevels: {
@@ -103,6 +140,7 @@ export const DEV_PRESET = {
       personality: 'friendly',
       communicationStyle: 'concise'
     },
+    historyRetentionWeeks: 4,
     createdAt: '2025-12-26T00:00:00.000Z',
     updatedAt: '2025-12-26T00:00:00.000Z'
   }
@@ -110,12 +148,12 @@ export const DEV_PRESET = {
 
 /**
  * Import development preset data
- * Slice 5 UPDATE: Loads conversation + structured data, then triggers generation
+ * Slice 5 UPDATE: Loads conversation + structured data with proper schedule
  * @returns {Object} Result object with success status
  */
 export function importDevPreset() {
   try {
-    console.log('🔧 Importing development preset (CONVERSATION + DATA)...');
+    console.log('🔧 Importing development preset (CONVERSATION + DATA + SCHEDULE)...');
     
     // 1. Clear existing relevant data
     localStorage.removeItem('vanessa_meals');
@@ -124,27 +162,35 @@ export function importDevPreset() {
     
     // 2. Import conversation history
     saveChatHistory(ONBOARDING_CONVERSATION);
-    console.log('✓ Imported conversation history');
+    console.log('✓ Imported conversation history (8 messages)');
     
-    // 3. Import eaters (with Slice 5 fields)
+    // 3. Import eaters (with Slice 5 fields including diet profiles)
     const eatersResult = saveEaters(DEV_PRESET.eaters);
     if (!eatersResult.success) {
       throw new Error('Failed to save eaters: ' + eatersResult.error);
     }
-    console.log('✓ Imported 3 eaters (Roland, Maya, Cathie)');
+    console.log('✓ Imported 3 eaters with diet profiles:');
+    console.log('  - Roland (mediterranean profile)');
+    console.log('  - Maya (kid-friendly profile)');
+    console.log('  - Cathie (mediterranean profile)');
     
-    // 4. Import base specification (v2)
+    // 4. Import base specification (v2 with weeklySchedule)
     const baseSpecResult = saveBaseSpecification(DEV_PRESET.baseSpecification);
     if (!baseSpecResult.success) {
       throw new Error('Failed to save base specification: ' + baseSpecResult.error);
     }
-    console.log('✓ Imported base specification (v2)');
+    console.log('✓ Imported base specification with:');
+    console.log('  - Weekly schedule (Maya: Sun afternoon-Wed morning, Cathie: Tue dinner)');
+    console.log('  - Meal prep settings (Saturday batch prep)');
+    console.log('  - Chat preferences & dietary goals');
     
-    console.log('✅ Development preset imported successfully');
+    console.log('✅ Development preset imported successfully!');
+    console.log('   Ready to generate first meal plan with proper household schedule.');
     
     return {
       success: true,
-      message: '✅ Setup complete! Conversation and profiles loaded. Redirecting to generation...'
+      message: '✅ Setup complete! All profiles, schedules, and preferences loaded.',
+      shouldRedirect: true
     };
     
   } catch (error) {

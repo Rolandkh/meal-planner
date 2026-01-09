@@ -1372,6 +1372,11 @@ export class SettingsPage {
 
     // Diet Profile Dropdown
     const profiles = getAllDietProfiles();
+    console.log('📋 Loading diet profiles for eater modal:', profiles.length, 'profiles available');
+    if (profiles.length === 0) {
+      console.warn('⚠️ No diet profiles found! Check if diet profiles are initialized in localStorage.');
+    }
+    
     const profileGroup = this.createFormGroup(
       'Diet Profile',
       'select',
