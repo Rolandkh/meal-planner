@@ -95,28 +95,43 @@ export class HomePage {
   }
 
   /**
-   * Import development preset (base spec + sample meal plan)
+   * Import development preset - Complete onboarding simulation
+   * Loads conversation, profiles, and schedule, then triggers generation
    */
   importDevPreset(buttonElement) {
     try {
       // Show loading state
       if (buttonElement) {
         const originalText = buttonElement.innerHTML;
-        buttonElement.innerHTML = '⏳ Loading...';
+        buttonElement.innerHTML = '⏳ Loading Preset...';
         buttonElement.disabled = true;
         
         // Small delay to show loading state
         setTimeout(() => {
+          console.log('🔧 Starting dev preset import with full onboarding simulation...');
+          
+          // Step 1: Import all data (conversation, eaters, base spec with schedule)
           const result = importDevPreset();
           
           if (result.success) {
             console.log('✅ Dev preset imported:', result.message);
-            buttonElement.innerHTML = '🚀 Generating...';
+            buttonElement.innerHTML = '💬 Loading Conversation...';
             
-            // Short delay to show success state, then redirect to generation
+            // Step 2: Close Vanessa's chat if it's open
             setTimeout(() => {
-              window.location.hash = '#/generating';
-            }, 1000);
+              if (window.chatWidget && window.chatWidget.isOpen) {
+                console.log('📴 Closing chat widget...');
+                window.chatWidget.toggle();
+              }
+              
+              buttonElement.innerHTML = '🚀 Starting Generation...';
+              
+              // Step 3: Redirect to generation page
+              setTimeout(() => {
+                console.log('🎯 Redirecting to generation page...');
+                window.location.hash = '#/generating';
+              }, 500);
+            }, 800);
           } else {
             console.error('❌ Import failed:', result.error);
             alert('Failed to import dev preset: ' + result.error);

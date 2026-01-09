@@ -93,25 +93,37 @@ This will force re-initialization from the JSON file.
 - ✅ Improved logging to show what's being imported
 - ✅ Added `historyRetentionWeeks: 4` to baseSpec
 - ✅ Better console output showing all imported data
+- ✅ **NEW:** Complete onboarding simulation flow:
+  - Loads conversation with all 8 onboarding messages
+  - Automatically closes Vanessa's chat widget if open
+  - Shows progress through button states
+  - Redirects to generation automatically
 
 ---
 
 ## Testing Checklist
 
-### Test 1: Import Dev Preset
+### Test 1: Import Dev Preset (Complete Onboarding Simulation)
 1. Go to home page
 2. Click "🔧 Import Dev Preset"
-3. **Check console logs** - should see:
+3. **Watch the button states:**
+   - "⏳ Loading Preset..." (imports data)
+   - "💬 Loading Conversation..." (closes chat if open)
+   - "🚀 Starting Generation..." (prepares redirect)
+4. **Check console logs** - should see:
    ```
+   🔧 Starting dev preset import with full onboarding simulation...
    ✓ Imported 3 eaters with diet profiles:
      - Roland (mediterranean profile)
      - Maya (kid-friendly profile)
      - Cathie (mediterranean profile)
    ✓ Imported base specification with:
      - Weekly schedule (Maya: Sun afternoon-Wed morning, Cathie: Tue dinner)
+   📴 Closing chat widget... (if chat was open)
+   🎯 Redirecting to generation page...
    ```
-4. Button should show "🚀 Generating..."
-5. Should redirect to generation page
+5. Vanessa's chat should close automatically (if it was open)
+6. Should redirect to generation page and start generating
 
 ### Test 2: Check Settings → Household → Diet Profiles
 1. Go to Settings → Household
@@ -167,7 +179,14 @@ This will force re-initialization from the JSON file.
 - Added debug logging for diet profiles (lines 1374-1378)
 - Will warn if profiles not found
 
-### 3. Created Documentation
+### 3. `src/components/HomePage.js`
+**Changes:**
+- Enhanced `importDevPreset()` to simulate complete onboarding flow
+- Automatically closes chat widget if open
+- Shows progress through multiple button states
+- Better user feedback during import process
+
+### 4. Created Documentation
 - `SLICE-5-REVIEW-AND-FIXES.md` (detailed analysis)
 - `REVIEW-SUMMARY.md` (this file)
 

@@ -122,26 +122,38 @@ weeklySchedule: {
 ---
 
 ### Issue 3: Import Dev Preset Flow Incomplete
-**Problem:** Import dev preset button didn't fully simulate the onboarding → generation flow
+**Problem:** Import dev preset button didn't fully simulate the onboarding → generation flow, and didn't close the chat widget
 
 **Solution Implemented:**
-✅ **Updated `importDevPreset()` function:**
+✅ **Updated `importDevPreset()` function in HomePage.js:**
 1. Improved logging to show what's being imported
 2. Added proper weeklySchedule (see Issue 2)
-3. Logs confirm:
+3. **NEW:** Automatically closes Vanessa's chat widget if open
+4. Shows progress through button state changes
+5. Logs confirm:
    - 3 eaters with diet profiles loaded
    - Weekly schedule loaded with correct attendees
    - Meal prep settings loaded (Saturday batch prep)
    - Chat preferences loaded
+   - Chat widget closed (if it was open)
 
-✅ **Import Flow Now:**
+✅ **Complete Import Flow Now:**
 1. Click "Import Dev Preset" button
-2. Loads conversation history (8 messages simulating onboarding)
-3. Creates 3 eaters with proper diet profiles
-4. Loads base specification with weeklySchedule
-5. Shows loading state → "Generating..."
-6. Redirects to `/generating` page
-7. Generation page should detect onboarding complete and trigger meal plan generation
+2. **Button shows:** "⏳ Loading Preset..." (imports data)
+3. Loads conversation history (8 messages simulating onboarding)
+4. Creates 3 eaters with proper diet profiles
+5. Loads base specification with weeklySchedule
+6. **Button shows:** "💬 Loading Conversation..." 
+7. **Automatically closes Vanessa's chat** if it's open
+8. **Button shows:** "🚀 Starting Generation..."
+9. Redirects to `/generating` page
+10. Generation page detects onboarding complete and triggers meal plan generation
+
+**User Experience:**
+- Seamless onboarding simulation
+- No need to manually close chat
+- Clear visual feedback through button states
+- Automatic progression to generation
 
 ---
 
@@ -194,15 +206,21 @@ weeklySchedule: {
    - ✅ **Thursday-Saturday:**
      - All meals: 1 dot (Roland only)
 
-### Test 4: Dev Preset Import Flow
+### Test 4: Dev Preset Import Flow (Complete Onboarding Simulation)
 1. Clear localStorage (optional, for clean test):
    ```javascript
    localStorage.clear();
    location.reload();
    ```
-2. Click **"Import Dev Preset"**
-3. **Observe console logs:**
+2. Open Vanessa's chat (to test auto-close) - **OPTIONAL**
+3. Click **"Import Dev Preset"**
+4. **Watch button progression:**
+   - "⏳ Loading Preset..." (0.1s)
+   - "💬 Loading Conversation..." (0.8s)
+   - "🚀 Starting Generation..." (0.5s)
+5. **Observe console logs:**
    ```
+   🔧 Starting dev preset import with full onboarding simulation...
    🔧 Importing development preset (CONVERSATION + DATA + SCHEDULE)...
    ✓ Imported conversation history (8 messages)
    ✓ Imported 3 eaters with diet profiles:
@@ -214,11 +232,14 @@ weeklySchedule: {
      - Meal prep settings (Saturday batch prep)
      - Chat preferences & dietary goals
    ✅ Development preset imported successfully!
+   📴 Closing chat widget... (if chat was open)
+   🎯 Redirecting to generation page...
    ```
-4. **Verify redirect:**
-   - Button shows "🚀 Generating..."
-   - Redirects to `/generating` page
+6. **Verify behavior:**
+   - Chat widget closes automatically (if it was open)
+   - Redirects to `/generating` page smoothly
    - Generation should start automatically
+   - No manual intervention needed
 
 ---
 
@@ -238,6 +259,15 @@ weeklySchedule: {
 - ✅ Warns if no profiles found to help diagnose issues
 
 **Lines Changed:** 1373-1397
+
+### 3. `/src/components/HomePage.js`
+**Changes:**
+- ✅ Enhanced `importDevPreset()` method to simulate complete onboarding
+- ✅ Automatically closes chat widget if open
+- ✅ Multi-stage button feedback ("Loading Preset" → "Loading Conversation" → "Starting Generation")
+- ✅ Better user experience with clear progress indicators
+
+**Lines Changed:** 98-136
 
 ---
 
