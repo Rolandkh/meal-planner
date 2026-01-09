@@ -112,7 +112,7 @@ Example usage:
   window.debug.refreshProfiles()  // ⭐ BEST: Clear and reload page
   window.debug.listProfiles()     // See all profiles
   
-To update to latest profiles (v2.0.0, 17 profiles):
+To update to latest profiles (v2.0.0, 18 profiles):
   window.debug.refreshProfiles()  // Clears and reloads automatically
     `);
   }

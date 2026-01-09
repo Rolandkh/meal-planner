@@ -8,6 +8,7 @@ import { STORAGE_KEYS } from '../types/schemas.js';
 /**
  * Hardcoded diet profiles as fallback
  * Copy of basic data from dietProfiles.json v2.0.0
+ * Updated 2026-01-09 to include all 18 profiles
  */
 const FALLBACK_DIET_PROFILES = {
   "_dataVersion": "2.0.0",
@@ -20,6 +21,18 @@ const FALLBACK_DIET_PROFILES = {
       "foodsToEmphasize": ["olive oil", "fish", "vegetables", "fruits", "whole grains", "nuts", "legumes", "yogurt", "herbs", "garlic"]
     },
     {
+      "id": "longevity",
+      "name": "Longevity Protocol (Diet Compass)",
+      "summary": "Science-based diet optimized for lifespan extension based on Diet Compass research by Bas Kast.",
+      "foodsToEmphasize": ["leafy greens", "cruciferous vegetables", "legumes", "oily fish", "nuts", "seeds", "fermented yogurt", "kefir", "olive oil", "berries"]
+    },
+    {
+      "id": "la-dieta",
+      "name": "La Dieta",
+      "summary": "Temporary cleansing protocol for preparation before plant medicine retreats.",
+      "foodsToEmphasize": ["fresh vegetables", "fresh fruits", "basmati rice", "quinoa", "fresh fish", "free-range chicken", "eggs", "olive oil"]
+    },
+    {
       "id": "keto",
       "name": "Keto / Low-Carb",
       "summary": "Very low carbohydrate, high fat diet that induces ketosis for metabolic benefits.",
@@ -29,13 +42,13 @@ const FALLBACK_DIET_PROFILES = {
       "id": "vegetarian",
       "name": "Vegetarian",
       "summary": "Plant-based diet that excludes meat and fish but includes dairy and eggs.",
-      "foodsToEmphasize": ["vegetables", "fruits", "legumes", "beans", "lentils", "whole grains", "nuts", "seeds", "tofu", "tempeh", "dairy", "eggs"]
+      "foodsToEmphasize": ["vegetables", "fruits", "legumes", "beans", "tofu", "tempeh", "whole grains", "nuts", "seeds", "dairy", "eggs"]
     },
     {
       "id": "high-protein",
       "name": "High Protein",
       "summary": "Emphasizes protein-rich foods for muscle building, satiety, and weight management.",
-      "foodsToEmphasize": ["chicken breast", "fish", "eggs", "greek yogurt", "cottage cheese", "lean beef", "turkey", "tofu", "tempeh", "legumes"]
+      "foodsToEmphasize": ["chicken breast", "turkey", "fish", "eggs", "greek yogurt", "cottage cheese", "lean beef", "tofu", "tempeh", "legumes"]
     },
     {
       "id": "flexitarian",
@@ -44,27 +57,21 @@ const FALLBACK_DIET_PROFILES = {
       "foodsToEmphasize": ["vegetables", "fruits", "whole grains", "legumes", "nuts", "seeds", "occasional fish", "occasional poultry", "eggs", "dairy"]
     },
     {
-      "id": "longevity",
-      "name": "Longevity Protocol",
-      "summary": "Science-based diet optimized for lifespan extension based on Diet Compass research.",
-      "foodsToEmphasize": ["leafy greens", "cruciferous vegetables", "berries", "nuts", "fatty fish", "olive oil", "whole grains", "legumes", "fermented foods"]
-    },
-    {
       "id": "intermittent-fasting",
       "name": "Intermittent Fasting",
       "summary": "Time-restricted eating pattern that cycles between fasting and eating periods.",
-      "foodsToEmphasize": ["nutrient-dense foods", "vegetables", "lean proteins", "healthy fats", "whole grains"]
+      "foodsToEmphasize": ["nutrient-dense foods", "vegetables", "lean proteins", "healthy fats", "whole grains", "fruits", "legumes"]
     },
     {
       "id": "vegan",
       "name": "Vegan",
       "summary": "Entirely plant-based diet excluding all animal products.",
-      "foodsToEmphasize": ["vegetables", "fruits", "legumes", "beans", "lentils", "whole grains", "nuts", "seeds", "tofu", "tempeh", "nutritional yeast", "plant milks"]
+      "foodsToEmphasize": ["vegetables", "fruits", "legumes", "beans", "lentils", "tofu", "tempeh", "edamame", "whole grains", "nuts", "seeds", "nutritional yeast"]
     },
     {
       "id": "mind",
       "name": "MIND Diet",
-      "summary": "Brain-health focused diet combining Mediterranean and DASH for cognitive function.",
+      "summary": "Brain-health focused diet combining Mediterranean and DASH approaches for cognitive function.",
       "foodsToEmphasize": ["blueberries", "strawberries", "leafy greens", "vegetables", "nuts", "beans", "whole grains", "fish", "poultry", "olive oil"]
     },
     {
@@ -74,10 +81,46 @@ const FALLBACK_DIET_PROFILES = {
       "foodsToEmphasize": ["chicken", "pasta", "cheese", "fruits", "yogurt", "whole grain bread", "mild vegetables", "eggs", "milk"]
     },
     {
-      "id": "la-dieta",
-      "name": "La Dieta",
-      "summary": "Ceremonial preparation approach emphasizing mindfulness, gratitude, and intentional eating.",
-      "foodsToEmphasize": ["seasonal produce", "local ingredients", "whole foods", "traditional preparations"]
+      "id": "pescatarian",
+      "name": "Pescatarian",
+      "summary": "Plant-based diet that includes fish and seafood but excludes other meats.",
+      "foodsToEmphasize": ["fatty fish", "white fish", "shellfish", "mollusks", "vegetables", "fruits", "legumes", "whole grains", "eggs", "dairy"]
+    },
+    {
+      "id": "paleo",
+      "name": "Paleo",
+      "summary": "Eating pattern based on foods available to our Paleolithic ancestors.",
+      "foodsToEmphasize": ["grass-fed meat", "wild-caught fish", "free-range poultry", "eggs", "vegetables", "fruits", "nuts", "seeds", "healthy fats"]
+    },
+    {
+      "id": "dash",
+      "name": "DASH Diet",
+      "summary": "Dietary Approaches to Stop Hypertension - designed to lower blood pressure.",
+      "foodsToEmphasize": ["fruits", "vegetables", "whole grains", "low-fat dairy", "lean proteins", "nuts", "seeds", "legumes"]
+    },
+    {
+      "id": "anti-inflammatory",
+      "name": "Anti-Inflammatory",
+      "summary": "Diet designed to reduce chronic inflammation through food choices.",
+      "foodsToEmphasize": ["fatty fish", "leafy greens", "berries", "turmeric", "ginger", "olive oil", "nuts", "tomatoes", "green tea"]
+    },
+    {
+      "id": "low-fodmap",
+      "name": "Low FODMAP",
+      "summary": "Therapeutic diet for managing IBS and digestive sensitivities.",
+      "foodsToEmphasize": ["low-fodmap vegetables", "low-fodmap fruits", "proteins", "lactose-free dairy", "gluten-free grains", "nuts", "olive oil"]
+    },
+    {
+      "id": "whole30",
+      "name": "Whole30",
+      "summary": "30-day elimination diet focusing on whole, unprocessed foods to reset eating habits.",
+      "foodsToEmphasize": ["meat", "poultry", "seafood", "eggs", "vegetables", "fruits", "nuts", "seeds", "healthy fats"]
+    },
+    {
+      "id": "gut-health",
+      "name": "Gut Health Protocol",
+      "summary": "Diet optimized for digestive health and microbiome diversity.",
+      "foodsToEmphasize": ["fermented foods", "prebiotic foods", "high-fiber foods", "diverse plant foods", "bone broth", "ginger", "turmeric", "omega-3 sources"]
     }
   ]
 };

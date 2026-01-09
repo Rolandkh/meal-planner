@@ -51,10 +51,10 @@ export class DietProfilesPage {
       console.log(`📊 Diet Profiles: v${currentVersion}, ${profileCount} profiles`);
       
       // Check if outdated
-      if (currentVersion !== '2.0.0' || profileCount < 15) {
+      if (currentVersion !== '2.0.0' || profileCount < 18) {
         console.warn(`⚠️ Diet profiles may be outdated!`);
         console.warn(`   Current: v${currentVersion}, ${profileCount} profiles`);
-        console.warn(`   Expected: v2.0.0, 17 profiles`);
+        console.warn(`   Expected: v2.0.0, 18 profiles`);
         console.warn(`   Solution: Clear localStorage and reload page`);
         console.warn(`   Run: localStorage.removeItem('vanessa_diet_profiles'); location.reload();`);
       }
