@@ -77,10 +77,12 @@ Complete guide to all features in Vanessa, organized by slice and category.
 - **Real-time progress** - Progress bar with status updates (10% → 100%)
 - **Accurate servings** - Based on household schedule (who eats when)
 - **Recipe deduplication** - Same recipe can appear multiple days
-- **Catalog-first** - Uses existing recipes when possible (40-70%)
+- **Catalog-first** - Uses 494-recipe catalog when possible (80-95% usage!)
+- **Lightweight index** - Sends only 326KB to Claude (not 2.1MB catalog)
 - **Budget-aware** - Targets your weekly budget
 - **Ingredient limits** - Respects shopping list item limit (default: 30)
 - **Health-optimized** - Generates meals with good Diet Compass scores
+- **Auto-updating** - Recipe index rebuilds when recipes change
 
 **Process:**
 1. User clicks "Generate New Week"

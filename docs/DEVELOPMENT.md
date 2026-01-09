@@ -244,6 +244,106 @@ window.debug.testHealthScoring('Greek-Style Baked Fish')
 
 ---
 
+## Recipe Catalog Management
+
+### Current Catalog Stats
+
+- **494 recipes** (complete data)
+- **835 images** (22MB)
+- **26 cuisines**, 15 protein types
+- **34 breakfasts**, 18 curries, 11 stir-fries
+
+### Lightweight Index System
+
+**Two-tier architecture:**
+1. **Full Catalog** (2.1MB) - Complete recipe data
+2. **Lightweight Index** (326KB) - Essential fields only for Claude
+
+**Benefits:**
+- 84.5% token reduction
+- Faster meal generation
+- Lower API costs
+- Auto-updates when recipes change
+
+### Extract More Recipes
+
+```bash
+# Add more recipes from Spoonacular
+node scripts/extractSpoonacularCatalog.js
+
+# Rebuilds catalog with existing + new recipes
+# Non-destructive - preserves all existing recipes
+```
+
+### Rebuild Recipe Index
+
+```bash
+# Manually rebuild index from catalog
+node scripts/buildRecipeIndex.js
+
+# Transforms 2.1MB catalog → 326KB index
+# Extracts only essential fields for Claude
+```
+
+**Note:** Index auto-rebuilds when you:
+- Save catalog recipes
+- Save user recipes
+- No manual rebuild needed!
+
+### Verify Catalog Integration
+
+```javascript
+// In browser console:
+
+// 1. Check catalog loaded (full data)
+const catalog = JSON.parse(localStorage.getItem('vanessa_recipe_catalog'));
+console.log('Catalog:', catalog.recipes.length, 'recipes');  // Should be 494
+
+// 2. Check index loaded (lightweight)
+const index = JSON.parse(localStorage.getItem('vanessa_recipe_index'));
+console.log('Index:', index.recipes.length, 'recipes');  // Should be 494
+
+// 3. Verify size reduction
+const catalogSize = JSON.stringify(catalog).length / 1024;
+const indexSize = JSON.stringify(index).length / 1024;
+const savings = ((1 - indexSize / catalogSize) * 100).toFixed(1);
+console.log(`Catalog: ${catalogSize.toFixed(0)}KB, Index: ${indexSize.toFixed(0)}KB, Savings: ${savings}%`);
+// Should show ~84.5% savings
+
+// 4. Check protein tagging
+const proteins = new Set();
+catalog.recipes.forEach(r => r.tags?.proteinSources?.forEach(p => proteins.add(p)));
+console.log('Protein types:', proteins.size, '-', Array.from(proteins).join(', '));
+// Should show 15 types
+
+// 5. Verify catalog usage in generation
+// Generate a meal plan and watch console for:
+// "📚 Loaded recipe index: 494 recipes (lightweight)"
+// "✅ Catalog match (exact): ..." (should see 15-20 matches)
+// "📊 Catalog usage: N catalog, M new recipes"
+```
+
+### Test Recipe Index Auto-Update
+
+```javascript
+// 1. Check current index count
+let index = JSON.parse(localStorage.getItem('vanessa_recipe_index'));
+console.log('Before:', index.recipes.length);  // e.g., 494
+
+// 2. Generate a meal plan (creates user recipes)
+// (Use the UI to generate)
+
+// 3. Check updated index
+index = JSON.parse(localStorage.getItem('vanessa_recipe_index'));
+console.log('After:', index.recipes.length);  // Should be 494 + N user recipes
+
+// Should see in console:
+// "🔄 Rebuilding index: 494 catalog + N user recipes"
+// "✅ Recipe index updated: (494 + N) recipes"
+```
+
+---
+
 ## Common Issues & Solutions
 
 ### Issue: "API key not configured"
@@ -274,21 +374,21 @@ npm run dev
 
 ### Issue: "Catalog not loading"
 
-**Problem:** Diet profiles or catalog stuck on old version
+**Problem:** Recipe catalog or index not loading
 
 **Solution:**
 ```javascript
 // In browser console:
-localStorage.removeItem('vanessa_diet_profiles');
 localStorage.removeItem('vanessa_recipe_catalog');
+localStorage.removeItem('vanessa_recipe_index');
 location.reload();
 ```
 
 **Verify:**
 ```javascript
 // Should see in console:
-// ✅ Initialized 17 diet profiles (v2.0.0)
-// ✅ Loaded 607 recipes from catalog
+// ✅ Loaded 494 recipes into localStorage
+// ✅ Loaded 494 recipe summaries into localStorage
 ```
 
 ### Issue: "Images not displaying"
