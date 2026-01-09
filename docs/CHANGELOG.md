@@ -1,5 +1,61 @@
 # Changelog
 
+## [v1.3.2-alpha] - January 10, 2026 - Shopping List Fixes
+
+### 🛒 Major Shopping List Improvements
+
+#### Fixed Critical Duplication Bug
+- **Problem:** Shopping list included ingredients from ALL 622 recipes in storage, not just the 8-13 recipes in current meal plan
+- **Root cause:** `loadRecipes()` loaded entire catalog, then aggregated everything
+- **Fix:** New `getRecipesFromMealPlan()` method extracts only recipes referenced in current meal plan
+- **Result:** Dramatic reduction in shopping list items (59 → ~20-30 items for typical week)
+
+#### Proper Servings Scaling
+- **Added:** `getRecipeUsageCounts()` tracks recipe usage across meal plan
+- **Accounts for:**
+  - Same recipe appearing multiple times (e.g., "Greek Yogurt with Honey" 3x)
+  - Different serving counts per meal (1 serving breakfast vs 3 serving dinner)
+  - Scales ingredient quantities by total servings needed
+- **Example:** Recipe for 2 servings used 3x with (1 + 2 + 1) servings → scales by 4/2 = 2x
+
+#### Fixed Quantity Rounding
+- **Before:** Shopping list showed "125.7g", "0.2g" (excessive precision)
+- **After:** Whole numbers only - "126g", "1g" (this isn't chemistry!)
+- **Applied to:** Both conversion stage and display stage
+- **Minimum:** 1g for metric, count items always round up
+
+#### Smarter Ingredient Generalization
+- **Keep specific names:** "feta cheese", "chicken breast", "cherry tomatoes" (common, recipe-important)
+- **Only generalize:**
+  - Branded products: "Campari tomatoes" → "cherry tomatoes"
+  - Obscure items: "Pecorino Romano" → "parmesan cheese"
+  - Specialty ingredients: "black garlic" → "garlic"
+- **Why:** Balance recipe quality with supermarket availability
+
+#### Fixed Unit Conversions
+- **Added missing units:** `tbsps`, `tsps`, `servings`, `leaf` (all plural forms)
+- **Result:** No more console warnings for unrecognized units
+
+#### Updated AI Prompt
+- **New guidance:** Use specific but common ingredients ("feta cheese" ✅, "Gruyère" ❌)
+- **Whole numbers:** All AI-generated quantities are whole numbers
+- **Substitutions:** Instructs AI to replace obscure items with common equivalents
+
+### 🐛 Bug Fixes
+- Shopping list now only includes recipes from current meal plan
+- Quantities round to whole numbers (no more 0.2g)
+- Unit conversion warnings eliminated
+- Proper servings scaling across multiple recipe uses
+
+### 📝 Technical Details
+- `ShoppingListView.getRecipesFromMealPlan()`: Filters to meal plan recipes only
+- `ShoppingListView.getRecipeUsageCounts()`: Tracks usage and scales servings
+- `ShoppingListView.cleanIngredientName()`: Smarter branded/obscure item detection
+- `ShoppingListView.getCanonicalName()`: Simplified to preserve specificity
+- Rounding logic: `Math.round(converted)` for whole numbers minimum 1g
+
+---
+
 ## [v1.3.1-alpha] - January 10, 2026 - Settings Page Cleanup
 
 ### 🧹 Settings Page Improvements

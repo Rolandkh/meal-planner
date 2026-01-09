@@ -1,0 +1,321 @@
+{
+  "timestamp": "2026-01-09T20:50:58.079Z",
+  "rawData": {
+    "weekOf": "2026-01-10",
+    "budget": {
+      "estimated": 85
+    },
+    "days": [
+      {
+        "date": "2026-01-10",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "Greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place Greek yogurt in a bowl and drizzle with honey. Serve immediately.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "simple",
+            "mediterranean"
+          ]
+        },
+        "lunch": {
+          "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Broccolini Quinoa Pilaf",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-11",
+        "breakfast": {
+          "name": "Peach and Pistachio Greek Yogurt Bowl",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "lunch": {
+          "name": "Italian Tuna Pasta",
+          "servings": 2,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
+          "servings": 2,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-12",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "whole grain bread",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs and cook in olive oil over medium heat until fluffy. Toast bread and serve alongside.",
+          "prepTime": 3,
+          "cookTime": 5,
+          "tags": [
+            "quick",
+            "kid-friendly",
+            "simple"
+          ]
+        },
+        "lunch": {
+          "name": "Simple Pasta with Tomato Sauce",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "tomato sauce",
+              "quantity": 300,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook pasta according to package directions. Heat tomato sauce and toss with cooked pasta and olive oil.",
+          "prepTime": 3,
+          "cookTime": 12,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "italian"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Chicken with Vegetables",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Season chicken and vegetables with olive oil and herbs. Bake at 200°C for 25 minutes until chicken is cooked through.",
+          "prepTime": 8,
+          "cookTime": 25,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "healthy"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-13",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "Greek yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place Greek yogurt in bowls and drizzle with honey. Serve immediately.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "simple",
+            "mediterranean"
+          ]
+        },
+        "lunch": {
+          "name": "Italian Tuna Pasta",
+          "servings": 2,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Salmon Quinoa Risotto",
+          "servings": 3,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-14",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "whole grain bread",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs and cook in olive oil over medium heat until fluffy. Toast bread and serve alongside.",
+          "prepTime": 3,
+          "cookTime": 5,
+          "tags": [
+            "quick",
+            "kid-friendly",
+            "simple"
+          ]
+        },
+        "lunch": {
+          "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Broccolini Quinoa Pilaf",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-15",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "Greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place Greek yogurt in a bowl and drizzle with honey. Serve immediately.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "simple",
+            "mediterranean"
+          ]
+        },
+        "lunch": {
+          "name": "Vegetable Minestrone Soup",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-16",
+        "breakfast": {
+          "name": "Peach and Pistachio Greek Yogurt Bowl",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "lunch": {
+          "name": "Great Greek Salad",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Salmon Quinoa Risotto",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      }
+    ]
+  }
+}

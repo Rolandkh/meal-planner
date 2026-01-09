@@ -117,7 +117,33 @@ CRITICAL - Units:
 - Solids: grams (g) or kilograms (kg)
 - DO NOT use: ounces, pounds, cups, tablespoons, teaspoons
 - Exception: Count items can use "whole" (e.g., "2 whole onions", "3 whole eggs")
-- Examples: "200g chicken breast", "500ml milk", "2 whole tomatoes", "100g rice"`;
+- All quantities should be WHOLE NUMBERS (not 0.2g - this isn't chemistry!)
+- Examples: "200g chicken breast", "500ml milk", "2 whole tomatoes", "100g rice"
+
+CRITICAL - Ingredient Names (SUPERMARKET-FRIENDLY):
+When creating NEW recipes, use SPECIFIC BUT FINDABLE ingredient names:
+✅ GOOD (Specific but common):
+  - "feta cheese", "parmesan cheese", "cheddar cheese" (common varieties)
+  - "chicken breast", "chicken thigh" (standard cuts)
+  - "cherry tomatoes", "roma tomatoes" (common types)
+  - "red onion", "yellow onion" (standard varieties)
+  - "bell pepper" (common vegetable)
+  - "greek yogurt", "plain yogurt" (standard types)
+  - "whole wheat bread", "white bread" (common types)
+  
+❌ AVOID (Branded or obscure):
+  - Branded items: "San Marzano tomatoes", "Campari tomatoes"
+  - Obscure cheese: "Pecorino Romano", "Manchego", "Gruyère"
+  - Specialty items: "black garlic", "mâche", "tatsoi"
+  - Overly specific: "boneless skinless chicken breast" (just use "chicken breast")
+  
+✅ SUBSTITUTE obscure items with common equivalents:
+  - "Gruyère" → "swiss cheese"
+  - "Campari tomatoes" → "cherry tomatoes"
+  - "shallots" → "onion"
+  - "grapeseed oil" → "olive oil"
+
+WHY: Keep ingredient names specific enough for recipe quality (feta ≠ cheddar) but avoid branded/obscure items that are hard to find in regular supermarkets.`;
 
 /**
  * Validate request body

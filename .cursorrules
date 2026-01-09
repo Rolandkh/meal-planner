@@ -55,6 +55,15 @@ Before creating ANY `.md` file:
 3. **If you think you need a new file** → **ASK THE USER FIRST** with justification
 4. **NEVER** create session logs, status files, or task-specific docs
 
+**Session File Location Rules:**
+- ✅ **CORRECT:** `docs/sessions/2026-01-10-description.md`
+- ✅ **CORRECT:** `docs/sessions/2026-01-10.md`
+- ❌ **WRONG:** `SESSION-SUMMARY-2026-01-10.md` (in root)
+- ❌ **WRONG:** `CHANGES-2026-01-10.md` (in root)
+- ❌ **WRONG:** `docs/2026-01-10.md` (wrong subfolder)
+
+**CRITICAL:** Session files MUST be in `docs/sessions/` - never in project root!
+
 ### Red Flags That Mean You're Violating This Rule:
 
 - File name contains dates: `2026-01-09`, `JAN-8`

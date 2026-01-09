@@ -8,10 +8,15 @@ export const CONVERSIONS = {
   // Volume conversions to ml
   volume: {
     'cup': 240,
+    'cups': 240,
     'tablespoon': 15,
+    'tablespoons': 15,
     'tbsp': 15,
+    'tbsps': 15,
     'teaspoon': 5,
+    'teaspoons': 5,
     'tsp': 5,
+    'tsps': 5,
     'fluid ounce': 30,
     'fl oz': 30,
     'pint': 473,
@@ -22,8 +27,10 @@ export const CONVERSIONS = {
   // Weight conversions to grams
   weight: {
     'ounce': 28.35,
+    'ounces': 28.35,
     'oz': 28.35,
     'pound': 454,
+    'pounds': 454,
     'lb': 454,
     'lbs': 454
   }
