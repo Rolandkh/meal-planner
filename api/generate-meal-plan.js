@@ -35,19 +35,15 @@ CRITICAL: Your response must be ONLY valid JSON in this EXACT format with NO add
       "date": "YYYY-MM-DD",
       "breakfast": {
         "name": "Recipe Name",
-        "ingredients": [
-          {
-            "name": "ingredient name",
-            "quantity": number,
-            "unit": "unit",
-            "category": "produce|meat|dairy|pantry|other"
-          }
-        ],
-        "instructions": "Brief instructions (2-3 sentences max)",
-        "prepTime": number,
-        "cookTime": number,
         "servings": number,
-        "tags": ["tag1", "tag2"]
+        "fromCatalog": true,  // Set true for catalog recipes, false for new recipes
+        
+        // ONLY include these fields if fromCatalog is FALSE (new recipe):
+        "ingredients": [/* only for NEW recipes */],
+        "instructions": "...",  // only for NEW recipes
+        "prepTime": number,     // only for NEW recipes
+        "cookTime": number,     // only for NEW recipes
+        "tags": ["tag1"]        // only for NEW recipes
       },
       "lunch": { /* same structure */ },
       "dinner": { /* same structure */ }
@@ -55,23 +51,52 @@ CRITICAL: Your response must be ONLY valid JSON in this EXACT format with NO add
   ]
 }
 
+⚠️ CRITICAL - TWO RECIPE FORMATS:
+
+FORMAT 1 - CATALOG RECIPES (use this 80%+ of the time):
+{
+  "name": "Exact catalog recipe name",
+  "servings": number,
+  "fromCatalog": true
+}
+DO NOT include ingredients, instructions, prepTime, cookTime, or tags for catalog recipes!
+The client already has all these details locally.
+
+FORMAT 2 - NEW RECIPES (only when catalog has no suitable option):
+{
+  "name": "New Recipe Name",
+  "servings": number,
+  "fromCatalog": false,
+  "ingredients": [
+    {
+      "name": "ingredient name",
+      "quantity": number,
+      "unit": "g|ml|whole",
+      "category": "produce|meat|dairy|pantry|other"
+    }
+  ],
+  "instructions": "Brief instructions (2-3 sentences max)",
+  "prepTime": number,
+  "cookTime": number,
+  "tags": ["tag1", "tag2"]
+}
+
 Guidelines:
 - Generate exactly 7 days of meals (21 total: breakfast, lunch, dinner each day)
-- Keep instructions BRIEF (2-3 sentences max per recipe)
+- Target: 80%+ catalog recipes (16-20 out of 21 meals)
+- For catalog recipes: ONLY provide name, servings, and fromCatalog: true
+- For new recipes: Provide all details (ingredients, instructions, timing, tags)
+- Keep new recipe instructions BRIEF (2-3 sentences max)
+- Use 3-6 main ingredients for new recipes (keep it simple)
 - Include realistic estimated budget in dollars
-- Consider user's dietary preferences and restrictions
-- Vary recipes throughout the week
-- Use 3-6 main ingredients per recipe (keep it simple)
-- Focus on practical, quick recipes
 
-⚠️ CRITICAL - RECIPE SELECTION STRATEGY (Slice 5):
+⚠️ CRITICAL - RECIPE SELECTION STRATEGY:
 - The user has a LOCAL CATALOG of 174 professionally-tested recipes with complete details
 - You will be provided with a filtered list of available catalog recipes in the user prompt
 - YOUR PRIMARY JOB: Select recipes FROM THE CATALOG LIST by using their exact names
-- Target: 80%+ of recipes should come from the catalog (16-20 out of 21 meals)
-- Only generate NEW recipes when the catalog truly has no suitable options for a specific meal
+- Only create NEW recipes when the catalog truly has no suitable options for a specific meal
 - The catalog has already been filtered for the household's diet profiles and exclusions
-- Using catalog recipes is BETTER for the user: verified ingredients, health scores, proven quality
+- Using catalog recipes is BETTER: verified ingredients, health scores, proven quality, PLUS saves tokens!
 
 CRITICAL - Servings:
 - CAREFULLY READ THE CONVERSATION to understand household composition and schedule

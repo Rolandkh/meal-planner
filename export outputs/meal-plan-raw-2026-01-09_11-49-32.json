@@ -1,0 +1,915 @@
+{
+  "timestamp": "2026-01-09T11:49:32.440Z",
+  "rawData": {
+    "weekOf": "2026-01-10",
+    "budget": {
+      "estimated": 85
+    },
+    "days": [
+      {
+        "date": "2026-01-10",
+        "breakfast": {
+          "name": "Peach and Pistachio Greek Yogurt Bowl",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "peach",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "pistachios",
+              "quantity": 20,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Dice peach and place in bowl with yogurt. Top with chopped pistachios and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Greek Yogurt Chicken Salad",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "greek yogurt",
+              "quantity": 80,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "dill",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Mix cooked diced chicken with yogurt, diced cucumber, lemon juice, and fresh dill. Season with salt and pepper to taste.",
+          "prepTime": 9,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "protein-rich",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+          "ingredients": [
+            {
+              "name": "white fish fillet",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "tomato",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "oregano",
+              "quantity": 5,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place fish in baking dish with diced tomatoes, minced garlic, olive oil, and oregano. Bake at 180°C for 20 minutes until fish flakes easily.",
+          "prepTime": 9,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-11",
+        "breakfast": {
+          "name": "Peach and Pistachio Greek Yogurt Bowl",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "peach",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "pistachios",
+              "quantity": 20,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Dice peach and place in bowl with yogurt. Top with chopped pistachios and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Italian Tuna Pasta",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "canned tuna",
+              "quantity": 150,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "tomato",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook pasta according to package directions. Sauté garlic in olive oil, add diced tomatoes and tuna, then toss with drained pasta.",
+          "prepTime": 6,
+          "cookTime": 12,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "pasta",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 400,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "green beans",
+              "quantity": 300,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "feta cheese",
+              "quantity": 80,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "oregano",
+              "quantity": 5,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Arrange chicken and green beans on sheet pan, drizzle with olive oil and oregano. Bake at 200°C for 25 minutes, then top with feta and lemon juice.",
+          "prepTime": 10,
+          "cookTime": 25,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "mediterranean",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-12",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey and Fruit",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "banana",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Divide yogurt into bowls, slice bananas on top, and drizzle with honey.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Simple Skillet Lasagna",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "tomato",
+              "quantity": 300,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "mozzarella cheese",
+              "quantity": 150,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook pasta in skillet with crushed tomatoes and garlic until tender. Top with mozzarella and cover until cheese melts.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "pasta",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+          "ingredients": [
+            {
+              "name": "white fish fillet",
+              "quantity": 400,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "tomato",
+              "quantity": 250,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "oregano",
+              "quantity": 5,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place fish in baking dish with diced tomatoes, minced garlic, olive oil, and oregano. Bake at 180°C for 20 minutes until fish flakes easily.",
+          "prepTime": 9,
+          "cookTime": 20,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "fish",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-13",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey and Fruit",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "banana",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Divide yogurt into bowls, slice bananas on top, and drizzle with honey.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Italian Tuna Pasta",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "canned tuna",
+              "quantity": 150,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "tomato",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook pasta according to package directions. Sauté garlic in olive oil, add diced tomatoes and tuna, then toss with drained pasta.",
+          "prepTime": 6,
+          "cookTime": 12,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "pasta",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 600,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "green beans",
+              "quantity": 450,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "feta cheese",
+              "quantity": 120,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 45,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "oregano",
+              "quantity": 8,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Arrange chicken and green beans on sheet pan, drizzle with olive oil and oregano. Bake at 200°C for 25 minutes, then top with feta and lemon juice.",
+          "prepTime": 10,
+          "cookTime": 25,
+          "servings": 3,
+          "tags": [
+            "family-dinner",
+            "special",
+            "mediterranean",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-14",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey and Fruit",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "banana",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Divide yogurt into bowls, slice bananas on top, and drizzle with honey.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Peach and Pistachio Greek Yogurt Bowl",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "peach",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "pistachios",
+              "quantity": 20,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Dice peach and place in bowl with yogurt. Top with chopped pistachios and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Salmon Quinoa Risotto",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "quinoa",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "dill",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook quinoa according to package directions. Pan-sear salmon until cooked through, then serve over quinoa with diced cucumber, dill, and lemon juice.",
+          "prepTime": 14,
+          "cookTime": 15,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-15",
+        "breakfast": {
+          "name": "Peach and Pistachio Greek Yogurt Bowl",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "peach",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "pistachios",
+              "quantity": 20,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Dice peach and place in bowl with yogurt. Top with chopped pistachios and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Greek Yogurt Chicken Salad",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "greek yogurt",
+              "quantity": 80,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "dill",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Mix cooked diced chicken with yogurt, diced cucumber, lemon juice, and fresh dill. Season with salt and pepper to taste.",
+          "prepTime": 9,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "protein-rich",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Salmon Quinoa Risotto",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "quinoa",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "dill",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook quinoa according to package directions. Pan-sear salmon until cooked through, then serve over quinoa with diced cucumber, dill, and lemon juice.",
+          "prepTime": 14,
+          "cookTime": 15,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "dinner"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-16",
+        "breakfast": {
+          "name": "Peach and Pistachio Greek Yogurt Bowl",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "peach",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "pistachios",
+              "quantity": 20,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Dice peach and place in bowl with yogurt. Top with chopped pistachios and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Greek Yogurt Chicken Salad",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "greek yogurt",
+              "quantity": 80,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "dill",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Mix cooked diced chicken with yogurt, diced cucumber, lemon juice, and fresh dill. Season with salt and pepper to taste.",
+          "prepTime": 9,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "protein-rich",
+            "lunch"
+          ]
+        },
+        "dinner": {
+          "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+          "ingredients": [
+            {
+              "name": "white fish fillet",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "tomato",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "oregano",
+              "quantity": 5,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place fish in baking dish with diced tomatoes, minced garlic, olive oil, and oregano. Bake at 180°C for 20 minutes until fish flakes easily.",
+          "prepTime": 9,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "dinner"
+          ]
+        }
+      }
+    ]
+  }
+}
