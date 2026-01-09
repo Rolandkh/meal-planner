@@ -14,9 +14,13 @@ export async function forceLoadDietProfiles() {
   try {
     console.log('🔄 Force loading diet profiles from bundled JSON...');
     
-    // Dynamically import the bundled data
-    const profileData = await import('../data/dietProfiles.json', { assert: { type: 'json' } });
-    const bundledData = profileData.default;
+    // Load data using fetch (more compatible)
+    const response = await fetch('/src/data/dietProfiles.json');
+    if (!response.ok) {
+      throw new Error(`Failed to fetch diet profiles: ${response.statusText}`);
+    }
+    
+    const bundledData = await response.json();
     
     if (!bundledData || !bundledData.profiles) {
       throw new Error('Invalid diet profiles data');
@@ -55,9 +59,10 @@ export async function checkAndUpdateProfiles() {
     const currentCount = data.profiles?.length || 0;
     
     // Load bundled version to check
-    const profileData = await import('../data/dietProfiles.json', { assert: { type: 'json' } });
-    const bundledVersion = profileData.default._dataVersion || '0.0.0';
-    const bundledCount = profileData.default.profiles?.length || 0;
+    const response = await fetch('/src/data/dietProfiles.json');
+    const profileData = await response.json();
+    const bundledVersion = profileData._dataVersion || '0.0.0';
+    const bundledCount = profileData.profiles?.length || 0;
     
     // Check if update needed
     if (currentVersion !== bundledVersion) {

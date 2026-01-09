@@ -77,17 +77,19 @@ export async function bootstrapHealthData() {
   console.log('🔄 Bootstrapping health data...');
   
   try {
-    // Dynamically import bundled data
+    // Load data using fetch (more compatible than import with assert)
     const [ingredientData, profileData] = await Promise.all([
-      import('../data/ingredientHealthData.json', { assert: { type: 'json' } })
-        .catch(() => ({ default: { ingredients: {}, _dataVersion: '1.0.0' } })),
-      import('../data/dietProfiles.json', { assert: { type: 'json' } })
-        .catch(() => ({ default: { profiles: [], _dataVersion: '1.0.0' } }))
+      fetch('/src/data/ingredientHealthData.json')
+        .then(r => r.json())
+        .catch(() => ({ ingredients: {}, _dataVersion: '1.0.0' })),
+      fetch('/src/data/dietProfiles.json')
+        .then(r => r.json())
+        .catch(() => ({ profiles: [], _dataVersion: '1.0.0' }))
     ]);
 
     await Promise.all([
-      initializeIngredientHealthData(ingredientData.default),
-      initializeDietProfiles(profileData.default)
+      initializeIngredientHealthData(ingredientData),
+      initializeDietProfiles(profileData)
     ]);
 
     console.log('✅ Health data bootstrap complete');
