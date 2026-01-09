@@ -1,5 +1,41 @@
 # Changelog
 
+## [v1.3.1-alpha] - January 10, 2026 - Settings Page Cleanup
+
+### 🧹 Settings Page Improvements
+
+#### Removed Duplication
+- **Removed:** "Dietary Goals" field from Meal Planning tab
+- **Why:** Created confusion with per-member dietary settings in Household tab
+- **Replaced with:** Info box directing users to Household tab for dietary preferences
+- **One source of truth:** All dietary information now managed per household member
+
+#### Improved Data & Backup Tab
+- **Renamed:** "Storage" → "Data & Backup" (clearer naming)
+- **Added:** Help banner explaining browser localStorage and backup purpose
+- **Enabled:** "Clear Old Meal Plans" button (was disabled as "Coming in Slice 4")
+- **Functionality:** Uses `historyRetentionWeeks` setting to clean up old plans
+
+#### Data Flow Verification
+- **Verified:** All household member fields flow to Vanessa correctly
+- **Fields used:**
+  - Diet profiles → Filter catalog and inform AI
+  - Exclude ingredients → Server-side filtering + AI exclusion
+  - Prefer ingredients → Recipe sorting + AI guidance
+  - Allergies → Critical AI exclusion
+  - Dietary restrictions, preferences, personal notes → AI context
+- **Technical:** Complete trace from Settings → localStorage → API → Claude AI
+
+### 🐛 Bug Fixes
+- Fixed `handleClearOldPlans()` to use `result.removed` instead of `result.deleted`
+- Updated confirmation prompt to clarify retention behavior
+
+### 📝 Notes
+- Session documentation in `docs/sessions/2026-01-10-settings-review.md`
+- Onboarding intentionally collects minimal info; Settings provides full customization
+
+---
+
 ## [v1.3.0-alpha] - January 10, 2026 - Custom Recipe Extraction (Phase 3)
 
 ### 🎯 Targeted Catalog Expansion: +128 Recipes

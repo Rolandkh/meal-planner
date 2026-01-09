@@ -148,7 +148,7 @@ export class SettingsPage {
     tabsList.className = 'flex space-x-1 bg-white rounded-lg p-1 shadow-sm border border-gray-200';
 
     const tabs = [
-      { id: 'storage', label: '💾 Storage', icon: '💾' },
+      { id: 'storage', label: '💾 Data & Backup', icon: '💾' },
       { id: 'household', label: '👥 Household', icon: '👥' },
       { id: 'mealPlanning', label: '🍽️ Meal Planning', icon: '🍽️' },
       { id: 'mealPrep', label: '🔪 Meal Prep', icon: '🔪' },
@@ -219,6 +219,18 @@ export class SettingsPage {
   renderStorageSection() {
     const section = document.createElement('div');
     section.className = 'space-y-6';
+
+    // Info banner
+    const infoBanner = document.createElement('div');
+    infoBanner.className = 'bg-blue-50 border border-blue-200 rounded-lg p-4';
+    infoBanner.innerHTML = `
+      <h3 class="text-sm font-semibold text-blue-900 mb-1">About Your Data</h3>
+      <p class="text-sm text-blue-800">
+        Your meal plans, recipes, and preferences are stored locally in your browser. 
+        Use the backup feature to save your data, and cleanup tools to manage storage space.
+      </p>
+    `;
+    section.appendChild(infoBanner);
 
     // Storage Stats Card
     const statsCard = this.createCard('Storage Usage', this.renderStorageStats());
@@ -341,17 +353,23 @@ export class SettingsPage {
     const container = document.createElement('div');
     container.className = 'space-y-4';
 
+    // Help text
+    const helpText = document.createElement('p');
+    helpText.className = 'text-sm text-gray-600 mb-4';
+    helpText.textContent = 'Free up storage space by removing data you no longer need.';
+    container.appendChild(helpText);
+
     // Delete orphaned recipes
     const orphanedBtn = document.createElement('button');
     orphanedBtn.className = 'w-full bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-4 rounded-lg transition-colors';
     orphanedBtn.textContent = '🗑️ Remove Unused Recipes';
     orphanedBtn.onclick = () => this.handleDeleteOrphaned();
 
-    // Clear old meal plans (Slice 4 feature - currently disabled)
+    // Clear old meal plans
     const clearPlansBtn = document.createElement('button');
-    clearPlansBtn.className = 'w-full bg-gray-300 text-gray-500 font-medium py-3 px-4 rounded-lg cursor-not-allowed';
-    clearPlansBtn.textContent = '📅 Clear Old Meal Plans (Coming in Slice 4)';
-    clearPlansBtn.disabled = true;
+    clearPlansBtn.className = 'w-full bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-4 rounded-lg transition-colors';
+    clearPlansBtn.textContent = '📅 Clear Old Meal Plans';
+    clearPlansBtn.onclick = () => this.handleClearOldPlans();
 
     container.appendChild(orphanedBtn);
     container.appendChild(clearPlansBtn);
@@ -627,21 +645,13 @@ export class SettingsPage {
     );
     form.appendChild(storeGroup);
 
-    // Dietary Goals
-    const goalsGroup = document.createElement('div');
-    goalsGroup.className = 'form-group';
-    const goalsLabel = document.createElement('label');
-    goalsLabel.className = 'block text-sm font-medium text-gray-700 mb-2';
-    goalsLabel.textContent = 'Dietary Goals';
-    const goalsTextarea = document.createElement('textarea');
-    goalsTextarea.className = 'w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent';
-    goalsTextarea.name = 'dietaryGoals';
-    goalsTextarea.rows = 3;
-    goalsTextarea.value = spec.dietaryGoals || '';
-    goalsTextarea.placeholder = 'Describe your dietary goals (e.g., lose weight, eat healthier, build muscle)';
-    goalsGroup.appendChild(goalsLabel);
-    goalsGroup.appendChild(goalsTextarea);
-    form.appendChild(goalsGroup);
+    // Help text explaining dietary preferences are per-member
+    const dietaryNote = document.createElement('div');
+    dietaryNote.className = 'bg-blue-50 border border-blue-100 rounded-lg p-3 text-sm text-blue-800';
+    dietaryNote.innerHTML = `
+      <p><strong>💡 Dietary Preferences:</strong> Set individual dietary preferences, allergies, and diet profiles for each household member in the <strong>Household</strong> tab.</p>
+    `;
+    form.appendChild(dietaryNote);
     
     // Slice 4: History Retention (Task 54)
     const historyRetentionGroup = this.createFormGroup(
@@ -1628,6 +1638,28 @@ export class SettingsPage {
     }
   }
 
+  handleClearOldPlans() {
+    const retentionWeeks = this.state.baseSpec.historyRetentionWeeks || 4;
+    
+    if (!confirm(`This will delete meal plans older than ${retentionWeeks} weeks, keeping only the ${retentionWeeks} most recent. Continue?`)) {
+      return;
+    }
+
+    const result = clearOldMealPlans(retentionWeeks);
+    
+    if (result.success) {
+      if (result.removed === 0) {
+        this.showToast('No old meal plans found', 'info');
+      } else {
+        this.showToast(`Deleted ${result.removed} old meal plan(s)`, 'success');
+      }
+      this.state.storageStats = getStorageQuota();
+      this.rerender();
+    } else {
+      this.showToast(`Error: ${result.message}`, 'error');
+    }
+  }
+
   handleMealPlanningChange(form) {
     const formData = new FormData(form);
     const updates = {
@@ -1635,7 +1667,6 @@ export class SettingsPage {
       maxShoppingListItems: parseInt(formData.get('maxShoppingListItems'), 10),
       shoppingDay: parseInt(formData.get('shoppingDay'), 10),
       preferredStore: formData.get('preferredStore'),
-      dietaryGoals: formData.get('dietaryGoals'),
       historyRetentionWeeks: parseInt(formData.get('historyRetentionWeeks'), 10) // Slice 4: Task 54
     };
 

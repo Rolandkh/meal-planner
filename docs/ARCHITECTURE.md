@@ -149,6 +149,101 @@ vanessa_schema_version        - Migration tracker
 }
 ```
 
+**Eater (Household Member)** (v2.0):
+```javascript
+{
+  eaterId: 'eater_[uuid]',
+  name: string,
+  isDefault: boolean,
+  
+  // Basic preferences
+  preferences: string,         // Free text
+  allergies: string[],         // CRITICAL - must avoid
+  dietaryRestrictions: string[],
+  schedule: string,            // When they eat
+  
+  // v2 (Slice 5) additions:
+  dietProfile: string | null,       // e.g., 'mediterranean', 'keto'
+  excludeIngredients: string[],     // Hard filter (recipes filtered out)
+  preferIngredients: string[],      // Soft priority (recipes prioritized)
+  personalPreferences: string,      // Additional free text
+  
+  createdAt: string,
+  updatedAt: string
+}
+```
+
+### Settings → API Data Flow
+
+**How household settings reach Vanessa during meal generation:**
+
+1. **User edits in Settings** → `SettingsPage.js`
+   - All fields saved via `createEater()` or `updateEater()`
+   - Persisted to `localStorage['vanessa_eaters']`
+
+2. **Generation triggered** → `GenerationStatusPage.js`
+   ```javascript
+   const eaters = loadEaters();  // Loads ALL fields
+   
+   requestBody = {
+     eaters: eaters,  // Complete household data
+     baseSpecification,
+     catalogSlice: catalog,
+     chatHistory
+   };
+   ```
+
+3. **API receives data** → `api/generate-meal-plan.js`
+   
+   **Server-side filtering:**
+   ```javascript
+   function getCandidateCatalogRecipes(catalog, eaters) {
+     // Extract all diet profiles
+     const profileIds = eaters.map(e => e.dietProfile).filter(Boolean);
+     
+     // Collect hard exclusions (MUST avoid)
+     const allExclusions = eaters.flatMap(e => e.excludeIngredients);
+     
+     // Collect soft preferences (nice to have)
+     const allPreferences = eaters.flatMap(e => e.preferIngredients);
+     
+     // Filter catalog:
+     // 1. By diet profile compatibility
+     // 2. Remove recipes with excluded ingredients
+     // 3. Sort by preferred ingredients (most matches first)
+   }
+   ```
+   
+   **Prompt building:**
+   ```javascript
+   function buildUserPrompt(chatHistory, eaters, ...) {
+     const eaterInfo = eaters.map(eater => {
+       let info = `- ${eater.name}`;
+       
+       if (eater.dietProfile)
+         info += `\n  🍽️  Diet Profile: ${eater.dietProfile}`;
+       
+       if (eater.preferIngredients?.length > 0)
+         info += `\n  ❤️  Prefers: ${eater.preferIngredients.join(', ')}`;
+       
+       if (eater.excludeIngredients?.length > 0)
+         info += `\n  ⛔ MUST EXCLUDE: ${eater.excludeIngredients.join(', ')}`;
+       
+       if (eater.allergies?.length > 0)
+         info += `\n  ⚠️  ALLERGIES (MUST AVOID): ${eater.allergies.join(', ')}`;
+       
+       // ... includes all other fields
+     });
+   }
+   ```
+
+4. **Claude receives:**
+   - Pre-filtered recipe catalog (already respects profiles/exclusions)
+   - Detailed eater information with proper emphasis flags
+   - Explicit instructions to respect exclusions/allergies
+
+**Result:** Every field in Settings flows end-to-end to influence meal generation.
+
 ---
 
 ## AI Integration

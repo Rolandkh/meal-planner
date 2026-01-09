@@ -231,46 +231,81 @@ MEAT & SEAFOOD
 
 ### Settings Page
 
-**Status:** ✅ Complete
+**Status:** ✅ Complete (updated v1.3.1)
 
-**Description:** 4-section settings page for managing all preferences.
+**Description:** 5-section settings page for managing all preferences. Updated Jan 10, 2026 to remove duplication and improve clarity.
 
 **Sections:**
 
-**1. Storage Management**
-- Storage quota display (X MB / 5 MB)
-- Export all data (JSON backup)
-- Import data (restore from backup)
-- Clear old meal plans
-- Warning at 80% capacity
+**1. Data & Backup** (renamed from "Storage Management")
+- Storage quota with visual progress bar (green/yellow/red)
+- Help banner explaining browser localStorage
+- Export all data (downloads JSON backup)
+- Import data (restore from backup file)
+- Remove unused recipes (cleanup tool)
+- Clear old meal plans (uses history retention setting) - **newly enabled**
+- Warnings at 60% (yellow) and 80% (red) capacity
 
 **2. Household Members**
-- Add/edit/remove eaters
-- Name, preferences, allergies, restrictions
-- Weekly schedule (which meals they eat)
-- Default eater selection
+- Add/edit/remove household members
+- Per-member dietary settings:
+  - Name and general preferences
+  - Allergies (hard exclusion - **MUST AVOID**)
+  - Dietary restrictions
+  - Diet profile selection (17 pre-loaded profiles - Mediterranean, Keto, etc.)
+  - Exclude ingredients (hard filter - recipes with these are filtered out)
+  - Prefer ingredients (soft priority - recipes with these are prioritized)
+  - Personal preferences (free-text notes)
+  - Weekly schedule (which meals they eat)
+- Default member designation
+- Visual indicators: ⚠️ for allergies, ⛔ for exclusions, ❤️ for preferences
+- All fields flow to meal generation API
 
 **3. Meal Planning**
 - Weekly budget ($)
-- Max shopping list items (default: 30)
-- Shopping day preference
-- Preferred store
-- Dietary goals (free text)
+- Max shopping list items (15-100, default: 30)
+- Shopping day preference (Sunday-Saturday)
+- Preferred store name
 - History retention (1-12 weeks, default: 4)
+- Info box: Directs to Household tab for dietary preferences (no duplication)
 
-**4. Chat Preferences**
-- Vanessa's personality
-- Communication style
-- Response detail level
+**4. Meal Prep**
+- Prep strategy selection (Fresh Only / Hybrid / Batch Cooking)
+- Daily prep levels grid (7 days × 3 meals: minimal/medium/full)
+- Batch prep days (which days for meal prep)
+- Max prep time per session (minutes)
+- Busy days (prefer quick prep)
+- Light days (prefer simpler meals)
+- Cooking preferences checkboxes:
+  - Prefer fresh breakfast
+  - Allow frozen meals
+  - Enable batch cooking
+  - Enable make-ahead meals
+
+**5. Chat Preferences**
+- Vanessa's personality (friendly/professional/casual)
+- Communication style (concise/detailed)
+- Reset onboarding button
 
 **Technical:**
-- Tab-based navigation
-- Auto-save (shows "Saved ✓" indicator)
+- Tab-based navigation (6 tabs including Diet Profiles link)
+- Auto-save with visual feedback ("Saved ✓" indicator)
+- Modal-based household member editor
 - Validation on all inputs
 - Immediate effect on changes
+- All household data flows to `/api/generate-meal-plan` endpoint
+
+**Data Flow:**
+All household member settings (diet profiles, exclusions, preferences, allergies) are:
+1. Saved to localStorage (`vanessa_eaters`)
+2. Loaded during meal generation
+3. Sent to API endpoint
+4. Used for server-side catalog filtering
+5. Included in Claude AI prompt with proper emphasis
 
 **Routes:**
-- `#/settings`
+- `#/settings` - Main settings page
+- `#/diet-profiles` - Diet profiles viewer (separate page)
 
 ---
 
@@ -777,4 +812,4 @@ location.reload();
 
 ---
 
-**Last Updated:** January 9, 2026
+**Last Updated:** January 10, 2026
