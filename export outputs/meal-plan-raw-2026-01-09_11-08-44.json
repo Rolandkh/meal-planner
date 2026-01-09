@@ -1,0 +1,871 @@
+{
+  "timestamp": "2026-01-09T11:08:44.572Z",
+  "rawData": {
+    "weekOf": "2026-01-10",
+    "budget": {
+      "estimated": 85
+    },
+    "days": [
+      {
+        "date": "2026-01-10",
+        "breakfast": {
+          "name": "Greek Yogurt with Berries",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "mixed berries",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place yogurt in a bowl. Top with berries and drizzle with honey.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "healthy",
+            "mediterranean"
+          ]
+        },
+        "lunch": {
+          "name": "Vegetable Minestrone Soup",
+          "ingredients": [
+            {
+              "name": "cannellini beans",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "carrots",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "basil",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté carrots in olive oil, add tomatoes and beans with water. Simmer 15 minutes and finish with fresh basil.",
+          "prepTime": 5,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "soup",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Salmon with Vegetables",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Place salmon and chopped vegetables on a baking sheet, drizzle with olive oil and minced garlic. Bake at 200°C for 20 minutes.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "simple"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-11",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "bread",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Scramble eggs in olive oil until just set. Serve with toasted bread.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "simple"
+          ]
+        },
+        "lunch": {
+          "name": "Chicken Pasta Primavera - Flower Patch Farmgirl Style",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "chicken breast",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook pasta. Sauté chicken and vegetables in olive oil with garlic until done. Toss with pasta.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "pasta",
+            "mediterranean"
+          ]
+        },
+        "dinner": {
+          "name": "Chicken Tikka Masala Indian",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "onion",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "garlic",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "ginger powder",
+              "quantity": 5,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté onion and garlic, add chicken and cook through. Add tomatoes and ginger, simmer 10 minutes until thick.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "indian",
+            "flavorful"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-12",
+        "breakfast": {
+          "name": "Banana Oatmeal",
+          "ingredients": [
+            {
+              "name": "oats",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "banana",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook oats with water, top with sliced banana and honey.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "healthy"
+          ]
+        },
+        "lunch": {
+          "name": "Macaroni and Cheese Gratin",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cheddar cheese",
+              "quantity": 150,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "bread crumbs",
+              "quantity": 50,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook pasta, mix with cheese until melted. Top with bread crumbs and bake at 180°C for 10 minutes until golden.",
+          "prepTime": 10,
+          "cookTime": 15,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "comfort-food",
+            "pasta"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Chicken with Vegetables",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "carrots",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place chicken and chopped vegetables on baking sheet, drizzle with olive oil. Bake at 200°C for 25 minutes.",
+          "prepTime": 10,
+          "cookTime": 25,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "healthy"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-13",
+        "breakfast": {
+          "name": "French Toast",
+          "ingredients": [
+            {
+              "name": "bread",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs, dip bread slices and cook in olive oil until golden. Drizzle with honey.",
+          "prepTime": 5,
+          "cookTime": 10,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "breakfast",
+            "sweet"
+          ]
+        },
+        "lunch": {
+          "name": "Chicken and Vegetable Soup",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "carrots",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "onion",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté onion and carrots in olive oil, add chicken and water. Simmer 20 minutes until chicken is tender.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "soup",
+            "comforting"
+          ]
+        },
+        "dinner": {
+          "name": "Eggplant Parmesan",
+          "ingredients": [
+            {
+              "name": "eggplant",
+              "quantity": 400,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 300,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 100,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "bread crumbs",
+              "quantity": 75,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "basil",
+              "quantity": 15,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Slice eggplant, dip in egg then bread crumbs, and bake at 200°C for 20 minutes. Layer with tomato sauce, cheese and basil, bake 10 more minutes.",
+          "prepTime": 15,
+          "cookTime": 30,
+          "servings": 3,
+          "tags": [
+            "family-dinner",
+            "mediterranean",
+            "special"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-14",
+        "breakfast": {
+          "name": "Fruit and Yogurt Parfait",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "banana",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "mixed berries",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Layer yogurt with sliced banana and berries. Drizzle with honey.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "healthy"
+          ]
+        },
+        "lunch": {
+          "name": "Simple Spinach and Tomato Frittata",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "spinach",
+              "quantity": 50,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs, add chopped tomatoes and spinach. Cook in olive oil in a skillet until set.",
+          "prepTime": 5,
+          "cookTime": 10,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "vegetarian",
+            "light"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Salmon with Vegetables",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Grill salmon and vegetables brushed with olive oil for 10-12 minutes until cooked through.",
+          "prepTime": 5,
+          "cookTime": 12,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "healthy"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-15",
+        "breakfast": {
+          "name": "Greek Yogurt Bowl",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "mixed berries",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place yogurt in bowl, top with berries and honey.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "healthy",
+            "mediterranean"
+          ]
+        },
+        "lunch": {
+          "name": "Black Bean Soup With Pico De Gallo and Chipotle Creme",
+          "ingredients": [
+            {
+              "name": "black beans",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "onion",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté onion in olive oil, add beans and water, simmer 15 minutes. Top with chopped tomatoes.",
+          "prepTime": 8,
+          "cookTime": 15,
+          "servings": 1,
+          "tags": [
+            "vegetarian",
+            "soup",
+            "mexican"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Salmon with Roasted Vegetables",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "carrots",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Arrange salmon and vegetables on baking sheet, drizzle with olive oil and minced garlic. Bake at 200°C for 20 minutes.",
+          "prepTime": 10,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "simple"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-16",
+        "breakfast": {
+          "name": "Oatmeal with Berries",
+          "ingredients": [
+            {
+              "name": "oats",
+              "quantity": 50,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "mixed berries",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook oats with water, top with berries and honey.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 1,
+          "tags": [
+            "quick",
+            "healthy",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Vegetable Minestrone Soup",
+          "ingredients": [
+            {
+              "name": "cannellini beans",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "carrots",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "tomatoes",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "basil",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté carrots in olive oil, add tomatoes and beans with water. Simmer 15 minutes and finish with fresh basil.",
+          "prepTime": 5,
+          "cookTime": 20,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "soup",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Pan-Seared Salmon with Vegetables",
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "spinach",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Pan-sear salmon in olive oil for 4 minutes per side. Sauté vegetables with garlic until tender.",
+          "prepTime": 8,
+          "cookTime": 12,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "quick"
+          ]
+        }
+      }
+    ]
+  }
+}

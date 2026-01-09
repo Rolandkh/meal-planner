@@ -64,14 +64,14 @@ Guidelines:
 - Use 3-6 main ingredients per recipe (keep it simple)
 - Focus on practical, quick recipes
 
-RECIPE SELECTION STRATEGY (Slice 5):
-- The user has a LOCAL CATALOG of 607 professionally-tested recipes with health scores
-- PREFER selecting recipes from common cuisines that are likely in the catalog: Italian, Mexican, Chinese, Indian, Thai, Mediterranean, American
-- PREFER recipes that match common dietary patterns: vegetarian, vegan, gluten-free, keto
-- Examples of catalog-style recipes: "Chicken Tikka Masala", "Spaghetti Carbonara", "Greek Salad", "Vegetable Stir Fry", "Lentil Soup"
-- When creating recipes, use SIMPLE, COMMON recipe names that might exist in a standard recipe database
-- Avoid overly creative or unique recipe names - stick to classics and standards
-- The system will match your recipes to the catalog when possible to use pre-scored health data
+⚠️ CRITICAL - RECIPE SELECTION STRATEGY (Slice 5):
+- The user has a LOCAL CATALOG of 607 professionally-tested recipes with pre-calculated health scores
+- You will be provided with a filtered list of available catalog recipes in the user prompt
+- YOUR PRIMARY JOB: Select recipes FROM THE CATALOG LIST by using their exact names
+- Target: 80%+ of recipes should come from the catalog (16-20 out of 21 meals)
+- Only generate NEW recipes when the catalog truly has no suitable options for a specific meal
+- The catalog has already been filtered for the household's diet profiles and exclusions
+- Using catalog recipes is BETTER for the user: verified ingredients, health scores, proven quality
 
 CRITICAL - Servings:
 - CAREFULLY READ THE CONVERSATION to understand household composition and schedule
@@ -470,14 +470,20 @@ ${dinnerSample.map(formatRecipe).join('\n')}
 
 ${anySample.length > 0 ? `Flexible (Any Meal) Options (${anySample.length} shown):\n${anySample.map(formatRecipe).join('\n')}\n` : ''}
 
-SELECTION INSTRUCTIONS:
-1. Match recipes to household diet profiles shown in brackets [vegetarian, mediterranean, etc.]
-2. Avoid recipes with ingredients that household members exclude
-3. Prioritize recipes with higher health scores (shown as health: X/100)
-4. Consider prep time constraints (shown in minutes)
-5. Use EXACT recipe names from the list above for catalog matching
-6. You can generate NEW recipes ONLY if catalog options don't meet all requirements
-7. When using catalog recipes, still provide full ingredients and instructions (system will verify against catalog)`;
+⚠️ MANDATORY SELECTION RULES:
+1. You MUST select recipes from the catalog list above - do NOT create new recipes unless absolutely necessary
+2. For EACH meal slot, search the appropriate list (breakfast/lunch/dinner) for suitable options
+3. A recipe is suitable if:
+   - It matches the household's diet profiles (shown in brackets)
+   - It does NOT contain excluded ingredients
+   - It fits the prep time and complexity needs
+4. Use the EXACT recipe name from the catalog (copy it character-for-character)
+5. Even simple meals like "yogurt" or "salad" - use catalog versions if available
+6. ONLY generate a NEW recipe if you've reviewed the entire relevant catalog list and found NO suitable matches
+7. When using catalog recipes, still provide ingredients and instructions (the system will merge with catalog data)
+8. Aim for 80%+ catalog usage - creating new recipes should be the exception, not the rule
+
+IMPORTANT: The catalog has been pre-filtered for this household's needs. Most meals CAN and SHOULD come from the catalog.`;
   }
 
   // Slice 4: Handle single-day regeneration
