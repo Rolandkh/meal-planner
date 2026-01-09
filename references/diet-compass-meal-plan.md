@@ -1,41 +1,67 @@
 # Diet Compass Meal Plan - Master Guide
-**Created: December 2025**
+**Created: December 2025 | Updated: January 2026**
 
 ---
 
 ## CORE PRINCIPLES
 
+### The Science Behind This Plan
+
+This meal plan is built on four key scientific mechanisms from The Diet Compass:
+
+1. **Protein-Leverage Effect**: We eat until protein needs are met (~15% of calories). High-quality protein sources = earlier satiety = fewer total calories consumed.
+
+2. **mTOR Modulation**: Excess animal protein activates mTOR, accelerating aging. Plant proteins and certain foods (coffee, olive oil, green tea) inhibit mTOR.
+
+3. **Anti-Inflammatory Balance**: Chronic inflammation drives aging and disease. Omega-3s, fermented foods, and plant compounds reduce inflammation.
+
+4. **Gut Microbiome Support**: Fermented foods and fiber feed beneficial bacteria, improving metabolism, immunity, and weight regulation.
+
+---
+
 ### Diet Compass Food Classifications
 
-**PROTECTIVE FOODS** (Maximize these):
-- Fruits
-- Whole grains (oats, quinoa, brown rice, bulgur, whole grain bread)
-- Legumes (lentils, chickpeas, beans)
-- Nuts and seeds (walnuts, almonds, chia, flax)
-- Fermented dairy (Greek yogurt, kefir)
+**TIER 1 - HIGHLY PROTECTIVE** (Daily Foundation):
+- **Vegetables** (especially leafy greens, cruciferous) - Top priority
+- **Legumes** (lentils, chickpeas, beans) - Best carb/protein source
+- **Nuts and seeds** (walnuts, almonds, chia, flax) - 2 handfuls daily
+- **Oily fish** (salmon, sardines, mackerel, herring) - Best animal protein
+- **Fermented dairy** (yoghurt, kefir) - Anti-aging, weight management
+- **Olive oil** (extra virgin) - Primary fat source
+- **Berries** (blueberries, strawberries, raspberries)
+- **Whole grains** (oats, quinoa, bulgur)
+
+**TIER 2 - BENEFICIAL** (Include Regularly):
+- Eggs (up to 7/week)
+- Poultry (free-range chicken, turkey)
+- Other fruits
+- Cheese (fermented = better)
+- Green tea, coffee
 - Dark chocolate (70%+ cacao)
 
-**NEUTRAL FOODS** (Include regularly):
-- Vegetables (all types)
-- Eggs
-- Poultry
-- Fish (especially fatty fish: salmon, sardines, mackerel)
+**TIER 3 - LIMIT** (Occasional Only):
+- Red meat (grass-fed, few times yearly)
+- Milk (1-2 glasses max/day for adults)
+- White rice, potatoes
+- Butter (small amounts)
 
-**HARMFUL FOODS** (Minimize or avoid):
-- Red meat and processed meats
+**TIER 4 - AVOID** (Eliminate):
+- Processed meats (sausages, bacon, ham, hot dogs)
 - Ultra-processed foods
-- Added sugars
-- Refined carbohydrates
+- Added sugars and soft drinks
+- Refined carbohydrates (white bread, pastries)
+- Deep-fried foods
+- Industrial trans fats
 
 ### Key Dietary Principles
-- Whole, unprocessed foods ("foods your great-grandmother would recognize")
-- Plant-forward approach with vegetables/fruits as foundation
-- Protein moderation: ~15% of calories (60-75g daily), favor plant sources
-- Quality fats: olive oil, nuts, avocados, fatty fish rich in omega-3
-- Complex carbohydrates only: low glycemic index, high fiber
-- Fermented foods when possible
-- Intermittent fasting compatible
-- Respect metabolic individuality
+- **Real food rule**: "Eat foods your great-grandmother would recognize"
+- **Plants as main course**: Vegetables are the meal, protein is the complement
+- **Protein moderation**: ~15% of calories (60-75g daily), prioritize plant and fish sources
+- **Quality fats**: Olive oil, nuts, seeds, oily fish (omega-3 focus)
+- **Slow carbohydrates only**: Legumes, whole grains, vegetables (avoid fast carbs)
+- **Fermentation priority**: Yoghurt > milk; sauerkraut, kimchi, kefir
+- **Time-restricted eating**: 10-14 hour eating window
+- **Metabolic individuality**: Adjust carbs based on personal response
 
 ---
 
@@ -162,11 +188,26 @@
 - Fiber: 6-8g
 - Omega-3: ~2g
 
-### Diet Compass Score: 90/100
-- High in protective foods (oats, walnuts, chia, flax, blueberries, dark chocolate)
-- Minimal added sugar (reduced maple syrup, natural sweetness from banana)
-- Rich in omega-3s and antioxidants
-- Anti-inflammatory ingredients (turmeric, ginger, omega-3s)
+### Protein Bar 4-Metric Scores
+
+| Metric | Score | Key Contributors |
+|--------|-------|------------------|
+| **Nutrient Density** | 9/10 | Omega-3 (chia, flax, walnuts), fiber, B vitamins, antioxidants |
+| **Longevity** | 9/10 | mTOR inhibitors (cacao, turmeric), Lion's Mane, Reishi, plant protein |
+| **Weight Loss** | 8/10 | High protein (12-15g), high fiber (6-8g), satiating, some sugar |
+| **Heart Health** | 9/10 | Omega-3 rich (~2g/bar), oats (beta-glucan), dark chocolate polyphenols |
+
+**Overall Bar Score: 90/100**
+
+**Why this bar is Diet Compass-optimized:**
+- **Plant protein dominant** (no animal protein aging effects)
+- **Omega-3 powerhouse** (walnuts, chia, flax = ~2g omega-3 per bar)
+- **mTOR inhibitors** (cacao, turmeric - slow aging signals)
+- **Adaptogenic mushrooms** (Lion's Mane, Reishi - cognitive/immune support)
+- **Synergistic combinations** (turmeric + black pepper = 2000% absorption)
+- **Fiber-rich** (oats, chia, flax = 6-8g fiber per bar)
+- **Minimal refined sugar** (maple syrup reduced, banana for natural sweetness)
+- **Dark chocolate coating** (polyphenols, minimal sugar when 70%+ cacao)
 
 ---
 
@@ -207,6 +248,14 @@
 - 150g plain Greek yogurt with 10g chia seeds
 - Olive oil and lemon dressing (15ml olive oil, lemon juice)
 - **Calories:** ~880 cal | **Protein:** ~38g
+
+| Metric | Score | Notes |
+|--------|-------|-------|
+| Nutrient Density | 9 | Legumes, nuts, seeds, olive oil, fermented dairy |
+| Longevity | 9 | Plant-forward, olive oil, yoghurt, no meat |
+| Weight Loss | 9 | High protein, high fiber, very satiating |
+| Heart Health | 9 | Omega-3 (walnuts, chia), olive oil, fiber |
+| **Average** | **9.0** | |
 
 #### OPTION 2: Lentil Soup & Whole Grain
 - 1 protein bar
@@ -287,7 +336,7 @@
 
 ### Fish Dinners (3-4x per week)
 
-#### OPTION 1: Salmon & Greens
+#### OPTION 1: Salmon & Greens ⭐ HIGHEST RATED DINNER
 - 150g salmon fillet (pan-fried or baked)
 - 200g steamed broccoli and green beans
 - 100g mixed salad greens
@@ -295,6 +344,14 @@
 - 15ml olive oil (for cooking and dressing)
 - Lemon, herbs, garlic
 - **Calories:** ~480 cal | **Protein:** ~38g | **Omega-3:** ~2.5g
+
+| Metric | Score | Notes |
+|--------|-------|-------|
+| Nutrient Density | 10 | Omega-3, vitamin D, B vitamins, cruciferous veg |
+| Longevity | 10 | Pescetarian pattern (highest longevity), fermented food |
+| Weight Loss | 9 | High protein, low carb, very satiating |
+| Heart Health | 10 | Omega-3, olive oil, no saturated fat, fermented |
+| **Average** | **9.75** | **BEST DINNER OPTION** |
 
 #### OPTION 2: Sardines Salad
 - 125g tinned sardines in olive oil (drained)
@@ -414,12 +471,38 @@
 - **5:30 PM:** Light plant-based dinner
 - **Resume normal schedule Saturday**
 
-### Benefits of 24-Hour Fast
-- Enhanced autophagy (cellular cleanup)
-- Improved insulin sensitivity
-- Mental clarity
-- Simplifies the week
-- Aligns with Diet Compass research on fasting benefits
+### The Science of Fasting (Diet Compass Evidence)
+
+**Why fasting works (from the book):**
+
+1. **Autophagy Activation**
+   - mTOR is deactivated during fasting
+   - Cells enter "cleanup mode" (autophagy)
+   - Damaged proteins and organelles are recycled
+   - Anti-aging effect at the cellular level
+
+2. **Insulin Sensitivity Reset**
+   - Fasting allows insulin levels to drop
+   - Cells regain insulin sensitivity
+   - Fat burning mode activated
+   - Particularly beneficial for overweight individuals
+
+3. **Growth Factor Reduction**
+   - IGF-1 levels decrease during fasting
+   - Reduced cell proliferation signals
+   - Associated with longevity
+
+4. **Time-Restricted Benefits**
+   - Book recommends: Eat most calories earlier in day
+   - Stop eating 2-4 hours before bed
+   - Eating window: 8-12 hours optimal
+   - Late-night eating disrupts circadian rhythm
+
+**This plan implements:**
+- 14-hour daily fast (8AM-6PM eating window)
+- 24-hour weekly fast (Thursday lunch to Friday lunch)
+- Most calories consumed at breakfast and lunch
+- Light dinner, finished early
 
 ---
 
@@ -579,28 +662,44 @@
 
 ## BEVERAGE GUIDELINES
 
-### ALLOWED ANYTIME
+### The Science of Drinks (Diet Compass Hierarchy)
+
+**Beverages are ranked by health impact:**
+
+| Rank | Beverage | Key Benefits |
+|------|----------|--------------|
+| 1 | Water | Hydration, zero calories |
+| 2 | Green tea | mTOR inhibitor, EGCG antioxidants |
+| 3 | Coffee (black) | mTOR inhibitor, longevity benefits (3-4 cups OK) |
+| 4 | Herbal tea | Anti-inflammatory, zero calories |
+| 5 | Red wine (moderate) | With meals only, polyphenols |
+| 6 | Milk | Adults limit 1-2 glasses/day |
+| 7 | Fruit juice | Avoid - sugar without fiber |
+| 8 | Soft drinks | Never - worst choice |
+
+### ALLOWED ANYTIME (Fasting-Safe)
 - Water (aim for 2-3L daily)
-- Black coffee (no milk, no sugar)
+- Black coffee (no milk, no sugar) - **mTOR inhibitor**
+- Green tea - **mTOR inhibitor, EGCG for longevity**
 - Herbal tea (no sweetener)
-- Green tea
 
 ### ALLOWED DURING EATING WINDOW ONLY (8 AM - 6 PM)
 - Coffee with plant milk (small amount)
 - Tea with plant milk (small amount)
 
 ### NOT ALLOWED
-- Fruit juice (high sugar, no fiber)
-- Soft drinks/soda
+- Fruit juice (high sugar, no fiber - strips fruit's benefits)
+- Soft drinks/soda (worst beverage choice)
 - Energy drinks
-- Alcohol (or very rarely, only during eating window)
+- Alcohol (or very rarely, only during eating window, with food)
 - Sweetened beverages of any kind
-- Diet drinks with artificial sweeteners
+- Diet drinks with artificial sweeteners (may harm gut microbiome)
 
-### Coffee/Tea Notes
-- Limit coffee to 2-3 cups daily
-- Green tea encouraged (anti-inflammatory benefits)
-- Herbal teas: ginger, turmeric, peppermint all beneficial
+### Coffee/Tea Longevity Notes
+- **Coffee:** 3-4 cups daily associated with reduced mortality (inhibits mTOR)
+- **Green tea:** EGCG compound inhibits mTOR, supports longevity
+- **Herbal teas:** Ginger (anti-inflammatory), turmeric (mTOR inhibitor), peppermint (digestive)
+- **Avoid:** Adding sugar or sweeteners (negates benefits)
 
 ---
 
@@ -643,42 +742,112 @@
 
 ---
 
-## DIET COMPASS SCORE: 88/100
+## DIET COMPASS FOUR-METRIC ANALYSIS
 
-### Why This Plan Scores Highly
+### Overall Score: 88/100
 
-**Protective Foods Emphasis:**
-- 2 protein bars daily (loaded with protective ingredients)
-- Whole grains at every lunch
-- Legumes daily
-- Fermented dairy 3-4x weekly
-- Dark chocolate coating
-- Abundant nuts and seeds
+| Metric | Score | Reasoning |
+|--------|-------|-----------|
+| **Nutrient Density** | 9/10 | High fiber (35-45g), omega-3 (5.5-7g), full vitamin spectrum, fermented foods |
+| **Longevity** | 9/10 | Plant-forward, mTOR inhibitors (coffee, olive oil, turmeric), fish over meat, fasting |
+| **Weight Loss** | 9/10 | Protein-leverage optimized, high satiety foods, time-restricted eating, no snacking |
+| **Heart Health** | 8/10 | Excellent omega-3, olive oil dominant, minimal saturated fat, could add more leafy greens |
 
-**Quality Macronutrients:**
-- Protein: 15% of calories (optimal per Diet Compass)
-- Fats: Primarily from olive oil, nuts, seeds, fatty fish (omega-3 rich)
-- Carbs: Only complex, high-fiber sources
+---
 
-**Anti-Inflammatory Focus:**
-- Omega-3: 5.5-7g daily (excellent)
-- Turmeric + black pepper
-- Ginger
-- Minimal processed foods
+### Detailed Scoring Breakdown
 
-**Time-Restricted Eating:**
-- 14-hour daily fast
-- 24-hour weekly fast
-- No late-night eating
+**NUTRIENT DENSITY (9/10)**
+✅ High fiber: 35-45g daily (target: 25-35g)
+✅ Omega-3: 5.5-7g daily (target: 1-2g)
+✅ Folic acid sources: Leafy greens, legumes, asparagus
+✅ Vitamin D: Oily fish 3-4x/week
+✅ B vitamins: Whole grains, legumes, fish
+✅ Probiotics: Yoghurt, kefir, fermented vegetables
+✅ Selenium/iodine: Fish, eggs
+⚠️ Could add: More variety of colorful vegetables
 
-**Whole Foods:**
-- 95% whole, unprocessed foods
-- Minimal added sugars
-- No refined carbohydrates
+**LONGEVITY SCORE (9/10)**
+✅ mTOR inhibitors daily: Coffee, olive oil, green tea, turmeric
+✅ Plant protein priority: Legumes at every lunch
+✅ Fish over meat: 3-4x fish/week, minimal meat
+✅ Fermented dairy: Yoghurt/kefir > milk
+✅ Autophagy activation: 14-hour daily fast + weekly 24-hour fast
+✅ Low IGF-1 stimulation: Moderate protein, plant-dominant
+✅ Anti-inflammatory: Omega-3, turmeric/ginger, minimal processed food
+⚠️ Could add: More spermidine sources (aged cheese, mushrooms)
+
+**WEIGHT LOSS SCORE (9/10)**
+✅ Protein-leverage optimized: ~15% calories from protein
+✅ High satiety foods: Legumes, fish, nuts, yoghurt
+✅ Time-restricted eating: 8AM-6PM window
+✅ No snacking: Eliminates grazing behavior
+✅ Low glycemic: Slow carbs only (legumes, whole grains)
+✅ Fat as ally: Healthy fats included (beneficial for insulin-resistant)
+✅ Weekly fast: Enhanced metabolic flexibility
+⚠️ Could add: Larger vegetable portions for volume eating
+
+**HEART HEALTH SCORE (8/10)**
+✅ Omega-3 dominant: 5.5-7g daily (exceptional)
+✅ Olive oil primary fat: Mediterranean pattern
+✅ Fiber-rich: Lowers cholesterol (oats, legumes)
+✅ Potassium sources: Legumes, vegetables
+✅ Fermented foods: Reduce inflammation
+✅ Minimal saturated fat: Fish and plant proteins
+✅ No trans fats: Zero processed foods
+⚠️ Could improve: Add more leafy greens (nitrates for blood pressure)
+⚠️ Could improve: Ensure sodium is monitored
+
+---
+
+### Why This Plan Aligns with Diet Compass Research
+
+**Protein Strategy (Matches book perfectly)**
+- 15% of calories from protein (book recommends ~15%)
+- Prioritizes fish > plant > poultry > occasional red meat
+- Yoghurt as daily animal protein (anti-aging properties)
+- Legumes at every lunch (best plant protein + slow carb)
+
+**Fat Strategy (Mediterranean pattern)**
+- Olive oil as primary fat (mTOR inhibition, antioxidants)
+- Nuts daily (Harvard study: 30% reduced cardiovascular risk)
+- Omega-3 from fish, chia, flax, walnuts (anti-inflammatory)
+- No fear of healthy fats (supports insulin-resistant individuals)
+
+**Carbohydrate Strategy (Slow carbs only)**
+- Legumes as primary carb source (lowest glycemic, highest fiber)
+- Whole grains in moderation (oats, quinoa, bulgur)
+- No refined carbs or added sugars
+- Above-ground vegetables prioritized
+
+**Timing Strategy (Book-aligned fasting)**
+- Daily eating window: 10 hours (book recommends 8-12)
+- Stop eating 3-4 hours before bed (book: 2-4 hours)
+- Weekly 24-hour fast (enhances autophagy)
+- Most calories in first half of day
+
+**Anti-Aging Compounds Daily**
+- Turmeric + black pepper (2000% increased curcumin absorption)
+- Ginger (anti-inflammatory)
+- Coffee (mTOR inhibitor, longevity benefits)
+- Olive oil (oleocanthal - mTOR inhibitor)
+- Dark chocolate (polyphenols)
+- Lion's Mane + Reishi (cognitive support, immune modulation)
 
 ---
 
 ## ADDITIONAL NOTES
+
+### Understanding Your Metabolic Type
+The Diet Compass emphasizes metabolic individuality. Signs you may be **carbohydrate intolerant**:
+- Blood sugar spikes/crashes after carb-heavy meals
+- Difficulty losing weight on low-fat diets
+- Belly fat accumulation
+- Family history of diabetes
+
+**If carb intolerant:** Reduce or eliminate whole grains at lunch, increase healthy fats (avocado, olive oil, nuts). This plan's carb-free dinners already accommodate this.
+
+**If carb tolerant:** Current plan is optimal. You can add sweet potato occasionally.
 
 ### Flexibility
 - Lunch options can be rotated in any order
@@ -689,22 +858,33 @@
 - If dinner invitation on non-Thursday: shift eating window to 8 AM - 8 PM that day
 - Choose fish or vegetable-based options when eating out
 - Skip the bread basket, ask for extra vegetables
+- Mediterranean restaurants are ideal (olive oil, fish, vegetables)
 
 ### Travel
 - Protein bars travel perfectly (already wrapped)
 - Pack bars for breakfast and lunch
 - Find simple dinner options (salad with protein)
+- Prioritize countries/regions with Mediterranean-style cuisine
 
 ### Recipe Variations
 - All recipes can be seasoned to your taste
-- Use any herbs and spices freely
+- Use any herbs and spices freely (turmeric + black pepper is synergistic)
 - Adjust vegetables based on what's fresh/seasonal
+- Cruciferous vegetables (broccoli, cauliflower, cabbage) are particularly protective
 
 ### Long-term Sustainability
 - This plan is designed to be maintained indefinitely
 - Not a "crash diet" but a sustainable lifestyle
 - Adjust portions as you reach maintenance weight
 - The 24-hour fast can be reduced to monthly if preferred once at goal weight
+- The book's research shows: The best diet is one you can maintain for life
+
+### What This Plan Is NOT
+- **Not extreme low-carb:** Includes whole grains at lunch
+- **Not high-protein:** Stays at ~15% (book's recommended range)
+- **Not zero-fat:** Embraces healthy fats (olive oil, nuts, fish)
+- **Not vegetarian:** Includes fish as optimal animal protein
+- **Not restrictive:** Real food approach, not elimination diet
 
 ---
 
@@ -729,26 +909,59 @@ Weekly:
 
 ## QUICK REFERENCE SUMMARY
 
+**THE DIET COMPASS APPROACH:**
+> "Eat real food, mostly plants, not too much protein."
+
 **MEAL STRUCTURE:**
-- Breakfast: 1 protein bar (280-300 cal)
-- Lunch: 1 protein bar + complement (880-900 cal)
-- Dinner: Protein + vegetables, no carbs (450-500 cal)
+- Breakfast: 1 protein bar (280-300 cal) - Omega-3, plant protein, adaptogens
+- Lunch: 1 protein bar + complement (880-900 cal) - Legumes, whole grains, fermented dairy
+- Dinner: Fish/plant protein + vegetables, no carbs (450-500 cal)
 
-**RULES:**
-1. Eating window: 8 AM - 6 PM only
-2. No snacking between meals
-3. No food after 6 PM
-4. 10-minute walk after lunch (mandatory)
-5. 24-hour fast Thursday lunch to Friday lunch weekly
+**GOLDEN RULES:**
+1. Eating window: 8 AM - 6 PM only (mTOR inhibition overnight)
+2. No snacking between meals (maintains insulin sensitivity)
+3. No food after 6 PM (circadian alignment)
+4. 10-minute walk after lunch (blood sugar regulation)
+5. 24-hour fast Thursday lunch to Friday lunch (autophagy activation)
+6. Fish 3-4x/week, red meat rarely (longevity pattern)
+7. Yoghurt daily, fermented foods regularly (microbiome support)
 
-**TARGETS:**
-- Daily calories: 1,490-1,540 (except Friday ~1,200-1,300)
-- Protein: 60-75g
-- Omega-3: 5.5-7g
-- Fiber: 35-45g
+**DAILY TARGETS:**
+- Calories: 1,490-1,540 (except Friday ~1,200-1,300)
+- Protein: 60-75g (~15% of calories)
+- Omega-3: 5.5-7g (exceptional - target is 1-2g)
+- Fiber: 35-45g (excellent - target is 25-35g)
 
-**DIET COMPASS SCORE: 88/100**
+**4-METRIC OVERALL SCORES:**
+| Metric | Score |
+|--------|-------|
+| Nutrient Density | 9/10 |
+| Longevity | 9/10 |
+| Weight Loss | 9/10 |
+| Heart Health | 8/10 |
+| **OVERALL** | **88/100** |
 
 ---
 
-*This plan aligns with evidence-based nutrition research from "The Diet Compass" by Bas Kast, emphasizing protective foods, quality macronutrients, time-restricted eating, and minimal processing while maintaining practical sustainability.*
+## DIET COMPASS BOOK ALIGNMENT
+
+This plan implements the book's 12 core recommendations:
+
+| Recommendation | How This Plan Delivers |
+|----------------|----------------------|
+| 1. "Real food, mostly plants" | 95% whole foods, plant-forward |
+| 2. "Plants as main course" | Legumes/vegetables at every meal |
+| 3. "Fish is healthiest meat" | 3-4x fish weekly, minimal red meat |
+| 4. "Yoghurt > milk" | Daily fermented dairy, rarely plain milk |
+| 5. "Limit added sugar" | Only maple syrup in bars (minimal) |
+| 6. "No fear of fat" | Olive oil, nuts, seeds, oily fish daily |
+| 7. "Low-carb if insulin resistant" | Carb-free dinners, slow carbs only |
+| 8. "2 handfuls nuts daily" | Nuts in bars + lunch options |
+| 9. "Vitamin D from fish" | Salmon, sardines, mackerel regularly |
+| 10. "Stop eating by 8 PM" | Eating window ends 6 PM |
+| 11. "Know your carb tolerance" | Adjustable based on individual response |
+| 12. "Experiment on yourself" | Tracking included, adjust as needed |
+
+---
+
+*This plan synthesizes evidence-based nutrition research from "The Diet Compass" by Bas Kast, implementing the protein-leverage effect, mTOR modulation, omega-3 emphasis, and time-restricted eating into a practical, sustainable daily framework.*

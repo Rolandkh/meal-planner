@@ -1,9 +1,10 @@
 # Diet Compass Health Rating System
 ## Implementation Specification for Vanessa Meal Planning App
 
-**Version:** 1.0  
+**Version:** 2.0  
 **Created:** January 2026  
-**Based on:** "The Diet Compass" by Bas Kast
+**Updated:** January 2026  
+**Based on:** "The Diet Compass" by Bas Kast (comprehensive extraction)
 
 ---
 
@@ -13,18 +14,27 @@ The Diet Compass Health Rating System evaluates recipes across four health dimen
 
 ### The Four Metrics
 
-| Metric | What It Measures |
-|--------|------------------|
-| **Nutrient Density** | How much of the recipe consists of protective, health-promoting whole foods |
-| **Anti-Aging** | How the recipe affects cellular aging pathways (mTOR, autophagy, inflammation) |
-| **Weight Loss** | How the recipe affects blood sugar, insulin response, and satiety |
-| **Heart Health** | How the recipe affects cardiovascular health and inflammation |
+| Metric | What It Measures | Key Mechanisms |
+|--------|------------------|----------------|
+| **Nutrient Density** | How much of the recipe consists of protective, health-promoting whole foods | Fiber, vitamins, minerals, antioxidants, omega-3s |
+| **Longevity** | How the recipe affects cellular aging pathways | mTOR inhibition, autophagy, IGF-1, inflammation |
+| **Weight Loss** | How the recipe affects weight management | Protein-leverage effect, satiety, glycemic response |
+| **Heart Health** | How the recipe affects cardiovascular health | Omega-3:6 ratio, blood pressure, cholesterol, inflammation |
 
 ### Overall Score Calculation
 
 ```
-Overall Score = (Nutrient Density × 0.30) + (Anti-Aging × 0.25) + (Weight Loss × 0.25) + (Heart Health × 0.20)
+Overall Score = (Nutrient Density × 0.25) + (Longevity × 0.25) + (Weight Loss × 0.25) + (Heart Health × 0.25)
 ```
+
+### Score Components
+
+Each metric score is calculated from:
+1. **Ingredient scores** - Based on what foods are included
+2. **Cooking method modifiers** - How the food is prepared
+3. **Synergy bonuses** - Beneficial ingredient combinations
+4. **Portion considerations** - Amounts and proportions
+5. **Score caps** - Hard limits for harmful ingredients
 
 ---
 
@@ -37,6 +47,71 @@ Overall Score = (Nutrient Density × 0.30) + (Anti-Aging × 0.25) + (Weight Loss
 | 60-74 | Moderate | Acceptable but could be improved |
 | 40-59 | Poor | Contains problematic ingredients; occasional consumption only |
 | 0-39 | Avoid | Conflicts with Diet Compass principles |
+
+---
+
+## Cooking Method Modifiers
+
+Cooking methods significantly impact the health value of ingredients. Apply these modifiers to the base ingredient scores.
+
+### Beneficial Cooking Methods (+5 to +10 points)
+
+| Method | Effect | Modifier |
+|--------|--------|----------|
+| **Raw** | Preserves enzymes, heat-sensitive nutrients | +10 (for vegetables/fruits) |
+| **Steaming** | Minimal nutrient loss, no added fats | +8 |
+| **Light sautéing in olive oil** | EVOO benefits + gentle heat | +5 |
+| **Poaching** | Low temp, moist heat, gentle | +5 |
+| **Baking (≤180°C)** | Moderate heat, no added fat required | +3 |
+| **Fermentation** | Creates probiotics, improves bioavailability | +10 |
+
+### Neutral Cooking Methods (0 points)
+
+| Method | Effect | Modifier |
+|--------|--------|----------|
+| **Boiling** | Some nutrient loss to water | 0 |
+| **Roasting (≤200°C)** | Moderate heat, some browning | 0 |
+| **Grilling (moderate)** | Good for fish, vegetables | 0 |
+| **Stir-frying (high heat, brief)** | Quick cooking preserves nutrients | 0 |
+
+### Harmful Cooking Methods (-10 to -25 points)
+
+| Method | Effect | Modifier | Book Evidence |
+|--------|--------|----------|---------------|
+| **Deep frying** | Creates oxidized fats, trans fats, AGEs | -20 | Explicitly harmful |
+| **Charring/burning** | Creates AGEs (advanced glycation end products) | -15 | Accelerates aging |
+| **High-temp grilling (blackened)** | Heterocyclic amines, PAHs (carcinogens) | -15 | Especially harmful for meat |
+| **Smoking (heavy)** | PAHs, preservatives | -10 | Processed meat category |
+| **Microwaving in plastic** | Potential endocrine disruptors | -5 | Not specifically in book |
+
+### Cooking Method Examples
+
+| Original Ingredient | Cooking Method | Score Adjustment |
+|---------------------|----------------|------------------|
+| Salmon fillet | Steamed | +8 |
+| Salmon fillet | Pan-fried in olive oil | +5 |
+| Salmon fillet | Blackened/charred | -15 |
+| Vegetables | Raw salad | +10 |
+| Vegetables | Steamed | +8 |
+| Vegetables | Roasted with olive oil | +5 |
+| Potatoes | Boiled | 0 |
+| Potatoes | Deep fried (chips) | -20 |
+
+---
+
+## Synergistic Combinations (Bonus Points)
+
+Certain ingredient combinations enhance health benefits. Apply these bonuses when both ingredients are present.
+
+| Combination | Effect | Bonus |
+|-------------|--------|-------|
+| **Turmeric + Black pepper** | 2000% increase in curcumin absorption | +15 |
+| **Fat + Fat-soluble vitamins** | EVOO/avocado with vegetables (A, D, E, K absorption) | +8 |
+| **Fiber + Carbohydrates** | Slows glucose absorption | +5 |
+| **Vitamin C + Iron** | Citrus with plant-based iron (legumes, greens) | +8 |
+| **Fermented dairy + Prebiotics** | Yogurt with fruit/fiber | +5 |
+| **Omega-3 fish + Leafy greens** | Anti-inflammatory synergy | +5 |
+| **Legumes + Whole grains** | Complete amino acid profile | +5 |
 
 ---
 
@@ -65,29 +140,30 @@ Nutrient Density Score = Base Score (50) + Protective Bonuses - Harmful Penaltie
 | Fermented dairy | Greek yogurt, kefir, aged cheese (parmesan, cheddar, gouda) | +15 |
 | Dark chocolate | 70%+ cacao dark chocolate, cacao powder, cacao nibs | +15 |
 
-#### TIER 2: PROTECTIVE (+8 to +12 points each, max contribution 40)
+#### TIER 2: HIGHLY PROTECTIVE (+10 to +15 points each)
 
-| Ingredient Category | Examples | Points |
-|---------------------|----------|--------|
-| Berries | Blueberries, raspberries, strawberries, blackberries | +12 |
-| Other whole fruits | Apples, pears, oranges, grapes, kiwi, pomegranate | +10 |
-| Leafy greens | Spinach, kale, rocket, swiss chard, lettuce varieties | +10 |
-| Cruciferous vegetables | Broccoli, cauliflower, brussels sprouts, cabbage | +10 |
-| Alliums | Garlic, onions, leeks, shallots | +8 |
-| Extra virgin olive oil | Cold-pressed, extra virgin olive oil | +12 |
-| Avocado | Fresh avocado | +10 |
+| Ingredient Category | Examples | Points | Book Evidence |
+|---------------------|----------|--------|---------------|
+| Leafy greens | Spinach, kale, rocket, swiss chard, lettuce | +15 | Highest vegetable category; nitrates, folate |
+| Cruciferous vegetables | Broccoli, cauliflower, brussels sprouts, cabbage | +15 | Cancer-protective compounds |
+| Berries | Blueberries, raspberries, strawberries, blackberries | +15 | Highest antioxidant fruits |
+| Extra virgin olive oil | Cold-pressed, extra virgin olive oil | +15 | mTOR inhibitor, anti-inflammatory |
+| Other vegetables | Tomatoes, capsicum, cucumber, zucchini, carrots, celery | +12 | "Eat real food, mostly plants" |
+| Alliums | Garlic, onions, leeks, shallots | +12 | Anti-inflammatory, immune support |
+| Avocado | Fresh avocado | +12 | Healthy fats, fiber |
+| Eggs | Whole eggs (up to 1/day) | +10 | Rehabilitated in book; neutral to beneficial |
+| Other whole fruits | Apples, pears, oranges, grapes, kiwi, pomegranate | +10 | Fiber + nutrients intact |
 
-#### TIER 3: NEUTRAL (0 points)
+#### TIER 3: NEUTRAL TO BENEFICIAL (0 to +5 points)
 
-| Ingredient Category | Examples | Points |
-|---------------------|----------|--------|
-| Other vegetables | Tomatoes, capsicum, cucumber, zucchini, carrots, celery | 0 |
-| Eggs | Whole eggs | 0 |
-| Poultry | Chicken, turkey (unprocessed) | 0 |
-| White fish | Cod, barramundi, snapper, flathead | 0 |
-| Non-fermented dairy | Milk, cream, fresh cheese (ricotta, cottage) | 0 |
-| Tofu | Plain tofu, silken tofu | 0 |
-| Tempeh | Plain tempeh | +5 (fermented) |
+| Ingredient Category | Examples | Points | Notes |
+|---------------------|----------|--------|-------|
+| Poultry | Chicken, turkey (unprocessed) | +5 | Better than red meat |
+| White fish | Cod, barramundi, snapper, flathead | +5 | Good protein, less omega-3 than oily fish |
+| Tofu | Plain tofu, silken tofu | +8 | Plant protein, isoflavones |
+| Tempeh | Plain tempeh | +10 | Fermented = better than tofu |
+| Fresh cheese | Ricotta, cottage cheese | 0 | Non-fermented dairy |
+| Milk | Whole or skim milk | -5 | Adults limit to 1-2 glasses/day per book |
 
 #### TIER 4: HARMFUL (-10 to -25 points each)
 
@@ -121,19 +197,29 @@ The score should reflect whether protective foods are present in meaningful quan
 
 ---
 
-## Metric 2: Anti-Aging
+## Metric 2: Longevity (Anti-Aging)
 
 ### What It Measures
 How the recipe affects cellular aging mechanisms, particularly:
 - **mTOR pathway:** Excess animal protein activates mTOR, accelerating cellular aging
+- **IGF-1 levels:** Growth factor associated with aging; stimulated by animal protein, especially milk
 - **Autophagy:** Cellular "cleanup" process inhibited by constant eating, supported by certain foods
 - **Inflammation:** Chronic inflammation accelerates aging
 - **Oxidative stress:** Free radical damage to cells
 
+### The mTOR Balance (Key Book Insight)
+
+mTOR is like a "brake on autophagy." When mTOR is active (fed state, high protein), cells grow but don't clean up. When mTOR is inhibited (fasting, certain foods), autophagy occurs.
+
+**Optimal pattern:** Periodic mTOR inhibition through:
+- Time-restricted eating (14+ hour overnight fast)
+- Plant-dominant protein sources
+- mTOR-inhibiting foods (olive oil, coffee, green tea, turmeric)
+
 ### Calculation Method
 
 ```
-Anti-Aging Score = Base Score (50) + Longevity Bonuses - Aging Penalties
+Longevity Score = Base Score (50) + Longevity Bonuses - Aging Penalties
 ```
 
 ### Ingredient Classifications
@@ -217,15 +303,30 @@ Anti-Aging Score = Base Score (50) + Longevity Bonuses - Aging Penalties
 
 ### What It Measures
 How the recipe affects metabolic health and weight management:
+- **Protein-leverage effect:** We eat until protein needs are met (~15% of calories)
 - **Glycemic response:** Blood sugar impact
 - **Insulin sensitivity:** Avoiding insulin spikes
 - **Satiety:** How filling the recipe is
 - **Thermic effect:** Energy required to digest
 
+### The Protein-Leverage Principle (Key Book Insight)
+
+The Diet Compass explains that animals (including humans) eat until their specific protein need is satisfied. If protein is "diluted" by fats and carbs (as in processed foods), we overeat to meet protein requirements.
+
+**Optimal protein proportion:** ~15% of total calories (60-75g/day for most adults)
+
+| Protein % of Recipe | Effect | Points |
+|---------------------|--------|--------|
+| 12-18% (optimal) | Satisfies protein-leverage with minimal excess | +15 |
+| 18-25% (moderate) | Good satiety, slight mTOR concern long-term | +10 |
+| 25-35% (high) | Very satiating, but may accelerate aging if chronic | +5 |
+| >35% (excessive) | Short-term weight loss, long-term health concerns | 0 |
+| <10% (low) | Poor satiety, leads to overeating | -10 |
+
 ### Calculation Method
 
 ```
-Weight Loss Score = Base Score (50) + Metabolic Bonuses - Metabolic Penalties
+Weight Loss Score = Base Score (50) + Metabolic Bonuses - Metabolic Penalties + Protein-Leverage Bonus
 ```
 
 ### Glycemic Impact Classifications
@@ -293,6 +394,28 @@ Weight Loss Score = Base Score (50) + Metabolic Bonuses - Metabolic Penalties
 | Fiber-rich foods | +10 |
 | Legumes | +12 |
 | Chromium sources (broccoli, whole grains) | +5 |
+
+### Fermented Foods Weight Loss Bonus
+
+The book specifically notes that yogurt consumption is associated with weight loss, particularly in women. Lactic-acid bacteria appear to influence metabolism.
+
+| Ingredient | Points | Book Evidence |
+|------------|--------|---------------|
+| Greek yogurt (unsweetened) | +12 | Weight loss in studies, especially women |
+| Kefir | +10 | Probiotic benefits, metabolism |
+| Sauerkraut/kimchi | +8 | Gut microbiome support |
+| Other fermented foods | +5 | General probiotic benefits |
+
+### Processed Food Penalty (Protein Dilution)
+
+The book explains that processed foods are typically "protein-diluted" - low in protein relative to fats and carbs, causing overeating.
+
+| Processing Level | Points | Description |
+|------------------|--------|-------------|
+| Whole, unprocessed | +10 | Foods in natural state |
+| Minimally processed | +5 | Cut, frozen, or simple preparation |
+| Processed | -5 | Added salt, sugar, or oil |
+| Ultra-processed | -20 | Multiple additives, far from original food |
 
 ### Score Caps
 
@@ -680,30 +803,52 @@ Overall: 0 (Avoid)
 
 ## Appendix A: Quick Reference Ingredient List
 
-### Always Beneficial (All Metrics)
-- Salmon, sardines, mackerel
-- Legumes (lentils, chickpeas, beans)
-- Nuts (especially walnuts)
-- Seeds (chia, flax)
-- Extra virgin olive oil
-- Leafy greens
-- Berries
-- Whole grains (oats, quinoa)
+### TIER 1: Always Beneficial (All Metrics) ⭐
+| Ingredient | ND | LO | WL | HH | Why |
+|------------|----|----|----|----|-----|
+| Salmon, sardines, mackerel | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Omega-3, protein, vitamin D |
+| Legumes (lentils, chickpeas, beans) | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Fiber, plant protein, slow carbs |
+| Walnuts | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Omega-3, anti-inflammatory |
+| Chia seeds, flaxseeds | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Omega-3, fiber |
+| Extra virgin olive oil | ⬆️ | ⬆️ | ⬆️ | ⬆️ | mTOR inhibitor, monounsaturated |
+| Leafy greens | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Nitrates, folate, fiber |
+| Berries | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Antioxidants, low GI |
+| Fermented dairy (yogurt, kefir) | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Probiotics, weight management |
+| Cruciferous vegetables | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Sulforaphane, cancer-protective |
 
-### Always Harmful (All Metrics)
-- Processed meats (bacon, sausage, deli meats)
-- Trans fats
-- Deep fried foods
-- Added sugars (excessive)
-- Ultra-processed foods
+### TIER 2: Generally Beneficial (Most Metrics)
+| Ingredient | ND | LO | WL | HH | Notes |
+|------------|----|----|----|----|-------|
+| Whole grains (oats, quinoa) | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Fiber, B vitamins |
+| Other vegetables | ⬆️ | ⬆️ | ⬆️ | ⬆️ | "Eat mostly plants" |
+| Other nuts (almonds, etc.) | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Healthy fats, fiber |
+| Eggs (up to 1/day) | ⬆️ | ➡️ | ⬆️ | ➡️ | Rehabilitated in book |
+| Coffee (black) | ➡️ | ⬆️ | ➡️ | ➡️ | mTOR inhibitor, 3-4 cups OK |
+| Green tea | ⬆️ | ⬆️ | ➡️ | ➡️ | EGCG, antioxidants |
+| Avocado | ⬆️ | ⬆️ | ⬆️ | ⬆️ | Healthy fats, fiber |
+| Dark chocolate (70%+) | ⬆️ | ⬆️ | ➡️ | ⬆️ | Polyphenols |
 
-### Context-Dependent
-- Red meat: Harmful for Anti-Aging and Heart Health; neutral for Weight Loss
-- Dairy: Fermented = beneficial; milk = neutral to slightly negative
-- Eggs: Generally neutral across all metrics
-- Poultry: Neutral across all metrics
-- White potato: Only harmful for Weight Loss (GI)
-- Coffee/tea: Beneficial for Anti-Aging; neutral for others
+### Always Harmful (All Metrics) ❌
+| Ingredient | ND | LO | WL | HH | Why |
+|------------|----|----|----|----|-----|
+| Processed meats | ⬇️⬇️ | ⬇️⬇️ | ⬇️ | ⬇️⬇️ | Carcinogens, sodium, nitrates |
+| Trans fats | ⬇️⬇️ | ⬇️⬇️ | ⬇️ | ⬇️⬇️ | Worst fat type |
+| Deep fried foods | ⬇️ | ⬇️⬇️ | ⬇️ | ⬇️⬇️ | AGEs, oxidized fats |
+| Added sugars (>10g) | ⬇️ | ⬇️ | ⬇️⬇️ | ⬇️ | Inflammation, insulin spikes |
+| Ultra-processed foods | ⬇️ | ⬇️ | ⬇️⬇️ | ⬇️ | Protein-diluted, additives |
+| Soft drinks | ⬇️⬇️ | ⬇️ | ⬇️⬇️ | ⬇️ | Sugar, no nutrients |
+
+### Context-Dependent (Varies by Metric)
+| Ingredient | ND | LO | WL | HH | Notes |
+|------------|----|----|----|----|-------|
+| Red meat | ➡️ | ⬇️⬇️ | ➡️ | ⬇️ | mTOR activator; limit to few times/year |
+| Milk | ➡️ | ⬇️ | ➡️ | ➡️ | Adults limit 1-2 glasses/day |
+| Poultry | ⬆️ | ➡️ | ⬆️ | ➡️ | Better than red meat |
+| White fish | ⬆️ | ➡️ | ⬆️ | ➡️ | Good protein, less omega-3 |
+| White potato | ⬆️ | ➡️ | ⬇️ | ➡️ | High GI, but has potassium |
+| Cheese (aged) | ⬆️ | ⬆️ | ➡️ | ➡️ | Spermidine (fermented = better) |
+
+**Legend:** ⬆️ Beneficial | ➡️ Neutral | ⬇️ Harmful | ⬇️⬇️ Very Harmful
 
 ---
 
@@ -721,9 +866,64 @@ Overall: 0 (Avoid)
 
 ---
 
+## Appendix C: Simplified Scoring Algorithm
+
+For practical implementation, here's a simplified scoring flow:
+
+### Step 1: Identify All Ingredients
+Parse the recipe and categorize each ingredient by:
+- Category (legume, oily fish, vegetable, etc.)
+- Portion size (garnish, small, medium, large)
+- Processing level (whole, minimally processed, processed, ultra-processed)
+
+### Step 2: Identify Cooking Methods
+For each ingredient, note how it's prepared:
+- Raw, steamed, baked, fried, charred, etc.
+
+### Step 3: Calculate Base Scores
+For each metric, start with base score of 50, then:
+- Add points for beneficial ingredients
+- Subtract points for harmful ingredients
+- Apply portion multipliers
+- Apply cooking method modifiers
+
+### Step 4: Apply Synergy Bonuses
+Check for beneficial combinations:
+- Turmeric + black pepper present? +15
+- Fat + vegetables present? +8
+- Fiber + carbs present? +5
+
+### Step 5: Apply Caps
+Check for disqualifying ingredients:
+- Processed meat present? Cap all scores at 40-50
+- Trans fats present? Cap Heart Health at 30
+- No protective foods? Cap Nutrient Density at 40
+
+### Step 6: Calculate Overall Score
+```
+Overall = (ND × 0.25) + (LO × 0.25) + (WL × 0.25) + (HH × 0.25)
+```
+
+### Quick Scoring Heuristics
+
+For rapid mental scoring without calculation:
+
+| Recipe Type | Typical Score Range |
+|-------------|---------------------|
+| Oily fish + vegetables + olive oil | 85-100 |
+| Legume-based + vegetables | 80-95 |
+| Whole grain bowl + vegetables | 75-90 |
+| Chicken/egg + vegetables | 65-80 |
+| Pasta with tomato sauce | 50-65 |
+| Fast food / fried foods | 10-40 |
+| Processed meat dishes | 0-35 |
+
+---
+
 ## Version History
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 2.0 | Jan 2026 | Added cooking methods, synergistic combinations, protein-leverage effect, corrected vegetable classification (Tier 1 not neutral), added fermented food weight loss bonus, enhanced quick reference tables |
 | 1.0 | Jan 2026 | Initial specification |
 
