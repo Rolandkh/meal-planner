@@ -1,5 +1,73 @@
 # Cursor Rules for Meal Planner Project
 
+## 🚨 DOCUMENTATION POLICY - MANDATORY 🚨
+
+**THIS PROJECT HAS EXACTLY 5 PERMANENT DOCUMENTATION FILES. CREATING OTHERS IS A VIOLATION.**
+
+### The ONLY Allowed Documentation Files:
+
+```
+docs/
+├── README.md          # Project overview & quick start
+├── ARCHITECTURE.md    # Technical decisions & system design
+├── DEVELOPMENT.md     # Setup, testing, deployment guide
+├── FEATURES.md        # Feature docs & user guides
+├── CHANGELOG.md       # Version history only
+└── sessions/          # Temporary work logs (auto-delete after 7 days)
+    └── YYYY-MM-DD.md  # Today's session notes only
+```
+
+### Absolute Prohibitions:
+
+**NEVER CREATE THESE** (examples of past violations that caused chaos):
+- ❌ Status files: `READY-TO-DEPLOY.md`, `RUN-EXTRACTION-NOW.md`, `ALL-TASKS-COMPLETE.md`
+- ❌ Session logs: `SESSION-SUMMARY-2026-01-09.md`, `JANUARY-8-FIXES-SUMMARY.md`, `END-OF-DAY-SUMMARY.md`
+- ❌ Progress files: `SLICE-5-PROGRESS-UPDATE.md`, `EXTRACTION-STATUS.md`, `QUICK-STATUS.md`
+- ❌ Fix docs: `DIET-PROFILES-FIX.md`, `IMAGE-PATH-FIX.md`, `TASK-58-CRITICAL-FIX.md`
+- ❌ Testing checklists: `TASK-57-TESTING-CHECKLIST.md`, `TESTING-FEEDBACK.md`
+- ❌ Meta docs: `DOCUMENTATION-COMPLETE.md`, `DOCUMENTATION-INDEX.md`
+- ❌ TODO/reminder files: `START-HERE.md`, `WHEN-YOU-RETURN.md`, `TOMORROW-EXTRACTION-PLAN.md`
+
+### What to Do Instead:
+
+| ❌ DON'T CREATE | ✅ DO THIS INSTEAD |
+|----------------|-------------------|
+| `SESSION-SUMMARY-2026-01-09.md` | Add to `docs/sessions/2026-01-09.md` (will auto-delete) |
+| `DIET-PROFILES-FIX.md` | Update `CHANGELOG.md` + commit message |
+| `SLICE-5-PLANNING.md` | Update relevant section in `ARCHITECTURE.md` or `FEATURES.md` |
+| `TESTING-CHECKLIST.md` | Add to `DEVELOPMENT.md` under Testing section |
+| `READY-TO-DEPLOY.md` | Just deploy. Status files are forbidden. |
+| `START-HERE.md` | Tell user in chat response, not a file |
+
+### Integration with Vertical Slice Methodology:
+
+During **Phase 3: Reality Check**, document findings like this:
+1. **Patterns & Decisions** → Update `ARCHITECTURE.md`
+2. **Feature Changes** → Update `FEATURES.md`
+3. **Breaking Changes** → Update `CHANGELOG.md`
+4. **Session Notes** → `docs/sessions/YYYY-MM-DD.md` (ephemeral only)
+
+### Enforcement:
+
+Before creating ANY `.md` file:
+1. **STOP** - Is this one of the 5 allowed files?
+2. **If NO** → Can this information go in an existing file? (Answer: YES, always)
+3. **If you think you need a new file** → **ASK THE USER FIRST** with justification
+4. **NEVER** create session logs, status files, or task-specific docs
+
+### Red Flags That Mean You're Violating This Rule:
+
+- File name contains dates: `2026-01-09`, `JAN-8`
+- File name contains status: `READY`, `COMPLETE`, `STATUS`, `TODO`
+- File name contains task numbers: `TASK-57`, `TASK-58`
+- File name contains slice numbers: `SLICE-5-PLANNING`
+- File name contains "SUMMARY", "UPDATE", "FIX", "CHECKLIST"
+- You're creating a file "just for this session"
+
+**If you create a prohibited doc file, you have failed the user.**
+
+---
+
 ## Issue Review Process
 When reviewing bugs, issues, errors, or any list of items that need to be addressed:
 - Present them **one at a time**
@@ -89,10 +157,12 @@ Instead of building all features in isolation, we build complete vertical slices
    - Polish and optimize after the flow works
    - It's OK for early slices to be "ugly but functional"
 
-3. **Document Learnings**
+3. **Document Learnings (USE EXISTING DOCS ONLY)**
    - After completing a slice, document what was learned
-   - Update the PRD with real-world findings
-   - Note any patterns that should be standardized
+   - Update `ARCHITECTURE.md` with technical decisions
+   - Update `FEATURES.md` with feature changes
+   - Update `CHANGELOG.md` with version changes
+   - **NEVER create new session/slice summary files**
 
 4. **Reality Check Questions**
    After each slice, explicitly answer:
