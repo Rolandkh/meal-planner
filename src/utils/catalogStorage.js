@@ -206,3 +206,91 @@ export function clearCatalog() {
     return false;
   }
 }
+
+/**
+ * Load lightweight recipe index for meal plan generation
+ * This is a much smaller file (78% smaller) containing only essential recipe info
+ * @returns {Promise<Array>} Array of recipe summaries
+ */
+export async function getRecipeIndex() {
+  try {
+    // Try localStorage first
+    const stored = localStorage.getItem(STORAGE_KEYS.RECIPE_INDEX);
+    if (stored) {
+      const data = JSON.parse(stored);
+      return data.recipes || [];
+    }
+
+    // If not in localStorage, load from static file
+    console.log('📦 Recipe index not in localStorage, loading from file...');
+    try {
+      const response = await fetch('/src/data/recipe_index.json');
+      if (response.ok) {
+        const indexData = await response.json();
+        
+        // Save to localStorage for faster future loads
+        localStorage.setItem(STORAGE_KEYS.RECIPE_INDEX, JSON.stringify(indexData));
+        console.log(`✅ Loaded ${indexData.recipes?.length || 0} recipes from index file`);
+        
+        return indexData.recipes || [];
+      }
+    } catch (fetchError) {
+      console.warn('Could not load recipe index from file:', fetchError);
+    }
+
+    return [];
+    
+  } catch (error) {
+    console.error('Error loading recipe index:', error);
+    return [];
+  }
+}
+
+/**
+ * Synchronous version - loads recipe index from localStorage only
+ * @returns {Array} Array of recipe summaries
+ */
+export function getRecipeIndexSync() {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEYS.RECIPE_INDEX);
+    if (!stored) {
+      console.warn('⚠️ Recipe index not in localStorage - use loadRecipeIndexFromFile() first');
+      return [];
+    }
+
+    const data = JSON.parse(stored);
+    return data.recipes || [];
+    
+  } catch (error) {
+    console.error('Error loading recipe index:', error);
+    return [];
+  }
+}
+
+/**
+ * Load recipe index from file into localStorage (one-time import)
+ * @returns {Promise<boolean>} Success
+ */
+export async function loadRecipeIndexFromFile() {
+  try {
+    console.log('📂 Loading recipe index from file...');
+    const response = await fetch('/src/data/recipe_index.json');
+    
+    if (!response.ok) {
+      console.error('Recipe index file not found');
+      return false;
+    }
+
+    const indexData = await response.json();
+    
+    // Save to localStorage
+    localStorage.setItem(STORAGE_KEYS.RECIPE_INDEX, JSON.stringify(indexData));
+    console.log(`✅ Loaded ${indexData.recipes?.length || 0} recipe summaries into localStorage`);
+    
+    return true;
+    
+  } catch (error) {
+    console.error('Error loading recipe index from file:', error);
+    return false;
+  }
+}

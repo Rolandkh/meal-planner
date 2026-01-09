@@ -1,8 +1,7 @@
 {
-  "_catalogVersion": "2.0.0",
-  "_lastUpdated": "2026-01-09T11:37:40.694Z",
-  "_count": 174,
-  "_source": "Spoonacular (Diet Compass & Mediterranean focus)",
+  "_catalogVersion": "1.0.0-diet-compass",
+  "_lastUpdated": "2026-01-09T11:32:55.882Z",
+  "_count": 181,
   "_extraction": {
     "date": "2026-01-09T11:32:55.882Z",
     "focus": "Diet Compass & Mediterranean",
@@ -3087,6 +3086,156 @@
           "Mediterranean",
           "Italian",
           "European"
+        ],
+        "diets": [],
+        "dishTypes": [
+          "lunch",
+          "main course",
+          "main dish",
+          "dinner"
+        ],
+        "mealSlots": [
+          "lunch",
+          "dinner"
+        ],
+        "proteinSources": [],
+        "cookingMethods": [],
+        "carbBases": [],
+        "effortLevel": "medium",
+        "spiceLevel": "none",
+        "budgetTier": "moderate",
+        "kidFriendly": false,
+        "makeAhead": false,
+        "protectiveFoods": []
+      },
+      "dietCompassScores": null,
+      "isFavorite": false,
+      "rating": null,
+      "timesCooked": 0,
+      "lastCooked": null,
+      "createdAt": "2026-01-09T11:32:55.880Z",
+      "updatedAt": "2026-01-09T11:32:55.880Z"
+    },
+    {
+      "_schemaVersion": 2,
+      "recipeId": "recipe_6ebc26b6-f6cb-46d7-8be9-2d14dd3cef10",
+      "name": "Cranberry Pecan Greek Yogurt Chicken Salad",
+      "source": "spoonacular",
+      "spoonacularId": 879449,
+      "image": "/images/recipes/879449.jpg",
+      "imageUrl": null,
+      "ingredients": [
+        {
+          "name": "this healthy cranberry pecan greek yogurt chicken salad is easy",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "only a touch of sea salt",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "planet roasted chicken breast",
+          "quantity": 141.748,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "greek yogurt",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "scallion",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "cranberries",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "pecans",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "sea salt",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "combine all",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "in an avocado! i had it as a super-quick",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "chipotle fried egg avocado toast",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "easy black bean soup",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "easy avocado egg quinoa breakfast bowl",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        }
+      ],
+      "instructions": "No instructions available",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "nutrition": {
+        "calories": 494.45,
+        "protein": 42.28,
+        "fat": 13.3,
+        "carbs": 62.53,
+        "fiber": 12.65,
+        "sugar": 26.12,
+        "saturatedFat": 1.98,
+        "sodium": 373.51
+      },
+      "tags": {
+        "cuisines": [
+          "Mediterranean",
+          "European",
+          "Greek"
         ],
         "diets": [],
         "dishTypes": [
@@ -7824,6 +7973,137 @@
     },
     {
       "_schemaVersion": 2,
+      "recipeId": "recipe_a1271f24-4409-494c-960a-08527e20b92d",
+      "name": "Greek Marinade with Yogurt",
+      "source": "spoonacular",
+      "spoonacularId": 799304,
+      "image": "/images/recipes/799304.jpg",
+      "imageUrl": null,
+      "ingredients": [
+        {
+          "name": "yogurt",
+          "quantity": 122.5,
+          "unit": "ml",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "olive oil",
+          "quantity": 108,
+          "unit": "ml",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "lemon juice",
+          "quantity": 61,
+          "unit": "ml",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "garlic",
+          "quantity": 3,
+          "unit": "cloves",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "oregano",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "parsley",
+          "quantity": 2,
+          "unit": "tsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "thyme",
+          "quantity": 1,
+          "unit": "tsp",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "rosemary",
+          "quantity": 1,
+          "unit": "tsp",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "pepper",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "additional 1/ lemon",
+          "quantity": 2,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        }
+      ],
+      "instructions": "No instructions available",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 1,
+      "nutrition": {
+        "calories": 385.57,
+        "protein": 8.47,
+        "fat": 26.95,
+        "carbs": 40.79,
+        "fiber": 11.16,
+        "sugar": 13.18,
+        "saturatedFat": 5.86,
+        "sodium": 67.27
+      },
+      "tags": {
+        "cuisines": [
+          "Mediterranean",
+          "European",
+          "Greek"
+        ],
+        "diets": [
+          "gluten free",
+          "lacto ovo vegetarian",
+          "primal"
+        ],
+        "dishTypes": [
+          "seasoning",
+          "marinade"
+        ],
+        "mealSlots": [
+          "lunch",
+          "dinner"
+        ],
+        "proteinSources": [],
+        "cookingMethods": [],
+        "carbBases": [],
+        "effortLevel": "medium",
+        "spiceLevel": "none",
+        "budgetTier": "moderate",
+        "kidFriendly": false,
+        "makeAhead": false,
+        "protectiveFoods": []
+      },
+      "dietCompassScores": null,
+      "isFavorite": false,
+      "rating": null,
+      "timesCooked": 0,
+      "lastCooked": null,
+      "createdAt": "2026-01-09T11:32:55.880Z",
+      "updatedAt": "2026-01-09T11:32:55.880Z"
+    },
+    {
+      "_schemaVersion": 2,
       "recipeId": "recipe_0b5be040-4c1f-4481-85f2-6931d618a34b",
       "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
       "source": "spoonacular",
@@ -8487,6 +8767,162 @@
           "main course",
           "main dish",
           "dinner"
+        ],
+        "mealSlots": [
+          "lunch",
+          "dinner"
+        ],
+        "proteinSources": [],
+        "cookingMethods": [],
+        "carbBases": [],
+        "effortLevel": "medium",
+        "spiceLevel": "none",
+        "budgetTier": "moderate",
+        "kidFriendly": false,
+        "makeAhead": false,
+        "protectiveFoods": []
+      },
+      "dietCompassScores": null,
+      "isFavorite": false,
+      "rating": null,
+      "timesCooked": 0,
+      "lastCooked": null,
+      "createdAt": "2026-01-09T11:32:55.880Z",
+      "updatedAt": "2026-01-09T11:32:55.880Z"
+    },
+    {
+      "_schemaVersion": 2,
+      "recipeId": "recipe_9056dce0-a7c6-4bc9-8afe-c4915f339f9a",
+      "name": "Greek Spring Salad: Prasini Salata",
+      "source": "spoonacular",
+      "spoonacularId": 679535,
+      "image": "/images/recipes/679535.jpg",
+      "imageUrl": null,
+      "ingredients": [
+        {
+          "name": "lettuce",
+          "quantity": 1,
+          "unit": "large head",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "dill",
+          "quantity": 0.5,
+          "unit": "bunch",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "scallions—including parts",
+          "quantity": 6,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "feta",
+          "quantity": 170.097,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "cucumber",
+          "quantity": 0.33333334,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "grapes",
+          "quantity": 151,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "extra virgin olive oil",
+          "quantity": 54,
+          "unit": "ml",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "juice of lemon",
+          "quantity": 0.5,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "red wine vinegar",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "honey",
+          "quantity": 1,
+          "unit": "tsp",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "sea salt",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "combine the lettuce",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "do you love greek salads as much as i do? have you ever tried a prasini salata",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        }
+      ],
+      "instructions": "No instructions available",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "nutrition": {
+        "calories": 178.28,
+        "protein": 2.21,
+        "fat": 13.89,
+        "carbs": 13.19,
+        "fiber": 1.92,
+        "sugar": 9.2,
+        "saturatedFat": 1.96,
+        "sodium": 1314.79
+      },
+      "tags": {
+        "cuisines": [
+          "Mediterranean",
+          "European",
+          "Greek"
+        ],
+        "diets": [
+          "gluten free"
+        ],
+        "dishTypes": [
+          "side dish",
+          "antipasti",
+          "salad",
+          "starter",
+          "snack",
+          "appetizer",
+          "antipasto",
+          "hor d'oeuvre"
         ],
         "mealSlots": [
           "lunch",
@@ -17163,6 +17599,131 @@
     },
     {
       "_schemaVersion": 2,
+      "recipeId": "recipe_e26e6bf4-b57f-4a90-be36-fb3ea5d066a8",
+      "name": "Chilled Cucumber Avocado Soup with Yogurt and Kefir",
+      "source": "spoonacular",
+      "spoonacularId": 716437,
+      "image": "/images/recipes/716437.jpg",
+      "imageUrl": null,
+      "ingredients": [
+        {
+          "name": "avocado",
+          "quantity": 0.5,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "persian cucumbers",
+          "quantity": 5,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "grapes",
+          "quantity": 1,
+          "unit": "small handful",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "juice of lemon",
+          "quantity": 1,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "kefir",
+          "quantity": 120,
+          "unit": "ml",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "greek yogurt",
+          "quantity": 100,
+          "unit": "ml",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "onion",
+          "quantity": 40,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "salt and pepper",
+          "quantity": 3,
+          "unit": "servings",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "scallions",
+          "quantity": 4,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        }
+      ],
+      "instructions": "No instructions available",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 3,
+      "nutrition": {
+        "calories": 188.75,
+        "protein": 8.99,
+        "fat": 7.28,
+        "carbs": 24.49,
+        "fiber": 6.64,
+        "sugar": 15.25,
+        "saturatedFat": 1.6,
+        "sodium": 263.83
+      },
+      "tags": {
+        "cuisines": [],
+        "diets": [
+          "gluten free",
+          "lacto ovo vegetarian",
+          "primal"
+        ],
+        "dishTypes": [
+          "soup",
+          "antipasti",
+          "starter",
+          "snack",
+          "appetizer",
+          "antipasto",
+          "hor d'oeuvre"
+        ],
+        "mealSlots": [
+          "lunch",
+          "dinner"
+        ],
+        "proteinSources": [],
+        "cookingMethods": [],
+        "carbBases": [],
+        "effortLevel": "medium",
+        "spiceLevel": "none",
+        "budgetTier": "moderate",
+        "kidFriendly": false,
+        "makeAhead": false,
+        "protectiveFoods": []
+      },
+      "dietCompassScores": null,
+      "isFavorite": false,
+      "rating": null,
+      "timesCooked": 0,
+      "lastCooked": null,
+      "createdAt": "2026-01-09T11:32:55.881Z",
+      "updatedAt": "2026-01-09T11:32:55.881Z"
+    },
+    {
+      "_schemaVersion": 2,
       "recipeId": "recipe_e1afe3d2-f4be-4fed-85da-90812edec723",
       "name": "Butternut Squash Soup (In Half An Hour!)",
       "source": "spoonacular",
@@ -17552,6 +18113,129 @@
         "spiceLevel": "none",
         "budgetTier": "moderate",
         "kidFriendly": true,
+        "makeAhead": false,
+        "protectiveFoods": []
+      },
+      "dietCompassScores": null,
+      "isFavorite": false,
+      "rating": null,
+      "timesCooked": 0,
+      "lastCooked": null,
+      "createdAt": "2026-01-09T11:32:55.881Z",
+      "updatedAt": "2026-01-09T11:32:55.881Z"
+    },
+    {
+      "_schemaVersion": 2,
+      "recipeId": "recipe_f62e65f6-a694-4f5c-9916-fe6bc0b3b3d0",
+      "name": "Garlic Lemon Chili Broccoli",
+      "source": "spoonacular",
+      "spoonacularId": 1132339,
+      "image": "/images/recipes/1132339.jpg",
+      "imageUrl": null,
+      "ingredients": [
+        {
+          "name": "broccoli",
+          "quantity": 680.389,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "garlic",
+          "quantity": 3,
+          "unit": "cloves",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "lemon juice",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "rice vinegar",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "dijon mustard",
+          "quantity": 0.5,
+          "unit": "tsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "olive oil",
+          "quantity": 72,
+          "unit": "ml",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "red pepper flakes",
+          "quantity": 2,
+          "unit": "servings",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "salt and pepper",
+          "quantity": 2,
+          "unit": "servings",
+          "category": "other",
+          "healthImpact": "neutral"
+        }
+      ],
+      "instructions": "1. Whatch video",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 2,
+      "nutrition": {
+        "calories": 453,
+        "protein": 10.25,
+        "fat": 37.65,
+        "carbs": 26.18,
+        "fiber": 9.73,
+        "sugar": 6.37,
+        "saturatedFat": 5.42,
+        "sodium": 354.54
+      },
+      "tags": {
+        "cuisines": [
+          "American"
+        ],
+        "diets": [
+          "gluten free",
+          "dairy free",
+          "paleolithic",
+          "lacto ovo vegetarian",
+          "primal",
+          "vegan"
+        ],
+        "dishTypes": [
+          "soup",
+          "antipasti",
+          "starter",
+          "snack",
+          "appetizer",
+          "antipasto",
+          "hor d'oeuvre"
+        ],
+        "mealSlots": [
+          "lunch",
+          "dinner"
+        ],
+        "proteinSources": [],
+        "cookingMethods": [],
+        "carbBases": [],
+        "effortLevel": "quick",
+        "spiceLevel": "none",
+        "budgetTier": "moderate",
+        "kidFriendly": false,
         "makeAhead": false,
         "protectiveFoods": []
       },
@@ -21437,6 +22121,121 @@
     },
     {
       "_schemaVersion": 2,
+      "recipeId": "recipe_bddf48fb-6439-4b6a-a247-e2402529d129",
+      "name": "Finger Foods: Frittata Muffins",
+      "source": "spoonacular",
+      "spoonacularId": 716432,
+      "image": "/images/recipes/716432.jpg",
+      "imageUrl": null,
+      "ingredients": [
+        {
+          "name": "broccoli",
+          "quantity": 66,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "chives",
+          "quantity": 2,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "t cream",
+          "quantity": 1,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "eggs",
+          "quantity": 6,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "orange pepper",
+          "quantity": 49.667,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "salt and pepper",
+          "quantity": 1,
+          "unit": "serving",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "cheddar cheese",
+          "quantity": 56.5,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "tomato",
+          "quantity": 49.667,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        }
+      ],
+      "instructions": "No instructions available",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 1,
+      "nutrition": {
+        "calories": 654.73,
+        "protein": 49.45,
+        "fat": 44.88,
+        "carbs": 12.9,
+        "fiber": 3.51,
+        "sugar": 5.84,
+        "saturatedFat": 19.26,
+        "sodium": 964.99
+      },
+      "tags": {
+        "cuisines": [],
+        "diets": [
+          "gluten free",
+          "lacto ovo vegetarian",
+          "primal",
+          "ketogenic"
+        ],
+        "dishTypes": [
+          "morning meal",
+          "brunch",
+          "breakfast"
+        ],
+        "mealSlots": [
+          "lunch",
+          "dinner"
+        ],
+        "proteinSources": [],
+        "cookingMethods": [],
+        "carbBases": [],
+        "effortLevel": "medium",
+        "spiceLevel": "none",
+        "budgetTier": "moderate",
+        "kidFriendly": true,
+        "makeAhead": false,
+        "protectiveFoods": []
+      },
+      "dietCompassScores": null,
+      "isFavorite": false,
+      "rating": null,
+      "timesCooked": 0,
+      "lastCooked": null,
+      "createdAt": "2026-01-09T11:32:55.881Z",
+      "updatedAt": "2026-01-09T11:32:55.881Z"
+    },
+    {
+      "_schemaVersion": 2,
       "recipeId": "recipe_c72deb69-b34d-4612-804e-5039c8989a7d",
       "name": "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant",
       "source": "spoonacular",
@@ -21762,6 +22561,118 @@
         "spiceLevel": "none",
         "budgetTier": "moderate",
         "kidFriendly": false,
+        "makeAhead": false,
+        "protectiveFoods": []
+      },
+      "dietCompassScores": null,
+      "isFavorite": false,
+      "rating": null,
+      "timesCooked": 0,
+      "lastCooked": null,
+      "createdAt": "2026-01-09T11:32:55.881Z",
+      "updatedAt": "2026-01-09T11:32:55.881Z"
+    },
+    {
+      "_schemaVersion": 2,
+      "recipeId": "recipe_3babe5c0-c626-408d-91eb-e7656add4d88",
+      "name": "Homemade Guacamole",
+      "source": "spoonacular",
+      "spoonacularId": 715543,
+      "image": "/images/recipes/715543.jpg",
+      "imageUrl": null,
+      "ingredients": [
+        {
+          "name": "avocados",
+          "quantity": 2,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "cilantro",
+          "quantity": 1.5,
+          "unit": "Tbsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "juice of lime",
+          "quantity": 1,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "pepper",
+          "quantity": 0.5,
+          "unit": "tsps",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "onion",
+          "quantity": 40,
+          "unit": "g",
+          "category": "other",
+          "healthImpact": "neutral"
+        },
+        {
+          "name": "roma tomato",
+          "quantity": 1,
+          "unit": "",
+          "category": "other",
+          "healthImpact": "neutral"
+        }
+      ],
+      "instructions": "No instructions available",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "nutrition": {
+        "calories": 170.13,
+        "protein": 2.32,
+        "fat": 14.83,
+        "carbs": 10.91,
+        "fiber": 7.19,
+        "sugar": 1.62,
+        "saturatedFat": 2.15,
+        "sodium": 8.48
+      },
+      "tags": {
+        "cuisines": [
+          "Mexican"
+        ],
+        "diets": [
+          "gluten free",
+          "dairy free",
+          "paleolithic",
+          "lacto ovo vegetarian",
+          "primal",
+          "whole 30",
+          "vegan"
+        ],
+        "dishTypes": [
+          "antipasti",
+          "condiment",
+          "starter",
+          "snack",
+          "appetizer",
+          "dip",
+          "antipasto",
+          "hor d'oeuvre",
+          "spread"
+        ],
+        "mealSlots": [
+          "lunch",
+          "dinner"
+        ],
+        "proteinSources": [],
+        "cookingMethods": [],
+        "carbBases": [],
+        "effortLevel": "medium",
+        "spiceLevel": "none",
+        "budgetTier": "moderate",
+        "kidFriendly": true,
         "makeAhead": false,
         "protectiveFoods": []
       },

@@ -1,0 +1,800 @@
+{
+  "timestamp": "2026-01-09T11:14:29.562Z",
+  "rawData": {
+    "weekOf": "2026-01-10",
+    "budget": {
+      "estimated": 85
+    },
+    "days": [
+      {
+        "date": "2026-01-10",
+        "breakfast": {
+          "name": "Greek Yogurt with Pomegranate",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "pomegranate seeds",
+              "quantity": 50,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Spoon Greek yogurt into a bowl. Top with pomegranate seeds and drizzle with honey.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "quick",
+            "healthy"
+          ]
+        },
+        "lunch": {
+          "name": "Vegetable Minestrone Soup",
+          "ingredients": [
+            {
+              "name": "cannellini beans",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "carrots",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "basil",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bay leaf",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté carrots in olive oil, add beans and broth, simmer with bay leaf. Finish with fresh basil.",
+          "prepTime": 5,
+          "cookTime": 9,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "soup",
+            "healthy"
+          ]
+        },
+        "dinner": {
+          "name": "Simple Spinach and Tomato Frittata",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "spinach leaves",
+              "quantity": 50,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs, sauté spinach and tomatoes in olive oil, pour eggs over and cook until set. Finish under broiler if needed.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "vegetarian",
+            "simple"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-11",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 150,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Serve Greek yogurt in a bowl and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "quick",
+            "simple"
+          ]
+        },
+        "lunch": {
+          "name": "Almost Guilt Free Mac and Cheese",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cauliflower",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "chicken breast",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "cheese",
+              "quantity": 100,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook pasta and steam cauliflower until soft, blend cauliflower with cheese to make sauce. Toss with pasta and diced cooked chicken.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "pasta",
+            "comfort"
+          ]
+        },
+        "dinner": {
+          "name": "Chicken Pasta Primavera - Flower Patch Farmgirl Style",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "chicken breast",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "carrots",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook pasta, sauté chicken and vegetables in olive oil until tender. Toss together with pasta and season to taste.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "mediterranean",
+            "pasta"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-12",
+        "breakfast": {
+          "name": "Scrambled Eggs with Spinach",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "spinach leaves",
+              "quantity": 50,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs, sauté spinach briefly in olive oil, add eggs and scramble until cooked through.",
+          "prepTime": 5,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "protein"
+          ]
+        },
+        "lunch": {
+          "name": "Macaroni and Cheese Gratin",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cheese",
+              "quantity": 150,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "breadcrumbs",
+              "quantity": 50,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook pasta, mix with cheese sauce, top with breadcrumbs and bake until golden and bubbly.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "comfort",
+            "pasta"
+          ]
+        },
+        "dinner": {
+          "name": "Best Chicken Parmesan",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "breadcrumbs",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "cheese",
+              "quantity": 100,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "canned tomatoes",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Bread chicken in egg and breadcrumbs, pan-fry until golden. Top with tomato sauce and cheese, bake until melted.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "italian",
+            "chicken"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-13",
+        "breakfast": {
+          "name": "Greek Yogurt with Pomegranate",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 300,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "pomegranate seeds",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Divide yogurt into bowls, top with pomegranate seeds and drizzle with honey.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "mediterranean",
+            "quick"
+          ]
+        },
+        "lunch": {
+          "name": "Simple Parmesan Chili Pasta",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "parmesan cheese",
+              "quantity": 50,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook pasta, toss with olive oil and grated parmesan. Add a pinch of chili flakes if desired.",
+          "prepTime": 3,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "simple"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Chicken Gyros With Tzatziki",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 400,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Marinate and grill chicken until cooked through. Make tzatziki by mixing yogurt with grated cucumber and minced garlic, serve with chicken.",
+          "prepTime": 15,
+          "cookTime": 23,
+          "servings": 3,
+          "tags": [
+            "mediterranean",
+            "family-dinner",
+            "special"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-14",
+        "breakfast": {
+          "name": "Scrambled Eggs",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs and scramble in olive oil over medium heat until just set.",
+          "prepTime": 3,
+          "cookTime": 5,
+          "servings": 2,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "protein"
+          ]
+        },
+        "lunch": {
+          "name": "Vegetable Minestrone Soup",
+          "ingredients": [
+            {
+              "name": "cannellini beans",
+              "quantity": 150,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "carrots",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "basil",
+              "quantity": 10,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bay leaf",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté carrots in olive oil, add beans and broth, simmer with bay leaf. Finish with fresh basil.",
+          "prepTime": 5,
+          "cookTime": 9,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "soup",
+            "healthy"
+          ]
+        },
+        "dinner": {
+          "name": "Simple Spinach and Tomato Frittata",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "spinach leaves",
+              "quantity": 50,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs, sauté spinach and tomatoes in olive oil, pour eggs over and cook until set. Finish under broiler if needed.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "vegetarian",
+            "simple"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-15",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Serve Greek yogurt in a bowl and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "quick",
+            "simple"
+          ]
+        },
+        "lunch": {
+          "name": "Farro salad with parsley pesto",
+          "ingredients": [
+            {
+              "name": "farro",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "parsley",
+              "quantity": 30,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook farro according to package directions. Blend parsley, garlic, and olive oil for pesto, toss with warm farro.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "healthy",
+            "grain"
+          ]
+        },
+        "dinner": {
+          "name": "Chicken Tikka Masala Indian",
+          "ingredients": [
+            {
+              "name": "chicken breast",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "onion",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "garlic",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "canned tomatoes",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "greek yogurt",
+              "quantity": 100,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Sauté onion and garlic, add chicken and cook through. Add tomatoes and yogurt, simmer until thickened.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 1,
+          "tags": [
+            "indian",
+            "flavorful",
+            "chicken"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-16",
+        "breakfast": {
+          "name": "Greek Yogurt with Pomegranate",
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "pomegranate seeds",
+              "quantity": 50,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Spoon Greek yogurt into a bowl. Top with pomegranate seeds and drizzle with honey.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "quick",
+            "healthy"
+          ]
+        },
+        "lunch": {
+          "name": "Black Bean Soup With Pico De Gallo and Chipotle Creme",
+          "ingredients": [
+            {
+              "name": "black beans",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "onion",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "greek yogurt",
+              "quantity": 50,
+              "unit": "g",
+              "category": "dairy"
+            }
+          ],
+          "instructions": "Simmer black beans with onion until tender. Top with diced tomatoes and a dollop of yogurt.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 1,
+          "tags": [
+            "mexican",
+            "soup",
+            "healthy"
+          ]
+        },
+        "dinner": {
+          "name": "Ratatouille Pasta",
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "onion",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "canned tomatoes",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Sauté onion and garlic in olive oil, add tomatoes and simmer. Cook pasta and toss with vegetable sauce.",
+          "prepTime": 10,
+          "cookTime": 14,
+          "servings": 1,
+          "tags": [
+            "mediterranean",
+            "vegetarian",
+            "pasta"
+          ]
+        }
+      }
+    ]
+  }
+}

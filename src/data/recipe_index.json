@@ -1,0 +1,7717 @@
+{
+  "_version": "1.0.0",
+  "_lastUpdated": "2026-01-09T11:37:40.701Z",
+  "_count": 174,
+  "_description": "Lightweight recipe index for Claude meal plan generation",
+  "_usage": "Contains only essential recipe info (no full ingredients/instructions)",
+  "recipes": [
+    {
+      "recipeId": "recipe_cc054543-6777-46cf-8e71-3e9f9ab1c1a1",
+      "name": "Broccolini Quinoa Pilaf",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 2,
+      "calories": 625,
+      "protein": 20,
+      "carbs": 72,
+      "fat": 31,
+      "fiber": 10,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "broccolini",
+        "garlic clove",
+        "olive oil",
+        "onion",
+        "quinoa"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_04ada886-45ce-4a84-b664-bf9c05f97b68",
+      "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 4,
+      "calories": 344,
+      "protein": 28,
+      "carbs": 28,
+      "fat": 12,
+      "fiber": 2,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bell pepper",
+        "rice",
+        "basil",
+        "feta cheese",
+        "fish fillets"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_2480a60d-f129-4c7e-ad31-1a0964a5fa65",
+      "name": "Salmon Quinoa Risotto",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 405,
+      "protein": 22,
+      "carbs": 39,
+      "fat": 18,
+      "fiber": 6,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "quinoa",
+        "onion",
+        "kale",
+        "garlic cloves",
+        "olive oil"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0c91ea92-13fb-4a00-ac54-798c1d256f16",
+      "name": "Italian Tuna Pasta",
+      "prepTime": 6,
+      "cookTime": 14,
+      "servings": 3,
+      "calories": 464,
+      "protein": 38,
+      "carbs": 70,
+      "fat": 3,
+      "fiber": 4,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chillies",
+        "garlic",
+        "ground pepper",
+        "juice of lemon",
+        "parsley leaves"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_20b82491-7ac0-4e45-aaf2-08b6d4dfa232",
+      "name": "Baked Ratatouille",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 1,
+      "calories": 1029,
+      "protein": 32,
+      "carbs": 82,
+      "fat": 70,
+      "fiber": 28,
+      "cuisines": [
+        "Mediterranean",
+        "French",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "eggplant",
+        "feta cheese",
+        "basil",
+        "garlic cloves",
+        "bell peppers"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_9fdb3e35-ada2-4373-8d11-75cc47ad80d6",
+      "name": "Mushroom Hummus Crostini",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 4,
+      "calories": 450,
+      "protein": 21,
+      "carbs": 72,
+      "fat": 10,
+      "fiber": 8,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "fingerfood",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "crusty bread",
+        "mushrooms",
+        "spinach",
+        "chickpeas",
+        "garlic"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_cf89a95f-b95d-4482-af43-c7d5d1cd3e34",
+      "name": "Roma Tomato Bruschetta",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 446,
+      "protein": 13,
+      "carbs": 63,
+      "fat": 17,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "fingerfood",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "balsamic vinegar",
+        "extra virgin olive oil",
+        "bread",
+        "basil",
+        "garlic"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_da281d91-5238-486f-8870-58f46fcd72d2",
+      "name": "Easy Cheesy Pizza Casserole",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 902,
+      "protein": 57,
+      "carbs": 47,
+      "fat": 55,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "equivalent amount of a ground beef/bulk sausage mix",
+        "ricotta",
+        "oregano",
+        "basil",
+        "parmesan cheese"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_8eccd9eb-1109-4be3-8fd1-c849e4342268",
+      "name": "Plantain Pizza",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 3,
+      "calories": 643,
+      "protein": 25,
+      "carbs": 85,
+      "fat": 23,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "beef",
+        "bell pepper",
+        "bell peppers",
+        "bread flour",
+        "seasoning cube"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_ebd5102c-3f71-431e-84c8-ece6ec72f070",
+      "name": "Veggie Lasagna Rolls with Peppery Pecorino Marinara",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 508,
+      "protein": 25,
+      "carbs": 58,
+      "fat": 22,
+      "fiber": 9,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "basil& oregano",
+        "basil leaves",
+        "chives",
+        "parsley",
+        "sage leaves"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0a53fcd6-40f1-45eb-94db-ffe7a5840ac1",
+      "name": "Vegetable Minestrone Soup",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 4,
+      "calories": 412,
+      "protein": 19,
+      "carbs": 79,
+      "fat": 4,
+      "fiber": 13,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bay leaf",
+        "cannellini beans",
+        "carrots",
+        "basil",
+        "elbow macaroni"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_bc95958a-c451-4c7a-8488-a4b3d8758054",
+      "name": "Classic Greek Moussaka",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 847,
+      "protein": 42,
+      "carbs": 56,
+      "fat": 52,
+      "fiber": 12,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bread crumbs",
+        "butter",
+        "canned tomatoes",
+        "egg plants",
+        "egg yolks"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_7d91dfc0-930c-4851-837f-0a0869fc1a5e",
+      "name": "Osso Buco",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 445,
+      "protein": 46,
+      "carbs": 16,
+      "fat": 18,
+      "fiber": 2,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "veal shanks",
+        "parsley",
+        "rind lemon",
+        "flour",
+        "bell pepper"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_89417554-c03c-46a0-8e3b-b39042459a64",
+      "name": "Winter Vegetable Minestrone Soup",
+      "prepTime": 15,
+      "cookTime": 35,
+      "servings": 6,
+      "calories": 334,
+      "protein": 16,
+      "carbs": 69,
+      "fat": 1,
+      "fiber": 12,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "onion",
+        "garlic",
+        "butternut squash",
+        "zucchini",
+        "carrot"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_84453bd8-dc75-407b-8291-a19a0472dc08",
+      "name": "Vegetarian Moussaka With Portabella",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 378,
+      "protein": 12,
+      "carbs": 66,
+      "fat": 9,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "canned tomatoes",
+        "carrot",
+        "basil",
+        "egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons of ener",
+        "evoo"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_9780ed5e-ff83-4a55-b489-4ead1622e7cf",
+      "name": "Italian Seafood Stew",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 3,
+      "calories": 611,
+      "protein": 69,
+      "carbs": 68,
+      "fat": 12,
+      "fiber": 15,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "primal",
+        "whole 30",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "baby portobello mushrooms",
+        "bay leaves",
+        "canned tomatoes",
+        "club soda",
+        "seafood stock/ fish stock"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e78f233e-0801-49d9-8db8-914519e1645a",
+      "name": "Italian String Beans With Anchovies and Breadcrumbs",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 591,
+      "protein": 15,
+      "carbs": 67,
+      "fat": 31,
+      "fiber": 10,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "anchovy",
+        "breadcrumbs",
+        "olive oil",
+        "string beans",
+        "onion"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0f351cf3-48f0-4d81-bb7e-1c58af25f3c7",
+      "name": "Pumpkin gnocchi with basil and Parmesan",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 611,
+      "protein": 23,
+      "carbs": 76,
+      "fat": 25,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pumpkin",
+        "eggs",
+        "sea salt",
+        "pepper",
+        "basil leaves"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e5cbed8d-a34f-4d5b-bfbc-23e63c7fd856",
+      "name": "Creamy Ratatouille Over Penne",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 308,
+      "protein": 9,
+      "carbs": 44,
+      "fat": 12,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "French",
+        "European"
+      ],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pepper",
+        "penne",
+        "basil",
+        "eggplant",
+        "garlic"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_b997be2a-391e-49e8-892f-3453805043c5",
+      "name": "Golden Beet Panzanella",
+      "prepTime": 21,
+      "cookTime": 49,
+      "servings": 4,
+      "calories": 442,
+      "protein": 12,
+      "carbs": 51,
+      "fat": 24,
+      "fiber": 12,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "lemon juice",
+        "white wine vinegar",
+        "shallot",
+        "honey",
+        "sumac"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_f5730ebe-3217-425e-9241-3d56cd43725f",
+      "name": "Easy Skillet Garden Lasagna",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 405,
+      "protein": 21,
+      "carbs": 45,
+      "fat": 18,
+      "fiber": 2,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "lasagna noodles",
+        "olive oil",
+        "onion",
+        "mushrooms",
+        "garlic cloves"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5f3740fc-df89-4fd8-ba45-f2983e1741e6",
+      "name": "Potato Gnocchi With Kale and Mushrooms In A Goat Cheese Sauce",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 382,
+      "protein": 16,
+      "carbs": 59,
+      "fat": 10,
+      "fiber": 4,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "baking potatoes",
+        "flour",
+        "egg yolk",
+        "kosher salt",
+        "nutmeg"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_7ae7c3ad-7d0e-4c70-84d4-db4fbadd0475",
+      "name": "Heart Shaped Spinach Ravioli",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 3,
+      "calories": 528,
+      "protein": 22,
+      "carbs": 93,
+      "fat": 7,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cream",
+        "egg",
+        "garlic cloves",
+        "leek",
+        "ricotta cheese"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a5d7c3f5-af1f-46e8-8200-01995dce132a",
+      "name": "Homemade Thin Crust Pizza + Pesto + Potato",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 504,
+      "protein": 15,
+      "carbs": 69,
+      "fat": 19,
+      "fiber": 6,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "almonds",
+        "basil",
+        "extra virgin olive oil",
+        "flour",
+        "kosher salt"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_ff86b196-deb4-44e4-a7c9-ad0f5704e41d",
+      "name": "Grilled Chicken Gyros With Tzatziki",
+      "prepTime": 23,
+      "cookTime": 53,
+      "servings": 2,
+      "calories": 778,
+      "protein": 82,
+      "carbs": 61,
+      "fat": 22,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cucumber",
+        "extra virgin olive oil",
+        "garlic",
+        "garlic",
+        "juice of lemon"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_7f295f40-2c79-423b-b4f0-ce19f0f69c4d",
+      "name": "Fresh Tomato Risotto with Grilled Green Vegetables",
+      "prepTime": 18,
+      "cookTime": 42,
+      "servings": 4,
+      "calories": 296,
+      "protein": 9,
+      "carbs": 61,
+      "fat": 1,
+      "fiber": 8,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "onion",
+        "garlic",
+        "wine",
+        "vegetable stock",
+        "risotto rice"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a7edc247-8f27-41f5-b80a-e6117b8214b1",
+      "name": "How Sweet It Is Sweet Potato Lasagne",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 501,
+      "protein": 25,
+      "carbs": 54,
+      "fat": 24,
+      "fiber": 14,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "baby portabella mushrooms",
+        "curry powder",
+        "basil leaves",
+        "eggplants",
+        "spinach"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_241c333b-a7cc-48ee-9df5-ce5da915e004",
+      "name": "Italian Sausage and Vegetable Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 471,
+      "protein": 23,
+      "carbs": 33,
+      "fat": 28,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "olive oil",
+        "spicy sausages",
+        "onion",
+        "carrots",
+        "bay leaf"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_6b17119b-54c5-4886-84ef-d0287c2a5132",
+      "name": "Julia Child's Coq au Vin",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 778,
+      "protein": 35,
+      "carbs": 55,
+      "fat": 41,
+      "fiber": 9,
+      "cuisines": [
+        "Mediterranean",
+        "French",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "primal"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bacon",
+        "bay leaves",
+        "butter",
+        "button mushrooms",
+        "chicken thighs and legs"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a154f883-8fb2-4c38-b8ed-8b8ae194f0b3",
+      "name": "Slow Cooker Minestrone Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 148,
+      "protein": 7,
+      "carbs": 29,
+      "fat": 2,
+      "fiber": 6,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "soup",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "carrots",
+        "zucchini",
+        "onion",
+        "celery",
+        "green beans"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5fee1225-684d-4f36-a6e3-670b2f22c47f",
+      "name": "Great Greek Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 290,
+      "protein": 13,
+      "carbs": 22,
+      "fat": 18,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cucumbers",
+        "feta cheese",
+        "kalamata olives",
+        "roma tomatoes",
+        "oil sun-dried tomatoes"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_eecbcba2-ff8e-4286-a7b7-2efc8fbe24ce",
+      "name": "Ratatouille Pasta",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 691,
+      "protein": 25,
+      "carbs": 69,
+      "fat": 37,
+      "fiber": 12,
+      "cuisines": [
+        "Mediterranean",
+        "French",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "onion",
+        "olive oil",
+        "sea salt and pepper",
+        "garlic",
+        "zucchini"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_7cb40cf4-a8f1-4779-b6ad-3c8f0e4c77d2",
+      "name": "Classic French Mussels",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 501,
+      "protein": 32,
+      "carbs": 19,
+      "fat": 28,
+      "fiber": 1,
+      "cuisines": [
+        "Mediterranean",
+        "French",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "primal",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "antipasti",
+        "main course",
+        "starter",
+        "snack",
+        "appetizer",
+        "main dish",
+        "antipasto",
+        "dinner",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "wine",
+        "parsley",
+        "garlic cloves",
+        "kosher salt",
+        "buttermilk"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_814ed3e9-5026-49a5-b200-d170ac38d440",
+      "name": "Italian Tomato and Mozzarella Caprese",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 269,
+      "protein": 28,
+      "carbs": 9,
+      "fat": 14,
+      "fiber": 3,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "fluid balsamic vinegar",
+        "pepper",
+        "basil leaves",
+        "kosher salt",
+        "olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_70f182e3-09fe-4389-acdd-cb07c7f836cb",
+      "name": "Polla alla Parmigiana: Chicken Parmesan",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 619,
+      "protein": 46,
+      "carbs": 48,
+      "fat": 27,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bread crumbs",
+        "eggs",
+        "flour",
+        "marjoram",
+        "mozzarella"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a78134f2-6ab8-476c-8e4b-e90a47eb2c39",
+      "name": "Lasagna - Spinach Rolls",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 443,
+      "protein": 33,
+      "carbs": 28,
+      "fat": 25,
+      "fiber": 10,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "primal"
+      ],
+      "dishTypes": [],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "butter",
+        "mushrooms",
+        "tomato sauce",
+        "curd cottage cheese",
+        "ronzoni curly edge lasagna"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_649faf76-8f57-451c-b97f-ca2891adf107",
+      "name": "Italian Pasta Salad with organic Arugula",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 696,
+      "protein": 28,
+      "carbs": 103,
+      "fat": 20,
+      "fiber": 8,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "arugula remove steam",
+        "goya chick peas",
+        "botticelli extra virgin olive oil",
+        "barilla piccolini farfalle",
+        "basil"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_696d945a-b438-4c96-8cfb-d70060ee33df",
+      "name": "Simple Skillet Lasagna",
+      "prepTime": 10,
+      "cookTime": 25,
+      "servings": 5,
+      "calories": 761,
+      "protein": 31,
+      "carbs": 58,
+      "fat": 46,
+      "fiber": 6,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "basil and basil sprig",
+        "tomatoes",
+        "garlic",
+        "sausage",
+        "m zarella cheese"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_74b6fb2f-0b62-49d5-9b69-a68e1f538069",
+      "name": "Minestrone",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 9,
+      "calories": 403,
+      "protein": 15,
+      "carbs": 63,
+      "fat": 12,
+      "fiber": 14,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "butter",
+        "carrots",
+        "celery",
+        "onions",
+        "garlic"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e618ef5f-f066-4724-916f-d105d4d871ac",
+      "name": "Eggplant Parmesan Roll-Ups",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 670,
+      "protein": 21,
+      "carbs": 50,
+      "fat": 45,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "olive oil",
+        "bell pepper",
+        "brown mushrooms",
+        "garlic",
+        "pepper flakes"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_bd326ee7-42ea-47c0-81fc-a30546135ee5",
+      "name": "Excellent No Fail and Easy Keto Zucchini Lasagna",
+      "prepTime": 20,
+      "cookTime": 40,
+      "servings": 6,
+      "calories": 523,
+      "protein": 54,
+      "carbs": 21,
+      "fat": 26,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "ketogenic"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "basil",
+        "bell pepper",
+        "ground turkey",
+        "mozzarella cheese",
+        "onion"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_4242b688-36a7-4554-afe7-1746077acd96",
+      "name": "Pear and Pesto Crostini",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 3,
+      "calories": 452,
+      "protein": 12,
+      "carbs": 46,
+      "fat": 26,
+      "fiber": 4,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "fingerfood",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bread",
+        "basil leaves",
+        "garlic",
+        "pine nuts",
+        "pecorino romano"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_51288601-3b1d-4510-b565-546d0e061fcf",
+      "name": "Herbed Vegetables In A Feta Quiche With A Wild Rice Crust",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 329,
+      "protein": 16,
+      "carbs": 44,
+      "fat": 13,
+      "fiber": 17,
+      "cuisines": [
+        "Mediterranean",
+        "French",
+        "European"
+      ],
+      "diets": [
+        "gluten free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "brown rice",
+        "egg",
+        "eggs",
+        "milk",
+        "four seasons blend"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_095328bc-ebb5-4dc7-b48b-12b72e3490d4",
+      "name": "Crab Ravioli With Scallops and Gremolata",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 633,
+      "protein": 46,
+      "carbs": 44,
+      "fat": 30,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "butter",
+        "crab meat",
+        "egg white",
+        "garlic clove",
+        "lemon"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_185f6548-8915-4c7c-a620-6b8c466dd7be",
+      "name": "Italian Beef Braciole",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 620,
+      "protein": 40,
+      "carbs": 41,
+      "fat": 31,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "round steak",
+        "prosciutto",
+        "genoa salami",
+        "bread crumbs",
+        "parsley"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_b6067569-7faa-46c0-ae48-154ff69b4918",
+      "name": "Layered Greek Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 10,
+      "calories": 135,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 6,
+      "fiber": 2,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "feta cheese",
+        "garlic",
+        "granulated sugar",
+        "kalamata",
+        "yogurt"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_28cdf0cb-bcae-4e7c-a56c-14f66a89e59f",
+      "name": "Sun-Dried Tomato and Leek Quiche",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 681,
+      "protein": 20,
+      "carbs": 60,
+      "fat": 43,
+      "fiber": 9,
+      "cuisines": [
+        "Mediterranean",
+        "French",
+        "European"
+      ],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "morning meal",
+        "brunch",
+        "main dish",
+        "breakfast",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "crust",
+        "pastry flour",
+        "pine nuts",
+        "almonds",
+        "baking powder"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a1f405ca-0b81-44a7-a91d-befbde5a7938",
+      "name": "Pesto Veggie Pizza",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 826,
+      "protein": 32,
+      "carbs": 93,
+      "fat": 37,
+      "fiber": 8,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "active yeast",
+        "warm water",
+        "honey",
+        "flour",
+        "tsp salt"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_9bccfcc2-8068-47cd-8540-61315066ddc9",
+      "name": "Easy Eggplant Parmesan",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 288,
+      "protein": 21,
+      "carbs": 26,
+      "fat": 12,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "olive oil",
+        "onion",
+        "garlic clove",
+        "pasta sauce",
+        "eggplant"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_b939729f-cc15-4ca6-8571-49633dd9105e",
+      "name": "Greek Yogurt Chicken Salad",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 4,
+      "calories": 334,
+      "protein": 41,
+      "carbs": 16,
+      "fat": 11,
+      "fiber": 1,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "primal"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cashews",
+        "chicken breasts",
+        "craisins",
+        "dijon mustard",
+        "garlic powder"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_08eb638d-921b-4eeb-8f9b-202df1811286",
+      "name": "Light Greek Lemon Chicken Orzo Soup",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 8,
+      "calories": 281,
+      "protein": 27,
+      "carbs": 33,
+      "fat": 4,
+      "fiber": 3,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chicken breasts",
+        "chicken broth",
+        "carrots",
+        "celery stalks",
+        "thyme"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_2f89b8d0-e82d-47e2-b824-be4693a6bd06",
+      "name": "Lamb Moussaka",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 12,
+      "calories": 828,
+      "protein": 78,
+      "carbs": 24,
+      "fat": 45,
+      "fiber": 6,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "all purpose flour",
+        "canned tomatoes",
+        "margarine",
+        "wine",
+        "egg"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_1efadcc9-fa37-411b-b053-bda90e4ff37c",
+      "name": "Spanakopita (Greek Spinach Pie)",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 633,
+      "protein": 25,
+      "carbs": 44,
+      "fat": 41,
+      "fiber": 6,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "eggs",
+        "feta cheese",
+        "flour",
+        "dill",
+        "spinach"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0b5be040-4c1f-4481-85f2-6931d618a34b",
+      "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
+      "prepTime": 17,
+      "cookTime": 39,
+      "servings": 6,
+      "calories": 361,
+      "protein": 40,
+      "carbs": 33,
+      "fat": 9,
+      "fiber": 8,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "baby dutch potatoes",
+        "green beans",
+        "canned tomatoes",
+        "chicken breasts",
+        "lemons"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0b6d30f4-9626-428f-90d1-d44dfb24b29e",
+      "name": "Pork Shoulder Tacos with Chipotle Greek Yogurt and Coleslaw",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 12,
+      "calories": 260,
+      "protein": 26,
+      "carbs": 10,
+      "fat": 12,
+      "fiber": 3,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "apple cider vinegar",
+        "carrot",
+        "chipotle chilies in adobo sauce",
+        "garlic",
+        "greek yogurt"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_381eca4b-3b8e-4fd8-a266-dd754b5dc8f1",
+      "name": "Greek Inspired Spring Omelet",
+      "prepTime": 6,
+      "cookTime": 14,
+      "servings": 1,
+      "calories": 133,
+      "protein": 14,
+      "carbs": 7,
+      "fat": 6,
+      "fiber": 2,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "morning meal",
+        "brunch",
+        "main dish",
+        "breakfast",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "asparagus spears",
+        "egg whites",
+        "feta cheese",
+        "green onions",
+        "salt and pepper"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_2b063a31-fbcc-4a99-9db7-169fbaf87cb5",
+      "name": "Peach and Pistachio Greek Yogurt Bowl",
+      "prepTime": 2,
+      "cookTime": 4,
+      "servings": 1,
+      "calories": 265,
+      "protein": 17,
+      "carbs": 20,
+      "fat": 15,
+      "fiber": 4,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "non-fat greek yogurt",
+        "peach",
+        "pistachios",
+        "mint leaves"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0399fbd9-c0c4-46e5-ba6b-d15f221d2b43",
+      "name": "Gyros",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 496,
+      "protein": 22,
+      "carbs": 50,
+      "fat": 23,
+      "fiber": 3,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "dijon mustard",
+        "garlic",
+        "ground cumin",
+        "ground fenugreek",
+        "ground lamb"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_dbf50e29-ddde-4190-bc74-a8205ae25cac",
+      "name": "Gluten-Free Lamb Moussaka",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 631,
+      "protein": 41,
+      "carbs": 31,
+      "fat": 40,
+      "fiber": 9,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "primal"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "eggplants",
+        "olive oil",
+        "ground lamb",
+        "garlic",
+        "canned tomatoes"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_caba73c4-0870-4ab3-9eef-b80892673728",
+      "name": "Spanakopita Cups",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 36,
+      "calories": 167,
+      "protein": 4,
+      "carbs": 13,
+      "fat": 11,
+      "fiber": 1,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "olive oil",
+        "scallions",
+        "spinach",
+        "dill",
+        "eggs"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_ad91be45-3090-42db-be19-289a130aae2e",
+      "name": "Greek Side Salad",
+      "prepTime": 5,
+      "cookTime": 11,
+      "servings": 4,
+      "calories": 277,
+      "protein": 7,
+      "carbs": 14,
+      "fat": 23,
+      "fiber": 4,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cucumber",
+        "extra virgin olive oil",
+        "greek feta",
+        "kalamata olives",
+        "onion"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_fb9eb3f4-4a15-43fd-bc8a-0609c38bf7b8",
+      "name": "Eggplant Fries with Tzatziki Sauce",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 295,
+      "protein": 13,
+      "carbs": 49,
+      "fat": 6,
+      "fiber": 6,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "eggplants",
+        "bread crumbs",
+        "seasoning mix",
+        "yogurt",
+        "egg"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_8c8bd96b-8cfa-47ad-9e01-2ebbf02191d2",
+      "name": "Lamb Burgers With Tzatziki Sauce",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 617,
+      "protein": 38,
+      "carbs": 32,
+      "fat": 37,
+      "fiber": 2,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cucumber",
+        "egg",
+        "extra virgin olive oil",
+        "flat leaf parsley",
+        "dill"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_20d09362-d155-430d-aae8-d4d346a782f0",
+      "name": "Greek Shrimp Orzo",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 410,
+      "protein": 24,
+      "carbs": 48,
+      "fat": 14,
+      "fiber": 3,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "basil",
+        "feta cheese",
+        "green onions",
+        "lemon juice",
+        "tbsp olive oil"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e12e9727-25ae-49d6-b225-f86d261ff3ef",
+      "name": "Pasta With Roasted Vegetables & Greek Olives",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 266,
+      "protein": 23,
+      "carbs": 26,
+      "fat": 10,
+      "fiber": 7,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pack package angel hair spaghetti 2",
+        "tomato sauce",
+        "canned tomatoes",
+        "basil",
+        "½ garlic"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_2c5c3b6e-ff71-46cf-85a1-8a1ae55323fe",
+      "name": "Lemony Greek Lentil Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 368,
+      "protein": 23,
+      "carbs": 64,
+      "fat": 4,
+      "fiber": 28,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "brown lentils",
+        "carrot",
+        "water",
+        "thyme",
+        "lemon juice"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_f2c3bfb8-b671-4d0b-ac2a-55cf638a46de",
+      "name": "Greek Style Honey and Pistachio Cake",
+      "prepTime": 23,
+      "cookTime": 53,
+      "servings": 12,
+      "calories": 525,
+      "protein": 12,
+      "carbs": 63,
+      "fat": 27,
+      "fiber": 3,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "dessert"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "baking powder",
+        "eggs",
+        "oz. flour",
+        "oz. greek yogurt",
+        ".5 oz. ground almonds"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0d187361-bcb6-460a-8e77-1ad7e5b6e5a5",
+      "name": "Marinated Souvlaki",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 553,
+      "protein": 26,
+      "carbs": 4,
+      "fat": 46,
+      "fiber": 1,
+      "cuisines": [
+        "Mediterranean",
+        "European",
+        "Greek"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "ketogenic"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "lamb",
+        "onion",
+        "carrot",
+        "celery",
+        "garlic clove"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_f509d30d-be81-4dba-a973-574eb7565e18",
+      "name": "Spicy Indian-Style Hummus",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 12,
+      "calories": 134,
+      "protein": 5,
+      "carbs": 15,
+      "fat": 6,
+      "fiber": 4,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "asafetida",
+        "cayenne",
+        "chickpeas",
+        "chives",
+        "ginger"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_820379df-20af-493c-bae4-a0ff3e8745b4",
+      "name": "Easy Tabouleh",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 1,
+      "calories": 717,
+      "protein": 14,
+      "carbs": 74,
+      "fat": 44,
+      "fiber": 20,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bulgur",
+        "cucumbers",
+        "flat leaf parsley",
+        "lemon juice from a lemon",
+        "olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_9dad8d6a-8d63-4954-9491-34489bcd1d94",
+      "name": "Winter Fattoush Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 345,
+      "protein": 17,
+      "carbs": 50,
+      "fat": 9,
+      "fiber": 19,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "agave nectar",
+        "feta cheese",
+        "flat leaf parsley leaves",
+        "garlic",
+        "ground sumac"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_504a7fe6-a8df-44e9-a390-d8d2a2880458",
+      "name": "Lebanese Lentil Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 1157,
+      "protein": 27,
+      "carbs": 70,
+      "fat": 88,
+      "fiber": 31,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pepper",
+        "rice",
+        "coriander seed",
+        "lentils",
+        "garlic"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_1abb61c2-05cb-47a5-a087-218670224398",
+      "name": "Colorful Red Quinoa Not So Tabbouleh Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 283,
+      "protein": 8,
+      "carbs": 34,
+      "fat": 14,
+      "fiber": 6,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "quinoa",
+        "water",
+        "salt",
+        "avocado",
+        "tomato"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_b7789dc9-1b97-4854-896e-5edae98b622d",
+      "name": "Quinoa Tabbouleh Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 136,
+      "protein": 4,
+      "carbs": 16,
+      "fat": 7,
+      "fiber": 2,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "quinoa",
+        "water",
+        "green onions",
+        "tomato",
+        "cucumber"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_f23adb54-135c-4b31-9328-4afffdb4dc2c",
+      "name": "Middle Eastern Chopped Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 180,
+      "protein": 3,
+      "carbs": 7,
+      "fat": 17,
+      "fiber": 2,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "lacto ovo vegetarian",
+        "primal",
+        "whole 30",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "walnuts",
+        "parsley",
+        "niçoise olives",
+        "scallion",
+        "tomato"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_ec63829c-875c-427e-af15-a4adbd2d9909",
+      "name": "Lebanese Falafel",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 583,
+      "protein": 22,
+      "carbs": 82,
+      "fat": 20,
+      "fiber": 11,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chickpeas",
+        "parsley",
+        "onion",
+        "garlic cloves",
+        "ground cumin"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_6862b6b4-ff55-4173-ad99-f0762df620cb",
+      "name": "Grilled Fattoush",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 295,
+      "protein": 9,
+      "carbs": 29,
+      "fat": 18,
+      "fiber": 5,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cucumber",
+        "cumin",
+        "feta cheese",
+        "mint",
+        "green onions"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_3df2edfd-55c7-46cd-ba11-f565c5832db8",
+      "name": "Middle Eastern Stuffed Lentil Zatar Bread",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 306,
+      "protein": 10,
+      "carbs": 60,
+      "fat": 2,
+      "fiber": 5,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "all purpose flour",
+        "cilantro",
+        "cumin powder",
+        "less to make a pliable dough",
+        "lentils"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_98d266a7-e372-4f6f-a810-0a35be405430",
+      "name": "Roasted Eggplant Hummus",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 232,
+      "protein": 7,
+      "carbs": 25,
+      "fat": 14,
+      "fiber": 10,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chickpeas",
+        "eggplant",
+        "extra virgin olive oil",
+        "garlic clove",
+        "lemon juice"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_1368bb2e-3105-4ea5-835e-58e17e2e22fe",
+      "name": "Fire-Roasted Jalapeño Hummus with Turnip and Beet Chips",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 485,
+      "protein": 10,
+      "carbs": 31,
+      "fat": 38,
+      "fiber": 9,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chickpeas",
+        "garlic",
+        "garlic powder",
+        "golden beet",
+        "jalapeño"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_bd47b294-1840-414c-bb8b-c2391e24692a",
+      "name": "Crispy Rosemary Hummus",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 113,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 5,
+      "fiber": 4,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "garbanzo beans",
+        "greek yogurt",
+        "olive oil",
+        "rosemary",
+        "lemon juice"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_96614cf7-c086-42dc-b500-2b20140b7c70",
+      "name": "Chicken Shawarma Bowl",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 654,
+      "protein": 37,
+      "carbs": 97,
+      "fat": 13,
+      "fiber": 9,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "carrots",
+        "cherry tomatoes",
+        "cumin",
+        "dill",
+        "garlic"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_07e86ff0-4606-4a06-8a69-6e62b141548e",
+      "name": "Lebanese Kibbeh",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 585,
+      "protein": 32,
+      "carbs": 23,
+      "fat": 41,
+      "fiber": 5,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bulgur wheat",
+        "lamb",
+        "onion",
+        "butter",
+        "salt & ground pepper"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_b8810dbf-d866-40e8-83b1-8898f666d7ad",
+      "name": "Basil Lime White Bean Hummus",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 96,
+      "protein": 4,
+      "carbs": 13,
+      "fat": 4,
+      "fiber": 3,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cannellini beans",
+        "garlic",
+        "basil",
+        "lime zest",
+        "juice from lime"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e07a52ea-035e-4030-9d0f-38e0a5ec31a9",
+      "name": "Homemade Spiced Hummus & Pita",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 403,
+      "protein": 10,
+      "carbs": 44,
+      "fat": 21,
+      "fiber": 5,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chickpeas",
+        "cumin",
+        "extra virgin olive oil",
+        "garlic",
+        "chili pepper"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_3c5a02f0-3d03-46a2-97dc-7a02e0c622e6",
+      "name": "Bone Broth Hummus",
+      "prepTime": 6,
+      "cookTime": 14,
+      "servings": 6,
+      "calories": 213,
+      "protein": 6,
+      "carbs": 14,
+      "fat": 16,
+      "fiber": 4,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "beef bone broth",
+        "garbanzo beans",
+        "tahini",
+        "garlic clove",
+        "lemon juice"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_d6e7e939-0b79-4f81-951f-58beb59688a1",
+      "name": "Chavrie Hummus",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 195,
+      "protein": 11,
+      "carbs": 9,
+      "fat": 13,
+      "fiber": 3,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cilantro",
+        "chavrie goat cheese",
+        "hummus",
+        "lemon juice"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_10504844-0729-401f-9c47-5a603a39b682",
+      "name": "Indian-Inspired Falafel Appetizer",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 12,
+      "calories": 102,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 4,
+      "fiber": 4,
+      "cuisines": [
+        "Middle Eastern"
+      ],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "all purpose flour",
+        "baking powder",
+        "eyed beans",
+        "coriander leaves/cilantro",
+        "coriander powder"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_126d4e9a-dda9-4c11-b27a-0a39a1d95614",
+      "name": "Strawberry-Mango Quinoa Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 354,
+      "protein": 8,
+      "carbs": 46,
+      "fat": 17,
+      "fiber": 6,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cucumber",
+        "mint",
+        "honey",
+        "lime juice",
+        "lime zest"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_30c4a20d-797a-4054-a4aa-d46df6534f9a",
+      "name": "Spinach Salad with Strawberry Vinaigrette",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 1,
+      "calories": 322,
+      "protein": 22,
+      "carbs": 30,
+      "fat": 13,
+      "fiber": 6,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "primal"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "almonds",
+        "balsamic vinegar",
+        "chicken",
+        "dijon mustard",
+        "feta cheese"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_84391328-3dcd-42cb-aa05-1545b9a59688",
+      "name": "Amaranth and Roast Veggie Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 361,
+      "protein": 9,
+      "carbs": 44,
+      "fat": 18,
+      "fiber": 7,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "amaranth",
+        "basil-infused olive oil",
+        "bell pepper",
+        "pumpkin",
+        "onion"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a0dfb55c-44ef-48ce-90bd-a9f0fa599927",
+      "name": "Carrot and Cabbage Salad With Coriander+cumin Dry Rub",
+      "prepTime": 8,
+      "cookTime": 18,
+      "servings": 1,
+      "calories": 222,
+      "protein": 6,
+      "carbs": 32,
+      "fat": 10,
+      "fiber": 10,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "lacto ovo vegetarian",
+        "primal",
+        "fodmap friendly",
+        "whole 30",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "carrots",
+        "cumin seed powder",
+        "coriander",
+        "cabbage",
+        "ground coriander"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_27dddd2c-492a-4032-892a-610832657b85",
+      "name": "Lentil Mango Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 253,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 13,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cilantro",
+        "lentils",
+        "garlic",
+        "mango",
+        "olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_26690c53-f7e5-4c8e-958d-943cd6c289a1",
+      "name": "Shrimp and Avocado Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 639,
+      "protein": 34,
+      "carbs": 53,
+      "fat": 37,
+      "fiber": 17,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "the shrimp",
+        "shrimp",
+        "garlic cloves",
+        "olive oil",
+        "juice of lime"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_502a223d-f593-4de2-abdd-5a8c5e30ae76",
+      "name": "Gluten Free Dairy Free Sugar Free Chinese Chicken Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 364,
+      "protein": 31,
+      "carbs": 29,
+      "fat": 15,
+      "fiber": 7,
+      "cuisines": [
+        "Chinese",
+        "Asian"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "apple cider vinegar",
+        "pepper",
+        "sesame seeds",
+        "carrots",
+        "extra virgin olive oil"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_fafec013-9820-4fbd-8ba1-512af0832c93",
+      "name": "Radish & Snap Pea Quinoa Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 262,
+      "protein": 11,
+      "carbs": 39,
+      "fat": 7,
+      "fiber": 7,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "quinoa",
+        "water",
+        "snap peas",
+        "radishes",
+        "flat leaf parsley"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_d2e82f78-b47f-4501-b571-e111cceda92c",
+      "name": "Salmon, Watercress, Fennel and Baby Beetroot Salad With Lemony \"Caviar\" Dressing",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 440,
+      "protein": 27,
+      "carbs": 19,
+      "fat": 29,
+      "fiber": 6,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "primal",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "arënkha msc caviar substitute",
+        "baby beets",
+        "bay leaf",
+        "pepper",
+        "extra virgin olive oil"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_df3d4870-8937-4197-8316-3e29a392521e",
+      "name": "Quinoa, Tomato, Green Onion Side Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 396,
+      "protein": 11,
+      "carbs": 50,
+      "fat": 18,
+      "fiber": 7,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "green onions",
+        "lemon",
+        "olive oil",
+        "quinoa",
+        "salt and pepper"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_78d45ffa-bab1-462b-94c3-3bf302c13cb3",
+      "name": "Butternut Squash Tofu Salad With Toasted Hazelnuts",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 261,
+      "protein": 13,
+      "carbs": 32,
+      "fat": 11,
+      "fiber": 7,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pepper",
+        "butternut squash",
+        "extra tofu",
+        "lemon juice",
+        "hazel nuts"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_06f8e668-e2bc-49a0-a40b-47804a1270d4",
+      "name": "North by Northwest Couscous Salad",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 4,
+      "calories": 636,
+      "protein": 17,
+      "carbs": 77,
+      "fat": 32,
+      "fiber": 14,
+      "cuisines": [],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "lemon zest",
+        "squeezed lemon juice",
+        "sugar",
+        "dijon mustard",
+        "kosher salt"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_b5f1c6ac-1476-4fa3-84e9-b689a7eaa518",
+      "name": "Farro salad with parsley pesto",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 412,
+      "protein": 12,
+      "carbs": 52,
+      "fat": 20,
+      "fiber": 13,
+      "cuisines": [],
+      "diets": [],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "balsamic vinegar",
+        "pepper",
+        "brussels sprouts",
+        "farro",
+        "flat leaf parsley"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_868477c7-ff87-4ee1-b10c-1922dfb1e2b7",
+      "name": "Quinoa Tabouli Salad",
+      "prepTime": 23,
+      "cookTime": 53,
+      "servings": 4,
+      "calories": 244,
+      "protein": 8,
+      "carbs": 36,
+      "fat": 8,
+      "fiber": 6,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "quinoa",
+        "kosher salt",
+        "lemon juice",
+        "garlic",
+        "quality extra virgin olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_99efaf04-a74b-4149-a38b-22e84653c08f",
+      "name": "Quinoa Vegetable Salad",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 2,
+      "calories": 494,
+      "protein": 15,
+      "carbs": 68,
+      "fat": 19,
+      "fiber": 12,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "quinoa",
+        "iceberg lettuce",
+        "tomatoes",
+        "cucumber",
+        "peppers"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_acc7cdb4-9ba6-4e2e-b15e-b1416f2b1a28",
+      "name": "Egyptain Cauliflower Side Salad",
+      "prepTime": 8,
+      "cookTime": 18,
+      "servings": 2,
+      "calories": 183,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 15,
+      "fiber": 4,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "lacto ovo vegetarian",
+        "primal",
+        "whole 30",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "salad",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cauliflower",
+        "cumin",
+        "parsley",
+        "lemon juice",
+        "olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_23c46795-8ae4-40e2-9092-51267d7aced2",
+      "name": "Mung Bean Sprout and Quinoa Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 356,
+      "protein": 17,
+      "carbs": 50,
+      "fat": 11,
+      "fiber": 12,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bragg's all natural apple cider vinegar",
+        "of basil",
+        "bell peppers",
+        "coconut oil",
+        "quinoa"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5bd2bbb6-1988-4c42-b2bc-205012c5fa02",
+      "name": "Red Quinoa and Roasted Cauliflower Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 444,
+      "protein": 13,
+      "carbs": 45,
+      "fat": 26,
+      "fiber": 8,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cauliflower",
+        "quinoa",
+        "walnuts",
+        "apricots",
+        "feta cheese"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_cefe2796-3e27-4278-86b3-7df1d9733fe5",
+      "name": "Cracked Wheat Salad with Dates & Tahini Yogurt",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 890,
+      "protein": 32,
+      "carbs": 101,
+      "fat": 48,
+      "fiber": 21,
+      "cuisines": [],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "salad",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "lentils",
+        "cracked wheat",
+        "dates",
+        "extra virgin olive oil",
+        "parsley"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5f3eef8c-64e5-4521-bb54-f3284a877f56",
+      "name": "Red Lentil Soup with Chicken and Turnips",
+      "prepTime": 10,
+      "cookTime": 45,
+      "servings": 8,
+      "calories": 477,
+      "protein": 27,
+      "carbs": 52,
+      "fat": 20,
+      "fiber": 24,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "additional toppings: avocado",
+        "carrots",
+        "celery stalks",
+        "chicken breast",
+        "flat leaf parsley"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_ce526f53-a413-43c8-bfcb-c20c8034f5fc",
+      "name": "Asparagus and Pea Soup: Real Convenience Food",
+      "prepTime": 6,
+      "cookTime": 14,
+      "servings": 2,
+      "calories": 217,
+      "protein": 11,
+      "carbs": 29,
+      "fat": 8,
+      "fiber": 11,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "lacto ovo vegetarian",
+        "primal",
+        "vegan"
+      ],
+      "dishTypes": [
+        "soup",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "asparagus",
+        "evoo",
+        "garlic",
+        "onion",
+        "peas"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5046134b-32e0-40c3-992b-f306fbb8413b",
+      "name": "Slow Cooker Beef Stew",
+      "prepTime": 10,
+      "cookTime": 480,
+      "servings": 6,
+      "calories": 434,
+      "protein": 44,
+      "carbs": 41,
+      "fat": 12,
+      "fiber": 12,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "beef broth",
+        "carrots",
+        "celery",
+        "cream of mushroom soup",
+        "green onions"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_67c88169-4c8a-40f6-ac37-935964d1b736",
+      "name": "Tuscan White Bean Soup with Olive Oil and Rosemary",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 242,
+      "protein": 16,
+      "carbs": 43,
+      "fat": 1,
+      "fiber": 11,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bay leaf",
+        "rosemary",
+        "garlic",
+        "olive oil",
+        "onion"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e6424e2c-d1d5-448a-bdaa-fa8f284f34ba",
+      "name": "Herbivoracious' White Bean and Kale Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 332,
+      "protein": 17,
+      "carbs": 46,
+      "fat": 10,
+      "fiber": 12,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "olive oil",
+        "onion",
+        "garlic",
+        "carrot",
+        "kosher salt"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_c2a45f07-9546-49ba-bb69-da5a6ad47d11",
+      "name": "Tomato and lentil soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 340,
+      "protein": 18,
+      "carbs": 51,
+      "fat": 8,
+      "fiber": 23,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "olive oil",
+        "onion",
+        "garlic",
+        "carrots",
+        "tomatoes"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_402ce88f-1336-46a8-9111-8623f873f749",
+      "name": "Moroccan chickpea and lentil stew",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 3,
+      "calories": 465,
+      "protein": 20,
+      "carbs": 82,
+      "fat": 7,
+      "fiber": 16,
+      "cuisines": [],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "broccoli",
+        "chickpeas",
+        "carrots",
+        "celery stalks",
+        "lentils"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_93110d3e-2991-46e3-8303-ab6d2710d0d0",
+      "name": "Caldo Verde - Portuguese Kale Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 493,
+      "protein": 20,
+      "carbs": 82,
+      "fat": 10,
+      "fiber": 12,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "whole 30"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "onion",
+        "carrots",
+        "garlic cloves",
+        "potatoes",
+        "chorizo links"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_4f82a81c-b6c3-42a3-8722-4764d140522c",
+      "name": "Easy Vegetable Beef Soup",
+      "prepTime": 30,
+      "cookTime": 120,
+      "servings": 8,
+      "calories": 566,
+      "protein": 45,
+      "carbs": 56,
+      "fat": 19,
+      "fiber": 12,
+      "cuisines": [],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "beef short ribs",
+        "elbow macaroni",
+        "water 4 qts",
+        "canned tomatoes",
+        "potatoes"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_534fe4b8-7fc7-45e3-93fb-1fc013a0aa86",
+      "name": "Curried Butternut Squash and Apple Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 1,
+      "calories": 134,
+      "protein": 7,
+      "carbs": 24,
+      "fat": 3,
+      "fiber": 5,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "soup",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cauliflower",
+        "butternut squash",
+        "apple",
+        "water",
+        "braggs liquid aminos"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_bdbc427a-bd94-4c93-a173-55fbeaf59f11",
+      "name": "Smoky Black Bean Soup With Sweet Potato & Kale",
+      "prepTime": 189,
+      "cookTime": 441,
+      "servings": 6,
+      "calories": 555,
+      "protein": 23,
+      "carbs": 103,
+      "fat": 7,
+      "fiber": 22,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chicken broth",
+        "chipotle chiles",
+        "black beans",
+        "ground cumin",
+        "kale"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e1afe3d2-f4be-4fed-85da-90812edec723",
+      "name": "Butternut Squash Soup (In Half An Hour!)",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 8,
+      "calories": 252,
+      "protein": 9,
+      "carbs": 42,
+      "fat": 6,
+      "fiber": 9,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "soup",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "butternut squash",
+        "black-eyed peas",
+        "collard greens",
+        "quinoa",
+        "kombu"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_6098f63f-9173-4e86-b079-a5643d40adfe",
+      "name": "Moosewood Lentil Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 396,
+      "protein": 26,
+      "carbs": 66,
+      "fat": 4,
+      "fiber": 31,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pepper",
+        "brown sugar",
+        "carrots",
+        "celery",
+        "herbs"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_c39f107c-7c67-4751-85d8-a9ed70dddf67",
+      "name": "Slow Cooker Chicken Taco Soup",
+      "prepTime": 5,
+      "cookTime": 480,
+      "servings": 6,
+      "calories": 312,
+      "protein": 24,
+      "carbs": 49,
+      "fat": 4,
+      "fiber": 12,
+      "cuisines": [
+        "Mexican"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "black beans",
+        "tomatoes",
+        "canned tomatoes",
+        "chili beans",
+        "kernal corn"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_656af21b-53ff-4c2c-8820-e3f6b818585a",
+      "name": "Venison Stew",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 7,
+      "calories": 316,
+      "protein": 32,
+      "carbs": 30,
+      "fat": 7,
+      "fiber": 6,
+      "cuisines": [],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "venison stew meat",
+        "baby carrots 4 stalks celery 1 can mushrooms 1 piece pepper 1 cup flour and 3 tbsp 2 tablespoons bee",
+        "water",
+        "potatoes",
+        "onion"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_9306c7a4-244c-4a2d-ab49-5ae36f6a61d8",
+      "name": "Delicious Creamy Lentils and Chestnuts Soup",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 4,
+      "calories": 452,
+      "protein": 20,
+      "carbs": 60,
+      "fat": 15,
+      "fiber": 24,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bay leaf",
+        "roasted chestnuts",
+        "garlic",
+        "lentils",
+        "olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_6af2ebb3-8eda-4293-91d4-9bd8cbe98fb3",
+      "name": "Spicy lentil and black rice soup with kale, spinach and leek",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 12,
+      "calories": 203,
+      "protein": 11,
+      "carbs": 38,
+      "fat": 1,
+      "fiber": 12,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "soup",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "rice",
+        "carrot",
+        "cayenne",
+        "celery stalks",
+        "chili powder"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_1dd0b8d6-d00b-4f87-a93a-85f58c91323d",
+      "name": "Cauliflower Chickpea Stew",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 455,
+      "protein": 14,
+      "carbs": 86,
+      "fat": 8,
+      "fiber": 12,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "olive oil",
+        "brown rice",
+        "twice amount of water",
+        "garlic gloves",
+        "tumeric"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_c9caa642-6e72-4caf-b8aa-83b6a51f2618",
+      "name": "Easy To Make Spring Rolls",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 162,
+      "protein": 13,
+      "carbs": 28,
+      "fat": 2,
+      "fiber": 6,
+      "cuisines": [
+        "Vietnamese",
+        "Asian"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "fingerfood",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "you can use regular basil",
+        "boston lettuce",
+        "chili pepper",
+        "fish sauce",
+        "coriander leaves"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0eaafbe7-a825-4051-845f-98414befe4ae",
+      "name": "Jade Buddha Salmon Tartare",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 382,
+      "protein": 34,
+      "carbs": 5,
+      "fat": 25,
+      "fiber": 1,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "primal",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "salmon",
+        "green onion",
+        "chives",
+        "cilantro",
+        "thai basil"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5f0699cc-810e-4141-a2b3-2c9645b56791",
+      "name": "Salmon with roasted vegetables",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 496,
+      "protein": 39,
+      "carbs": 45,
+      "fat": 18,
+      "fiber": 9,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "whole 30",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "potato",
+        "parsnip",
+        "carrot",
+        "onion",
+        "cherry tomatoes"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_ff37bf22-8b7a-46f2-96c8-08da9d75199e",
+      "name": "Balsamic & Honey Glazed Salmon with Lemony Asparagus",
+      "prepTime": 18,
+      "cookTime": 42,
+      "servings": 2,
+      "calories": 301,
+      "protein": 25,
+      "carbs": 18,
+      "fat": 14,
+      "fiber": 3,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "apple cider vinegar",
+        "asparagus",
+        "balsamic vinegar",
+        "dill",
+        "garlic"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_de58d587-5084-4f5f-a880-cc72461cde02",
+      "name": "Crab Salad Stuffed Pita Pockets",
+      "prepTime": 8,
+      "cookTime": 18,
+      "servings": 2,
+      "calories": 418,
+      "protein": 39,
+      "carbs": 54,
+      "fat": 6,
+      "fiber": 5,
+      "cuisines": [],
+      "diets": [
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "apple",
+        "crabmeat",
+        "coriander leaves",
+        "mayonnaise",
+        "wholewheat pita breads"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5f16d4da-dbb7-441d-a104-bf913e0bcc3e",
+      "name": "Crispy Panko and Herb Crusted Salmon",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 390,
+      "protein": 33,
+      "carbs": 14,
+      "fat": 22,
+      "fiber": 1,
+      "cuisines": [],
+      "diets": [
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "salmon fillet",
+        "leek",
+        "bell pepper",
+        "cherry tomatoes",
+        "extra virgin olive oil"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_dc1bd611-5d92-4824-a1e1-c9a9f12ddf0b",
+      "name": "Cilantro Lime Halibut",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 422,
+      "protein": 44,
+      "carbs": 6,
+      "fat": 22,
+      "fiber": 1,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "primal",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chicken stock",
+        "cilantro",
+        "green onions",
+        "pacific halibut filets",
+        "juice of lime"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_67243b80-c97f-4024-9df6-181ec829703a",
+      "name": "Winter Kimchi",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 1,
+      "calories": 365,
+      "protein": 23,
+      "carbs": 73,
+      "fat": 3,
+      "fiber": 16,
+      "cuisines": [
+        "Korean",
+        "Asian"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "napa cabbage",
+        "brine solution",
+        "chilly paste / korean gochujang paste",
+        "bowl rice",
+        "radish"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_88fe57dd-fd8e-4e08-b1ed-39d19bc53c2e",
+      "name": "Pasta With Tuna",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 423,
+      "protein": 24,
+      "carbs": 58,
+      "fat": 10,
+      "fiber": 5,
+      "cuisines": [],
+      "diets": [
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "flour",
+        "green onions",
+        "non-fat milk",
+        "olive oil",
+        "onion"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a67a1ed3-5dc9-4c14-851a-dfcebfd6a7f1",
+      "name": "Crab Stacks",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 3,
+      "calories": 730,
+      "protein": 56,
+      "carbs": 69,
+      "fat": 26,
+      "fiber": 11,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "dungeness crab- cooked&",
+        "quinoa",
+        "orange juice",
+        "chicken stock",
+        "mango"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_04741daf-442a-457e-b827-73797c542ae3",
+      "name": "Soy Ginger Glazed Halibut with Ginger Peach Relish",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 382,
+      "protein": 49,
+      "carbs": 17,
+      "fat": 10,
+      "fiber": 3,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "apple cider vinegar",
+        "ginger",
+        "halibut fillets",
+        "jalapeno",
+        "lime"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_983c3e16-22e3-4e27-b88e-400feccd4551",
+      "name": "Smoked Salmon Eggs Benedict With Lemon Dill Hollandaise",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 540,
+      "protein": 41,
+      "carbs": 21,
+      "fat": 33,
+      "fiber": 4,
+      "cuisines": [],
+      "diets": [
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "morning meal",
+        "brunch",
+        "breakfast"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "baby arugula",
+        "baby spinach",
+        "butter",
+        "egg yolks",
+        "eggs"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_1686ae9c-99fc-47c9-91dc-3a1dcc9bc11f",
+      "name": "Spice-Rubbed Lemon Barbecue Salmon",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 337,
+      "protein": 36,
+      "carbs": 23,
+      "fat": 12,
+      "fiber": 3,
+      "cuisines": [
+        "bbq",
+        "Barbecue"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "barbecue sauce",
+        "barbecue seasoning",
+        "hoisin sauce",
+        "honey",
+        "lemon"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a252fafb-bd45-4370-a84c-e26035a9546f",
+      "name": "Thai-Style Mussels",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 3,
+      "calories": 208,
+      "protein": 21,
+      "carbs": 9,
+      "fat": 9,
+      "fiber": 0,
+      "cuisines": [
+        "Thai",
+        "Asian"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "primal",
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "antipasti",
+        "main course",
+        "starter",
+        "snack",
+        "appetizer",
+        "main dish",
+        "antipasto",
+        "dinner",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "wine",
+        "garlic",
+        "stem lemongrass",
+        "mussels",
+        "olive oil"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_a72f9b9e-8fb9-4197-854c-6cb2f8df8be3",
+      "name": "Feta Encrusted Salmon",
+      "prepTime": 8,
+      "cookTime": 18,
+      "servings": 4,
+      "calories": 388,
+      "protein": 44,
+      "carbs": 18,
+      "fat": 15,
+      "fiber": 2,
+      "cuisines": [],
+      "diets": [
+        "pescatarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "dill",
+        "feta",
+        "juice of lemon",
+        "olive oil",
+        "panko"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": true,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_ae799f76-ce2c-4f8c-890a-57ab72982d19",
+      "name": "Garlicky Kale",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 170,
+      "protein": 2,
+      "carbs": 7,
+      "fat": 15,
+      "fiber": 3,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "lacto ovo vegetarian",
+        "primal",
+        "whole 30",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "balsamic vinegar",
+        "garlic",
+        "curly kale",
+        "olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_d1c9116d-c2e3-4cb3-bc7e-025690adc684",
+      "name": "Red Kidney Bean Jambalaya",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 393,
+      "protein": 18,
+      "carbs": 69,
+      "fat": 6,
+      "fiber": 16,
+      "cuisines": [
+        "Cajun",
+        "Creole"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "brown rice",
+        "carrots",
+        "celery",
+        "celery seed",
+        "kidney beans"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_43e583b4-c97c-4d0b-beab-e0cd9faa143d",
+      "name": "Cauliflower, Brown Rice, and Vegetable Fried Rice",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 8,
+      "calories": 248,
+      "protein": 7,
+      "carbs": 29,
+      "fat": 13,
+      "fiber": 6,
+      "cuisines": [
+        "Chinese",
+        "Asian"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "grapeseed oil",
+        "coconut oil",
+        "scallions",
+        "garlic",
+        "cauliflower"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_693be0c5-fce1-4cc2-9a24-215fa65bbabd",
+      "name": "Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried Cherries",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 539,
+      "protein": 21,
+      "carbs": 84,
+      "fat": 15,
+      "fiber": 15,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cashews",
+        "dried cherries",
+        "dried chickpeas",
+        "dried thyme",
+        "ground cumin"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_ec38f7a8-308a-4209-a246-0932e30fe0de",
+      "name": "Easy Homemade Rice and Beans",
+      "prepTime": 11,
+      "cookTime": 25,
+      "servings": 2,
+      "calories": 446,
+      "protein": 19,
+      "carbs": 86,
+      "fat": 4,
+      "fiber": 19,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "black beans",
+        "canned tomatoes",
+        "chili powder",
+        "cumin",
+        "ground pepper"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_02a102a7-7888-4336-9534-1f100fb8421d",
+      "name": "Crunchy Brussels Sprouts Side Dish",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 4,
+      "calories": 232,
+      "protein": 8,
+      "carbs": 20,
+      "fat": 16,
+      "fiber": 8,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pepper",
+        "brussels sprouts",
+        "dijon mustard",
+        "honey",
+        "olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_8641b770-f81a-4bda-903f-525909e30e03",
+      "name": "Farro With Mushrooms and Asparagus",
+      "prepTime": 23,
+      "cookTime": 53,
+      "servings": 4,
+      "calories": 365,
+      "protein": 12,
+      "carbs": 62,
+      "fat": 9,
+      "fiber": 13,
+      "cuisines": [],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "asparagus",
+        "chicken stock",
+        "porcini mushrooms",
+        "farro",
+        "thyme"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e4d5b286-1e94-4336-bc8f-ef6da0875cc4",
+      "name": "Swiss Chard Wraps",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 137,
+      "protein": 4,
+      "carbs": 9,
+      "fat": 11,
+      "fiber": 4,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "lacto ovo vegetarian",
+        "primal",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "swiss chard leaves",
+        "orange cauliflower",
+        "olive oil",
+        "garlic",
+        "salt"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_4a912b14-a1b7-48fb-87df-5ba0c110553c",
+      "name": "Corn Avocado Salsa",
+      "prepTime": 8,
+      "cookTime": 18,
+      "servings": 2,
+      "calories": 237,
+      "protein": 5,
+      "carbs": 26,
+      "fat": 16,
+      "fiber": 9,
+      "cuisines": [
+        "Mexican"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "avocado",
+        "balsamic vinegar",
+        "cumin",
+        "corn",
+        "garlic"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_c72deb69-b34d-4612-804e-5039c8989a7d",
+      "name": "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 129,
+      "protein": 7,
+      "carbs": 23,
+      "fat": 2,
+      "fiber": 8,
+      "cuisines": [
+        "Indian",
+        "Asian"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "black-eyed peas",
+        "curry powder",
+        "garam masala",
+        "globe",
+        "ground coriander"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_3dc4effb-cf13-402c-81b9-7dbd6468c707",
+      "name": "Moroccan Couscous and Chickpea Salad",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 483,
+      "protein": 14,
+      "carbs": 53,
+      "fat": 25,
+      "fiber": 9,
+      "cuisines": [],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pepper",
+        "chickpeas",
+        "cayenne",
+        "cinnamon",
+        "couscous"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_474896d7-2abe-4910-8512-7011a027cc51",
+      "name": "Roasted Broccoli with Lemon and Garlic",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 58,
+      "protein": 3,
+      "carbs": 8,
+      "fat": 2,
+      "fiber": 3,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "paleolithic",
+        "lacto ovo vegetarian",
+        "primal",
+        "whole 30",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "broccoli florets",
+        "extra virgin olive oil",
+        "garlic",
+        "ground pepper",
+        "lemon juice"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_3a98ab58-f1a6-4330-aab4-32d08179ca1d",
+      "name": "Snap Pea and Green Bean Salad with Arugula Pesto",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 314,
+      "protein": 12,
+      "carbs": 22,
+      "fat": 22,
+      "fiber": 8,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "roasted almonds",
+        "almonds",
+        "baby arugula",
+        "basil leaves",
+        "cilantro"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_7ac574f7-0fb5-472e-b3c0-5d232331ce96",
+      "name": "Vegetable Dip",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 3,
+      "calories": 210,
+      "protein": 16,
+      "carbs": 33,
+      "fat": 4,
+      "fiber": 7,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "condiment",
+        "starter",
+        "snack",
+        "appetizer",
+        "dip",
+        "antipasto",
+        "hor d'oeuvre",
+        "spread"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "spinach",
+        "onion",
+        "lowfat yogurt",
+        "vegetables"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_c5e2248b-37f3-44f4-8d69-1d578f9abc45",
+      "name": "Instant Pot Quinoa Grain Bowl",
+      "prepTime": 2,
+      "cookTime": 11,
+      "servings": 4,
+      "calories": 407,
+      "protein": 15,
+      "carbs": 68,
+      "fat": 9,
+      "fiber": 10,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "avocado",
+        "broccoli",
+        "rainbow cherry tomatoes",
+        "clementine",
+        "kale"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_06de49cd-41ae-4124-9d5a-79f6e4e710ac",
+      "name": "Roasted Cauliflower Detox Bowl with Tahini Sauce",
+      "prepTime": 15,
+      "cookTime": 35,
+      "servings": 2,
+      "calories": 524,
+      "protein": 16,
+      "carbs": 60,
+      "fat": 29,
+      "fiber": 17,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "kale leaves",
+        "garlic",
+        "quinoa",
+        "cabbage",
+        "avocado"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e60f68ae-e0c1-4937-b6a2-8ec3a112f6bf",
+      "name": "Slow Cooker: Pork and Garbanzo Beans",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 587,
+      "protein": 66,
+      "carbs": 49,
+      "fat": 14,
+      "fiber": 14,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "cinnamon",
+        "cumin",
+        "garbanzo beans *1",
+        "ground pepper",
+        "onion"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_cf5ee2b7-e737-468f-871b-085ca53a4b70",
+      "name": "Cheesy Chicken Enchilada Quinoa Casserole",
+      "prepTime": 15,
+      "cookTime": 15,
+      "servings": 4,
+      "calories": 594,
+      "protein": 34,
+      "carbs": 68,
+      "fat": 24,
+      "fiber": 18,
+      "cuisines": [
+        "Mexican"
+      ],
+      "diets": [
+        "gluten free"
+      ],
+      "dishTypes": [
+        "side dish",
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "avocado",
+        "pepper",
+        "black beans",
+        "canned tomatoes",
+        "chili powder"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_3be3ebce-f87e-445f-924f-804583b904ad",
+      "name": "Zesty Green Pea and Jalapeño Pesto Pasta",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 325,
+      "protein": 10,
+      "carbs": 46,
+      "fat": 12,
+      "fiber": 6,
+      "cuisines": [],
+      "diets": [
+        "dairy free"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "fresh basil leaves",
+        "fresh mint leaves",
+        "garlic",
+        "jalapeno",
+        "juice of lemon"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_aa88499d-0670-4077-a02c-cc9ae17fb71e",
+      "name": "Ginger Lentils With Carrots and Fresh Herbs",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 162,
+      "protein": 9,
+      "carbs": 26,
+      "fat": 3,
+      "fiber": 11,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "avocado",
+        "carrot",
+        "cumin seeds",
+        "ginger",
+        "mint leaves"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_e4e98ac4-489e-4211-8c58-857e9e7862b3",
+      "name": "Lentils and Apples with Acorn Squash",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 608,
+      "protein": 21,
+      "carbs": 91,
+      "fat": 19,
+      "fiber": 27,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "maple syrup",
+        "vegetable oil",
+        "soy sauce",
+        "red wine vinegar",
+        "allspice"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_b364ccbe-ed51-4330-8402-a6716153a89e",
+      "name": "Lentil Rice Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 10,
+      "calories": 204,
+      "protein": 13,
+      "carbs": 37,
+      "fat": 1,
+      "fiber": 15,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bay leaf",
+        "brown rice",
+        "carrot",
+        "celery stalk",
+        "lentils"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5d4b2f38-2204-4c37-a1e1-82c1e2fc6892",
+      "name": "Lentil, Sweet Potato and Spinach Soup",
+      "prepTime": 72,
+      "cookTime": 168,
+      "servings": 6,
+      "calories": 304,
+      "protein": 20,
+      "carbs": 56,
+      "fat": 1,
+      "fiber": 24,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bay leaves",
+        "carrots",
+        "cumin",
+        "curry powder",
+        "garlic"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5a60aa8e-9e10-41d5-a2ae-60b08b979114",
+      "name": "Curried Chickpeas and Vegetables",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 2,
+      "calories": 448,
+      "protein": 15,
+      "carbs": 77,
+      "fat": 11,
+      "fiber": 16,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chickpeas/garbanzo beans",
+        "potatoes",
+        "water",
+        "not chicken\" vegan bouillons",
+        "onion"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_f5c97126-849e-4c5a-aa00-ddf6225c0cc4",
+      "name": "Zucchini Salad Pita Pockets",
+      "prepTime": 9,
+      "cookTime": 21,
+      "servings": 4,
+      "calories": 602,
+      "protein": 20,
+      "carbs": 86,
+      "fat": 22,
+      "fiber": 17,
+      "cuisines": [],
+      "diets": [
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "barley",
+        "zucchini",
+        "garlic",
+        "carrots",
+        "parsley"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": false,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_80c5bbbb-3454-4f32-a0b6-4d0b4b277e71",
+      "name": "Armenian Stew",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 6,
+      "calories": 328,
+      "protein": 16,
+      "carbs": 63,
+      "fat": 3,
+      "fiber": 18,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "apricots soaked in",
+        "water",
+        "garbanzo beans soaked",
+        "overnight in water",
+        "water"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_0c75a816-5752-4890-82ec-96db621c363b",
+      "name": "Jambalaya Soup",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 293,
+      "protein": 26,
+      "carbs": 20,
+      "fat": 12,
+      "fiber": 3,
+      "cuisines": [
+        "Cajun",
+        "Creole"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "andouille or",
+        "brown rice",
+        "canned tomatoes",
+        "cayenne pepper",
+        "thinly- celery"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_827e9cb1-facd-4d29-8316-96ade9679f0c",
+      "name": "Jambalaya Stew",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 263,
+      "protein": 17,
+      "carbs": 32,
+      "fat": 8,
+      "fiber": 4,
+      "cuisines": [
+        "Cajun",
+        "Creole"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free"
+      ],
+      "dishTypes": [
+        "lunch",
+        "soup",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "chicken sausage links",
+        "canned tomatoes",
+        "onion",
+        "bell pepper",
+        "celery"
+      ],
+      "vegetarian": false,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_45bcee00-c719-4649-9c50-892d0c6ba9c7",
+      "name": "Fried Brown Rice",
+      "prepTime": 8,
+      "cookTime": 18,
+      "servings": 2,
+      "calories": 470,
+      "protein": 18,
+      "carbs": 72,
+      "fat": 14,
+      "fiber": 9,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "brown sugar",
+        "carrots",
+        "brown rice",
+        "crimini mushrooms",
+        "eggs"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "quick",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_2a22194d-b3dc-4ad9-8993-aeb85da22c24",
+      "name": "Autumn Pumpkin Cake",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 12,
+      "calories": 131,
+      "protein": 2,
+      "carbs": 23,
+      "fat": 4,
+      "fiber": 1,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "dessert"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "pumpkin",
+        "brown rice flour",
+        "coconut milk",
+        "raisins",
+        "agave syrup"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_163595e1-4030-419c-a45d-0815b643e4a2",
+      "name": "Gluten free focaccia",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 8,
+      "calories": 341,
+      "protein": 6,
+      "carbs": 55,
+      "fat": 11,
+      "fiber": 5,
+      "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+      ],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "tbsp. of water",
+        "active yeast",
+        "grounded flax seeds",
+        "tbsp. of olive oil",
+        "apple cider vinegar"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_8737f0ef-7708-4fe6-b2ea-766b4549bccc",
+      "name": "Lentil Veggie Burgers",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 20,
+      "calories": 120,
+      "protein": 5,
+      "carbs": 23,
+      "fat": 1,
+      "fiber": 6,
+      "cuisines": [
+        "American"
+      ],
+      "diets": [
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "lentils",
+        "flour",
+        "oats",
+        "brown rice",
+        "carrot"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": false,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_10f1d330-8545-4b30-a940-7c88c032a9d3",
+      "name": "Baked Stuffed Peppers",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 379,
+      "protein": 14,
+      "carbs": 35,
+      "fat": 22,
+      "fiber": 7,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "lacto ovo vegetarian"
+      ],
+      "dishTypes": [
+        "lunch",
+        "main course",
+        "main dish",
+        "dinner"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bell pepper",
+        "brown rice",
+        "butter",
+        "celery",
+        "eggs"
+      ],
+      "vegetarian": true,
+      "vegan": false,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "effortLevel": "medium",
+      "healthScore": null
+    },
+    {
+      "recipeId": "recipe_5557fd8b-240c-44d3-aca6-462ad02ac67f",
+      "name": "Baked Brabant Potatoes",
+      "prepTime": 14,
+      "cookTime": 31,
+      "servings": 4,
+      "calories": 750,
+      "protein": 10,
+      "carbs": 101,
+      "fat": 34,
+      "fiber": 5,
+      "cuisines": [],
+      "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+      ],
+      "dishTypes": [
+        "side dish"
+      ],
+      "mealSlots": [
+        "lunch",
+        "dinner"
+      ],
+      "mainIngredients": [
+        "bake in a degree oven until brown and on the outside",
+        "flat leaf parsley",
+        "garlic",
+        "idaho potatoes.",
+        "olive oil"
+      ],
+      "vegetarian": true,
+      "vegan": true,
+      "pescatarian": false,
+      "glutenFree": true,
+      "dairyFree": true,
+      "effortLevel": "medium",
+      "healthScore": null
+    }
+  ]
+}

@@ -156,10 +156,10 @@ export class GenerationStatusPage {
       const chatHistory = this.loadChatHistory();
       const baseSpecification = loadBaseSpecification();
       
-      // Slice 5: Load recipe catalog for catalog-first generation (Task 70)
-      const { getRecipeCatalogSync } = await import('../utils/catalogStorage.js');
-      const catalog = getRecipeCatalogSync();
-      console.log(`📚 Loaded catalog: ${catalog.length} recipes`);
+      // Slice 5: Load lightweight recipe index for meal plan generation
+      const { getRecipeIndexSync } = await import('../utils/catalogStorage.js');
+      const catalog = getRecipeIndexSync();
+      console.log(`📚 Loaded recipe index: ${catalog.length} recipes (lightweight)`);
       
       // Slice 4: Check for single-day regeneration parameters (Task 50)
       const regenerateDay = sessionStorage.getItem('regenerate_day');

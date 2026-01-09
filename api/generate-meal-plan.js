@@ -65,7 +65,7 @@ Guidelines:
 - Focus on practical, quick recipes
 
 ⚠️ CRITICAL - RECIPE SELECTION STRATEGY (Slice 5):
-- The user has a LOCAL CATALOG of 607 professionally-tested recipes with pre-calculated health scores
+- The user has a LOCAL CATALOG of 174 professionally-tested recipes with complete details
 - You will be provided with a filtered list of available catalog recipes in the user prompt
 - YOUR PRIMARY JOB: Select recipes FROM THE CATALOG LIST by using their exact names
 - Target: 80%+ of recipes should come from the catalog (16-20 out of 21 meals)

@@ -363,6 +363,7 @@ export const STORAGE_KEYS = {
   
   // New (Slice 5)
   RECIPE_CATALOG: 'vanessa_recipe_catalog',
+  RECIPE_INDEX: 'vanessa_recipe_index',  // Lightweight version for meal planning
   INGREDIENT_HEALTH: 'vanessa_ingredient_health',
   DIET_PROFILES: 'vanessa_diet_profiles',
   
