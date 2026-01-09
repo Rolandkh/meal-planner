@@ -91,41 +91,40 @@ export class ShoppingListView {
     const planMeals = allMeals.filter(meal => planMealIds.has(meal.mealId));
     console.log(`  🎯 Found ${planMeals.length} meals for this meal plan`);
     
-    // Create a map of recipe names to recipe objects for quick lookup
+    // Create a map of recipe IDs to recipe objects for quick lookup
     const recipeMap = new Map();
     allRecipes.forEach(recipe => {
-      if (recipe.name) {
-        recipeMap.set(recipe.name.toLowerCase().trim(), recipe);
+      if (recipe.recipeId) {
+        recipeMap.set(recipe.recipeId, recipe);
       }
     });
     console.log(`  📚 Recipe map created with ${recipeMap.size} recipes`);
 
     const usedRecipes = [];
-    const addedNames = new Set();
+    const addedIds = new Set();
     let catalogCount = 0;
-    let newRecipeCount = 0;
     let missingCount = 0;
 
     // Extract unique recipes from meals
     planMeals.forEach((meal, idx) => {
-      if (meal && meal.recipeName) {
-        const recipeName = meal.recipeName.toLowerCase().trim();
+      if (meal && meal.recipeId) {
+        const recipeId = meal.recipeId;
         
         // Avoid adding the same recipe multiple times
-        if (!addedNames.has(recipeName)) {
-          const recipe = recipeMap.get(recipeName);
+        if (!addedIds.has(recipeId)) {
+          const recipe = recipeMap.get(recipeId);
           if (recipe) {
             // Recipe from catalog or previously generated - use stored data
             usedRecipes.push(recipe);
-            addedNames.add(recipeName);
+            addedIds.add(recipeId);
             catalogCount++;
           } else {
-            console.warn(`  ⚠️ Recipe not found in storage: "${meal.recipeName}" (meal ${idx + 1}/${planMeals.length})`);
+            console.warn(`  ⚠️ Recipe not found in storage: "${recipeId}" (meal ${idx + 1}/${planMeals.length})`);
             missingCount++;
           }
         }
       } else {
-        console.warn(`  ⚠️ Meal has no recipeName:`, meal);
+        console.warn(`  ⚠️ Meal has no recipeId:`, meal);
       }
     });
 
@@ -453,16 +452,16 @@ export class ShoppingListView {
     const planMeals = allMeals.filter(meal => planMealIds.has(meal.mealId));
 
     planMeals.forEach(meal => {
-      if (meal && meal.recipeName) {
-        const recipeName = meal.recipeName.toLowerCase().trim();
+      if (meal && meal.recipeId) {
+        const recipeId = meal.recipeId;
         const servings = meal.servings || 1;
         
-        if (usageMap.has(recipeName)) {
-          const existing = usageMap.get(recipeName);
+        if (usageMap.has(recipeId)) {
+          const existing = usageMap.get(recipeId);
           existing.count += 1;
           existing.totalServings += servings;
         } else {
-          usageMap.set(recipeName, {
+          usageMap.set(recipeId, {
             count: 1,
             totalServings: servings
           });
@@ -482,10 +481,10 @@ export class ShoppingListView {
     const ingredientMap = new Map();
     const debugInfo = { skipped: [], combined: [], converted: [], warnings: [] };
 
-    // Get recipe usage counts
+    // Get recipe usage counts (by recipeId)
     const recipeUsage = this.getRecipeUsageCounts();
-    console.log('📊 Recipe usage:', Array.from(recipeUsage.entries()).map(([name, usage]) => 
-      `${name}: ${usage.count}x (${usage.totalServings} servings total)`
+    console.log('📊 Recipe usage:', Array.from(recipeUsage.entries()).map(([recipeId, usage]) => 
+      `${recipeId}: ${usage.count}x (${usage.totalServings} servings total)`
     ));
 
     // First pass: collect all ingredients in recipe units, scaled by servings
@@ -493,10 +492,10 @@ export class ShoppingListView {
     this.recipes.forEach(recipe => {
       if (!recipe.ingredients) return;
       
-      const recipeName = recipe.name.toLowerCase().trim();
-      const usage = recipeUsage.get(recipeName);
+      const recipeId = recipe.recipeId;
+      const usage = recipeUsage.get(recipeId);
       if (!usage) {
-        console.warn(`Recipe "${recipe.name}" not found in meal plan`);
+        console.warn(`Recipe "${recipe.name}" (${recipeId}) not found in meal plan`);
         return;
       }
 
