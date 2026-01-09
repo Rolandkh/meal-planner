@@ -451,14 +451,40 @@ export function loadRecipes() {
 /**
  * Save recipes to localStorage
  * @param {Array} recipes - Array of recipe objects
+ * @param {boolean} updateIndex - Whether to update recipe index (default: true)
  * @returns {Object} Result object with success status
  */
-export function saveRecipes(recipes) {
+export function saveRecipes(recipes, updateIndex = true) {
   if (!Array.isArray(recipes)) {
     console.error('saveRecipes: expected array, got', typeof recipes);
     return { success: false, error: 'INVALID_TYPE', message: 'Expected array' };
   }
-  return safeSave(VANESSA_RECIPES, recipes);
+  
+  const result = safeSave(VANESSA_RECIPES, recipes);
+  
+  // Auto-update recipe index when user recipes change
+  if (result.success && updateIndex) {
+    updateRecipeIndex();
+  }
+  
+  return result;
+}
+
+/**
+ * Update recipe index with catalog + user recipes
+ * Called automatically when user recipes change
+ */
+async function updateRecipeIndex() {
+  try {
+    // Dynamically import to avoid circular dependency
+    const { rebuildRecipeIndexFull } = await import('./catalogStorage.js');
+    
+    // Rebuild full index (catalog + user recipes)
+    await rebuildRecipeIndexFull();
+    
+  } catch (error) {
+    console.error('Error updating recipe index:', error);
+  }
 }
 
 /**

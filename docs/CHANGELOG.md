@@ -1,22 +1,69 @@
 # Changelog
 
+## [v1.2.0-alpha] - January 10, 2026 - Catalog Expansion (Phase 2)
+
+### 🎉 Major Achievement: 184% Catalog Growth
+
+**Before:** 174 recipes  
+**After:** 494 recipes  
+**Added:** 320 new recipes
+
+### ✨ New Features
+
+#### Comprehensive Recipe Coverage
+- **🍳 Breakfasts**: 3 → 34 recipes (1,033% increase!)
+- **🍛 Curries**: 0 → 18 recipes
+- **🥘 Stir-fries**: 0 → 11 recipes
+- **🌏 Asian Cuisines**: Massive expansion (Thai, Indian, Chinese, Japanese, Korean, Vietnamese)
+- **🌮 Mexican**: 3 → significant expansion
+- **26 cuisine types** total (was 18)
+
+#### Protein Source Tagging (CRITICAL FIX)
+- **Fixed extraction bug**: Proteins were not being tagged
+- **15 protein types** now detected: chicken, salmon, tofu, lentils, chickpeas, beef, pork, shrimp, eggs, turkey, lamb, tuna, white-fish, black-beans, tempeh
+- **All 494 recipes** properly tagged with protein sources
+
+### 📊 Technical Details
+
+#### Extraction Stats
+- **66 targeted searches** (following protocol document)
+- **613 recipes fetched**, 293 duplicates filtered
+- **319 new images** downloaded (high-res 636x393)
+- **2 image failures** (99.4% success rate)
+- **1.4MB catalog** JSON (740KB → 1.4MB)
+
+#### Storage
+- **835 total images** (was 629)
+- **22MB image storage** (was 11MB)
+- **99.8% image availability**
+
+### 📚 Documentation
+- **ARCHITECTURE.md:** Added Two-Phase AI Extraction pattern documentation
+- **EXTRACTION-PLAN.md:** Created comprehensive extraction plan
+- **Cleanup:** Moved 3 session docs to archive for protocol compliance
+- **Compliance:** 100% compliant with documentation protocol (5 permanent files only)
+
+---
+
+---
+
 ## [v1.1.0-alpha] - January 8-9, 2026 - Slice 5 Phase 1: Catalog & Health System
 
 ### 🎉 Major Features
 
-#### Spoonacular Recipe Catalog
-- **607 professional recipes** extracted and stored locally
-- **606 recipe images** downloaded (11MB, 99.8% success rate)
+#### Spoonacular Recipe Catalog (Initial Extraction)
+- **174 professional recipes** extracted and stored locally (corrected from initial documentation)
+- **180 recipe images** downloaded
 - **Complete data**: ingredients, nutrition, instructions, tags
 - **Zero dependency**: Can cancel Spoonacular subscription after extraction
-- **24 cuisines**, 10 diet types, 27 dish types covered
+- **Mediterranean & Diet Compass focus**
 
 #### Diet Compass Health Scoring System
 - **4-metric scoring**: Nutrient Density, Anti-Aging, Weight Loss, Heart Health (0-100 each)
-- **605 recipes scored** with health ratings (99.7% coverage)
 - **Visual display**: 5-bar system on recipe cards, full breakdown on detail pages
 - **100+ ingredient database** with health impact classifications
 - **Based on** "The Diet Compass" by Bas Kast
+- *Note: Scoring needs to be re-run on expanded catalog*
 
 #### Diet Profile System (Data Layer)
 - **11 preloaded profiles**: Mediterranean, Keto, Vegan, Vegetarian, High Protein, Flexitarian, Longevity, Intermittent Fasting, MIND, Kid-Friendly, La Dieta

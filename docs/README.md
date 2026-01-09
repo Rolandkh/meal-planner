@@ -1,196 +1,212 @@
-# Vanessa - AI Meal Planning Concierge
+# Vanessa - AI Meal Planning Assistant
 
-**Version:** v1.1-alpha (Slice 5 - Catalog System)  
-**Status:** Active Development  
-**Created:** December 2025
+**Version:** v1.2.0-alpha  
+**Status:** Active Development (Slice 5 Phase 2)  
+**Last Updated:** January 10, 2026
 
 ---
-
-## Overview
-
-Vanessa is an AI-powered meal planning assistant that helps you create personalized weekly meal plans with:
-
-- 💬 **Conversational AI** - Chat with Vanessa about your needs
-- 👥 **Household Management** - Multiple members with unique dietary needs
-- ✨ **Smart Generation** - 7-day meal plans with accurate servings
-- 📚 **Recipe Catalog** - 607 professional recipes with health scores
-- 🏥 **Health Intelligence** - Diet Compass scoring system
-- 🛒 **Shopping Lists** - Organized by category with ingredient limits
-- 📖 **Recipe Library** - Browse, search, rate, and save favorites
 
 ## Quick Start
 
-### Prerequisites
-
-- Node.js 18+
-- Anthropic API key ([get one here](https://console.anthropic.com))
-- Vercel account (for deployment)
-
-### Local Development
-
+### Run Locally
 ```bash
-# Install dependencies
 npm install
-
-# Set up environment variables
-echo "ANTHROPIC_API_KEY=sk-ant-api03-your-key-here" > .env.local
-
-# Run development server
-npm run dev
+vercel dev
+# Open http://localhost:3000
 ```
 
-The app will be available at `http://localhost:3000`
-
-### Fast Testing Setup
-
-For rapid testing without going through onboarding:
-1. Open the app
-2. Scroll to bottom of home page
-3. Click "🔧 Import Dev Preset"
-4. Instantly have a complete household setup with meal plan!
-
-### Deployment
-
+### Environment Setup
+Create `.env`:
 ```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Set environment variables in Vercel dashboard
-# Settings → Environment Variables → Add ANTHROPIC_API_KEY
+ANTHROPIC_API_KEY=your_key_here
+SPOONACULAR_API_KEY=optional_for_catalog_extraction
 ```
-
-## Key Features
-
-### ✅ Current Features
-
-- **Chat Interface** - Collapsible widget, streaming responses, conversation history
-- **Onboarding** - AI-powered 5-question setup extracting household members
-- **Meal Plan Generation** - Complete 7-day plans with progress tracking
-- **Recipe Catalog** - 607 recipes with health scores, local images (11MB)
-- **Health Scoring** - 4-metric Diet Compass system (Nutrient Density, Anti-Aging, Weight Loss, Heart Health)
-- **Recipe Management** - Edit, import from text, rate, favorite, track usage
-- **Single Day Regeneration** - Replace any day without losing the week
-- **Meal Plan History** - Browse past plans with configurable retention
-- **Settings** - Storage management, household members, meal planning preferences
-- **Shopping Lists** - Grouped by category, ingredient limits, budget tracking
-
-### 🚧 In Progress (Slice 5 Phase 2)
-
-- Settings UI for diet profiles
-- Prep planning system
-- Recipe variations
-- Multi-profile meal generation
-
-### 📋 Planned Features
-
-See [FEATURES.md](./FEATURES.md) for complete feature documentation.
-
-## Technology Stack
-
-- **Frontend:** Vanilla JavaScript (ES6 modules), HTML, Tailwind CSS
-- **Backend:** Vercel Edge Functions (serverless)
-- **AI:** Claude Sonnet 4.5 via Anthropic API
-- **Storage:** localStorage (5MB, single-device) → Firebase Firestore (future)
-- **Hosting:** Vercel
-- **Build:** None (static site, direct ES modules)
-
-## Project Structure
-
-```
-meal-planner/
-├── docs/                     # 📚 All documentation (you are here)
-│   ├── README.md            # Project overview
-│   ├── ARCHITECTURE.md      # Technical decisions
-│   ├── DEVELOPMENT.md       # Developer guide
-│   ├── FEATURES.md          # Feature documentation
-│   ├── CHANGELOG.md         # Version history
-│   └── sessions/            # Ephemeral session notes (auto-delete)
-├── api/                      # Vercel serverless functions
-├── src/
-│   ├── main.js              # App entry point
-│   ├── components/          # UI components (18 files)
-│   ├── utils/               # Utilities (20 files)
-│   ├── data/                # JSON data files (catalog, profiles, health data)
-│   └── migrations/          # Data migrations
-├── index.html               # App shell
-├── package.json
-├── vercel.json
-└── .taskmaster/             # Taskmaster project management
-    ├── docs/prd.txt         # Product requirements
-    └── tasks/tasks.json     # Task tracking
-```
-
-## Routes
-
-| Route | Page | Description |
-|-------|------|-------------|
-| `#/` | Home | Landing page or meal plan summary |
-| `#/generating` | Generation Status | Progress during meal plan creation |
-| `#/meal-plan` | Meal Plan View | Full week with schedule grid |
-| `#/day/:day` | Day View | Single day view |
-| `#/recipes` | Recipe Library | Browse, search, filter recipes |
-| `#/recipe/:id` | Recipe Detail | View, rate, favorite, edit |
-| `#/recipe/:id/edit` | Recipe Edit | Edit recipe form |
-| `#/history` | History | Browse past meal plans |
-| `#/history/:id` | Historical Plan | View archived plan |
-| `#/shopping-list` | Shopping List | Aggregated ingredients |
-| `#/settings` | Settings | 4 sections: Storage, Household, Meal Planning, Chat |
-
-## Documentation
-
-- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Technical architecture & decisions
-- **[DEVELOPMENT.md](./DEVELOPMENT.md)** - Setup, testing, deployment guide
-- **[FEATURES.md](./FEATURES.md)** - Complete feature documentation
-- **[CHANGELOG.md](./CHANGELOG.md)** - Version history
-
-## Development Methodology
-
-This project follows a **vertical slice** approach:
-
-1. Build complete end-to-end flows one at a time
-2. Test and validate each slice
-3. Conduct reality check and document learnings
-4. Update specifications based on real implementation
-5. Move to next slice
-
-**Current Status:**
-- ✅ Slice 1: Chat with Vanessa
-- ✅ Slice 2: Meal Plan Generation
-- ✅ Slice 3: Recipe Library & Profile Management
-- ✅ Slice 4: Recipe Management & History
-- 🚧 Slice 5: Health Intelligence & Recipe Catalog (Phase 1 complete)
-
-See `.taskmaster/docs/prd.txt` for complete specifications.
-
-## Known Limitations
-
-- Single device only (no sync across phone/desktop) - *Will be fixed in Slice 6*
-- 5MB storage limit (~20-30 weeks with auto-cleanup)
-- Single user (no authentication) - *Multi-user in Slice 6*
-- Metric units only (Australian market)
-- Week starts Saturday (hardcoded for shopping preference)
-
-## API Endpoints
-
-### POST /api/chat-with-vanessa
-Streams chat responses using SSE. Supports onboarding mode.
-
-### POST /api/generate-meal-plan
-Generates 7-day meal plan or single-day regeneration with progress updates.
-
-### POST /api/extract-recipe
-Extracts structured recipe data from raw text using AI.
-
-See [DEVELOPMENT.md](./DEVELOPMENT.md) for detailed API documentation.
-
-## License
-
-Private project - not licensed for redistribution.
 
 ---
 
-**Last Updated:** January 9, 2026  
-**Maintained By:** Roland Khayat
+## Current Features
+
+### ✅ Working Features
+
+**Slice 1: Chat with Vanessa**
+- Real-time streaming chat with Claude AI
+- Conversation persistence
+- Collapsible chat widget
+
+**Slice 2: Meal Plan Generation**
+- AI-generated 7-day meal plans
+- Real-time progress streaming
+- Shopping list with ingredient aggregation
+- Budget tracking
+
+**Slice 3: Recipe Library & Settings**
+- Browse 494+ professional recipes
+- Search and filter by cuisine, diet, protein
+- Recipe ratings and favorites
+- Household management (eaters, schedules)
+- Settings (4 sections)
+
+**Slice 4: Advanced Features**
+- Recipe editing with auto-save
+- Single-day regeneration (without losing week)
+- Meal plan history (archive past plans)
+- Recipe import from text (AI extraction)
+
+**Slice 5 Phase 1: Catalog & Health System**
+- 494 professional recipes from Spoonacular
+- Diet Compass health scoring (4 metrics)
+- 11 diet profiles (Mediterranean, Keto, Vegan, etc.)
+- Catalog-first meal generation (40-70% catalog usage)
+- 26 cuisines, 15 protein types
+- 34 breakfasts, 18 curries, 11 stir-fries
+
+### ⏳ In Development
+
+**Slice 5 Phase 2: UI Integration**
+- Diet profile selection in Settings
+- Multi-profile meal generation
+- Recipe variations (parent/child relationships)
+- Meal prep planning
+
+---
+
+## Recipe Catalog Stats
+
+### Current State (v2.0)
+- **494 recipes** with complete data
+- **835 images** (22MB, high-res 636x393)
+- **100% data complete**: ingredients, instructions, nutrition
+- **Lightweight index**: 326KB (84.5% smaller than full catalog)
+
+### Coverage
+- **26 cuisines**: Mediterranean, Italian, Thai, Indian, Chinese, Japanese, Korean, Vietnamese, Mexican, Greek, French, Spanish, Middle Eastern, etc.
+- **15 protein types**: chicken, salmon, tofu, lentils, chickpeas, beef, pork, shrimp, eggs, turkey, lamb, tuna, white-fish, black-beans, tempeh
+- **34 breakfasts** ready to use
+- **18 curries**, 11 stir-fries, 32 soups, 27 salads
+- **27 dish types** total
+
+### How It Works
+1. **Catalog loads** from file into localStorage on app boot
+2. **Recipe index** (lightweight) loads for meal generation
+3. **Claude receives** only the 326KB index (not 2.1MB catalog)
+4. **Token savings**: 84.5% reduction in prompt size
+5. **Auto-updates**: Index rebuilds when recipes change
+
+---
+
+## Architecture
+
+**Frontend:** Vanilla JavaScript (no build step)  
+**Backend:** Vercel Edge Functions  
+**Storage:** localStorage → Firebase (planned)  
+**AI:** Claude Sonnet 4.5
+
+See [ARCHITECTURE.md](./ARCHITECTURE.md) for details.
+
+---
+
+## Development
+
+### Key Scripts
+```bash
+# Extract more recipes from Spoonacular
+node scripts/extractSpoonacularCatalog.js
+
+# Rebuild recipe index from catalog
+node scripts/buildRecipeIndex.js
+
+# Run health scoring on catalog
+node scripts/scoreCatalog.js
+
+# Test catalog loading
+open test-catalog-loading.html
+```
+
+### File Structure
+```
+src/
+  ├── components/      # UI components (18 files)
+  ├── utils/           # Utilities (20 files)
+  ├── data/            # Static data
+  │   ├── vanessa_recipe_catalog.json  (2.1MB, 494 recipes)
+  │   ├── recipe_index.json            (326KB, lightweight)
+  │   ├── dietProfiles.json
+  │   └── ingredientHealthData.json
+  └── main.js          # App entry point
+
+api/
+  ├── chat-with-vanessa.js
+  ├── generate-meal-plan.js
+  └── extract-recipe.js
+
+docs/
+  ├── README.md          # This file
+  ├── ARCHITECTURE.md    # Technical decisions
+  ├── FEATURES.md        # Feature documentation
+  ├── DEVELOPMENT.md     # Setup & deployment
+  └── CHANGELOG.md       # Version history
+```
+
+---
+
+## Documentation
+
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Technical decisions, patterns, performance
+- **[FEATURES.md](./FEATURES.md)** - User-facing feature documentation
+- **[DEVELOPMENT.md](./DEVELOPMENT.md)** - Setup, testing, deployment
+- **[CHANGELOG.md](./CHANGELOG.md)** - Detailed version history
+
+---
+
+## Project Status
+
+### Completion by Slice
+- ✅ Slice 1: Chat (100%)
+- ✅ Slice 2: Meal Generation (100%)
+- ✅ Slice 3: Library & Settings (100%)
+- ✅ Slice 4: Advanced Features (100%)
+- ⏳ Slice 5 Phase 1: Catalog & Health (100%)
+- ⏳ Slice 5 Phase 2: UI Integration (40%)
+
+### Current Focus
+- Recipe catalog expansion (174 → 494 recipes ✅)
+- Lightweight index system ✅
+- Integration with meal generation ✅
+- Next: Settings UI for diet profiles
+
+---
+
+## Performance
+
+- **Initial load:** <2s (includes 494-recipe catalog)
+- **Meal generation:** 3-8s (streaming)
+- **Recipe search:** <100ms
+- **localStorage usage:** ~3-4MB / 5MB limit
+
+---
+
+## Cost
+
+- **Development:** ~$1-2 (Taskmaster + testing)
+- **Spoonacular:** One-time extraction only (~$29 for Cook tier, then cancel)
+- **Monthly:** ~$5-10 (Anthropic API only)
+- **Per meal plan:** ~$0.02-0.05 (with catalog optimization)
+
+---
+
+## Known Issues
+
+- [ ] Need to run health scoring on new 320 recipes
+- [ ] Some images may not display (CDN path issues)
+- [ ] Average health scores conservative due to limited ingredient database
+- [ ] Some Spoonacular searches returned 0 results (API limitations)
+
+---
+
+## Contributing
+
+This is a personal project following the Vertical Slice development methodology. See `.cursor/rules/` for development guidelines.
+
+---
+
+**Questions?** Check the [DEVELOPMENT.md](./DEVELOPMENT.md) guide or review session notes in `docs/sessions/`.

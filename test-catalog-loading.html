@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Catalog Loading</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-8">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">🧪 Catalog & Index Loading Test</h1>
+    
+    <div class="bg-white rounded-lg shadow p-6 mb-6">
+      <h2 class="text-xl font-bold mb-4">1. Load Catalog & Index</h2>
+      <button 
+        id="load-btn"
+        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+      >
+        Load Catalog & Index into localStorage
+      </button>
+      <div id="load-status" class="mt-4 text-sm"></div>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow p-6 mb-6">
+      <h2 class="text-xl font-bold mb-4">2. Verify Data</h2>
+      <button 
+        id="verify-btn"
+        class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+      >
+        Verify localStorage Data
+      </button>
+      <div id="verify-status" class="mt-4 text-sm"></div>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-bold mb-4">3. Sample Recipes</h2>
+      <div id="samples" class="space-y-2"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { STORAGE_KEYS } from './src/types/schemas.js';
+    
+    // Load catalog and index
+    document.getElementById('load-btn').addEventListener('click', async () => {
+      const status = document.getElementById('load-status');
+      status.innerHTML = '<div class="text-blue-600">Loading...</div>';
+      
+      try {
+        // Load catalog
+        const catalogRes = await fetch('/src/data/vanessa_recipe_catalog.json');
+        const catalog = await catalogRes.json();
+        localStorage.setItem(STORAGE_KEYS.RECIPE_CATALOG, JSON.stringify(catalog));
+        
+        // Load index
+        const indexRes = await fetch('/src/data/recipe_index.json');
+        const index = await indexRes.json();
+        localStorage.setItem(STORAGE_KEYS.RECIPE_INDEX, JSON.stringify(index));
+        
+        status.innerHTML = `
+          <div class="text-green-600 font-bold">✅ Success!</div>
+          <div class="text-gray-700 mt-2">
+            Catalog: ${catalog.recipes.length} recipes (${(JSON.stringify(catalog).length / 1024).toFixed(0)} KB)<br>
+            Index: ${index.recipes.length} recipes (${(JSON.stringify(index).length / 1024).toFixed(0)} KB)<br>
+            Size reduction: ${((1 - JSON.stringify(index).length / JSON.stringify(catalog).length) * 100).toFixed(1)}%
+          </div>
+        `;
+      } catch (error) {
+        status.innerHTML = `<div class="text-red-600">❌ Error: ${error.message}</div>`;
+      }
+    });
+    
+    // Verify data
+    document.getElementById('verify-btn').addEventListener('click', () => {
+      const status = document.getElementById('verify-status');
+      
+      try {
+        // Check catalog
+        const catalogStr = localStorage.getItem(STORAGE_KEYS.RECIPE_CATALOG);
+        const catalog = catalogStr ? JSON.parse(catalogStr) : null;
+        
+        // Check index
+        const indexStr = localStorage.getItem(STORAGE_KEYS.RECIPE_INDEX);
+        const index = indexStr ? JSON.parse(indexStr) : null;
+        
+        if (!catalog || !index) {
+          status.innerHTML = '<div class="text-red-600">❌ Data not loaded yet. Click "Load" first.</div>';
+          return;
+        }
+        
+        // Analyze
+        const cuisines = new Set();
+        const proteins = new Set();
+        let breakfasts = 0;
+        let curries = 0;
+        
+        catalog.recipes.forEach(r => {
+          r.tags?.cuisines?.forEach(c => cuisines.add(c));
+          r.tags?.proteinSources?.forEach(p => proteins.add(p));
+          if (r.tags?.mealSlots?.includes('breakfast')) breakfasts++;
+          if (r.name.toLowerCase().includes('curry')) curries++;
+        });
+        
+        status.innerHTML = `
+          <div class="text-green-600 font-bold">✅ Data verified!</div>
+          <div class="text-gray-700 mt-2 space-y-1">
+            <div><strong>Catalog:</strong> ${catalog.recipes.length} recipes</div>
+            <div><strong>Index:</strong> ${index.recipes.length} recipes</div>
+            <div><strong>Cuisines:</strong> ${cuisines.size} types (${Array.from(cuisines).slice(0, 5).join(', ')}...)</div>
+            <div><strong>Proteins:</strong> ${proteins.size} types (${Array.from(proteins).join(', ')})</div>
+            <div><strong>Breakfasts:</strong> ${breakfasts} recipes</div>
+            <div><strong>Curries:</strong> ${curries} recipes</div>
+          </div>
+        `;
+        
+        // Show samples
+        const samplesDiv = document.getElementById('samples');
+        const samples = catalog.recipes.slice(0, 10);
+        
+        samplesDiv.innerHTML = samples.map(r => `
+          <div class="border-l-4 border-blue-500 pl-4 py-2">
+            <div class="font-bold">${r.name}</div>
+            <div class="text-sm text-gray-600">
+              ${r.tags?.cuisines?.slice(0, 2).join(', ') || 'No cuisine'} • 
+              ${r.tags?.proteinSources?.join(', ') || 'No protein'} • 
+              ${r.servings} servings • 
+              ${r.prepTime + r.cookTime} min
+            </div>
+          </div>
+        `).join('');
+        
+      } catch (error) {
+        status.innerHTML = `<div class="text-red-600">❌ Error: ${error.message}</div>`;
+      }
+    });
+  </script>
+</body>
+</html>

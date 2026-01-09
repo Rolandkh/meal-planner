@@ -91,7 +91,8 @@ Guidelines:
 - Include realistic estimated budget in dollars
 
 ⚠️ CRITICAL - RECIPE SELECTION STRATEGY:
-- The user has a LOCAL CATALOG of 174 professionally-tested recipes with complete details
+- The user has a LOCAL CATALOG of 494+ professionally-tested recipes with complete details
+- Catalog includes: 26 cuisines, 15 protein types, 34 breakfasts, 18 curries, 11 stir-fries, plus soups, salads, and more
 - You will be provided with a filtered list of available catalog recipes in the user prompt
 - YOUR PRIMARY JOB: Select recipes FROM THE CATALOG LIST by using their exact names
 - Only create NEW recipes when the catalog truly has no suitable options for a specific meal

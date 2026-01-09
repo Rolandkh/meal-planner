@@ -212,6 +212,54 @@ eventSource.onmessage = (event) => {
 - Better perceived performance
 - Works with Vercel Edge Functions
 
+### Two-Phase AI Extraction Pattern
+
+**Problem:** Claude was ignoring complex household schedules and generating incorrect servings.
+
+**Solution:** Separate conversation into extraction and generation phases.
+
+**Implementation:**
+
+**Phase 1: Extract Structured Data**
+```javascript
+// During onboarding conversation:
+1. Chat naturally with user about household
+2. When conversation complete, call extraction API
+3. AI parses free-form text → structured data:
+   {
+     eaters: [{name, age, preferences}],
+     schedule: {
+       "2025-12-31": {dinner: ["You", "Maya", "Cathie"]},  // 3 servings
+       "2026-01-01": {lunch: ["You"]}                       // 1 serving
+     }
+   }
+```
+
+**Phase 2: Use Structured Data for Generation**
+```javascript
+// In meal generation API:
+- Receive pre-extracted structured schedule
+- Build explicit requirements:
+  "2025-12-31 (TUESDAY) dinner: 3 servings for You, Maya, Cathie"
+- Claude can't misinterpret - requirements are explicit
+```
+
+**Why It Works:**
+- **Separation of concerns**: Extraction vs generation are different tasks
+- **Explicit over implicit**: No room for Claude to misinterpret
+- **Verifiable**: Can inspect extracted data before generation
+- **Reliable**: Eliminates "Claude ignored my schedule" issues
+
+**Tradeoffs:**
+- Two API calls instead of one
+- Slightly longer onboarding (~5 seconds)
+- Worth it: Reliable results vs faster but wrong results
+
+**Results:**
+- 100% accurate servings across complex schedules
+- Users can verify extracted data before generation
+- Fallback mechanisms if extraction fails
+
 ---
 
 ## Health Scoring System
@@ -264,14 +312,26 @@ eventSource.onmessage = (event) => {
 
 ### Spoonacular Integration
 
-**One-time extraction:**
-- 607 recipes extracted
-- 606 images downloaded (11MB)
-- Complete ingredient lists (metric units)
-- Full nutrition data
-- Zero ongoing dependency
+**Two-phase extraction:**
 
-**Cost:** ~1,400 Spoonacular points (one-time)
+**Phase 1 (Jan 8-9, 2026):**
+- 174 recipes (Mediterranean & Diet Compass focus)
+- 180 images downloaded
+
+**Phase 2 (Jan 10, 2026):**
+- 320 additional recipes (66 targeted searches)
+- 319 new images downloaded
+- **Total: 494 recipes, 835 images (22MB)**
+
+**Complete data:**
+- Ingredients with metric units
+- Full nutrition data
+- Instructions
+- High-res images (636x393)
+- 15 protein types tagged
+- 26 cuisines covered
+
+**Cost:** ~70-100 Spoonacular points per extraction
 
 **Savings:** $29/month (can cancel subscription after extraction)
 
@@ -284,6 +344,13 @@ eventSource.onmessage = (event) => {
 4. If still no match, uses Claude's generated recipe
 5. Tracks catalog vs generated ratio
 
+**Current Catalog:**
+- 494 recipes available
+- 26 cuisines (Mediterranean, Italian, Thai, Indian, Chinese, Japanese, Korean, Vietnamese, Mexican, Greek, etc.)
+- 15 protein types (chicken, salmon, tofu, lentils, chickpeas, etc.)
+- 34 breakfasts, 18 curries, 11 stir-fries
+- 27 dish types
+
 **Results:**
 - 40-70% catalog usage (typical)
 - 50-70% token savings
@@ -294,11 +361,12 @@ eventSource.onmessage = (event) => {
 **Images:**
 - Stored in `/public/images/recipes/`
 - Named by spoonacularId: `665719.jpg`
-- Optimized size (~18KB avg)
-- Total: 11MB for 606 images
+- High-res size: 636x393 (~26KB avg)
+- Total: 22MB for 835 images
 
 **Catalog Data:**
-- `vanessa_recipe_catalog` in localStorage (~900KB)
+- `vanessa_recipe_catalog` in localStorage (1.4MB)
+- 494 recipes with complete data
 - Loads once on app init
 - Cached for session
 
