@@ -6,6 +6,6 @@
  * DO NOT EDIT MANUALLY - regenerate using: node scripts/generateIngredientMasterModule.js
  */
 
-import masterData from './ingredientMaster.json' with { type: 'json' };
+import masterData from './ingredientMaster.json' assert { type: 'json' };
 
 export default masterData;
