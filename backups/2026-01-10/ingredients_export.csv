@@ -1,0 +1,1040 @@
+id,name,unit,state,nutrition,pricing,cooking_methods,price_per_kg
+garlic,garlic,g,fresh,YES,YES,YES,
+onion,onion,g,fresh,YES,YES,YES,16.67
+salt,salt,g,other,YES,YES,YES,50
+olive_oil,olive oil,ml,other,YES,YES,YES,
+water,water,ml,other,YES,YES,YES,6.67
+butter,butter,g,fresh,YES,YES,YES,21.25
+pepper,pepper,g,other,YES,YES,YES,
+bell_pepper,bell pepper,g,fresh,YES,YES,YES,
+parsley,parsley,g,fresh,YES,YES,YES,233.33
+sugar,sugar,g,other,YES,YES,YES,17.5
+lemon_juice,lemon juice,ml,fresh,YES,YES,YES,
+flour,flour,g,other,YES,YES,YES,8
+soy_sauce,soy sauce,ml,other,YES,YES,YES,
+ginger,ginger,g,fresh,YES,YES,YES,50
+eggs,eggs,whole,fresh,YES,YES,YES,6.67
+cilantro,cilantro,g,fresh,YES,YES,YES,200
+chicken_breast,chicken breast,g,fresh,YES,YES,YES,17
+rice,rice,g,other,YES,YES,YES,18.33
+milk,milk,ml,fresh,YES,YES,YES,35
+cheese,cheese,g,fresh,YES,YES,YES,9
+pasta,pasta,g,other,YES,YES,YES,6
+basil,basil,g,fresh,YES,YES,YES,26.32
+cumin,cumin,g,other,YES,YES,YES,60
+oregano,oregano,g,other,YES,YES,YES,116.67
+paprika,paprika,g,other,YES,YES,YES,116.67
+turmeric,turmeric,g,other,YES,YES,YES,7
+coriander,coriander,g,other,YES,YES,YES,31.25
+thyme,thyme,g,other,YES,YES,YES,133.33
+cayenne,cayenne pepper,g,other,YES,YES,YES,128.57
+cinnamon,cinnamon,g,other,YES,YES,YES,140
+chili_powder,chili powder,g,other,YES,YES,YES,100
+sesame_oil,sesame oil,ml,other,YES,YES,YES,
+vegetable_oil,vegetable oil,ml,other,YES,YES,YES,
+coconut_milk,coconut milk,ml,other,YES,YES,YES,
+cream,cream,ml,fresh,YES,YES,YES,
+vinegar,vinegar,ml,other,YES,YES,YES,5
+spinach,spinach,g,fresh,YES,YES,YES,140
+zucchini,zucchini,g,fresh,YES,YES,YES,3.5
+celery,celery,g,fresh,YES,YES,YES,5
+mushrooms,mushrooms,g,fresh,YES,YES,YES,160
+green_onions,green onions,g,fresh,YES,YES,YES,
+cucumber,cucumber,g,fresh,YES,YES,YES,7.5
+broccoli,broccoli,g,fresh,YES,YES,YES,7
+cauliflower,cauliflower,g,fresh,YES,YES,YES,
+eggplant,eggplant,g,fresh,YES,YES,YES,
+cabbage,cabbage,g,fresh,YES,YES,YES,2.5
+kale,kale,g,fresh,YES,YES,YES,15.2
+honey,honey,ml,other,YES,YES,YES,60
+maple_syrup,maple syrup,ml,other,YES,YES,YES,23.33
+parmesan_cheese,parmesan cheese,g,fresh,YES,YES,YES,
+feta_cheese,feta cheese,g,fresh,YES,YES,YES,
+mozzarella_cheese,mozzarella cheese,g,fresh,YES,YES,YES,
+cheddar_cheese,cheddar cheese,g,fresh,YES,YES,YES,25
+lemon_zest,lemon zest,g,fresh,YES,YES,YES,
+lime_juice,lime juice,ml,fresh,YES,YES,YES,
+lime_zest,lime zest,g,fresh,YES,YES,YES,
+ground_beef,ground beef,g,fresh,YES,YES,YES,18
+shrimp,shrimp,g,fresh,YES,YES,YES,56
+salmon,salmon,g,fresh,YES,YES,YES,110
+chickpeas,chickpeas,g,canned,YES,YES,YES,3.75
+black_beans,black beans,g,canned,YES,YES,YES,3.75
+lentils,lentils,g,fresh,YES,YES,YES,5
+almonds,almonds,g,other,YES,YES,YES,37.5
+walnuts,walnuts,g,other,YES,YES,YES,35
+sesame_seeds,sesame seeds,g,other,YES,YES,YES,14
+sour_cream,sour cream,g,fresh,YES,YES,YES,12.5
+cornstarch,cornstarch,g,other,YES,YES,YES,8.33
+baking_powder,baking powder,g,other,YES,YES,YES,20
+baking_soda,baking soda,g,other,YES,YES,YES,5
+vanilla_extract,vanilla extract,ml,fresh,YES,YES,YES,
+brown_sugar,brown sugar,g,other,YES,YES,YES,2.5
+powdered_sugar,powdered sugar,g,other,YES,YES,YES,7
+canned_tomatoes,canned tomatoes,g,canned,YES,YES,YES,
+carrot,carrot,g,fresh,YES,YES,YES,3.75
+tomato,tomato,g,fresh,YES,YES,YES,26.32
+chicken_broth,chicken broth,whole,other,YES,YES,YES,3.5
+garlic_powder,garlic powder,g,fresh,YES,YES,YES,100
+avocado,avocado,g,fresh,YES,YES,YES,12.5
+quinoa,quinoa,g,other,YES,YES,YES,13
+mayonnaise,mayonnaise,ml,fresh,YES,YES,YES,
+fish_sauce,fish sauce,whole,other,YES,YES,YES,120
+bacon,bacon,g,fresh,YES,YES,YES,45
+lemon,lemon,g,fresh,YES,YES,YES,4.5
+pepper_flakes,pepper flakes,g,fresh,YES,YES,YES,
+dijon_mustard,dijon mustard,ml,fresh,YES,YES,YES,
+mint,mint,g,fresh,YES,YES,YES,60
+red_wine_vinegar,red wine vinegar,ml,other,YES,YES,YES,7
+peas,peas,g,fresh,YES,YES,YES,3.25
+potatoes,potatoes,g,fresh,YES,YES,YES,1.75
+corn,corn,g,fresh,YES,YES,YES,3.1
+chives,chives,g,fresh,YES,YES,YES,100
+garam_masala,garam masala,g,other,YES,YES,YES,150
+rice_vinegar,rice vinegar,ml,other,YES,YES,YES,
+canola_oil,canola oil,ml,other,YES,YES,YES,
+tahini,tahini,ml,fresh,YES,YES,YES,16.67
+brown_rice,brown rice,g,other,YES,YES,YES,3.5
+greek_yogurt,greek yogurt,g,fresh,YES,YES,YES,6
+green_beans,green beans,g,fresh,YES,YES,YES,3.25
+cherry_tomatoes,cherry tomatoes,g,fresh,YES,YES,YES,
+strawberries,strawberries,g,fresh,YES,YES,YES,
+vanilla,vanilla,g,fresh,YES,YES,YES,
+balsamic_vinegar,balsamic vinegar,ml,other,YES,YES,YES,18
+bay_leaf,bay leaf,g,other,YES,YES,YES,450
+tomato_paste,tomato paste,g,other,YES,YES,YES,7.5
+curry_powder,curry powder,g,other,YES,YES,YES,87.5
+heavy_cream,heavy cream,g,fresh,YES,YES,YES,
+all_purpose_flour,all purpose flour,g,other,YES,YES,YES,2.5
+corn_tortillas,corn tortillas,g,fresh,YES,YES,YES,
+worcestershire_sauce,worcestershire sauce,ml,other,YES,YES,YES,
+apple_cider_vinegar,apple cider vinegar,ml,other,YES,YES,YES,9
+chilies,chilies,g,other,YES,YES,YES,45
+jalapeno,jalapeno,g,fresh,YES,YES,YES,
+cream_cheese,cream cheese,g,fresh,YES,YES,YES,14
+white_wine,white wine,ml,fresh,YES,YES,YES,
+wine,wine,ml,fresh,YES,YES,YES,
+shallot,shallot,g,fresh,YES,YES,YES,45
+bell_peppers,bell peppers,g,fresh,YES,YES,YES,
+breadcrumbs,breadcrumbs,g,other,YES,YES,YES,14
+dill,dill,g,other,YES,YES,YES,233.33
+rosemary,rosemary,g,other,YES,YES,YES,233.33
+mango,mango,g,fresh,YES,YES,YES,10
+chillies,chillies,g,fresh,YES,YES,YES,
+egg_yolks,egg yolks,g,fresh,YES,YES,YES,
+tomato_sauce,tomato sauce,g,other,YES,YES,YES,3
+bay_leaves,bay leaves,g,other,YES,YES,YES,350
+nutmeg,nutmeg,g,other,YES,YES,YES,160
+granulated_sugar,granulated sugar,g,other,YES,YES,YES,2.5
+coconut_oil,coconut oil,ml,other,YES,YES,YES,
+apple,apple,g,fresh,YES,YES,YES,
+vegetable_broth,vegetable broth,ml,other,YES,YES,YES,
+ricotta,ricotta,g,fresh,YES,YES,YES,6
+garbanzo_beans,garbanzo beans,g,canned,YES,YES,YES,
+peppers,peppers,g,fresh,YES,YES,YES,
+onion_powder,onion powder,g,fresh,YES,YES,YES,100
+bean_sprouts,bean sprouts,g,canned,YES,YES,YES,10
+bread,bread,g,other,YES,YES,YES,14
+sweet_potatoes,sweet potatoes,g,fresh,YES,YES,YES,4.5
+kidney_beans,kidney beans,g,canned,YES,YES,YES,3.75
+warm_water,warm water,ml,fresh,NO,YES,YES,
+sharp_cheddar_cheese,sharp cheddar cheese,g,fresh,YES,YES,YES,
+plum_tomatoes,plum tomatoes,g,fresh,YES,YES,YES,
+rice_wine_vinegar,rice wine vinegar,ml,other,YES,YES,YES,18
+ginger_root,ginger root,g,fresh,YES,YES,YES,
+butternut_squash,butternut squash,g,other,YES,YES,YES,4.5
+sunflower_seeds,sunflower seeds,g,other,YES,YES,YES,12
+leek,leek,g,fresh,YES,YES,YES,7.14
+eggplants,eggplants,g,fresh,YES,YES,YES,
+roma_tomatoes,roma tomatoes,g,fresh,YES,YES,YES,
+turkey,turkey,whole,fresh,YES,YES,YES,
+pine_nuts,pine nuts,g,other,YES,YES,YES,100
+celery_stalks,celery stalks,g,fresh,YES,YES,YES,
+juice_orange,juice orange,ml,fresh,YES,YES,YES,
+raisins,raisins,g,fresh,YES,YES,YES,80
+farro,farro,g,fresh,YES,YES,YES,11
+hardboiled_eggs,hardboiled eggs,ml,other,YES,YES,YES,12.5
+flank_steak,flank steak,g,fresh,YES,YES,YES,
+mussels,mussels,g,fresh,YES,YES,YES,16
+white_wine_vinegar,white wine vinegar,ml,other,YES,YES,YES,5
+squash,squash,g,fresh,YES,YES,YES,
+curry,curry,g,other,YES,YES,YES,9.33
+sausage,sausage,g,other,YES,YES,YES,17
+olives,olives,g,fresh,YES,YES,YES,30
+grape_tomatoes,grape tomatoes,g,fresh,YES,YES,YES,
+grapeseed_oil,grapeseed oil,ml,other,YES,YES,YES,
+barbecue_sauce,barbecue sauce,g,other,YES,YES,YES,6.73
+celery_seed,celery seed,g,other,YES,YES,YES,128.57
+seasoning_cubes,seasoning cubes,g,fresh,YES,YES,YES,
+jalapeno_pepper,jalapeno pepper,g,fresh,YES,YES,YES,
+cardamom_pods,cardamom pods,g,other,YES,YES,YES,120
+lime_wedges,lime wedges,g,fresh,YES,YES,YES,
+chilli,chilli,g,fresh,YES,YES,YES,
+fish_fillets,fish fillets,whole,fresh,YES,YES,YES,14
+cannellini_beans,cannellini beans,g,canned,YES,YES,YES,3.75
+baking_potatoes,baking potatoes,g,other,YES,YES,YES,4.5
+lamb,lamb,whole,fresh,YES,YES,YES,
+beef_broth,beef broth,whole,other,YES,YES,YES,3.5
+beans,beans,g,canned,YES,YES,YES,3.75
+sundried_tomatoes,sun-dried tomatoes,g,dried,YES,YES,YES,
+allspice,allspice,g,other,YES,YES,YES,128.57
+bok_choy,bok choy,g,fresh,YES,YES,YES,18.67
+pasta_sauce,pasta sauce,g,other,YES,YES,YES,5
+sea_salt_and_pepper,sea salt and pepper,g,fresh,NO,YES,YES,
+hot_sauce,hot sauce,ml,other,YES,YES,YES,
+oats,oats,g,other,YES,YES,YES,11.25
+kosher_salt_and_pepper,kosher salt and pepper,g,fresh,NO,YES,YES,
+goat_cheese,goat cheese,g,other,YES,YES,YES,30
+portobello_mushroom,portobello mushroom,g,fresh,YES,YES,YES,
+several_thyme_sprigs,several thyme sprigs,whole,fresh,NO,YES,YES,233.33
+banana,banana,whole,fresh,YES,YES,YES,13.33
+peach,peach,whole,fresh,YES,YES,YES,5
+pistachio,pistachios,g,other,YES,YES,YES,50
+tuna,tuna,g,canned,YES,YES,YES,
+orzo,orzo,g,other,YES,YES,YES,7
+pizza_sauce,pizza sauce,g,canned,YES,YES,YES,
+kalamata_olives,kalamata olives,g,other,YES,YES,YES,28.33
+capers,capers,g,other,YES,YES,YES,30.77
+artichoke_hearts,artichoke hearts,g,canned,YES,YES,YES,10.81
+pepperoni,pepperoni,g,other,YES,YES,YES,65
+lettuce,lettuce,g,fresh,YES,YES,YES,20
+white_fish,white fish,g,fresh,YES,YES,YES,
+seasoning,Seasoning blend,g,other,YES,YES,YES,32
+pumpkin,Pumpkin,g,fresh,YES,YES,YES,5
+romano_cheese,Romano cheese,g,other,YES,YES,YES,42.5
+almond_milk,Almond milk,ml,other,YES,YES,YES,
+egg_white,Egg whites,ml,fresh,YES,YES,YES,
+hamburger_buns,Hamburger buns,whole,other,YES,YES,YES,8.33
+tofu,Tofu,g,fresh,YES,YES,YES,40
+hoisin_sauce,Hoisin sauce,tbsp,other,YES,YES,YES,
+sriracha,Sriracha,tsp,other,YES,YES,YES,
+oyster_sauce,Oyster sauce,tbsp,other,YES,YES,YES,
+coconut,Coconut,g,fresh,YES,YES,YES,20
+blueberry,Blueberries,g,fresh,YES,YES,YES,30
+buttermilk,Buttermilk,ml,other,YES,YES,YES,5.83
+asparagus,Asparagus,g,fresh,YES,YES,YES,18.75
+radish,Radish,whole,fresh,YES,YES,YES,
+persian_cucumber,Persian cucumber,whole,fresh,YES,YES,YES,
+asafoetida,Asafoetida,pinch,other,YES,YES,YES,170
+bread_loaf,Bread,whole,other,YES,YES,YES,5
+garlic_salt,Garlic salt,tsp,other,YES,YES,YES,38.89
+tomato_puree,Tomato purée,tbsp,canned,YES,YES,YES,7.5
+coconut_cream,Coconut cream,ml,canned,YES,YES,YES,
+raspberry,Raspberries,g,fresh,YES,YES,YES,46.67
+blackberry,Blackberries,g,fresh,YES,YES,YES,43.33
+pineapple,Pineapple,g,fresh,YES,YES,YES,5
+cranberry,Cranberries,g,fresh,YES,YES,YES,
+artichoke,Artichoke,whole,fresh,YES,YES,YES,17.5
+fennel,Fennel,whole,fresh,YES,YES,YES,8.75
+couscous,Couscous,g,other,YES,YES,YES,9
+polenta,Polenta,g,other,YES,YES,YES,8
+bulgur,Bulgur wheat,g,other,YES,YES,YES,12
+pine_nut,Pine nuts,g,other,YES,YES,YES,125
+macadamia,Macadamia nuts,g,other,YES,YES,YES,62.5
+pepita,Pepitas,g,other,YES,YES,YES,34
+chia_seeds,Chia seeds,g,other,YES,YES,YES,24
+flax_seeds,Flax seeds,g,other,YES,YES,YES,17
+tempeh,Tempeh,g,fresh,YES,YES,YES,27.5
+seitan,Seitan,g,fresh,YES,YES,YES,30
+mascarpone,Mascarpone,g,other,YES,YES,YES,20
+tarragon,Tarragon,g,fresh,YES,YES,YES,300
+cardamom,Cardamom,tsp,other,YES,YES,YES,180
+yeast,Yeast,tsp,other,YES,YES,YES,100
+cocoa_powder,Cocoa powder,tbsp,other,YES,YES,YES,160
+chicken_whole,Whole chicken,whole,fresh,YES,YES,YES,5.5
+orange_juice,Orange juice,ml,other,YES,YES,YES,
+marinara_sauce,Marinara sauce,ml,canned,YES,YES,YES,
+cornmeal,Cornmeal,g,other,YES,YES,YES,7
+tzatziki,Tzatziki,tbsp,other,YES,YES,YES,17.5
+chili_pepper,Chili pepper,whole,fresh,YES,YES,YES,25
+chili_flakes,Chili flakes,tsp,other,YES,YES,YES,100
+cream_of_mushroom_soup,Cream of mushroom soup,ml,canned,YES,YES,YES,5.95
+new_potatoes,New potatoes,g,fresh,YES,YES,YES,4.5
+black_eyed_peas,Black-eyed peas,g,canned,YES,YES,YES,6.25
+chocolate,Chocolate,g,other,YES,YES,YES,20
+ghee,Ghee,tbsp,other,YES,YES,YES,30
+chicken_thigh,Chicken thighs,g,fresh,YES,YES,YES,15
+guacamole,Guacamole,tbsp,fresh,YES,YES,YES,27.5
+turbinado_sugar,Turbinado sugar,g,other,YES,YES,YES,9
+scotch_bonnet,Scotch bonnet pepper,whole,fresh,YES,YES,YES,25
+pineapple_juice,Pineapple juice,ml,other,YES,YES,YES,3.5
+panko,Panko breadcrumbs,g,other,YES,YES,YES,15
+pork_chop,Pork chops,whole,fresh,YES,YES,YES,18
+snow_peas,Snow peas,g,fresh,YES,YES,YES,22.5
+star_anise,Star anise,whole,other,YES,YES,YES,300
+cherry,Cherries,g,fresh,YES,YES,YES,12
+nutritional_yeast,Nutritional yeast,tbsp,other,YES,YES,YES,35
+muffin,Muffins,whole,other,YES,YES,YES,11.25
+lemon_pepper,Lemon pepper,tsp,other,YES,YES,YES,90
+sunflower_oil,Sunflower oil,ml,other,YES,YES,YES,6
+peanut_butter,Peanut butter,tbsp,other,YES,YES,YES,9
+cod,Cod,g,fresh,YES,YES,YES,42
+harissa,Harissa,tbsp,other,YES,YES,YES,22.5
+anchovy,Anchovies,whole,canned,YES,YES,YES,100
+pita_bread,Pita bread,whole,other,YES,YES,YES,14
+pearl_onion,Pearl onions,whole,fresh,YES,YES,YES,18
+spaghetti,Spaghetti,g,other,YES,YES,YES,4
+macaroni,Macaroni,g,other,YES,YES,YES,5
+marjoram,Marjoram,tsp,other,YES,YES,YES,300
+crab_meat,Crab meat,g,fresh,YES,YES,YES,47.06
+wonton_wrapper,Wonton wrappers,whole,other,YES,YES,YES,10
+cashew,Cashews,g,other,YES,YES,YES,25
+agave,Agave nectar,tbsp,other,YES,YES,YES,17.35
+falafel,Falafel,whole,other,YES,YES,YES,8.75
+tabbouleh,Tabbouleh,ml,other,YES,YES,YES,30
+turnip,Turnip,whole,fresh,YES,YES,YES,4.5
+hummus,Hummus,ml,other,YES,YES,YES,20
+apricot,Apricots,g,fresh,YES,YES,YES,10
+hazelnut,Hazelnuts,g,other,YES,YES,YES,
+brussels_sprout,Brussels sprouts,g,fresh,YES,YES,YES,8.5
+kombu,Kombu,whole,dried,YES,YES,YES,90
+herbs_de_provence,Herbes de Provence,tsp,other,YES,YES,YES,300
+celery_salt,Celery salt,tsp,other,YES,YES,YES,53.85
+curry_paste,Curry paste,tbsp,other,YES,YES,YES,11.25
+miso,Miso paste,tbsp,other,YES,YES,YES,150
+worcestershire,Worcestershire sauce,tbsp,other,YES,YES,YES,
+mustard_dijon,Dijon mustard,tbsp,other,YES,YES,YES,90
+mustard_yellow,Yellow mustard,tbsp,other,YES,YES,YES,12.5
+arugula,Arugula,g,fresh,YES,YES,YES,37.5
+liquid_smoke,Liquid smoke,tsp,other,YES,YES,YES,
+swiss_chard,Swiss chard,g,fresh,YES,YES,YES,9.14
+crimini_mushroom,Cremini mushrooms,g,fresh,YES,YES,YES,32.5
+bourbon,Bourbon,ml,other,YES,YES,YES,92.86
+pumpkin_pie_spice,Pumpkin pie spice,tsp,other,YES,YES,YES,128.57
+saffron,Saffron,pinch,other,YES,YES,YES,8000
+chili_sauce,Chili sauce,tbsp,other,YES,YES,YES,18
+naan,Naan bread,whole,other,YES,YES,YES,14
+tortilla,Tortilla,whole,other,YES,YES,YES,14.06
+rice_noodle,Rice noodles,g,other,YES,YES,YES,12.5
+egg_noodle,Egg noodles,g,other,YES,YES,YES,6.67
+scallop,Scallops,g,fresh,YES,YES,YES,45
+pork_loin,Pork loin,g,fresh,YES,YES,YES,18
+duck,Duck,g,fresh,YES,YES,YES,18.5
+spinach_baby,spinach baby,g,fresh,YES,YES,YES,37.5
+spinach_bunch,spinach bunch,g,fresh,YES,YES,YES,29.17
+kale_curly,kale curly,g,fresh,YES,YES,YES,22.5
+kale_tuscan,kale tuscan,g,fresh,YES,YES,YES,22.5
+silverbeet,silverbeet,g,fresh,YES,YES,YES,8.75
+rocket,rocket,g,fresh,YES,YES,YES,42
+lettuce_iceberg,lettuce iceberg,g,fresh,YES,YES,YES,4.17
+lettuce_cos,lettuce cos,g,fresh,YES,YES,YES,8.75
+lettuce_butter,lettuce butter,g,fresh,YES,YES,YES,8.75
+lettuce_mixed_leaves,lettuce mixed leaves,g,fresh,YES,YES,YES,37.5
+cabbage_green,cabbage green,g,fresh,YES,YES,YES,3.5
+cabbage_red,cabbage red,g,fresh,YES,YES,YES,4.5
+cabbage_savoy,cabbage savoy,g,fresh,YES,YES,YES,4.5
+cabbage_wombok,cabbage wombok,g,fresh,YES,YES,YES,4.5
+choy_sum,choy sum,g,fresh,YES,YES,YES,15
+radicchio,radicchio,g,fresh,YES,YES,YES,22.5
+endive,endive,g,fresh,YES,YES,YES,22.5
+watercress,watercress,ml,fresh,YES,YES,YES,35
+potato_brushed,potato brushed,g,fresh,YES,YES,YES,4.5
+potato_washed,potato washed,g,fresh,YES,YES,YES,4.5
+potato_desiree,potato desiree,g,fresh,YES,YES,YES,4.5
+potato_kipfler,potato kipfler,g,fresh,YES,YES,YES,6.5
+potato_sebago,potato sebago,g,fresh,YES,YES,YES,4.5
+sweet_potato_white,sweet potato white,g,fresh,YES,YES,YES,4.5
+sweet_potato_orange,sweet potato orange,g,fresh,YES,YES,YES,4.5
+carrot_bunch,carrot bunch,g,fresh,YES,YES,YES,5
+carrot_loose,carrot loose,g,fresh,YES,YES,YES,2.5
+shallots,shallots,g,fresh,YES,YES,YES,4.5
+spring_onions,spring onions,g,fresh,YES,YES,YES,25
+garlic_bulb,garlic bulb,g,fresh,YES,YES,YES,16.67
+garlic_pre_peeled,garlic pre-peeled,g,fresh,YES,YES,YES,30
+garlic_minced_jar,garlic minced jar,g,other,YES,YES,YES,24.32
+ginger_fresh_root,ginger fresh root,g,fresh,YES,YES,YES,4.5
+beetroot_bunch,beetroot bunch,g,fresh,NO,YES,YES,7
+beetroot_loose,beetroot loose,g,fresh,NO,YES,YES,3.5
+parsnip,parsnip,g,fresh,YES,YES,YES,4
+swede,swede,g,fresh,YES,YES,YES,4.5
+radish_red,radish red,g,fresh,YES,YES,YES,12.5
+radish_daikon,radish daikon,g,fresh,YES,YES,YES,4.5
+celeriac,celeriac,g,fresh,YES,YES,YES,8.5
+jerusalem_artichoke,jerusalem artichoke,g,fresh,YES,YES,YES,12
+fennel_bulb,fennel bulb,g,fresh,YES,YES,YES,4.5
+broccolini,broccolini,g,fresh,YES,YES,YES,22.5
+tomato_truss,tomato truss,g,fresh,YES,YES,YES,6.5
+tomato_vine_ripened,tomato vine ripened,g,fresh,YES,YES,YES,7.5
+tomato_heirloom,tomato heirloom,g,fresh,YES,YES,YES,8.5
+capsicum_red,capsicum red,g,fresh,YES,YES,YES,3.5
+capsicum_green,capsicum green,g,fresh,YES,YES,YES,2.5
+capsicum_yellow,capsicum yellow,g,fresh,YES,YES,YES,3.5
+capsicum_orange,capsicum orange,g,fresh,YES,YES,YES,3.5
+chilli_red,chilli red,g,fresh,YES,YES,YES,25
+chilli_green,chilli green,g,fresh,YES,YES,YES,25
+chilli_birds_eye,chilli birds eye,g,fresh,YES,YES,YES,45
+chilli_long_red,chilli long red,g,fresh,YES,YES,YES,25
+zucchini_green,zucchini green,g,fresh,YES,YES,YES,4.5
+zucchini_yellow,zucchini yellow,g,fresh,YES,YES,YES,4.5
+pumpkin_butternut,pumpkin butternut,g,fresh,YES,YES,YES,3.5
+pumpkin_kent,pumpkin kent,g,fresh,YES,YES,YES,2.5
+pumpkin_queensland_blue,pumpkin queensland blue,g,fresh,YES,YES,YES,2.5
+cucumber_continental,cucumber continental,g,fresh,YES,YES,YES,2.5
+cucumber_lebanese,cucumber lebanese,g,fresh,YES,YES,YES,4.5
+cucumber_telegraph,cucumber telegraph,g,fresh,YES,YES,YES,3.5
+squash_yellow,squash yellow,g,fresh,YES,YES,YES,4.5
+squash_button,squash button,g,fresh,YES,YES,YES,4.5
+green_beans_round,green beans round,g,fresh,YES,YES,YES,12
+green_beans_flat,green beans flat,g,fresh,YES,YES,YES,12
+sugar_snap_peas,sugar snap peas,g,fresh,YES,YES,YES,22.5
+peas_in_pod,peas in pod,g,fresh,YES,YES,YES,12
+broad_beans_fresh,broad beans fresh,g,fresh,YES,YES,YES,12
+corn_cob,corn cob,g,fresh,YES,YES,YES,4.17
+baby_corn,baby corn,g,fresh,YES,YES,YES,5
+mushrooms_button,mushrooms button,g,fresh,YES,YES,YES,4.5
+mushrooms_cup,mushrooms cup,g,fresh,YES,YES,YES,4.5
+mushrooms_flat,mushrooms flat,g,fresh,YES,YES,YES,8.5
+mushrooms_swiss_brown,mushrooms swiss brown,g,fresh,YES,YES,YES,6.5
+mushrooms_shiitake,mushrooms shiitake,g,fresh,YES,YES,YES,22.5
+mushrooms_oyster,mushrooms oyster,g,fresh,YES,YES,YES,30
+mushrooms_enoki,mushrooms enoki,g,fresh,YES,YES,YES,16.67
+artichoke_globe,artichoke globe,g,fresh,YES,YES,YES,4.5
+orange_navel,orange navel,g,fresh,YES,YES,YES,4.5
+orange_valencia,orange valencia,g,fresh,NO,YES,YES,4.5
+orange_blood,orange blood,g,fresh,YES,YES,YES,6.5
+grapefruit_pink,grapefruit pink,g,fresh,NO,YES,YES,12.5
+grapefruit_white,grapefruit white,g,fresh,YES,YES,YES,3.5
+mandarin,mandarin,g,fresh,YES,YES,YES,4.5
+tangelo,tangelo,g,fresh,YES,YES,YES,7.5
+peach_white,peach white,g,fresh,YES,YES,YES,7.5
+peach_yellow,peach yellow,g,fresh,YES,YES,YES,7.5
+nectarine,nectarine,g,fresh,YES,YES,YES,5.5
+plum,plum,g,fresh,YES,YES,YES,5
+apple_royal_gala,apple royal gala,g,fresh,YES,YES,YES,4.5
+apple_pink_lady,apple pink lady,g,fresh,YES,YES,YES,4.5
+apple_granny_smith,apple granny smith,g,fresh,YES,YES,YES,4.5
+apple_fuji,apple fuji,g,fresh,YES,YES,YES,4.5
+apple_jazz,apple jazz,g,fresh,YES,YES,YES,7.5
+apple_kanzi,apple kanzi,g,fresh,YES,YES,YES,7.5
+pear_williams,pear williams,g,fresh,NO,YES,YES,4.5
+pear_packham,pear packham,g,fresh,NO,YES,YES,3.5
+pear_beurre_bosc,pear beurre bosc,g,fresh,NO,YES,YES,7.5
+pear_corella,pear corella,g,fresh,NO,YES,YES,4.5
+banana_cavendish,banana cavendish,g,fresh,YES,YES,YES,3.5
+banana_lady_finger,banana lady finger,g,fresh,YES,YES,YES,4.5
+papaya,papaya,g,fresh,YES,YES,YES,22.5
+passionfruit,passionfruit,g,fresh,YES,YES,YES,20
+kiwifruit_green,kiwifruit green,g,fresh,NO,YES,YES,4.5
+kiwifruit_gold,kiwifruit gold,g,fresh,YES,YES,YES,8.5
+coconut_fresh,coconut fresh,g,fresh,YES,YES,YES,8.75
+lychee,lychee,g,fresh,YES,YES,YES,12
+dragonfruit,dragonfruit,g,fresh,YES,YES,YES,12
+strawberry,strawberry,g,fresh,YES,YES,YES,18
+watermelon,watermelon,ml,fresh,YES,YES,YES,
+rockmelon,rockmelon,g,fresh,YES,YES,YES,
+honeydew_melon,honeydew melon,g,fresh,YES,YES,YES,4.5
+grapes_red,grapes red,g,fresh,YES,YES,YES,10
+grapes_green,grapes green,g,fresh,YES,YES,YES,8.5
+grapes_black,grapes black,g,fresh,YES,YES,YES,8.5
+fig_fresh,fig fresh,g,fresh,YES,YES,YES,34
+pomegranate,pomegranate,g,fresh,YES,YES,YES,22.5
+persimmon,persimmon,g,fresh,YES,YES,YES,2.5
+rhubarb,rhubarb,g,fresh,YES,YES,YES,8.5
+parsley_flat_leaf,parsley flat leaf,g,fresh,YES,YES,YES,83.33
+parsley_curly,parsley curly,g,fresh,YES,YES,YES,83.33
+oregano_fresh,oregano fresh,g,fresh,YES,YES,YES,175
+sage,sage,g,fresh,YES,YES,YES,233.33
+lemongrass,lemongrass,g,fresh,YES,YES,YES,
+kaffir_lime_leaves,kaffir lime leaves,g,fresh,YES,YES,YES,450
+vietnamese_mint,vietnamese mint,g,fresh,YES,YES,YES,116.67
+thai_basil,thai basil,g,fresh,YES,YES,YES,175
+curry_leaves,curry leaves,g,fresh,YES,YES,YES,33.33
+beef_mince_regular,beef mince regular,g,fresh,NO,YES,YES,12
+beef_mince_lean,beef mince lean,g,fresh,YES,YES,YES,17
+beef_mince_extra_lean,beef mince extra lean,g,fresh,NO,YES,YES,16
+beef_mince_premium,beef mince premium,g,fresh,NO,YES,YES,16
+beef_steak_rump,beef steak rump,g,fresh,NO,YES,YES,60
+beef_steak_sirloin,beef steak sirloin,g,fresh,YES,YES,YES,56
+beef_steak_scotch_fillet,beef steak scotch fillet,g,fresh,NO,YES,YES,45
+beef_steak_eye_fillet,beef steak eye fillet,g,fresh,NO,YES,YES,72
+beef_steak_t_bone,beef steak t-bone,g,fresh,NO,YES,YES,32
+beef_steak_flank,beef steak flank,g,fresh,NO,YES,YES,32
+beef_steak_skirt,beef steak skirt,g,fresh,NO,YES,YES,28
+beef_roast_topside,beef roast topside,g,fresh,NO,YES,YES,10
+beef_roast_silverside,beef roast silverside,g,fresh,NO,YES,YES,18
+beef_roast_blade,beef roast blade,g,fresh,NO,YES,YES,18
+beef_roast_chuck,beef roast chuck,g,fresh,YES,YES,YES,18
+beef_brisket,beef brisket,g,fresh,YES,YES,YES,18
+beef_stir_fry_strips,beef stir fry strips,g,fresh,NO,YES,YES,20
+beef_diced,beef diced,g,fresh,NO,YES,YES,18
+beef_corned,beef corned,g,fresh,YES,YES,YES,18
+beef_osso_bucco,beef osso bucco,g,fresh,NO,YES,YES,18.5
+beef_cheeks,beef cheeks,g,fresh,NO,YES,YES,18
+beef_oxtail,beef oxtail,g,fresh,NO,YES,YES,12
+lamb_mince,lamb mince,g,fresh,YES,YES,YES,16
+lamb_chops_loin,lamb chops loin,g,fresh,YES,YES,YES,
+lamb_chops_forequarter,lamb chops forequarter,g,fresh,YES,YES,YES,16
+lamb_cutlets,lamb cutlets,g,fresh,YES,YES,YES,32
+lamb_leg_bone_in,lamb leg bone in,g,fresh,YES,YES,YES,16
+lamb_leg_boneless,lamb leg boneless,g,fresh,YES,YES,YES,12
+lamb_leg_butterflied,lamb leg butterflied,g,fresh,YES,YES,YES,18.5
+lamb_shoulder_bone_in,lamb shoulder bone in,g,fresh,YES,YES,YES,16
+lamb_shoulder_boneless,lamb shoulder boneless,g,fresh,YES,YES,YES,18.5
+lamb_rack,lamb rack,g,fresh,YES,YES,YES,45
+lamb_shanks,lamb shanks,g,fresh,YES,YES,YES,14.5
+lamb_backstrap,lamb backstrap,g,fresh,YES,YES,YES,45
+lamb_diced,lamb diced,g,fresh,YES,YES,YES,18
+lamb_neck,lamb neck,g,fresh,YES,YES,YES,12
+pork_mince,pork mince,g,fresh,YES,YES,YES,14
+pork_chops_loin,pork chops loin,g,fresh,YES,YES,YES,28.33
+pork_chops_forequarter,pork chops forequarter,g,fresh,NO,YES,YES,12
+pork_roast_leg,pork roast leg,g,fresh,NO,YES,YES,12
+pork_roast_shoulder,pork roast shoulder,g,fresh,YES,YES,YES,12
+pork_roast_loin,pork roast loin,g,fresh,YES,YES,YES,16
+pork_belly,pork belly,g,fresh,YES,YES,YES,16
+pork_belly_sliced,pork belly sliced,g,fresh,YES,YES,YES,16
+pork_steaks_leg,pork steaks leg,g,fresh,NO,YES,YES,12
+pork_steaks_loin,pork steaks loin,g,fresh,YES,YES,YES,18
+pork_steaks_scotch,pork steaks scotch,g,fresh,NO,YES,YES,18
+pork_ribs_spare,pork ribs spare,g,fresh,YES,YES,YES,12.5
+pork_ribs_baby_back,pork ribs baby back,g,fresh,YES,YES,YES,18
+pork_fillet,pork fillet,g,fresh,YES,YES,YES,16.67
+pork_diced,pork diced,g,fresh,YES,YES,YES,16
+chicken_breast_skin_on_bone_in,chicken breast skin on bone in,g,fresh,YES,YES,YES,12
+chicken_breast_skinless_boneless,chicken breast skinless boneless,g,fresh,YES,YES,YES,14
+chicken_thigh_skin_on_bone_in,chicken thigh skin on bone in,g,fresh,YES,YES,YES,6.5
+chicken_thigh_skinless_boneless,chicken thigh skinless boneless,g,fresh,YES,YES,YES,14
+chicken_drumsticks,chicken drumsticks,g,fresh,YES,YES,YES,3.5
+chicken_wings,chicken wings,g,fresh,YES,YES,YES,4.5
+chicken_wings_nibbles,chicken wings nibbles,g,fresh,YES,YES,YES,12.5
+chicken_tenderloin,chicken tenderloin,g,fresh,YES,YES,YES,16
+chicken_mince,chicken mince,g,fresh,YES,YES,YES,13
+chicken_maryland,chicken maryland,g,fresh,YES,YES,YES,12
+chicken_lovely_legs,chicken lovely legs,g,fresh,YES,YES,YES,6.5
+chicken_bbq_rotisserie,chicken bbq rotisserie,g,fresh,YES,YES,YES,
+turkey_breast_whole,turkey breast whole,g,fresh,NO,YES,YES,15
+turkey_breast_steaks,turkey breast steaks,g,fresh,YES,YES,YES,16.5
+turkey_mince,turkey mince,g,fresh,YES,YES,YES,14
+turkey_whole_bird,turkey whole bird,g,fresh,YES,YES,YES,45
+duck_breast,duck breast,g,fresh,YES,YES,YES,64
+duck_whole_bird,duck whole bird,g,fresh,YES,YES,YES,28
+duck_legs,duck legs,g,fresh,YES,YES,YES,12.5
+bacon_middle,bacon middle,g,other,YES,YES,YES,32
+bacon_streaky,bacon streaky,g,other,YES,YES,YES,12.5
+bacon_short_cut,bacon short cut,g,other,YES,YES,YES,12.5
+bacon_smoked,bacon smoked,g,other,YES,YES,YES,34
+ham_leg,ham leg,g,other,NO,YES,YES,60
+ham_shoulder,ham shoulder,g,other,NO,YES,YES,12.5
+ham_sliced_deli,ham sliced deli,g,other,NO,YES,YES,3.5
+prosciutto,prosciutto,g,other,YES,YES,YES,80
+pancetta,pancetta,g,other,YES,YES,YES,75
+salami,salami,g,other,YES,YES,YES,60
+chorizo,chorizo,g,other,YES,YES,YES,13
+kransky,kransky,g,other,NO,YES,YES,13.75
+sausages_beef,sausages beef,g,other,YES,YES,YES,11
+sausages_pork,sausages pork,g,other,YES,YES,YES,10
+sausages_chicken,sausages chicken,g,other,YES,YES,YES,11
+sausages_lamb,sausages lamb,g,other,YES,YES,YES,25
+sausages_italian,sausages italian,g,other,YES,YES,YES,13
+sausages_cumberland,sausages cumberland,g,other,YES,YES,YES,17
+sausages_chipolata,sausages chipolata,g,other,YES,YES,YES,17
+hot_dogs,hot dogs,g,other,YES,YES,YES,18
+kabana,kabana,g,other,NO,YES,YES,60
+salmon_atlantic_fillets,salmon atlantic fillets,g,fresh,NO,YES,YES,32
+salmon_portions,salmon portions,g,fresh,YES,YES,YES,32
+salmon_whole_side,salmon whole side,g,fresh,YES,YES,YES,45
+barramundi_fillets,barramundi fillets,g,fresh,YES,YES,YES,100
+flathead_fillets,flathead fillets,g,fresh,YES,YES,YES,80
+snapper,snapper,g,fresh,YES,YES,YES,90
+bream,bream,g,fresh,YES,YES,YES,32
+dory,dory,g,fresh,YES,YES,YES,32
+whiting,whiting,g,fresh,YES,YES,YES,32
+perch,perch,g,fresh,YES,YES,YES,32
+tuna_steaks,tuna steaks,g,fresh,YES,YES,YES,45
+swordfish_steaks,swordfish steaks,g,fresh,YES,YES,YES,45
+mackerel,mackerel,g,fresh,YES,YES,YES,32
+sardines_fresh,sardines fresh,g,fresh,YES,YES,YES,28
+trout,trout,g,fresh,YES,YES,YES,32
+tuna_canned_in_oil,tuna canned in oil,ml,canned,NO,YES,YES,10
+tuna_canned_in_springwater,tuna canned in springwater,ml,canned,NO,YES,YES,10
+tuna_canned_flavoured,tuna canned flavoured,g,canned,NO,YES,YES,26.32
+salmon_canned_pink,salmon canned pink,g,canned,YES,YES,YES,11.25
+salmon_canned_red,salmon canned red,g,canned,YES,YES,YES,10.84
+sardines_canned,sardines canned,g,canned,YES,YES,YES,20.83
+anchovies_canned,anchovies canned,g,canned,YES,YES,YES,77.78
+mackerel_canned,mackerel canned,g,canned,YES,YES,YES,28
+smoked_salmon_cold,smoked salmon cold,g,other,YES,YES,YES,120
+smoked_salmon_hot,smoked salmon hot,g,other,YES,YES,YES,92.5
+smoked_trout,smoked trout,g,other,YES,YES,YES,90
+prawns_green_raw,prawns green raw,g,fresh,YES,YES,YES,32
+prawns_cooked,prawns cooked,g,fresh,YES,YES,YES,36
+prawns_king,prawns king,g,fresh,YES,YES,YES,45
+prawns_tiger,prawns tiger,g,fresh,YES,YES,YES,36
+prawns_banana,prawns banana,g,fresh,YES,YES,YES,36
+calamari_tubes,calamari tubes,g,fresh,YES,YES,YES,32
+calamari_rings,calamari rings,g,fresh,NO,YES,YES,16
+oysters,oysters,g,fresh,YES,YES,YES,50
+scallops,scallops,g,fresh,YES,YES,YES,45
+crab_blue_swimmer,crab blue swimmer,g,fresh,YES,YES,YES,45
+crab_mud,crab mud,g,fresh,YES,YES,YES,45
+lobster,lobster,g,fresh,YES,YES,YES,65
+octopus,octopus,g,fresh,YES,YES,YES,35
+clams,clams,g,fresh,YES,YES,YES,35
+milk_full_cream,milk full cream,ml,other,NO,YES,YES,3.4
+milk_reduced_fat,milk reduced fat,ml,other,YES,YES,YES,
+milk_skim,milk skim,ml,other,YES,YES,YES,
+milk_lactose_free,milk lactose free,ml,other,YES,YES,YES,
+milk_a2,milk a2,ml,other,YES,YES,YES,
+milk_uht,milk uht,ml,other,YES,YES,YES,
+soy_milk_original,soy milk original,ml,other,NO,YES,YES,
+soy_milk_unsweetened,soy milk unsweetened,ml,other,YES,YES,YES,
+oat_milk,oat milk,ml,other,YES,YES,YES,
+coconut_milk_beverage,coconut milk beverage,ml,other,YES,YES,YES,
+rice_milk,rice milk,ml,other,YES,YES,YES,
+macadamia_milk,macadamia milk,ml,other,YES,YES,YES,4.37
+thickened_cream,thickened cream,ml,other,YES,YES,YES,15
+pure_cream,pure cream,ml,other,YES,YES,YES,15
+double_cream,double cream,ml,other,YES,YES,YES,15
+creme_fraiche,creme fraiche,g,other,YES,YES,YES,20
+cottage_cheese,cottage cheese,g,other,YES,YES,YES,5
+bocconcini,bocconcini,g,other,YES,YES,YES,27.5
+mozzarella_fresh,mozzarella fresh,g,other,YES,YES,YES,32.5
+halloumi,halloumi,g,other,YES,YES,YES,32.5
+feta,feta,g,other,YES,YES,YES,22.5
+paneer,paneer,g,other,YES,YES,YES,30
+cheddar_mild,cheddar mild,g,other,YES,YES,YES,8.5
+cheddar_tasty,cheddar tasty,g,other,NO,YES,YES,8.5
+cheddar_vintage,cheddar vintage,g,other,NO,YES,YES,34
+cheddar_extra_sharp,cheddar extra sharp,g,other,YES,YES,YES,34
+parmesan,parmesan,g,other,YES,YES,YES,40
+pecorino_romano,pecorino romano,g,other,YES,YES,YES,37.5
+gruyere,gruyere,g,other,YES,YES,YES,45
+swiss_cheese,swiss cheese,g,other,YES,YES,YES,42.5
+gouda,gouda,g,other,YES,YES,YES,42.5
+edam,edam,g,other,YES,YES,YES,12
+colby,colby,g,other,YES,YES,YES,8.5
+blue_cheese,blue cheese,g,other,YES,YES,YES,42.5
+gorgonzola,gorgonzola,g,other,YES,YES,YES,56.67
+stilton,stilton,g,other,YES,YES,YES,56.67
+roquefort,roquefort,g,other,YES,YES,YES,85
+brie,brie,g,other,YES,YES,YES,35
+camembert,camembert,g,other,YES,YES,YES,52
+havarti,havarti,g,other,YES,YES,YES,42.5
+provolone,provolone,g,other,YES,YES,YES,42.5
+emmental,emmental,g,other,YES,YES,YES,42.5
+manchego,manchego,g,other,YES,YES,YES,56.67
+jarlsberg,jarlsberg,g,other,YES,YES,YES,42.5
+butter_salted,butter salted,g,other,YES,YES,YES,13
+butter_unsalted,butter unsalted,g,other,YES,YES,YES,18
+butter_spreadable,butter spreadable,g,other,YES,YES,YES,13
+margarine,margarine,g,other,YES,YES,YES,9
+butter_cultured,butter cultured,g,other,YES,YES,YES,26
+yoghurt_natural_full_fat,yoghurt natural full fat,g,other,NO,YES,YES,6.5
+yoghurt_natural_low_fat,yoghurt natural low fat,g,other,NO,YES,YES,4.5
+greek_yoghurt,greek yoghurt,g,other,YES,YES,YES,6.5
+yoghurt_flavoured,yoghurt flavoured,g,other,NO,YES,YES,6.5
+coconut_yoghurt,coconut yoghurt,g,other,NO,YES,YES,13
+soy_yoghurt,soy yoghurt,g,other,NO,YES,YES,13
+kefir,kefir,g,other,YES,YES,YES,
+chicken_eggs_cage,chicken eggs cage,whole,other,YES,YES,YES,7.64
+chicken_eggs_barn,chicken eggs barn,whole,other,YES,YES,YES,9.03
+chicken_eggs_free_range,chicken eggs free range,whole,other,YES,YES,YES,9.03
+chicken_eggs_organic,chicken eggs organic,whole,other,YES,YES,YES,11.81
+duck_eggs,duck eggs,whole,other,YES,YES,YES,20.24
+quail_eggs,quail eggs,whole,other,YES,YES,YES,47.22
+tofu_firm,tofu firm,g,other,YES,YES,YES,11.67
+tofu_silken,tofu silken,g,other,YES,YES,YES,11.67
+tofu_smoked,tofu smoked,g,other,YES,YES,YES,22.5
+tofu_fried,tofu fried,g,other,YES,YES,YES,15
+rice_white_long_grain,rice white long grain,g,other,YES,YES,YES,2.5
+rice_white_medium_grain,rice white medium grain,g,other,YES,YES,YES,3.5
+rice_white_short_grain,rice white short grain,g,other,YES,YES,YES,3.5
+rice_jasmine,rice jasmine,g,other,YES,YES,YES,6
+rice_basmati,rice basmati,g,other,YES,YES,YES,7
+rice_brown,rice brown,g,other,YES,YES,YES,7
+rice_arborio,rice arborio,g,other,YES,YES,YES,9
+rice_sushi,rice sushi,g,other,YES,YES,YES,4.5
+rice_wild,rice wild,g,other,YES,YES,YES,9
+rice_black,rice black,g,other,YES,YES,YES,9
+penne,penne,g,other,YES,YES,YES,4
+fettuccine,fettuccine,g,other,YES,YES,YES,5
+linguine,linguine,g,other,YES,YES,YES,5
+rigatoni,rigatoni,g,other,YES,YES,YES,5
+fusilli,fusilli,g,other,YES,YES,YES,5
+farfalle,farfalle,g,other,YES,YES,YES,5
+lasagne_sheets,lasagne sheets,g,other,YES,YES,YES,9.33
+cannelloni_tubes,cannelloni tubes,g,other,YES,YES,YES,14
+pasta_fresh_sheets,pasta fresh sheets,g,other,YES,YES,YES,12
+ravioli_fresh,ravioli fresh,g,other,YES,YES,YES,16.25
+gnocchi_fresh,gnocchi fresh,g,other,YES,YES,YES,7
+rice_noodles_flat,rice noodles flat,g,other,YES,YES,YES,8.75
+rice_vermicelli,rice vermicelli,g,other,YES,YES,YES,12.5
+egg_noodles,egg noodles,g,other,YES,YES,YES,6.25
+hokkien_noodles,hokkien noodles,g,other,YES,YES,YES,11.67
+udon_noodles,udon noodles,g,other,YES,YES,YES,6.25
+soba_noodles,soba noodles,g,other,YES,YES,YES,15
+ramen_noodles,ramen noodles,g,other,YES,YES,YES,17.5
+rice_paper,rice paper,g,other,YES,YES,YES,11.67
+glass_noodles,glass noodles,g,other,YES,YES,YES,15
+oats_rolled,oats rolled,g,other,YES,YES,YES,6
+oats_quick,oats quick,g,other,YES,YES,YES,7
+oats_steel_cut,oats steel cut,g,other,YES,YES,YES,13
+quinoa_white,quinoa white,g,other,NO,YES,YES,17
+quinoa_red,quinoa red,g,other,YES,YES,YES,17
+quinoa_black,quinoa black,g,other,YES,YES,YES,17
+quinoa_tricolour,quinoa tricolour,g,other,YES,YES,YES,17
+couscous_regular,couscous regular,g,other,NO,YES,YES,7
+couscous_israeli,couscous israeli,g,other,YES,YES,YES,9
+bulgur_wheat,bulgur wheat,g,other,YES,YES,YES,8
+barley_pearl,barley pearl,g,other,YES,YES,YES,8
+freekeh,freekeh,g,other,YES,YES,YES,11
+semolina,semolina,g,other,YES,YES,YES,7
+buckwheat,buckwheat,g,other,YES,YES,YES,10
+muesli,muesli,g,other,YES,YES,YES,8.67
+granola,granola,g,other,YES,YES,YES,17
+wheat_biscuits,wheat biscuits,g,other,YES,YES,YES,7.83
+cornflakes,cornflakes,g,other,YES,YES,YES,11.84
+bran_flakes,bran flakes,g,other,YES,YES,YES,9
+bread_white_sliced,bread white sliced,g,other,YES,YES,YES,5
+bread_wholemeal_sliced,bread wholemeal sliced,g,other,YES,YES,YES,5
+bread_multigrain_sliced,bread multigrain sliced,g,other,YES,YES,YES,6
+bread_sourdough_loaf,bread sourdough loaf,g,other,YES,YES,YES,8.33
+baguette,baguette,g,other,YES,YES,YES,6.25
+ciabatta,ciabatta,g,other,YES,YES,YES,8.75
+turkish_bread,turkish bread,g,other,YES,YES,YES,7.78
+wraps_flour,wraps flour,g,other,YES,YES,YES,14
+wraps_corn,wraps corn,g,other,YES,YES,YES,14
+wraps_wholemeal,wraps wholemeal,g,other,YES,YES,YES,11.25
+flatbread,flatbread,g,other,YES,YES,YES,14
+crumpets,crumpets,g,other,YES,YES,YES,14
+english_muffins,english muffins,g,other,YES,YES,YES,12
+breadcrumbs_fresh,breadcrumbs fresh,g,other,YES,YES,YES,22.5
+croissants,croissants,g,other,YES,YES,YES,12.5
+chickpeas_canned,chickpeas canned,g,canned,YES,YES,YES,3.75
+lentils_canned_brown,lentils canned brown,g,canned,YES,YES,YES,3.75
+lentils_canned_green,lentils canned green,g,canned,YES,YES,YES,3.75
+red_kidney_beans_canned,red kidney beans canned,g,canned,YES,YES,YES,3.75
+cannellini_beans_canned,cannellini beans canned,g,canned,YES,YES,YES,3.75
+black_beans_canned,black beans canned,g,canned,YES,YES,YES,3.75
+butter_beans_canned,butter beans canned,g,canned,YES,YES,YES,3.75
+borlotti_beans_canned,borlotti beans canned,g,canned,YES,YES,YES,6.25
+four_bean_mix_canned,four bean mix canned,g,canned,YES,YES,YES,3.75
+baked_beans_canned,baked beans canned,g,canned,YES,YES,YES,3.57
+lentils_red_dried,lentils red dried,g,dried,YES,YES,YES,7
+lentils_green_dried,lentils green dried,g,dried,YES,YES,YES,7
+lentils_brown_dried,lentils brown dried,g,dried,YES,YES,YES,5
+lentils_french_dried,lentils french dried,g,dried,YES,YES,YES,9
+chickpeas_dried,chickpeas dried,g,dried,YES,YES,YES,7
+split_peas_green,split peas green,g,other,YES,YES,YES,7
+split_peas_yellow,split peas yellow,g,other,YES,YES,YES,7
+black_beans_dried,black beans dried,g,dried,YES,YES,YES,9
+kidney_beans_dried,kidney beans dried,g,dried,YES,YES,YES,7
+mung_beans,mung beans,g,other,YES,YES,YES,9
+almonds_whole,almonds whole,g,other,YES,YES,YES,25
+almonds_slivered,almonds slivered,g,other,YES,YES,YES,40
+almonds_flaked,almonds flaked,g,other,YES,YES,YES,22.5
+almond_meal,almond meal,g,other,YES,YES,YES,17
+cashews,cashews,g,other,YES,YES,YES,42.5
+peanuts_raw,peanuts raw,g,other,NO,YES,YES,8.5
+peanuts_roasted,peanuts roasted,g,other,YES,YES,YES,15
+macadamias,macadamias,g,other,YES,YES,YES,80
+hazelnuts,hazelnuts,g,other,YES,YES,YES,43.33
+pecans,pecans,g,other,YES,YES,YES,60
+brazil_nuts,brazil nuts,g,other,YES,YES,YES,53.33
+pistachios,pistachios,g,other,YES,YES,YES,56.67
+mixed_nuts,mixed nuts,g,other,YES,YES,YES,26.67
+flaxseeds,flaxseeds,g,other,YES,YES,YES,40
+pumpkin_seeds,pumpkin seeds,g,other,YES,YES,YES,18
+sesame_seeds_white,sesame seeds white,g,other,YES,YES,YES,22.5
+sesame_seeds_black,sesame seeds black,g,other,YES,YES,YES,45
+poppy_seeds,poppy seeds,g,other,YES,YES,YES,112.5
+hemp_seeds,hemp seeds,g,other,YES,YES,YES,40
+peanut_butter_smooth,peanut butter smooth,g,other,YES,YES,YES,12
+peanut_butter_crunchy,peanut butter crunchy,g,other,YES,YES,YES,14.67
+almond_butter,almond butter,g,other,YES,YES,YES,16
+abc_butter,abc butter,g,other,YES,YES,YES,13
+hazelnut_spread,hazelnut spread,g,other,YES,YES,YES,11.25
+rice_bran_oil,rice bran oil,ml,other,YES,YES,YES,8.67
+coconut_oil_virgin,coconut oil virgin,ml,other,YES,YES,YES,
+coconut_oil_refined,coconut oil refined,ml,other,YES,YES,YES,
+avocado_oil,avocado oil,ml,other,YES,YES,YES,
+peanut_oil,peanut oil,ml,other,YES,YES,YES,
+truffle_oil,truffle oil,ml,other,YES,YES,YES,
+walnut_oil,walnut oil,ml,other,YES,YES,YES,
+macadamia_oil,macadamia oil,ml,other,YES,YES,YES,
+copha,copha,g,other,YES,YES,YES,14
+lard,lard,g,other,YES,YES,YES,18
+dripping,dripping,g,other,YES,YES,YES,22.5
+vinegar_white,vinegar white,ml,other,YES,YES,YES,
+vinegar_red_wine,vinegar red wine,ml,other,YES,YES,YES,
+vinegar_white_wine,vinegar white wine,ml,other,YES,YES,YES,7
+vinegar_apple_cider,vinegar apple cider,ml,other,YES,YES,YES,
+vinegar_balsamic,vinegar balsamic,ml,other,YES,YES,YES,
+vinegar_malt,vinegar malt,ml,other,YES,YES,YES,5
+vinegar_sherry,vinegar sherry,ml,other,YES,YES,YES,12
+soy_sauce_light,soy sauce light,ml,other,YES,YES,YES,6.73
+soy_sauce_dark,soy sauce dark,ml,other,YES,YES,YES,9
+soy_sauce_low_sodium,soy sauce low sodium,ml,other,YES,YES,YES,16.07
+tamari,tamari,g,other,YES,YES,YES,
+kecap_manis,kecap manis,g,other,YES,YES,YES,
+teriyaki_sauce,teriyaki sauce,ml,other,YES,YES,YES,
+sweet_chilli_sauce,sweet chilli sauce,ml,other,YES,YES,YES,
+sambal_oelek,sambal oelek,g,other,NO,YES,YES,
+black_bean_sauce,black bean sauce,ml,other,YES,YES,YES,
+plum_sauce,plum sauce,ml,other,YES,YES,YES,
+satay_sauce,satay sauce,ml,other,YES,YES,YES,15
+curry_paste_red,curry paste red,g,other,YES,YES,YES,22.5
+curry_paste_green,curry paste green,g,other,YES,YES,YES,17.5
+curry_paste_yellow,curry paste yellow,g,other,YES,YES,YES,15.91
+curry_paste_massaman,curry paste massaman,g,other,YES,YES,YES,30.7
+curry_paste_panang,curry paste panang,g,other,YES,YES,YES,22.5
+laksa_paste,laksa paste,g,other,YES,YES,YES,22.5
+bbq_sauce,bbq sauce,ml,other,YES,YES,YES,
+hp_sauce,hp sauce,ml,other,YES,YES,YES,17.65
+tabasco,tabasco,g,other,YES,YES,YES,75
+mustard_wholegrain,mustard wholegrain,g,other,YES,YES,YES,10
+mustard_american_yellow,mustard american yellow,g,other,NO,YES,YES,7.5
+mustard_english,mustard english,g,other,YES,YES,YES,10.53
+aioli,aioli,g,other,YES,YES,YES,
+tartare_sauce,tartare sauce,ml,other,NO,YES,YES,
+hollandaise_sauce,hollandaise sauce,ml,other,YES,YES,YES,18
+passata,passata,g,other,YES,YES,YES,
+harissa_paste,harissa paste,g,other,NO,YES,YES,23.68
+chimichurri,chimichurri,g,other,NO,YES,YES,30
+salsa,salsa,g,other,YES,YES,YES,
+enchilada_sauce,enchilada sauce,ml,other,YES,YES,YES,
+taco_sauce,taco sauce,ml,other,NO,YES,YES,
+peri_peri_sauce,peri peri sauce,ml,other,NO,YES,YES,
+pickled_gherkins,pickled gherkins,g,other,YES,YES,YES,7.5
+pickled_onions,pickled onions,g,other,YES,YES,YES,8.33
+olives_black,olives black,g,other,YES,YES,YES,10.61
+olives_green,olives green,g,other,YES,YES,YES,13.24
+sun_dried_tomatoes,sun dried tomatoes,g,dried,YES,YES,YES,22.5
+roasted_capsicums_jarred,roasted capsicums jarred,g,other,YES,YES,YES,12.5
+artichoke_hearts_jarred,artichoke hearts jarred,g,other,YES,YES,YES,16.07
+jalapenos_pickled,jalapenos pickled,g,other,YES,YES,YES,11.63
+sauerkraut,sauerkraut,g,other,YES,YES,YES,10
+kimchi,kimchi,g,other,YES,YES,YES,11
+vegemite,vegemite,g,other,YES,YES,YES,13.75
+marmite,marmite,g,other,YES,YES,YES,18.18
+jam_strawberry,jam strawberry,g,other,YES,YES,YES,10
+jam_raspberry,jam raspberry,g,other,YES,YES,YES,11.67
+jam_apricot,jam apricot,g,other,YES,YES,YES,12
+marmalade,marmalade,g,other,YES,YES,YES,10
+golden_syrup,golden syrup,ml,other,YES,YES,YES,5
+treacle,treacle,g,other,YES,YES,YES,10
+lemon_curd,lemon curd,g,other,YES,YES,YES,15
+baba_ganoush,baba ganoush,g,other,YES,YES,YES,22.5
+taramasalata,taramasalata,g,other,NO,YES,YES,25
+pesto_basil,pesto basil,g,other,YES,YES,YES,23.68
+pesto_sun_dried_tomato,pesto sun dried tomato,g,dried,YES,YES,YES,44.74
+white_pepper_ground,white pepper ground,g,other,YES,YES,YES,128.57
+paprika_sweet,paprika sweet,g,other,YES,YES,YES,128.57
+paprika_smoked,paprika smoked,g,other,YES,YES,YES,116.67
+paprika_hot,paprika hot,g,other,YES,YES,YES,128.57
+cayenne_pepper,cayenne pepper,g,other,YES,YES,YES,110
+chilli_powder,chilli powder,g,other,YES,YES,YES,140
+chilli_flakes,chilli flakes,g,other,YES,YES,YES,100
+cumin_ground,cumin ground,g,other,YES,YES,YES,100
+coriander_ground,coriander ground,g,other,YES,YES,YES,116.67
+turmeric_ground,turmeric ground,g,other,YES,YES,YES,128.57
+ginger_ground,ginger ground,g,other,YES,YES,YES,128.57
+cinnamon_ground,cinnamon ground,g,other,YES,YES,YES,100
+nutmeg_ground,nutmeg ground,g,other,YES,YES,YES,128.57
+allspice_ground,allspice ground,g,other,YES,YES,YES,128.57
+cloves_ground,cloves ground,g,other,YES,YES,YES,200
+cardamom_ground,cardamom ground,g,other,YES,YES,YES,180
+chinese_five_spice,chinese five spice,g,other,YES,YES,YES,116.67
+mixed_spice,mixed spice,g,other,YES,YES,YES,128.57
+sumac,sumac,g,other,YES,YES,YES,90
+zaatar,zaatar,g,other,YES,YES,YES,45
+ras_el_hanout,ras el hanout,g,other,YES,YES,YES,110
+black_peppercorns,black peppercorns,g,other,YES,YES,YES,112.5
+cumin_seeds,cumin seeds,g,other,YES,YES,YES,128.57
+coriander_seeds,coriander seeds,g,other,YES,YES,YES,128.57
+fennel_seeds,fennel seeds,g,other,YES,YES,YES,128.57
+mustard_seeds_yellow,mustard seeds yellow,g,other,YES,YES,YES,70
+mustard_seeds_brown,mustard seeds brown,g,other,YES,YES,YES,35
+mustard_seeds_black,mustard seeds black,g,other,YES,YES,YES,45
+cinnamon_sticks,cinnamon sticks,g,other,YES,YES,YES,180
+cloves_whole,cloves whole,g,other,YES,YES,YES,128.57
+sichuan_peppercorns,sichuan peppercorns,g,other,NO,YES,YES,300
+juniper_berries,juniper berries,g,other,YES,YES,YES,100
+caraway_seeds,caraway seeds,g,other,YES,YES,YES,70
+celery_seeds,celery seeds,g,other,YES,YES,YES,128.57
+fenugreek_seeds,fenugreek seeds,g,other,YES,YES,YES,90
+oregano_dried,oregano dried,g,dried,YES,YES,YES,200
+basil_dried,basil dried,g,dried,YES,YES,YES,233.33
+thyme_dried,thyme dried,g,dried,YES,YES,YES,233.33
+rosemary_dried,rosemary dried,g,dried,YES,YES,YES,233.33
+sage_dried,sage dried,g,dried,YES,YES,YES,300
+parsley_dried,parsley dried,g,dried,YES,YES,YES,233.33
+dill_dried,dill dried,g,dried,YES,YES,YES,233.33
+tarragon_dried,tarragon dried,g,dried,YES,YES,YES,300
+marjoram_dried,marjoram dried,g,dried,YES,YES,YES,300
+bay_leaves_dried,bay leaves dried,g,dried,YES,YES,YES,
+chives_dried,chives dried,g,dried,YES,YES,YES,300
+mixed_herbs,mixed herbs,g,other,YES,YES,YES,150
+italian_herbs,italian herbs,g,other,YES,YES,YES,233.33
+herbes_de_provence,herbes de provence,g,other,YES,YES,YES,116.67
+salt_table,salt table,g,other,YES,YES,YES,3
+salt_sea,salt sea,g,other,YES,YES,YES,4
+salt_kosher,salt kosher,g,other,YES,YES,YES,9.91
+salt_pink_himalayan,salt pink himalayan,g,other,YES,YES,YES,14
+salt_flaky,salt flaky,g,other,YES,YES,YES,36
+chicken_salt,chicken salt,g,other,YES,YES,YES,17.5
+vegetable_stock_powder,vegetable stock powder,ml,other,NO,YES,YES,30
+beef_stock_powder,beef stock powder,ml,other,YES,YES,YES,30
+msg,msg,g,other,NO,YES,YES,25
+vanilla_bean_paste,vanilla bean paste,g,other,YES,YES,YES,
+almond_extract,almond extract,ml,other,YES,YES,YES,
+rosewater,rosewater,ml,other,YES,YES,YES,
+orange_blossom_water,orange blossom water,ml,other,YES,YES,YES,
+cajun_seasoning,cajun seasoning,g,other,YES,YES,YES,70
+mexican_seasoning,mexican seasoning,g,other,YES,YES,YES,100
+italian_seasoning,italian seasoning,g,other,YES,YES,YES,233.33
+moroccan_seasoning,moroccan seasoning,g,other,YES,YES,YES,128.57
+bbq_rub,bbq rub,g,other,NO,YES,YES,45
+steak_seasoning,steak seasoning,g,other,YES,YES,YES,70
+garlic_and_herb_seasoning,garlic and herb seasoning,g,other,YES,YES,YES,100
+dukkah,dukkah,g,other,NO,YES,YES,50
+flour_plain,flour plain,g,other,NO,YES,YES,2.5
+flour_self_raising,flour self raising,g,other,YES,YES,YES,2.5
+flour_bread,flour bread,g,other,YES,YES,YES,5
+flour_wholemeal,flour wholemeal,g,other,YES,YES,YES,8.75
+cornflour,cornflour,g,other,NO,YES,YES,10
+rice_flour,rice flour,g,other,YES,YES,YES,6
+coconut_flour,coconut flour,g,other,YES,YES,YES,22
+chickpea_flour,chickpea flour,g,other,YES,YES,YES,9
+spelt_flour,spelt flour,g,other,YES,YES,YES,10
+gluten_free_flour_blend,gluten free flour blend,g,other,YES,YES,YES,12
+sugar_white_caster,sugar white caster,g,other,YES,YES,YES,2.5
+sugar_white_granulated,sugar white granulated,g,other,YES,YES,YES,2.5
+sugar_brown_light,sugar brown light,g,other,YES,YES,YES,5
+sugar_brown_dark,sugar brown dark,g,other,YES,YES,YES,2.5
+sugar_raw,sugar raw,g,other,YES,YES,YES,2.5
+icing_sugar,icing sugar,g,other,NO,YES,YES,8
+demerara_sugar,demerara sugar,g,other,YES,YES,YES,3.5
+coconut_sugar,coconut sugar,g,other,YES,YES,YES,16.67
+agave_syrup,agave syrup,ml,other,YES,YES,YES,
+rice_malt_syrup,rice malt syrup,ml,other,YES,YES,YES,21.25
+stevia,stevia,g,other,YES,YES,YES,140
+bicarbonate_of_soda,bicarbonate of soda,g,other,YES,YES,YES,3
+cream_of_tartar,cream of tartar,ml,other,YES,YES,YES,90
+yeast_dried,yeast dried,g,dried,YES,YES,YES,642.86
+yeast_instant,yeast instant,g,other,YES,YES,YES,642.86
+cocoa_powder_dutch,cocoa powder dutch,g,other,YES,YES,YES,18
+cocoa_powder_natural,cocoa powder natural,g,other,YES,YES,YES,18
+dark_chocolate_70,dark chocolate 70,g,other,NO,YES,YES,17.5
+dark_chocolate_baking,dark chocolate baking,g,other,NO,YES,YES,22.5
+milk_chocolate,milk chocolate,ml,other,YES,YES,YES,20
+white_chocolate,white chocolate,g,other,YES,YES,YES,25
+chocolate_chips,chocolate chips,g,other,YES,YES,YES,17.5
+cacao_nibs,cacao nibs,g,other,YES,YES,YES,40
+drinking_chocolate,drinking chocolate,g,other,YES,YES,YES,12
+sultanas,sultanas,g,other,NO,YES,YES,14
+currants_dried,currants dried,g,dried,YES,YES,YES,22.5
+apricots_dried,apricots dried,g,dried,YES,YES,YES,20
+dates_dried,dates dried,g,dried,NO,YES,YES,18
+dates_medjool,dates medjool,g,other,YES,YES,YES,22
+prunes,prunes,g,other,YES,YES,YES,15
+figs_dried,figs dried,g,dried,YES,YES,YES,32.5
+cranberries_dried,cranberries dried,g,dried,YES,YES,YES,30
+mango_dried,mango dried,g,dried,YES,YES,YES,36.67
+apple_dried,apple dried,g,dried,YES,YES,YES,32.5
+mixed_dried_fruit,mixed dried fruit,g,dried,YES,YES,YES,12
+glace_cherries,glace cherries,g,other,YES,YES,YES,27.5
+glace_ginger,glace ginger,g,other,YES,YES,YES,30
+mixed_peel,mixed peel,g,other,YES,YES,YES,22.5
+coconut_desiccated,coconut desiccated,g,other,YES,YES,YES,18
+coconut_shredded,coconut shredded,g,other,YES,YES,YES,14
+coconut_flaked,coconut flaked,g,other,YES,YES,YES,18
+gelatine_sheets,gelatine sheets,g,other,YES,YES,YES,187.5
+gelatine_powder,gelatine powder,g,other,NO,YES,YES,90
+agar_agar,agar agar,g,other,YES,YES,YES,112.5
+condensed_milk,condensed milk,ml,other,YES,YES,YES,6.33
+evaporated_milk,evaporated milk,ml,other,YES,YES,YES,6.17
+cream_of_coconut,cream of coconut,ml,other,YES,YES,YES,
+food_colouring,food colouring,g,other,YES,YES,YES,70
+vanilla_pods,vanilla pods,g,other,YES,YES,YES,2083.33
+peppermint_essence,peppermint essence,ml,other,YES,YES,YES,90
+arrowroot,arrowroot,g,other,YES,YES,YES,16
+tomatoes_diced_canned,tomatoes diced canned,g,canned,YES,YES,YES,3.75
+tomatoes_whole_canned,tomatoes whole canned,g,canned,YES,YES,YES,3
+tomatoes_crushed_canned,tomatoes crushed canned,g,canned,YES,YES,YES,3
+corn_kernels_canned,corn kernels canned,g,canned,YES,YES,YES,6.25
+beetroot_canned_sliced,beetroot canned sliced,g,canned,NO,YES,YES,3.75
+beetroot_canned_whole_baby,beetroot canned whole baby,g,canned,NO,YES,YES,5.88
+peas_canned,peas canned,g,canned,YES,YES,YES,3.25
+carrots_canned,carrots canned,g,canned,YES,YES,YES,3.75
+asparagus_canned,asparagus canned,g,canned,YES,YES,YES,5.88
+hearts_of_palm_canned,hearts of palm canned,g,canned,YES,YES,YES,11.25
+bamboo_shoots_canned,bamboo shoots canned,g,canned,YES,YES,YES,6.67
+water_chestnuts_canned,water chestnuts canned,ml,canned,YES,YES,YES,11.01
+mushrooms_canned,mushrooms canned,g,canned,YES,YES,YES,30
+pineapple_rings_canned,pineapple rings canned,g,canned,YES,YES,YES,5.68
+pineapple_pieces_canned,pineapple pieces canned,g,canned,YES,YES,YES,5.68
+pineapple_crushed_canned,pineapple crushed canned,g,canned,YES,YES,YES,5.68
+peaches_canned,peaches canned,g,canned,YES,YES,YES,6.1
+pears_canned,pears canned,g,canned,NO,YES,YES,6.1
+apricots_canned,apricots canned,g,canned,YES,YES,YES,6.1
+mandarin_segments_canned,mandarin segments canned,g,canned,YES,YES,YES,6.1
+fruit_salad_canned,fruit salad canned,g,canned,YES,YES,YES,6.1
+cherries_canned,cherries canned,g,canned,YES,YES,YES,8.24
+mango_canned,mango canned,g,canned,YES,YES,YES,5.88
+lychees_canned,lychees canned,g,canned,YES,YES,YES,6.19
+coconut_milk_canned,coconut milk canned,ml,canned,YES,YES,YES,
+coconut_cream_canned,coconut cream canned,ml,canned,NO,YES,YES,
+chicken_stock_liquid,chicken stock liquid,ml,other,NO,YES,YES,
+chicken_stock_cubes,chicken stock cubes,ml,other,YES,YES,YES,
+chicken_stock_powder,chicken stock powder,ml,other,YES,YES,YES,60
+beef_stock_liquid,beef stock liquid,ml,other,NO,YES,YES,
+beef_stock_cubes,beef stock cubes,ml,other,YES,YES,YES,35
+vegetable_stock_liquid,vegetable stock liquid,ml,other,NO,YES,YES,
+vegetable_stock_cubes,vegetable stock cubes,ml,other,YES,YES,YES,35
+fish_stock,fish stock,ml,other,YES,YES,YES,7
+bone_broth,bone broth,ml,other,YES,YES,YES,
+dashi,dashi,g,other,YES,YES,YES,60
+peas_frozen,peas frozen,g,frozen,YES,YES,YES,6
+corn_frozen,corn frozen,g,frozen,YES,YES,YES,7
+beans_frozen_green,beans frozen green,g,frozen,YES,YES,YES,7
+mixed_vegetables_frozen,mixed vegetables frozen,g,frozen,YES,YES,YES,7
+spinach_frozen,spinach frozen,g,frozen,YES,YES,YES,8.75
+broccoli_frozen,broccoli frozen,g,frozen,YES,YES,YES,7
+cauliflower_frozen,cauliflower frozen,g,frozen,YES,YES,YES,7
+stir_fry_vegetables_frozen,stir fry vegetables frozen,g,frozen,YES,YES,YES,7
+edamame_frozen,edamame frozen,g,frozen,YES,YES,YES,9
+broad_beans_frozen,broad beans frozen,g,frozen,YES,YES,YES,9
+berries_mixed_frozen,berries mixed frozen,g,frozen,YES,YES,YES,13
+strawberries_frozen,strawberries frozen,g,frozen,YES,YES,YES,10
+blueberries_frozen,blueberries frozen,g,frozen,YES,YES,YES,20
+raspberries_frozen,raspberries frozen,g,frozen,YES,YES,YES,13
+mango_frozen,mango frozen,g,frozen,YES,YES,YES,13.75
+banana_frozen,banana frozen,g,frozen,YES,YES,YES,9
+pineapple_frozen,pineapple frozen,g,frozen,YES,YES,YES,9
+puff_pastry_frozen,puff pastry frozen,g,frozen,NO,YES,YES,14.06
+shortcrust_pastry_frozen,shortcrust pastry frozen,g,frozen,NO,YES,YES,11.67
+filo_pastry_frozen,filo pastry frozen,g,frozen,NO,YES,YES,14.81
+pie_shells_frozen,pie shells frozen,g,frozen,NO,YES,YES,15
+pizza_bases_frozen,pizza bases frozen,g,frozen,YES,YES,YES,
+red_wine_cooking,red wine cooking,ml,other,NO,YES,YES,
+white_wine_cooking,white wine cooking,ml,other,NO,YES,YES,
+marsala,marsala,g,other,YES,YES,YES,22.67
+sherry_dry,sherry dry,g,dried,YES,YES,YES,11.33
+sherry_sweet,sherry sweet,g,other,NO,YES,YES,16.67
+port,port,g,other,YES,YES,YES,20
+vermouth,vermouth,g,other,YES,YES,YES,24.67
+beer,beer,g,other,YES,YES,YES,48
+rice_wine,rice wine,ml,other,YES,YES,YES,22.67
+mirin,mirin,g,other,YES,YES,YES,
+sake,sake,g,other,YES,YES,YES,
+brandy,brandy,g,other,YES,YES,YES,
+rum,rum,g,other,YES,YES,YES,64.29
+coffee_instant,coffee instant,g,other,YES,YES,YES,65
+coffee_ground,coffee ground,g,other,YES,YES,YES,100
+coffee_beans,coffee beans,g,other,YES,YES,YES,28
+tea_black,tea black,g,other,YES,YES,YES,120
+tea_green,tea green,g,other,YES,YES,YES,200
+coconut_water,coconut water,ml,other,YES,YES,YES,
+vegetable_juice,vegetable juice,ml,other,YES,YES,YES,
+apple_juice_cooking,apple juice cooking,ml,other,YES,YES,YES,3.5
+monterey_jack,monterey jack,g,other,YES,YES,YES,42.5
+cheese_blend,cheese blend,g,other,YES,YES,YES,17
+seafood_stock,seafood stock,ml,other,YES,YES,YES,9
+egg_substitute,egg substitute,ml,other,YES,YES,YES,18
+spice_blend,spice blend,g,dried,YES,YES,YES,128.57
+herbs,herbs,g,fresh,YES,YES,YES,175
+red_wine,red wine,ml,other,YES,YES,YES,10
+pie_crust,pie crust,g,other,YES,YES,YES,12
+nori_seaweed,nori seaweed,g,dried,NO,YES,YES,180
+wakame_seaweed,wakame seaweed,g,dried,NO,YES,YES,90
