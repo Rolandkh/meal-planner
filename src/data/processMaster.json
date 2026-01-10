@@ -1,0 +1,2207 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2026-01-11",
+  "description": "Master database of culinary processes with yield factors, time estimates, and nutrition impacts",
+  "schemaVersion": "2.0",
+  "changelog": {
+    "2.0.0": "Added parallelizable, passiveTime, heatLevel, yieldFactorOverrides, prerequisites, aliases. Added 14 missing common processes. Standardized equipment naming. Added ingredient categories."
+  },
+  
+  "ingredientCategories": {
+    "description": "Standard categories for applicableTo field",
+    "categories": [
+      "vegetables", "leafy_greens", "root_vegetables", "aromatics",
+      "meat", "poultry", "fish", "seafood", "eggs",
+      "dairy", "cheese",
+      "grains", "pasta", "rice", "legumes",
+      "fruits", "berries", "citrus",
+      "nuts", "seeds",
+      "herbs", "spices",
+      "bread", "dough",
+      "sauces", "liquids", "stocks",
+      "all"
+    ]
+  },
+
+  "processes": {
+    
+    "peel": {
+      "id": "peel",
+      "displayName": "Peel",
+      "aliases": ["skin", "pare"],
+      "category": "prep",
+      "description": "Remove outer skin or peel from ingredient",
+      "yieldFactor": 0.90,
+      "yieldFactorOverrides": {
+        "onion": 0.95,
+        "potato": 0.85,
+        "carrot": 0.90,
+        "apple": 0.92,
+        "citrus": 0.75
+      },
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 2,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["peeler", "knife"],
+      "applicableTo": ["root_vegetables", "fruits", "aromatics", "citrus"],
+      "prerequisites": [],
+      "notes": "Yield varies by ingredient: onions ~95%, potatoes ~85%, carrots ~90%"
+    },
+
+    "trim": {
+      "id": "trim",
+      "displayName": "Trim",
+      "aliases": ["cut_ends", "remove_stems"],
+      "category": "prep",
+      "description": "Remove ends, stems, roots, or unwanted parts",
+      "yieldFactor": 0.95,
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 1.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife"],
+      "applicableTo": ["vegetables", "leafy_greens"],
+      "prerequisites": [],
+      "notes": "Minimal material loss, mostly ends and stems"
+    },
+
+    "core": {
+      "id": "core",
+      "displayName": "Core",
+      "aliases": ["remove_core"],
+      "category": "prep",
+      "description": "Remove central core, seeds, or pit",
+      "yieldFactor": 0.92,
+      "yieldFactorOverrides": {
+        "apple": 0.92,
+        "pear": 0.92,
+        "bell_pepper": 0.88,
+        "pineapple": 0.50
+      },
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 1.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "corer"],
+      "applicableTo": ["fruits", "vegetables"],
+      "prerequisites": [],
+      "notes": "Apple/pear ~8% loss, bell pepper ~12% loss, pineapple ~50% loss"
+    },
+
+    "deseed": {
+      "id": "deseed",
+      "displayName": "Deseed",
+      "aliases": ["remove_seeds", "seed"],
+      "category": "prep",
+      "description": "Remove seeds from interior",
+      "yieldFactor": 0.88,
+      "yieldFactorOverrides": {
+        "tomato": 0.88,
+        "cucumber": 0.90,
+        "bell_pepper": 0.88,
+        "squash": 0.85,
+        "melon": 0.95
+      },
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "spoon"],
+      "applicableTo": ["vegetables", "fruits"],
+      "prerequisites": [],
+      "notes": "Tomatoes lose ~12% weight when deseeded"
+    },
+
+    "debone": {
+      "id": "debone",
+      "displayName": "Debone",
+      "aliases": ["bone", "remove_bones"],
+      "category": "prep",
+      "description": "Remove bones from meat or fish",
+      "yieldFactor": 0.65,
+      "yieldFactorOverrides": {
+        "chicken_thigh": 0.60,
+        "fish": 0.70,
+        "pork_ribs": 0.50
+      },
+      "timeEstimate": {
+        "baseMinutes": 10,
+        "perIngredientMinutes": 5,
+        "activeTime": 15,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "cutting_board"],
+      "applicableTo": ["poultry", "fish", "meat"],
+      "prerequisites": [],
+      "notes": "Major yield loss - chicken thighs with bone ~60% yield, fish ~70%"
+    },
+
+    "shell": {
+      "id": "shell",
+      "displayName": "Shell",
+      "aliases": ["peel_shell", "crack"],
+      "category": "prep",
+      "description": "Remove shells from shellfish, nuts, or eggs",
+      "yieldFactor": 0.50,
+      "yieldFactorOverrides": {
+        "shrimp": 0.50,
+        "crab": 0.45,
+        "eggs": 0.88,
+        "peanuts": 0.70,
+        "walnuts": 0.50
+      },
+      "timeEstimate": {
+        "baseMinutes": 5,
+        "perIngredientMinutes": 2,
+        "activeTime": 7,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["hands", "nutcracker"],
+      "applicableTo": ["seafood", "nuts", "eggs"],
+      "prerequisites": [],
+      "notes": "Shrimp ~50% yield, nuts ~45-70%, eggs ~88%"
+    },
+
+    "devein": {
+      "id": "devein",
+      "displayName": "Devein",
+      "aliases": ["remove_vein"],
+      "category": "prep",
+      "description": "Remove vein/digestive tract from shrimp",
+      "yieldFactor": 0.98,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["paring_knife"],
+      "applicableTo": ["seafood"],
+      "prerequisites": ["shell"],
+      "notes": "Minimal weight loss, mostly aesthetic"
+    },
+
+    "zest": {
+      "id": "zest",
+      "displayName": "Zest",
+      "aliases": ["grate_zest"],
+      "category": "prep",
+      "description": "Remove colored outer peel for flavor",
+      "yieldFactor": 0.05,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["zester", "microplane", "grater"],
+      "applicableTo": ["citrus"],
+      "prerequisites": [],
+      "notes": "Extract only - one lemon yields ~2g zest"
+    },
+
+    "dice": {
+      "id": "dice",
+      "displayName": "Dice",
+      "aliases": ["cube_small", "cut_dice"],
+      "category": "prep",
+      "description": "Cut into small uniform cubes (1/4 to 1/2 inch)",
+      "yieldFactor": 0.97,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1.5,
+        "activeTime": 4.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "cutting_board"],
+      "applicableTo": ["vegetables", "aromatics", "root_vegetables", "fruits"],
+      "prerequisites": ["peel"],
+      "notes": "Minimal loss from trimming ends"
+    },
+
+    "mince": {
+      "id": "mince",
+      "displayName": "Mince",
+      "aliases": ["chop_fine", "finely_chop"],
+      "category": "prep",
+      "description": "Chop into very fine pieces (smaller than dice)",
+      "yieldFactor": 0.98,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "cutting_board"],
+      "applicableTo": ["aromatics", "herbs", "vegetables"],
+      "prerequisites": ["peel"],
+      "notes": "Very minimal loss, mostly from knife residue"
+    },
+
+    "slice": {
+      "id": "slice",
+      "displayName": "Slice",
+      "aliases": ["cut_slices"],
+      "category": "prep",
+      "description": "Cut into thin, flat pieces",
+      "yieldFactor": 0.98,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "mandoline"],
+      "applicableTo": ["vegetables", "aromatics", "meat", "bread", "fruits"],
+      "prerequisites": [],
+      "notes": "Minimal loss from ends"
+    },
+
+    "julienne": {
+      "id": "julienne",
+      "displayName": "Julienne",
+      "aliases": ["matchstick", "cut_julienne"],
+      "category": "prep",
+      "description": "Cut into thin matchstick strips",
+      "yieldFactor": 0.95,
+      "timeEstimate": {
+        "baseMinutes": 5,
+        "perIngredientMinutes": 2,
+        "activeTime": 7,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "mandoline"],
+      "applicableTo": ["vegetables", "root_vegetables"],
+      "prerequisites": ["peel", "trim"],
+      "notes": "Requires trimming to create uniform rectangles first"
+    },
+
+    "chop": {
+      "id": "chop",
+      "displayName": "Chop",
+      "aliases": ["cut_rough", "roughly_chop"],
+      "category": "prep",
+      "description": "Cut into rough, irregular pieces",
+      "yieldFactor": 0.98,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 2.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "cutting_board"],
+      "applicableTo": ["vegetables", "herbs", "nuts", "fruits"],
+      "prerequisites": [],
+      "notes": "Fast and rustic, minimal precision needed"
+    },
+
+    "cube": {
+      "id": "cube",
+      "displayName": "Cube",
+      "aliases": ["cut_cubes", "large_dice"],
+      "category": "prep",
+      "description": "Cut into larger uniform cubes (3/4 to 1 inch)",
+      "yieldFactor": 0.96,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "cutting_board"],
+      "applicableTo": ["root_vegetables", "meat", "bread"],
+      "prerequisites": ["peel"],
+      "notes": "Larger pieces for stews and roasting"
+    },
+
+    "quarter": {
+      "id": "quarter",
+      "displayName": "Quarter",
+      "aliases": ["cut_quarters"],
+      "category": "prep",
+      "description": "Cut into four equal pieces",
+      "yieldFactor": 0.99,
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.25,
+        "activeTime": 1.25,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "cutting_board"],
+      "applicableTo": ["vegetables", "fruits", "eggs"],
+      "prerequisites": [],
+      "notes": "Very minimal loss"
+    },
+
+    "shred": {
+      "id": "shred",
+      "displayName": "Shred",
+      "aliases": ["tear", "pull_apart"],
+      "category": "prep",
+      "description": "Cut or tear into thin strips",
+      "yieldFactor": 0.97,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife", "grater", "food_processor"],
+      "applicableTo": ["leafy_greens", "vegetables", "cheese", "meat"],
+      "prerequisites": [],
+      "notes": "Can be done by hand (lettuce) or with tools (cheese)"
+    },
+
+    "grate": {
+      "id": "grate",
+      "displayName": "Grate",
+      "aliases": ["shred_fine"],
+      "category": "prep",
+      "description": "Reduce to small pieces using grater",
+      "yieldFactor": 0.95,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["grater", "microplane"],
+      "applicableTo": ["cheese", "vegetables", "aromatics", "spices"],
+      "prerequisites": ["peel"],
+      "notes": "Some loss to grater residue, especially with sticky ingredients"
+    },
+
+    "crush": {
+      "id": "crush",
+      "displayName": "Crush",
+      "aliases": ["smash", "press"],
+      "category": "prep",
+      "description": "Break down using pressure to release juices/oils",
+      "yieldFactor": 0.99,
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 1.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["knife", "mortar_pestle", "garlic_press"],
+      "applicableTo": ["aromatics", "spices", "nuts", "herbs"],
+      "prerequisites": ["peel"],
+      "notes": "Use immediately for best flavor, oxidizes quickly"
+    },
+
+    "pound": {
+      "id": "pound",
+      "displayName": "Pound",
+      "aliases": ["flatten", "tenderize"],
+      "category": "prep",
+      "description": "Flatten meat to uniform thickness",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["meat_mallet", "plastic_wrap"],
+      "applicableTo": ["poultry", "meat"],
+      "prerequisites": [],
+      "notes": "No weight loss, just restructuring"
+    },
+
+    "score": {
+      "id": "score",
+      "displayName": "Score",
+      "aliases": ["slash", "cut_surface"],
+      "category": "prep",
+      "description": "Make shallow cuts in surface for even cooking or presentation",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 2.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["knife"],
+      "applicableTo": ["meat", "fish", "bread", "dough"],
+      "prerequisites": [],
+      "notes": "Helps fat render, allows seasonings to penetrate, or creates decorative patterns"
+    },
+
+    "drain": {
+      "id": "drain",
+      "displayName": "Drain",
+      "aliases": ["pour_off", "discard_liquid"],
+      "category": "prep",
+      "description": "Remove liquid from cooked or soaked ingredients",
+      "yieldFactor": 0.98,
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0,
+        "activeTime": 1,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["colander", "strainer"],
+      "applicableTo": ["pasta", "grains", "legumes", "vegetables"],
+      "prerequisites": ["boil"],
+      "notes": "Minimal loss, just removes cooking liquid"
+    },
+
+    "rinse": {
+      "id": "rinse",
+      "displayName": "Rinse",
+      "aliases": ["wash", "clean"],
+      "category": "prep",
+      "description": "Wash under running water to remove dirt or starch",
+      "yieldFactor": 1.02,
+      "yieldFactorOverrides": {
+        "rice": 1.05,
+        "quinoa": 1.05
+      },
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 1.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["colander", "bowl"],
+      "applicableTo": ["rice", "grains", "legumes", "vegetables", "fruits"],
+      "prerequisites": [],
+      "notes": "May add slight water weight, removes surface starch from rice/grains"
+    },
+
+    "strain": {
+      "id": "strain",
+      "displayName": "Strain",
+      "aliases": ["filter", "sieve"],
+      "category": "prep",
+      "description": "Separate solids from liquids using fine mesh",
+      "yieldFactor": 0.60,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["fine_mesh_strainer", "cheesecloth"],
+      "applicableTo": ["sauces", "stocks", "liquids"],
+      "prerequisites": [],
+      "notes": "Removes solids, keeps liquid - significant volume reduction"
+    },
+
+    "squeeze": {
+      "id": "squeeze",
+      "displayName": "Squeeze",
+      "aliases": ["juice", "extract"],
+      "category": "prep",
+      "description": "Extract juice by applying pressure",
+      "yieldFactor": 0.40,
+      "yieldFactorOverrides": {
+        "lemon": 0.35,
+        "lime": 0.30,
+        "orange": 0.50
+      },
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 1.5,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["citrus_juicer", "hands"],
+      "applicableTo": ["citrus", "fruits"],
+      "prerequisites": [],
+      "notes": "Extracts juice only - lemon yields ~35ml per 100g fruit"
+    },
+
+    "season": {
+      "id": "season",
+      "displayName": "Season",
+      "aliases": ["add_seasoning", "salt_and_pepper"],
+      "category": "prep",
+      "description": "Add salt, pepper, or spices to taste",
+      "yieldFactor": 1.02,
+      "timeEstimate": {
+        "baseMinutes": 0.5,
+        "perIngredientMinutes": 0,
+        "activeTime": 0.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": [],
+      "additionalIngredients": ["salt", "pepper", "spices"],
+      "applicableTo": ["all"],
+      "prerequisites": [],
+      "notes": "Adds minimal weight from seasonings, critical for flavor"
+    },
+
+    "coat": {
+      "id": "coat",
+      "displayName": "Coat",
+      "aliases": ["dredge", "bread", "cover"],
+      "category": "prep",
+      "description": "Cover ingredient with flour, breadcrumbs, or batter",
+      "yieldFactor": 1.15,
+      "yieldFactorOverrides": {
+        "light_flour": 1.05,
+        "breadcrumbs": 1.15,
+        "batter": 1.25
+      },
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["bowl", "plate"],
+      "additionalIngredients": ["flour", "breadcrumbs", "eggs"],
+      "applicableTo": ["meat", "poultry", "fish", "vegetables"],
+      "prerequisites": ["season"],
+      "notes": "Adds weight from coating material"
+    },
+
+    "stuff": {
+      "id": "stuff",
+      "displayName": "Stuff",
+      "aliases": ["fill"],
+      "category": "prep",
+      "description": "Fill cavity or pocket with filling",
+      "yieldFactor": 1.30,
+      "timeEstimate": {
+        "baseMinutes": 5,
+        "perIngredientMinutes": 2,
+        "activeTime": 7,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["spoon", "hands"],
+      "applicableTo": ["poultry", "vegetables", "pasta"],
+      "prerequisites": ["core"],
+      "notes": "Weight increases with filling added"
+    },
+
+    "roll": {
+      "id": "roll",
+      "displayName": "Roll",
+      "aliases": ["roll_out", "flatten_dough"],
+      "category": "prep",
+      "description": "Flatten dough or wrap ingredients by rolling",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["rolling_pin", "surface"],
+      "applicableTo": ["dough", "pasta"],
+      "prerequisites": ["knead"],
+      "notes": "Changes shape but not weight"
+    },
+
+    "spread": {
+      "id": "spread",
+      "displayName": "Spread",
+      "aliases": ["smear", "apply"],
+      "category": "prep",
+      "description": "Apply ingredient evenly over surface",
+      "yieldFactor": 1.10,
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 1.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["knife", "spatula"],
+      "additionalIngredients": ["butter", "sauce", "spread"],
+      "applicableTo": ["bread", "all"],
+      "prerequisites": [],
+      "notes": "Adds weight of spread ingredient"
+    },
+
+    "sprinkle": {
+      "id": "sprinkle",
+      "displayName": "Sprinkle",
+      "aliases": ["dust", "top"],
+      "category": "finish",
+      "description": "Scatter small amount of ingredient on top",
+      "yieldFactor": 1.02,
+      "timeEstimate": {
+        "baseMinutes": 0.5,
+        "perIngredientMinutes": 0,
+        "activeTime": 0.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": [],
+      "applicableTo": ["all"],
+      "prerequisites": [],
+      "notes": "Adds minimal weight, enhances flavor and presentation"
+    },
+
+    "saute": {
+      "id": "saute",
+      "displayName": "Sauté",
+      "aliases": ["sautee", "pan_saute"],
+      "category": "cook_dry",
+      "description": "Cook quickly in a small amount of fat over medium-high heat",
+      "yieldFactor": 0.85,
+      "timeEstimate": {
+        "baseMinutes": 5,
+        "perIngredientMinutes": 2,
+        "activeTime": 7,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "medium_high",
+      "nutritionMultiplierRef": "fried",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pan", "stovetop", "spatula"],
+      "additionalIngredients": ["oil", "butter"],
+      "applicableTo": ["vegetables", "meat", "seafood"],
+      "prerequisites": ["dice", "slice", "chop"],
+      "notes": "Water loss ~15%, plus oil absorption ~3-5g per 100g. Uses 'fried' nutrition multiplier"
+    },
+
+    "pan_fry": {
+      "id": "pan_fry",
+      "displayName": "Pan Fry",
+      "aliases": ["shallow_fry"],
+      "category": "cook_dry",
+      "description": "Cook in moderate amount of oil over medium heat",
+      "yieldFactor": 0.80,
+      "timeEstimate": {
+        "baseMinutes": 8,
+        "perIngredientMinutes": 3,
+        "activeTime": 11,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "medium",
+      "nutritionMultiplierRef": "fried",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pan", "stovetop"],
+      "additionalIngredients": ["oil"],
+      "applicableTo": ["root_vegetables", "fish", "poultry", "vegetables"],
+      "prerequisites": ["coat"],
+      "notes": "More oil absorption than sauté, ~8-10g per 100g"
+    },
+
+    "deep_fry": {
+      "id": "deep_fry",
+      "displayName": "Deep Fry",
+      "aliases": ["fry"],
+      "category": "cook_dry",
+      "description": "Submerge completely in hot oil",
+      "yieldFactor": 0.75,
+      "timeEstimate": {
+        "baseMinutes": 5,
+        "perIngredientMinutes": 2,
+        "activeTime": 7,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "high",
+      "nutritionMultiplierRef": "fried",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["deep_fryer", "pot", "thermometer", "stovetop"],
+      "additionalIngredients": ["oil"],
+      "applicableTo": ["root_vegetables", "poultry", "fish"],
+      "prerequisites": ["coat"],
+      "notes": "Significant oil absorption, loses crispness when reheated"
+    },
+
+    "stir_fry": {
+      "id": "stir_fry",
+      "displayName": "Stir Fry",
+      "aliases": ["wok_fry"],
+      "category": "cook_dry",
+      "description": "Cook quickly in wok over very high heat with constant stirring",
+      "yieldFactor": 0.88,
+      "timeEstimate": {
+        "baseMinutes": 4,
+        "perIngredientMinutes": 1,
+        "activeTime": 5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "very_high",
+      "nutritionMultiplierRef": "fried",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["wok", "stovetop", "spatula"],
+      "additionalIngredients": ["oil"],
+      "applicableTo": ["vegetables", "meat", "grains"],
+      "prerequisites": ["slice", "dice"],
+      "notes": "Fast cooking preserves texture, minimal water loss"
+    },
+
+    "roast": {
+      "id": "roast",
+      "displayName": "Roast",
+      "aliases": ["oven_roast"],
+      "category": "cook_dry",
+      "description": "Cook in oven with dry heat, uncovered",
+      "yieldFactor": 0.75,
+      "yieldFactorOverrides": {
+        "meat": 0.75,
+        "poultry": 0.78,
+        "vegetables": 0.80
+      },
+      "timeEstimate": {
+        "baseMinutes": 25,
+        "perIngredientMinutes": 10,
+        "activeTime": 5,
+        "passiveTime": 30,
+        "parallelizable": true
+      },
+      "heatLevel": "high",
+      "nutritionMultiplierRef": "grilled",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["oven", "roasting_pan", "baking_sheet"],
+      "additionalIngredients": ["oil"],
+      "applicableTo": ["meat", "poultry", "vegetables", "root_vegetables", "nuts"],
+      "prerequisites": ["season"],
+      "notes": "Significant water loss in meat ~25%, vegetables ~20%. Uses 'grilled' nutrition multiplier"
+    },
+
+    "bake": {
+      "id": "bake",
+      "displayName": "Bake",
+      "aliases": ["oven_bake"],
+      "category": "cook_dry",
+      "description": "Cook in oven with dry heat, often covered",
+      "yieldFactor": 0.85,
+      "timeEstimate": {
+        "baseMinutes": 20,
+        "perIngredientMinutes": 5,
+        "activeTime": 5,
+        "passiveTime": 20,
+        "parallelizable": true
+      },
+      "heatLevel": "medium",
+      "nutritionMultiplierRef": "baked",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["oven", "baking_dish"],
+      "applicableTo": ["fish", "poultry", "vegetables", "dough", "bread"],
+      "prerequisites": [],
+      "notes": "Less water loss than roasting due to covered cooking"
+    },
+
+    "grill": {
+      "id": "grill",
+      "displayName": "Grill",
+      "aliases": ["bbq", "barbecue"],
+      "category": "cook_dry",
+      "description": "Cook over direct heat source (outdoor grill or grill pan)",
+      "yieldFactor": 0.78,
+      "timeEstimate": {
+        "baseMinutes": 10,
+        "perIngredientMinutes": 3,
+        "activeTime": 13,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "high",
+      "nutritionMultiplierRef": "grilled",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["grill", "grill_pan"],
+      "applicableTo": ["meat", "poultry", "fish", "vegetables"],
+      "prerequisites": ["marinate", "season"],
+      "notes": "High heat causes fat drip and water evaporation"
+    },
+
+    "broil": {
+      "id": "broil",
+      "displayName": "Broil",
+      "aliases": ["grill_oven"],
+      "category": "cook_dry",
+      "description": "Cook with direct heat from above in oven",
+      "yieldFactor": 0.80,
+      "timeEstimate": {
+        "baseMinutes": 8,
+        "perIngredientMinutes": 2,
+        "activeTime": 10,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "very_high",
+      "nutritionMultiplierRef": "grilled",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["oven", "broiler_pan"],
+      "applicableTo": ["meat", "fish", "vegetables"],
+      "prerequisites": ["season"],
+      "notes": "Similar to grilling but from above"
+    },
+
+    "air_fry": {
+      "id": "air_fry",
+      "displayName": "Air Fry",
+      "aliases": ["air_fryer"],
+      "category": "cook_dry",
+      "description": "Cook with circulating hot air, minimal oil",
+      "yieldFactor": 0.82,
+      "timeEstimate": {
+        "baseMinutes": 12,
+        "perIngredientMinutes": 3,
+        "activeTime": 2,
+        "passiveTime": 13,
+        "parallelizable": true
+      },
+      "heatLevel": "high",
+      "nutritionMultiplierRef": "air-fried",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["air_fryer"],
+      "additionalIngredients": ["oil_spray"],
+      "applicableTo": ["root_vegetables", "poultry", "vegetables", "fish"],
+      "prerequisites": ["coat"],
+      "notes": "Less oil absorption than frying, similar crispness"
+    },
+
+    "toast": {
+      "id": "toast",
+      "displayName": "Toast",
+      "aliases": ["brown"],
+      "category": "cook_dry",
+      "description": "Brown surface with dry heat",
+      "yieldFactor": 0.92,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 1,
+        "passiveTime": 3,
+        "parallelizable": true
+      },
+      "heatLevel": "medium_high",
+      "nutritionMultiplierRef": "baked",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["toaster", "oven", "pan"],
+      "applicableTo": ["bread", "nuts", "seeds", "spices"],
+      "prerequisites": [],
+      "notes": "Moisture loss, best consumed immediately"
+    },
+
+    "sear": {
+      "id": "sear",
+      "displayName": "Sear",
+      "aliases": ["brown_surface"],
+      "category": "cook_dry",
+      "description": "Brown surface quickly over very high heat",
+      "yieldFactor": 0.95,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "very_high",
+      "nutritionMultiplierRef": "grilled",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 1,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["pan", "stovetop"],
+      "additionalIngredients": ["oil"],
+      "applicableTo": ["meat", "fish"],
+      "prerequisites": ["season"],
+      "notes": "Surface browning only, interior remains rare"
+    },
+
+    "boil": {
+      "id": "boil",
+      "displayName": "Boil",
+      "aliases": ["hard_boil"],
+      "category": "cook_wet",
+      "description": "Cook in rapidly bubbling water at 100°C",
+      "yieldFactor": 0.95,
+      "yieldFactorOverrides": {
+        "pasta": 2.50,
+        "rice": 2.80,
+        "noodles": 2.30,
+        "vegetables": 0.95,
+        "eggs": 1.00
+      },
+      "timeEstimate": {
+        "baseMinutes": 10,
+        "perIngredientMinutes": 3,
+        "activeTime": 2,
+        "passiveTime": 11,
+        "parallelizable": true
+      },
+      "heatLevel": "high",
+      "nutritionMultiplierRef": "boiled",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pot", "stovetop"],
+      "applicableTo": ["pasta", "grains", "eggs", "vegetables", "legumes"],
+      "prerequisites": ["rinse"],
+      "notes": "Pasta/rice absorb water (200-280%), vegetables lose nutrients to water"
+    },
+
+    "simmer": {
+      "id": "simmer",
+      "displayName": "Simmer",
+      "aliases": ["gentle_boil", "low_boil"],
+      "category": "cook_wet",
+      "description": "Cook in gently bubbling liquid just below boiling",
+      "yieldFactor": 0.90,
+      "timeEstimate": {
+        "baseMinutes": 20,
+        "perIngredientMinutes": 10,
+        "activeTime": 3,
+        "passiveTime": 27,
+        "parallelizable": true
+      },
+      "heatLevel": "low",
+      "nutritionMultiplierRef": "boiled",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pot", "stovetop"],
+      "applicableTo": ["sauces", "stocks", "meat", "vegetables"],
+      "prerequisites": [],
+      "notes": "Gentle cooking, some evaporation over time"
+    },
+
+    "poach": {
+      "id": "poach",
+      "displayName": "Poach",
+      "aliases": ["gentle_cook"],
+      "category": "cook_wet",
+      "description": "Cook gently in barely simmering liquid",
+      "yieldFactor": 0.92,
+      "timeEstimate": {
+        "baseMinutes": 8,
+        "perIngredientMinutes": 2,
+        "activeTime": 2,
+        "passiveTime": 8,
+        "parallelizable": true
+      },
+      "heatLevel": "low",
+      "nutritionMultiplierRef": "steamed",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pot", "stovetop"],
+      "applicableTo": ["eggs", "fish", "poultry", "fruits"],
+      "prerequisites": [],
+      "notes": "Gentle method, minimal nutrient loss"
+    },
+
+    "steam": {
+      "id": "steam",
+      "displayName": "Steam",
+      "aliases": ["vapor_cook"],
+      "category": "cook_wet",
+      "description": "Cook with hot vapor, not touching water",
+      "yieldFactor": 0.97,
+      "timeEstimate": {
+        "baseMinutes": 8,
+        "perIngredientMinutes": 2,
+        "activeTime": 2,
+        "passiveTime": 8,
+        "parallelizable": true
+      },
+      "heatLevel": "medium",
+      "nutritionMultiplierRef": "steamed",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["steamer", "pot"],
+      "applicableTo": ["vegetables", "fish", "grains"],
+      "prerequisites": [],
+      "notes": "Best nutrient retention, minimal water loss"
+    },
+
+    "blanch": {
+      "id": "blanch",
+      "displayName": "Blanch",
+      "aliases": ["parboil"],
+      "category": "cook_wet",
+      "description": "Brief boil followed by ice bath",
+      "yieldFactor": 0.96,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "high",
+      "nutritionMultiplierRef": "boiled",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pot", "stovetop", "bowl"],
+      "applicableTo": ["vegetables", "herbs"],
+      "prerequisites": [],
+      "notes": "Sets color and texture, minimal cooking"
+    },
+
+    "braise": {
+      "id": "braise",
+      "displayName": "Braise",
+      "aliases": ["pot_roast"],
+      "category": "cook_wet",
+      "description": "Sear then cook slowly in small amount of liquid",
+      "yieldFactor": 0.85,
+      "timeEstimate": {
+        "baseMinutes": 60,
+        "perIngredientMinutes": 30,
+        "activeTime": 15,
+        "passiveTime": 75,
+        "parallelizable": true
+      },
+      "heatLevel": "low",
+      "nutritionMultiplierRef": "boiled",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["dutch_oven", "oven", "stovetop"],
+      "applicableTo": ["meat", "poultry", "vegetables"],
+      "prerequisites": ["sear"],
+      "notes": "Long, slow cooking breaks down tough cuts"
+    },
+
+    "stew": {
+      "id": "stew",
+      "displayName": "Stew",
+      "aliases": ["slow_cook"],
+      "category": "cook_wet",
+      "description": "Cook slowly in liquid, fully submerged",
+      "yieldFactor": 0.88,
+      "timeEstimate": {
+        "baseMinutes": 45,
+        "perIngredientMinutes": 20,
+        "activeTime": 10,
+        "passiveTime": 55,
+        "parallelizable": true
+      },
+      "heatLevel": "low",
+      "nutritionMultiplierRef": "boiled",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pot", "stovetop"],
+      "applicableTo": ["meat", "vegetables", "legumes"],
+      "prerequisites": ["cube", "dice"],
+      "notes": "Liquid becomes part of dish, nutrients retained"
+    },
+
+    "pressure_cook": {
+      "id": "pressure_cook",
+      "displayName": "Pressure Cook",
+      "aliases": ["instant_pot"],
+      "category": "cook_wet",
+      "description": "Cook with steam under high pressure",
+      "yieldFactor": 0.93,
+      "timeEstimate": {
+        "baseMinutes": 15,
+        "perIngredientMinutes": 5,
+        "activeTime": 5,
+        "passiveTime": 15,
+        "parallelizable": true
+      },
+      "heatLevel": "high",
+      "nutritionMultiplierRef": "steamed",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pressure_cooker", "instant_pot"],
+      "applicableTo": ["meat", "legumes", "grains", "vegetables"],
+      "prerequisites": [],
+      "notes": "Fast cooking, good nutrient retention"
+    },
+
+    "heat": {
+      "id": "heat",
+      "displayName": "Heat",
+      "aliases": ["warm", "reheat", "warm_up"],
+      "category": "cook_wet",
+      "description": "Gently warm already-cooked food",
+      "yieldFactor": 0.98,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 1,
+        "passiveTime": 3,
+        "parallelizable": true
+      },
+      "heatLevel": "low",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["microwave", "stovetop", "oven"],
+      "applicableTo": ["all"],
+      "prerequisites": [],
+      "notes": "Minimal cooking, just brings to serving temperature"
+    },
+
+    "caramelize": {
+      "id": "caramelize",
+      "displayName": "Caramelize",
+      "aliases": ["brown_slowly"],
+      "category": "reduce",
+      "description": "Cook slowly over low-medium heat until natural sugars brown and develop deep flavor",
+      "yieldFactor": 0.65,
+      "timeEstimate": {
+        "baseMinutes": 25,
+        "perIngredientMinutes": 10,
+        "activeTime": 35,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "low",
+      "nutritionMultiplierRef": "fried",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 120,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pan", "stovetop"],
+      "additionalIngredients": ["oil", "butter"],
+      "applicableTo": ["aromatics"],
+      "prerequisites": ["slice", "dice"],
+      "notes": "Major water loss ~35%, low and slow is key to avoid burning"
+    },
+
+    "reduce": {
+      "id": "reduce",
+      "displayName": "Reduce",
+      "aliases": ["concentrate", "reduce_liquid"],
+      "category": "reduce",
+      "description": "Simmer liquid to concentrate flavors through evaporation",
+      "yieldFactor": 0.60,
+      "timeEstimate": {
+        "baseMinutes": 15,
+        "perIngredientMinutes": 10,
+        "activeTime": 5,
+        "passiveTime": 20,
+        "parallelizable": true
+      },
+      "heatLevel": "medium",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 120,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["pan", "pot", "stovetop"],
+      "applicableTo": ["sauces", "stocks", "liquids"],
+      "prerequisites": [],
+      "notes": "Significant volume reduction concentrates flavors and nutrients"
+    },
+
+    "deglaze": {
+      "id": "deglaze",
+      "displayName": "Deglaze",
+      "aliases": ["lift_fond"],
+      "category": "reduce",
+      "description": "Add liquid to hot pan to lift browned bits",
+      "yieldFactor": 0.85,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 0,
+        "activeTime": 2,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "high",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 1,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["pan", "stovetop"],
+      "applicableTo": ["liquids"],
+      "prerequisites": ["saute", "sear"],
+      "notes": "Quick process, some evaporation during bubbling"
+    },
+
+    "mix": {
+      "id": "mix",
+      "displayName": "Mix",
+      "aliases": ["combine", "stir"],
+      "category": "combine",
+      "description": "Combine ingredients together uniformly",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 2.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["bowl", "spoon"],
+      "applicableTo": ["all"],
+      "prerequisites": [],
+      "notes": "No weight change, just combination"
+    },
+
+    "fold": {
+      "id": "fold",
+      "displayName": "Fold",
+      "aliases": ["fold_in", "gently_combine"],
+      "category": "combine",
+      "description": "Gently combine to maintain airiness",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 1,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["bowl", "spatula"],
+      "applicableTo": ["eggs", "dairy"],
+      "prerequisites": ["whisk"],
+      "notes": "Delicate mixing to preserve air bubbles"
+    },
+
+    "toss": {
+      "id": "toss",
+      "displayName": "Toss",
+      "aliases": ["toss_together"],
+      "category": "combine",
+      "description": "Mix ingredients by lifting and turning",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 1.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 1,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["bowl", "hands", "tongs"],
+      "applicableTo": ["leafy_greens", "pasta", "vegetables"],
+      "prerequisites": [],
+      "notes": "Quick mixing method, best done just before serving"
+    },
+
+    "whisk": {
+      "id": "whisk",
+      "displayName": "Whisk",
+      "aliases": ["beat", "whip"],
+      "category": "combine",
+      "description": "Beat rapidly to incorporate air or combine liquids",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["whisk", "bowl"],
+      "applicableTo": ["eggs", "dairy", "sauces", "liquids"],
+      "prerequisites": [],
+      "notes": "Can increase volume through air incorporation"
+    },
+
+    "knead": {
+      "id": "knead",
+      "displayName": "Knead",
+      "aliases": ["work_dough"],
+      "category": "combine",
+      "description": "Work dough to develop gluten structure",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 8,
+        "perIngredientMinutes": 2,
+        "activeTime": 10,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["hands", "stand_mixer", "surface"],
+      "applicableTo": ["dough"],
+      "prerequisites": ["mix"],
+      "notes": "Physical process, no weight change"
+    },
+
+    "cream": {
+      "id": "cream",
+      "displayName": "Cream",
+      "aliases": ["cream_together"],
+      "category": "combine",
+      "description": "Beat butter and sugar until light and fluffy",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["mixer", "bowl"],
+      "applicableTo": ["dairy"],
+      "prerequisites": [],
+      "notes": "Incorporates air, increases volume slightly"
+    },
+
+    "blend": {
+      "id": "blend",
+      "displayName": "Blend",
+      "aliases": ["puree", "process"],
+      "category": "combine",
+      "description": "Puree or mix using a blender",
+      "yieldFactor": 0.98,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["blender", "immersion_blender"],
+      "applicableTo": ["vegetables", "fruits", "sauces", "liquids"],
+      "prerequisites": [],
+      "notes": "Minor loss to residue in blender"
+    },
+
+    "puree": {
+      "id": "puree",
+      "displayName": "Puree",
+      "aliases": ["mash_smooth"],
+      "category": "combine",
+      "description": "Process into smooth consistency",
+      "yieldFactor": 0.97,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["food_processor", "blender", "food_mill"],
+      "applicableTo": ["vegetables", "fruits", "legumes"],
+      "prerequisites": ["boil", "steam"],
+      "notes": "Some loss to equipment residue"
+    },
+
+    "emulsify": {
+      "id": "emulsify",
+      "displayName": "Emulsify",
+      "aliases": ["combine_oil_water"],
+      "category": "combine",
+      "description": "Combine oil and water-based liquids into stable mixture",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 3,
+        "perIngredientMinutes": 1,
+        "activeTime": 4,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["whisk", "blender"],
+      "applicableTo": ["sauces", "liquids"],
+      "prerequisites": [],
+      "notes": "Requires constant agitation, can separate if not stored properly"
+    },
+
+    "marinate": {
+      "id": "marinate",
+      "displayName": "Marinate",
+      "aliases": ["soak_marinade"],
+      "category": "transform",
+      "description": "Soak in seasoned liquid to add flavor and tenderize",
+      "yieldFactor": 1.05,
+      "timeEstimate": {
+        "baseMinutes": 35,
+        "perIngredientMinutes": 0,
+        "activeTime": 5,
+        "passiveTime": 30,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["bowl", "container", "plastic_bag"],
+      "applicableTo": ["meat", "poultry", "fish", "vegetables"],
+      "prerequisites": [],
+      "notes": "Slight weight gain from liquid absorption"
+    },
+
+    "brine": {
+      "id": "brine",
+      "displayName": "Brine",
+      "aliases": ["salt_soak"],
+      "category": "transform",
+      "description": "Soak in salt water solution to add moisture and flavor",
+      "yieldFactor": 1.08,
+      "timeEstimate": {
+        "baseMinutes": 65,
+        "perIngredientMinutes": 0,
+        "activeTime": 5,
+        "passiveTime": 60,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["container", "bowl"],
+      "additionalIngredients": ["salt", "water"],
+      "applicableTo": ["poultry", "meat"],
+      "prerequisites": [],
+      "notes": "Increases moisture content, adds sodium"
+    },
+
+    "cure": {
+      "id": "cure",
+      "displayName": "Cure",
+      "aliases": ["salt_cure"],
+      "category": "transform",
+      "description": "Preserve with salt/sugar mixture",
+      "yieldFactor": 0.85,
+      "timeEstimate": {
+        "baseMinutes": 250,
+        "perIngredientMinutes": 0,
+        "activeTime": 10,
+        "passiveTime": 240,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 720,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["container"],
+      "additionalIngredients": ["salt", "sugar"],
+      "applicableTo": ["fish", "meat"],
+      "prerequisites": [],
+      "notes": "Draws out moisture, concentrates flavor"
+    },
+
+    "ferment": {
+      "id": "ferment",
+      "displayName": "Ferment",
+      "aliases": ["culture"],
+      "category": "transform",
+      "description": "Transform through bacterial or yeast action",
+      "yieldFactor": 0.95,
+      "timeEstimate": {
+        "baseMinutes": 1455,
+        "perIngredientMinutes": 0,
+        "activeTime": 15,
+        "passiveTime": 1440,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 2160,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["jar", "crock"],
+      "additionalIngredients": ["salt", "starter"],
+      "applicableTo": ["vegetables", "dough"],
+      "prerequisites": [],
+      "notes": "Adds probiotics, changes flavor profile"
+    },
+
+    "pickle": {
+      "id": "pickle",
+      "displayName": "Pickle",
+      "aliases": ["quick_pickle"],
+      "category": "transform",
+      "description": "Preserve in acidic brine",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 70,
+        "perIngredientMinutes": 0,
+        "activeTime": 10,
+        "passiveTime": 60,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 720,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["jar", "pot"],
+      "additionalIngredients": ["vinegar", "salt", "sugar"],
+      "applicableTo": ["vegetables"],
+      "prerequisites": ["slice", "dice"],
+      "notes": "Quick pickles ready in hours, fermented pickles take days"
+    },
+
+    "rest_meat": {
+      "id": "rest_meat",
+      "displayName": "Rest (Meat)",
+      "aliases": ["let_rest"],
+      "category": "transform",
+      "description": "Allow cooked meat to rest so juices redistribute",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 10,
+        "perIngredientMinutes": 5,
+        "activeTime": 0,
+        "passiveTime": 15,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["plate", "cutting_board", "foil"],
+      "applicableTo": ["meat", "poultry"],
+      "prerequisites": ["roast", "grill", "bake"],
+      "notes": "Critical for juicy meat, never skip this step"
+    },
+
+    "proof": {
+      "id": "proof",
+      "displayName": "Proof",
+      "aliases": ["rise", "let_rise"],
+      "category": "transform",
+      "description": "Allow dough to rise through yeast fermentation",
+      "yieldFactor": 1.50,
+      "timeEstimate": {
+        "baseMinutes": 62,
+        "perIngredientMinutes": 0,
+        "activeTime": 2,
+        "passiveTime": 60,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["bowl", "towel"],
+      "applicableTo": ["dough"],
+      "prerequisites": ["knead"],
+      "notes": "Volume increase through CO2 production, no weight change"
+    },
+
+    "cool": {
+      "id": "cool",
+      "displayName": "Cool",
+      "aliases": ["chill", "refrigerate", "let_cool"],
+      "category": "transform",
+      "description": "Lower temperature to stop cooking or set texture",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 30,
+        "perIngredientMinutes": 0,
+        "activeTime": 1,
+        "passiveTime": 30,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge",
+        "reheatable": true
+      },
+      "equipment": ["fridge", "freezer", "ice_bath"],
+      "applicableTo": ["all"],
+      "prerequisites": [],
+      "notes": "Stops cooking process, allows setting for desserts and baked goods"
+    },
+
+    "thaw": {
+      "id": "thaw",
+      "displayName": "Thaw",
+      "aliases": ["defrost", "unfreeze"],
+      "category": "transform",
+      "description": "Bring frozen ingredient to refrigerator temperature",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 482,
+        "perIngredientMinutes": 0,
+        "activeTime": 2,
+        "passiveTime": 480,
+        "parallelizable": true
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge",
+        "reheatable": false
+      },
+      "equipment": ["fridge"],
+      "applicableTo": ["all"],
+      "prerequisites": [],
+      "notes": "Slow thawing in fridge is safest method, 8+ hours for most items"
+    },
+
+    "garnish": {
+      "id": "garnish",
+      "displayName": "Garnish",
+      "aliases": ["decorate", "finish"],
+      "category": "finish",
+      "description": "Add final decorative or flavor elements",
+      "yieldFactor": 1.02,
+      "timeEstimate": {
+        "baseMinutes": 1,
+        "perIngredientMinutes": 0.5,
+        "activeTime": 1.5,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["hands"],
+      "applicableTo": ["all"],
+      "prerequisites": [],
+      "notes": "Adds minimal weight, enhances presentation"
+    },
+
+    "plate": {
+      "id": "plate",
+      "displayName": "Plate",
+      "aliases": ["serve", "arrange"],
+      "category": "finish",
+      "description": "Arrange food on serving dish",
+      "yieldFactor": 1.00,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["plate", "bowl", "tongs", "spoon"],
+      "applicableTo": ["all"],
+      "prerequisites": [],
+      "notes": "Final presentation step"
+    },
+
+    "slice_to_serve": {
+      "id": "slice_to_serve",
+      "displayName": "Slice to Serve",
+      "aliases": ["carve", "portion"],
+      "category": "finish",
+      "description": "Cut cooked dish into portions for serving",
+      "yieldFactor": 0.99,
+      "timeEstimate": {
+        "baseMinutes": 2,
+        "perIngredientMinutes": 1,
+        "activeTime": 3,
+        "passiveTime": 0,
+        "parallelizable": false
+      },
+      "heatLevel": "none",
+      "nutritionMultiplierRef": "raw",
+      "prepAhead": {
+        "canPrepAhead": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter",
+        "reheatable": false
+      },
+      "equipment": ["knife", "cutting_board"],
+      "applicableTo": ["meat", "bread", "poultry"],
+      "prerequisites": ["rest_meat"],
+      "notes": "Minimal loss from knife residue"
+    }
+  },
+
+  "heatLevels": {
+    "none": "No heat applied",
+    "low": "Gentle heat, 200-300°F / 95-150°C",
+    "medium": "Moderate heat, 300-375°F / 150-190°C",
+    "medium_high": "Medium-high heat, 375-425°F / 190-220°C",
+    "high": "High heat, 425-500°F / 220-260°C",
+    "very_high": "Very high heat, 500°F+ / 260°C+"
+  },
+
+  "categories": {
+    "prep": "Raw preparation steps - no heat applied",
+    "cook_dry": "Cooking with dry heat methods",
+    "cook_wet": "Cooking with water or steam",
+    "combine": "Mixing and combining ingredients",
+    "reduce": "Concentrating through evaporation",
+    "transform": "Time-based transformations (marinating, fermenting, etc.)",
+    "finish": "Final plating and presentation steps"
+  },
+
+  "notes": {
+    "yieldFactors": "Yield factor represents: output_weight / input_weight. <1.0 = loss, >1.0 = gain (from absorption). These track PHYSICAL WEIGHT changes for material throughput calculations, separate from per-gram nutrition changes in nutrition-multipliers.json",
+    "yieldFactorOverrides": "Ingredient-specific yield factors that override the base yieldFactor. Example: 'shell' has 0.50 base but 0.88 for eggs",
+    "timeEstimates": "Base time + (per ingredient time × number of items). Active time = hands-on work. Passive time = unattended (can do other tasks)",
+    "parallelizable": "Can this process run simultaneously with others? True for oven/passive processes, false for active stovetop work",
+    "heatLevel": "Cooking temperature category: none, low, medium, medium_high, high, very_high",
+    "nutritionRefs": "References keys in nutrition-multipliers.json for cooking method impacts",
+    "prepAhead": "Shelf life in hours from prep time. Storage location: fridge, freezer, counter",
+    "prerequisites": "Array of process IDs that should typically be completed before this process",
+    "aliases": "Alternative names/terms for the process to aid AI parsing",
+    "applicableTo": "Uses standardized ingredient categories for consistency",
+    "version": "v2.0.0 - Major update with all 10 improvements, January 2026",
+    "schemaChanges": "Added: parallelizable, passiveTime, heatLevel, yieldFactorOverrides, prerequisites, aliases. Updated: equipment naming standardized, applicableTo uses categories, added 14 new processes"
+  }
+}

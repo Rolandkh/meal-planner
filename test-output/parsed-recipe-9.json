@@ -1,0 +1,432 @@
+{
+  "recipe": {
+    "name": "Veggie Lasagna Rolls with Peppery Pecorino Marinara",
+    "spoonacularId": 664737,
+    "servings": 6,
+    "prepTime": 14,
+    "cookTime": 31,
+    "ingredients": [
+      {
+        "name": "basil& oregano",
+        "quantity": 1,
+        "unit": "tsp",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "basil leaves",
+        "quantity": 12,
+        "unit": "",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "chives",
+        "quantity": 1,
+        "unit": "tsp",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "parsley",
+        "quantity": 2,
+        "unit": "Tbsps",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "sage leaves",
+        "quantity": 10,
+        "unit": "",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "garlic cloves",
+        "quantity": 4,
+        "unit": "",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "garlic salt",
+        "quantity": 0.75,
+        "unit": "tsps",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "ground nutmeg",
+        "quantity": 0.5,
+        "unit": "tsps",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "lasagna",
+        "quantity": 8,
+        "unit": "sheets",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "ricotta cheese",
+        "quantity": 453.592,
+        "unit": "g",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "mushrooms",
+        "quantity": 4,
+        "unit": "",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 4,
+        "unit": "Tbsps",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "oregano",
+        "quantity": 1,
+        "unit": "tsp",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "parmesan",
+        "quantity": 25,
+        "unit": "g",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "cube pecorino cheese",
+        "quantity": 50,
+        "unit": "g",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "cracked pepper",
+        "quantity": 0.75,
+        "unit": "tsps",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "pepper flakes",
+        "quantity": 0.5,
+        "unit": "tsps",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "mozzarella",
+        "quantity": 28,
+        "unit": "g",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "spinach",
+        "quantity": 30,
+        "unit": "g",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "oz can san marzano tomatoes",
+        "quantity": 28,
+        "unit": "",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1,
+        "unit": "",
+        "category": "other",
+        "healthImpact": "neutral"
+      }
+    ],
+    "instructions": "<ol><li>PREHEAT THE OVEN TO 425*</li><li>COOK THE LASAGNA NOODLES PER PACKAGE</li><li>INSTRUCTIONS. RINSE W/ COOL WATER, DRAIN &</li><li>SET ASIDE.</li><li>COMBINE ALL THE INGREDIENTS FOR THE RICOTTA  FILLING & SET ASIDE.</li><li>BEGIN THE SAUCE. PLACE THE GARLIC & OLIVE OIL IN  A SAUTE PAN, COOK UNTIL THE GARLIC JUST STARTS TO BROWN. ADD THE CANNED TOMATOES ALL AT ONCE AND COOK FOR 1-2 MINUTES. THE TOMATO JUICE WILL START TO CARAMELIZE. CRUSH THE WHOLE TOMATOES WITH THE BACK OF A SPOON. ADD THE DRIED BASIL, OREGANO AND SAGE AND COOK DOWN AT MEDIUM HAT FOR ABOUT 20 MINUTES, UNTIL THE SAUCE IS THICK. ADD THE CHEESE AND COOK FOR ANOTHER MINUTES, STIRRING THE CHEESE INTO THE SAUCE.</li><li>LAY THE LASAGNA NOODLES OUT ON A CUTTING BOARD AND SPREAD WITH THE RICOTTA FILLING. DIVIDE THE SPINACH EQUALLY ON THE NOODLES AND THEN TOP WITH THE BASIL LEAVES.</li><li>SPRINKLE THE MUSHROOMS AND ZUCCHINI ON TOP AND ROLL THE NOODLES MAKING A ROLLED NOODLE.</li><li>PLACE A SMALL SPOONFUL OF MARINARA IN A DISH, PLACE THE LASAGNA ROLLS ON TOP OF THE SAUCE. BAKE ABOUT 15 MINUTES UNTIL THE ROLLS ARE HOT AND THE SPINACH IS JUST WILTED.</li><li>TOP WITH THE MARINARA AND SOME SHAVED PECORINO. SERVE HOT.</li></ol>"
+  },
+  "parsed": {
+    "recipeName": "Veggie Lasagna Rolls with Peppery Pecorino Marinara",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "PREHEAT THE OVEN TO 425*",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 425°F"
+          }
+        ],
+        "outputDescription": "oven heated to 425°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "COOK THE LASAGNA NOODLES PER PACKAGE INSTRUCTIONS. RINSE W/ COOL WATER, DRAIN & SET ASIDE.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "lasagna"
+            ],
+            "durationMinutes": null,
+            "notes": "cook per package instructions"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "lasagna"
+            ],
+            "durationMinutes": null,
+            "notes": "rinse with cool water"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "lasagna"
+            ],
+            "durationMinutes": null,
+            "notes": "drain and set aside"
+          }
+        ],
+        "outputDescription": "cooked lasagna noodles, rinsed and drained"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "COMBINE ALL THE INGREDIENTS FOR THE RICOTTA FILLING & SET ASIDE.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ricotta cheese",
+              "parmesan",
+              "mozzarella",
+              "chives",
+              "parsley",
+              "garlic salt",
+              "ground nutmeg",
+              "cracked pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combine ricotta filling ingredients"
+          }
+        ],
+        "outputDescription": "ricotta filling mixture ready"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "BEGIN THE SAUCE. PLACE THE GARLIC & OLIVE OIL IN A SAUTE PAN, COOK UNTIL THE GARLIC JUST STARTS TO BROWN. ADD THE CANNED TOMATOES ALL AT ONCE AND COOK FOR 1-2 MINUTES. THE TOMATO JUICE WILL START TO CARAMELIZE. CRUSH THE WHOLE TOMATOES WITH THE BACK OF A SPOON. ADD THE DRIED BASIL, OREGANO AND SAGE AND COOK DOWN AT MEDIUM HAT FOR ABOUT 20 MINUTES, UNTIL THE SAUCE IS THICK. ADD THE CHEESE AND COOK FOR ANOTHER MINUTES, STIRRING THE CHEESE INTO THE SAUCE.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic cloves",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "cook until garlic starts to brown"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "san marzano tomatoes"
+            ],
+            "durationMinutes": 2,
+            "notes": "cook tomatoes for 1-2 minutes"
+          },
+          {
+            "processId": "caramelize",
+            "ingredients": [
+              "san marzano tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "tomato juice starts to caramelize"
+          },
+          {
+            "processId": "crush",
+            "ingredients": [
+              "san marzano tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "crush whole tomatoes with spoon"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "basil& oregano",
+              "oregano",
+              "sage leaves"
+            ],
+            "durationMinutes": 20,
+            "notes": "cook down at medium heat until thick"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cube pecorino cheese"
+            ],
+            "durationMinutes": 1,
+            "notes": "stir cheese into sauce"
+          }
+        ],
+        "outputDescription": "thick marinara sauce with melted pecorino"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "LAY THE LASAGNA NOODLES OUT ON A CUTTING BOARD AND SPREAD WITH THE RICOTTA FILLING. DIVIDE THE SPINACH EQUALLY ON THE NOODLES AND THEN TOP WITH THE BASIL LEAVES.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "lasagna",
+              "ricotta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "spread ricotta filling on noodles"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "divide spinach equally on noodles"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "top with basil leaves"
+          }
+        ],
+        "outputDescription": "lasagna noodles spread with ricotta, spinach, and basil"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "SPRINKLE THE MUSHROOMS AND ZUCCHINI ON TOP AND ROLL THE NOODLES MAKING A ROLLED NOODLE.",
+        "processes": [
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "mushrooms",
+              "zucchini"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle vegetables on top"
+          },
+          {
+            "processId": "roll",
+            "ingredients": [
+              "lasagna"
+            ],
+            "durationMinutes": null,
+            "notes": "roll noodles to make rolled noodles"
+          }
+        ],
+        "outputDescription": "rolled lasagna noodles with vegetable filling"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "PLACE A SMALL SPOONFUL OF MARINARA IN A DISH, PLACE THE LASAGNA ROLLS ON TOP OF THE SAUCE. BAKE ABOUT 15 MINUTES UNTIL THE ROLLS ARE HOT AND THE SPINACH IS JUST WILTED.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "san marzano tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "place marinara in dish"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "lasagna"
+            ],
+            "durationMinutes": null,
+            "notes": "place rolls on sauce"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "lasagna"
+            ],
+            "durationMinutes": 15,
+            "notes": "bake until hot and spinach wilted"
+          }
+        ],
+        "outputDescription": "baked lasagna rolls with wilted spinach"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "TOP WITH THE MARINARA AND SOME SHAVED PECORINO. SERVE HOT.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "san marzano tomatoes",
+              "cube pecorino cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "top with marinara and shaved pecorino"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "serve hot"
+          }
+        ],
+        "outputDescription": "finished lasagna rolls topped with marinara and pecorino, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 18,
+      "uniqueProcesses": [
+        "heat",
+        "boil",
+        "rinse",
+        "drain",
+        "mix",
+        "saute",
+        "caramelize",
+        "crush",
+        "simmer",
+        "spread",
+        "sprinkle",
+        "roll",
+        "plate",
+        "bake",
+        "garnish"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "validation": {
+    "valid": true,
+    "warnings": [],
+    "stats": {
+      "totalSteps": 8,
+      "totalProcesses": 21,
+      "uniqueProcesses": 15
+    }
+  },
+  "metadata": {
+    "parsedAt": "2026-01-10T20:23:32.754Z",
+    "duration": "27.3s",
+    "model": "claude-sonnet-4-20250514"
+  }
+}
