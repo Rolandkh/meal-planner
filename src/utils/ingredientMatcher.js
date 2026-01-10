@@ -10,44 +10,46 @@
  * Returns confidence scores for match quality
  */
 
-import { ingredientMaster, getAllMasterIngredients } from './ingredientMaster.js';
+import { getAllMasterIngredients } from './ingredientMaster.js';
 
 // Stopwords to remove from token matching
 const STOPWORDS = ['of', 'and', 'or', 'the', 'a', 'an', 'with', 'to'];
 
-// Cache for preprocessed alias data (computed once at module load)
-const aliasIndex = buildAliasIndex();
-const tokenIndex = buildTokenIndex();
+// Cache for preprocessed data (lazy-loaded on first use)
+let aliasIndex = null;
+let tokenIndex = null;
+let ingredientMaster = null;
 
 /**
- * Build index of aliases -> ingredient ID
- * @returns {Map<string, string>} Map of normalized alias to ingredient ID
+ * Ensure indexes are built (lazy initialization)
  */
-function buildAliasIndex() {
-  const index = new Map();
+async function ensureIndexes() {
+  if (aliasIndex && tokenIndex) return;
   
+  const allIngredients = await getAllMasterIngredients();
+  
+  // Convert array to dictionary for backward compatibility
+  ingredientMaster = {};
+  for (const ing of allIngredients) {
+    ingredientMaster[ing.id] = ing;
+  }
+  
+  // Build alias index
+  aliasIndex = new Map();
   for (const [id, ingredient] of Object.entries(ingredientMaster)) {
     // Index the ID itself
-    index.set(id.toLowerCase(), id);
+    aliasIndex.set(id.toLowerCase(), id);
     
     // Index all aliases
     if (ingredient.aliases) {
       for (const alias of ingredient.aliases) {
-        index.set(alias.toLowerCase(), id);
+        aliasIndex.set(alias.toLowerCase(), id);
       }
     }
   }
   
-  return index;
-}
-
-/**
- * Build token set index for each ingredient
- * @returns {Map<string, Set<string>>} Map of ingredient ID to token set
- */
-function buildTokenIndex() {
-  const index = new Map();
-  
+  // Build token index
+  tokenIndex = new Map();
   for (const [id, ingredient] of Object.entries(ingredientMaster)) {
     const tokens = new Set();
     
@@ -65,10 +67,8 @@ function buildTokenIndex() {
       }
     }
     
-    index.set(id, tokens);
+    tokenIndex.set(id, tokens);
   }
-  
-  return index;
 }
 
 /**
@@ -152,9 +152,11 @@ function singularize(word) {
  * Match an ingredient identity to the master dictionary
  * @param {string} identityText - Normalized identity text (no prep terms)
  * @param {string} state - Product state ('fresh', 'frozen', etc.)
- * @returns {{masterId: string|null, confidence: number, matchedAlias?: string}}
+ * @returns {Promise<{masterId: string|null, confidence: number, matchedAlias?: string}>}
  */
-export function matchIngredient(identityText, state = 'fresh') {
+export async function matchIngredient(identityText, state = 'fresh') {
+  await ensureIndexes();
+  
   if (!identityText) {
     return { masterId: null, confidence: 0 };
   }
@@ -252,14 +254,16 @@ export function matchIngredient(identityText, state = 'fresh') {
 /**
  * Batch match multiple ingredients
  * @param {Array<{identityText: string, state: string}>} ingredients - Ingredients to match
- * @returns {Array} Array of match results
+ * @returns {Promise<Array>} Array of match results
  */
-export function batchMatchIngredients(ingredients) {
-  return ingredients.map(ing => ({
+export async function batchMatchIngredients(ingredients) {
+  await ensureIndexes();
+  
+  return Promise.all(ingredients.map(async ing => ({
     input: ing.identityText,
     state: ing.state,
-    ...matchIngredient(ing.identityText, ing.state)
-  }));
+    ...await matchIngredient(ing.identityText, ing.state)
+  })));
 }
 
 /**
