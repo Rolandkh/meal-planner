@@ -770,6 +770,7 @@ export class ShoppingListView {
     
     if (conversionErrors > 0) {
       console.warn(`  ⚠️ ${conversionErrors} items may not have converted properly`);
+    }
 
     // Convert to array
     const list = Array.from(ingredientMap.values());
