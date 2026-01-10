@@ -185,17 +185,29 @@ Before finalizing your recipe choices, mentally group them by main ingredients:
 - Using catalog recipes is BETTER: verified ingredients, health scores, proven quality, PLUS saves tokens!
 - **When browsing the catalog, look at the (main ingredients) shown for each recipe and SELECT recipes with overlapping ingredients**
 
-CRITICAL - Servings:
+CRITICAL - Servings (Slice 5.1: PORTION MULTIPLIER SUPPORT):
 - CAREFULLY READ THE CONVERSATION to understand household composition and schedule
 - Each meal's servings MUST match who is present for that specific meal
+- **NEW: Account for PORTION MULTIPLIERS when calculating servings**
+  * portionMultiplier = 1.0 means full adult serving
+  * portionMultiplier = 0.5 means half serving (young child, e.g., 4 years old)
+  * portionMultiplier = 0.75 means three-quarter serving (older child/teen)
+  * **Total servings = SUM of all eaters' portion multipliers**
+  
+**SERVING CALCULATION EXAMPLES:**
+- Dad (1.0) + young daughter (0.5) eating together = **1.5 servings total**
+- Mom (1.0) + 2 young kids (0.5 each) = **2.0 servings total** (not 3!)
+- Two adults (1.0 each) + teen (0.75) = **2.75 servings total**
+- Solo adult meal = **1.0 serving**
+
 - If the user mentions different people on different days (e.g., "my daughter visits Sunday-Wednesday", "dinner for 3 on Tuesday"), you MUST adjust servings accordingly
 - Pay special attention to:
-  * Which days have children present (kid-friendly recipes needed)
+  * Which days have children present (kid-friendly recipes needed + use their portion multipliers)
   * Which meals have guests (different serving counts)
   * Solo meals vs family meals
-- Example: If user says "Tuesday dinner is for me, my daughter, and my ex", that dinner must have servings: 3
-- Example: If user says "just me Wednesday-Saturday", those meals should have servings: 1
-- DO NOT default to 2 servings - ANALYZE THE CONVERSATION for exact household schedule
+  * Calculating correct total servings using portion multipliers
+- Example: If Dad (1.0) and young daughter (0.5) eat breakfast together, that breakfast must have servings: 1.5
+- DO NOT default to 2 servings - ANALYZE THE CONVERSATION and PORTION MULTIPLIERS for exact serving counts
 
 CRITICAL - Units:
 - Use ONLY metric units in ingredient quantities
@@ -466,8 +478,15 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = n
   }
 
   // Slice 5: Format eater information with diet profiles and preferences
+  // Slice 5.1: Include portion multipliers for accurate serving calculations
   const eaterInfo = eaters.map(eater => {
     let info = `- ${eater.name}`;
+    
+    // Add portion multiplier (Slice 5.1 - CRITICAL for children)
+    const portionMult = eater.portionMultiplier || 1.0;
+    if (portionMult !== 1.0) {
+      info += `\n  📏 Portion Size: ${portionMult}x standard serving (${portionMult === 0.5 ? 'young child' : portionMult === 0.75 ? 'older child/teen' : 'custom'})`;
+    }
     
     // Add diet profile (Slice 5)
     if (eater.dietProfile) {
@@ -516,7 +535,8 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = n
   
   if (baseSpec?.weeklySchedule) {
     scheduleRequirements = '\n\nCRITICAL - EXACT SERVINGS SCHEDULE (FOLLOW PRECISELY):\n';
-    scheduleRequirements += 'You MUST generate meals with these EXACT servings counts for each DATE:\n\n';
+    scheduleRequirements += 'You MUST generate meals with these EXACT servings counts for each DATE:\n';
+    scheduleRequirements += '(Servings already account for portion multipliers - use these exact values)\n\n';
     
     // Map day names to actual dates in the week
     const weekStart = new Date(weekOf + 'T00:00:00');
@@ -540,6 +560,17 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = n
         mealTypes.forEach(mealType => {
           const mealData = daySchedule[mealType];
           if (mealData) {
+            // Slice 5.1: Calculate actual servings using portion multipliers
+            let actualServings = mealData.servings;
+            if (mealData.eaterIds && mealData.eaterIds.length > 0) {
+              // Recalculate based on portion multipliers
+              actualServings = mealData.eaterIds.reduce((total, eaterId) => {
+                const eater = eaters.find(e => e.eaterId === eaterId);
+                const multiplier = eater?.portionMultiplier || 1.0;
+                return total + multiplier;
+              }, 0);
+            }
+            
             // Handle requirements as either string or array
             let requirements = '';
             if (mealData.requirements) {
@@ -549,7 +580,24 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = n
                 requirements = ` - ${mealData.requirements.join(', ')}`;
               }
             }
-            scheduleRequirements += `  - ${mealType}: ${mealData.servings} serving${mealData.servings !== 1 ? 's' : ''}${requirements}\n`;
+            
+            // Show who's eating if we have eater info
+            let eaterNames = '';
+            if (mealData.eaterIds && mealData.eaterIds.length > 0) {
+              const names = mealData.eaterIds.map(id => {
+                const eater = eaters.find(e => e.eaterId === id);
+                if (eater) {
+                  const mult = eater.portionMultiplier || 1.0;
+                  return mult !== 1.0 ? `${eater.name} (${mult}x)` : eater.name;
+                }
+                return null;
+              }).filter(Boolean);
+              if (names.length > 0) {
+                eaterNames = ` [${names.join(' + ')}]`;
+              }
+            }
+            
+            scheduleRequirements += `  - ${mealType}: ${actualServings} serving${actualServings !== 1 ? 's' : ''}${eaterNames}${requirements}\n`;
           }
         });
         

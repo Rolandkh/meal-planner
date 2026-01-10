@@ -321,6 +321,9 @@ export function createEater(data = {}) {
     excludeIngredients: Array.isArray(data.excludeIngredients) ? data.excludeIngredients : [],
     preferIngredients: Array.isArray(data.preferIngredients) ? data.preferIngredients : [],
     
+    // Slice 5.1: Portion size multiplier (1.0 = adult, 0.5 = young child, 0.75 = older child/teen)
+    portionMultiplier: typeof data.portionMultiplier === 'number' ? data.portionMultiplier : 1.0,
+    
     createdAt: now,
     updatedAt: now
   };

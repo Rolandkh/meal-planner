@@ -41,12 +41,12 @@ Complete guide to all features in Vanessa, organized by slice and category.
 
 ### AI-Powered Onboarding
 
-**Status:** ✅ Complete
+**Status:** ✅ Complete (Enhanced in Slice 5.1 with child portion sizing)
 
 **Description:** 5-question conversational onboarding that extracts household members, schedules, and preferences.
 
 **Questions:**
-1. Who eats your meals? (extracts household members)
+1. Who eats your meals? (extracts household members + child ages)
 2. Weekly schedule? (extracts who eats when)
 3. Dietary restrictions/preferences?
 4. Weekly budget?
@@ -54,14 +54,27 @@ Complete guide to all features in Vanessa, organized by slice and category.
 
 **Smart Extraction:**
 - **Household members** - Automatically creates eater profiles
+- **Child ages** ⭐NEW (Slice 5.1) - Automatically sets portion multipliers
+  - "My 4-year-old daughter" → `portionMultiplier: 0.5` (half serving)
+  - Ensures accurate meal sizes and shopping lists
 - **Weekly schedule** - Maps to structured servings per meal
 - **Preferences** - Converts to actionable dietary goals
+
+**Child Portion Sizing (Slice 5.1):**
+- Toddler (1-3 years): 0.25x serving
+- Young child (4-8 years): 0.5x serving
+- Older child (9-13 years): 0.75x serving
+- Teen (14-18 years): 0.9x serving
+- Adult: 1.0x serving
+
+**Example:** Dad (1.0) + 4yo daughter (0.5) = 1.5 servings (not 2.0!)
 
 **Technical:**
 - Structured extraction via Claude
 - Validates data before saving
 - Visual progress feedback
 - Auto-generates first meal plan on completion
+- Age-based portion calculation
 
 ---
 

@@ -2,6 +2,59 @@
 
 ## [Unreleased] - Ingredient Normalization System
 
+### ✨ Portion Multiplier Support for Children (January 10, 2026 - Late Evening)
+
+**🎉 ACHIEVEMENT: Accurate serving sizes for mixed-age households**
+
+#### Problem Solved
+Previously, the system treated all eaters equally - a 4-year-old child would get the same "1 serving" as an adult, resulting in oversized meals for children and inaccurate shopping lists.
+
+#### Implementation
+- **New Field:** `portionMultiplier` added to Eater schema
+  - `1.0` = Adult/standard serving (default)
+  - `0.5` = Young child (4-8 years) - half an adult serving
+  - `0.75` = Older child/teen (9-13 years)
+  - `0.25` = Toddler (1-3 years)
+  - `1.25` = Large appetite/very active adults
+
+#### How It Works
+**Example:** Dad + 4-year-old daughter eating breakfast together
+- Dad: `portionMultiplier = 1.0`
+- Daughter: `portionMultiplier = 0.5`
+- **Total servings: 1.5** (instead of 2.0)
+
+The AI generation now:
+1. Reads each eater's `portionMultiplier` from the household data
+2. Calculates accurate total servings per meal
+3. Scales ingredient quantities accordingly
+4. Results in appropriately-sized meals and accurate shopping lists
+
+#### Technical Changes
+- **Schema:** Updated `Eater` schema with `portionMultiplier` field (defaults to 1.0)
+- **Storage:** Updated `createEater()` function to include field
+- **API:** Enhanced prompt to explain portion multipliers with examples
+- **Schedule:** Updated schedule display to show portion-adjusted servings
+- **Migration:** Created `addPortionMultipliers.js` migration script
+- **Suggested Values:** Added `SUGGESTED_PORTION_MULTIPLIERS` constants
+
+#### User Impact
+- More accurate meal sizes for families with children
+- Reduced food waste (no more oversized children's portions)
+- Correct shopping list quantities
+- Better recipe instructions with proper serving counts
+
+#### Future Enhancement (Task 106)
+When onboarding flow is enhanced, Vanessa will:
+- Automatically ask: "Do you have any children? How old are they?"
+- Extract ages from natural conversation: "my 4-year-old daughter" → auto-set `portionMultiplier: 0.5`
+- Apply correct portion sizes from first meal plan generation
+- No manual setup needed
+
+#### Manual Setup (Temporary)
+Until Task 106 is complete, use browser console to set child portions (see DEVELOPMENT.md for instructions)
+
+---
+
 ### ✨ Multi-Profile Meal Generation (January 10, 2026 - Late Evening)
 
 **🎉 ACHIEVEMENT: System now supports households with conflicting diet profiles**

@@ -114,9 +114,14 @@ migrationManager.registerMigration(1, migrateToSlice3);
 
 // Slice 5 migration (schema v2)
 import { migrateToSlice5, isSlice5Migrated } from './migrateToSlice5.js';
+import { addPortionMultipliersToEaters } from './addPortionMultipliers.js';
+
 if (!isSlice5Migrated()) {
   migrateToSlice5();
 }
+
+// Slice 5.1 migration (portionMultiplier)
+addPortionMultipliersToEaters();
 
 // Future migrations will be registered here
 // migrationManager.registerMigration(3, migrateToSlice6);

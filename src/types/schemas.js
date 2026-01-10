@@ -166,6 +166,7 @@
  * @property {string} personalPreferences - Free-text preferences (Slice 5)
  * @property {string[]} excludeIngredients - Foods to exclude (Slice 5)
  * @property {string[]} preferIngredients - Foods to prefer (Slice 5)
+ * @property {number} portionMultiplier - Serving size multiplier (Slice 5.1: 1.0 = adult, 0.5 = young child)
  * 
  * @property {string[]} allergies
  * @property {Object} schedule
@@ -226,7 +227,8 @@ export const SCHEMA_DEFAULTS = {
     dietProfile: null,
     personalPreferences: '',
     excludeIngredients: [],
-    preferIngredients: []
+    preferIngredients: [],
+    portionMultiplier: 1.0  // Slice 5.1: Default to adult portion size
   },
   
   baseSpecification: {
