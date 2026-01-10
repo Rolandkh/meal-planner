@@ -1,0 +1,441 @@
+{
+  "recipe": {
+    "name": "Great Greek Salad",
+    "spoonacularId": 645265,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "cucumbers",
+        "quantity": 6,
+        "unit": "small",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "feta cheese",
+        "quantity": 225,
+        "unit": "g",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "kalamata olives",
+        "quantity": 135,
+        "unit": "ml",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "roma tomatoes",
+        "quantity": 709.764,
+        "unit": "g",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "oil sun-dried tomatoes",
+        "quantity": 36.667,
+        "unit": "g",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "rice vinegar",
+        "quantity": 1,
+        "unit": "Tbsp",
+        "category": "other",
+        "healthImpact": "neutral"
+      },
+      {
+        "name": "greek seasoning",
+        "quantity": 0.5,
+        "unit": "tsps",
+        "category": "other",
+        "healthImpact": "neutral"
+      }
+    ]
+  },
+  "parsed": {
+    "recipeName": "Great Greek Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a large salad bowl, toss together the cucumbers, olives, roma tomatoes, sun-dried tomatoes, 2 tablespoons reserved sun-dried tomato oil, red onion, vinegar, and seasoning.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "cucumbers",
+              "kalamata olives",
+              "roma tomatoes",
+              "oil sun-dried tomatoes",
+              "onion",
+              "rice vinegar",
+              "greek seasoning"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients except feta cheese in salad bowl"
+          }
+        ],
+        "outputDescription": "mixed salad with all ingredients except feta combined in bowl"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Chill until serving.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "mixed salad"
+            ],
+            "durationMinutes": null,
+            "notes": "refrigerating salad until ready to serve"
+          }
+        ],
+        "outputDescription": "chilled salad ready for final assembly"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Right before serving toss in the feta and stir to combine.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "adding feta cheese to chilled salad"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "feta cheese",
+              "mixed salad"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring to combine feta with rest of salad"
+          }
+        ],
+        "outputDescription": "complete Greek salad with feta incorporated, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 4,
+      "uniqueProcesses": [
+        "toss",
+        "cool",
+        "mix"
+      ],
+      "estimatedTotalTime": 10
+    }
+  },
+  "components": [
+    {
+      "id": "comp_645265_step1",
+      "name": "mixed salad with all ingredients except feta combined in bowl",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumbers",
+          "quantityG": 6
+        },
+        {
+          "ingredientId": "kalamata_olives",
+          "name": "kalamata olives",
+          "quantityG": 135
+        },
+        {
+          "ingredientId": "roma_tomatoes",
+          "name": "roma tomatoes",
+          "quantityG": 709.764
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "oil sun-dried tomatoes",
+          "quantityG": 36.667
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 75
+        },
+        {
+          "ingredientId": "rice_vinegar",
+          "name": "rice vinegar",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "seasoning",
+          "name": "greek seasoning",
+          "quantityG": 1.25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 978.681,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 28.613466000000003,
+        "costPerG": 0.02923676458416992,
+        "nutrition": {
+          "calories": 684.9013000000001,
+          "protein": 8.6166982,
+          "fat": 58.920253,
+          "carbs": 40.75429460000001,
+          "fiber": 14.430418,
+          "sugar": 22.7030932,
+          "sodium": 2145.97904,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_645265_step2",
+      "name": "chilled salad ready for final assembly",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645265_step3",
+      "name": "complete Greek salad with feta incorporated, ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 225
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 225,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.8125,
+        "costPerG": 0.0125,
+        "nutrition": {
+          "calories": 596.25,
+          "protein": 31.95,
+          "fat": 48.375,
+          "carbs": 8.73,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 2565,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "metrics": {
+    "totalCost": 31.425966000000003,
+    "costPerServing": 7.856491500000001,
+    "totalPrepTime": 34,
+    "totalNutrition": {
+      "calories": 1281.1513000000002,
+      "protein": 40.566698200000005,
+      "fat": 107.29525300000002,
+      "carbs": 49.48429460000001,
+      "fiber": 14.430418,
+      "sugar": 22.7030932,
+      "sodium": 4710.979039999999,
+      "method": "raw"
+    },
+    "nutritionPerServing": {
+      "calories": 320.28782500000005,
+      "protein": 10.141674550000001,
+      "fat": 26.823813250000004,
+      "carbs": 12.371073650000003,
+      "fiber": 3.6076045,
+      "sugar": 5.6757733,
+      "sodium": 1177.7447599999998
+    },
+    "prepAheadComponents": [
+      {
+        "id": "comp_645265_step2",
+        "name": "chilled salad ready for final assembly",
+        "stepNumber": 2,
+        "sourceIngredients": [],
+        "processes": [
+          {
+            "processId": "cool",
+            "processName": "Cool",
+            "yieldFactor": 1,
+            "durationMinutes": 30,
+            "nutritionMultiplier": "raw"
+          }
+        ],
+        "output": {
+          "quantityG": 0,
+          "state": "prepared"
+        },
+        "calculated": {
+          "costAUD": 0,
+          "costPerG": 0,
+          "nutrition": {
+            "calories": 0,
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "fiber": 0,
+            "sugar": 0,
+            "sodium": 0,
+            "method": "raw"
+          },
+          "prepTimeMin": 30
+        },
+        "prepAhead": {
+          "canStore": true,
+          "shelfLifeHours": 96,
+          "storageLocation": "fridge"
+        }
+      },
+      {
+        "id": "comp_645265_step3",
+        "name": "complete Greek salad with feta incorporated, ready to serve",
+        "stepNumber": 3,
+        "sourceIngredients": [
+          {
+            "ingredientId": "feta_cheese",
+            "name": "feta cheese",
+            "quantityG": 225
+          }
+        ],
+        "processes": [
+          {
+            "processId": "toss",
+            "processName": "Toss",
+            "yieldFactor": 1,
+            "durationMinutes": 1,
+            "nutritionMultiplier": "raw"
+          },
+          {
+            "processId": "mix",
+            "processName": "Mix",
+            "yieldFactor": 1,
+            "durationMinutes": 2,
+            "nutritionMultiplier": "raw"
+          }
+        ],
+        "output": {
+          "quantityG": 225,
+          "state": "prepared"
+        },
+        "calculated": {
+          "costAUD": 2.8125,
+          "costPerG": 0.0125,
+          "nutrition": {
+            "calories": 596.25,
+            "protein": 31.95,
+            "fat": 48.375,
+            "carbs": 8.73,
+            "fiber": 0,
+            "sugar": 0,
+            "sodium": 2565,
+            "method": "raw"
+          },
+          "prepTimeMin": 3
+        },
+        "prepAhead": {
+          "canStore": true,
+          "shelfLifeHours": 24,
+          "storageLocation": "fridge"
+        }
+      }
+    ],
+    "reusableComponents": [
+      {
+        "componentId": "comp_645265_step3",
+        "name": "complete Greek salad with feta incorporated, ready to serve",
+        "shelfLifeHours": 24,
+        "processes": [
+          "toss",
+          "mix"
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "generatedAt": "2026-01-10T20:59:48.621Z",
+    "totalComponents": 3,
+    "totalCost": 31.425966000000003,
+    "costPerServing": 7.856491500000001
+  }
+}

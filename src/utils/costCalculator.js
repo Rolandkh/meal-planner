@@ -227,7 +227,6 @@ export function calculateScaledCost(baseCost, scaleFactor) {
 }
 
 export default {
-  calculateYieldChain,
   calculateCostChain,
   calculateIngredientCost,
   calculateCostPerServing,

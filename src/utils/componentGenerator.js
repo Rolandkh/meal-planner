@@ -6,6 +6,7 @@
  */
 
 import { convertToGrams } from './unitConversion.js';
+import { calculateIngredientCost as calcCost } from './costCalculator.js';
 
 /**
  * Generate components from parsed recipe processes
@@ -20,7 +21,11 @@ export function generateComponents(parsedRecipe, recipe, processMaster, ingredie
   const errors = [];
   
   // Track ingredient state through the recipe
+  // Key insight: Each ingredient is purchased ONCE and flows through components
   const ingredientState = initializeIngredientState(recipe.ingredients, ingredientMaster);
+  
+  // Track which ingredients have been "consumed" into components
+  const consumedIngredients = new Set();
   
   // Process each step
   parsedRecipe.processSteps.forEach((step, stepIndex) => {
@@ -30,7 +35,9 @@ export function generateComponents(parsedRecipe, recipe, processMaster, ingredie
         ingredientState,
         processMaster,
         ingredientMaster,
-        recipe
+        recipe,
+        consumedIngredients,
+        components
       );
       
       components.push(...stepComponents);
@@ -42,8 +49,8 @@ export function generateComponents(parsedRecipe, recipe, processMaster, ingredie
     }
   });
   
-  // Calculate final recipe metrics
-  const recipeMetrics = calculateRecipeMetrics(components, recipe);
+  // Calculate final recipe metrics (only count raw ingredients ONCE)
+  const recipeMetrics = calculateRecipeMetrics(components, recipe, ingredientState);
   
   return {
     success: errors.length === 0,
@@ -91,7 +98,7 @@ function initializeIngredientState(ingredients, ingredientMaster) {
       currentQuantityG: quantityG,
       originalQuantityG: quantityG,
       state: 'raw',
-      costAUD: calculateIngredientCost(quantityG, ingredientData),
+      costAUD: calcCost(quantityG, ingredientData),
       nutrition: calculateIngredientNutrition(quantityG, ingredientData, 'raw'),
       processes: []  // Track what's been done to it
     });
@@ -107,9 +114,11 @@ function initializeIngredientState(ingredients, ingredientMaster) {
  * @param {Object} processMaster - Process database
  * @param {Object} ingredientMaster - Ingredient database
  * @param {Object} recipe - Original recipe
+ * @param {Set} consumedIngredients - Track which ingredients have been used
+ * @param {Array} previousComponents - Components from previous steps
  * @returns {Array} Components created in this step
  */
-function processStep(step, ingredientState, processMaster, ingredientMaster, recipe) {
+function processStep(step, ingredientState, processMaster, ingredientMaster, recipe, consumedIngredients, previousComponents) {
   const components = [];
   
   // Check if this step creates a distinct component (intermediate result)
@@ -179,14 +188,20 @@ function processStep(step, ingredientState, processMaster, ingredientMaster, rec
       nutritionMultiplier: processData.nutritionMultiplierRef
     });
     
-    // Track source ingredients (first process only)
+    // Track source ingredients (first process only) - but only if NOT already consumed
     if (component.sourceIngredients.length === 0) {
       involvedIngredients.forEach(ingState => {
-        component.sourceIngredients.push({
-          ingredientId: ingState.ingredientId,
-          name: ingState.originalName,
-          quantityG: ingState.currentQuantityG
-        });
+        // Only add to source if this ingredient hasn't been used yet
+        if (!consumedIngredients.has(ingState.originalName)) {
+          component.sourceIngredients.push({
+            ingredientId: ingState.ingredientId,
+            name: ingState.originalName,
+            quantityG: ingState.originalQuantityG  // Use ORIGINAL quantity, not current
+          });
+          
+          // Mark as consumed
+          consumedIngredients.add(ingState.originalName);
+        }
       });
     }
     
@@ -208,7 +223,7 @@ function processStep(step, ingredientState, processMaster, ingredientMaster, rec
     }
   });
   
-  // Calculate final component metrics
+  // Calculate final component metrics - ONLY for newly consumed ingredients
   component.sourceIngredients.forEach(src => {
     const ingState = ingredientState.get(src.name);
     if (ingState) {
@@ -220,7 +235,10 @@ function processStep(step, ingredientState, processMaster, ingredientMaster, rec
   // Calculate output quantity (sum of all source ingredients after yield)
   const totalInputG = component.sourceIngredients.reduce((sum, src) => sum + src.quantityG, 0);
   component.output.quantityG = totalInputG * cumulativeYield;
-  component.calculated.costPerG = component.calculated.costAUD / component.output.quantityG;
+  
+  if (component.output.quantityG > 0) {
+    component.calculated.costPerG = component.calculated.costAUD / component.output.quantityG;
+  }
   
   components.push(component);
   return components;
@@ -324,31 +342,6 @@ function findIngredient(name, ingredientMaster) {
 }
 
 /**
- * Calculate ingredient cost
- * @param {number} quantityG - Quantity in grams
- * @param {Object} ingredientData - Ingredient from master
- * @returns {number} Cost in AUD
- */
-function calculateIngredientCost(quantityG, ingredientData) {
-  if (!ingredientData.pricing) return 0;
-  
-  // pricing.averagePrice is per pricing.unit (usually kg or per item)
-  const pricePerUnit = ingredientData.pricing.averagePrice;
-  const unit = ingredientData.pricing.unit;
-  
-  if (unit === 'kg') {
-    return (quantityG / 1000) * pricePerUnit;
-  } else if (unit === 'g') {
-    return (quantityG / 1) * pricePerUnit;
-  } else if (unit === '100g') {
-    return (quantityG / 100) * pricePerUnit;
-  } else {
-    // Per item pricing - estimate
-    return pricePerUnit;
-  }
-}
-
-/**
  * Calculate ingredient nutrition
  * @param {number} quantityG - Quantity in grams
  * @param {Object} ingredientData - Ingredient from master
@@ -413,16 +406,21 @@ function addNutrition(target, source) {
  * Calculate final recipe metrics
  * @param {Array} components - All components
  * @param {Object} recipe - Original recipe
+ * @param {Map} ingredientState - Final ingredient state (for cost/nutrition totals)
  * @returns {Object} Recipe metrics
  */
-function calculateRecipeMetrics(components, recipe) {
-  const totalCost = components.reduce((sum, comp) => sum + comp.calculated.costAUD, 0);
-  const totalPrepTime = components.reduce((sum, comp) => sum + comp.calculated.prepTimeMin, 0);
-  
+function calculateRecipeMetrics(components, recipe, ingredientState) {
+  // CRITICAL: Calculate cost from RAW INGREDIENTS ONLY (purchased once)
+  // Don't sum component costs (that double/triple counts ingredients)
+  let totalCost = 0;
   const totalNutrition = initializeNutritionProfile();
-  components.forEach(comp => {
-    addNutrition(totalNutrition, comp.calculated.nutrition);
+  
+  ingredientState.forEach((state, name) => {
+    totalCost += state.costAUD;
+    addNutrition(totalNutrition, state.nutrition);
   });
+  
+  const totalPrepTime = components.reduce((sum, comp) => sum + comp.calculated.prepTimeMin, 0);
   
   return {
     totalCost,
@@ -467,9 +465,5 @@ function identifyReusableComponents(components) {
     }));
 }
 
-export default {
-  generateComponents,
-  initializeIngredientState,
-  processStep,
-  calculateRecipeMetrics
-};
+// Named exports
+export { initializeIngredientState };

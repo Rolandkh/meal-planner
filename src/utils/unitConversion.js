@@ -14,7 +14,16 @@
 export function convertToGrams(quantity, unit, ingredientName, ingredientData) {
   if (!quantity || quantity === 0) return 0;
   
-  const normalizedUnit = normalizeUnit(unit);
+  let normalizedUnit = normalizeUnit(unit);
+  
+  // Special case: If unit is empty but ingredient name contains unit info
+  // Example: "28 oz can tomatoes" with quantity=28, unit=""
+  if (!normalizedUnit || normalizedUnit === '') {
+    const nameMatch = ingredientName.toLowerCase().match(/(\d+\s*)?(oz|ounce|pound|lb|can|jar|bottle|box)/);
+    if (nameMatch) {
+      normalizedUnit = nameMatch[2]; // Extract the unit from name
+    }
+  }
   
   // Already in canonical units
   if (normalizedUnit === 'g' || normalizedUnit === 'gram' || normalizedUnit === 'grams') {
@@ -58,8 +67,12 @@ export function convertToGrams(quantity, unit, ingredientName, ingredientData) {
     'tbsp': 15,
     'tsp': 5,
     'oz': 28.35,
+    'ounce': 28.35,
     'lb': 453.592,
-    'pound': 453.592
+    'pound': 453.592,
+    'can': 400,        // Average can size
+    'jar': 250,        // Average jar
+    'bottle': 500      // Average bottle
   };
   
   if (fallbackConversions[normalizedUnit]) {
@@ -69,17 +82,8 @@ export function convertToGrams(quantity, unit, ingredientName, ingredientData) {
   // Count-based units (items, pieces, cloves, heads, bunches, sheets, etc.)
   const countUnits = ['', 'whole', 'item', 'piece', 'clove', 'head', 'bunch', 'sheet', 'leaf', 'leaves', 'stalk'];
   if (countUnits.includes(normalizedUnit)) {
-    // Use average item weight if available
-    if (ingredientData.averageItemWeight) {
-      return quantity * ingredientData.averageItemWeight;
-    }
-    
-    // Use pricing typical weight if available
-    if (ingredientData.pricing?.typicalWeight) {
-      return quantity * ingredientData.pricing.typicalWeight;
-    }
-    
-    // Common item weights (fallback)
+    // FIRST: Check specific item weights (most accurate for count-based)
+    // Common item weights (per item/leaf/sheet)
     const itemWeights = {
       'egg': 50,
       'onion': 150,
@@ -105,10 +109,24 @@ export function convertToGrams(quantity, unit, ingredientName, ingredientData) {
       'lasagna noodle': 20
     };
     
+    // Check if ingredient name matches any item weight
     const normalizedName = ingredientName.toLowerCase();
     for (const [item, weight] of Object.entries(itemWeights)) {
       if (normalizedName.includes(item)) {
         return quantity * weight;
+      }
+    }
+    
+    // SECOND: Use average item weight if available
+    if (ingredientData.averageItemWeight) {
+      return quantity * ingredientData.averageItemWeight;
+    }
+    
+    // THIRD: Use pricing typical weight (ONLY for units like "bunch", "pack", "bag")
+    // NOT for count units like leaf/piece/clove
+    if (normalizedUnit === 'bunch' || normalizedUnit === 'pack' || normalizedUnit === 'bag') {
+      if (ingredientData.pricing?.typicalWeight) {
+        return quantity * ingredientData.pricing.typicalWeight;
       }
     }
   }

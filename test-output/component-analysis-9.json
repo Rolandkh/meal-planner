@@ -179,7 +179,7 @@
               "lasagna"
             ],
             "durationMinutes": null,
-            "notes": "cook according to package instructions"
+            "notes": "cook per package instructions"
           },
           {
             "processId": "rinse",
@@ -208,8 +208,8 @@
             "processId": "mix",
             "ingredients": [
               "ricotta cheese",
-              "mozzarella",
               "parmesan",
+              "mozzarella",
               "nutmeg",
               "garlic salt",
               "chives",
@@ -219,7 +219,7 @@
             "notes": "combine ricotta filling ingredients"
           }
         ],
-        "outputDescription": "ricotta filling mixture prepared"
+        "outputDescription": "ricotta filling mixture ready"
       },
       {
         "stepNumber": 4,
@@ -248,7 +248,7 @@
               "san marzano tomatoes"
             ],
             "durationMinutes": null,
-            "notes": "tomato juice starts to caramelize"
+            "notes": "tomato juice caramelizes"
           },
           {
             "processId": "crush",
@@ -256,7 +256,7 @@
               "san marzano tomatoes"
             ],
             "durationMinutes": null,
-            "notes": "crush whole tomatoes with back of spoon"
+            "notes": "crush whole tomatoes with spoon"
           },
           {
             "processId": "simmer",
@@ -277,7 +277,7 @@
             "notes": "stir cheese into sauce"
           }
         ],
-        "outputDescription": "thick marinara sauce with melted pecorino"
+        "outputDescription": "thick marinara sauce with melted cheese"
       },
       {
         "stepNumber": 5,
@@ -308,7 +308,7 @@
             "notes": "top with basil leaves"
           }
         ],
-        "outputDescription": "lasagna noodles spread with ricotta, spinach, and basil"
+        "outputDescription": "lasagna noodles layered with ricotta, spinach, and basil"
       },
       {
         "stepNumber": 6,
@@ -329,10 +329,10 @@
               "lasagna"
             ],
             "durationMinutes": null,
-            "notes": "roll noodles to make lasagna rolls"
+            "notes": "roll noodles into rolls"
           }
         ],
-        "outputDescription": "rolled lasagna noodles filled with ricotta mixture and vegetables"
+        "outputDescription": "lasagna rolls filled with ricotta, vegetables, and herbs"
       },
       {
         "stepNumber": 7,
@@ -352,7 +352,7 @@
               "lasagna"
             ],
             "durationMinutes": 15,
-            "notes": "bake until hot and spinach is wilted"
+            "notes": "bake until hot and spinach wilted"
           }
         ],
         "outputDescription": "baked lasagna rolls with wilted spinach"
@@ -377,11 +377,11 @@
             "notes": "serve hot"
           }
         ],
-        "outputDescription": "plated lasagna rolls topped with marinara and pecorino cheese"
+        "outputDescription": "plated lasagna rolls topped with marinara and pecorino"
       }
     ],
     "processSummary": {
-      "totalProcesses": 18,
+      "totalProcesses": 17,
       "uniqueProcesses": [
         "heat",
         "boil",
@@ -399,7 +399,7 @@
         "garnish",
         "plate"
       ],
-      "estimatedTotalTime": 60
+      "estimatedTotalTime": 45
     }
   },
   "components": [
@@ -423,7 +423,7 @@
       },
       "calculated": {
         "costAUD": 0,
-        "costPerG": null,
+        "costPerG": 0,
         "nutrition": {
           "calories": 0,
           "protein": 0,
@@ -450,7 +450,7 @@
         {
           "ingredientId": "lasagne_sheets",
           "name": "lasagna",
-          "quantityG": 3000
+          "quantityG": 160
         }
       ],
       "processes": [
@@ -477,20 +477,20 @@
         }
       ],
       "output": {
-        "quantityG": 2848.8599999999997,
+        "quantityG": 151.93919999999997,
         "state": "prepared"
       },
       "calculated": {
-        "costAUD": 3.5,
-        "costPerG": 0.001228561600078628,
+        "costAUD": 1.4928000000000001,
+        "costPerG": 0.009824982624628801,
         "nutrition": {
-          "calories": 11130,
-          "protein": 391.2,
-          "fat": 45.3,
-          "carbs": 2240.1,
-          "fiber": 96,
-          "sugar": 80.1,
-          "sodium": 180,
+          "calories": 593.6,
+          "protein": 20.864,
+          "fat": 2.4160000000000004,
+          "carbs": 119.47200000000001,
+          "fiber": 5.120000000000001,
+          "sugar": 4.272,
+          "sodium": 9.600000000000001,
           "method": "raw"
         },
         "prepTimeMin": 12
@@ -503,7 +503,7 @@
     },
     {
       "id": "comp_664737_step3",
-      "name": "ricotta filling mixture prepared",
+      "name": "ricotta filling mixture ready",
       "stepNumber": 3,
       "sourceIngredients": [
         {
@@ -512,14 +512,14 @@
           "quantityG": 453.592
         },
         {
-          "ingredientId": "mozzarella_cheese",
-          "name": "mozzarella",
-          "quantityG": 28
-        },
-        {
           "ingredientId": "parmesan",
           "name": "parmesan",
           "quantityG": 25
+        },
+        {
+          "ingredientId": "mozzarella_cheese",
+          "name": "mozzarella",
+          "quantityG": 28
         },
         {
           "ingredientId": "garlic_salt",
@@ -551,16 +551,16 @@
         "state": "prepared"
       },
       "calculated": {
-        "costAUD": 1385.2759999999998,
-        "costPerG": 2.6725135142434917,
+        "costAUD": 7.291316969026549,
+        "costPerG": 0.014066614260520176,
         "nutrition": {
           "calories": 974.10608,
-          "protein": 66.45835919999999,
+          "protein": 66.4583592,
           "fat": 71.6547016,
           "carbs": 15.7058768,
           "fiber": 0.2608,
           "sugar": 1.7850984,
-          "sodium": 2414.7702799999997,
+          "sodium": 2414.77028,
           "method": "raw"
         },
         "prepTimeMin": 2
@@ -573,7 +573,7 @@
     },
     {
       "id": "comp_664737_step4",
-      "name": "thick marinara sauce with melted pecorino",
+      "name": "thick marinara sauce with melted cheese",
       "stepNumber": 4,
       "sourceIngredients": [
         {
@@ -636,8 +636,8 @@
         "state": "prepared"
       },
       "calculated": {
-        "costAUD": 12.5,
-        "costPerG": 0.4036912918112457,
+        "costAUD": 1.476,
+        "costPerG": 0.04766786773707189,
         "nutrition": {
           "calories": 507.16,
           "protein": 1.2720000000000002,
@@ -658,13 +658,13 @@
     },
     {
       "id": "comp_664737_step5",
-      "name": "lasagna noodles spread with ricotta, spinach, and basil",
+      "name": "lasagna noodles layered with ricotta, spinach, and basil",
       "stepNumber": 5,
       "sourceIngredients": [
         {
-          "ingredientId": "ricotta",
-          "name": "ricotta cheese",
-          "quantityG": 453.592
+          "ingredientId": "spinach",
+          "name": "spinach",
+          "quantityG": 30
         }
       ],
       "processes": [
@@ -691,20 +691,20 @@
         }
       ],
       "output": {
-        "quantityG": 519.10882848,
+        "quantityG": 34.333200000000005,
         "state": "prepared"
       },
       "calculated": {
-        "costAUD": 1360.7759999999998,
-        "costPerG": 2.621369403376323,
+        "costAUD": 4.2,
+        "costPerG": 0.12233057215756177,
         "nutrition": {
-          "calories": 789.25008,
-          "protein": 51.0744592,
-          "fat": 58.8762416,
-          "carbs": 13.7891968,
-          "fiber": 0,
-          "sugar": 1.2246984,
-          "sodium": 381.01727999999997,
+          "calories": 6.8999999999999995,
+          "protein": 0.858,
+          "fat": 0.11699999999999999,
+          "carbs": 1.089,
+          "fiber": 0.66,
+          "sugar": 0.126,
+          "sodium": 23.7,
           "method": "raw"
         },
         "prepTimeMin": 2
@@ -717,18 +717,18 @@
     },
     {
       "id": "comp_664737_step6",
-      "name": "rolled lasagna noodles filled with ricotta mixture and vegetables",
+      "name": "lasagna rolls filled with ricotta, vegetables, and herbs",
       "stepNumber": 6,
       "sourceIngredients": [
         {
           "ingredientId": "mushrooms",
           "name": "mushrooms",
-          "quantityG": 400
+          "quantityG": 60
         },
         {
           "ingredientId": "zucchini",
           "name": "zucchini",
-          "quantityG": 1000
+          "quantityG": 200
         }
       ],
       "processes": [
@@ -748,20 +748,20 @@
         }
       ],
       "output": {
-        "quantityG": 1428,
+        "quantityG": 265.2,
         "state": "prepared"
       },
       "calculated": {
-        "costAUD": 6403.5,
-        "costPerG": 4.484243697478991,
+        "costAUD": 10.299999999999999,
+        "costPerG": 0.038838612368024134,
         "nutrition": {
-          "calories": 258,
-          "protein": 24.46,
-          "fat": 4.5600000000000005,
-          "carbs": 44.14,
-          "fiber": 14,
-          "sugar": 32.92,
-          "sodium": 100,
+          "calories": 47.2,
+          "protein": 4.274,
+          "fat": 0.8440000000000001,
+          "carbs": 8.176,
+          "fiber": 2.6,
+          "sugar": 6.188,
+          "sodium": 19,
           "method": "raw"
         },
         "prepTimeMin": 3.5
@@ -776,13 +776,7 @@
       "id": "comp_664737_step7",
       "name": "baked lasagna rolls with wilted spinach",
       "stepNumber": 7,
-      "sourceIngredients": [
-        {
-          "ingredientId": "lasagne_sheets",
-          "name": "lasagna",
-          "quantityG": 2848.86
-        }
-      ],
+      "sourceIngredients": [],
       "processes": [
         {
           "processId": "spread",
@@ -800,20 +794,20 @@
         }
       ],
       "output": {
-        "quantityG": 2663.6841000000004,
+        "quantityG": 0,
         "state": "prepared"
       },
       "calculated": {
-        "costAUD": 3.5,
-        "costPerG": 0.001313969625752543,
+        "costAUD": 0,
+        "costPerG": 0,
         "nutrition": {
-          "calories": 11130,
-          "protein": 391.2,
-          "fat": 45.3,
-          "carbs": 2240.1,
-          "fiber": 96,
-          "sugar": 80.1,
-          "sodium": 180,
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
           "method": "raw"
         },
         "prepTimeMin": 16
@@ -826,7 +820,7 @@
     },
     {
       "id": "comp_664737_step8",
-      "name": "plated lasagna rolls topped with marinara and pecorino cheese",
+      "name": "plated lasagna rolls topped with marinara and pecorino",
       "stepNumber": 8,
       "sourceIngredients": [],
       "processes": [
@@ -851,7 +845,7 @@
       },
       "calculated": {
         "costAUD": 0,
-        "costPerG": null,
+        "costPerG": 0,
         "nutrition": {
           "calories": 0,
           "protein": 0,
@@ -872,27 +866,27 @@
     }
   ],
   "metrics": {
-    "totalCost": 9169.052,
-    "costPerServing": 1528.1753333333334,
+    "totalCost": 48.33171396902655,
+    "costPerServing": 8.055285661504426,
     "totalPrepTime": 95.5,
     "totalNutrition": {
-      "calories": 24788.51616,
-      "protein": 925.6648183999998,
-      "fat": 279.7909432,
-      "carbs": 4560.4550736,
-      "fiber": 206.6808,
-      "sugar": 196.3297968,
-      "sodium": 3260.26756,
+      "calories": 2500.19133,
+      "protein": 113.1016717,
+      "fat": 148.94791659999999,
+      "carbs": 186.57528929999998,
+      "fiber": 20.229975000000003,
+      "sugar": 34.4464234,
+      "sodium": 2856.5912799999996,
       "method": "raw"
     },
     "nutritionPerServing": {
-      "calories": 4131.41936,
-      "protein": 154.2774697333333,
-      "fat": 46.63182386666667,
-      "carbs": 760.0758456,
-      "fiber": 34.4468,
-      "sugar": 32.7216328,
-      "sodium": 543.3779266666667
+      "calories": 416.698555,
+      "protein": 18.850278616666667,
+      "fat": 24.824652766666663,
+      "carbs": 31.095881549999998,
+      "fiber": 3.3716625000000007,
+      "sugar": 5.741070566666667,
+      "sodium": 476.0985466666666
     },
     "prepAheadComponents": [
       {
@@ -903,7 +897,7 @@
           {
             "ingredientId": "lasagne_sheets",
             "name": "lasagna",
-            "quantityG": 3000
+            "quantityG": 160
           }
         ],
         "processes": [
@@ -930,20 +924,20 @@
           }
         ],
         "output": {
-          "quantityG": 2848.8599999999997,
+          "quantityG": 151.93919999999997,
           "state": "prepared"
         },
         "calculated": {
-          "costAUD": 3.5,
-          "costPerG": 0.001228561600078628,
+          "costAUD": 1.4928000000000001,
+          "costPerG": 0.009824982624628801,
           "nutrition": {
-            "calories": 11130,
-            "protein": 391.2,
-            "fat": 45.3,
-            "carbs": 2240.1,
-            "fiber": 96,
-            "sugar": 80.1,
-            "sodium": 180,
+            "calories": 593.6,
+            "protein": 20.864,
+            "fat": 2.4160000000000004,
+            "carbs": 119.47200000000001,
+            "fiber": 5.120000000000001,
+            "sugar": 4.272,
+            "sodium": 9.600000000000001,
             "method": "raw"
           },
           "prepTimeMin": 12
@@ -956,7 +950,7 @@
       },
       {
         "id": "comp_664737_step3",
-        "name": "ricotta filling mixture prepared",
+        "name": "ricotta filling mixture ready",
         "stepNumber": 3,
         "sourceIngredients": [
           {
@@ -965,14 +959,14 @@
             "quantityG": 453.592
           },
           {
-            "ingredientId": "mozzarella_cheese",
-            "name": "mozzarella",
-            "quantityG": 28
-          },
-          {
             "ingredientId": "parmesan",
             "name": "parmesan",
             "quantityG": 25
+          },
+          {
+            "ingredientId": "mozzarella_cheese",
+            "name": "mozzarella",
+            "quantityG": 28
           },
           {
             "ingredientId": "garlic_salt",
@@ -1004,16 +998,16 @@
           "state": "prepared"
         },
         "calculated": {
-          "costAUD": 1385.2759999999998,
-          "costPerG": 2.6725135142434917,
+          "costAUD": 7.291316969026549,
+          "costPerG": 0.014066614260520176,
           "nutrition": {
             "calories": 974.10608,
-            "protein": 66.45835919999999,
+            "protein": 66.4583592,
             "fat": 71.6547016,
             "carbs": 15.7058768,
             "fiber": 0.2608,
             "sugar": 1.7850984,
-            "sodium": 2414.7702799999997,
+            "sodium": 2414.77028,
             "method": "raw"
           },
           "prepTimeMin": 2
@@ -1026,7 +1020,7 @@
       },
       {
         "id": "comp_664737_step4",
-        "name": "thick marinara sauce with melted pecorino",
+        "name": "thick marinara sauce with melted cheese",
         "stepNumber": 4,
         "sourceIngredients": [
           {
@@ -1089,8 +1083,8 @@
           "state": "prepared"
         },
         "calculated": {
-          "costAUD": 12.5,
-          "costPerG": 0.4036912918112457,
+          "costAUD": 1.476,
+          "costPerG": 0.04766786773707189,
           "nutrition": {
             "calories": 507.16,
             "protein": 1.2720000000000002,
@@ -1111,18 +1105,18 @@
       },
       {
         "id": "comp_664737_step6",
-        "name": "rolled lasagna noodles filled with ricotta mixture and vegetables",
+        "name": "lasagna rolls filled with ricotta, vegetables, and herbs",
         "stepNumber": 6,
         "sourceIngredients": [
           {
             "ingredientId": "mushrooms",
             "name": "mushrooms",
-            "quantityG": 400
+            "quantityG": 60
           },
           {
             "ingredientId": "zucchini",
             "name": "zucchini",
-            "quantityG": 1000
+            "quantityG": 200
           }
         ],
         "processes": [
@@ -1142,20 +1136,20 @@
           }
         ],
         "output": {
-          "quantityG": 1428,
+          "quantityG": 265.2,
           "state": "prepared"
         },
         "calculated": {
-          "costAUD": 6403.5,
-          "costPerG": 4.484243697478991,
+          "costAUD": 10.299999999999999,
+          "costPerG": 0.038838612368024134,
           "nutrition": {
-            "calories": 258,
-            "protein": 24.46,
-            "fat": 4.5600000000000005,
-            "carbs": 44.14,
-            "fiber": 14,
-            "sugar": 32.92,
-            "sodium": 100,
+            "calories": 47.2,
+            "protein": 4.274,
+            "fat": 0.8440000000000001,
+            "carbs": 8.176,
+            "fiber": 2.6,
+            "sugar": 6.188,
+            "sodium": 19,
             "method": "raw"
           },
           "prepTimeMin": 3.5
@@ -1170,13 +1164,7 @@
         "id": "comp_664737_step7",
         "name": "baked lasagna rolls with wilted spinach",
         "stepNumber": 7,
-        "sourceIngredients": [
-          {
-            "ingredientId": "lasagne_sheets",
-            "name": "lasagna",
-            "quantityG": 2848.86
-          }
-        ],
+        "sourceIngredients": [],
         "processes": [
           {
             "processId": "spread",
@@ -1194,20 +1182,20 @@
           }
         ],
         "output": {
-          "quantityG": 2663.6841000000004,
+          "quantityG": 0,
           "state": "prepared"
         },
         "calculated": {
-          "costAUD": 3.5,
-          "costPerG": 0.001313969625752543,
+          "costAUD": 0,
+          "costPerG": 0,
           "nutrition": {
-            "calories": 11130,
-            "protein": 391.2,
-            "fat": 45.3,
-            "carbs": 2240.1,
-            "fiber": 96,
-            "sugar": 80.1,
-            "sodium": 180,
+            "calories": 0,
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "fiber": 0,
+            "sugar": 0,
+            "sodium": 0,
             "method": "raw"
           },
           "prepTimeMin": 16
@@ -1232,7 +1220,7 @@
       },
       {
         "componentId": "comp_664737_step4",
-        "name": "thick marinara sauce with melted pecorino",
+        "name": "thick marinara sauce with melted cheese",
         "shelfLifeHours": 2,
         "processes": [
           "saute",
@@ -1245,7 +1233,7 @@
       },
       {
         "componentId": "comp_664737_step6",
-        "name": "rolled lasagna noodles filled with ricotta mixture and vegetables",
+        "name": "lasagna rolls filled with ricotta, vegetables, and herbs",
         "shelfLifeHours": 24,
         "processes": [
           "sprinkle",
@@ -1264,9 +1252,9 @@
     ]
   },
   "metadata": {
-    "generatedAt": "2026-01-10T20:36:14.664Z",
+    "generatedAt": "2026-01-10T21:08:21.140Z",
     "totalComponents": 8,
-    "totalCost": 9169.052,
-    "costPerServing": 1528.1753333333334
+    "totalCost": 48.33171396902655,
+    "costPerServing": 8.055285661504426
   }
 }

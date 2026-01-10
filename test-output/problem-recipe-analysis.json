@@ -1,0 +1,520 @@
+[
+  {
+    "recipeName": "Mushroom Hummus Crostini",
+    "recipeIndex": 5,
+    "servings": 4,
+    "totalCost": 85.03271875,
+    "totalCalories": 1002.40851,
+    "ingredientDetails": [
+      {
+        "name": "crusty bread",
+        "originalQty": 1,
+        "originalUnit": "loaf",
+        "convertedG": 1,
+        "pricePerKg": 14,
+        "cost": 0.014,
+        "calories": 2.74
+      },
+      {
+        "name": "mushrooms",
+        "originalQty": 453.592,
+        "originalUnit": "g",
+        "convertedG": 453.592,
+        "pricePerKg": 160,
+        "cost": 72.57472,
+        "calories": 99.79024
+      },
+      {
+        "name": "spinach",
+        "originalQty": 2,
+        "originalUnit": "handfuls",
+        "convertedG": 2,
+        "pricePerKg": 140,
+        "cost": 0.28,
+        "calories": 0.46
+      },
+      {
+        "name": "chickpeas",
+        "originalQty": 396.893,
+        "originalUnit": "g",
+        "convertedG": 396.893,
+        "pricePerKg": 3.75,
+        "cost": 1.4883487499999999,
+        "calories": 650.9045199999999
+      },
+      {
+        "name": "garlic",
+        "originalQty": 1,
+        "originalUnit": "clove",
+        "convertedG": 5,
+        "pricePerKg": 0,
+        "cost": 0.22499999999999998,
+        "calories": 7.45
+      },
+      {
+        "name": "lemon juice",
+        "originalQty": 1,
+        "originalUnit": "Tbsp",
+        "convertedG": 15.25,
+        "pricePerKg": 0,
+        "cost": 9.15,
+        "calories": 3.355
+      },
+      {
+        "name": "tahini",
+        "originalQty": 1,
+        "originalUnit": "Tbsp",
+        "convertedG": 15,
+        "pricePerKg": 16.67,
+        "cost": 0.25005,
+        "calories": 88.8
+      },
+      {
+        "name": "olive oil",
+        "originalQty": 1,
+        "originalUnit": "Tbsp",
+        "convertedG": 13.5,
+        "pricePerKg": 0,
+        "cost": 0.144,
+        "calories": 119.34
+      },
+      {
+        "name": "water",
+        "originalQty": 2,
+        "originalUnit": "Tbsps",
+        "convertedG": 30,
+        "pricePerKg": 6.67,
+        "cost": 0.2001,
+        "calories": 0
+      },
+      {
+        "name": "ground cumin",
+        "originalQty": 0.25,
+        "originalUnit": "tsps",
+        "convertedG": 0.525,
+        "pricePerKg": 60,
+        "cost": 0.03150000000000001,
+        "calories": 1.9687500000000002
+      },
+      {
+        "name": "harissa",
+        "originalQty": 2,
+        "originalUnit": "Tbsps",
+        "convertedG": 30,
+        "pricePerKg": 22.5,
+        "cost": 0.6749999999999999,
+        "calories": 27.599999999999998
+      }
+    ],
+    "issues": [
+      {
+        "ingredient": "mushrooms",
+        "issue": "💰 EXPENSIVE",
+        "details": {
+          "convertedG": 453.592,
+          "pricePerKg": 160,
+          "cost": 72.57472,
+          "costPerServing": "18.14"
+        }
+      },
+      {
+        "ingredient": "garlic",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 5,
+          "pricePerKg": 0,
+          "cost": 0.22499999999999998,
+          "costPerServing": "0.06"
+        }
+      },
+      {
+        "ingredient": "lemon juice",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 15.25,
+          "pricePerKg": 0,
+          "cost": 9.15,
+          "costPerServing": "2.29"
+        }
+      },
+      {
+        "ingredient": "olive oil",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 13.5,
+          "pricePerKg": 0,
+          "cost": 0.144,
+          "costPerServing": "0.04"
+        }
+      }
+    ]
+  },
+  {
+    "recipeName": "Lasagna - Spinach Rolls",
+    "recipeIndex": 35,
+    "servings": 6,
+    "totalCost": 180.2166832759292,
+    "totalCalories": 4205.40024,
+    "ingredientDetails": [
+      {
+        "name": "butter",
+        "originalQty": 2,
+        "originalUnit": "Tbsps",
+        "convertedG": 28,
+        "pricePerKg": 21.25,
+        "cost": 0.595,
+        "calories": 200.76000000000002
+      },
+      {
+        "name": "mushrooms",
+        "originalQty": 1,
+        "originalUnit": "can",
+        "convertedG": 400,
+        "pricePerKg": 160,
+        "cost": 64,
+        "calories": 88
+      },
+      {
+        "name": "tomato sauce",
+        "originalQty": 850.486,
+        "originalUnit": "g",
+        "convertedG": 850.486,
+        "pricePerKg": 3,
+        "cost": 2.551458,
+        "calories": 204.11664000000002
+      },
+      {
+        "name": "cottage cheese",
+        "originalQty": 452,
+        "originalUnit": "g",
+        "convertedG": 452,
+        "pricePerKg": 5,
+        "cost": 2.2600000000000002,
+        "calories": 442.96
+      },
+      {
+        "name": "lasagna sheets",
+        "originalQty": 453.592,
+        "originalUnit": "g",
+        "convertedG": 453.592,
+        "pricePerKg": 9.33,
+        "cost": 4.23201336,
+        "calories": 1682.82632
+      },
+      {
+        "name": "eggs",
+        "originalQty": 2,
+        "originalUnit": "",
+        "convertedG": 100,
+        "pricePerKg": 6.67,
+        "cost": 0.667,
+        "calories": 143
+      },
+      {
+        "name": "garlic powder",
+        "originalQty": 1,
+        "originalUnit": "tsp",
+        "convertedG": 3.1,
+        "pricePerKg": 100,
+        "cost": 0.31,
+        "calories": 10.261
+      },
+      {
+        "name": "marjoram",
+        "originalQty": 2,
+        "originalUnit": "tsps",
+        "convertedG": 10,
+        "pricePerKg": 300,
+        "cost": 3,
+        "calories": 27.1
+      },
+      {
+        "name": "mozzarella cheese",
+        "originalQty": 340.194,
+        "originalUnit": "g",
+        "convertedG": 340.194,
+        "pricePerKg": 0,
+        "cost": 19.568681415929206,
+        "calories": 1020.5820000000001
+      },
+      {
+        "name": "onion",
+        "originalQty": 80,
+        "originalUnit": "g",
+        "convertedG": 80,
+        "pricePerKg": 16.67,
+        "cost": 1.3336000000000001,
+        "calories": 32
+      },
+      {
+        "name": "parmesan cheese",
+        "originalQty": 50,
+        "originalUnit": "g",
+        "convertedG": 50,
+        "pricePerKg": 0,
+        "cost": 1.425,
+        "calories": 196
+      },
+      {
+        "name": "bell pepper",
+        "originalQty": 6,
+        "originalUnit": "servings",
+        "convertedG": 6,
+        "pricePerKg": 0,
+        "cost": 0.051000000000000004,
+        "calories": 1.56
+      },
+      {
+        "name": "bell pepper",
+        "originalQty": 99.333,
+        "originalUnit": "g",
+        "convertedG": 99.333,
+        "pricePerKg": 0,
+        "cost": 0.8443305000000001,
+        "calories": 25.82658
+      },
+      {
+        "name": "spinach",
+        "originalQty": 566.99,
+        "originalUnit": "g",
+        "convertedG": 566.99,
+        "pricePerKg": 140,
+        "cost": 79.3786,
+        "calories": 130.4077
+      }
+    ],
+    "issues": [
+      {
+        "ingredient": "mushrooms",
+        "issue": "💰 EXPENSIVE",
+        "details": {
+          "convertedG": 400,
+          "pricePerKg": 160,
+          "cost": 64,
+          "costPerServing": "10.67"
+        }
+      },
+      {
+        "ingredient": "mozzarella cheese",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 340.194,
+          "pricePerKg": 0,
+          "cost": 19.568681415929206,
+          "costPerServing": "3.26"
+        }
+      },
+      {
+        "ingredient": "parmesan cheese",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 50,
+          "pricePerKg": 0,
+          "cost": 1.425,
+          "costPerServing": "0.24"
+        }
+      },
+      {
+        "ingredient": "bell pepper",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 6,
+          "pricePerKg": 0,
+          "cost": 0.051000000000000004,
+          "costPerServing": "0.01"
+        }
+      },
+      {
+        "ingredient": "bell pepper",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 99.333,
+          "pricePerKg": 0,
+          "cost": 0.8443305000000001,
+          "costPerServing": "0.14"
+        }
+      },
+      {
+        "ingredient": "spinach",
+        "issue": "💰 EXPENSIVE",
+        "details": {
+          "convertedG": 566.99,
+          "pricePerKg": 140,
+          "cost": 79.3786,
+          "costPerServing": "13.23"
+        }
+      }
+    ]
+  },
+  {
+    "recipeName": "Italian Seafood Stew",
+    "recipeIndex": 15,
+    "servings": 3,
+    "totalCost": 14.741419400000002,
+    "totalCalories": 564.8802000000001,
+    "ingredientDetails": [
+      {
+        "name": "portobello mushrooms",
+        "originalQty": 20,
+        "originalUnit": "",
+        "convertedG": 300,
+        "pricePerKg": 0,
+        "cost": 3.75,
+        "calories": 66
+      },
+      {
+        "name": "bay leaves",
+        "originalQty": 2,
+        "originalUnit": "",
+        "convertedG": 2,
+        "pricePerKg": 350,
+        "cost": 0.7000000000000001,
+        "calories": 6.26
+      },
+      {
+        "name": "canned tomatoes",
+        "originalQty": 793.787,
+        "originalUnit": "g",
+        "convertedG": 793.787,
+        "pricePerKg": 0,
+        "cost": 0.9525444,
+        "calories": 254.01184
+      },
+      {
+        "name": "parsley",
+        "originalQty": 3,
+        "originalUnit": "servings",
+        "convertedG": 3,
+        "pricePerKg": 233.33,
+        "cost": 0.69999,
+        "calories": 1.08
+      },
+      {
+        "name": "garlic",
+        "originalQty": 4,
+        "originalUnit": "cloves",
+        "convertedG": 20,
+        "pricePerKg": 0,
+        "cost": 0.8999999999999999,
+        "calories": 29.8
+      },
+      {
+        "name": "mussels",
+        "originalQty": 20,
+        "originalUnit": "",
+        "convertedG": 20,
+        "pricePerKg": 16,
+        "cost": 0.32,
+        "calories": 8.772
+      },
+      {
+        "name": "onion",
+        "originalQty": 1,
+        "originalUnit": "",
+        "convertedG": 150,
+        "pricePerKg": 16.67,
+        "cost": 2.5005,
+        "calories": 60
+      },
+      {
+        "name": "salt",
+        "originalQty": 2,
+        "originalUnit": "tsps",
+        "convertedG": 12,
+        "pricePerKg": 50,
+        "cost": 0.6,
+        "calories": 0
+      },
+      {
+        "name": "seasoning",
+        "originalQty": 1,
+        "originalUnit": "Tbsp",
+        "convertedG": 7,
+        "pricePerKg": 32,
+        "cost": 0.224,
+        "calories": 21.490000000000002
+      },
+      {
+        "name": "tilapia",
+        "originalQty": 3,
+        "originalUnit": "servings",
+        "convertedG": 3,
+        "pricePerKg": 0,
+        "cost": 0.0855,
+        "calories": 2.88
+      },
+      {
+        "name": "tomato",
+        "originalQty": 1,
+        "originalUnit": "",
+        "convertedG": 120,
+        "pricePerKg": 26.32,
+        "cost": 3.1584,
+        "calories": 21.599999999999998
+      },
+      {
+        "name": "tomato paste",
+        "originalQty": 113.398,
+        "originalUnit": "g",
+        "convertedG": 113.398,
+        "pricePerKg": 7.5,
+        "cost": 0.8504849999999999,
+        "calories": 92.98636
+      }
+    ],
+    "issues": [
+      {
+        "ingredient": "portobello mushrooms",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 300,
+          "pricePerKg": 0,
+          "cost": 3.75,
+          "costPerServing": "1.25"
+        }
+      },
+      {
+        "ingredient": "canned tomatoes",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 793.787,
+          "pricePerKg": 0,
+          "cost": 0.9525444,
+          "costPerServing": "0.32"
+        }
+      },
+      {
+        "ingredient": "soda water",
+        "issue": "Not found in master database"
+      },
+      {
+        "ingredient": "seafood stock/ fish stock",
+        "issue": "Not found in master database"
+      },
+      {
+        "ingredient": "garlic",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 20,
+          "pricePerKg": 0,
+          "cost": 0.8999999999999999,
+          "costPerServing": "0.30"
+        }
+      },
+      {
+        "ingredient": "shrimps",
+        "issue": "Not found in master database"
+      },
+      {
+        "ingredient": "tilapia",
+        "issue": "📭 NO PRICE",
+        "details": {
+          "convertedG": 3,
+          "pricePerKg": 0,
+          "cost": 0.0855,
+          "costPerServing": "0.03"
+        }
+      }
+    ]
+  }
+]
