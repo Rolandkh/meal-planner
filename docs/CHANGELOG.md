@@ -2,6 +2,85 @@
 
 ## [Unreleased] - Ingredient Normalization System
 
+### ✨ Opus Session: Dictionary Optimization (January 10, 2026)
+
+**🎉 ACHIEVEMENT: 86.1% match rate with 311-ingredient dictionary, shopping list reduced to ~56 items**
+
+#### Summary
+Continued optimization work from Sonnet session. Focused on balancing match rate vs shopping list size through dictionary consolidation and fixing AI-generated recipe normalization.
+
+#### Dictionary Improvements (v4.0.0 → v9.0.0)
+- **Entries:** 214 → 311 ingredients (+97 entries)
+- **Match Rate:** 71.3% → 86.1% (+14.8 percentage points)
+- **Shopping List Items:** 100+ → ~56 items
+
+**Ingredients Added:**
+- Common produce: banana, blueberry, pumpkin, asparagus, radish, artichoke, fennel, turnip, brussels_sprouts
+- Proteins: tofu, tempeh, seitan, crab_meat, falafel
+- Grains: couscous, polenta, bulgur, elbow_macaroni, spaghetti
+- Nuts/Seeds: pine_nut, macadamia, pepita, chia_seeds, flax_seeds, hazelnut, cashew
+- Dairy: almond_milk, buttermilk, mascarpone
+- Sauces/Condiments: hoisin_sauce, sriracha, marinara_sauce, tzatziki, harissa, hummus, tabouleh
+- Spices/Herbs: tarragon, cardamom, marjoram, rosemary, saffron, herbs_de_provence, star_anise
+- Other: yeast, cocoa_powder, cornmeal, chocolate, ghee, nutritional_yeast, liquid_smoke, kombu, wonton_wrappers
+
+**Alias Consolidation:**
+- Added extensive aliases to: bacon, ginger, lemon, butter, bell_pepper, parsley, cream, olive_oil, vegetable_oil, cilantro, basil, tomato, onion, salt, cucumber, rice, juice_orange, parmesan_cheese, chicken_breast, chicken_whole
+
+#### Code Fixes
+
+**1. AI-Generated Recipe Normalization (CRITICAL)**
+- **File:** `src/utils/mealPlanTransformer.js`
+- **Problem:** AI-generated recipes (marked `fromCatalog: false`) were missing `normalizedIngredients`
+- **Fix:** Added call to `normalizeRecipeIngredients()` when creating new recipes
+- **Result:** All recipes now normalized before saving
+
+**2. Count-Based Item Display**
+- **File:** `src/utils/ingredientQuantities.js`
+- **Problem:** Whole items (peaches, bananas) showed "varies" instead of counts
+- **Fix:** Added `totalCount` tracking in `aggregateQuantities()` and updated `formatAggregated()`
+- **Result:** Now shows "5" for count-based items
+
+**3. Shopping List Quantity Display**
+- **File:** `src/components/ShoppingListView.js`
+- **Problem:** Quantities not displaying correctly, wrong field being used
+- **Fix:** Updated mapping to use `item.quantity` (pre-formatted string) for `displayText`
+- **Result:** Shows "160g", "1.3kg", "5" correctly
+
+**4. Ingredient Parsing Improvements**
+- **File:** `src/utils/ingredientParsing.js`
+- **Problem:** "4 servings ricotta cheese" not parsing correctly
+- **Fix:** Added "servings", "serving", "size" to `NOISE_WORDS`
+- **Result:** Strips noise words during parsing
+
+#### Scripts Created/Run
+- `scripts/consolidateDictionary.cjs` - Merged duplicate IDs, added missing ingredients
+- `scripts/addMissingIngredients.cjs` - Batch added common ingredients and aliases
+- `scripts/fixMissingAliases.cjs` - Fixed alias references
+- `scripts/reNormalizeCatalog.js` - Re-processed catalog after dictionary changes
+
+#### Testing Results
+- **Shopping List:** 56 items (down from 100+)
+- **Quantities:** Displaying correctly (e.g., "1.3kg yogurt", "5 peaches")
+- **Normalization Warnings:** 0 fallbacks (all recipes normalized)
+- **Match Rate:** 86.1%
+
+#### Files Modified
+- `src/data/ingredientMaster.json` - v9.0.0 with 311 entries
+- `src/utils/mealPlanTransformer.js` - Added normalization call
+- `src/utils/ingredientQuantities.js` - Added totalCount support
+- `src/components/ShoppingListView.js` - Fixed quantity display
+- `src/utils/ingredientParsing.js` - Added noise words
+- `src/utils/debugHelpers.js` - Added loadTestMealPlan helper
+
+#### Remaining Work
+- **Target:** 30-40 shopping list items (currently ~56)
+- **Approach:** Continue adding aliases for similar ingredients
+- **Storage:** Over quota (126.7% used) - needs cleanup
+- **Generation Time:** ~21s (acceptable)
+
+---
+
 ### ✨ Task 98: Spoonacular-Enhanced Normalization (COMPLETE)
 
 **🎉 ACHIEVEMENT: 89.4% ingredient match rate with 688-ingredient dictionary (+1.9% from baseline)**

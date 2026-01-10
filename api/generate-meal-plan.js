@@ -90,6 +90,63 @@ Guidelines:
 - Use 3-6 main ingredients for new recipes (keep it simple)
 - Include realistic estimated budget in dollars
 
+🛒 CRITICAL - SHOPPING LIST OPTIMIZATION (HIGHEST PRIORITY):
+Your PRIMARY goal is to create a meal plan with a MINIMAL shopping list (30-40 unique ingredients max).
+This is achieved by selecting recipes that SHARE COMMON INGREDIENTS.
+
+**INGREDIENT OVERLAP STRATEGY - FOLLOW THIS PROCESS:**
+
+STEP 1: Choose a "Core Ingredients Set" BEFORE selecting recipes:
+- Pick 2-3 PROTEINS to use throughout the week (e.g., chicken, salmon, eggs)
+- Pick 4-5 VEGETABLES to repeat (e.g., tomatoes, zucchini, bell peppers, spinach, onion)
+- Pick 2-3 GRAINS/STARCHES (e.g., rice, pasta, quinoa)
+- Pick 1-2 DAIRY items (e.g., greek yogurt, feta cheese)
+- Use standard PANTRY STAPLES (olive oil, garlic, lemon, salt, pepper)
+
+STEP 2: Select recipes that use your core ingredients:
+- For EACH recipe you consider, check: "Does this share ingredients with other meals?"
+- PREFER recipes that reuse your core proteins and vegetables
+- AVOID introducing one-off ingredients (e.g., if only one recipe needs duck, skip it)
+
+STEP 3: Plan meals in clusters around shared ingredients:
+- If you use salmon on Monday, plan to use salmon again on Wednesday or Thursday
+- If a recipe uses zucchini, find 2-3 other recipes that also use zucchini
+- Breakfast items should share with each other (same fruits, yogurt, eggs across the week)
+
+**GOOD INGREDIENT REUSE EXAMPLES:**
+
+Example 1 - Protein Reuse:
+- Monday Dinner: Lemon Herb Salmon (uses: salmon, lemon, herbs)
+- Wednesday Lunch: Salmon Quinoa Bowl (uses: salmon, quinoa, vegetables)
+- Result: Salmon bought ONCE, used TWICE
+
+Example 2 - Vegetable Reuse:
+- Monday: Mediterranean Salad (tomatoes, cucumber, feta)
+- Tuesday: Greek Chicken (tomatoes, feta, olives)
+- Thursday: Shakshuka (tomatoes, eggs)
+- Result: Tomatoes bought ONCE, used THREE TIMES
+
+Example 3 - Breakfast Consistency:
+- All 7 breakfasts: Greek yogurt + rotating toppings (honey, berries, banana)
+- Result: ONE yogurt type, 3-4 topping ingredients for the whole week
+
+**BAD PATTERNS TO AVOID:**
+
+❌ DON'T: Choose beef on Monday, duck on Tuesday, lamb on Wednesday, pork on Thursday
+✅ DO: Choose chicken for 3-4 dinners, salmon for 2 lunches
+
+❌ DON'T: Different protein in every meal (7 different proteins = 7 shopping items)
+✅ DO: 2-3 proteins across 21 meals = efficient shopping
+
+❌ DON'T: Artichoke in one recipe only (one-off ingredient)
+✅ DO: Common vegetables (bell peppers, tomatoes, spinach) that appear in 3+ recipes
+
+**WHEN SELECTING FROM CATALOG:**
+Before finalizing your recipe choices, mentally group them by main ingredients:
+- "These 4 recipes all use chicken breast" ✓
+- "These 3 recipes all use cherry tomatoes" ✓
+- "This recipe is the only one using mango" ✗ (find an alternative or skip)
+
 ⚠️ CRITICAL - RECIPE SELECTION STRATEGY:
 - The user has a LOCAL CATALOG of 494+ professionally-tested recipes with complete details
 - Catalog includes: 26 cuisines, 15 protein types, 34 breakfasts, 18 curries, 11 stir-fries, plus soups, salads, and more
@@ -98,6 +155,7 @@ Guidelines:
 - Only create NEW recipes when the catalog truly has no suitable options for a specific meal
 - The catalog has already been filtered for the household's diet profiles and exclusions
 - Using catalog recipes is BETTER: verified ingredients, health scores, proven quality, PLUS saves tokens!
+- **When browsing the catalog, look at the (main ingredients) shown for each recipe and SELECT recipes with overlapping ingredients**
 
 CRITICAL - Servings:
 - CAREFULLY READ THE CONVERSATION to understand household composition and schedule
@@ -439,19 +497,28 @@ For EACH of the 21 meals (7 days × 3 meals), you MUST:
 
   // Build ingredient constraint
   let ingredientConstraint = '';
-  const maxItems = baseSpec?.maxShoppingListItems || 30;
+  const maxItems = baseSpec?.maxShoppingListItems || 35;
   
-  ingredientConstraint = `\n\nCRITICAL - INGREDIENT LIMIT:
-The shopping list must have NO MORE THAN ${maxItems} unique ingredients total across all 21 meals.
+  ingredientConstraint = `\n\n🎯 SHOPPING LIST TARGET: ${maxItems} UNIQUE INGREDIENTS MAXIMUM
 
-To achieve this:
-- REUSE ingredients across multiple meals (e.g., use salmon 3 times instead of salmon, cod, tuna, sardines, mackerel)
-- Choose recipes with overlapping ingredients
-- Use pantry staples (olive oil, salt, pepper, etc.) across many meals
-- Limit variety in proteins (pick 2-3 fish types, not 5)
-- Reuse vegetables (if you use zucchini Monday, use it again Wednesday)
+This is a HARD CONSTRAINT. The user needs a simple, focused shopping list.
 
-This constraint is CRITICAL for keeping shopping simple and costs down.`;
+**YOUR CORE INGREDIENTS SET FOR THIS WEEK:**
+Before selecting any recipes, mentally commit to:
+- 2-3 proteins (e.g., chicken + salmon + eggs)
+- 4-5 vegetables (e.g., tomatoes, zucchini, spinach, bell peppers, onion)
+- 2-3 grains (e.g., rice, pasta, quinoa)
+- 1-2 dairy (e.g., greek yogurt, feta)
+- Standard pantry (olive oil, garlic, lemon, herbs)
+
+Then SELECT ONLY recipes that use these core ingredients. Reject recipes that introduce unique one-off items.
+
+**CALCULATION CHECK:**
+- Proteins (3) + Vegetables (5) + Grains (3) + Dairy (2) + Pantry (8) = ~21 base ingredients
+- This leaves room for ~14 specialty items across 21 meals
+- Each specialty item should appear in 2+ recipes to justify its inclusion
+
+If you find yourself adding a 4th protein or 6th vegetable, STOP and reconsider your recipe choices.`;
 
   // Slice 5: Add catalog information to prompt
   let catalogInfo = '';

@@ -1,122 +1,125 @@
 # Current State - Ingredient Normalization
 **Date:** January 10, 2026  
-**Time:** 12:40 PM  
-**Status:** Ready for Opus optimization
+**Last Updated:** After Opus Session  
+**Status:** ✅ Significant improvements achieved
 
 ---
 
 ## ⚡ Quick Status
 
-**Shopping List:** ~40-60 items (down from 100+)  
-**Dictionary:** 214 core ingredients (v4.0.0)  
-**Match Rate:** 71.2% (trade-off for cleaner lists)  
-**Code:** All working, syntax fixed  
-**Testing:** Needs browser validation
+| Metric | Value | Target | Status |
+|--------|-------|--------|--------|
+| Shopping List | ~56 items | 30-40 | ⚠️ Close |
+| Dictionary | 311 entries (v9.0.0) | 250-300 | ✅ |
+| Match Rate | 86.1% | 90%+ | ⚠️ Close |
+| AI Recipe Normalization | ✅ Working | N/A | ✅ |
+| Quantities Display | ✅ Correct | N/A | ✅ |
 
 ---
 
-## ✅ What Works
+## ✅ What's Working
 
-1. ✅ App loads without errors
-2. ✅ Shopping list generates (not "undefined")
-3. ✅ Catalog has 516 curated recipes
-4. ✅ Normalized ingredients have quantities
-5. ✅ Dictionary has no duplicates (214 unique IDs)
-6. ✅ Comprehensive documentation and scripts
-
----
-
-## ⚠️ What Needs Work
-
-1. **Shopping list size** - Should be ~30-40, might still be higher
-2. **Match rate** - 71.2% is low (was 93.7%), need balance
-3. **AI-generated recipes** - 6 recipes not normalized
-4. **Serving counts** - Wrong servings in meal plan (separate issue)
-5. **Storage** - 135% over quota (may cause issues)
+1. ✅ All recipes normalized (no fallback warnings)
+2. ✅ Shopping list generates with quantities
+3. ✅ Count-based items display correctly (e.g., "5 peaches")
+4. ✅ Weight-based items display correctly (e.g., "1.3kg yogurt")
+5. ✅ AI-generated recipes get normalized before saving
+6. ✅ 86.1% ingredient match rate
+7. ✅ 516 curated catalog recipes
+8. ✅ 311 ingredients with comprehensive aliases
 
 ---
 
-## 🎯 The Core Problem
+## ⚠️ What Still Needs Work
 
-**Spoonacular integration was wrong:**
-- Added 90 ingredients as NEW entries
-- Should have added as ALIASES to existing
-- Example: "non-fat greek yogurt" → NEW ID (wrong) vs ALIAS (correct)
-- Result: Too many unique IDs → too many shopping list items
-
-**Current fix:**
-- Trimmed to 214 CORE ingredients (used ≥5×)
-- This reduces shopping items but also match rate
-- **Need to find balance**
+1. **Shopping list size** - 56 items (target: 30-40)
+   - Need more alias consolidation
+   
+2. **Match rate** - 86.1% (target: 90%+)
+   - Add remaining common ingredients
+   
+3. **Storage quota** - 126.7% used (6.34MB / 5MB)
+   - May cause localStorage issues
+   - Need to clean old data
 
 ---
 
-## 💡 Recommendations for Opus
+## 🔧 Recent Fixes (Opus Session)
 
-### Goal: 90% match rate + 30-40 shopping items
+### 1. AI-Generated Recipe Normalization ✅
+- **File:** `mealPlanTransformer.js`
+- Now calls `normalizeRecipeIngredients()` on new recipes
+- All recipes have `normalizedIngredients` array
 
-**Approach:**
-1. Start with 214 core dictionary
-2. Add ~50-100 more ingredients (used 2-4× in catalog)
-3. **CRITICAL:** Use aggressive alias consolidation:
-   - All yogurt → "yogurt" + aliases
-   - All olive oil → "olive_oil" + aliases
-   - All cheese types → base cheese + aliases
-4. Target: 250-300 ingredients with smart aliasing
+### 2. Count-Based Item Display ✅
+- **File:** `ingredientQuantities.js`
+- Added `totalCount` tracking
+- Shows "5" for peaches, not "varies"
 
-**Files to modify:**
-- `src/data/ingredientMaster.json` - Add ingredients with aliases
-- Run `scripts/reNormalizeCatalog.js` after changes
-- Test in browser
+### 3. Quantity Display ✅
+- **File:** `ShoppingListView.js`
+- Uses pre-formatted `displayText`
+- Shows "160g", "1.3kg" correctly
+
+### 4. Dictionary Expansion ✅
+- **File:** `ingredientMaster.json`
+- 214 → 311 entries
+- Added 97 common ingredients + extensive aliases
 
 ---
 
 ## 📁 Key Files
 
 **Dictionary:**
-- `src/data/ingredientMaster.json` (214 entries, 71.2% match)
+- `src/data/ingredientMaster.json` (311 entries, v9.0.0)
+
+**Modified This Session:**
+- `src/utils/mealPlanTransformer.js` - Added normalization
+- `src/utils/ingredientQuantities.js` - Added totalCount
+- `src/components/ShoppingListView.js` - Fixed display
+- `src/utils/ingredientParsing.js` - Added noise words
 
 **Scripts:**
-- `scripts/reNormalizeCatalog.js` - Re-normalize after dictionary changes
-- `scripts/buildCleanCoreDictionary.js` - How we got to 214 entries
-- `scripts/evaluateNormalizationImprovements.js` - Check match rate
-
-**Backups:**
-- `tmp/dictionary_before_comprehensive_fix.json` - 654 entries (has more ingredients)
-- `tmp/catalog_backup_before_cleanup.json` - Original 622 recipes
+- `scripts/reNormalizeCatalog.js` - Re-normalize catalog
+- `scripts/consolidateDictionary.cjs` - Add ingredients
+- `scripts/addMissingIngredients.cjs` - Batch add
 
 ---
 
 ## 🧪 Quick Tests
 
-**Check shopping list:**
-```
-Refresh browser → Navigate to Shopping List
-Count items - should be ~40-60 (not 100+)
+**Test shopping list:**
+```javascript
+// In browser console
+window.debug.loadTestMealPlan()
+// Navigate to #/shopping-list
+// Count items - should be ~56
 ```
 
 **Check match rate:**
 ```bash
-node scripts/evaluateNormalizationImprovements.js | grep "TOTAL MATCH RATE"
-```
-
-**Check dictionary:**
-```bash
-node -e "const m = require('./src/data/ingredientMaster.json'); console.log('Entries:', m._totalEntries)"
+node scripts/reNormalizeCatalog.js
+# Look for match statistics in output
 ```
 
 ---
 
-## 🎯 Success Criteria
+## 🎯 Next Steps (For Future Session)
 
-- ✅ Shopping list: 30-50 items
-- ✅ Match rate: 85-90%
-- ✅ No obvious duplicates
-- ✅ All quantities present
-- ✅ Fast performance
+1. **Reduce shopping list to 30-40 items**
+   - Add more aliases for similar ingredients
+   - Focus on: cheese varieties, tomato varieties, oil types
+
+2. **Improve match rate to 90%+**
+   - Add remaining common unmatched ingredients
+   - Run analysis to find top unmatched items
+
+3. **Address storage quota**
+   - Clear old meal plans
+   - Optimize catalog size if needed
 
 ---
 
-**Status:** Ready for optimization  
-**Next Step:** Balance dictionary size vs match rate  
-**Good Luck!** 🚀
+**Status:** ✅ Ready for production testing  
+**Last Session:** Opus (Jan 10, 2026)  
+**Documentation:** `docs/sessions/2026-01-10-opus-session.md`
