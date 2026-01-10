@@ -11,12 +11,19 @@
  * CRITICAL: Preparation terms are instructions, NOT shopping list items!
  */
 
-import { ingredientMaster } from './ingredientMaster.js';
+import { getAllMasterIngredients } from './ingredientMaster.js';
 
-// Build state lookup from master dictionary (cached at module load)
-const STATE_LOOKUP = new Map();
-if (ingredientMaster) {
-  Object.entries(ingredientMaster).forEach(([id, ing]) => {
+// Build state lookup from master dictionary (lazy-loaded on first use)
+let STATE_LOOKUP = null;
+
+async function ensureStateLookup() {
+  if (STATE_LOOKUP) return STATE_LOOKUP;
+  
+  STATE_LOOKUP = new Map();
+  const allIngredients = await getAllMasterIngredients();
+  
+  for (const ing of allIngredients) {
+    const id = ing.id;
     // Add ID
     STATE_LOOKUP.set(id.replace(/_/g, ' '), ing.state);
     STATE_LOOKUP.set(id, ing.state);
@@ -27,10 +34,11 @@ if (ingredientMaster) {
         STATE_LOOKUP.set(alias.toLowerCase(), ing.state);
       });
     }
-  });
+  }
+  
+  console.log(`📚 Ingredient parser loaded with ${STATE_LOOKUP.size} state mappings from dictionary`);
+  return STATE_LOOKUP;
 }
-
-console.log(`📚 Ingredient parser loaded with ${STATE_LOOKUP.size} state mappings from dictionary`);
 
 // Preparation keywords (instructions, NOT identity)
 export const PREPARATION_KEYWORDS = [
@@ -203,9 +211,11 @@ function extractQuantityAndUnit(text) {
 /**
  * Classify tokens into identity, state, and preparation
  * @param {string[]} tokens - Array of word tokens
- * @returns {{identity: string[], state: string, preparation: string[]}}
+ * @returns {Promise<{identity: string[], state: string, preparation: string[]}>}
  */
-function classifyTokens(tokens) {
+async function classifyTokens(tokens) {
+  await ensureStateLookup();
+  
   const identityTokens = [];
   const preparationTokens = [];
   let state = null; // will be determined
@@ -279,9 +289,9 @@ function classifyTokens(tokens) {
 /**
  * Parse a raw ingredient string into structured components
  * @param {string} rawText - Raw ingredient text (e.g., "1 cup chopped onion")
- * @returns {Object} Parsed ingredient object
+ * @returns {Promise<Object>} Parsed ingredient object
  */
-export function parseIngredient(rawText) {
+export async function parseIngredient(rawText) {
   if (!rawText || typeof rawText !== 'string') {
     return {
       raw: '',
@@ -317,7 +327,7 @@ export function parseIngredient(rawText) {
   const tokens = cleanText.split(' ').filter(t => t.length > 0);
   
   // Classify tokens
-  const { identity, state, preparation } = classifyTokens(tokens);
+  const { identity, state, preparation } = await classifyTokens(tokens);
   
   // Build identity text (what you actually buy)
   const identityText = identity.join(' ');
@@ -336,8 +346,8 @@ export function parseIngredient(rawText) {
  * Helper: Extract just the identity and preparation from tokens
  * (Exposed for testing)
  */
-export function extractIdentityAndPreparation(tokens) {
-  return classifyTokens(tokens);
+export async function extractIdentityAndPreparation(tokens) {
+  return await classifyTokens(tokens);
 }
 
 export default {
