@@ -29,7 +29,12 @@ export function buildNormalizedShoppingList(recipes, usageCounts = {}, mode = 'c
   let totalIngredientsProcessed = 0;
   
   recipes.forEach(recipe => {
-    const usageMultiplier = usageCounts[recipe.recipeId] || 1;
+    const totalServingsNeeded = usageCounts[recipe.recipeId] || 1;
+    const recipeBaseServings = recipe.servings || 1;
+    
+    // CRITICAL FIX: Scale by (totalServingsNeeded / recipeBaseServings)
+    // This accounts for recipes that may have different base serving sizes
+    const scalingFactor = totalServingsNeeded / recipeBaseServings;
     
     // Prefer normalizedIngredients if available
     if (recipe.normalizedIngredients && recipe.normalizedIngredients.length > 0) {
@@ -61,12 +66,12 @@ export function buildNormalizedShoppingList(recipes, usageCounts = {}, mode = 'c
         
         const bucket = ingredientBuckets.get(key);
         
-        // Add quantity (scaled by usage)
+        // Add quantity (scaled by total servings / base servings)
         const scaledQuantity = {
-          originalQuantity: ing.quantity.originalQuantity ? ing.quantity.originalQuantity * usageMultiplier : null,
+          originalQuantity: ing.quantity.originalQuantity ? ing.quantity.originalQuantity * scalingFactor : null,
           originalUnit: ing.quantity.originalUnit,
-          normalizedQuantityG: ing.quantity.normalizedQuantityG ? ing.quantity.normalizedQuantityG * usageMultiplier : null,
-          normalizedQuantityMl: ing.quantity.normalizedQuantityMl ? ing.quantity.normalizedQuantityMl * usageMultiplier : null
+          normalizedQuantityG: ing.quantity.normalizedQuantityG ? ing.quantity.normalizedQuantityG * scalingFactor : null,
+          normalizedQuantityMl: ing.quantity.normalizedQuantityMl ? ing.quantity.normalizedQuantityMl * scalingFactor : null
         };
         
         bucket.quantities.push(scaledQuantity);

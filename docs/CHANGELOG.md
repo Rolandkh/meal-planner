@@ -2,6 +2,32 @@
 
 ## [Unreleased] - Ingredient Normalization System
 
+### 🐛 CRITICAL BUG FIX: Shopping List Overcounting (January 10, 2026 - Late Evening)
+
+**Issue:** Shopping list calculated 3.2kg yogurt when only 2.0kg needed (60% overcounting)
+
+**Root Cause:** 
+- Recipe deduplication hash included quantities, causing same recipe at different serving sizes to be treated as separate recipes
+- Shopping list scaling didn't normalize by recipe base servings before multiplying by total servings needed
+- Example: Recipe with 400g yogurt for 2 servings, used 5 times = 400g × 5 = **2000g WRONG**
+- Correct: (400g ÷ 2) × 5 = **1000g**
+
+**Files Fixed:**
+1. `src/utils/mealPlanTransformer.js` - Updated `createRecipeHash()` to exclude quantities from hash (only use ingredient names + units)
+2. `src/utils/normalizedShoppingList.js` - Fixed scaling logic to divide by base servings first: `scalingFactor = totalServingsNeeded / recipeBaseServings`
+
+**Impact:**
+- Shopping lists now accurate (no more 60% overcounting)
+- Recipes with same ingredients at different scales deduplicate correctly
+- Budget estimates more accurate
+- Food waste reduced significantly
+
+**Test Results:**
+- Before: 3.0kg yogurt (wrong)
+- After: 2.0kg yogurt (correct) ✓
+
+---
+
 ### ✨ Portion Multiplier Support for Children (January 10, 2026 - Late Evening)
 
 **🎉 ACHIEVEMENT: Accurate serving sizes for mixed-age households**

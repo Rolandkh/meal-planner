@@ -16,18 +16,25 @@ import { normalizeRecipeIngredients } from '../pipelines/normalizeRecipeIngredie
 
 /**
  * Create a hash for recipe deduplication
+ * Uses name + ingredient NAMES (not quantities) to detect same recipe at different scales
+ * 
  * @param {Object} recipe - Recipe object
  * @returns {string} Hash string
+ * 
+ * CRITICAL FIX: Exclude quantities from hash!
+ * "Greek Yogurt" with 200g yogurt = same as "Greek Yogurt" with 400g yogurt
+ * The quantities differ because servings differ, but it's the SAME RECIPE.
  */
 function createRecipeHash(recipe) {
   const name = (recipe.name || '').toLowerCase().trim();
   
+  // Use only ingredient NAMES and UNITS, NOT quantities
+  // This ensures same recipe at different serving sizes deduplicates correctly
   const ingredientsStr = (recipe.ingredients || [])
     .map(ing => {
       const ingName = (ing.name || '').toLowerCase().trim();
-      const quantity = ing.quantity || '';
       const unit = (ing.unit || '').toLowerCase().trim();
-      return `${ingName}:${quantity}:${unit}`;
+      return `${ingName}:${unit}`;  // Removed quantity from hash
     })
     .sort()
     .join('|');

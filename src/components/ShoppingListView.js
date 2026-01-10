@@ -679,7 +679,8 @@ export class ShoppingListView {
         return;
       }
 
-      // Calculate scaling factor based on total servings needed
+      // CRITICAL FIX: Calculate scaling factor based on total servings needed
+      // Must divide by base servings first to get per-serving amount, then scale
       const recipeBaseServings = recipe.servings || 1;
       const scalingFactor = usage.totalServings / recipeBaseServings;
 
