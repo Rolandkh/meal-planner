@@ -49,9 +49,23 @@ export function normalizeRecipeIngredients(recipe) {
   
   for (const rawIngredient of recipe.ingredients) {
     // Handle both string and object formats
-    const rawText = typeof rawIngredient === 'string' 
-      ? rawIngredient 
-      : (rawIngredient.name || rawIngredient.ingredient || '');
+    let rawText;
+    if (typeof rawIngredient === 'string') {
+      rawText = rawIngredient;
+    } else {
+      // Object format: reconstruct ingredient string from parts
+      const quantity = rawIngredient.quantity || '';
+      const unit = rawIngredient.unit || '';
+      const name = rawIngredient.name || rawIngredient.ingredient || '';
+      
+      if (!name) {
+        diagnostics.unmatched++;
+        continue;
+      }
+      
+      // Reconstruct as "quantity unit name"
+      rawText = `${quantity} ${unit} ${name}`.trim();
+    }
     
     if (!rawText) {
       diagnostics.unmatched++;
