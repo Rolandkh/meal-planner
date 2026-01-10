@@ -37,7 +37,9 @@ export const PREPARATION_KEYWORDS = [
   'chopped', 'diced', 'minced', 'sliced', 'grated', 'shredded',
   'crushed', 'ground', 'peeled', 'trimmed', 'halved', 'quartered',
   'finely', 'roughly', 'coarsely', 'thinly', 'thickly',
-  'julienned', 'cubed', 'mashed', 'pureed', 'crumbled'
+  'julienned', 'cubed', 'mashed', 'pureed', 'crumbled',
+  'poached', 'roasted', 'grilled', 'baked', 'fried', 'boiled', 'steamed',
+  'blanched', 'sauteed', 'braised', 'stewed'
 ];
 
 // State keywords (product identity modifiers)
@@ -52,12 +54,26 @@ export const STATE_KEYWORDS = {
 // Quality/size descriptors to remove (not identity)
 const QUALITY_DESCRIPTORS = [
   'large', 'small', 'medium', 'extra', 'jumbo', 'baby',
-  'ripe', 'firm', 'soft', 'tender', 'young',
-  'organic', 'free-range', 'grass-fed', 'wild-caught'
+  'ripe', 'firm', 'soft', 'tender', 'young', 'over-ripe', 'under-ripe',
+  'organic', 'free-range', 'grass-fed', 'wild-caught',
+  'aged', 'mature', 'premium', 'quality'
 ];
 
 // Noise words to remove (packaging/misc)
-const NOISE_WORDS = ['can', 'of', 'servings', 'serving', 'size'];
+const NOISE_WORDS = ['can', 'of', 'servings', 'serving', 'size', 'cube', 'equivalent', 'amount', 
+                     'sheets', 'sheet', 'san', 'marzano', 'or', 'pkg', 'pkt', 'package',
+                     'head', 'bunch', 'bag', 'several', 'sprinkle', 'remove', 'steam'];
+
+// Vague quantity unit conversions (grams)
+const VAGUE_UNITS_TO_GRAMS = {
+  'handful': 80,      // Average handful ~80g
+  'dash': 0.3,        // Less than 1/8 tsp
+  'pinch': 0.5,       // 1/8 tsp
+  'smidgen': 0.25,    // Even smaller
+  'sprig': 3,         // Fresh herb sprig
+  'leaf': 2,          // Average leaf (varies by herb)
+  'bunch': 100        // Average bunch
+};
 
 // Unit normalization map
 export const UNIT_ALIASES = {
@@ -76,8 +92,14 @@ export const UNIT_ALIASES = {
   
   // Count
   'whole': ['whole', 'piece', 'pieces', 'clove', 'cloves', 'head', 'heads', 
-            'bunch', 'bunches', 'stalk', 'stalks', 'sprig', 'sprigs',
-            'leaf', 'leaves', 'pinch', 'dash']
+            'bunch', 'bunches', 'stalk', 'stalks'],
+  
+  // Vague units (will be converted to grams)
+  'handful': ['handful', 'handfull', 'handfulls'],
+  'sprig': ['sprig', 'sprigs'],
+  'leaf': ['leaf', 'leaves'],
+  'dash': ['dash'],
+  'pinch': ['pinch', 'pinches']
 };
 
 /**
@@ -151,7 +173,8 @@ function normalizeUnit(unit) {
 function extractQuantityAndUnit(text) {
   // Match patterns like:
   // "1 cup", "2.5 tbsp", "½ tsp", "1 1/2 cups", "150g", "2 cloves"
-  const quantityUnitPattern = /^([\d\.\s\/]+)\s*(cups?|tbsps?|tablespoons?|tsps?|teaspoons?|oz|ounces?|lbs?|pounds?|g|grams?|kg|ml|milliliters?|l|liters?|whole|cloves?|bunch|head|stalk|sprig|pinch|dash)?\b/i;
+  // ENHANCED: Now includes "handful", "leaf/leaves", "sprig/sprigs"
+  const quantityUnitPattern = /^([\d\.\s\/]+)\s*(cups?|tbsps?|tablespoons?|tsps?|teaspoons?|oz|ounces?|lbs?|pounds?|g|grams?|kg|ml|milliliters?|l|liters?|whole|cloves?|bunch|head|stalk|sprigs?|pinch|dash|handfull?s?|lea(?:f|ves))?\b/i;
   
   const match = text.match(quantityUnitPattern);
   
@@ -270,11 +293,19 @@ export function parseIngredient(rawText) {
     };
   }
   
+  // PRE-PROCESS: Fix formatting errors
+  let preprocessed = rawText;
+  preprocessed = preprocessed.replace(/&/g, ' and ');            // Fix "basil& oregano" → "basil and oregano"
+  preprocessed = preprocessed.replace(/\bover-ripe\b/gi, '');    // Remove "over-ripe"
+  preprocessed = preprocessed.replace(/\baged\b/gi, '');         // Remove "aged"
+  preprocessed = preprocessed.replace(/\bsan marzano\b/gi, '');  // Remove brand name
+  preprocessed = preprocessed.trim();
+  
   // Convert fractions to decimals
-  const textWithDecimals = convertFractionsToDecimals(rawText);
+  const textWithDecimals = convertFractionsToDecimals(preprocessed);
   
   // Extract quantity and unit
-  const { quantity, unit, remaining } = extractQuantityAndUnit(textWithDecimals);
+  let { quantity, unit, remaining } = extractQuantityAndUnit(textWithDecimals);
   
   // Clean remaining text
   let cleanText = remaining

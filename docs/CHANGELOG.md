@@ -1,5 +1,319 @@
 # Changelog
 
+## [v10.0.0] - Enhanced Ingredient Catalog & Import Pipeline (January 10, 2026)
+
+### 🎉 MAJOR RELEASE: Complete Ingredient Normalization System
+
+This release represents a fundamental transformation of the Meal Planner's ingredient and recipe systems, introducing comprehensive nutrition tracking, price awareness, and intelligent recipe normalization.
+
+---
+
+## [v10.0.0] - Enhanced Ingredient Catalog System (January 10, 2026)
+
+### 🆕 Major Feature: Comprehensive Ingredient Data Model
+
+**Overview:**
+Expanded the ingredient master catalog to include complete nutrition, pricing, and cooking method data. This enables accurate meal planning nutrition calculations, budget estimates, and health tracking across all recipes.
+
+**New Schema Fields:**
+
+1. **Pricing Data:**
+   - Average price per retail unit (AUD, Melbourne region)
+   - Typical retail unit (kg, L, pack, bunch, etc.)
+   - Unit size descriptions
+   - Source tracking (manual, Coles, Woolworths)
+   - Last updated timestamps
+
+2. **Base Nutrition Data** (per 100g raw):
+   - Complete macronutrients (calories, protein, carbs, fat, fiber, sugar, saturated fat)
+   - Sodium and cholesterol
+   - ALL vitamins from Spoonacular (A, C, D, E, K, B-complex, etc.)
+   - ALL minerals (calcium, iron, magnesium, phosphorus, potassium, zinc, etc.)
+   - Spoonacular ID for data tracking
+   - Source metadata
+
+3. **Nutrition by Preparation Method:**
+   - Multipliers for 7 cooking methods: raw, grilled, baked, fried, boiled, steamed, air-fried
+   - Research-backed adjustments for nutrient changes during cooking
+   - Special handling for water loss, fat loss, oil absorption
+   - Ingredient-type-specific adjustments (meat vs vegetables vs fish)
+   - Detailed notes on cooking conditions
+
+**New Files Created:**
+
+- `src/utils/spoonacularNutrition.js` - Spoonacular API integration (browser)
+- `scripts/spoonacularNutrition.cjs` - Spoonacular API integration (Node.js)
+- `src/utils/nutritionMultipliers.js` - Cooking method multiplier utilities
+- `references/nutrition-multipliers.json` - Research-backed multiplier database
+- `scripts/collectPricingData.cjs` - Interactive pricing collection tool
+- `scripts/enrichIngredientCatalog.cjs` - Automated catalog enrichment script
+- `references/pricing-template.csv` - Pricing data template
+
+**Documentation Updates:**
+
+- `docs/ingredients/master-dictionary.md` - Complete schema documentation with examples
+- Added sections on pricing data, nutrition data, preparation multipliers
+- Updated schema TypeScript definition
+- Added data population process documentation
+
+**Research & Data Sources:**
+
+- **Nutrition:** Spoonacular API, USDA FoodData Central
+- **Cooking Multipliers:** Research studies, USDA raw vs cooked comparisons, culinary science
+- **Pricing:** Manual research from Coles and Woolworths (Melbourne, VIC)
+
+**Version Updates:**
+
+- Ingredient Master: v9.0.1 → v10.0.0
+- Schema now includes: pricing, nutritionBase, nutritionByPreparation
+
+**Impact:**
+
+- Enables accurate nutrition tracking for meal plans
+- Supports budget-aware meal planning
+- Allows cooking method selection with nutrition awareness
+- Foundation for personalized diet profiles
+- Better shopping list cost estimates
+
+**Usage:**
+
+```bash
+# Collect pricing data interactively
+node scripts/collectPricingData.cjs
+
+# Enrich catalog with nutrition and pricing
+node scripts/enrichIngredientCatalog.cjs --pricing=tmp/pricing-data-123.json
+
+# Enrich specific range (e.g., ingredients 1-50)
+node scripts/enrichIngredientCatalog.cjs --start=0 --end=50
+```
+
+**Files Modified:**
+
+- `src/data/ingredientMaster.json` - Schema expansion (v10.0.0)
+- `docs/ingredients/master-dictionary.md` - Complete documentation update
+
+---
+
+### 🆕 Major Feature: Comprehensive Melbourne Ingredient Database
+
+**Overview:**
+Expanded ingredient catalog from 311 to **1,029 ingredients** covering the complete range of ingredients available at Melbourne supermarkets (Coles, Woolworths).
+
+**Coverage:**
+- Vegetables (fresh): 80+ varieties including leafy greens, root vegetables, cruciferous, nightshades, squash
+- Fruits (fresh): 50+ varieties including citrus, stone fruits, berries, tropical, melons
+- Fresh herbs: 18 varieties
+- Meat & poultry: 90+ cuts and varieties (beef, lamb, pork, chicken, turkey, duck)
+- Seafood: 50+ fresh and canned varieties
+- Dairy & eggs: 80+ products (milk, cream, cheese, yoghurt, eggs, plant milks)
+- Grains & pasta: 60+ varieties (rice, pasta, noodles, oats, quinoa, breads)
+- Legumes: 20+ canned and dried varieties
+- Nuts & seeds: 30+ varieties including nut butters
+- Oils & vinegars: 25+ cooking oils and vinegars
+- Condiments & sauces: 80+ Asian, Western, and specialty sauces
+- Spices & seasonings: 100+ ground, whole, dried herbs, and blends
+- Baking essentials: 60+ flours, sugars, leaveners, chocolate, dried fruits
+- Canned goods: 40+ canned vegetables, fruits, and stocks
+- Frozen foods: 30+ frozen vegetables, fruits, and pastry
+- Beverages: 20+ cooking wines, stocks, and other liquids
+
+**Australian/Melbourne Specifics:**
+- Proper Australian names (capsicum not bell pepper, zucchini not courgette)
+- Melbourne-specific varieties (Wombok cabbage, Kipfler potatoes, etc.)
+- Common Australian brands and products (Vegemite, chicken salt, etc.)
+- Coles/Woolworths stock availability focus
+
+**Alias System:**
+- Comprehensive Australian → International mappings
+- Product state variants (fresh vs frozen vs canned)
+- Brand name → generic mappings
+- Common misspellings and variations
+
+**New Scripts Created:**
+- `scripts/parseMelbourneList.cjs` - Part 1 parser
+- `scripts/addMelbourneIngredients_Part2.cjs` - Herbs, meat, seafood
+- `scripts/addMelbourneIngredients_Part3.cjs` - Dairy, grains, legumes, nuts
+- `scripts/addMelbourneIngredients_Part4.cjs` - Spices, baking, canned, frozen
+- `scripts/enrichNewIngredients.cjs` - Batch enrichment for new ingredients
+- `scripts/fixMissingIds.cjs` - Utility to fix catalog integrity issues
+
+**Ingredient Count:**
+- Original: 311 ingredients
+- Added: 718 Melbourne ingredients
+- **Total: 1,029 ingredients**
+
+**Enrichment Status:**
+- ~650 ingredients with full Spoonacular nutrition data
+- 1,029 ingredients with cooking method multipliers
+- Estimated coverage: 85-90% of common recipe ingredients
+
+---
+
+### 🆕 Major Feature: Recipe Import Pipeline with Normalization
+
+**Overview:**
+Complete recipe import pipeline that normalizes ingredients, enhances instructions, and ensures data quality.
+
+**Import Flow:**
+```
+User Pastes Recipe Text
+        ↓
+AI Extraction (Claude)
+        ↓
+Ingredient Normalization (match to 1,029 catalog)
+        ↓
+User Review (if unmatched ingredients)
+        ↓
+Add New Ingredients (with AI research)
+        ↓
+Instruction Enhancement (insert quantities)
+        ↓
+Recipe Formatting (standardize display)
+        ↓
+Save Complete Recipe
+```
+
+**New API Endpoints:**
+
+1. **`/api/extract-recipe-v2`** - Enhanced extraction
+   - Preserves original units for better matching
+   - Extracts preparation methods
+   - Higher token limit for complex recipes
+
+2. **`/api/normalize-ingredients`** - Ingredient normalization
+   - Matches ingredients to master catalog
+   - Calculates confidence scores
+   - Generates smart suggestions
+   - Returns review flags
+
+3. **`/api/research-ingredient`** - AI ingredient research
+   - Searches Spoonacular
+   - Researches metadata (density, pricing, aliases)
+   - Suggests substitutes
+   - Returns complete ingredient data
+
+4. **`/api/add-ingredient`** - Add to catalog
+   - Validates new ingredient data
+   - Updates master catalog file
+   - Returns updated catalog stats
+
+**New Components:**
+
+- `src/components/IngredientReviewModal.js` - Modal for reviewing unmatched ingredients
+  - Shows ingredient in recipe context
+  - Provides searchable ingredient list
+  - Smart suggestions with confidence scores
+  - Add new or skip options
+
+- `src/components/AddIngredientDialog.js` - Dialog for adding new ingredients
+  - Collects metadata from user
+  - Triggers AI research
+  - Shows confirmation with research results
+  - Adds to catalog
+
+**New Utilities:**
+
+- `src/utils/instructionEnhancer.js` - Instruction enhancement
+  - Finds ingredient mentions in text
+  - Inserts quantities inline
+  - Adds helpful equivalents (cups, whole items)
+  - Boldifies ingredient mentions
+
+- `src/utils/recipeFormatter.js` - Recipe formatting
+  - Standardizes step numbering
+  - Ensures proper spacing
+  - Consistent temperature/time formatting
+  - Validates instruction format
+  - Converts to HTML for display
+
+- `src/utils/recipeImportOrchestrator.js` - Pipeline orchestrator
+  - Coordinates entire import flow
+  - Manages state between steps
+  - Handles user interactions
+  - Single entry point for imports
+
+**Features:**
+
+✅ **Automatic Normalization:**
+- 1,029 ingredient catalog with extensive aliases
+- Confidence-based matching (0.8+ threshold)
+- Smart fallback suggestions
+
+✅ **User Review Interface:**
+- Clean modal UI for unmatched ingredients
+- Real-time search through catalog
+- Confidence score display
+- Skip or add new options
+
+✅ **AI-Powered Ingredient Research:**
+- Automatic Spoonacular lookup
+- Density value research
+- Price estimation guidance (Melbourne)
+- Alias generation
+- Substitute recommendations
+
+✅ **Enhanced Instructions:**
+- Quantities displayed inline: "Add **garlic (25g, about 3 cloves)**"
+- Helpful equivalents (grams → cups, whole items)
+- Bold formatting for ingredients
+- Clear, scannable format
+
+✅ **Standardized Formatting:**
+- Numbered steps (always)
+- Double-space between steps
+- Consistent timing format (5 minutes, not 5 min)
+- Consistent temperature format (180°C)
+- Imperative tense throughout
+
+**Impact:**
+- Recipes fully normalized to catalog
+- Accurate nutrition calculations possible
+- Shopping lists can aggregate properly
+- Meal planning understands all ingredients
+- Budget estimates can be calculated
+- Diet compatibility scoring improved
+
+**Usage Example:**
+```javascript
+import RecipeImportOrchestrator from './src/utils/recipeImportOrchestrator.js';
+
+const orchestrator = new RecipeImportOrchestrator();
+
+orchestrator.importRecipe(
+  recipeText,
+  (finalRecipe) => {
+    console.log('Import complete!', finalRecipe);
+    // Save recipe to storage
+  },
+  (error) => {
+    console.error('Import failed:', error);
+  }
+);
+```
+
+**Files Created:**
+
+API Endpoints (4):
+- `api/extract-recipe-v2.js`
+- `api/normalize-ingredients.js`
+- `api/research-ingredient.js`
+- `api/add-ingredient.js`
+
+Components (2):
+- `src/components/IngredientReviewModal.js`
+- `src/components/AddIngredientDialog.js`
+
+Utilities (3):
+- `src/utils/instructionEnhancer.js`
+- `src/utils/recipeFormatter.js`
+- `src/utils/recipeImportOrchestrator.js`
+
+**Files Modified:**
+- `docs/CHANGELOG.md` - This file
+
+---
+
 ## [Unreleased] - Ingredient Normalization System
 
 ### 🔧 Shopping List Unit Corrections (January 10, 2026 - Night)

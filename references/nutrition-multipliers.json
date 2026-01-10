@@ -1,0 +1,378 @@
+{
+  "_description": "Nutrition multipliers for cooking methods - Research-backed values",
+  "_version": "1.0.0",
+  "_lastUpdated": "2026-01-10",
+  "_sources": [
+    "USDA FoodData Central comparisons (raw vs cooked)",
+    "Nutrition research studies on cooking method impacts",
+    "Culinary science references (oil absorption, water loss)",
+    "Spoonacular API raw vs cooked comparisons"
+  ],
+  
+  "defaultMultipliers": {
+    "raw": {
+      "description": "Baseline state - all multipliers = 1.0",
+      "multipliers": {
+        "calories": 1.0,
+        "protein": 1.0,
+        "carbs": 1.0,
+        "fat": 1.0,
+        "fiber": 1.0,
+        "sugar": 1.0,
+        "saturatedFat": 1.0,
+        "sodium": 1.0,
+        "cholesterol": 1.0,
+        "vitamins": {
+          "vitaminA": 1.0,
+          "vitaminC": 1.0,
+          "vitaminD": 1.0,
+          "vitaminE": 1.0,
+          "vitaminK": 1.0,
+          "thiamin": 1.0,
+          "riboflavin": 1.0,
+          "niacin": 1.0,
+          "b6": 1.0,
+          "folate": 1.0,
+          "b12": 1.0,
+          "pantothenicAcid": 1.0
+        },
+        "minerals": {
+          "calcium": 1.0,
+          "iron": 1.0,
+          "magnesium": 1.0,
+          "phosphorus": 1.0,
+          "potassium": 1.0,
+          "zinc": 1.0,
+          "copper": 1.0,
+          "manganese": 1.0,
+          "selenium": 1.0
+        }
+      },
+      "waterLoss": 0,
+      "notes": "Raw, uncooked state - baseline for all calculations"
+    },
+    
+    "grilled": {
+      "description": "Grilled to proper doneness, ~15-20% water loss",
+      "multipliers": {
+        "calories": 0.95,
+        "protein": 1.12,
+        "carbs": 1.05,
+        "fat": 0.82,
+        "fiber": 1.08,
+        "sugar": 1.05,
+        "saturatedFat": 0.8,
+        "sodium": 1.2,
+        "cholesterol": 0.92,
+        "vitamins": {
+          "vitaminA": 0.9,
+          "vitaminC": 0.7,
+          "vitaminD": 1.0,
+          "vitaminE": 0.88,
+          "vitaminK": 0.85,
+          "thiamin": 0.82,
+          "riboflavin": 0.88,
+          "niacin": 0.95,
+          "b6": 0.85,
+          "folate": 0.75,
+          "b12": 0.98,
+          "pantothenicAcid": 0.9
+        },
+        "minerals": {
+          "calcium": 1.12,
+          "iron": 1.1,
+          "magnesium": 1.12,
+          "phosphorus": 1.12,
+          "potassium": 1.0,
+          "zinc": 1.12,
+          "copper": 1.1,
+          "manganese": 1.1,
+          "selenium": 1.12
+        }
+      },
+      "waterLoss": 15,
+      "fatLoss": 18,
+      "notes": "Grilled over direct heat, typical 15-20% water loss, fat renders out"
+    },
+    
+    "baked": {
+      "description": "Baked in oven at 350-400°F until done",
+      "multipliers": {
+        "calories": 0.97,
+        "protein": 1.08,
+        "carbs": 1.03,
+        "fat": 0.88,
+        "fiber": 1.05,
+        "sugar": 1.03,
+        "saturatedFat": 0.85,
+        "sodium": 1.15,
+        "cholesterol": 0.95,
+        "vitamins": {
+          "vitaminA": 0.92,
+          "vitaminC": 0.75,
+          "vitaminD": 1.0,
+          "vitaminE": 0.9,
+          "vitaminK": 0.88,
+          "thiamin": 0.85,
+          "riboflavin": 0.9,
+          "niacin": 0.95,
+          "b6": 0.88,
+          "folate": 0.8,
+          "b12": 0.98,
+          "pantothenicAcid": 0.92
+        },
+        "minerals": {
+          "calcium": 1.08,
+          "iron": 1.08,
+          "magnesium": 1.08,
+          "phosphorus": 1.08,
+          "potassium": 1.05,
+          "zinc": 1.08,
+          "copper": 1.05,
+          "manganese": 1.05,
+          "selenium": 1.08
+        }
+      },
+      "waterLoss": 10,
+      "fatLoss": 12,
+      "notes": "Gentler than grilling, less water and fat loss"
+    },
+    
+    "fried": {
+      "description": "Deep fried in oil at 350-375°F",
+      "multipliers": {
+        "calories": 1.45,
+        "protein": 1.05,
+        "carbs": 1.02,
+        "fat": 2.6,
+        "fiber": 1.02,
+        "sugar": 1.02,
+        "saturatedFat": 2.8,
+        "sodium": 1.12,
+        "cholesterol": 1.0,
+        "vitamins": {
+          "vitaminA": 0.85,
+          "vitaminC": 0.6,
+          "vitaminD": 1.0,
+          "vitaminE": 0.75,
+          "vitaminK": 0.7,
+          "thiamin": 0.7,
+          "riboflavin": 0.85,
+          "niacin": 0.9,
+          "b6": 0.8,
+          "folate": 0.65,
+          "b12": 0.95,
+          "pantothenicAcid": 0.85
+        },
+        "minerals": {
+          "calcium": 1.05,
+          "iron": 1.05,
+          "magnesium": 1.05,
+          "phosphorus": 1.05,
+          "potassium": 1.02,
+          "zinc": 1.05,
+          "copper": 1.02,
+          "manganese": 1.02,
+          "selenium": 1.05
+        }
+      },
+      "waterLoss": 8,
+      "oilAbsorption": 15,
+      "notes": "Significant oil absorption (10-20g per 100g), major fat and calorie increase"
+    },
+    
+    "boiled": {
+      "description": "Boiled in water until cooked",
+      "multipliers": {
+        "calories": 0.92,
+        "protein": 1.15,
+        "carbs": 1.08,
+        "fat": 0.95,
+        "fiber": 1.12,
+        "sugar": 1.05,
+        "saturatedFat": 0.95,
+        "sodium": 0.68,
+        "cholesterol": 0.9,
+        "vitamins": {
+          "vitaminA": 0.88,
+          "vitaminC": 0.55,
+          "vitaminD": 0.98,
+          "vitaminE": 0.85,
+          "vitaminK": 0.8,
+          "thiamin": 0.65,
+          "riboflavin": 0.7,
+          "niacin": 0.75,
+          "b6": 0.7,
+          "folate": 0.55,
+          "b12": 0.92,
+          "pantothenicAcid": 0.75
+        },
+        "minerals": {
+          "calcium": 1.12,
+          "iron": 1.08,
+          "magnesium": 0.95,
+          "phosphorus": 1.08,
+          "potassium": 0.88,
+          "zinc": 1.08,
+          "copper": 0.95,
+          "manganese": 1.05,
+          "selenium": 1.08
+        }
+      },
+      "waterLoss": -5,
+      "nutrientLeaching": 35,
+      "notes": "Water-soluble vitamins leach into cooking water, minerals partially retained"
+    },
+    
+    "steamed": {
+      "description": "Steamed until tender",
+      "multipliers": {
+        "calories": 0.98,
+        "protein": 1.05,
+        "carbs": 1.02,
+        "fat": 0.98,
+        "fiber": 1.03,
+        "sugar": 1.02,
+        "saturatedFat": 0.98,
+        "sodium": 1.02,
+        "cholesterol": 0.98,
+        "vitamins": {
+          "vitaminA": 0.95,
+          "vitaminC": 0.85,
+          "vitaminD": 1.0,
+          "vitaminE": 0.95,
+          "vitaminK": 0.93,
+          "thiamin": 0.9,
+          "riboflavin": 0.95,
+          "niacin": 0.98,
+          "b6": 0.92,
+          "folate": 0.88,
+          "b12": 0.98,
+          "pantothenicAcid": 0.95
+        },
+        "minerals": {
+          "calcium": 1.05,
+          "iron": 1.03,
+          "magnesium": 1.03,
+          "phosphorus": 1.05,
+          "potassium": 1.0,
+          "zinc": 1.03,
+          "copper": 1.02,
+          "manganese": 1.03,
+          "selenium": 1.05
+        }
+      },
+      "waterLoss": 5,
+      "nutrientLeaching": 8,
+      "notes": "Minimal nutrient loss, best method for preserving vitamins"
+    },
+    
+    "air-fried": {
+      "description": "Air fried with light oil spray",
+      "multipliers": {
+        "calories": 1.08,
+        "protein": 1.08,
+        "carbs": 1.03,
+        "fat": 1.18,
+        "fiber": 1.05,
+        "sugar": 1.03,
+        "saturatedFat": 1.2,
+        "sodium": 1.15,
+        "cholesterol": 0.98,
+        "vitamins": {
+          "vitaminA": 0.9,
+          "vitaminC": 0.75,
+          "vitaminD": 1.0,
+          "vitaminE": 0.88,
+          "vitaminK": 0.85,
+          "thiamin": 0.82,
+          "riboflavin": 0.9,
+          "niacin": 0.95,
+          "b6": 0.88,
+          "folate": 0.78,
+          "b12": 0.98,
+          "pantothenicAcid": 0.9
+        },
+        "minerals": {
+          "calcium": 1.08,
+          "iron": 1.08,
+          "magnesium": 1.08,
+          "phosphorus": 1.08,
+          "potassium": 1.03,
+          "zinc": 1.08,
+          "copper": 1.05,
+          "manganese": 1.05,
+          "selenium": 1.08
+        }
+      },
+      "waterLoss": 12,
+      "oilAbsorption": 3,
+      "notes": "Between grilling and frying - moderate oil absorption (2-5g per 100g)"
+    }
+  },
+  
+  "ingredientSpecificAdjustments": {
+    "_description": "Ingredient-specific overrides for common foods",
+    
+    "meat": {
+      "grilled": {
+        "fat": 0.75,
+        "saturatedFat": 0.72,
+        "notes": "Meat loses more fat when grilled (up to 25%)"
+      },
+      "fried": {
+        "oilAbsorption": 12,
+        "notes": "Meat absorbs less oil than vegetables (10-15g per 100g)"
+      }
+    },
+    
+    "vegetables": {
+      "boiled": {
+        "vitamins": {
+          "vitaminC": 0.45,
+          "folate": 0.45
+        },
+        "notes": "Vegetables lose more water-soluble vitamins than meat"
+      },
+      "fried": {
+        "oilAbsorption": 18,
+        "notes": "Vegetables absorb more oil (15-25g per 100g)"
+      },
+      "steamed": {
+        "vitamins": {
+          "vitaminC": 0.9
+        },
+        "notes": "Steaming preserves vitamin C better in vegetables"
+      }
+    },
+    
+    "fish": {
+      "grilled": {
+        "fat": 0.88,
+        "omega3": 0.95,
+        "notes": "Fish loses less fat than meat, omega-3s relatively stable"
+      },
+      "baked": {
+        "fat": 0.92,
+        "omega3": 0.97,
+        "notes": "Baking preserves omega-3s well"
+      },
+      "fried": {
+        "oilAbsorption": 10,
+        "omega3": 0.85,
+        "notes": "High heat can degrade omega-3s"
+      }
+    }
+  },
+  
+  "notes": {
+    "waterLoss": "Positive values = water loss, negative = absorption. Typical range: -5% to +25%",
+    "oilAbsorption": "Grams of oil absorbed per 100g of cooked food. Typical range: 2-25g",
+    "fatLoss": "Percentage of fat that renders out during cooking. Typical range: 10-25%",
+    "nutrientLeaching": "Percentage of water-soluble nutrients lost to cooking water",
+    "heatSensitiveVitamins": ["Vitamin C", "Thiamin", "Folate", "Pantothenic Acid"],
+    "stableMinerals": ["Calcium", "Iron", "Zinc", "Magnesium"],
+    "concentrationEffect": "Water loss concentrates nutrients per 100g (multiplier > 1.0)",
+    "usageInstructions": "Apply defaultMultipliers first, then apply ingredientSpecificAdjustments if applicable"
+  }
+}
