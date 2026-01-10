@@ -65,7 +65,17 @@ export class ShoppingListView {
       
       if (normalizedCount > 0) {
         console.log(`  🆕 Using normalized ingredient pipeline (${normalizedCount}/${this.recipes.length} recipes normalized)`);
-        this.shoppingList = buildNormalizedShoppingList(this.recipes, usageCounts, this.mode);
+        const normalizedList = buildNormalizedShoppingList(this.recipes, usageCounts, this.mode);
+        
+        // Map normalized structure to expected structure
+        this.shoppingList = normalizedList.map(item => ({
+          name: item.displayName,
+          quantity: item.quantityRaw?.totalG || item.quantityRaw?.totalMl || null,
+          unit: item.quantityRaw?.totalG ? 'g' : (item.quantityRaw?.totalMl ? 'ml' : 'varies'),
+          category: item.category,
+          displayText: item.quantity, // Formatted string like "160g"
+          checked: false
+        }));
       } else {
         console.log(`  📜 Using legacy pipeline (no normalized data yet)`);
         this.shoppingList = this.generateShoppingList();
