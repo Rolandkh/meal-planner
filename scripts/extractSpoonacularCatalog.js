@@ -24,6 +24,7 @@ import { writeFile, mkdir, readFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { normalizeRecipeIngredients } from '../src/pipelines/normalizeRecipeIngredients.js';
 
 // Load .env
 dotenv.config();
@@ -452,7 +453,9 @@ async function extractCatalog() {
       recipes.forEach(recipe => {
         if (!recipeMap.has(recipe.id)) {
           const transformed = transformRecipe(recipe, query.id);
-          recipeMap.set(recipe.id, transformed);
+          // Normalize ingredients at import time
+          const normalized = normalizeRecipeIngredients(transformed);
+          recipeMap.set(recipe.id, normalized);
           newRecipes++;
         } else {
           duplicatesSkipped++;

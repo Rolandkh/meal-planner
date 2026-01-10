@@ -1,0 +1,49 @@
+
+INGREDIENT CATALOG ANALYSIS SUMMARY
+====================================
+
+📊 Overall Statistics:
+- Total recipes analyzed: 622
+- Total ingredient occurrences: 7183
+- Unique ingredient strings: 1825
+- Naive identity clusters: 1755
+
+📈 Coverage Analysis (what % of occurrences covered by top N ingredients):
+- Top 50 ingredients:  2933 occurrences (40.8%)
+- Top 100 ingredients: 3889 occurrences (54.1%)
+- Top 200 ingredients: 4808 occurrences (66.9%)
+- Top 300 ingredients: 5261 occurrences (73.2%)
+
+🏆 Top 20 Most Common Ingredients:
+ 1. garlic                         -  217 occurrences in 214 recipes
+ 2. onion                          -  202 occurrences in 197 recipes
+ 3. salt                           -  199 occurrences in 190 recipes
+ 4. olive oil                      -  198 occurrences in 189 recipes
+ 5. water                          -  122 occurrences in 118 recipes
+ 6. salt and pepper                -  108 occurrences in 106 recipes
+ 7. butter                         -   98 occurrences in 96 recipes
+ 8. pepper                         -   97 occurrences in 93 recipes
+ 9. bell pepper                    -   92 occurrences in 83 recipes
+10. parsley                        -   80 occurrences in 79 recipes
+11. sugar                          -   75 occurrences in 73 recipes
+12. lemon juice                    -   71 occurrences in 70 recipes
+13. carrots                        -   63 occurrences in 63 recipes
+14. flour                          -   57 occurrences in 55 recipes
+15. soy sauce                      -   56 occurrences in 52 recipes
+16. ginger                         -   55 occurrences in 55 recipes
+17. eggs                           -   53 occurrences in 53 recipes
+18. cilantro                       -   53 occurrences in 53 recipes
+19. tomatoes                       -   48 occurrences in 48 recipes
+20. garlic cloves                  -   45 occurrences in 44 recipes
+
+💡 Recommendations:
+- Target ~200-300 ingredients for master dictionary to cover 66.9-73.2% of occurrences
+- Focus on top 100 first (54.1% coverage)
+- Review identity clusters to identify state variations (fresh/frozen/canned/dried)
+
+📁 Output Files:
+- tmp/catalogUniqueIngredients.json - Full ingredient frequency data
+- tmp/ingredientIdentityCandidates.json - Clustered by naive identity
+- tmp/ingredientAnalysisSummary.txt - This summary
+
+Generated: 2026-01-09T23:15:36.266Z

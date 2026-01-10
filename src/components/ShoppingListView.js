@@ -6,6 +6,7 @@
 
 import { loadRecipes, loadCurrentMealPlan, loadMeals, getShoppingListMode } from '../utils/storage.js';
 import { INGREDIENT_SHOPPING_UNITS, convertToMetric } from '../utils/unitConversions.js';
+import { buildNormalizedShoppingList, getRecipeUsageCounts } from '../utils/normalizedShoppingList.js';
 
 export class ShoppingListView {
   constructor() {
@@ -56,7 +57,20 @@ export class ShoppingListView {
 
       // Step 4: Generate shopping list with selected mode
       const t4 = performance.now();
-      this.shoppingList = this.generateShoppingList();
+      
+      // Try normalized shopping list first (new pipeline)
+      const allMeals = loadMeals();
+      const usageCounts = getRecipeUsageCounts(this.mealPlan, allMeals);
+      const normalizedCount = this.recipes.filter(r => r.normalizedIngredients && r.normalizedIngredients.length > 0).length;
+      
+      if (normalizedCount > 0) {
+        console.log(`  🆕 Using normalized ingredient pipeline (${normalizedCount}/${this.recipes.length} recipes normalized)`);
+        this.shoppingList = buildNormalizedShoppingList(this.recipes, usageCounts, this.mode);
+      } else {
+        console.log(`  📜 Using legacy pipeline (no normalized data yet)`);
+        this.shoppingList = this.generateShoppingList();
+      }
+      
       console.log(`  ⏱️ Generated shopping list in ${Math.round(performance.now() - t4)}ms`);
       
       const totalTime = Math.round(performance.now() - startTime);
@@ -389,17 +403,28 @@ export class ShoppingListView {
     
     if (!config) {
       // No mapping - convert to metric if imperial, otherwise keep
-      if (normalizedUnit === 'ounce' || normalizedUnit === 'oz') {
+      if (normalizedUnit === 'ounce') {
         return { quantity: Math.ceil(quantity * 28.35), unit: 'g', displayText: null };
       }
-      if (normalizedUnit === 'pound' || normalizedUnit === 'lb') {
+      if (normalizedUnit === 'pound') {
         return { quantity: Math.ceil(quantity * 454), unit: 'g', displayText: null };
       }
       if (normalizedUnit === 'cup') {
         return { quantity: Math.ceil(quantity * 240), unit: 'ml', displayText: null };
       }
+      if (normalizedUnit === 'tablespoon') {
+        return { quantity: Math.ceil(quantity * 15), unit: 'ml', displayText: null };
+      }
+      if (normalizedUnit === 'teaspoon') {
+        return { quantity: Math.ceil(quantity * 5), unit: 'ml', displayText: null };
+      }
       
-      // Keep whole items as-is
+      // Leaf/leaves for herbs - treat as count
+      if (normalizedUnit === 'leaf') {
+        return { quantity: Math.ceil(quantity), unit: 'leaf', displayText: '(fresh leaves)' };
+      }
+      
+      // Keep whole items and unknown units as-is
       return {
         quantity: Math.ceil(quantity),
         unit: normalizedUnit,
@@ -607,8 +632,17 @@ export class ShoppingListView {
 
     // First pass: collect all ingredients in recipe units, scaled by servings
     const rawIngredients = [];
+    let recipeIndex = 0;
+    
     this.recipes.forEach(recipe => {
       if (!recipe.ingredients) return;
+      
+      // Debug: show first recipe's ingredients
+      if (recipeIndex === 0) {
+        console.log(`  🔍 Sample recipe: "${recipe.name}" (${recipe.ingredients.length} ingredients)`);
+        console.log('    First 3 ingredients:', recipe.ingredients.slice(0, 3));
+      }
+      recipeIndex++;
       
       const recipeId = recipe.recipeId;
       const usage = recipeUsage.get(recipeId);
@@ -649,6 +683,8 @@ export class ShoppingListView {
     // Second pass: aggregate same ingredients (same CANONICAL name + unit)
     const aggregatedMap = new Map();
     
+    console.log(`  🔄 Aggregating ${rawIngredients.length} raw ingredients...`);
+    
     rawIngredients.forEach(ing => {
       const normalizedUnit = this.normalizeUnit(ing.unit);
       // Use canonical name for better grouping (e.g., all cheese types together)
@@ -669,14 +705,25 @@ export class ShoppingListView {
         });
       }
     });
+    
+    console.log(`  📊 Aggregated to ${aggregatedMap.size} unique ingredient+unit combinations`);
 
     // Third pass: convert to shopping units
+    console.log(`  🔄 Converting to shopping units...`);
+    let conversionErrors = 0;
+    
     aggregatedMap.forEach((item, key) => {
       const converted = this.convertToShoppingUnits(
         item.name,
         item.quantity,
         item.unit
       );
+      
+      // Track conversion failures
+      if (item.unit !== converted.unit && converted.quantity === item.quantity) {
+        conversionErrors++;
+        console.warn(`    ⚠️ Conversion may have failed: ${item.name} (${item.quantity} ${item.unit} → ${converted.quantity} ${converted.unit})`);
+      }
       
       // Create final shopping list entry
       const shoppingKey = item.normalizedName; // Use just name for final dedup
@@ -720,6 +767,9 @@ export class ShoppingListView {
         debugInfo.converted.push(conversionText);
       }
     });
+    
+    if (conversionErrors > 0) {
+      console.warn(`  ⚠️ ${conversionErrors} items may not have converted properly`);
 
     // Convert to array
     const list = Array.from(ingredientMap.values());
@@ -730,10 +780,16 @@ export class ShoppingListView {
     console.log('Skipped (non-purchasable):', debugInfo.skipped.length);
     console.log('Combined (same unit):', debugInfo.combined.length);
     console.log('Converted to shopping units:', debugInfo.converted.length);
-    if (debugInfo.converted.length > 0 && debugInfo.converted.length < 20) {
-      console.log('Conversions:', debugInfo.converted);
+    console.log('Conversion errors:', conversionErrors);
+    
+    // Log first 10 items for debugging
+    if (list.length > 50) {
+      console.log('⚠️ Shopping list has', list.length, 'items - showing first 10:');
+      list.slice(0, 10).forEach(item => {
+        console.log(`  - ${item.name}: ${item.quantity} ${item.unit} (${item.category})`);
+      });
+      console.log('  ... and', list.length - 10, 'more items');
     }
-    console.log('Warnings:', debugInfo.warnings.length);
     
     // Sort by category, then by name
     list.sort((a, b) => {

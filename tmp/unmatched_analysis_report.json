@@ -1,0 +1,1565 @@
+{
+  "timestamp": "2026-01-10T00:03:55.034Z",
+  "summary": {
+    "totalUnmatched": 887,
+    "currentMatchRate": "87.5%",
+    "targetMatchRate": "95-98%",
+    "estimatedExpansion": 135
+  },
+  "frequencyBuckets": {
+    "1": 879,
+    "2": 7,
+    "10+": 0,
+    "5-9": 0,
+    "3-4": 1
+  },
+  "categories": {
+    "compound": 41,
+    "malformed": 4,
+    "pasta": 22,
+    "cheese": 27,
+    "mushroom": 12,
+    "vegetable": 58,
+    "meat": 27,
+    "condiment": 62,
+    "other": 634
+  },
+  "topPriorities": [
+    {
+      "identityText": "block tofu",
+      "count": 3,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 35
+    },
+    {
+      "identityText": "portobello mushrooms",
+      "count": 2,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 34
+    },
+    {
+      "identityText": "portabella mushrooms",
+      "count": 2,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 34
+    },
+    {
+      "identityText": "sun tomatoes",
+      "count": 2,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 30
+    },
+    {
+      "identityText": "orzo pasta",
+      "count": 2,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 28
+    },
+    {
+      "identityText": "fennel",
+      "count": 2,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 28
+    },
+    {
+      "identityText": "flaxseed",
+      "count": 2,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 25
+    },
+    {
+      "identityText": "pack portobello mushrooms",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 24
+    },
+    {
+      "identityText": "roasted portobello mushrooms",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 24
+    },
+    {
+      "identityText": "morel mushrooms",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 24
+    },
+    {
+      "identityText": "bella mushrooms",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 24
+    },
+    {
+      "identityText": "brown mushrooms",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 21
+    },
+    {
+      "identityText": "porcini mushrooms",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 21
+    },
+    {
+      "identityText": "enoki mushrooms",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 21
+    },
+    {
+      "identityText": "roasted onions",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 21
+    },
+    {
+      "identityText": "",
+      "count": 2,
+      "state": "fresh",
+      "category": "malformed",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "milk mozzarella cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "curd cottage cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "cheddar mozzarella cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "pch pepper",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "on carrots",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "garlic paste",
+      "count": 1,
+      "state": "other",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "pepper flakes-taste as you go to adjust flavors",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "adobo chipotle pepper juice",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "adobo chipotle pepper puree",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "thinly- green onions",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "big tomatoes",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "monterrey jack cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "white green onions",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "cottage cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "to carrots",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "monterey jack cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "parmigiano-reggiano cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "parmesano-reggian cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "chile-garlic paste",
+      "count": 1,
+      "state": "other",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "add pepper",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 20
+    },
+    {
+      "identityText": "chicken breast strips",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 19
+    },
+    {
+      "identityText": "chicken breast fillets",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 19
+    },
+    {
+      "identityText": "chicken breast halves",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 19
+    },
+    {
+      "identityText": "chicken breast marinate",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 19
+    },
+    {
+      "identityText": "over-ripe plantain",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "lasagna",
+      "count": 1,
+      "state": "fresh",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "cube pecorino cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "oz san marzano tomatoes",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "fusilli pasta",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "mascarpone cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "lasagna noodles",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "part-skim ricotta",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "manchego cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "montery jack & cheddar cheese mix",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "noodles",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "greek seasoning",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "whole-milk mozzarella",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "vine-ripened tomatoes",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "ronzoni curly edge lasagna",
+      "count": 1,
+      "state": "fresh",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "no boil lasagna noodles",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "style cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "lactose free mozzarella cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "meat sauce",
+      "count": 1,
+      "state": "other",
+      "category": "condiment",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "pch coriander",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "red/yellow onion",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "dale's seasoning",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "the following: parmesan rind",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "dusting garlic-pepper",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "garlic bulb",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "tubular pasta",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "roasted almonds",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "garlic roasted",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "rotini pasta",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "thinly- celery",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "fresh-ground pepper",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "optional - few cheese - we use sheep's milk",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "weight lite mozzarella cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "cardamon",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "fennel powder",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "oyster mushrooms",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "wholes tomatoes",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "peanut sauce",
+      "count": 1,
+      "state": "other",
+      "category": "condiment",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "tsp coriander",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "thai kitchen rice noodles",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "green onions white part",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "size carrot",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "chow mein noodles",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "big onion",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "havarti cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "sweet potato vermicelli noodles",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "wide rice stick noodles",
+      "count": 1,
+      "state": "other",
+      "category": "pasta",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "half an onion",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "bird's eye chilli pepper",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "poblano pepper",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "cooking spoons blended tatashe-pepper mix",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "suya pepper",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "all natural tomato soup",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "cardamoms",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "pepper pepper",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "some coriander",
+      "count": 1,
+      "state": "fresh",
+      "category": "other",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "heirloom tomatoes",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "garlic - &",
+      "count": 1,
+      "state": "fresh",
+      "category": "vegetable",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "mushroom halves",
+      "count": 1,
+      "state": "fresh",
+      "category": "mushroom",
+      "priorityScore": 18
+    },
+    {
+      "identityText": "mexican cheddar jack cheese",
+      "count": 1,
+      "state": "fresh",
+      "category": "cheese",
+      "priorityScore": 18
+    }
+  ],
+  "clusters": [
+    {
+      "representative": "portobello mushrooms",
+      "totalCount": 8,
+      "variantCount": 6,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "portobello mushrooms",
+          "count": 2
+        },
+        {
+          "identityText": "portabella mushrooms",
+          "count": 2
+        },
+        {
+          "identityText": "pack portobello mushrooms",
+          "count": 1
+        },
+        {
+          "identityText": "roasted portobello mushrooms",
+          "count": 1
+        },
+        {
+          "identityText": "morel mushrooms",
+          "count": 1
+        },
+        {
+          "identityText": "bella mushrooms",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "chicken breast strips",
+      "totalCount": 4,
+      "variantCount": 4,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "chicken breast strips",
+          "count": 1
+        },
+        {
+          "identityText": "chicken breast fillets",
+          "count": 1
+        },
+        {
+          "identityText": "chicken breast halves",
+          "count": 1
+        },
+        {
+          "identityText": "chicken breast marinate",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "block tofu",
+      "totalCount": 3,
+      "variantCount": 1,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "block tofu",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "representative": "sun tomatoes",
+      "totalCount": 3,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "sun tomatoes",
+          "count": 2
+        },
+        {
+          "identityText": "big tomatoes",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "greek seasoning",
+      "totalCount": 3,
+      "variantCount": 3,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "greek seasoning",
+          "count": 1
+        },
+        {
+          "identityText": "dale's seasoning",
+          "count": 1
+        },
+        {
+          "identityText": "creole seasoning",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "brown mushrooms",
+      "totalCount": 3,
+      "variantCount": 3,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "brown mushrooms",
+          "count": 1
+        },
+        {
+          "identityText": "porcini mushrooms",
+          "count": 1
+        },
+        {
+          "identityText": "enoki mushrooms",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "meat sauce",
+      "totalCount": 3,
+      "variantCount": 3,
+      "state": "other",
+      "variants": [
+        {
+          "identityText": "meat sauce",
+          "count": 1
+        },
+        {
+          "identityText": "peanut sauce",
+          "count": 1
+        },
+        {
+          "identityText": "cream sauce",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "pch coriander",
+      "totalCount": 3,
+      "variantCount": 3,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "pch coriander",
+          "count": 1
+        },
+        {
+          "identityText": "tsp coriander",
+          "count": 1
+        },
+        {
+          "identityText": "some coriander",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "roasted almonds",
+      "totalCount": 3,
+      "variantCount": 3,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "roasted almonds",
+          "count": 1
+        },
+        {
+          "identityText": "roasted and almonds",
+          "count": 1
+        },
+        {
+          "identityText": "roasted onions",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "cardamon",
+      "totalCount": 3,
+      "variantCount": 3,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "cardamon",
+          "count": 1
+        },
+        {
+          "identityText": "cardamoms",
+          "count": 1
+        },
+        {
+          "identityText": "cardamom",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "orzo pasta",
+      "totalCount": 2,
+      "variantCount": 1,
+      "state": "other",
+      "variants": [
+        {
+          "identityText": "orzo pasta",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "representative": "fennel",
+      "totalCount": 2,
+      "variantCount": 1,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "fennel",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "representative": "",
+      "totalCount": 2,
+      "variantCount": 1,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "representative": "flaxseed",
+      "totalCount": 2,
+      "variantCount": 1,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "flaxseed",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "representative": "milk mozzarella cheese",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "milk mozzarella cheese",
+          "count": 1
+        },
+        {
+          "identityText": "cheddar mozzarella cheese",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "several parsley sprigs",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "several parsley sprigs",
+          "count": 1
+        },
+        {
+          "identityText": "several thyme sprigs",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "curd cottage cheese",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "curd cottage cheese",
+          "count": 1
+        },
+        {
+          "identityText": "cottage cheese",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "linguine",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "linguine",
+          "count": 1
+        },
+        {
+          "identityText": ". linguine",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "tsp salt",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "tsp salt",
+          "count": 1
+        },
+        {
+          "identityText": "up salt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "tsp seasoning",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "tsp seasoning",
+          "count": 1
+        },
+        {
+          "identityText": "taco seasoning",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "chipotle chilies in adobo sauce",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "other",
+      "variants": [
+        {
+          "identityText": "chipotle chilies in adobo sauce",
+          "count": 1
+        },
+        {
+          "identityText": "chipotle peppers in adobo sauce",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "pork shoulder roast",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "pork shoulder roast",
+          "count": 1
+        },
+        {
+          "identityText": "pork should roast",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "fl lowfat yogurt",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "fl lowfat yogurt",
+          "count": 1
+        },
+        {
+          "identityText": "lowfat yogurt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "fl. oz. olive oil",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "other",
+      "variants": [
+        {
+          "identityText": "fl. oz. olive oil",
+          "count": 1
+        },
+        {
+          "identityText": "glugs olive oil",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "oz. semolina",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "oz. semolina",
+          "count": 1
+        },
+        {
+          "identityText": "semolina",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "pch pepper",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "pch pepper",
+          "count": 1
+        },
+        {
+          "identityText": "add pepper",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "eyed beans",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "eyed beans",
+          "count": 1
+        },
+        {
+          "identityText": "eyed peas",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "coriander leaves/cilantro",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "coriander leaves/cilantro",
+          "count": 1
+        },
+        {
+          "identityText": "coriander/cilantro",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "tarragon stalks",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "tarragon stalks",
+          "count": 1
+        },
+        {
+          "identityText": "tarragon leaves",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "on carrots",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "on carrots",
+          "count": 1
+        },
+        {
+          "identityText": "to carrots",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "ginger powder",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "ginger powder",
+          "count": 1
+        },
+        {
+          "identityText": "ginger flower",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "collard greens",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "collard greens",
+          "count": 1
+        },
+        {
+          "identityText": "salad greens",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "halibut fillets",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "halibut fillets",
+          "count": 1
+        },
+        {
+          "identityText": "halibut filet",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "garlic paste",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "other",
+      "variants": [
+        {
+          "identityText": "garlic paste",
+          "count": 1
+        },
+        {
+          "identityText": "chile-garlic paste",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "ghee/vegetable oil",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "other",
+      "variants": [
+        {
+          "identityText": "ghee/vegetable oil",
+          "count": 1
+        },
+        {
+          "identityText": "little vegetable oil",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "bird's eye chili",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "bird's eye chili",
+          "count": 1
+        },
+        {
+          "identityText": "birds eye chillies",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "beetroot",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "beetroot",
+          "count": 1
+        },
+        {
+          "identityText": "beet roots",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "chicken pre",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "chicken pre",
+          "count": 1
+        },
+        {
+          "identityText": "chicken pieces",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "haas avocados",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "haas avocados",
+          "count": 1
+        },
+        {
+          "identityText": "hass avocados",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "cooking sake",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "cooking sake",
+          "count": 1
+        },
+        {
+          "identityText": "cooking wine",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "pepper flakes-taste as you go to adjust flavors",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "pepper flakes-taste as you go to adjust flavors",
+          "count": 1
+        },
+        {
+          "identityText": "ginger powder-taste as you go to adjust flavors",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "reduced fat mayonnaise",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "reduced fat mayonnaise",
+          "count": 1
+        },
+        {
+          "identityText": "reduced fat mayo",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "adobo chipotle pepper juice",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "adobo chipotle pepper juice",
+          "count": 1
+        },
+        {
+          "identityText": "adobo chipotle pepper puree",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "rotisserie chicken",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "rotisserie chicken",
+          "count": 1
+        },
+        {
+          "identityText": "rotisserie chicken cut",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "chili oil",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "other",
+      "variants": [
+        {
+          "identityText": "chili oil",
+          "count": 1
+        },
+        {
+          "identityText": "chilli oil",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "deli forest ham",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "deli forest ham",
+          "count": 1
+        },
+        {
+          "identityText": "deli honey ham",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "thinly- green onions",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "thinly- green onions",
+          "count": 1
+        },
+        {
+          "identityText": "white green onions",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "daikon radish",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "daikon radish",
+          "count": 1
+        },
+        {
+          "identityText": "daikon radishes",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "tamari sauce",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "other",
+      "variants": [
+        {
+          "identityText": "tamari sauce",
+          "count": 1
+        },
+        {
+          "identityText": "tamari soy sauce",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "representative": "condensed milk",
+      "totalCount": 2,
+      "variantCount": 2,
+      "state": "fresh",
+      "variants": [
+        {
+          "identityText": "condensed milk",
+          "count": 1
+        },
+        {
+          "identityText": "powdered milk",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "recommendations": {
+    "phase1_quickWins": 35,
+    "phase2_compounds": 41,
+    "phase3_systematic": 8,
+    "phase4_cleanup": 4
+  }
+}
