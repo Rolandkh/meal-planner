@@ -298,6 +298,7 @@ function getYieldFactor(processData, ingredientNames, ingredientMaster) {
 
 /**
  * Find ingredient in master database
+ * PRIORITY: Prefer fresh/common ingredients over supplements/specialty
  * @param {string} name - Ingredient name from recipe
  * @param {Object} ingredientMaster - Ingredient database
  * @returns {Object|null} Ingredient data
@@ -309,14 +310,80 @@ function findIngredient(name, ingredientMaster) {
   // Normalize name
   const normalized = name.toLowerCase().trim();
   
-  // Direct match by ID
+  // PRIORITY 1: Fresh variant overrides + common aliases
+  const freshPreferences = {
+    // Fresh over supplements
+    'mushrooms': 'mushrooms_button',          // Prefer fresh ($4.50/kg) over supplement ($160/kg)
+    'spinach': 'spinach_bunch',               // Prefer fresh ($29/kg) over supplement ($140/kg)
+    
+    // Cheese variants  
+    'mozzarella': 'mozzarella_fresh',
+    'mozzarella cheese': 'mozzarella_fresh',
+    'parmesan': 'parmesan_block',
+    'parmesan cheese': 'parmesan_block',
+    'cube pecorino cheese': 'pecorino',
+    'pecorino cheese': 'pecorino',
+    
+    // Vegetables
+    'bell pepper': 'bell_pepper_red',
+    
+    // Proteins
+    'shrimps': 'shrimp',
+    'shrimp': 'shrimp',
+    
+    // Stocks/broths
+    'seafood stock/ fish stock': 'fish_stock',
+    'seafood stock': 'fish_stock',
+    'fish stock': 'fish_stock',
+    
+    // Sauces
+    'meat sauce': 'tomato_sauce',             // Fallback to tomato-based
+    
+    // Doughs/pastries  
+    'phyllo dough': 'puff_pastry',            // Similar pastry substitute
+    
+    // Water variants
+    'soda water': 'water'
+  };
+  
+  if (freshPreferences[normalized] && ingredients[freshPreferences[normalized]]) {
+    const freshId = freshPreferences[normalized];
+    return { id: freshId, ...ingredients[freshId] };
+  }
+  
+  // PRIORITY 2: Direct match by ID
   if (ingredients[normalized]) {
+    // Check if this is a supplement/powder (avoid if possible)
+    const notes = ingredients[normalized].notes || '';
+    const isSupplement = notes.toLowerCase().includes('supplement') || 
+                         notes.toLowerCase().includes('powder') ||
+                         notes.toLowerCase().includes('superfood');
+    
+    // If it's a supplement and we have a fresh variant, prefer fresh
+    if (isSupplement) {
+      const freshId = normalized + '_fresh';
+      if (ingredients[freshId]) {
+        return { id: freshId, ...ingredients[freshId] };
+      }
+      // Try common fresh variants
+      const freshVariants = [
+        normalized + '_button',
+        normalized + '_bunch',
+        normalized + '_baby'
+      ];
+      for (const variant of freshVariants) {
+        if (ingredients[variant]) {
+          return { id: variant, ...ingredients[variant] };
+        }
+      }
+    }
+    
     return { id: normalized, ...ingredients[normalized] };
   }
   
-  // Search by aliases and display name
+  // PRIORITY 3: Search by aliases and display name
   for (const [id, data] of Object.entries(ingredients)) {
-    // Skip metadata fields
+    // Skip metadata fields and supplements
     if (id.startsWith('_')) continue;
     
     if (data.aliases && data.aliases.some(alias => alias.toLowerCase() === normalized)) {
@@ -327,7 +394,7 @@ function findIngredient(name, ingredientMaster) {
     }
   }
   
-  // Partial match on aliases (for more flexible matching)
+  // PRIORITY 4: Partial match on aliases
   for (const [id, data] of Object.entries(ingredients)) {
     if (id.startsWith('_')) continue;
     
