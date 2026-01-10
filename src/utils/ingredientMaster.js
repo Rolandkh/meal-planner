@@ -1,21 +1,12 @@
 /**
  * Ingredient Master Dictionary Loader
  * 
+ * Browser-compatible version - uses static import instead of fs
  * Provides access to the canonical ingredient master dictionary
  * used for normalization, matching, and conversion operations.
  */
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-// ES module __dirname equivalent
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Load the master dictionary
-const masterPath = path.join(__dirname, '../data/ingredientMaster.json');
-const masterData = JSON.parse(fs.readFileSync(masterPath, 'utf8'));
+import masterData from '../data/ingredientMaster.js';
 
 export const ingredientMaster = masterData.ingredients;
 export const masterMetadata = {
