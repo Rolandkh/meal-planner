@@ -172,6 +172,41 @@ localStorage.getItem('vanessa_diet_profiles')  // Should show v2.0.0
 
 // Check catalog loaded
 localStorage.getItem('vanessa_recipe_catalog')  // Should have 622 recipes
+```
+
+#### Setting Child Portion Sizes (Manual - Until Onboarding Enhanced)
+
+**Note:** Task 106 will add automatic child age detection to onboarding. For now, set manually:
+
+```javascript
+// 1. Load current eaters
+const eaters = JSON.parse(localStorage.getItem('vanessa_eaters'));
+
+// 2. Update child's portion multiplier
+const updated = eaters.map(e => {
+  if (e.name.toLowerCase().includes('daughter')) {  // Match your child's name
+    return {
+      ...e,
+      portionMultiplier: 0.5,  // 4-8 years = half serving
+      updatedAt: new Date().toISOString()
+    };
+  }
+  return e;
+});
+
+// 3. Save and reload
+localStorage.setItem('vanessa_eaters', JSON.stringify(updated));
+location.reload();
+```
+
+**Portion Multiplier Guide:**
+- `0.25` - Toddler (1-3 years)
+- `0.5` - Young child (4-8 years) ← **For 4-year-old**
+- `0.75` - Older child (9-13 years)
+- `0.9` - Teen (14-18 years)
+- `1.0` - Adult (default)
+
+**Result:** Dad (1.0) + Daughter (0.5) = 1.5 servings per meal (accurate!)
 
 // Verify health data
 window.debug.testHealthScoring()  // Should return scores 0-100
