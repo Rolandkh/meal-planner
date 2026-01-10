@@ -1,0 +1,311 @@
+{
+  "timestamp": "2026-01-10T01:07:18.719Z",
+  "rawData": {
+    "weekOf": "2026-01-17",
+    "budget": {
+      "estimated": 145
+    },
+    "days": [
+      {
+        "date": "2026-01-17",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "almonds",
+              "quantity": 30,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place yogurt in a bowl. Drizzle with honey and top with almonds.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Salmon Quinoa Risotto",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-18",
+        "breakfast": {
+          "name": "Peach and Pistachio Greek Yogurt Bowl",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "lunch": {
+          "name": "Simple Pasta with Tomato Sauce",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "tomato",
+              "quantity": 400,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook pasta according to package directions. Sauté garlic in olive oil, add chopped tomatoes, simmer 10 minutes. Toss with pasta.",
+          "prepTime": 5,
+          "cookTime": 15,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "italian"
+          ]
+        },
+        "dinner": {
+          "name": "Grilled Chicken Gyros With Tzatziki",
+          "servings": 2,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-19",
+        "breakfast": {
+          "name": "Greek Inspired Spring Omelet",
+          "servings": 2,
+          "fromCatalog": true
+        },
+        "lunch": {
+          "name": "Italian Tuna Pasta",
+          "servings": 2,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
+          "servings": 2,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "breakfast": {
+          "name": "Honey Yogurt Parfait",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "banana",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Layer yogurt with sliced banana in bowls. Drizzle with honey.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Easy Cheesy Pizza Casserole",
+          "servings": 2,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Classic Greek Moussaka",
+          "servings": 3,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-21",
+        "breakfast": {
+          "name": "Banana Yogurt Bowl",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "banana",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "almonds",
+              "quantity": 60,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place yogurt in bowls, top with sliced banana and almonds.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Vegetable Minestrone Soup",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Italian Seafood Stew",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-22",
+        "breakfast": {
+          "name": "Greek Yogurt with Almonds",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "almonds",
+              "quantity": 30,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place yogurt in bowl, top with almonds and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Great Greek Salad",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Baked Ratatouille",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-23",
+        "breakfast": {
+          "name": "Yogurt with Honey and Nuts",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "almonds",
+              "quantity": 30,
+              "unit": "g",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Combine yogurt with honey and top with almonds.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "mediterranean",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Light Greek Lemon Chicken Orzo Soup",
+          "servings": 1,
+          "fromCatalog": true
+        },
+        "dinner": {
+          "name": "Spanakopita (Greek Spinach Pie)",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      }
+    ]
+  }
+}
