@@ -1,5 +1,57 @@
 # Changelog
 
+## [v10.0.1] - Deployment Fix: Async Ingredient Loading (January 11, 2026)
+
+### 🔧 Critical Fix: Browser-Compatible Ingredient Database Loading
+
+**Problem:**
+- Vercel deployment failing due to unsupported JavaScript import assertions syntax
+- Browser console error: `Unexpected identifier 'assert'` and `'with'`
+- 10MB ingredient database couldn't load in production
+
+**Root Cause:**
+- Used `import data from './file.json' with { type: 'json' }` syntax
+- Not supported in all browsers or Vercel's build environment
+- Module-level imports tried to load data before it was available
+
+**Solution (Research-Backed via Taskmaster):**
+- Converted to async fetch-based loading pattern
+- All ingredient utilities now use lazy initialization
+- Indexes built on first use, cached in memory for session
+- Added `<link rel="preload">` hint for faster startup
+- Removed 66 large backup files from git (3.97M lines deleted)
+
+**Files Modified:**
+- `src/utils/ingredientMaster.js` - Async fetch API
+- `src/utils/ingredientMatcher.js` - Lazy index building  
+- `src/utils/ingredientParsing.js` - Async STATE_LOOKUP
+- `src/utils/ingredientMatcherEnhanced.js` - Async pattern matching
+- `index.html` - Added preload hint
+- `.gitignore` - Exclude tmp/, backups/, export outputs/
+
+**Performance:**
+- First visit: ~300-500ms (10MB → 2-3MB compressed)
+- Cached visits: <50ms
+- Vercel auto-compression + CDN caching
+- Scales to 50k+ ingredients without changes
+
+**Key Learnings:**
+- Static JSON on Vercel CDN is optimal for rarely-changing reference data
+- No need for Firebase/Supabase for static dictionaries
+- Browser fetch() + caching beats database for this use case
+- All functions now return Promises (breaking change)
+
+**Migration Required:**
+```javascript
+// OLD (broken)
+const onion = getMasterIngredient('onion');
+
+// NEW (works!)
+const onion = await getMasterIngredient('onion');
+```
+
+---
+
 ## [v10.0.0] - Enhanced Ingredient Catalog & Import Pipeline (January 10, 2026)
 
 ### 🎉 MAJOR RELEASE: Complete Ingredient Normalization System

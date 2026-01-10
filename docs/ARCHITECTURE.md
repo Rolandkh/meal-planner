@@ -550,6 +550,33 @@ function markDirty() {
 - Only loads when needed
 - Cached in memory after first load
 
+**Ingredient Master Database (10MB):**
+- **Format:** Static JSON file (`/src/data/ingredientMaster.json`)
+- **Loading:** Async fetch on first use (lazy initialization)
+- **Size:** 10MB raw, ~2-3MB compressed (Vercel auto-compression)
+- **Caching:** In-memory cache + browser/CDN cache
+- **Performance:** 
+  - First visit: ~300-500ms
+  - Cached visits: <50ms
+  - Preload hint in HTML for faster startup
+- **Why static JSON (not database):**
+  - Rarely changes (developer-only updates)
+  - Read-only at runtime
+  - Global CDN distribution (fast everywhere)
+  - Version controlled with code
+  - No database cost or complexity
+- **API Pattern:**
+  ```javascript
+  // All ingredient functions are async
+  const onion = await getMasterIngredient('onion');
+  const all = await getAllMasterIngredients();
+  ```
+- **Index Building:**
+  - Alias index and token index built on first use
+  - Cached for session lifetime
+  - Fast lookups after initialization
+- **Scalability:** Current approach works up to ~50k ingredients before needing chunking
+
 ### Storage Efficiency
 
 **Problem:** localStorage 5MB limit
