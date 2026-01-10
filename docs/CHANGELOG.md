@@ -2,6 +2,74 @@
 
 ## [Unreleased] - Ingredient Normalization System
 
+### 🔧 Shopping List Unit Corrections (January 10, 2026 - Night)
+
+**Issue:** Shopping list displayed nonsensical units for many ingredients:
+- Ricotta showed as "2" (no unit - should be grams)
+- Rice vinegar showed as "2 grams" (vinegar is liquid - should be ml)
+- Basil showed as "1 mil" (should be grams for fresh herbs)
+- Mint showed as "10 mils" (should be grams for fresh herbs)
+- Lemon juice inconsistent units
+- Garlic powder showed as "1" (no unit)
+
+**Root Cause:**
+- Some ingredients had incorrect `canonicalUnit` in master dictionary (vinegars set to "g" instead of "ml")
+- Missing or incorrect density mappings prevented proper unit conversions
+- Shopping list needs to show units as items are SOLD, not just measured in recipes
+
+**Research Conducted:**
+Used AI research to determine standard grocery store units:
+- **Fresh herbs**: Sold in grams (bunches ~30-40g), recipes use tbsp/cups → need density conversion
+- **Vinegars**: Sold in ml bottles (250ml, 500ml, 1L), always measure in ml
+- **Ricotta**: Sold in gram containers (226g, 425g, 454g), recipes use cups → need density conversion
+- **Spice powders**: Sold in grams (40-85g jars), recipes use tsp → need accurate tsp-to-gram conversion
+
+**Fixes Applied:**
+
+1. **Vinegar Units Corrected:**
+   - `rice_vinegar`: g → ml ✓
+   - `rice_wine_vinegar`: g → ml ✓
+
+2. **Fresh Herb Densities Updated** (for proper cup/tbsp/tsp → gram conversion):
+   - Mint: 1 tsp = 1g (not 0.3g)
+   - Rosemary: 1 tsp = 0.7g
+   - Dill: 1 tsp = 0.2g
+   - Basil, parsley, cilantro: Already correct
+
+3. **Spice Powder Densities Refined** (research-backed values):
+   - Garlic powder: 1 tsp = 3.1g (was 2.8g)
+   - Onion powder: 1 tsp = 2.3g
+   - Chili powder: 1 tsp = 2.7g
+
+4. **Dairy Product Densities Updated:**
+   - Ricotta: 1 cup = 246g (accurate whole milk ricotta density)
+
+**Files Modified:**
+- `src/data/ingredientMaster.json` - Version bumped to 9.0.1
+- `scripts/fixIngredientUnits.cjs` - New maintenance script (documented fix)
+
+**Impact:**
+- Shopping lists now show correct, purchasable units
+- Vinegars display in ml (not grams)
+- Fresh herbs aggregate properly in grams
+- Spice powders show accurate gram amounts
+- Dairy products (ricotta, yogurt) convert cups → grams accurately
+
+**Verification:**
+```bash
+# Run the fix
+node scripts/fixIngredientUnits.cjs
+
+# Then regenerate meal plan to see corrected shopping list
+```
+
+**Next Steps:**
+- User needs to regenerate meal plan to see corrected units
+- Future: Consider displaying both metric and imperial for US users
+- Future: Add "smart package sizing" (e.g., "1 × 500ml bottle" instead of "450ml")
+
+---
+
 ### 🐛 CRITICAL BUG FIX: Shopping List Overcounting (January 10, 2026 - Late Evening)
 
 **Issue:** Shopping list calculated 3.2kg yogurt when only 2.0kg needed (60% overcounting)

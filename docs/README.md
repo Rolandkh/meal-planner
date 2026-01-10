@@ -1,8 +1,8 @@
 # Vanessa - AI Meal Planning Assistant
 
-**Version:** v1.2.0-alpha  
-**Status:** Active Development (Slice 5 Phase 2)  
-**Last Updated:** January 10, 2026
+**Version:** v1.2.1-alpha  
+**Status:** Active Development (Slice 5.1 - Multi-Profile Support)  
+**Last Updated:** January 10, 2026 (Evening)
 
 ---
 
@@ -60,11 +60,16 @@ SPOONACULAR_API_KEY=optional_for_catalog_extraction
 - 26 cuisines, 15 protein types
 - 34 breakfasts, 18 curries, 11 stir-fries
 
+**Slice 5.1: Multi-Profile & Child Portions** ⭐NEW
+- Multi-profile meal generation (conflicting diets = separate recipes)
+- Child portion multipliers (accurate serving sizes by age)
+- Shopping list scaling bug fix (eliminated 60% overcounting)
+
 ### ⏳ In Development
 
-**Slice 5 Phase 2: UI Integration**
-- Diet profile selection in Settings
-- Multi-profile meal generation
+**Slice 5 Phase 2: UI Updates**
+- Multi-profile meal display (show which recipe for which eater)
+- Enhanced onboarding (automatic child age detection)
 - Recipe variations (parent/child relationships)
 - Meal prep planning
 

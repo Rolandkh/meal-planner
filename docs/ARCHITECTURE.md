@@ -55,6 +55,22 @@ class ComponentName {
 
 ## Data Model
 
+### Recent Changes (January 2026)
+
+#### Multi-Profile Meal Generation (Slice 5.1)
+- Multiple Meal objects per date+mealType for conflicting diets
+- Meal schema: `targetEaters[]`, `dietProfileTags[]` fields
+- AI generates array format when Keto/Vegan/Vegetarian conflicts detected
+
+#### Child Portion Sizing (Slice 5.1)  
+- Eater schema: `portionMultiplier` field (0.25-1.25)
+- Servings = sum of eater multipliers (e.g., 1.0 + 0.5 = 1.5)
+- Fixed in: schemas, storage, API prompts, migrations
+
+#### Shopping List Bug Fix (Slice 5.1)
+- Fixed overcounting: now normalizes by base servings before scaling
+- Formula: `quantity * (totalServings / baseServings)`
+
 ### Schema Evolution
 
 **v1.0 (Slices 1-4):**

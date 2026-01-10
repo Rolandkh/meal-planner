@@ -1,6 +1,6 @@
 {
-  "_version": "9.0.0",
-  "_lastUpdated": "2026-01-10T02:00:44.773Z",
+  "_version": "9.0.1",
+  "_lastUpdated": "2026-01-10T05:59:18.393Z",
   "_totalEntries": 200,
   "_coverage": "Consolidated dictionary with merged variations and common ingredients",
   "_schema": {
@@ -727,9 +727,9 @@
       "canonicalUnit": "g",
       "state": "other",
       "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
+        "gPerCup": 128,
+        "gPerTbsp": 8,
+        "gPerTsp": 2.7
       },
       "aliases": [
         "chili powder",
@@ -1637,9 +1637,9 @@
       "canonicalUnit": "g",
       "state": "fresh",
       "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
+        "gPerCup": 150,
+        "gPerTbsp": 9.4,
+        "gPerTsp": 3.1
       },
       "aliases": [
         "garlic powder"
@@ -1822,9 +1822,9 @@
       "canonicalUnit": "g",
       "state": "fresh",
       "density": {
-        "gPerCup": 20,
-        "gPerTbsp": 1.3,
-        "gPerTsp": 0.4
+        "gPerCup": 48,
+        "gPerTbsp": 3,
+        "gPerTsp": 1
       },
       "aliases": [
         "mint",
@@ -1956,13 +1956,9 @@
     "rice_vinegar": {
       "id": "rice_vinegar",
       "displayName": "rice vinegar",
-      "canonicalUnit": "g",
+      "canonicalUnit": "ml",
       "state": "other",
-      "density": {
-        "gPerCup": 185,
-        "gPerTbsp": 11.6,
-        "gPerTsp": 3.9
-      },
+      "density": null,
       "aliases": [
         "rice vinegar"
       ],
@@ -2472,9 +2468,9 @@
       "canonicalUnit": "g",
       "state": "other",
       "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
+        "gPerCup": 9,
+        "gPerTbsp": 0.6,
+        "gPerTsp": 0.2
       },
       "aliases": [
         "dill"
@@ -2491,9 +2487,9 @@
       "canonicalUnit": "g",
       "state": "other",
       "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
+        "gPerCup": 32,
+        "gPerTbsp": 2,
+        "gPerTsp": 0.7
       },
       "aliases": [
         "rosemary",
@@ -2706,9 +2702,9 @@
       "canonicalUnit": "g",
       "state": "fresh",
       "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
+        "gPerCup": 246,
+        "gPerTbsp": 15.4,
+        "gPerTsp": 5.1
       },
       "aliases": [
         "ricotta",
@@ -2767,9 +2763,9 @@
       "canonicalUnit": "g",
       "state": "fresh",
       "density": {
-        "gPerCup": 150,
-        "gPerTbsp": 9.4,
-        "gPerTsp": 3.1
+        "gPerCup": 112,
+        "gPerTbsp": 7,
+        "gPerTsp": 2.3
       },
       "aliases": [
         "onion powder"
@@ -2918,13 +2914,9 @@
     "rice_wine_vinegar": {
       "id": "rice_wine_vinegar",
       "displayName": "rice wine vinegar",
-      "canonicalUnit": "g",
+      "canonicalUnit": "ml",
       "state": "other",
-      "density": {
-        "gPerCup": 185,
-        "gPerTbsp": 11.6,
-        "gPerTsp": 3.9
-      },
+      "density": null,
       "aliases": [
         "rice wine vinegar"
       ],
