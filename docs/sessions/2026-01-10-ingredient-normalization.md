@@ -364,9 +364,9 @@ const shoppingList = buildNormalizedShoppingList([normalized]);
 
 ---
 
-**Session Duration:** ~2.5 hours  
-**AI Assistance:** Autonomous implementation with Taskmaster research  
-**Status:** ✅ **PRODUCTION READY - 93.7% coverage achieved (+6.2% from baseline)**
+**Session Duration:** ~4 hours (across 2 chats)  
+**AI Assistance:** Autonomous implementation with Taskmaster research + debugging  
+**Status:** ⚠️ **IN PROGRESS** - Improved shopping lists, needs validation (71.2% match rate with 214 core ingredients)
 
 ---
 
@@ -636,7 +636,163 @@ Consulted industry best practices (full research saved in `.taskmaster/docs/rese
 - **Catalog Quality: High** (curated, usable recipes)
 - **User Experience: Excellent** (no frustration with unavailable ingredients)
 
-**System Status: 🟢 Production Ready**
+---
+
+## 🔄 CONTINUATION SESSION: Dictionary Consolidation (Chat 2)
+
+**Goal:** Fix shopping list showing 100 items instead of 30
+
+### Problem Discovery
+
+**Shopping List Issue:**
+- Expected: ~30-40 items
+- Actual: 100+ items
+- Root cause: Duplicate masterIngredientIds
+
+**Examples of Duplication:**
+- "olive_oil" + "virgin_olive_oil" + "oil" (should be ONE)
+- "greek_yogurt" + "nonfat_greek_yogurt" (should be ONE)
+- "ricotta" + "ricotta_cheese" (should be ONE)
+- "parmesan" + "parmesan_cheese" (should be ONE)
+- "garlic" + "garlic_cloves" (should be ONE)
+- "salt_and_pepper" as single ID (should be SPLIT into 2)
+
+**Critical Insight:**
+Spoonacular integration (Task 98, Phase 3) created NEW ingredient entries instead of ALIASES:
+- Added 90 "ingredients" that were really just variations
+- Example: "non-fat greek yogurt" became new ID instead of alias
+- Result: 688 bloated entries → 616 unique IDs in catalog → 100 shopping list items
+
+### Implementation Attempts
+
+**Attempt 1: Syntax Fixes**
+- Fixed missing closing brace in ShoppingListView.js (line 773)
+- Fixed Node.js imports in ingredientMaster.js (browser compatibility)
+- Result: App loads ✅
+
+**Attempt 2: Re-normalization**
+- Discovered all quantities were NULL in catalog
+- Fixed normalizeRecipeIngredients.js to handle object format
+- Re-normalized catalog
+- Result: Quantities present ✅, but still 636 unique IDs ❌
+
+**Attempt 3: Dictionary Consolidation**
+- Created consolidateDictionaryVariations.js
+- Removed 14 duplicate entries (olive oil, yogurt, cheese variants)
+- Re-normalized catalog
+- Result: 616 unique IDs (minimal improvement) ❌
+
+**Attempt 4: Comprehensive Consolidation**
+- Created fixDictionaryDuplicates.js
+- Removed 20 more duplicates (salt_and_pepper, garlic_cloves, etc.)
+- Added aggressive alias rules
+- Result: Still 616 unique IDs (problem persists) ❌
+
+**Attempt 5: Clean Core Dictionary (Current)**
+- Created buildCleanCoreDictionary.js
+- **Radical approach:** Keep ONLY ingredients used ≥5 times + essentials
+- Trimmed 654 → **214 core ingredients**
+- Re-normalized catalog
+- Result: 214 unique IDs in use, match rate 71.2%
+- **Expected shopping list: ~40-60 items** ✅
+
+### Current Status
+
+**Dictionary:**
+- Version: 4.0.0
+- Entries: 214 (core ingredients only)
+- Strategy: High-frequency + essentials
+- Removed: 440 over-specific variations
+
+**Catalog:**
+- Recipes: 516 (after quality cleanup)
+- Match rate: 71.2% (lower, but cleaner)
+- Complete normalization: 28 recipes
+- Partial normalization: 488 recipes
+
+**Issues Remaining:**
+- Match rate dropped from 93.7% → 71.2%
+- This is because we removed rare ingredients
+- Trade-off: Clean shopping lists vs match rate
+- 6 AI-generated recipes not normalized (need client-side normalization)
+
+### Files Created/Modified
+
+**Scripts (this session):**
+- `scripts/analyzeRecipeQuality.js` - Quality analysis
+- `scripts/removeProblematicRecipes.js` - Removed 106 bad recipes
+- `scripts/reNormalizeCatalog.js` - Re-normalization tool
+- `scripts/consolidateDictionaryVariations.js` - First consolidation attempt
+- `scripts/fixDictionaryDuplicates.js` - Second consolidation attempt
+- `scripts/buildCleanCoreDictionary.js` - Final core-only approach
+
+**Documentation:**
+- `docs/ingredients/import-validation-workflow.md` - Quality control design
+- `docs/ingredients/spoonacular-integration-analysis.md` - API analysis
+- `docs/sessions/2026-01-10-final-summary.md` - Session summary
+- `docs/sessions/2026-01-10-testing-guide.md` - Testing instructions
+
+**Code Fixes:**
+- `src/components/ShoppingListView.js` - Missing brace, data structure mapping
+- `src/utils/ingredientMaster.js` - Browser compatibility
+- `src/pipelines/normalizeRecipeIngredients.js` - Object format handling
+
+### Key Learnings
+
+**What Worked:**
+1. ✅ Compound splitting utility (100% tests passing)
+2. ✅ Enhanced matching algorithm
+3. ✅ Recipe quality analysis and cleanup (removed 106 bad recipes)
+4. ✅ Core dictionary approach (214 ingredients is manageable)
+
+**What Didn't Work:**
+1. ❌ Spoonacular integration created too many duplicates
+2. ❌ Adding variations as new ingredients instead of aliases
+3. ❌ Incremental consolidation (needed radical pruning)
+
+**Root Cause:**
+- Spoonacular returns very specific ingredient names
+- Integration script treated each as unique
+- Should have mapped to existing ingredients first
+- Only add truly new ingredients
+
+### Recommendations for Next Session
+
+**Option A: Accept Current State**
+- 214 ingredients, ~40-60 shopping list items
+- Clean, usable lists
+- 71.2% match rate (acceptable)
+- Add missing ingredients manually as needed
+
+**Option B: Rebuild Spoonacular Integration**
+- Start with 214 core dictionary
+- Query Spoonacular for unmatched ingredients
+- Map to existing ingredients FIRST (as aliases)
+- Only create new entries if truly unique
+- Target: 250-300 ingredients, 90%+ match rate, ~30-40 shopping items
+
+**Option C: Hybrid Approach**
+- Use current 214 core
+- Add client-side normalization for AI-generated recipes
+- Monitor production for gaps
+- Add ingredients on-demand
+
+### Testing Notes
+
+**To test current state:**
+1. Refresh browser (catalog reloaded)
+2. Navigate to Shopping List
+3. Verify ~40-60 items (not 100+)
+4. Check for remaining duplicates
+5. Verify quantities show correctly
+
+**Known Issues:**
+- AI-generated recipes not normalized (6 recipes)
+- Match rate lower (71.2% vs 93.7%)
+- Some ingredients may be unmatchable with smaller dictionary
+- Storage at 135% (over quota - may cause issues)
+
+**System Status: 🟡 Improved but needs testing/validation**
 
 ---
 

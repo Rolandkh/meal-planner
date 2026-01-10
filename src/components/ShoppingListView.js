@@ -68,14 +68,32 @@ export class ShoppingListView {
         const normalizedList = buildNormalizedShoppingList(this.recipes, usageCounts, this.mode);
         
         // Map normalized structure to expected structure
-        this.shoppingList = normalizedList.map(item => ({
-          name: item.displayName,
-          quantity: item.quantityRaw?.totalG || item.quantityRaw?.totalMl || null,
-          unit: item.quantityRaw?.totalG ? 'g' : (item.quantityRaw?.totalMl ? 'ml' : 'varies'),
-          category: item.category,
-          displayText: item.quantity, // Formatted string like "160g"
-          checked: false
-        }));
+        this.shoppingList = normalizedList.map(item => {
+          const raw = item.quantityRaw || {};
+          let quantity = null;
+          let unit = 'varies';
+          
+          // Determine best quantity and unit from raw data
+          if (raw.totalG) {
+            quantity = raw.totalG;
+            unit = 'g';
+          } else if (raw.totalMl) {
+            quantity = raw.totalMl;
+            unit = 'ml';
+          } else if (raw.totalCount) {
+            quantity = raw.totalCount;
+            unit = raw.originalUnit || 'whole';
+          }
+          
+          return {
+            name: item.displayName,
+            quantity: quantity,
+            unit: unit,
+            category: item.category,
+            displayText: item.quantity, // Formatted string like "160g" or "3 cloves"
+            checked: false
+          };
+        });
       } else {
         console.log(`  📜 Using legacy pipeline (no normalized data yet)`);
         this.shoppingList = this.generateShoppingList();
@@ -979,17 +997,15 @@ export class ShoppingListView {
       const details = document.createElement('div');
       details.className = 'flex-1';
       
-      // Format quantity nicely - whole numbers only
+      // Format quantity - prefer displayText if available (from normalized pipeline)
       let quantityText = '';
-      if (item.quantity) {
-        // Display as whole number (no decimals)
+      if (item.displayText && item.displayText !== 'as needed' && item.displayText !== 'varies') {
+        // Use the pre-formatted displayText from normalized pipeline (e.g., "160g", "3 cloves")
+        quantityText = item.displayText;
+      } else if (item.quantity) {
+        // Fallback to raw quantity + unit
         const qty = Math.round(item.quantity);
         quantityText = `${qty} ${item.unit}`;
-        
-        // Add dual display text if available (e.g., "2 loaves (40 slices)")
-        if (item.displayText) {
-          quantityText += ` ${item.displayText}`;
-        }
       }
 
       details.innerHTML = `

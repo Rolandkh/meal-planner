@@ -6,6 +6,8 @@
 import { forceDietProfilesInit, checkDietProfiles } from './forceDietProfilesInit.js';
 import { getAllDietProfiles } from './dietProfiles.js';
 import { STORAGE_KEYS } from '../types/schemas.js';
+import { transformGeneratedPlan } from './mealPlanTransformer.js';
+import { saveCurrentMealPlan, saveRecipes, saveMeals } from './storage.js';
 
 /**
  * Debug helpers object
@@ -93,6 +95,111 @@ export const debugHelpers = {
   },
 
   /**
+   * Load test meal plan data for debugging shopping list
+   */
+  async loadTestMealPlan() {
+    console.log('🚀 Loading test meal plan data...');
+    
+    const rawData = {
+      "weekOf": "2026-01-17",
+      "budget": { "estimated": 85 },
+      "days": [
+        {
+          "date": "2026-01-17",
+          "breakfast": { "name": "Peach and Pistachio Greek Yogurt Bowl", "servings": 1, "fromCatalog": true },
+          "lunch": { "name": "Greek Yogurt Chicken Salad", "servings": 1, "fromCatalog": true },
+          "dinner": { "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious", "servings": 1, "fromCatalog": true }
+        },
+        {
+          "date": "2026-01-18",
+          "breakfast": {
+            "name": "Greek Yogurt with Banana",
+            "servings": 1,
+            "fromCatalog": false,
+            "ingredients": [
+              { "name": "greek yogurt", "quantity": 200, "unit": "g", "category": "dairy" },
+              { "name": "banana", "quantity": 1, "unit": "whole", "category": "produce" },
+              { "name": "honey", "quantity": 15, "unit": "ml", "category": "pantry" }
+            ],
+            "instructions": "Place yogurt in bowl, slice banana on top, drizzle with honey.",
+            "prepTime": 2, "cookTime": 0,
+            "tags": ["quick", "breakfast", "kid-friendly"]
+          },
+          "lunch": { "name": "Italian Tuna Pasta", "servings": 2, "fromCatalog": true },
+          "dinner": {
+            "name": "Simple Chicken with Vegetables",
+            "servings": 2,
+            "fromCatalog": false,
+            "ingredients": [
+              { "name": "chicken breast", "quantity": 300, "unit": "g", "category": "meat" },
+              { "name": "zucchini", "quantity": 200, "unit": "g", "category": "produce" },
+              { "name": "cherry tomatoes", "quantity": 150, "unit": "g", "category": "produce" },
+              { "name": "olive oil", "quantity": 30, "unit": "ml", "category": "pantry" }
+            ],
+            "instructions": "Season chicken with salt and pepper, bake at 200°C for 20 minutes.",
+            "prepTime": 10, "cookTime": 20,
+            "tags": ["kid-friendly", "simple", "dinner"]
+          }
+        },
+        {
+          "date": "2026-01-19",
+          "breakfast": { "name": "Peach and Pistachio Greek Yogurt Bowl", "servings": 2, "fromCatalog": true },
+          "lunch": { "name": "Easy Cheesy Pizza Casserole", "servings": 2, "fromCatalog": true },
+          "dinner": { "name": "Salmon Quinoa Risotto", "servings": 2, "fromCatalog": true }
+        },
+        {
+          "date": "2026-01-20",
+          "breakfast": { "name": "Peach and Pistachio Greek Yogurt Bowl", "servings": 1, "fromCatalog": true },
+          "lunch": { "name": "Italian Tuna Pasta", "servings": 2, "fromCatalog": true },
+          "dinner": { "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta", "servings": 3, "fromCatalog": true }
+        },
+        {
+          "date": "2026-01-21",
+          "breakfast": { "name": "Peach and Pistachio Greek Yogurt Bowl", "servings": 2, "fromCatalog": true },
+          "lunch": { "name": "Light Greek Lemon Chicken Orzo Soup", "servings": 1, "fromCatalog": true },
+          "dinner": { "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious", "servings": 1, "fromCatalog": true }
+        },
+        {
+          "date": "2026-01-22",
+          "breakfast": { "name": "Peach and Pistachio Greek Yogurt Bowl", "servings": 1, "fromCatalog": true },
+          "lunch": { "name": "Great Greek Salad", "servings": 1, "fromCatalog": true },
+          "dinner": { "name": "Baked Ratatouille", "servings": 1, "fromCatalog": true }
+        },
+        {
+          "date": "2026-01-23",
+          "breakfast": { "name": "Peach and Pistachio Greek Yogurt Bowl", "servings": 1, "fromCatalog": true },
+          "lunch": { "name": "Greek Yogurt Chicken Salad", "servings": 1, "fromCatalog": true },
+          "dinner": { "name": "Salmon Quinoa Risotto", "servings": 1, "fromCatalog": true }
+        }
+      ]
+    };
+    
+    try {
+      const transformed = transformGeneratedPlan(rawData);
+      console.log('✅ Transformed:', transformed);
+      
+      saveCurrentMealPlan(transformed.mealPlan);
+      saveRecipes(transformed.recipes);
+      saveMeals(transformed.meals);
+      
+      console.log('✅ Test data loaded!');
+      console.log(`   ${transformed.recipes.length} recipes`);
+      console.log(`   ${transformed.meals.length} meals`);
+      console.log('   Redirecting to shopping list...');
+      
+      setTimeout(() => {
+        window.location.hash = '#/shopping-list';
+        window.location.reload();
+      }, 500);
+      
+      return transformed;
+    } catch (error) {
+      console.error('❌ Error loading test data:', error);
+      throw error;
+    }
+  },
+
+  /**
    * Get full help text
    */
   help() {
@@ -105,12 +212,14 @@ export const debugHelpers = {
   listProfiles()     - List all available profiles
   clearProfiles()    - Remove profiles from localStorage
   showStorage()      - Show all localStorage keys
+  loadTestMealPlan() - Load test data and view shopping list ⭐
   help()             - Show this help message
 
 Example usage:
   window.debug.checkProfiles()    // Check status
   window.debug.refreshProfiles()  // ⭐ BEST: Clear and reload page
   window.debug.listProfiles()     // See all profiles
+  window.debug.loadTestMealPlan() // Load test meal plan for shopping list
   
 To update to latest profiles (v2.0.0, 18 profiles):
   window.debug.refreshProfiles()  // Clears and reloads automatically

@@ -1,0 +1,1165 @@
+{
+  "stats": {
+    "totalMatched": 4895,
+    "totalUnmatched": 846,
+    "matchRate": "85.3%"
+  },
+  "topUnmatched": [
+    {
+      "ingredient": "vegetables",
+      "count": 4,
+      "examples": [
+        {
+          "raw": "453.592 g vegetables"
+        },
+        {
+          "raw": "3 servings vegetables"
+        },
+        {
+          "raw": "1 cup vegetables"
+        }
+      ]
+    },
+    {
+      "ingredient": "sauce",
+      "count": 3,
+      "examples": [
+        {
+          "raw": "12 servings sauce"
+        },
+        {
+          "raw": "6 servings sauce"
+        },
+        {
+          "raw": "16 servings sauce"
+        }
+      ]
+    },
+    {
+      "ingredient": "sage leaves",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "10  sage leaves"
+        },
+        {
+          "raw": "10  sage leaves"
+        }
+      ]
+    },
+    {
+      "ingredient": "golden beets",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4 medium golden beets"
+        },
+        {
+          "raw": "2  golden beets"
+        }
+      ]
+    },
+    {
+      "ingredient": "pch or",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4  pch or"
+        },
+        {
+          "raw": "4  pch or"
+        }
+      ]
+    },
+    {
+      "ingredient": "arugula",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "20 g baby arugula"
+        },
+        {
+          "raw": "2 cups arugula"
+        }
+      ]
+    },
+    {
+      "ingredient": "liquid smoke",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 tsps liquid smoke"
+        },
+        {
+          "raw": "1.5 teaspoons liquid smoke"
+        }
+      ]
+    },
+    {
+      "ingredient": "swiss chard",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 bunch swiss chard"
+        },
+        {
+          "raw": "4 cups swiss chard"
+        }
+      ]
+    },
+    {
+      "ingredient": "stock",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "470 ml stock"
+        },
+        {
+          "raw": "800 ml stock"
+        }
+      ]
+    },
+    {
+      "ingredient": "green onion tops",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4 servings green onion tops"
+        },
+        {
+          "raw": "4 servings green onion tops"
+        }
+      ]
+    },
+    {
+      "ingredient": "pita pockets",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4  pita pockets"
+        },
+        {
+          "raw": "4  pita pockets"
+        }
+      ]
+    },
+    {
+      "ingredient": "crimini mushrooms",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "72 ml crimini mushrooms"
+        },
+        {
+          "raw": "1 cup crimini mushrooms"
+        }
+      ]
+    },
+    {
+      "ingredient": "bourbon",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 cup bourbon"
+        },
+        {
+          "raw": "1 ounce bourbon"
+        }
+      ]
+    },
+    {
+      "ingredient": "tbs brown sugar",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2 Tbs brown sugar"
+        },
+        {
+          "raw": "4 Tbs brown sugar"
+        }
+      ]
+    },
+    {
+      "ingredient": "pumpkin pie spice",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.25 tsp pumpkin pie spice"
+        },
+        {
+          "raw": "0.25 teaspoon pumpkin pie spice"
+        }
+      ]
+    },
+    {
+      "ingredient": "cardamom seeds",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1  cardamom seeds"
+        },
+        {
+          "raw": "2  cardamom seeds"
+        }
+      ]
+    },
+    {
+      "ingredient": "ginger paste",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 tsp ginger paste"
+        },
+        {
+          "raw": "1 tsp ginger paste"
+        }
+      ]
+    },
+    {
+      "ingredient": "saffron",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 pinch saffron"
+        },
+        {
+          "raw": "1 pinch saffron"
+        }
+      ]
+    },
+    {
+      "ingredient": "skewers",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "9  skewers"
+        },
+        {
+          "raw": "9  skewers"
+        }
+      ]
+    },
+    {
+      "ingredient": "bulb onion",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5  bulb of onion"
+        },
+        {
+          "raw": "1 small bulb of onion"
+        }
+      ]
+    },
+    {
+      "ingredient": "wholes",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2  wholes"
+        },
+        {
+          "raw": "2  wholes"
+        }
+      ]
+    },
+    {
+      "ingredient": "powdered ginger",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.25 Tsp powdered ginger"
+        },
+        {
+          "raw": "0.5 teaspoon powdered ginger"
+        }
+      ]
+    },
+    {
+      "ingredient": "amchar masala",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 Tsp amchar masala"
+        },
+        {
+          "raw": "1 tablespoon amchar masala"
+        }
+      ]
+    },
+    {
+      "ingredient": "chili sauce",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 teaspoon chili sauce"
+        },
+        {
+          "raw": "1 cup chili sauce"
+        }
+      ]
+    },
+    {
+      "ingredient": "block tofu",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "12 ounce block extra tofu"
+        },
+        {
+          "raw": "1  block tofu"
+        }
+      ]
+    },
+    {
+      "ingredient": "romaine lettuce leaves",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "6 large romaine lettuce leaves"
+        },
+        {
+          "raw": "4  romaine lettuce leaves"
+        }
+      ]
+    },
+    {
+      "ingredient": "peanuts",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 cup of peanuts"
+        },
+        {
+          "raw": "0.25 cup peanuts"
+        }
+      ]
+    },
+    {
+      "ingredient": "enchilada sauce",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "10 oz enchilada sauce"
+        },
+        {
+          "raw": "1 can enchilada sauce"
+        }
+      ]
+    },
+    {
+      "ingredient": "tortillas",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4  tortillas"
+        },
+        {
+          "raw": "6 large tortillas"
+        }
+      ]
+    },
+    {
+      "ingredient": "napa cabbage",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.25  napa cabbage"
+        },
+        {
+          "raw": "6 pounds napa cabbage"
+        }
+      ]
+    },
+    {
+      "ingredient": "angel hair pasta",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "6 oz angel hair pasta"
+        },
+        {
+          "raw": "0.33333334 pound angel hair pasta"
+        }
+      ]
+    },
+    {
+      "ingredient": "edamame",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 cup edamame"
+        },
+        {
+          "raw": "8 oz edamame"
+        }
+      ]
+    },
+    {
+      "ingredient": "vanilla pod",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1  vanilla pod"
+        },
+        {
+          "raw": "1  vanilla pod"
+        }
+      ]
+    },
+    {
+      "ingredient": "chili garlic sauce",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "3 teaspoons chili garlic sauce"
+        },
+        {
+          "raw": "1 tsp chili garlic sauce"
+        }
+      ]
+    },
+    {
+      "ingredient": "top sirloin steak",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 pound top sirloin steak"
+        },
+        {
+          "raw": "1 pound top sirloin steak"
+        }
+      ]
+    },
+    {
+      "ingredient": "cinnamon sticks",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2  cinnamon sticks"
+        },
+        {
+          "raw": "4  cinnamon sticks"
+        }
+      ]
+    },
+    {
+      "ingredient": "chorizo sausage",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 pound chorizo sausage"
+        },
+        {
+          "raw": "0.5 pound chorizo sausage"
+        }
+      ]
+    },
+    {
+      "ingredient": "pinches couple pepper flakes",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2 pinches couple of of pepper flakes"
+        },
+        {
+          "raw": "2 pinches couple of pepper flakes"
+        }
+      ]
+    },
+    {
+      "ingredient": "stick celery",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 stick celery"
+        },
+        {
+          "raw": "1 stick celery"
+        }
+      ]
+    },
+    {
+      "ingredient": "suya spice",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1.5 Tablespoons suya spice"
+        },
+        {
+          "raw": "1 teaspoon suya spice"
+        }
+      ]
+    },
+    {
+      "ingredient": "seafood seasoning",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 teaspoon seafood seasoning"
+        },
+        {
+          "raw": "0.25 cup seafood seasoning"
+        }
+      ]
+    },
+    {
+      "ingredient": "croutons",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "8 servings croutons"
+        },
+        {
+          "raw": "2 cups croutons"
+        }
+      ]
+    },
+    {
+      "ingredient": "mustard",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2 tsp ground mustard"
+        },
+        {
+          "raw": "1 pinch mustard"
+        }
+      ]
+    },
+    {
+      "ingredient": "garnish",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 serving garnish"
+        },
+        {
+          "raw": "6 servings garnish"
+        }
+      ]
+    },
+    {
+      "ingredient": "watermelon",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "5 lb watermelon"
+        },
+        {
+          "raw": "1 pound watermelon"
+        }
+      ]
+    },
+    {
+      "ingredient": "water chestnuts",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 cup water chestnuts"
+        },
+        {
+          "raw": "8 oz water chestnuts"
+        }
+      ]
+    },
+    {
+      "ingredient": "curry leaves",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 sprig curry leaves"
+        },
+        {
+          "raw": "6  curry leaves"
+        }
+      ]
+    },
+    {
+      "ingredient": "orange bell pepper",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1  orange bell pepper"
+        },
+        {
+          "raw": "0.5  orange bell pepper"
+        }
+      ]
+    },
+    {
+      "ingredient": "stewed tomatoes",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "28 ounce stewed tomatoes"
+        },
+        {
+          "raw": "2 ounces stewed tomatoes"
+        }
+      ]
+    },
+    {
+      "ingredient": "mung beans",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1.5 cups mung beans"
+        },
+        {
+          "raw": "1 cup mung beans"
+        }
+      ]
+    },
+    {
+      "ingredient": "mustard seeds",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 teaspoon mustard seeds"
+        },
+        {
+          "raw": "1 teaspoon mustard seeds"
+        }
+      ]
+    },
+    {
+      "ingredient": "paneer",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "200 g paneer"
+        },
+        {
+          "raw": "1 cup paneer"
+        }
+      ]
+    },
+    {
+      "ingredient": "stir fry",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 serving stir fry"
+        },
+        {
+          "raw": "6 servings stir fry"
+        }
+      ]
+    },
+    {
+      "ingredient": "mirin",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2 tablespoons mirin"
+        },
+        {
+          "raw": "3 tablespoons mirin"
+        }
+      ]
+    },
+    {
+      "ingredient": "flour tortillas",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "10  flour tortillas"
+        },
+        {
+          "raw": "20 small flour tortillas"
+        }
+      ]
+    },
+    {
+      "ingredient": "penne pasta",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2 cups penne pasta"
+        },
+        {
+          "raw": "6 ounces penne pasta"
+        }
+      ]
+    },
+    {
+      "ingredient": "farfalle pasta by barilla",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 pound farfalle pasta by barilla"
+        },
+        {
+          "raw": "1 pound farfalle pasta by barilla"
+        }
+      ]
+    },
+    {
+      "ingredient": "fillet tilapia",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "12 fillet tilapia"
+        },
+        {
+          "raw": "4 fillet tilapia"
+        }
+      ]
+    },
+    {
+      "ingredient": "cilantro sprigs",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4 servings cilantro sprigs"
+        },
+        {
+          "raw": "2  cilantro sprigs"
+        }
+      ]
+    },
+    {
+      "ingredient": "salmon steaks",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "8 oz salmon steaks"
+        },
+        {
+          "raw": "4 servings salmon steaks"
+        }
+      ]
+    },
+    {
+      "ingredient": "kosher sea salt",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.125 tsp kosher sea salt"
+        },
+        {
+          "raw": "0.25 tsp kosher sea salt"
+        }
+      ]
+    },
+    {
+      "ingredient": "tbs chives",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2 Tbs chives"
+        },
+        {
+          "raw": "1 Tbs chives"
+        }
+      ]
+    },
+    {
+      "ingredient": "grits",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2 cups grits"
+        },
+        {
+          "raw": "1 cup grits"
+        }
+      ]
+    },
+    {
+      "ingredient": "peppercorns",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4  peppercorns"
+        },
+        {
+          "raw": "1 teaspoon peppercorns"
+        }
+      ]
+    },
+    {
+      "ingredient": "package tofu",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 package tofu"
+        },
+        {
+          "raw": "1 package tofu"
+        }
+      ]
+    },
+    {
+      "ingredient": "slices lemon",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 slices lemon"
+        },
+        {
+          "raw": "6 slices lemon"
+        }
+      ]
+    },
+    {
+      "ingredient": "rolled oats",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.25 cup rolled oats"
+        },
+        {
+          "raw": "1 cup rolled oats"
+        }
+      ]
+    },
+    {
+      "ingredient": "vanilla yogurt",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 cup vanilla yogurt"
+        },
+        {
+          "raw": "6 oz vanilla yogurt"
+        }
+      ]
+    },
+    {
+      "ingredient": "half and half",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.25 cup half and half"
+        },
+        {
+          "raw": "6 cups half and half"
+        }
+      ]
+    },
+    {
+      "ingredient": "almond butter",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4 tablespoons almond butter"
+        },
+        {
+          "raw": "2 tablespoons almond butter"
+        }
+      ]
+    },
+    {
+      "ingredient": "almond flour",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 cup almond flour"
+        },
+        {
+          "raw": "0.5 cup almond flour"
+        }
+      ]
+    },
+    {
+      "ingredient": "toothpicks",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 serving toothpicks"
+        },
+        {
+          "raw": "4 servings toothpicks"
+        }
+      ]
+    },
+    {
+      "ingredient": "ketchup",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "2 tbsp ketchup"
+        },
+        {
+          "raw": "2 tbsp ketchup"
+        }
+      ]
+    },
+    {
+      "ingredient": "almond meal",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 cup almond meal"
+        },
+        {
+          "raw": "0.25 cup almond meal"
+        }
+      ]
+    },
+    {
+      "ingredient": "jicama",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "0.5 cup jicama"
+        },
+        {
+          "raw": "0.25 cup jicama"
+        }
+      ]
+    },
+    {
+      "ingredient": "roasted peppers",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "10 oz roasted peppers"
+        },
+        {
+          "raw": "0.75 cup roasted peppers"
+        }
+      ]
+    },
+    {
+      "ingredient": "roasted pepper",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1  roasted pepper"
+        },
+        {
+          "raw": "2 cups roasted pepper"
+        }
+      ]
+    },
+    {
+      "ingredient": "t mustard",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 T mustard"
+        },
+        {
+          "raw": "0.75 t mustard"
+        }
+      ]
+    },
+    {
+      "ingredient": "great northern beans",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "16 oz great northern beans"
+        },
+        {
+          "raw": "15.5 oz great northern beans"
+        }
+      ]
+    },
+    {
+      "ingredient": "peanut oil",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "4 tbsp peanut oil"
+        },
+        {
+          "raw": "2 cups peanut oil"
+        }
+      ]
+    },
+    {
+      "ingredient": "sambal oelek",
+      "count": 2,
+      "examples": [
+        {
+          "raw": "1 tsp sambal oelek"
+        },
+        {
+          "raw": "1 tsp sambal oelek"
+        }
+      ]
+    },
+    {
+      "ingredient": "leaf kale",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "8 leaf kale"
+        }
+      ]
+    },
+    {
+      "ingredient": "poached salmon",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "283.495 g poached salmon"
+        }
+      ]
+    },
+    {
+      "ingredient": "leaf basil",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "10 leaf basil"
+        }
+      ]
+    },
+    {
+      "ingredient": "equivalent amount a beef/bulk sausage mix",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "453.592 g equivalent amount of a ground beef/bulk sausage mix"
+        }
+      ]
+    },
+    {
+      "ingredient": "aged provolone",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "66 g aged provolone"
+        }
+      ]
+    },
+    {
+      "ingredient": "baking mix",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "270 ml baking mix"
+        }
+      ]
+    },
+    {
+      "ingredient": "bread flour",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "250 g bread flour"
+        }
+      ]
+    },
+    {
+      "ingredient": "handful onions",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "1 handful onions"
+        }
+      ]
+    },
+    {
+      "ingredient": "over-ripe plantain",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "1  over-ripe plantain"
+        }
+      ]
+    },
+    {
+      "ingredient": "basil& oregano",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "1 tsp basil& oregano"
+        }
+      ]
+    },
+    {
+      "ingredient": "sheets lasagna",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "8 sheets lasagna"
+        }
+      ]
+    },
+    {
+      "ingredient": "cube pecorino cheese",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "50 g cube pecorino cheese"
+        }
+      ]
+    },
+    {
+      "ingredient": "san marzano tomatoes",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "28  oz can san marzano tomatoes"
+        }
+      ]
+    },
+    {
+      "ingredient": "warm milk",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "250 ml warm milk"
+        }
+      ]
+    },
+    {
+      "ingredient": "veal shanks",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "6  veal shanks"
+        }
+      ]
+    },
+    {
+      "ingredient": "egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons ener",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "4.5 Tbsps egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons of ener"
+        }
+      ]
+    },
+    {
+      "ingredient": "russet potatoes",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "5 medium russet potatoes"
+        }
+      ]
+    },
+    {
+      "ingredient": "soy milk",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "236 ml soy milk"
+        }
+      ]
+    },
+    {
+      "ingredient": "club soda",
+      "count": 1,
+      "examples": [
+        {
+          "raw": "118.294 ml club soda"
+        }
+      ]
+    }
+  ],
+  "frequencyBuckets": {
+    "1": 681,
+    "2": 79,
+    "10+": 0,
+    "5-9": 0,
+    "3-4": 2
+  }
+}

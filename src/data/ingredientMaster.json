@@ -1,8 +1,8 @@
 {
-  "_version": "4.0.0",
-  "_lastUpdated": "2026-01-10T01:38:26.163Z",
-  "_totalEntries": 214,
-  "_coverage": "Core ingredients with high usage (5+ occurrences) + essentials",
+  "_version": "9.0.0",
+  "_lastUpdated": "2026-01-10T02:00:44.773Z",
+  "_totalEntries": 200,
+  "_coverage": "Consolidated dictionary with merged variations and common ingredients",
   "_schema": {
     "id": "Unique stable identifier (lowercase, underscore-separated)",
     "displayName": "Human-readable name for UI display",
@@ -34,7 +34,8 @@
         "cloves garlic",
         "fresh garlic",
         "garlic clove",
-        "cloves of garlic"
+        "cloves of garlic",
+        "minced garlic"
       ],
       "tags": [
         "vegetable",
@@ -60,12 +61,22 @@
         "sweet onion",
         "onion cut \" pieces",
         "onion pieces",
-        "cut onion"
+        "cut onion",
+        "yellow onions",
+        "white onions",
+        "size onion",
+        "medium onion",
+        "large onion",
+        "small onion",
+        "spanish onion",
+        "bulb onion",
+        "bulb of onion"
       ],
       "tags": [
         "vegetable",
         "aromatic"
-      ]
+      ],
+      "_frequency": 33
     },
     "salt": {
       "id": "salt",
@@ -83,7 +94,12 @@
         "sea salt",
         "kosher salt",
         "fine salt",
-        "coarse salt"
+        "coarse salt",
+        "flaky salt",
+        "finishing salt",
+        "salt & pepper",
+        "salt and pepper",
+        "salt and ground pepper"
       ],
       "tags": [
         "seasoning"
@@ -109,7 +125,10 @@
         "tbsp olive oil",
         "basil-infused olive oil",
         "garbanzo beans/ chickpeas",
-        "cooking oil (olive)"
+        "cooking oil (olive)",
+        "extra-virgin olive oil",
+        "cooking oil",
+        "light olive oil"
       ],
       "tags": [
         "oil",
@@ -151,7 +170,10 @@
         "butter",
         "unsalted butter",
         "salted butter",
-        "softened butter"
+        "softened butter",
+        "stick butter",
+        "butter stick",
+        "european butter"
       ],
       "tags": [
         "fat",
@@ -173,7 +195,8 @@
         "black pepper",
         "ground pepper",
         "ground black pepper",
-        "cracked pepper"
+        "cracked pepper",
+        "freshly ground pepper"
       ],
       "tags": [
         "seasoning",
@@ -196,7 +219,12 @@
         "sweet pepper",
         "red bell pepper",
         "green bell pepper",
-        "yellow bell pepper"
+        "yellow bell pepper",
+        "orange pepper",
+        "yellow pepper",
+        "red pepper",
+        "green pepper",
+        "mixed peppers"
       ],
       "tags": [
         "vegetable"
@@ -217,12 +245,16 @@
         "fresh parsley",
         "italian parsley",
         "flat-leaf parsley",
-        "curly parsley"
+        "curly parsley",
+        "flat leaf parsley",
+        "tbs parsley",
+        "parsley leaves"
       ],
       "tags": [
         "herb",
         "protective"
-      ]
+      ],
+      "_frequency": 11
     },
     "sugar": {
       "id": "sugar",
@@ -259,31 +291,13 @@
         "fresh lemon juice",
         "juice of lemon",
         "lemon",
-        "juice lemon"
+        "juice lemon",
+        "tbs lemon juice",
+        "squeezed lemon juice"
       ],
       "tags": [
         "liquid",
         "acid",
-        "protective"
-      ]
-    },
-    "carrots": {
-      "id": "carrots",
-      "displayName": "carrots",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 128,
-        "gPerTbsp": 8,
-        "gPerTsp": 2.7
-      },
-      "aliases": [
-        "carrots",
-        "carrot",
-        "baby carrots"
-      ],
-      "tags": [
-        "vegetable",
         "protective"
       ]
     },
@@ -344,7 +358,15 @@
         "ginger",
         "fresh ginger",
         "ginger root",
-        "minced ginger"
+        "minced ginger",
+        "inch ginger",
+        "fresh ginger root",
+        "gingerroot",
+        "piece ginger",
+        "knob of ginger",
+        "ginger paste",
+        "powdered ginger",
+        "ground ginger"
       ],
       "tags": [
         "spice",
@@ -388,32 +410,14 @@
         "cilantro",
         "fresh cilantro",
         "coriander leaves",
-        "chinese parsley"
+        "chinese parsley",
+        "cilantro leaves",
+        "fresh coriander"
       ],
       "tags": [
         "herb"
-      ]
-    },
-    "tomatoes": {
-      "id": "tomatoes",
-      "displayName": "tomatoes",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 180,
-        "gPerTbsp": 11.25,
-        "gPerTsp": 3.75
-      },
-      "aliases": [
-        "tomatoes",
-        "tomato",
-        "fresh tomatoes",
-        "ripe tomatoes"
       ],
-      "tags": [
-        "vegetable",
-        "protective"
-      ]
+      "_frequency": 7
     },
     "chicken_breast": {
       "id": "chicken_breast",
@@ -425,12 +429,17 @@
         "chicken breast",
         "chicken breasts",
         "boneless chicken breast",
-        "skinless chicken breast"
+        "skinless chicken breast",
+        "chicken",
+        "boneless skinless chicken breast",
+        "boneless chicken",
+        "skinless chicken"
       ],
       "tags": [
         "protein",
         "poultry"
-      ]
+      ],
+      "_frequency": 35
     },
     "rice": {
       "id": "rice",
@@ -447,7 +456,10 @@
         "white rice",
         "long grain rice",
         "basmati rice",
-        "jasmine rice"
+        "jasmine rice",
+        "short grain rice",
+        "arborio rice",
+        "sushi rice"
       ],
       "tags": [
         "grain",
@@ -536,12 +548,17 @@
         "basil",
         "fresh basil",
         "basil leaves",
-        "sweet basil"
+        "sweet basil",
+        "fresh basil leaves",
+        "thai basil",
+        "holy basil",
+        "leaves basil"
       ],
       "tags": [
         "herb",
         "protective"
-      ]
+      ],
+      "_frequency": 22
     },
     "cumin": {
       "id": "cumin",
@@ -556,11 +573,15 @@
       "aliases": [
         "cumin",
         "ground cumin",
-        "cumin powder"
+        "cumin powder",
+        "cumin seeds",
+        "cumin seed powder",
+        "ground cumin seed"
       ],
       "tags": [
         "spice"
-      ]
+      ],
+      "_frequency": 19
     },
     "oregano": {
       "id": "oregano",
@@ -632,11 +653,13 @@
       "aliases": [
         "coriander",
         "ground coriander",
-        "coriander powder"
+        "coriander powder",
+        "coriander leaves"
       ],
       "tags": [
         "spice"
-      ]
+      ],
+      "_frequency": 11
     },
     "thyme": {
       "id": "thyme",
@@ -656,7 +679,8 @@
       ],
       "tags": [
         "herb_leafy"
-      ]
+      ],
+      "_frequency": 6
     },
     "cayenne": {
       "id": "cayenne",
@@ -675,7 +699,8 @@
       ],
       "tags": [
         "spice"
-      ]
+      ],
+      "_frequency": 19
     },
     "cinnamon": {
       "id": "cinnamon",
@@ -748,7 +773,9 @@
       "aliases": [
         "vegetable oil",
         "cooking oil",
-        "canola oil"
+        "canola oil",
+        "rapeseed oil",
+        "neutral oil"
       ],
       "tags": [
         "oil"
@@ -786,7 +813,11 @@
         "cream",
         "heavy cream",
         "whipping cream",
-        "double cream"
+        "double cream",
+        "heavy whipping cream",
+        "single cream",
+        "light cream",
+        "pouring cream"
       ],
       "tags": [
         "liquid"
@@ -824,7 +855,10 @@
       "aliases": [
         "spinach",
         "fresh spinach",
-        "baby spinach"
+        "baby spinach",
+        "handfuls spinach",
+        "baby spinach leaves",
+        "spinach leaves"
       ],
       "tags": [
         "leafy_green"
@@ -905,11 +939,13 @@
         "green onions",
         "green onion",
         "scallions",
-        "spring onions"
+        "spring onions",
+        "scallion"
       ],
       "tags": [
         "herb_leafy"
-      ]
+      ],
+      "_frequency": 36
     },
     "cucumber": {
       "id": "cucumber",
@@ -924,7 +960,9 @@
       "aliases": [
         "cucumber",
         "cucumbers",
-        "english cucumber"
+        "english cucumber",
+        "seedless cucumber",
+        "lebanese cucumber"
       ],
       "tags": [
         "vegetable_chopped"
@@ -960,7 +998,9 @@
       },
       "aliases": [
         "cauliflower",
-        "cauliflower florets"
+        "cauliflower florets",
+        "head cauliflower",
+        "riced cauliflower"
       ],
       "tags": [
         "vegetable_chopped"
@@ -978,7 +1018,8 @@
       },
       "aliases": [
         "eggplant",
-        "aubergine"
+        "aubergine",
+        "kgs eggplant"
       ],
       "tags": [
         "vegetable_chopped"
@@ -1036,7 +1077,8 @@
       "aliases": [
         "honey",
         "raw honey",
-        "pure honey"
+        "pure honey",
+        "local honey"
       ],
       "tags": [
         "liquid"
@@ -1079,7 +1121,10 @@
         "herbed parmesan drop biscuits",
         "parmigiano reggiano",
         "parmigiano-reggiano",
-        "additional parmesan"
+        "additional parmesan",
+        "parm",
+        "grana padano",
+        "grana padano cheese"
       ],
       "tags": [
         "cheese"
@@ -1098,7 +1143,9 @@
       "aliases": [
         "feta cheese",
         "feta",
-        "crumbled feta"
+        "crumbled feta",
+        "feta crumbles",
+        "greek feta"
       ],
       "tags": [
         "cheese"
@@ -1121,7 +1168,8 @@
       ],
       "tags": [
         "cheese"
-      ]
+      ],
+      "_frequency": 11
     },
     "cheddar_cheese": {
       "id": "cheddar_cheese",
@@ -1174,11 +1222,13 @@
       "aliases": [
         "lime juice",
         "fresh lime juice",
-        "juice of lime"
+        "juice of lime",
+        "juice lime"
       ],
       "tags": [
         "liquid"
-      ]
+      ],
+      "_frequency": 21
     },
     "lime_zest": {
       "id": "lime_zest",
@@ -1208,11 +1258,13 @@
       "aliases": [
         "ground beef",
         "minced beef",
-        "beef mince"
+        "beef mince",
+        "beef"
       ],
       "tags": [
         "protein"
-      ]
+      ],
+      "_frequency": 7
     },
     "shrimp": {
       "id": "shrimp",
@@ -1242,7 +1294,8 @@
       ],
       "tags": [
         "protein"
-      ]
+      ],
+      "_frequency": 13
     },
     "chickpeas": {
       "id": "chickpeas",
@@ -1357,25 +1410,6 @@
         "nuts"
       ]
     },
-    "yogurt": {
-      "id": "yogurt",
-      "displayName": "yogurt",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
-      },
-      "aliases": [
-        "yogurt",
-        "plain yogurt",
-        "greek yogurt"
-      ],
-      "tags": [
-        "dairy"
-      ]
-    },
     "sour_cream": {
       "id": "sour_cream",
       "displayName": "sour cream",
@@ -1480,7 +1514,8 @@
       "aliases": [
         "brown sugar",
         "light brown sugar",
-        "dark brown sugar"
+        "dark brown sugar",
+        "tbs brown sugar"
       ],
       "tags": [
         "sweetener"
@@ -1524,25 +1559,6 @@
       "_frequency": 34,
       "_recipeCount": 34
     },
-    "onions": {
-      "id": "onions",
-      "displayName": "onions",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 150,
-        "gPerTbsp": 9.4,
-        "gPerTsp": 3.1
-      },
-      "aliases": [
-        "onions"
-      ],
-      "tags": [
-        "vegetable"
-      ],
-      "_frequency": 33,
-      "_recipeCount": 33
-    },
     "carrot": {
       "id": "carrot",
       "displayName": "carrot",
@@ -1554,7 +1570,9 @@
         "gPerTsp": 3.1
       },
       "aliases": [
-        "carrot"
+        "carrot",
+        "carrots",
+        "baby carrots"
       ],
       "tags": [
         "vegetable"
@@ -1573,7 +1591,17 @@
         "gPerTsp": 3.1
       },
       "aliases": [
-        "tomato"
+        "tomato",
+        "tomatoes",
+        "fresh tomatoes",
+        "ripe tomatoes",
+        "fresh tomato",
+        "ripe tomato",
+        "vine tomato",
+        "plum tomato",
+        "roma tomato",
+        "beefsteak tomato",
+        "vine ripened tomato"
       ],
       "tags": [
         "vegetable"
@@ -1593,32 +1621,15 @@
       },
       "aliases": [
         "chicken broth",
-        "chicken stock"
+        "chicken stock",
+        "stock",
+        "vegetable stock"
       ],
       "tags": [
         "protein"
       ],
       "_frequency": 25,
       "_recipeCount": 25
-    },
-    "chicken_breasts": {
-      "id": "chicken_breasts",
-      "displayName": "chicken breasts",
-      "canonicalUnit": "whole",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
-      },
-      "aliases": [
-        "chicken breasts"
-      ],
-      "tags": [
-        "protein"
-      ],
-      "_frequency": 24,
-      "_recipeCount": 24
     },
     "garlic_powder": {
       "id": "garlic_powder",
@@ -1669,7 +1680,10 @@
         "gPerTsp": 3.9
       },
       "aliases": [
-        "quinoa"
+        "quinoa",
+        "cooked quinoa",
+        "white quinoa",
+        "red quinoa"
       ],
       "tags": [
         "grain"
@@ -1695,64 +1709,6 @@
       ],
       "_frequency": 23,
       "_recipeCount": 23
-    },
-    "basil_leaves": {
-      "id": "basil_leaves",
-      "displayName": "basil leaves",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
-      },
-      "aliases": [
-        "basil leaves"
-      ],
-      "tags": [
-        "spice"
-      ],
-      "_frequency": 22,
-      "_recipeCount": 21
-    },
-    "juice_lime": {
-      "id": "juice_lime",
-      "displayName": "juice lime",
-      "canonicalUnit": "ml",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
-      },
-      "aliases": [
-        "juice lime",
-        "juice of lime"
-      ],
-      "tags": [
-        "liquid"
-      ],
-      "_frequency": 21,
-      "_recipeCount": 18
-    },
-    "scallions": {
-      "id": "scallions",
-      "displayName": "scallions",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 150,
-        "gPerTbsp": 9.4,
-        "gPerTsp": 3.1
-      },
-      "aliases": [
-        "scallions"
-      ],
-      "tags": [
-        "vegetable"
-      ],
-      "_frequency": 21,
-      "_recipeCount": 20
     },
     "fish_sauce": {
       "id": "fish_sauce",
@@ -1784,7 +1740,12 @@
         "gPerTsp": 5
       },
       "aliases": [
-        "bacon"
+        "bacon",
+        "slices bacon",
+        "bacon slices",
+        "streaky bacon",
+        "turkey bacon",
+        "strips bacon"
       ],
       "tags": [
         "other"
@@ -1803,7 +1764,13 @@
         "gPerTsp": 5
       },
       "aliases": [
-        "lemon"
+        "lemon",
+        "meyer lemon",
+        "meyer lemon juice",
+        "lemon zest",
+        "zest of lemon",
+        "lemon wedges",
+        "lemon slices"
       ],
       "tags": [
         "other"
@@ -1849,25 +1816,6 @@
       "_frequency": 19,
       "_recipeCount": 19
     },
-    "cayenne_pepper": {
-      "id": "cayenne_pepper",
-      "displayName": "cayenne pepper",
-      "canonicalUnit": "g",
-      "state": "other",
-      "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
-      },
-      "aliases": [
-        "cayenne pepper"
-      ],
-      "tags": [
-        "spice"
-      ],
-      "_frequency": 19,
-      "_recipeCount": 19
-    },
     "mint": {
       "id": "mint",
       "displayName": "mint",
@@ -1879,12 +1827,15 @@
         "gPerTsp": 0.4
       },
       "aliases": [
-        "mint"
+        "mint",
+        "mint leaves",
+        "sprigs mint",
+        "fresh mint leaves"
       ],
       "tags": [
         "herb_leafy"
       ],
-      "_frequency": 18,
+      "_frequency": 28,
       "_recipeCount": 18
     },
     "red_wine_vinegar": {
@@ -1955,7 +1906,8 @@
         "gPerTsp": 5
       },
       "aliases": [
-        "corn"
+        "corn",
+        "kernel corn"
       ],
       "tags": [
         "other"
@@ -2058,25 +2010,6 @@
       "_frequency": 15,
       "_recipeCount": 15
     },
-    "bread_crumbs": {
-      "id": "bread_crumbs",
-      "displayName": "bread crumbs",
-      "canonicalUnit": "g",
-      "state": "other",
-      "density": {
-        "gPerCup": 185,
-        "gPerTbsp": 11.6,
-        "gPerTsp": 3.9
-      },
-      "aliases": [
-        "bread crumbs"
-      ],
-      "tags": [
-        "grain"
-      ],
-      "_frequency": 15,
-      "_recipeCount": 15
-    },
     "brown_rice": {
       "id": "brown_rice",
       "displayName": "brown rice",
@@ -2114,7 +2047,10 @@
         "nonfat greek yogurt",
         "lowfat greek yogurt",
         "low-fat greek yogurt",
-        "fat-free greek yogurt"
+        "fat-free greek yogurt",
+        "yogurt",
+        "plain yogurt",
+        "plain greek yogurt"
       ],
       "tags": [
         "dairy"
@@ -2133,29 +2069,13 @@
         "gPerTsp": 3.8
       },
       "aliases": [
-        "green beans"
+        "green beans",
+        "string beans",
+        "french beans",
+        "haricots verts"
       ],
       "tags": [
         "legume"
-      ],
-      "_frequency": 14,
-      "_recipeCount": 14
-    },
-    "shallots": {
-      "id": "shallots",
-      "displayName": "shallots",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 150,
-        "gPerTbsp": 9.4,
-        "gPerTsp": 3.1
-      },
-      "aliases": [
-        "shallots"
-      ],
-      "tags": [
-        "vegetable"
       ],
       "_frequency": 14,
       "_recipeCount": 14
@@ -2171,32 +2091,17 @@
         "gPerTsp": 3.1
       },
       "aliases": [
-        "cherry tomatoes"
+        "cherry tomatoes",
+        "cherry tomato",
+        "grape tomatoes",
+        "grape tomato",
+        "small tomatoes"
       ],
       "tags": [
         "vegetable"
       ],
       "_frequency": 14,
       "_recipeCount": 14
-    },
-    "cumin_seeds": {
-      "id": "cumin_seeds",
-      "displayName": "cumin seeds",
-      "canonicalUnit": "g",
-      "state": "other",
-      "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
-      },
-      "aliases": [
-        "cumin seeds"
-      ],
-      "tags": [
-        "spice"
-      ],
-      "_frequency": 14,
-      "_recipeCount": 13
     },
     "strawberries": {
       "id": "strawberries",
@@ -2483,25 +2388,6 @@
       "_frequency": 11,
       "_recipeCount": 11
     },
-    "mozzarella": {
-      "id": "mozzarella",
-      "displayName": "mozzarella",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
-      },
-      "aliases": [
-        "mozzarella"
-      ],
-      "tags": [
-        "other"
-      ],
-      "_frequency": 11,
-      "_recipeCount": 10
-    },
     "wine": {
       "id": "wine",
       "displayName": "wine",
@@ -2532,50 +2418,13 @@
         "gPerTsp": 3.1
       },
       "aliases": [
-        "shallot"
+        "shallot",
+        "shallots"
       ],
       "tags": [
         "vegetable"
       ],
-      "_frequency": 11,
-      "_recipeCount": 11
-    },
-    "flat_leaf_parsley": {
-      "id": "flat_leaf_parsley",
-      "displayName": "flat leaf parsley",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 20,
-        "gPerTbsp": 1.3,
-        "gPerTsp": 0.4
-      },
-      "aliases": [
-        "flat leaf parsley"
-      ],
-      "tags": [
-        "herb_leafy"
-      ],
-      "_frequency": 11,
-      "_recipeCount": 11
-    },
-    "chicken": {
-      "id": "chicken",
-      "displayName": "chicken",
-      "canonicalUnit": "whole",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
-      },
-      "aliases": [
-        "chicken"
-      ],
-      "tags": [
-        "protein"
-      ],
-      "_frequency": 11,
+      "_frequency": 25,
       "_recipeCount": 11
     },
     "bell_peppers": {
@@ -2608,12 +2457,13 @@
         "gPerTsp": 3.9
       },
       "aliases": [
-        "breadcrumbs"
+        "breadcrumbs",
+        "bread crumbs"
       ],
       "tags": [
         "grain"
       ],
-      "_frequency": 10,
+      "_frequency": 25,
       "_recipeCount": 10
     },
     "dill": {
@@ -2635,25 +2485,6 @@
       "_frequency": 10,
       "_recipeCount": 10
     },
-    "mint_leaves": {
-      "id": "mint_leaves",
-      "displayName": "mint leaves",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 20,
-        "gPerTbsp": 1.3,
-        "gPerTsp": 0.4
-      },
-      "aliases": [
-        "mint leaves"
-      ],
-      "tags": [
-        "herb_leafy"
-      ],
-      "_frequency": 10,
-      "_recipeCount": 10
-    },
     "rosemary": {
       "id": "rosemary",
       "displayName": "rosemary",
@@ -2665,7 +2496,10 @@
         "gPerTsp": 2.1
       },
       "aliases": [
-        "rosemary"
+        "rosemary",
+        "rosemary leaves",
+        "fresh rosemary leaves",
+        "sprigs rosemary"
       ],
       "tags": [
         "spice"
@@ -2691,25 +2525,6 @@
       ],
       "_frequency": 10,
       "_recipeCount": 9
-    },
-    "green_onion": {
-      "id": "green_onion",
-      "displayName": "green onion",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 150,
-        "gPerTbsp": 9.4,
-        "gPerTsp": 3.1
-      },
-      "aliases": [
-        "green onion"
-      ],
-      "tags": [
-        "vegetable"
-      ],
-      "_frequency": 10,
-      "_recipeCount": 10
     },
     "chillies": {
       "id": "chillies",
@@ -2965,25 +2780,6 @@
       "_frequency": 8,
       "_recipeCount": 8
     },
-    "salmon_fillets": {
-      "id": "salmon_fillets",
-      "displayName": "salmon fillets",
-      "canonicalUnit": "whole",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
-      },
-      "aliases": [
-        "salmon fillets"
-      ],
-      "tags": [
-        "protein"
-      ],
-      "_frequency": 8,
-      "_recipeCount": 8
-    },
     "bean_sprouts": {
       "id": "bean_sprouts",
       "displayName": "bean sprouts",
@@ -3014,7 +2810,9 @@
         "gPerTsp": 3.9
       },
       "aliases": [
-        "bread"
+        "bread",
+        "slices bread",
+        "bread slices"
       ],
       "tags": [
         "grain"
@@ -3079,45 +2877,6 @@
       "_frequency": 7,
       "_recipeCount": 7
     },
-    "beef": {
-      "id": "beef",
-      "displayName": "beef",
-      "canonicalUnit": "whole",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
-      },
-      "aliases": [
-        "beef",
-        "ground beef"
-      ],
-      "tags": [
-        "protein"
-      ],
-      "_frequency": 7,
-      "_recipeCount": 7
-    },
-    "coriander_powder": {
-      "id": "coriander_powder",
-      "displayName": "coriander powder",
-      "canonicalUnit": "g",
-      "state": "other",
-      "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
-      },
-      "aliases": [
-        "coriander powder"
-      ],
-      "tags": [
-        "spice"
-      ],
-      "_frequency": 7,
-      "_recipeCount": 7
-    },
     "sharp_cheddar_cheese": {
       "id": "sharp_cheddar_cheese",
       "displayName": "sharp cheddar cheese",
@@ -3174,25 +2933,6 @@
       ],
       "_frequency": 7,
       "_recipeCount": 6
-    },
-    "cilantro_leaves": {
-      "id": "cilantro_leaves",
-      "displayName": "cilantro leaves",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 20,
-        "gPerTbsp": 1.3,
-        "gPerTsp": 0.4
-      },
-      "aliases": [
-        "cilantro leaves"
-      ],
-      "tags": [
-        "herb_leafy"
-      ],
-      "_frequency": 7,
-      "_recipeCount": 7
     },
     "ginger_root": {
       "id": "ginger_root",
@@ -3378,7 +3118,13 @@
       },
       "aliases": [
         "juice orange",
-        "juice of orange"
+        "juice of orange",
+        "orange zest",
+        "zest of orange",
+        "orange rind",
+        "orange",
+        "navel orange",
+        "blood orange"
       ],
       "tags": [
         "liquid"
@@ -3420,25 +3166,6 @@
       ],
       "tags": [
         "grain"
-      ],
-      "_frequency": 6,
-      "_recipeCount": 6
-    },
-    "thyme_leaves": {
-      "id": "thyme_leaves",
-      "displayName": "thyme leaves",
-      "canonicalUnit": "g",
-      "state": "other",
-      "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
-      },
-      "aliases": [
-        "thyme leaves"
-      ],
-      "tags": [
-        "spice"
       ],
       "_frequency": 6,
       "_recipeCount": 6
@@ -3595,44 +3322,6 @@
       "_frequency": 5,
       "_recipeCount": 5
     },
-    "scallion": {
-      "id": "scallion",
-      "displayName": "scallion",
-      "canonicalUnit": "g",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 150,
-        "gPerTbsp": 9.4,
-        "gPerTsp": 3.1
-      },
-      "aliases": [
-        "scallion"
-      ],
-      "tags": [
-        "vegetable"
-      ],
-      "_frequency": 5,
-      "_recipeCount": 5
-    },
-    "cumin_powder": {
-      "id": "cumin_powder",
-      "displayName": "cumin powder",
-      "canonicalUnit": "g",
-      "state": "other",
-      "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
-      },
-      "aliases": [
-        "cumin powder"
-      ],
-      "tags": [
-        "spice"
-      ],
-      "_frequency": 5,
-      "_recipeCount": 5
-    },
     "grape_tomatoes": {
       "id": "grape_tomatoes",
       "displayName": "grape tomatoes",
@@ -3669,25 +3358,6 @@
       ],
       "tags": [
         "oil"
-      ],
-      "_frequency": 5,
-      "_recipeCount": 5
-    },
-    "salmon_fillet": {
-      "id": "salmon_fillet",
-      "displayName": "salmon fillet",
-      "canonicalUnit": "whole",
-      "state": "fresh",
-      "density": {
-        "gPerCup": 240,
-        "gPerTbsp": 15,
-        "gPerTsp": 5
-      },
-      "aliases": [
-        "salmon fillet"
-      ],
-      "tags": [
-        "protein"
       ],
       "_frequency": 5,
       "_recipeCount": 5
@@ -3940,25 +3610,6 @@
       "_frequency": 4,
       "_recipeCount": 4
     },
-    "coriander_leaves": {
-      "id": "coriander_leaves",
-      "displayName": "coriander leaves",
-      "canonicalUnit": "g",
-      "state": "other",
-      "density": {
-        "gPerCup": 100,
-        "gPerTbsp": 6.3,
-        "gPerTsp": 2.1
-      },
-      "aliases": [
-        "coriander leaves"
-      ],
-      "tags": [
-        "spice"
-      ],
-      "_frequency": 4,
-      "_recipeCount": 4
-    },
     "sundried_tomatoes": {
       "id": "sundried_tomatoes",
       "displayName": "sun-dried tomatoes",
@@ -4182,6 +3833,1577 @@
           "Julia Child's Coq au Vin"
         ]
       }
+    },
+    "banana": {
+      "id": "banana",
+      "displayName": "banana",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "density": {
+        "gPerCup": 225,
+        "gPerTbsp": 14,
+        "gPerTsp": 4.7
+      },
+      "aliases": [
+        "banana",
+        "bananas",
+        "ripe banana",
+        "ripe bananas"
+      ],
+      "tags": [
+        "fruit",
+        "produce"
+      ]
+    },
+    "peach": {
+      "id": "peach",
+      "displayName": "peach",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "density": {
+        "gPerCup": 154,
+        "gPerTbsp": 9.6,
+        "gPerTsp": 3.2
+      },
+      "aliases": [
+        "peach",
+        "peaches",
+        "fresh peach",
+        "fresh peaches",
+        "canned peaches"
+      ],
+      "tags": [
+        "fruit",
+        "produce"
+      ]
+    },
+    "pistachio": {
+      "id": "pistachio",
+      "displayName": "pistachios",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "gPerCup": 123,
+        "gPerTbsp": 7.7,
+        "gPerTsp": 2.6
+      },
+      "aliases": [
+        "pistachio",
+        "pistachios",
+        "shelled pistachios",
+        "roasted pistachios"
+      ],
+      "tags": [
+        "nuts"
+      ]
+    },
+    "tuna": {
+      "id": "tuna",
+      "displayName": "tuna",
+      "canonicalUnit": "g",
+      "state": "canned",
+      "density": {
+        "gPerCup": 182,
+        "gPerTbsp": 11.4,
+        "gPerTsp": 3.8
+      },
+      "aliases": [
+        "tuna",
+        "canned tuna",
+        "tuna fish",
+        "chunk light tuna",
+        "albacore tuna"
+      ],
+      "tags": [
+        "protein",
+        "seafood"
+      ]
+    },
+    "orzo": {
+      "id": "orzo",
+      "displayName": "orzo",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "gPerCup": 160,
+        "gPerTbsp": 10,
+        "gPerTsp": 3.3
+      },
+      "aliases": [
+        "orzo",
+        "orzo pasta",
+        "risoni"
+      ],
+      "tags": [
+        "grain",
+        "pasta"
+      ]
+    },
+    "pizza_sauce": {
+      "id": "pizza_sauce",
+      "displayName": "pizza sauce",
+      "canonicalUnit": "g",
+      "state": "canned",
+      "density": {
+        "gPerCup": 240,
+        "gPerTbsp": 15,
+        "gPerTsp": 5
+      },
+      "aliases": [
+        "pizza sauce",
+        "pizza marinara",
+        "pizza topping sauce"
+      ],
+      "tags": [
+        "sauce"
+      ]
+    },
+    "kalamata_olives": {
+      "id": "kalamata_olives",
+      "displayName": "kalamata olives",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "gPerCup": 180,
+        "gPerTbsp": 11.3,
+        "gPerTsp": 3.8
+      },
+      "aliases": [
+        "kalamata olives",
+        "kalamata",
+        "greek olives",
+        "black olives"
+      ],
+      "tags": [
+        "produce",
+        "mediterranean"
+      ]
+    },
+    "capers": {
+      "id": "capers",
+      "displayName": "capers",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "gPerCup": 144,
+        "gPerTbsp": 9,
+        "gPerTsp": 3
+      },
+      "aliases": [
+        "capers",
+        "caperberries"
+      ],
+      "tags": [
+        "condiment",
+        "mediterranean"
+      ]
+    },
+    "artichoke_hearts": {
+      "id": "artichoke_hearts",
+      "displayName": "artichoke hearts",
+      "canonicalUnit": "g",
+      "state": "canned",
+      "density": {
+        "gPerCup": 168,
+        "gPerTbsp": 10.5,
+        "gPerTsp": 3.5
+      },
+      "aliases": [
+        "artichoke hearts",
+        "artichokes",
+        "canned artichokes",
+        "marinated artichoke hearts"
+      ],
+      "tags": [
+        "vegetable"
+      ]
+    },
+    "pepperoni": {
+      "id": "pepperoni",
+      "displayName": "pepperoni",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "gPerCup": 135,
+        "gPerTbsp": 8.4,
+        "gPerTsp": 2.8
+      },
+      "aliases": [
+        "pepperoni",
+        "pepperoni slices",
+        "mini pepperoni"
+      ],
+      "tags": [
+        "meat",
+        "protein"
+      ]
+    },
+    "lettuce": {
+      "id": "lettuce",
+      "displayName": "lettuce",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "gPerCup": 47,
+        "gPerTbsp": 3,
+        "gPerTsp": 1
+      },
+      "aliases": [
+        "lettuce",
+        "romaine lettuce",
+        "iceberg lettuce",
+        "mixed greens",
+        "salad greens"
+      ],
+      "tags": [
+        "vegetable",
+        "leafy_green"
+      ]
+    },
+    "white_fish": {
+      "id": "white_fish",
+      "displayName": "white fish",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": null,
+      "aliases": [
+        "white fish",
+        "white fish fillet",
+        "cod",
+        "tilapia",
+        "halibut",
+        "sea bass",
+        "snapper"
+      ],
+      "tags": [
+        "protein",
+        "seafood"
+      ]
+    },
+    "seasoning": {
+      "displayName": "Seasoning blend",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 2.5
+      },
+      "aliases": [
+        "seasoning",
+        "all purpose seasoning",
+        "mixed seasoning",
+        "house seasoning"
+      ]
+    },
+    "pumpkin": {
+      "displayName": "Pumpkin",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 0.75
+      },
+      "aliases": [
+        "pumpkin",
+        "butternut pumpkin",
+        "kent pumpkin"
+      ]
+    },
+    "romano_cheese": {
+      "displayName": "Romano cheese",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "romano cheese",
+        "romano",
+        "pecorino romano"
+      ]
+    },
+    "almond_milk": {
+      "displayName": "Almond milk",
+      "canonicalUnit": "ml",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.02
+      },
+      "aliases": [
+        "almond milk",
+        "unsweetened almond milk",
+        "vanilla almond milk"
+      ]
+    },
+    "egg_white": {
+      "displayName": "Egg whites",
+      "canonicalUnit": "ml",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 1.04
+      },
+      "aliases": [
+        "egg whites",
+        "egg white",
+        "whites only"
+      ]
+    },
+    "hamburger_buns": {
+      "displayName": "Hamburger buns",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "hamburger buns",
+        "burger buns",
+        "brioche buns",
+        "slider buns"
+      ]
+    },
+    "tofu": {
+      "displayName": "Tofu",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 1.05
+      },
+      "aliases": [
+        "tofu",
+        "firm tofu",
+        "extra firm tofu",
+        "silken tofu",
+        "soft tofu",
+        "extra tofu",
+        "block tofu",
+        "firm block tofu"
+      ]
+    },
+    "hoisin_sauce": {
+      "displayName": "Hoisin sauce",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.3
+      },
+      "aliases": [
+        "hoisin sauce",
+        "hoisin"
+      ]
+    },
+    "sriracha": {
+      "displayName": "Sriracha",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "sriracha",
+        "sriracha sauce",
+        "hot chili sauce"
+      ]
+    },
+    "oyster_sauce": {
+      "displayName": "Oyster sauce",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.25
+      },
+      "aliases": [
+        "oyster sauce",
+        "vegetarian oyster sauce"
+      ]
+    },
+    "coconut": {
+      "displayName": "Coconut",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 0.4
+      },
+      "aliases": [
+        "coconut",
+        "shredded coconut",
+        "desiccated coconut",
+        "coconut flakes"
+      ]
+    },
+    "blueberry": {
+      "displayName": "Blueberries",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 0.6
+      },
+      "aliases": [
+        "blueberries",
+        "blueberry",
+        "fresh blueberries",
+        "frozen blueberries"
+      ]
+    },
+    "buttermilk": {
+      "displayName": "Buttermilk",
+      "canonicalUnit": "ml",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.03
+      },
+      "aliases": [
+        "buttermilk",
+        "low fat buttermilk"
+      ]
+    },
+    "asparagus": {
+      "displayName": "Asparagus",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "asparagus",
+        "asparagus spears",
+        "green asparagus",
+        "white asparagus",
+        "stalks asparagus"
+      ]
+    },
+    "radish": {
+      "displayName": "Radish",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "radish",
+        "radishes",
+        "red radish",
+        "daikon radish",
+        "daikon"
+      ]
+    },
+    "persian_cucumber": {
+      "displayName": "Persian cucumber",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "persian cucumber",
+        "persian cucumbers",
+        "mini cucumber"
+      ]
+    },
+    "asafoetida": {
+      "displayName": "Asafoetida",
+      "canonicalUnit": "pinch",
+      "state": "other",
+      "aliases": [
+        "asafoetida",
+        "asafetida",
+        "hing"
+      ]
+    },
+    "bread_loaf": {
+      "displayName": "Bread",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "loaf bread",
+        "bread loaf",
+        "sourdough loaf",
+        "crusty bread"
+      ]
+    },
+    "garlic_salt": {
+      "displayName": "Garlic salt",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 2.2
+      },
+      "aliases": [
+        "garlic salt"
+      ]
+    },
+    "tomato_puree": {
+      "displayName": "Tomato purée",
+      "canonicalUnit": "tbsp",
+      "state": "canned",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "tomato puree",
+        "tomato purée",
+        "passata"
+      ]
+    },
+    "coconut_cream": {
+      "displayName": "Coconut cream",
+      "canonicalUnit": "ml",
+      "state": "canned",
+      "density": {
+        "ml_to_g": 1.05
+      },
+      "aliases": [
+        "coconut cream",
+        "thick coconut cream"
+      ]
+    },
+    "raspberry": {
+      "displayName": "Raspberries",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 0.55
+      },
+      "aliases": [
+        "raspberries",
+        "raspberry",
+        "fresh raspberries",
+        "frozen raspberries"
+      ]
+    },
+    "blackberry": {
+      "displayName": "Blackberries",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 0.6
+      },
+      "aliases": [
+        "blackberries",
+        "blackberry",
+        "fresh blackberries"
+      ]
+    },
+    "pineapple": {
+      "displayName": "Pineapple",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 0.7
+      },
+      "aliases": [
+        "pineapple",
+        "fresh pineapple",
+        "canned pineapple",
+        "pineapple chunks"
+      ]
+    },
+    "cranberry": {
+      "displayName": "Cranberries",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 0.5
+      },
+      "aliases": [
+        "cranberries",
+        "cranberry",
+        "fresh cranberries",
+        "dried cranberries"
+      ]
+    },
+    "artichoke": {
+      "displayName": "Artichoke",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "artichoke",
+        "artichokes",
+        "artichoke hearts",
+        "canned artichoke",
+        "marinated artichoke"
+      ]
+    },
+    "fennel": {
+      "displayName": "Fennel",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "fennel",
+        "fennel bulb",
+        "fresh fennel"
+      ]
+    },
+    "couscous": {
+      "displayName": "Couscous",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.75
+      },
+      "aliases": [
+        "couscous",
+        "pearl couscous",
+        "israeli couscous",
+        "moroccan couscous"
+      ]
+    },
+    "polenta": {
+      "displayName": "Polenta",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.8
+      },
+      "aliases": [
+        "polenta",
+        "cornmeal polenta",
+        "instant polenta"
+      ]
+    },
+    "bulgur": {
+      "displayName": "Bulgur wheat",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.75
+      },
+      "aliases": [
+        "bulgur",
+        "bulgur wheat",
+        "cracked wheat"
+      ]
+    },
+    "pine_nut": {
+      "displayName": "Pine nuts",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.6
+      },
+      "aliases": [
+        "pine nuts",
+        "pine nut",
+        "pignoli",
+        "pinon nuts"
+      ]
+    },
+    "macadamia": {
+      "displayName": "Macadamia nuts",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.55
+      },
+      "aliases": [
+        "macadamia nuts",
+        "macadamia",
+        "macadamias"
+      ]
+    },
+    "pepita": {
+      "displayName": "Pepitas",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.55
+      },
+      "aliases": [
+        "pepitas",
+        "pumpkin seeds",
+        "pepita seeds"
+      ]
+    },
+    "chia_seeds": {
+      "displayName": "Chia seeds",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.7
+      },
+      "aliases": [
+        "chia seeds",
+        "chia"
+      ]
+    },
+    "flax_seeds": {
+      "displayName": "Flax seeds",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.6
+      },
+      "aliases": [
+        "flax seeds",
+        "flaxseed",
+        "linseed",
+        "ground flax"
+      ]
+    },
+    "tempeh": {
+      "displayName": "Tempeh",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "tempeh",
+        "soy tempeh"
+      ]
+    },
+    "seitan": {
+      "displayName": "Seitan",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "seitan",
+        "wheat meat",
+        "vital wheat gluten"
+      ]
+    },
+    "mascarpone": {
+      "displayName": "Mascarpone",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1
+      },
+      "aliases": [
+        "mascarpone",
+        "mascarpone cheese"
+      ]
+    },
+    "tarragon": {
+      "displayName": "Tarragon",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "tarragon",
+        "fresh tarragon"
+      ]
+    },
+    "cardamom": {
+      "displayName": "Cardamom",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 2
+      },
+      "aliases": [
+        "cardamom",
+        "cardamom pods",
+        "ground cardamom",
+        "green cardamom",
+        "cardamom seeds"
+      ]
+    },
+    "yeast": {
+      "displayName": "Yeast",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "aliases": [
+        "yeast",
+        "active dry yeast",
+        "instant yeast",
+        "dried yeast",
+        "fresh yeast"
+      ]
+    },
+    "cocoa_powder": {
+      "displayName": "Cocoa powder",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.45
+      },
+      "aliases": [
+        "cocoa powder",
+        "cocoa",
+        "unsweetened cocoa",
+        "dutch process cocoa"
+      ]
+    },
+    "chicken_whole": {
+      "displayName": "Whole chicken",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "whole chicken",
+        "roast chicken",
+        "rotisserie chicken",
+        "spatchcock chicken"
+      ]
+    },
+    "orange_juice": {
+      "displayName": "Orange juice",
+      "canonicalUnit": "ml",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.04
+      },
+      "aliases": [
+        "orange juice",
+        "oj",
+        "fresh orange juice"
+      ]
+    },
+    "marinara_sauce": {
+      "displayName": "Marinara sauce",
+      "canonicalUnit": "ml",
+      "state": "canned",
+      "density": {
+        "ml_to_g": 1.05
+      },
+      "aliases": [
+        "marinara sauce",
+        "marinara",
+        "tomato marinara"
+      ]
+    },
+    "cornmeal": {
+      "displayName": "Cornmeal",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.65
+      },
+      "aliases": [
+        "cornmeal",
+        "yellow cornmeal",
+        "corn meal"
+      ]
+    },
+    "tzatziki": {
+      "displayName": "Tzatziki",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1
+      },
+      "aliases": [
+        "tzatziki",
+        "tzatziki sauce",
+        "cucumber yogurt sauce"
+      ]
+    },
+    "chili_pepper": {
+      "displayName": "Chili pepper",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "chili pepper",
+        "chilli pepper",
+        "chili",
+        "hot pepper"
+      ]
+    },
+    "chili_flakes": {
+      "displayName": "Chili flakes",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.8
+      },
+      "aliases": [
+        "chili flakes",
+        "red pepper flakes",
+        "crushed red pepper",
+        "chilli flakes"
+      ]
+    },
+    "cream_of_mushroom_soup": {
+      "displayName": "Cream of mushroom soup",
+      "canonicalUnit": "ml",
+      "state": "canned",
+      "density": {
+        "ml_to_g": 1.05
+      },
+      "aliases": [
+        "cream mushroom soup",
+        "cream of mushroom soup",
+        "mushroom soup"
+      ]
+    },
+    "new_potatoes": {
+      "displayName": "New potatoes",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "new potatoes",
+        "baby potatoes",
+        "fingerling potatoes",
+        "small potatoes"
+      ]
+    },
+    "black_eyed_peas": {
+      "displayName": "Black-eyed peas",
+      "canonicalUnit": "g",
+      "state": "canned",
+      "aliases": [
+        "black-eyed peas",
+        "black eyed peas",
+        "cowpeas"
+      ]
+    },
+    "chocolate": {
+      "displayName": "Chocolate",
+      "canonicalUnit": "g",
+      "state": "other",
+      "aliases": [
+        "chocolate",
+        "dark chocolate",
+        "milk chocolate",
+        "bittersweet chocolate",
+        "semi-sweet chocolate"
+      ]
+    },
+    "ghee": {
+      "displayName": "Ghee",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.9
+      },
+      "aliases": [
+        "ghee",
+        "clarified butter"
+      ]
+    },
+    "chicken_thigh": {
+      "displayName": "Chicken thighs",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "chicken thighs",
+        "chicken thigh",
+        "boneless chicken thighs",
+        "bone-in chicken thighs"
+      ]
+    },
+    "guacamole": {
+      "displayName": "Guacamole",
+      "canonicalUnit": "tbsp",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 1
+      },
+      "aliases": [
+        "guacamole"
+      ]
+    },
+    "turbinado_sugar": {
+      "displayName": "Turbinado sugar",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.85
+      },
+      "aliases": [
+        "turbinado sugar",
+        "raw sugar",
+        "demerara sugar"
+      ]
+    },
+    "scotch_bonnet": {
+      "displayName": "Scotch bonnet pepper",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "scotch bonnet pepper",
+        "scotch bonnet",
+        "habanero"
+      ]
+    },
+    "pineapple_juice": {
+      "displayName": "Pineapple juice",
+      "canonicalUnit": "ml",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.05
+      },
+      "aliases": [
+        "pineapple juice"
+      ]
+    },
+    "panko": {
+      "displayName": "Panko breadcrumbs",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.35
+      },
+      "aliases": [
+        "panko bread crumbs",
+        "panko breadcrumbs",
+        "panko",
+        "japanese breadcrumbs",
+        "panko crumbs"
+      ]
+    },
+    "pork_chop": {
+      "displayName": "Pork chops",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "pork chops",
+        "pork chop",
+        "bone-in pork chops",
+        "boneless pork chops"
+      ]
+    },
+    "snow_peas": {
+      "displayName": "Snow peas",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "snow peas",
+        "mangetout",
+        "sugar snap peas"
+      ]
+    },
+    "star_anise": {
+      "displayName": "Star anise",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "star anise"
+      ]
+    },
+    "cherry": {
+      "displayName": "Cherries",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "density": {
+        "ml_to_g": 0.7
+      },
+      "aliases": [
+        "cherries",
+        "cherry",
+        "fresh cherries",
+        "sour cherries",
+        "sweet cherries",
+        "maraschino cherries"
+      ]
+    },
+    "nutritional_yeast": {
+      "displayName": "Nutritional yeast",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.35
+      },
+      "aliases": [
+        "nutritional yeast",
+        "nooch"
+      ]
+    },
+    "muffin": {
+      "displayName": "Muffins",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "muffins",
+        "muffin",
+        "english muffins",
+        "blueberry muffins"
+      ]
+    },
+    "lemon_pepper": {
+      "displayName": "Lemon pepper",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 2
+      },
+      "aliases": [
+        "lemon pepper",
+        "lemon pepper seasoning"
+      ]
+    },
+    "sunflower_oil": {
+      "displayName": "Sunflower oil",
+      "canonicalUnit": "ml",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.92
+      },
+      "aliases": [
+        "sunflower oil"
+      ]
+    },
+    "peanut_butter": {
+      "displayName": "Peanut butter",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.95
+      },
+      "aliases": [
+        "peanut butter",
+        "smooth peanut butter",
+        "crunchy peanut butter",
+        "natural peanut butter"
+      ]
+    },
+    "cod": {
+      "displayName": "Cod",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "cod fillets",
+        "cod fillet",
+        "cod",
+        "atlantic cod",
+        "pacific cod"
+      ]
+    },
+    "harissa": {
+      "displayName": "Harissa",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "harissa",
+        "harissa paste"
+      ]
+    },
+    "anchovy": {
+      "displayName": "Anchovies",
+      "canonicalUnit": "whole",
+      "state": "canned",
+      "aliases": [
+        "fillet anchovy",
+        "anchovy fillets",
+        "anchovies",
+        "anchovy paste"
+      ]
+    },
+    "pita_bread": {
+      "displayName": "Pita bread",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "pita bread",
+        "pita",
+        "pitta bread",
+        "pocket bread",
+        "pita pockets"
+      ]
+    },
+    "pearl_onion": {
+      "displayName": "Pearl onions",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "pearl onions",
+        "pearl onion",
+        "cipollini onions"
+      ]
+    },
+    "spaghetti": {
+      "displayName": "Spaghetti",
+      "canonicalUnit": "g",
+      "state": "other",
+      "aliases": [
+        "spaghetti",
+        "spaghetti pasta"
+      ]
+    },
+    "macaroni": {
+      "displayName": "Macaroni",
+      "canonicalUnit": "g",
+      "state": "other",
+      "aliases": [
+        "elbow macaroni",
+        "macaroni",
+        "elbow pasta"
+      ]
+    },
+    "marjoram": {
+      "displayName": "Marjoram",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "aliases": [
+        "marjoram",
+        "sweet marjoram"
+      ]
+    },
+    "crab_meat": {
+      "displayName": "Crab meat",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "crab meat",
+        "crabmeat",
+        "lump crab meat",
+        "crab"
+      ]
+    },
+    "wonton_wrapper": {
+      "displayName": "Wonton wrappers",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "wonton wrappers",
+        "wonton skins",
+        "dumpling wrappers"
+      ]
+    },
+    "cashew": {
+      "displayName": "Cashews",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.55
+      },
+      "aliases": [
+        "cashews",
+        "cashew nuts",
+        "raw cashews",
+        "roasted cashews"
+      ]
+    },
+    "agave": {
+      "displayName": "Agave nectar",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.4
+      },
+      "aliases": [
+        "agave nectar",
+        "agave",
+        "agave syrup"
+      ]
+    },
+    "falafel": {
+      "displayName": "Falafel",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "falafel"
+      ]
+    },
+    "tabbouleh": {
+      "displayName": "Tabbouleh",
+      "canonicalUnit": "ml",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.9
+      },
+      "aliases": [
+        "tabouleh",
+        "tabbouleh",
+        "tabouli"
+      ]
+    },
+    "turnip": {
+      "displayName": "Turnip",
+      "canonicalUnit": "whole",
+      "state": "fresh",
+      "aliases": [
+        "turnip",
+        "turnips"
+      ]
+    },
+    "hummus": {
+      "displayName": "Hummus",
+      "canonicalUnit": "ml",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1
+      },
+      "aliases": [
+        "hummus",
+        "houmous",
+        "chickpea hummus"
+      ]
+    },
+    "apricot": {
+      "displayName": "Apricots",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "apricots",
+        "apricot",
+        "fresh apricots",
+        "dried apricots"
+      ]
+    },
+    "hazelnut": {
+      "displayName": "Hazelnuts",
+      "canonicalUnit": "g",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.55
+      },
+      "aliases": [
+        "hazelnuts",
+        "hazelnut",
+        "filberts"
+      ]
+    },
+    "brussels_sprout": {
+      "displayName": "Brussels sprouts",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "brussels sprouts",
+        "brussels sprout",
+        "brussel sprouts"
+      ]
+    },
+    "kombu": {
+      "displayName": "Kombu",
+      "canonicalUnit": "whole",
+      "state": "dried",
+      "aliases": [
+        "piece kombu",
+        "kombu",
+        "kelp",
+        "dried kelp"
+      ]
+    },
+    "herbs_de_provence": {
+      "displayName": "Herbes de Provence",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.5
+      },
+      "aliases": [
+        "herbs de provence",
+        "herbes de provence"
+      ]
+    },
+    "celery_salt": {
+      "displayName": "Celery salt",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 2.2
+      },
+      "aliases": [
+        "celery salt"
+      ]
+    },
+    "curry_paste": {
+      "displayName": "Curry paste",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "curry paste",
+        "thai curry paste",
+        "red curry paste",
+        "green curry paste"
+      ]
+    },
+    "miso": {
+      "displayName": "Miso paste",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "miso",
+        "miso paste",
+        "white miso",
+        "red miso"
+      ]
+    },
+    "worcestershire": {
+      "displayName": "Worcestershire sauce",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "worcestershire sauce",
+        "worcestershire",
+        "lea and perrins"
+      ]
+    },
+    "mustard_dijon": {
+      "displayName": "Dijon mustard",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "dijon mustard",
+        "dijon",
+        "french mustard"
+      ]
+    },
+    "mustard_yellow": {
+      "displayName": "Yellow mustard",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1
+      },
+      "aliases": [
+        "yellow mustard",
+        "american mustard",
+        "prepared mustard"
+      ]
+    },
+    "arugula": {
+      "displayName": "Arugula",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "arugula",
+        "baby arugula",
+        "rocket",
+        "wild rocket"
+      ]
+    },
+    "liquid_smoke": {
+      "displayName": "Liquid smoke",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1
+      },
+      "aliases": [
+        "liquid smoke",
+        "hickory liquid smoke"
+      ]
+    },
+    "swiss_chard": {
+      "displayName": "Swiss chard",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "swiss chard",
+        "chard",
+        "rainbow chard",
+        "silverbeet"
+      ]
+    },
+    "crimini_mushroom": {
+      "displayName": "Cremini mushrooms",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "crimini mushrooms",
+        "cremini mushrooms",
+        "baby bella mushrooms",
+        "chestnut mushrooms"
+      ]
+    },
+    "bourbon": {
+      "displayName": "Bourbon",
+      "canonicalUnit": "ml",
+      "state": "other",
+      "density": {
+        "ml_to_g": 0.94
+      },
+      "aliases": [
+        "bourbon",
+        "bourbon whiskey",
+        "kentucky bourbon"
+      ]
+    },
+    "pumpkin_pie_spice": {
+      "displayName": "Pumpkin pie spice",
+      "canonicalUnit": "tsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 2
+      },
+      "aliases": [
+        "pumpkin pie spice",
+        "pumpkin spice"
+      ]
+    },
+    "saffron": {
+      "displayName": "Saffron",
+      "canonicalUnit": "pinch",
+      "state": "other",
+      "aliases": [
+        "saffron",
+        "saffron threads"
+      ]
+    },
+    "chili_sauce": {
+      "displayName": "Chili sauce",
+      "canonicalUnit": "tbsp",
+      "state": "other",
+      "density": {
+        "ml_to_g": 1.1
+      },
+      "aliases": [
+        "chili sauce",
+        "sweet chili sauce",
+        "thai chili sauce"
+      ]
+    },
+    "naan": {
+      "displayName": "Naan bread",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "naan",
+        "naan bread",
+        "garlic naan"
+      ]
+    },
+    "tortilla": {
+      "displayName": "Tortilla",
+      "canonicalUnit": "whole",
+      "state": "other",
+      "aliases": [
+        "tortilla",
+        "tortillas",
+        "flour tortilla",
+        "corn tortilla",
+        "wheat tortilla",
+        "burrito tortilla"
+      ]
+    },
+    "rice_noodle": {
+      "displayName": "Rice noodles",
+      "canonicalUnit": "g",
+      "state": "other",
+      "aliases": [
+        "rice noodles",
+        "pad thai noodles",
+        "flat rice noodles",
+        "vermicelli"
+      ]
+    },
+    "egg_noodle": {
+      "displayName": "Egg noodles",
+      "canonicalUnit": "g",
+      "state": "other",
+      "aliases": [
+        "egg noodles",
+        "wide egg noodles"
+      ]
+    },
+    "scallop": {
+      "displayName": "Scallops",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "scallops",
+        "sea scallops",
+        "bay scallops"
+      ]
+    },
+    "pork_loin": {
+      "displayName": "Pork loin",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "pork loin",
+        "pork tenderloin",
+        "pork fillet"
+      ]
+    },
+    "duck": {
+      "displayName": "Duck",
+      "canonicalUnit": "g",
+      "state": "fresh",
+      "aliases": [
+        "duck",
+        "duck breast",
+        "duck leg"
+      ]
     }
   }
 }

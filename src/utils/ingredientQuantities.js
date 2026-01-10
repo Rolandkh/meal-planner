@@ -158,17 +158,23 @@ export function formatQuantity(normalized, preferWeight = false) {
 export function aggregateQuantities(quantities) {
   let totalG = 0;
   let totalMl = 0;
+  let totalCount = 0; // For count-based items (whole, cloves, etc.)
   let hasG = false;
   let hasMl = false;
+  let hasCount = false;
   let countWithoutNormalization = 0;
   
   quantities.forEach(q => {
-    if (q.normalizedQuantityG !== null) {
+    if (q.normalizedQuantityG !== null && q.normalizedQuantityG > 0) {
       totalG += q.normalizedQuantityG;
       hasG = true;
-    } else if (q.normalizedQuantityMl !== null) {
+    } else if (q.normalizedQuantityMl !== null && q.normalizedQuantityMl > 0) {
       totalMl += q.normalizedQuantityMl;
       hasMl = true;
+    } else if (q.originalQuantity !== null && q.originalQuantity > 0) {
+      // Count-based item (no normalized quantity, but has original count)
+      totalCount += q.originalQuantity;
+      hasCount = true;
     } else {
       countWithoutNormalization++;
     }
@@ -177,9 +183,11 @@ export function aggregateQuantities(quantities) {
   return {
     totalG: hasG ? Math.round(totalG) : null,
     totalMl: hasMl ? Math.round(totalMl) : null,
+    totalCount: hasCount ? Math.round(totalCount) : null,
+    originalUnit: hasCount && quantities[0]?.originalUnit ? quantities[0].originalUnit : null,
     itemCount: quantities.length,
     unnormalizedCount: countWithoutNormalization,
-    hasCompleteData: countWithoutNormalization === 0
+    hasCompleteData: countWithoutNormalization === 0 || hasCount
   };
 }
 
@@ -189,6 +197,7 @@ export function aggregateQuantities(quantities) {
  * @returns {string} Formatted string
  */
 export function formatAggregated(aggregated) {
+  // Priority 1: Weight (most useful for shopping)
   if (aggregated.totalG) {
     if (aggregated.totalG >= 1000) {
       return `${(aggregated.totalG / 1000).toFixed(1)}kg`;
@@ -196,6 +205,7 @@ export function formatAggregated(aggregated) {
     return `${aggregated.totalG}g`;
   }
   
+  // Priority 2: Volume (for liquids)
   if (aggregated.totalMl) {
     if (aggregated.totalMl >= 1000) {
       return `${(aggregated.totalMl / 1000).toFixed(1)}L`;
@@ -203,12 +213,24 @@ export function formatAggregated(aggregated) {
     return `${aggregated.totalMl}ml`;
   }
   
-  // No normalized data available
-  if (aggregated.itemCount === 1) {
-    return 'varies';
+  // Priority 3: Count-based items (eggs, cloves, etc.)
+  if (aggregated.totalCount) {
+    // Format nicely based on unit
+    const unit = aggregated.originalUnit || 'whole';
+    if (unit === 'whole' || unit === 'pinch' || unit === 'dash') {
+      // Just show the count
+      return `${aggregated.totalCount}`;
+    }
+    // Show with unit (cloves, heads, etc.)
+    return `${aggregated.totalCount} ${unit}${aggregated.totalCount > 1 ? 's' : ''}`;
   }
   
-  return `${aggregated.itemCount} items`;
+  // Fallback: No usable quantity data
+  if (aggregated.itemCount === 1) {
+    return 'as needed';
+  }
+  
+  return `${aggregated.itemCount}×`;
 }
 
 export default {

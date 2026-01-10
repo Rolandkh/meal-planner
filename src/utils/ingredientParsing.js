@@ -57,7 +57,7 @@ const QUALITY_DESCRIPTORS = [
 ];
 
 // Noise words to remove (packaging/misc)
-const NOISE_WORDS = ['can', 'of'];
+const NOISE_WORDS = ['can', 'of', 'servings', 'serving', 'size'];
 
 // Unit normalization map
 export const UNIT_ALIASES = {
