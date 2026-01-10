@@ -1,0 +1,387 @@
+{
+  "timestamp": "2026-01-10T09:06:10.437Z",
+  "summary": {
+    "totalRecipes": 516,
+    "totalIngredients": 5741,
+    "removed": 0,
+    "fixed": 31,
+    "split": 21
+  },
+  "fixes": [
+    {
+      "recipe": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Easy Cheesy Pizza Casserole",
+      "issue": "Removed \"equivalent\"",
+      "original": "equivalent amount of a ground beef/bulk sausage mix",
+      "fixed": "ground beef/bulk sausage mix"
+    },
+    {
+      "recipe": "Vegetarian Moussaka With Portabella",
+      "issue": "Removed \"equivalent\"",
+      "original": "egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons of ener",
+      "fixed": "egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons of ener"
+    },
+    {
+      "recipe": "Vegetarian Moussaka With Portabella",
+      "issue": "Removed brand \"ener-g\"",
+      "original": "egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons of ener",
+      "fixed": "egg substitute equivalent to 3 eggs - i use substitute= teaspoons of ener"
+    },
+    {
+      "recipe": "Vegetarian Moussaka With Portabella",
+      "issue": "Standardized variety",
+      "original": "russet potatoes",
+      "fixed": "potatoes"
+    },
+    {
+      "recipe": "Italian Seafood Stew",
+      "issue": "Standardized variety",
+      "original": "club soda",
+      "fixed": "soda water"
+    },
+    {
+      "recipe": "Golden Beet Panzanella",
+      "issue": "Standardized variety",
+      "original": "golden beets",
+      "fixed": "beetroot"
+    },
+    {
+      "recipe": "Easy Skillet Garden Lasagna",
+      "issue": "Standardized variety",
+      "original": "milk mozzarella cheese",
+      "fixed": "mozzarella cheese"
+    },
+    {
+      "recipe": "Heart Shaped Spinach Ravioli",
+      "issue": "Standardized variety",
+      "original": "wonton wrappers",
+      "fixed": "wonton wrapper"
+    },
+    {
+      "recipe": "Homemade Thin Crust Pizza + Pesto + Potato",
+      "issue": "Standardized variety",
+      "original": "manchego cheese",
+      "fixed": "cheese"
+    },
+    {
+      "recipe": "How Sweet It Is Sweet Potato Lasagne",
+      "issue": "Split compound ingredient",
+      "original": "montery jack & cheddar cheese mix",
+      "result": [
+        "montery jack",
+        "cheddar cheese mix"
+      ]
+    },
+    {
+      "recipe": "How Sweet It Is Sweet Potato Lasagne",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Julia Child's Coq au Vin",
+      "issue": "Standardized variety",
+      "original": "several parsley sprigs",
+      "fixed": "parsley"
+    },
+    {
+      "recipe": "Italian Tomato and Mozzarella Caprese",
+      "issue": "Standardized variety",
+      "original": "whole-milk mozzarella",
+      "fixed": "mozzarella"
+    },
+    {
+      "recipe": "Lasagna - Spinach Rolls",
+      "issue": "Standardized variety",
+      "original": "curd cottage cheese",
+      "fixed": "cottage cheese"
+    },
+    {
+      "recipe": "Lasagna - Spinach Rolls",
+      "issue": "Removed brand \"ronzoni\"",
+      "original": "ronzoni curly edge lasagna",
+      "fixed": "curly edge lasagna"
+    },
+    {
+      "recipe": "Lasagna - Spinach Rolls",
+      "issue": "Standardized variety",
+      "original": "curly edge lasagna",
+      "fixed": "lasagna sheets"
+    },
+    {
+      "recipe": "Lasagna - Spinach Rolls",
+      "issue": "Standardized variety",
+      "original": "marjoram leaves",
+      "fixed": "marjoram"
+    },
+    {
+      "recipe": "Italian Pasta Salad with organic Arugula",
+      "issue": "Removed brand \"goya\"",
+      "original": "goya chick peas",
+      "fixed": "chick peas"
+    },
+    {
+      "recipe": "Italian Pasta Salad with organic Arugula",
+      "issue": "Removed brand \"botticelli\"",
+      "original": "botticelli extra virgin olive oil",
+      "fixed": "extra virgin olive oil"
+    },
+    {
+      "recipe": "Italian Pasta Salad with organic Arugula",
+      "issue": "Removed brand \"barilla\"",
+      "original": "barilla piccolini farfalle",
+      "fixed": "piccolini farfalle"
+    },
+    {
+      "recipe": "Simple Skillet Lasagna",
+      "issue": "Standardized variety",
+      "original": "oregano flakes",
+      "fixed": "oregano dried"
+    },
+    {
+      "recipe": "Simple Skillet Lasagna",
+      "issue": "Standardized variety",
+      "original": "no boil lasagna noodles",
+      "fixed": "lasagna sheets"
+    },
+    {
+      "recipe": "Eggplant Parmesan Roll-Ups",
+      "issue": "Standardized variety",
+      "original": "brown mushrooms",
+      "fixed": "mushrooms"
+    },
+    {
+      "recipe": "Herbed Vegetables In A Feta Quiche With A Wild Rice Crust",
+      "issue": "Standardized variety",
+      "original": "graviera",
+      "fixed": "cheese"
+    },
+    {
+      "recipe": "Crab Ravioli With Scallops and Gremolata",
+      "issue": "Standardized variety",
+      "original": "wonton wrappers",
+      "fixed": "wonton wrapper"
+    },
+    {
+      "recipe": "Italian Beef Braciole",
+      "issue": "Standardized variety",
+      "original": "round steak",
+      "fixed": "beef steak"
+    },
+    {
+      "recipe": "Sun-Dried Tomato and Leek Quiche",
+      "issue": "Standardized variety",
+      "original": "pastry flour",
+      "fixed": "plain flour"
+    },
+    {
+      "recipe": "Easy Eggplant Parmesan",
+      "issue": "Standardized variety",
+      "original": "style cheese",
+      "fixed": "cheese"
+    },
+    {
+      "recipe": "Lamb Burgers With Tzatziki Sauce",
+      "issue": "Split compound ingredient",
+      "original": "kosher salt & pepper",
+      "result": [
+        "kosher salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Lebanese Kibbeh",
+      "issue": "Split compound ingredient",
+      "original": "salt & ground pepper",
+      "result": [
+        "salt",
+        "ground pepper"
+      ]
+    },
+    {
+      "recipe": "Smoky Black Bean Soup With Sweet Potato & Kale",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Cauliflower Chickpea Stew",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Crab Salad Stuffed Pita Pockets",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Thai Cucumber Salad (By Roz)",
+      "issue": "Split compound ingredient",
+      "original": "coconut & sesame oil",
+      "result": [
+        "coconut",
+        "sesame oil"
+      ]
+    },
+    {
+      "recipe": "Southwest Egg Rolls with Cilantro Lime Pesto",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Kale & chickpea stew with cumin, smoked paprika and lime",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Shrimp pasta with white wine tomato cream sauce",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Farfalle with Shrimps, Tomatoes Basil Sauce",
+      "issue": "Removed brand \"barilla\"",
+      "original": "farfalle pasta by barilla",
+      "fixed": "farfalle pasta by"
+    },
+    {
+      "recipe": "Farfalle with fresh tomatoes, basil and mozzarella",
+      "issue": "Removed brand \"barilla\"",
+      "original": "farfalle pasta by barilla",
+      "fixed": "farfalle pasta by"
+    },
+    {
+      "recipe": "Easy Roasted Vegetables",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Balsamic Roasted Vegetables",
+      "issue": "Standardized variety",
+      "original": "golden beets",
+      "fixed": "beetroot"
+    },
+    {
+      "recipe": "Amazing Chicken Burgers",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Mushroom Quesadillas",
+      "issue": "Removed brand \"monterey\"",
+      "original": "monterey jack cheese",
+      "fixed": "jack cheese"
+    },
+    {
+      "recipe": "Vegetable Fried Wontons",
+      "issue": "Standardized variety",
+      "original": "wonton wrappers",
+      "fixed": "wonton wrapper"
+    },
+    {
+      "recipe": "Korean Extra Crispy Fried Chicken",
+      "issue": "Split compound ingredient",
+      "original": "sesame seeds & scallions",
+      "result": [
+        "sesame seeds",
+        "scallions"
+      ]
+    },
+    {
+      "recipe": "Bruschetta Stuffed Potatoes",
+      "issue": "Split compound ingredient",
+      "original": "sea salt & pepper",
+      "result": [
+        "sea salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Spanish “Ketchup” – Romesco Sauce",
+      "issue": "Split compound ingredient",
+      "original": "kosher salt & freshly cracked pepper",
+      "result": [
+        "kosher salt",
+        "freshly cracked pepper"
+      ]
+    },
+    {
+      "recipe": "White Bean and Garlic Soup with Spinach and Crispy Prosciutto and Rosemary-Garlic Toasts",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Grilled Fish Sandwiches",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Halibut with Coconut and Green Curry",
+      "issue": "Split compound ingredient",
+      "original": "sal & pepper",
+      "result": [
+        "sal",
+        "pepper"
+      ]
+    },
+    {
+      "recipe": "Avocado & Tomato Salad Topped with Grilled Shrimp",
+      "issue": "Split compound ingredient",
+      "original": "salt & pepper",
+      "result": [
+        "salt",
+        "pepper"
+      ]
+    }
+  ]
+}

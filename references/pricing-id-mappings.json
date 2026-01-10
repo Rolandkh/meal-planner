@@ -1,0 +1,710 @@
+{
+  "_description": "Manual ID mappings for pricing entries that don't auto-match",
+  "_totalMappings": 30,
+  "mappings": {
+    "Potato (brushed/washed)": "potato",
+    "Beetroot (loose)": "beetroot",
+    "Berry mix (frozen)": "berries_mixed_frozen",
+    "Kiwifruit (green)": "kiwifruit_green",
+    "Grapes (red or green)": "grapes",
+    "Pear (Packham/Bosc)": "pear",
+    "Grapefruit (pink)": "grapefruit_pink",
+    "Sardines (canned, in oil)": "sardines_canned",
+    "Calamari (fresh rings)": "calamari_rings",
+    "Fish fingers (frozen, crumbed)": "fish_fingers",
+    "Ham (leg, sliced deli)": "ham",
+    "Natural/plain yoghurt": "yoghurt_natural_full_fat",
+    "Noodles (egg, fresh)": "egg_noodles",
+    "Beetroot (canned)": "beetroot_canned_sliced",
+    "Cloves (ground)": "cloves_ground",
+    "Frozen berries (mixed)": "berries_mixed_frozen",
+    "Coffee (instant)": "coffee_instant",
+    "Coffee (ground)": "coffee_ground",
+    "Tea (black, box)": "tea_black",
+    "Tea (green, box)": "tea_green",
+    "Herbal tea (chamomile)": "tea",
+    "Gelatin (powder)": "gelatine_powder",
+    "Masala paste (Panang)": "curry_paste_panang",
+    "Ponzu sauce": "soy_sauce",
+    "Wok oil": "vegetable_oil",
+    "Currants (dried)": "currants_dried",
+    "Dates (Medjool, pitted)": "dates_medjool",
+    "Goji berries (dried)": "raisins",
+    "Coffee (instant, decaf)": "coffee_instant",
+    "Espresso powder": "coffee_ground"
+  },
+  "suggestions": [
+    {
+      "name": "Potato (brushed/washed)",
+      "num": 22,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Beetroot (loose)",
+      "num": 24,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Berry mix (frozen)",
+      "num": 45,
+      "suggestedId": "berries_mixed_frozen",
+      "found": true
+    },
+    {
+      "name": "Kiwifruit (green)",
+      "num": 49,
+      "suggestedId": "kiwifruit_green",
+      "found": true
+    },
+    {
+      "name": "Grapes (red or green)",
+      "num": 50,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Pear (Packham/Bosc)",
+      "num": 53,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Grapefruit (pink)",
+      "num": 60,
+      "suggestedId": "grapefruit_pink",
+      "found": true
+    },
+    {
+      "name": "Sardines (canned, in oil)",
+      "num": 83,
+      "suggestedId": "sardines_canned",
+      "found": true
+    },
+    {
+      "name": "Calamari (fresh rings)",
+      "num": 94,
+      "suggestedId": "calamari_rings",
+      "found": true
+    },
+    {
+      "name": "Fish fingers (frozen, crumbed)",
+      "num": 98,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Ham (leg, sliced deli)",
+      "num": 126,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Natural/plain yoghurt",
+      "num": 156,
+      "suggestedId": "yoghurt_natural_full_fat",
+      "found": true
+    },
+    {
+      "name": "Noodles (egg, fresh)",
+      "num": 195,
+      "suggestedId": "egg_noodles",
+      "found": true
+    },
+    {
+      "name": "Beetroot (canned)",
+      "num": 248,
+      "suggestedId": "beetroot_canned_sliced",
+      "found": true
+    },
+    {
+      "name": "Cloves (ground)",
+      "num": 272,
+      "suggestedId": "cloves_ground",
+      "found": true
+    },
+    {
+      "name": "Frozen berries (mixed)",
+      "num": 305,
+      "suggestedId": "berries_mixed_frozen",
+      "found": true
+    },
+    {
+      "name": "Coffee (instant)",
+      "num": 325,
+      "suggestedId": "coffee_instant",
+      "found": true
+    },
+    {
+      "name": "Coffee (ground)",
+      "num": 326,
+      "suggestedId": "coffee_ground",
+      "found": true
+    },
+    {
+      "name": "Tea (black, box)",
+      "num": 328,
+      "suggestedId": "tea_black",
+      "found": true
+    },
+    {
+      "name": "Tea (green, box)",
+      "num": 329,
+      "suggestedId": "tea_green",
+      "found": true
+    },
+    {
+      "name": "Herbal tea (chamomile)",
+      "num": 330,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Gelatin (powder)",
+      "num": 334,
+      "suggestedId": "gelatine_powder",
+      "found": true
+    },
+    {
+      "name": "Masala paste (Panang)",
+      "num": 351,
+      "suggestedId": "curry_paste_panang",
+      "found": true
+    },
+    {
+      "name": "Ponzu sauce",
+      "num": 369,
+      "suggestedId": "soy_sauce",
+      "found": true
+    },
+    {
+      "name": "Wok oil",
+      "num": 378,
+      "suggestedId": "vegetable_oil",
+      "found": true
+    },
+    {
+      "name": "Currants (dried)",
+      "num": 383,
+      "suggestedId": "currants_dried",
+      "found": true
+    },
+    {
+      "name": "Dates (Medjool, pitted)",
+      "num": 386,
+      "suggestedId": "dates_medjool",
+      "found": true
+    },
+    {
+      "name": "Goji berries (dried)",
+      "num": 391,
+      "suggestedId": "raisins",
+      "found": true
+    },
+    {
+      "name": "Coffee (instant, decaf)",
+      "num": 401,
+      "suggestedId": "coffee_instant",
+      "found": true
+    },
+    {
+      "name": "Espresso powder",
+      "num": 402,
+      "suggestedId": "coffee_ground",
+      "found": true
+    },
+    {
+      "name": "Tea (black, loose leaf)",
+      "num": 403,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tea (green, loose leaf)",
+      "num": 404,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tea (oolong)",
+      "num": 405,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tea (white)",
+      "num": 406,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tea (rooibos)",
+      "num": 409,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Matcha powder",
+      "num": 410,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Mustard (yellow/American)",
+      "num": 422,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Mustard (wholegrain)",
+      "num": 423,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Mustard (English)",
+      "num": 424,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Balsamic reduction",
+      "num": 430,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Bamboo shoots (canned)",
+      "num": 442,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Nori seaweed (sheets)",
+      "num": 445,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Wakame seaweed",
+      "num": 446,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Katsuobushi (bonito flakes)",
+      "num": 448,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Wasabi (fresh, if available)",
+      "num": 450,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Berbere spice",
+      "num": 465,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Whey protein powder",
+      "num": 481,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Plant-based protein powder",
+      "num": 482,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Pea protein powder",
+      "num": 483,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Hemp protein powder",
+      "num": 485,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Spirulina powder",
+      "num": 486,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Chlorella powder",
+      "num": 487,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Maca powder",
+      "num": 488,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Lion's Mane powder",
+      "num": 489,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Reishi powder",
+      "num": 490,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Psyllium husk powder",
+      "num": 493,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Flax seed powder",
+      "num": 495,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Cacao powder (raw)",
+      "num": 499,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Frozen stir-fry vegetables",
+      "num": 501,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Frozen leafy greens (mixed)",
+      "num": 504,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Frozen stir-fry noodles",
+      "num": 511,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Frozen pizza base",
+      "num": 513,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Puff pastry (frozen)",
+      "num": 514,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Shortcrust pastry (frozen)",
+      "num": 515,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Filo pastry (frozen)",
+      "num": 516,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Gnocchi (frozen, potato)",
+      "num": 519,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Millet",
+      "num": 528,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Teff grain",
+      "num": 529,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Amaranth",
+      "num": 530,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Spelt grain (whole)",
+      "num": 531,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Kamut (Khorasan wheat)",
+      "num": 532,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Barley (pearl)",
+      "num": 533,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Instant soup packets",
+      "num": 543,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Lentil soup (canned)",
+      "num": 544,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Minestrone soup (canned)",
+      "num": 545,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Mixed vegetables (canned)",
+      "num": 549,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Four-bean mix (canned)",
+      "num": 554,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tapenade (olive paste)",
+      "num": 567,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Olive paste (alternative)",
+      "num": 568,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Roasted capsicum (jarred)",
+      "num": 570,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Mixed pickles",
+      "num": 576,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Turkish delight",
+      "num": 596,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Gummy bears",
+      "num": 598,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Lollipops (assorted)",
+      "num": 599,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Caramels/toffees",
+      "num": 600,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Enchiladas (canned)",
+      "num": 627,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tamales (canned)",
+      "num": 628,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Pozole (hominy, canned)",
+      "num": 631,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Huitlacoche (canned, if available)",
+      "num": 632,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Mole paste",
+      "num": 633,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Epazote (dried herb)",
+      "num": 634,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tandoori paste",
+      "num": 639,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tikka paste",
+      "num": 640,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Wheat germ",
+      "num": 648,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Bran (oat)",
+      "num": 649,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Bran (wheat)",
+      "num": 650,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Instant grits",
+      "num": 653,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tapioca (pearls)",
+      "num": 654,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Sago (pearls)",
+      "num": 655,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Potato starch",
+      "num": 658,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Tapioca starch",
+      "num": 659,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Gel master (gelatin alternative)",
+      "num": 660,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Inulin powder",
+      "num": 661,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Erythritol sweetener",
+      "num": 662,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Monk fruit sweetener",
+      "num": 664,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Date syrup",
+      "num": 670,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Activated charcoal (food-grade)",
+      "num": 673,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Matcha powder (alternative)",
+      "num": 674,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Ashwagandha powder",
+      "num": 675,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Collagen powder",
+      "num": 676,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "MCT oil",
+      "num": 677,
+      "suggestedId": null,
+      "found": false
+    },
+    {
+      "name": "Electrolyte powder (unflavored)",
+      "num": 678,
+      "suggestedId": null,
+      "found": false
+    }
+  ]
+}

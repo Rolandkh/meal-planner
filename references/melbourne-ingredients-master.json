@@ -1,0 +1,197 @@
+{
+  "_description": "Comprehensive Melbourne supermarket ingredient database",
+  "_source": "Coles, Woolworths (Melbourne, VIC)",
+  "_lastUpdated": "2026-01-10",
+  "_totalIngredients": "~600",
+  "_priority": "Diet Compass compatible ingredients prioritized",
+  
+  "categories": {
+    "vegetables_fresh": {
+      "leafy_greens": [
+        {"name": "spinach baby", "unit": "g", "state": "fresh"},
+        {"name": "spinach bunch", "unit": "g", "state": "fresh"},
+        {"name": "kale curly", "unit": "g", "state": "fresh"},
+        {"name": "kale tuscan", "unit": "g", "state": "fresh", "aliases": ["cavolo nero", "dinosaur kale"]},
+        {"name": "silverbeet", "unit": "g", "state": "fresh", "aliases": ["swiss chard"]},
+        {"name": "rocket", "unit": "g", "state": "fresh", "aliases": ["arugula"]},
+        {"name": "lettuce iceberg", "unit": "g", "state": "fresh"},
+        {"name": "lettuce cos", "unit": "g", "state": "fresh", "aliases": ["romaine lettuce"]},
+        {"name": "lettuce butter", "unit": "g", "state": "fresh"},
+        {"name": "lettuce mixed leaves", "unit": "g", "state": "fresh"},
+        {"name": "cabbage green", "unit": "g", "state": "fresh"},
+        {"name": "cabbage red", "unit": "g", "state": "fresh"},
+        {"name": "cabbage savoy", "unit": "g", "state": "fresh"},
+        {"name": "cabbage wombok", "unit": "g", "state": "fresh", "aliases": ["chinese cabbage", "napa cabbage"]},
+        {"name": "choy sum", "unit": "g", "state": "fresh"},
+        {"name": "radicchio", "unit": "g", "state": "fresh"},
+        {"name": "endive", "unit": "g", "state": "fresh"},
+        {"name": "watercress", "unit": "g", "state": "fresh"}
+      ],
+      
+      "root_vegetables": [
+        {"name": "potato brushed", "unit": "g", "state": "fresh"},
+        {"name": "potato washed", "unit": "g", "state": "fresh"},
+        {"name": "potato desiree", "unit": "g", "state": "fresh"},
+        {"name": "potato kipfler", "unit": "g", "state": "fresh"},
+        {"name": "potato sebago", "unit": "g", "state": "fresh"},
+        {"name": "sweet potato white", "unit": "g", "state": "fresh", "aliases": ["kumara white"]},
+        {"name": "sweet potato orange", "unit": "g", "state": "fresh", "aliases": ["kumara orange"]},
+        {"name": "carrot bunch", "unit": "g", "state": "fresh"},
+        {"name": "carrot loose", "unit": "g", "state": "fresh"},
+        {"name": "shallots", "unit": "g", "state": "fresh", "aliases": ["eschalots", "french shallots"]},
+        {"name": "spring onions", "unit": "g", "state": "fresh", "aliases": ["scallions", "green onions"]},
+        {"name": "garlic bulb", "unit": "g", "state": "fresh"},
+        {"name": "garlic pre-peeled", "unit": "g", "state": "fresh"},
+        {"name": "garlic minced jar", "unit": "g", "state": "other"},
+        {"name": "ginger fresh root", "unit": "g", "state": "fresh"},
+        {"name": "beetroot bunch", "unit": "g", "state": "fresh"},
+        {"name": "beetroot loose", "unit": "g", "state": "fresh"},
+        {"name": "parsnip", "unit": "g", "state": "fresh"},
+        {"name": "turnip", "unit": "g", "state": "fresh"},
+        {"name": "swede", "unit": "g", "state": "fresh"},
+        {"name": "radish red", "unit": "g", "state": "fresh"},
+        {"name": "radish daikon", "unit": "g", "state": "fresh"},
+        {"name": "celeriac", "unit": "g", "state": "fresh"},
+        {"name": "jerusalem artichoke", "unit": "g", "state": "fresh"},
+        {"name": "fennel bulb", "unit": "g", "state": "fresh"},
+        {"name": "leek", "unit": "g", "state": "fresh"}
+      ],
+      
+      "cruciferous": [
+        {"name": "broccoli", "unit": "g", "state": "fresh"},
+        {"name": "cauliflower", "unit": "g", "state": "fresh"},
+        {"name": "broccolini", "unit": "g", "state": "fresh", "aliases": ["tenderstem broccoli"]}
+      ],
+      
+      "nightshades": [
+        {"name": "tomato truss", "unit": "g", "state": "fresh"},
+        {"name": "tomato roma", "unit": "g", "state": "fresh", "aliases": ["plum tomatoes"]},
+        {"name": "tomato vine ripened", "unit": "g", "state": "fresh"},
+        {"name": "tomato heirloom", "unit": "g", "state": "fresh"},
+        {"name": "capsicum red", "unit": "g", "state": "fresh", "aliases": ["red bell pepper"]},
+        {"name": "capsicum green", "unit": "g", "state": "fresh", "aliases": ["green bell pepper"]},
+        {"name": "capsicum yellow", "unit": "g", "state": "fresh", "aliases": ["yellow bell pepper"]},
+        {"name": "capsicum orange", "unit": "g", "state": "fresh", "aliases": ["orange bell pepper"]},
+        {"name": "eggplant", "unit": "g", "state": "fresh", "aliases": ["aubergine"]},
+        {"name": "chilli red", "unit": "g", "state": "fresh"},
+        {"name": "chilli green", "unit": "g", "state": "fresh"},
+        {"name": "chilli birds eye", "unit": "g", "state": "fresh"},
+        {"name": "chilli jalapeno", "unit": "g", "state": "fresh"},
+        {"name": "chilli long red", "unit": "g", "state": "fresh"}
+      ],
+      
+      "squash_gourds": [
+        {"name": "zucchini green", "unit": "g", "state": "fresh", "aliases": ["courgette"]},
+        {"name": "zucchini yellow", "unit": "g", "state": "fresh"},
+        {"name": "pumpkin butternut", "unit": "g", "state": "fresh"},
+        {"name": "pumpkin kent", "unit": "g", "state": "fresh", "aliases": ["jap pumpkin"]},
+        {"name": "pumpkin queensland blue", "unit": "g", "state": "fresh"},
+        {"name": "cucumber continental", "unit": "g", "state": "fresh"},
+        {"name": "cucumber lebanese", "unit": "g", "state": "fresh"},
+        {"name": "cucumber telegraph", "unit": "g", "state": "fresh"},
+        {"name": "squash yellow", "unit": "g", "state": "fresh"},
+        {"name": "squash button", "unit": "g", "state": "fresh"}
+      ],
+      
+      "legume_vegetables": [
+        {"name": "green beans round", "unit": "g", "state": "fresh"},
+        {"name": "green beans flat", "unit": "g", "state": "fresh"},
+        {"name": "snow peas", "unit": "g", "state": "fresh"},
+        {"name": "sugar snap peas", "unit": "g", "state": "fresh"},
+        {"name": "peas in pod", "unit": "g", "state": "fresh"},
+        {"name": "broad beans fresh", "unit": "g", "state": "fresh", "aliases": ["fava beans"]}
+      ],
+      
+      "other": [
+        {"name": "celery", "unit": "g", "state": "fresh"},
+        {"name": "asparagus", "unit": "g", "state": "fresh"},
+        {"name": "corn cob", "unit": "whole", "state": "fresh"},
+        {"name": "baby corn", "unit": "g", "state": "fresh"},
+        {"name": "mushrooms button", "unit": "g", "state": "fresh"},
+        {"name": "mushrooms cup", "unit": "g", "state": "fresh"},
+        {"name": "mushrooms flat", "unit": "g", "state": "fresh"},
+        {"name": "mushrooms swiss brown", "unit": "g", "state": "fresh", "aliases": ["cremini"]},
+        {"name": "mushrooms shiitake", "unit": "g", "state": "fresh"},
+        {"name": "mushrooms oyster", "unit": "g", "state": "fresh"},
+        {"name": "mushrooms enoki", "unit": "g", "state": "fresh"},
+        {"name": "mushrooms portobello", "unit": "g", "state": "fresh"},
+        {"name": "artichoke globe", "unit": "g", "state": "fresh"},
+        {"name": "bean sprouts", "unit": "g", "state": "fresh"}
+      ]
+    },
+    
+    "fruits_fresh": {
+      "citrus": [
+        {"name": "orange navel", "unit": "g", "state": "fresh"},
+        {"name": "orange valencia", "unit": "g", "state": "fresh"},
+        {"name": "orange blood", "unit": "g", "state": "fresh"},
+        {"name": "lemon", "unit": "g", "state": "fresh"},
+        {"name": "lime", "unit": "g", "state": "fresh"},
+        {"name": "grapefruit pink", "unit": "g", "state": "fresh"},
+        {"name": "grapefruit white", "unit": "g", "state": "fresh"},
+        {"name": "mandarin", "unit": "g", "state": "fresh", "aliases": ["tangerine"]},
+        {"name": "tangelo", "unit": "g", "state": "fresh"}
+      ],
+      
+      "stone_fruits": [
+        {"name": "peach white", "unit": "g", "state": "fresh"},
+        {"name": "peach yellow", "unit": "g", "state": "fresh"},
+        {"name": "nectarine", "unit": "g", "state": "fresh"},
+        {"name": "plum", "unit": "g", "state": "fresh"},
+        {"name": "apricot", "unit": "g", "state": "fresh"},
+        {"name": "cherry", "unit": "g", "state": "fresh"}
+      ],
+      
+      "pome_fruits": [
+        {"name": "apple royal gala", "unit": "g", "state": "fresh"},
+        {"name": "apple pink lady", "unit": "g", "state": "fresh"},
+        {"name": "apple granny smith", "unit": "g", "state": "fresh"},
+        {"name": "apple fuji", "unit": "g", "state": "fresh"},
+        {"name": "apple jazz", "unit": "g", "state": "fresh"},
+        {"name": "apple kanzi", "unit": "g", "state": "fresh"},
+        {"name": "pear williams", "unit": "g", "state": "fresh", "aliases": ["bartlett pear"]},
+        {"name": "pear packham", "unit": "g", "state": "fresh"},
+        {"name": "pear beurre bosc", "unit": "g", "state": "fresh"},
+        {"name": "pear corella", "unit": "g", "state": "fresh"}
+      ],
+      
+      "tropical": [
+        {"name": "banana cavendish", "unit": "g", "state": "fresh"},
+        {"name": "banana lady finger", "unit": "g", "state": "fresh"},
+        {"name": "pineapple", "unit": "g", "state": "fresh"},
+        {"name": "mango", "unit": "g", "state": "fresh"},
+        {"name": "papaya", "unit": "g", "state": "fresh", "aliases": ["pawpaw"]},
+        {"name": "passionfruit", "unit": "g", "state": "fresh"},
+        {"name": "kiwifruit green", "unit": "g", "state": "fresh"},
+        {"name": "kiwifruit gold", "unit": "g", "state": "fresh"},
+        {"name": "coconut fresh", "unit": "g", "state": "fresh"},
+        {"name": "lychee", "unit": "g", "state": "fresh"},
+        {"name": "dragonfruit", "unit": "g", "state": "fresh"}
+      ],
+      
+      "berries": [
+        {"name": "strawberry", "unit": "g", "state": "fresh"},
+        {"name": "blueberry", "unit": "g", "state": "fresh"},
+        {"name": "raspberry", "unit": "g", "state": "fresh"},
+        {"name": "blackberry", "unit": "g", "state": "fresh"}
+      ],
+      
+      "melons": [
+        {"name": "watermelon", "unit": "g", "state": "fresh"},
+        {"name": "rockmelon", "unit": "g", "state": "fresh", "aliases": ["cantaloupe"]},
+        {"name": "honeydew melon", "unit": "g", "state": "fresh"}
+      ],
+      
+      "other": [
+        {"name": "grapes red", "unit": "g", "state": "fresh"},
+        {"name": "grapes green", "unit": "g", "state": "fresh"},
+        {"name": "grapes black", "unit": "g", "state": "fresh"},
+        {"name": "avocado", "unit": "g", "state": "fresh"},
+        {"name": "fig fresh", "unit": "g", "state": "fresh"},
+        {"name": "pomegranate", "unit": "g", "state": "fresh"},
+        {"name": "persimmon", "unit": "g", "state": "fresh"},
+        {"name": "rhubarb", "unit": "g", "state": "fresh"}
+      ]
+    }
+  }
+}

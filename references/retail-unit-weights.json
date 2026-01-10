@@ -1,0 +1,201 @@
+{
+  "_description": "Typical weights for retail units - Melbourne supermarkets",
+  "_purpose": "Convert retail pricing (per bunch, per head) to scientific units (per kg, per L)",
+  "_source": "Research from Coles, Woolworths, USDA, culinary references",
+  "_lastUpdated": "2026-01-10",
+  
+  "retailUnitWeights": {
+    "bunch": {
+      "_description": "Bunched vegetables and herbs",
+      "byIngredient": {
+        "spinach": 150,
+        "kale": 200,
+        "silverbeet": 300,
+        "bok_choy": 150,
+        "spring_onions": 150,
+        "parsley": 60,
+        "basil": 40,
+        "coriander": 60,
+        "mint": 40,
+        "thyme": 30,
+        "rosemary": 30,
+        "beetroot": 800,
+        "carrots": 500,
+        "asparagus": 350,
+        "herbs_generic": 50
+      },
+      "default": 150
+    },
+    
+    "head": {
+      "_description": "Whole heads of vegetables",
+      "byIngredient": {
+        "lettuce": 400,
+        "lettuce_cos": 450,
+        "lettuce_iceberg": 600,
+        "cabbage": 900,
+        "cabbage_red": 900,
+        "cabbage_green": 900,
+        "broccoli": 450,
+        "cauliflower": 650,
+        "celery": 600,
+        "garlic": 50
+      },
+      "default": 500
+    },
+    
+    "each": {
+      "_description": "Individual items sold as single units",
+      "byIngredient": {
+        "bell_pepper": 200,
+        "capsicum": 200,
+        "cucumber": 350,
+        "cucumber_continental": 400,
+        "cucumber_lebanese": 150,
+        "zucchini": 200,
+        "eggplant": 400,
+        "avocado": 200,
+        "lemon": 100,
+        "lime": 80,
+        "orange": 180,
+        "apple": 180,
+        "banana": 120,
+        "tomato": 150,
+        "onion": 150,
+        "potato": 180,
+        "sweet_potato": 200,
+        "mango": 350,
+        "pineapple": 1000,
+        "watermelon": 3000,
+        "rockmelon": 800,
+        "corn_cob": 250,
+        "leek": 300,
+        "artichoke": 250
+      },
+      "default": 200
+    },
+    
+    "bag": {
+      "_description": "Pre-packaged bags (extract weight from description)",
+      "common": {
+        "salad_100g": 100,
+        "salad_150g": 150,
+        "spinach_120g": 120,
+        "rocket_100g": 100,
+        "kale_200g": 200,
+        "carrots_1kg": 1000,
+        "potatoes_2kg": 2000,
+        "onions_1kg": 1000,
+        "rice_1kg": 1000,
+        "flour_1kg": 1000,
+        "sugar_1kg": 1000,
+        "pasta_500g": 500
+      },
+      "default": 500
+    },
+    
+    "pack": {
+      "_description": "Generic packs (varies widely)",
+      "byIngredient": {
+        "mushrooms": 250,
+        "cherry_tomatoes": 250,
+        "berries": 250,
+        "chicken_breast": 400,
+        "bacon": 200,
+        "cheese": 200,
+        "tofu": 300
+      },
+      "default": 250
+    },
+    
+    "punnet": {
+      "_description": "Small containers for berries/tomatoes",
+      "common": {
+        "strawberries": 250,
+        "blueberries": 150,
+        "raspberries": 150,
+        "blackberries": 150,
+        "cherry_tomatoes": 250,
+        "grape_tomatoes": 250
+      },
+      "default": 200
+    },
+    
+    "jar": {
+      "_description": "Glass jars (extract from description)",
+      "common": {
+        "spice_20g": 20,
+        "spice_30g": 30,
+        "honey_500g": 500,
+        "jam_300g": 300,
+        "sauce_250ml": 250,
+        "peanut_butter_500g": 500,
+        "paste_200g": 200
+      },
+      "default": 250
+    },
+    
+    "can": {
+      "_description": "Canned goods (standard sizes)",
+      "common": {
+        "tomatoes_400g": 400,
+        "beans_400g": 400,
+        "chickpeas_400g": 400,
+        "tuna_95g": 95,
+        "tuna_185g": 185,
+        "salmon_210g": 210,
+        "coconut_milk_400ml": 400,
+        "soup_400g": 400,
+        "corn_400g": 400
+      },
+      "default": 400
+    },
+    
+    "bottle": {
+      "_description": "Liquid bottles",
+      "common": {
+        "oil_500ml": 500,
+        "oil_750ml": 750,
+        "vinegar_500ml": 500,
+        "sauce_250ml": 250,
+        "soy_sauce_250ml": 250,
+        "wine_750ml": 750
+      },
+      "default": 500
+    },
+    
+    "box": {
+      "_description": "Boxed goods",
+      "common": {
+        "pasta_500g": 500,
+        "cereal_500g": 500,
+        "tea_20bags": 40,
+        "stock_cubes_100g": 100
+      },
+      "default": 400
+    },
+    
+    "dozen": {
+      "_description": "Eggs by dozen",
+      "eggs": 600,
+      "default": 600
+    },
+    
+    "block": {
+      "_description": "Cheese/butter blocks",
+      "common": {
+        "butter_250g": 250,
+        "cheese_200g": 200,
+        "cheese_500g": 500
+      },
+      "default": 200
+    }
+  },
+  
+  "conversionNotes": {
+    "extractFromDescription": "Many descriptions include weight (e.g., '120-150g bag', '2kg bag')",
+    "useIngredientType": "Bunch/head/each vary by ingredient type",
+    "fallbackToDefault": "Use default if ingredient not in byIngredient list",
+    "verifyWithDensity": "Cross-check with density data where available"
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "timestamp": "2026-01-10T09:06:55.466Z",
+  "testParams": {
+    "recipesCount": 50,
+    "catalogVersion": "2.0.0",
+    "ingredientCatalogSize": 1035
+  },
+  "summary": {
+    "totalRecipes": 50,
+    "totalIngredients": 608,
+    "matched": 583,
+    "highConfidence": 564,
+    "mediumConfidence": 11,
+    "lowConfidence": 8,
+    "noMatch": 25,
+    "matchRate": 96
+  },
+  "detailedResults": [
+    {
+      "recipeName": "Broccolini Quinoa Pilaf",
+      "totalIngredients": 7,
+      "matched": 7,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+      "totalIngredients": 13,
+      "matched": 13,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Salmon Quinoa Risotto",
+      "totalIngredients": 9,
+      "matched": 9,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Italian Tuna Pasta",
+      "totalIngredients": 8,
+      "matched": 8,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Baked Ratatouille",
+      "totalIngredients": 10,
+      "matched": 10,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Mushroom Hummus Crostini",
+      "totalIngredients": 11,
+      "matched": 11,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Roma Tomato Bruschetta",
+      "totalIngredients": 8,
+      "matched": 8,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Easy Cheesy Pizza Casserole",
+      "totalIngredients": 19,
+      "matched": 16,
+      "unmatched": [
+        "453.592 g ground beef/bulk sausage mix",
+        "1 serving or",
+        "6 servings or"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Plantain Pizza",
+      "totalIngredients": 14,
+      "matched": 14,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Veggie Lasagna Rolls with Peppery Pecorino Marinara",
+      "totalIngredients": 21,
+      "matched": 20,
+      "unmatched": [
+        "1 tsp basil& oregano"
+      ],
+      "lowConfidence": [
+        {
+          "original": "50 g cube pecorino cheese",
+          "matched": "Romano cheese",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "recipeName": "Vegetable Minestrone Soup",
+      "totalIngredients": 12,
+      "matched": 12,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Classic Greek Moussaka",
+      "totalIngredients": 19,
+      "matched": 18,
+      "unmatched": [
+        "250 ml warm milk"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Osso Buco",
+      "totalIngredients": 11,
+      "matched": 11,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Winter Vegetable Minestrone Soup",
+      "totalIngredients": 11,
+      "matched": 11,
+      "unmatched": [],
+      "lowConfidence": [
+        {
+          "original": "2 cans cannellini beans",
+          "matched": "cannellini beans",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "recipeName": "Vegetarian Moussaka With Portabella",
+      "totalIngredients": 12,
+      "matched": 10,
+      "unmatched": [
+        "4.5 Tbsps egg substitute equivalent to 3 eggs - i use substitute= teaspoons of ener",
+        "236 ml soy milk"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Italian Seafood Stew",
+      "totalIngredients": 15,
+      "matched": 14,
+      "unmatched": [
+        "1.2 l seafood stock/ fish stock"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Italian String Beans With Anchovies and Breadcrumbs",
+      "totalIngredients": 5,
+      "matched": 5,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Pumpkin gnocchi with basil and Parmesan",
+      "totalIngredients": 10,
+      "matched": 10,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Creamy Ratatouille Over Penne",
+      "totalIngredients": 14,
+      "matched": 14,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Golden Beet Panzanella",
+      "totalIngredients": 16,
+      "matched": 14,
+      "unmatched": [
+        "4 medium beetroot",
+        "4 slice crusty multigrain bread"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Easy Skillet Garden Lasagna",
+      "totalIngredients": 13,
+      "matched": 13,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Potato Gnocchi With Kale and Mushrooms In A Goat Cheese Sauce",
+      "totalIngredients": 11,
+      "matched": 11,
+      "unmatched": [],
+      "lowConfidence": [
+        {
+          "original": "113.398 g semi-soft goat cheese",
+          "matched": "goat cheese",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "recipeName": "Heart Shaped Spinach Ravioli",
+      "totalIngredients": 8,
+      "matched": 8,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Homemade Thin Crust Pizza + Pesto + Potato",
+      "totalIngredients": 13,
+      "matched": 13,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Grilled Chicken Gyros With Tzatziki",
+      "totalIngredients": 17,
+      "matched": 17,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Fresh Tomato Risotto with Grilled Green Vegetables",
+      "totalIngredients": 9,
+      "matched": 9,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "How Sweet It Is Sweet Potato Lasagne",
+      "totalIngredients": 14,
+      "matched": 11,
+      "unmatched": [
+        "340.194 g montery jack",
+        "340.194 g cheddar cheese mix",
+        "1 Tbsp vegetable cooking oil"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Italian Sausage and Vegetable Soup",
+      "totalIngredients": 12,
+      "matched": 12,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Julia Child's Coq au Vin",
+      "totalIngredients": 13,
+      "matched": 12,
+      "unmatched": [
+        "775.643 g chicken thighs and legs"
+      ],
+      "lowConfidence": [
+        {
+          "original": "472 ml red wine",
+          "matched": "red wine vinegar",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "recipeName": "Slow Cooker Minestrone Soup",
+      "totalIngredients": 16,
+      "matched": 15,
+      "unmatched": [
+        "170.097 g noodles"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Great Greek Salad",
+      "totalIngredients": 8,
+      "matched": 8,
+      "unmatched": [],
+      "lowConfidence": [
+        {
+          "original": "36.667 g oil sun-dried tomatoes",
+          "matched": "sun-dried tomatoes",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "recipeName": "Ratatouille Pasta",
+      "totalIngredients": 12,
+      "matched": 12,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Classic French Mussels",
+      "totalIngredients": 9,
+      "matched": 9,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Italian Tomato and Mozzarella Caprese",
+      "totalIngredients": 8,
+      "matched": 8,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Polla alla Parmigiana: Chicken Parmesan",
+      "totalIngredients": 12,
+      "matched": 12,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Lasagna - Spinach Rolls",
+      "totalIngredients": 14,
+      "matched": 14,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Italian Pasta Salad with organic Arugula",
+      "totalIngredients": 10,
+      "matched": 9,
+      "unmatched": [
+        "453.592 g piccolini farfalle"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Simple Skillet Lasagna",
+      "totalIngredients": 11,
+      "matched": 9,
+      "unmatched": [
+        "1 leaf basil and basil sprig",
+        "1.588 kgs tomatoes"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Minestrone",
+      "totalIngredients": 19,
+      "matched": 19,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Eggplant Parmesan Roll-Ups",
+      "totalIngredients": 13,
+      "matched": 13,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Excellent No Fail and Easy Keto Zucchini Lasagna",
+      "totalIngredients": 13,
+      "matched": 13,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Pear and Pesto Crostini",
+      "totalIngredients": 8,
+      "matched": 8,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Herbed Vegetables In A Feta Quiche With A Wild Rice Crust",
+      "totalIngredients": 10,
+      "matched": 8,
+      "unmatched": [
+        "226.796 g four seasons blend",
+        "15 g herbs"
+      ],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Crab Ravioli With Scallops and Gremolata",
+      "totalIngredients": 16,
+      "matched": 16,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Italian Beef Braciole",
+      "totalIngredients": 10,
+      "matched": 7,
+      "unmatched": [
+        "453.592 g beef steak",
+        "4 slice prosciutto",
+        "6 slice genoa salami"
+      ],
+      "lowConfidence": [
+        {
+          "original": "120 ml red wine",
+          "matched": "red wine vinegar",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "recipeName": "Layered Greek Salad",
+      "totalIngredients": 13,
+      "matched": 13,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Sun-Dried Tomato and Leek Quiche",
+      "totalIngredients": 18,
+      "matched": 17,
+      "unmatched": [
+        "4 servings crust"
+      ],
+      "lowConfidence": [
+        {
+          "original": "27.5 g reconstituted sun-dried tomatoes",
+          "matched": "sun-dried tomatoes",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "recipeName": "Pesto Veggie Pizza",
+      "totalIngredients": 19,
+      "matched": 18,
+      "unmatched": [
+        "113 g cheddar mozzarella cheese"
+      ],
+      "lowConfidence": [
+        {
+          "original": "4 Tbsps pesto",
+          "matched": "pasta",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "recipeName": "Easy Eggplant Parmesan",
+      "totalIngredients": 7,
+      "matched": 7,
+      "unmatched": [],
+      "lowConfidence": []
+    },
+    {
+      "recipeName": "Greek Yogurt Chicken Salad",
+      "totalIngredients": 7,
+      "matched": 7,
+      "unmatched": [],
+      "lowConfidence": []
+    }
+  ]
+}

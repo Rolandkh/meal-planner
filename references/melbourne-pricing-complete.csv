@@ -1,0 +1,61 @@
+item_number,ingredient_name,typical_pack,unit,avg_price_aud,price_per_unit,notes,suggested_id
+1,Spinach (baby pre-washed),120-150g bag,bag,3.50,$3.50/bag,Coles/Woolies brand,spinach_baby
+2,Kale (Tuscan/cavolo nero),200-250g bunch,bunch,3.80,$3.80/bunch,Seasonal sometimes $5+,kale_tuscan
+3,Rocket (arugula),100g bag,bag,4.20,$4.20/bag,Pre-packaged fresh,rocket
+4,Lettuce (cos/romaine),1 head (~400g),head,2.50,$2.50/head,Loose at stores too,lettuce_cos
+5,Lettuce (mixed salad leaves),150g bag,bag,3.00,$3.00/bag,Pre-washed bag,lettuce_mixed_leaves
+6,Cabbage (green),1 head (~800-1000g),head,2.00,$2.00/head,Loose weigh at checkout,cabbage_green
+7,Cabbage (red),1 head (~800-1000g),head,2.50,$2.50/head,Slightly more than green,cabbage_red
+8,Silverbeet/Swiss chard,300-350g bunch,bunch,3.20,$3.20/bunch,Usually pre-bunched,silverbeet
+9,Bok choy,~150g bunch,bunch,2.80,$2.80/bunch,2-3 plants per bunch,bok_choy
+10,Broccoli,1 head (~400-500g),head,3.00,$3.00/head,Premium brands $4+,broccoli
+11,Carrot (loose/bunch),1kg bag or loose,kg,2.50,$2.50/kg,Loose weigh at checkout,carrot
+12,Tomato (truss/vine),750g-1kg pack,kg,5.00,$5.00/kg,Varies by season,tomato_truss
+13,Tomato (cherry),250g punnet,punnet,3.50,$3.50/punnet,Cherry tomatoes pricier,cherry_tomatoes
+14,Capsicum/Bell pepper,1 pepper,each,2.50,$2.50/each,Red/yellow more than green,bell_pepper
+15,Zucchini,1 kg bag or loose,kg,3.50,$3.50/kg,Loose weigh at checkout,zucchini
+16,Cucumber (continental),1 each,each,2.00,$2.00/each,Standard size,cucumber_continental
+17,Cucumber (Lebanese),150-200g each,each,1.50,$1.50/each,Smaller variety,cucumber_lebanese
+18,Onion (brown/yellow),2kg bag,bag,3.50,$3.50/2kg,~$1.75/kg loose,onion
+19,Onion (red),1kg bag,bag,3.20,$3.20/kg,Slightly pricier than brown,red_onion
+20,Garlic (bulb),250g pack (~5 bulbs),pack,2.50,$0.50/bulb,Pre-packed or loose,garlic
+21,Ginger (fresh root),200-250g,kg,8.00,$8.00/kg,Loose weigh at checkout,ginger
+22,Potato (brushed/washed),2kg bag,bag,3.50,$3.50/2kg,Standard supermarket,potato
+23,Sweet potato,1kg bag,bag,4.50,$4.50/kg,Orange variety common,sweet_potato
+24,Beetroot (loose),1kg bunch (~3-4 bulbs),kg,3.50,$3.50/kg,With tops loose,beetroot
+25,Parsnip,1kg bag or loose,kg,4.00,$4.00/kg,Less common pricier,parsnip
+26,Mushroom (button),250g pack,pack,3.50,$3.50/pack,Standard white mushrooms,mushrooms
+27,Mushroom (Swiss brown/cremini),200-250g pack,pack,4.50,$4.50/pack,Darker more flavour,mushrooms_swiss_brown
+28,Mushroom (flat/portobello),200g pack,pack,5.00,$5.00/pack,Larger caps premium,portobello_mushroom
+29,Mushroom (shiitake),150-200g pack,pack,6.50,$6.50/pack,More expensive Asian,shiitake_mushrooms
+30,Asparagus,350-400g bunch,bunch,7.50,$7.50/bunch,Premium seasonal,asparagus
+31,Green beans,500g bag,bag,5.00,$5.00/500g,Pre-packed or loose,green_beans
+32,Leek,300-350g each,each,2.50,$2.50/each,Usually sold individually,leek
+33,Celery,1 head (~600g),head,3.00,$3.00/head,Usually whole bunch,celery
+34,Spring onions/scallions,150g bunch,bunch,2.50,$2.50/bunch,Loose or pre-packed,spring_onions
+35,Avocado,1 each,each,2.50,$2.50/each,Ripe from any aisle,avocado
+36,Apple (Gala/Pink Lady),1kg bag or loose,kg,3.50,$3.50/kg,Loose weigh at checkout,apple
+37,Banana,bunch or loose,kg,2.00,$2.00/kg,Very common cheap,banana
+38,Orange (navel),1kg bag or loose,kg,3.00,$3.00/kg,Loose weigh at checkout,orange
+39,Lemon,1kg bag or loose,kg,4.50,$4.50/kg,~$0.70-1.00/lemon,lemon
+40,Strawberry,250g punnet,punnet,4.50,$4.50/punnet,Summer cheaper (~$3),strawberry
+41,Blueberry,150g punnet,punnet,6.00,$6.00/punnet,Premium berries,blueberry
+42,Raspberry,150g punnet,punnet,7.00,$7.00/punnet,Delicate expensive,raspberry
+43,Salmon fillet (fresh),150-200g,per 100g,22.00,$22.00/100g,Premium fish,salmon
+44,Tuna (canned in oil),200g can,can,2.00,$2.00/can,Most common canned fish,canned_tuna
+45,Sardines (canned),120g can,can,2.50,$2.50/can,Cheap protein source,sardines_canned
+46,Chicken breast (skinless boneless),400-500g pack,per 100g,8.50,$8.50/100g,Most common cut,chicken_breast
+47,Chicken thigh (boneless),300-400g pack,per 100g,6.00,$6.00/100g,Cheaper more flavour,chicken_thigh
+48,Beef mince (regular),500g pack,per 100g,7.50,$7.50/100g,Standard ground beef,beef_mince
+49,Milk (full cream),1L,L,2.50,$2.50/L,Standard supermarket,milk
+50,Greek yoghurt (plain),500g,g,4.50,$4.50/500g,Full fat natural,greek_yogurt
+51,Eggs (free-range),dozen (600g),dozen,5.50,$5.50/dozen,12 eggs per carton,eggs
+52,Cheddar (tasty),200g block,block,5.00,$5.00/block,Australian cheddar,cheddar
+53,Butter (salted),250g block,block,4.50,$4.50/250g,Standard butter,butter
+54,Olive oil (extra virgin),500ml,ml,12.00,$12.00/500ml,Premium cooking oil,olive_oil
+55,Rolled oats,500g,bag,3.50,$3.50/500g,Most common bulk grain,oats
+56,White rice,1kg,bag,2.50,$2.50/kg,Cheapest grain option,rice
+57,Pasta (spaghetti),500g,box,2.00,$2.00/500g,Standard pasta,spaghetti
+58,Chickpeas (canned),400g can,can,1.50,$1.50/can,Most used legume,chickpeas
+59,Almonds (whole raw),200g,bag,7.50,$7.50/200g,Premium nuts,almonds
+60,Peanut butter (smooth),500g,jar,4.50,$4.50/jar,Spread,peanut_butter
