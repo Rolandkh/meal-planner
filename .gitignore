@@ -45,3 +45,13 @@ dev-debug.log
 # tasks.json
 # tasks/ 
 .vercel
+
+# Temporary and backup files
+tmp/
+backups/
+export outputs/
+
+# Large reference data files (keep locally, don't deploy)
+references/ingredientMaster*.json
+references/*_backup*.json
+tmp/*.json
