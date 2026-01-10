@@ -2,6 +2,50 @@
 
 ## [Unreleased] - Ingredient Normalization System
 
+### ✨ Multi-Profile Meal Generation (January 10, 2026 - Late Evening)
+
+**🎉 ACHIEVEMENT: System now supports households with conflicting diet profiles**
+
+#### Implementation Complete
+- **Tasks Completed:** Task 100 (Diet Profile Filter - verified), Task 101 (Multi-Profile Generation)
+- **New Files:**
+  - `src/utils/eaterGrouping.js` - Groups eaters by diet compatibility
+  - `src/utils/__tests__/eaterGrouping.test.js` - Test examples
+
+#### Key Features
+1. **Automatic Conflict Detection:** API detects when household has incompatible profiles (Keto + Vegan, etc.)
+2. **Multiple Recipes Per Meal:** When conflicts exist, AI generates separate recipes for each group
+3. **Target Eater Tracking:** Each recipe labeled with who it's for (e.g., "Mom, Kids" vs "Dad")
+4. **Flexible Profile Handling:** Kid-friendly and flexitarian profiles added to all compatible groups
+5. **Shopping List Integration:** Automatically aggregates ingredients from all recipe variants
+
+#### Technical Implementation
+- **API Changes** (`api/generate-meal-plan.js`):
+  - Added `checkDietProfileConflicts()` to detect profile conflicts
+  - Enhanced system prompt with multi-recipe array format instructions
+  - Generates array of recipes per meal when conflicts detected
+- **Transformer Changes** (`src/utils/mealPlanTransformer.js`):
+  - Handles both single recipe and array-of-recipes format
+  - Creates separate Meal objects for each recipe in multi-profile scenarios
+  - Maps `targetEaters` names to eater IDs and preserves `dietProfileTags`
+- **Schema Updates:**
+  - Meal schema now includes optional `targetEaters` and `dietProfileTags` fields
+  - Supports multiple Meal objects per date+mealType combination
+
+#### Example Use Case
+**Household:** Mom (Keto), Dad (Vegan), Kids (Kid-Friendly)
+**Result:** Tuesday Dinner generates:
+- Grilled Salmon with Asparagus → Mom, Kids (Keto, Kid-Friendly)
+- Chickpea Buddha Bowl → Dad (Vegan)
+
+Shopping list includes ingredients for both recipes with correct servings.
+
+#### Next Steps
+- Task 119: Update UI components to display multiple recipes per meal with eater labels
+- Test with real multi-profile households in production
+
+---
+
 ### ✨ Shopping List Optimization & Servings Fix (January 10, 2026 - Evening)
 
 **🎉 ACHIEVEMENT: Shopping list reduced from 56 to 32 items via AI prompt optimization**
