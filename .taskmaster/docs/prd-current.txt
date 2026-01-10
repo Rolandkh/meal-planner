@@ -1,0 +1,581 @@
+# Product Requirements Document: Vanessa - Current Development
+
+**Version:** v1.0-rc2  
+**Status:** Slice 5 (72% complete)  
+**Last Updated:** January 10, 2026
+
+For project vision and philosophy, see: `project-overview.md`  
+For historical context (Slices 1-4), see: `archive/prd-slices-1-4.txt`
+
+---
+
+## Current Development: SLICE 5
+
+### Goal
+Transform Vanessa from a meal generator into a health-intelligent system with comprehensive recipe database, nutritional scoring, diet profile support, and prep planning.
+
+### Status Overview (72% Complete)
+
+**✅ COMPLETE (31/43 tasks)**
+- Core infrastructure & data migration
+- Spoonacular catalog extraction (600+ recipes)
+- Diet Compass scoring engine (584 ingredients, 88% match rate)
+- Diet profiles system (11 profiles)
+- Settings UI (diet profiles, meal prep preferences)
+- Catalog-first generation working
+- Ingredient normalization pipeline
+- Shopping list consolidation
+
+**⏳ IN PROGRESS (12/43 tasks remaining)**
+- Multi-profile meal generation (Keto + Vegan households)
+- Prep task generator & DayView prep section
+- Recipe variation workflow (parent-child)
+- Advanced features (onboarding suggestions, admin UI, testing)
+
+---
+
+## Features Overview
+
+### Feature 1: Recipe Database & Spoonacular Integration 🗄️
+
+**Status:** ✅ 95% Complete
+
+**What's Built:**
+- Node extraction script (`scripts/extractSpoonacularCatalog.js`)
+- 600+ recipes extracted with images, nutrition, tags
+- localStorage key: `vanessa_recipe_catalog`
+- Ingredient normalization (88% match rate, 598-entry dictionary)
+- Diet Compass scores pre-calculated
+- Catalog-first generation (70%+ match rate)
+
+**What's Left:**
+- Admin catalog management UI (Task 84) - Optional
+- Expand dictionary to 1000 entries for 95%+ match rate - Optional
+
+**Technical Details:**
+- Protocol: `references/spoonacular-recipe-extraction-protocol.md`
+- Storage: `src/data/vanessa_recipe_catalog.json` (~2-3MB)
+- Deduplication by Spoonacular ID
+- 10+ dimension tagging (cuisine, diet, protein, effort, etc.)
+
+### Feature 2: Diet Compass Health Rating System 📊
+
+**Status:** ✅ 100% Complete
+
+**What's Built:**
+- 4-metric scoring system (Nutrient Density, Anti-Aging, Weight Loss, Heart Health)
+- Ingredient health database (584 ingredients)
+- Scoring engine: `src/utils/dietCompassScoring.js`
+- Visual 5-bar display on recipe cards
+- Full scores on recipe detail pages
+- Batch scoring applied to entire catalog
+
+**Data:**
+- `src/data/ingredientHealthData.json` - 584 ingredient classifications
+- Based on "The Diet Compass" by Bas Kast
+- Scores: 0-100 per metric, weighted composite overall score
+
+**Visual Components:**
+- Recipe cards: 🥗 ⏳ ⚖️ ❤️ with 5-segment bars
+- Detail page: Full metric names + numeric scores
+- Score ranges: 0-20=1 bar, 20-40=2 bars, ..., 80-100=5 bars
+
+### Feature 3: Diet Profiles System 🥗
+
+**Status:** ✅ 85% Complete
+
+**What's Built:**
+- 11 preloaded profiles (`src/data/dietProfiles.json`):
+  1. Mediterranean, 2. Keto/Low-Carb, 3. Vegetarian, 4. High Protein
+  5. Flexitarian, 6. Longevity Protocol, 7. Intermittent Fasting
+  8. Vegan, 9. MIND (brain health), 10. Kid-Friendly, 11. La Dieta
+- Settings UI: Diet profile dropdown per eater
+- Personal preferences: exclude/prefer ingredients, notes
+- Generation API: Accepts diet profiles and filters catalog
+
+**What's Left:**
+- Task 72: Diet profile filter utility (compound splitting, conflict detection)
+- Task 91: Multi-profile meal generation (2 recipes when Keto + Vegan)
+- Task 77/89: AI-powered profile suggestion in onboarding - Optional
+
+**Data Schema:**
+```javascript
+// Eater (enhanced)
+{
+  eaterId: 'eater_[uuid]',
+  name: string,
+  dietProfile: 'mediterranean' | 'keto' | 'vegetarian' | ... | null,
+  personalPreferences: string,  // "No eggplant, extra fish"
+  excludeIngredients: string[],  // ["eggplant", "tomatoes"]
+  preferIngredients: string[],   // ["salmon", "walnuts"]
+  // ... existing fields (allergies, schedule, etc.)
+}
+```
+
+### Feature 4: Parent-Child Recipe System 👨‍👧
+
+**Status:** ⏳ 0% Complete (Tasks 76, 92)
+
+**What's Needed:**
+- Recipe relationship schema (parentRecipeId, childRecipeIds, variationNote)
+- "Create Variation" button on RecipeDetailPage
+- RecipeEditPage workflow for variations
+- Relationship display (parent shows children, child shows parent link)
+- Diet Compass score recalculation for children
+
+**Priority:** Medium (nice-to-have for Slice 5)
+
+### Feature 5: Day Prep Section 🍳
+
+**Status:** ⏳ 0% Complete (Tasks 74, 94)
+
+**What's Needed:**
+1. **Prep Task Generator** (`src/utils/prepTaskGenerator.js`)
+   - Analyze day's recipes for prep needs
+   - Consider prep level settings (minimal/medium/full)
+   - Identify batch opportunities
+   - Generate task list with time estimates
+
+2. **DayView Enhancement**
+   - "📋 Prep for Today" section at top
+   - Show: tasks, estimated times, which meals each supports
+   - Total prep time for the day
+
+**Example Display:**
+```
+MONDAY, January 13
+
+📋 Prep for Today (~25 minutes)
+- Chop 2 onions, 1 bell pepper (10 min) → for lunch & dinner
+- Marinate chicken (5 min) → for dinner
+- Cook 2 cups rice (10 min) → for lunch
+
+🌅 Breakfast: Oatmeal with berries
+🌞 Lunch: Chicken stir fry
+🌙 Dinner: Mediterranean bowl
+```
+
+**Data Schema:**
+```javascript
+// BaseSpecification.mealPrepSettings
+{
+  batchPrepDays: [6],  // [Saturday]
+  prepLevels: {
+    monday: { breakfast: 'minimal', lunch: 'minimal', dinner: 'medium' },
+    // ... all 7 days × 3 meals
+  }
+}
+
+// Meal.prepTasks
+[{
+  task: 'Chop 2 onions, 1 bell pepper',
+  estimatedTime: 10,  // minutes
+  timing: 'before_cooking',  // or 'day_before', 'morning_of'
+  usedIn: ['lunch', 'dinner']
+}]
+```
+
+**Priority:** High (major PRD feature, high user value)
+
+### Feature 6: Personal Preferences & Exclusions ⚙️
+
+**Status:** ✅ 100% Complete
+
+**What's Built:**
+- Settings UI: Exclude/prefer ingredient fields per eater
+- Additional notes textarea
+- Generation API: Filters excluded ingredients, prioritizes preferred
+- Stored per eater in BaseSpecification
+
+---
+
+## End-to-End Flows
+
+### FLOW A: Generating with Catalog & Diet Profiles
+```
+1. User clicks "Generate Week"
+2. System loads:
+   - Household eaters with diet profiles (Mediterranean, Keto, etc.)
+   - Recipe catalog (600+ recipes)
+   - Prep level settings
+   - Personal exclusions/preferences
+3. API filters catalog:
+   - Compatible diet profiles
+   - Exclude forbidden ingredients
+   - Match prep complexity level
+4. AI selects catalog recipes (70%+ success)
+   - Fallback: Generate new recipe if no match
+5. Meal plan returned with:
+   - Catalog recipes with pre-calculated health scores
+   - New recipes with freshly calculated scores
+   - Prep tasks per day (when implemented)
+6. Display shows health scores under each recipe name
+```
+
+### FLOW B: Multi-Profile Household (When Task 91 Complete)
+```
+Given:
+- Mom: Keto diet profile
+- Dad: Vegan diet profile
+- Kids: Kid-Friendly profile
+
+Tuesday Dinner (all three eating):
+- AI analyzes: Keto + Vegan = fundamental conflict
+- Generates 2 recipes:
+  - Recipe 1: Salmon with Asparagus (Keto) → for Mom
+  - Recipe 2: Tofu Buddha Bowl (Vegan) → for Dad
+- Kids can eat either (Kid-Friendly allows both)
+- Display shows:
+  Tuesday Dinner:
+  - Mom: Salmon with Asparagus (Keto)
+  - Dad: Tofu Buddha Bowl (Vegan)
+  - Kids: Either
+- Shopping list includes ingredients for BOTH recipes
+```
+
+---
+
+## Core Data Schemas
+
+### Recipe (Slice 5 Enhanced)
+```javascript
+{
+  recipeId: 'recipe_[uuid]',
+  name: string,
+  
+  // SOURCE & RELATIONSHIPS
+  source: 'spoonacular' | 'generated' | 'user' | 'imported',
+  spoonacularId: number | null,
+  parentRecipeId: 'recipe_[uuid]' | null,
+  childRecipeIds: ['recipe_[uuid]'],
+  variationNote: string | null,
+  
+  // INGREDIENTS & INSTRUCTIONS
+  ingredients: [{
+    name: string,
+    quantity: number,
+    unit: string,
+    category: 'produce' | 'meat' | 'dairy' | 'pantry' | 'other',
+    healthImpact: 'protective' | 'neutral' | 'harmful'
+  }],
+  instructions: string,
+  prepTime: number,
+  cookTime: number,
+  servings: number,
+  
+  // HEALTH & NUTRITION (NEW in Slice 5)
+  dietCompassScores: {
+    overall: number,  // 0-100
+    nutrientDensity: number,
+    antiAging: number,
+    weightLoss: number,
+    heartHealth: number
+  },
+  nutrition: {
+    calories: number,
+    protein: number,
+    fat: number,
+    carbs: number,
+    fiber: number,
+    sugar: number,
+    saturatedFat: number,
+    omega3: number,
+    sodium: number
+    // ... full nutrition profile from Spoonacular
+  },
+  
+  // TAGGING & FILTERING (NEW in Slice 5)
+  tags: {
+    cuisines: string[],          // ['italian', 'mediterranean']
+    diets: string[],             // Compatible diet profiles
+    dishTypes: string[],         // ['main course', 'dinner']
+    mealSlots: string[],         // ['lunch', 'dinner']
+    proteinSources: string[],    // ['chicken', 'beans']
+    cookingMethods: string[],    // ['baking', 'sautéing']
+    carbBases: string[],         // ['rice', 'pasta']
+    effortLevel: 'quick' | 'easy' | 'medium' | 'project',
+    spiceLevel: 'none' | 'mild' | 'medium' | 'hot',
+    budgetTier: 'budget' | 'moderate' | 'premium',
+    kidFriendly: boolean,
+    makeAhead: boolean,
+    protectiveFoods: string[]    // Diet Compass protective foods
+  },
+  
+  // EXISTING FIELDS
+  isFavorite: boolean,
+  rating: number | null,
+  timesCooked: number,
+  lastCooked: string | null,
+  createdAt: string,
+  updatedAt: string
+}
+```
+
+### Meal (Slice 5 Enhanced)
+```javascript
+{
+  mealId: 'meal_[uuid]',
+  recipeId: 'recipe_[uuid]',
+  mealType: 'breakfast' | 'lunch' | 'dinner',
+  date: 'YYYY-MM-DD',
+  eaterIds: string[],
+  servings: number,
+  notes: string,
+  
+  // NEW in Slice 5
+  prepTasks: [{
+    task: string,
+    estimatedTime: number,
+    timing: 'before_cooking' | 'day_before' | 'morning_of',
+    usedIn: string[]  // Which meals share this prep
+  }],
+  targetEaters: string[],      // For multi-profile households
+  dietProfileTags: string[]    // Which profiles this satisfies
+}
+```
+
+### BaseSpecification (Slice 5 Enhanced)
+```javascript
+{
+  _schemaVersion: 2,
+  ownerEaterId: 'eater_[uuid]',
+  weeklyBudget: number,
+  shoppingDay: 0-6,
+  preferredStore: string,
+  maxShoppingListItems: number,
+  householdEaterIds: string[],
+  dietaryGoals: string,
+  onboardingComplete: boolean,
+  
+  // NEW in Slice 5
+  mealPrepSettings: {
+    batchPrepDays: [6],  // Array of day indices (0=Sun, 6=Sat)
+    prepLevels: {
+      monday: { breakfast: 'minimal', lunch: 'minimal', dinner: 'medium' },
+      tuesday: { breakfast: 'minimal', lunch: 'minimal', dinner: 'full' },
+      wednesday: { breakfast: 'minimal', lunch: 'minimal', dinner: 'medium' },
+      thursday: { breakfast: 'minimal', lunch: 'minimal', dinner: 'full' },
+      friday: { breakfast: 'medium', lunch: 'medium', dinner: 'full' },
+      saturday: { breakfast: 'full', lunch: 'full', dinner: 'full' },
+      sunday: { breakfast: 'full', lunch: 'medium', dinner: 'medium' }
+    }
+  },
+  
+  // EXISTING FIELDS
+  weeklySchedule: { /* day→meal→eaterIds */ },
+  chatPreferences: { /* ... */ },
+  conversation: { /* chat history */ },
+  historyRetentionWeeks: 4,
+  createdAt: string,
+  updatedAt: string
+}
+```
+
+### localStorage Keys (New in Slice 5)
+```javascript
+'vanessa_recipe_catalog'         // ~600 Spoonacular recipes (2-3MB)
+'vanessa_ingredient_health'      // 584 ingredient classifications
+'vanessa_diet_profiles'          // 11 preloaded diet profiles
+'vanessa_base_specification'     // User settings (enhanced)
+'vanessa_recipes'                // User recipes (enhanced schema)
+'vanessa_meals'                  // Meals (enhanced schema)
+'vanessa_current_meal_plan'      // Active plan
+'vanessa_meal_plan_history'      // Archived plans
+```
+
+---
+
+## Remaining Work for Slice 5
+
+### HIGH PRIORITY (Essential for Multi-User)
+1. **Task 72** - Diet profile filter utility
+   - Compound ingredient splitting ("salt and pepper")
+   - Profile conflict detection (Keto vs Vegan)
+   - Recipe compatibility checking
+
+2. **Task 91** - Multi-profile meal generation
+   - Group eaters by compatible profiles
+   - Generate multiple recipes when conflicting
+   - Label each recipe with target eaters
+   - Shopping list includes all variants
+
+3. **Task 74** - Prep task generator
+   - Analyze recipes for prep needs
+   - Consider prep level settings
+   - Batch opportunities across meals
+
+4. **Task 94** - DayView prep section
+   - Display "Prep for Today" at top
+   - Show tasks, times, which meals
+   - Total prep time
+
+### MEDIUM PRIORITY (Nice-to-Have)
+5. **Task 76** - Recipe variation creation workflow
+6. **Task 92** - Parent-child recipe relationships
+
+### LOWER PRIORITY (Optional)
+7. **Task 77/89** - AI diet profile suggestion in onboarding
+8. **Task 78** - Server-side health scoring API
+9. **Task 79** - Unit tests for utilities
+10. **Task 84** - Admin catalog management UI
+11. **Task 95** - Enhanced generation prompts
+12. **Task 96** - Persist health data to localStorage
+
+---
+
+## Future Slices (Tentative)
+
+### SLICE 6: Multi-User Coordination
+- Per-user prep settings
+- Meal assignment to specific preparer
+- Household coordination features
+- Shared vs personal meal preferences
+
+### SLICE 7: Advanced Features & Polish
+- Offline mode (full PWA)
+- Mobile optimization
+- Usage metering & analytics
+- Export features (PDF, calendar sync)
+- Advanced recipe management (batch operations)
+
+### SLICE 8: Backend Sync & Scaling
+- Backend database (replace localStorage)
+- Cross-device sync
+- User authentication
+- Recipe sharing
+- Community features
+
+---
+
+## Technical Implementation Notes
+
+### API Endpoint: POST /api/generate-meal-plan (Enhanced)
+
+**New Request Parameters:**
+```javascript
+{
+  chatHistory: [],
+  eaters: [{
+    name: string,
+    dietProfile: 'mediterranean' | 'keto' | ...,
+    personalPreferences: string,
+    excludeIngredients: string[],
+    preferIngredients: string[],
+    schedule: {...}
+  }],
+  baseSpecification: {
+    mealPrepSettings: {...},
+    // ... other fields
+  },
+  catalogSlice: Recipe[],  // Pre-filtered catalog recipes
+  regenerateDay: string | null,
+  dateForDay: string | null,
+  existingMeals: Meal[]
+}
+```
+
+**Enhanced AI System Prompt (Abbreviated):**
+```
+You are Vanessa, an expert meal planning assistant.
+
+HOUSEHOLD MEMBERS & DIET PROFILES:
+{for each eater}
+- {name}: {dietProfile} diet
+  Exclude: {excludeIngredients}
+  Prefer: {personalPreferences}
+
+MEAL PREP CONSTRAINTS:
+{for each day}
+- {day} {meal}: {prepLevel} prep
+
+RECIPE SOURCES:
+- PRIMARILY use recipes from catalog
+- CREATE new recipe ONLY if no catalog match or conflicts
+
+DIET PROFILE CONFLICTS:
+{if conflicts exist}
+- Generate SEPARATE recipes for conflicting profiles
+- Label each with target eaters
+```
+
+### Scoring Engine: src/utils/dietCompassScoring.js
+
+**Functions:**
+```javascript
+// Calculate all 4 metric scores + overall
+calculateRecipeScores(recipe) → {
+  overall: number,      // 0-100
+  nutrientDensity: number,
+  antiAging: number,
+  weightLoss: number,
+  heartHealth: number,
+  breakdown: {...}      // Point attribution
+}
+
+// Get ingredient health metadata
+getIngredientHealthData(ingredientName) → {
+  nutrientDensityPoints: number,
+  antiAgingPoints: number,
+  weightLossPoints: number,
+  heartHealthPoints: number,
+  flags: {harmful, processed, redMeat, sugary, protective}
+}
+
+// Convert score to 1-5 bar segments
+scoreToBarSegments(score) → number  // 1-5
+```
+
+### Diet Profile Filter: src/utils/dietProfileFilter.js
+
+**Functions (To Be Implemented):**
+```javascript
+// Filter catalog by profile compatibility
+filterByDietProfile(catalog, profileId) → Recipe[]
+
+// Check multi-profile compatibility
+isCompatibleWithProfiles(recipe, profileIds) → boolean
+
+// Detect fundamental conflicts
+hasProfileConflicts(profileIds) → {
+  hasConflicts: boolean,
+  conflictPairs: [['keto', 'vegan'], ...]
+}
+```
+
+---
+
+## Development Guidelines
+
+### Slice 5 Patterns Learned
+1. **Catalog-first generation** reduces AI costs by 80%
+2. **Ingredient normalization** requires dictionary + fuzzy matching
+3. **Compound splitting** needed for "salt and pepper" type ingredients
+4. **State tracking** (fresh vs canned) must be separate entries
+5. **Health scoring** should be pre-calculated at import time
+6. **Settings UI** benefits from table layouts for day×meal grids
+
+### Code Organization
+```
+src/
+├── components/        # UI components
+├── data/              # Static data files
+│   ├── dietProfiles.json
+│   ├── ingredientHealthData.json
+│   └── vanessa_recipe_catalog.json
+├── pipelines/         # Data transformation
+│   └── normalizeRecipeIngredients.js
+├── utils/             # Business logic
+│   ├── dietCompassScoring.js
+│   ├── dietProfileFilter.js (to be implemented)
+│   ├── ingredientMaster.js
+│   ├── ingredientParsing.js
+│   └── prepTaskGenerator.js (to be implemented)
+└── migrations/        # Data migrations
+    └── migrateToSlice5.js
+```
+
+---
+
+**Document Status:** Living document - Updated as Slice 5 progresses  
+**Next Update:** When Slice 5 completes or Slice 6 begins  
+**Maintained By:** Development team via Taskmaster

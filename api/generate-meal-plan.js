@@ -43,12 +43,40 @@ CRITICAL: Your response must be ONLY valid JSON in this EXACT format with NO add
         "instructions": "...",  // only for NEW recipes
         "prepTime": number,     // only for NEW recipes
         "cookTime": number,     // only for NEW recipes
-        "tags": ["tag1"]        // only for NEW recipes
+        "tags": ["tag1"],        // only for NEW recipes
+        
+        // MULTI-PROFILE FIELDS (when household has conflicting diets):
+        "targetEaters": ["Name1", "Name2"],  // Who this recipe is for
+        "dietProfiles": ["profile1"]         // Which diets this satisfies
       },
       "lunch": { /* same structure */ },
       "dinner": { /* same structure */ }
     }
   ]
+}
+
+**IMPORTANT - MULTI-PROFILE HOUSEHOLDS:**
+For households with conflicting diet profiles (e.g., Keto + Vegan), each meal (breakfast/lunch/dinner) becomes an ARRAY:
+
+{
+  "date": "YYYY-MM-DD",
+  "breakfast": [
+    {
+      "name": "Recipe 1",
+      "servings": number,
+      "fromCatalog": true,
+      "targetEaters": ["Mom", "Kids"],
+      "dietProfiles": ["keto"]
+    },
+    {
+      "name": "Recipe 2",
+      "servings": number,
+      "fromCatalog": true,
+      "targetEaters": ["Dad"],
+      "dietProfiles": ["vegan"]
+    }
+  ],
+  // lunch and dinner follow same pattern
 }
 
 ⚠️ CRITICAL - TWO RECIPE FORMATS:
@@ -279,7 +307,7 @@ function validateRequest(body) {
 /**
  * Slice 5: Filter catalog recipes by diet profiles and constraints
  * @param {Array} catalog - Full recipe catalog
- * @param {Array} eaters - Array of eater objects
+ * @param {Array} eaters - Array of eater objects (can be a group for multi-profile)
  * @param {string} mealType - Optional meal type filter (breakfast|lunch|dinner)
  * @returns {Array} Filtered recipes
  */
@@ -357,9 +385,61 @@ function getCandidateCatalogRecipes(catalog, eaters, mealType = null) {
 }
 
 /**
+ * Check if household has conflicting diet profiles
+ * @param {Array} eaters
+ * @returns {Object} Conflict information
+ */
+function checkDietProfileConflicts(eaters) {
+  const profileIds = [...new Set(eaters.map(e => e.dietProfile).filter(Boolean))];
+  
+  if (profileIds.length <= 1) {
+    return { hasConflicts: false, conflictPairs: [], profileGroups: null };
+  }
+
+  // Known conflicts
+  const conflicts = [];
+  const conflictMap = {
+    'keto': ['vegan', 'vegetarian'],
+    'vegan': ['keto'],
+    'vegetarian': ['keto']
+  };
+
+  for (let i = 0; i < profileIds.length; i++) {
+    for (let j = i + 1; j < profileIds.length; j++) {
+      const profile1 = profileIds[i];
+      const profile2 = profileIds[j];
+      
+      if (conflictMap[profile1]?.includes(profile2)) {
+        conflicts.push([profile1, profile2]);
+      }
+    }
+  }
+
+  // Group eaters by profiles if conflicts exist
+  let profileGroups = null;
+  if (conflicts.length > 0) {
+    profileGroups = {};
+    eaters.forEach(eater => {
+      const profile = eater.dietProfile || 'flexible';
+      if (!profileGroups[profile]) {
+        profileGroups[profile] = [];
+      }
+      profileGroups[profile].push(eater.name);
+    });
+  }
+
+  return {
+    hasConflicts: conflicts.length > 0,
+    conflictPairs: conflicts,
+    profileGroups
+  };
+}
+
+/**
  * Build user prompt from chat history, eaters, and optional structured schedule
  * Slice 4: Enhanced to support single-day regeneration
  * Slice 5: Enhanced with diet profiles and catalog awareness
+ * Slice 5.1: Enhanced with multi-profile conflict handling
  */
 function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = null, dateForDay = null, existingMeals = [], catalogSlice = null) {
   // Get next Saturday as week start
@@ -368,6 +448,9 @@ function buildUserPrompt(chatHistory, eaters, baseSpec = null, regenerateDay = n
   const nextSaturday = new Date(today);
   nextSaturday.setDate(today.getDate() + daysUntilSaturday);
   const weekOf = nextSaturday.toISOString().split('T')[0];
+  
+  // Check for diet profile conflicts
+  const conflictInfo = checkDietProfileConflicts(eaters);
 
   // Extract preferences from chat history
   const recentMessages = chatHistory.slice(-10);
@@ -520,6 +603,78 @@ Then SELECT ONLY recipes that use these core ingredients. Reject recipes that in
 
 If you find yourself adding a 4th protein or 6th vegetable, STOP and reconsider your recipe choices.`;
 
+  // Slice 5.1: Add multi-profile instructions if conflicts exist
+  let multiProfileInstructions = '';
+  if (conflictInfo.hasConflicts) {
+    multiProfileInstructions = `\n\n🚨 CRITICAL - MULTI-PROFILE HOUSEHOLD DETECTED:
+
+The household has CONFLICTING diet profiles that require MULTIPLE RECIPES per meal:
+${conflictInfo.conflictPairs.map(([p1, p2]) => `- ${p1.toUpperCase()} vs ${p2.toUpperCase()}`).join('\n')}
+
+Household Profile Groups:
+${Object.entries(conflictInfo.profileGroups).map(([profile, names]) => 
+  `- ${profile}: ${names.join(', ')}`
+).join('\n')}
+
+**MANDATORY MULTI-RECIPE FORMAT:**
+
+When generating meals, you MUST use this format:
+
+{
+  "date": "YYYY-MM-DD",
+  "breakfast": [
+    {
+      "name": "Recipe 1 Name",
+      "servings": number,
+      "fromCatalog": true,
+      "targetEaters": ["EaterName1", "EaterName2"],
+      "dietProfiles": ["profile1"]
+    },
+    {
+      "name": "Recipe 2 Name", 
+      "servings": number,
+      "fromCatalog": true,
+      "targetEaters": ["EaterName3"],
+      "dietProfiles": ["profile2"]
+    }
+  ],
+  "lunch": [/* same structure */],
+  "dinner": [/* same structure */]
+}
+
+**RULES:**
+1. For EACH meal (breakfast/lunch/dinner), provide an ARRAY of recipe objects
+2. Each recipe MUST have "targetEaters" field listing who eats it
+3. Each recipe MUST have "dietProfiles" field showing which diet(s) it satisfies
+4. Generate ONE recipe per conflicting profile group
+5. Flexible eaters (kid-friendly, flexitarian) can be added to multiple recipes
+6. STILL prioritize catalog recipes (80%+ from catalog)
+7. Keep shopping list efficient by reusing ingredients across all recipes
+
+**EXAMPLE for Keto + Vegan conflict:**
+{
+  "date": "2026-01-11",
+  "dinner": [
+    {
+      "name": "Grilled Salmon with Asparagus",
+      "servings": 2,
+      "fromCatalog": true,
+      "targetEaters": ["Mom", "Kids"],
+      "dietProfiles": ["keto", "kid-friendly"]
+    },
+    {
+      "name": "Chickpea Buddha Bowl",
+      "servings": 1,
+      "fromCatalog": true,
+      "targetEaters": ["Dad"],
+      "dietProfiles": ["vegan"]
+    }
+  ]
+}
+
+This format ensures everyone gets a compatible meal while minimizing cooking effort.`;
+  }
+
   // Slice 5: Add catalog information to prompt
   let catalogInfo = '';
   if (catalogSlice && catalogSlice.length > 0) {
@@ -656,6 +811,7 @@ ${eaterInfo}
 ${conversationContext}
 ${scheduleRequirements}
 ${ingredientConstraint}
+${multiProfileInstructions}
 ${catalogInfo}
 
 Create a complete 7-day meal plan with breakfast, lunch, and dinner for each day. 
@@ -664,6 +820,7 @@ IMPORTANT:
 - Generate ALL 7 days (21 meals total)
 - Do NOT stop early or truncate
 - Keep instructions brief (2-3 sentences max per recipe) to fit all 7 days
+${conflictInfo.hasConflicts ? '- Use the MULTI-RECIPE FORMAT shown above for ALL meals (breakfast, lunch, dinner)' : ''}
 
 If the user specified constraints in the conversation (like "simple recipes", "meal prep on Saturday", etc.), FOLLOW THOSE CONSTRAINTS STRICTLY.
 

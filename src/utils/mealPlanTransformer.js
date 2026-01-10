@@ -93,9 +93,15 @@ function extractRecipes(days) {
 
     const mealTypes = ['breakfast', 'lunch', 'dinner'];
     for (const mealType of mealTypes) {
-      const recipe = day[mealType];
+      const mealData = day[mealType];
       
-      if (!recipe || typeof recipe !== 'object') continue;
+      if (!mealData) continue;
+      
+      // Handle multi-recipe format (array) or single recipe (object)
+      const recipesToProcess = Array.isArray(mealData) ? mealData : [mealData];
+      
+      for (const recipe of recipesToProcess) {
+        if (!recipe || typeof recipe !== 'object') continue;
 
       // OPTIMIZED: Check if this is a catalog recipe reference
       if (recipe.fromCatalog === true) {
@@ -183,6 +189,7 @@ function extractRecipes(days) {
         recipeMap.set(hash, { recipe: newRecipe, recipeId });
         recipes.push(newRecipe);
       }
+      }  // Close inner for loop (recipesToProcess)
     }
   }
 
@@ -214,59 +221,85 @@ function createMeals(days, recipeMap, defaultServings = 2) {
     const mealTypes = ['breakfast', 'lunch', 'dinner'];
 
     for (const mealType of mealTypes) {
-      const recipe = day[mealType];
+      const mealData = day[mealType];
       
-      if (!recipe || typeof recipe !== 'object') continue;
-
-      // Find matching recipe ID
-      const hash = createRecipeHash(recipe);
-      const recipeData = recipeMap.get(hash);
-
-      if (!recipeData) {
-        console.warn(`No recipe found for ${mealType} on ${date}`);
-        continue;
-      }
-
-      // Get eater IDs for this specific meal based on schedule
-      const eaters = loadEaters();
-      const baseSpec = loadBaseSpecification();
-      let eaterIds = [];
-      let servings = recipe.servings || defaultServings;
+      if (!mealData) continue;
       
-      // Try to get eaterIds from schedule
-      if (baseSpec?.weeklySchedule && date) {
-        const mealDate = new Date(date + 'T00:00:00');
-        const dayOfWeek = mealDate.getDay(); // 0 = Sunday
-        const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-        const dayName = dayNames[dayOfWeek];
-        
-        const daySchedule = baseSpec.weeklySchedule[dayName];
-        if (daySchedule && daySchedule[mealType]) {
-          eaterIds = daySchedule[mealType].eaterIds || [];
-          servings = daySchedule[mealType].servings || recipe.servings || 1;
-          console.log(`📅 ${date} (${dayName}) ${mealType}: ${servings} servings, ${eaterIds.length} eater(s)`);
+      // Handle multi-recipe format (array) or single recipe (object)
+      const recipesToProcess = Array.isArray(mealData) ? mealData : [mealData];
+      
+      for (const recipe of recipesToProcess) {
+        if (!recipe || typeof recipe !== 'object') continue;
+
+        // Find matching recipe ID
+        const hash = createRecipeHash(recipe);
+        const recipeData = recipeMap.get(hash);
+
+        if (!recipeData) {
+          console.warn(`No recipe found for ${mealType} on ${date}`);
+          continue;
         }
-      }
-      
-      // Fallback: if no schedule or no eaterIds, use all eaters
-      if (eaterIds.length === 0) {
-        eaterIds = eaters.map(e => e.eaterId);
-        servings = recipe.servings || eaters.length || defaultServings;
-        console.log(`⚠️  No schedule for ${date} ${mealType}, using all eaters (${eaterIds.length})`);
-      }
-      
-      // Create meal object
-      const meal = {
-        mealId: generateMealId(),
-        recipeId: recipeData.recipeId,
-        mealType: mealType,
-        date: date,
-        eaterIds: eaterIds,
-        servings: servings,
-        notes: recipe.notes || ''
-      };
 
-      meals.push(meal);
+        // Get eater IDs and servings for this specific meal
+        const eaters = loadEaters();
+        const baseSpec = loadBaseSpecification();
+        let eaterIds = [];
+        let targetEaters = null;
+        let dietProfileTags = null;
+        let servings = recipe.servings || defaultServings;
+        
+        // Check for multi-profile format (targetEaters specified)
+        if (recipe.targetEaters && Array.isArray(recipe.targetEaters)) {
+          // Multi-profile: map eater names to IDs
+          targetEaters = recipe.targetEaters.map(name => {
+            const eater = eaters.find(e => e.name.toLowerCase() === name.toLowerCase());
+            return eater ? eater.eaterId : null;
+          }).filter(Boolean);
+          
+          eaterIds = targetEaters;
+          dietProfileTags = recipe.dietProfiles || [];
+          
+          console.log(`🍽️  Multi-profile: ${date} ${mealType} → "${recipe.name}" for ${recipe.targetEaters.join(', ')}`);
+        } else {
+          // Single profile or legacy format: use schedule
+          if (baseSpec?.weeklySchedule && date) {
+            const mealDate = new Date(date + 'T00:00:00');
+            const dayOfWeek = mealDate.getDay(); // 0 = Sunday
+            const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+            const dayName = dayNames[dayOfWeek];
+            
+            const daySchedule = baseSpec.weeklySchedule[dayName];
+            if (daySchedule && daySchedule[mealType]) {
+              eaterIds = daySchedule[mealType].eaterIds || [];
+              servings = daySchedule[mealType].servings || recipe.servings || 1;
+              console.log(`📅 ${date} (${dayName}) ${mealType}: ${servings} servings, ${eaterIds.length} eater(s)`);
+            }
+          }
+          
+          // Fallback: if no schedule or no eaterIds, use all eaters
+          if (eaterIds.length === 0) {
+            eaterIds = eaters.map(e => e.eaterId);
+            servings = recipe.servings || eaters.length || defaultServings;
+            console.log(`⚠️  No schedule for ${date} ${mealType}, using all eaters (${eaterIds.length})`);
+          }
+        }
+        
+        // Create meal object (Slice 5.1: with multi-profile support)
+        const meal = {
+          mealId: generateMealId(),
+          recipeId: recipeData.recipeId,
+          mealType: mealType,
+          date: date,
+          eaterIds: eaterIds,
+          servings: servings,
+          notes: recipe.notes || '',
+          // Multi-profile fields (Slice 5.1)
+          targetEaters: targetEaters,
+          dietProfileTags: dietProfileTags
+        };
+
+        meals.push(meal);
+      }
     }
   }
 
