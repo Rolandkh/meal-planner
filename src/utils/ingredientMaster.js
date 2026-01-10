@@ -1,55 +1,80 @@
 /**
  * Ingredient Master Dictionary Loader
  * 
- * Browser-compatible version - uses static import instead of fs
+ * Browser-compatible version - fetches JSON on demand
  * Provides access to the canonical ingredient master dictionary
  * used for normalization, matching, and conversion operations.
  */
 
-import masterData from '../data/ingredientMaster.js';
+let masterData = null;
+let loadPromise = null;
 
-export const ingredientMaster = masterData.ingredients;
-export const masterMetadata = {
-  version: masterData._version,
-  lastUpdated: masterData._lastUpdated,
-  totalEntries: masterData._totalEntries,
-  coverage: masterData._coverage
-};
+async function ensureLoaded() {
+  if (masterData) return masterData;
+
+  if (!loadPromise) {
+    loadPromise = fetch('/src/data/ingredientMaster.json')
+      .then(r => {
+        if (!r.ok) throw new Error('Failed to load ingredient master');
+        return r.json();
+      })
+      .then(data => {
+        masterData = data;
+        return data;
+      });
+  }
+
+  return loadPromise;
+}
+
+export async function getMasterMetadata() {
+  const data = await ensureLoaded();
+  return {
+    version: data._version,
+    lastUpdated: data._lastUpdated,
+    totalEntries: data._totalEntries,
+    coverage: data._coverage,
+  };
+}
 
 /**
  * Get a specific ingredient entry by ID
  * @param {string} id - The ingredient ID (e.g., 'onion', 'garlic')
- * @returns {Object|null} The ingredient entry or null if not found
+ * @returns {Promise<Object|null>} The ingredient entry or null if not found
  */
-export function getMasterIngredient(id) {
-  return ingredientMaster[id] || null;
+export async function getMasterIngredient(id) {
+  const data = await ensureLoaded();
+  return data.ingredients[id] || null;
 }
 
 /**
  * Get all master ingredient entries as an array
- * @returns {Array} Array of all ingredient entries
+ * @returns {Promise<Array>} Array of all ingredient entries
  */
-export function getAllMasterIngredients() {
-  return Object.values(ingredientMaster);
+export async function getAllMasterIngredients() {
+  const data = await ensureLoaded();
+  return Object.values(data.ingredients);
 }
 
 /**
  * Get all ingredient IDs
- * @returns {Array<string>} Array of ingredient IDs
+ * @returns {Promise<Array<string>>} Array of ingredient IDs
  */
-export function getAllIngredientIds() {
-  return Object.keys(ingredientMaster);
+export async function getAllIngredientIds() {
+  const data = await ensureLoaded();
+  return Object.keys(data.ingredients);
 }
 
 /**
  * Search for ingredients by alias
  * @param {string} alias - The alias to search for
- * @returns {Object|null} The first matching ingredient entry or null
+ * @returns {Promise<Object|null>} The first matching ingredient entry or null
  */
-export function findByAlias(alias) {
+export async function findByAlias(alias) {
+  const data = await ensureLoaded();
   const normalized = alias.toLowerCase().trim();
   
-  for (const [id, ingredient] of Object.entries(ingredientMaster)) {
+  for (const ingredient of Object.values(data.ingredients)) {
     if (ingredient.aliases && ingredient.aliases.some(a => 
       a.toLowerCase() === normalized
     )) {
@@ -62,10 +87,11 @@ export function findByAlias(alias) {
 
 /**
  * Get dictionary statistics
- * @returns {Object} Statistics about the dictionary
+ * @returns {Promise<Object>} Statistics about the dictionary
  */
-export function getDictionaryStats() {
-  const ingredients = getAllMasterIngredients();
+export async function getDictionaryStats() {
+  const ingredients = await getAllMasterIngredients();
+  const metadata = await getMasterMetadata();
   
   return {
     totalIngredients: ingredients.length,
@@ -84,14 +110,21 @@ export function getDictionaryStats() {
     withDensity: ingredients.filter(i => i.density && (
       i.density.gPerCup || i.density.gPerTbsp || i.density.gPerTsp
     )).length,
-    version: masterMetadata.version,
-    lastUpdated: masterMetadata.lastUpdated
+    version: metadata.version,
+    lastUpdated: metadata.lastUpdated
   };
 }
 
+// Legacy exports for backward compatibility (now async)
+export const ingredientMaster = {
+  async get() {
+    const data = await ensureLoaded();
+    return data.ingredients;
+  }
+};
+
 export default {
-  ingredientMaster,
-  masterMetadata,
+  getMasterMetadata,
   getMasterIngredient,
   getAllMasterIngredients,
   getAllIngredientIds,

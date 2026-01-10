@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
   <title>Vanessa - AI Meal Planning Concierge</title>
+  
+  <!-- Preload ingredient database for faster loading -->
+  <link rel="preload" href="/src/data/ingredientMaster.json" as="fetch" type="application/json" crossorigin="anonymous">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Custom styles beyond Tailwind */
