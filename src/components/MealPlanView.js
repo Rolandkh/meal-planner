@@ -337,7 +337,7 @@ export class MealPlanView {
       const meal = this.meals.find(m => m.date === date && m.mealType === mealType);
       if (meal) {
         const recipe = this.getRecipe(meal.recipeId);
-        const mealCard = this.renderMealCard(mealType, recipe, mealEmojis[mealType]);
+        const mealCard = this.renderMealCard(mealType, recipe, mealEmojis[mealType], meal);
         mealsContainer.appendChild(mealCard);
       }
     });
@@ -350,8 +350,12 @@ export class MealPlanView {
 
   /**
    * Render a single meal card
+   * @param {string} mealType - breakfast, lunch, or dinner
+   * @param {Object} recipe - Recipe object
+   * @param {string} emoji - Emoji for meal type
+   * @param {Object} meal - Meal object with actual servings for this specific meal
    */
-  renderMealCard(mealType, recipe, emoji) {
+  renderMealCard(mealType, recipe, emoji, meal = null) {
     if (!recipe) {
       return document.createElement('div');
     }
@@ -371,11 +375,14 @@ export class MealPlanView {
       <h3 class="text-xl font-bold text-gray-800">${recipe.name}</h3>
     `;
 
+    // Use meal.servings (actual servings for this meal) rather than recipe.servings (base recipe serving count)
+    const displayServings = meal?.servings || recipe.servings || 1;
+    
     const timeInfo = document.createElement('div');
     timeInfo.className = 'text-right text-sm text-gray-600';
     timeInfo.innerHTML = `
       <div>⏱️ ${recipe.prepTime + recipe.cookTime} min</div>
-      <div>🍽️ ${recipe.servings} servings</div>
+      <div>🍽️ ${displayServings} serving${displayServings !== 1 ? 's' : ''}</div>
     `;
 
     header.appendChild(titleSection);

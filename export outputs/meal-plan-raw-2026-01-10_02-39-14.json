@@ -1,0 +1,821 @@
+{
+  "timestamp": "2026-01-10T02:39:14.454Z",
+  "rawData": {
+    "weekOf": "2026-01-17",
+    "budget": {
+      "estimated": 85
+    },
+    "days": [
+      {
+        "date": "2026-01-17",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey and Berries",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "blueberries",
+              "quantity": 50,
+              "unit": "g",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Spoon greek yogurt into a bowl. Drizzle with honey and top with fresh blueberries.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "healthy",
+            "mediterranean"
+          ]
+        },
+        "lunch": {
+          "name": "Mediterranean Tuna Quinoa Bowl",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "quinoa",
+              "quantity": 80,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "canned tuna",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "feta cheese",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook quinoa according to package directions. Mix with drained tuna, chopped tomatoes, cucumber, and crumbled feta. Dress with olive oil and fresh lemon juice.",
+          "prepTime": 5,
+          "cookTime": 15,
+          "tags": [
+            "mediterranean",
+            "healthy",
+            "meal-prep"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Salmon with Roasted Vegetables",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Chop vegetables and toss with olive oil and minced garlic. Roast at 200°C for 15 minutes. Add salmon fillet, drizzle with lemon juice, and bake another 12 minutes until fish flakes easily.",
+          "prepTime": 10,
+          "cookTime": 27,
+          "tags": [
+            "mediterranean",
+            "healthy",
+            "fish"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-18",
+        "breakfast": {
+          "name": "Greek Yogurt with Banana and Honey",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "banana",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place greek yogurt in a bowl. Slice banana on top and drizzle with honey.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "kid-friendly",
+            "healthy"
+          ]
+        },
+        "lunch": {
+          "name": "Simple Chicken Pasta",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "chicken breast",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook pasta. Sauté diced chicken in olive oil with minced garlic until golden. Add halved cherry tomatoes and cook 3 minutes. Toss with pasta.",
+          "prepTime": 8,
+          "cookTime": 15,
+          "tags": [
+            "kid-friendly",
+            "simple",
+            "pasta"
+          ]
+        },
+        "dinner": {
+          "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
+          "servings": 2,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-19",
+        "breakfast": {
+          "name": "Scrambled Eggs with Toast",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "eggs",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "dairy"
+            },
+            {
+              "name": "whole wheat bread",
+              "quantity": 4,
+              "unit": "whole",
+              "category": "pantry"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 10,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Whisk eggs and scramble in olive oil over medium heat until fluffy. Toast bread and serve alongside eggs.",
+          "prepTime": 3,
+          "cookTime": 5,
+          "tags": [
+            "kid-friendly",
+            "quick",
+            "breakfast"
+          ]
+        },
+        "lunch": {
+          "name": "Chicken and Vegetable Quinoa Bowl",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "quinoa",
+              "quantity": 150,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "chicken breast",
+              "quantity": 200,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 150,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook quinoa. Dice and sauté chicken in olive oil until cooked through. Add chopped zucchini and bell pepper, cook 5 minutes. Mix with quinoa.",
+          "prepTime": 8,
+          "cookTime": 20,
+          "tags": [
+            "kid-friendly",
+            "healthy",
+            "meal-prep"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Fish with Roasted Tomatoes",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "white fish fillet",
+              "quantity": 300,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Place fish in baking dish with halved cherry tomatoes and minced garlic. Drizzle with olive oil and lemon juice. Bake at 190°C for 15 minutes until fish is cooked through.",
+          "prepTime": 7,
+          "cookTime": 15,
+          "tags": [
+            "kid-friendly",
+            "fish",
+            "simple"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "breakfast": {
+          "name": "Greek Yogurt with Blueberries",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "blueberries",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Divide greek yogurt into bowls. Top with fresh blueberries and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "kid-friendly",
+            "healthy"
+          ]
+        },
+        "lunch": {
+          "name": "Simple Pasta with Tomato Sauce",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "pasta",
+              "quantity": 200,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 250,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "garlic",
+              "quantity": 3,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook pasta. Sauté minced garlic in olive oil, add halved cherry tomatoes and cook until soft. Toss with pasta.",
+          "prepTime": 5,
+          "cookTime": 15,
+          "tags": [
+            "kid-friendly",
+            "pasta",
+            "simple"
+          ]
+        },
+        "dinner": {
+          "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+          "servings": 3,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-21",
+        "breakfast": {
+          "name": "Banana and Yogurt Breakfast",
+          "servings": 2,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 400,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "banana",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 30,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Divide greek yogurt into bowls. Slice bananas on top and drizzle with honey.",
+          "prepTime": 3,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "kid-friendly",
+            "healthy"
+          ]
+        },
+        "lunch": {
+          "name": "Quinoa Salad with Vegetables",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "quinoa",
+              "quantity": 80,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "feta cheese",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Cook quinoa. Mix with chopped cucumber, tomatoes, bell pepper, and crumbled feta. Dress with olive oil and lemon juice.",
+          "prepTime": 8,
+          "cookTime": 15,
+          "tags": [
+            "mediterranean",
+            "healthy",
+            "vegetarian"
+          ]
+        },
+        "dinner": {
+          "name": "Salmon Quinoa Risotto",
+          "servings": 1,
+          "fromCatalog": true
+        }
+      },
+      {
+        "date": "2026-01-22",
+        "breakfast": {
+          "name": "Greek Yogurt with Honey",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "blueberries",
+              "quantity": 50,
+              "unit": "g",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Place greek yogurt in a bowl. Top with blueberries and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "healthy",
+            "mediterranean"
+          ]
+        },
+        "lunch": {
+          "name": "Mediterranean Tuna Salad",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "canned tuna",
+              "quantity": 100,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "cucumber",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "feta cheese",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Mix drained tuna with chopped cucumber, halved cherry tomatoes, and crumbled feta. Dress with olive oil and fresh lemon juice.",
+          "prepTime": 5,
+          "cookTime": 0,
+          "tags": [
+            "mediterranean",
+            "quick",
+            "healthy"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Salmon with Zucchini",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "salmon fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 200,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Slice zucchini and toss with olive oil and minced garlic. Roast at 200°C for 12 minutes. Add salmon fillet, drizzle with lemon juice, and bake another 12 minutes.",
+          "prepTime": 8,
+          "cookTime": 24,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "healthy"
+          ]
+        }
+      },
+      {
+        "date": "2026-01-23",
+        "breakfast": {
+          "name": "Greek Yogurt with Banana",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "greek yogurt",
+              "quantity": 200,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "banana",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "honey",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Place greek yogurt in a bowl. Slice banana on top and drizzle with honey.",
+          "prepTime": 2,
+          "cookTime": 0,
+          "tags": [
+            "quick",
+            "healthy",
+            "mediterranean"
+          ]
+        },
+        "lunch": {
+          "name": "Quinoa Bowl with Vegetables and Feta",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "quinoa",
+              "quantity": 80,
+              "unit": "g",
+              "category": "pantry"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "bell pepper",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 80,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "feta cheese",
+              "quantity": 30,
+              "unit": "g",
+              "category": "dairy"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 15,
+              "unit": "ml",
+              "category": "pantry"
+            }
+          ],
+          "instructions": "Cook quinoa. Sauté chopped zucchini, bell pepper, and cherry tomatoes in olive oil for 5 minutes. Mix with quinoa and top with crumbled feta.",
+          "prepTime": 7,
+          "cookTime": 18,
+          "tags": [
+            "mediterranean",
+            "vegetarian",
+            "healthy"
+          ]
+        },
+        "dinner": {
+          "name": "Simple Baked Fish with Vegetables",
+          "servings": 1,
+          "fromCatalog": false,
+          "ingredients": [
+            {
+              "name": "white fish fillet",
+              "quantity": 150,
+              "unit": "g",
+              "category": "meat"
+            },
+            {
+              "name": "cherry tomatoes",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "zucchini",
+              "quantity": 100,
+              "unit": "g",
+              "category": "produce"
+            },
+            {
+              "name": "olive oil",
+              "quantity": 20,
+              "unit": "ml",
+              "category": "pantry"
+            },
+            {
+              "name": "garlic",
+              "quantity": 2,
+              "unit": "whole",
+              "category": "produce"
+            },
+            {
+              "name": "lemon",
+              "quantity": 1,
+              "unit": "whole",
+              "category": "produce"
+            }
+          ],
+          "instructions": "Place fish in baking dish with sliced zucchini, halved cherry tomatoes, and minced garlic. Drizzle with olive oil and lemon juice. Bake at 190°C for 15 minutes.",
+          "prepTime": 8,
+          "cookTime": 15,
+          "tags": [
+            "mediterranean",
+            "fish",
+            "simple"
+          ]
+        }
+      }
+    ]
+  }
+}

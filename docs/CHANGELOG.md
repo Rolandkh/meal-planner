@@ -2,6 +2,29 @@
 
 ## [Unreleased] - Ingredient Normalization System
 
+### ✨ Shopping List Optimization & Servings Fix (January 10, 2026 - Evening)
+
+**🎉 ACHIEVEMENT: Shopping list reduced from 56 to 32 items via AI prompt optimization**
+
+#### Shopping List Optimization
+- **File:** `api/generate-meal-plan.js`
+- **Approach:** Instead of normalizing ingredients after generation, instruct Claude to select recipes with overlapping ingredients
+- **Changes:**
+  - Added comprehensive "Ingredient Overlap Strategy" to system prompt
+  - Step-by-step process: Choose core ingredients first, then select recipes that use them
+  - Concrete examples of good/bad ingredient reuse patterns
+  - Hard budget constraint: ~35 unique ingredients max
+  - Guidance to reject one-off specialty items
+- **Result:** Shopping list dropped from 56 items to **32 items** ✅
+
+#### Servings Display Fix
+- **File:** `src/components/MealPlanView.js`
+- **Problem:** UI showed `recipe.servings` (base recipe serving count, e.g., 6) instead of `meal.servings` (actual planned servings, e.g., 2)
+- **Fix:** Updated `renderMealCard()` to use `meal.servings` over `recipe.servings`
+- **Result:** Meal plan now correctly shows servings matching the AI-generated plan
+
+---
+
 ### ✨ Opus Session: Dictionary Optimization (January 10, 2026)
 
 **🎉 ACHIEVEMENT: 86.1% match rate with 311-ingredient dictionary, shopping list reduced to ~56 items**
