@@ -1,0 +1,524 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_e60f68ae-e0c1-4937-b6a2-8ec3a112f6bf",
+  "name": "Slow Cooker: Pork and Garbanzo Beans",
+  "source": "spoonacular",
+  "spoonacularId": 660306,
+  "image": "/images/recipes/660306.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cinnamon",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garbanzo beans *1",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground pepper",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pork should roast",
+      "quantity": 1.361,
+      "unit": "kgs",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water *2",
+      "quantity": 946.352,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In slow cooker layer in this order: pork, then garbanzo beans, onion, pour water over all. Mix spices together and sprinkle over pork and beans. Cover. Set on low and cook for approximately 6 hours. The beans should be tender and creamy. The pork should fall very easily from the bone. The pork can be either shredded for cubed for your preference. *3</li><li>Serving Suggestion: Scoop about 1 cup of beans with broth into a soup bowl. Top with shredded pork. Add 1/4 of an avocado sliced, top with chopped fresh cilantro.</li><li>NOTES:</li><li>*1 The beans do not need to be soaked before adding to the slow cooker. They will be perfectly soft and creamy without pre-soaking.</li><li>*2 Substitute the water for: 2 cups water and 1 bottle of good quality dark beer like Negra Modelo. You can also substitute the water for chicken stock or pork stock. Each of these substitutions will add an extra dimension of flavor.</li><li>*3 If you want to shred the pork, it is easiest to do when the pork is hot. Use two forks to pull the pork apart and shred. If you want to slice the pork (like for sandwiches) it is best to do when the pork is cold. Let the pork rest in the refrigerator for several hours or over night. Slice with a serrated knife or a very sharp chef knife.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 586.78,
+    "protein": 65.78,
+    "fat": 14.04,
+    "carbs": 48.51,
+    "fiber": 14.09,
+    "sugar": 8.63,
+    "saturatedFat": 3.34,
+    "sodium": 914.69
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 87.5,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "water *2",
+        "identity": "water *2",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cinnamon",
+      "displayName": "cinnamon",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps cinnamon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garbanzo_beans",
+      "displayName": "garbanzo beans",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "453.592 g garbanzo beans *1",
+      "matchConfidence": 0.6
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "2 tsps ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 12,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 6,
+    "unmatched": 2,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1.361 kgs pork should roast",
+        "identityText": "kgs pork should roast",
+        "state": "fresh"
+      },
+      {
+        "rawText": "946.352 ml water *2",
+        "identityText": "water *2",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-11T00:00:28.521Z",
+  "processGraph": {
+    "recipeName": "Slow Cooker: Pork and Garbanzo Beans",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In slow cooker layer in this order: pork, then garbanzo beans, onion, pour water over all. Mix spices together and sprinkle over pork and beans. Cover. Set on low and cook for approximately 6 hours. The beans should be tender and creamy. The pork should fall very easily from the bone. The pork can be either shredded for cubed for your preference.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cinnamon",
+              "cumin",
+              "ground pepper",
+              "salt"
+            ],
+            "durationMinutes": 2,
+            "notes": "combining spices together"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "cinnamon",
+              "cumin",
+              "ground pepper",
+              "salt"
+            ],
+            "durationMinutes": 1,
+            "notes": "sprinkling spice mixture over pork and beans"
+          },
+          {
+            "processId": "stew",
+            "ingredients": [
+              "pork should roast",
+              "garbanzo beans",
+              "onion",
+              "water"
+            ],
+            "durationMinutes": 360,
+            "notes": "slow cooking on low heat for 6 hours until beans are tender and pork falls from bone"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "pork should roast"
+            ],
+            "durationMinutes": 5,
+            "notes": "optional - shredding or cubing the cooked pork"
+          }
+        ],
+        "outputDescription": "Tender, creamy garbanzo beans with fall-apart pork that can be shredded or cubed, all infused with spices"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Serving Suggestion: Scoop about 1 cup of beans with broth into a soup bowl. Top with shredded pork. Add 1/4 of an avocado sliced, top with chopped fresh cilantro.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "avocado"
+            ],
+            "durationMinutes": 2,
+            "notes": "slicing 1/4 avocado"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "fresh cilantro"
+            ],
+            "durationMinutes": 2,
+            "notes": "chopping fresh cilantro"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "garbanzo beans",
+              "pork should roast",
+              "avocado",
+              "fresh cilantro"
+            ],
+            "durationMinutes": 3,
+            "notes": "assembling serving portions in bowls"
+          }
+        ],
+        "outputDescription": "Plated serving with beans and broth in bowl, topped with shredded pork, sliced avocado, and chopped cilantro"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "mix",
+        "sprinkle",
+        "stew",
+        "shred",
+        "slice",
+        "chop",
+        "plate"
+      ],
+      "estimatedTotalTime": 375
+    }
+  },
+  "components": [
+    {
+      "id": "comp_660306_step1",
+      "name": "Tender, creamy garbanzo beans with fall-apart pork that can be shredded or cubed, all infused with spices",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cinnamon",
+          "name": "cinnamon",
+          "quantityG": 4.2
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "cumin",
+          "quantityG": 6.3
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "ground pepper",
+          "quantityG": 4.2
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 12
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stew",
+          "processName": "Stew",
+          "yieldFactor": 0.88,
+          "durationMinutes": 360,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 23.2469424,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.086,
+        "costPerG": 0.17576505028893608,
+        "nutrition": {
+          "calories": 44.541000000000004,
+          "protein": 1.72599,
+          "fat": 1.59201,
+          "carbs": 8.857800000000001,
+          "fiber": 3.9543,
+          "sugar": 0.25977,
+          "sodium": 4662.804,
+          "method": "raw"
+        },
+        "prepTimeMin": 368
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660306_step2",
+      "name": "Plated serving with beans and broth in bowl, topped with shredded pork, sliced avocado, and chopped cilantro",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 13.84948784,
+    "costPerServing": 2.308247973333333,
+    "totalPrepTime": 375,
+    "nutritionPerServing": {
+      "calories": 138.40531333333334,
+      "protein": 7.178206866666667,
+      "fat": 2.2408404666666666,
+      "carbs": 23.8399544,
+      "fiber": 6.702048666666666,
+      "sugar": 4.4140310000000005,
+      "sodium": 791.0121733333334
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_660306_step1",
+        "name": "Tender, creamy garbanzo beans with fall-apart pork that can be shredded or cubed, all infused with spices",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660306_step2",
+        "name": "Plated serving with beans and broth in bowl, topped with shredded pork, sliced avocado, and chopped cilantro",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_660306_step1",
+      "name": "Tender, creamy garbanzo beans with fall-apart pork that can be shredded or cubed, all infused with spices",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "sprinkle",
+        "stew",
+        "shred"
+      ]
+    },
+    {
+      "componentId": "comp_660306_step2",
+      "name": "Plated serving with beans and broth in bowl, topped with shredded pork, sliced avocado, and chopped cilantro",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "chop",
+        "plate"
+      ]
+    }
+  ]
+}

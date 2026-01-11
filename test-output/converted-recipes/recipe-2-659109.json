@@ -1,0 +1,1369 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_2480a60d-f129-4c7e-ad31-1a0964a5fa65",
+  "name": "Salmon Quinoa Risotto",
+  "source": "spoonacular",
+  "spoonacularId": 659109,
+  "image": "/images/recipes/659109.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kale",
+      "quantity": 8,
+      "unit": "leaf",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "poached salmon",
+      "quantity": 283.495,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable stock",
+      "quantity": 907.185,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "In a 4 quart saucepan, heat 2 tablespoons of olive oil over medium high heat.\nWhen oil is shimmering, add diced onion.\nSaute onion until transparent.  Add quinoa to onion mixture and stir, to toast quinoa, for 2 minutes.\nAdd 1 cup of vegetable stock to quinoa and onions.\nStir until stock is absorbed.  Once stock is absorbed, add 1 cup of stock.\nContinue stirring until stock is absorbed.\nAdd remaining stock in 1/2 cup intervals, stirring until all stock is absorbed.\nRemove from heat.\nWhile preparing the onion quinoa mixture, heat 1 tablespoon of oil in a saute pan with chopped garlic (over medium high heat).\nOnce garlic is sizzling, add chopped kale to the pan.\nTurn kale to coat with oil and garlic.\nTurn kale mixture until fragrant (approximately 2 minutes).  Remove kale mixture from heat.\nOnce quinoa is complete, add kale and salmon.\nStir to combine.\nAdd salt and pepper to taste.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 404.86,
+    "protein": 21.98,
+    "fat": 18.17,
+    "carbs": 39.45,
+    "fiber": 5.99,
+    "sugar": 6.44,
+    "saturatedFat": 2.54,
+    "sodium": 1150.87
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.879Z",
+  "updatedAt": "2026-01-09T11:32:55.879Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5  garlic cloves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 907.185,
+        "originalUnit": "g",
+        "normalizedQuantityG": 907.185,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "907.185 g vegetable stock",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings bell pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 7,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "8 leaf kale",
+        "identityText": "leaf kale",
+        "state": "fresh"
+      },
+      {
+        "rawText": "283.495 g poached salmon",
+        "identityText": "poached salmon",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:19:26.411Z",
+  "processGraph": {
+    "recipeName": "Salmon Quinoa Risotto",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a 4 quart saucepan, heat 2 tablespoons of olive oil over medium high heat.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil until shimmering in saucepan over medium high heat"
+          }
+        ],
+        "outputDescription": "hot oil ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "When oil is shimmering, add diced onion.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep process for onion"
+          }
+        ],
+        "outputDescription": "diced onion added to hot oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Saute onion until transparent. Add quinoa to onion mixture and stir, to toast quinoa, for 2 minutes.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "cook until transparent"
+          },
+          {
+            "processId": "toast",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 2,
+            "notes": "toasting quinoa with onion mixture"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring to combine and toast"
+          }
+        ],
+        "outputDescription": "transparent onions with toasted quinoa"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add 1 cup of vegetable stock to quinoa and onions.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "vegetable stock",
+              "quinoa",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "adding first cup of stock"
+          }
+        ],
+        "outputDescription": "quinoa mixture with first addition of stock"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Stir until stock is absorbed. Once stock is absorbed, add 1 cup of stock.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa",
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "cooking until stock is absorbed"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring and adding second cup of stock"
+          }
+        ],
+        "outputDescription": "quinoa with second addition of stock"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Continue stirring until stock is absorbed.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa",
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "continuing to cook until second cup absorbed"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "continuous stirring"
+          }
+        ],
+        "outputDescription": "quinoa with second cup of stock absorbed"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Add remaining stock in 1/2 cup intervals, stirring until all stock is absorbed.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa",
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "cooking remaining stock in intervals"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring between each addition"
+          }
+        ],
+        "outputDescription": "creamy quinoa risotto with all stock absorbed"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Remove from heat.",
+        "processes": [],
+        "outputDescription": "finished quinoa risotto removed from heat"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "While preparing the onion quinoa mixture, heat 1 tablespoon of oil in a saute pan with chopped garlic (over medium high heat).",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep process for garlic"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil with garlic over medium high heat"
+          }
+        ],
+        "outputDescription": "hot oil with chopped garlic in saute pan"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Once garlic is sizzling, add chopped kale to the pan.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "kale"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep process for kale"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "garlic sizzling in oil"
+          }
+        ],
+        "outputDescription": "sizzling garlic with chopped kale added to pan"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Turn kale to coat with oil and garlic.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "kale",
+              "garlic",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "coating kale with oil and garlic"
+          }
+        ],
+        "outputDescription": "kale coated with oil and garlic"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "Turn kale mixture until fragrant (approximately 2 minutes). Remove kale mixture from heat.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "kale",
+              "garlic"
+            ],
+            "durationMinutes": 2,
+            "notes": "cooking until fragrant"
+          }
+        ],
+        "outputDescription": "fragrant sautéed kale and garlic mixture removed from heat"
+      },
+      {
+        "stepNumber": 13,
+        "originalInstruction": "Once quinoa is complete, add kale and salmon.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "kale",
+              "poached salmon"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all main components"
+          }
+        ],
+        "outputDescription": "quinoa risotto combined with kale and salmon"
+      },
+      {
+        "stepNumber": 14,
+        "originalInstruction": "Stir to combine.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "kale",
+              "poached salmon"
+            ],
+            "durationMinutes": null,
+            "notes": "final mixing to combine all ingredients"
+          }
+        ],
+        "outputDescription": "fully combined salmon quinoa risotto"
+      },
+      {
+        "stepNumber": 15,
+        "originalInstruction": "Add salt and pepper to taste.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "final seasoning to taste"
+          }
+        ],
+        "outputDescription": "seasoned salmon quinoa risotto ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 19,
+      "uniqueProcesses": [
+        "heat",
+        "dice",
+        "saute",
+        "toast",
+        "mix",
+        "simmer",
+        "chop",
+        "toss",
+        "season"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_659109_step1",
+      "name": "hot oil ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 39.69,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.432,
+        "costPerG": 0.0108843537414966,
+        "nutrition": {
+          "calories": 358.02000000000004,
+          "protein": 0,
+          "fat": 40.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.81,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_659109_step2",
+      "name": "diced onion added to hot oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 145.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.5005,
+        "costPerG": 0.01718556701030928,
+        "nutrition": {
+          "calories": 60,
+          "protein": 1.6500000000000001,
+          "fat": 0.15000000000000002,
+          "carbs": 14.01,
+          "fiber": 2.55,
+          "sugar": 6.36,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step3",
+      "name": "transparent onions with toasted quinoa",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 132.94,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.21,
+        "costPerG": 0.016624040920716114,
+        "nutrition": {
+          "calories": 625.6,
+          "protein": 24.003999999999998,
+          "fat": 10.319,
+          "carbs": 109.07199999999999,
+          "fiber": 11.9,
+          "sugar": 0,
+          "sodium": 8.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step4",
+      "name": "quinoa mixture with first addition of stock",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "vegetable stock",
+          "quantityG": 907.185
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 907.185,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1751474999999996,
+        "costPerG": 0.0034999999999999996,
+        "nutrition": {
+          "calories": 54.4311,
+          "protein": 5.805984,
+          "fat": 1.9050884999999997,
+          "carbs": 3.9916139999999998,
+          "fiber": 0,
+          "sugar": 3.9008955,
+          "sodium": 3365.6563499999997,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step5",
+      "name": "quinoa with second addition of stock",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 22
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step6",
+      "name": "quinoa with second cup of stock absorbed",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 22
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step7",
+      "name": "creamy quinoa risotto with all stock absorbed",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 22
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step8",
+      "name": "finished quinoa risotto removed from heat",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_659109_step9",
+      "name": "hot oil with chopped garlic in saute pan",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step10",
+      "name": "sizzling garlic with chopped kale added to pan",
+      "stepNumber": 10,
+      "sourceIngredients": [
+        {
+          "ingredientId": "kale",
+          "name": "kale",
+          "quantityG": 8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 6.664,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.1216,
+        "costPerG": 0.018247298919567827,
+        "nutrition": {
+          "calories": 2.8000000000000003,
+          "protein": 0.2336,
+          "fat": 0.1192,
+          "carbs": 0.3536,
+          "fiber": 0.32799999999999996,
+          "sugar": 0.064,
+          "sodium": 4.24,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step11",
+      "name": "kale coated with oil and garlic",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_659109_step12",
+      "name": "fragrant sautéed kale and garlic mixture removed from heat",
+      "stepNumber": 12,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step13",
+      "name": "quinoa risotto combined with kale and salmon",
+      "stepNumber": 13,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salmon",
+          "name": "poached salmon",
+          "quantityG": 283.495
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 283.495,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 31.18445,
+        "costPerG": 0.10999999999999999,
+        "nutrition": {
+          "calories": 402.5629,
+          "protein": 56.245408000000005,
+          "fat": 17.973583,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 124.73780000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step14",
+      "name": "fully combined salmon quinoa risotto",
+      "stepNumber": 14,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659109_step15",
+      "name": "seasoned salmon quinoa risotto ready to serve",
+      "stepNumber": 15,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 8.16,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.234,
+        "costPerG": 0.028676470588235296,
+        "nutrition": {
+          "calories": 1.04,
+          "protein": 0.0396,
+          "fat": 0.012,
+          "carbs": 0.24120000000000003,
+          "fiber": 0.084,
+          "sugar": 0.168,
+          "sodium": 1550.48,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 40.9826975,
+    "costPerServing": 10.245674375,
+    "totalPrepTime": 102.5,
+    "nutritionPerServing": {
+      "calories": 385.426,
+      "protein": 22.392147999999995,
+      "fat": 17.775967875000003,
+      "carbs": 33.9858535,
+      "fiber": 3.8467499999999997,
+      "sugar": 2.685723875,
+      "sodium": 1266.1685375
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_659109_step2",
+        "name": "diced onion added to hot oil",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_659109_step3",
+        "name": "transparent onions with toasted quinoa",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659109_step4",
+        "name": "quinoa mixture with first addition of stock",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659109_step5",
+        "name": "quinoa with second addition of stock",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659109_step6",
+        "name": "quinoa with second cup of stock absorbed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659109_step7",
+        "name": "creamy quinoa risotto with all stock absorbed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659109_step9",
+        "name": "hot oil with chopped garlic in saute pan",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_659109_step10",
+        "name": "sizzling garlic with chopped kale added to pan",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_659109_step12",
+        "name": "fragrant sautéed kale and garlic mixture removed from heat",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_659109_step13",
+        "name": "quinoa risotto combined with kale and salmon",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659109_step14",
+        "name": "fully combined salmon quinoa risotto",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_659109_step3",
+      "name": "transparent onions with toasted quinoa",
+      "shelfLifeHours": 24,
+      "processes": [
+        "saute",
+        "toast",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_659109_step5",
+      "name": "quinoa with second addition of stock",
+      "shelfLifeHours": 24,
+      "processes": [
+        "simmer",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_659109_step6",
+      "name": "quinoa with second cup of stock absorbed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "simmer",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_659109_step7",
+      "name": "creamy quinoa risotto with all stock absorbed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "simmer",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_659109_step9",
+      "name": "hot oil with chopped garlic in saute pan",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "heat"
+      ]
+    },
+    {
+      "componentId": "comp_659109_step10",
+      "name": "sizzling garlic with chopped kale added to pan",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "saute"
+      ]
+    }
+  ]
+}

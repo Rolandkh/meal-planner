@@ -1,0 +1,794 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_74b6fb2f-0b62-49d5-9b69-a68e1f538069",
+  "name": "Minestrone",
+  "source": "spoonacular",
+  "spoonacularId": 651922,
+  "image": "/images/recipes/651922.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "butter",
+      "quantity": 6,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery",
+      "quantity": 3,
+      "unit": "Stalks",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "Clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cabbage",
+      "quantity": 1,
+      "unit": "Head",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 1.893,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "brown rice",
+      "quantity": 190,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "worcestershire sauce",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasoning",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "potatoes",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "beef bouillon cubes",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kidney beans",
+      "quantity": 2,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 283.495,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": 75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Melt butter in large soup kettle; saute carrots, celery, onions, garlic, and cabbage, about 20 minutes; stir often. Add tomatoes, water, rice, seasonings, potatoes, bouillon cubes and zucchini. Bring to a boil. Reduce heat and simmer covered, at least 30 minutes. Add beans and spinach; return to a boil and cook over medium heat until spinach is cooked; add more water if needed. Garnish with Parmesan.\nServes 9",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 9,
+  "nutrition": {
+    "calories": 403.12,
+    "protein": 15.23,
+    "fat": 11.53,
+    "carbs": 63.35,
+    "fiber": 13.51,
+    "sugar": 10.1,
+    "saturatedFat": 6.45,
+    "sodium": 1265.78
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "butter",
+      "displayName": "butter",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 84,
+        "normalizedQuantityMl": 90
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 Tbsps butter",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery_stalks",
+      "displayName": "celery stalks",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 Stalks celery",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cabbage",
+      "displayName": "cabbage",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Head cabbage",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "1  canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 1.893,
+        "originalUnit": "l",
+        "normalizedQuantityG": 1869,
+        "normalizedQuantityMl": 1893
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.893 l water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "brown_rice",
+      "displayName": "brown rice",
+      "quantity": {
+        "originalQuantity": 190,
+        "originalUnit": "g",
+        "normalizedQuantityG": 190,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "190 g brown rice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp salt",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Worcestershire sauce",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp worcestershire sauce",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Seasoning blend",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp seasoning",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "potatoes",
+      "displayName": "potatoes",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  potatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  zucchini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "kidney_beans",
+      "displayName": "kidney beans",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "2 can kidney beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 283.495,
+        "originalUnit": "g",
+        "normalizedQuantityG": 283.495,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "283.495 g spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 75,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "75 g parmesan cheese",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 19,
+    "matched": 18,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 2,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4  beef bouillon cubes",
+        "identityText": "beef bouillon cubes",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:32:09.709Z",
+  "processGraph": {
+    "recipeName": "Minestrone",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Melt butter in large soup kettle; saute carrots, celery, onions, garlic, and cabbage, about 20 minutes; stir often. Add tomatoes, water, rice, seasonings, potatoes, bouillon cubes and zucchini. Bring to a boil. Reduce heat and simmer covered, at least 30 minutes. Add beans and spinach; return to a boil and cook over medium heat until spinach is cooked; add more water if needed. Garnish with Parmesan.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "carrots",
+              "celery",
+              "onions",
+              "garlic",
+              "cabbage",
+              "potatoes",
+              "zucchini"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep work for vegetables before sautéing"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "butter"
+            ],
+            "durationMinutes": null,
+            "notes": "melt butter in soup kettle"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "carrots",
+              "celery",
+              "onions",
+              "garlic",
+              "cabbage"
+            ],
+            "durationMinutes": 20,
+            "notes": "stir often during sautéing"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "canned tomatoes",
+              "water",
+              "brown rice",
+              "salt",
+              "worcestershire sauce",
+              "seasoning",
+              "pepper",
+              "potatoes",
+              "beef bouillon cubes",
+              "zucchini"
+            ],
+            "durationMinutes": null,
+            "notes": "add ingredients to sautéed vegetables"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "all ingredients"
+            ],
+            "durationMinutes": null,
+            "notes": "bring mixture to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "all ingredients"
+            ],
+            "durationMinutes": 30,
+            "notes": "reduce heat and simmer covered, at least 30 minutes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "kidney beans",
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "add beans and spinach to pot"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "all ingredients"
+            ],
+            "durationMinutes": null,
+            "notes": "return to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "all ingredients"
+            ],
+            "durationMinutes": null,
+            "notes": "cook over medium heat until spinach is cooked"
+          },
+          {
+            "processId": "grate",
+            "ingredients": [
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for garnish"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "garnish with Parmesan"
+          }
+        ],
+        "outputDescription": "Complete minestrone soup with tender vegetables, cooked rice, beans, and wilted spinach, garnished with Parmesan cheese"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "chop",
+        "heat",
+        "saute",
+        "mix",
+        "boil",
+        "simmer",
+        "grate",
+        "garnish"
+      ],
+      "estimatedTotalTime": 60
+    }
+  },
+  "components": [
+    {
+      "id": "comp_651922_step1",
+      "name": "Complete minestrone soup with tender vegetables, cooked rice, beans, and wilted spinach, garnished with Parmesan cheese",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 240
+        },
+        {
+          "ingredientId": "celery",
+          "name": "celery",
+          "quantityG": 120
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onions",
+          "quantityG": 300
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "cabbage",
+          "name": "cabbage",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "potatoes",
+          "name": "potatoes",
+          "quantityG": 720
+        },
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 400
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "grate",
+          "processName": "Grate",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1032.7817098823487,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.3885,
+        "costPerG": 0.009090497934040204,
+        "nutrition": {
+          "calories": 865.3,
+          "protein": 26.0748,
+          "fat": 3.034,
+          "carbs": 194.51299999999998,
+          "fiber": 33.71,
+          "sugar": 41.402,
+          "sodium": 349.83000000000004,
+          "method": "raw"
+        },
+        "prepTimeMin": 102
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 39.311859150000004,
+    "costPerServing": 4.36798435,
+    "totalPrepTime": 102,
+    "nutritionPerServing": {
+      "calories": 409.5474,
+      "protein": 16.98506161111111,
+      "fat": 11.357055055555556,
+      "carbs": 63.227972888888885,
+      "fiber": 12.624690555555555,
+      "sugar": 7.284871,
+      "sodium": 715.8801166666667
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_651922_step1",
+        "name": "Complete minestrone soup with tender vegetables, cooked rice, beans, and wilted spinach, garnished with Parmesan cheese",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_651922_step1",
+      "name": "Complete minestrone soup with tender vegetables, cooked rice, beans, and wilted spinach, garnished with Parmesan cheese",
+      "shelfLifeHours": 12,
+      "processes": [
+        "chop",
+        "heat",
+        "saute",
+        "mix",
+        "boil",
+        "simmer",
+        "mix",
+        "boil",
+        "simmer",
+        "grate",
+        "garnish"
+      ]
+    }
+  ]
+}

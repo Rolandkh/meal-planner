@@ -1,0 +1,1043 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_e12e9727-25ae-49d6-b225-f86d261ff3ef",
+  "name": "Pasta With Roasted Vegetables & Greek Olives",
+  "source": "spoonacular",
+  "spoonacularId": 654939,
+  "image": "/images/recipes/654939.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "angel hair spaghetti 2",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato sauce",
+      "quantity": 1,
+      "unit": "large can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 1,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "½ garlic",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "¼ greek olives",
+      "quantity": 135,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasoning",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground beef",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mushrooms",
+      "quantity": 96,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "½ oregano",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "¼ parmesan cheese",
+      "quantity": 100,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "½ pepper",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetables",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "¼ of sun tomatoes",
+      "quantity": 110,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Preparation:</li><li>Cook spaghetti, rinse & drain, set aside </li><li>Sear the meat with onions, set aside (color equal flavor dont make gray and bubbly)</li><li>Roast vegetables with olive oil (sear them dont Cooke them)</li><li>Roast sliced mushrooms</li><li>For the sauce: combine all ingredients bring to boil then simmer on low heat for about 10 minutes</li><li>Serve:</li><li>Lay pasta in the bottom of the plate then the sauce, meat goes on top of sauce</li><li>Then start layering the vegetables the mushrooms, add a the cheese & olives</li><li>Garnish with fresh Basil.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 8,
+  "nutrition": {
+    "calories": 266.44,
+    "protein": 23.03,
+    "fat": 9.84,
+    "carbs": 25.96,
+    "fiber": 7.22,
+    "sugar": 10.99,
+    "saturatedFat": 3.86,
+    "sodium": 1013.96
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "tomato_sauce",
+      "displayName": "tomato sauce",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 large can tomato sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "1 can canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "8 servings basil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Seasoning blend",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp seasoning",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ground_beef",
+      "displayName": "ground beef",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "453.592 g ground beef",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mushrooms",
+      "displayName": "mushrooms",
+      "quantity": {
+        "originalQuantity": 96,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 96
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "96 ml mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 7,
+        "normalizedQuantityMl": 10
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 tsps onion",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 8,
+    "unmatched": 8,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1  pack package angel hair spaghetti 2",
+        "identityText": "pack package angel hair spaghetti 2",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 tsp ½ garlic",
+        "identityText": "0.5 garlic",
+        "state": "fresh"
+      },
+      {
+        "rawText": "135 ml ¼ greek olives",
+        "identityText": "0.25 greek olives",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 tsp ½ oregano",
+        "identityText": "0.5 oregano",
+        "state": "fresh"
+      },
+      {
+        "rawText": "100 g ¼ parmesan cheese",
+        "identityText": "0.25 parmesan cheese",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 tsp ½ pepper",
+        "identityText": "0.5 pepper",
+        "state": "fresh"
+      },
+      {
+        "rawText": "453.592 g vegetables",
+        "identityText": "vegetables",
+        "state": "fresh"
+      },
+      {
+        "rawText": "110 g ¼ of sun tomatoes",
+        "identityText": "0.25 sun tomatoes",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:34:14.509Z",
+  "processGraph": {
+    "recipeName": "Pasta With Roasted Vegetables & Greek Olives",
+    "processSteps": [
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Cook spaghetti, rinse & drain, set aside",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "angel hair spaghetti"
+            ],
+            "durationMinutes": null,
+            "notes": "cook pasta in boiling water"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "angel hair spaghetti"
+            ],
+            "durationMinutes": null,
+            "notes": "rinse cooked pasta"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "angel hair spaghetti"
+            ],
+            "durationMinutes": null,
+            "notes": "drain water from pasta"
+          }
+        ],
+        "outputDescription": "cooked, rinsed and drained pasta set aside"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Sear the meat with onions, set aside (color equal flavor dont make gray and bubbly)",
+        "processes": [
+          {
+            "processId": "sear",
+            "ingredients": [
+              "ground beef",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "brown surface quickly over high heat for color and flavor"
+          }
+        ],
+        "outputDescription": "browned ground beef and onions with good color, set aside"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Roast vegetables with olive oil (sear them dont Cooke them)",
+        "processes": [
+          {
+            "processId": "sear",
+            "ingredients": [
+              "vegetables"
+            ],
+            "durationMinutes": null,
+            "notes": "quick searing with olive oil, not fully cooked"
+          }
+        ],
+        "outputDescription": "lightly seared vegetables with olive oil"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Roast sliced mushrooms",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "cut mushrooms into slices"
+          },
+          {
+            "processId": "roast",
+            "ingredients": [
+              "mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "roast the sliced mushrooms"
+          }
+        ],
+        "outputDescription": "sliced and roasted mushrooms"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "For the sauce: combine all ingredients bring to boil then simmer on low heat for about 10 minutes",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tomato sauce",
+              "canned tomatoes",
+              "basil",
+              "garlic",
+              "seasoning",
+              "lemon juice",
+              "oregano",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all sauce ingredients"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "tomato sauce",
+              "canned tomatoes",
+              "basil",
+              "garlic",
+              "seasoning",
+              "lemon juice",
+              "oregano",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "bring sauce mixture to boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "tomato sauce",
+              "canned tomatoes",
+              "basil",
+              "garlic",
+              "seasoning",
+              "lemon juice",
+              "oregano",
+              "pepper"
+            ],
+            "durationMinutes": 10,
+            "notes": "simmer on low heat"
+          }
+        ],
+        "outputDescription": "finished sauce simmered for 10 minutes"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Lay pasta in the bottom of the plate then the sauce, meat goes on top of sauce",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "angel hair spaghetti"
+            ],
+            "durationMinutes": null,
+            "notes": "place pasta at bottom of plate"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "tomato sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "add sauce over pasta"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "ground beef"
+            ],
+            "durationMinutes": null,
+            "notes": "place meat on top of sauce"
+          }
+        ],
+        "outputDescription": "plated dish with pasta base, sauce layer, and meat on top"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Then start layering the vegetables the mushrooms, add a the cheese & olives",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "vegetables",
+              "mushrooms",
+              "parmesan cheese",
+              "greek olives"
+            ],
+            "durationMinutes": null,
+            "notes": "layer vegetables, mushrooms, cheese and olives on dish"
+          }
+        ],
+        "outputDescription": "fully assembled dish with all components layered"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Garnish with fresh Basil.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "add fresh basil as final garnish"
+          }
+        ],
+        "outputDescription": "completed dish garnished with fresh basil"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "boil",
+        "rinse",
+        "drain",
+        "sear",
+        "slice",
+        "roast",
+        "mix",
+        "simmer",
+        "plate",
+        "garnish"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_654939_step2",
+      "name": "cooked, rinsed and drained pasta set aside",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_654939_step3",
+      "name": "browned ground beef and onions with good color, set aside",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ground_beef",
+          "name": "ground beef",
+          "quantityG": 453.592
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 6.6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "sear",
+          "processName": "Sear",
+          "yieldFactor": 0.95,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 437.1824,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.274678000000002,
+        "costPerG": 0.01892728984515388,
+        "nutrition": {
+          "calories": 1154.76368,
+          "protein": 77.9543464,
+          "fat": 90.72500000000001,
+          "carbs": 0.61644,
+          "fiber": 0.11220000000000001,
+          "sugar": 0.27984000000000003,
+          "sodium": 304.17064,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_654939_step4",
+      "name": "lightly seared vegetables with olive oil",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mixed_vegetables_frozen",
+          "name": "vegetables",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "sear",
+          "processName": "Sear",
+          "yieldFactor": 0.95,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 430.9124,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.175144,
+        "costPerG": 0.007368421052631579,
+        "nutrition": {
+          "calories": 290.29888,
+          "protein": 15.1046136,
+          "fat": 2.3586784,
+          "carbs": 61.0534832,
+          "fiber": 18.14368,
+          "sugar": 0,
+          "sodium": 213.18824,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_654939_step5",
+      "name": "sliced and roasted mushrooms",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mushrooms_button",
+          "name": "mushrooms",
+          "quantityG": 96
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 70.56,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.432,
+        "costPerG": 0.006122448979591836,
+        "nutrition": {
+          "calories": 21.119999999999997,
+          "protein": 2.9663999999999997,
+          "fat": 0.3264,
+          "carbs": 3.1295999999999995,
+          "fiber": 0.96,
+          "sugar": 1.9007999999999998,
+          "sodium": 4.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 27
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_654939_step6",
+      "name": "finished sauce simmered for 10 minutes",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato_sauce",
+          "name": "tomato sauce",
+          "quantityG": 520
+        },
+        {
+          "ingredientId": "canned_tomatoes",
+          "name": "canned tomatoes",
+          "quantityG": 400
+        },
+        {
+          "ingredientId": "basil",
+          "name": "basil",
+          "quantityG": 40
+        },
+        {
+          "ingredientId": "seasoning",
+          "name": "seasoning",
+          "quantityG": 2.5
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 15.25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 835.9762499999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.3228,
+        "costPerG": 0.014740610154893757,
+        "nutrition": {
+          "calories": 273.03000000000003,
+          "protein": 14.353125000000002,
+          "fat": 3.16085,
+          "carbs": 60.524,
+          "fiber": 16.36825,
+          "sugar": 36.6933,
+          "sodium": 2995.2275000000004,
+          "method": "raw"
+        },
+        "prepTimeMin": 22
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_654939_step8",
+      "name": "plated dish with pasta base, sauce layer, and meat on top",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_654939_step9",
+      "name": "fully assembled dish with all components layered",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_654939_step10",
+      "name": "completed dish garnished with fresh basil",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 33.48649,
+    "costPerServing": 4.18581125,
+    "totalPrepTime": 76,
+    "nutritionPerServing": {
+      "calories": 297.121945,
+      "protein": 17.074956874999998,
+      "fat": 18.94507605,
+      "carbs": 17.56483165,
+      "fiber": 5.268903750000001,
+      "sugar": 5.363804999999999,
+      "sodium": 785.4927975000002
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_654939_step2",
+        "name": "cooked, rinsed and drained pasta set aside",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_654939_step5",
+        "name": "sliced and roasted mushrooms",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_654939_step6",
+        "name": "finished sauce simmered for 10 minutes",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_654939_step2",
+      "name": "cooked, rinsed and drained pasta set aside",
+      "shelfLifeHours": 12,
+      "processes": [
+        "boil",
+        "rinse",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_654939_step5",
+      "name": "sliced and roasted mushrooms",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "roast"
+      ]
+    },
+    {
+      "componentId": "comp_654939_step6",
+      "name": "finished sauce simmered for 10 minutes",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil",
+        "simmer"
+      ]
+    }
+  ]
+}

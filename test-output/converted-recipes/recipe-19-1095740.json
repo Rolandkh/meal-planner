@@ -1,0 +1,1384 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_b997be2a-391e-49e8-892f-3453805043c5",
+  "name": "Golden Beet Panzanella",
+  "source": "spoonacular",
+  "spoonacularId": 1095740,
+  "image": "/images/recipes/1095740.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "white wine vinegar",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "shallot",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "honey",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sumac",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 54,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "beetroot",
+      "quantity": 4,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "crusty multigrain bread",
+      "quantity": 4,
+      "unit": "slice",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oranges",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sunflower seeds",
+      "quantity": 33.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pistachios",
+      "quantity": 41,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 20,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mint",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sumac",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<p>Sumac Vinaigrette</p><ol><li>Combine all the dressing ingredients into a container and blend well. This can be made ahead of time to allow flavors to develop.</li></ol><p>Salad Prep</p><ol><li>Preheat oven to 400F. Wrap beets in foil and roast for about 1 hour until tender. Peel and dice.</li><li>Toast the bread slices, cut into cubes and set aside.</li><li>Peel the oranges and remove the white pith. Cut into segments.</li><li>Crush the pistachios.</li><li>Chop the parsley and mint.</li></ol><p>Salad Assembly</p><ol><li>Combine the beets, orange segments, sunflower seeds, herbs, and 1/2 tablespoon sumac in a large bowl.</li><li>Toss with half of the dressing. Add salt and pepper to taste.</li><li>If eating immediately, add the cubed bread and more dressing. Toss until the bread cubes are coated with dressing. You may have dressing left over.</li><li>Sprinkle the pistachios on top along with the remaining 1/2 tablespoon sumac, salt and pepper to taste.</li><li>If making this ahead of time, toss with the bread cubes right before serving.</li></ol>",
+  "prepTime": 21,
+  "cookTime": 49,
+  "servings": 4,
+  "nutrition": {
+    "calories": 442.11,
+    "protein": 11.53,
+    "fat": 23.98,
+    "carbs": 50.52,
+    "fiber": 11.75,
+    "sugar": 27.13,
+    "saturatedFat": 3.09,
+    "sodium": 457.73
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "white_wine_vinegar",
+      "displayName": "white wine vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps white wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "shallot",
+      "displayName": "shallot",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp shallot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "honey",
+      "displayName": "honey",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps honey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sugar",
+      "displayName": "sugar",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps sumac",
+      "matchConfidence": 0.6
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 54,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 49,
+        "normalizedQuantityMl": 54
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "54 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "juice_orange",
+      "displayName": "juice orange",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  oranges",
+      "matchConfidence": 0.95
+    },
+    {
+      "masterIngredientId": "sunflower_seeds",
+      "displayName": "sunflower seeds",
+      "quantity": {
+        "originalQuantity": 33.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 33.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "33.5 g sunflower seeds",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pistachio",
+      "displayName": "pistachios",
+      "quantity": {
+        "originalQuantity": 41,
+        "originalUnit": "g",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "41 g pistachios",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 20,
+        "originalUnit": "g",
+        "normalizedQuantityG": 20,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "20 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp mint",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sugar",
+      "displayName": "sugar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 13,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp sumac",
+      "matchConfidence": 0.6
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 14,
+    "unmatched": 2,
+    "lowConfidence": 2,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 medium golden beets",
+        "identityText": "golden beets",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4 slice crusty multigrain bread",
+        "identityText": "slice crusty multigrain bread",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:25:34.867Z",
+  "processGraph": {
+    "recipeName": "Golden Beet Panzanella",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Sumac Vinaigrette",
+        "processes": [],
+        "outputDescription": "Section header for vinaigrette preparation"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Combine all the dressing ingredients into a container and blend well. This can be made ahead of time to allow flavors to develop.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "lemon juice",
+              "white wine vinegar",
+              "shallot",
+              "honey",
+              "sumac",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all dressing ingredients"
+          }
+        ],
+        "outputDescription": "Well-blended vinaigrette ready for use"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Salad Prep",
+        "processes": [],
+        "outputDescription": "Section header for salad preparation"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Preheat oven to 400F. Wrap beets in foil and roast for about 1 hour until tender. Peel and dice.",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "beetroot"
+            ],
+            "durationMinutes": 60,
+            "notes": "wrapped in foil at 400F until tender"
+          },
+          {
+            "processId": "peel",
+            "ingredients": [
+              "beetroot"
+            ],
+            "durationMinutes": null,
+            "notes": "remove skin after roasting"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "beetroot"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into small uniform cubes"
+          }
+        ],
+        "outputDescription": "Tender roasted beets, peeled and diced into small cubes"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Toast the bread slices, cut into cubes and set aside.",
+        "processes": [
+          {
+            "processId": "toast",
+            "ingredients": [
+              "crusty multigrain bread"
+            ],
+            "durationMinutes": null,
+            "notes": "brown the bread slices"
+          },
+          {
+            "processId": "cube",
+            "ingredients": [
+              "crusty multigrain bread"
+            ],
+            "durationMinutes": null,
+            "notes": "cut toasted bread into cubes"
+          }
+        ],
+        "outputDescription": "Toasted bread cut into cubes, set aside"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Peel the oranges and remove the white pith. Cut into segments.",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "oranges"
+            ],
+            "durationMinutes": null,
+            "notes": "remove outer skin and white pith"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "oranges"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into segments"
+          }
+        ],
+        "outputDescription": "Oranges peeled, pith removed, and cut into segments"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Crush the pistachios.",
+        "processes": [
+          {
+            "processId": "crush",
+            "ingredients": [
+              "pistachios"
+            ],
+            "durationMinutes": null,
+            "notes": "break down into smaller pieces"
+          }
+        ],
+        "outputDescription": "Pistachios crushed into smaller pieces"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Chop the parsley and mint.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "parsley",
+              "mint"
+            ],
+            "durationMinutes": null,
+            "notes": "cut herbs into rough pieces"
+          }
+        ],
+        "outputDescription": "Parsley and mint chopped and ready for use"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Salad Assembly",
+        "processes": [],
+        "outputDescription": "Section header for salad assembly"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Combine the beets, orange segments, sunflower seeds, herbs, and 1/2 tablespoon sumac in a large bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "beetroot",
+              "oranges",
+              "sunflower seeds",
+              "parsley",
+              "mint",
+              "sumac"
+            ],
+            "durationMinutes": null,
+            "notes": "combine main salad ingredients"
+          }
+        ],
+        "outputDescription": "Main salad ingredients combined in large bowl"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Toss with half of the dressing. Add salt and pepper to taste.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "beetroot",
+              "oranges",
+              "sunflower seeds",
+              "parsley",
+              "mint",
+              "sumac",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "mix with half the vinaigrette"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to taste"
+          }
+        ],
+        "outputDescription": "Salad tossed with dressing and seasoned with salt and pepper"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "If eating immediately, add the cubed bread and more dressing. Toss until the bread cubes are coated with dressing. You may have dressing left over.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "crusty multigrain bread",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "add bread cubes and toss with additional dressing"
+          }
+        ],
+        "outputDescription": "Bread cubes added and coated with dressing"
+      },
+      {
+        "stepNumber": 13,
+        "originalInstruction": "Sprinkle the pistachios on top along with the remaining 1/2 tablespoon sumac, salt and pepper to taste.",
+        "processes": [
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "pistachios",
+              "sumac",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "top with crushed pistachios, sumac, and final seasoning"
+          }
+        ],
+        "outputDescription": "Finished panzanella topped with pistachios, sumac, and final seasoning"
+      },
+      {
+        "stepNumber": 14,
+        "originalInstruction": "If making this ahead of time, toss with the bread cubes right before serving.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "crusty multigrain bread"
+            ],
+            "durationMinutes": null,
+            "notes": "alternative timing for adding bread cubes"
+          }
+        ],
+        "outputDescription": "Alternative assembly method for make-ahead preparation"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 15,
+      "uniqueProcesses": [
+        "blend",
+        "roast",
+        "peel",
+        "dice",
+        "toast",
+        "cube",
+        "slice",
+        "crush",
+        "chop",
+        "mix",
+        "toss",
+        "season",
+        "sprinkle"
+      ],
+      "estimatedTotalTime": 90
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1095740_step1",
+      "name": "Section header for vinaigrette preparation",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095740_step2",
+      "name": "Well-blended vinaigrette ready for use",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 30.5
+        },
+        {
+          "ingredientId": "white_wine_vinegar",
+          "name": "white wine vinegar",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "shallot",
+          "name": "shallot",
+          "quantityG": 9.4
+        },
+        {
+          "ingredientId": "honey",
+          "name": "honey",
+          "quantityG": 2.5
+        },
+        {
+          "ingredientId": "sumac",
+          "name": "sumac",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 54
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 138.572,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 20.948999999999998,
+        "costPerG": 0.15117772710215627,
+        "nutrition": {
+          "calories": 504.13800000000003,
+          "protein": 0.36125,
+          "fat": 54.0826,
+          "carbs": 5.8247,
+          "fiber": 0.3973,
+          "sugar": 3.5608799999999996,
+          "sodium": 5.013,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095740_step3",
+      "name": "Section header for salad preparation",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095740_step4",
+      "name": "Tender roasted beets, peeled and diced into small cubes",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "beetroot_bunch",
+          "name": "beetroot",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.619,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.028,
+        "costPerG": 0.010691103474608629,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 65
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095740_step5",
+      "name": "Toasted bread cut into cubes, set aside",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bread",
+          "name": "crusty multigrain bread",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "cube",
+          "processName": "Cube",
+          "yieldFactor": 0.96,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3.5328,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.056,
+        "costPerG": 0.01585144927536232,
+        "nutrition": {
+          "calories": 10.96,
+          "protein": 0.428,
+          "fat": 0.1812,
+          "carbs": 1.9000000000000001,
+          "fiber": 0.16,
+          "sugar": 0.22920000000000001,
+          "sodium": 18.92,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095740_step6",
+      "name": "Oranges peeled, pith removed, and cut into segments",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "juice_orange",
+          "name": "oranges",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3.528,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.4,
+        "costPerG": 0.6802721088435374,
+        "nutrition": {
+          "calories": 1.8,
+          "protein": 0.027999999999999997,
+          "fat": 0.008,
+          "carbs": 0.41600000000000004,
+          "fiber": 0.008,
+          "sugar": 0.336,
+          "sodium": 0.04,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095740_step7",
+      "name": "Pistachios crushed into smaller pieces",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pistachios",
+          "name": "pistachios",
+          "quantityG": 41
+        }
+      ],
+      "processes": [
+        {
+          "processId": "crush",
+          "processName": "Crush",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 40.589999999999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.3234700000000004,
+        "costPerG": 0.057242424242424254,
+        "nutrition": {
+          "calories": 230.42,
+          "protein": 8.310699999999999,
+          "fat": 18.6099,
+          "carbs": 11.2791,
+          "fiber": 4.223,
+          "sugar": 3.1406,
+          "sodium": 0.41,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095740_step8",
+      "name": "Parsley and mint chopped and ready for use",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 20
+        },
+        {
+          "ingredientId": "mint",
+          "name": "mint",
+          "quantityG": 3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 22.54,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.8466000000000005,
+        "costPerG": 0.21502218278615798,
+        "nutrition": {
+          "calories": 9.3,
+          "protein": 0.7065000000000001,
+          "fat": 0.18620000000000003,
+          "carbs": 1.7127,
+          "fiber": 0.9,
+          "sugar": 0.17,
+          "sodium": 12.13,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095740_step9",
+      "name": "Section header for salad assembly",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095740_step10",
+      "name": "Main salad ingredients combined in large bowl",
+      "stepNumber": 10,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sunflower_seeds",
+          "name": "sunflower seeds",
+          "quantityG": 33.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 33.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.402,
+        "costPerG": 0.012,
+        "nutrition": {
+          "calories": 195.64000000000001,
+          "protein": 6.9613000000000005,
+          "fat": 17.2391,
+          "carbs": 6.7,
+          "fiber": 2.8810000000000002,
+          "sugar": 0.8777,
+          "sodium": 3.015,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095740_step11",
+      "name": "Salad tossed with dressing and seasoned with salt and pepper",
+      "stepNumber": 11,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.08,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.2,
+        "costPerG": 0.049019607843137254,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1550.32,
+          "method": "raw"
+        },
+        "prepTimeMin": 1.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095740_step12",
+      "name": "Bread cubes added and coated with dressing",
+      "stepNumber": 12,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095740_step13",
+      "name": "Finished panzanella topped with pistachios, sumac, and final seasoning",
+      "stepNumber": 13,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095740_step14",
+      "name": "Alternative assembly method for make-ahead preparation",
+      "stepNumber": 14,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 31.20507,
+    "costPerServing": 7.8012675,
+    "totalPrepTime": 86,
+    "nutritionPerServing": {
+      "calories": 238.0645,
+      "protein": 4.1989375,
+      "fat": 22.576749999999997,
+      "carbs": 6.958125000000001,
+      "fiber": 2.142325,
+      "sugar": 2.078595,
+      "sodium": 397.46200000000005
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1095740_step2",
+        "name": "Well-blended vinaigrette ready for use",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1095740_step4",
+        "name": "Tender roasted beets, peeled and diced into small cubes",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1095740_step5",
+        "name": "Toasted bread cut into cubes, set aside",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1095740_step6",
+        "name": "Oranges peeled, pith removed, and cut into segments",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095740_step7",
+        "name": "Pistachios crushed into smaller pieces",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_1095740_step8",
+        "name": "Parsley and mint chopped and ready for use",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1095740_step10",
+        "name": "Main salad ingredients combined in large bowl",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1095740_step4",
+      "name": "Tender roasted beets, peeled and diced into small cubes",
+      "shelfLifeHours": 48,
+      "processes": [
+        "roast",
+        "peel",
+        "dice"
+      ]
+    },
+    {
+      "componentId": "comp_1095740_step5",
+      "name": "Toasted bread cut into cubes, set aside",
+      "shelfLifeHours": 48,
+      "processes": [
+        "toast",
+        "cube"
+      ]
+    },
+    {
+      "componentId": "comp_1095740_step6",
+      "name": "Oranges peeled, pith removed, and cut into segments",
+      "shelfLifeHours": 24,
+      "processes": [
+        "peel",
+        "slice"
+      ]
+    }
+  ]
+}

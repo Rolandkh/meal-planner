@@ -1,0 +1,1024 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_868477c7-ff87-4ee1-b10c-1922dfb1e2b7",
+  "name": "Quinoa Tabouli Salad",
+  "source": "spoonacular",
+  "spoonacularId": 1096186,
+  "image": "/images/recipes/1096186.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quality extra virgin olive oil",
+      "quantity": 108,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "hothouse cucumber",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "grape tomatoes",
+      "quantity": 1.052,
+      "unit": "pts",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flat-leaf parsley",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "scallions",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Prepare quinoa according to the package instructions.</li><li>Let stand, covered, for 5 minutes. Fluff with a fork.</li><li>Whisk lemon juice and minced garlic in a small bowl.</li><li>Gradually stir in olive oil.</li><li>Add cucumber, tomatoes, herbs, ginger, and scallions to bowl with quinoa; toss to coat.</li><li>Season to taste with salt and pepper.</li><li>Drizzle dressing over the salad and fold in to incorporate.</li><li>Allow to sit and marinate for at least 1 hour before serving.</li><li>Season salad to taste with salt and pepper.</li></ol>",
+  "prepTime": 23,
+  "cookTime": 53,
+  "servings": 4,
+  "nutrition": {
+    "calories": 244.17,
+    "protein": 8.09,
+    "fat": 8.48,
+    "carbs": 35.6,
+    "fiber": 5.6,
+    "sugar": 4.54,
+    "saturatedFat": 1.11,
+    "sodium": 309.82
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "grape_tomatoes",
+      "displayName": "grape tomatoes",
+      "quantity": {
+        "originalQuantity": 1.052,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1.052 pts grape tomatoes",
+      "matchConfidence": 0.7666666666666666
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 g flat-leaf parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  scallions",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 8,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "108 ml quality extra virgin olive oil",
+        "identityText": "quality virgin olive oil",
+        "state": "other"
+      },
+      {
+        "rawText": "1 large hothouse cucumber",
+        "identityText": "hothouse cucumber",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:45:38.799Z",
+  "processGraph": {
+    "recipeName": "Quinoa Tabouli Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Prepare quinoa according to the package instructions.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "following package instructions"
+          }
+        ],
+        "outputDescription": "cooked quinoa"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Let stand, covered, for 5 minutes. Fluff with a fork.",
+        "processes": [
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 5,
+            "notes": "letting quinoa rest covered"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "fluffing with fork"
+          }
+        ],
+        "outputDescription": "rested and fluffed quinoa"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Whisk lemon juice and minced garlic in a small bowl.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "garlic minced very fine"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "lemon juice",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "combining in small bowl"
+          }
+        ],
+        "outputDescription": "whisked lemon-garlic mixture"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Gradually stir in olive oil.",
+        "processes": [
+          {
+            "processId": "emulsify",
+            "ingredients": [
+              "quality extra virgin olive oil",
+              "lemon juice",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "gradually incorporating oil to create dressing"
+          }
+        ],
+        "outputDescription": "emulsified dressing"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add cucumber, tomatoes, herbs, ginger, and scallions to bowl with quinoa; toss to coat.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "large hothouse cucumber"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of cucumber"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "grape tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of tomatoes"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "flat-leaf parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of herbs"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of scallions"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "quinoa",
+              "large hothouse cucumber",
+              "grape tomatoes",
+              "flat-leaf parsley",
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients"
+          }
+        ],
+        "outputDescription": "mixed salad with vegetables and quinoa"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Season to taste with salt and pepper.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "kosher salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "seasoning to taste"
+          }
+        ],
+        "outputDescription": "seasoned salad mixture"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Drizzle dressing over the salad and fold in to incorporate.",
+        "processes": [
+          {
+            "processId": "fold",
+            "ingredients": [
+              "quality extra virgin olive oil",
+              "lemon juice",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "gently incorporating dressing"
+          }
+        ],
+        "outputDescription": "dressed salad"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Allow to sit and marinate for at least 1 hour before serving.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "quinoa",
+              "large hothouse cucumber",
+              "grape tomatoes",
+              "flat-leaf parsley",
+              "scallions"
+            ],
+            "durationMinutes": 60,
+            "notes": "minimum marinating time"
+          }
+        ],
+        "outputDescription": "marinated tabouli salad"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Season salad to taste with salt and pepper.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "kosher salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "final seasoning adjustment"
+          }
+        ],
+        "outputDescription": "finished quinoa tabouli salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 12,
+      "uniqueProcesses": [
+        "boil",
+        "rest_meat",
+        "mix",
+        "mince",
+        "whisk",
+        "emulsify",
+        "dice",
+        "chop",
+        "slice",
+        "toss",
+        "season",
+        "fold",
+        "marinate"
+      ],
+      "estimatedTotalTime": 85
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1096186_step1",
+      "name": "cooked quinoa",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 161.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.21,
+        "costPerG": 0.01368421052631579,
+        "nutrition": {
+          "calories": 625.6,
+          "protein": 24.003999999999998,
+          "fat": 10.319,
+          "carbs": 109.07199999999999,
+          "fiber": 11.9,
+          "sugar": 0,
+          "sodium": 8.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096186_step2",
+      "name": "rested and fluffed quinoa",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096186_step3",
+      "name": "whisked lemon-garlic mixture",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.9,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.22499999999999998,
+        "costPerG": 0.04591836734693877,
+        "nutrition": {
+          "calories": 7.45,
+          "protein": 0.31800000000000006,
+          "fat": 0.025,
+          "carbs": 1.6550000000000002,
+          "fiber": 0.10500000000000001,
+          "sugar": 0.05,
+          "sodium": 0.8500000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096186_step4",
+      "name": "emulsified dressing",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "quality extra virgin olive oil",
+          "quantityG": 108
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 30.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "emulsify",
+          "processName": "Emulsify",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 138.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 19.452,
+        "costPerG": 0.14044765342960291,
+        "nutrition": {
+          "calories": 961.4300000000001,
+          "protein": 0.10675,
+          "fat": 108.0732,
+          "carbs": 2.1045000000000003,
+          "fiber": 0.0915,
+          "sugar": 0.7686,
+          "sodium": 2.4650000000000003,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096186_step5",
+      "name": "mixed salad with vegetables and quinoa",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cherry_tomatoes",
+          "name": "grape tomatoes",
+          "quantityG": 497.596
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 449.64782857456,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.234374,
+        "costPerG": 0.00719312714186427,
+        "nutrition": {
+          "calories": 89.56728,
+          "protein": 4.727162,
+          "fat": 0.5473555999999999,
+          "carbs": 19.953599599999997,
+          "fiber": 3.4831719999999997,
+          "sugar": 12.3901404,
+          "sodium": 54.73556,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096186_step6",
+      "name": "seasoned salad mixture",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "kosher salt",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 7.140000000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.55,
+        "costPerG": 0.3571428571428571,
+        "nutrition": {
+          "calories": 10.040000000000001,
+          "protein": 0.4156,
+          "fat": 0.1304,
+          "carbs": 2.5580000000000003,
+          "fiber": 1.012,
+          "sugar": 0.0256,
+          "sodium": 1163.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1096186_step7",
+      "name": "dressed salad",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "fold",
+          "processName": "Fold",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1096186_step8",
+      "name": "marinated tabouli salad",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parsley",
+          "name": "flat-leaf parsley",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "scallions",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 65.10000000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 14.2498,
+        "costPerG": 0.21889093701996926,
+        "nutrition": {
+          "calories": 22.24,
+          "protein": 1.8186,
+          "fat": 0.4778,
+          "carbs": 3.9448,
+          "fiber": 2.0319999999999996,
+          "sugar": 0.5566,
+          "sodium": 33.92,
+          "method": "raw"
+        },
+        "prepTimeMin": 60
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096186_step9",
+      "name": "finished quinoa tabouli salad ready to serve",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 44.846174000000005,
+    "costPerServing": 11.211543500000001,
+    "totalPrepTime": 98,
+    "nutritionPerServing": {
+      "calories": 440.78182,
+      "protein": 8.422778,
+      "fat": 30.0491889,
+      "carbs": 36.9279749,
+      "fiber": 5.338418,
+      "sugar": 4.7932351,
+      "sodium": 317.95264
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1096186_step1",
+        "name": "cooked quinoa",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_1096186_step2",
+        "name": "rested and fluffed quinoa",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1096186_step3",
+        "name": "whisked lemon-garlic mixture",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_1096186_step4",
+        "name": "emulsified dressing",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_1096186_step5",
+        "name": "mixed salad with vegetables and quinoa",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1096186_step8",
+        "name": "marinated tabouli salad",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1096186_step2",
+      "name": "rested and fluffed quinoa",
+      "shelfLifeHours": 24,
+      "processes": [
+        "rest_meat",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_1096186_step3",
+      "name": "whisked lemon-garlic mixture",
+      "shelfLifeHours": 12,
+      "processes": [
+        "mince",
+        "whisk"
+      ]
+    },
+    {
+      "componentId": "comp_1096186_step5",
+      "name": "mixed salad with vegetables and quinoa",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "dice",
+        "chop",
+        "slice",
+        "toss"
+      ]
+    }
+  ]
+}

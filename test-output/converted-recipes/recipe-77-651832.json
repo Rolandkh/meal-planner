@@ -1,0 +1,1077 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_3df2edfd-55c7-46cd-ba11-f565c5832db8",
+  "name": "Middle Eastern Stuffed Lentil Zatar Bread",
+  "source": "spoonacular",
+  "spoonacularId": 651832,
+  "image": "/images/recipes/651832.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "all purpose flour",
+      "quantity": 187.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cilantro",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin powder",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "less to make a pliable dough",
+      "quantity": 118.294,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 148.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zatar spice blend",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Make a pliable dough from flour, salt and water. Knead well for atleast 10minutes or until the dough is soft, smooth and ready.</li><li>If the dough is very sticky and wet, add some more flour.</li><li>Cover with a plastic wrap and let rest for an hour.</li><li>Meanwhile, cook lentils per package directions (I boiled lentils and water in 1:3 proportion; then reduced heat to simmer and cook covered for 20-25minutes -- proportion and cooking time varies depending on the lentil variety).</li><li>Add cilantro, onions, salt and stuffing spices to the cooked lentils. Mix well and set aside.</li><li>Divide the dough into 4 equal sized balls.</li><li>Using a rolling pin or your hands flatten the dough into a circular disk with a diameter roughly equal to your palm.</li><li>Add few spoonful of stuffing onto half of the disk. Fold the other half over and using a bit of water tightly seal the edges making a half circular stuffed disk.</li><li>Using your hands flatter the half circular bread as much as possible taking care not to tare the mixture apart (If its really easy to tear it apart then try to reduce the amount of stuffing for the next one).</li><li>On a hot pan or griddle, heat a tsp of oil. When hot, add the bolani. Let it cook on one side until well cooked (red marks should start to appear).</li><li>Flip the bread over, add a bit more oil if needed and cook again until both sides are thoroughly cooked.</li><li>Remove from heat and serve hot with a cooling yogurt dip!</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 306.34,
+    "protein": 10.45,
+    "fat": 2.48,
+    "carbs": 59.76,
+    "fiber": 5.31,
+    "sugar": 0.9,
+    "saturatedFat": 0.55,
+    "sodium": 339.08
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "dairy free"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "all_purpose_flour",
+      "displayName": "all purpose flour",
+      "quantity": {
+        "originalQuantity": 187.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 187.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "187.5 g all purpose flour",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cilantro",
+      "displayName": "cilantro",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp cilantro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps cumin powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 148.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 148.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "148.5 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 5,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "118.294 g less to make a pliable dough",
+        "identityText": "less to make a pliable dough",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 tsp zatar spice blend",
+        "identityText": "zatar spice blend",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:38:34.612Z",
+  "processGraph": {
+    "recipeName": "Middle Eastern Stuffed Lentil Zatar Bread",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Make a pliable dough from flour, salt and water. Knead well for atleast 10minutes or until the dough is soft, smooth and ready.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "all purpose flour",
+              "salt",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "combine to form dough"
+          },
+          {
+            "processId": "knead",
+            "ingredients": [
+              "dough"
+            ],
+            "durationMinutes": 10,
+            "notes": "until soft, smooth and ready"
+          }
+        ],
+        "outputDescription": "soft, smooth, pliable dough"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "If the dough is very sticky and wet, add some more flour.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "dough",
+              "all purpose flour"
+            ],
+            "durationMinutes": null,
+            "notes": "conditional step if dough too sticky"
+          }
+        ],
+        "outputDescription": "properly textured dough"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Cover with a plastic wrap and let rest for an hour.",
+        "processes": [
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "dough"
+            ],
+            "durationMinutes": 60,
+            "notes": "covered with plastic wrap"
+          }
+        ],
+        "outputDescription": "rested dough"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Meanwhile, cook lentils per package directions (I boiled lentils and water in 1:3 proportion; then reduced heat to simmer and cook covered for 20-25minutes -- proportion and cooking time varies depending on the lentil variety).",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "lentils",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "1:3 proportion lentils to water"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "lentils"
+            ],
+            "durationMinutes": 23,
+            "notes": "covered, reduced heat from boil"
+          }
+        ],
+        "outputDescription": "cooked lentils"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add cilantro, onions, salt and stuffing spices to the cooked lentils. Mix well and set aside.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lentils",
+              "cilantro",
+              "onions",
+              "salt",
+              "cumin powder"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all stuffing ingredients"
+          }
+        ],
+        "outputDescription": "seasoned lentil stuffing mixture"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Divide the dough into 4 equal sized balls.",
+        "processes": [
+          {
+            "processId": "quarter",
+            "ingredients": [
+              "dough"
+            ],
+            "durationMinutes": null,
+            "notes": "form into balls"
+          }
+        ],
+        "outputDescription": "4 equal dough balls"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Using a rolling pin or your hands flatten the dough into a circular disk with a diameter roughly equal to your palm.",
+        "processes": [
+          {
+            "processId": "roll",
+            "ingredients": [
+              "dough"
+            ],
+            "durationMinutes": null,
+            "notes": "flatten into palm-sized circular disks"
+          }
+        ],
+        "outputDescription": "circular dough disks"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Add few spoonful of stuffing onto half of the disk. Fold the other half over and using a bit of water tightly seal the edges making a half circular stuffed disk.",
+        "processes": [
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "dough",
+              "lentil stuffing"
+            ],
+            "durationMinutes": null,
+            "notes": "place filling on half of disk"
+          },
+          {
+            "processId": "fold",
+            "ingredients": [
+              "dough"
+            ],
+            "durationMinutes": null,
+            "notes": "fold over and seal edges with water"
+          }
+        ],
+        "outputDescription": "half-circular stuffed bread"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Using your hands flatter the half circular bread as much as possible taking care not to tare the mixture apart (If its really easy to tear it apart then try to reduce the amount of stuffing for the next one).",
+        "processes": [
+          {
+            "processId": "roll",
+            "ingredients": [
+              "stuffed bread"
+            ],
+            "durationMinutes": null,
+            "notes": "flatten carefully without tearing"
+          }
+        ],
+        "outputDescription": "flattened stuffed bread ready for cooking"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "On a hot pan or griddle, heat a tsp of oil. When hot, add the bolani. Let it cook on one side until well cooked (red marks should start to appear).",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in pan or griddle"
+          },
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "stuffed bread"
+            ],
+            "durationMinutes": null,
+            "notes": "cook one side until red marks appear"
+          }
+        ],
+        "outputDescription": "bread cooked on one side with red marks"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Flip the bread over, add a bit more oil if needed and cook again until both sides are thoroughly cooked.",
+        "processes": [
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "stuffed bread"
+            ],
+            "durationMinutes": null,
+            "notes": "flip and cook second side, add oil if needed"
+          }
+        ],
+        "outputDescription": "fully cooked bread on both sides"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "Remove from heat and serve hot with a cooling yogurt dip!",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "cooked bread"
+            ],
+            "durationMinutes": null,
+            "notes": "serve hot with yogurt dip"
+          }
+        ],
+        "outputDescription": "plated and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "mix",
+        "knead",
+        "rest_meat",
+        "boil",
+        "simmer",
+        "quarter",
+        "roll",
+        "stuff",
+        "fold",
+        "heat",
+        "pan_fry",
+        "plate"
+      ],
+      "estimatedTotalTime": 120
+    }
+  },
+  "components": [
+    {
+      "id": "comp_651832_step1",
+      "name": "soft, smooth, pliable dough",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "flour",
+          "name": "all purpose flour",
+          "quantityG": 187.5
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "knead",
+          "processName": "Knead",
+          "yieldFactor": 1,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 191.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.7,
+        "costPerG": 0.008877284595300261,
+        "nutrition": {
+          "calories": 682.5,
+          "protein": 19.36875,
+          "fat": 1.8375,
+          "carbs": 143.08125,
+          "fiber": 5.0625,
+          "sugar": 0.5062500000000001,
+          "sodium": 1554.07,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step2",
+      "name": "properly textured dough",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step3",
+      "name": "rested dough",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 60
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_651832_step4",
+      "name": "cooked lentils",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "lentils",
+          "quantityG": 148.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 23,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 126.9675,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.7424999999999999,
+        "costPerG": 0.005847953216374269,
+        "nutrition": {
+          "calories": 524.205,
+          "protein": 38.313,
+          "fat": 1.5741000000000003,
+          "carbs": 89.2188,
+          "fiber": 45.292500000000004,
+          "sugar": 3.01455,
+          "sodium": 8.91,
+          "method": "raw"
+        },
+        "prepTimeMin": 33
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step5",
+      "name": "seasoned lentil stuffing mixture",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cilantro",
+          "name": "cilantro",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "cumin powder",
+          "quantityG": 1.05
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.05,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.263,
+        "costPerG": 0.12829268292682927,
+        "nutrition": {
+          "calories": 4.1675,
+          "protein": 0.20830500000000002,
+          "fat": 0.23903500000000003,
+          "carbs": 0.50122,
+          "fiber": 0.13824999999999998,
+          "sugar": 0.032325,
+          "sodium": 2.224,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step6",
+      "name": "4 equal dough balls",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "quarter",
+          "processName": "Quarter",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step7",
+      "name": "circular dough disks",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step8",
+      "name": "half-circular stuffed bread",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "fold",
+          "processName": "Fold",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step9",
+      "name": "flattened stuffed bread ready for cooking",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step10",
+      "name": "bread cooked on one side with red marks",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step11",
+      "name": "fully cooked bread on both sides",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651832_step12",
+      "name": "plated and ready to serve",
+      "stepNumber": 12,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 3.026925,
+    "costPerServing": 0.75673125,
+    "totalPrepTime": 144,
+    "nutritionPerServing": {
+      "calories": 304.374375,
+      "protein": 14.528763750000001,
+      "fat": 0.9394087500000001,
+      "carbs": 58.6310675,
+      "fiber": 12.8889375,
+      "sugar": 0.9138437500000001,
+      "sodium": 391.45725
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_651832_step1",
+        "name": "soft, smooth, pliable dough",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_651832_step2",
+        "name": "properly textured dough",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_651832_step4",
+        "name": "cooked lentils",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_651832_step5",
+        "name": "seasoned lentil stuffing mixture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_651832_step6",
+        "name": "4 equal dough balls",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_651832_step7",
+        "name": "circular dough disks",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_651832_step8",
+        "name": "half-circular stuffed bread",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_651832_step9",
+        "name": "flattened stuffed bread ready for cooking",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_651832_step10",
+        "name": "bread cooked on one side with red marks",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_651832_step11",
+        "name": "fully cooked bread on both sides",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_651832_step1",
+      "name": "soft, smooth, pliable dough",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "knead"
+      ]
+    },
+    {
+      "componentId": "comp_651832_step8",
+      "name": "half-circular stuffed bread",
+      "shelfLifeHours": 12,
+      "processes": [
+        "stuff",
+        "fold"
+      ]
+    },
+    {
+      "componentId": "comp_651832_step10",
+      "name": "bread cooked on one side with red marks",
+      "shelfLifeHours": 48,
+      "processes": [
+        "heat",
+        "pan_fry"
+      ]
+    }
+  ]
+}

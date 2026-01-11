@@ -1,0 +1,1069 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_08eb638d-921b-4eeb-8f9b-202df1811286",
+  "name": "Light Greek Lemon Chicken Orzo Soup",
+  "source": "spoonacular",
+  "spoonacularId": 1098350,
+  "image": "/images/recipes/1098350.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "chicken breasts",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken broth",
+      "quantity": 1.814,
+      "unit": "kgs",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery stalks",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "thyme",
+      "quantity": 3,
+      "unit": "sprigs",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "orzo pasta",
+      "quantity": 300,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground thyme",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In a large soup pot, heat olive oil on medium high.</li><li>Add carrots and celery and cook for 5 minutes on medium.</li><li>Add chicken broth.</li><li>Add ground thyme, salt and pepper.</li><li>Add cooked, diced chicken breasts and fresh thyme.</li><li>Bring to boil.</li><li>Add orzo and cook for 7-10 minutes until pasta is cooked.</li><li>Add the lemon zest and juice from 1 large lemon.</li><li>Serve with a slice of lemon.</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 8,
+  "nutrition": {
+    "calories": 280.83,
+    "protein": 26.87,
+    "fat": 4.01,
+    "carbs": 33.41,
+    "fiber": 2.68,
+    "sugar": 3.43,
+    "saturatedFat": 0.89,
+    "sodium": 1781.19
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  chicken breasts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery_stalks",
+      "displayName": "celery stalks",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  celery stalks",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "several_thyme_sprigs",
+      "displayName": "several thyme sprigs",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 sprigs thyme",
+      "matchConfidence": 0.7666666666666666
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "orzo",
+      "displayName": "orzo",
+      "quantity": {
+        "originalQuantity": 300,
+        "originalUnit": "g",
+        "normalizedQuantityG": 300,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "300 g orzo pasta",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "thyme",
+      "displayName": "thyme",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "1 Tbsp ground thyme",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 18,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 7,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large lemon",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 10,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1.814 kgs chicken broth",
+        "identityText": "kgs chicken broth",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:29:15.090Z",
+  "processGraph": {
+    "recipeName": "Light Greek Lemon Chicken Orzo Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a large soup pot, heat olive oil on medium high.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in soup pot on medium high heat"
+          }
+        ],
+        "outputDescription": "hot oil ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add carrots and celery and cook for 5 minutes on medium.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "carrots",
+              "celery stalks"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation of vegetables"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "carrots",
+              "celery stalks"
+            ],
+            "durationMinutes": 5,
+            "notes": "cooking vegetables in oil on medium heat"
+          }
+        ],
+        "outputDescription": "softened carrots and celery"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add chicken broth.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chicken broth"
+            ],
+            "durationMinutes": null,
+            "notes": "adding broth to vegetables"
+          }
+        ],
+        "outputDescription": "vegetables in broth"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add ground thyme, salt and pepper.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "ground thyme",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "seasoning the broth"
+          }
+        ],
+        "outputDescription": "seasoned broth with vegetables"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add cooked, diced chicken breasts and fresh thyme.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting pre-cooked chicken into small cubes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chicken breasts",
+              "thyme"
+            ],
+            "durationMinutes": null,
+            "notes": "adding diced chicken and fresh thyme to soup"
+          }
+        ],
+        "outputDescription": "soup with vegetables, chicken, and herbs"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Bring to boil.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "chicken broth"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing entire soup to boiling point"
+          }
+        ],
+        "outputDescription": "boiling soup"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Add orzo and cook for 7-10 minutes until pasta is cooked.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "orzo pasta"
+            ],
+            "durationMinutes": null,
+            "notes": "adding pasta to boiling soup"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "orzo pasta"
+            ],
+            "durationMinutes": 8.5,
+            "notes": "cooking pasta in boiling soup"
+          }
+        ],
+        "outputDescription": "soup with cooked pasta"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Add the lemon zest and juice from 1 large lemon.",
+        "processes": [
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "removing colored outer peel for flavor"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extracting juice from lemon"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "adding lemon zest and juice to soup"
+          }
+        ],
+        "outputDescription": "finished soup with bright lemon flavor"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Serve with a slice of lemon.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting lemon into slices for garnish"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "Light Greek Lemon Chicken Orzo Soup"
+            ],
+            "durationMinutes": null,
+            "notes": "serving soup with lemon garnish"
+          }
+        ],
+        "outputDescription": "plated soup ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "heat",
+        "chop",
+        "saute",
+        "mix",
+        "season",
+        "dice",
+        "boil",
+        "zest",
+        "squeeze",
+        "slice",
+        "plate"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1098350_step1",
+      "name": "hot oil ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 4.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.41,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.048,
+        "costPerG": 0.010884353741496598,
+        "nutrition": {
+          "calories": 39.78,
+          "protein": 0,
+          "fat": 4.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.09,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1098350_step2",
+      "name": "softened carrots and celery",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 180
+        },
+        {
+          "ingredientId": "celery",
+          "name": "celery stalks",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 249.89999999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.275,
+        "costPerG": 0.005102040816326531,
+        "nutrition": {
+          "calories": 90.6,
+          "protein": 2.5020000000000002,
+          "fat": 0.636,
+          "carbs": 20.808,
+          "fiber": 6.96,
+          "sugar": 10.14,
+          "sodium": 220.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1098350_step3",
+      "name": "vegetables in broth",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "chicken broth",
+          "quantityG": 1814
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1814,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.349,
+        "costPerG": 0.0035,
+        "nutrition": {
+          "calories": 108.84,
+          "protein": 11.6096,
+          "fat": 3.8094,
+          "carbs": 7.9816,
+          "fiber": 0,
+          "sugar": 7.8002,
+          "sodium": 6729.9400000000005,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1098350_step4",
+      "name": "seasoned broth with vegetables",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "thyme",
+          "name": "ground thyme",
+          "quantityG": 1.3
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 18
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 6.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 26.316000000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.973329,
+        "costPerG": 0.18898499012007902,
+        "nutrition": {
+          "calories": 17.628,
+          "protein": 0.74763,
+          "fat": 0.23374,
+          "carbs": 4.474600000000001,
+          "fiber": 1.8265,
+          "sugar": 0.041600000000000005,
+          "sodium": 6977.857,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1098350_step5",
+      "name": "soup with vegetables, chicken, and herbs",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken breasts",
+          "quantityG": 600
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 582,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 10.2,
+        "costPerG": 0.01752577319587629,
+        "nutrition": {
+          "calories": 684,
+          "protein": 127.38,
+          "fat": 15.54,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 696,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1098350_step6",
+      "name": "boiling soup",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1098350_step7",
+      "name": "soup with cooked pasta",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "orzo",
+          "name": "orzo pasta",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 8.5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 285,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.1,
+        "costPerG": 0.00736842105263158,
+        "nutrition": {
+          "calories": 1113,
+          "protein": 39.12,
+          "fat": 4.53,
+          "carbs": 224.01,
+          "fiber": 9.600000000000001,
+          "sugar": 8.01,
+          "sodium": 18,
+          "method": "raw"
+        },
+        "prepTimeMin": 10.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1098350_step8",
+      "name": "finished soup with bright lemon flavor",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon",
+          "name": "lemon",
+          "quantityG": 104
+        }
+      ],
+      "processes": [
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.8199999999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.46799999999999997,
+        "costPerG": 0.2571428571428572,
+        "nutrition": {
+          "calories": 30.16,
+          "protein": 1.1440000000000001,
+          "fat": 0.312,
+          "carbs": 9.6928,
+          "fiber": 2.912,
+          "sugar": 2.6,
+          "sodium": 2.08,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1098350_step9",
+      "name": "plated soup ready to serve",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 27.413279,
+    "costPerServing": 3.426659875,
+    "totalPrepTime": 47,
+    "nutritionPerServing": {
+      "calories": 262.39475,
+      "protein": 22.917153750000004,
+      "fat": 3.7266425,
+      "carbs": 33.82931249999999,
+      "fiber": 2.9248125000000003,
+      "sugar": 3.5739750000000003,
+      "sodium": 1830.689625
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1098350_step2",
+        "name": "softened carrots and celery",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1098350_step3",
+        "name": "vegetables in broth",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1098350_step5",
+        "name": "soup with vegetables, chicken, and herbs",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1098350_step6",
+        "name": "boiling soup",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_1098350_step7",
+        "name": "soup with cooked pasta",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1098350_step8",
+        "name": "finished soup with bright lemon flavor",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1098350_step9",
+        "name": "plated soup ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1098350_step2",
+      "name": "softened carrots and celery",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_1098350_step5",
+      "name": "soup with vegetables, chicken, and herbs",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_1098350_step7",
+      "name": "soup with cooked pasta",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_1098350_step8",
+      "name": "finished soup with bright lemon flavor",
+      "shelfLifeHours": 24,
+      "processes": [
+        "zest",
+        "squeeze",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_1098350_step9",
+      "name": "plated soup ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "plate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,933 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_f5730ebe-3217-425e-9241-3d56cd43725f",
+  "name": "Easy Skillet Garden Lasagna",
+  "source": "spoonacular",
+  "spoonacularId": 642095,
+  "image": "/images/recipes/642095.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "lasagna noodles",
+      "quantity": 6,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mushrooms",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "squash",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 2,
+      "unit": "handfuls",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mozzarella cheese",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "part-skim ricotta",
+      "quantity": 124,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pasta sauce: sauce",
+      "quantity": 0.33333334,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Preheat oven to 425 F.\nBoil water for pasta and cook pasta according to directions, shaving a few minutes off the time.\nMeanwhile water is boiling or pasta is cooking, heat a large oven-safe skillet over medium heat and add olive oil.\nAdd in your veggies and garlic, tossing to coat for about 10 minutes or until softened. If using spinach, add it last towards the end since it cooks really fast. Season with salt and pepper.\nAdd sauce, mozzarella and cooked lasagna noodles to the skillet with the veggies, gently tossing to distribute.\nCover with scoops of ricotta and sprinkle with fresh basil if you'd like.\nBake for 15-20 minutes, or until cheese is golden and bubbly. Serve with extra parmesan if you are a cheese lover like me!",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 405.16,
+    "protein": 20.55,
+    "fat": 17.82,
+    "carbs": 45.23,
+    "fiber": 2.42,
+    "sugar": 7.52,
+    "saturatedFat": 7.03,
+    "sodium": 499.3
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mushrooms",
+      "displayName": "mushrooms",
+      "quantity": {
+        "originalQuantity": 113.398,
+        "originalUnit": "g",
+        "normalizedQuantityG": 113.398,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "113.398 g mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  garlic cloves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "squash",
+      "displayName": "squash",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  squash",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  zucchini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 handfuls baby spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ricotta",
+      "displayName": "ricotta",
+      "quantity": {
+        "originalQuantity": 124,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 124,
+        "normalizedQuantityMl": 124
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "124 ml part-skim ricotta",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pasta_sauce",
+      "displayName": "pasta sauce",
+      "quantity": {
+        "originalQuantity": 0.33333334,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.33333334  pasta sauce: sauce",
+      "matchConfidence": 0.7666666666666666
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 21,
+        "normalizedQuantityMl": 45
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 Tbsps parmesan cheese",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 11,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "6  lasagna noodles",
+        "identityText": "lasagna noodles",
+        "state": "other"
+      },
+      {
+        "rawText": "113.398 g milk mozzarella cheese",
+        "identityText": "milk mozzarella cheese",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:25:54.600Z",
+  "processGraph": {
+    "recipeName": "Easy Skillet Garden Lasagna",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven to 425 F.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 425°F"
+          }
+        ],
+        "outputDescription": "oven preheated to 425°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Boil water for pasta and cook pasta according to directions, shaving a few minutes off the time.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "lasagna noodles"
+            ],
+            "durationMinutes": null,
+            "notes": "cook pasta slightly underdone"
+          }
+        ],
+        "outputDescription": "lasagna noodles cooked but slightly underdone"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Meanwhile water is boiling or pasta is cooking, heat a large oven-safe skillet over medium heat and add olive oil.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat skillet over medium heat with olive oil"
+          }
+        ],
+        "outputDescription": "heated skillet with olive oil ready for cooking"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add in your veggies and garlic, tossing to coat for about 10 minutes or until softened. If using spinach, add it last towards the end since it cooks really fast. Season with salt and pepper.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "mushrooms",
+              "garlic cloves",
+              "squash",
+              "zucchini"
+            ],
+            "durationMinutes": 10,
+            "notes": "cook until softened"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": 1,
+            "notes": "add at end, cooks quickly"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "onion",
+              "mushrooms",
+              "garlic cloves",
+              "squash",
+              "zucchini",
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "toss to coat with oil"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season vegetables"
+          }
+        ],
+        "outputDescription": "vegetables softened and seasoned in skillet"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add sauce, mozzarella and cooked lasagna noodles to the skillet with the veggies, gently tossing to distribute.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "pasta sauce: sauce",
+              "mozzarella cheese",
+              "lasagna noodles"
+            ],
+            "durationMinutes": null,
+            "notes": "gently combine with vegetables"
+          }
+        ],
+        "outputDescription": "lasagna components combined and distributed in skillet"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Cover with scoops of ricotta and sprinkle with fresh basil if you'd like.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "part-skim ricotta"
+            ],
+            "durationMinutes": null,
+            "notes": "add scoops of ricotta on top"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "optional fresh basil garnish"
+          }
+        ],
+        "outputDescription": "skillet topped with ricotta and optional basil"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Bake for 15-20 minutes, or until cheese is golden and bubbly. Serve with extra parmesan if you are a cheese lover like me!",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "mozzarella cheese",
+              "part-skim ricotta"
+            ],
+            "durationMinutes": 17.5,
+            "notes": "bake until cheese is golden and bubbly"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with extra parmesan"
+          }
+        ],
+        "outputDescription": "finished lasagna with golden, bubbly cheese, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 10,
+      "uniqueProcesses": [
+        "heat",
+        "boil",
+        "saute",
+        "toss",
+        "season",
+        "spread",
+        "sprinkle",
+        "bake",
+        "garnish"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642095_step1",
+      "name": "oven preheated to 425°F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642095_step2",
+      "name": "lasagna noodles cooked but slightly underdone",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pasta",
+          "name": "lasagna noodles",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 2.5,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 300,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.72,
+        "costPerG": 0.0024,
+        "nutrition": {
+          "calories": 445.2,
+          "protein": 15.647999999999998,
+          "fat": 1.8119999999999998,
+          "carbs": 89.604,
+          "fiber": 3.84,
+          "sugar": 3.2039999999999997,
+          "sodium": 7.199999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642095_step3",
+      "name": "heated skillet with olive oil ready for cooking",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 26.46,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.288,
+        "costPerG": 0.010884353741496598,
+        "nutrition": {
+          "calories": 238.68,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642095_step4",
+      "name": "vegetables softened and seasoned in skillet",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "mushrooms_button",
+          "name": "mushrooms",
+          "quantityG": 113.398
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic cloves",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "squash",
+          "name": "squash",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 349.60760609999994,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.165291000000001,
+        "costPerG": 0.011914188728515771,
+        "nutrition": {
+          "calories": 134.29756,
+          "protein": 8.2199982,
+          "fat": 1.2265532000000001,
+          "carbs": 27.3536748,
+          "fiber": 5.9139800000000005,
+          "sugar": 13.7272804,
+          "sodium": 29.4099,
+          "method": "raw"
+        },
+        "prepTimeMin": 12.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642095_step5",
+      "name": "lasagna components combined and distributed in skillet",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pasta",
+          "name": "pasta sauce: sauce",
+          "quantityG": 0.33333334
+        },
+        {
+          "ingredientId": "mozzarella_fresh",
+          "name": "mozzarella cheese",
+          "quantityG": 113.398
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 113.73133333999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.68743500004,
+        "costPerG": 0.0324223315752081,
+        "nutrition": {
+          "calories": 341.4306666914,
+          "protein": 25.183803267536,
+          "fat": 25.349486333434,
+          "carbs": 2.732316204978,
+          "fiber": 0.01066666688,
+          "sugar": 1.176899400178,
+          "sodium": 711.0254600004,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642095_step6",
+      "name": "skillet topped with ricotta and optional basil",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ricotta",
+          "name": "part-skim ricotta",
+          "quantityG": 124
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 139.12800000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.744,
+        "costPerG": 0.0053475935828877,
+        "nutrition": {
+          "calories": 215.76,
+          "protein": 13.962399999999999,
+          "fat": 16.095200000000002,
+          "carbs": 3.7696,
+          "fiber": 0,
+          "sugar": 0.33480000000000004,
+          "sodium": 104.16,
+          "method": "raw"
+        },
+        "prepTimeMin": 1.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642095_step7",
+      "name": "finished lasagna with golden, bubbly cheese, ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parmesan_cheese",
+          "name": "parmesan cheese",
+          "quantityG": 21
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 17.5,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 18.207,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.5985,
+        "costPerG": 0.0328719723183391,
+        "nutrition": {
+          "calories": 82.32,
+          "protein": 7.507499999999999,
+          "fat": 5.4243,
+          "carbs": 0.6762,
+          "fiber": 0,
+          "sugar": 0.168,
+          "sodium": 336.42,
+          "method": "raw"
+        },
+        "prepTimeMin": 18.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 12.15342600004,
+    "costPerServing": 3.03835650001,
+    "totalPrepTime": 49.5,
+    "nutritionPerServing": {
+      "calories": 367.87205667284996,
+      "protein": 18.059425366884,
+      "fat": 19.285384883358503,
+      "carbs": 31.578447751244497,
+      "fiber": 2.77116166672,
+      "sugar": 4.715744950044499,
+      "sodium": 696.6188400001
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642095_step2",
+        "name": "lasagna noodles cooked but slightly underdone",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_642095_step4",
+        "name": "vegetables softened and seasoned in skillet",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_642095_step7",
+        "name": "finished lasagna with golden, bubbly cheese, ready to serve",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_642095_step4",
+      "name": "vegetables softened and seasoned in skillet",
+      "shelfLifeHours": 72,
+      "processes": [
+        "saute",
+        "saute",
+        "toss",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_642095_step7",
+      "name": "finished lasagna with golden, bubbly cheese, ready to serve",
+      "shelfLifeHours": 72,
+      "processes": [
+        "bake",
+        "garnish"
+      ]
+    }
+  ]
+}

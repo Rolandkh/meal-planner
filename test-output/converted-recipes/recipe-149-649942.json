@@ -1,0 +1,1087 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_e4e98ac4-489e-4211-8c58-857e9e7862b3",
+  "name": "Lentils and Apples with Acorn Squash",
+  "source": "spoonacular",
+  "spoonacularId": 649942,
+  "image": "/images/recipes/649942.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "maple syrup",
+      "quantity": 107.333,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable oil",
+      "quantity": 72.667,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "soy sauce",
+      "quantity": 29,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 59.75,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "allspice",
+      "quantity": 0.75,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground ginger",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic powder",
+      "quantity": 1,
+      "unit": "dash",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 0.75,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 473.176,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "brown lentils",
+      "quantity": 288,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "apple",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "acorn squash",
+      "quantity": 2,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "In a medium sized saucepan, stir together the first nine ingredients. Add the lentils and mix well.\nBring to a boil, cover, turn the heat down and let simmer for about an hour, stirring a few times and tossing the diced apple into the saucepan after the first 20 minutes. Check to see if the lentils are soft and the liquid has thickened. If too liquidy, let simmer uncovered near the end. The lentils should have the consistency of a thick sauce.\nWhile the lentils are cooking, preheat oven to 400 degrees.\nPlace the 4 squash halves in a roasting dish (cut a small slice off the bottom of each if needed so they sit securely) and add about an inch of water to the pan. Cover with foil and place in the oven. Steam the squash until tender, about 30-45 minutes depending upon how large they are. Remove from oven and set aside until lentils are cooked.\nPlace the squash halves on a serving platter and season to taste with salt and pepper. Spoon the lentils into each half and top with a sprig of parsley.\nIf making ahead: Prepare the squash and lentils and keep separate. When close to serving, spoon the lentils into the squash and warm in the oven.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 607.6,
+    "protein": 21.35,
+    "fat": 19.3,
+    "carbs": 91.24,
+    "fiber": 26.59,
+    "sugar": 22.44,
+    "saturatedFat": 2.96,
+    "sodium": 1058.18
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 92.9,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "acorn squash",
+        "identity": "acorn squash",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "maple_syrup",
+      "displayName": "maple syrup",
+      "quantity": {
+        "originalQuantity": 107.333,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 107,
+        "normalizedQuantityMl": 107.333
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "107.333 ml maple syrup",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_oil",
+      "displayName": "vegetable oil",
+      "quantity": {
+        "originalQuantity": 72.667,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 65,
+        "normalizedQuantityMl": 72.667
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "72.667 ml vegetable oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "soy_sauce",
+      "displayName": "soy sauce",
+      "quantity": {
+        "originalQuantity": 29,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 29
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "29 ml soy sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 59.75,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 59.75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "59.75 ml red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "allspice",
+      "displayName": "allspice",
+      "quantity": {
+        "originalQuantity": 0.75,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 3.75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.75 tsps allspice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ginger",
+      "displayName": "ginger",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground ginger",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic_powder",
+      "displayName": "garlic powder",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 dash garlic powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.75,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 3.75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.75 tsps kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 473.176,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 467,
+        "normalizedQuantityMl": 473.176
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "473.176 ml water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 288,
+        "originalUnit": "g",
+        "normalizedQuantityG": 288,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "288 g brown lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "apple",
+      "displayName": "apple",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  apple",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings parsley",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 14,
+    "matched": 13,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "2 medium acorn squash",
+        "identityText": "acorn squash",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-11T00:01:45.725Z",
+  "processGraph": {
+    "recipeName": "Lentils and Apples with Acorn Squash",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a medium sized saucepan, stir together the first nine ingredients. Add the lentils and mix well.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "maple syrup",
+              "vegetable oil",
+              "soy sauce",
+              "red wine vinegar",
+              "allspice",
+              "ground ginger",
+              "garlic powder",
+              "kosher salt",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "combining liquid ingredients and spices in saucepan"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "brown lentils"
+            ],
+            "durationMinutes": null,
+            "notes": "adding lentils to the mixture and combining well"
+          }
+        ],
+        "outputDescription": "lentils mixed with seasoned liquid mixture in saucepan"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Bring to a boil, cover, turn the heat down and let simmer for about an hour, stirring a few times and tossing the diced apple into the saucepan after the first 20 minutes. Check to see if the lentils are soft and the liquid has thickened. If too liquidy, let simmer uncovered near the end. The lentils should have the consistency of a thick sauce.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "brown lentils",
+              "maple syrup",
+              "vegetable oil",
+              "soy sauce",
+              "red wine vinegar",
+              "allspice",
+              "ground ginger",
+              "garlic powder",
+              "kosher salt",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing mixture to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "brown lentils",
+              "maple syrup",
+              "vegetable oil",
+              "soy sauce",
+              "red wine vinegar",
+              "allspice",
+              "ground ginger",
+              "garlic powder",
+              "kosher salt",
+              "water"
+            ],
+            "durationMinutes": 60,
+            "notes": "covered simmering for about an hour"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "apple"
+            ],
+            "durationMinutes": null,
+            "notes": "dicing apple before adding to mixture"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "apple"
+            ],
+            "durationMinutes": null,
+            "notes": "adding diced apple after first 20 minutes"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "brown lentils",
+              "apple",
+              "maple syrup",
+              "vegetable oil",
+              "soy sauce",
+              "red wine vinegar",
+              "allspice",
+              "ground ginger",
+              "garlic powder",
+              "kosher salt",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "uncovered simmering if too liquidy to thicken"
+          }
+        ],
+        "outputDescription": "soft lentils with diced apple in thick sauce consistency"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "While the lentils are cooking, preheat oven to 400 degrees.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 400°F"
+          }
+        ],
+        "outputDescription": "oven preheated to 400°F"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Place the 4 squash halves in a roasting dish (cut a small slice off the bottom of each if needed so they sit securely) and add about an inch of water to the pan. Cover with foil and place in the oven. Steam the squash until tender, about 30-45 minutes depending upon how large they are. Remove from oven and set aside until lentils are cooked.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "acorn squash"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting small slice off bottom if needed for stability"
+          },
+          {
+            "processId": "steam",
+            "ingredients": [
+              "acorn squash"
+            ],
+            "durationMinutes": 37.5,
+            "notes": "steaming covered with foil in oven until tender, 30-45 minutes"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "acorn squash"
+            ],
+            "durationMinutes": null,
+            "notes": "setting aside until lentils are finished cooking"
+          }
+        ],
+        "outputDescription": "tender steamed acorn squash halves set aside"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Place the squash halves on a serving platter and season to taste with salt and pepper. Spoon the lentils into each half and top with a sprig of parsley.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "acorn squash"
+            ],
+            "durationMinutes": null,
+            "notes": "arranging squash halves on serving platter"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "acorn squash"
+            ],
+            "durationMinutes": null,
+            "notes": "seasoning with salt and pepper to taste"
+          },
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "brown lentils",
+              "apple"
+            ],
+            "durationMinutes": null,
+            "notes": "spooning lentil mixture into squash halves"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "topping each half with parsley sprig"
+          }
+        ],
+        "outputDescription": "plated dish with seasoned squash halves filled with lentil mixture and garnished with parsley"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "If making ahead: Prepare the squash and lentils and keep separate. When close to serving, spoon the lentils into the squash and warm in the oven.",
+        "processes": [
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "brown lentils",
+              "apple"
+            ],
+            "durationMinutes": null,
+            "notes": "spooning lentils into squash when ready to serve"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "acorn squash",
+              "brown lentils",
+              "apple"
+            ],
+            "durationMinutes": null,
+            "notes": "warming assembled dish in oven before serving"
+          }
+        ],
+        "outputDescription": "warmed assembled dish ready for serving"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 14,
+      "uniqueProcesses": [
+        "mix",
+        "boil",
+        "simmer",
+        "dice",
+        "toss",
+        "heat",
+        "slice",
+        "steam",
+        "cool",
+        "plate",
+        "season",
+        "stuff",
+        "garnish"
+      ],
+      "estimatedTotalTime": 105
+    }
+  },
+  "components": [
+    {
+      "id": "comp_649942_step1",
+      "name": "lentils mixed with seasoned liquid mixture in saucepan",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "maple_syrup",
+          "name": "maple syrup",
+          "quantityG": 107.333
+        },
+        {
+          "ingredientId": "vegetable_oil",
+          "name": "vegetable oil",
+          "quantityG": 72.667
+        },
+        {
+          "ingredientId": "soy_sauce",
+          "name": "soy sauce",
+          "quantityG": 29
+        },
+        {
+          "ingredientId": "red_wine_vinegar",
+          "name": "red wine vinegar",
+          "quantityG": 59.75
+        },
+        {
+          "ingredientId": "allspice",
+          "name": "allspice",
+          "quantityG": 1.5750000000000002
+        },
+        {
+          "ingredientId": "ginger",
+          "name": "ground ginger",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "garlic_powder",
+          "name": "garlic powder",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "salt",
+          "name": "kosher salt",
+          "quantityG": 4.5
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 473.176
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 750.001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 7.889913559999998,
+        "costPerG": 0.010519870720172372,
+        "nutrition": {
+          "calories": 969.1801299999998,
+          "protein": 3.3514175,
+          "fat": 72.84766749999999,
+          "carbs": 76.13849040000001,
+          "fiber": 0.6822,
+          "sugar": 64.84823359999999,
+          "sodium": 3404.09152,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649942_step2",
+      "name": "soft lentils with diced apple in thick sauce consistency",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "brown lentils",
+          "quantityG": 288
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 214.96751999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.44,
+        "costPerG": 0.006698686387599392,
+        "nutrition": {
+          "calories": 1016.64,
+          "protein": 74.304,
+          "fat": 3.0528,
+          "carbs": 173.0304,
+          "fiber": 87.84,
+          "sugar": 5.846399999999999,
+          "sodium": 17.28,
+          "method": "raw"
+        },
+        "prepTimeMin": 94
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649942_step3",
+      "name": "oven preheated to 400°F",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_649942_step4",
+      "name": "tender steamed acorn squash halves set aside",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "corn",
+          "name": "acorn squash",
+          "quantityG": 600
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 37.5,
+          "nutritionMultiplier": "steamed"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 570.36,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.8599999999999999,
+        "costPerG": 0.003261098253734483,
+        "nutrition": {
+          "calories": 576,
+          "protein": 20.46,
+          "fat": 9,
+          "carbs": 125.88,
+          "fiber": 14.399999999999999,
+          "sugar": 27.240000000000002,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 69.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649942_step5",
+      "name": "plated dish with seasoned squash halves filled with lentil mixture and garnished with parsley",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "apple",
+          "name": "apple",
+          "quantityG": 180
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 243.45360000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.54,
+        "costPerG": 0.0022180818028568893,
+        "nutrition": {
+          "calories": 93.60000000000001,
+          "protein": 0.468,
+          "fat": 0.30600000000000005,
+          "carbs": 24.840000000000003,
+          "fiber": 4.32,
+          "sugar": 18.720000000000002,
+          "sodium": 1.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 8.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649942_step6",
+      "name": "warmed assembled dish ready for serving",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 16.596513559999998,
+    "costPerServing": 4.1491283899999996,
+    "totalPrepTime": 187,
+    "nutritionPerServing": {
+      "calories": 665.6550325,
+      "protein": 24.794354374999998,
+      "fat": 21.341116874999997,
+      "carbs": 100.28872260000001,
+      "fiber": 26.97555,
+      "sugar": 29.206158399999996,
+      "sodium": 1247.67288
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_649942_step1",
+        "name": "lentils mixed with seasoned liquid mixture in saucepan",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649942_step2",
+        "name": "soft lentils with diced apple in thick sauce consistency",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_649942_step4",
+        "name": "tender steamed acorn squash halves set aside",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649942_step5",
+        "name": "plated dish with seasoned squash halves filled with lentil mixture and garnished with parsley",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_649942_step6",
+        "name": "warmed assembled dish ready for serving",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_649942_step1",
+      "name": "lentils mixed with seasoned liquid mixture in saucepan",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_649942_step2",
+      "name": "soft lentils with diced apple in thick sauce consistency",
+      "shelfLifeHours": 48,
+      "processes": [
+        "boil",
+        "simmer",
+        "dice",
+        "toss",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_649942_step4",
+      "name": "tender steamed acorn squash halves set aside",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "steam",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_649942_step5",
+      "name": "plated dish with seasoned squash halves filled with lentil mixture and garnished with parsley",
+      "shelfLifeHours": 12,
+      "processes": [
+        "plate",
+        "season",
+        "stuff",
+        "garnish"
+      ]
+    },
+    {
+      "componentId": "comp_649942_step6",
+      "name": "warmed assembled dish ready for serving",
+      "shelfLifeHours": 12,
+      "processes": [
+        "stuff",
+        "heat"
+      ]
+    }
+  ]
+}

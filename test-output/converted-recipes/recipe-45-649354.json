@@ -1,0 +1,697 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_b6067569-7faa-46c0-ae48-154ff69b4918",
+  "name": "Layered Greek Salad",
+  "source": "spoonacular",
+  "spoonacularId": 649354,
+  "image": "/images/recipes/649354.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "feta cheese",
+      "quantity": 150,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "Clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "granulated sugar",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kalamata",
+      "quantity": 12,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "yogurt",
+      "quantity": 980,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mint or",
+      "quantity": 11.25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "peppers",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "romaine lettuce",
+      "quantity": 1,
+      "unit": "small Head",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Place yogurt in cheesecloth-lined sieve set over bowl. Cover and refrigerate for 4 hours or until reduced to about 2-1/2 cups. Transfer to bowl; discard liquid. Stir in garlic, vinegar, salt, sugar and pepper.</li><li>In 8 or 9 inch round bowl, layer lettuce, then onion, red peppers and cucumber. Spread top with yogurt mixture. Refrigerate, loosely covered, for up to 12 hours. Sprinkle with feta cheese and mint. Garnish with olives and tomatoes.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 10,
+  "nutrition": {
+    "calories": 134.55,
+    "protein": 8.66,
+    "fat": 5.78,
+    "carbs": 13.15,
+    "fiber": 2.4,
+    "sugar": 9.59,
+    "saturatedFat": 3.12,
+    "sodium": 554.91
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 150,
+        "originalUnit": "g",
+        "normalizedQuantityG": 150,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "150 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "granulated_sugar",
+      "displayName": "granulated sugar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp granulated sugar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "kalamata_olives",
+      "displayName": "kalamata olives",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "12  kalamata",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 980,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 980,
+        "normalizedQuantityMl": 980
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "980 ml yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "peppers",
+      "displayName": "peppers",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  peppers",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  tomatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 11,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "11.25 g mint or",
+        "identityText": "mint or",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 small Head romaine lettuce",
+        "identityText": "head romaine lettuce",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:34:28.720Z",
+  "processGraph": {
+    "recipeName": "Layered Greek Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Place yogurt in cheesecloth-lined sieve set over bowl. Cover and refrigerate for 4 hours or until reduced to about 2-1/2 cups. Transfer to bowl; discard liquid. Stir in garlic, vinegar, salt, sugar and pepper.",
+        "processes": [
+          {
+            "processId": "strain",
+            "ingredients": [
+              "yogurt"
+            ],
+            "durationMinutes": 240,
+            "notes": "using cheesecloth-lined sieve to remove whey"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "yogurt"
+            ],
+            "durationMinutes": 240,
+            "notes": "refrigerate during straining process"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "discard separated liquid"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for mixing"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "yogurt",
+              "garlic",
+              "red wine vinegar",
+              "salt",
+              "granulated sugar",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "stir together to make dressing"
+          }
+        ],
+        "outputDescription": "Thick yogurt dressing with garlic, vinegar, salt, sugar and pepper mixed in"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "In 8 or 9 inch round bowl, layer lettuce, then onion, red peppers and cucumber. Spread top with yogurt mixture. Refrigerate, loosely covered, for up to 12 hours. Sprinkle with feta cheese and mint. Garnish with olives and tomatoes.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "romaine lettuce"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for layering"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for layering"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "peppers"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for layering"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "spread yogurt mixture on top of vegetables"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "layered salad"
+            ],
+            "durationMinutes": 720,
+            "notes": "refrigerate loosely covered for up to 12 hours"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "feta cheese",
+              "mint"
+            ],
+            "durationMinutes": null,
+            "notes": "add as final toppings"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "kalamata",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "final decorative elements"
+          }
+        ],
+        "outputDescription": "Layered salad with vegetables, yogurt dressing, topped with feta, mint, olives and tomatoes, chilled and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 12,
+      "uniqueProcesses": [
+        "strain",
+        "cool",
+        "drain",
+        "mince",
+        "mix",
+        "chop",
+        "slice",
+        "spread",
+        "sprinkle",
+        "garnish"
+      ],
+      "estimatedTotalTime": 975
+    }
+  },
+  "components": [
+    {
+      "id": "comp_649354_step1",
+      "name": "Thick yogurt dressing with garlic, vinegar, salt, sugar and pepper mixed in",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "yogurt",
+          "quantityG": 980
+        }
+      ],
+      "processes": [
+        {
+          "processId": "strain",
+          "processName": "Strain",
+          "yieldFactor": 0.6,
+          "durationMinutes": 240,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 240,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 564.7152,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.88,
+        "costPerG": 0.010412328196584757,
+        "nutrition": {
+          "calories": 597.8000000000001,
+          "protein": 100.94000000000001,
+          "fat": 3.6260000000000003,
+          "carbs": 35.672000000000004,
+          "fiber": 0,
+          "sugar": 32.046,
+          "sodium": 352.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 485
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649354_step2",
+      "name": "Layered salad with vegetables, yogurt dressing, topped with feta, mint, olives and tomatoes, chilled and ready to serve",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lettuce",
+          "name": "romaine lettuce",
+          "quantityG": 0.7
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 720,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.7539964407359999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.014,
+        "costPerG": 0.018567726906421674,
+        "nutrition": {
+          "calories": 0.09799999999999999,
+          "protein": 0.006299999999999999,
+          "fat": 0.00098,
+          "carbs": 0.02079,
+          "fiber": 0.0084,
+          "sugar": 0.013789999999999998,
+          "sodium": 0.06999999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 728.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 17.99161,
+    "costPerServing": 1.7991610000000002,
+    "totalPrepTime": 1213.5,
+    "nutritionPerServing": {
+      "calories": 113.69107500000003,
+      "protein": 12.64605225,
+      "fat": 3.8462684999999985,
+      "carbs": 6.91394525,
+      "fiber": 0.6241225,
+      "sugar": 4.718155,
+      "sodium": 459.86945
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_649354_step1",
+        "name": "Thick yogurt dressing with garlic, vinegar, salt, sugar and pepper mixed in",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649354_step2",
+        "name": "Layered salad with vegetables, yogurt dressing, topped with feta, mint, olives and tomatoes, chilled and ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_649354_step1",
+      "name": "Thick yogurt dressing with garlic, vinegar, salt, sugar and pepper mixed in",
+      "shelfLifeHours": 24,
+      "processes": [
+        "strain",
+        "cool",
+        "drain",
+        "mince",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_649354_step2",
+      "name": "Layered salad with vegetables, yogurt dressing, topped with feta, mint, olives and tomatoes, chilled and ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "slice",
+        "slice",
+        "spread",
+        "cool",
+        "sprinkle",
+        "garnish"
+      ]
+    }
+  ]
+}

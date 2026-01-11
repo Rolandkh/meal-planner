@@ -1,0 +1,1130 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_0b5be040-4c1f-4481-85f2-6931d618a34b",
+  "name": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
+  "source": "spoonacular",
+  "spoonacularId": 1096161,
+  "image": "/images/recipes/1096161.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "potatoes",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green beans",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken breasts",
+      "quantity": 907.185,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemons",
+      "quantity": 2.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 8,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Preheat oven to 450 degrees.</li><li>Cut each chicken breast into 4-5 even-sized strips.</li><li>In a large bowl add the chicken pieces, lemon juice from one whole lemon, 4 minced garlic cloves, 1 teaspoon salt, pepper, and paprika, and 2 tablespoons olive oil.   Mix together well and set bowl aside while you prepare the veggies.</li><li>Rinse beans, snip off the end with the hard nub/stem, and place them in another large bowl.  The other end should have a dainty little tail that is soft and thin and doesn't need to be removed.</li><li>Chop one large yellow onion and add to the beans.</li><li>Rinse (and scrub if needed) the baby potatoes and add to the veggie bowl.</li><li>Stir in one 15-ounce can of petite diced tomatoes, juice from half a lemon, oregano, parsley, 1 teaspoon of salt and pepper, and 2 tablespoons olive oil.  Pour the mixture onto a large baking sheet (you may want to line it with parchment paper or tin foil), add the chicken pieces (spaced evenly throughout the pan), some lemon slices, 4 thinly sliced garlic cloves, about a dozen pitted Kalamata olives, and roast at 450 degrees for 20 minutes.</li><li>Pull the pan out from the oven but don't remove.  Crumble 4 ounces of feta cheese and sprinkle onto the sheet pan and continue to cook for 5 more minutes, or until the chicken reads 165 degrees with a meat thermometer.</li><li>Serve while it's hot and garnish with chopped parsley.</li></ol>",
+  "prepTime": 17,
+  "cookTime": 39,
+  "servings": 6,
+  "nutrition": {
+    "calories": 360.68,
+    "protein": 40.07,
+    "fat": 8.67,
+    "carbs": 33.46,
+    "fiber": 7.57,
+    "sugar": 8.48,
+    "saturatedFat": 3.52,
+    "sodium": 1272.37
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "green_beans",
+      "displayName": "green beans",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g green beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 907.185,
+        "originalUnit": "g",
+        "normalizedQuantityG": 907.185,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "907.185 g chicken breasts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 2.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2.5  lemons",
+      "matchConfidence": 0.95
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "8 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 113.398,
+        "originalUnit": "g",
+        "normalizedQuantityG": 113.398,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "113.398 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 12,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 8,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps parsley",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 10,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "453.592 g baby dutch potatoes",
+        "identityText": "dutch potatoes",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:30:31.235Z",
+  "processGraph": {
+    "recipeName": "Greek Chicken Sheet Pan Dinner with Green Beans and Feta",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven to 450 degrees.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 450°F"
+          }
+        ],
+        "outputDescription": "oven preheated to 450°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Cut each chicken breast into 4-5 even-sized strips.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into 4-5 even strips per breast"
+          }
+        ],
+        "outputDescription": "chicken breasts cut into even strips"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "In a large bowl add the chicken pieces, lemon juice from one whole lemon, 4 minced garlic cloves, 1 teaspoon salt, pepper, and paprika, and 2 tablespoons olive oil. Mix together well and set bowl aside while you prepare the veggies.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemons"
+            ],
+            "durationMinutes": null,
+            "notes": "juice from one whole lemon"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "4 cloves minced"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chicken breasts",
+              "lemons",
+              "garlic",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combine chicken with marinade ingredients"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "set aside while preparing vegetables"
+          }
+        ],
+        "outputDescription": "chicken marinating in lemon, garlic, and seasonings"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Rinse beans, snip off the end with the hard nub/stem, and place them in another large bowl. The other end should have a dainty little tail that is soft and thin and doesn't need to be removed.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "green beans"
+            ],
+            "durationMinutes": null,
+            "notes": "wash green beans"
+          },
+          {
+            "processId": "trim",
+            "ingredients": [
+              "green beans"
+            ],
+            "durationMinutes": null,
+            "notes": "remove stem end only"
+          }
+        ],
+        "outputDescription": "green beans cleaned and trimmed"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Chop one large yellow onion and add to the beans.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "rough chop of large onion"
+          }
+        ],
+        "outputDescription": "chopped onion added to green beans"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Rinse (and scrub if needed) the baby potatoes and add to the veggie bowl.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "wash and scrub baby potatoes"
+          }
+        ],
+        "outputDescription": "clean potatoes added to vegetable bowl"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Stir in one 15-ounce can of petite diced tomatoes, juice from half a lemon, oregano, parsley, 1 teaspoon of salt and pepper, and 2 tablespoons olive oil. Pour the mixture onto a large baking sheet (you may want to line it with parchment paper or tin foil), add the chicken pieces (spaced evenly throughout the pan), some lemon slices, 4 thinly sliced garlic cloves, about a dozen pitted Kalamata olives, and roast at 450 degrees for 20 minutes.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemons"
+            ],
+            "durationMinutes": null,
+            "notes": "juice from half a lemon"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "green beans",
+              "onion",
+              "potatoes",
+              "canned tomatoes",
+              "lemons",
+              "oregano",
+              "parsley",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combine vegetables with seasonings"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "lemons"
+            ],
+            "durationMinutes": null,
+            "notes": "slice remaining lemon"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "4 cloves thinly sliced"
+          },
+          {
+            "processId": "roast",
+            "ingredients": [
+              "green beans",
+              "onion",
+              "potatoes",
+              "canned tomatoes",
+              "chicken breasts",
+              "lemons",
+              "garlic"
+            ],
+            "durationMinutes": 20,
+            "notes": "roast at 450°F"
+          }
+        ],
+        "outputDescription": "vegetables and chicken roasting in oven"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Pull the pan out from the oven but don't remove. Crumble 4 ounces of feta cheese and sprinkle onto the sheet pan and continue to cook for 5 more minutes, or until the chicken reads 165 degrees with a meat thermometer.",
+        "processes": [
+          {
+            "processId": "crumble",
+            "ingredients": [
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "crumble 4 ounces feta"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle crumbled feta on sheet pan"
+          },
+          {
+            "processId": "roast",
+            "ingredients": [
+              "green beans",
+              "onion",
+              "potatoes",
+              "canned tomatoes",
+              "chicken breasts",
+              "lemons",
+              "garlic",
+              "feta cheese"
+            ],
+            "durationMinutes": 5,
+            "notes": "continue roasting until chicken reaches 165°F"
+          }
+        ],
+        "outputDescription": "fully cooked sheet pan dinner with melted feta"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Serve while it's hot and garnish with chopped parsley.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "chop fresh parsley for garnish"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "garnish with chopped parsley"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "green beans",
+              "onion",
+              "potatoes",
+              "canned tomatoes",
+              "chicken breasts",
+              "lemons",
+              "garlic",
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "serve hot"
+          }
+        ],
+        "outputDescription": "plated Greek chicken sheet pan dinner garnished with parsley"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 18,
+      "uniqueProcesses": [
+        "heat",
+        "slice",
+        "squeeze",
+        "mince",
+        "mix",
+        "marinate",
+        "rinse",
+        "trim",
+        "chop",
+        "crumble",
+        "sprinkle",
+        "roast",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 40
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1096161_step1",
+      "name": "oven preheated to 450°F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1096161_step2",
+      "name": "chicken breasts cut into even strips",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken breasts",
+          "quantityG": 907.185
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 889.0413,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 15.422144999999999,
+        "costPerG": 0.017346938775510204,
+        "nutrition": {
+          "calories": 1034.1909,
+          "protein": 192.5953755,
+          "fat": 23.4960915,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1052.3346,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096161_step3",
+      "name": "chicken marinating in lemon, garlic, and seasonings",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemons",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 35,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 82.32000000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 120,
+        "costPerG": 1.4577259475218658,
+        "nutrition": {
+          "calories": 44,
+          "protein": 0.7,
+          "fat": 0.48,
+          "carbs": 13.8,
+          "fiber": 0.6,
+          "sugar": 5.04,
+          "sodium": 2,
+          "method": "raw"
+        },
+        "prepTimeMin": 40
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096161_step4",
+      "name": "green beans cleaned and trimmed",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "green_beans",
+          "name": "green beans",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 439.530648,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.474174,
+        "costPerG": 0.0033539731682146546,
+        "nutrition": {
+          "calories": 140.61352,
+          "protein": 8.300733600000001,
+          "fat": 0.9979024,
+          "carbs": 31.6153624,
+          "fiber": 12.246984000000001,
+          "sugar": 14.787099199999998,
+          "sodium": 27.215519999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096161_step5",
+      "name": "chopped onion added to green beans",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 195
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 191.1,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.2506500000000003,
+        "costPerG": 0.017010204081632656,
+        "nutrition": {
+          "calories": 78,
+          "protein": 2.145,
+          "fat": 0.195,
+          "carbs": 18.213,
+          "fiber": 3.315,
+          "sugar": 8.268,
+          "sodium": 7.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096161_step6",
+      "name": "clean potatoes added to vegetable bowl",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "potatoes",
+          "name": "potatoes",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 462.66384,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.793786,
+        "costPerG": 0.001715686274509804,
+        "nutrition": {
+          "calories": 349.26583999999997,
+          "protein": 9.1625584,
+          "fat": 0.4082328,
+          "carbs": 79.2425224,
+          "fiber": 9.979024,
+          "sugar": 3.5380176,
+          "sodium": 27.215519999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096161_step7",
+      "name": "vegetables and chicken roasting in oven",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "canned_tomatoes",
+          "name": "canned tomatoes",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "oregano",
+          "name": "oregano",
+          "quantityG": 2.6
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 7.6
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 12
+        }
+      ],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 128.91727716,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1869416000000004,
+        "costPerG": 0.024720826177895987,
+        "nutrition": {
+          "calories": 145.70376,
+          "protein": 7.4337052,
+          "fat": 1.3620004000000003,
+          "carbs": 33.273214700000004,
+          "fiber": 9.435417000000001,
+          "sugar": 18.881632,
+          "sodium": 5217.1867600000005,
+          "method": "raw"
+        },
+        "prepTimeMin": 27
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096161_step9",
+      "name": "plated Greek chicken sheet pan dinner garnished with parsley",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 40
+        },
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 113.398
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 153.3366408,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.217475,
+        "costPerG": 0.02098307999453709,
+        "nutrition": {
+          "calories": 360.10470000000004,
+          "protein": 18.646516,
+          "fat": 24.580569999999998,
+          "carbs": 17.639842400000003,
+          "fiber": 0.8400000000000001,
+          "sugar": 0.4,
+          "sodium": 1299.5372,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 147.34517160000001,
+    "costPerServing": 24.5575286,
+    "totalPrepTime": 82,
+    "nutritionPerServing": {
+      "calories": 358.6464533333333,
+      "protein": 39.83064811666667,
+      "fat": 8.586632849999999,
+      "carbs": 32.29732365,
+      "fiber": 6.069404166666666,
+      "sugar": 8.485791466666667,
+      "sodium": 1272.2149333333334
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1096161_step2",
+        "name": "chicken breasts cut into even strips",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1096161_step3",
+        "name": "chicken marinating in lemon, garlic, and seasonings",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1096161_step4",
+        "name": "green beans cleaned and trimmed",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_1096161_step5",
+        "name": "chopped onion added to green beans",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1096161_step6",
+        "name": "clean potatoes added to vegetable bowl",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_1096161_step7",
+        "name": "vegetables and chicken roasting in oven",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1096161_step9",
+        "name": "plated Greek chicken sheet pan dinner garnished with parsley",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1096161_step3",
+      "name": "chicken marinating in lemon, garlic, and seasonings",
+      "shelfLifeHours": 24,
+      "processes": [
+        "squeeze",
+        "mince",
+        "mix",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_1096161_step4",
+      "name": "green beans cleaned and trimmed",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "trim"
+      ]
+    },
+    {
+      "componentId": "comp_1096161_step7",
+      "name": "vegetables and chicken roasting in oven",
+      "shelfLifeHours": 24,
+      "processes": [
+        "squeeze",
+        "mix",
+        "slice",
+        "slice",
+        "roast"
+      ]
+    },
+    {
+      "componentId": "comp_1096161_step9",
+      "name": "plated Greek chicken sheet pan dinner garnished with parsley",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "garnish",
+        "plate"
+      ]
+    }
+  ]
+}

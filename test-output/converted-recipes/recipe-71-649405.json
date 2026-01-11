@@ -1,0 +1,674 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_504a7fe6-a8df-44e9-a390-d8d2a2880458",
+  "name": "Lebanese Lentil Soup",
+  "source": "spoonacular",
+  "spoonacularId": 649405,
+  "image": "/images/recipes/649405.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "pepper",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rice",
+      "quantity": 79,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "coriander seed",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 384,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 8,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ham bone",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 61,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 1.728,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Heat lentils, ham bone, and water in large saucepan to boiling. Reduce heat. Skim the excess; skim off the top as it forms. Simmer, uncovered, 45 minutes. Heat oil in large skillet over medium heat until hot. Add spinach, onion, garlic, and coriander seed; saute until the spinach is wilted. Add rice and the spinach mixture to lentils. Simmer, uncovered, until lentils and onions are tender, 15-20 minutes.</li><li>Remove ham bone, pull ham from bone, chop the meat and stir into the soup. Add more water, if needed, to thin the soup. Stir in the lemon juice, salt and pepper to taste. Makes 6 (1 cup) servings.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 1157.19,
+    "protein": 26.55,
+    "fat": 87.72,
+    "carbs": 69.83,
+    "fiber": 30.6,
+    "sugar": 3.63,
+    "saturatedFat": 12.13,
+    "sodium": 215.82
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rice",
+      "displayName": "rice",
+      "quantity": {
+        "originalQuantity": 79,
+        "originalUnit": "g",
+        "normalizedQuantityG": 79,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "79 g rice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 384,
+        "originalUnit": "g",
+        "normalizedQuantityG": 384,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "384 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "8 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 61,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 62,
+        "normalizedQuantityMl": 61
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "61 ml lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 g spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 1.728,
+        "originalUnit": "l",
+        "normalizedQuantityG": 1706,
+        "normalizedQuantityMl": 1728
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.728 l water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 9,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 tsp coriander seed",
+        "identityText": "coriander seed",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1  ham bone",
+        "identityText": "ham bone",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:36:22.935Z",
+  "processGraph": {
+    "recipeName": "Lebanese Lentil Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat lentils, ham bone, and water in large saucepan to boiling. Reduce heat. Skim the excess; skim off the top as it forms. Simmer, uncovered, 45 minutes. Heat oil in large skillet over medium heat until hot. Add spinach, onion, garlic, and coriander seed; saute until the spinach is wilted. Add rice and the spinach mixture to lentils. Simmer, uncovered, until lentils and onions are tender, 15-20 minutes.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "lentils",
+              "ham bone",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "bring to boiling point"
+          },
+          {
+            "processId": "reduce",
+            "ingredients": [
+              "lentils",
+              "ham bone",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "reduce heat after boiling"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "lentils",
+              "ham bone",
+              "water"
+            ],
+            "durationMinutes": 45,
+            "notes": "uncovered, skim excess as it forms"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in skillet over medium heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "spinach",
+              "onion",
+              "garlic",
+              "coriander seed"
+            ],
+            "durationMinutes": null,
+            "notes": "until spinach is wilted"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "rice",
+              "spinach mixture",
+              "lentils"
+            ],
+            "durationMinutes": null,
+            "notes": "add rice and spinach mixture to lentils"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "lentils",
+              "rice",
+              "spinach mixture"
+            ],
+            "durationMinutes": 17.5,
+            "notes": "uncovered, until lentils and onions are tender"
+          }
+        ],
+        "outputDescription": "Lentils and rice are tender, spinach is wilted and incorporated, ham bone has released flavor into broth"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Remove ham bone, pull ham from bone, chop the meat and stir into the soup. Add more water, if needed, to thin the soup. Stir in the lemon juice, salt and pepper to taste. Makes 6 (1 cup) servings.",
+        "processes": [
+          {
+            "processId": "debone",
+            "ingredients": [
+              "ham bone"
+            ],
+            "durationMinutes": null,
+            "notes": "remove ham bone and pull ham from bone"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "ham"
+            ],
+            "durationMinutes": null,
+            "notes": "chop the ham meat"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ham",
+              "soup"
+            ],
+            "durationMinutes": null,
+            "notes": "stir chopped ham into soup"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "water",
+              "soup"
+            ],
+            "durationMinutes": null,
+            "notes": "add water if needed to thin soup"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "lemon juice",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "stir in lemon juice, salt and pepper to taste"
+          }
+        ],
+        "outputDescription": "Finished Lebanese lentil soup with chopped ham, properly seasoned and consistency adjusted, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 12,
+      "uniqueProcesses": [
+        "boil",
+        "reduce",
+        "simmer",
+        "heat",
+        "saute",
+        "mix",
+        "debone",
+        "chop",
+        "season"
+      ],
+      "estimatedTotalTime": 75
+    }
+  },
+  "components": [
+    {
+      "id": "comp_649405_step1",
+      "name": "Lentils and rice are tender, spinach is wilted and incorporated, ham bone has released flavor into broth",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "lentils",
+          "quantityG": 384
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 1728
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "reduce",
+          "processName": "Reduce",
+          "yieldFactor": 0.6,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 45,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 17.5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 812.2669632,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 13.44576,
+        "costPerG": 0.016553375440790056,
+        "nutrition": {
+          "calories": 1355.52,
+          "protein": 99.072,
+          "fat": 4.0704,
+          "carbs": 230.70719999999997,
+          "fiber": 117.11999999999999,
+          "sugar": 7.795199999999999,
+          "sodium": 109.44,
+          "method": "raw"
+        },
+        "prepTimeMin": 97.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649405_step2",
+      "name": "Finished Lebanese lentil soup with chopped ham, properly seasoned and consistency adjusted, ready to serve",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 61
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 1.05
+        }
+      ],
+      "processes": [
+        {
+          "processId": "debone",
+          "processName": "Debone",
+          "yieldFactor": 0.65,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 42.915327,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 37.43000000000001,
+        "costPerG": 0.8721825654503346,
+        "nutrition": {
+          "calories": 16.0555,
+          "protein": 0.322595,
+          "fat": 0.18063,
+          "carbs": 4.880475000000001,
+          "fiber": 0.44865,
+          "sugar": 1.54392,
+          "sodium": 1551.1399999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 16.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 59.01738,
+    "costPerServing": 14.754345,
+    "totalPrepTime": 114,
+    "nutritionPerServing": {
+      "calories": 452.05637499999995,
+      "protein": 27.888948749999997,
+      "fat": 1.5612325000000002,
+      "carbs": 82.73141875,
+      "fiber": 31.350162499999996,
+      "sugar": 4.111479999999999,
+      "sodium": 431.62
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_649405_step1",
+        "name": "Lentils and rice are tender, spinach is wilted and incorporated, ham bone has released flavor into broth",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649405_step2",
+        "name": "Finished Lebanese lentil soup with chopped ham, properly seasoned and consistency adjusted, ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_649405_step1",
+      "name": "Lentils and rice are tender, spinach is wilted and incorporated, ham bone has released flavor into broth",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "reduce",
+        "simmer",
+        "heat",
+        "saute",
+        "mix",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_649405_step2",
+      "name": "Finished Lebanese lentil soup with chopped ham, properly seasoned and consistency adjusted, ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "debone",
+        "chop",
+        "mix",
+        "mix",
+        "season"
+      ]
+    }
+  ]
+}

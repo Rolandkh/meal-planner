@@ -1,0 +1,905 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_26690c53-f7e5-4c8e-958d-943cd6c289a1",
+  "name": "Shrimp and Avocado Salad",
+  "source": "spoonacular",
+  "spoonacularId": 659927,
+  "image": "/images/recipes/659927.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "the shrimp",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "shrimp",
+      "quantity": 600,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lime",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "the salad",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "the of 1 cos lettuce",
+      "quantity": 1,
+      "unit": "leaf",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil leaves",
+      "quantity": 0.75,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "corn",
+      "quantity": 200,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spring onions",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pineapple",
+      "quantity": 600,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "avocados into cubes",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "avocado",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "the dressing",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tbsp olive oil",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tbsp honey",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lime",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "1.Firstly, to cook the shrimp, heat the olive oil in a pan and once hot add the shrimp crushed garlic and chili flakes. It is important to get the oil nice and hot (not smoking, just before that point) your shrimp should sizzle when added to the pan. Check the back of the shrimp and when you see the colour change about half way up, turn them over. Do the same on the other side. This should only take a minute to two minutes maximum on both sides  otherwise you will get a rubbery result if you leave it too long. Squeeze over the lime juice  this too should bubble and reduce. Add a little salt and pepper, stir through, remove from the heat and set aside.\n2.Mix the dressing ingredients together, check for flavour, adjust if need be and set aside.\n3.Place all the salad ingredients in a bowl except the avocado and the salt and pepper. Prepare the avocado as you are about to serve otherwise it will turn brown. Once it is covered in the lime dressing, this will slow down the oxidization process and it wont go brown so easily.\n4.When you are ready to serve mix  of the avocado through the salad and add the dressing. Toss everything together. Taste to see if you need any salt and pepper. Place your shrimp on top of the salad with the rest of the avocado and sprinkle/pour any residue from the pan over your salad in which you cooked the shrimp. This is great flavour, so you dont want to lose it.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 639.26,
+    "protein": 33.99,
+    "fat": 37.05,
+    "carbs": 53.29,
+    "fiber": 17.27,
+    "sugar": 20.01,
+    "saturatedFat": 5.36,
+    "sodium": 378.39
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  garlic cloves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_juice",
+      "displayName": "lime juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lime",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 0.75,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.75  basil leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  spring onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "avocado",
+      "displayName": "avocado",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings avocado",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3  tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "honey",
+      "displayName": "honey",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 45,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3  tbsp honey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_juice",
+      "displayName": "lime juice",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  juice of lime",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 18,
+    "matched": 10,
+    "unmatched": 8,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 servings the shrimp",
+        "identityText": "the shrimp",
+        "state": "fresh"
+      },
+      {
+        "rawText": "600 gr shrimp",
+        "identityText": "gr shrimp",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4 servings the salad",
+        "identityText": "the salad",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 leaf the of 1 cos lettuce",
+        "identityText": "leaf the 1 cos lettuce",
+        "state": "fresh"
+      },
+      {
+        "rawText": "200 gr corn",
+        "identityText": "gr corn",
+        "state": "fresh"
+      },
+      {
+        "rawText": "600 gr pineapple",
+        "identityText": "gr pineapple",
+        "state": "fresh"
+      },
+      {
+        "rawText": "2  avocados into cubes",
+        "identityText": "avocados into cubes",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4 servings the dressing",
+        "identityText": "the dressing",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:43:08.791Z",
+  "processGraph": {
+    "recipeName": "Shrimp and Avocado Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "1.Firstly, to cook the shrimp, heat the olive oil in a pan and once hot add the shrimp crushed garlic and chili flakes. It is important to get the oil nice and hot (not smoking, just before that point) your shrimp should sizzle when added to the pan. Check the back of the shrimp and when you see the colour change about half way up, turn them over. Do the same on the other side. This should only take a minute to two minutes maximum on both sides otherwise you will get a rubbery result if you leave it too long. Squeeze over the lime juice this too should bubble and reduce. Add a little salt and pepper, stir through, remove from the heat and set aside.",
+        "processes": [
+          {
+            "processId": "crush",
+            "ingredients": [
+              "garlic cloves"
+            ],
+            "durationMinutes": 1,
+            "notes": "crush garlic before cooking"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": 2,
+            "notes": "heat oil until hot but not smoking"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "shrimp",
+              "garlic cloves"
+            ],
+            "durationMinutes": 4,
+            "notes": "1-2 minutes per side until color changes halfway up"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "juice of lime"
+            ],
+            "durationMinutes": 0.5,
+            "notes": "squeeze lime juice over shrimp"
+          },
+          {
+            "processId": "reduce",
+            "ingredients": [
+              "juice of lime"
+            ],
+            "durationMinutes": 1,
+            "notes": "lime juice bubbles and reduces"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": 0.5,
+            "notes": "add salt and pepper to taste"
+          }
+        ],
+        "outputDescription": "Cooked shrimp with garlic, properly seared on both sides, seasoned and flavored with reduced lime juice"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "2.Mix the dressing ingredients together, check for flavour, adjust if need be and set aside.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "olive oil",
+              "honey",
+              "juice of lime"
+            ],
+            "durationMinutes": 2,
+            "notes": "combine all dressing ingredients and adjust seasoning"
+          }
+        ],
+        "outputDescription": "Mixed dressing ready to use, flavor adjusted as needed"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "3.Place all the salad ingredients in a bowl except the avocado and the salt and pepper. Prepare the avocado as you are about to serve otherwise it will turn brown. Once it is covered in the lime dressing, this will slow down the oxidization process and it wont go brown so easily.",
+        "processes": [
+          {
+            "processId": "cube",
+            "ingredients": [
+              "avocados"
+            ],
+            "durationMinutes": 2,
+            "notes": "cut avocados into cubes as mentioned in ingredients"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "leaf the of 1 cos lettuce",
+              "basil leaves",
+              "corn",
+              "spring onions",
+              "pineapple"
+            ],
+            "durationMinutes": 3,
+            "notes": "combine salad ingredients except avocado"
+          }
+        ],
+        "outputDescription": "Salad base prepared with lettuce, basil, corn, spring onions, and pineapple; avocado cubed and ready to add"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "4.When you are ready to serve mix of the avocado through the salad and add the dressing. Toss everything together. Taste to see if you need any salt and pepper. Place your shrimp on top of the salad with the rest of the avocado and sprinkle/pour any residue from the pan over your salad in which you cooked the shrimp. This is great flavour, so you dont want to lose it.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "avocados"
+            ],
+            "durationMinutes": 1,
+            "notes": "mix portion of avocado through salad"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "olive oil",
+              "honey",
+              "juice of lime"
+            ],
+            "durationMinutes": 2,
+            "notes": "add dressing and toss everything together"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "taste and adjust seasoning as needed"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "shrimp",
+              "avocados"
+            ],
+            "durationMinutes": 2,
+            "notes": "arrange shrimp and remaining avocado on top"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "shrimp"
+            ],
+            "durationMinutes": 1,
+            "notes": "pour pan residue from cooking shrimp over salad"
+          }
+        ],
+        "outputDescription": "Complete plated salad with dressed vegetables, topped with cooked shrimp and remaining avocado, finished with flavorful pan juices"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 12,
+      "uniqueProcesses": [
+        "crush",
+        "heat",
+        "saute",
+        "squeeze",
+        "reduce",
+        "season",
+        "mix",
+        "cube",
+        "toss",
+        "plate",
+        "sprinkle"
+      ],
+      "estimatedTotalTime": 22
+    }
+  },
+  "components": [
+    {
+      "id": "comp_659927_step1",
+      "name": "Cooked shrimp with garlic, properly seared on both sides, seasoned and flavored with reduced lime juice",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic cloves",
+          "quantityG": 10
+        }
+      ],
+      "processes": [
+        {
+          "processId": "crush",
+          "processName": "Crush",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "reduce",
+          "processName": "Reduce",
+          "yieldFactor": 0.6,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.01879216,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.44999999999999996,
+        "costPerG": 0.22290556151159216,
+        "nutrition": {
+          "calories": 14.9,
+          "protein": 0.6360000000000001,
+          "fat": 0.05,
+          "carbs": 3.3100000000000005,
+          "fiber": 0.21000000000000002,
+          "sugar": 0.1,
+          "sodium": 1.7000000000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_659927_step2",
+      "name": "Mixed dressing ready to use, flavor adjusted as needed",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        },
+        {
+          "ingredientId": "lime_juice",
+          "name": "juice of lime",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 163.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.119,
+        "costPerG": 0.006844036697247706,
+        "nutrition": {
+          "calories": 156.84,
+          "protein": 0.63,
+          "fat": 13.605,
+          "carbs": 12.629999999999999,
+          "fiber": 0.6000000000000001,
+          "sugar": 2.535,
+          "sodium": 3.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659927_step3",
+      "name": "Salad base prepared with lettuce, basil, corn, spring onions, and pineapple; avocado cubed and ready to add",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "basil",
+          "name": "basil leaves",
+          "quantityG": 0.375
+        },
+        {
+          "ingredientId": "corn",
+          "name": "corn",
+          "quantityG": 200
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "spring onions",
+          "quantityG": 450
+        },
+        {
+          "ingredientId": "pineapple",
+          "name": "pineapple",
+          "quantityG": 600
+        }
+      ],
+      "processes": [
+        {
+          "processId": "cube",
+          "processName": "Cube",
+          "yieldFactor": 0.96,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1200.36,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 59.87987,
+        "costPerG": 0.049884926188810026,
+        "nutrition": {
+          "calories": 636.0862500000001,
+          "protein": 18.3068125,
+          "fat": 4.5774,
+          "carbs": 153.5999375,
+          "fiber": 24.906,
+          "sugar": 78.666125,
+          "sodium": 80.015,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659927_step4",
+      "name": "Complete plated salad with dressed vegetables, topped with cooked shrimp and remaining avocado, finished with flavorful pan juices",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.1616,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.2,
+        "costPerG": 0.04805843906189927,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1550.32,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 130.10587000000004,
+    "costPerServing": 32.52646750000001,
+    "totalPrepTime": 23,
+    "nutritionPerServing": {
+      "calories": 498.7015625,
+      "protein": 65.60770312500001,
+      "fat": 9.85195,
+      "carbs": 44.75905937500001,
+      "fiber": 7.807,
+      "sugar": 21.081256249999996,
+      "sodium": 767.3312499999998
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_659927_step1",
+        "name": "Cooked shrimp with garlic, properly seared on both sides, seasoned and flavored with reduced lime juice",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_659927_step2",
+        "name": "Mixed dressing ready to use, flavor adjusted as needed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659927_step3",
+        "name": "Salad base prepared with lettuce, basil, corn, spring onions, and pineapple; avocado cubed and ready to add",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659927_step4",
+        "name": "Complete plated salad with dressed vegetables, topped with cooked shrimp and remaining avocado, finished with flavorful pan juices",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_659927_step1",
+      "name": "Cooked shrimp with garlic, properly seared on both sides, seasoned and flavored with reduced lime juice",
+      "shelfLifeHours": 2,
+      "processes": [
+        "crush",
+        "heat",
+        "saute",
+        "squeeze",
+        "reduce",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_659927_step3",
+      "name": "Salad base prepared with lettuce, basil, corn, spring onions, and pineapple; avocado cubed and ready to add",
+      "shelfLifeHours": 24,
+      "processes": [
+        "cube",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_659927_step4",
+      "name": "Complete plated salad with dressed vegetables, topped with cooked shrimp and remaining avocado, finished with flavorful pan juices",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "toss",
+        "season",
+        "plate",
+        "sprinkle"
+      ]
+    }
+  ]
+}

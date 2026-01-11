@@ -1,0 +1,582 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_ae799f76-ce2c-4f8c-890a-57ab72982d19",
+  "name": "Garlicky Kale",
+  "source": "spoonacular",
+  "spoonacularId": 644387,
+  "image": "/images/recipes/644387.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "balsamic vinegar",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "curly kale",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Heat the olive oil in a large pot over medium heat.</li><li>Add the kale and cover.</li><li>Stir occasionally until the volume of the kale is reduced by half. Uncover. Add garlic and basalmic.</li><li>Allow to cook for about another 30 seconds or so, mixing well so that the garlic and vinegar are well distributed.</li><li>Serve hot.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 169.87,
+    "protein": 2.11,
+    "fat": 14.98,
+    "carbs": 7.46,
+    "fiber": 2.7,
+    "sugar": 4.12,
+    "saturatedFat": 2.05,
+    "sodium": 40.51
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "whole 30",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "balsamic_vinegar",
+      "displayName": "balsamic vinegar",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 45,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps balsamic vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "kale",
+      "displayName": "kale",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch curly kale",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings olive oil",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 4,
+    "matched": 4,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:55:32.276Z",
+  "processGraph": {
+    "recipeName": "Garlicky Kale",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat the olive oil in a large pot over medium heat.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in large pot over medium heat"
+          }
+        ],
+        "outputDescription": "hot olive oil ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add the kale and cover.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "curly kale"
+            ],
+            "durationMinutes": null,
+            "notes": "adding kale to hot oil and covering pot"
+          }
+        ],
+        "outputDescription": "kale cooking covered in hot oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Stir occasionally until the volume of the kale is reduced by half. Uncover. Add garlic and basalmic.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "curly kale"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring occasionally until volume reduces by half"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation of garlic before adding"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "garlic",
+              "balsamic vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "adding garlic and balsamic vinegar to reduced kale"
+          }
+        ],
+        "outputDescription": "kale reduced to half volume with garlic and balsamic vinegar added"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Allow to cook for about another 30 seconds or so, mixing well so that the garlic and vinegar are well distributed.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "curly kale",
+              "garlic",
+              "balsamic vinegar"
+            ],
+            "durationMinutes": 0.5,
+            "notes": "cooking for 30 seconds"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "curly kale",
+              "garlic",
+              "balsamic vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "mixing well to distribute garlic and vinegar"
+          }
+        ],
+        "outputDescription": "fully cooked kale with evenly distributed garlic and balsamic vinegar"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Serve hot.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "curly kale",
+              "garlic",
+              "balsamic vinegar",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "serving the finished dish while hot"
+          }
+        ],
+        "outputDescription": "plated garlicky kale ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 7,
+      "uniqueProcesses": [
+        "heat",
+        "saute",
+        "mince",
+        "mix",
+        "plate"
+      ],
+      "estimatedTotalTime": 10
+    }
+  },
+  "components": [
+    {
+      "id": "comp_644387_step1",
+      "name": "hot olive oil ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 39.2,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.42666666666666664,
+        "costPerG": 0.010884353741496598,
+        "nutrition": {
+          "calories": 353.6,
+          "protein": 0,
+          "fat": 40,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_644387_step2",
+      "name": "kale cooking covered in hot oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "kale",
+          "name": "curly kale",
+          "quantityG": 0.8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0.68,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.01216,
+        "costPerG": 0.01788235294117647,
+        "nutrition": {
+          "calories": 0.28,
+          "protein": 0.02336,
+          "fat": 0.01192,
+          "carbs": 0.03536,
+          "fiber": 0.032799999999999996,
+          "sugar": 0.0064,
+          "sodium": 0.424,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644387_step3",
+      "name": "kale reduced to half volume with garlic and balsamic vinegar added",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.165,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.22499999999999998,
+        "costPerG": 0.054021608643457376,
+        "nutrition": {
+          "calories": 7.45,
+          "protein": 0.31800000000000006,
+          "fat": 0.025,
+          "carbs": 1.6550000000000002,
+          "fiber": 0.10500000000000001,
+          "sugar": 0.05,
+          "sodium": 0.8500000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644387_step4",
+      "name": "fully cooked kale with evenly distributed garlic and balsamic vinegar",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "balsamic_vinegar",
+          "name": "balsamic vinegar",
+          "quantityG": 45
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 38.25,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8099999999999999,
+        "costPerG": 0.021176470588235293,
+        "nutrition": {
+          "calories": 39.6,
+          "protein": 0.2205,
+          "fat": 0,
+          "carbs": 7.663500000000001,
+          "fiber": 0,
+          "sugar": 6.7275,
+          "sodium": 10.35,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644387_step5",
+      "name": "plated garlicky kale ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 1.4738266666666666,
+    "costPerServing": 0.7369133333333333,
+    "totalPrepTime": 21.5,
+    "nutritionPerServing": {
+      "calories": 200.465,
+      "protein": 0.28093000000000007,
+      "fat": 20.01846,
+      "carbs": 4.6769300000000005,
+      "fiber": 0.0689,
+      "sugar": 3.39195,
+      "sodium": 6.212
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_644387_step2",
+        "name": "kale cooking covered in hot oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_644387_step3",
+        "name": "kale reduced to half volume with garlic and balsamic vinegar added",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_644387_step4",
+        "name": "fully cooked kale with evenly distributed garlic and balsamic vinegar",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_644387_step3",
+      "name": "kale reduced to half volume with garlic and balsamic vinegar added",
+      "shelfLifeHours": 24,
+      "processes": [
+        "saute",
+        "mince",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_644387_step4",
+      "name": "fully cooked kale with evenly distributed garlic and balsamic vinegar",
+      "shelfLifeHours": 24,
+      "processes": [
+        "saute",
+        "mix"
+      ]
+    }
+  ]
+}

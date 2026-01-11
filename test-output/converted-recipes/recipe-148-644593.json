@@ -1,0 +1,778 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_aa88499d-0670-4077-a02c-cc9ae17fb71e",
+  "name": "Ginger Lentils With Carrots and Fresh Herbs",
+  "source": "spoonacular",
+  "spoonacularId": 644593,
+  "image": "/images/recipes/644593.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "avocado",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrot",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin seeds",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ginger",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mint leaves",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 192,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "honey",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Peal and slice the carrot. Sautee the carrot slices with the cumin</li><li>Seeds for 15 minutes. Remove from fire and let cool. Meanwhile, peal</li><li>And grate the ginger, mix it with the juice of 1 lemon, raw honey,</li><li>Fresh mint and salt. Taste it and adjust it to taste. Mix the carrots,</li><li>Lentils,  a cabed avocado and dressing and enjoy!</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 161.8,
+    "protein": 8.97,
+    "fat": 3.08,
+    "carbs": 25.83,
+    "fiber": 11.45,
+    "sugar": 4.37,
+    "saturatedFat": 0.43,
+    "sodium": 207.49
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "avocado",
+      "displayName": "avocado",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  avocado",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large carrot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp cumin seeds",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ginger",
+      "displayName": "ginger",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp ginger",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings mint leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 192,
+        "originalUnit": "g",
+        "normalizedQuantityG": 192,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "192 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "honey",
+      "displayName": "honey",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp honey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings sea salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 9,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-11T00:01:18.793Z",
+  "processGraph": {
+    "recipeName": "Ginger Lentils With Carrots and Fresh Herbs",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Peal and slice the carrot. Sautee the carrot slices with the cumin Seeds for 15 minutes.",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "remove outer skin from carrot"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "cut peeled carrot into slices"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "carrot",
+              "cumin seeds"
+            ],
+            "durationMinutes": 15,
+            "notes": "cook carrot slices with cumin seeds"
+          }
+        ],
+        "outputDescription": "carrot slices sautéed with cumin seeds for 15 minutes"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Remove from fire and let cool.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "carrot",
+              "cumin seeds"
+            ],
+            "durationMinutes": null,
+            "notes": "allow sautéed carrots and cumin to cool down"
+          }
+        ],
+        "outputDescription": "cooled sautéed carrot and cumin mixture"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Meanwhile, peal And grate the ginger, mix it with the juice of 1 lemon, raw honey, Fresh mint and salt.",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "ginger"
+            ],
+            "durationMinutes": null,
+            "notes": "remove skin from ginger"
+          },
+          {
+            "processId": "grate",
+            "ingredients": [
+              "ginger"
+            ],
+            "durationMinutes": null,
+            "notes": "grate peeled ginger into fine pieces"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from lemon"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ginger",
+              "lemon",
+              "honey",
+              "mint leaves",
+              "sea salt"
+            ],
+            "durationMinutes": null,
+            "notes": "combine grated ginger with lemon juice, honey, mint, and salt"
+          }
+        ],
+        "outputDescription": "dressing made from grated ginger, lemon juice, honey, mint, and salt"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Taste it and adjust it to taste.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "ginger",
+              "lemon",
+              "honey",
+              "mint leaves",
+              "sea salt"
+            ],
+            "durationMinutes": null,
+            "notes": "taste and adjust seasoning as needed"
+          }
+        ],
+        "outputDescription": "seasoned and adjusted dressing"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Mix the carrots, Lentils, a cabed avocado and dressing and enjoy!",
+        "processes": [
+          {
+            "processId": "cube",
+            "ingredients": [
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "cut avocado into cubes (implied from 'cabed' - likely meant 'cubed')"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "carrot",
+              "lentils",
+              "avocado",
+              "ginger",
+              "lemon",
+              "honey",
+              "mint leaves",
+              "sea salt"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all components - carrots, lentils, cubed avocado, and dressing"
+          }
+        ],
+        "outputDescription": "final dish with all ingredients combined"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "peel",
+        "slice",
+        "saute",
+        "cool",
+        "grate",
+        "squeeze",
+        "mix",
+        "season",
+        "cube"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_644593_step1",
+      "name": "carrot slices sautéed with cumin seeds for 15 minutes",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrot",
+          "quantityG": 78
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 58.476600000000005,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.2925,
+        "costPerG": 0.005002000800320127,
+        "nutrition": {
+          "calories": 31.98,
+          "protein": 0.7254,
+          "fat": 0.1872,
+          "carbs": 7.4724,
+          "fiber": 2.1839999999999997,
+          "sugar": 3.6972000000000005,
+          "sodium": 53.82,
+          "method": "raw"
+        },
+        "prepTimeMin": 19
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644593_step2",
+      "name": "cooled sautéed carrot and cumin mixture",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cumin",
+          "name": "cumin seeds",
+          "quantityG": 6.3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 6.3,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.378,
+        "costPerG": 0.060000000000000005,
+        "nutrition": {
+          "calories": 23.625,
+          "protein": 1.1220299999999999,
+          "fat": 1.40301,
+          "carbs": 2.7871200000000003,
+          "fiber": 0.6615,
+          "sugar": 0.14175,
+          "sodium": 10.584,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644593_step3",
+      "name": "dressing made from grated ginger, lemon juice, honey, mint, and salt",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ginger",
+          "name": "ginger",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "grate",
+          "processName": "Grate",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.7954999999999997,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.3,
+        "costPerG": 0.16708437761069342,
+        "nutrition": {
+          "calories": 4.8,
+          "protein": 0.1092,
+          "fat": 0.045,
+          "carbs": 1.0662,
+          "fiber": 0.12,
+          "sugar": 0.102,
+          "sodium": 0.78,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644593_step4",
+      "name": "seasoned and adjusted dressing",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "honey",
+          "name": "honey",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "mint",
+          "name": "mint leaves",
+          "quantityG": 120
+        },
+        {
+          "ingredientId": "salt",
+          "name": "sea salt",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 143.82,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.4,
+        "costPerG": 0.05840634125990822,
+        "nutrition": {
+          "calories": 129.6,
+          "protein": 4.545,
+          "fat": 1.128,
+          "carbs": 30.228,
+          "fiber": 9.629999999999999,
+          "sugar": 12.315,
+          "sodium": 2363.28,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_644593_step5",
+      "name": "final dish with all ingredients combined",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "avocado",
+          "name": "avocado",
+          "quantityG": 0.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "cube",
+          "processName": "Cube",
+          "yieldFactor": 0.96,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.48,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.00625,
+        "costPerG": 0.013020833333333334,
+        "nutrition": {
+          "calories": 0.8,
+          "protein": 0.01,
+          "fat": 0.0735,
+          "carbs": 0.04265,
+          "fiber": 0.0335,
+          "sugar": 0.0033000000000000004,
+          "sodium": 0.035,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 58.336749999999995,
+    "costPerServing": 9.722791666666666,
+    "totalPrepTime": 61.5,
+    "nutritionPerServing": {
+      "calories": 147.69416666666666,
+      "protein": 9.387938333333334,
+      "fat": 0.843985,
+      "carbs": 27.07832833333333,
+      "fiber": 11.904833333333334,
+      "sugar": 3.6954749999999996,
+      "sodium": 406.80316666666664
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_644593_step1",
+        "name": "carrot slices sautéed with cumin seeds for 15 minutes",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_644593_step2",
+        "name": "cooled sautéed carrot and cumin mixture",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_644593_step3",
+        "name": "dressing made from grated ginger, lemon juice, honey, mint, and salt",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_644593_step5",
+        "name": "final dish with all ingredients combined",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_644593_step1",
+      "name": "carrot slices sautéed with cumin seeds for 15 minutes",
+      "shelfLifeHours": 24,
+      "processes": [
+        "peel",
+        "slice",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_644593_step3",
+      "name": "dressing made from grated ginger, lemon juice, honey, mint, and salt",
+      "shelfLifeHours": 12,
+      "processes": [
+        "peel",
+        "grate",
+        "squeeze",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_644593_step5",
+      "name": "final dish with all ingredients combined",
+      "shelfLifeHours": 24,
+      "processes": [
+        "cube",
+        "mix"
+      ]
+    }
+  ]
+}

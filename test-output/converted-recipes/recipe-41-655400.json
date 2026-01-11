@@ -1,0 +1,632 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_4242b688-36a7-4554-afe7-1746077acd96",
+  "name": "Pear and Pesto Crostini",
+  "source": "spoonacular",
+  "spoonacularId": 655400,
+  "image": "/images/recipes/655400.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bread",
+      "quantity": 0.5,
+      "unit": "loaf",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil leaves",
+      "quantity": 48,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pine nuts",
+      "quantity": 33.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pecorino romano",
+      "quantity": 25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "your best olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bosc pear",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Preheat oven to 400 degrees. Slice French loaf into 1/2-inch-thick slices, and brush (or spray, if you have one of those nifty Misto things) with olive oil. Place slices on baking sheet and toast in oven for 10-15 minutes, or until edges are a deep golden brown. Remove from oven and set aside.\nWhile those are in the oven, make your pesto. In a food processor, combine basil leaves, garlic clove, pine nuts and Romano cheese. Pulse until pesto is coarse in texture, like coarse sand. Add in olive oil and process until fully incorporated. Taste. Add salt and pepper, if needed. Scrape pesto into a serving bowl or dish and set aside. (You should have about 3/4 cup.)\nCut pear into thin slices and place on a platter with crostini and pesto. To assemble: Spread pesto over crostini and top with pear and fresh ground black pepper, if desired.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 3,
+  "nutrition": {
+    "calories": 452.05,
+    "protein": 12.17,
+    "fat": 25.74,
+    "carbs": 46.15,
+    "fiber": 4,
+    "sugar": 9.39,
+    "saturatedFat": 4.28,
+    "sodium": 697.03
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "fingerfood",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Bread",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 loaf bread",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 48,
+        "originalUnit": "g",
+        "normalizedQuantityG": 48,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "48 g basil leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Pine nuts",
+      "quantity": {
+        "originalQuantity": 33.75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 33.75,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "33.75 g pine nuts",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Romano cheese",
+      "quantity": {
+        "originalQuantity": 25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 25,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "25 g pecorino romano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps your best olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 7,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1  bosc pear",
+        "identityText": "bosc pear",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:33:12.577Z",
+  "processGraph": {
+    "recipeName": "Pear and Pesto Crostini",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven to 400 degrees. Slice French loaf into 1/2-inch-thick slices, and brush (or spray, if you have one of those nifty Misto things) with olive oil. Place slices on baking sheet and toast in oven for 10-15 minutes, or until edges are a deep golden brown. Remove from oven and set aside.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "bread"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into 1/2-inch-thick slices"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "bread",
+              "your best olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "brush or spray with olive oil"
+          },
+          {
+            "processId": "toast",
+            "ingredients": [
+              "bread"
+            ],
+            "durationMinutes": 12.5,
+            "notes": "in 400°F oven until edges are deep golden brown"
+          }
+        ],
+        "outputDescription": "Golden brown toasted bread slices (crostini) ready for topping"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "While those are in the oven, make your pesto. In a food processor, combine basil leaves, garlic clove, pine nuts and Romano cheese. Pulse until pesto is coarse in texture, like coarse sand. Add in olive oil and process until fully incorporated. Taste. Add salt and pepper, if needed. Scrape pesto into a serving bowl or dish and set aside. (You should have about 3/4 cup.)",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "basil leaves",
+              "garlic",
+              "pine nuts",
+              "pecorino romano"
+            ],
+            "durationMinutes": null,
+            "notes": "pulse in food processor until coarse texture"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "your best olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "process until fully incorporated"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper if needed"
+          }
+        ],
+        "outputDescription": "Finished pesto with coarse texture, about 3/4 cup"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Cut pear into thin slices and place on a platter with crostini and pesto. To assemble: Spread pesto over crostini and top with pear and fresh ground black pepper, if desired.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "bosc pear"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into thin slices"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "bosc pear",
+              "bread",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange on platter"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "spread pesto over crostini"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "bosc pear",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "top with pear slices and fresh ground black pepper"
+          }
+        ],
+        "outputDescription": "Assembled crostini topped with pesto, pear slices, and black pepper, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "slice",
+        "coat",
+        "toast",
+        "blend",
+        "season",
+        "plate",
+        "spread",
+        "garnish"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_655400_step1",
+      "name": "Golden brown toasted bread slices (crostini) ready for topping",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bread",
+          "name": "bread",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 12.5,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 207.368,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.8000000000000003,
+        "costPerG": 0.013502565487442615,
+        "nutrition": {
+          "calories": 548,
+          "protein": 21.4,
+          "fat": 9.06,
+          "carbs": 95,
+          "fiber": 8,
+          "sugar": 11.46,
+          "sodium": 946,
+          "method": "raw"
+        },
+        "prepTimeMin": 16.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_655400_step2",
+      "name": "Finished pesto with coarse texture, about 3/4 cup",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "basil",
+          "name": "basil leaves",
+          "quantityG": 48
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "pine_nuts",
+          "name": "pine nuts",
+          "quantityG": 33.75
+        },
+        {
+          "ingredientId": "romano_cheese",
+          "name": "pecorino romano",
+          "quantityG": 25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 109.471194,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.92586,
+        "costPerG": 0.054131683262722066,
+        "nutrition": {
+          "calories": 342.37750000000005,
+          "protein": 14.40375,
+          "fat": 30.152200000000004,
+          "carbs": 8.25575,
+          "fiber": 2.1217500000000005,
+          "sugar": 1.5881249999999998,
+          "sodium": 303.445,
+          "method": "raw"
+        },
+        "prepTimeMin": 4.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_655400_step3",
+      "name": "Assembled crostini topped with pesto, pear slices, and black pepper, ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pear_beurre_bosc",
+          "name": "bosc pear",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.09956,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0075,
+        "costPerG": 0.0068209101822547195,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 9.315360000000002,
+    "costPerServing": 3.1051200000000008,
+    "totalPrepTime": 27,
+    "nutritionPerServing": {
+      "calories": 416.1325,
+      "protein": 11.934583333333334,
+      "fat": 26.570733333333333,
+      "carbs": 34.41858333333334,
+      "fiber": 3.3739166666666676,
+      "sugar": 4.349375,
+      "sodium": 804.3316666666666
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_655400_step1",
+        "name": "Golden brown toasted bread slices (crostini) ready for topping",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_655400_step2",
+        "name": "Finished pesto with coarse texture, about 3/4 cup",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_655400_step3",
+        "name": "Assembled crostini topped with pesto, pear slices, and black pepper, ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_655400_step1",
+      "name": "Golden brown toasted bread slices (crostini) ready for topping",
+      "shelfLifeHours": 2,
+      "processes": [
+        "slice",
+        "coat",
+        "toast"
+      ]
+    },
+    {
+      "componentId": "comp_655400_step2",
+      "name": "Finished pesto with coarse texture, about 3/4 cup",
+      "shelfLifeHours": 48,
+      "processes": [
+        "blend",
+        "blend",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_655400_step3",
+      "name": "Assembled crostini topped with pesto, pear slices, and black pepper, ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "plate",
+        "spread",
+        "garnish"
+      ]
+    }
+  ]
+}

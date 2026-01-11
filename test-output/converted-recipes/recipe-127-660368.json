@@ -1,0 +1,820 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_983c3e16-22e3-4e27-b88e-400feccd4551",
+  "name": "Smoked Salmon Eggs Benedict With Lemon Dill Hollandaise",
+  "source": "spoonacular",
+  "spoonacularId": 660368,
+  "image": "/images/recipes/660368.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "arugula",
+      "quantity": 20,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 30,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "butter",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg yolks",
+      "quantity": 3,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggs",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dill",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "multigrain bread",
+      "quantity": 2,
+      "unit": "slice",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salmon",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "worcestershire sauce",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Make Lemon Dill Hollandaise:</li><li>Fill a medium saucepan about halfway with water, and bring to a gentle simmer over medium heat. Put the egg yolks and water in a heatproof bowl, season with a pinch of dill (if using dried), salt, and pepper. Whisk the ingredients together and then place the bowl on top of the saucepan. Keep stirring the egg mixture for about 5 minutes or until it begins to thicken. Make sure you dont scramble your eggs! Once the eggs are thickened, take the bowl off the water and set aside.</li><li>Poach the eggs:</li><li>Fill a medium saucepan with water, add a splash of white vinegar (optional, but this helps hold the whites together which results in nicely shaped eggs) and bring to a gentle simmer. You want tiny bubbles only, not a rolling boil. Gently add eggs to water and poach until deisred doneness.</li><li>Meanwhile, toast bread.</li><li>Place toast on plates and top with arugula, spinach and salmon. Place eggs on top of salmon and spoon hollandaise over the top. Garnish with dill, salt and freshly cracked black pepper and serve.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 539.84,
+    "protein": 41.02,
+    "fat": 32.72,
+    "carbs": 20.98,
+    "fiber": 3.89,
+    "sugar": 3.63,
+    "saturatedFat": 13.69,
+    "sodium": 1494.55
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "morning meal",
+      "brunch",
+      "breakfast"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 91.7,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "multigrain bread",
+        "identity": "multigrain bread",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Arugula",
+      "quantity": {
+        "originalQuantity": 20,
+        "originalUnit": "g",
+        "normalizedQuantityG": 20,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "20 g baby arugula",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 30,
+        "originalUnit": "g",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "30 g baby spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "butter",
+      "displayName": "butter",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 28,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps butter",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "egg_yolks",
+      "displayName": "egg yolks",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 large egg yolks",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "dill",
+      "displayName": "dill",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp dill",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g salmon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps water",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Worcestershire sauce",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp worcestershire sauce",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 11,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "2 slice multigrain bread",
+        "identityText": "slice multigrain bread",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:54:31.029Z",
+  "processGraph": {
+    "recipeName": "Smoked Salmon Eggs Benedict With Lemon Dill Hollandaise",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Make Lemon Dill Hollandaise:",
+        "processes": [],
+        "outputDescription": "Section header - no processes"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Fill a medium saucepan about halfway with water, and bring to a gentle simmer over medium heat. Put the egg yolks and water in a heatproof bowl, season with a pinch of dill (if using dried), salt, and pepper. Whisk the ingredients together and then place the bowl on top of the saucepan. Keep stirring the egg mixture for about 5 minutes or until it begins to thicken. Make sure you dont scramble your eggs! Once the eggs are thickened, take the bowl off the water and set aside.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "gentle simmer for double boiler"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "egg yolks",
+              "dill",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season egg yolk mixture"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "egg yolks",
+              "water",
+              "dill",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": 5,
+            "notes": "whisk over double boiler until thickened"
+          }
+        ],
+        "outputDescription": "Thickened hollandaise base ready for finishing"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Poach the eggs:",
+        "processes": [],
+        "outputDescription": "Section header - no processes"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Fill a medium saucepan with water, add a splash of white vinegar (optional, but this helps hold the whites together which results in nicely shaped eggs) and bring to a gentle simmer. You want tiny bubbles only, not a rolling boil. Gently add eggs to water and poach until deisred doneness.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "gentle simmer with tiny bubbles"
+          },
+          {
+            "processId": "poach",
+            "ingredients": [
+              "eggs"
+            ],
+            "durationMinutes": null,
+            "notes": "poach until desired doneness"
+          }
+        ],
+        "outputDescription": "Perfectly poached eggs with runny yolks"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Meanwhile, toast bread.",
+        "processes": [
+          {
+            "processId": "toast",
+            "ingredients": [
+              "multigrain bread"
+            ],
+            "durationMinutes": null,
+            "notes": "toast bread slices"
+          }
+        ],
+        "outputDescription": "Golden toasted bread slices"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Place toast on plates and top with arugula, spinach and salmon. Place eggs on top of salmon and spoon hollandaise over the top. Garnish with dill, salt and freshly cracked black pepper and serve.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "multigrain bread",
+              "arugula",
+              "spinach",
+              "salmon"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange base components on plates"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "eggs"
+            ],
+            "durationMinutes": null,
+            "notes": "place poached eggs on top"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "hollandaise"
+            ],
+            "durationMinutes": null,
+            "notes": "spoon hollandaise over eggs"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "dill",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "final garnish and seasoning"
+          }
+        ],
+        "outputDescription": "Completed eggs benedict ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "simmer",
+        "season",
+        "whisk",
+        "poach",
+        "toast",
+        "plate",
+        "spread",
+        "garnish"
+      ],
+      "estimatedTotalTime": 15
+    }
+  },
+  "components": [
+    {
+      "id": "comp_660368_step1",
+      "name": "Section header - no processes",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660368_step2",
+      "name": "Thickened hollandaise base ready for finishing",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 27.540000000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.2001,
+        "costPerG": 0.007265795206971677,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 25.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660368_step3",
+      "name": "Section header - no processes",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660368_step4",
+      "name": "Perfectly poached eggs with runny yolks",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggs",
+          "name": "eggs",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "poach",
+          "processName": "Poach",
+          "yieldFactor": 0.92,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 165.60000000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.334,
+        "costPerG": 0.008055555555555555,
+        "nutrition": {
+          "calories": 286,
+          "protein": 25.2,
+          "fat": 19.02,
+          "carbs": 1.44,
+          "fiber": 0,
+          "sugar": 0.74,
+          "sodium": 284,
+          "method": "raw"
+        },
+        "prepTimeMin": 28
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660368_step5",
+      "name": "Golden toasted bread slices",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bread",
+          "name": "multigrain bread",
+          "quantityG": 60
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 55.2,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.84,
+        "costPerG": 0.015217391304347825,
+        "nutrition": {
+          "calories": 164.4,
+          "protein": 6.419999999999999,
+          "fat": 2.718,
+          "carbs": 28.5,
+          "fiber": 2.4,
+          "sugar": 3.438,
+          "sodium": 283.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660368_step6",
+      "name": "Completed eggs benedict ready to serve",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "arugula",
+          "name": "arugula",
+          "quantityG": 20
+        },
+        {
+          "ingredientId": "spinach_bunch",
+          "name": "spinach",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "salmon",
+          "name": "salmon",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 310.565112,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 26.57266,
+        "costPerG": 0.08556228299075654,
+        "nutrition": {
+          "calories": 333.95032,
+          "protein": 46.3703264,
+          "fat": 14.6278664,
+          "carbs": 1.819,
+          "fiber": 0.9800000000000001,
+          "sugar": 0.536,
+          "sodium": 128.89024,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 33.83967466666667,
+    "costPerServing": 16.919837333333334,
+    "totalPrepTime": 62.5,
+    "nutritionPerServing": {
+      "calories": 820.15916,
+      "protein": 55.0670432,
+      "fat": 55.497793200000004,
+      "carbs": 23.61721,
+      "fiber": 2.8163,
+      "sugar": 4.1614,
+      "sodium": 906.9781200000001
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_660368_step2",
+        "name": "Thickened hollandaise base ready for finishing",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_660368_step4",
+        "name": "Perfectly poached eggs with runny yolks",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_660368_step2",
+      "name": "Thickened hollandaise base ready for finishing",
+      "shelfLifeHours": 12,
+      "processes": [
+        "simmer",
+        "season",
+        "whisk"
+      ]
+    },
+    {
+      "componentId": "comp_660368_step4",
+      "name": "Perfectly poached eggs with runny yolks",
+      "shelfLifeHours": 48,
+      "processes": [
+        "simmer",
+        "poach"
+      ]
+    }
+  ]
+}

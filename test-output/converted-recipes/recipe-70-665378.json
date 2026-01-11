@@ -1,0 +1,1168 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_9dad8d6a-8d63-4954-9491-34489bcd1d94",
+  "name": "Winter Fattoush Salad",
+  "source": "spoonacular",
+  "spoonacularId": 665378,
+  "image": "/images/recipes/665378.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "agave nectar",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 37.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flat leaf parsley leaves",
+      "quantity": 30,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground sumac",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lacinato kale leaves",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 288,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "persian cucumber",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pita breads",
+      "quantity": 2,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "radishes",
+      "quantity": 1,
+      "unit": "small bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "savoy cabbage",
+      "quantity": 1,
+      "unit": "small head",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "za'atar",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Toast the pita: Preheat the oven to 350F. Whisk the oil, zaatar and salt in a small bowl.  Lay the pita bread on a baking sheet and brush both sides with the oil. Bake until crisp, 5 to 7 minutes. When cool enough to handle, tear pitas into bite-size pieces. There should be about 2 cups.</li><li>Make the lentils: Saute the onions and oil in a small skillet until onions soften and begin to brown. Add the lentils and stir to blend. Stir in the garlic and parsley and remove from heat. Season with salt and pepper.</li><li>Cut away the thickest part of the kale and cabbage ribs and discard, then roll the leaves into bundles and shred. Trim the cucumber ends, then cut lengthwise into -inch slices. Stack the slices and cut crosswise into shreds. Repeat with the radishes. Tear whole leaves from parsley and/or mint.</li><li>Make the dressing: Whisk the dressing ingredients in a bowl until fully combined. You can also use a handheld blender.</li><li>Compose the salad: Toss the salad ingredients in a large bowl. Add the lentils and pita crisps. Drizzle with the dressing and toss again. Mound the salad on a serving platter. Top with feta cheese and sprinkle with sumac.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 345.17,
+    "protein": 17.39,
+    "fat": 9.43,
+    "carbs": 49.67,
+    "fiber": 18.6,
+    "sugar": 4.89,
+    "saturatedFat": 1.97,
+    "sodium": 601.87
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Agave nectar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp agave nectar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 37.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 37.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "37.5 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sugar",
+      "displayName": "sugar",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground sumac",
+      "matchConfidence": 0.6
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 288,
+        "originalUnit": "g",
+        "normalizedQuantityG": 288,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "288 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp parsley",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Persian cucumber",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large persian cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Pita bread",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 large pita breads",
+      "matchConfidence": 0.95
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 18,
+    "matched": 13,
+    "unmatched": 5,
+    "lowConfidence": 1,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "30 g flat leaf parsley leaves",
+        "identityText": "flat leaf parsley leaves",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4  lacinato kale leaves",
+        "identityText": "lacinato kale leaves",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 small bunch radishes",
+        "identityText": "bunch radishes",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 small head savoy cabbage",
+        "identityText": "head savoy cabbage",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 Tbsp za'atar",
+        "identityText": "za'atar",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:36:06.201Z",
+  "processGraph": {
+    "recipeName": "Winter Fattoush Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Toast the pita: Preheat the oven to 350F. Whisk the oil, zaatar and salt in a small bowl. Lay the pita bread on a baking sheet and brush both sides with the oil. Bake until crisp, 5 to 7 minutes. When cool enough to handle, tear pitas into bite-size pieces. There should be about 2 cups.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "olive oil",
+              "za'atar",
+              "kosher salt"
+            ],
+            "durationMinutes": 1,
+            "notes": "combine oil mixture for brushing"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": 2,
+            "notes": "brush both sides with oil mixture"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": 6,
+            "notes": "bake at 350F until crisp"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": 3,
+            "notes": "cool until handleable"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": 2,
+            "notes": "tear into bite-size pieces"
+          }
+        ],
+        "outputDescription": "2 cups of crispy pita chips torn into bite-size pieces"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Make the lentils: Saute the onions and oil in a small skillet until onions soften and begin to brown. Add the lentils and stir to blend. Stir in the garlic and parsley and remove from heat. Season with salt and pepper.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "olive oil"
+            ],
+            "durationMinutes": 8,
+            "notes": "cook until onions soften and begin to brown"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lentils"
+            ],
+            "durationMinutes": 2,
+            "notes": "add lentils and stir to blend"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "garlic",
+              "parsley"
+            ],
+            "durationMinutes": 1,
+            "notes": "stir in garlic and parsley"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "season with salt and pepper"
+          }
+        ],
+        "outputDescription": "Warm seasoned lentil mixture with sautéed onions, garlic, and parsley"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Cut away the thickest part of the kale and cabbage ribs and discard, then roll the leaves into bundles and shred. Trim the cucumber ends, then cut lengthwise into -inch slices. Stack the slices and cut crosswise into shreds. Repeat with the radishes. Tear whole leaves from parsley and/or mint.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "lacinato kale",
+              "savoy cabbage"
+            ],
+            "durationMinutes": 3,
+            "notes": "remove thick ribs"
+          },
+          {
+            "processId": "roll",
+            "ingredients": [
+              "lacinato kale",
+              "savoy cabbage"
+            ],
+            "durationMinutes": 2,
+            "notes": "roll leaves into bundles"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "lacinato kale",
+              "savoy cabbage"
+            ],
+            "durationMinutes": 3,
+            "notes": "shred rolled leaf bundles"
+          },
+          {
+            "processId": "trim",
+            "ingredients": [
+              "persian cucumber"
+            ],
+            "durationMinutes": 1,
+            "notes": "trim cucumber ends"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "persian cucumber"
+            ],
+            "durationMinutes": 2,
+            "notes": "cut lengthwise into slices"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "persian cucumber"
+            ],
+            "durationMinutes": 2,
+            "notes": "stack slices and cut crosswise into shreds"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "radishes"
+            ],
+            "durationMinutes": 3,
+            "notes": "repeat shredding process with radishes"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "flat leaf parsley leaves"
+            ],
+            "durationMinutes": 2,
+            "notes": "tear whole leaves from parsley"
+          }
+        ],
+        "outputDescription": "All vegetables prepared as shreds and torn leaves ready for salad"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Make the dressing: Whisk the dressing ingredients in a bowl until fully combined. You can also use a handheld blender.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "lemon juice",
+              "agave nectar",
+              "ground sumac"
+            ],
+            "durationMinutes": 2,
+            "notes": "whisk dressing ingredients until fully combined"
+          }
+        ],
+        "outputDescription": "Smooth, well-combined salad dressing"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Compose the salad: Toss the salad ingredients in a large bowl. Add the lentils and pita crisps. Drizzle with the dressing and toss again. Mound the salad on a serving platter. Top with feta cheese and sprinkle with sumac.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "lacinato kale",
+              "savoy cabbage",
+              "persian cucumber",
+              "radishes",
+              "flat leaf parsley leaves"
+            ],
+            "durationMinutes": 2,
+            "notes": "toss salad vegetables together"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lentils",
+              "pita breads"
+            ],
+            "durationMinutes": 1,
+            "notes": "add lentils and pita crisps"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "lemon juice",
+              "agave nectar",
+              "ground sumac"
+            ],
+            "durationMinutes": 2,
+            "notes": "drizzle with dressing and toss again"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "all salad components"
+            ],
+            "durationMinutes": 2,
+            "notes": "mound salad on serving platter"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "feta cheese"
+            ],
+            "durationMinutes": 1,
+            "notes": "top with feta cheese"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "ground sumac"
+            ],
+            "durationMinutes": 1,
+            "notes": "sprinkle with sumac"
+          }
+        ],
+        "outputDescription": "Fully composed Winter Fattoush Salad on serving platter, topped with feta and sumac"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 21,
+      "uniqueProcesses": [
+        "whisk",
+        "spread",
+        "bake",
+        "cool",
+        "shred",
+        "saute",
+        "mix",
+        "season",
+        "trim",
+        "roll",
+        "slice",
+        "toss",
+        "plate",
+        "garnish",
+        "sprinkle"
+      ],
+      "estimatedTotalTime": 50
+    }
+  },
+  "components": [
+    {
+      "id": "comp_665378_step1",
+      "name": "2 cups of crispy pita chips torn into bite-size pieces",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40.5
+        },
+        {
+          "ingredientId": "zaatar",
+          "name": "za'atar",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "salt",
+          "name": "kosher salt",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 6,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 55.777425,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.407,
+        "costPerG": 0.025225259143820282,
+        "nutrition": {
+          "calories": 399.42,
+          "protein": 1.3664999999999998,
+          "fat": 41.6145,
+          "carbs": 9.591,
+          "fiber": 5.55,
+          "sugar": 0.2565,
+          "sodium": 2334.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 14
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_665378_step2",
+      "name": "Warm seasoned lentil mixture with sautéed onions, garlic, and parsley",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 105
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 91.035,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.75035,
+        "costPerG": 0.019227220299884662,
+        "nutrition": {
+          "calories": 42,
+          "protein": 1.1550000000000002,
+          "fat": 0.10500000000000001,
+          "carbs": 9.807,
+          "fiber": 1.785,
+          "sugar": 4.452000000000001,
+          "sodium": 4.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_665378_step3",
+      "name": "All vegetables prepared as shreds and torn leaves ready for salad",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cabbage_savoy",
+          "name": "savoy cabbage",
+          "quantityG": 0.7
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.5480980580631498,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.00315,
+        "costPerG": 0.005747146799117228,
+        "nutrition": {
+          "calories": 0.18899999999999997,
+          "protein": 0.013999999999999999,
+          "fat": 0.0007,
+          "carbs": 0.042699999999999995,
+          "fiber": 0.021699999999999997,
+          "sugar": 0.015889999999999998,
+          "sodium": 0.19599999999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 18
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_665378_step4",
+      "name": "Smooth, well-combined salad dressing",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 30.5
+        },
+        {
+          "ingredientId": "agave",
+          "name": "agave nectar",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "sumac",
+          "name": "ground sumac",
+          "quantityG": 2.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 38,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 18.61175,
+        "costPerG": 0.4897828947368421,
+        "nutrition": {
+          "calories": 22.21,
+          "protein": 0.11125,
+          "fat": 0.09570000000000001,
+          "carbs": 5.9245,
+          "fiber": 0.1015,
+          "sugar": 4.1686000000000005,
+          "sodium": 0.505,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_665378_step5",
+      "name": "Fully composed Winter Fattoush Salad on serving platter, topped with feta and sumac",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "persian_cucumber",
+          "name": "persian cucumber",
+          "quantityG": 390
+        },
+        {
+          "ingredientId": "radish",
+          "name": "radishes",
+          "quantityG": 0.7
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "flat leaf parsley leaves",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 437.69628,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.76715,
+        "costPerG": 0.02003021364495033,
+        "nutrition": {
+          "calories": 69.412,
+          "protein": 3.4307600000000003,
+          "fat": 0.6667,
+          "carbs": 16.0798,
+          "fiber": 2.9512,
+          "sugar": 6.78102,
+          "sodium": 24.873,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 34.169844,
+    "costPerServing": 5.694973999999999,
+    "totalPrepTime": 55,
+    "nutritionPerServing": {
+      "calories": 278.9596666666667,
+      "protein": 14.471168333333333,
+      "fat": 8.973896666666668,
+      "carbs": 36.80956333333334,
+      "fiber": 16.47,
+      "sugar": 3.6378816666666665,
+      "sodium": 858.7326666666668
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_665378_step1",
+        "name": "2 cups of crispy pita chips torn into bite-size pieces",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_665378_step2",
+        "name": "Warm seasoned lentil mixture with sautéed onions, garlic, and parsley",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_665378_step3",
+        "name": "All vegetables prepared as shreds and torn leaves ready for salad",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_665378_step4",
+        "name": "Smooth, well-combined salad dressing",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_665378_step5",
+        "name": "Fully composed Winter Fattoush Salad on serving platter, topped with feta and sumac",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_665378_step1",
+      "name": "2 cups of crispy pita chips torn into bite-size pieces",
+      "shelfLifeHours": 12,
+      "processes": [
+        "whisk",
+        "spread",
+        "bake",
+        "cool",
+        "shred"
+      ]
+    },
+    {
+      "componentId": "comp_665378_step2",
+      "name": "Warm seasoned lentil mixture with sautéed onions, garlic, and parsley",
+      "shelfLifeHours": 24,
+      "processes": [
+        "saute",
+        "mix",
+        "mix",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_665378_step3",
+      "name": "All vegetables prepared as shreds and torn leaves ready for salad",
+      "shelfLifeHours": 24,
+      "processes": [
+        "trim",
+        "roll",
+        "shred",
+        "trim",
+        "slice",
+        "shred",
+        "shred",
+        "shred"
+      ]
+    },
+    {
+      "componentId": "comp_665378_step5",
+      "name": "Fully composed Winter Fattoush Salad on serving platter, topped with feta and sumac",
+      "shelfLifeHours": 24,
+      "processes": [
+        "toss",
+        "mix",
+        "toss",
+        "plate",
+        "garnish",
+        "sprinkle"
+      ]
+    }
+  ]
+}

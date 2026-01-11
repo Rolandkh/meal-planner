@@ -1,0 +1,1236 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_23c46795-8ae4-40e2-9092-51267d7aced2",
+  "name": "Mung Bean Sprout and Quinoa Salad",
+  "source": "spoonacular",
+  "spoonacularId": 652594,
+  "image": "/images/recipes/652594.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bragg's all natural apple cider vinegar",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "of basil",
+      "quantity": 2,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell peppers",
+      "quantity": 74.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "coconut oil",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 370,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cilantro",
+      "quantity": 1,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sprouted mung beans",
+      "quantity": 310.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 40,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "of oregano",
+      "quantity": 3,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 2,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>First you sprout!</li><li>Soak mung beans over night in a jar covered with cheese cloth.  Note: use rubber band to keep cheese cloth in place.</li><li>Rinse and pour out all of the water from the soaked mung beans.</li><li>Then place jar diagonally in a bowl, like picture below.</li><li>Wash mung beans 2 times a day.  You can have them grow 1 to 2 inches in lengthbut, I just kept them short.  I just let it sit for a little bit more than 1.5 days.</li><li>It is ready to eat after washing.</li><li>Prepare sprouts</li><li>Cook quinoa</li><li>Steam. corn</li><li>Prepare veggies (mince, slice, and dice)</li><li>Place quinoa and prepared veggies in a bowl and mix in dressing.  Then, place over a bed of spinach.</li><li>Top off with corn (optional)</li><li>Enjoy!</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 355.71,
+    "protein": 16.63,
+    "fat": 11.3,
+    "carbs": 50.21,
+    "fiber": 11.86,
+    "sugar": 6.03,
+    "saturatedFat": 8.07,
+    "sodium": 233.59
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 92.3,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "bragg's all natural apple cider vinegar",
+        "identity": "bragg's all natural apple cider vinegar",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 pinch of basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_peppers",
+      "displayName": "bell peppers",
+      "quantity": {
+        "originalQuantity": 74.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 74.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "74.5 g bell peppers",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "coconut_oil",
+      "displayName": "coconut oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 54,
+        "normalizedQuantityMl": 60
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 Tbsps coconut oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 370,
+        "originalUnit": "g",
+        "normalizedQuantityG": 370,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "370 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cilantro",
+      "displayName": "cilantro",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 pinch cilantro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 40,
+        "originalUnit": "g",
+        "normalizedQuantityG": 40,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "40 g onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 pinch of oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 medium tomatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 11,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 Tbsps bragg's all natural apple cider vinegar",
+        "identityText": "bragg's all natural apple cider vinegar",
+        "state": "other"
+      },
+      {
+        "rawText": "310.5 g sprouted mung beans",
+        "identityText": "sprouted mung beans",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:46:35.057Z",
+  "processGraph": {
+    "recipeName": "Mung Bean Sprout and Quinoa Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "First you sprout!",
+        "processes": [],
+        "outputDescription": "Preparation begins for sprouting process"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Soak mung beans over night in a jar covered with cheese cloth. Note: use rubber band to keep cheese cloth in place.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "sprouted mung beans"
+            ],
+            "durationMinutes": 720,
+            "notes": "soaking overnight in water to begin sprouting process"
+          }
+        ],
+        "outputDescription": "Mung beans soaked overnight, ready for sprouting"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Rinse and pour out all of the water from the soaked mung beans.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "sprouted mung beans"
+            ],
+            "durationMinutes": 2,
+            "notes": "washing soaked beans"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "sprouted mung beans"
+            ],
+            "durationMinutes": 1,
+            "notes": "removing all soaking water"
+          }
+        ],
+        "outputDescription": "Mung beans rinsed and drained, ready for sprouting setup"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Then place jar diagonally in a bowl, like picture below.",
+        "processes": [],
+        "outputDescription": "Jar positioned diagonally for proper drainage during sprouting"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Wash mung beans 2 times a day. You can have them grow 1 to 2 inches in length but, I just kept them short. I just let it sit for a little bit more than 1.5 days.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "sprouted mung beans"
+            ],
+            "durationMinutes": 2160,
+            "notes": "washing twice daily for 1.5 days to encourage sprouting"
+          },
+          {
+            "processId": "ferment",
+            "ingredients": [
+              "sprouted mung beans"
+            ],
+            "durationMinutes": 2160,
+            "notes": "natural sprouting process over 1.5 days"
+          }
+        ],
+        "outputDescription": "Mung beans have sprouted into short sprouts, ready to eat"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "It is ready to eat after washing.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "sprouted mung beans"
+            ],
+            "durationMinutes": 2,
+            "notes": "final wash before use"
+          }
+        ],
+        "outputDescription": "Fresh mung bean sprouts ready for salad preparation"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Prepare sprouts",
+        "processes": [],
+        "outputDescription": "Sprouts prepared and set aside"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Cook quinoa",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 15,
+            "notes": "cooking quinoa in water until tender"
+          }
+        ],
+        "outputDescription": "Quinoa cooked and fluffy"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Steam. corn",
+        "processes": [
+          {
+            "processId": "steam",
+            "ingredients": [],
+            "durationMinutes": 5,
+            "notes": "corn not in ingredient list but mentioned for steaming"
+          }
+        ],
+        "outputDescription": "Corn steamed and tender"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Prepare veggies (mince, slice, and dice)",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": 2,
+            "notes": "mincing garlic"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": 3,
+            "notes": "slicing tomatoes"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "bell peppers",
+              "onions"
+            ],
+            "durationMinutes": 5,
+            "notes": "dicing peppers and onions"
+          }
+        ],
+        "outputDescription": "All vegetables prepared - garlic minced, tomatoes sliced, peppers and onions diced"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Place quinoa and prepared veggies in a bowl and mix in dressing. Then, place over a bed of spinach.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "bell peppers",
+              "onions",
+              "garlic",
+              "tomatoes",
+              "bragg's all natural apple cider vinegar",
+              "coconut oil",
+              "basil",
+              "cilantro",
+              "oregano",
+              "salt and pepper"
+            ],
+            "durationMinutes": 3,
+            "notes": "combining quinoa, vegetables, and dressing"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": 2,
+            "notes": "arranging spinach as bed and placing salad on top"
+          }
+        ],
+        "outputDescription": "Quinoa salad mixed with dressing and vegetables, served over spinach bed"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "Top off with corn (optional)",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [],
+            "durationMinutes": 1,
+            "notes": "adding steamed corn as optional topping"
+          }
+        ],
+        "outputDescription": "Salad garnished with corn"
+      },
+      {
+        "stepNumber": 13,
+        "originalInstruction": "Enjoy!",
+        "processes": [],
+        "outputDescription": "Completed mung bean sprout and quinoa salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "marinate",
+        "rinse",
+        "drain",
+        "ferment",
+        "boil",
+        "steam",
+        "mince",
+        "slice",
+        "dice",
+        "mix",
+        "plate",
+        "garnish"
+      ],
+      "estimatedTotalTime": 2925
+    }
+  },
+  "components": [
+    {
+      "id": "comp_652594_step1",
+      "name": "Preparation begins for sprouting process",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_652594_step2",
+      "name": "Mung beans soaked overnight, ready for sprouting",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "beans",
+          "name": "sprouted mung beans",
+          "quantityG": 310.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 720,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 326.02500000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.164375,
+        "costPerG": 0.003571428571428571,
+        "nutrition": {
+          "calories": 93.15,
+          "protein": 9.4392,
+          "fat": 0.5589,
+          "carbs": 18.4437,
+          "fiber": 5.589,
+          "sugar": 12.823649999999999,
+          "sodium": 18.63,
+          "method": "raw"
+        },
+        "prepTimeMin": 720
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652594_step3",
+      "name": "Mung beans rinsed and drained, ready for sprouting setup",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652594_step4",
+      "name": "Jar positioned diagonally for proper drainage during sprouting",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_652594_step5",
+      "name": "Mung beans have sprouted into short sprouts, ready to eat",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2160,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "ferment",
+          "processName": "Ferment",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2160,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4320
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652594_step6",
+      "name": "Fresh mung bean sprouts ready for salad preparation",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652594_step7",
+      "name": "Sprouts prepared and set aside",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_652594_step8",
+      "name": "Quinoa cooked and fluffy",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 370
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 351.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.81,
+        "costPerG": 0.013684210526315788,
+        "nutrition": {
+          "calories": 1361.6000000000001,
+          "protein": 52.244,
+          "fat": 22.459000000000003,
+          "carbs": 237.392,
+          "fiber": 25.900000000000002,
+          "sugar": 0,
+          "sodium": 18.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 15
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652594_step9",
+      "name": "Corn steamed and tender",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652594_step10",
+      "name": "All vegetables prepared - garlic minced, tomatoes sliced, peppers and onions diced",
+      "stepNumber": 10,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.657939999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.22499999999999998,
+        "costPerG": 0.04830461534498083,
+        "nutrition": {
+          "calories": 7.45,
+          "protein": 0.31800000000000006,
+          "fat": 0.025,
+          "carbs": 1.6550000000000002,
+          "fiber": 0.10500000000000001,
+          "sugar": 0.05,
+          "sodium": 0.8500000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652594_step11",
+      "name": "Quinoa salad mixed with dressing and vegetables, served over spinach bed",
+      "stepNumber": 11,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell peppers",
+          "quantityG": 74.5
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onions",
+          "quantityG": 40
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 240
+        },
+        {
+          "ingredientId": "vinegar",
+          "name": "bragg's all natural apple cider vinegar",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "coconut_oil",
+          "name": "coconut oil",
+          "quantityG": 54
+        },
+        {
+          "ingredientId": "cilantro",
+          "name": "cilantro",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 475.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.406849999999999,
+        "costPerG": 0.019783070452155622,
+        "nutrition": {
+          "calories": 539.4200000000001,
+          "protein": 3.3108500000000003,
+          "fat": 54.2627,
+          "carbs": 18.078650000000003,
+          "fiber": 5.152499999999999,
+          "sugar": 11.169699999999999,
+          "sodium": 2343.72,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652594_step12",
+      "name": "Salad garnished with corn",
+      "stepNumber": 12,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_652594_step13",
+      "name": "Completed mung bean sprout and quinoa salad ready to serve",
+      "stepNumber": 13,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 19.509275000000002,
+    "costPerServing": 3.2515458333333336,
+    "totalPrepTime": 5081,
+    "nutritionPerServing": {
+      "calories": 339.6050000000001,
+      "protein": 11.512841666666665,
+      "fat": 12.985800000000005,
+      "carbs": 47.00765833333333,
+      "fiber": 6.78225,
+      "sugar": 4.112674999999999,
+      "sodium": 412.8883333333334
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_652594_step2",
+        "name": "Mung beans soaked overnight, ready for sprouting",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_652594_step3",
+        "name": "Mung beans rinsed and drained, ready for sprouting setup",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_652594_step5",
+        "name": "Mung beans have sprouted into short sprouts, ready to eat",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_652594_step6",
+        "name": "Fresh mung bean sprouts ready for salad preparation",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_652594_step8",
+        "name": "Quinoa cooked and fluffy",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_652594_step9",
+        "name": "Corn steamed and tender",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_652594_step10",
+        "name": "All vegetables prepared - garlic minced, tomatoes sliced, peppers and onions diced",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652594_step11",
+        "name": "Quinoa salad mixed with dressing and vegetables, served over spinach bed",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_652594_step3",
+      "name": "Mung beans rinsed and drained, ready for sprouting setup",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_652594_step5",
+      "name": "Mung beans have sprouted into short sprouts, ready to eat",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "ferment"
+      ]
+    },
+    {
+      "componentId": "comp_652594_step10",
+      "name": "All vegetables prepared - garlic minced, tomatoes sliced, peppers and onions diced",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "slice",
+        "dice"
+      ]
+    },
+    {
+      "componentId": "comp_652594_step11",
+      "name": "Quinoa salad mixed with dressing and vegetables, served over spinach bed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "plate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,923 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_99efaf04-a74b-4149-a38b-22e84653c08f",
+  "name": "Quinoa Vegetable Salad",
+  "source": "spoonacular",
+  "spoonacularId": 1095791,
+  "image": "/images/recipes/1095791.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "quinoa",
+      "quantity": 150,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "iceberg lettuce",
+      "quantity": 1,
+      "unit": "medium size",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 1,
+      "unit": "medium size",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cucumber",
+      "quantity": 1,
+      "unit": "medium size",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "peppers",
+      "quantity": 1,
+      "unit": "medium size",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrot",
+      "quantity": 1,
+      "unit": "medium size",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive tapenade",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "apple cider vinegar",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>First, chop the iceberg lettuce and place in a large bowl.</li><li>Wash and dice the tomatoes, cucumber, green peppers, and carrot into pieces.</li><li>Ad them to the bowl with chopped lettuce.</li><li>Prepare quinoa according to package instructions.</li><li>Add the cooked quinoa to the salad bowl.</li><li>Season with some salt and black pepper.</li><li>Next, add the olive tapenade, vinegar, and extra virgin olive oil to the bowl and to stir everything very well.</li><li>Serve.</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 2,
+  "nutrition": {
+    "calories": 494.11,
+    "protein": 15.24,
+    "fat": 19.47,
+    "carbs": 67.58,
+    "fiber": 12.14,
+    "sugar": 11.93,
+    "saturatedFat": 2.59,
+    "sodium": 254.43
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 150,
+        "originalUnit": "g",
+        "normalizedQuantityG": 150,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "150 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lettuce",
+      "displayName": "lettuce",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium size iceberg lettuce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium size tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium size cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "peppers",
+      "displayName": "peppers",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium size peppers",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium size carrot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "apple_cider_vinegar",
+      "displayName": "apple cider vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps apple cider vinegar",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 9,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "50 g olive tapenade",
+        "identityText": "olive tapenade",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:45:55.691Z",
+  "processGraph": {
+    "recipeName": "Quinoa Vegetable Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "First, chop the iceberg lettuce and place in a large bowl.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "iceberg lettuce"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into rough pieces for salad"
+          }
+        ],
+        "outputDescription": "chopped lettuce placed in large bowl"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Wash and dice the tomatoes, cucumber, green peppers, and carrot into pieces.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "tomatoes",
+              "cucumber",
+              "peppers",
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "wash vegetables before cutting"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "tomatoes",
+              "cucumber",
+              "peppers",
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into small uniform pieces"
+          }
+        ],
+        "outputDescription": "vegetables washed and diced into small pieces"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Ad them to the bowl with chopped lettuce.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tomatoes",
+              "cucumber",
+              "peppers",
+              "carrot",
+              "iceberg lettuce"
+            ],
+            "durationMinutes": null,
+            "notes": "add diced vegetables to lettuce bowl"
+          }
+        ],
+        "outputDescription": "all vegetables combined in large bowl"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Prepare quinoa according to package instructions.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "typically rinse quinoa before cooking"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 15,
+            "notes": "cook quinoa in boiling water per package directions"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "remove excess cooking liquid"
+          }
+        ],
+        "outputDescription": "quinoa cooked and drained"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add the cooked quinoa to the salad bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "iceberg lettuce",
+              "tomatoes",
+              "cucumber",
+              "peppers",
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "combine cooked quinoa with vegetables"
+          }
+        ],
+        "outputDescription": "quinoa mixed with vegetables in bowl"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Season with some salt and black pepper.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to taste"
+          }
+        ],
+        "outputDescription": "salad seasoned with salt and pepper"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Next, add the olive tapenade, vinegar, and extra virgin olive oil to the bowl and to stir everything very well.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "olive tapenade",
+              "apple cider vinegar",
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "add dressing ingredients and stir thoroughly"
+          }
+        ],
+        "outputDescription": "salad fully dressed and well mixed"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Serve.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa",
+              "iceberg lettuce",
+              "tomatoes",
+              "cucumber",
+              "peppers",
+              "carrot",
+              "olive tapenade",
+              "apple cider vinegar",
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange finished salad for serving"
+          }
+        ],
+        "outputDescription": "salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "chop",
+        "rinse",
+        "dice",
+        "mix",
+        "boil",
+        "drain",
+        "season",
+        "plate"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1095791_step1",
+      "name": "chopped lettuce placed in large bowl",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lettuce",
+          "name": "iceberg lettuce",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.98,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.02,
+        "costPerG": 0.020408163265306124,
+        "nutrition": {
+          "calories": 0.14,
+          "protein": 0.009000000000000001,
+          "fat": 0.0014000000000000002,
+          "carbs": 0.029700000000000004,
+          "fiber": 0.012,
+          "sugar": 0.0197,
+          "sodium": 0.1,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095791_step2",
+      "name": "vegetables washed and diced into small pieces",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 120
+        },
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumber",
+          "quantityG": 300
+        },
+        {
+          "ingredientId": "peppers",
+          "name": "peppers",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrot",
+          "quantityG": 60
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 475.90139999999997,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.6419,
+        "costPerG": 0.0118551868097047,
+        "nutrition": {
+          "calories": 82.39999999999999,
+          "protein": 3.3926,
+          "fat": 0.8657,
+          "carbs": 16.9424,
+          "fiber": 5.236999999999999,
+          "sugar": 10.164,
+          "sodium": 53.43,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095791_step3",
+      "name": "all vegetables combined in large bowl",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095791_step4",
+      "name": "quinoa cooked and drained",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.05,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 146.6325,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.95,
+        "costPerG": 0.01329855250370825,
+        "nutrition": {
+          "calories": 552,
+          "protein": 21.18,
+          "fat": 9.105,
+          "carbs": 96.24,
+          "fiber": 10.5,
+          "sugar": 0,
+          "sodium": 7.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 17
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095791_step5",
+      "name": "quinoa mixed with vegetables in bowl",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095791_step6",
+      "name": "salad seasoned with salt and pepper",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.04,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.1,
+        "costPerG": 0.049019607843137254,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 775.16,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095791_step7",
+      "name": "salad fully dressed and well mixed",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "vinegar",
+          "name": "apple cider vinegar",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 57,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.43799999999999994,
+        "costPerG": 0.007684210526315788,
+        "nutrition": {
+          "calories": 244.08,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0.012,
+          "fiber": 0,
+          "sugar": 0.012,
+          "sodium": 1.1400000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095791_step8",
+      "name": "salad ready to serve",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 8.149899999999999,
+    "costPerServing": 4.074949999999999,
+    "totalPrepTime": 31.5,
+    "nutritionPerServing": {
+      "calories": 439.31,
+      "protein": 12.2908,
+      "fat": 18.48605,
+      "carbs": 56.61205000000001,
+      "fiber": 7.874499999999999,
+      "sugar": 5.09785,
+      "sodium": 418.66499999999996
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1095791_step1",
+        "name": "chopped lettuce placed in large bowl",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1095791_step2",
+        "name": "vegetables washed and diced into small pieces",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_1095791_step3",
+        "name": "all vegetables combined in large bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095791_step4",
+        "name": "quinoa cooked and drained",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_1095791_step5",
+        "name": "quinoa mixed with vegetables in bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095791_step7",
+        "name": "salad fully dressed and well mixed",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1095791_step2",
+      "name": "vegetables washed and diced into small pieces",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "dice"
+      ]
+    },
+    {
+      "componentId": "comp_1095791_step4",
+      "name": "quinoa cooked and drained",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "boil",
+        "drain"
+      ]
+    }
+  ]
+}

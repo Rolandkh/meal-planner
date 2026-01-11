@@ -1,0 +1,599 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_0c91ea92-13fb-4a00-ac54-798c1d256f16",
+  "name": "Italian Tuna Pasta",
+  "source": "spoonacular",
+  "spoonacularId": 648279,
+  "image": "/images/recipes/648279.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "chillies",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground pepper",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley leaves",
+      "quantity": 30,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pasta shells",
+      "quantity": 250,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tuna",
+      "quantity": 400,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Once pasta is cooked, drain and leave to cool for a minute.</li><li>Place small skillet on medium fire, drizzle olive oil, add in red pepper and stir-fry for 1-2 minutes. Put aside.</li><li>Toss pasta shells, red pepper, tuna, parsley, garlic, chillies and lemon juice. Season with ground black pepper to taste, spoon into serving bowls. </li></ol>",
+  "prepTime": 6,
+  "cookTime": 14,
+  "servings": 3,
+  "nutrition": {
+    "calories": 463.7,
+    "protein": 37.7,
+    "fat": 2.91,
+    "carbs": 70.33,
+    "fiber": 4.42,
+    "sugar": 6.1,
+    "saturatedFat": 0.59,
+    "sodium": 307.56
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.879Z",
+  "updatedAt": "2026-01-09T11:32:55.879Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "chillies",
+      "displayName": "chillies",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  chillies",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "3 servings ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 30,
+        "originalUnit": "g",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "30 g parsley leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pasta",
+      "displayName": "pasta",
+      "quantity": {
+        "originalQuantity": 250,
+        "originalUnit": "g",
+        "normalizedQuantityG": 250,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "250 g pasta shells",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tuna",
+      "displayName": "tuna",
+      "quantity": {
+        "originalQuantity": 400,
+        "originalUnit": "g",
+        "normalizedQuantityG": 400,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "400 g tuna",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 8,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:19:39.153Z",
+  "processGraph": {
+    "recipeName": "Italian Tuna Pasta",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Once pasta is cooked, drain and leave to cool for a minute.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "pasta shells"
+            ],
+            "durationMinutes": null,
+            "notes": "implied cooking process before draining"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "pasta shells"
+            ],
+            "durationMinutes": null,
+            "notes": "remove cooking water"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "pasta shells"
+            ],
+            "durationMinutes": 1,
+            "notes": "let cool for a minute"
+          }
+        ],
+        "outputDescription": "cooked pasta shells that are drained and slightly cooled"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Place small skillet on medium fire, drizzle olive oil, add in red pepper and stir-fry for 1-2 minutes. Put aside.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "heat skillet on medium fire with olive oil"
+          },
+          {
+            "processId": "stir_fry",
+            "ingredients": [
+              "bell pepper"
+            ],
+            "durationMinutes": 1.5,
+            "notes": "stir-fry red pepper for 1-2 minutes"
+          }
+        ],
+        "outputDescription": "bell pepper that is stir-fried and set aside"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Toss pasta shells, red pepper, tuna, parsley, garlic, chillies and lemon juice. Season with ground black pepper to taste, spoon into serving bowls.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "pasta shells",
+              "bell pepper",
+              "tuna",
+              "parsley leaves",
+              "garlic",
+              "chillies",
+              "juice of lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all main ingredients together"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "ground pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season with ground black pepper to taste"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "spoon into serving bowls"
+          }
+        ],
+        "outputDescription": "finished pasta dish seasoned and plated in serving bowls"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "boil",
+        "drain",
+        "cool",
+        "heat",
+        "stir_fry",
+        "toss",
+        "season",
+        "plate"
+      ],
+      "estimatedTotalTime": 15
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648279_step1",
+      "name": "cooked pasta shells that are drained and slightly cooled",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pasta",
+          "name": "pasta shells",
+          "quantityG": 250
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 2.5,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 612.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.5,
+        "costPerG": 0.0024489795918367346,
+        "nutrition": {
+          "calories": 927.5,
+          "protein": 32.599999999999994,
+          "fat": 3.775,
+          "carbs": 186.675,
+          "fiber": 8,
+          "sugar": 6.675,
+          "sodium": 15,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648279_step2",
+      "name": "bell pepper that is stir-fried and set aside",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stir_fry",
+          "processName": "Stir Fry",
+          "yieldFactor": 0.88,
+          "durationMinutes": 1.5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 129.35999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.2750000000000001,
+        "costPerG": 0.009856215213358072,
+        "nutrition": {
+          "calories": 39,
+          "protein": 1.4849999999999999,
+          "fat": 0.44999999999999996,
+          "carbs": 9.045,
+          "fiber": 3.1500000000000004,
+          "sugar": 6.300000000000001,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 4.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648279_step3",
+      "name": "finished pasta dish seasoned and plated in serving bowls",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tuna",
+          "name": "tuna",
+          "quantityG": 400
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley leaves",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 8.5
+        },
+        {
+          "ingredientId": "chillies",
+          "name": "chillies",
+          "quantityG": 2
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "juice of lemon",
+          "quantityG": 160
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 612.51,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 104.4324,
+        "costPerG": 0.17049909389234463,
+        "nutrition": {
+          "calories": 419.46500000000003,
+          "protein": 78.02900000000001,
+          "fat": 4.432300000000001,
+          "carbs": 16.2487,
+          "fiber": 1.6784999999999999,
+          "sugar": 4.478,
+          "sodium": 896.025,
+          "method": "raw"
+        },
+        "prepTimeMin": 3.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 109.0074,
+    "costPerServing": 36.3358,
+    "totalPrepTime": 20,
+    "nutritionPerServing": {
+      "calories": 464.4983333333333,
+      "protein": 37.47523333333333,
+      "fat": 2.918366666666666,
+      "carbs": 71.29573333333333,
+      "fiber": 4.529166666666667,
+      "sugar": 5.824066666666667,
+      "sodium": 305.875
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648279_step1",
+        "name": "cooked pasta shells that are drained and slightly cooled",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_648279_step2",
+        "name": "bell pepper that is stir-fried and set aside",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648279_step1",
+      "name": "cooked pasta shells that are drained and slightly cooled",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "drain",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_648279_step2",
+      "name": "bell pepper that is stir-fried and set aside",
+      "shelfLifeHours": 48,
+      "processes": [
+        "heat",
+        "stir_fry"
+      ]
+    }
+  ]
+}

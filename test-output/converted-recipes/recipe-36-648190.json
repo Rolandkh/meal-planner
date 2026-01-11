@@ -1,0 +1,568 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_649faf76-8f57-451c-b97f-ca2891adf107",
+  "name": "Italian Pasta Salad with organic Arugula",
+  "source": "spoonacular",
+  "spoonacularId": 648190,
+  "image": "/images/recipes/648190.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "arugula remove steam",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chick peas",
+      "quantity": 1,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 216,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "piccolini farfalle",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pecorino romano cheese",
+      "quantity": 100,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sundried tomatoes",
+      "quantity": 110,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Boil Pasta</li><li>Meanwhile in a pasta bowl add arugala, sundried tomatoes, lemon, chick peas, olive oil, cheese add pasta top with herbs and salt and pepper</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 696.45,
+    "protein": 27.52,
+    "fat": 20.33,
+    "carbs": 103.42,
+    "fiber": 8.05,
+    "sugar": 14.39,
+    "saturatedFat": 6.25,
+    "sodium": 538.31
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp oregano",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Romano cheese",
+      "quantity": {
+        "originalQuantity": 100,
+        "originalUnit": "g",
+        "normalizedQuantityG": 100,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "100 g pecorino romano cheese",
+      "matchConfidence": 0.9
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sundried_tomatoes",
+      "displayName": "sun-dried tomatoes",
+      "quantity": {
+        "originalQuantity": 110,
+        "originalUnit": "g",
+        "normalizedQuantityG": 110,
+        "normalizedQuantityMl": null
+      },
+      "state": "dried",
+      "preparation": [],
+      "rawText": "110 g sundried tomatoes",
+      "matchConfidence": 0.9911764705882353
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 6,
+    "unmatched": 4,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "113.398 g arugula remove steam",
+        "identityText": "arugula remove steam",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 can goya chick peas",
+        "identityText": "goya chick peas",
+        "state": "fresh"
+      },
+      {
+        "rawText": "216 ml botticelli extra virgin olive oil",
+        "identityText": "botticelli virgin olive oil",
+        "state": "other"
+      },
+      {
+        "rawText": "453.592 g barilla piccolini farfalle",
+        "identityText": "barilla piccolini farfalle",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:31:32.020Z",
+  "processGraph": {
+    "recipeName": "Italian Pasta Salad with organic Arugula",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Boil Pasta",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "piccolini farfalle"
+            ],
+            "durationMinutes": null,
+            "notes": "cook pasta in rapidly bubbling water"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "piccolini farfalle"
+            ],
+            "durationMinutes": null,
+            "notes": "remove cooking water from pasta"
+          }
+        ],
+        "outputDescription": "cooked and drained pasta ready for mixing"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Meanwhile in a pasta bowl add arugala, sundried tomatoes, lemon, chick peas, olive oil, cheese add pasta top with herbs and salt and pepper",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "arugula"
+            ],
+            "durationMinutes": null,
+            "notes": "remove stems as indicated in ingredient list"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "chick peas"
+            ],
+            "durationMinutes": null,
+            "notes": "drain liquid from canned chickpeas"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from lemon"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "arugula",
+              "sundried tomatoes",
+              "lemon",
+              "chick peas",
+              "extra virgin olive oil",
+              "pecorino romano cheese",
+              "piccolini farfalle"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all ingredients in pasta bowl"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "basil",
+              "oregano"
+            ],
+            "durationMinutes": null,
+            "notes": "top with herbs"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to taste"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "arugula",
+              "sundried tomatoes",
+              "lemon",
+              "chick peas",
+              "extra virgin olive oil",
+              "pecorino romano cheese",
+              "piccolini farfalle",
+              "basil",
+              "oregano",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "mix all components together to distribute evenly"
+          }
+        ],
+        "outputDescription": "completed pasta salad with all ingredients combined and seasoned"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 7,
+      "uniqueProcesses": [
+        "boil",
+        "drain",
+        "trim",
+        "squeeze",
+        "mix",
+        "sprinkle",
+        "season",
+        "toss"
+      ],
+      "estimatedTotalTime": 15
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648190_step1",
+      "name": "cooked and drained pasta ready for mixing",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pasta",
+          "name": "piccolini farfalle",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 2.5,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1111.3004,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.721552,
+        "costPerG": 0.0024489795918367346,
+        "nutrition": {
+          "calories": 1682.82632,
+          "protein": 59.14839679999999,
+          "fat": 6.8492391999999995,
+          "carbs": 338.6971464,
+          "fiber": 14.514944,
+          "sugar": 12.1109064,
+          "sodium": 27.215519999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648190_step2",
+      "name": "completed pasta salad with all ingredients combined and seasoned",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "peas",
+          "name": "chick peas",
+          "quantityG": 400
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 135.60573599999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.3,
+        "costPerG": 0.009586615126663965,
+        "nutrition": {
+          "calories": 324,
+          "protein": 21.68,
+          "fat": 1.6,
+          "carbs": 57.6,
+          "fiber": 22.8,
+          "sugar": 22.68,
+          "sodium": 20,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 62.33886400000001,
+    "costPerServing": 15.584716000000002,
+    "totalPrepTime": 18,
+    "nutritionPerServing": {
+      "calories": 1164.439955,
+      "protein": 30.750503799999997,
+      "fat": 65.6801565,
+      "carbs": 117.67664585,
+      "fiber": 13.368153000000001,
+      "sugar": 20.219658850000002,
+      "sodium": 601.337495
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648190_step1",
+        "name": "cooked and drained pasta ready for mixing",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_648190_step2",
+        "name": "completed pasta salad with all ingredients combined and seasoned",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648190_step1",
+      "name": "cooked and drained pasta ready for mixing",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_648190_step2",
+      "name": "completed pasta salad with all ingredients combined and seasoned",
+      "shelfLifeHours": 24,
+      "processes": [
+        "trim",
+        "drain",
+        "squeeze",
+        "mix",
+        "sprinkle",
+        "season",
+        "toss"
+      ]
+    }
+  ]
+}

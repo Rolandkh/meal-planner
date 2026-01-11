@@ -1,0 +1,1127 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_ff86b196-deb4-44e4-a7c9-ad0f5704e41d",
+  "name": "Grilled Chicken Gyros With Tzatziki",
+  "source": "spoonacular",
+  "spoonacularId": 645646,
+  "image": "/images/recipes/645646.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cucumber",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pita bread",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "greek yogurt",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "greek yogurt",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken breasts",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "white wine vinegar",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Whisk together the garlic, lemon juice, vinegar, oil, yogurt, and oregano in a bowl. Add the chicken and rub the marinade in. Cover and refrigerate for at least an hour.</li><li>Preheat the grill to medium heat (or broiler, or pan on the stove).  Sprinkle the chicken with salt and pepper on both sides, and then grill until cooked through, about 5 minutes per side, depending  what size/type chicken you are using. Allow the chicken to rest for a few minutes before slicing into strips.</li><li>Meanwhile, heat your pitas in a fry pan, in the toaster or spray with a bit of oil and place right on a gas burner. Top the pita with the chicken, tzatziki, tomatoes and onions.</li><li>For the Tzatziki: Shred the cucumbers and then wrap in a towel and squeeze to remove as much moisture as possible. Don't skip this step!</li><li>Mix together the strained yogurt, shredded cucumbers, garlic, vinegar and lemon juice. Add salt and pepper to taste. Its best to refrigerate for 30 minutes or more before serving, so flavors can meld.</li><li>Drizzle a little olive oil over the top.</li></ol>",
+  "prepTime": 23,
+  "cookTime": 53,
+  "servings": 2,
+  "nutrition": {
+    "calories": 777.91,
+    "protein": 82.15,
+    "fat": 22.46,
+    "carbs": 60.6,
+    "fiber": 7.31,
+    "sugar": 18.63,
+    "saturatedFat": 3.74,
+    "sodium": 862.01
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Pita bread",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings pita bread",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps greek yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g greek yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 servings onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 10,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g chicken breasts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 servings tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "white_wine_vinegar",
+      "displayName": "white wine vinegar",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps white wine vinegar",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 17,
+    "matched": 17,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:27:56.981Z",
+  "processGraph": {
+    "recipeName": "Grilled Chicken Gyros With Tzatziki",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Whisk together the garlic, lemon juice, vinegar, oil, yogurt, and oregano in a bowl. Add the chicken and rub the marinade in. Cover and refrigerate for at least an hour.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation of garlic for marinade"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "garlic",
+              "lemon juice",
+              "red wine vinegar",
+              "extra virgin olive oil",
+              "greek yogurt",
+              "oregano"
+            ],
+            "durationMinutes": null,
+            "notes": "combining marinade ingredients"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": 60,
+            "notes": "minimum 1 hour refrigeration"
+          }
+        ],
+        "outputDescription": "chicken marinated in yogurt-herb mixture for at least 1 hour"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Preheat the grill to medium heat (or broiler, or pan on the stove). Sprinkle the chicken with salt and pepper on both sides, and then grill until cooked through, about 5 minutes per side, depending what size/type chicken you are using. Allow the chicken to rest for a few minutes before slicing into strips.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "chicken breasts",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "salt and pepper on both sides"
+          },
+          {
+            "processId": "grill",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": 10,
+            "notes": "about 5 minutes per side until cooked through"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": 3,
+            "notes": "few minutes to redistribute juices"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into strips"
+          }
+        ],
+        "outputDescription": "grilled chicken sliced into strips, ready for assembly"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Meanwhile, heat your pitas in a fry pan, in the toaster or spray with a bit of oil and place right on a gas burner. Top the pita with the chicken, tzatziki, tomatoes and onions.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for topping"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for topping"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "pita bread"
+            ],
+            "durationMinutes": null,
+            "notes": "warmed in pan, toaster, or over gas flame"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "pita bread",
+              "chicken breasts",
+              "greek yogurt",
+              "tomatoes",
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "assembling gyros with toppings"
+          }
+        ],
+        "outputDescription": "assembled gyros with warmed pita and all toppings"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "For the Tzatziki: Shred the cucumbers and then wrap in a towel and squeeze to remove as much moisture as possible. Don't skip this step!",
+        "processes": [
+          {
+            "processId": "shred",
+            "ingredients": [
+              "cucumber"
+            ],
+            "durationMinutes": null,
+            "notes": "grated or shredded cucumber"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "cucumber"
+            ],
+            "durationMinutes": null,
+            "notes": "wrapped in towel to remove moisture"
+          }
+        ],
+        "outputDescription": "cucumber shredded and excess moisture removed"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Mix together the strained yogurt, shredded cucumbers, garlic, vinegar and lemon juice. Add salt and pepper to taste. Its best to refrigerate for 30 minutes or more before serving, so flavors can meld.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for tzatziki"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "greek yogurt",
+              "cucumber",
+              "garlic",
+              "white wine vinegar",
+              "lemon juice"
+            ],
+            "durationMinutes": null,
+            "notes": "combining tzatziki ingredients"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "salt and pepper to taste"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "greek yogurt"
+            ],
+            "durationMinutes": 30,
+            "notes": "refrigerate to meld flavors"
+          }
+        ],
+        "outputDescription": "completed tzatziki sauce, chilled and ready to serve"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Drizzle a little olive oil over the top.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "final drizzle over assembled gyros"
+          }
+        ],
+        "outputDescription": "finished gyros with olive oil garnish"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 16,
+      "uniqueProcesses": [
+        "mince",
+        "whisk",
+        "marinate",
+        "season",
+        "grill",
+        "rest_meat",
+        "slice",
+        "heat",
+        "plate",
+        "shred",
+        "squeeze",
+        "mix",
+        "cool",
+        "garnish"
+      ],
+      "estimatedTotalTime": 103
+    }
+  },
+  "components": [
+    {
+      "id": "comp_645646_step1",
+      "name": "chicken marinated in yogurt-herb mixture for at least 1 hour",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 15.434999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6749999999999999,
+        "costPerG": 0.043731778425655975,
+        "nutrition": {
+          "calories": 22.349999999999998,
+          "protein": 0.954,
+          "fat": 0.075,
+          "carbs": 4.965,
+          "fiber": 0.315,
+          "sugar": 0.15,
+          "sodium": 2.55,
+          "method": "raw"
+        },
+        "prepTimeMin": 64
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645646_step2",
+      "name": "grilled chicken sliced into strips, ready for assembly",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken breasts",
+          "quantityG": 453.592
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "grill",
+          "processName": "Grill",
+          "yieldFactor": 0.78,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 355.21961529600003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 7.811064,
+        "costPerG": 0.021989393782466487,
+        "nutrition": {
+          "calories": 517.09488,
+          "protein": 96.2975816,
+          "fat": 11.748032799999999,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1301.32672,
+          "method": "raw"
+        },
+        "prepTimeMin": 15.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645646_step3",
+      "name": "assembled gyros with warmed pita and all toppings",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 40
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 37.647679999999994,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.0528,
+        "costPerG": 0.027964538585113347,
+        "nutrition": {
+          "calories": 7.2,
+          "protein": 0.35200000000000004,
+          "fat": 0.08000000000000002,
+          "carbs": 1.556,
+          "fiber": 0.48,
+          "sugar": 1.052,
+          "sodium": 2,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645646_step4",
+      "name": "cucumber shredded and excess moisture removed",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumber",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 116.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.25,
+        "costPerG": 0.019329896907216496,
+        "nutrition": {
+          "calories": 36,
+          "protein": 1.77,
+          "fat": 0.48,
+          "carbs": 6.48,
+          "fiber": 2.0999999999999996,
+          "sugar": 4.14,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645646_step5",
+      "name": "completed tzatziki sauce, chilled and ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "greek yogurt",
+          "quantityG": 453.592
+        },
+        {
+          "ingredientId": "white_wine_vinegar",
+          "name": "white wine vinegar",
+          "quantityG": 2.5
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 15.25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 471.15346320000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 11.884052,
+        "costPerG": 0.025223314542326385,
+        "nutrition": {
+          "calories": 280.52112000000005,
+          "protein": 46.774351,
+          "fat": 1.7148904,
+          "carbs": 17.569748800000003,
+          "fiber": 0.04575,
+          "sugar": 15.2167584,
+          "sodium": 163.64561999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 34.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645646_step6",
+      "name": "finished gyros with olive oil garnish",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 27.54,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.288,
+        "costPerG": 0.01045751633986928,
+        "nutrition": {
+          "calories": 238.68,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 73.426387,
+    "costPerServing": 36.7131935,
+    "totalPrepTime": 128,
+    "nutritionPerServing": {
+      "calories": 625.6555,
+      "protein": 75.32436630000001,
+      "fat": 20.9357816,
+      "carbs": 31.5751544,
+      "fiber": 2.6676249999999992,
+      "sugar": 12.2039642,
+      "sodium": 847.03367
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_645646_step1",
+        "name": "chicken marinated in yogurt-herb mixture for at least 1 hour",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_645646_step2",
+        "name": "grilled chicken sliced into strips, ready for assembly",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645646_step3",
+        "name": "assembled gyros with warmed pita and all toppings",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645646_step4",
+        "name": "cucumber shredded and excess moisture removed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645646_step5",
+        "name": "completed tzatziki sauce, chilled and ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_645646_step1",
+      "name": "chicken marinated in yogurt-herb mixture for at least 1 hour",
+      "shelfLifeHours": 12,
+      "processes": [
+        "mince",
+        "whisk",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_645646_step2",
+      "name": "grilled chicken sliced into strips, ready for assembly",
+      "shelfLifeHours": 24,
+      "processes": [
+        "season",
+        "grill",
+        "rest_meat",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_645646_step3",
+      "name": "assembled gyros with warmed pita and all toppings",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "slice",
+        "heat",
+        "plate"
+      ]
+    },
+    {
+      "componentId": "comp_645646_step4",
+      "name": "cucumber shredded and excess moisture removed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "shred",
+        "squeeze"
+      ]
+    },
+    {
+      "componentId": "comp_645646_step5",
+      "name": "completed tzatziki sauce, chilled and ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "mix",
+        "season",
+        "cool"
+      ]
+    }
+  ]
+}

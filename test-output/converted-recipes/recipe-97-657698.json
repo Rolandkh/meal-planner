@@ -1,0 +1,860 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_df3d4870-8937-4197-8316-3e29a392521e",
+  "name": "Quinoa, Tomato, Green Onion Side Salad",
+  "source": "spoonacular",
+  "spoonacularId": 657698,
+  "image": "/images/recipes/657698.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "green onions",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 127.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 2,
+      "unit": "medium size",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 354.882,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Put your quinoa and your water in a pan. Heat over medium heat until bubbling, then cover and reduce heat to low. Cook for about 15 minutes or until all the water is absorbed.</li><li>While your quinoa is cooking, get out and wash your green onions and tomatoes. Chop them roughly.</li><li>Chop a lemon in half and squeeze one half's juice into a bowl, picking out the seeds.</li><li>Let your quinoa cool. A little warm is fine.</li><li>Add olive oil, lemon juice, and tomatoes and green onions to the pan. Stir.</li><li>Add salt and pepper to your liking.</li><li>Serve chilled</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 396.33,
+    "protein": 10.84,
+    "fat": 18.24,
+    "carbs": 50.04,
+    "fiber": 7.34,
+    "sugar": 4.49,
+    "saturatedFat": 2.43,
+    "sodium": 216.82
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 50,
+        "originalUnit": "g",
+        "normalizedQuantityG": 50,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "50 g green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 127.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 127.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "127.5 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 medium size tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 354.882,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 350,
+        "normalizedQuantityMl": 354.882
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "354.882 ml water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 7,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:44:19.979Z",
+  "processGraph": {
+    "recipeName": "Quinoa, Tomato, Green Onion Side Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Put your quinoa and your water in a pan. Heat over medium heat until bubbling, then cover and reduce heat to low. Cook for about 15 minutes or until all the water is absorbed.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "quinoa",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "heat over medium heat until bubbling"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "until bubbling"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa",
+              "water"
+            ],
+            "durationMinutes": 15,
+            "notes": "covered, low heat until water absorbed"
+          }
+        ],
+        "outputDescription": "cooked quinoa with water absorbed"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "While your quinoa is cooking, get out and wash your green onions and tomatoes. Chop them roughly.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "green onions",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "wash vegetables"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "green onions",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "roughly chopped"
+          }
+        ],
+        "outputDescription": "roughly chopped green onions and tomatoes"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Chop a lemon in half and squeeze one half's juice into a bowl, picking out the seeds.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "cut lemon in half"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from half lemon"
+          },
+          {
+            "processId": "deseed",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "remove seeds from juice"
+          }
+        ],
+        "outputDescription": "fresh lemon juice without seeds in bowl"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Let your quinoa cool. A little warm is fine.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "cool to slightly warm temperature"
+          }
+        ],
+        "outputDescription": "cooled quinoa, slightly warm"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add olive oil, lemon juice, and tomatoes and green onions to the pan. Stir.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "olive oil",
+              "lemon juice",
+              "tomatoes",
+              "green onions"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all ingredients together"
+          }
+        ],
+        "outputDescription": "quinoa salad mixed with oil, lemon juice, and vegetables"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add salt and pepper to your liking.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season to taste"
+          }
+        ],
+        "outputDescription": "seasoned quinoa salad"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Serve chilled",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "quinoa salad"
+            ],
+            "durationMinutes": null,
+            "notes": "chill before serving"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa salad"
+            ],
+            "durationMinutes": null,
+            "notes": "serve the finished salad"
+          }
+        ],
+        "outputDescription": "chilled quinoa salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "heat",
+        "boil",
+        "simmer",
+        "rinse",
+        "chop",
+        "slice",
+        "squeeze",
+        "deseed",
+        "cool",
+        "mix",
+        "season",
+        "plate"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_657698_step1",
+      "name": "cooked quinoa with water absorbed",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 127.5
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 354.882
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 404.18787779999997,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.02456294,
+        "costPerG": 0.009957158937832946,
+        "nutrition": {
+          "calories": 469.2,
+          "protein": 18.002999999999997,
+          "fat": 7.73925,
+          "carbs": 81.80399999999999,
+          "fiber": 8.924999999999999,
+          "sugar": 0,
+          "sodium": 24.1191,
+          "method": "raw"
+        },
+        "prepTimeMin": 28
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657698_step2",
+      "name": "roughly chopped green onions and tomatoes",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 50
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 240
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 289.884,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.5668,
+        "costPerG": 0.04335113355687102,
+        "nutrition": {
+          "calories": 59.199999999999996,
+          "protein": 3.027,
+          "fat": 0.575,
+          "carbs": 13.006,
+          "fiber": 4.18,
+          "sugar": 7.476999999999999,
+          "sodium": 20,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657698_step3",
+      "name": "fresh lemon juice without seeds in bowl",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon",
+          "name": "lemon",
+          "quantityG": 40
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "deseed",
+          "processName": "Deseed",
+          "yieldFactor": 0.88,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 12.073599999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.18,
+        "costPerG": 0.014908560826928175,
+        "nutrition": {
+          "calories": 11.600000000000001,
+          "protein": 0.44000000000000006,
+          "fat": 0.12,
+          "carbs": 3.728,
+          "fiber": 1.1199999999999999,
+          "sugar": 1,
+          "sodium": 0.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657698_step4",
+      "name": "cooled quinoa, slightly warm",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657698_step5",
+      "name": "quinoa salad mixed with oil, lemon juice, and vegetables",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 27,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.288,
+        "costPerG": 0.010666666666666666,
+        "nutrition": {
+          "calories": 238.68,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657698_step6",
+      "name": "seasoned quinoa salad",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.04,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.1,
+        "costPerG": 0.049019607843137254,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 775.16,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_657698_step7",
+      "name": "chilled quinoa salad ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 32
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 17.15936294,
+    "costPerServing": 8.57968147,
+    "totalPrepTime": 100.5,
+    "nutritionPerServing": {
+      "calories": 389.34000000000003,
+      "protein": 10.735,
+      "fat": 17.717125,
+      "carbs": 49.26899999999999,
+      "fiber": 7.112499999999999,
+      "sugar": 4.2385,
+      "sodium": 410.30955
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_657698_step1",
+        "name": "cooked quinoa with water absorbed",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_657698_step2",
+        "name": "roughly chopped green onions and tomatoes",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_657698_step3",
+        "name": "fresh lemon juice without seeds in bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657698_step4",
+        "name": "cooled quinoa, slightly warm",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_657698_step5",
+        "name": "quinoa salad mixed with oil, lemon juice, and vegetables",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657698_step7",
+        "name": "chilled quinoa salad ready to serve",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_657698_step1",
+      "name": "cooked quinoa with water absorbed",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_657698_step2",
+      "name": "roughly chopped green onions and tomatoes",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_657698_step3",
+      "name": "fresh lemon juice without seeds in bowl",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "squeeze",
+        "deseed"
+      ]
+    },
+    {
+      "componentId": "comp_657698_step7",
+      "name": "chilled quinoa salad ready to serve",
+      "shelfLifeHours": 96,
+      "processes": [
+        "cool",
+        "plate"
+      ]
+    }
+  ]
+}

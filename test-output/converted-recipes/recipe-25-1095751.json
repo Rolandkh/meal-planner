@@ -1,0 +1,975 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_7f295f40-2c79-423b-b4f0-ce19f0f69c4d",
+  "name": "Fresh Tomato Risotto with Grilled Green Vegetables",
+  "source": "spoonacular",
+  "spoonacularId": 1095751,
+  "image": "/images/recipes/1095751.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "onion",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "wine",
+      "quantity": 60,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable stock",
+      "quantity": 940,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "risotto rice",
+      "quantity": 200,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 6,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "broccoli",
+      "quantity": 176,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "peas",
+      "quantity": 145,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Heat the vegetable stock in a saucepan and keep just below a simmer. Blend 4 of the tomatoes in a blender until purified, then add to the vegetable stock.</li><li>Heat a large, deep skillet with 1 tbsp olive oil on a medium heat and add the onion and saute for 2-3 minutes until translucent. Add the garlic and saute for a further 1 minute.</li><li>Add the rice to the pan and stir with the onion and garlic, cook for 1 minute so the rice is coated. Then add the wine and stir cooking until the wine is completely absorbed.</li><li>Begin to add the stock and tomato mixture into the rice dish, stirring each time and making sure each ladle is absorbed before adding the next. Keep going until all the stock is used up, this should take between 35-45 minutes.</li><li>Dice the other two tomatoes and add in at the end to warm through.</li><li>Grill your green vegetables (wrapped in foil if you are using small veggies) until they are cooked but still have some bite. </li><li>Serve immediately with risotto.</li></ol>",
+  "prepTime": 18,
+  "cookTime": 42,
+  "servings": 4,
+  "nutrition": {
+    "calories": 295.53,
+    "protein": 8.88,
+    "fat": 1.11,
+    "carbs": 61.35,
+    "fiber": 7.56,
+    "sugar": 11.61,
+    "saturatedFat": 0.25,
+    "sodium": 971.41
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "wine",
+      "displayName": "wine",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 60
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 ml wine",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 940,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 940,
+        "normalizedQuantityMl": 940
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "940 ml vegetable stock",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6  tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "broccoli",
+      "displayName": "broccoli",
+      "quantity": {
+        "originalQuantity": 176,
+        "originalUnit": "g",
+        "normalizedQuantityG": 176,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "176 g broccoli",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  zucchini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "peas",
+      "displayName": "peas",
+      "quantity": {
+        "originalQuantity": 145,
+        "originalUnit": "g",
+        "normalizedQuantityG": 145,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "145 g peas",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 8,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "200 g risotto rice",
+        "identityText": "risotto rice",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:28:21.345Z",
+  "processGraph": {
+    "recipeName": "Fresh Tomato Risotto with Grilled Green Vegetables",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat the vegetable stock in a saucepan and keep just below a simmer. Blend 4 of the tomatoes in a blender until purified, then add to the vegetable stock.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "heat and keep just below simmer"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "keep just below simmer"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "blend 4 tomatoes until purified"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tomatoes",
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "add blended tomatoes to stock"
+          }
+        ],
+        "outputDescription": "Hot vegetable stock with pureed tomatoes, kept at gentle simmer"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Heat a large, deep skillet with 1 tbsp olive oil on a medium heat and add the onion and saute for 2-3 minutes until translucent. Add the garlic and saute for a further 1 minute.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in skillet on medium heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": 2.5,
+            "notes": "saute until translucent"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": 1,
+            "notes": "saute garlic"
+          }
+        ],
+        "outputDescription": "Translucent onions and fragrant garlic sautéed in oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the rice to the pan and stir with the onion and garlic, cook for 1 minute so the rice is coated. Then add the wine and stir cooking until the wine is completely absorbed.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "risotto rice",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "add rice and stir with aromatics"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "risotto rice"
+            ],
+            "durationMinutes": 1,
+            "notes": "cook rice until coated"
+          },
+          {
+            "processId": "deglaze",
+            "ingredients": [
+              "wine"
+            ],
+            "durationMinutes": null,
+            "notes": "add wine and stir"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "wine",
+              "risotto rice"
+            ],
+            "durationMinutes": null,
+            "notes": "cook until wine is completely absorbed"
+          }
+        ],
+        "outputDescription": "Rice coated with oil and aromatics, wine fully absorbed"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Begin to add the stock and tomato mixture into the rice dish, stirring each time and making sure each ladle is absorbed before adding the next. Keep going until all the stock is used up, this should take between 35-45 minutes.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "risotto rice",
+              "vegetable stock",
+              "tomatoes"
+            ],
+            "durationMinutes": 40,
+            "notes": "gradually add stock, stirring and absorbing each ladle"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "risotto rice",
+              "vegetable stock",
+              "tomatoes"
+            ],
+            "durationMinutes": 40,
+            "notes": "continuous stirring throughout cooking process"
+          }
+        ],
+        "outputDescription": "Creamy risotto with all stock absorbed, rice tender and creamy"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Dice the other two tomatoes and add in at the end to warm through.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "dice remaining 2 tomatoes"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "add to risotto to warm through"
+          }
+        ],
+        "outputDescription": "Fresh diced tomatoes warmed through in the finished risotto"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Grill your green vegetables (wrapped in foil if you are using small veggies) until they are cooked but still have some bite.",
+        "processes": [
+          {
+            "processId": "grill",
+            "ingredients": [
+              "broccoli",
+              "zucchini",
+              "peas"
+            ],
+            "durationMinutes": null,
+            "notes": "grill until cooked but still have bite, wrap small veggies in foil"
+          }
+        ],
+        "outputDescription": "Grilled green vegetables that are cooked but retain some firmness"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Serve immediately with risotto.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "risotto rice",
+              "broccoli",
+              "zucchini",
+              "peas"
+            ],
+            "durationMinutes": null,
+            "notes": "serve risotto with grilled vegetables"
+          }
+        ],
+        "outputDescription": "Plated dish ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "heat",
+        "simmer",
+        "blend",
+        "mix",
+        "saute",
+        "deglaze",
+        "dice",
+        "grill",
+        "plate"
+      ],
+      "estimatedTotalTime": 50
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1095751_step1",
+      "name": "Hot vegetable stock with pureed tomatoes, kept at gentle simmer",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "vegetable stock",
+          "quantityG": 940
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 812.4984000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.29,
+        "costPerG": 0.0040492387431162935,
+        "nutrition": {
+          "calories": 56.400000000000006,
+          "protein": 6.016,
+          "fat": 1.974,
+          "carbs": 4.136,
+          "fiber": 0,
+          "sugar": 4.042,
+          "sodium": 3487.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 27
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095751_step2",
+      "name": "Translucent onions and fragrant garlic sautéed in oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 75
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2.5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 53.10375,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.25025,
+        "costPerG": 0.02354353506108326,
+        "nutrition": {
+          "calories": 30,
+          "protein": 0.8250000000000001,
+          "fat": 0.07500000000000001,
+          "carbs": 7.005,
+          "fiber": 1.275,
+          "sugar": 3.18,
+          "sodium": 3,
+          "method": "raw"
+        },
+        "prepTimeMin": 6.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095751_step3",
+      "name": "Rice coated with oil and aromatics, wine fully absorbed",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "rice_arborio",
+          "name": "risotto rice",
+          "quantityG": 200
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "deglaze",
+          "processName": "Deglaze",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 133.30125,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.025,
+        "costPerG": 0.015191155371761328,
+        "nutrition": {
+          "calories": 723.45,
+          "protein": 13.318,
+          "fat": 1.065,
+          "carbs": 159.955,
+          "fiber": 5.705,
+          "sugar": 0.05,
+          "sodium": 2.85,
+          "method": "raw"
+        },
+        "prepTimeMin": 25
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095751_step4",
+      "name": "Creamy risotto with all stock absorbed, rice tender and creamy",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 720
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 40,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 40,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 648,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 18.9504,
+        "costPerG": 0.02924444444444444,
+        "nutrition": {
+          "calories": 129.6,
+          "protein": 6.336,
+          "fat": 1.4400000000000002,
+          "carbs": 28.008000000000003,
+          "fiber": 8.64,
+          "sugar": 18.936,
+          "sodium": 36,
+          "method": "raw"
+        },
+        "prepTimeMin": 80
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095751_step5",
+      "name": "Fresh diced tomatoes warmed through in the finished risotto",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095751_step6",
+      "name": "Grilled green vegetables that are cooked but retain some firmness",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "broccoli",
+          "name": "broccoli",
+          "quantityG": 176
+        },
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 200
+        },
+        {
+          "ingredientId": "peas",
+          "name": "peas",
+          "quantityG": 145
+        }
+      ],
+      "processes": [
+        {
+          "processId": "grill",
+          "processName": "Grill",
+          "yieldFactor": 0.78,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 406.38,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.40325,
+        "costPerG": 0.005913799891726955,
+        "nutrition": {
+          "calories": 211.29000000000002,
+          "protein": 15.2422,
+          "fat": 1.8712,
+          "carbs": 38.7864,
+          "fiber": 14.841000000000001,
+          "sugar": 16.2135,
+          "sodium": 81.33,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095751_step7",
+      "name": "Plated dish ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 28.6389,
+    "costPerServing": 7.159725,
+    "totalPrepTime": 156.5,
+    "nutritionPerServing": {
+      "calories": 300.135,
+      "protein": 10.4448,
+      "fat": 1.6063,
+      "carbs": 59.8806,
+      "fiber": 7.6152500000000005,
+      "sugar": 10.723875,
+      "sodium": 903.395
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1095751_step1",
+        "name": "Hot vegetable stock with pureed tomatoes, kept at gentle simmer",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095751_step2",
+        "name": "Translucent onions and fragrant garlic sautéed in oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_1095751_step3",
+        "name": "Rice coated with oil and aromatics, wine fully absorbed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095751_step4",
+        "name": "Creamy risotto with all stock absorbed, rice tender and creamy",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095751_step5",
+        "name": "Fresh diced tomatoes warmed through in the finished risotto",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1095751_step6",
+        "name": "Grilled green vegetables that are cooked but retain some firmness",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1095751_step1",
+      "name": "Hot vegetable stock with pureed tomatoes, kept at gentle simmer",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "simmer",
+        "blend",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_1095751_step2",
+      "name": "Translucent onions and fragrant garlic sautéed in oil",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_1095751_step3",
+      "name": "Rice coated with oil and aromatics, wine fully absorbed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "saute",
+        "deglaze",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_1095751_step4",
+      "name": "Creamy risotto with all stock absorbed, rice tender and creamy",
+      "shelfLifeHours": 24,
+      "processes": [
+        "simmer",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_1095751_step5",
+      "name": "Fresh diced tomatoes warmed through in the finished risotto",
+      "shelfLifeHours": 48,
+      "processes": [
+        "dice",
+        "heat"
+      ]
+    }
+  ]
+}

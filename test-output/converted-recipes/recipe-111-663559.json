@@ -1,0 +1,779 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_c2a45f07-9546-49ba-bb69-da5a6ad47d11",
+  "name": "Tomato and lentil soup",
+  "source": "spoonacular",
+  "spoonacularId": 663559,
+  "image": "/images/recipes/663559.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 480,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bay leaf",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 1.3,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 250,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Saut onion and garlic in olive oil for 5 minutes.\nAdd the carrot, saut for another 2 minutes.\nAdd tomatoes, bay leaf and water, stir and bring to the boil.\nStir in lentils, season with salt and cook for 5 minutes.\nBefore serving sprinkle with chopped parsley.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 340.11,
+    "protein": 18.31,
+    "fat": 8.08,
+    "carbs": 50.72,
+    "fiber": 22.52,
+    "sugar": 7.6,
+    "saturatedFat": 1.13,
+    "sodium": 377.99
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 480,
+        "originalUnit": "g",
+        "normalizedQuantityG": 480,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "480 g tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bay_leaf",
+      "displayName": "bay leaf",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  bay leaf",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 1.3,
+        "originalUnit": "l",
+        "normalizedQuantityG": 1284,
+        "normalizedQuantityMl": 1300
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.3 l water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 250,
+        "originalUnit": "g",
+        "normalizedQuantityG": 250,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "250 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch parsley",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 10,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:48:32.946Z",
+  "processGraph": {
+    "recipeName": "Tomato and lentil soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Saut onion and garlic in olive oil for 5 minutes.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "garlic",
+              "olive oil"
+            ],
+            "durationMinutes": 5,
+            "notes": "cooking onion and garlic until softened"
+          }
+        ],
+        "outputDescription": "onion and garlic are softened and aromatic in heated olive oil"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add the carrot, saut for another 2 minutes.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "carrots"
+            ],
+            "durationMinutes": 2,
+            "notes": "continuing to sauté with addition of carrots"
+          }
+        ],
+        "outputDescription": "carrots are slightly softened and combined with the sautéed onion and garlic"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add tomatoes, bay leaf and water, stir and bring to the boil.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tomatoes",
+              "bay leaf",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring to combine all ingredients"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "tomatoes",
+              "bay leaf",
+              "water",
+              "onion",
+              "garlic",
+              "carrots"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing the mixture to a rolling boil"
+          }
+        ],
+        "outputDescription": "all ingredients are combined and the mixture is at a rolling boil"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Stir in lentils, season with salt and cook for 5 minutes.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lentils"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring lentils into the boiling mixture"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "adding salt for seasoning"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "lentils",
+              "salt",
+              "tomatoes",
+              "bay leaf",
+              "water",
+              "onion",
+              "garlic",
+              "carrots"
+            ],
+            "durationMinutes": 5,
+            "notes": "cooking the soup after boiling point reached"
+          }
+        ],
+        "outputDescription": "lentils are partially cooked and soup is seasoned and simmering"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Before serving sprinkle with chopped parsley.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "chopping parsley for garnish"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "adding chopped parsley as garnish"
+          }
+        ],
+        "outputDescription": "finished soup garnished with fresh chopped parsley, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "saute",
+        "mix",
+        "boil",
+        "season",
+        "simmer",
+        "chop",
+        "sprinkle"
+      ],
+      "estimatedTotalTime": 12
+    }
+  },
+  "components": [
+    {
+      "id": "comp_663559_step1",
+      "name": "onion and garlic are softened and aromatic in heated olive oil",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 158.95,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.2384999999999997,
+        "costPerG": 0.02037433155080214,
+        "nutrition": {
+          "calories": 313.58000000000004,
+          "protein": 2.2860000000000005,
+          "fat": 27.2,
+          "carbs": 17.32,
+          "fiber": 2.76,
+          "sugar": 6.46,
+          "sodium": 8.24,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_663559_step2",
+      "name": "carrots are slightly softened and combined with the sautéed onion and garlic",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 180
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 153,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6749999999999999,
+        "costPerG": 0.004411764705882353,
+        "nutrition": {
+          "calories": 73.8,
+          "protein": 1.6740000000000002,
+          "fat": 0.432,
+          "carbs": 17.244,
+          "fiber": 5.04,
+          "sugar": 8.532,
+          "sodium": 124.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_663559_step3",
+      "name": "all ingredients are combined and the mixture is at a rolling boil",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 480
+        },
+        {
+          "ingredientId": "bay_leaf",
+          "name": "bay leaf",
+          "quantityG": 0.5
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 1300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 1691.475,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 21.5296,
+        "costPerG": 0.012728299265434015,
+        "nutrition": {
+          "calories": 87.96499999999999,
+          "protein": 4.26205,
+          "fat": 1.0018,
+          "carbs": 19.04685,
+          "fiber": 5.8915,
+          "sugar": 12.623999999999999,
+          "sodium": 89.115,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_663559_step4",
+      "name": "lentils are partially cooked and soup is seasoned and simmering",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "lentils",
+          "quantityG": 250
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 229.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.25,
+        "costPerG": 0.0054466230936819175,
+        "nutrition": {
+          "calories": 882.5,
+          "protein": 64.5,
+          "fat": 2.6500000000000004,
+          "carbs": 150.2,
+          "fiber": 76.25,
+          "sugar": 5.074999999999999,
+          "sodium": 15,
+          "method": "raw"
+        },
+        "prepTimeMin": 7.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_663559_step5",
+      "name": "finished soup garnished with fresh chopped parsley, ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 14.994,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.49995,
+        "costPerG": 0.2334233693477391,
+        "nutrition": {
+          "calories": 5.3999999999999995,
+          "protein": 0.4455,
+          "fat": 0.1185,
+          "carbs": 0.9495,
+          "fiber": 0.49499999999999994,
+          "sugar": 0.1275,
+          "sodium": 8.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 30.268050000000002,
+    "costPerServing": 7.567012500000001,
+    "totalPrepTime": 29,
+    "nutritionPerServing": {
+      "calories": 340.81125000000003,
+      "protein": 18.291887499999998,
+      "fat": 7.850575,
+      "carbs": 51.1900875,
+      "fiber": 22.609125000000002,
+      "sugar": 8.204625,
+      "sodium": 206.58124999999998
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_663559_step1",
+        "name": "onion and garlic are softened and aromatic in heated olive oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_663559_step2",
+        "name": "carrots are slightly softened and combined with the sautéed onion and garlic",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_663559_step3",
+        "name": "all ingredients are combined and the mixture is at a rolling boil",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_663559_step4",
+        "name": "lentils are partially cooked and soup is seasoned and simmering",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_663559_step5",
+        "name": "finished soup garnished with fresh chopped parsley, ready to serve",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_663559_step3",
+      "name": "all ingredients are combined and the mixture is at a rolling boil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_663559_step4",
+      "name": "lentils are partially cooked and soup is seasoned and simmering",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "season",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_663559_step5",
+      "name": "finished soup garnished with fresh chopped parsley, ready to serve",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "sprinkle"
+      ]
+    }
+  ]
+}

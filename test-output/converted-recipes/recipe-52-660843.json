@@ -1,0 +1,815 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_1efadcc9-fa37-411b-b053-bda90e4ff37c",
+  "name": "Spanakopita (Greek Spinach Pie)",
+  "source": "spoonacular",
+  "spoonacularId": 660843,
+  "image": "/images/recipes/660843.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "eggs",
+      "quantity": 3,
+      "unit": "extra large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 680.389,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flour",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dill",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 4,
+      "unit": "box",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 120,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 2,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "phyllo dough",
+      "quantity": 1,
+      "unit": "box",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable oil",
+      "quantity": 109,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Heat vegetable oil in a large saucepan over medium heat. Slowly cook and stir onions until softened. Mix in spinach, dill and flour. Cook approximately 10 minutes, or until most of the moisture has been absorbed. Remove from heat. Mix in feta cheese, eggs, salt and pepper.</li><li>Lay 1 sheet of phyllo dough in prepared baking pan, and brush lightly with olive oil. Lay another sheet of phyllo dough on top, brush with olive oil, and repeat process with 10 more sheets of phyllo. The sheets will overlap the pan.</li><li>Spread spinach and cheese mixture into pan and fold overhanging dough over filling. Brush with oil, then layer remaining sheets of phyllo dough, brushing each with oil. Tuck overhanging dough into pan to seal filling.</li><li>Bake in preheated oven for 30 to 40 minutes, until golden brown. Cut into squares and serve while hot.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 8,
+  "nutrition": {
+    "calories": 632.92,
+    "protein": 24.51,
+    "fat": 40.97,
+    "carbs": 44.15,
+    "fiber": 5.88,
+    "sugar": 2.7,
+    "saturatedFat": 15.18,
+    "sodium": 1573.61
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 extra large eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 680.389,
+        "originalUnit": "g",
+        "normalizedQuantityG": 680.389,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "680.389 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "flour",
+      "displayName": "flour",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps flour",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "dill",
+      "displayName": "dill",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 13,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps dill",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 108,
+        "normalizedQuantityMl": 120
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "120 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 large onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "8 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_oil",
+      "displayName": "vegetable oil",
+      "quantity": {
+        "originalQuantity": 109,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 98,
+        "normalizedQuantityMl": 109
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "109 ml vegetable oil",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 8,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 box spinach",
+        "identityText": "box spinach",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 box phyllo dough",
+        "identityText": "box phyllo dough",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:30:00.707Z",
+  "processGraph": {
+    "recipeName": "Spanakopita (Greek Spinach Pie)",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat vegetable oil in a large saucepan over medium heat. Slowly cook and stir onions until softened. Mix in spinach, dill and flour. Cook approximately 10 minutes, or until most of the moisture has been absorbed. Remove from heat. Mix in feta cheese, eggs, salt and pepper.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "vegetable oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in saucepan over medium heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "slowly cook and stir until softened"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "spinach",
+              "dill",
+              "flour"
+            ],
+            "durationMinutes": null,
+            "notes": "mixing into the sautéed onions"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "spinach",
+              "dill",
+              "flour",
+              "onions"
+            ],
+            "durationMinutes": 10,
+            "notes": "cooking until moisture is absorbed"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "feta cheese",
+              "eggs"
+            ],
+            "durationMinutes": null,
+            "notes": "mixing into the cooked mixture after removing from heat"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "seasoning the mixture"
+          }
+        ],
+        "outputDescription": "Cooked spinach and onion mixture seasoned and combined with cheese and eggs"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Lay 1 sheet of phyllo dough in prepared baking pan, and brush lightly with olive oil. Lay another sheet of phyllo dough on top, brush with olive oil, and repeat process with 10 more sheets of phyllo. The sheets will overlap the pan.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "phyllo dough"
+            ],
+            "durationMinutes": null,
+            "notes": "laying sheets in baking pan"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "phyllo dough",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "brushing each sheet with olive oil, repeating for 12 total sheets"
+          }
+        ],
+        "outputDescription": "12 layers of phyllo dough in baking pan, each brushed with olive oil, overlapping the pan edges"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Spread spinach and cheese mixture into pan and fold overhanging dough over filling. Brush with oil, then layer remaining sheets of phyllo dough, brushing each with oil. Tuck overhanging dough into pan to seal filling.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "spinach",
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "spreading the filling mixture over the phyllo base"
+          },
+          {
+            "processId": "fold",
+            "ingredients": [
+              "phyllo dough"
+            ],
+            "durationMinutes": null,
+            "notes": "folding overhanging dough over the filling"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "phyllo dough",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "brushing with oil and layering remaining phyllo sheets"
+          },
+          {
+            "processId": "fold",
+            "ingredients": [
+              "phyllo dough"
+            ],
+            "durationMinutes": null,
+            "notes": "tucking overhanging dough to seal filling"
+          }
+        ],
+        "outputDescription": "Assembled spanakopita with filling enclosed between phyllo layers, sealed and ready for baking"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Bake in preheated oven for 30 to 40 minutes, until golden brown. Cut into squares and serve while hot.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "phyllo dough",
+              "spinach",
+              "feta cheese",
+              "eggs",
+              "onions"
+            ],
+            "durationMinutes": 35,
+            "notes": "baking in preheated oven until golden brown"
+          },
+          {
+            "processId": "slice_to_serve",
+            "ingredients": [
+              "phyllo dough",
+              "spinach",
+              "feta cheese",
+              "eggs",
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting into squares for serving"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "phyllo dough",
+              "spinach",
+              "feta cheese",
+              "eggs",
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "serving while hot"
+          }
+        ],
+        "outputDescription": "Golden brown baked spanakopita cut into squares and ready to serve hot"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "heat",
+        "saute",
+        "mix",
+        "season",
+        "spread",
+        "coat",
+        "fold",
+        "bake",
+        "slice_to_serve",
+        "plate"
+      ],
+      "estimatedTotalTime": 60
+    }
+  },
+  "components": [
+    {
+      "id": "comp_660843_step1",
+      "name": "Cooked spinach and onion mixture seasoned and combined with cheese and eggs",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "vegetable_oil",
+          "name": "vegetable oil",
+          "quantityG": 109
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 78.72099899999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.9809999999999999,
+        "costPerG": 0.012461732097683363,
+        "nutrition": {
+          "calories": 963.5600000000001,
+          "protein": 0,
+          "fat": 109.00000000000001,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 22.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660843_step2",
+      "name": "12 layers of phyllo dough in baking pan, each brushed with olive oil, overlapping the pan edges",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 151.79999999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.28,
+        "costPerG": 0.008432147562582346,
+        "nutrition": {
+          "calories": 1060.8,
+          "protein": 0,
+          "fat": 120,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 2.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660843_step3",
+      "name": "Assembled spanakopita with filling enclosed between phyllo layers, sealed and ready for baking",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "spinach_bunch",
+          "name": "spinach",
+          "quantityG": 1200
+        },
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 680.389
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "fold",
+          "processName": "Fold",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "fold",
+          "processName": "Fold",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2378.692085,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 43.5088625,
+        "costPerG": 0.018291086422814577,
+        "nutrition": {
+          "calories": 2079.03085,
+          "protein": 130.935238,
+          "fat": 150.963635,
+          "carbs": 69.9590932,
+          "fiber": 26.400000000000002,
+          "sugar": 5.04,
+          "sodium": 8704.4346,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660843_step4",
+      "name": "Golden brown baked spanakopita cut into squares and ready to serve hot",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggs",
+          "name": "eggs",
+          "quantityG": 225
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onions",
+          "quantityG": 390
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 35,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "slice_to_serve",
+          "processName": "Slice to Serve",
+          "yieldFactor": 0.99,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 517.5225,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.00205,
+        "costPerG": 0.015462226280016811,
+        "nutrition": {
+          "calories": 477.75,
+          "protein": 32.64,
+          "fat": 21.7875,
+          "carbs": 38.046,
+          "fiber": 6.63,
+          "sugar": 17.3685,
+          "sodium": 335.1,
+          "method": "raw"
+        },
+        "prepTimeMin": 39
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 54.5719085,
+    "costPerServing": 6.8214885625,
+    "totalPrepTime": 71.5,
+    "nutritionPerServing": {
+      "calories": 579.5321062500001,
+      "protein": 20.645782249999996,
+      "fat": 50.238946874999996,
+      "carbs": 14.94197915,
+      "fiber": 4.182525,
+      "sugar": 2.806125,
+      "sodium": 1517.950825
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_660843_step1",
+        "name": "Cooked spinach and onion mixture seasoned and combined with cheese and eggs",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660843_step2",
+        "name": "12 layers of phyllo dough in baking pan, each brushed with olive oil, overlapping the pan edges",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_660843_step3",
+        "name": "Assembled spanakopita with filling enclosed between phyllo layers, sealed and ready for baking",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_660843_step4",
+        "name": "Golden brown baked spanakopita cut into squares and ready to serve hot",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_660843_step1",
+      "name": "Cooked spinach and onion mixture seasoned and combined with cheese and eggs",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "saute",
+        "mix",
+        "saute",
+        "mix",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_660843_step2",
+      "name": "12 layers of phyllo dough in baking pan, each brushed with olive oil, overlapping the pan edges",
+      "shelfLifeHours": 2,
+      "processes": [
+        "spread",
+        "coat"
+      ]
+    },
+    {
+      "componentId": "comp_660843_step3",
+      "name": "Assembled spanakopita with filling enclosed between phyllo layers, sealed and ready for baking",
+      "shelfLifeHours": 2,
+      "processes": [
+        "spread",
+        "fold",
+        "coat",
+        "fold"
+      ]
+    },
+    {
+      "componentId": "comp_660843_step4",
+      "name": "Golden brown baked spanakopita cut into squares and ready to serve hot",
+      "shelfLifeHours": 72,
+      "processes": [
+        "bake",
+        "slice_to_serve",
+        "plate"
+      ]
+    }
+  ]
+}

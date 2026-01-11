@@ -1,0 +1,900 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_4a912b14-a1b7-48fb-87df-5ba0c110553c",
+  "name": "Corn Avocado Salsa",
+  "source": "spoonacular",
+  "spoonacularId": 640062,
+  "image": "/images/recipes/640062.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "avocado",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "balsamic vinegar",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "corn",
+      "quantity": 123.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 0.5,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>",
+  "prepTime": 8,
+  "cookTime": 18,
+  "servings": 2,
+  "nutrition": {
+    "calories": 237.36,
+    "protein": 4.62,
+    "fat": 15.58,
+    "carbs": 26.27,
+    "fiber": 9.23,
+    "sugar": 2.32,
+    "saturatedFat": 2.25,
+    "sodium": 13.83
+  },
+  "tags": {
+    "cuisines": [
+      "Mexican"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "condiment",
+      "starter",
+      "snack",
+      "appetizer",
+      "dip",
+      "antipasto",
+      "hor d'oeuvre",
+      "spread"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "avocado",
+      "displayName": "avocado",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  avocado",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "balsamic_vinegar",
+      "displayName": "balsamic vinegar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp balsamic vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "corn",
+      "displayName": "corn",
+      "quantity": {
+        "originalQuantity": 123.75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 123.75,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "123.75 g corn",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5 medium bell pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 6,
+    "matched": 6,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:58:37.405Z",
+  "processGraph": {
+    "recipeName": "Corn Avocado Salsa",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven to 375 degrees.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 375°F"
+          }
+        ],
+        "outputDescription": "oven heated to 375°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Spread corn flat on a baking sheet.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "corn"
+            ],
+            "durationMinutes": null,
+            "notes": "arranging corn in single layer"
+          }
+        ],
+        "outputDescription": "corn spread evenly on baking sheet"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Spray lightly with olive oil spray.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "corn"
+            ],
+            "durationMinutes": null,
+            "notes": "light coating of olive oil spray"
+          }
+        ],
+        "outputDescription": "corn lightly coated with olive oil"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "corn"
+            ],
+            "durationMinutes": 9,
+            "notes": "roast until lightly browned, avoid burning"
+          }
+        ],
+        "outputDescription": "corn roasted and lightly browned"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Remove from heat and allow to cool.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "corn"
+            ],
+            "durationMinutes": null,
+            "notes": "cooling to room temperature"
+          }
+        ],
+        "outputDescription": "corn cooled to room temperature"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Finely chop red pepper and garlic and mix in a bowl.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "bell pepper",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "finely chopped"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "bell pepper",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "combining in bowl"
+          }
+        ],
+        "outputDescription": "finely chopped pepper and garlic mixed in bowl"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Peel and coarsely chop avocado and add to bowl.",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "removing skin"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "coarse chop"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "adding to bowl with other ingredients"
+          }
+        ],
+        "outputDescription": "peeled and coarsely chopped avocado added to bowl"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Add cooled corn.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "corn"
+            ],
+            "durationMinutes": null,
+            "notes": "adding roasted corn to mixture"
+          }
+        ],
+        "outputDescription": "all vegetables combined in bowl"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Mix in cumin and vinegar and blend well.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "cumin",
+              "balsamic vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "adding seasonings"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cumin",
+              "balsamic vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "blending all ingredients thoroughly"
+          }
+        ],
+        "outputDescription": "finished corn avocado salsa with all ingredients well combined"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "heat",
+        "spread",
+        "coat",
+        "roast",
+        "cool",
+        "mince",
+        "mix",
+        "peel",
+        "chop",
+        "season"
+      ],
+      "estimatedTotalTime": 20
+    }
+  },
+  "components": [
+    {
+      "id": "comp_640062_step1",
+      "name": "oven heated to 375°F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_640062_step2",
+      "name": "corn spread evenly on baking sheet",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "corn",
+          "name": "corn",
+          "quantityG": 123.75
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 136.125,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.383625,
+        "costPerG": 0.002818181818181818,
+        "nutrition": {
+          "calories": 118.80000000000001,
+          "protein": 4.219875,
+          "fat": 1.8562500000000002,
+          "carbs": 25.96275,
+          "fiber": 2.97,
+          "sugar": 5.618250000000001,
+          "sodium": 1.2375,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_640062_step3",
+      "name": "corn lightly coated with olive oil",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640062_step4",
+      "name": "corn roasted and lightly browned",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 9,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640062_step5",
+      "name": "corn cooled to room temperature",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640062_step6",
+      "name": "finely chopped pepper and garlic mixed in bowl",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 75
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 78.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8625,
+        "costPerG": 0.011001275510204082,
+        "nutrition": {
+          "calories": 26.95,
+          "protein": 1.0605,
+          "fat": 0.24999999999999997,
+          "carbs": 6.1775,
+          "fiber": 1.6800000000000002,
+          "sugar": 3.2,
+          "sodium": 3.85,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640062_step7",
+      "name": "peeled and coarsely chopped avocado added to bowl",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "avocado",
+          "name": "avocado",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.882,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0125,
+        "costPerG": 0.01417233560090703,
+        "nutrition": {
+          "calories": 1.6,
+          "protein": 0.02,
+          "fat": 0.147,
+          "carbs": 0.0853,
+          "fiber": 0.067,
+          "sugar": 0.006600000000000001,
+          "sodium": 0.07,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640062_step8",
+      "name": "all vegetables combined in bowl",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640062_step9",
+      "name": "finished corn avocado salsa with all ingredients well combined",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cumin",
+          "name": "cumin",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "balsamic_vinegar",
+          "name": "balsamic vinegar",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 7.242,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.21600000000000003,
+        "costPerG": 0.02982601491300746,
+        "nutrition": {
+          "calories": 12.275000000000002,
+          "protein": 0.39851000000000003,
+          "fat": 0.46767000000000003,
+          "carbs": 1.7805400000000002,
+          "fiber": 0.2205,
+          "sugar": 0.7947500000000001,
+          "sodium": 4.678,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 1.474625,
+    "costPerServing": 0.7373125,
+    "totalPrepTime": 59.5,
+    "nutritionPerServing": {
+      "calories": 79.8125,
+      "protein": 2.8494425000000003,
+      "fat": 1.3604600000000002,
+      "carbs": 17.003045,
+      "fiber": 2.46875,
+      "sugar": 4.809800000000001,
+      "sodium": 4.91775
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_640062_step3",
+        "name": "corn lightly coated with olive oil",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_640062_step4",
+        "name": "corn roasted and lightly browned",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_640062_step5",
+        "name": "corn cooled to room temperature",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_640062_step6",
+        "name": "finely chopped pepper and garlic mixed in bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640062_step7",
+        "name": "peeled and coarsely chopped avocado added to bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640062_step8",
+        "name": "all vegetables combined in bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640062_step9",
+        "name": "finished corn avocado salsa with all ingredients well combined",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_640062_step6",
+      "name": "finely chopped pepper and garlic mixed in bowl",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_640062_step7",
+      "name": "peeled and coarsely chopped avocado added to bowl",
+      "shelfLifeHours": 24,
+      "processes": [
+        "peel",
+        "chop",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_640062_step9",
+      "name": "finished corn avocado salsa with all ingredients well combined",
+      "shelfLifeHours": 24,
+      "processes": [
+        "season",
+        "mix"
+      ]
+    }
+  ]
+}

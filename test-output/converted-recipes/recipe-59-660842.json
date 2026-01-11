@@ -1,0 +1,1038 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_caba73c4-0870-4ab3-9eef-b80892673728",
+  "name": "Spanakopita Cups",
+  "source": "spoonacular",
+  "spoonacularId": 660842,
+  "image": "/images/recipes/660842.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "olive oil",
+      "quantity": 120,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "scallions",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 560,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dill",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggs",
+      "quantity": 3,
+      "unit": "extra large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 200,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "phyllo dough",
+      "quantity": 40,
+      "unit": "sheets",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "butter",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "breadcrumbs",
+      "quantity": 54,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Preheat your oven to 400 F.\nHeat oil in a pan on medium heat and add the scallions. Cook for about 5 minutes.\nSqueeze most of the water out of the spinach and mix with scallions, dill, eggs and feta cheese. Season the mixture with salt and pepper.\nKeep the phyllo dough sheets covered with a damp kitchen towel.\nUnfold 1 sheet of the phyllo dough. Brush the sheet with melted butter and sprinkle with breadcrumbs.\nRepeat the process by laying a second sheet of phyllo dough over the first sheet, brush it with melted butter and sprinkle with breadcrumbs until 4 sheets have been used.\nCut circles out of the dough that fit as a shell into mini muffin pans. Place the phyllo circles into the pan molds and fill with the spinach mixture.\nRepeat until all the spinach mixture is used.\nBake the spanakopita cups for 17 mins.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 36,
+  "nutrition": {
+    "calories": 167.28,
+    "protein": 3.71,
+    "fat": 11.23,
+    "carbs": 13.15,
+    "fiber": 0.94,
+    "sugar": 0.27,
+    "saturatedFat": 4.88,
+    "sodium": 211.44
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 108,
+        "normalizedQuantityMl": 120
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "120 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch scallions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 560,
+        "originalUnit": "g",
+        "normalizedQuantityG": 560,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "560 g spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "dill",
+      "displayName": "dill",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 13,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps dill",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 extra large eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 200,
+        "originalUnit": "g",
+        "normalizedQuantityG": 200,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "200 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "butter",
+      "displayName": "butter",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g butter",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "breadcrumbs",
+      "displayName": "breadcrumbs",
+      "quantity": {
+        "originalQuantity": 54,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 42,
+        "normalizedQuantityMl": 54
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "54 ml breadcrumbs",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 10,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "40 sheets phyllo dough",
+        "identityText": "sheets phyllo dough",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:32:46.666Z",
+  "processGraph": {
+    "recipeName": "Spanakopita Cups",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat your oven to 400 F.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 400°F"
+          }
+        ],
+        "outputDescription": "oven heated to 400°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Heat oil in a pan on medium heat and add the scallions. Cook for about 5 minutes.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in pan on medium heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "scallions"
+            ],
+            "durationMinutes": 5,
+            "notes": "cook scallions in heated oil"
+          }
+        ],
+        "outputDescription": "scallions cooked and softened in oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Squeeze most of the water out of the spinach and mix with scallions, dill, eggs and feta cheese. Season the mixture with salt and pepper.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "remove excess water from spinach"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "spinach",
+              "scallions",
+              "dill",
+              "eggs",
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all filling ingredients"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "kosher salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to mixture"
+          }
+        ],
+        "outputDescription": "seasoned spinach filling mixture ready"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Keep the phyllo dough sheets covered with a damp kitchen towel.",
+        "processes": [],
+        "outputDescription": "phyllo dough kept moist and workable"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Unfold 1 sheet of the phyllo dough. Brush the sheet with melted butter and sprinkle with breadcrumbs.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "butter"
+            ],
+            "durationMinutes": null,
+            "notes": "brush melted butter on phyllo sheet"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "breadcrumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle breadcrumbs over buttered sheet"
+          }
+        ],
+        "outputDescription": "phyllo sheet brushed with butter and topped with breadcrumbs"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Repeat the process by laying a second sheet of phyllo dough over the first sheet, brush it with melted butter and sprinkle with breadcrumbs until 4 sheets have been used.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "butter"
+            ],
+            "durationMinutes": null,
+            "notes": "brush melted butter on each additional phyllo sheet"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "breadcrumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle breadcrumbs on each additional sheet"
+          }
+        ],
+        "outputDescription": "4-layer phyllo stack with butter and breadcrumbs between each layer"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Cut circles out of the dough that fit as a shell into mini muffin pans. Place the phyllo circles into the pan molds and fill with the spinach mixture.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "phyllo dough"
+            ],
+            "durationMinutes": null,
+            "notes": "cut circles to fit mini muffin pans"
+          },
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "fill phyllo cups with spinach mixture"
+          }
+        ],
+        "outputDescription": "phyllo cups formed in muffin pans and filled with spinach mixture"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Repeat until all the spinach mixture is used.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "phyllo dough"
+            ],
+            "durationMinutes": null,
+            "notes": "continue cutting phyllo circles"
+          },
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "continue filling cups with remaining mixture"
+          }
+        ],
+        "outputDescription": "all spanakopita cups formed and filled"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Bake the spanakopita cups for 17 mins.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "phyllo dough",
+              "spinach",
+              "scallions",
+              "dill",
+              "eggs",
+              "feta cheese"
+            ],
+            "durationMinutes": 17,
+            "notes": "bake in 400°F oven"
+          }
+        ],
+        "outputDescription": "golden brown, crispy spanakopita cups ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "heat",
+        "saute",
+        "squeeze",
+        "mix",
+        "season",
+        "spread",
+        "sprinkle",
+        "slice",
+        "stuff",
+        "bake"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_660842_step1",
+      "name": "oven heated to 400°F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660842_step2",
+      "name": "scallions cooked and softened in oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 99.96,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.28,
+        "costPerG": 0.012805122048819529,
+        "nutrition": {
+          "calories": 1060.8,
+          "protein": 0,
+          "fat": 120,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 2.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660842_step3",
+      "name": "seasoned spinach filling mixture ready",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "spinach_bunch",
+          "name": "spinach",
+          "quantityG": 560
+        }
+      ],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 228.48000000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 16.335200000000004,
+        "costPerG": 0.0714950980392157,
+        "nutrition": {
+          "calories": 128.79999999999998,
+          "protein": 16.016,
+          "fat": 2.1839999999999997,
+          "carbs": 20.328,
+          "fiber": 12.32,
+          "sugar": 2.352,
+          "sodium": 442.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 3.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660842_step4",
+      "name": "phyllo dough kept moist and workable",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660842_step5",
+      "name": "phyllo sheet brushed with butter and topped with breadcrumbs",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "butter",
+          "name": "butter",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 254.465112,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.819415,
+        "costPerG": 0.01893939393939394,
+        "nutrition": {
+          "calories": 1626.12732,
+          "protein": 1.9277659999999999,
+          "fat": 183.93155599999997,
+          "carbs": 0.1360776,
+          "fiber": 0,
+          "sugar": 0.1360776,
+          "sodium": 1458.29828,
+          "method": "raw"
+        },
+        "prepTimeMin": 1.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660842_step6",
+      "name": "4-layer phyllo stack with butter and breadcrumbs between each layer",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "breadcrumbs",
+          "name": "breadcrumbs",
+          "quantityG": 54
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 60.58800000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.756,
+        "costPerG": 0.0124777183600713,
+        "nutrition": {
+          "calories": 213.3,
+          "protein": 7.2090000000000005,
+          "fat": 2.862,
+          "carbs": 38.869200000000006,
+          "fiber": 2.43,
+          "sugar": 3.3480000000000003,
+          "sodium": 395.28000000000003,
+          "method": "raw"
+        },
+        "prepTimeMin": 1.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660842_step7",
+      "name": "phyllo cups formed in muffin pans and filled with spinach mixture",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660842_step8",
+      "name": "all spanakopita cups formed and filled",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660842_step9",
+      "name": "golden brown, crispy spanakopita cups ready to serve",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "green_onions",
+          "name": "scallions",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "dill",
+          "name": "dill",
+          "quantityG": 1.2
+        },
+        {
+          "ingredientId": "eggs",
+          "name": "eggs",
+          "quantityG": 225
+        },
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 17,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 363.12,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.405746,
+        "costPerG": 0.012133030403172504,
+        "nutrition": {
+          "calories": 852.586,
+          "protein": 56.809819999999995,
+          "fat": 64.41284,
+          "carbs": 9.53764,
+          "fiber": 0.0512,
+          "sugar": 0.8558,
+          "sodium": 2600.392,
+          "method": "raw"
+        },
+        "prepTimeMin": 17
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 27.986361000000006,
+    "costPerServing": 0.7773989166666668,
+    "totalPrepTime": 48.5,
+    "nutritionPerServing": {
+      "calories": 107.85919638888889,
+      "protein": 2.278253708333333,
+      "fat": 10.372430861111111,
+      "carbs": 1.9224070861111113,
+      "fiber": 0.4148340277777778,
+      "sugar": 0.18597882222222223,
+      "sodium": 152.22903555555555
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_660842_step2",
+        "name": "scallions cooked and softened in oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_660842_step3",
+        "name": "seasoned spinach filling mixture ready",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660842_step7",
+        "name": "phyllo cups formed in muffin pans and filled with spinach mixture",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_660842_step8",
+        "name": "all spanakopita cups formed and filled",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_660842_step9",
+        "name": "golden brown, crispy spanakopita cups ready to serve",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_660842_step2",
+      "name": "scallions cooked and softened in oil",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_660842_step3",
+      "name": "seasoned spinach filling mixture ready",
+      "shelfLifeHours": 24,
+      "processes": [
+        "squeeze",
+        "mix",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_660842_step7",
+      "name": "phyllo cups formed in muffin pans and filled with spinach mixture",
+      "shelfLifeHours": 12,
+      "processes": [
+        "slice",
+        "stuff"
+      ]
+    },
+    {
+      "componentId": "comp_660842_step8",
+      "name": "all spanakopita cups formed and filled",
+      "shelfLifeHours": 12,
+      "processes": [
+        "slice",
+        "stuff"
+      ]
+    }
+  ]
+}

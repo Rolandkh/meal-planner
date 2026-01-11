@@ -1,0 +1,546 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_30c4a20d-797a-4054-a4aa-d46df6534f9a",
+  "name": "Spinach Salad with Strawberry Vinaigrette",
+  "source": "spoonacular",
+  "spoonacularId": 661340,
+  "image": "/images/recipes/661340.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "almonds",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "balsamic vinegar",
+      "quantity": 63.75,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken",
+      "quantity": 56.699,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dijon mustard",
+      "quantity": 1.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 14.175,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "thyme",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "shallot",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach leaves",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "strawberries",
+      "quantity": 96,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "strawberries",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 59.147,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>For Salad:</li><li>Place everything on a plate!  :)</li><li>Serves 1</li><li>Calories for salad without dressing:  139,  Fat:  4,  Sodium:  215, Potassium: 456, Carbs:  7,  Fiber 3,  Protein: 20</li><li>Directions for Dressing:</li><li>Place all ingredient in a blender and process until smooth, about 30 seconds</li><li>Makes 1 cup</li><li>Calories per Tbsp.  3,  Fat:  .01,  Sodium:  10,  Potassium:  13,  Carbs:  1,  Fiber:  .01,  Sugar:  .03,  Protein:  .01</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 1,
+  "nutrition": {
+    "calories": 321.81,
+    "protein": 22.03,
+    "fat": 12.73,
+    "carbs": 29.95,
+    "fiber": 6.47,
+    "sugar": 18.33,
+    "saturatedFat": 3.38,
+    "sodium": 341.17
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "primal"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "almonds",
+      "displayName": "almonds",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 8,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp almonds",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "balsamic_vinegar",
+      "displayName": "balsamic vinegar",
+      "quantity": {
+        "originalQuantity": 63.75,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 64,
+        "normalizedQuantityMl": 63.75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "63.75 ml balsamic vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 56.699,
+        "originalUnit": "g",
+        "normalizedQuantityG": 56.699,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "56.699 g chicken",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Dijon mustard",
+      "quantity": {
+        "originalQuantity": 1.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 6.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.25 tsps dijon mustard",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 14.175,
+        "originalUnit": "g",
+        "normalizedQuantityG": 14.175,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "14.175 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "thyme",
+      "displayName": "thyme",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps thyme",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.25 tsps ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "shallot",
+      "displayName": "shallot",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  shallot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 g spinach leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "strawberries",
+      "displayName": "strawberries",
+      "quantity": {
+        "originalQuantity": 96,
+        "originalUnit": "g",
+        "normalizedQuantityG": 96,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "96 g strawberries",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "strawberries",
+      "displayName": "strawberries",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  strawberries",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 59.147,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 58,
+        "normalizedQuantityMl": 59.147
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "59.147 ml water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 12,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:41:55.997Z",
+  "processGraph": {
+    "recipeName": "Spinach Salad with Strawberry Vinaigrette",
+    "processSteps": [
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Place everything on a plate!  :)",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "spinach leaves",
+              "chicken",
+              "feta cheese",
+              "almonds",
+              "strawberries"
+            ],
+            "durationMinutes": null,
+            "notes": "arranging salad components on serving plate"
+          }
+        ],
+        "outputDescription": "salad ingredients arranged on plate"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Place all ingredient in a blender and process until smooth, about 30 seconds",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "balsamic vinegar",
+              "dijon mustard",
+              "thyme",
+              "ground pepper",
+              "shallot",
+              "strawberries",
+              "water"
+            ],
+            "durationMinutes": 0.5,
+            "notes": "processing dressing ingredients until smooth"
+          }
+        ],
+        "outputDescription": "smooth strawberry vinaigrette dressing"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 2,
+      "uniqueProcesses": [
+        "plate",
+        "blend"
+      ],
+      "estimatedTotalTime": 2
+    }
+  },
+  "components": [
+    {
+      "id": "comp_661340_step2",
+      "name": "salad ingredients arranged on plate",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "spinach",
+          "name": "spinach leaves",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken",
+          "quantityG": 56.699
+        },
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 14.175
+        },
+        {
+          "ingredientId": "almonds",
+          "name": "almonds",
+          "quantityG": 7.5
+        },
+        {
+          "ingredientId": "strawberries",
+          "name": "strawberries",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 142.374,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.844320500000002,
+        "costPerG": 0.06914408880834985,
+        "nutrition": {
+          "calories": 160.70561,
+          "protein": 17.3828477,
+          "fat": 8.5046291,
+          "carbs": 4.65519,
+          "fiber": 2.3375000000000004,
+          "sugar": 0.7738499999999999,
+          "sodium": 274.88084000000003,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_661340_step6",
+      "name": "smooth strawberry vinaigrette dressing",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "balsamic_vinegar",
+          "name": "balsamic vinegar",
+          "quantityG": 63.75
+        },
+        {
+          "ingredientId": "dijon_mustard",
+          "name": "dijon mustard",
+          "quantityG": 6.25
+        },
+        {
+          "ingredientId": "thyme",
+          "name": "thyme",
+          "quantityG": 0.8
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "ground pepper",
+          "quantityG": 0.525
+        },
+        {
+          "ingredientId": "shallot",
+          "name": "shallot",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 59.147
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 142.56256000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.66679949,
+        "costPerG": 0.018706170049134916,
+        "nutrition": {
+          "calories": 72.83824999999999,
+          "protein": 1.0520275,
+          "fat": 0.256805,
+          "carbs": 14.2392125,
+          "fiber": 0.993575,
+          "sugar": 10.803234999999999,
+          "sodium": 88.34685,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 12.511119990000001,
+    "costPerServing": 12.511119990000001,
+    "totalPrepTime": 2.5,
+    "nutritionPerServing": {
+      "calories": 233.54386,
+      "protein": 18.434875200000004,
+      "fat": 8.7614341,
+      "carbs": 18.8944025,
+      "fiber": 3.3310750000000002,
+      "sugar": 11.577085,
+      "sodium": 363.22769000000005
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_661340_step6",
+        "name": "smooth strawberry vinaigrette dressing",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": []
+}

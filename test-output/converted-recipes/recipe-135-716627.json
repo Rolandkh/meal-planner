@@ -1,0 +1,510 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_ec38f7a8-308a-4209-a246-0932e30fe0de",
+  "name": "Easy Homemade Rice and Beans",
+  "source": "spoonacular",
+  "spoonacularId": 716627,
+  "image": "/images/recipes/716627.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "black beans",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 283.495,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chili powder",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "optional: of hot sauce",
+      "quantity": 4,
+      "unit": "dashes",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 40,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rice",
+      "quantity": 92.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<p>Heat the olive oil in a large pot over medium heat. Add onions and saute until soft, or for about 5 minutes. Add all other remaining ingredients and stir together. Increase the heat to medium high and bring to a boil. Cover and reduce heat to medium low so that the mixture simmers. Cook for 15-20 minutes, or until rice is fluffy and liquid is absorbed.* Serve with salsa, cheese, and sour cream.</p>",
+  "prepTime": 11,
+  "cookTime": 25,
+  "servings": 2,
+  "nutrition": {
+    "calories": 445.69,
+    "protein": 19.14,
+    "fat": 4.09,
+    "carbs": 86.11,
+    "fiber": 19.36,
+    "sugar": 7.35,
+    "saturatedFat": 0.7,
+    "sodium": 1058.31
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": true,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "black_beans",
+      "displayName": "black beans",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g black beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 283.495,
+        "originalUnit": "g",
+        "normalizedQuantityG": 283.495,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "283.495 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chili_powder",
+      "displayName": "chili powder",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps chili powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.25 tsps ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 40,
+        "originalUnit": "g",
+        "normalizedQuantityG": 40,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "40 g onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rice",
+      "displayName": "rice",
+      "quantity": {
+        "originalQuantity": 92.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 92.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "92.5 g rice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 45,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 9,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 dashes optional: of hot sauce",
+        "identityText": "dashes optional: hot sauce",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:57:13.577Z",
+  "processGraph": {
+    "recipeName": "Easy Homemade Rice and Beans",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat the olive oil in a large pot over medium heat. Add onions and saute until soft, or for about 5 minutes. Add all other remaining ingredients and stir together. Increase the heat to medium high and bring to a boil. Cover and reduce heat to medium low so that the mixture simmers. Cook for 15-20 minutes, or until rice is fluffy and liquid is absorbed. Serve with salsa, cheese, and sour cream.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": 1,
+            "notes": "heat oil in large pot over medium heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": 5,
+            "notes": "cook onions until soft"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "black beans",
+              "canned tomatoes",
+              "chili powder",
+              "cumin",
+              "ground pepper",
+              "hot sauce",
+              "rice",
+              "water"
+            ],
+            "durationMinutes": 1,
+            "notes": "add remaining ingredients and stir together"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "black beans",
+              "canned tomatoes",
+              "chili powder",
+              "cumin",
+              "ground pepper",
+              "hot sauce",
+              "olive oil",
+              "onion",
+              "rice",
+              "water"
+            ],
+            "durationMinutes": 2,
+            "notes": "increase heat to medium high and bring to boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "black beans",
+              "canned tomatoes",
+              "chili powder",
+              "cumin",
+              "ground pepper",
+              "hot sauce",
+              "olive oil",
+              "onion",
+              "rice",
+              "water"
+            ],
+            "durationMinutes": 17,
+            "notes": "cover and reduce heat to medium low, cook 15-20 minutes until rice is fluffy and liquid absorbed"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "black beans",
+              "canned tomatoes",
+              "chili powder",
+              "cumin",
+              "ground pepper",
+              "hot sauce",
+              "olive oil",
+              "onion",
+              "rice",
+              "water"
+            ],
+            "durationMinutes": 1,
+            "notes": "serve with salsa, cheese, and sour cream"
+          }
+        ],
+        "outputDescription": "Complete rice and beans dish with fluffy rice and absorbed liquid, ready to serve with garnishes"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "heat",
+        "saute",
+        "mix",
+        "boil",
+        "simmer",
+        "plate"
+      ],
+      "estimatedTotalTime": 27
+    }
+  },
+  "components": [
+    {
+      "id": "comp_716627_step1",
+      "name": "Complete rice and beans dish with fluffy rice and absorbed liquid, ready to serve with garnishes",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 4.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 17,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3.2049674999999995,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.048,
+        "costPerG": 0.014976750934291847,
+        "nutrition": {
+          "calories": 39.78,
+          "protein": 0,
+          "fat": 4.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.09,
+          "method": "raw"
+        },
+        "prepTimeMin": 27
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 5.656663583333334,
+    "costPerServing": 2.828331791666667,
+    "totalPrepTime": 27,
+    "nutritionPerServing": {
+      "calories": 533.183705,
+      "protein": 25.174945150000003,
+      "fat": 4.6387341,
+      "carbs": 101.36785415,
+      "fiber": 23.1996605,
+      "sugar": 7.373212500000001,
+      "sodium": 291.5899150000001
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_716627_step1",
+        "name": "Complete rice and beans dish with fluffy rice and absorbed liquid, ready to serve with garnishes",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_716627_step1",
+      "name": "Complete rice and beans dish with fluffy rice and absorbed liquid, ready to serve with garnishes",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "saute",
+        "mix",
+        "boil",
+        "simmer",
+        "plate"
+      ]
+    }
+  ]
+}

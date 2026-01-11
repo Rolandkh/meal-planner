@@ -1,0 +1,981 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_0a53fcd6-40f1-45eb-94db-ffe7a5840ac1",
+  "name": "Vegetable Minestrone Soup",
+  "source": "spoonacular",
+  "spoonacularId": 664565,
+  "image": "/images/recipes/664565.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bay leaf",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cannellini beans",
+      "quantity": 396.893,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 1.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "elbow macaroni",
+      "quantity": 170.097,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground pepper",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 793.787,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In a deep sauce pan or pot, heat about 2 tsps of oil or butter. Add bay leaf. When the bay leaf begins to splutter, add finely chopped onions and saute for a couple of mins until the onions are translucent.</li><li>In the meanwhile, boil water with a pinch of salt in another pot. Add pasta and cook for about 6 to 7 mins. When done, drain all the water and set the pasta aside.</li><li>Add the chopped zucchini and chopped carrots to the sauteed onions. Now, add salt and ground pepper and saute for a couple of mins. Empty the diced tomato cans into the sauce pan now. Add the remaining spices  red chilli powder and dried basil to the tomatoes. Cover and let cook for at least 5 mins.</li><li>Empty the cannellini beans into a bowl. Rinse under running water to drain out all the canned liquid and add the beans to the sauce pan. Also, add the cooked pasta now. Add about 2 cups of water, cover and let cook for about 15 mins. Give a taste test and adjust salt if needed.</li><li>Serve with a hint of grated Parmesan cheese as garnish and some bread to dip into it!</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 4,
+  "nutrition": {
+    "calories": 412.48,
+    "protein": 18.6,
+    "fat": 4.36,
+    "carbs": 79.46,
+    "fiber": 13.38,
+    "sugar": 16.68,
+    "saturatedFat": 0.87,
+    "sodium": 1214.66
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "bay_leaf",
+      "displayName": "bay leaf",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  bay leaf",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cannellini_beans",
+      "displayName": "cannellini beans",
+      "quantity": {
+        "originalQuantity": 396.893,
+        "originalUnit": "g",
+        "normalizedQuantityG": 396.893,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "396.893 g cannellini beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 1.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 7.5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1.5 tsps basil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Macaroni",
+      "quantity": {
+        "originalQuantity": 170.097,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170.097,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170.097 g elbow macaroni",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "1 tsp ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp parmesan cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 7.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.5 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 793.787,
+        "originalUnit": "g",
+        "normalizedQuantityG": 793.787,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "793.787 g tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  zucchini",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 12,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:22:19.174Z",
+  "processGraph": {
+    "recipeName": "Vegetable Minestrone Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a deep sauce pan or pot, heat about 2 tsps of oil or butter. Add bay leaf. When the bay leaf begins to splutter, add finely chopped onions and saute for a couple of mins until the onions are translucent.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": 1,
+            "notes": "heating oil in pan"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "finely chopped onions"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "bay leaf",
+              "onion"
+            ],
+            "durationMinutes": 2,
+            "notes": "saute until onions are translucent"
+          }
+        ],
+        "outputDescription": "heated oil with bay leaf and translucent sauteed onions"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "In the meanwhile, boil water with a pinch of salt in another pot. Add pasta and cook for about 6 to 7 mins. When done, drain all the water and set the pasta aside.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "elbow macaroni"
+            ],
+            "durationMinutes": 6.5,
+            "notes": "boil pasta in salted water"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "elbow macaroni"
+            ],
+            "durationMinutes": null,
+            "notes": "drain pasta water"
+          }
+        ],
+        "outputDescription": "cooked and drained pasta set aside"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the chopped zucchini and chopped carrots to the sauteed onions. Now, add salt and ground pepper and saute for a couple of mins. Empty the diced tomato cans into the sauce pan now. Add the remaining spices red chilli powder and dried basil to the tomatoes. Cover and let cook for at least 5 mins.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "zucchini",
+              "carrots"
+            ],
+            "durationMinutes": null,
+            "notes": "chopped vegetables"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "ground pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "zucchini",
+              "carrots"
+            ],
+            "durationMinutes": 2,
+            "notes": "saute vegetables"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "diced tomatoes from cans"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "add dried basil and spices"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "tomato",
+              "basil"
+            ],
+            "durationMinutes": 5,
+            "notes": "covered cooking"
+          }
+        ],
+        "outputDescription": "sauteed vegetables with seasoned tomatoes simmered together"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Empty the cannellini beans into a bowl. Rinse under running water to drain out all the canned liquid and add the beans to the sauce pan. Also, add the cooked pasta now. Add about 2 cups of water, cover and let cook for about 15 mins. Give a taste test and adjust salt if needed.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "cannellini beans"
+            ],
+            "durationMinutes": null,
+            "notes": "empty beans into bowl"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "cannellini beans"
+            ],
+            "durationMinutes": null,
+            "notes": "rinse under running water"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cannellini beans",
+              "elbow macaroni"
+            ],
+            "durationMinutes": null,
+            "notes": "add beans and pasta to sauce pan"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "cannellini beans",
+              "elbow macaroni",
+              "tomato",
+              "zucchini",
+              "carrots"
+            ],
+            "durationMinutes": 15,
+            "notes": "covered cooking with added water"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "taste test and adjust salt"
+          }
+        ],
+        "outputDescription": "complete minestrone soup with all ingredients combined and simmered"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Serve with a hint of grated Parmesan cheese as garnish and some bread to dip into it!",
+        "processes": [
+          {
+            "processId": "grate",
+            "ingredients": [
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "grate parmesan for garnish"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "garnish with grated parmesan"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "serve the soup"
+          }
+        ],
+        "outputDescription": "plated minestrone soup garnished with grated parmesan cheese"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 18,
+      "uniqueProcesses": [
+        "heat",
+        "mince",
+        "saute",
+        "boil",
+        "drain",
+        "chop",
+        "season",
+        "dice",
+        "simmer",
+        "rinse",
+        "mix",
+        "grate",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_664565_step1",
+      "name": "heated oil with bay leaf and translucent sauteed onions",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 9
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 7.34706,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.096,
+        "costPerG": 0.013066451070224009,
+        "nutrition": {
+          "calories": 79.56,
+          "protein": 0,
+          "fat": 9,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.18,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664565_step2",
+      "name": "cooked and drained pasta set aside",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "macaroni",
+          "name": "elbow macaroni",
+          "quantityG": 170.097
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 6.5,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 158.360307,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8504849999999999,
+        "costPerG": 0.005370569280343716,
+        "nutrition": {
+          "calories": 631.05987,
+          "protein": 22.1806488,
+          "fat": 2.5684647000000003,
+          "carbs": 127.01142990000001,
+          "fiber": 5.443104000000001,
+          "sugar": 4.5415899,
+          "sodium": 10.205820000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 7.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664565_step3",
+      "name": "sauteed vegetables with seasoned tomatoes simmered together",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 400
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 240
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 484.216475904,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.3,
+        "costPerG": 0.0047499416365501665,
+        "nutrition": {
+          "calories": 166.39999999999998,
+          "protein": 7.072,
+          "fat": 1.8559999999999999,
+          "carbs": 35.432,
+          "fiber": 10.719999999999999,
+          "sugar": 21.375999999999998,
+          "sodium": 197.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 13
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664565_step4",
+      "name": "complete minestrone soup with all ingredients combined and simmered",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cannellini_beans",
+          "name": "cannellini beans",
+          "quantityG": 396.893
+        }
+      ],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 364.20203489040006,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.4883487499999999,
+        "costPerG": 0.004086601961045855,
+        "nutrition": {
+          "calories": 285.76295999999996,
+          "protein": 22.1466294,
+          "fat": 0,
+          "carbs": 60.4468039,
+          "fiber": 19.011174699999998,
+          "sugar": 0,
+          "sodium": 853.31995,
+          "method": "raw"
+        },
+        "prepTimeMin": 19.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664565_step5",
+      "name": "plated minestrone soup garnished with grated parmesan cheese",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parmesan_cheese",
+          "name": "parmesan cheese",
+          "quantityG": 2.3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "grate",
+          "processName": "Grate",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.2287,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.06555,
+        "costPerG": 0.029411764705882353,
+        "nutrition": {
+          "calories": 9.016,
+          "protein": 0.82225,
+          "fat": 0.5940899999999999,
+          "carbs": 0.07406,
+          "fiber": 0,
+          "sugar": 0.0184,
+          "sodium": 36.846,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 30.36914959,
+    "costPerServing": 7.5922873975,
+    "totalPrepTime": 50,
+    "nutritionPerServing": {
+      "calories": 345.8048725,
+      "protein": 15.292510949999997,
+      "fat": 3.9780071749999997,
+      "carbs": 67.49028952500001,
+      "fiber": 12.013405675,
+      "sugar": 13.296956999999999,
+      "sodium": 1158.1837799999998
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_664565_step1",
+        "name": "heated oil with bay leaf and translucent sauteed onions",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_664565_step2",
+        "name": "cooked and drained pasta set aside",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_664565_step3",
+        "name": "sauteed vegetables with seasoned tomatoes simmered together",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_664565_step4",
+        "name": "complete minestrone soup with all ingredients combined and simmered",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_664565_step5",
+        "name": "plated minestrone soup garnished with grated parmesan cheese",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_664565_step1",
+      "name": "heated oil with bay leaf and translucent sauteed onions",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "mince",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_664565_step2",
+      "name": "cooked and drained pasta set aside",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_664565_step3",
+      "name": "sauteed vegetables with seasoned tomatoes simmered together",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "season",
+        "saute",
+        "dice",
+        "season",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_664565_step4",
+      "name": "complete minestrone soup with all ingredients combined and simmered",
+      "shelfLifeHours": 12,
+      "processes": [
+        "drain",
+        "rinse",
+        "mix",
+        "simmer",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_664565_step5",
+      "name": "plated minestrone soup garnished with grated parmesan cheese",
+      "shelfLifeHours": 12,
+      "processes": [
+        "grate",
+        "garnish",
+        "plate"
+      ]
+    }
+  ]
+}

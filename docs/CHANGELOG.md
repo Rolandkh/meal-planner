@@ -1,5 +1,53 @@
 # Changelog
 
+## [Planned] - Subscription Tiers & Voice Interface (January 11, 2026)
+
+### 📋 Business Model: Three-Tier Subscription System
+
+**Tier Structure Finalized:**
+
+| Tier | Price | Target User |
+|------|-------|-------------|
+| Free Trial | $0 (1 month) | New users exploring the app |
+| Pro | $15/month | Regular home cooks, 1-2 person households |
+| Ultra | $30/month | Serious planners, families with dietary conflicts |
+
+**Key Limits by Tier:**
+
+| Feature | Free Trial | Pro | Ultra |
+|---------|------------|-----|-------|
+| Meal generations | 5 total | 8/month | Unlimited |
+| Recipe imports | 3 total | 8/month | Unlimited |
+| Voice conversations | 5×10min | 20/month | Unlimited |
+| Multi-profile generation | ❌ | ❌ | ✅ |
+| Receipt scanning | ❌ | ❌ | ✅ |
+| Custom diet profiles | ❌ | ❌ | ✅ |
+
+**Profitability Analysis:**
+- Pro tier: 66% margin (~$10 profit/user)
+- Ultra tier: 65% margin (~$20 profit/user)
+- Free trial CAC: ~$1/user
+
+### 📋 Technical: Voice Interface
+
+**Planned Stack:**
+- STT: Deepgram ($0.004/min) or on-device
+- TTS: Google Standard ($4/M chars) or on-device
+- Image processing: Claude Vision (~$0.005/image)
+- Receipt scanning for inventory updates
+- Fridge/pantry photos for initial setup
+
+### 📋 Technical: Component-Based Recipe Engine
+
+**Major System Redesign Planned:**
+- Process Master Database (~70 culinary processes)
+- Component-based recipe model (vs flat ingredient lists)
+- Yield factors, nutrition multipliers, prep-ahead tracking
+- Retrospective conversion of 516 existing recipes
+- Full details in `docs/sessions/2026-01-11-component-recipe-engine.md`
+
+---
+
 ## [v10.0.1] - Deployment Fix: Async Ingredient Loading (January 11, 2026)
 
 ### 🔧 Critical Fix: Browser-Compatible Ingredient Database Loading
@@ -1527,4 +1575,47 @@ if (mealData.requirements) {
 **Last Updated:** December 26, 2025 (Evening)
 
 
+
+
+## [Unreleased] - 2026-01-11
+
+### Added - Recipe Processing Engine (Foundation Layer)
+
+**Process Master Database v2.0.0**
+- 74 standardized culinary processes with complete metadata
+- Yield factors, time estimates, nutrition multipliers, equipment requirements
+- Ingredient-specific overrides for accuracy
+- Automated validation suite
+
+**Recipe Conversion Pipeline**
+- AI-powered process parser (Claude Sonnet 4)
+- Component generator with yield/cost/nutrition calculators
+- Unit converter supporting 50+ unit types
+- Fresh ingredient preference system
+- Batch conversion capability
+
+**Testing & Validation**
+- 30-recipe validation: 87% cost accuracy, 77% nutrition accuracy
+- 50-recipe batch: 100% conversion success rate
+- Comprehensive test suite and validation scripts
+
+**Files Created**
+- `src/data/processMaster.json` - Process database
+- `src/utils/processParser.js` - AI process extraction
+- `src/utils/componentGenerator.js` - Component generation
+- `src/utils/yieldCalculator.js` - Material throughput
+- `src/utils/costCalculator.js` - Cost tracking
+- `src/utils/nutritionCalculator.js` - Nutrition calculation
+- `src/utils/unitConversion.js` - Unit handling
+- `scripts/batch-convert-recipes.js` - Batch processing
+- Multiple test and validation scripts
+
+### Changed
+- Recipe schema prepared for v3.0 upgrade (process graphs + components)
+
+### Technical Debt
+- 466 recipes remaining to convert (50/516 complete)
+- Rule extraction pending (Phase 4)
+- Missing ~10 specialty ingredients in database
+- ~10% recipes are outliers (acceptable for v1.0)
 

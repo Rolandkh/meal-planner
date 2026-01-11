@@ -1,0 +1,569 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_814ed3e9-5026-49a5-b200-d170ac38d440",
+  "name": "Italian Tomato and Mozzarella Caprese",
+  "source": "spoonacular",
+  "spoonacularId": 648275,
+  "image": "/images/recipes/648275.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "fluid balsamic vinegar",
+      "quantity": 28.35,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil leaves",
+      "quantity": 6,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 54,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sprinkle of oregano leaves",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mozzarella",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vine-ripened tomatoes",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>On a large platter, arrange sliced tomatoes and drizzle with balsamic vinegar. Place one basil leaf on top of each tomato slice.</li><li>Slice mozzarella and place on top of basil leaves.</li><li>Sprinkle oregano, salt and black pepper on cheese and drizzle with the olive oil.</li><li>This recipe yields 4 servings.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 269.15,
+    "protein": 28.14,
+    "fat": 13.78,
+    "carbs": 9.39,
+    "fiber": 3.37,
+    "sugar": 5.35,
+    "saturatedFat": 1.91,
+    "sodium": 833.6
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian",
+      "primal"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "balsamic_vinegar",
+      "displayName": "balsamic vinegar",
+      "quantity": {
+        "originalQuantity": 28.35,
+        "originalUnit": "g",
+        "normalizedQuantityG": 28.35,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "28.35 g fluid balsamic vinegar",
+      "matchConfidence": 0.7666666666666666
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": "g",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 g basil leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 54,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 49,
+        "normalizedQuantityMl": 54
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "54 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g vine-ripened tomatoes",
+      "matchConfidence": 0.9071428571428573
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 6,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 servings sprinkle of oregano leaves",
+        "identityText": "sprinkle oregano leaves",
+        "state": "fresh"
+      },
+      {
+        "rawText": "340.194 g whole-milk mozzarella",
+        "identityText": "whole-milk mozzarella",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:30:43.485Z",
+  "processGraph": {
+    "recipeName": "Italian Tomato and Mozzarella Caprese",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "On a large platter, arrange sliced tomatoes and drizzle with balsamic vinegar. Place one basil leaf on top of each tomato slice.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "vine-ripened tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "tomatoes need to be sliced before arranging"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "vine-ripened tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange sliced tomatoes on platter"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "fluid balsamic vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle balsamic vinegar over tomatoes"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "place one basil leaf on each tomato slice"
+          }
+        ],
+        "outputDescription": "Sliced tomatoes arranged on platter, drizzled with balsamic vinegar and topped with basil leaves"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Slice mozzarella and place on top of basil leaves.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "mozzarella"
+            ],
+            "durationMinutes": null,
+            "notes": "slice mozzarella into portions"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "mozzarella"
+            ],
+            "durationMinutes": null,
+            "notes": "place sliced mozzarella on top of basil leaves"
+          }
+        ],
+        "outputDescription": "Sliced mozzarella placed on top of basil leaves on tomato slices"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Sprinkle oregano, salt and black pepper on cheese and drizzle with the olive oil.",
+        "processes": [
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "sprinkle of oregano leaves",
+              "kosher salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle seasonings on cheese"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle olive oil over the assembled dish"
+          }
+        ],
+        "outputDescription": "Completed caprese with oregano, salt, pepper, and olive oil drizzled over the assembled layers"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "slice",
+        "plate",
+        "sprinkle",
+        "garnish"
+      ],
+      "estimatedTotalTime": 10
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648275_step1",
+      "name": "Sliced tomatoes arranged on platter, drizzled with balsamic vinegar and topped with basil leaves",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "vine-ripened tomatoes",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 462.478774464,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 11.93854144,
+        "costPerG": 0.025814247267534462,
+        "nutrition": {
+          "calories": 81.64656,
+          "protein": 3.9916096,
+          "fat": 0.907184,
+          "carbs": 17.6447288,
+          "fiber": 5.443104,
+          "sugar": 11.9294696,
+          "sodium": 22.6796,
+          "method": "raw"
+        },
+        "prepTimeMin": 5.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648275_step2",
+      "name": "Sliced mozzarella placed on top of basil leaves on tomato slices",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mozzarella_fresh",
+          "name": "mozzarella",
+          "quantityG": 340.194
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 333.39012,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 11.056305,
+        "costPerG": 0.033163265306122444,
+        "nutrition": {
+          "calories": 1020.5820000000001,
+          "protein": 75.42100980000001,
+          "fat": 76.033359,
+          "carbs": 7.4502486,
+          "fiber": 0,
+          "sugar": 3.5039982000000003,
+          "sodium": 2133.01638,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648275_step3",
+      "name": "Completed caprese with oregano, salt, pepper, and olive oil drizzled over the assembled layers",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "oregano",
+          "name": "sprinkle of oregano leaves",
+          "quantityG": 80
+        },
+        {
+          "ingredientId": "salt",
+          "name": "kosher salt",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 91.5552,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 11.9336,
+        "costPerG": 0.13034322463388207,
+        "nutrition": {
+          "calories": 222.04,
+          "protein": 7.615600000000001,
+          "fat": 3.5544000000000002,
+          "carbs": 57.694,
+          "fiber": 35.012,
+          "sugar": 3.2976,
+          "sodium": 1571.12,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 35.80411644,
+    "costPerServing": 8.95102911,
+    "totalPrepTime": 10.5,
+    "nutritionPerServing": {
+      "calories": 452.02789,
+      "protein": 21.80430485,
+      "fat": 33.63333575,
+      "carbs": 20.73982935,
+      "fiber": 10.137775999999999,
+      "sugar": 4.69010195,
+      "sodium": 932.1757449999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648275_step1",
+        "name": "Sliced tomatoes arranged on platter, drizzled with balsamic vinegar and topped with basil leaves",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648275_step2",
+        "name": "Sliced mozzarella placed on top of basil leaves on tomato slices",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648275_step1",
+      "name": "Sliced tomatoes arranged on platter, drizzled with balsamic vinegar and topped with basil leaves",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "plate",
+        "sprinkle",
+        "garnish"
+      ]
+    },
+    {
+      "componentId": "comp_648275_step2",
+      "name": "Sliced mozzarella placed on top of basil leaves on tomato slices",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "plate"
+      ]
+    }
+  ]
+}

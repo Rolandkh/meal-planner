@@ -1,0 +1,696 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_04741daf-442a-457e-b827-73797c542ae3",
+  "name": "Soy Ginger Glazed Halibut with Ginger Peach Relish",
+  "source": "spoonacular",
+  "spoonacularId": 660736,
+  "image": "/images/recipes/660736.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "apple cider vinegar",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ginger",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "halibut fillets",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "jalapeno",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lime",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "peach",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "soy sauce",
+      "quantity": 116,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "white wine",
+      "quantity": 59,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Peel and roughly chop a piece of ginger. Place all marinade ingredients (soy sauce, white wine, olive oil, and 1 tablespoon chopped ginger) in a blender and blend until smooth. This step is important in order to get the ginger pulp and juices to infuse into the marinade. In a zip-lock bag (or bowl that you can cover) add the halibut fillets and marinade. Allow the fish to marinate for at least 20 minutes, but several hours is preferred if you are able to do this step ahead of time.</li><li>Set your oven to broil, allow it to warm up then place the fish in a casserole dish with all of the marinade.  Place the casserole dish on one of the top racks and allow to bake about 10-12 minutes, until there is a nice brown glaze on top and fish is cooked all the way through.</li><li>To make the ginger peach relish, combine the chopped peach, red onion, jalapeno, apple cider vinegar, the juice of the half lime, and 1 tablespoon of ginger in a bowl, stir and refrigerate until ready to use.  Allowing the relish to sit for a few hours before consuming gives the flavors time to combine.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 381.51,
+    "protein": 49.46,
+    "fat": 10.43,
+    "carbs": 16.74,
+    "fiber": 2.67,
+    "sugar": 9.29,
+    "saturatedFat": 1.68,
+    "sodium": 3408.02
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 90,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "halibut fillets",
+        "identity": "halibut fillets",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "apple_cider_vinegar",
+      "displayName": "apple cider vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps apple cider vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ginger",
+      "displayName": "ginger",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 12,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps ginger",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "jalapeno",
+      "displayName": "jalapeno",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  jalapeno",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rice",
+      "displayName": "rice",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5  lime",
+      "matchConfidence": 0.5
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "peach",
+      "displayName": "peach",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large peach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 10,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "soy_sauce",
+      "displayName": "soy sauce",
+      "quantity": {
+        "originalQuantity": 116,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 123,
+        "normalizedQuantityMl": 116
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "116 ml soy sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "white_wine",
+      "displayName": "white wine",
+      "quantity": {
+        "originalQuantity": 59,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 59,
+        "normalizedQuantityMl": 59
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "59 ml white wine",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 9,
+    "unmatched": 1,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "453.592 g halibut fillets",
+        "identityText": "halibut fillets",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:54:10.989Z",
+  "processGraph": {
+    "recipeName": "Soy Ginger Glazed Halibut with Ginger Peach Relish",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Peel and roughly chop a piece of ginger. Place all marinade ingredients (soy sauce, white wine, olive oil, and 1 tablespoon chopped ginger) in a blender and blend until smooth. This step is important in order to get the ginger pulp and juices to infuse into the marinade. In a zip-lock bag (or bowl that you can cover) add the halibut fillets and marinade. Allow the fish to marinate for at least 20 minutes, but several hours is preferred if you are able to do this step ahead of time.",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "ginger"
+            ],
+            "durationMinutes": null,
+            "notes": "remove outer skin from ginger"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "ginger"
+            ],
+            "durationMinutes": null,
+            "notes": "roughly chop into irregular pieces"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "soy sauce",
+              "white wine",
+              "olive oil",
+              "ginger"
+            ],
+            "durationMinutes": null,
+            "notes": "blend until smooth to infuse ginger pulp and juices"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "halibut fillets"
+            ],
+            "durationMinutes": 20,
+            "notes": "minimum 20 minutes, several hours preferred"
+          }
+        ],
+        "outputDescription": "Ginger is peeled and chopped, marinade is smooth and well-blended, halibut fillets are marinating in seasoned liquid"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Set your oven to broil, allow it to warm up then place the fish in a casserole dish with all of the marinade. Place the casserole dish on one of the top racks and allow to bake about 10-12 minutes, until there is a nice brown glaze on top and fish is cooked all the way through.",
+        "processes": [
+          {
+            "processId": "broil",
+            "ingredients": [
+              "halibut fillets"
+            ],
+            "durationMinutes": 11,
+            "notes": "cook with direct heat from above until glazed and cooked through"
+          }
+        ],
+        "outputDescription": "Halibut is fully cooked with a nice brown glaze on top, marinade has reduced to a glaze"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "To make the ginger peach relish, combine the chopped peach, red onion, jalapeno, apple cider vinegar, the juice of the half lime, and 1 tablespoon of ginger in a bowl, stir and refrigerate until ready to use. Allowing the relish to sit for a few hours before consuming gives the flavors time to combine.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "peach"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into rough pieces for relish"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into rough pieces for relish"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "jalapeno"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into rough pieces for relish"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "ginger"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into rough pieces for relish"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from half lime"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "peach",
+              "onion",
+              "jalapeno",
+              "apple cider vinegar",
+              "lime",
+              "ginger"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all relish ingredients together"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "peach",
+              "onion",
+              "jalapeno",
+              "apple cider vinegar",
+              "lime",
+              "ginger"
+            ],
+            "durationMinutes": 180,
+            "notes": "refrigerate for several hours to allow flavors to combine"
+          }
+        ],
+        "outputDescription": "Fresh ginger peach relish with combined flavors, chilled and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 10,
+      "uniqueProcesses": [
+        "peel",
+        "chop",
+        "blend",
+        "marinate",
+        "broil",
+        "squeeze",
+        "mix",
+        "cool"
+      ],
+      "estimatedTotalTime": 211
+    }
+  },
+  "components": [
+    {
+      "id": "comp_660736_step1",
+      "name": "Ginger is peeled and chopped, marinade is smooth and well-blended, halibut fillets are marinating in seasoned liquid",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ginger",
+          "name": "ginger",
+          "quantityG": 12
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 10.890936000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6,
+        "costPerG": 0.05509168357981351,
+        "nutrition": {
+          "calories": 9.6,
+          "protein": 0.2184,
+          "fat": 0.09,
+          "carbs": 2.1324,
+          "fiber": 0.24,
+          "sugar": 0.204,
+          "sodium": 1.56,
+          "method": "raw"
+        },
+        "prepTimeMin": 26
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660736_step2",
+      "name": "Halibut is fully cooked with a nice brown glaze on top, marinade has reduced to a glaze",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "white_fish",
+          "name": "halibut fillets",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "broil",
+          "processName": "Broil",
+          "yieldFactor": 0.8,
+          "durationMinutes": 11,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 362.8736,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.927372,
+        "costPerG": 0.035625,
+        "nutrition": {
+          "calories": 435.44831999999997,
+          "protein": 91.08127359999999,
+          "fat": 7.7110639999999995,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 235.86784,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660736_step3",
+      "name": "Fresh ginger peach relish with combined flavors, chilled and ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "peach",
+          "name": "peach",
+          "quantityG": 1.3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 180,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.4796314432,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0065,
+        "costPerG": 0.013552072309174245,
+        "nutrition": {
+          "calories": 0.546,
+          "protein": 0.011830000000000002,
+          "fat": 0.0035100000000000005,
+          "carbs": 0.1313,
+          "fiber": 0.019500000000000003,
+          "sugar": 0.10907000000000001,
+          "sodium": 0.169,
+          "method": "raw"
+        },
+        "prepTimeMin": 191
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 17.252572,
+    "costPerServing": 8.626286,
+    "totalPrepTime": 228,
+    "nutritionPerServing": {
+      "calories": 332.87216000000006,
+      "protein": 51.939101799999996,
+      "fat": 10.751787,
+      "carbs": 6.455100000000001,
+      "fiber": 0.93875,
+      "sugar": 1.880785,
+      "sodium": 3362.14842
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_660736_step1",
+        "name": "Ginger is peeled and chopped, marinade is smooth and well-blended, halibut fillets are marinating in seasoned liquid",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_660736_step2",
+        "name": "Halibut is fully cooked with a nice brown glaze on top, marinade has reduced to a glaze",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_660736_step3",
+        "name": "Fresh ginger peach relish with combined flavors, chilled and ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_660736_step1",
+      "name": "Ginger is peeled and chopped, marinade is smooth and well-blended, halibut fillets are marinating in seasoned liquid",
+      "shelfLifeHours": 48,
+      "processes": [
+        "peel",
+        "chop",
+        "blend",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_660736_step3",
+      "name": "Fresh ginger peach relish with combined flavors, chilled and ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "chop",
+        "chop",
+        "chop",
+        "squeeze",
+        "mix",
+        "cool"
+      ]
+    }
+  ]
+}

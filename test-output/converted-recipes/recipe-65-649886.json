@@ -1,0 +1,1216 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_2c5c3b6e-ff71-46cf-85a1-8a1ae55323fe",
+  "name": "Lemony Greek Lentil Soup",
+  "source": "spoonacular",
+  "spoonacularId": 649886,
+  "image": "/images/recipes/649886.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "brown lentils",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrot",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 2.839,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "thyme",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 61,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "thyme",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 793.787,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Put the lentils, water, carrot and 1 teaspoon dried thyme into an 8-quart stockpot, cover and set over medium heat.\nAfter 15 minutes, lower the heat somewhat and gently bring the water to a simmer, which should take another half an hour or so.\nOnce the lentils have reached the boiling point, turn off the burner and let them sit for 1 hour.\nAfter the hour, bring the soup back to a simmer and add the lemon juice, dry basil, fresh thyme, oregano, pepper and salt and simmer for 1 hour.\nNow, slowly saut the onion and garlic in the olive oil until the onion is tender.\nCoarsely chop the tomatoes (I do this with kitchen scissors right in the can), and add them and the onion mixture to the soup. Adjust the salt to taste.\nBring everything back to the boiling point and simmer for another hour.  After this point, you can turn your burner to its lowest setting, and this soup will happily sit steaming with its lid cocked for several hours until you are ready to enjoy it.  Add more water if necessary.\nServe with crusty bread and a soft cheese like St. Andre or Cambazola",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 368.09,
+    "protein": 22.71,
+    "fat": 3.75,
+    "carbs": 64.17,
+    "fiber": 28,
+    "sugar": 11.12,
+    "saturatedFat": 0.55,
+    "sodium": 1018.77
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 93.3,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "teaspoon",
+        "identity": "teaspoon",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g brown lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 340.194,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340.194,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "340.194 g carrot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 2.839,
+        "originalUnit": "l",
+        "normalizedQuantityG": 2804,
+        "normalizedQuantityMl": 2839
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2.839 l water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "thyme",
+      "displayName": "thyme",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp thyme",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 61,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 62,
+        "normalizedQuantityMl": 61
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "61 ml lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 10
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 tsps basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "thyme",
+      "displayName": "thyme",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps thyme",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 12,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 793.787,
+        "originalUnit": "g",
+        "normalizedQuantityG": 793.787,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "793.787 g canned tomatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 15,
+    "matched": 14,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 tsp teaspoon",
+        "identityText": "teaspoon",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:34:42.421Z",
+  "processGraph": {
+    "recipeName": "Lemony Greek Lentil Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Put the lentils, water, carrot and 1 teaspoon dried thyme into an 8-quart stockpot, cover and set over medium heat.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme"
+            ],
+            "durationMinutes": null,
+            "notes": "combining ingredients in stockpot"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme"
+            ],
+            "durationMinutes": null,
+            "notes": "setting over medium heat, covered"
+          }
+        ],
+        "outputDescription": "lentils, water, carrot and thyme combined in covered stockpot over medium heat"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "After 15 minutes, lower the heat somewhat and gently bring the water to a simmer, which should take another half an hour or so.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme"
+            ],
+            "durationMinutes": 45,
+            "notes": "15 minutes initial heating, then 30 minutes to reach simmer"
+          }
+        ],
+        "outputDescription": "mixture gently simmering"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Once the lentils have reached the boiling point, turn off the burner and let them sit for 1 hour.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing to boiling point"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme"
+            ],
+            "durationMinutes": 60,
+            "notes": "letting sit off heat for 1 hour"
+          }
+        ],
+        "outputDescription": "lentils rested for 1 hour after boiling"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "After the hour, bring the soup back to a simmer and add the lemon juice, dry basil, fresh thyme, oregano, pepper and salt and simmer for 1 hour.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing back to simmer"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "lemon juice",
+              "basil",
+              "thyme",
+              "oregano",
+              "pepper",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "adding seasonings"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme",
+              "lemon juice",
+              "basil",
+              "oregano",
+              "pepper",
+              "salt"
+            ],
+            "durationMinutes": 60,
+            "notes": "simmering with seasonings for 1 hour"
+          }
+        ],
+        "outputDescription": "seasoned lentil soup simmered for 1 hour"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Now, slowly saut the onion and garlic in the olive oil until the onion is tender.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "garlic",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "slowly sautéing until onion is tender"
+          }
+        ],
+        "outputDescription": "onion and garlic sautéed until tender"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Coarsely chop the tomatoes (I do this with kitchen scissors right in the can), and add them and the onion mixture to the soup. Adjust the salt to taste.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "canned tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "coarsely chopping tomatoes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "canned tomatoes",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "adding tomatoes and onion mixture to soup"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "adjusting salt to taste"
+          }
+        ],
+        "outputDescription": "soup with added chopped tomatoes, sautéed onion mixture, and adjusted seasoning"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Bring everything back to the boiling point and simmer for another hour. After this point, you can turn your burner to its lowest setting, and this soup will happily sit steaming with its lid cocked for several hours until you are ready to enjoy it. Add more water if necessary.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme",
+              "lemon juice",
+              "basil",
+              "oregano",
+              "pepper",
+              "salt",
+              "canned tomatoes",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing to boiling point"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme",
+              "lemon juice",
+              "basil",
+              "oregano",
+              "pepper",
+              "salt",
+              "canned tomatoes",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": 60,
+            "notes": "simmering for another hour"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme",
+              "lemon juice",
+              "basil",
+              "oregano",
+              "pepper",
+              "salt",
+              "canned tomatoes",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "keeping warm on lowest setting with lid cocked"
+          }
+        ],
+        "outputDescription": "fully cooked soup that can be kept warm for several hours"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Serve with crusty bread and a soft cheese like St. Andre or Cambazola",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "brown lentils",
+              "water",
+              "carrot",
+              "thyme",
+              "lemon juice",
+              "basil",
+              "oregano",
+              "pepper",
+              "salt",
+              "canned tomatoes",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "serving with bread and cheese"
+          }
+        ],
+        "outputDescription": "soup served with accompaniments"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 14,
+      "uniqueProcesses": [
+        "mix",
+        "heat",
+        "simmer",
+        "boil",
+        "rest_meat",
+        "season",
+        "saute",
+        "chop",
+        "plate"
+      ],
+      "estimatedTotalTime": 225
+    }
+  },
+  "components": [
+    {
+      "id": "comp_649886_step1",
+      "name": "lentils, water, carrot and thyme combined in covered stockpot over medium heat",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "brown lentils",
+          "quantityG": 453.592
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 2839
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrot",
+          "quantityG": 340.194
+        },
+        {
+          "ingredientId": "thyme",
+          "name": "thyme",
+          "quantityG": 0.8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3560.91428,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 22.586481499999994,
+        "costPerG": 0.006342888293284048,
+        "nutrition": {
+          "calories": 1741.4673,
+          "protein": 120.2350202,
+          "fat": 5.6379808,
+          "carbs": 305.3042588,
+          "fiber": 147.982992,
+          "sugar": 25.3331132,
+          "sodium": 403.97138,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649886_step2",
+      "name": "mixture gently simmering",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 45,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 45
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649886_step3",
+      "name": "lentils rested for 1 hour after boiling",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 70
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649886_step4",
+      "name": "seasoned lentil soup simmered for 1 hour",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 61
+        },
+        {
+          "ingredientId": "basil",
+          "name": "basil",
+          "quantityG": 0.8
+        },
+        {
+          "ingredientId": "oregano",
+          "name": "oregano",
+          "quantityG": 0.4
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 12
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 62.17155,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 37.897724000000004,
+        "costPerG": 0.6095669803953738,
+        "nutrition": {
+          "calories": 17.2995,
+          "protein": 0.383795,
+          "fat": 0.20287,
+          "carbs": 5.177355000000001,
+          "fiber": 0.6314500000000001,
+          "sugar": 1.5626799999999998,
+          "sodium": 4651.912,
+          "method": "raw"
+        },
+        "prepTimeMin": 80.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649886_step5",
+      "name": "onion and garlic sautéed until tender",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 151.725,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.3195,
+        "costPerG": 0.02187839841819081,
+        "nutrition": {
+          "calories": 201.69,
+          "protein": 2.604,
+          "fat": 13.725,
+          "carbs": 18.975,
+          "fiber": 2.8649999999999998,
+          "sugar": 6.510000000000001,
+          "sodium": 8.82,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649886_step6",
+      "name": "soup with added chopped tomatoes, sautéed onion mixture, and adjusted seasoning",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "canned_tomatoes",
+          "name": "canned tomatoes",
+          "quantityG": 793.787
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 793.4694852000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.9525444,
+        "costPerG": 0.0012004801920768304,
+        "nutrition": {
+          "calories": 254.01184,
+          "protein": 13.0181068,
+          "fat": 2.2226036000000002,
+          "carbs": 57.867072300000004,
+          "fiber": 15.081953,
+          "sugar": 34.926628,
+          "sodium": 1047.79884,
+          "method": "raw"
+        },
+        "prepTimeMin": 4.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649886_step7",
+      "name": "fully cooked soup that can be kept warm for several hours",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 73
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649886_step8",
+      "name": "soup served with accompaniments",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 64.7562499,
+    "costPerServing": 10.792708316666667,
+    "totalPrepTime": 285,
+    "nutritionPerServing": {
+      "calories": 369.07810666666666,
+      "protein": 22.70682033333333,
+      "fat": 3.6314090666666665,
+      "carbs": 64.55394768333333,
+      "fiber": 27.760232499999997,
+      "sugar": 11.388736866666667,
+      "sodium": 1018.7503700000001
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_649886_step1",
+        "name": "lentils, water, carrot and thyme combined in covered stockpot over medium heat",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649886_step2",
+        "name": "mixture gently simmering",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_649886_step3",
+        "name": "lentils rested for 1 hour after boiling",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_649886_step4",
+        "name": "seasoned lentil soup simmered for 1 hour",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_649886_step5",
+        "name": "onion and garlic sautéed until tender",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_649886_step6",
+        "name": "soup with added chopped tomatoes, sautéed onion mixture, and adjusted seasoning",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649886_step7",
+        "name": "fully cooked soup that can be kept warm for several hours",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_649886_step1",
+      "name": "lentils, water, carrot and thyme combined in covered stockpot over medium heat",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "heat"
+      ]
+    },
+    {
+      "componentId": "comp_649886_step3",
+      "name": "lentils rested for 1 hour after boiling",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "rest_meat"
+      ]
+    },
+    {
+      "componentId": "comp_649886_step4",
+      "name": "seasoned lentil soup simmered for 1 hour",
+      "shelfLifeHours": 96,
+      "processes": [
+        "simmer",
+        "season",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_649886_step6",
+      "name": "soup with added chopped tomatoes, sautéed onion mixture, and adjusted seasoning",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "mix",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_649886_step7",
+      "name": "fully cooked soup that can be kept warm for several hours",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "simmer",
+        "heat"
+      ]
+    }
+  ]
+}

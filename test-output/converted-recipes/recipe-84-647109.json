@@ -1,0 +1,567 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_e07a52ea-035e-4030-9d0f-38e0a5ec31a9",
+  "name": "Homemade Spiced Hummus & Pita",
+  "source": "spoonacular",
+  "spoonacularId": 647109,
+  "image": "/images/recipes/647109.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "chickpeas",
+      "quantity": 164,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 0.25,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chili pepper",
+      "quantity": 0.25,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lime juice",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pita",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tahini",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li><span style=\"font-family: inherit; line-height: 1.6em; background-color: initial;\">Combine all ingredients (except water) in a blender or food processor.Then add the water. Blend for 3-5 minutes on low until thoroughly mixed and smooth.Place in serving bowl, and drizzle a small amount of extra virgin olive oil on top.</span></li><li>Serve with pita.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 402.97,
+    "protein": 9.56,
+    "fat": 21.32,
+    "carbs": 44.28,
+    "fiber": 4.64,
+    "sugar": 2.09,
+    "saturatedFat": 2.9,
+    "sodium": 503.13
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "chickpeas",
+      "displayName": "chickpeas",
+      "quantity": {
+        "originalQuantity": 164,
+        "originalUnit": "g",
+        "normalizedQuantityG": 164,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "164 g chickpeas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 3.75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 Tbsps cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 68,
+        "normalizedQuantityMl": 75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "5 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Chili pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 3.75
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.25 Tbsps chili pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_juice",
+      "displayName": "lime juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp lime juice",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Pita bread",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings pita",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tahini",
+      "displayName": "tahini",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp tahini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 45,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 10,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:40:47.834Z",
+  "processGraph": {
+    "recipeName": "Homemade Spiced Hummus & Pita",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Combine all ingredients (except water) in a blender or food processor.Then add the water. Blend for 3-5 minutes on low until thoroughly mixed and smooth.Place in serving bowl, and drizzle a small amount of extra virgin olive oil on top.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chickpeas",
+              "cumin",
+              "extra virgin olive oil",
+              "garlic",
+              "chili pepper",
+              "lime juice",
+              "salt",
+              "tahini"
+            ],
+            "durationMinutes": 0,
+            "notes": "combine all ingredients except water in blender"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": 0,
+            "notes": "add water to mixture"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "chickpeas",
+              "cumin",
+              "extra virgin olive oil",
+              "garlic",
+              "chili pepper",
+              "lime juice",
+              "salt",
+              "tahini",
+              "water"
+            ],
+            "durationMinutes": 4,
+            "notes": "blend for 3-5 minutes on low until smooth"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "hummus mixture"
+            ],
+            "durationMinutes": 0,
+            "notes": "place in serving bowl"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": 0,
+            "notes": "drizzle small amount of olive oil on top"
+          }
+        ],
+        "outputDescription": "smooth hummus mixture in serving bowl, garnished with olive oil"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Serve with pita.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "pita"
+            ],
+            "durationMinutes": 0,
+            "notes": "serve alongside hummus"
+          }
+        ],
+        "outputDescription": "hummus served with pita bread"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "mix",
+        "blend",
+        "plate",
+        "garnish"
+      ],
+      "estimatedTotalTime": 4
+    }
+  },
+  "components": [
+    {
+      "id": "comp_647109_step1",
+      "name": "smooth hummus mixture in serving bowl, garnished with olive oil",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chickpeas",
+          "name": "chickpeas",
+          "quantityG": 164
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "cumin",
+          "quantityG": 1.575
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 67.5
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "chili_pepper",
+          "name": "chili pepper",
+          "quantityG": 3.75
+        },
+        {
+          "ingredientId": "lime_juice",
+          "name": "lime juice",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "tahini",
+          "name": "tahini",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 280.71267,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.5208,
+        "costPerG": 0.008980000795831552,
+        "nutrition": {
+          "calories": 980.51625,
+          "protein": 18.1900325,
+          "fat": 80.12685249999998,
+          "carbs": 53.793955,
+          "fiber": 13.660625,
+          "sugar": 8.4596875,
+          "sodium": 1573.3835,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_647109_step2",
+      "name": "hummus served with pita bread",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pita_bread",
+          "name": "pita",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 80,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.12,
+        "costPerG": 0.014000000000000002,
+        "nutrition": {
+          "calories": 220,
+          "protein": 7.28,
+          "fat": 0.96,
+          "carbs": 44.56,
+          "fiber": 1.7600000000000002,
+          "sugar": 0,
+          "sodium": 428.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 3.94095,
+    "costPerServing": 0.9852375,
+    "totalPrepTime": 13,
+    "nutritionPerServing": {
+      "calories": 300.1290625,
+      "protein": 6.367508125,
+      "fat": 20.271713124999994,
+      "carbs": 24.588488749999996,
+      "fiber": 3.85515625,
+      "sugar": 2.114921875,
+      "sodium": 501.10837499999997
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_647109_step1",
+        "name": "smooth hummus mixture in serving bowl, garnished with olive oil",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_647109_step1",
+      "name": "smooth hummus mixture in serving bowl, garnished with olive oil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "mix",
+        "blend",
+        "plate",
+        "garnish"
+      ]
+    }
+  ]
+}

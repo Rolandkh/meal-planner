@@ -1,0 +1,714 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_7cb40cf4-a8f1-4779-b6ad-3c8f0e4c77d2",
+  "name": "Classic French Mussels",
+  "source": "spoonacular",
+  "spoonacularId": 639599,
+  "image": "/images/recipes/639599.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "wine",
+      "quantity": 120,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 3,
+      "unit": "sprigs",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "buttermilk",
+      "quantity": 120,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mussels",
+      "quantity": 462.664,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "shallots",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "butter",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Scrub mussels with a stiff brush, discard any that are open and stay that way even when you close the shell. Discard any with broken shells.</li><li>Soak them in cool clean water for at least an hour. Mussels are alive and breathing and have taken in sand over time. This allows them to expel the sand.</li><li>Mussels have a small fibrous \"beard\" that should be removed. Pull it out toward the hinge of the shell to keep from injuring the mussel.</li><li>Heat the olive oil in a large pot over medium-high heat. Add the shallots and garlic and cook until soft, about 5 minutes. Add the mussels, wine, buttermilk, butter, and parsley and season well with the kosher salt. Give it a good stir, cover the pot, and cook until mussels open and are cooked through, 10 to 15 minutes. Divide the mussels and the juices between 2 bowls and serve with a crusty whole-grain bread to sop up that wonderful sauce.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 501.23,
+    "protein": 31.53,
+    "fat": 28.32,
+    "carbs": 19.25,
+    "fiber": 0.98,
+    "sugar": 5.49,
+    "saturatedFat": 11.97,
+    "sodium": 962.28
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "French",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "primal",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "antipasti",
+      "main course",
+      "starter",
+      "snack",
+      "appetizer",
+      "main dish",
+      "antipasto",
+      "dinner",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "wine",
+      "displayName": "wine",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 120,
+        "normalizedQuantityMl": 120
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "120 ml wine",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  garlic cloves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Buttermilk",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "ml",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 120
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "120 ml buttermilk",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mussels",
+      "displayName": "mussels",
+      "quantity": {
+        "originalQuantity": 462.664,
+        "originalUnit": "g",
+        "normalizedQuantityG": 462.664,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "462.664 g mussels",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "shallot",
+      "displayName": "shallot",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  shallots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "butter",
+      "displayName": "butter",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 56,
+        "normalizedQuantityMl": 60
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 Tbsps butter",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 8,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "3 sprigs parsley",
+        "identityText": "sprigs parsley",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:30:32.075Z",
+  "processGraph": {
+    "recipeName": "Classic French Mussels",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Scrub mussels with a stiff brush, discard any that are open and stay that way even when you close the shell. Discard any with broken shells.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "scrubbing with stiff brush to clean shells"
+          },
+          {
+            "processId": "trim",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "discarding damaged or open mussels"
+          }
+        ],
+        "outputDescription": "clean, viable mussels with shells intact"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Soak them in cool clean water for at least an hour. Mussels are alive and breathing and have taken in sand over time. This allows them to expel the sand.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": 60,
+            "notes": "soaking in cool water to expel sand"
+          }
+        ],
+        "outputDescription": "mussels purged of sand and debris"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Mussels have a small fibrous \"beard\" that should be removed. Pull it out toward the hinge of the shell to keep from injuring the mussel.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "removing fibrous beard by pulling toward hinge"
+          }
+        ],
+        "outputDescription": "cleaned mussels with beards removed, ready for cooking"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Heat the olive oil in a large pot over medium-high heat. Add the shallots and garlic and cook until soft, about 5 minutes. Add the mussels, wine, buttermilk, butter, and parsley and season well with the kosher salt. Give it a good stir, cover the pot, and cook until mussels open and are cooked through, 10 to 15 minutes. Divide the mussels and the juices between 2 bowls and serve with a crusty whole-grain bread to sop up that wonderful sauce.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in large pot over medium-high heat"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "shallots",
+              "garlic cloves"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for cooking"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "shallots",
+              "garlic cloves"
+            ],
+            "durationMinutes": 5,
+            "notes": "cooking until soft"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "mussels",
+              "wine",
+              "buttermilk",
+              "butter",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "adding all ingredients to pot"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "seasoning well with salt"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "mussels",
+              "wine",
+              "buttermilk",
+              "butter",
+              "parsley",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "giving it a good stir"
+          },
+          {
+            "processId": "steam",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": 12.5,
+            "notes": "covered pot cooking until mussels open, 10-15 minutes"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "dividing mussels and juices between 2 bowls"
+          }
+        ],
+        "outputDescription": "cooked mussels with opened shells in aromatic broth, plated and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "rinse",
+        "trim",
+        "marinate",
+        "heat",
+        "mince",
+        "saute",
+        "mix",
+        "season",
+        "steam",
+        "plate"
+      ],
+      "estimatedTotalTime": 85
+    }
+  },
+  "components": [
+    {
+      "id": "comp_639599_step1",
+      "name": "clean, viable mussels with shells intact",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mussels",
+          "name": "mussels",
+          "quantityG": 462.664
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 448.321416,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 7.402623999999999,
+        "costPerG": 0.016511867905056758,
+        "nutrition": {
+          "calories": 202.9244304,
+          "protein": 28.083704800000003,
+          "fat": 5.2743696,
+          "carbs": 8.6980832,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 674.8417104000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639599_step2",
+      "name": "mussels purged of sand and debris",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 60
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639599_step3",
+      "name": "cleaned mussels with beards removed, ready for cooking",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639599_step4",
+      "name": "cooked mussels with opened shells in aromatic broth, plated and ready to serve",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 12.5,
+          "nutritionMultiplier": "steamed"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 10.903771745999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.144,
+        "costPerG": 0.013206439327091176,
+        "nutrition": {
+          "calories": 119.34,
+          "protein": 0,
+          "fat": 13.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 29
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 15.385174,
+    "costPerServing": 7.692587,
+    "totalPrepTime": 92,
+    "nutritionPerServing": {
+      "calories": 467.21221520000006,
+      "protein": 17.1316024,
+      "fat": 34.1914348,
+      "carbs": 12.8785916,
+      "fiber": 0.48950000000000005,
+      "sugar": 3.66125,
+      "sodium": 977.1958552000001
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_639599_step1",
+        "name": "clean, viable mussels with shells intact",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_639599_step2",
+        "name": "mussels purged of sand and debris",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_639599_step3",
+        "name": "cleaned mussels with beards removed, ready for cooking",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_639599_step4",
+        "name": "cooked mussels with opened shells in aromatic broth, plated and ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_639599_step1",
+      "name": "clean, viable mussels with shells intact",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "trim"
+      ]
+    },
+    {
+      "componentId": "comp_639599_step4",
+      "name": "cooked mussels with opened shells in aromatic broth, plated and ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "mince",
+        "saute",
+        "mix",
+        "season",
+        "mix",
+        "steam",
+        "plate"
+      ]
+    }
+  ]
+}

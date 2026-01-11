@@ -1,0 +1,1249 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_5f3eef8c-64e5-4521-bb54-f3284a877f56",
+  "name": "Red Lentil Soup with Chicken and Turnips",
+  "source": "spoonacular",
+  "spoonacularId": 715415,
+  "image": "/images/recipes/715415.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "additional toppings: avocado",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 3,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery stalks",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken breast",
+      "quantity": 280,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flat leaf parsley",
+      "quantity": 30,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 6,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 793.787,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 360,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "turnip",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable stock",
+      "quantity": 1.88,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "To a large dutch oven or soup pot, heat the olive oil over medium heat. Add the onion, carrots and celery and cook for 8-10 minutes or until tender, stirring occasionally. Add the garlic and cook for an additional 2 minutes, or until fragrant. Season conservatively with a pinch of salt and black pepper.To the pot, add the tomatoes, turnip and red lentils. Stir to combine. Stir in the vegetable stock and increase the heat on the stove to high. Bring the soup to a boil and then reduce to a simmer. Simmer for 20 minutes or until the turnips are tender and the lentils are cooked through. Add the chicken breast and parsley. Cook for an additional 5 minutes. Adjust seasoning to taste.Serve the soup immediately garnished with fresh parsley and any additional toppings. Enjoy!",
+  "prepTime": 10,
+  "cookTime": 45,
+  "servings": 8,
+  "nutrition": {
+    "calories": 477.24,
+    "protein": 26.93,
+    "fat": 20.34,
+    "carbs": 51.78,
+    "fiber": 23.79,
+    "sugar": 10.55,
+    "saturatedFat": 3.1,
+    "sodium": 1335.78
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": true,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 92.3,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "additional toppings: avocado",
+        "identity": "additional toppings: avocado",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 medium carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery_stalks",
+      "displayName": "celery stalks",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  celery stalks",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 280,
+        "originalUnit": "g",
+        "normalizedQuantityG": 280,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "280 g chicken breast",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 30,
+        "originalUnit": "g",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "30 g flat leaf parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 793.787,
+        "originalUnit": "g",
+        "normalizedQuantityG": 793.787,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "793.787 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 360,
+        "originalUnit": "g",
+        "normalizedQuantityG": 360,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "360 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "8 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Turnip",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large turnip",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 1.88,
+        "originalUnit": "l",
+        "normalizedQuantityG": 1880,
+        "normalizedQuantityMl": 1880
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.88 l vegetable stock",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium onion",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 12,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "8 servings additional toppings: avocado",
+        "identityText": "additional toppings: avocado",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:47:33.626Z",
+  "processGraph": {
+    "recipeName": "Red Lentil Soup with Chicken and Turnips",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "To a large dutch oven or soup pot, heat the olive oil over medium heat.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in dutch oven over medium heat"
+          }
+        ],
+        "outputDescription": "heated olive oil ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add the onion, carrots and celery and cook for 8-10 minutes or until tender, stirring occasionally.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion",
+              "carrots",
+              "celery"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep - vegetables need to be chopped before adding"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "carrots",
+              "celery"
+            ],
+            "durationMinutes": 9,
+            "notes": "cooking until tender with occasional stirring"
+          }
+        ],
+        "outputDescription": "tender sautéed vegetables"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the garlic and cook for an additional 2 minutes, or until fragrant.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep - garlic needs to be minced before adding"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": 2,
+            "notes": "cooking until fragrant"
+          }
+        ],
+        "outputDescription": "fragrant garlic added to sautéed vegetables"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Season conservatively with a pinch of salt and black pepper.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "conservative seasoning with salt and pepper"
+          }
+        ],
+        "outputDescription": "seasoned vegetable base"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "To the pot, add the tomatoes, turnip and red lentils. Stir to combine.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "turnip"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep - turnip needs to be chopped before adding"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "canned tomatoes",
+              "turnip",
+              "lentils"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring to combine with existing vegetables"
+          }
+        ],
+        "outputDescription": "combined vegetables, tomatoes, turnip and lentils"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Stir in the vegetable stock and increase the heat on the stove to high.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring in stock"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "increasing heat to high"
+          }
+        ],
+        "outputDescription": "soup mixture with stock, heating on high"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Bring the soup to a boil and then reduce to a simmer.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "reducing heat to simmer"
+          }
+        ],
+        "outputDescription": "soup at simmering temperature"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Simmer for 20 minutes or until the turnips are tender and the lentils are cooked through.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "turnip",
+              "lentils"
+            ],
+            "durationMinutes": 20,
+            "notes": "cooking until turnips are tender and lentils are cooked through"
+          }
+        ],
+        "outputDescription": "soup with tender turnips and fully cooked lentils"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Add the chicken breast and parsley. Cook for an additional 5 minutes.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "chicken breast",
+              "flat leaf parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep - chicken and parsley need to be chopped before adding"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "chicken breast",
+              "flat leaf parsley"
+            ],
+            "durationMinutes": 5,
+            "notes": "cooking chicken and parsley in simmering soup"
+          }
+        ],
+        "outputDescription": "soup with cooked chicken and parsley"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Adjust seasoning to taste.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "final seasoning adjustment"
+          }
+        ],
+        "outputDescription": "properly seasoned finished soup"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Serve the soup immediately garnished with fresh parsley and any additional toppings.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "flat leaf parsley",
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "garnishing with fresh parsley and additional toppings"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "flat leaf parsley",
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "serving the soup"
+          }
+        ],
+        "outputDescription": "plated soup ready to serve with garnishes"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 17,
+      "uniqueProcesses": [
+        "heat",
+        "chop",
+        "saute",
+        "mince",
+        "season",
+        "mix",
+        "boil",
+        "simmer",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 36
+    }
+  },
+  "components": [
+    {
+      "id": "comp_715415_step1",
+      "name": "heated olive oil ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 26.46,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.288,
+        "costPerG": 0.010884353741496598,
+        "nutrition": {
+          "calories": 238.68,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_715415_step2",
+      "name": "tender sautéed vegetables",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 180
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 9,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 274.89,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1755,
+        "costPerG": 0.011551893484666594,
+        "nutrition": {
+          "calories": 133.8,
+          "protein": 3.3240000000000003,
+          "fat": 0.5820000000000001,
+          "carbs": 31.253999999999998,
+          "fiber": 7.59,
+          "sugar": 14.892,
+          "sodium": 130.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715415_step3",
+      "name": "fragrant garlic added to sautéed vegetables",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 24.99,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.3499999999999999,
+        "costPerG": 0.05402160864345738,
+        "nutrition": {
+          "calories": 44.699999999999996,
+          "protein": 1.908,
+          "fat": 0.15,
+          "carbs": 9.93,
+          "fiber": 0.63,
+          "sugar": 0.3,
+          "sodium": 5.1,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715415_step4",
+      "name": "seasoned vegetable base",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 8.16,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.4,
+        "costPerG": 0.049019607843137254,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 3100.64,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_715415_step5",
+      "name": "combined vegetables, tomatoes, turnip and lentils",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "turnip",
+          "name": "turnip",
+          "quantityG": 1.3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.274,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.005849999999999999,
+        "costPerG": 0.004591836734693877,
+        "nutrition": {
+          "calories": 0.36400000000000005,
+          "protein": 0.011700000000000002,
+          "fat": 0.0013000000000000002,
+          "carbs": 0.08359,
+          "fiber": 0.023400000000000004,
+          "sugar": 0.0494,
+          "sodium": 0.8710000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715415_step6",
+      "name": "soup mixture with stock, heating on high",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "vegetable stock",
+          "quantityG": 1880
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1842.3999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.58,
+        "costPerG": 0.0035714285714285718,
+        "nutrition": {
+          "calories": 112.80000000000001,
+          "protein": 12.032,
+          "fat": 3.948,
+          "carbs": 8.272,
+          "fiber": 0,
+          "sugar": 8.084,
+          "sodium": 6974.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715415_step7",
+      "name": "soup at simmering temperature",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715415_step8",
+      "name": "soup with tender turnips and fully cooked lentils",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "lentils",
+          "quantityG": 360
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 324,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.7999999999999998,
+        "costPerG": 0.005555555555555555,
+        "nutrition": {
+          "calories": 1270.8,
+          "protein": 92.88000000000001,
+          "fat": 3.8160000000000003,
+          "carbs": 216.288,
+          "fiber": 109.8,
+          "sugar": 7.308,
+          "sodium": 21.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 20
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715415_step9",
+      "name": "soup with cooked chicken and parsley",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken breast",
+          "quantityG": 280
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "flat leaf parsley",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 273.42,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 11.759900000000002,
+        "costPerG": 0.043010386950479124,
+        "nutrition": {
+          "calories": 330,
+          "protein": 60.334999999999994,
+          "fat": 7.488999999999999,
+          "carbs": 1.899,
+          "fiber": 0.9899999999999999,
+          "sugar": 0.255,
+          "sodium": 341.59999999999997,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715415_step10",
+      "name": "properly seasoned finished soup",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_715415_step11",
+      "name": "plated soup ready to serve with garnishes",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 28.9117944,
+    "costPerServing": 3.6139743,
+    "totalPrepTime": 88,
+    "nutritionPerServing": {
+      "calories": 332.24448,
+      "protein": 23.442100850000003,
+      "fat": 8.616612949999999,
+      "carbs": 42.8507077875,
+      "fiber": 18.344419125,
+      "sugar": 8.5598785,
+      "sodium": 1466.2937299999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_715415_step2",
+        "name": "tender sautéed vegetables",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_715415_step3",
+        "name": "fragrant garlic added to sautéed vegetables",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_715415_step5",
+        "name": "combined vegetables, tomatoes, turnip and lentils",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_715415_step6",
+        "name": "soup mixture with stock, heating on high",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_715415_step7",
+        "name": "soup at simmering temperature",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_715415_step8",
+        "name": "soup with tender turnips and fully cooked lentils",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_715415_step9",
+        "name": "soup with cooked chicken and parsley",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_715415_step2",
+      "name": "tender sautéed vegetables",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_715415_step3",
+      "name": "fragrant garlic added to sautéed vegetables",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_715415_step5",
+      "name": "combined vegetables, tomatoes, turnip and lentils",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_715415_step6",
+      "name": "soup mixture with stock, heating on high",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "heat"
+      ]
+    },
+    {
+      "componentId": "comp_715415_step7",
+      "name": "soup at simmering temperature",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_715415_step9",
+      "name": "soup with cooked chicken and parsley",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "simmer"
+      ]
+    }
+  ]
+}

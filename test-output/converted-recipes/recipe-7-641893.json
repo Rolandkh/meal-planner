@@ -1,0 +1,1108 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_da281d91-5238-486f-8870-58f46fcd72d2",
+  "name": "Easy Cheesy Pizza Casserole",
+  "source": "spoonacular",
+  "spoonacularId": 641893,
+  "image": "/images/recipes/641893.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "ground beef/bulk sausage mix",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ricotta",
+      "quantity": 124,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 1,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 1,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pasta sauce",
+      "quantity": 737.088,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pizza sauce",
+      "quantity": 1,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper flakes",
+      "quantity": 0.125,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepperoni",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mozzarella",
+      "quantity": 224,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "aged provolone",
+      "quantity": 66,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "herbed parmesan drop biscuits",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "additional parmesan cheese",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "baking mix",
+      "quantity": 270,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": 25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasoning",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "milk",
+      "quantity": 162.667,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "or",
+      "quantity": 1,
+      "unit": "serving",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "or",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Brown ground beef in skillet; drain fat.  Mix in pasta or pizza sauce and pepper flakes; set aside.  Mix ricotta cheese with the herbs and Parmesan in a separate bowl; set aside.\nMix the dry ingredients for the biscuits.  Add milk and stir until combined.\nPreheat oven to 375 degrees.  Spray a 13 x 9 pan with non-stick spray.  Drop biscuit dough by teaspoons in the bottom of pan, spacing evenly.  It's OK if there is space between the dough--it will expand as it's cooked.  Top with ground beef mixture and dot with the ricotta cheese mixture.  Bake at 375 for about 20 min or until biscuits are puffed and beginning to get golden brown.\nTop with mozzarella and provolone cheeses and distribute pepperoni slices evenly over top, increase oven temperature to 425 degrees.  Return to oven and bake until cheeses are melted and beginning to bubble.  This should take about 10 minutes.\nRemove from oven and let stand 5 minutes before slicing and serving.  May be topped with the additional Parmesan cheese.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 902.23,
+    "protein": 56.72,
+    "fat": 54.57,
+    "carbs": 46.77,
+    "fiber": 4.64,
+    "sugar": 15.96,
+    "saturatedFat": 27.35,
+    "sodium": 3138.17
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.879Z",
+  "updatedAt": "2026-01-09T11:32:55.879Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "ricotta",
+      "displayName": "ricotta",
+      "quantity": {
+        "originalQuantity": 124,
+        "originalUnit": "g",
+        "normalizedQuantityG": 124,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "124 g ricotta",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 pinch oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 pinch basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 7,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp parmesan cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pasta_sauce",
+      "displayName": "pasta sauce",
+      "quantity": {
+        "originalQuantity": 737.088,
+        "originalUnit": "g",
+        "normalizedQuantityG": 737.088,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "737.088 g pasta sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pizza_sauce",
+      "displayName": "pizza sauce",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "1 can pizza sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper_flakes",
+      "displayName": "pepper flakes",
+      "quantity": {
+        "originalQuantity": 0.125,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 0.625
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.125 tsps pepper flakes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepperoni",
+      "displayName": "pepperoni",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5  pepperoni",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mozzarella_cheese",
+      "displayName": "mozzarella cheese",
+      "quantity": {
+        "originalQuantity": 224,
+        "originalUnit": "g",
+        "normalizedQuantityG": 224,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "224 g mozzarella",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings herbed parmesan drop biscuits",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings additional parmesan cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 25,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "25 g parmesan cheese",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Seasoning blend",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp seasoning",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "milk",
+      "displayName": "milk",
+      "quantity": {
+        "originalQuantity": 162.667,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 165,
+        "normalizedQuantityMl": 162.667
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "162.667 ml milk",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Orange juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 serving or",
+      "matchConfidence": 0.5
+    },
+    {
+      "displayName": "Orange juice",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings or",
+      "matchConfidence": 0.5
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 19,
+    "matched": 16,
+    "unmatched": 3,
+    "lowConfidence": 2,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "453.592 g equivalent amount of a ground beef/bulk sausage mix",
+        "identityText": "equivalent amount a beef/bulk sausage mix",
+        "state": "fresh"
+      },
+      {
+        "rawText": "66 g aged provolone",
+        "identityText": "aged provolone",
+        "state": "fresh"
+      },
+      {
+        "rawText": "270 ml baking mix",
+        "identityText": "baking mix",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:20:57.248Z",
+  "processGraph": {
+    "recipeName": "Easy Cheesy Pizza Casserole",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Brown ground beef in skillet; drain fat. Mix in pasta or pizza sauce and pepper flakes; set aside. Mix ricotta cheese with the herbs and Parmesan in a separate bowl; set aside.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "ground beef/bulk sausage mix"
+            ],
+            "durationMinutes": null,
+            "notes": "brown in skillet"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "ground beef/bulk sausage mix"
+            ],
+            "durationMinutes": null,
+            "notes": "drain fat"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ground beef/bulk sausage mix",
+              "pasta sauce",
+              "pepper flakes"
+            ],
+            "durationMinutes": null,
+            "notes": "combine meat with sauce and pepper flakes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ricotta",
+              "oregano",
+              "basil",
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "combine ricotta with herbs and parmesan in separate bowl"
+          }
+        ],
+        "outputDescription": "Browned meat mixture with sauce and seasoned ricotta mixture prepared separately"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Mix the dry ingredients for the biscuits. Add milk and stir until combined.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "baking mix",
+              "parmesan cheese",
+              "seasoning"
+            ],
+            "durationMinutes": null,
+            "notes": "combine dry biscuit ingredients"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "baking mix",
+              "parmesan cheese",
+              "seasoning",
+              "milk"
+            ],
+            "durationMinutes": null,
+            "notes": "add milk and stir until combined"
+          }
+        ],
+        "outputDescription": "Biscuit dough formed and ready to use"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Preheat oven to 375 degrees. Spray a 13 x 9 pan with non-stick spray. Drop biscuit dough by teaspoons in the bottom of pan, spacing evenly. It's OK if there is space between the dough--it will expand as it's cooked. Top with ground beef mixture and dot with the ricotta cheese mixture. Bake at 375 for about 20 min or until biscuits are puffed and beginning to get golden brown.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 375 degrees"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "spray pan with non-stick spray"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "biscuit dough"
+            ],
+            "durationMinutes": null,
+            "notes": "drop dough by teaspoons in pan bottom"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "ground beef mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "top biscuits with meat mixture"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "ricotta mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "dot with ricotta mixture"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "assembled casserole"
+            ],
+            "durationMinutes": 20,
+            "notes": "bake until biscuits are puffed and golden brown"
+          }
+        ],
+        "outputDescription": "Partially baked casserole with golden, puffed biscuits and cooked meat layer"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Top with mozzarella and provolone cheeses and distribute pepperoni slices evenly over top, increase oven temperature to 425 degrees. Return to oven and bake until cheeses are melted and beginning to bubble. This should take about 10 minutes.",
+        "processes": [
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "mozzarella",
+              "aged provolone"
+            ],
+            "durationMinutes": null,
+            "notes": "top with cheeses"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "pepperoni"
+            ],
+            "durationMinutes": null,
+            "notes": "implied slicing of pepperoni"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "pepperoni"
+            ],
+            "durationMinutes": null,
+            "notes": "distribute pepperoni slices evenly"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "increase oven temperature to 425 degrees"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "topped casserole"
+            ],
+            "durationMinutes": 10,
+            "notes": "bake until cheeses melt and bubble"
+          }
+        ],
+        "outputDescription": "Fully baked casserole with melted, bubbling cheese and pepperoni topping"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Remove from oven and let stand 5 minutes before slicing and serving. May be topped with the additional Parmesan cheese.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "finished casserole"
+            ],
+            "durationMinutes": 5,
+            "notes": "let stand to set"
+          },
+          {
+            "processId": "slice_to_serve",
+            "ingredients": [
+              "finished casserole"
+            ],
+            "durationMinutes": null,
+            "notes": "slice for serving"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "additional parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "optional topping with extra parmesan"
+          }
+        ],
+        "outputDescription": "Finished casserole ready to serve, sliced into portions with optional parmesan garnish"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 17,
+      "uniqueProcesses": [
+        "saute",
+        "drain",
+        "mix",
+        "heat",
+        "coat",
+        "spread",
+        "bake",
+        "sprinkle",
+        "slice",
+        "cool",
+        "slice_to_serve",
+        "garnish"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_641893_step1",
+      "name": "Browned meat mixture with sauce and seasoned ricotta mixture prepared separately",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ground_beef",
+          "name": "ground beef/bulk sausage mix",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 377.842136,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.164656,
+        "costPerG": 0.021608643457382955,
+        "nutrition": {
+          "calories": 1152.12368,
+          "protein": 77.88174640000001,
+          "fat": 90.7184,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 303.90664,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641893_step2",
+      "name": "Biscuit dough formed and ready to use",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parmesan_cheese",
+          "name": "parmesan cheese",
+          "quantityG": 25
+        },
+        {
+          "ingredientId": "seasoning",
+          "name": "seasoning",
+          "quantityG": 2.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 27.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.7925,
+        "costPerG": 0.02881818181818182,
+        "nutrition": {
+          "calories": 105.675,
+          "protein": 9.17725,
+          "fat": 6.64575,
+          "carbs": 2.4447500000000004,
+          "fiber": 0.28250000000000003,
+          "sugar": 0.277,
+          "sodium": 401.175,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641893_step3",
+      "name": "Partially baked casserole with golden, puffed biscuits and cooked meat layer",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 28
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641893_step4",
+      "name": "Fully baked casserole with melted, bubbling cheese and pepperoni topping",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mozzarella_fresh",
+          "name": "mozzarella",
+          "quantityG": 224
+        },
+        {
+          "ingredientId": "provolone",
+          "name": "aged provolone",
+          "quantityG": 66
+        }
+      ],
+      "processes": [
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 265.6207092,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 10.085,
+        "costPerG": 0.03796767213811806,
+        "nutrition": {
+          "calories": 903.6600000000001,
+          "protein": 66.55680000000001,
+          "fat": 67.62,
+          "carbs": 6.3180000000000005,
+          "fiber": 0,
+          "sugar": 2.6768000000000005,
+          "sodium": 1884.3000000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 16.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641893_step5",
+      "name": "Finished casserole ready to serve, sliced into portions with optional parmesan garnish",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parmesan_cheese",
+          "name": "additional parmesan cheese",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice_to_serve",
+          "processName": "Slice to Serve",
+          "yieldFactor": 0.99,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 121.176,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.42,
+        "costPerG": 0.028223410576351752,
+        "nutrition": {
+          "calories": 470.4,
+          "protein": 42.9,
+          "fat": 30.995999999999995,
+          "carbs": 3.864,
+          "fiber": 0,
+          "sugar": 0.96,
+          "sodium": 1922.3999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 35.6472435,
+    "costPerServing": 5.941207250000001,
+    "totalPrepTime": 66.5,
+    "nutritionPerServing": {
+      "calories": 562.1767083333333,
+      "protein": 40.27076041666667,
+      "fat": 38.18652383333333,
+      "carbs": 15.571055700000002,
+      "fiber": 3.398528333333333,
+      "sugar": 9.649331541666667,
+      "sodium": 1760.9078699999993
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_641893_step1",
+        "name": "Browned meat mixture with sauce and seasoned ricotta mixture prepared separately",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_641893_step2",
+        "name": "Biscuit dough formed and ready to use",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_641893_step3",
+        "name": "Partially baked casserole with golden, puffed biscuits and cooked meat layer",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_641893_step4",
+        "name": "Fully baked casserole with melted, bubbling cheese and pepperoni topping",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_641893_step5",
+        "name": "Finished casserole ready to serve, sliced into portions with optional parmesan garnish",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_641893_step1",
+      "name": "Browned meat mixture with sauce and seasoned ricotta mixture prepared separately",
+      "shelfLifeHours": 24,
+      "processes": [
+        "saute",
+        "drain",
+        "mix",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_641893_step2",
+      "name": "Biscuit dough formed and ready to use",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_641893_step3",
+      "name": "Partially baked casserole with golden, puffed biscuits and cooked meat layer",
+      "shelfLifeHours": 2,
+      "processes": [
+        "heat",
+        "coat",
+        "spread",
+        "spread",
+        "spread",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_641893_step4",
+      "name": "Fully baked casserole with melted, bubbling cheese and pepperoni topping",
+      "shelfLifeHours": 24,
+      "processes": [
+        "sprinkle",
+        "slice",
+        "spread",
+        "heat",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_641893_step5",
+      "name": "Finished casserole ready to serve, sliced into portions with optional parmesan garnish",
+      "shelfLifeHours": 96,
+      "processes": [
+        "cool",
+        "slice_to_serve",
+        "garnish"
+      ]
+    }
+  ]
+}

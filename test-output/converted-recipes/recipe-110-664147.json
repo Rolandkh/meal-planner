@@ -1,0 +1,573 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_67c88169-4c8a-40f6-ac37-935964d1b736",
+  "name": "Tuscan White Bean Soup with Olive Oil and Rosemary",
+  "source": "spoonacular",
+  "spoonacularId": 664147,
+  "image": "/images/recipes/664147.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bay leaf",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rosemary",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 6,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "beans",
+      "quantity": 404,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Rinse the beans thoroughly and place them in a 7-quart slow cooker along with the water, onion, garlic, and bay leaf. Cover and cook on LOW for about 8 hours, or until the beans are nice and tender.</li><li>Remove the bay leaf. Using a handheld immersion blender, puree the remaining ingredients to the desired texture. Add the salt to taste.</li><li>Ladle the soup into bowls. Drizzle with the olive oil, sprinkle with rosemary, and serve.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 242.41,
+    "protein": 16.13,
+    "fat": 1.29,
+    "carbs": 43.37,
+    "fiber": 10.66,
+    "sugar": 2.23,
+    "saturatedFat": 0.26,
+    "sodium": 206.16
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "bay_leaf",
+      "displayName": "bay leaf",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  bay leaf",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rosemary",
+      "displayName": "rosemary",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp rosemary",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "beans",
+      "displayName": "beans",
+      "quantity": {
+        "originalQuantity": 404,
+        "originalUnit": "g",
+        "normalizedQuantityG": 404,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "404 g beans",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 8,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:48:17.448Z",
+  "processGraph": {
+    "recipeName": "Tuscan White Bean Soup with Olive Oil and Rosemary",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Rinse the beans thoroughly and place them in a 7-quart slow cooker along with the water, onion, garlic, and bay leaf. Cover and cook on LOW for about 8 hours, or until the beans are nice and tender.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "beans"
+            ],
+            "durationMinutes": 2,
+            "notes": "wash beans thoroughly under running water"
+          },
+          {
+            "processId": "stew",
+            "ingredients": [
+              "beans",
+              "water",
+              "onion",
+              "garlic",
+              "bay leaf"
+            ],
+            "durationMinutes": 480,
+            "notes": "slow cook on LOW setting until beans are tender"
+          }
+        ],
+        "outputDescription": "beans are tender and cooked through with aromatics"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Remove the bay leaf. Using a handheld immersion blender, puree the remaining ingredients to the desired texture. Add the salt to taste.",
+        "processes": [
+          {
+            "processId": "puree",
+            "ingredients": [
+              "beans",
+              "water",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": 3,
+            "notes": "use immersion blender to achieve desired texture"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": 1,
+            "notes": "add salt to taste"
+          }
+        ],
+        "outputDescription": "soup is pureed to desired consistency and seasoned with salt"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Ladle the soup into bowls. Drizzle with the olive oil, sprinkle with rosemary, and serve.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "soup"
+            ],
+            "durationMinutes": 2,
+            "notes": "ladle soup into serving bowls"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": 1,
+            "notes": "drizzle olive oil over soup"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "rosemary"
+            ],
+            "durationMinutes": 1,
+            "notes": "sprinkle rosemary on top"
+          }
+        ],
+        "outputDescription": "soup is plated and garnished with olive oil and rosemary, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "rinse",
+        "stew",
+        "puree",
+        "season",
+        "plate",
+        "garnish",
+        "sprinkle"
+      ],
+      "estimatedTotalTime": 490
+    }
+  },
+  "components": [
+    {
+      "id": "comp_664147_step1",
+      "name": "beans are tender and cooked through with aromatics",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "beans",
+          "name": "beans",
+          "quantityG": 404
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stew",
+          "processName": "Stew",
+          "yieldFactor": 0.88,
+          "durationMinutes": 480,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 362.6304,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.5150000000000001,
+        "costPerG": 0.004177807486631016,
+        "nutrition": {
+          "calories": 121.2,
+          "protein": 12.281600000000001,
+          "fat": 0.7272,
+          "carbs": 23.997600000000002,
+          "fiber": 7.272,
+          "sugar": 16.6852,
+          "sodium": 24.240000000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 482
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664147_step2",
+      "name": "soup is pureed to desired consistency and seasoned with salt",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 207.774,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.0506,
+        "costPerG": 0.01949522076871986,
+        "nutrition": {
+          "calories": 104.69999999999999,
+          "protein": 3.558,
+          "fat": 0.30000000000000004,
+          "carbs": 23.939999999999998,
+          "fiber": 3.1799999999999997,
+          "sugar": 6.66,
+          "sodium": 12.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664147_step3",
+      "name": "soup is plated and garnished with olive oil and rosemary, ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 4.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.6818,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.048,
+        "costPerG": 0.010252466999871845,
+        "nutrition": {
+          "calories": 39.78,
+          "protein": 0,
+          "fat": 4.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.09,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 6.6052599999999995,
+    "costPerServing": 1.1008766666666665,
+    "totalPrepTime": 490,
+    "nutritionPerServing": {
+      "calories": 45.64416666666667,
+      "protein": 2.662541666666667,
+      "fat": 0.9789,
+      "carbs": 8.265608333333333,
+      "fiber": 1.905916666666667,
+      "sugar": 3.8908666666666663,
+      "sodium": 393.9208333333333
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_664147_step1",
+        "name": "beans are tender and cooked through with aromatics",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_664147_step2",
+        "name": "soup is pureed to desired consistency and seasoned with salt",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_664147_step1",
+      "name": "beans are tender and cooked through with aromatics",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "stew"
+      ]
+    },
+    {
+      "componentId": "comp_664147_step2",
+      "name": "soup is pureed to desired consistency and seasoned with salt",
+      "shelfLifeHours": 72,
+      "processes": [
+        "puree",
+        "season"
+      ]
+    }
+  ]
+}

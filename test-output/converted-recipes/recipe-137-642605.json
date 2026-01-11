@@ -1,0 +1,1305 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_8641b770-f81a-4bda-903f-525909e30e03",
+  "name": "Farro With Mushrooms and Asparagus",
+  "source": "spoonacular",
+  "spoonacularId": 642605,
+  "image": "/images/recipes/642605.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "asparagus",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken stock",
+      "quantity": 480,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "porcini mushrooms",
+      "quantity": 28.35,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "farro",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "thyme",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sherry vinegar",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In a small bowl, cover dried mushrooms with warm water.  Soak for 25 minutes, or until softened.</li><li>Drain the mushrooms, and discard the soaking water.  Chop finely.</li><li>Bring a large pot of water to a boil.</li><li>Add farro, and cook for 10 minutes, stirring occasionally.  Drain and reserve.</li><li>In a large skillet, over medium heat, heat the olive oil, and add onion, garlic, thyme, and mushrooms.</li><li>Cook, stirring occasionally, for 5 minutes or until onions are tender.</li><li>Stir in 2 tablespoons of sherry vinegar, and continue cooking for 1 minute.</li><li>Add chicken stock, and bring it to a boil.</li><li>Stir in farro, and return to a boil.</li><li>Lower the heat to a simmer, and cover with a tight fitting lid.  Cook for 10 minutes.</li><li>Add asparagus, and cook, covered, for an additional 10 minutes.</li><li>Season with 1 tablespoon sherry vinegar, salt and pepper.</li></ol>",
+  "prepTime": 23,
+  "cookTime": 53,
+  "servings": 4,
+  "nutrition": {
+    "calories": 365.28,
+    "protein": 12.3,
+    "fat": 9.37,
+    "carbs": 61.53,
+    "fiber": 12.77,
+    "sugar": 5.8,
+    "saturatedFat": 1.57,
+    "sodium": 376.22
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 90,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "sherry vinegar",
+        "identity": "sherry vinegar",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Asparagus",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch asparagus",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_broth",
+      "displayName": "chicken broth",
+      "quantity": {
+        "originalQuantity": 480,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 480,
+        "normalizedQuantityMl": 480
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "480 ml chicken stock",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "farro",
+      "displayName": "farro",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g farro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "thyme",
+      "displayName": "thyme",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp thyme",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 8,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "28.35 g porcini mushrooms",
+        "identityText": "porcini mushrooms",
+        "state": "fresh"
+      },
+      {
+        "rawText": "3 Tbsps sherry vinegar",
+        "identityText": "sherry vinegar",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:57:54.121Z",
+  "processGraph": {
+    "recipeName": "Farro With Mushrooms and Asparagus",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a small bowl, cover dried mushrooms with warm water. Soak for 25 minutes, or until softened.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "porcini mushrooms"
+            ],
+            "durationMinutes": 25,
+            "notes": "soaking in warm water to rehydrate"
+          }
+        ],
+        "outputDescription": "softened rehydrated mushrooms"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Drain the mushrooms, and discard the soaking water. Chop finely.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "porcini mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "remove soaking water"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "porcini mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "chop finely"
+          }
+        ],
+        "outputDescription": "drained and finely chopped mushrooms"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Bring a large pot of water to a boil.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "heating water to boiling point"
+          }
+        ],
+        "outputDescription": "rapidly boiling water"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add farro, and cook for 10 minutes, stirring occasionally. Drain and reserve.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "farro"
+            ],
+            "durationMinutes": 10,
+            "notes": "cooking farro in boiling water"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "farro"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring occasionally"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "farro"
+            ],
+            "durationMinutes": null,
+            "notes": "remove cooking water and set aside"
+          }
+        ],
+        "outputDescription": "partially cooked, drained farro"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "In a large skillet, over medium heat, heat the olive oil, and add onion, garlic, thyme, and mushrooms.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in skillet over medium heat"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of onion"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of garlic"
+          }
+        ],
+        "outputDescription": "heated oil with aromatics added to pan"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Cook, stirring occasionally, for 5 minutes or until onions are tender.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "garlic",
+              "thyme",
+              "porcini mushrooms"
+            ],
+            "durationMinutes": 5,
+            "notes": "cooking until onions are tender"
+          }
+        ],
+        "outputDescription": "tender sautéed aromatics and mushrooms"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Stir in 2 tablespoons of sherry vinegar, and continue cooking for 1 minute.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "sherry vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring in vinegar"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "sherry vinegar",
+              "onion",
+              "garlic",
+              "thyme",
+              "porcini mushrooms"
+            ],
+            "durationMinutes": 1,
+            "notes": "continuing to cook with vinegar"
+          }
+        ],
+        "outputDescription": "aromatics cooked with vinegar"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Add chicken stock, and bring it to a boil.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chicken stock"
+            ],
+            "durationMinutes": null,
+            "notes": "adding stock to pan"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "chicken stock"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing mixture to boil"
+          }
+        ],
+        "outputDescription": "boiling stock with aromatics"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Stir in farro, and return to a boil.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "farro"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring farro into mixture"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "farro",
+              "chicken stock"
+            ],
+            "durationMinutes": null,
+            "notes": "returning to boil with farro"
+          }
+        ],
+        "outputDescription": "boiling farro in seasoned stock"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Lower the heat to a simmer, and cover with a tight fitting lid. Cook for 10 minutes.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "farro",
+              "chicken stock"
+            ],
+            "durationMinutes": 10,
+            "notes": "covered simmering"
+          }
+        ],
+        "outputDescription": "tender farro in absorbed stock"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Add asparagus, and cook, covered, for an additional 10 minutes.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "asparagus"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of asparagus"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "asparagus"
+            ],
+            "durationMinutes": null,
+            "notes": "adding asparagus to pan"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "asparagus",
+              "farro"
+            ],
+            "durationMinutes": 10,
+            "notes": "covered simmering with asparagus"
+          }
+        ],
+        "outputDescription": "tender asparagus and farro mixture"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "Season with 1 tablespoon sherry vinegar, salt and pepper.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "sherry vinegar",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "final seasoning adjustment"
+          }
+        ],
+        "outputDescription": "finished seasoned farro with mushrooms and asparagus"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 19,
+      "uniqueProcesses": [
+        "marinate",
+        "drain",
+        "mince",
+        "boil",
+        "mix",
+        "heat",
+        "chop",
+        "saute",
+        "simmer",
+        "trim",
+        "season"
+      ],
+      "estimatedTotalTime": 61
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642605_step1",
+      "name": "softened rehydrated mushrooms",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mushrooms",
+          "name": "porcini mushrooms",
+          "quantityG": 28.35
+        }
+      ],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 29.767500000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.536,
+        "costPerG": 0.15238095238095237,
+        "nutrition": {
+          "calories": 6.237000000000001,
+          "protein": 0.8760150000000001,
+          "fat": 0.09639000000000002,
+          "carbs": 0.9242100000000001,
+          "fiber": 0.28350000000000003,
+          "sugar": 0.5613300000000001,
+          "sodium": 1.4175000000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 25
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step2",
+      "name": "drained and finely chopped mushrooms",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step3",
+      "name": "rapidly boiling water",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step4",
+      "name": "partially cooked, drained farro",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "farro",
+          "name": "farro",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 211.14707599999997,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.4947559999999998,
+        "costPerG": 0.011815252416756176,
+        "nutrition": {
+          "calories": 798.32192,
+          "protein": 22.4754836,
+          "fat": 2.6308336,
+          "carbs": 176.2658512,
+          "fiber": 35.380176,
+          "sugar": 1.814368,
+          "sodium": 20.41164,
+          "method": "raw"
+        },
+        "prepTimeMin": 13
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step5",
+      "name": "heated oil with aromatics added to pan",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 25.412183999999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.288,
+        "costPerG": 0.011333146336418784,
+        "nutrition": {
+          "calories": 238.68,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step6",
+      "name": "tender sautéed aromatics and mushrooms",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "thyme",
+          "name": "thyme",
+          "quantityG": 1.3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 137.10500000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1238289999999997,
+        "costPerG": 0.022784209182743147,
+        "nutrition": {
+          "calories": 76.21300000000001,
+          "protein": 2.3582800000000006,
+          "fat": 0.22184,
+          "carbs": 17.63785,
+          "fiber": 2.9419999999999997,
+          "sugar": 6.46,
+          "sodium": 7.817,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step7",
+      "name": "aromatics cooked with vinegar",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "vinegar_sherry",
+          "name": "sherry vinegar",
+          "quantityG": 45
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 38.25,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.54,
+        "costPerG": 0.01411764705882353,
+        "nutrition": {
+          "calories": 8.55,
+          "protein": 0.018000000000000002,
+          "fat": 0,
+          "carbs": 0.12150000000000001,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 3.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step8",
+      "name": "boiling stock with aromatics",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "chicken stock",
+          "quantityG": 480
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 456,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.68,
+        "costPerG": 0.0036842105263157894,
+        "nutrition": {
+          "calories": 28.799999999999997,
+          "protein": 3.072,
+          "fat": 1.008,
+          "carbs": 2.112,
+          "fiber": 0,
+          "sugar": 2.064,
+          "sodium": 1780.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step9",
+      "name": "boiling farro in seasoned stock",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step10",
+      "name": "tender farro in absorbed stock",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step11",
+      "name": "tender asparagus and farro mixture",
+      "stepNumber": 11,
+      "sourceIngredients": [
+        {
+          "ingredientId": "asparagus",
+          "name": "asparagus",
+          "quantityG": 400
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 342,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 7.5,
+        "costPerG": 0.021929824561403508,
+        "nutrition": {
+          "calories": 80,
+          "protein": 8.8,
+          "fat": 0.48,
+          "carbs": 15.52,
+          "fiber": 8.4,
+          "sugar": 7.52,
+          "sodium": 8,
+          "method": "raw"
+        },
+        "prepTimeMin": 13
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642605_step12",
+      "name": "finished seasoned farro with mushrooms and asparagus",
+      "stepNumber": 12,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.08,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.2,
+        "costPerG": 0.049019607843137254,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1550.32,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 20.362584999999996,
+    "costPerServing": 5.090646249999999,
+    "totalPrepTime": 113.5,
+    "nutritionPerServing": {
+      "calories": 309.20047999999997,
+      "protein": 9.39994465,
+      "fat": 7.8592659,
+      "carbs": 53.14535279999999,
+      "fiber": 11.751419,
+      "sugar": 4.6049245,
+      "sodium": 843.2265349999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642605_step1",
+        "name": "softened rehydrated mushrooms",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_642605_step2",
+        "name": "drained and finely chopped mushrooms",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642605_step3",
+        "name": "rapidly boiling water",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_642605_step4",
+        "name": "partially cooked, drained farro",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642605_step5",
+        "name": "heated oil with aromatics added to pan",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642605_step6",
+        "name": "tender sautéed aromatics and mushrooms",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_642605_step7",
+        "name": "aromatics cooked with vinegar",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642605_step8",
+        "name": "boiling stock with aromatics",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642605_step9",
+        "name": "boiling farro in seasoned stock",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642605_step10",
+        "name": "tender farro in absorbed stock",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_642605_step11",
+        "name": "tender asparagus and farro mixture",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_642605_step2",
+      "name": "drained and finely chopped mushrooms",
+      "shelfLifeHours": 24,
+      "processes": [
+        "drain",
+        "mince"
+      ]
+    },
+    {
+      "componentId": "comp_642605_step4",
+      "name": "partially cooked, drained farro",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "mix",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_642605_step5",
+      "name": "heated oil with aromatics added to pan",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "chop",
+        "mince"
+      ]
+    },
+    {
+      "componentId": "comp_642605_step7",
+      "name": "aromatics cooked with vinegar",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_642605_step8",
+      "name": "boiling stock with aromatics",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_642605_step9",
+      "name": "boiling farro in seasoned stock",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_642605_step11",
+      "name": "tender asparagus and farro mixture",
+      "shelfLifeHours": 24,
+      "processes": [
+        "trim",
+        "mix",
+        "simmer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1144 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_07e86ff0-4606-4a06-8a69-6e62b141548e",
+  "name": "Lebanese Kibbeh",
+  "source": "spoonacular",
+  "spoonacularId": 649403,
+  "image": "/images/recipes/649403.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bulgur wheat",
+      "quantity": 105,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lamb",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "butter",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sprg mint",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lamb",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pine nuts",
+      "quantity": 67.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground allspice",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "greek yogurt",
+      "quantity": 500,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "Cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mint",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "1) Preheat the oven to 375F degrees. Rinse the bulgur wheat in a sieve and squeeze out the excess moisture.\n2. Mix the lamb, onion and seasoning, kneading the mixture to make a thick paste. Add the bulgur wheat and blend together.\n3. To make the filling, heat the oil in a frying pan and fry the onion until golden. Add the lamb or veal and cook, stirring, until evenly browned and then add the pine nuts, allspice and salt and pepper.\n4. Oil a large baking dish and spread half of the meat and bulgur wheat mixture over the bottom. Spoon over the filling and top with a second layer of meat and bulgur wheat, pressing down firmly with the back of a spoon.\n5. Pour the melted butter over the top and then bake on the oven for 40-45 minutes until browned on top.\n6. Meanwhile make the yogurt dip: Blend together the yogurt and garlic, spoon into a serving bowl and sprinkle with the chopped mint.\n7. Cut the cooked kibbeh into squares or rectangles and serve garnished with mint and accompanied by rice and the yogurt dip. NOTES The national dish of Syria and the Lebanon in Kibbeh, as kind of meatball made from minced lamp and bulgur wheat. Raw kibbeh is the most widely eaten type, but this version is very popular too.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 585.12,
+    "protein": 31.7,
+    "fat": 41.42,
+    "carbs": 22.66,
+    "fiber": 4.53,
+    "sugar": 5.05,
+    "saturatedFat": 13.81,
+    "sodium": 117.55
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Bulgur wheat",
+      "quantity": {
+        "originalQuantity": 105,
+        "originalUnit": "g",
+        "normalizedQuantityG": 105,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "105 g bulgur wheat",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lamb",
+      "displayName": "lamb",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g lamb",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "butter",
+      "displayName": "butter",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp butter",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "6 servings salt & ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  sprg mint",
+      "matchConfidence": 0.8277777777777778
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lamb",
+      "displayName": "lamb",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g lamb",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Pine nuts",
+      "quantity": {
+        "originalQuantity": 67.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 67.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "67.5 g pine nuts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "allspice",
+      "displayName": "allspice",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground allspice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 500,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 500,
+        "normalizedQuantityMl": 500
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "500 ml greek yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 Cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp mint",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 14,
+    "matched": 14,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:40:23.362Z",
+  "processGraph": {
+    "recipeName": "Lebanese Kibbeh",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "1) Preheat the oven to 375F degrees. Rinse the bulgur wheat in a sieve and squeeze out the excess moisture.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "bulgur wheat"
+            ],
+            "durationMinutes": null,
+            "notes": "rinse in a sieve"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "bulgur wheat"
+            ],
+            "durationMinutes": null,
+            "notes": "squeeze out excess moisture"
+          }
+        ],
+        "outputDescription": "oven preheated to 375F, bulgur wheat rinsed and moisture squeezed out"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "2. Mix the lamb, onion and seasoning, kneading the mixture to make a thick paste. Add the bulgur wheat and blend together.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lamb",
+              "onion",
+              "salt",
+              "ground pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "mix lamb, onion and seasoning"
+          },
+          {
+            "processId": "knead",
+            "ingredients": [
+              "lamb",
+              "onion",
+              "salt",
+              "ground pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "knead mixture to make thick paste"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "bulgur wheat"
+            ],
+            "durationMinutes": null,
+            "notes": "add bulgur wheat and blend together"
+          }
+        ],
+        "outputDescription": "lamb and bulgur wheat mixture formed into thick paste"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "3. To make the filling, heat the oil in a frying pan and fry the onion until golden. Add the lamb or veal and cook, stirring, until evenly browned and then add the pine nuts, allspice and salt and pepper.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in frying pan"
+          },
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "fry onion until golden"
+          },
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "cook lamb stirring until evenly browned"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "pine nuts",
+              "ground allspice",
+              "salt",
+              "ground pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add pine nuts, allspice and seasoning"
+          }
+        ],
+        "outputDescription": "filling prepared with golden onions, browned lamb, pine nuts and spices"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "4. Oil a large baking dish and spread half of the meat and bulgur wheat mixture over the bottom. Spoon over the filling and top with a second layer of meat and bulgur wheat, pressing down firmly with the back of a spoon.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "oil the baking dish"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "lamb",
+              "bulgur wheat"
+            ],
+            "durationMinutes": null,
+            "notes": "spread half of meat and bulgur mixture on bottom"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "onion",
+              "lamb",
+              "pine nuts"
+            ],
+            "durationMinutes": null,
+            "notes": "spoon filling over base layer"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "lamb",
+              "bulgur wheat"
+            ],
+            "durationMinutes": null,
+            "notes": "top with second layer of meat and bulgur"
+          },
+          {
+            "processId": "press",
+            "ingredients": [
+              "lamb",
+              "bulgur wheat"
+            ],
+            "durationMinutes": null,
+            "notes": "press down firmly with back of spoon"
+          }
+        ],
+        "outputDescription": "layered kibbeh assembled in oiled baking dish with filling between two layers"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "5. Pour the melted butter over the top and then bake on the oven for 40-45 minutes until browned on top.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "butter"
+            ],
+            "durationMinutes": null,
+            "notes": "pour melted butter over top"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "lamb",
+              "bulgur wheat",
+              "onion",
+              "pine nuts"
+            ],
+            "durationMinutes": 42.5,
+            "notes": "bake until browned on top"
+          }
+        ],
+        "outputDescription": "kibbeh baked until golden brown on top"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "6. Meanwhile make the yogurt dip: Blend together the yogurt and garlic, spoon into a serving bowl and sprinkle with the chopped mint.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of garlic"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "mint"
+            ],
+            "durationMinutes": null,
+            "notes": "chop mint"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "greek yogurt",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "blend yogurt and garlic together"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "greek yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "spoon into serving bowl"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "mint"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle chopped mint on top"
+          }
+        ],
+        "outputDescription": "yogurt dip prepared and garnished with mint in serving bowl"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "7. Cut the cooked kibbeh into squares or rectangles and serve garnished with mint and accompanied by rice and the yogurt dip.",
+        "processes": [
+          {
+            "processId": "slice_to_serve",
+            "ingredients": [
+              "lamb",
+              "bulgur wheat"
+            ],
+            "durationMinutes": null,
+            "notes": "cut kibbeh into squares or rectangles"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "mint"
+            ],
+            "durationMinutes": null,
+            "notes": "garnish with mint"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "lamb",
+              "bulgur wheat",
+              "greek yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with rice and yogurt dip"
+          }
+        ],
+        "outputDescription": "kibbeh cut into portions, garnished and plated for serving"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 20,
+      "uniqueProcesses": [
+        "rinse",
+        "squeeze",
+        "mix",
+        "knead",
+        "blend",
+        "heat",
+        "pan_fry",
+        "season",
+        "coat",
+        "spread",
+        "press",
+        "bake",
+        "mince",
+        "chop",
+        "plate",
+        "sprinkle",
+        "slice_to_serve",
+        "garnish"
+      ],
+      "estimatedTotalTime": 60
+    }
+  },
+  "components": [
+    {
+      "id": "comp_649403_step1",
+      "name": "oven preheated to 375F, bulgur wheat rinsed and moisture squeezed out",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bulgur",
+          "name": "bulgur wheat",
+          "quantityG": 105
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 42.84,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.26,
+        "costPerG": 0.029411764705882353,
+        "nutrition": {
+          "calories": 359.1,
+          "protein": 12.9045,
+          "fat": 1.3965,
+          "carbs": 79.66350000000001,
+          "fiber": 19.215,
+          "sugar": 0.4305,
+          "sodium": 17.85,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649403_step2",
+      "name": "lamb and bulgur wheat mixture formed into thick paste",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lamb",
+          "name": "lamb",
+          "quantityG": 226.796
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 6
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "ground pepper",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "knead",
+          "processName": "Knead",
+          "yieldFactor": 1,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 381.02008,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.864186,
+        "costPerG": 0.03376248831820097,
+        "nutrition": {
+          "calories": 714.6247199999999,
+          "protein": 39.83081759999999,
+          "fat": 53.438543599999996,
+          "carbs": 17.847,
+          "fiber": 4.068,
+          "sugar": 6.3984000000000005,
+          "sodium": 2466.48964,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649403_step3",
+      "name": "filling prepared with golden onions, browned lamb, pine nuts and spices",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 17.273088,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.288,
+        "costPerG": 0.01667333600106709,
+        "nutrition": {
+          "calories": 238.68,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 19.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649403_step5",
+      "name": "kibbeh baked until golden brown on top",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "butter",
+          "name": "butter",
+          "quantityG": 14
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 42.5,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 13.09,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.2975,
+        "costPerG": 0.022727272727272728,
+        "nutrition": {
+          "calories": 100.38000000000001,
+          "protein": 0.11900000000000001,
+          "fat": 11.354000000000001,
+          "carbs": 0.008400000000000001,
+          "fiber": 0,
+          "sugar": 0.008400000000000001,
+          "sodium": 90.02000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 43.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649403_step6",
+      "name": "yogurt dip prepared and garnished with mint in serving bowl",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 14.400237599999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6749999999999999,
+        "costPerG": 0.04687422657526151,
+        "nutrition": {
+          "calories": 22.349999999999998,
+          "protein": 0.954,
+          "fat": 0.075,
+          "carbs": 4.965,
+          "fiber": 0.315,
+          "sugar": 0.15,
+          "sodium": 2.55,
+          "method": "raw"
+        },
+        "prepTimeMin": 8.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649403_step7",
+      "name": "kibbeh cut into portions, garnished and plated for serving",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mint",
+          "name": "mint",
+          "quantityG": 3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice_to_serve",
+          "processName": "Slice to Serve",
+          "yieldFactor": 0.99,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3.0294,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.18,
+        "costPerG": 0.059417706476530004,
+        "nutrition": {
+          "calories": 2.1,
+          "protein": 0.11249999999999999,
+          "fat": 0.028199999999999996,
+          "carbs": 0.4467,
+          "fiber": 0.24,
+          "sugar": 0,
+          "sodium": 0.9299999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 25.696111000000002,
+    "costPerServing": 4.282685166666667,
+    "totalPrepTime": 90.5,
+    "nutritionPerServing": {
+      "calories": 367.29745333333335,
+      "protein": 19.143011266666665,
+      "fat": 23.589815599999998,
+      "carbs": 21.9875,
+      "fiber": 4.492583333333333,
+      "sugar": 4.293425,
+      "sodium": 460.32743999999997
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_649403_step1",
+        "name": "oven preheated to 375F, bulgur wheat rinsed and moisture squeezed out",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_649403_step2",
+        "name": "lamb and bulgur wheat mixture formed into thick paste",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649403_step3",
+        "name": "filling prepared with golden onions, browned lamb, pine nuts and spices",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_649403_step5",
+        "name": "kibbeh baked until golden brown on top",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_649403_step6",
+        "name": "yogurt dip prepared and garnished with mint in serving bowl",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_649403_step1",
+      "name": "oven preheated to 375F, bulgur wheat rinsed and moisture squeezed out",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "squeeze"
+      ]
+    },
+    {
+      "componentId": "comp_649403_step2",
+      "name": "lamb and bulgur wheat mixture formed into thick paste",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "knead",
+        "blend"
+      ]
+    },
+    {
+      "componentId": "comp_649403_step3",
+      "name": "filling prepared with golden onions, browned lamb, pine nuts and spices",
+      "shelfLifeHours": 48,
+      "processes": [
+        "heat",
+        "pan_fry",
+        "pan_fry",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_649403_step5",
+      "name": "kibbeh baked until golden brown on top",
+      "shelfLifeHours": 72,
+      "processes": [
+        "spread",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_649403_step6",
+      "name": "yogurt dip prepared and garnished with mint in serving bowl",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "chop",
+        "blend",
+        "plate",
+        "sprinkle"
+      ]
+    }
+  ]
+}

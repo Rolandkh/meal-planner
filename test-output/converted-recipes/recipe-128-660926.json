@@ -1,0 +1,785 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_1686ae9c-99fc-47c9-91dc-3a1dcc9bc11f",
+  "name": "Spice-Rubbed Lemon Barbecue Salmon",
+  "source": "spoonacular",
+  "spoonacularId": 660926,
+  "image": "/images/recipes/660926.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "barbecue sauce",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "barbecue seasoning",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "hoisin sauce",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "honey",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salmon fillets",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Place the salmon fillets on a greased, foil-lined baking sheet.</li><li>Rub the top of the salmon with the barbecue seasoning. Let sit for 10 minutes while you preheat the broiler.</li><li>Place the baking sheet 4\" - 6\" from the heating element and broil for 6 - 8 minutes, until cooked through.</li><li>Remove from the broiler and let sit 5 minutes.</li><li>Combine the sauce ingredients (barbecue sauce, hoisin sauce, honey and zest of 1/2 lemon) in a small bowl.</li><li>Spoon the sauce into a small ziplock bag and squeeze down to the corner of the bag. Cut off a very small portion of the corner of the bag and squeeze the sauce generously over the salmon.</li><li>Serve with a lemon wedge from the other half of the lemon.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 336.87,
+    "protein": 35.89,
+    "fat": 12.16,
+    "carbs": 23.42,
+    "fiber": 3.3,
+    "sugar": 9.76,
+    "saturatedFat": 2.19,
+    "sodium": 357.89
+  },
+  "tags": {
+    "cuisines": [
+      "bbq",
+      "Barbecue"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 85.7,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "barbecue seasoning",
+        "identity": "barbecue seasoning",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "barbecue_sauce",
+      "displayName": "barbecue sauce",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 10,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps barbecue sauce",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Hoisin sauce",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp hoisin sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "honey",
+      "displayName": "honey",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 10,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps honey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 340.194,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340.194,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "340.194 g salmon fillets",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings sea salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 6,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "2 Tbsps barbecue seasoning",
+        "identityText": "barbecue seasoning",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:54:49.479Z",
+  "processGraph": {
+    "recipeName": "Spice-Rubbed Lemon Barbecue Salmon",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Place the salmon fillets on a greased, foil-lined baking sheet.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": null,
+            "notes": "arranging on prepared baking sheet"
+          }
+        ],
+        "outputDescription": "salmon fillets positioned on greased, foil-lined baking sheet"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Rub the top of the salmon with the barbecue seasoning. Let sit for 10 minutes while you preheat the broiler.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salmon fillets",
+              "barbecue seasoning"
+            ],
+            "durationMinutes": null,
+            "notes": "rubbing seasoning onto salmon surface"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": 10,
+            "notes": "letting seasoned salmon rest to absorb flavors"
+          }
+        ],
+        "outputDescription": "salmon fillets seasoned with barbecue seasoning and rested for flavor absorption"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place the baking sheet 4\" - 6\" from the heating element and broil for 6 - 8 minutes, until cooked through.",
+        "processes": [
+          {
+            "processId": "broil",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": 7,
+            "notes": "positioned 4-6 inches from heating element"
+          }
+        ],
+        "outputDescription": "salmon fillets cooked through with broiled surface"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Remove from the broiler and let sit 5 minutes.",
+        "processes": [
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": 5,
+            "notes": "allowing cooked salmon to rest"
+          }
+        ],
+        "outputDescription": "rested cooked salmon with redistributed juices"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Combine the sauce ingredients (barbecue sauce, hoisin sauce, honey and zest of 1/2 lemon) in a small bowl.",
+        "processes": [
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "zesting half of the lemon"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "barbecue sauce",
+              "hoisin sauce",
+              "honey",
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all sauce ingredients"
+          }
+        ],
+        "outputDescription": "mixed sauce combining barbecue sauce, hoisin sauce, honey, and lemon zest"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Spoon the sauce into a small ziplock bag and squeeze down to the corner of the bag. Cut off a very small portion of the corner of the bag and squeeze the sauce generously over the salmon.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "barbecue sauce",
+              "hoisin sauce",
+              "honey",
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "dispensing sauce from improvised piping bag onto salmon"
+          }
+        ],
+        "outputDescription": "salmon fillets topped with sauce drizzled generously over surface"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Serve with a lemon wedge from the other half of the lemon.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting remaining lemon half into wedges"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "adding lemon wedge as garnish"
+          }
+        ],
+        "outputDescription": "plated salmon with lemon wedge garnish ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "plate",
+        "season",
+        "marinate",
+        "broil",
+        "rest_meat",
+        "zest",
+        "mix",
+        "squeeze",
+        "slice",
+        "garnish"
+      ],
+      "estimatedTotalTime": 22
+    }
+  },
+  "components": [
+    {
+      "id": "comp_660926_step1",
+      "name": "salmon fillets positioned on greased, foil-lined baking sheet",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salmon",
+          "name": "salmon fillets",
+          "quantityG": 340.194
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 340.194,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 37.42134,
+        "costPerG": 0.11,
+        "nutrition": {
+          "calories": 483.07548,
+          "protein": 67.49448960000001,
+          "fat": 21.5682996,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 149.68536,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660926_step2",
+      "name": "salmon fillets seasoned with barbecue seasoning and rested for flavor absorption",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "seasoning",
+          "name": "barbecue seasoning",
+          "quantityG": 14
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 14.994000000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.448,
+        "costPerG": 0.029878618113912226,
+        "nutrition": {
+          "calories": 42.980000000000004,
+          "protein": 1.3426,
+          "fat": 1.0542,
+          "carbs": 9.1826,
+          "fiber": 1.5820000000000003,
+          "sugar": 0.4312,
+          "sodium": 3.7800000000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 10.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660926_step3",
+      "name": "salmon fillets cooked through with broiled surface",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "broil",
+          "processName": "Broil",
+          "yieldFactor": 0.8,
+          "durationMinutes": 7,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660926_step4",
+      "name": "rested cooked salmon with redistributed juices",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660926_step5",
+      "name": "mixed sauce combining barbecue sauce, hoisin sauce, honey, and lemon zest",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon",
+          "name": "lemon",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.36,
+        "costPerG": 0.09,
+        "nutrition": {
+          "calories": 23.200000000000003,
+          "protein": 0.8800000000000001,
+          "fat": 0.24,
+          "carbs": 7.456,
+          "fiber": 2.2399999999999998,
+          "sugar": 2,
+          "sodium": 1.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660926_step6",
+      "name": "salmon fillets topped with sauce drizzled generously over surface",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "barbecue_sauce",
+          "name": "barbecue sauce",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "hoisin_sauce",
+          "name": "hoisin sauce",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "honey",
+          "name": "honey",
+          "quantityG": 10
+        }
+      ],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 10,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.7089666666666666,
+        "costPerG": 0.07089666666666666,
+        "nutrition": {
+          "calories": 58.6,
+          "protein": 0.27749999999999997,
+          "fat": 0.2325,
+          "carbs": 14.525,
+          "fiber": 0.25,
+          "sugar": 12.895,
+          "sodium": 184.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660926_step7",
+      "name": "plated salmon with lemon wedge garnish ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 39.03830666666667,
+    "costPerServing": 19.519153333333335,
+    "totalPrepTime": 32.5,
+    "nutritionPerServing": {
+      "calories": 303.92774000000003,
+      "protein": 34.997294800000006,
+      "fat": 11.5474998,
+      "carbs": 15.5818,
+      "fiber": 2.036,
+      "sugar": 7.6631,
+      "sodium": 557.31268
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_660926_step2",
+        "name": "salmon fillets seasoned with barbecue seasoning and rested for flavor absorption",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_660926_step3",
+        "name": "salmon fillets cooked through with broiled surface",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_660926_step5",
+        "name": "mixed sauce combining barbecue sauce, hoisin sauce, honey, and lemon zest",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660926_step6",
+        "name": "salmon fillets topped with sauce drizzled generously over surface",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_660926_step7",
+        "name": "plated salmon with lemon wedge garnish ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_660926_step2",
+      "name": "salmon fillets seasoned with barbecue seasoning and rested for flavor absorption",
+      "shelfLifeHours": 48,
+      "processes": [
+        "season",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_660926_step5",
+      "name": "mixed sauce combining barbecue sauce, hoisin sauce, honey, and lemon zest",
+      "shelfLifeHours": 24,
+      "processes": [
+        "zest",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_660926_step7",
+      "name": "plated salmon with lemon wedge garnish ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "garnish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_8c8bd96b-8cfa-47ad-9e01-2ebbf02191d2",
+  "name": "Lamb Burgers With Tzatziki Sauce",
+  "source": "spoonacular",
+  "spoonacularId": 649195,
+  "image": "/images/recipes/649195.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cucumber",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flat leaf parsley",
+      "quantity": 15,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dill",
+      "quantity": 1,
+      "unit": "handful",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 12,
+      "unit": "Cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "greek yogurt",
+      "quantity": 1,
+      "unit": "pts",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground lamb",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "hamburger buns",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>For the lamb burger, mix 1 pound ground lamb, 1 egg, 1 splash of extra virgin olive oil, the juice of 1 lemon, 1/4 cup chopped flat leaf parsley, and 6 cloves of chopped garlic. Season with kosher salt &amp; pepper to taste and let sit for  to 1 hour.</li><li>Grill burgers to your liking.</li><li>For the tzatziki sauce, mix together 1 pint Greek yogurt, 1 diced cucumber, juice of 1 lemon, 1 tablespoon extra virgin olive oil, 6 garlic cloves (add garlic bit by bit until you have the level of garlic you like), 1 handful minced fresh dill, and kosher salt and fresh cracked pepper to taste. Refrigerate overnight to let the flavors intensify.</li><li>Serve the grilled burgers on toasted buns and add a dollop of the sauce on top.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 616.69,
+    "protein": 37.74,
+    "fat": 36.94,
+    "carbs": 31.82,
+    "fiber": 1.66,
+    "sugar": 8.57,
+    "saturatedFat": 13.38,
+    "sodium": 536.89
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  egg",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 15,
+        "originalUnit": "g",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "15 g flat leaf parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "12 Cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lamb",
+      "displayName": "lamb",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "453.592 g ground lamb",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Hamburger buns",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4  hamburger buns",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "kosher_salt_and_pepper",
+      "displayName": "kosher salt and pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings kosher salt & pepper",
+      "matchConfidence": 0.85
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 9,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 handful dill",
+        "identityText": "handful dill",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 pts greek yogurt",
+        "identityText": "pts greek yogurt",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:33:29.513Z",
+  "processGraph": {
+    "recipeName": "Lamb Burgers With Tzatziki Sauce",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "For the lamb burger, mix 1 pound ground lamb, 1 egg, 1 splash of extra virgin olive oil, the juice of 1 lemon, 1/4 cup chopped flat leaf parsley, and 6 cloves of chopped garlic. Season with kosher salt & pepper to taste and let sit for to 1 hour.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "flat leaf parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "chop parsley for burger mixture"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "chop 6 cloves of garlic"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from 1 lemon"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ground lamb",
+              "egg",
+              "extra virgin olive oil",
+              "lemon",
+              "flat leaf parsley",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all burger ingredients"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "kosher salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season to taste"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": 60,
+            "notes": "let mixture sit for up to 1 hour"
+          }
+        ],
+        "outputDescription": "seasoned lamb burger mixture ready for grilling"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Grill burgers to your liking.",
+        "processes": [
+          {
+            "processId": "grill",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "cook burgers to desired doneness"
+          }
+        ],
+        "outputDescription": "grilled lamb burgers cooked to preference"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "For the tzatziki sauce, mix together 1 pint Greek yogurt, 1 diced cucumber, juice of 1 lemon, 1 tablespoon extra virgin olive oil, 6 garlic cloves (add garlic bit by bit until you have the level of garlic you like), 1 handful minced fresh dill, and kosher salt and fresh cracked pepper to taste. Refrigerate overnight to let the flavors intensify.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "cucumber"
+            ],
+            "durationMinutes": null,
+            "notes": "dice cucumber for tzatziki"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from 1 lemon"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "dill"
+            ],
+            "durationMinutes": null,
+            "notes": "mince fresh dill"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "mince 6 garlic cloves"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "greek yogurt",
+              "cucumber",
+              "lemon",
+              "extra virgin olive oil",
+              "garlic",
+              "dill"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all tzatziki ingredients"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "kosher salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season to taste"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "greek yogurt"
+            ],
+            "durationMinutes": 720,
+            "notes": "refrigerate overnight to intensify flavors"
+          }
+        ],
+        "outputDescription": "tzatziki sauce with intensified flavors ready to serve"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Serve the grilled burgers on toasted buns and add a dollop of the sauce on top.",
+        "processes": [
+          {
+            "processId": "toast",
+            "ingredients": [
+              "hamburger buns"
+            ],
+            "durationMinutes": null,
+            "notes": "toast buns for serving"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "ground lamb",
+              "hamburger buns",
+              "greek yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "assemble burgers with tzatziki sauce"
+          }
+        ],
+        "outputDescription": "assembled lamb burgers on toasted buns topped with tzatziki sauce"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "chop",
+        "squeeze",
+        "mix",
+        "season",
+        "marinate",
+        "grill",
+        "dice",
+        "mince",
+        "cool",
+        "toast",
+        "plate"
+      ],
+      "estimatedTotalTime": 800
+    }
+  },
+  "components": [
+    {
+      "id": "comp_649195_step1",
+      "name": "seasoned lamb burger mixture ready for grilling",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parsley",
+          "name": "flat leaf parsley",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 5.4000891,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.49995,
+        "costPerG": 0.6481281947736752,
+        "nutrition": {
+          "calories": 5.3999999999999995,
+          "protein": 0.4455,
+          "fat": 0.1185,
+          "carbs": 0.9495,
+          "fiber": 0.49499999999999994,
+          "sugar": 0.1275,
+          "sodium": 8.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 67.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649195_step2",
+      "name": "grilled lamb burgers cooked to preference",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lamb",
+          "name": "ground lamb",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "grill",
+          "processName": "Grill",
+          "yieldFactor": 0.78,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 353.80176,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.927372,
+        "costPerG": 0.03653846153846154,
+        "nutrition": {
+          "calories": 1279.12944,
+          "protein": 75.11483519999999,
+          "fat": 106.1858872,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 267.61928,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649195_step3",
+      "name": "tzatziki sauce with intensified flavors ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumber",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 720,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 99.77307479999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.25,
+        "costPerG": 0.022551174297376672,
+        "nutrition": {
+          "calories": 36,
+          "protein": 1.77,
+          "fat": 0.48,
+          "carbs": 6.48,
+          "fiber": 2.0999999999999996,
+          "sugar": 4.14,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 730.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649195_step4",
+      "name": "assembled lamb burgers on toasted buns topped with tzatziki sauce",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "hamburger_buns",
+          "name": "hamburger buns",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3.68,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.03332,
+        "costPerG": 0.009054347826086957,
+        "nutrition": {
+          "calories": 11.16,
+          "protein": 0.3908,
+          "fat": 0.1564,
+          "carbs": 2.004,
+          "fiber": 0.07200000000000001,
+          "sugar": 0.2912,
+          "sodium": 19.76,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 130.470042,
+    "costPerServing": 32.6175105,
+    "totalPrepTime": 813,
+    "nutritionPerServing": {
+      "calories": 519.48486,
+      "protein": 34.642433800000006,
+      "fat": 35.399071799999994,
+      "carbs": 15.643675,
+      "fiber": 1.5122499999999999,
+      "sugar": 6.2171,
+      "sodium": 531.20482
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_649195_step1",
+        "name": "seasoned lamb burger mixture ready for grilling",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649195_step2",
+        "name": "grilled lamb burgers cooked to preference",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_649195_step3",
+        "name": "tzatziki sauce with intensified flavors ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_649195_step1",
+      "name": "seasoned lamb burger mixture ready for grilling",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "chop",
+        "squeeze",
+        "mix",
+        "season",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_649195_step3",
+      "name": "tzatziki sauce with intensified flavors ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "squeeze",
+        "mince",
+        "mince",
+        "mix",
+        "season",
+        "cool"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,711 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_5f0699cc-810e-4141-a2b3-2c9645b56791",
+  "name": "Salmon with roasted vegetables",
+  "source": "spoonacular",
+  "spoonacularId": 659135,
+  "image": "/images/recipes/659135.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "potato",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsnip",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrot",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cherry tomatoes",
+      "quantity": 150,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salmon",
+      "quantity": 2,
+      "unit": "fillet",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rosemary and thyme",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Season the salmon fillets with some salt, pepper and a pinch of paprika and keep aside.\nPreheat the oven to 200 C.  Roughly dice the potatoes, parsnips and carrots and add to a roasting tray. Drizzle over the olive oil and season with salt and pepper. Mix well and roast for 15 minutes. Add in the onion and roast for a further 10-15 minutes\nPlace the salmon fillets and tomatoes between the veg. Drizzle the lemon juice and sprinkle over the rosemary and thyme. Season lightly with salt and pepper and roast for 10-15 minutes or until the salmon and veg is cooked through.\nServe with some green salad.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 495.53,
+    "protein": 38.53,
+    "fat": 18.41,
+    "carbs": 44.62,
+    "fiber": 8.99,
+    "sugar": 10.3,
+    "saturatedFat": 2.78,
+    "sodium": 121.03
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "whole 30",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  potato",
+      "matchConfidence": 0.7166666666666668
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  carrot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cherry_tomatoes",
+      "displayName": "cherry tomatoes",
+      "quantity": {
+        "originalQuantity": 150,
+        "originalUnit": "g",
+        "normalizedQuantityG": 150,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "150 g cherry tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 fillet salmon",
+      "matchConfidence": 0.7666666666666666
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 8,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1  parsnip",
+        "identityText": "parsnip",
+        "state": "fresh"
+      },
+      {
+        "rawText": "2 tsps rosemary and thyme",
+        "identityText": "rosemary and thyme",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:52:01.465Z",
+  "processGraph": {
+    "recipeName": "Salmon with roasted vegetables",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Season the salmon fillets with some salt, pepper and a pinch of paprika and keep aside.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salmon"
+            ],
+            "durationMinutes": null,
+            "notes": "with salt, pepper and paprika"
+          }
+        ],
+        "outputDescription": "seasoned salmon fillets set aside"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Preheat the oven to 200 C. Roughly dice the potatoes, parsnips and carrots and add to a roasting tray. Drizzle over the olive oil and season with salt and pepper. Mix well and roast for 15 minutes. Add in the onion and roast for a further 10-15 minutes",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "potato",
+              "parsnip",
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "roughly diced"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "potato",
+              "parsnip",
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "with salt and pepper"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "potato",
+              "parsnip",
+              "carrot",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "mix well with olive oil"
+          },
+          {
+            "processId": "roast",
+            "ingredients": [
+              "potato",
+              "parsnip",
+              "carrot"
+            ],
+            "durationMinutes": 15,
+            "notes": "at 200°C"
+          },
+          {
+            "processId": "roast",
+            "ingredients": [
+              "potato",
+              "parsnip",
+              "carrot",
+              "onion"
+            ],
+            "durationMinutes": 12.5,
+            "notes": "additional 10-15 minutes with onion added"
+          }
+        ],
+        "outputDescription": "roasted vegetables (potato, parsnip, carrot, onion) partially cooked"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place the salmon fillets and tomatoes between the veg. Drizzle the lemon juice and sprinkle over the rosemary and thyme. Season lightly with salt and pepper and roast for 10-15 minutes or until the salmon and veg is cooked through.",
+        "processes": [
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "rosemary and thyme"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle herbs over dish"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salmon",
+              "cherry tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "lightly with salt and pepper, drizzle lemon juice"
+          },
+          {
+            "processId": "roast",
+            "ingredients": [
+              "salmon",
+              "cherry tomatoes",
+              "potato",
+              "parsnip",
+              "carrot",
+              "onion"
+            ],
+            "durationMinutes": 12.5,
+            "notes": "10-15 minutes until salmon and vegetables are cooked through"
+          }
+        ],
+        "outputDescription": "fully cooked salmon and roasted vegetables ready to serve"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Serve with some green salad.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "salmon",
+              "cherry tomatoes",
+              "potato",
+              "parsnip",
+              "carrot",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with green salad"
+          }
+        ],
+        "outputDescription": "plated dish ready for consumption"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "season",
+        "dice",
+        "mix",
+        "roast",
+        "sprinkle",
+        "plate"
+      ],
+      "estimatedTotalTime": 40
+    }
+  },
+  "components": [
+    {
+      "id": "comp_659135_step1",
+      "name": "seasoned salmon fillets set aside",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salmon",
+          "name": "salmon",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 306,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 33,
+        "costPerG": 0.10784313725490197,
+        "nutrition": {
+          "calories": 426,
+          "protein": 59.519999999999996,
+          "fat": 19.02,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 132,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_659135_step2",
+      "name": "roasted vegetables (potato, parsnip, carrot, onion) partially cooked",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "potatoes",
+          "name": "potato",
+          "quantityG": 180
+        },
+        {
+          "ingredientId": "parsnip",
+          "name": "parsnip",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrot",
+          "quantityG": 60
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 12.5,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 134.1255375,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.544,
+        "costPerG": 0.004055901733105822,
+        "nutrition": {
+          "calories": 163.95,
+          "protein": 4.206,
+          "fat": 0.309,
+          "carbs": 37.3739,
+          "fiber": 5.689,
+          "sugar": 4.296,
+          "sodium": 52.3,
+          "method": "raw"
+        },
+        "prepTimeMin": 33
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659135_step3",
+      "name": "fully cooked salmon and roasted vegetables ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "thyme",
+          "name": "rosemary and thyme",
+          "quantityG": 0.8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 12.5,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0.62424,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.10666400000000001,
+        "costPerG": 0.17087017813661412,
+        "nutrition": {
+          "calories": 0.808,
+          "protein": 0.04448,
+          "fat": 0.01344,
+          "carbs": 0.1956,
+          "fiber": 0.112,
+          "sugar": 0,
+          "sodium": 0.07200000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 13.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659135_step4",
+      "name": "plated dish ready for consumption",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cherry_tomatoes",
+          "name": "cherry tomatoes",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 300,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.4755000000000003,
+        "costPerG": 0.011585000000000002,
+        "nutrition": {
+          "calories": 87,
+          "protein": 3.075,
+          "fat": 0.31500000000000006,
+          "carbs": 20.025,
+          "fiber": 3.5999999999999996,
+          "sugar": 10.095,
+          "sodium": 22.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 40.430164000000005,
+    "costPerServing": 20.215082000000002,
+    "totalPrepTime": 49,
+    "nutritionPerServing": {
+      "calories": 399.11,
+      "protein": 33.431664999999995,
+      "fat": 16.58484,
+      "carbs": 28.9732,
+      "fiber": 4.708150000000001,
+      "sugar": 7.259760000000001,
+      "sodium": 491.1765
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_659135_step2",
+        "name": "roasted vegetables (potato, parsnip, carrot, onion) partially cooked",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659135_step3",
+        "name": "fully cooked salmon and roasted vegetables ready to serve",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_659135_step2",
+      "name": "roasted vegetables (potato, parsnip, carrot, onion) partially cooked",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "season",
+        "mix",
+        "roast",
+        "roast"
+      ]
+    },
+    {
+      "componentId": "comp_659135_step3",
+      "name": "fully cooked salmon and roasted vegetables ready to serve",
+      "shelfLifeHours": 96,
+      "processes": [
+        "sprinkle",
+        "season",
+        "roast"
+      ]
+    }
+  ]
+}

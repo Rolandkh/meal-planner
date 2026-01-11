@@ -1,0 +1,847 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_241c333b-a7cc-48ee-9df5-ce5da915e004",
+  "name": "Italian Sausage and Vegetable Soup",
+  "source": "spoonacular",
+  "spoonacularId": 648238,
+  "image": "/images/recipes/648238.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spicy sausages",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bay leaf",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasoning",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper flakes",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken stock",
+      "quantity": 907.185,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 396.893,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cannellini beans",
+      "quantity": 1,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 1,
+      "unit": "bag",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Heat oil in large pot over medium heat and add sausages, without the casings.\nMix sausage until it is broken up into small pieces and cook until sausages is browned and almost cooked through.\nAdd carrots, onions, bay leaf, Italian seasoning, red pepper flakes and salt and pepper. Cook 5-6 minutes longer, until onions start to soften.\nAdd chicken stock and diced tomatoes. Bring stock up to a simmer. Once the stock is at a simmer, reduce heat to low and simmer with the top on until vegetables are tender, about 10 minutes longer.\nTurn the heat off and add cannellini beans and spinach and stir in until spinach wilts.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 470.76,
+    "protein": 22.76,
+    "fat": 28.26,
+    "carbs": 33.02,
+    "fiber": 7.29,
+    "sugar": 7.97,
+    "saturatedFat": 9.36,
+    "sodium": 1107.55
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bay_leaf",
+      "displayName": "bay leaf",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  bay leaf",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Seasoning blend",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps seasoning",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper_flakes",
+      "displayName": "pepper flakes",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.25 tsps pepper flakes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_broth",
+      "displayName": "chicken broth",
+      "quantity": {
+        "originalQuantity": 907.185,
+        "originalUnit": "g",
+        "normalizedQuantityG": 907.185,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "907.185 g chicken stock",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 396.893,
+        "originalUnit": "g",
+        "normalizedQuantityG": 396.893,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "396.893 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cannellini_beans",
+      "displayName": "cannellini beans",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "1 can cannellini beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bag spinach",
+      "matchConfidence": 0.8681818181818182
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 11,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4  spicy sausages",
+        "identityText": "spicy sausages",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:29:06.219Z",
+  "processGraph": {
+    "recipeName": "Italian Sausage and Vegetable Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat oil in large pot over medium heat and add sausages, without the casings.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in large pot over medium heat"
+          },
+          {
+            "processId": "debone",
+            "ingredients": [
+              "spicy sausages"
+            ],
+            "durationMinutes": null,
+            "notes": "remove casings from sausages"
+          }
+        ],
+        "outputDescription": "oil heated in pot, sausages removed from casings and added to pot"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Mix sausage until it is broken up into small pieces and cook until sausages is browned and almost cooked through.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "spicy sausages"
+            ],
+            "durationMinutes": null,
+            "notes": "break up sausage into small pieces"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "spicy sausages"
+            ],
+            "durationMinutes": null,
+            "notes": "cook until browned and almost cooked through"
+          }
+        ],
+        "outputDescription": "sausage broken into small pieces, browned and almost fully cooked"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add carrots, onions, bay leaf, Italian seasoning, red pepper flakes and salt and pepper. Cook 5-6 minutes longer, until onions start to soften.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "carrots",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of vegetables before adding"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "bay leaf",
+              "seasoning",
+              "pepper flakes",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add seasonings"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "carrots",
+              "onion",
+              "bay leaf",
+              "seasoning",
+              "pepper flakes",
+              "salt and pepper"
+            ],
+            "durationMinutes": 6,
+            "notes": "cook until onions start to soften"
+          }
+        ],
+        "outputDescription": "vegetables and seasonings added and sautéed, onions beginning to soften"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add chicken stock and diced tomatoes. Bring stock up to a simmer. Once the stock is at a simmer, reduce heat to low and simmer with the top on until vegetables are tender, about 10 minutes longer.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chicken stock",
+              "canned tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "add liquids to pot"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "chicken stock",
+              "canned tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "bring to a simmer"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "chicken stock",
+              "canned tomatoes"
+            ],
+            "durationMinutes": 10,
+            "notes": "reduce heat to low and simmer covered until vegetables are tender"
+          }
+        ],
+        "outputDescription": "soup base created with stock and tomatoes, vegetables tender after simmering"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Turn the heat off and add cannellini beans and spinach and stir in until spinach wilts.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cannellini beans",
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "add beans and spinach, stir until spinach wilts"
+          }
+        ],
+        "outputDescription": "finished soup with beans added and spinach wilted"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "heat",
+        "debone",
+        "mix",
+        "saute",
+        "dice",
+        "season",
+        "boil",
+        "simmer"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648238_step1",
+      "name": "oil heated in pot, sausages removed from casings and added to pot",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "debone",
+          "processName": "Debone",
+          "yieldFactor": 0.65,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 8.5995,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.144,
+        "costPerG": 0.016745159602302457,
+        "nutrition": {
+          "calories": 119.34,
+          "protein": 0,
+          "fat": 13.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 13
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648238_step2",
+      "name": "sausage broken into small pieces, browned and almost fully cooked",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sausage",
+          "name": "spicy sausages",
+          "quantityG": 1.2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 1.02,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.020399999999999998,
+        "costPerG": 0.019999999999999997,
+        "nutrition": {
+          "calories": 3.648,
+          "protein": 0.18108,
+          "fat": 0.31836000000000003,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 7.632000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648238_step3",
+      "name": "vegetables and seasonings added and sautéed, onions beginning to soften",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 180
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 6,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 277.52669999999995,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1755,
+        "costPerG": 0.01144214232360346,
+        "nutrition": {
+          "calories": 133.8,
+          "protein": 3.3240000000000003,
+          "fat": 0.5820000000000001,
+          "carbs": 31.253999999999998,
+          "fiber": 7.59,
+          "sugar": 14.892,
+          "sodium": 130.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 9.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648238_step4",
+      "name": "soup base created with stock and tomatoes, vegetables tender after simmering",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "chicken stock",
+          "quantityG": 907.185
+        },
+        {
+          "ingredientId": "canned_tomatoes",
+          "name": "canned tomatoes",
+          "quantityG": 396.893
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 1114.98669,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.6514190999999996,
+        "costPerG": 0.003274854428979775,
+        "nutrition": {
+          "calories": 181.43686,
+          "protein": 12.315029199999998,
+          "fat": 3.0163889,
+          "carbs": 32.9251137,
+          "fiber": 7.540966999999999,
+          "sugar": 21.3641875,
+          "sodium": 3889.55511,
+          "method": "raw"
+        },
+        "prepTimeMin": 22
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648238_step5",
+      "name": "finished soup with beans added and spinach wilted",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cannellini_beans",
+          "name": "cannellini beans",
+          "quantityG": 400
+        },
+        {
+          "ingredientId": "spinach_bunch",
+          "name": "spinach",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 401,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.52917,
+        "costPerG": 0.003813391521197007,
+        "nutrition": {
+          "calories": 288.23,
+          "protein": 22.3486,
+          "fat": 0.0039000000000000003,
+          "carbs": 60.9563,
+          "fiber": 19.182,
+          "sugar": 0.0042,
+          "sodium": 860.79,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 9.4541141,
+    "costPerServing": 1.5756856833333333,
+    "totalPrepTime": 53.5,
+    "nutritionPerServing": {
+      "calories": 124.40256000000001,
+      "protein": 6.465829033333333,
+      "fat": 2.9926198166666675,
+      "carbs": 21.570923116666666,
+      "fiber": 5.887277833333332,
+      "sugar": 6.075355833333333,
+      "sodium": 1204.0195183333333
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648238_step1",
+        "name": "oil heated in pot, sausages removed from casings and added to pot",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648238_step2",
+        "name": "sausage broken into small pieces, browned and almost fully cooked",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648238_step3",
+        "name": "vegetables and seasonings added and sautéed, onions beginning to soften",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_648238_step4",
+        "name": "soup base created with stock and tomatoes, vegetables tender after simmering",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648238_step5",
+        "name": "finished soup with beans added and spinach wilted",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648238_step1",
+      "name": "oil heated in pot, sausages removed from casings and added to pot",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "debone"
+      ]
+    },
+    {
+      "componentId": "comp_648238_step2",
+      "name": "sausage broken into small pieces, browned and almost fully cooked",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_648238_step3",
+      "name": "vegetables and seasonings added and sautéed, onions beginning to soften",
+      "shelfLifeHours": 48,
+      "processes": [
+        "dice",
+        "season",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_648238_step4",
+      "name": "soup base created with stock and tomatoes, vegetables tender after simmering",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil",
+        "simmer"
+      ]
+    }
+  ]
+}

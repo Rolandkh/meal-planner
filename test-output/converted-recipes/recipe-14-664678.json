@@ -1,0 +1,915 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_84453bd8-dc75-407b-8291-a19a0472dc08",
+  "name": "Vegetarian Moussaka With Portabella",
+  "source": "spoonacular",
+  "spoonacularId": 664678,
+  "image": "/images/recipes/664678.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "canned tomatoes",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrot",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg substitute equivalent to 3 eggs - i use substitute= teaspoons of ener",
+      "quantity": 4.5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "evoo",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 4,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic salt",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "s packages of portabella mushrooms",
+      "quantity": 56.699,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "potatoes",
+      "quantity": 5,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "soy milk",
+      "quantity": 236,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Boil and peel the potatoes  cut into 1/4 inch slices.</li><li>In a non-stick pan throw in the mushrooms, carrots, garlic, onions, tomatoes, cover with EVOO and stir. Set the pan over medium-low heat for 5 minutes.</li><li>In the meantime, in a deep baking dish, arrange the potato slices one next to another and cover the bottom. Bring over the mushroom filling and throw it over the potatoes, evenly. Cover with another layer of potato slices.</li><li>In a medium bowl, whisk together the soy milk and the egg substitute. Pour it over the potatoes.</li><li>Put the baking dish in the oven for 45 minutes to an hour.</li><li>Allow it to cool for about 10 to 15 minutes before serving.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 377.56,
+    "protein": 12.24,
+    "fat": 8.85,
+    "carbs": 66.46,
+    "fiber": 7.37,
+    "sugar": 11.62,
+    "saturatedFat": 1.24,
+    "sodium": 572.84
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 91.7,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons of ener",
+        "identity": "egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons ener",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  carrot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5 tsps basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps evoo",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Garlic salt",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps garlic salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mushrooms",
+      "displayName": "mushrooms",
+      "quantity": {
+        "originalQuantity": 56.699,
+        "originalUnit": "g",
+        "normalizedQuantityG": 56.699,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "56.699 g s packages of portabella mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 9,
+    "unmatched": 3,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4.5 Tbsps egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons of ener",
+        "identityText": "egg substitute equivalent to 3 eggs - i use ener-g substitute= teaspoons ener",
+        "state": "fresh"
+      },
+      {
+        "rawText": "5 medium russet potatoes",
+        "identityText": "russet potatoes",
+        "state": "fresh"
+      },
+      {
+        "rawText": "236 ml soy milk",
+        "identityText": "soy milk",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:23:49.990Z",
+  "processGraph": {
+    "recipeName": "Vegetarian Moussaka With Portabella",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Boil and peel the potatoes cut into 1/4 inch slices.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "boil until tender enough to peel"
+          },
+          {
+            "processId": "peel",
+            "ingredients": [
+              "potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "remove skin after boiling"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into 1/4 inch slices"
+          }
+        ],
+        "outputDescription": "potatoes are boiled, peeled, and sliced into 1/4 inch pieces"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "In a non-stick pan throw in the mushrooms, carrots, garlic, onions, tomatoes, cover with EVOO and stir. Set the pan over medium-low heat for 5 minutes.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "carrot",
+              "garlic",
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation of vegetables for cooking"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "s packages of portabella mushrooms",
+              "carrot",
+              "garlic",
+              "onions",
+              "canned tomatoes",
+              "evoo"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all ingredients in pan and stir"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "s packages of portabella mushrooms",
+              "carrot",
+              "garlic",
+              "onions",
+              "canned tomatoes"
+            ],
+            "durationMinutes": 5,
+            "notes": "cook over medium-low heat"
+          }
+        ],
+        "outputDescription": "vegetables are sautéed together with oil until softened"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "In the meantime, in a deep baking dish, arrange the potato slices one next to another and cover the bottom. Bring over the mushroom filling and throw it over the potatoes, evenly. Cover with another layer of potato slices.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange potato slices in baking dish bottom"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "s packages of portabella mushrooms",
+              "carrot",
+              "garlic",
+              "onions",
+              "canned tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "distribute mushroom filling evenly over potatoes"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange second layer of potato slices on top"
+          }
+        ],
+        "outputDescription": "layered casserole with potato base, vegetable filling, and potato top layer"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "In a medium bowl, whisk together the soy milk and the egg substitute. Pour it over the potatoes.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "soy milk",
+              "egg substitute equivalent to 3 eggs - i use substitute= teaspoons of ener"
+            ],
+            "durationMinutes": null,
+            "notes": "combine liquids until smooth"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "soy milk",
+              "egg substitute equivalent to 3 eggs - i use substitute= teaspoons of ener"
+            ],
+            "durationMinutes": null,
+            "notes": "pour mixture over assembled casserole"
+          }
+        ],
+        "outputDescription": "casserole is topped with whisked soy milk and egg substitute mixture"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Put the baking dish in the oven for 45 minutes to an hour.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "potatoes",
+              "s packages of portabella mushrooms",
+              "carrot",
+              "garlic",
+              "onions",
+              "canned tomatoes",
+              "soy milk",
+              "egg substitute equivalent to 3 eggs - i use substitute= teaspoons of ener"
+            ],
+            "durationMinutes": 52.5,
+            "notes": "bake assembled casserole until set and golden"
+          }
+        ],
+        "outputDescription": "fully cooked moussaka with set custard layer and golden top"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Allow it to cool for about 10 to 15 minutes before serving.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "potatoes",
+              "s packages of portabella mushrooms",
+              "carrot",
+              "garlic",
+              "onions",
+              "canned tomatoes",
+              "soy milk",
+              "egg substitute equivalent to 3 eggs - i use substitute= teaspoons of ener"
+            ],
+            "durationMinutes": 12.5,
+            "notes": "rest to allow layers to set for easier serving"
+          }
+        ],
+        "outputDescription": "cooled moussaka ready for slicing and serving"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "boil",
+        "peel",
+        "slice",
+        "chop",
+        "mix",
+        "saute",
+        "plate",
+        "spread",
+        "whisk",
+        "bake",
+        "cool"
+      ],
+      "estimatedTotalTime": 70
+    }
+  },
+  "components": [
+    {
+      "id": "comp_664678_step1",
+      "name": "potatoes are boiled, peeled, and sliced into 1/4 inch pieces",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "potatoes",
+          "name": "potatoes",
+          "quantityG": 900
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 754.11,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.575,
+        "costPerG": 0.0020885547201336674,
+        "nutrition": {
+          "calories": 693,
+          "protein": 18.18,
+          "fat": 0.8099999999999999,
+          "carbs": 157.23,
+          "fiber": 19.8,
+          "sugar": 7.0200000000000005,
+          "sodium": 54,
+          "method": "raw"
+        },
+        "prepTimeMin": 14
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664678_step2",
+      "name": "vegetables are sautéed together with oil until softened",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrot",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 20
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onions",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 316.53999999999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.126,
+        "costPerG": 0.019353004359638597,
+        "nutrition": {
+          "calories": 174.4,
+          "protein": 5.130000000000001,
+          "fat": 0.544,
+          "carbs": 40.388000000000005,
+          "fiber": 7.199999999999999,
+          "sugar": 15.764000000000001,
+          "sodium": 56.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664678_step3",
+      "name": "layered casserole with potato base, vegetable filling, and potato top layer",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mushrooms",
+          "name": "s packages of portabella mushrooms",
+          "quantityG": 56.699
+        },
+        {
+          "ingredientId": "canned_tomatoes",
+          "name": "canned tomatoes",
+          "quantityG": 425.243
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 530.1362,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.5821316,
+        "costPerG": 0.018074848689827255,
+        "nutrition": {
+          "calories": 148.55154000000002,
+          "protein": 8.7259843,
+          "fat": 1.3834570000000002,
+          "carbs": 32.8486021,
+          "fiber": 8.646607000000001,
+          "sugar": 19.8333322,
+          "sodium": 564.1557100000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_664678_step4",
+      "name": "casserole is topped with whisked soy milk and egg substitute mixture",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "soy_milk_original",
+          "name": "soy milk",
+          "quantityG": 236
+        },
+        {
+          "ingredientId": "eggs",
+          "name": "egg substitute equivalent to 3 eggs - i use substitute= teaspoons of ener",
+          "quantityG": 67.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 333.85,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.111025,
+        "costPerG": 0.0033279167290699413,
+        "nutrition": {
+          "calories": 96.525,
+          "protein": 8.505,
+          "fat": 6.41925,
+          "carbs": 0.486,
+          "fiber": 0,
+          "sugar": 0.24975,
+          "sodium": 95.85000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664678_step5",
+      "name": "fully cooked moussaka with set custard layer and golden top",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 52.5,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 52.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_664678_step6",
+      "name": "cooled moussaka ready for slicing and serving",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 12.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 12.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 18.936033099999996,
+    "costPerServing": 4.734008274999999,
+    "totalPrepTime": 96,
+    "nutritionPerServing": {
+      "calories": 337.800635,
+      "protein": 10.136821075,
+      "fat": 9.039496750000001,
+      "carbs": 57.739475524999996,
+      "fiber": 8.91245175,
+      "sugar": 10.716920550000001,
+      "sodium": 701.5371775
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_664678_step1",
+        "name": "potatoes are boiled, peeled, and sliced into 1/4 inch pieces",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_664678_step2",
+        "name": "vegetables are sautéed together with oil until softened",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_664678_step4",
+        "name": "casserole is topped with whisked soy milk and egg substitute mixture",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_664678_step5",
+        "name": "fully cooked moussaka with set custard layer and golden top",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_664678_step6",
+        "name": "cooled moussaka ready for slicing and serving",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_664678_step1",
+      "name": "potatoes are boiled, peeled, and sliced into 1/4 inch pieces",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "peel",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_664678_step2",
+      "name": "vegetables are sautéed together with oil until softened",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "mix",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_664678_step4",
+      "name": "casserole is topped with whisked soy milk and egg substitute mixture",
+      "shelfLifeHours": 12,
+      "processes": [
+        "whisk",
+        "spread"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,736 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_9fdb3e35-ada2-4373-8d11-75cc47ad80d6",
+  "name": "Mushroom Hummus Crostini",
+  "source": "spoonacular",
+  "spoonacularId": 1095745,
+  "image": "/images/recipes/1095745.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "crusty bread",
+      "quantity": 1,
+      "unit": "loaf",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mushrooms",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 2,
+      "unit": "handfuls",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chickpeas",
+      "quantity": 396.893,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tahini",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cumin",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "harissa",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>To make the hummus, place all ingredients in a food processor and blend until smooth. Adjust the amount of water and harissa pasta depending on how thick and spicy you want your hummus. It should still be spreadable. Set the hummus aside.</li><li>Slice the mushrooms and fry in a shallow pan until they are golden and crispy. Once they are ready, push them to one side of the pan and add the spinach to wilt.</li><li>To assemble the crostini, spread some hummus on a slice of the bread (you can toast it if you like), then top with some spinach and mushrooms. Serve immediately.</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 4,
+  "nutrition": {
+    "calories": 450.17,
+    "protein": 20.54,
+    "fat": 10.35,
+    "carbs": 72.38,
+    "fiber": 8.43,
+    "sugar": 8.03,
+    "saturatedFat": 1.57,
+    "sodium": 997.99
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "fingerfood",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.879Z",
+  "updatedAt": "2026-01-09T11:32:55.879Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Bread",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 loaf crusty bread",
+      "matchConfidence": 0.85
+    },
+    {
+      "masterIngredientId": "mushrooms",
+      "displayName": "mushrooms",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 handfuls spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chickpeas",
+      "displayName": "chickpeas",
+      "quantity": {
+        "originalQuantity": 396.893,
+        "originalUnit": "g",
+        "normalizedQuantityG": 396.893,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "396.893 g chickpeas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tahini",
+      "displayName": "tahini",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp tahini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.25 tsps ground cumin",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Harissa",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps harissa",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 11,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:20:09.382Z",
+  "processGraph": {
+    "recipeName": "Mushroom Hummus Crostini",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "To make the hummus, place all ingredients in a food processor and blend until smooth. Adjust the amount of water and harissa pasta depending on how thick and spicy you want your hummus. It should still be spreadable. Set the hummus aside.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "chickpeas",
+              "garlic",
+              "lemon juice",
+              "tahini",
+              "olive oil",
+              "water",
+              "ground cumin",
+              "harissa"
+            ],
+            "durationMinutes": null,
+            "notes": "blend until smooth in food processor"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "water",
+              "harissa"
+            ],
+            "durationMinutes": null,
+            "notes": "adjust amounts for desired consistency and spice level"
+          }
+        ],
+        "outputDescription": "smooth, spreadable hummus set aside"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Slice the mushrooms and fry in a shallow pan until they are golden and crispy. Once they are ready, push them to one side of the pan and add the spinach to wilt.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "slice mushrooms before cooking"
+          },
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "fry in shallow pan until golden and crispy"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "wilt spinach in same pan"
+          }
+        ],
+        "outputDescription": "golden crispy mushrooms and wilted spinach in pan"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "To assemble the crostini, spread some hummus on a slice of the bread (you can toast it if you like), then top with some spinach and mushrooms. Serve immediately.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "crusty bread"
+            ],
+            "durationMinutes": null,
+            "notes": "slice bread for crostini base"
+          },
+          {
+            "processId": "toast",
+            "ingredients": [
+              "crusty bread"
+            ],
+            "durationMinutes": null,
+            "notes": "optional toasting of bread slices"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "chickpeas"
+            ],
+            "durationMinutes": null,
+            "notes": "spread hummus on bread slices"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "spinach",
+              "mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "top with cooked spinach and mushrooms"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "crusty bread",
+              "chickpeas",
+              "spinach",
+              "mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "serve immediately"
+          }
+        ],
+        "outputDescription": "assembled crostini ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "blend",
+        "mix",
+        "slice",
+        "pan_fry",
+        "saute",
+        "toast",
+        "spread",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 20
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1095745_step1",
+      "name": "smooth, spreadable hummus set aside",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chickpeas",
+          "name": "chickpeas",
+          "quantityG": 396.893
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 15.25
+        },
+        {
+          "ingredientId": "tahini",
+          "name": "tahini",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "ground cumin",
+          "quantityG": 0.525
+        },
+        {
+          "ingredientId": "harissa",
+          "name": "harissa",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 496.04463999999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.163998750000001,
+        "costPerG": 0.02452198404966134,
+        "nutrition": {
+          "calories": 899.41827,
+          "protein": 38.98959729999999,
+          "fat": 31.999546199999997,
+          "carbs": 120.93257059999999,
+          "fiber": 31.794742999999997,
+          "sugar": 23.486976499999997,
+          "sodium": 438.68701,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095745_step2",
+      "name": "golden crispy mushrooms and wilted spinach in pan",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mushrooms_button",
+          "name": "mushrooms",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 302.2737088,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.041164,
+        "costPerG": 0.006752701080432173,
+        "nutrition": {
+          "calories": 99.79024,
+          "protein": 14.0159928,
+          "fat": 1.5422128000000002,
+          "carbs": 14.787099199999998,
+          "fiber": 4.53592,
+          "sugar": 8.9811216,
+          "sodium": 22.6796,
+          "method": "raw"
+        },
+        "prepTimeMin": 15
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095745_step3",
+      "name": "assembled crostini ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bread",
+          "name": "crusty bread",
+          "quantityG": 400
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 404.63808000000006,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.6000000000000005,
+        "costPerG": 0.013839527906024069,
+        "nutrition": {
+          "calories": 1096,
+          "protein": 42.8,
+          "fat": 18.12,
+          "carbs": 190,
+          "fiber": 16,
+          "sugar": 22.92,
+          "sodium": 1892,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 21.555362750000004,
+    "costPerServing": 5.388840687500001,
+    "totalPrepTime": 28,
+    "nutritionPerServing": {
+      "calories": 527.2521275,
+      "protein": 24.380397524999996,
+      "fat": 12.97393975,
+      "carbs": 81.97441745,
+      "fiber": 13.412665749999997,
+      "sugar": 13.910024525,
+      "sodium": 600.1916524999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1095745_step1",
+        "name": "smooth, spreadable hummus set aside",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095745_step2",
+        "name": "golden crispy mushrooms and wilted spinach in pan",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095745_step3",
+        "name": "assembled crostini ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1095745_step1",
+      "name": "smooth, spreadable hummus set aside",
+      "shelfLifeHours": 24,
+      "processes": [
+        "blend",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_1095745_step2",
+      "name": "golden crispy mushrooms and wilted spinach in pan",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "pan_fry",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_1095745_step3",
+      "name": "assembled crostini ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "toast",
+        "spread",
+        "garnish",
+        "plate"
+      ]
+    }
+  ]
+}

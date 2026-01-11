@@ -1,0 +1,816 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_98d266a7-e372-4f6f-a810-0a35be405430",
+  "name": "Roasted Eggplant Hummus",
+  "source": "spoonacular",
+  "spoonacularId": 658573,
+  "image": "/images/recipes/658573.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "chickpeas",
+      "quantity": 439.418,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggplant",
+      "quantity": 1.361,
+      "unit": "kgs",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 54,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic clove",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tahini",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Preheat oven to 425 degrees.</li><li>On a large baking sheet toss eggplant, 2 tablespoons olive oil, salt and pepper and spread in a single layer.</li><li>Roast for 18-20 minutes.</li><li>Remove from oven and set aside.</li><li>In food processor combine, chickpeas, tahini, garlic, lemon juice, 2 tablespoons olive oil and pulse 3 or 4 times.</li><li>Add eggplant and blend on highest level until desired consistency.</li><li>Store in air tight containers in the refrigerator.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 232.4,
+    "protein": 6.76,
+    "fat": 13.5,
+    "carbs": 24.86,
+    "fiber": 10.31,
+    "sugar": 8.14,
+    "saturatedFat": 1.84,
+    "sodium": 404.01
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "condiment",
+      "starter",
+      "snack",
+      "appetizer",
+      "dip",
+      "antipasto",
+      "hor d'oeuvre",
+      "spread"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "chickpeas",
+      "displayName": "chickpeas",
+      "quantity": {
+        "originalQuantity": 439.418,
+        "originalUnit": "g",
+        "normalizedQuantityG": 439.418,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "439.418 g chickpeas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggplant",
+      "displayName": "eggplant",
+      "quantity": {
+        "originalQuantity": 1.361,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1.361 kgs eggplant",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 54,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 49,
+        "normalizedQuantityMl": 54
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "54 ml extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  garlic clove",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tahini",
+      "displayName": "tahini",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps tahini",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 8,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:38:51.365Z",
+  "processGraph": {
+    "recipeName": "Roasted Eggplant Hummus",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven to 425 degrees.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 425°F"
+          }
+        ],
+        "outputDescription": "oven heated to 425°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "On a large baking sheet toss eggplant, 2 tablespoons olive oil, salt and pepper and spread in a single layer.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "eggplant",
+              "extra virgin olive oil",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combining eggplant with oil and seasonings"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "arranging in single layer on baking sheet"
+          }
+        ],
+        "outputDescription": "eggplant coated with oil, salt and pepper, spread in single layer on baking sheet"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Roast for 18-20 minutes.",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": 19,
+            "notes": "cooking in 425°F oven"
+          }
+        ],
+        "outputDescription": "eggplant roasted until tender"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Remove from oven and set aside.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "allowing roasted eggplant to cool"
+          }
+        ],
+        "outputDescription": "roasted eggplant removed from oven and cooling"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "In food processor combine, chickpeas, tahini, garlic, lemon juice, 2 tablespoons olive oil and pulse 3 or 4 times.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chickpeas",
+              "tahini",
+              "garlic",
+              "lemon juice",
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "combining ingredients in food processor"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "chickpeas",
+              "tahini",
+              "garlic",
+              "lemon juice",
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "pulsing 3-4 times in food processor"
+          }
+        ],
+        "outputDescription": "chickpea mixture roughly processed in food processor"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add eggplant and blend on highest level until desired consistency.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "adding roasted eggplant to chickpea mixture"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "eggplant",
+              "chickpeas",
+              "tahini",
+              "garlic",
+              "lemon juice",
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "blending on highest setting until smooth"
+          }
+        ],
+        "outputDescription": "smooth hummus with desired consistency"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Store in air tight containers in the refrigerator.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "eggplant",
+              "chickpeas",
+              "tahini",
+              "garlic",
+              "lemon juice",
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "refrigerating finished hummus for storage"
+          }
+        ],
+        "outputDescription": "finished roasted eggplant hummus stored in refrigerator"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "heat",
+        "toss",
+        "spread",
+        "roast",
+        "cool",
+        "mix",
+        "blend"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_658573_step1",
+      "name": "oven heated to 425°F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_658573_step2",
+      "name": "eggplant coated with oil, salt and pepper, spread in single layer on baking sheet",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggplant",
+          "name": "eggplant",
+          "quantityG": 1361
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 54
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1566.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 14.5335,
+        "costPerG": 0.009278281409601633,
+        "nutrition": {
+          "calories": 832.67,
+          "protein": 13.9612,
+          "fat": 56.645399999999995,
+          "carbs": 83.8638,
+          "fiber": 42.348,
+          "sugar": 48.0817,
+          "sodium": 1192.24,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_658573_step3",
+      "name": "eggplant roasted until tender",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 19,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 19
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658573_step4",
+      "name": "roasted eggplant removed from oven and cooling",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658573_step5",
+      "name": "chickpea mixture roughly processed in food processor",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chickpeas",
+          "name": "chickpeas",
+          "quantityG": 439.418
+        },
+        {
+          "ingredientId": "tahini",
+          "name": "tahini",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 30.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 489.91964,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 20.447917500000003,
+        "costPerG": 0.04173728879291306,
+        "nutrition": {
+          "calories": 904.9555200000001,
+          "protein": 44.2591848,
+          "fat": 27.3571262,
+          "carbs": 129.04291560000001,
+          "fiber": 34.897268000000004,
+          "sugar": 21.860664,
+          "sodium": 41.564260000000004,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658573_step6",
+      "name": "smooth hummus with desired consistency",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658573_step7",
+      "name": "finished roasted eggplant hummus stored in refrigerator",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 35.2064175,
+    "costPerServing": 5.86773625,
+    "totalPrepTime": 92,
+    "nutritionPerServing": {
+      "calories": 290.84592000000004,
+      "protein": 9.756397466666666,
+      "fat": 14.004587700000002,
+      "carbs": 35.760285933333336,
+      "fiber": 12.891711333333333,
+      "sugar": 11.665394,
+      "sodium": 205.77571
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_658573_step3",
+        "name": "eggplant roasted until tender",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_658573_step4",
+        "name": "roasted eggplant removed from oven and cooling",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_658573_step5",
+        "name": "chickpea mixture roughly processed in food processor",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_658573_step6",
+        "name": "smooth hummus with desired consistency",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_658573_step7",
+        "name": "finished roasted eggplant hummus stored in refrigerator",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_658573_step5",
+      "name": "chickpea mixture roughly processed in food processor",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "blend"
+      ]
+    },
+    {
+      "componentId": "comp_658573_step6",
+      "name": "smooth hummus with desired consistency",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "blend"
+      ]
+    }
+  ]
+}

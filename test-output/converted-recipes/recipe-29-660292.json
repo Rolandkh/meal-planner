@@ -1,0 +1,771 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_a154f883-8fb2-4c38-b8ed-8b8ae194f0b3",
+  "name": "Slow Cooker Minestrone Soup",
+  "source": "spoonacular",
+  "spoonacularId": 660292,
+  "image": "/images/recipes/660292.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "carrots",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green beans",
+      "quantity": 1,
+      "unit": "handful",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garbanzo beans",
+      "quantity": 10,
+      "unit": "Oz",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pd of lentils",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 28,
+      "unit": "Oz",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "veggie broth",
+      "quantity": 940,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "curry",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garam masala",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "noodles",
+      "quantity": 170.097,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "First up, add your veggies into your slow cooker.\nNext you'll add in your garlic, beans, lentils and tomatoes.\nFinally add in the broth, curry, cumin, garam masala, salt and pepper. Stir it all together and cook it on high for 3-4 hours or low for 4-6. Add your noodles in just before serving.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 8,
+  "nutrition": {
+    "calories": 148.39,
+    "protein": 6.7,
+    "fat": 1.68,
+    "carbs": 28.65,
+    "fiber": 6.38,
+    "sugar": 8.95,
+    "saturatedFat": 0.24,
+    "sodium": 656.63
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "dairy free"
+    ],
+    "dishTypes": [
+      "soup",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  zucchini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery",
+      "displayName": "celery",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  celery",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garbanzo_beans",
+      "displayName": "garbanzo beans",
+      "quantity": {
+        "originalQuantity": 10,
+        "originalUnit": "oz",
+        "normalizedQuantityG": 283.495,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "10 Oz garbanzo beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  pd of lentils",
+      "matchConfidence": 0.8500000000000001
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 28,
+        "originalUnit": "oz",
+        "normalizedQuantityG": 793.786,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "28 Oz tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 940,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 940,
+        "normalizedQuantityMl": 940
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "940 ml veggie broth",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "curry",
+      "displayName": "curry",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp curry",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garam_masala",
+      "displayName": "garam masala",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps garam masala",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 14,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 handful green beans",
+        "identityText": "handful green beans",
+        "state": "fresh"
+      },
+      {
+        "rawText": "170.097 g noodles",
+        "identityText": "noodles",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:29:44.678Z",
+  "processGraph": {
+    "recipeName": "Slow Cooker Minestrone Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "First up, add your veggies into your slow cooker.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "carrots",
+              "zucchini",
+              "onion",
+              "celery",
+              "green beans"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of vegetables before adding to slow cooker"
+          }
+        ],
+        "outputDescription": "chopped vegetables placed in slow cooker"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Next you'll add in your garlic, beans, lentils and tomatoes.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of garlic before adding"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "garlic",
+              "garbanzo beans",
+              "lentils",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "adding ingredients to slow cooker with existing vegetables"
+          }
+        ],
+        "outputDescription": "vegetables, minced garlic, beans, lentils, and tomatoes combined in slow cooker"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Finally add in the broth, curry, cumin, garam masala, salt and pepper. Stir it all together and cook it on high for 3-4 hours or low for 4-6. Add your noodles in just before serving.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "curry",
+              "cumin",
+              "garam masala",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "adding spices and seasonings"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "veggie broth",
+              "curry",
+              "cumin",
+              "garam masala",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "adding broth and stirring all ingredients together"
+          },
+          {
+            "processId": "stew",
+            "ingredients": [
+              "all ingredients except noodles"
+            ],
+            "durationMinutes": 240,
+            "notes": "slow cooking on high for 3-4 hours or low for 4-6 hours"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "noodles"
+            ],
+            "durationMinutes": null,
+            "notes": "adding noodles just before serving"
+          }
+        ],
+        "outputDescription": "fully cooked minestrone soup with noodles added, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "chop",
+        "mince",
+        "mix",
+        "season",
+        "stew"
+      ],
+      "estimatedTotalTime": 255
+    }
+  },
+  "components": [
+    {
+      "id": "comp_660292_step1",
+      "name": "chopped vegetables placed in slow cooker",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 180
+        },
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 400
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "celery",
+          "name": "celery",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "green_beans",
+          "name": "green beans",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 747.74,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.688,
+        "costPerG": 0.00626955893759863,
+        "nutrition": {
+          "calories": 211.52,
+          "protein": 8.733699999999999,
+          "fat": 1.9331000000000003,
+          "carbs": 45.8741,
+          "fiber": 12.448,
+          "sugar": 25.9102,
+          "sodium": 166.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660292_step2",
+      "name": "vegetables, minced garlic, beans, lentils, and tomatoes combined in slow cooker",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 14.7,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6749999999999999,
+        "costPerG": 0.04591836734693877,
+        "nutrition": {
+          "calories": 22.349999999999998,
+          "protein": 0.954,
+          "fat": 0.075,
+          "carbs": 4.965,
+          "fiber": 0.315,
+          "sugar": 0.15,
+          "sodium": 2.55,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660292_step3",
+      "name": "fully cooked minestrone soup with noodles added, ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "curry",
+          "name": "curry",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "cumin",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "garam_masala",
+          "name": "garam masala",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 0.525
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stew",
+          "processName": "Stew",
+          "yieldFactor": 0.88,
+          "durationMinutes": 240,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 6.933960000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.705093,
+        "costPerG": 0.1016869148365436,
+        "nutrition": {
+          "calories": 11.030250000000002,
+          "protein": 0.43055250000000006,
+          "fat": 0.50925,
+          "carbs": 1.3546575,
+          "fiber": 0.478275,
+          "sugar": 0.17608500000000002,
+          "sodium": 1165.2243,
+          "method": "raw"
+        },
+        "prepTimeMin": 244.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 32.339616,
+    "costPerServing": 4.042452,
+    "totalPrepTime": 250.5,
+    "nutritionPerServing": {
+      "calories": 191.789265,
+      "protein": 8.0825551625,
+      "fat": 1.7533330875000002,
+      "carbs": 37.556563425,
+      "fiber": 6.2576223749999995,
+      "sugar": 9.1591393625,
+      "sodium": 645.49689
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_660292_step1",
+        "name": "chopped vegetables placed in slow cooker",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_660292_step2",
+        "name": "vegetables, minced garlic, beans, lentils, and tomatoes combined in slow cooker",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660292_step3",
+        "name": "fully cooked minestrone soup with noodles added, ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_660292_step2",
+      "name": "vegetables, minced garlic, beans, lentils, and tomatoes combined in slow cooker",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_660292_step3",
+      "name": "fully cooked minestrone soup with noodles added, ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "season",
+        "mix",
+        "stew",
+        "mix"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1131 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_0399fbd9-c0c4-46e5-ba6b-d15f221d2b43",
+  "name": "Gyros",
+  "source": "spoonacular",
+  "spoonacularId": 646071,
+  "image": "/images/recipes/646071.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "dijon mustard",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "head",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cumin",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground fenugreek",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground lamb",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "individual pita breads",
+      "quantity": 8,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "yogurt",
+      "quantity": 245,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Combine ground lamb, water, onion, parsley, oregano, garlic, pepper, salt, cumin and fenugreek and mix thoroughly. Shape into loaf and wrap tightly in plastic film to compress the mixture. Refrigerate for 2 hours.</li><li>To cook in the oven: preheat oven to 350F. Unwrap meat mixture and place on a cookie sheet or shallow baking dish and bake 1 to 1 1/2 hours. Remove from oven, drain excess fat and let stand 15 minutes before carving. Use a very sharp knife and cut in thin slices.</li><li>To cook on a rotisserie: push the metal skewer through the center of the meat (lengthwise) and place attachment in oven according to its directions. Cook at 350F, carving the cooked and crispy outside slices as needed.</li><li>To cook on the grill: place the meat on a hot grill. Turn and continue to cook until brown on all sides. Slice thin strips from the browned loaf as it cooks, exposing unbrowned surface to be browned as you carve thin slices from the other side. Continue turning the loaf, browning the surface exposed to the fire while you carve from the side facing away from the coals. When the loaf is too small to carve on the grill.</li><li>To assemble:Cut the round pita breads in half. Fill each pocket with slices of meat, thin onion rings and tomato. In a mixing bowl, combine garlic, mustard and red wine vinegar and blend until smooth. Slowly add the olive oil, beating until it is all incorporated and the mixture is smooth. Stir the yogurt until creamy and add it to the other mixture. Pour a little of this dressing over the contents of the pita pockets and serve.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 496.01,
+    "protein": 22.05,
+    "fat": 22.63,
+    "carbs": 50.28,
+    "fiber": 3.3,
+    "sugar": 3.88,
+    "saturatedFat": 9.07,
+    "sodium": 862.68
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Dijon mustard",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps dijon mustard",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 head garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "2 tsps ground cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "1 tsp ground fenugreek",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lamb",
+      "displayName": "lamb",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "453.592 g ground lamb",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 11,
+        "normalizedQuantityMl": 45
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 Tbsps parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 245,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 245,
+        "normalizedQuantityMl": 245
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "245 ml yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 45,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 15,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "8  individual pita breads",
+        "identityText": "individual pita breads",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:31:51.108Z",
+  "processGraph": {
+    "recipeName": "Gyros",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Combine ground lamb, water, onion, parsley, oregano, garlic, pepper, salt, cumin and fenugreek and mix thoroughly. Shape into loaf and wrap tightly in plastic film to compress the mixture. Refrigerate for 2 hours.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "onion needs to be chopped before combining"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "garlic needs to be minced before combining"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "parsley needs to be chopped before combining"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ground lamb",
+              "water",
+              "onion",
+              "parsley",
+              "oregano",
+              "garlic",
+              "pepper",
+              "salt",
+              "ground cumin",
+              "ground fenugreek"
+            ],
+            "durationMinutes": null,
+            "notes": "mix thoroughly to combine all ingredients"
+          },
+          {
+            "processId": "roll",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "shape mixture into loaf form"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": 120,
+            "notes": "refrigerate wrapped loaf for 2 hours"
+          }
+        ],
+        "outputDescription": "Seasoned lamb mixture shaped into loaf, wrapped and chilled"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "To cook in the oven: preheat oven to 350F. Unwrap meat mixture and place on a cookie sheet or shallow baking dish and bake 1 to 1 1/2 hours. Remove from oven, drain excess fat and let stand 15 minutes before carving. Use a very sharp knife and cut in thin slices.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": 75,
+            "notes": "bake at 350F for 1 to 1.5 hours"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "drain excess fat after baking"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": 15,
+            "notes": "let stand 15 minutes before carving"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "cut in thin slices with sharp knife"
+          }
+        ],
+        "outputDescription": "Baked lamb loaf, drained, rested and sliced thin"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "To cook on a rotisserie: push the metal skewer through the center of the meat (lengthwise) and place attachment in oven according to its directions. Cook at 350F, carving the cooked and crispy outside slices as needed.",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "rotisserie cooking at 350F"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "carve cooked outside slices as needed"
+          }
+        ],
+        "outputDescription": "Rotisserie-cooked lamb with crispy exterior, carved as needed"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "To cook on the grill: place the meat on a hot grill. Turn and continue to cook until brown on all sides. Slice thin strips from the browned loaf as it cooks, exposing unbrowned surface to be browned as you carve thin slices from the other side. Continue turning the loaf, browning the surface exposed to the fire while you carve from the side facing away from the coals. When the loaf is too small to carve on the grill.",
+        "processes": [
+          {
+            "processId": "grill",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "grill on hot grill, turning to brown all sides"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "slice thin strips from browned exterior while cooking"
+          }
+        ],
+        "outputDescription": "Grilled lamb with browned exterior, sliced continuously during cooking"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "To assemble:Cut the round pita breads in half. Fill each pocket with slices of meat, thin onion rings and tomato. In a mixing bowl, combine garlic, mustard and red wine vinegar and blend until smooth. Slowly add the olive oil, beating until it is all incorporated and the mixture is smooth. Stir the yogurt until creamy and add it to the other mixture. Pour a little of this dressing over the contents of the pita pockets and serve.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "cut round pita breads in half"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into thin onion rings"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "slice tomato for filling"
+          },
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "pita breads",
+              "ground lamb",
+              "onion",
+              "tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "fill pita pockets with meat, onion rings and tomato"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "garlic for dressing"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "garlic",
+              "dijon mustard",
+              "red wine vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "blend until smooth"
+          },
+          {
+            "processId": "emulsify",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "slowly add olive oil while beating to incorporate"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "stir yogurt until creamy and add to mixture"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "pour dressing over pita pocket contents"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "serve assembled gyros"
+          }
+        ],
+        "outputDescription": "Assembled gyros with meat, vegetables and yogurt dressing, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 20,
+      "uniqueProcesses": [
+        "chop",
+        "mince",
+        "mix",
+        "roll",
+        "cool",
+        "bake",
+        "drain",
+        "rest_meat",
+        "slice",
+        "roast",
+        "grill",
+        "stuff",
+        "blend",
+        "emulsify",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 210
+    }
+  },
+  "components": [
+    {
+      "id": "comp_646071_step1",
+      "name": "Seasoned lamb mixture shaped into loaf, wrapped and chilled",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 195
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 120,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 183.53243999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.2506500000000003,
+        "costPerG": 0.017711582758884483,
+        "nutrition": {
+          "calories": 78,
+          "protein": 2.145,
+          "fat": 0.195,
+          "carbs": 18.213,
+          "fiber": 3.315,
+          "sugar": 8.268,
+          "sodium": 7.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 131
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646071_step2",
+      "name": "Baked lamb loaf, drained, rested and sliced thin",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lamb",
+          "name": "ground lamb",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 75,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 370.28529327999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.927372,
+        "costPerG": 0.03491192395325478,
+        "nutrition": {
+          "calories": 1279.12944,
+          "protein": 75.11483519999999,
+          "fat": 106.1858872,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 267.61928,
+          "method": "raw"
+        },
+        "prepTimeMin": 93
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646071_step3",
+      "name": "Rotisserie-cooked lamb with crispy exterior, carved as needed",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 27
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646071_step4",
+      "name": "Grilled lamb with browned exterior, sliced continuously during cooking",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "grill",
+          "processName": "Grill",
+          "yieldFactor": 0.78,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646071_step5",
+      "name": "Assembled gyros with meat, vegetables and yogurt dressing, ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomato",
+          "quantityG": 156
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "emulsify",
+          "processName": "Emulsify",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 186.9814403428608,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.10592,
+        "costPerG": 0.02195897086080378,
+        "nutrition": {
+          "calories": 28.080000000000002,
+          "protein": 1.3728,
+          "fat": 0.31200000000000006,
+          "carbs": 6.0684000000000005,
+          "fiber": 1.8719999999999999,
+          "sugar": 4.1028,
+          "sodium": 7.800000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 23
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 28.506639999999997,
+    "costPerServing": 4.751106666666666,
+    "totalPrepTime": 286,
+    "nutritionPerServing": {
+      "calories": 287.2184066666666,
+      "protein": 17.87731086666666,
+      "fat": 20.464391199999994,
+      "carbs": 7.471060000000001,
+      "fiber": 1.3232166666666665,
+      "sugar": 3.556783333333333,
+      "sodium": 463.8482133333334
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_646071_step1",
+        "name": "Seasoned lamb mixture shaped into loaf, wrapped and chilled",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_646071_step2",
+        "name": "Baked lamb loaf, drained, rested and sliced thin",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_646071_step3",
+        "name": "Rotisserie-cooked lamb with crispy exterior, carved as needed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_646071_step4",
+        "name": "Grilled lamb with browned exterior, sliced continuously during cooking",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_646071_step5",
+        "name": "Assembled gyros with meat, vegetables and yogurt dressing, ready to serve",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_646071_step1",
+      "name": "Seasoned lamb mixture shaped into loaf, wrapped and chilled",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "mince",
+        "chop",
+        "mix",
+        "roll",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_646071_step2",
+      "name": "Baked lamb loaf, drained, rested and sliced thin",
+      "shelfLifeHours": 24,
+      "processes": [
+        "bake",
+        "drain",
+        "rest_meat",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_646071_step3",
+      "name": "Rotisserie-cooked lamb with crispy exterior, carved as needed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "roast",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_646071_step4",
+      "name": "Grilled lamb with browned exterior, sliced continuously during cooking",
+      "shelfLifeHours": 24,
+      "processes": [
+        "grill",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_646071_step5",
+      "name": "Assembled gyros with meat, vegetables and yogurt dressing, ready to serve",
+      "shelfLifeHours": 12,
+      "processes": [
+        "slice",
+        "slice",
+        "slice",
+        "stuff",
+        "mince",
+        "blend",
+        "emulsify",
+        "mix",
+        "garnish",
+        "plate"
+      ]
+    }
+  ]
+}

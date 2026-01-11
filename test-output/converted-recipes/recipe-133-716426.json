@@ -1,0 +1,1162 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_43e583b4-c97c-4d0b-beab-e0cd9faa143d",
+  "name": "Cauliflower, Brown Rice, and Vegetable Fried Rice",
+  "source": "spoonacular",
+  "spoonacularId": 716426,
+  "image": "/images/recipes/716426.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "grapeseed oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "coconut oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "scallions",
+      "quantity": 7,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 5,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cauliflower",
+      "quantity": 1,
+      "unit": "head",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "brown rice",
+      "quantity": 585,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "broccoli",
+      "quantity": 176,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "peas",
+      "quantity": 145,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "soy sauce",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sesame oil",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sesame seeds",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "additional scallion tops",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li><span></span>Remove the cauliflower's tough stem and reserve for another use. Using a food processor, pulse cauliflower florets until they resemble rice or couscous. You should end up with around four cups of \"cauliflower rice.\"</li><li>Heat 1T butter and 1T oil in a large skillet over medium heat. Add garlic and the white and light green pieces of scallion. Sauté about a minute.</li><li>Add the cauliflower to the pan. Stir to coat with oil, then spread out in pan and let sit; you want it cook a bit and to caramelize (get a bit brown), which will bring out the sweetness. After a couple of minutes, stir and spread out again.</li><li>Add cold rice (it separates easily, so it won't clump up during cooking), plus the additional grapeseed and coconut oil or butter. Raise heat to medium-high. Toss everything together and, again, spread the mixture out over the whole pan and press a bit into the bottom. Let it sit for about two minutes—so the rice can get toasted and a little crispy. Add the peas and broccoli and stir again. Drizzle soy sauce and toasted sesame oil over rice.</li><li>Cook for another minute or so and turn off heat. Add chopped scallion tops and toss.</li><li>I like to toast some sesame seeds in a dry pan; I sprinkle these and some more raw, chopped scallion over the top of the rice for added flavor and crunch.</li><li>Season to taste with salt and, if you'd like, more soy sauce. Keep in mind that if you're serving this with something salty and saucy (ie. teriyaki chicken) you may want to hold off on adding too much salt to the fried rice.</li></ol>",
+  "prepTime": 15,
+  "cookTime": 15,
+  "servings": 8,
+  "nutrition": {
+    "calories": 248.3,
+    "protein": 7.06,
+    "fat": 12.96,
+    "carbs": 28.91,
+    "fiber": 5.81,
+    "sugar": 3.23,
+    "saturatedFat": 4.18,
+    "sodium": 444.09
+  },
+  "tags": {
+    "cuisines": [
+      "Chinese",
+      "Asian"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": true,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 92.3,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "additional scallion tops",
+        "identity": "additional scallion tops",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "grapeseed_oil",
+      "displayName": "grapeseed oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps grapeseed oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "coconut_oil",
+      "displayName": "coconut oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps coconut oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 7,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "7  scallions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cauliflower",
+      "displayName": "cauliflower",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 head cauliflower",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "brown_rice",
+      "displayName": "brown rice",
+      "quantity": {
+        "originalQuantity": 585,
+        "originalUnit": "g",
+        "normalizedQuantityG": 585,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "585 g brown rice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "broccoli",
+      "displayName": "broccoli",
+      "quantity": {
+        "originalQuantity": 176,
+        "originalUnit": "g",
+        "normalizedQuantityG": 176,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "176 g broccoli",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "peas",
+      "displayName": "peas",
+      "quantity": {
+        "originalQuantity": 145,
+        "originalUnit": "g",
+        "normalizedQuantityG": 145,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "145 g peas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "soy_sauce",
+      "displayName": "soy sauce",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 48,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps soy sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sesame_oil",
+      "displayName": "sesame oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps sesame oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sesame_seeds",
+      "displayName": "sesame seeds",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "8 servings sesame seeds",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "8 servings salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 12,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "8 servings additional scallion tops",
+        "identityText": "additional scallion tops",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:56:36.336Z",
+  "processGraph": {
+    "recipeName": "Cauliflower, Brown Rice, and Vegetable Fried Rice",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Remove the cauliflower's tough stem and reserve for another use. Using a food processor, pulse cauliflower florets until they resemble rice or couscous. You should end up with around four cups of \"cauliflower rice.\"",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "remove tough stem"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "pulse in food processor until rice-like texture"
+          }
+        ],
+        "outputDescription": "cauliflower processed into rice-like pieces, stem removed"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Heat 1T butter and 1T oil in a large skillet over medium heat. Add garlic and the white and light green pieces of scallion. Sauté about a minute.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "grapeseed oil",
+              "coconut oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oils in skillet over medium heat"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of white and light green pieces"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic",
+              "scallions"
+            ],
+            "durationMinutes": 1,
+            "notes": "sauté garlic and scallion pieces"
+          }
+        ],
+        "outputDescription": "garlic and scallions sautéed until fragrant"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the cauliflower to the pan. Stir to coat with oil, then spread out in pan and let sit; you want it cook a bit and to caramelize (get a bit brown), which will bring out the sweetness. After a couple of minutes, stir and spread out again.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "stir to coat with oil"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "spread out in pan"
+          },
+          {
+            "processId": "caramelize",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": 2,
+            "notes": "let sit to brown and develop sweetness"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "stir and spread again"
+          }
+        ],
+        "outputDescription": "cauliflower partially caramelized and browned"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add cold rice (it separates easily, so it won't clump up during cooking), plus the additional grapeseed and coconut oil or butter. Raise heat to medium-high. Toss everything together and, again, spread the mixture out over the whole pan and press a bit into the bottom. Let it sit for about two minutes—so the rice can get toasted and a little crispy. Add the peas and broccoli and stir again. Drizzle soy sauce and toasted sesame oil over rice.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "grapeseed oil",
+              "coconut oil"
+            ],
+            "durationMinutes": null,
+            "notes": "raise heat to medium-high, add more oil"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "brown rice",
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "toss everything together"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "brown rice",
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "spread mixture and press into bottom"
+          },
+          {
+            "processId": "toast",
+            "ingredients": [
+              "brown rice"
+            ],
+            "durationMinutes": 2,
+            "notes": "let sit to get toasted and crispy"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "peas",
+              "broccoli"
+            ],
+            "durationMinutes": null,
+            "notes": "add vegetables and stir"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "soy sauce",
+              "sesame oil"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle sauces over rice"
+          }
+        ],
+        "outputDescription": "rice toasted and crispy, vegetables added, seasoned with soy sauce and sesame oil"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Cook for another minute or so and turn off heat. Add chopped scallion tops and toss.",
+        "processes": [
+          {
+            "processId": "stir_fry",
+            "ingredients": [
+              "brown rice",
+              "cauliflower",
+              "peas",
+              "broccoli"
+            ],
+            "durationMinutes": 1,
+            "notes": "continue cooking for another minute"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "chop scallion tops"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "add chopped scallion tops and toss"
+          }
+        ],
+        "outputDescription": "fried rice cooked through with fresh scallion tops mixed in"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "I like to toast some sesame seeds in a dry pan; I sprinkle these and some more raw, chopped scallion over the top of the rice for added flavor and crunch.",
+        "processes": [
+          {
+            "processId": "toast",
+            "ingredients": [
+              "sesame seeds"
+            ],
+            "durationMinutes": null,
+            "notes": "toast in dry pan"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "chop additional raw scallions"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "sesame seeds",
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle toasted seeds and raw scallions on top"
+          }
+        ],
+        "outputDescription": "fried rice topped with toasted sesame seeds and fresh chopped scallions"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Season to taste with salt and, if you'd like, more soy sauce. Keep in mind that if you're serving this with something salty and saucy (ie. teriyaki chicken) you may want to hold off on adding too much salt to the fried rice.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "soy sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "season to taste with salt and additional soy sauce"
+          }
+        ],
+        "outputDescription": "finished fried rice seasoned to taste"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 19,
+      "uniqueProcesses": [
+        "trim",
+        "blend",
+        "heat",
+        "chop",
+        "saute",
+        "mix",
+        "spread",
+        "caramelize",
+        "toss",
+        "toast",
+        "stir_fry",
+        "sprinkle",
+        "season"
+      ],
+      "estimatedTotalTime": 15
+    }
+  },
+  "components": [
+    {
+      "id": "comp_716426_step1",
+      "name": "cauliflower processed into rice-like pieces, stem removed",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cauliflower",
+          "name": "cauliflower",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.9309999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0045,
+        "costPerG": 0.004833512352309345,
+        "nutrition": {
+          "calories": 0.25,
+          "protein": 0.0192,
+          "fat": 0.0028000000000000004,
+          "carbs": 0.0497,
+          "fiber": 0.02,
+          "sugar": 0.0191,
+          "sodium": 0.3,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716426_step2",
+      "name": "garlic and scallions sautéed until fragrant",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "grapeseed_oil",
+          "name": "grapeseed oil",
+          "quantityG": 27
+        },
+        {
+          "ingredientId": "coconut_oil",
+          "name": "coconut oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 44.082359999999994,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.359,
+        "costPerG": 0.030828657993809773,
+        "nutrition": {
+          "calories": 463.59000000000003,
+          "protein": 0,
+          "fat": 53.757000000000005,
+          "carbs": 0.2268,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716426_step3",
+      "name": "cauliflower partially caramelized and browned",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "caramelize",
+          "processName": "Caramelize",
+          "yieldFactor": 0.65,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716426_step4",
+      "name": "rice toasted and crispy, vegetables added, seasoned with soy sauce and sesame oil",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "brown_rice",
+          "name": "brown rice",
+          "quantityG": 585
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 591.7831920000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.0475,
+        "costPerG": 0.003459881976506017,
+        "nutrition": {
+          "calories": 2117.7,
+          "protein": 43.875,
+          "fat": 15.678,
+          "carbs": 445.5945,
+          "fiber": 19.889999999999997,
+          "sugar": 0,
+          "sodium": 23.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 9.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716426_step5",
+      "name": "fried rice cooked through with fresh scallion tops mixed in",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "peas",
+          "name": "peas",
+          "quantityG": 145
+        },
+        {
+          "ingredientId": "broccoli",
+          "name": "broccoli",
+          "quantityG": 176
+        }
+      ],
+      "processes": [
+        {
+          "processId": "stir_fry",
+          "processName": "Stir Fry",
+          "yieldFactor": 0.88,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 276.8304,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.70325,
+        "costPerG": 0.0061526840982782235,
+        "nutrition": {
+          "calories": 177.29000000000002,
+          "protein": 12.822199999999999,
+          "fat": 1.2311999999999999,
+          "carbs": 32.5664,
+          "fiber": 12.841000000000001,
+          "sugar": 11.2135,
+          "sodium": 65.33,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716426_step6",
+      "name": "fried rice topped with toasted sesame seeds and fresh chopped scallions",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sesame_seeds",
+          "name": "sesame seeds",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 73.57056000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.12,
+        "costPerG": 0.015223480696626475,
+        "nutrition": {
+          "calories": 458.40000000000003,
+          "protein": 14.184000000000001,
+          "fat": 39.736000000000004,
+          "carbs": 18.76,
+          "fiber": 9.440000000000001,
+          "sugar": 0.24,
+          "sodium": 8.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 5.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716426_step7",
+      "name": "finished fried rice seasoned to taste",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 8
+        },
+        {
+          "ingredientId": "soy_sauce",
+          "name": "soy sauce",
+          "quantityG": 48
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 57.120000000000005,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.3599999999999999,
+        "costPerG": 0.023809523809523805,
+        "nutrition": {
+          "calories": 28.799999999999997,
+          "protein": 5.0447999999999995,
+          "fat": 0.048,
+          "carbs": 2.6736,
+          "fiber": 0.384,
+          "sugar": 0.816,
+          "sodium": 5781.92,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 29.841749999999998,
+    "costPerServing": 3.7302187499999997,
+    "totalPrepTime": 35.5,
+    "nutritionPerServing": {
+      "calories": 427.03499999999997,
+      "protein": 10.0739125,
+      "fat": 14.986912500000003,
+      "carbs": 65.05047499999999,
+      "fiber": 5.930249999999999,
+      "sugar": 2.0537125,
+      "sodium": 738.8399999999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_716426_step1",
+        "name": "cauliflower processed into rice-like pieces, stem removed",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_716426_step2",
+        "name": "garlic and scallions sautéed until fragrant",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_716426_step3",
+        "name": "cauliflower partially caramelized and browned",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716426_step4",
+        "name": "rice toasted and crispy, vegetables added, seasoned with soy sauce and sesame oil",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716426_step5",
+        "name": "fried rice cooked through with fresh scallion tops mixed in",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_716426_step6",
+        "name": "fried rice topped with toasted sesame seeds and fresh chopped scallions",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_716426_step1",
+      "name": "cauliflower processed into rice-like pieces, stem removed",
+      "shelfLifeHours": 48,
+      "processes": [
+        "trim",
+        "blend"
+      ]
+    },
+    {
+      "componentId": "comp_716426_step2",
+      "name": "garlic and scallions sautéed until fragrant",
+      "shelfLifeHours": 48,
+      "processes": [
+        "heat",
+        "chop",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_716426_step3",
+      "name": "cauliflower partially caramelized and browned",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "spread",
+        "caramelize",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_716426_step4",
+      "name": "rice toasted and crispy, vegetables added, seasoned with soy sauce and sesame oil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "toss",
+        "spread",
+        "toast",
+        "mix",
+        "sprinkle"
+      ]
+    },
+    {
+      "componentId": "comp_716426_step5",
+      "name": "fried rice cooked through with fresh scallion tops mixed in",
+      "shelfLifeHours": 48,
+      "processes": [
+        "stir_fry",
+        "chop",
+        "toss"
+      ]
+    },
+    {
+      "componentId": "comp_716426_step6",
+      "name": "fried rice topped with toasted sesame seeds and fresh chopped scallions",
+      "shelfLifeHours": 48,
+      "processes": [
+        "toast",
+        "chop",
+        "sprinkle"
+      ]
+    }
+  ]
+}

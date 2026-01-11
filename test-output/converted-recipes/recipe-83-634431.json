@@ -1,0 +1,710 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_b8810dbf-d866-40e8-83b1-8898f666d7ad",
+  "name": "Basil Lime White Bean Hummus",
+  "source": "spoonacular",
+  "spoonacularId": 634431,
+  "image": "/images/recipes/634431.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cannellini beans",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 6,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lime zest",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice from lime",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Combine beans, garlic, basil, lime zest, juice, and olive oil in the food processor and blend until mixed.\nWith the processor on, add water until desired consistency is reached.\nAdd salt and pepper, then taste and add more if needed.\nServe with chips or veggies, preferably cold. If you can't wait, eat it right away!",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 8,
+  "nutrition": {
+    "calories": 95.97,
+    "protein": 4,
+    "fat": 3.68,
+    "carbs": 12.61,
+    "fiber": 2.84,
+    "sugar": 0.34,
+    "saturatedFat": 0.53,
+    "sodium": 148.82
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "condiment",
+      "starter",
+      "snack",
+      "appetizer",
+      "dip",
+      "antipasto",
+      "hor d'oeuvre",
+      "spread"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cannellini_beans",
+      "displayName": "cannellini beans",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g cannellini beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": "g",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 g basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_zest",
+      "displayName": "lime zest",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lime zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_juice",
+      "displayName": "lime juice",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  juice from lime",
+      "matchConfidence": 0.8500000000000001
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 60
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 Tbsps water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 9,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:40:36.312Z",
+  "processGraph": {
+    "recipeName": "Basil Lime White Bean Hummus",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Combine beans, garlic, basil, lime zest, juice, and olive oil in the food processor and blend until mixed.",
+        "processes": [
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "lime zest preparation implied"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "extracting lime juice"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cannellini beans",
+              "garlic",
+              "basil",
+              "lime zest",
+              "lime juice",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "combining ingredients in food processor"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "cannellini beans",
+              "garlic",
+              "basil",
+              "lime zest",
+              "lime juice",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "blending until mixed in food processor"
+          }
+        ],
+        "outputDescription": "ingredients combined and blended into a rough mixture"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "With the processor on, add water until desired consistency is reached.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "continuing to blend while gradually adding water"
+          }
+        ],
+        "outputDescription": "smooth hummus consistency achieved"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add salt and pepper, then taste and add more if needed.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "seasoning to taste"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "incorporating seasonings"
+          }
+        ],
+        "outputDescription": "seasoned hummus ready to serve"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Serve with chips or veggies, preferably cold. If you can't wait, eat it right away!",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "hummus"
+            ],
+            "durationMinutes": null,
+            "notes": "optional chilling for preferred serving temperature"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "hummus"
+            ],
+            "durationMinutes": null,
+            "notes": "serving with accompaniments"
+          }
+        ],
+        "outputDescription": "finished hummus served cold or at room temperature with chips or vegetables"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "zest",
+        "squeeze",
+        "mix",
+        "blend",
+        "season",
+        "cool",
+        "plate"
+      ],
+      "estimatedTotalTime": 10
+    }
+  },
+  "components": [
+    {
+      "id": "comp_634431_step1",
+      "name": "ingredients combined and blended into a rough mixture",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cannellini_beans",
+          "name": "cannellini beans",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "basil",
+          "name": "basil",
+          "quantityG": 6
+        },
+        {
+          "ingredientId": "lime_zest",
+          "name": "lime zest",
+          "quantityG": 50
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 10.157562800000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.24058125,
+        "costPerG": 0.6143778161036818,
+        "nutrition": {
+          "calories": 576.1349600000001,
+          "protein": 24.903559400000002,
+          "fat": 27.1884,
+          "carbs": 73.48350890000002,
+          "fiber": 22.0751397,
+          "sugar": 0.963,
+          "sodium": 917.7524500000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_634431_step2",
+      "name": "smooth hummus consistency achieved",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 60
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 58.8,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.4002,
+        "costPerG": 0.006806122448979592,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 3,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_634431_step3",
+      "name": "seasoned hummus ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 0.525
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3.5955,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.46499999999999997,
+        "costPerG": 0.12932832707551106,
+        "nutrition": {
+          "calories": 1.31775,
+          "protein": 0.054547500000000006,
+          "fat": 0.017115,
+          "carbs": 0.3357375,
+          "fiber": 0.132825,
+          "sugar": 0.00336,
+          "sodium": 1162.845,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_634431_step4",
+      "name": "finished hummus served cold or at room temperature with chips or vegetables",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 32
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 7.105781250000001,
+    "costPerServing": 0.8882226562500001,
+    "totalPrepTime": 43.5,
+    "nutritionPerServing": {
+      "calories": 72.18158875000002,
+      "protein": 3.1197633625000005,
+      "fat": 3.4006893750000002,
+      "carbs": 9.227405800000001,
+      "fiber": 2.7759955875,
+      "sugar": 0.120795,
+      "sodium": 260.44968125
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_634431_step1",
+        "name": "ingredients combined and blended into a rough mixture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_634431_step2",
+        "name": "smooth hummus consistency achieved",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_634431_step3",
+        "name": "seasoned hummus ready to serve",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_634431_step4",
+        "name": "finished hummus served cold or at room temperature with chips or vegetables",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_634431_step1",
+      "name": "ingredients combined and blended into a rough mixture",
+      "shelfLifeHours": 24,
+      "processes": [
+        "zest",
+        "squeeze",
+        "mix",
+        "blend"
+      ]
+    },
+    {
+      "componentId": "comp_634431_step3",
+      "name": "seasoned hummus ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "season",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_634431_step4",
+      "name": "finished hummus served cold or at room temperature with chips or vegetables",
+      "shelfLifeHours": 96,
+      "processes": [
+        "cool",
+        "plate"
+      ]
+    }
+  ]
+}

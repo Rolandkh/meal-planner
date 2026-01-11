@@ -1,0 +1,654 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_b939729f-cc15-4ca6-8571-49633dd9105e",
+  "name": "Greek Yogurt Chicken Salad",
+  "source": "spoonacular",
+  "spoonacularId": 645384,
+  "image": "/images/recipes/645384.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cashews",
+      "quantity": 64.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken breasts",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "craisins",
+      "quantity": 40.404,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dijon mustard",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic powder",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "greek yogurt",
+      "quantity": 100,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Start by cooking some chicken breasts. I like boiling them in chicken broth or stock, but feel free to boil in water, too. Boiling the chicken in broth, however, will give it significantly more flavor. Bring the chicken broth/stock to a boil and put in whole chicken breasts. Cook until no pink remains. Depending on the size of the chicken breasts, this could take anywhere from 15 - 20 minutes.</li><li>While the chicken is boiling, put together your sauce. Whisk together greek yogurt, dijon mustard, and garlic powder together until well mixed. Add in salt and pepper, to taste.</li><li>Next, stir in dried cranberries or raisins and cashews. If you're worried about the cashews getting too soft, you could add them right before serving!</li><li>After the chicken is done boiling, I like to let it rest for about 5 minutes. This ensures that the juice stays in the chicken instead of spilling out when you cut it!</li><li>Dice up the chicken and mix it into the sauce. Serve.</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 4,
+  "nutrition": {
+    "calories": 334.09,
+    "protein": 41.31,
+    "fat": 11.43,
+    "carbs": 16.46,
+    "fiber": 1.45,
+    "sugar": 9.21,
+    "saturatedFat": 2.45,
+    "sodium": 318.44
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "primal"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Cashews",
+      "quantity": {
+        "originalQuantity": 64.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 64.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "64.5 g cashews",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g chicken breasts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "raisins",
+      "displayName": "raisins",
+      "quantity": {
+        "originalQuantity": 40.404,
+        "originalUnit": "g",
+        "normalizedQuantityG": 40.404,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "40.404 g craisins",
+      "matchConfidence": 0.925
+    },
+    {
+      "displayName": "Dijon mustard",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps dijon mustard",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic_powder",
+      "displayName": "garlic powder",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings garlic powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 100,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 100,
+        "normalizedQuantityMl": 100
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "100 ml greek yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 7,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:36:04.897Z",
+  "processGraph": {
+    "recipeName": "Greek Yogurt Chicken Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Start by cooking some chicken breasts. I like boiling them in chicken broth or stock, but feel free to boil in water, too. Boiling the chicken in broth, however, will give it significantly more flavor. Bring the chicken broth/stock to a boil and put in whole chicken breasts. Cook until no pink remains. Depending on the size of the chicken breasts, this could take anywhere from 15 - 20 minutes.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": 17.5,
+            "notes": "boiled in chicken broth/stock until no pink remains"
+          }
+        ],
+        "outputDescription": "fully cooked chicken breasts with no pink remaining"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "While the chicken is boiling, put together your sauce. Whisk together greek yogurt, dijon mustard, and garlic powder together until well mixed. Add in salt and pepper, to taste.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "greek yogurt",
+              "dijon mustard",
+              "garlic powder"
+            ],
+            "durationMinutes": null,
+            "notes": "whisk until well mixed"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt to taste"
+          }
+        ],
+        "outputDescription": "well-mixed sauce with yogurt, mustard, garlic powder, and salt"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Next, stir in dried cranberries or raisins and cashews. If you're worried about the cashews getting too soft, you could add them right before serving!",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "craisins",
+              "cashews"
+            ],
+            "durationMinutes": null,
+            "notes": "stir into sauce mixture"
+          }
+        ],
+        "outputDescription": "sauce with cranberries and cashews mixed in"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "After the chicken is done boiling, I like to let it rest for about 5 minutes. This ensures that the juice stays in the chicken instead of spilling out when you cut it!",
+        "processes": [
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": 5,
+            "notes": "allows juices to redistribute"
+          }
+        ],
+        "outputDescription": "rested chicken with juices redistributed"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Dice up the chicken and mix it into the sauce. Serve.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into small uniform pieces"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "combine diced chicken with sauce"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "serve the completed dish"
+          }
+        ],
+        "outputDescription": "finished Greek yogurt chicken salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 7,
+      "uniqueProcesses": [
+        "boil",
+        "whisk",
+        "season",
+        "mix",
+        "rest_meat",
+        "dice",
+        "plate"
+      ],
+      "estimatedTotalTime": 27.5
+    }
+  },
+  "components": [
+    {
+      "id": "comp_645384_step1",
+      "name": "fully cooked chicken breasts with no pink remaining",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken breasts",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 17.5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 430.9124,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 7.711064,
+        "costPerG": 0.017894736842105265,
+        "nutrition": {
+          "calories": 517.09488,
+          "protein": 96.2975816,
+          "fat": 11.748032799999999,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 526.1667199999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 17.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645384_step2",
+      "name": "well-mixed sauce with yogurt, mustard, garlic powder, and salt",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "greek yogurt",
+          "quantityG": 100
+        },
+        {
+          "ingredientId": "dijon_mustard",
+          "name": "dijon mustard",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "garlic_powder",
+          "name": "garlic powder",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 193.8,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.645,
+        "costPerG": 0.044607843137254896,
+        "nutrition": {
+          "calories": 331.9,
+          "protein": 23.965000000000003,
+          "fat": 1.2919999999999998,
+          "carbs": 62.354000000000006,
+          "fiber": 7.63,
+          "sugar": 5.356,
+          "sodium": 194,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645384_step3",
+      "name": "sauce with cranberries and cashews mixed in",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "raisins",
+          "name": "craisins",
+          "quantityG": 40.404
+        },
+        {
+          "ingredientId": "cashews",
+          "name": "cashews",
+          "quantityG": 64.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 104.904,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.9735700000000005,
+        "costPerG": 0.056943205216197675,
+        "nutrition": {
+          "calories": 476.28084,
+          "protein": 12.770080799999999,
+          "fat": 28.501431600000004,
+          "carbs": 51.1775688,
+          "fiber": 4.875972,
+          "sugar": 3.8119500000000004,
+          "sodium": 19.05312,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645384_step4",
+      "name": "rested chicken with juices redistributed",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_645384_step5",
+      "name": "finished Greek yogurt chicken salad ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 22.529634,
+    "costPerServing": 5.6324085,
+    "totalPrepTime": 34,
+    "nutritionPerServing": {
+      "calories": 331.31893,
+      "protein": 33.258165600000005,
+      "fat": 10.3853661,
+      "carbs": 28.382892200000004,
+      "fiber": 3.126493,
+      "sugar": 2.2919875000000003,
+      "sodium": 572.38496
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_645384_step1",
+        "name": "fully cooked chicken breasts with no pink remaining",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_645384_step2",
+        "name": "well-mixed sauce with yogurt, mustard, garlic powder, and salt",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_645384_step3",
+        "name": "sauce with cranberries and cashews mixed in",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645384_step5",
+        "name": "finished Greek yogurt chicken salad ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_645384_step2",
+      "name": "well-mixed sauce with yogurt, mustard, garlic powder, and salt",
+      "shelfLifeHours": 12,
+      "processes": [
+        "whisk",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_645384_step5",
+      "name": "finished Greek yogurt chicken salad ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "mix",
+        "plate"
+      ]
+    }
+  ]
+}

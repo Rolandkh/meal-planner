@@ -1,0 +1,666 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_bd47b294-1840-414c-bb8b-c2391e24692a",
+  "name": "Crispy Rosemary Hummus",
+  "source": "spoonacular",
+  "spoonacularId": 640834,
+  "image": "/images/recipes/640834.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "garbanzo beans",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "greek yogurt",
+      "quantity": 200,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rosemary",
+      "quantity": 4,
+      "unit": "sprigs",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic clove",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Place the oil in a small skillet over high heat.\nOnce smoking, flash-fry the rosemary sprigs for 30 seconds per side. Remove and place on a paper towel, reserving the oil.\nPlace the garbanzo beans in the food processor with the yogurt, rosemary-infused oil, lemon juice, garlic, salt and pepper.\nPuree to desired  consistency.\nPull the crispy rosemary leaves off the stems and place them in the food processor. Pulse until the rosemary has worked through the hummus.\nMakes 2  cups.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 8,
+  "nutrition": {
+    "calories": 113.1,
+    "protein": 5.96,
+    "fat": 4.86,
+    "carbs": 12.75,
+    "fiber": 3.92,
+    "sugar": 3.97,
+    "saturatedFat": 0.66,
+    "sodium": 450.59
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "condiment",
+      "starter",
+      "snack",
+      "appetizer",
+      "dip",
+      "antipasto",
+      "hor d'oeuvre",
+      "spread"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "garbanzo_beans",
+      "displayName": "garbanzo beans",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g garbanzo beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 200,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 200,
+        "normalizedQuantityMl": 200
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "200 ml greek yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rosemary",
+      "displayName": "rosemary",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 sprigs rosemary",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large garlic clove",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "8 servings bell pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 8,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:39:26.424Z",
+  "processGraph": {
+    "recipeName": "Crispy Rosemary Hummus",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Place the oil in a small skillet over high heat.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in skillet over high heat"
+          }
+        ],
+        "outputDescription": "hot oil in skillet ready for frying"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Once smoking, flash-fry the rosemary sprigs for 30 seconds per side. Remove and place on a paper towel, reserving the oil.",
+        "processes": [
+          {
+            "processId": "deep_fry",
+            "ingredients": [
+              "rosemary"
+            ],
+            "durationMinutes": 1,
+            "notes": "flash-frying for 30 seconds per side"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "rosemary"
+            ],
+            "durationMinutes": null,
+            "notes": "draining on paper towel"
+          }
+        ],
+        "outputDescription": "crispy rosemary sprigs drained on paper towel, rosemary-infused oil reserved"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place the garbanzo beans in the food processor with the yogurt, rosemary-infused oil, lemon juice, garlic, salt and pepper.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "garbanzo beans",
+              "greek yogurt",
+              "olive oil",
+              "lemon juice",
+              "garlic",
+              "salt",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combining ingredients in food processor"
+          }
+        ],
+        "outputDescription": "all hummus ingredients combined in food processor"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Puree to desired consistency.",
+        "processes": [
+          {
+            "processId": "puree",
+            "ingredients": [
+              "garbanzo beans",
+              "greek yogurt",
+              "olive oil",
+              "lemon juice",
+              "garlic",
+              "salt",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "processing to smooth hummus consistency"
+          }
+        ],
+        "outputDescription": "smooth hummus base"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Pull the crispy rosemary leaves off the stems and place them in the food processor. Pulse until the rosemary has worked through the hummus.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "rosemary"
+            ],
+            "durationMinutes": null,
+            "notes": "removing leaves from stems"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "rosemary"
+            ],
+            "durationMinutes": null,
+            "notes": "pulsing to incorporate rosemary into hummus"
+          }
+        ],
+        "outputDescription": "finished crispy rosemary hummus with rosemary leaves distributed throughout"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "heat",
+        "deep_fry",
+        "drain",
+        "mix",
+        "puree",
+        "trim",
+        "blend"
+      ],
+      "estimatedTotalTime": 10
+    }
+  },
+  "components": [
+    {
+      "id": "comp_640834_step1",
+      "name": "hot oil in skillet ready for frying",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 26.46,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.288,
+        "costPerG": 0.010884353741496598,
+        "nutrition": {
+          "calories": 238.68,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_640834_step2",
+      "name": "crispy rosemary sprigs drained on paper towel, rosemary-infused oil reserved",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "rosemary",
+          "name": "rosemary",
+          "quantityG": 20
+        }
+      ],
+      "processes": [
+        {
+          "processId": "deep_fry",
+          "processName": "Deep Fry",
+          "yieldFactor": 0.75,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 14.7,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.666600000000001,
+        "costPerG": 0.31745578231292526,
+        "nutrition": {
+          "calories": 66.2,
+          "protein": 0.976,
+          "fat": 3.0440000000000005,
+          "carbs": 12.812000000000001,
+          "fiber": 8.520000000000001,
+          "sugar": 0,
+          "sodium": 10,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_640834_step3",
+      "name": "all hummus ingredients combined in food processor",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chickpeas",
+          "name": "garbanzo beans",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "greek yogurt",
+          "quantityG": 200
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 5.1
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 6
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 644.343,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.222661249999999,
+        "costPerG": 0.009657373867645027,
+        "nutrition": {
+          "calories": 822.6005200000001,
+          "protein": 58.37357980000001,
+          "fat": 11.7900337,
+          "carbs": 124.71593060000002,
+          "fiber": 32.501768000000006,
+          "sugar": 27.416184,
+          "sodium": 2427.61801,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640834_step4",
+      "name": "smooth hummus base",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640834_step5",
+      "name": "finished crispy rosemary hummus with rosemary leaves distributed throughout",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 11.46976125,
+    "costPerServing": 1.43372015625,
+    "totalPrepTime": 13,
+    "nutritionPerServing": {
+      "calories": 142.14569,
+      "protein": 7.470372475000001,
+      "fat": 5.2333167125,
+      "carbs": 17.459928825000006,
+      "fiber": 5.144783500000001,
+      "sugar": 3.4351480000000003,
+      "sodium": 304.90787625
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_640834_step3",
+        "name": "all hummus ingredients combined in food processor",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640834_step4",
+        "name": "smooth hummus base",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_640834_step5",
+        "name": "finished crispy rosemary hummus with rosemary leaves distributed throughout",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_640834_step5",
+      "name": "finished crispy rosemary hummus with rosemary leaves distributed throughout",
+      "shelfLifeHours": 48,
+      "processes": [
+        "trim",
+        "blend"
+      ]
+    }
+  ]
+}

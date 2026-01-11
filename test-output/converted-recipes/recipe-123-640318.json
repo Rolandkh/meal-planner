@@ -1,0 +1,751 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_de58d587-5084-4f5f-a880-cc72461cde02",
+  "name": "Crab Salad Stuffed Pita Pockets",
+  "source": "spoonacular",
+  "spoonacularId": 640318,
+  "image": "/images/recipes/640318.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "apple",
+      "quantity": 0.5,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "crabmeat",
+      "quantity": 300,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "coriander leaves",
+      "quantity": 59.147,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mayonnaise",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "wholewheat pita breads",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "watercress",
+      "quantity": 2,
+      "unit": "handfuls",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 0.25,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Mix crabmeat, apple and bell pepper together in a bowl.</li><li>Season to taste, add coriander and fold mayonnaise through.</li><li>Toast pita breads until puffed up, then cut open on one side.</li><li>Stuff with some watercress, then the crab mixture.</li><li>Serve immediately.</li></ol>",
+  "prepTime": 8,
+  "cookTime": 18,
+  "servings": 2,
+  "nutrition": {
+    "calories": 417.83,
+    "protein": 38.75,
+    "fat": 6.4,
+    "carbs": 53.99,
+    "fiber": 5.34,
+    "sugar": 6.52,
+    "saturatedFat": 0.93,
+    "sodium": 1517.71
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "apple",
+      "displayName": "apple",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5 small apple",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Crab meat",
+      "quantity": {
+        "originalQuantity": 300,
+        "originalUnit": "g",
+        "normalizedQuantityG": 300,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "300 g crabmeat",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "coriander",
+      "displayName": "coriander",
+      "quantity": {
+        "originalQuantity": 59.147,
+        "originalUnit": "g",
+        "normalizedQuantityG": 59.147,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "59.147 g coriander leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mayonnaise",
+      "displayName": "mayonnaise",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps mayonnaise",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt & pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.25 medium bell pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 6,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "2  wholewheat pita breads",
+        "identityText": "wholewheat pita breads",
+        "state": "other"
+      },
+      {
+        "rawText": "2 handfuls watercress",
+        "identityText": "handfuls watercress",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:52:56.706Z",
+  "processGraph": {
+    "recipeName": "Crab Salad Stuffed Pita Pockets",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Mix crabmeat, apple and bell pepper together in a bowl.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "apple"
+            ],
+            "durationMinutes": 2,
+            "notes": "implied dicing of apple for salad mixture"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "bell pepper"
+            ],
+            "durationMinutes": 2,
+            "notes": "implied dicing of bell pepper for salad mixture"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "crabmeat",
+              "apple",
+              "bell pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "combining ingredients in bowl"
+          }
+        ],
+        "outputDescription": "crabmeat, diced apple, and diced bell pepper mixed together in bowl"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Season to taste, add coriander and fold mayonnaise through.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "seasoning the mixture to taste"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "coriander leaves"
+            ],
+            "durationMinutes": 1,
+            "notes": "adding coriander to the mixture"
+          },
+          {
+            "processId": "fold",
+            "ingredients": [
+              "mayonnaise"
+            ],
+            "durationMinutes": 1,
+            "notes": "gently folding mayonnaise through the mixture"
+          }
+        ],
+        "outputDescription": "seasoned crab salad mixture with coriander and mayonnaise folded through"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Toast pita breads until puffed up, then cut open on one side.",
+        "processes": [
+          {
+            "processId": "toast",
+            "ingredients": [
+              "wholewheat pita breads"
+            ],
+            "durationMinutes": 3,
+            "notes": "toasting until puffed up"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "wholewheat pita breads"
+            ],
+            "durationMinutes": 1,
+            "notes": "cutting open one side to create pocket"
+          }
+        ],
+        "outputDescription": "toasted pita breads with pockets cut open on one side"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Stuff with some watercress, then the crab mixture.",
+        "processes": [
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "watercress"
+            ],
+            "durationMinutes": 1,
+            "notes": "stuffing watercress into pita pockets first"
+          },
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "crabmeat",
+              "apple",
+              "bell pepper",
+              "coriander leaves",
+              "mayonnaise"
+            ],
+            "durationMinutes": 2,
+            "notes": "stuffing crab salad mixture into pita pockets"
+          }
+        ],
+        "outputDescription": "pita pockets stuffed with watercress and crab salad mixture"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Serve immediately.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "wholewheat pita breads",
+              "watercress",
+              "crabmeat",
+              "apple",
+              "bell pepper",
+              "coriander leaves",
+              "mayonnaise"
+            ],
+            "durationMinutes": 1,
+            "notes": "plating and serving the stuffed pita pockets"
+          }
+        ],
+        "outputDescription": "completed crab salad stuffed pita pockets ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "dice",
+        "mix",
+        "season",
+        "fold",
+        "toast",
+        "slice",
+        "stuff",
+        "plate"
+      ],
+      "estimatedTotalTime": 15
+    }
+  },
+  "components": [
+    {
+      "id": "comp_640318_step1",
+      "name": "crabmeat, diced apple, and diced bell pepper mixed together in bowl",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "apple",
+          "name": "apple",
+          "quantityG": 62.99999999999999
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 59.27669999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.18899999999999997,
+        "costPerG": 0.0031884366032522054,
+        "nutrition": {
+          "calories": 32.75999999999999,
+          "protein": 0.16379999999999997,
+          "fat": 0.10709999999999999,
+          "carbs": 8.693999999999999,
+          "fiber": 1.5119999999999998,
+          "sugar": 6.551999999999999,
+          "sodium": 0.6299999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640318_step2",
+      "name": "seasoned crab salad mixture with coriander and mayonnaise folded through",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 2
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "fold",
+          "processName": "Fold",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.08,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.3,
+        "costPerG": 0.31862745098039214,
+        "nutrition": {
+          "calories": 5.0200000000000005,
+          "protein": 0.2078,
+          "fat": 0.0652,
+          "carbs": 1.2790000000000001,
+          "fiber": 0.506,
+          "sugar": 0.0128,
+          "sodium": 775.56,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640318_step3",
+      "name": "toasted pita breads with pockets cut open on one side",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bread",
+          "name": "wholewheat pita breads",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.8032000000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.028,
+        "costPerG": 0.015527950310559006,
+        "nutrition": {
+          "calories": 5.48,
+          "protein": 0.214,
+          "fat": 0.0906,
+          "carbs": 0.9500000000000001,
+          "fiber": 0.08,
+          "sugar": 0.11460000000000001,
+          "sodium": 9.46,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640318_step4",
+      "name": "pita pockets stuffed with watercress and crab salad mixture",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "watercress",
+          "name": "watercress",
+          "quantityG": 60
+        }
+      ],
+      "processes": [
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 101.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.1,
+        "costPerG": 0.02071005917159763,
+        "nutrition": {
+          "calories": 6.6,
+          "protein": 1.38,
+          "fat": 0.06,
+          "carbs": 0.774,
+          "fiber": 0.3,
+          "sugar": 0.12,
+          "sodium": 24.599999999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640318_step5",
+      "name": "completed crab salad stuffed pita pockets ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "crab_meat",
+          "name": "crabmeat",
+          "quantityG": 300
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 37.5
+        },
+        {
+          "ingredientId": "cilantro",
+          "name": "coriander leaves",
+          "quantityG": 59.147
+        },
+        {
+          "ingredientId": "mayonnaise",
+          "name": "mayonnaise",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 426.647,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 26.49115,
+        "costPerG": 0.062091494842340396,
+        "nutrition": {
+          "calories": 479.35381,
+          "protein": 56.7890811,
+          "fat": 24.660064399999996,
+          "carbs": 4.6029449,
+          "fiber": 2.4436159999999996,
+          "sugar": 2.2605789,
+          "sodium": 2727.20762,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 30.108150000000006,
+    "costPerServing": 15.054075000000003,
+    "totalPrepTime": 16,
+    "nutritionPerServing": {
+      "calories": 264.60690500000004,
+      "protein": 29.37734055,
+      "fat": 12.491482199999998,
+      "carbs": 8.149972449999998,
+      "fiber": 2.420808,
+      "sugar": 4.52998945,
+      "sodium": 1768.72881
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_640318_step1",
+        "name": "crabmeat, diced apple, and diced bell pepper mixed together in bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640318_step2",
+        "name": "seasoned crab salad mixture with coriander and mayonnaise folded through",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640318_step3",
+        "name": "toasted pita breads with pockets cut open on one side",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640318_step4",
+        "name": "pita pockets stuffed with watercress and crab salad mixture",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_640318_step1",
+      "name": "crabmeat, diced apple, and diced bell pepper mixed together in bowl",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "dice",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_640318_step2",
+      "name": "seasoned crab salad mixture with coriander and mayonnaise folded through",
+      "shelfLifeHours": 24,
+      "processes": [
+        "season",
+        "mix",
+        "fold"
+      ]
+    },
+    {
+      "componentId": "comp_640318_step3",
+      "name": "toasted pita breads with pockets cut open on one side",
+      "shelfLifeHours": 24,
+      "processes": [
+        "toast",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_640318_step4",
+      "name": "pita pockets stuffed with watercress and crab salad mixture",
+      "shelfLifeHours": 12,
+      "processes": [
+        "stuff",
+        "stuff"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_20b82491-7ac0-4e45-aaf2-08b6d4dfa232",
+  "name": "Baked Ratatouille",
+  "source": "spoonacular",
+  "spoonacularId": 633754,
+  "image": "/images/recipes/633754.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "eggplant",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 12,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell peppers",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion cut \" pieces",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 2,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini cut",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Heat oil in a heavy, large Dutch oven over medium heat. Add garlic; stir 1 minute. Add eggplant, green bell peppers, tomatoes, onion, zucchini and basil. Saute for 5 minutes. Cover and simmer until all vegetables are tender, stirring occasionally, about 25 minutes.</li><li>Uncover pot and simmer until juice thickens, stirring occasionally, about 10 minutes. Mix in vinegar; season to taste with salt and pepper.</li><li>Preheat oven to 350 degrees. Spread in 9-inch pie dish. Sprinkle with cheese, if desired. Bake until heated through, about 20 minutes.</li><li>This recipe yields about 3 cups.</li><li>Yield: 3 cups</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 1,
+  "nutrition": {
+    "calories": 1029.13,
+    "protein": 32.3,
+    "fat": 69.63,
+    "carbs": 82.22,
+    "fiber": 27.76,
+    "sugar": 44.38,
+    "saturatedFat": 21.61,
+    "sodium": 1363.75
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "French",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian",
+      "primal"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.879Z",
+  "updatedAt": "2026-01-09T11:32:55.879Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "eggplant",
+      "displayName": "eggplant",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large eggplant",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 113.398,
+        "originalUnit": "g",
+        "normalizedQuantityG": 113.398,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "113.398 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": "g",
+        "normalizedQuantityG": 12,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "12 g basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5  garlic cloves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_peppers",
+      "displayName": "bell peppers",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  bell peppers",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion cut \" pieces",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 large tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large zucchini cut",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 10,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:19:55.180Z",
+  "processGraph": {
+    "recipeName": "Baked Ratatouille",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat oil in a heavy, large Dutch oven over medium heat. Add garlic; stir 1 minute. Add eggplant, green bell peppers, tomatoes, onion, zucchini and basil. Saute for 5 minutes. Cover and simmer until all vegetables are tender, stirring occasionally, about 25 minutes.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in Dutch oven over medium heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": 1,
+            "notes": "stir garlic for 1 minute"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "eggplant",
+              "bell peppers",
+              "tomatoes",
+              "onion",
+              "zucchini",
+              "basil"
+            ],
+            "durationMinutes": 5,
+            "notes": "saute all vegetables for 5 minutes"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "eggplant",
+              "bell peppers",
+              "tomatoes",
+              "onion",
+              "zucchini",
+              "basil"
+            ],
+            "durationMinutes": 25,
+            "notes": "cover and simmer until vegetables are tender, stirring occasionally"
+          }
+        ],
+        "outputDescription": "vegetables are tender and cooked through"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Uncover pot and simmer until juice thickens, stirring occasionally, about 10 minutes. Mix in vinegar; season to taste with salt and pepper.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "eggplant",
+              "bell peppers",
+              "tomatoes",
+              "onion",
+              "zucchini",
+              "basil"
+            ],
+            "durationMinutes": 10,
+            "notes": "uncover and simmer to thicken juices, stirring occasionally"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "red wine vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "mix in vinegar"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season to taste with salt and pepper"
+          }
+        ],
+        "outputDescription": "ratatouille mixture with thickened juices, seasoned with vinegar, salt and pepper"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Preheat oven to 350 degrees. Spread in 9-inch pie dish. Sprinkle with cheese, if desired. Bake until heated through, about 20 minutes.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 350 degrees"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "eggplant",
+              "bell peppers",
+              "tomatoes",
+              "onion",
+              "zucchini",
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "spread ratatouille mixture in 9-inch pie dish"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle with cheese if desired"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "eggplant",
+              "bell peppers",
+              "tomatoes",
+              "onion",
+              "zucchini",
+              "basil",
+              "feta cheese"
+            ],
+            "durationMinutes": 20,
+            "notes": "bake until heated through"
+          }
+        ],
+        "outputDescription": "finished baked ratatouille, heated through with melted cheese on top"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "heat",
+        "saute",
+        "simmer",
+        "mix",
+        "season",
+        "spread",
+        "sprinkle",
+        "bake"
+      ],
+      "estimatedTotalTime": 56
+    }
+  },
+  "components": [
+    {
+      "id": "comp_633754_step1",
+      "name": "vegetables are tender and cooked through",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 25.8084225,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.432,
+        "costPerG": 0.016738721632443828,
+        "nutrition": {
+          "calories": 358.02000000000004,
+          "protein": 0,
+          "fat": 40.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.81,
+          "method": "raw"
+        },
+        "prepTimeMin": 34
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633754_step2",
+      "name": "ratatouille mixture with thickened juices, seasoned with vinegar, salt and pepper",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggplant",
+          "name": "eggplant",
+          "quantityG": 65
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell peppers",
+          "quantityG": 300
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 312
+        },
+        {
+          "ingredientId": "basil",
+          "name": "basil",
+          "quantityG": 12
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 632.5020000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 11.56518,
+        "costPerG": 0.018284811747630834,
+        "nutrition": {
+          "calories": 153.17,
+          "protein": 6.7306,
+          "fat": 1.7178,
+          "carbs": 34.3668,
+          "fiber": 12.186,
+          "sugar": 23.136100000000003,
+          "sodium": 29.380000000000003,
+          "method": "raw"
+        },
+        "prepTimeMin": 12.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633754_step3",
+      "name": "finished baked ratatouille, heated through with melted cheese on top",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 113.398
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 105.98471914800001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.417475,
+        "costPerG": 0.013374333690695529,
+        "nutrition": {
+          "calories": 300.5047,
+          "protein": 16.102515999999998,
+          "fat": 24.38057,
+          "carbs": 4.3998424,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1292.7372,
+          "method": "raw"
+        },
+        "prepTimeMin": 24.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 18.160155000000003,
+    "costPerServing": 18.160155000000003,
+    "totalPrepTime": 71,
+    "nutritionPerServing": {
+      "calories": 958.8447000000001,
+      "protein": 29.231115999999997,
+      "fat": 67.70536999999999,
+      "carbs": 69.21864240000001,
+      "fiber": 17.861,
+      "sugar": 36.2461,
+      "sodium": 1356.3772
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_633754_step1",
+        "name": "vegetables are tender and cooked through",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_633754_step2",
+        "name": "ratatouille mixture with thickened juices, seasoned with vinegar, salt and pepper",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_633754_step3",
+        "name": "finished baked ratatouille, heated through with melted cheese on top",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_633754_step1",
+      "name": "vegetables are tender and cooked through",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute",
+        "saute",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_633754_step2",
+      "name": "ratatouille mixture with thickened juices, seasoned with vinegar, salt and pepper",
+      "shelfLifeHours": 24,
+      "processes": [
+        "simmer",
+        "mix",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_633754_step3",
+      "name": "finished baked ratatouille, heated through with melted cheese on top",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "spread",
+        "sprinkle",
+        "bake"
+      ]
+    }
+  ]
+}

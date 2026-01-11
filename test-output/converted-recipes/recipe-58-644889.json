@@ -1,0 +1,988 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_dbf50e29-ddde-4190-bc74-a8205ae25cac",
+  "name": "Gluten-Free Lamb Moussaka",
+  "source": "spoonacular",
+  "spoonacularId": 644889,
+  "image": "/images/recipes/644889.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "eggplants",
+      "quantity": 2,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground lamb",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 396.893,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 3,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggs",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "fl lowfat yogurt",
+      "quantity": 283.495,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": 150,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Lay the eggplant slices in a single layer over paper towels. Lightly salt both sides of eggplant slices and allow to sit for 20-30 minutes. Pat dry. Heat a skillet to medium-high heat. Brush a very thin layer of olive oil on each side of each eggplant slice. Add eggplant slices in a single layer in the skillet and brown on both sides. Set aside. (You will have to do this in batches) Repeat with remaining slices.\nAdd lamb to skillet and brown for 5 minutes, crumbling with spatula and stirring as needed. Season with salt and pepper. Add the onion slices and garlic and saute for another 7-8 minutes or until onion softens. Add tomatoes and parsley and bring to a boil. Quickly reduce to a simmer and allow to cook for 15-20 minutes, stirring occasionally, until everything is completely tender. Taste and add salt and pepper as needed.\nArrange half of the eggplant slices in a single laer in an oven-proof 13X9 baking dish. Add the lamb-tomato mixture, and then layer the remaining eggplant slices on top.\nBeat the eggs in a bowl until doubled in size and foamy (I used my stand mixer for this). Add yogurt and continue beating until the entire mixture is fluffy. Add salt and pepper to taste. Pour egg mixture over the eggplant slices, spreading out in an even layer. Sprinkle Parmesan on top.\nBake in a 350 degree oven for 40-45 minutes or until golden brown on top. Serves 4.\nHow to drain yogurt:\nDraining yogurt results in a thicker consistency, much like Greek-style yogurt. Line a large bowl with several thicknesses of cheesecloth. Place the yogurt into the cheesecloth, then gather the ends and fasten them tightly with a rubber band. Hang the cheesecloth over the bowl, allowing it to drip the excess water into the bowl. (I suspended mine over the bowl by wrapping the ends of the cheesecloth around a chopstick and placing a binder clip to secure. You can also hang the cheesecloth over a cupboard knob and place the bowl underneath.) Allow to drip for at least 30 minutes, or longer if you want an even thicker yogurt.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 630.98,
+    "protein": 40.95,
+    "fat": 39.87,
+    "carbs": 30.75,
+    "fiber": 8.77,
+    "sugar": 17.55,
+    "saturatedFat": 18.86,
+    "sodium": 960.18
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "primal"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "eggplants",
+      "displayName": "eggplants",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 large eggplants",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lamb",
+      "displayName": "lamb",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "453.592 g ground lamb",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 396.893,
+        "originalUnit": "g",
+        "normalizedQuantityG": 396.893,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "396.893 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 tsps parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 283.495,
+        "originalUnit": "g",
+        "normalizedQuantityG": 283.495,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "283.495 g fl lowfat yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 150,
+        "originalUnit": "g",
+        "normalizedQuantityG": 150,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "150 g parmesan cheese",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 9,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:32:24.903Z",
+  "processGraph": {
+    "recipeName": "Gluten-Free Lamb Moussaka",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Lay the eggplant slices in a single layer over paper towels. Lightly salt both sides of eggplant slices and allow to sit for 20-30 minutes. Pat dry. Heat a skillet to medium-high heat. Brush a very thin layer of olive oil on each side of each eggplant slice. Add eggplant slices in a single layer in the skillet and brown on both sides. Set aside. (You will have to do this in batches) Repeat with remaining slices.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": null,
+            "notes": "implied slicing of eggplants"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": null,
+            "notes": "lightly salt both sides"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": 25,
+            "notes": "allow to sit for 20-30 minutes to draw out moisture"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat skillet to medium-high heat"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "eggplants",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "brush thin layer of olive oil on each side"
+          },
+          {
+            "processId": "sear",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": null,
+            "notes": "brown on both sides in batches"
+          }
+        ],
+        "outputDescription": "Eggplant slices are salted, drained, oiled, and browned on both sides, set aside"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add lamb to skillet and brown for 5 minutes, crumbling with spatula and stirring as needed. Season with salt and pepper. Add the onion slices and garlic and saute for another 7-8 minutes or until onion softens. Add tomatoes and parsley and bring to a boil. Quickly reduce to a simmer and allow to cook for 15-20 minutes, stirring occasionally, until everything is completely tender. Taste and add salt and pepper as needed.",
+        "processes": [
+          {
+            "processId": "sear",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": 5,
+            "notes": "brown lamb while crumbling with spatula"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "season with salt and pepper"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied onion slicing"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied garlic preparation"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": 7.5,
+            "notes": "saute for 7-8 minutes until onion softens"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "canned tomatoes",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "bring to a boil after adding tomatoes and parsley"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "ground lamb",
+              "onion",
+              "garlic",
+              "canned tomatoes",
+              "parsley"
+            ],
+            "durationMinutes": 17.5,
+            "notes": "reduce to simmer and cook 15-20 minutes until tender"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "ground lamb",
+              "onion",
+              "garlic",
+              "canned tomatoes",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "taste and adjust seasoning"
+          }
+        ],
+        "outputDescription": "Lamb-tomato mixture is fully cooked, tender, and properly seasoned"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Arrange half of the eggplant slices in a single laer in an oven-proof 13X9 baking dish. Add the lamb-tomato mixture, and then layer the remaining eggplant slices on top.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "eggplants",
+              "ground lamb"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange in layers: eggplant, lamb mixture, eggplant"
+          }
+        ],
+        "outputDescription": "Moussaka is assembled in baking dish with alternating layers"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Beat the eggs in a bowl until doubled in size and foamy (I used my stand mixer for this). Add yogurt and continue beating until the entire mixture is fluffy. Add salt and pepper to taste. Pour egg mixture over the eggplant slices, spreading out in an even layer. Sprinkle Parmesan on top.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "eggs"
+            ],
+            "durationMinutes": null,
+            "notes": "beat until doubled in size and foamy"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "eggs",
+              "lowfat yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "continue beating until fluffy"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "eggs",
+              "lowfat yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to taste"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "eggs",
+              "lowfat yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "pour and spread evenly over eggplant"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle on top"
+          }
+        ],
+        "outputDescription": "Fluffy egg-yogurt mixture covers the moussaka, topped with Parmesan cheese"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Bake in a 350 degree oven for 40-45 minutes or until golden brown on top. Serves 4.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "eggplants",
+              "ground lamb",
+              "eggs",
+              "lowfat yogurt",
+              "parmesan cheese"
+            ],
+            "durationMinutes": 42.5,
+            "notes": "bake at 350°F for 40-45 minutes until golden brown"
+          }
+        ],
+        "outputDescription": "Completed moussaka is golden brown on top and fully cooked"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Draining yogurt results in a thicker consistency, much like Greek-style yogurt. Line a large bowl with several thicknesses of cheesecloth. Place the yogurt into the cheesecloth, then gather the ends and fasten them tightly with a rubber band. Hang the cheesecloth over the bowl, allowing it to drip the excess water into the bowl. (I suspended mine over the bowl by wrapping the ends of the cheesecloth around a chopstick and placing a binder clip to secure. You can also hang the cheesecloth over a cupboard knob and place the bowl underneath.) Allow to drip for at least 30 minutes, or longer if you want an even thicker yogurt.",
+        "processes": [
+          {
+            "processId": "strain",
+            "ingredients": [
+              "lowfat yogurt"
+            ],
+            "durationMinutes": 30,
+            "notes": "drain through cheesecloth to thicken, minimum 30 minutes"
+          }
+        ],
+        "outputDescription": "Yogurt is thickened to Greek-style consistency through draining"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 18,
+      "uniqueProcesses": [
+        "slice",
+        "season",
+        "drain",
+        "heat",
+        "coat",
+        "sear",
+        "mince",
+        "saute",
+        "boil",
+        "simmer",
+        "plate",
+        "whisk",
+        "spread",
+        "sprinkle",
+        "bake",
+        "strain"
+      ],
+      "estimatedTotalTime": 125
+    }
+  },
+  "components": [
+    {
+      "id": "comp_644889_step1",
+      "name": "Eggplant slices are salted, drained, oiled, and browned on both sides, set aside",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggplants",
+          "name": "eggplants",
+          "quantityG": 130
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sear",
+          "processName": "Sear",
+          "yieldFactor": 0.95,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 136.346249676,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.975,
+        "costPerG": 0.007150911758239741,
+        "nutrition": {
+          "calories": 32.5,
+          "protein": 1.274,
+          "fat": 0.23399999999999999,
+          "carbs": 7.644,
+          "fiber": 3.9000000000000004,
+          "sugar": 4.5889999999999995,
+          "sodium": 2.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 35.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644889_step2",
+      "name": "Lamb-tomato mixture is fully cooked, tender, and properly seasoned",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lamb",
+          "name": "ground lamb",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "sear",
+          "processName": "Sear",
+          "yieldFactor": 0.95,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 7.5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 17.5,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 312.91510433713376,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.927372,
+        "costPerG": 0.041312713323266394,
+        "nutrition": {
+          "calories": 1279.12944,
+          "protein": 75.11483519999999,
+          "fat": 106.1858872,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 267.61928,
+          "method": "raw"
+        },
+        "prepTimeMin": 45
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644889_step3",
+      "name": "Moussaka is assembled in baking dish with alternating layers",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_644889_step4",
+      "name": "Fluffy egg-yogurt mixture covers the moussaka, topped with Parmesan cheese",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggs",
+          "name": "eggs",
+          "quantityG": 100
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 114.44400000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.667,
+        "costPerG": 0.005828177973506692,
+        "nutrition": {
+          "calories": 143,
+          "protein": 12.6,
+          "fat": 9.51,
+          "carbs": 0.72,
+          "fiber": 0,
+          "sugar": 0.37,
+          "sodium": 142,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644889_step5",
+      "name": "Completed moussaka is golden brown on top and fully cooked",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parmesan_cheese",
+          "name": "parmesan cheese",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 42.5,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 127.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.275,
+        "costPerG": 0.033529411764705884,
+        "nutrition": {
+          "calories": 588,
+          "protein": 53.625,
+          "fat": 38.745,
+          "carbs": 4.83,
+          "fiber": 0,
+          "sugar": 1.2000000000000002,
+          "sodium": 2403,
+          "method": "raw"
+        },
+        "prepTimeMin": 42.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644889_step7",
+      "name": "Yogurt is thickened to Greek-style consistency through draining",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "strain",
+          "processName": "Strain",
+          "yieldFactor": 0.6,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 22.153600599999997,
+    "costPerServing": 5.538400149999999,
+    "totalPrepTime": 161,
+    "nutritionPerServing": {
+      "calories": 606.9257875,
+      "protein": 44.65419385,
+      "fat": 41.469982275,
+      "carbs": 13.405096924999999,
+      "fiber": 2.90711675,
+      "sugar": 8.238432125000001,
+      "sodium": 861.00406
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_644889_step1",
+        "name": "Eggplant slices are salted, drained, oiled, and browned on both sides, set aside",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_644889_step2",
+        "name": "Lamb-tomato mixture is fully cooked, tender, and properly seasoned",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_644889_step4",
+        "name": "Fluffy egg-yogurt mixture covers the moussaka, topped with Parmesan cheese",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_644889_step5",
+        "name": "Completed moussaka is golden brown on top and fully cooked",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_644889_step1",
+      "name": "Eggplant slices are salted, drained, oiled, and browned on both sides, set aside",
+      "shelfLifeHours": 2,
+      "processes": [
+        "slice",
+        "season",
+        "drain",
+        "heat",
+        "coat",
+        "sear"
+      ]
+    },
+    {
+      "componentId": "comp_644889_step2",
+      "name": "Lamb-tomato mixture is fully cooked, tender, and properly seasoned",
+      "shelfLifeHours": 24,
+      "processes": [
+        "sear",
+        "season",
+        "slice",
+        "mince",
+        "saute",
+        "boil",
+        "simmer",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_644889_step4",
+      "name": "Fluffy egg-yogurt mixture covers the moussaka, topped with Parmesan cheese",
+      "shelfLifeHours": 12,
+      "processes": [
+        "whisk",
+        "whisk",
+        "season",
+        "spread",
+        "sprinkle"
+      ]
+    }
+  ]
+}

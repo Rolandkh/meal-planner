@@ -1,0 +1,842 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_ce526f53-a413-43c8-bfcb-c20c8034f5fc",
+  "name": "Asparagus and Pea Soup: Real Convenience Food",
+  "source": "spoonacular",
+  "spoonacularId": 716406,
+  "image": "/images/recipes/716406.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "asparagus",
+      "quantity": 1,
+      "unit": "bag",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "evoo",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "peas",
+      "quantity": 290,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable broth",
+      "quantity": 1,
+      "unit": "box",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li><span></span>Chop the garlic and onions.</li><li>Saute the onions in the EVOO, adding the garlic after a couple of minutes; cook until the onions are translucent. </li><li>Add the whole bag of asparagus and cover everything with the broth. </li><li>Season with salt and pepper and a pinch of red pepper flakes, if using.</li><li>Simmer until the asparagus is bright green and tender (if you've thawed the asparagus it will only take a couple of minutes). </li><li>Turn off the heat and puree using an immersion blender.</li><li>Add peas (the heat of the soup will quickly thaw them) and puree until smooth; add more until it reaches the thickness you like.</li><li>Top with chives and a small dollop of creme fraiche <span class=\"Apple-style-span\" style=\"background-color: initial; font-family: inherit; color: rgb(77, 77, 77);\">or sour cream or greek yogurt.</span></li></ol><span class=\"Apple-style-span\"></span>",
+  "prepTime": 6,
+  "cookTime": 14,
+  "servings": 2,
+  "nutrition": {
+    "calories": 217.43,
+    "protein": 10.84,
+    "fat": 7.76,
+    "carbs": 28.83,
+    "fiber": 11.17,
+    "sugar": 11.54,
+    "saturatedFat": 1.13,
+    "sodium": 11.26
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "vegan"
+    ],
+    "dishTypes": [
+      "soup",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp evoo",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "peas",
+      "displayName": "peas",
+      "quantity": {
+        "originalQuantity": 290,
+        "originalUnit": "g",
+        "normalizedQuantityG": 290,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "290 g peas",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 6,
+    "matched": 4,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 bag asparagus",
+        "identityText": "bag asparagus",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 box vegetable broth",
+        "identityText": "box vegetable broth",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:47:53.602Z",
+  "processGraph": {
+    "recipeName": "Asparagus and Pea Soup: Real Convenience Food",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Chop the garlic and onions.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "garlic",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "rough chopping for aromatics"
+          }
+        ],
+        "outputDescription": "garlic and onions chopped into rough pieces"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Saute the onions in the EVOO, adding the garlic after a couple of minutes; cook until the onions are translucent.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "evoo"
+            ],
+            "durationMinutes": 2,
+            "notes": "onions sautéed first"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": 3,
+            "notes": "garlic added after couple minutes, continue until onions translucent"
+          }
+        ],
+        "outputDescription": "onions are translucent and garlic is fragrant"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the whole bag of asparagus and cover everything with the broth.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "asparagus",
+              "vegetable broth"
+            ],
+            "durationMinutes": null,
+            "notes": "adding asparagus and broth to the sautéed aromatics"
+          }
+        ],
+        "outputDescription": "asparagus and aromatics covered with vegetable broth"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Season with salt and pepper and a pinch of red pepper flakes, if using.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper",
+              "red pepper flakes"
+            ],
+            "durationMinutes": null,
+            "notes": "basic seasoning added"
+          }
+        ],
+        "outputDescription": "soup base seasoned with salt, pepper, and optional red pepper flakes"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Simmer until the asparagus is bright green and tender (if you've thawed the asparagus it will only take a couple of minutes).",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "asparagus"
+            ],
+            "durationMinutes": 2,
+            "notes": "cooking until asparagus is bright green and tender"
+          }
+        ],
+        "outputDescription": "asparagus is bright green and tender in the simmering broth"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Turn off the heat and puree using an immersion blender.",
+        "processes": [
+          {
+            "processId": "puree",
+            "ingredients": [
+              "asparagus",
+              "onion",
+              "garlic",
+              "vegetable broth"
+            ],
+            "durationMinutes": null,
+            "notes": "using immersion blender to puree soup base"
+          }
+        ],
+        "outputDescription": "soup base pureed into smooth consistency"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Add peas (the heat of the soup will quickly thaw them) and puree until smooth; add more until it reaches the thickness you like.",
+        "processes": [
+          {
+            "processId": "thaw",
+            "ingredients": [
+              "peas"
+            ],
+            "durationMinutes": 1,
+            "notes": "peas thawed by residual heat of soup"
+          },
+          {
+            "processId": "puree",
+            "ingredients": [
+              "peas"
+            ],
+            "durationMinutes": null,
+            "notes": "pureeing peas into soup until desired thickness"
+          }
+        ],
+        "outputDescription": "smooth soup with peas incorporated to desired thickness"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Top with chives and a small dollop of creme fraiche",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "chives",
+              "creme fraiche"
+            ],
+            "durationMinutes": null,
+            "notes": "final garnishing for serving"
+          }
+        ],
+        "outputDescription": "soup garnished with chives and creme fraiche"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "or sour cream or greek yogurt.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "sour cream",
+              "greek yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "alternative garnish options"
+          }
+        ],
+        "outputDescription": "soup with alternative dairy garnish options"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "chop",
+        "saute",
+        "mix",
+        "season",
+        "simmer",
+        "puree",
+        "thaw",
+        "garnish"
+      ],
+      "estimatedTotalTime": 15
+    }
+  },
+  "components": [
+    {
+      "id": "comp_716406_step1",
+      "name": "garlic and onions chopped into rough pieces",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 75
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 83.3,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.70025,
+        "costPerG": 0.020411164465786315,
+        "nutrition": {
+          "calories": 44.9,
+          "protein": 1.4610000000000003,
+          "fat": 0.125,
+          "carbs": 10.315000000000001,
+          "fiber": 1.4849999999999999,
+          "sugar": 3.2800000000000002,
+          "sodium": 4.7,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716406_step2",
+      "name": "onions are translucent and garlic is fragrant",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "evoo",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 9.753749999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.144,
+        "costPerG": 0.014763552479815457,
+        "nutrition": {
+          "calories": 119.34,
+          "protein": 0,
+          "fat": 13.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716406_step3",
+      "name": "asparagus and aromatics covered with vegetable broth",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "asparagus",
+          "name": "asparagus",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "vegetable_broth",
+          "name": "vegetable broth",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 301,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.06875,
+        "costPerG": 0.003550664451827243,
+        "nutrition": {
+          "calories": 15.2,
+          "protein": 0.022000000000000002,
+          "fat": 0.0012,
+          "carbs": 3.8788,
+          "fiber": 0.021,
+          "sugar": 2.5688,
+          "sodium": 1200.02,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716406_step4",
+      "name": "soup base seasoned with salt, pepper, and optional red pepper flakes",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_716406_step5",
+      "name": "asparagus is bright green and tender in the simmering broth",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716406_step6",
+      "name": "soup base pureed into smooth consistency",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716406_step7",
+      "name": "smooth soup with peas incorporated to desired thickness",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "peas",
+          "name": "peas",
+          "quantityG": 290
+        }
+      ],
+      "processes": [
+        {
+          "processId": "thaw",
+          "processName": "Thaw",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 281.3,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.9424999999999999,
+        "costPerG": 0.003350515463917525,
+        "nutrition": {
+          "calories": 234.9,
+          "protein": 15.718,
+          "fat": 1.16,
+          "carbs": 41.76,
+          "fiber": 16.53,
+          "sugar": 16.442999999999998,
+          "sodium": 14.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716406_step8",
+      "name": "soup garnished with chives and creme fraiche",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_716406_step9",
+      "name": "soup with alternative dairy garnish options",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 3.8555,
+    "costPerServing": 1.92775,
+    "totalPrepTime": 20.5,
+    "nutritionPerServing": {
+      "calories": 207.17000000000002,
+      "protein": 8.6005,
+      "fat": 7.3931000000000004,
+      "carbs": 27.9769,
+      "fiber": 9.018,
+      "sugar": 11.1459,
+      "sodium": 609.745
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_716406_step1",
+        "name": "garlic and onions chopped into rough pieces",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_716406_step2",
+        "name": "onions are translucent and garlic is fragrant",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_716406_step3",
+        "name": "asparagus and aromatics covered with vegetable broth",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716406_step5",
+        "name": "asparagus is bright green and tender in the simmering broth",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_716406_step6",
+        "name": "soup base pureed into smooth consistency",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_716406_step7",
+        "name": "smooth soup with peas incorporated to desired thickness",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_716406_step2",
+      "name": "onions are translucent and garlic is fragrant",
+      "shelfLifeHours": 72,
+      "processes": [
+        "saute",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_716406_step7",
+      "name": "smooth soup with peas incorporated to desired thickness",
+      "shelfLifeHours": 24,
+      "processes": [
+        "thaw",
+        "puree"
+      ]
+    }
+  ]
+}

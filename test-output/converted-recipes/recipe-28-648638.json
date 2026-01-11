@@ -1,0 +1,907 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_6b17119b-54c5-4886-84ef-d0287c2a5132",
+  "name": "Julia Child's Coq au Vin",
+  "source": "spoonacular",
+  "spoonacularId": 648638,
+  "image": "/images/recipes/648638.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bacon",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bay leaves",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "butter",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "button mushrooms",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken thighs and legs",
+      "quantity": 775.643,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken stock",
+      "quantity": 480,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 6,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pearl onions",
+      "quantity": 20,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine",
+      "quantity": 472,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "several thyme sprigs",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Blanch the bacon to remove some of its saltiness. Drop the bacon into a saucepan of cold water, covered by a couple of inches. Bring to a boil, simmer for 5 minutes, drain. Rinse in cold water, pat dry with paper towels. Cut the bacon into 1 inch by 1/4 inch pieces.</li><li>Brown bacon on medium high heat in a dutch oven big enough to hold the chicken, about 10 minutes. Remove the cooked bacon, set aside. Keep the bacon fat in the pan. Working in batches if necessary, add onions and chicken, skin side down. Brown the chicken well, on all sides, about 10 minutes. Halfway through the browning, add the garlic and sprinkle the chicken with salt and pepper.</li><li>Spoon off any excess fat. Add the chicken stock, wine, and herbs. Add back the bacon. Lower heat to a simmer. Cover and cook for 20 minutes, or until chicken is tender and cooked through. Remove chicken and onions to a separate platter. Remove the bay leaves, herb sprigs, garlic, and discard.</li><li>Add mushrooms to the remaining liquid and turn the heat to high. Boil quickly and reduce the liquid by three fourths until it becomes thick and saucy. Lower the heat, stir in the butter. Return the chicken and onions to the pan to reheat and coat with sauce. Adjust seasoning. Garnish with parsley and serve with potatoes or egg noodles.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 778.29,
+    "protein": 35.2,
+    "fat": 41.15,
+    "carbs": 55.05,
+    "fiber": 9.35,
+    "sugar": 23.31,
+    "saturatedFat": 13.61,
+    "sodium": 724.42
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "French",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "primal"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "bacon",
+      "displayName": "bacon",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g bacon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bay_leaves",
+      "displayName": "bay leaves",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2  bay leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "butter",
+      "displayName": "butter",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 28,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps butter",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mushrooms",
+      "displayName": "mushrooms",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g button mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_broth",
+      "displayName": "chicken broth",
+      "quantity": {
+        "originalQuantity": 480,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 480,
+        "normalizedQuantityMl": 480
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "480 ml chicken stock",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6  garlic cloves",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Pearl onions",
+      "quantity": {
+        "originalQuantity": 20,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "20 large pearl onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 472,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 472,
+        "normalizedQuantityMl": 472
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "472 ml red wine",
+      "matchConfidence": 0.6
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "several_thyme_sprigs",
+      "displayName": "several thyme sprigs",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings several thyme sprigs",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 11,
+    "unmatched": 2,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "775.643 g chicken thighs and legs",
+        "identityText": "chicken thighs and legs",
+        "state": "fresh"
+      },
+      {
+        "rawText": "6 servings several parsley sprigs",
+        "identityText": "several parsley sprigs",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:29:31.967Z",
+  "processGraph": {
+    "recipeName": "Julia Child's Coq au Vin",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Blanch the bacon to remove some of its saltiness. Drop the bacon into a saucepan of cold water, covered by a couple of inches. Bring to a boil, simmer for 5 minutes, drain. Rinse in cold water, pat dry with paper towels. Cut the bacon into 1 inch by 1/4 inch pieces.",
+        "processes": [
+          {
+            "processId": "blanch",
+            "ingredients": [
+              "bacon"
+            ],
+            "durationMinutes": 5,
+            "notes": "boil then simmer for 5 minutes"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "bacon"
+            ],
+            "durationMinutes": null,
+            "notes": "remove cooking water"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "bacon"
+            ],
+            "durationMinutes": null,
+            "notes": "rinse in cold water"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "bacon"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into 1 inch by 1/4 inch pieces"
+          }
+        ],
+        "outputDescription": "bacon is blanched, drained, rinsed, dried, and cut into uniform pieces"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Brown bacon on medium high heat in a dutch oven big enough to hold the chicken, about 10 minutes. Remove the cooked bacon, set aside. Keep the bacon fat in the pan. Working in batches if necessary, add onions and chicken, skin side down. Brown the chicken well, on all sides, about 10 minutes. Halfway through the browning, add the garlic and sprinkle the chicken with salt and pepper.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "bacon"
+            ],
+            "durationMinutes": 10,
+            "notes": "brown on medium high heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "pearl onions",
+              "chicken thighs and legs"
+            ],
+            "durationMinutes": 10,
+            "notes": "brown chicken on all sides, skin side down first"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "chicken thighs and legs"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle with salt and pepper"
+          }
+        ],
+        "outputDescription": "bacon is browned and set aside, chicken and onions are well-browned on all sides, seasoned with salt, pepper, and garlic"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Spoon off any excess fat. Add the chicken stock, wine, and herbs. Add back the bacon. Lower heat to a simmer. Cover and cook for 20 minutes, or until chicken is tender and cooked through. Remove chicken and onions to a separate platter. Remove the bay leaves, herb sprigs, garlic, and discard.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "bacon fat"
+            ],
+            "durationMinutes": null,
+            "notes": "spoon off excess fat"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chicken stock",
+              "red wine",
+              "bay leaves",
+              "thyme sprigs",
+              "bacon"
+            ],
+            "durationMinutes": null,
+            "notes": "add liquids, herbs, and bacon back to pan"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "chicken thighs and legs",
+              "pearl onions",
+              "chicken stock",
+              "red wine"
+            ],
+            "durationMinutes": 20,
+            "notes": "cover and cook until chicken is tender"
+          }
+        ],
+        "outputDescription": "chicken and onions are tender and fully cooked, removed to platter; cooking liquid remains in pan with herbs removed"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add mushrooms to the remaining liquid and turn the heat to high. Boil quickly and reduce the liquid by three fourths until it becomes thick and saucy. Lower the heat, stir in the butter. Return the chicken and onions to the pan to reheat and coat with sauce. Adjust seasoning. Garnish with parsley and serve with potatoes or egg noodles.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "button mushrooms",
+              "cooking liquid"
+            ],
+            "durationMinutes": null,
+            "notes": "boil on high heat with mushrooms"
+          },
+          {
+            "processId": "reduce",
+            "ingredients": [
+              "cooking liquid"
+            ],
+            "durationMinutes": null,
+            "notes": "reduce by three fourths until thick and saucy"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "butter"
+            ],
+            "durationMinutes": null,
+            "notes": "stir in butter on lower heat"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "chicken thighs and legs",
+              "pearl onions"
+            ],
+            "durationMinutes": null,
+            "notes": "return to pan to reheat and coat with sauce"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "coq au vin"
+            ],
+            "durationMinutes": null,
+            "notes": "adjust seasoning to taste"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "garnish with parsley"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "coq au vin"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with potatoes or egg noodles"
+          }
+        ],
+        "outputDescription": "mushrooms are cooked, sauce is reduced and thickened, chicken and onions are reheated and coated, dish is seasoned, garnished with parsley and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 15,
+      "uniqueProcesses": [
+        "blanch",
+        "drain",
+        "rinse",
+        "dice",
+        "saute",
+        "season",
+        "mix",
+        "simmer",
+        "boil",
+        "reduce",
+        "heat",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648638_step1",
+      "name": "bacon is blanched, drained, rinsed, dried, and cut into uniform pieces",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bacon",
+          "name": "bacon",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blanch",
+          "processName": "Blanch",
+          "yieldFactor": 0.96,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 211.10795822592,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 10.20582,
+        "costPerG": 0.04834407990000124,
+        "nutrition": {
+          "calories": 945.73932,
+          "protein": 28.6216552,
+          "fat": 90.01533239999999,
+          "carbs": 2.9029888,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1501.38952,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648638_step2",
+      "name": "bacon is browned and set aside, chicken and onions are well-browned on all sides, seasoned with salt, pepper, and garlic",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pearl_onion",
+          "name": "pearl onions",
+          "quantityG": 3900
+        },
+        {
+          "ingredientId": "chicken_thigh",
+          "name": "chicken thighs and legs",
+          "quantityG": 775.643
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3445.7151088499995,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 81.83464500000001,
+        "costPerG": 0.02374968400313053,
+        "nutrition": {
+          "calories": 3258.6581699999997,
+          "protein": 168.86442319999998,
+          "fat": 132.7343023,
+          "carbs": 366.19910749999997,
+          "fiber": 66.3,
+          "sugar": 165.36,
+          "sodium": 753.24511,
+          "method": "raw"
+        },
+        "prepTimeMin": 20.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648638_step3",
+      "name": "chicken and onions are tender and fully cooked, removed to platter; cooking liquid remains in pan with herbs removed",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "chicken stock",
+          "quantityG": 480
+        },
+        {
+          "ingredientId": "red_wine",
+          "name": "red wine",
+          "quantityG": 472
+        },
+        {
+          "ingredientId": "bay_leaves",
+          "name": "bay leaves",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 841.428,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 7.1,
+        "costPerG": 0.008438036290686785,
+        "nutrition": {
+          "calories": 436.26,
+          "protein": 3.5546,
+          "fat": 1.1752,
+          "carbs": 15.930599999999998,
+          "fiber": 0.526,
+          "sugar": 4.990399999999999,
+          "sodium": 1800.14,
+          "method": "raw"
+        },
+        "prepTimeMin": 23
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648638_step4",
+      "name": "mushrooms are cooked, sauce is reduced and thickened, chicken and onions are reheated and coated, dish is seasoned, garnished with parsley and ready to serve",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mushrooms",
+          "name": "button mushrooms",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "reduce",
+          "processName": "Reduce",
+          "yieldFactor": 0.6,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 131.80645072224,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 36.28736,
+        "costPerG": 0.2753079215862472,
+        "nutrition": {
+          "calories": 49.89512,
+          "protein": 7.0079964,
+          "fat": 0.7711064000000001,
+          "carbs": 7.393549599999999,
+          "fiber": 2.26796,
+          "sugar": 4.4905608,
+          "sodium": 11.3398,
+          "method": "raw"
+        },
+        "prepTimeMin": 33.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 172.672325,
+    "costPerServing": 28.778720833333335,
+    "totalPrepTime": 87,
+    "nutritionPerServing": {
+      "calories": 824.4687683333333,
+      "protein": 35.180945799999996,
+      "fat": 41.298490183333335,
+      "carbs": 67.37867431666668,
+      "fiber": 11.78566,
+      "sugar": 29.235460133333333,
+      "sodium": 1098.922405
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648638_step1",
+        "name": "bacon is blanched, drained, rinsed, dried, and cut into uniform pieces",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_648638_step2",
+        "name": "bacon is browned and set aside, chicken and onions are well-browned on all sides, seasoned with salt, pepper, and garlic",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_648638_step3",
+        "name": "chicken and onions are tender and fully cooked, removed to platter; cooking liquid remains in pan with herbs removed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648638_step4",
+        "name": "mushrooms are cooked, sauce is reduced and thickened, chicken and onions are reheated and coated, dish is seasoned, garnished with parsley and ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648638_step1",
+      "name": "bacon is blanched, drained, rinsed, dried, and cut into uniform pieces",
+      "shelfLifeHours": 12,
+      "processes": [
+        "blanch",
+        "drain",
+        "rinse",
+        "dice"
+      ]
+    },
+    {
+      "componentId": "comp_648638_step2",
+      "name": "bacon is browned and set aside, chicken and onions are well-browned on all sides, seasoned with salt, pepper, and garlic",
+      "shelfLifeHours": 72,
+      "processes": [
+        "saute",
+        "saute",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_648638_step3",
+      "name": "chicken and onions are tender and fully cooked, removed to platter; cooking liquid remains in pan with herbs removed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "drain",
+        "mix",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_648638_step4",
+      "name": "mushrooms are cooked, sauce is reduced and thickened, chicken and onions are reheated and coated, dish is seasoned, garnished with parsley and ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "reduce",
+        "mix",
+        "heat",
+        "season",
+        "garnish",
+        "plate"
+      ]
+    }
+  ]
+}

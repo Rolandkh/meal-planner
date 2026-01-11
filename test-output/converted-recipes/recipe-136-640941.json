@@ -1,0 +1,691 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_02a102a7-7888-4336-9534-1f100fb8421d",
+  "name": "Crunchy Brussels Sprouts Side Dish",
+  "source": "spoonacular",
+  "spoonacularId": 640941,
+  "image": "/images/recipes/640941.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "brussels sprouts",
+      "quantity": 800,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dijon mustard",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "honey",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "walnuts",
+      "quantity": 29.25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Blanch the Brussels sprouts in boiling water for 6-8 minutes or in a microwave oven in a little water for about 4 minutes. Drain.</li><li>Saute the Brussels sprouts, stirring constantly, until they become golden-brown in color.</li><li>Meanwhile mix the vinegar, mustard, honey and olive oil.</li><li>Add walnuts to the sprouts, stir and combine.  Pour the vinegar dressing over the sprouts, season with pepper. Mix and combine so that each sprout is covered with the dressing.</li><li>Serve warm or cold as a side dish.</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 4,
+  "nutrition": {
+    "calories": 231.8,
+    "protein": 7.94,
+    "fat": 15.91,
+    "carbs": 19.79,
+    "fiber": 8.18,
+    "sugar": 5.33,
+    "saturatedFat": 2.03,
+    "sodium": 64.76
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Brussels sprouts",
+      "quantity": {
+        "originalQuantity": 800,
+        "originalUnit": "g",
+        "normalizedQuantityG": 800,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "800 g brussels sprouts",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Dijon mustard",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp dijon mustard",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "honey",
+      "displayName": "honey",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps honey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "walnuts",
+      "displayName": "walnuts",
+      "quantity": {
+        "originalQuantity": 29.25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 29.25,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "29.25 g walnuts",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 7,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:57:28.798Z",
+  "processGraph": {
+    "recipeName": "Crunchy Brussels Sprouts Side Dish",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Blanch the Brussels sprouts in boiling water for 6-8 minutes or in a microwave oven in a little water for about 4 minutes. Drain.",
+        "processes": [
+          {
+            "processId": "blanch",
+            "ingredients": [
+              "brussels sprouts"
+            ],
+            "durationMinutes": 7,
+            "notes": "6-8 minutes in boiling water or 4 minutes in microwave"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "brussels sprouts"
+            ],
+            "durationMinutes": 0,
+            "notes": "remove cooking water"
+          }
+        ],
+        "outputDescription": "Brussels sprouts are partially cooked and drained"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Saute the Brussels sprouts, stirring constantly, until they become golden-brown in color.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "brussels sprouts"
+            ],
+            "durationMinutes": 5,
+            "notes": "stirring constantly until golden-brown"
+          }
+        ],
+        "outputDescription": "Brussels sprouts are golden-brown and crispy"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Meanwhile mix the vinegar, mustard, honey and olive oil.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "red wine vinegar",
+              "dijon mustard",
+              "honey",
+              "olive oil"
+            ],
+            "durationMinutes": 2,
+            "notes": "combine to make dressing"
+          }
+        ],
+        "outputDescription": "Vinegar dressing is prepared and combined"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add walnuts to the sprouts, stir and combine. Pour the vinegar dressing over the sprouts, season with pepper. Mix and combine so that each sprout is covered with the dressing.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "walnuts",
+              "brussels sprouts"
+            ],
+            "durationMinutes": 1,
+            "notes": "add walnuts to sprouts"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "brussels sprouts",
+              "red wine vinegar",
+              "dijon mustard",
+              "honey",
+              "olive oil"
+            ],
+            "durationMinutes": 1,
+            "notes": "pour dressing over sprouts"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "pepper"
+            ],
+            "durationMinutes": 0,
+            "notes": "add pepper seasoning"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "brussels sprouts",
+              "walnuts",
+              "red wine vinegar",
+              "dijon mustard",
+              "honey",
+              "olive oil",
+              "pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "ensure each sprout is coated with dressing"
+          }
+        ],
+        "outputDescription": "Brussels sprouts and walnuts are fully coated with seasoned dressing"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Serve warm or cold as a side dish.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "brussels sprouts",
+              "walnuts",
+              "red wine vinegar",
+              "dijon mustard",
+              "honey",
+              "olive oil",
+              "pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "serve as side dish, can be warm or cold"
+          }
+        ],
+        "outputDescription": "Finished dish ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "blanch",
+        "drain",
+        "saute",
+        "mix",
+        "season",
+        "toss",
+        "plate"
+      ],
+      "estimatedTotalTime": 18
+    }
+  },
+  "components": [
+    {
+      "id": "comp_640941_step1",
+      "name": "Brussels sprouts are partially cooked and drained",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "brussels_sprout",
+          "name": "brussels sprouts",
+          "quantityG": 800
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blanch",
+          "processName": "Blanch",
+          "yieldFactor": 0.96,
+          "durationMinutes": 7,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 752.64,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.800000000000001,
+        "costPerG": 0.009034863945578233,
+        "nutrition": {
+          "calories": 344,
+          "protein": 27.04,
+          "fat": 2.4,
+          "carbs": 71.6,
+          "fiber": 30.4,
+          "sugar": 17.6,
+          "sodium": 200,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640941_step2",
+      "name": "Brussels sprouts are golden-brown and crispy",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640941_step3",
+      "name": "Vinegar dressing is prepared and combined",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "red_wine_vinegar",
+          "name": "red wine vinegar",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "dijon_mustard",
+          "name": "dijon mustard",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "honey",
+          "name": "honey",
+          "quantityG": 2.5
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 78,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8145,
+        "costPerG": 0.010442307692307692,
+        "nutrition": {
+          "calories": 374.37000000000006,
+          "protein": 0.23200000000000004,
+          "fat": 40.669,
+          "carbs": 2.406,
+          "fiber": 0.22,
+          "sugar": 2.1235,
+          "sodium": 58.31,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640941_step4",
+      "name": "Brussels sprouts and walnuts are fully coated with seasoned dressing",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "walnuts",
+          "name": "walnuts",
+          "quantityG": 29.25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 29.835,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.0237500000000002,
+        "costPerG": 0.03431372549019608,
+        "nutrition": {
+          "calories": 191.295,
+          "protein": 4.446,
+          "fat": 19.070999999999998,
+          "carbs": 4.00725,
+          "fiber": 1.9597499999999999,
+          "sugar": 0.7634249999999999,
+          "sodium": 0.585,
+          "method": "raw"
+        },
+        "prepTimeMin": 3.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640941_step5",
+      "name": "Finished dish ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 0.525
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.525,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.315,
+        "costPerG": 0.6,
+        "nutrition": {
+          "calories": 1.31775,
+          "protein": 0.054547500000000006,
+          "fat": 0.017115,
+          "carbs": 0.3357375,
+          "fiber": 0.132825,
+          "sugar": 0.00336,
+          "sodium": 0.10500000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 8.953250000000002,
+    "costPerServing": 2.2383125000000006,
+    "totalPrepTime": 19.5,
+    "nutritionPerServing": {
+      "calories": 227.7456875,
+      "protein": 7.943136875,
+      "fat": 15.53927875,
+      "carbs": 19.587246874999998,
+      "fiber": 8.17814375,
+      "sugar": 5.122571250000001,
+      "sodium": 64.74999999999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_640941_step1",
+        "name": "Brussels sprouts are partially cooked and drained",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_640941_step2",
+        "name": "Brussels sprouts are golden-brown and crispy",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_640941_step3",
+        "name": "Vinegar dressing is prepared and combined",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640941_step4",
+        "name": "Brussels sprouts and walnuts are fully coated with seasoned dressing",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_640941_step1",
+      "name": "Brussels sprouts are partially cooked and drained",
+      "shelfLifeHours": 72,
+      "processes": [
+        "blanch",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_640941_step4",
+      "name": "Brussels sprouts and walnuts are fully coated with seasoned dressing",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "mix",
+        "season",
+        "toss"
+      ]
+    }
+  ]
+}

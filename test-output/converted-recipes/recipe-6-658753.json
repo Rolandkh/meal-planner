@@ -1,0 +1,944 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_cf89a95f-b95d-4482-af43-c7d5d1cd3e34",
+  "name": "Roma Tomato Bruschetta",
+  "source": "spoonacular",
+  "spoonacularId": 658753,
+  "image": "/images/recipes/658753.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "balsamic vinegar",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bread",
+      "quantity": 1,
+      "unit": "loaf",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 10,
+      "unit": "leaf",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 4,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Slice the bread on a bias about 1/2 inch thick. We need about 10-12 slices.</li><li>Take 2 tablespoons of extra virgin olive oil and add salt and pepper (about 1/3 teaspoon each - as per taste).</li><li>Brush this on both sides of the bread.</li><li>Place these slices on a sheet pan and bake for about 3-4 minutes in a 400 degree preheated oven till golden brown. Once one side is done, turn over the crostini to the other side to crisp that as well.</li><li>When the crostini are hot out the oven, rub a garlic clove on them.</li><li>Chop the tomatoes.</li><li>Chiffonade the basil and add to the tomatoes.</li><li>Add salt, pepper, olive oil and balsamic vinegar and let it rest for a few minutes.</li><li>Put a generous amount of tomato on the crostini and serve.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 445.71,
+    "protein": 12.75,
+    "fat": 16.9,
+    "carbs": 62.82,
+    "fiber": 5.28,
+    "sugar": 12.19,
+    "saturatedFat": 2.54,
+    "sodium": 807.22
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "fingerfood",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.879Z",
+  "updatedAt": "2026-01-09T11:32:55.879Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "balsamic_vinegar",
+      "displayName": "balsamic vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps balsamic vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 54,
+        "normalizedQuantityMl": 60
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Bread",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 loaf bread",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 medium tomatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 7,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "10 leaf basil",
+        "identityText": "leaf basil",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:20:31.327Z",
+  "processGraph": {
+    "recipeName": "Roma Tomato Bruschetta",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Slice the bread on a bias about 1/2 inch thick. We need about 10-12 slices.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "bread"
+            ],
+            "durationMinutes": null,
+            "notes": "cut on bias, 1/2 inch thick, 10-12 slices"
+          }
+        ],
+        "outputDescription": "bread sliced into 10-12 pieces at 1/2 inch thickness on bias"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Take 2 tablespoons of extra virgin olive oil and add salt and pepper (about 1/3 teaspoon each - as per taste).",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "extra virgin olive oil",
+              "salt",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combine 2 tbsp olive oil with 1/3 tsp each salt and pepper"
+          }
+        ],
+        "outputDescription": "seasoned olive oil mixture ready for brushing"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Brush this on both sides of the bread.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "bread"
+            ],
+            "durationMinutes": null,
+            "notes": "brush seasoned oil on both sides of bread slices"
+          }
+        ],
+        "outputDescription": "bread slices coated with seasoned olive oil on both sides"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Place these slices on a sheet pan and bake for about 3-4 minutes in a 400 degree preheated oven till golden brown. Once one side is done, turn over the crostini to the other side to crisp that as well.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "bread"
+            ],
+            "durationMinutes": 4,
+            "notes": "400°F oven, 3-4 minutes per side until golden brown"
+          }
+        ],
+        "outputDescription": "golden brown crostini, crispy on both sides"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "When the crostini are hot out the oven, rub a garlic clove on them.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "garlic",
+              "bread"
+            ],
+            "durationMinutes": null,
+            "notes": "rub garlic clove on hot crostini"
+          }
+        ],
+        "outputDescription": "crostini infused with garlic flavor"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Chop the tomatoes.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "rough chop of tomatoes"
+          }
+        ],
+        "outputDescription": "tomatoes chopped into rough pieces"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Chiffonade the basil and add to the tomatoes.",
+        "processes": [
+          {
+            "processId": "julienne",
+            "ingredients": [
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "chiffonade cut (thin strips)"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "basil",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "combine basil with chopped tomatoes"
+          }
+        ],
+        "outputDescription": "tomatoes mixed with julienned basil"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Add salt, pepper, olive oil and balsamic vinegar and let it rest for a few minutes.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "tomatoes",
+              "salt",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to tomato mixture"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tomatoes",
+              "extra virgin olive oil",
+              "balsamic vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "combine with olive oil and balsamic vinegar"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": 3,
+            "notes": "let tomato mixture rest to meld flavors"
+          }
+        ],
+        "outputDescription": "seasoned tomato mixture with flavors melded"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Put a generous amount of tomato on the crostini and serve.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "tomatoes",
+              "bread"
+            ],
+            "durationMinutes": null,
+            "notes": "top crostini with tomato mixture"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "bread",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange and serve bruschetta"
+          }
+        ],
+        "outputDescription": "finished bruschetta ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "slice",
+        "mix",
+        "coat",
+        "bake",
+        "spread",
+        "chop",
+        "julienne",
+        "season",
+        "rest_meat",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 15
+    }
+  },
+  "components": [
+    {
+      "id": "comp_658753_step1",
+      "name": "bread sliced into 10-12 pieces at 1/2 inch thickness on bias",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bread",
+          "name": "bread",
+          "quantityG": 400
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 392,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.6000000000000005,
+        "costPerG": 0.014285714285714287,
+        "nutrition": {
+          "calories": 1096,
+          "protein": 42.8,
+          "fat": 18.12,
+          "carbs": 190,
+          "fiber": 16,
+          "sugar": 22.92,
+          "sodium": 1892,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658753_step2",
+      "name": "seasoned olive oil mixture ready for brushing",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 54
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 62,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.81,
+        "costPerG": 0.013064516129032259,
+        "nutrition": {
+          "calories": 478.40000000000003,
+          "protein": 0.0396,
+          "fat": 54.012,
+          "carbs": 0.24120000000000003,
+          "fiber": 0.084,
+          "sugar": 0.168,
+          "sodium": 1551.56,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658753_step3",
+      "name": "bread slices coated with seasoned olive oil on both sides",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658753_step4",
+      "name": "golden brown crostini, crispy on both sides",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658753_step5",
+      "name": "crostini infused with garlic flavor",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 5.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.22499999999999998,
+        "costPerG": 0.0409090909090909,
+        "nutrition": {
+          "calories": 7.45,
+          "protein": 0.31800000000000006,
+          "fat": 0.025,
+          "carbs": 1.6550000000000002,
+          "fiber": 0.10500000000000001,
+          "sugar": 0.05,
+          "sodium": 0.8500000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_658753_step6",
+      "name": "tomatoes chopped into rough pieces",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 480
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 470.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.6336,
+        "costPerG": 0.026857142857142857,
+        "nutrition": {
+          "calories": 86.39999999999999,
+          "protein": 4.224,
+          "fat": 0.96,
+          "carbs": 18.672,
+          "fiber": 5.76,
+          "sugar": 12.623999999999999,
+          "sodium": 24,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658753_step7",
+      "name": "tomatoes mixed with julienned basil",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "basil",
+          "name": "basil",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "julienne",
+          "processName": "Julienne",
+          "yieldFactor": 0.95,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.75,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.1316,
+        "costPerG": 0.027705263157894736,
+        "nutrition": {
+          "calories": 1.1500000000000001,
+          "protein": 0.1575,
+          "fat": 0.032,
+          "carbs": 0.1325,
+          "fiber": 0.08000000000000002,
+          "sugar": 0.015,
+          "sodium": 0.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658753_step8",
+      "name": "seasoned tomato mixture with flavors melded",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "balsamic_vinegar",
+          "name": "balsamic vinegar",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 30.6,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.54,
+        "costPerG": 0.01764705882352941,
+        "nutrition": {
+          "calories": 26.4,
+          "protein": 0.147,
+          "fat": 0,
+          "carbs": 5.109,
+          "fiber": 0,
+          "sugar": 4.484999999999999,
+          "sodium": 6.8999999999999995,
+          "method": "raw"
+        },
+        "prepTimeMin": 5.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658753_step9",
+      "name": "finished bruschetta ready to serve",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 19.9402,
+    "costPerServing": 4.98505,
+    "totalPrepTime": 28.5,
+    "nutritionPerServing": {
+      "calories": 423.95000000000005,
+      "protein": 11.921524999999999,
+      "fat": 18.28725,
+      "carbs": 53.952425,
+      "fiber": 5.507249999999999,
+      "sugar": 10.0655,
+      "sodium": 868.8775
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_658753_step1",
+        "name": "bread sliced into 10-12 pieces at 1/2 inch thickness on bias",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_658753_step2",
+        "name": "seasoned olive oil mixture ready for brushing",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_658753_step3",
+        "name": "bread slices coated with seasoned olive oil on both sides",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_658753_step4",
+        "name": "golden brown crostini, crispy on both sides",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_658753_step6",
+        "name": "tomatoes chopped into rough pieces",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_658753_step7",
+        "name": "tomatoes mixed with julienned basil",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_658753_step8",
+        "name": "seasoned tomato mixture with flavors melded",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_658753_step7",
+      "name": "tomatoes mixed with julienned basil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "julienne",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_658753_step8",
+      "name": "seasoned tomato mixture with flavors melded",
+      "shelfLifeHours": 24,
+      "processes": [
+        "season",
+        "mix",
+        "rest_meat"
+      ]
+    }
+  ]
+}

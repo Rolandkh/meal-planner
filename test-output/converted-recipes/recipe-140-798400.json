@@ -1,0 +1,1911 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_c72deb69-b34d-4612-804e-5039c8989a7d",
+  "name": "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant",
+  "source": "spoonacular",
+  "spoonacularId": 798400,
+  "image": "/images/recipes/798400.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "black-eyed peas",
+      "quantity": 344,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "curry powder",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garam masala",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "globe",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground coriander",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cumin",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground mustard powder",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chilies",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "shallots",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "swiss chard",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Rinse the black-eyed peas and soak in several inches of water for 6 hours or overnight. Drain and rinse, then transfer to a large saucepan and cover with fresh water. Bring to a boil, reduce heat to medium-low, cover, and simmer for 40 to 60 minutes. Take care not to overcook  the beans should be tender but not be falling apart. Drain and set aside.To prepare the eggplant, cut of the stem and bottom edge and then cut in half lengthwise. Score the flesh into diagonal 1-inch lines, then turn and score again until you have a diagonal pattern. Take care not to cut through the skin. Sprinkle with some salt and let sit for 40 minutes. Rinse and squeeze out any excess water. Brush the eggplant with some oil and transfer to a roasting pan. Bake in a preheated 400 oven until the flesh appears collapsed and is wrinkly. Remove from heat and let cool for about 10 minutes, season with a bit of salt, and remove the flesh from the eggplant. If there is too much water, drain in a strainer. Set aside.Heat the oil over medium heat in the same saucepan used to cook the black-eyed peas. When hot, toss in the shallots and chilies and saut for 2 to 3 minutes. Now add the spices and stir for another minute, until fragrant. Add the tomato, cook for another few minutes, and then add the eggplant and black-eyed peas, and cook for another few minutes, stirring often.Pour a few tablespoons of water into the pan and add handfuls of chard at a time until wilted. Add more water as necessary. Add the lemon juice and salt to taste near the end of the cooking time. Remove from heat, cover, and let sit for a few minutes before serving.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 128.72,
+    "protein": 6.73,
+    "fat": 2.2,
+    "carbs": 23.17,
+    "fiber": 8.23,
+    "sugar": 7.24,
+    "saturatedFat": 0.34,
+    "sodium": 551.5
+  },
+  "tags": {
+    "cuisines": [
+      "Indian",
+      "Asian"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 86.7,
+    "hasUnknownIngredients": true,
+    "unknownCount": 2,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "globe",
+        "identity": "globe",
+        "issue": "no_match_found"
+      },
+      {
+        "raw": "ground mustard powder",
+        "identity": "mustard powder",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Black-eyed peas",
+      "quantity": {
+        "originalQuantity": 344,
+        "originalUnit": "g",
+        "normalizedQuantityG": 344,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "344 g black-eyed peas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "curry_powder",
+      "displayName": "curry powder",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps curry powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garam_masala",
+      "displayName": "garam masala",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps garam masala",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "coriander",
+      "displayName": "coriander",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground coriander",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chilies",
+      "displayName": "chilies",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2  chilies",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp sea salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "shallot",
+      "displayName": "shallot",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  shallots",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Swiss chard",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch swiss chard",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 75,
+        "normalizedQuantityMl": 75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "5 Tbsps water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 15,
+    "matched": 13,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 large globe",
+        "identityText": "globe",
+        "state": "fresh"
+      },
+      {
+        "rawText": "0.5 tsps ground mustard powder",
+        "identityText": "mustard powder",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:59:19.403Z",
+  "processGraph": {
+    "recipeName": "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Rinse the black-eyed peas and soak in several inches of water for 6 hours or overnight.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "black-eyed peas"
+            ],
+            "durationMinutes": 2,
+            "notes": "wash under running water"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "black-eyed peas"
+            ],
+            "durationMinutes": 360,
+            "notes": "soak in water for 6 hours or overnight"
+          }
+        ],
+        "outputDescription": "clean, hydrated black-eyed peas ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Drain and rinse, then transfer to a large saucepan and cover with fresh water.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "black-eyed peas"
+            ],
+            "durationMinutes": 1,
+            "notes": "remove soaking water"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "black-eyed peas"
+            ],
+            "durationMinutes": 1,
+            "notes": "wash with fresh water"
+          }
+        ],
+        "outputDescription": "drained and rinsed peas in saucepan with fresh water"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Bring to a boil, reduce heat to medium-low, cover, and simmer for 40 to 60 minutes.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "black-eyed peas"
+            ],
+            "durationMinutes": 2,
+            "notes": "bring water to rapid boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "black-eyed peas"
+            ],
+            "durationMinutes": 50,
+            "notes": "covered, medium-low heat for 40-60 minutes"
+          }
+        ],
+        "outputDescription": "tender cooked black-eyed peas, not falling apart"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Take care not to overcook the beans should be tender but not be falling apart. Drain and set aside.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "black-eyed peas"
+            ],
+            "durationMinutes": 2,
+            "notes": "remove cooking liquid"
+          }
+        ],
+        "outputDescription": "cooked, drained black-eyed peas set aside"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "To prepare the eggplant, cut of the stem and bottom edge and then cut in half lengthwise.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 2,
+            "notes": "remove stem and bottom edge"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 1,
+            "notes": "cut in half lengthwise"
+          }
+        ],
+        "outputDescription": "eggplant halved lengthwise with ends trimmed"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Score the flesh into diagonal 1-inch lines, then turn and score again until you have a diagonal pattern. Take care not to cut through the skin.",
+        "processes": [
+          {
+            "processId": "score",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 3,
+            "notes": "diagonal crosshatch pattern, 1-inch lines, don't cut through skin"
+          }
+        ],
+        "outputDescription": "eggplant halves with diagonal crosshatch scoring pattern"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Sprinkle with some salt and let sit for 40 minutes.",
+        "processes": [
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 1,
+            "notes": "sprinkle with salt"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 40,
+            "notes": "let sit to draw out moisture"
+          }
+        ],
+        "outputDescription": "salted eggplant that has released excess moisture"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Rinse and squeeze out any excess water.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 1,
+            "notes": "remove salt"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 2,
+            "notes": "remove excess water"
+          }
+        ],
+        "outputDescription": "rinsed eggplant with excess moisture removed"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Brush the eggplant with some oil and transfer to a roasting pan.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 2,
+            "notes": "brush with olive oil"
+          }
+        ],
+        "outputDescription": "oil-brushed eggplant in roasting pan"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Bake in a preheated 400 oven until the flesh appears collapsed and is wrinkly.",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 30,
+            "notes": "400°F oven until flesh collapses and wrinkles"
+          }
+        ],
+        "outputDescription": "roasted eggplant with collapsed, wrinkled flesh"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Remove from heat and let cool for about 10 minutes, season with a bit of salt, and remove the flesh from the eggplant.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 10,
+            "notes": "let cool after roasting"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 1,
+            "notes": "add salt"
+          },
+          {
+            "processId": "peel",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 3,
+            "notes": "remove flesh from skin"
+          }
+        ],
+        "outputDescription": "cooled, seasoned eggplant flesh removed from skin"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "If there is too much water, drain in a strainer. Set aside.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "globe"
+            ],
+            "durationMinutes": 2,
+            "notes": "remove excess water if needed"
+          }
+        ],
+        "outputDescription": "drained eggplant flesh set aside"
+      },
+      {
+        "stepNumber": 13,
+        "originalInstruction": "Heat the oil over medium heat in the same saucepan used to cook the black-eyed peas.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": 2,
+            "notes": "medium heat in saucepan"
+          }
+        ],
+        "outputDescription": "hot oil ready for cooking"
+      },
+      {
+        "stepNumber": 14,
+        "originalInstruction": "When hot, toss in the shallots and chilies and sauté for 2 to 3 minutes.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "shallots",
+              "chilies"
+            ],
+            "durationMinutes": 2,
+            "notes": "implied chopping for sautéing"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "shallots",
+              "chilies"
+            ],
+            "durationMinutes": 3,
+            "notes": "2-3 minutes in hot oil"
+          }
+        ],
+        "outputDescription": "softened, fragrant shallots and chilies"
+      },
+      {
+        "stepNumber": 15,
+        "originalInstruction": "Now add the spices and stir for another minute, until fragrant.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "curry powder",
+              "garam masala",
+              "ground coriander",
+              "ground cumin",
+              "ground mustard powder"
+            ],
+            "durationMinutes": 1,
+            "notes": "stir spices until fragrant"
+          }
+        ],
+        "outputDescription": "fragrant spice mixture combined with aromatics"
+      },
+      {
+        "stepNumber": 16,
+        "originalInstruction": "Add the tomato, cook for another few minutes, and then add the eggplant and black-eyed peas, and cook for another few minutes, stirring often.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "tomato"
+            ],
+            "durationMinutes": 1,
+            "notes": "implied chopping for cooking"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "tomato"
+            ],
+            "durationMinutes": 3,
+            "notes": "cook tomato for few minutes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "globe",
+              "black-eyed peas"
+            ],
+            "durationMinutes": 3,
+            "notes": "add eggplant and peas, stir often"
+          }
+        ],
+        "outputDescription": "combined curry base with eggplant and black-eyed peas"
+      },
+      {
+        "stepNumber": 17,
+        "originalInstruction": "Pour a few tablespoons of water into the pan and add handfuls of chard at a time until wilted.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "swiss chard"
+            ],
+            "durationMinutes": 2,
+            "notes": "implied cleaning and trimming"
+          },
+          {
+            "processId": "steam",
+            "ingredients": [
+              "swiss chard"
+            ],
+            "durationMinutes": 4,
+            "notes": "wilt in batches with water"
+          }
+        ],
+        "outputDescription": "wilted swiss chard incorporated into curry"
+      },
+      {
+        "stepNumber": 18,
+        "originalInstruction": "Add more water as necessary. Add the lemon juice and salt to taste near the end of the cooking time.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "juice of lemon"
+            ],
+            "durationMinutes": 1,
+            "notes": "extract lemon juice"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "sea salt",
+              "juice of lemon"
+            ],
+            "durationMinutes": 1,
+            "notes": "add lemon juice and salt to taste"
+          }
+        ],
+        "outputDescription": "seasoned curry with bright lemon flavor"
+      },
+      {
+        "stepNumber": 19,
+        "originalInstruction": "Remove from heat, cover, and let sit for a few minutes before serving.",
+        "processes": [
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "black-eyed peas",
+              "swiss chard",
+              "globe"
+            ],
+            "durationMinutes": 5,
+            "notes": "let flavors meld before serving"
+          }
+        ],
+        "outputDescription": "finished curry ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 29,
+      "uniqueProcesses": [
+        "rinse",
+        "marinate",
+        "drain",
+        "boil",
+        "simmer",
+        "trim",
+        "slice",
+        "score",
+        "sprinkle",
+        "rest_meat",
+        "squeeze",
+        "coat",
+        "roast",
+        "cool",
+        "season",
+        "peel",
+        "heat",
+        "chop",
+        "saute",
+        "mix",
+        "steam"
+      ],
+      "estimatedTotalTime": 540
+    }
+  },
+  "components": [
+    {
+      "id": "comp_798400_step1",
+      "name": "clean, hydrated black-eyed peas ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "black_eyed_peas",
+          "name": "black-eyed peas",
+          "quantityG": 344
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 360,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 368.42400000000004,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.15,
+        "costPerG": 0.005835667600373482,
+        "nutrition": {
+          "calories": 399.04,
+          "protein": 26.5912,
+          "fat": 1.8232000000000002,
+          "carbs": 71.4144,
+          "fiber": 22.36,
+          "sugar": 11.351999999999999,
+          "sodium": 13.76,
+          "method": "raw"
+        },
+        "prepTimeMin": 362
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step2",
+      "name": "drained and rinsed peas in saucepan with fresh water",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step3",
+      "name": "tender cooked black-eyed peas, not falling apart",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 50,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 52
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step4",
+      "name": "cooked, drained black-eyed peas set aside",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_798400_step5",
+      "name": "eggplant halved lengthwise with ends trimmed",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "artichoke_globe",
+          "name": "globe",
+          "quantityG": 1.3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.2103,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.005849999999999999,
+        "costPerG": 0.004833512352309345,
+        "nutrition": {
+          "calories": 0.6110000000000001,
+          "protein": 0.042510000000000006,
+          "fat": 0.0019500000000000001,
+          "carbs": 0.13663,
+          "fiber": 0.07020000000000001,
+          "sugar": 0.012870000000000001,
+          "sodium": 1.2220000000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step6",
+      "name": "eggplant halves with diagonal crosshatch scoring pattern",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "score",
+          "processName": "Score",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step7",
+      "name": "salted eggplant that has released excess moisture",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 40,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 41
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_798400_step8",
+      "name": "rinsed eggplant with excess moisture removed",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step9",
+      "name": "oil-brushed eggplant in roasting pan",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step10",
+      "name": "roasted eggplant with collapsed, wrinkled flesh",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step11",
+      "name": "cooled, seasoned eggplant flesh removed from skin",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 14
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step12",
+      "name": "drained eggplant flesh set aside",
+      "stepNumber": 12,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_798400_step13",
+      "name": "hot oil ready for cooking",
+      "stepNumber": 13,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 9
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 8.82,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.096,
+        "costPerG": 0.010884353741496598,
+        "nutrition": {
+          "calories": 79.56,
+          "protein": 0,
+          "fat": 9,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.18,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_798400_step14",
+      "name": "softened, fragrant shallots and chilies",
+      "stepNumber": 14,
+      "sourceIngredients": [
+        {
+          "ingredientId": "shallots",
+          "name": "shallots",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "chilies",
+          "name": "chilies",
+          "quantityG": 20
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 66.64,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.17,
+        "costPerG": 0.01755702280912365,
+        "nutrition": {
+          "calories": 51.199999999999996,
+          "protein": 1.874,
+          "fat": 0.14800000000000002,
+          "carbs": 11.842,
+          "fiber": 2.2199999999999998,
+          "sugar": 5.782,
+          "sodium": 9,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step15",
+      "name": "fragrant spice mixture combined with aromatics",
+      "stepNumber": 15,
+      "sourceIngredients": [
+        {
+          "ingredientId": "curry_powder",
+          "name": "curry powder",
+          "quantityG": 4.2
+        },
+        {
+          "ingredientId": "garam_masala",
+          "name": "garam masala",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "coriander",
+          "name": "ground coriander",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "ground cumin",
+          "quantityG": 1.05
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 7.35,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6208125000000002,
+        "costPerG": 0.08446428571428574,
+        "nutrition": {
+          "calories": 24.076500000000003,
+          "protein": 1.00611,
+          "fat": 1.1054400000000002,
+          "carbs": 3.8517150000000004,
+          "fiber": 2.1021000000000005,
+          "sugar": 0.139545,
+          "sodium": 4.893000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step16",
+      "name": "combined curry base with eggplant and black-eyed peas",
+      "stepNumber": 16,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomato",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 99.96,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1584,
+        "costPerG": 0.03159663865546219,
+        "nutrition": {
+          "calories": 21.599999999999998,
+          "protein": 1.056,
+          "fat": 0.24,
+          "carbs": 4.668,
+          "fiber": 1.44,
+          "sugar": 3.1559999999999997,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step17",
+      "name": "wilted swiss chard incorporated into curry",
+      "stepNumber": 17,
+      "sourceIngredients": [
+        {
+          "ingredientId": "swiss_chard",
+          "name": "swiss chard",
+          "quantityG": 350
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 322.525,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.199,
+        "costPerG": 0.009918610960390668,
+        "nutrition": {
+          "calories": 66.5,
+          "protein": 6.3,
+          "fat": 0.7000000000000001,
+          "carbs": 13.09,
+          "fiber": 5.6000000000000005,
+          "sugar": 3.8500000000000005,
+          "sodium": 745.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step18",
+      "name": "seasoned curry with bright lemon flavor",
+      "stepNumber": 18,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "juice of lemon",
+          "quantityG": 240
+        }
+      ],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 97.92,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 144,
+        "costPerG": 1.4705882352941175,
+        "nutrition": {
+          "calories": 52.8,
+          "protein": 0.84,
+          "fat": 0.576,
+          "carbs": 16.56,
+          "fiber": 0.72,
+          "sugar": 6.048,
+          "sodium": 2.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_798400_step19",
+      "name": "finished curry ready to serve",
+      "stepNumber": 19,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 155.20031250000002,
+    "costPerServing": 25.866718750000004,
+    "totalPrepTime": 544,
+    "nutritionPerServing": {
+      "calories": 115.89791666666669,
+      "protein": 6.284969999999999,
+      "fat": 2.2657649999999996,
+      "carbs": 20.2604575,
+      "fiber": 5.75205,
+      "sugar": 5.056735833333332,
+      "sodium": 518.6975
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_798400_step1",
+        "name": "clean, hydrated black-eyed peas ready for cooking",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_798400_step2",
+        "name": "drained and rinsed peas in saucepan with fresh water",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_798400_step3",
+        "name": "tender cooked black-eyed peas, not falling apart",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_798400_step5",
+        "name": "eggplant halved lengthwise with ends trimmed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_798400_step6",
+        "name": "eggplant halves with diagonal crosshatch scoring pattern",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_798400_step8",
+        "name": "rinsed eggplant with excess moisture removed",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_798400_step9",
+        "name": "oil-brushed eggplant in roasting pan",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_798400_step10",
+        "name": "roasted eggplant with collapsed, wrinkled flesh",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_798400_step11",
+        "name": "cooled, seasoned eggplant flesh removed from skin",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_798400_step14",
+        "name": "softened, fragrant shallots and chilies",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_798400_step15",
+        "name": "fragrant spice mixture combined with aromatics",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_798400_step16",
+        "name": "combined curry base with eggplant and black-eyed peas",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_798400_step17",
+        "name": "wilted swiss chard incorporated into curry",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_798400_step18",
+        "name": "seasoned curry with bright lemon flavor",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_798400_step1",
+      "name": "clean, hydrated black-eyed peas ready for cooking",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step2",
+      "name": "drained and rinsed peas in saucepan with fresh water",
+      "shelfLifeHours": 12,
+      "processes": [
+        "drain",
+        "rinse"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step3",
+      "name": "tender cooked black-eyed peas, not falling apart",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step5",
+      "name": "eggplant halved lengthwise with ends trimmed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "trim",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step8",
+      "name": "rinsed eggplant with excess moisture removed",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "squeeze"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step11",
+      "name": "cooled, seasoned eggplant flesh removed from skin",
+      "shelfLifeHours": 48,
+      "processes": [
+        "cool",
+        "season",
+        "peel"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step14",
+      "name": "softened, fragrant shallots and chilies",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step16",
+      "name": "combined curry base with eggplant and black-eyed peas",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "saute",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step17",
+      "name": "wilted swiss chard incorporated into curry",
+      "shelfLifeHours": 48,
+      "processes": [
+        "trim",
+        "steam"
+      ]
+    },
+    {
+      "componentId": "comp_798400_step18",
+      "name": "seasoned curry with bright lemon flavor",
+      "shelfLifeHours": 48,
+      "processes": [
+        "squeeze",
+        "season"
+      ]
+    }
+  ]
+}

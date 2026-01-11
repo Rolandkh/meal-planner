@@ -1,0 +1,1084 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_78d45ffa-bab1-462b-94c3-3bf302c13cb3",
+  "name": "Butternut Squash Tofu Salad With Toasted Hazelnuts",
+  "source": "spoonacular",
+  "spoonacularId": 636604,
+  "image": "/images/recipes/636604.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "pepper",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "butternut squash",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra tofu",
+      "quantity": 396.893,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "hazel nuts",
+      "quantity": 72,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rosemary leaves",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 118.294,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Preheat oven at 370 degree Fahrenheit. Prepare 2 cookie sheets with a liner/parchment paper.</li><li>In one cookie sheet spread the tofu pieces and in another cookie sheet spread the hazelnuts.</li><li>Put the cookie sheets in the oven and bake. Bake hazelnuts for 5-7 minutes and tofu for 20 minutes.</li><li>In the meantime combine water and squash in a saucepan. Cover and boil for 5 minutes or until the squash pieces are soft.</li><li>When the squash is boiled let it cool for a while and grind into a smooth paste.</li><li>In a bowl combine salt, black pepper, rosemary, lemon juice and  squash puree and keep it aside.</li><li>When the hazelnuts are done take it out of the oven and let the tofu cook in the same oven. Let the nuts cool and rub gently between palms or with paper towel to remove the skin.</li><li>Once the tofu is cooked for 20 minutes or until very light golden brown in color take it out from the oven.</li><li>In salad bowl combine all the ingredients and mix gently so that the tofu retains its shape.</li><li>Garnish with more hazelnuts and/or rosemary and serve immediately.</li><li>This salad tastes great when warm but can be served at room temperature also.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 260.79,
+    "protein": 12.82,
+    "fat": 11.49,
+    "carbs": 31.92,
+    "fiber": 6.52,
+    "sugar": 6.95,
+    "saturatedFat": 1.63,
+    "sodium": 269.38
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "butternut_squash",
+      "displayName": "butternut squash",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  butternut squash",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Tofu",
+      "quantity": {
+        "originalQuantity": 396.893,
+        "originalUnit": "g",
+        "normalizedQuantityG": 396.893,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "396.893 g extra tofu",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.25 tsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Hazelnuts",
+      "quantity": {
+        "originalQuantity": 72,
+        "originalUnit": "g",
+        "normalizedQuantityG": 72,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "72 g hazel nuts",
+      "matchConfidence": 0.9
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rosemary",
+      "displayName": "rosemary",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp rosemary leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 118.294,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 117,
+        "normalizedQuantityMl": 118.294
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "118.294 ml water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 10,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:44:45.287Z",
+  "processGraph": {
+    "recipeName": "Butternut Squash Tofu Salad With Toasted Hazelnuts",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven at 370 degree Fahrenheit. Prepare 2 cookie sheets with a liner/parchment paper.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 370°F"
+          }
+        ],
+        "outputDescription": "oven preheated to 370°F, two cookie sheets lined with parchment paper"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "In one cookie sheet spread the tofu pieces and in another cookie sheet spread the hazelnuts.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "extra tofu"
+            ],
+            "durationMinutes": null,
+            "notes": "spreading tofu pieces on cookie sheet"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "hazel nuts"
+            ],
+            "durationMinutes": null,
+            "notes": "spreading hazelnuts on separate cookie sheet"
+          }
+        ],
+        "outputDescription": "tofu pieces and hazelnuts arranged on separate lined cookie sheets"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Put the cookie sheets in the oven and bake. Bake hazelnuts for 5-7 minutes and tofu for 20 minutes.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "hazel nuts"
+            ],
+            "durationMinutes": 6,
+            "notes": "baking hazelnuts for 5-7 minutes"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "extra tofu"
+            ],
+            "durationMinutes": 20,
+            "notes": "baking tofu for 20 minutes"
+          }
+        ],
+        "outputDescription": "hazelnuts toasted, tofu baked until light golden brown"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "In the meantime combine water and squash in a saucepan. Cover and boil for 5 minutes or until the squash pieces are soft.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "water",
+              "butternut squash"
+            ],
+            "durationMinutes": null,
+            "notes": "combining water and squash in saucepan"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "butternut squash"
+            ],
+            "durationMinutes": 5,
+            "notes": "covered boiling until squash is soft"
+          }
+        ],
+        "outputDescription": "squash pieces soft and cooked in water"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "When the squash is boiled let it cool for a while and grind into a smooth paste.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "butternut squash"
+            ],
+            "durationMinutes": null,
+            "notes": "letting squash cool"
+          },
+          {
+            "processId": "puree",
+            "ingredients": [
+              "butternut squash"
+            ],
+            "durationMinutes": null,
+            "notes": "grinding into smooth paste"
+          }
+        ],
+        "outputDescription": "smooth butternut squash puree"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "In a bowl combine salt, black pepper, rosemary, lemon juice and squash puree and keep it aside.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "salt",
+              "pepper",
+              "rosemary leaves",
+              "lemon juice",
+              "butternut squash"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients for dressing"
+          }
+        ],
+        "outputDescription": "seasoned squash puree dressing set aside"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "When the hazelnuts are done take it out of the oven and let the tofu cook in the same oven. Let the nuts cool and rub gently between palms or with paper towel to remove the skin.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "hazel nuts"
+            ],
+            "durationMinutes": null,
+            "notes": "cooling toasted hazelnuts"
+          },
+          {
+            "processId": "peel",
+            "ingredients": [
+              "hazel nuts"
+            ],
+            "durationMinutes": null,
+            "notes": "removing skins by rubbing"
+          }
+        ],
+        "outputDescription": "toasted hazelnuts with skins removed"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Once the tofu is cooked for 20 minutes or until very light golden brown in color take it out from the oven.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "extra tofu"
+            ],
+            "durationMinutes": null,
+            "notes": "removing baked tofu from oven"
+          }
+        ],
+        "outputDescription": "baked tofu with light golden brown color"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "In salad bowl combine all the ingredients and mix gently so that the tofu retains its shape.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "extra tofu",
+              "hazel nuts",
+              "butternut squash",
+              "bell pepper",
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "gently combining all ingredients while maintaining tofu shape"
+          }
+        ],
+        "outputDescription": "assembled salad with all components gently combined"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Garnish with more hazelnuts and/or rosemary and serve immediately.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "hazel nuts",
+              "rosemary leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "final garnish with hazelnuts and rosemary"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "serving the salad"
+          }
+        ],
+        "outputDescription": "garnished and plated butternut squash tofu salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "heat",
+        "spread",
+        "bake",
+        "mix",
+        "boil",
+        "cool",
+        "puree",
+        "peel",
+        "toss",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_636604_step1",
+      "name": "oven preheated to 370°F, two cookie sheets lined with parchment paper",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_636604_step2",
+      "name": "tofu pieces and hazelnuts arranged on separate lined cookie sheets",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tofu",
+          "name": "extra tofu",
+          "quantityG": 396.893
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 480.24053000000004,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 15.87572,
+        "costPerG": 0.033057851239669415,
+        "nutrition": {
+          "calories": 333.39011999999997,
+          "protein": 35.323477,
+          "fat": 17.463292,
+          "carbs": 9.128538999999998,
+          "fiber": 3.175144,
+          "sugar": 1.1906789999999998,
+          "sodium": 15.87572,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_636604_step3",
+      "name": "hazelnuts toasted, tofu baked until light golden brown",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 6,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 26
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636604_step4",
+      "name": "squash pieces soft and cooked in water",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 118.294
+        },
+        {
+          "ingredientId": "butternut_squash",
+          "name": "butternut squash",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 397.37929999999994,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.1390209799999997,
+        "costPerG": 0.005382819336588494,
+        "nutrition": {
+          "calories": 135,
+          "protein": 3,
+          "fat": 0.30000000000000004,
+          "carbs": 35.07,
+          "fiber": 6,
+          "sugar": 6.6000000000000005,
+          "sodium": 17.9147,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636604_step5",
+      "name": "smooth butternut squash puree",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 33
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636604_step6",
+      "name": "seasoned squash puree dressing set aside",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "rosemary",
+          "name": "rosemary leaves",
+          "quantityG": 0.7
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 1.275
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 7.025,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.758331,
+        "costPerG": 0.25029622775800714,
+        "nutrition": {
+          "calories": 5.233,
+          "protein": 0.14771750000000003,
+          "fat": 0.14383,
+          "carbs": 1.20787,
+          "fiber": 0.5676749999999999,
+          "sugar": 0.038849999999999996,
+          "sodium": 1550.89275,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636604_step7",
+      "name": "toasted hazelnuts with skins removed",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 32
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636604_step8",
+      "name": "baked tofu with light golden brown color",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636604_step9",
+      "name": "assembled salad with all components gently combined",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onions",
+          "quantityG": 75
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 225,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.52525,
+        "costPerG": 0.011223333333333335,
+        "nutrition": {
+          "calories": 69,
+          "protein": 2.31,
+          "fat": 0.5249999999999999,
+          "carbs": 16.05,
+          "fiber": 4.425000000000001,
+          "sugar": 9.48,
+          "sodium": 9,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_636604_step10",
+      "name": "garnished and plated butternut squash tofu salad ready to serve",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 22.298321979999997,
+    "costPerServing": 5.574580494999999,
+    "totalPrepTime": 139,
+    "nutritionPerServing": {
+      "calories": 135.65578,
+      "protein": 10.195298625,
+      "fat": 4.6080305,
+      "carbs": 15.36410225,
+      "fiber": 3.5419547500000004,
+      "sugar": 4.32738225,
+      "sodium": 398.4207925
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_636604_step3",
+        "name": "hazelnuts toasted, tofu baked until light golden brown",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_636604_step4",
+        "name": "squash pieces soft and cooked in water",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_636604_step5",
+        "name": "smooth butternut squash puree",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_636604_step6",
+        "name": "seasoned squash puree dressing set aside",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_636604_step7",
+        "name": "toasted hazelnuts with skins removed",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_636604_step8",
+        "name": "baked tofu with light golden brown color",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_636604_step3",
+      "name": "hazelnuts toasted, tofu baked until light golden brown",
+      "shelfLifeHours": 72,
+      "processes": [
+        "bake",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_636604_step4",
+      "name": "squash pieces soft and cooked in water",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_636604_step5",
+      "name": "smooth butternut squash puree",
+      "shelfLifeHours": 72,
+      "processes": [
+        "cool",
+        "puree"
+      ]
+    },
+    {
+      "componentId": "comp_636604_step7",
+      "name": "toasted hazelnuts with skins removed",
+      "shelfLifeHours": 48,
+      "processes": [
+        "cool",
+        "peel"
+      ]
+    }
+  ]
+}

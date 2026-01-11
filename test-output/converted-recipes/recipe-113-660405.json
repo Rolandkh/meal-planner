@@ -1,0 +1,1573 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_bdbc427a-bd94-4c93-a173-55fbeaf59f11",
+  "name": "Smoky Black Bean Soup With Sweet Potato & Kale",
+  "source": "spoonacular",
+  "spoonacularId": 660405,
+  "image": "/images/recipes/660405.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "chicken broth",
+      "quantity": 1.41,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chipotle chiles",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "black beans",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cumin",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kale",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sweet potatoes",
+      "quantity": 1.361,
+      "unit": "kgs",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Spread the dry beans out on a baking sheet and pick out any pebbles. </li><li>Place the beans in a big soup pot, cover with water by 3 inches and allow them to soak overnight or for 6-8 hours, then discard that water. </li><li>Return the soaked beans to the pot and cover with 3 inches of water again, bring to a boil. Reduce heat to medium low, put the cover on and allow to cook until the beans start to get tender but still firm, about 1 1/2 hours. Drain the beans.</li><li>Heat the oil in a soup pot over med-high heat. </li><li>Add the onion along with a pinch of salt and saute until softened and golden. </li><li>Stir in 1 tbsp of ground cumin, add the beans along with the broth or water and bring to a boil. Reduce heat to medium-low, cover and cook for 30 min. </li><li>Meanwhile peel and chop the sweet potatoes. </li><li>Wash the kale, remove the stems and chop the leaves.</li><li>Remove half of the beans and liquid and set aside to cool a bit. </li><li>Add the sweet potatoes and kale to the pot with some salt and pepper. Cover and cook for 10 minutes. </li><li>Transfer the cooled beans to a blender and puree until smooth, then return them to the pot. </li><li>Stir in the remaining 1 tbsp of ground cumin. </li><li>Now add 1 tbsp of the chipotles in adobo. Taste and continue to add more until it has a spice level that you like. </li><li>Adjust the salt &amp; pepper as needed.</li><li>Serve with a dollop of sour cream.</li></ol>",
+  "prepTime": 189,
+  "cookTime": 441,
+  "servings": 6,
+  "nutrition": {
+    "calories": 554.93,
+    "protein": 23.32,
+    "fat": 7.45,
+    "carbs": 102.54,
+    "fiber": 22.04,
+    "sugar": 16.15,
+    "saturatedFat": 1.17,
+    "sodium": 1216.19
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 88.9,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "chipotle chiles",
+        "identity": "chipotle chiles",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "chicken_broth",
+      "displayName": "chicken broth",
+      "quantity": {
+        "originalQuantity": 1.41,
+        "originalUnit": "l",
+        "normalizedQuantityG": 1410,
+        "normalizedQuantityMl": 1410
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.41 l chicken broth",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "black_beans",
+      "displayName": "black beans",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "453.592 g black beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 13,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "2 Tbsps ground cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "kale",
+      "displayName": "kale",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch kale",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt & pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sweet_potatoes",
+      "displayName": "sweet potatoes",
+      "quantity": {
+        "originalQuantity": 1.361,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1.361 kgs sweet potatoes",
+      "matchConfidence": 0.7666666666666666
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 8,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "3 Tbsps chipotle chiles",
+        "identityText": "chipotle chiles",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:49:26.662Z",
+  "processGraph": {
+    "recipeName": "Smoky Black Bean Soup With Sweet Potato & Kale",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Spread the dry beans out on a baking sheet and pick out any pebbles.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "black beans"
+            ],
+            "durationMinutes": null,
+            "notes": "spreading beans to inspect and remove debris"
+          }
+        ],
+        "outputDescription": "beans spread out and cleaned of pebbles"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Place the beans in a big soup pot, cover with water by 3 inches and allow them to soak overnight or for 6-8 hours, then discard that water.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "black beans"
+            ],
+            "durationMinutes": 480,
+            "notes": "soaking beans in water overnight"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "black beans"
+            ],
+            "durationMinutes": null,
+            "notes": "discarding soaking water"
+          }
+        ],
+        "outputDescription": "beans soaked and drained, ready for cooking"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Return the soaked beans to the pot and cover with 3 inches of water again, bring to a boil. Reduce heat to medium low, put the cover on and allow to cook until the beans start to get tender but still firm, about 1 1/2 hours. Drain the beans.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "black beans"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing beans and water to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "black beans"
+            ],
+            "durationMinutes": 90,
+            "notes": "cooking covered on medium-low until tender but firm"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "black beans"
+            ],
+            "durationMinutes": null,
+            "notes": "removing cooking water"
+          }
+        ],
+        "outputDescription": "beans cooked until tender but firm, drained"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Heat the oil in a soup pot over med-high heat.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in pot over medium-high heat"
+          }
+        ],
+        "outputDescription": "oil heated and ready for sautéing"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add the onion along with a pinch of salt and saute until softened and golden.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of onion for sautéing"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "cooking until softened and golden"
+          }
+        ],
+        "outputDescription": "onion softened and golden"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Stir in 1 tbsp of ground cumin, add the beans along with the broth or water and bring to a boil. Reduce heat to medium-low, cover and cook for 30 min.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ground cumin"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring in cumin"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "black beans",
+              "chicken broth"
+            ],
+            "durationMinutes": null,
+            "notes": "adding beans and broth"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "black beans",
+              "chicken broth",
+              "ground cumin",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing mixture to boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "black beans",
+              "chicken broth",
+              "ground cumin",
+              "onion"
+            ],
+            "durationMinutes": 30,
+            "notes": "covered cooking on medium-low"
+          }
+        ],
+        "outputDescription": "soup base simmered with beans, broth, cumin and onion"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Meanwhile peel and chop the sweet potatoes.",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "sweet potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "removing skin from sweet potatoes"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "sweet potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting into pieces"
+          }
+        ],
+        "outputDescription": "sweet potatoes peeled and chopped"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Wash the kale, remove the stems and chop the leaves.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "kale"
+            ],
+            "durationMinutes": null,
+            "notes": "washing kale leaves"
+          },
+          {
+            "processId": "trim",
+            "ingredients": [
+              "kale"
+            ],
+            "durationMinutes": null,
+            "notes": "removing stems"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "kale"
+            ],
+            "durationMinutes": null,
+            "notes": "chopping leaves"
+          }
+        ],
+        "outputDescription": "kale washed, stemmed and chopped"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Remove half of the beans and liquid and set aside to cool a bit.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "black beans",
+              "chicken broth"
+            ],
+            "durationMinutes": null,
+            "notes": "cooling half the soup mixture for blending"
+          }
+        ],
+        "outputDescription": "half of soup mixture removed and cooling"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Add the sweet potatoes and kale to the pot with some salt and pepper. Cover and cook for 10 minutes.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "sweet potatoes",
+              "kale"
+            ],
+            "durationMinutes": null,
+            "notes": "adding vegetables to pot"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "adding salt and pepper"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "sweet potatoes",
+              "kale",
+              "black beans",
+              "chicken broth"
+            ],
+            "durationMinutes": 10,
+            "notes": "covered cooking"
+          }
+        ],
+        "outputDescription": "vegetables added and cooked until tender"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Transfer the cooled beans to a blender and puree until smooth, then return them to the pot.",
+        "processes": [
+          {
+            "processId": "puree",
+            "ingredients": [
+              "black beans",
+              "chicken broth"
+            ],
+            "durationMinutes": null,
+            "notes": "blending cooled mixture until smooth"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "black beans",
+              "chicken broth"
+            ],
+            "durationMinutes": null,
+            "notes": "returning pureed mixture to pot"
+          }
+        ],
+        "outputDescription": "soup partially pureed for texture"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "Stir in the remaining 1 tbsp of ground cumin.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ground cumin"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring in remaining cumin"
+          }
+        ],
+        "outputDescription": "additional cumin incorporated"
+      },
+      {
+        "stepNumber": 13,
+        "originalInstruction": "Now add 1 tbsp of the chipotles in adobo. Taste and continue to add more until it has a spice level that you like.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chipotle chiles"
+            ],
+            "durationMinutes": null,
+            "notes": "adding chipotles and adjusting to taste"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "chipotle chiles"
+            ],
+            "durationMinutes": null,
+            "notes": "tasting and adjusting spice level"
+          }
+        ],
+        "outputDescription": "soup seasoned with chipotles to desired spice level"
+      },
+      {
+        "stepNumber": 14,
+        "originalInstruction": "Adjust the salt & pepper as needed.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "final seasoning adjustment"
+          }
+        ],
+        "outputDescription": "soup seasoned to taste"
+      },
+      {
+        "stepNumber": 15,
+        "originalInstruction": "Serve with a dollop of sour cream.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "black beans",
+              "sweet potatoes",
+              "kale",
+              "chicken broth"
+            ],
+            "durationMinutes": null,
+            "notes": "serving soup"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "topping with sour cream"
+          }
+        ],
+        "outputDescription": "soup served and garnished"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 25,
+      "uniqueProcesses": [
+        "spread",
+        "marinate",
+        "drain",
+        "boil",
+        "simmer",
+        "heat",
+        "chop",
+        "saute",
+        "mix",
+        "peel",
+        "rinse",
+        "trim",
+        "cool",
+        "season",
+        "puree",
+        "plate",
+        "garnish"
+      ],
+      "estimatedTotalTime": 660
+    }
+  },
+  "components": [
+    {
+      "id": "comp_660405_step1",
+      "name": "beans spread out and cleaned of pebbles",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "black_beans",
+          "name": "black beans",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 498.95120000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.7009699999999999,
+        "costPerG": 0.0034090909090909085,
+        "nutrition": {
+          "calories": 598.74144,
+          "protein": 40.188251199999996,
+          "fat": 2.4493968,
+          "carbs": 107.5466632,
+          "fiber": 39.462503999999996,
+          "sugar": 0,
+          "sodium": 4.53592,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660405_step2",
+      "name": "beans soaked and drained, ready for cooking",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 480,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 481
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step3",
+      "name": "beans cooked until tender but firm, drained",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 90,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 101
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step4",
+      "name": "oil heated and ready for sautéing",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 26.46,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.288,
+        "costPerG": 0.010884353741496598,
+        "nutrition": {
+          "calories": 238.68,
+          "protein": 0,
+          "fat": 27,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660405_step5",
+      "name": "onion softened and golden",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 124.94999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.5005,
+        "costPerG": 0.020012004801920773,
+        "nutrition": {
+          "calories": 60,
+          "protein": 1.6500000000000001,
+          "fat": 0.15000000000000002,
+          "carbs": 14.01,
+          "fiber": 2.55,
+          "sugar": 6.36,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step6",
+      "name": "soup base simmered with beans, broth, cumin and onion",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cumin",
+          "name": "ground cumin",
+          "quantityG": 12.6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 10.773,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.756,
+        "costPerG": 0.07017543859649122,
+        "nutrition": {
+          "calories": 47.25,
+          "protein": 2.2440599999999997,
+          "fat": 2.80602,
+          "carbs": 5.5742400000000005,
+          "fiber": 1.323,
+          "sugar": 0.2835,
+          "sodium": 21.168,
+          "method": "raw"
+        },
+        "prepTimeMin": 44
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step7",
+      "name": "sweet potatoes peeled and chopped",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sweet_potatoes",
+          "name": "sweet potatoes",
+          "quantityG": 1361
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1200.402,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.1245,
+        "costPerG": 0.005102040816326531,
+        "nutrition": {
+          "calories": 1170.46,
+          "protein": 21.3677,
+          "fat": 0.6805,
+          "carbs": 273.8332,
+          "fiber": 40.83,
+          "sugar": 56.889799999999994,
+          "sodium": 748.55,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step8",
+      "name": "kale washed, stemmed and chopped",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "kale",
+          "name": "kale",
+          "quantityG": 0.8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.7596959999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.01216,
+        "costPerG": 0.016006402561024414,
+        "nutrition": {
+          "calories": 0.28,
+          "protein": 0.02336,
+          "fat": 0.01192,
+          "carbs": 0.03536,
+          "fiber": 0.032799999999999996,
+          "sugar": 0.0064,
+          "sodium": 0.424,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step9",
+      "name": "half of soup mixture removed and cooling",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "chicken broth",
+          "quantityG": 1410
+        }
+      ],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1410,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.935,
+        "costPerG": 0.0034999999999999996,
+        "nutrition": {
+          "calories": 84.6,
+          "protein": 9.024,
+          "fat": 2.961,
+          "carbs": 6.204,
+          "fiber": 0,
+          "sugar": 6.063,
+          "sodium": 5231.099999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step10",
+      "name": "vegetables added and cooked until tender",
+      "stepNumber": 10,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 6
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 11.016,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.8999999999999995,
+        "costPerG": 0.35403050108932455,
+        "nutrition": {
+          "calories": 15.059999999999999,
+          "protein": 0.6234000000000001,
+          "fat": 0.19559999999999997,
+          "carbs": 3.837,
+          "fiber": 1.518,
+          "sugar": 0.0384,
+          "sodium": 2326.68,
+          "method": "raw"
+        },
+        "prepTimeMin": 12.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step11",
+      "name": "soup partially pureed for texture",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step12",
+      "name": "additional cumin incorporated",
+      "stepNumber": 12,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step13",
+      "name": "soup seasoned with chipotles to desired spice level",
+      "stepNumber": 13,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_660405_step14",
+      "name": "soup seasoned to taste",
+      "stepNumber": 14,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_660405_step15",
+      "name": "soup served and garnished",
+      "stepNumber": 15,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 20.21713,
+    "costPerServing": 3.369521666666667,
+    "totalPrepTime": 700.5,
+    "nutritionPerServing": {
+      "calories": 369.1785733333333,
+      "protein": 12.52012853333333,
+      "fat": 6.042406133333333,
+      "carbs": 68.50674386666667,
+      "fiber": 14.286050666666666,
+      "sugar": 11.60685,
+      "sodium": 1389.8329866666666
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_660405_step2",
+        "name": "beans soaked and drained, ready for cooking",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_660405_step3",
+        "name": "beans cooked until tender but firm, drained",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_660405_step5",
+        "name": "onion softened and golden",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_660405_step6",
+        "name": "soup base simmered with beans, broth, cumin and onion",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660405_step7",
+        "name": "sweet potatoes peeled and chopped",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_660405_step8",
+        "name": "kale washed, stemmed and chopped",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_660405_step9",
+        "name": "half of soup mixture removed and cooling",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_660405_step10",
+        "name": "vegetables added and cooked until tender",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660405_step11",
+        "name": "soup partially pureed for texture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660405_step12",
+        "name": "additional cumin incorporated",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_660405_step13",
+        "name": "soup seasoned with chipotles to desired spice level",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_660405_step2",
+      "name": "beans soaked and drained, ready for cooking",
+      "shelfLifeHours": 48,
+      "processes": [
+        "marinate",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_660405_step3",
+      "name": "beans cooked until tender but firm, drained",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "simmer",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_660405_step5",
+      "name": "onion softened and golden",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_660405_step6",
+      "name": "soup base simmered with beans, broth, cumin and onion",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "mix",
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_660405_step7",
+      "name": "sweet potatoes peeled and chopped",
+      "shelfLifeHours": 48,
+      "processes": [
+        "peel",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_660405_step8",
+      "name": "kale washed, stemmed and chopped",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "trim",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_660405_step10",
+      "name": "vegetables added and cooked until tender",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "season",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_660405_step11",
+      "name": "soup partially pureed for texture",
+      "shelfLifeHours": 24,
+      "processes": [
+        "puree",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_660405_step13",
+      "name": "soup seasoned with chipotles to desired spice level",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "season"
+      ]
+    }
+  ]
+}

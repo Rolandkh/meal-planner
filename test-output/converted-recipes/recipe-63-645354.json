@@ -1,0 +1,980 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_20d09362-d155-430d-aae8-d4d346a782f0",
+  "name": "Greek Shrimp Orzo",
+  "source": "spoonacular",
+  "spoonacularId": 645354,
+  "image": "/images/recipes/645354.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "basil",
+      "quantity": 5,
+      "unit": "large leaves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 100,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 122,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tbsp olive oil",
+      "quantity": 108,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "orzo pasta)",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "shrimp",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Combine lemon juice and 1/2 cup olive oil.</li><li>Bring large pot of salted water to a boil over high heat.</li><li>Pour in orzo and cook until al dente.</li><li>Drain the pasta, pour into a large serving bowl, and immediately add lemon juice/olive oil mixture.  Stir well.</li><li>Heat a large skillet over medium-high heat and add 1 tbsp olive oil.  Add shrimp, salt and pepper, and cook for about 2 minutes, or until the shrimp are just done.</li><li>Add the shrimp, green onions, parsley, and feta to the orzo mixture.  Stir well.</li><li>Let the orzo sit for 1 hour.  If you make it earlier in the day, cover and refrigerate.  Bring to room temperature before serving.</li><li>Just before serving, add the basil and gently mix.  If desired, serve over a bed of spinach or lettuce.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 409.52,
+    "protein": 23.74,
+    "fat": 13.51,
+    "carbs": 47.76,
+    "fiber": 2.65,
+    "sugar": 2.5,
+    "saturatedFat": 5.79,
+    "sodium": 1064.55
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5 large leaves basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 100,
+        "originalUnit": "g",
+        "normalizedQuantityG": 100,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "100 g green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 122,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 124,
+        "normalizedQuantityMl": 122
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "122 ml lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 108,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 97,
+        "normalizedQuantityMl": 108
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "108 ml tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "orzo",
+      "displayName": "orzo",
+      "quantity": {
+        "originalQuantity": 340.194,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340.194,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "340.194 g orzo pasta)",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "shrimp",
+      "displayName": "shrimp",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g shrimp",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 9,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:33:52.403Z",
+  "processGraph": {
+    "recipeName": "Greek Shrimp Orzo",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Combine lemon juice and 1/2 cup olive oil.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lemon juice",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "combining lemon juice with half the olive oil"
+          }
+        ],
+        "outputDescription": "lemon juice and olive oil mixture ready for pasta"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Bring large pot of salted water to a boil over high heat.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "salting the water"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing water to a boil over high heat"
+          }
+        ],
+        "outputDescription": "large pot of salted water at rolling boil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Pour in orzo and cook until al dente.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "orzo pasta"
+            ],
+            "durationMinutes": null,
+            "notes": "cooking orzo in boiling water until al dente"
+          }
+        ],
+        "outputDescription": "orzo pasta cooked al dente"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Drain the pasta, pour into a large serving bowl, and immediately add lemon juice/olive oil mixture. Stir well.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "orzo pasta"
+            ],
+            "durationMinutes": null,
+            "notes": "removing cooking water from pasta"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "orzo pasta",
+              "lemon juice",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "combining hot pasta with lemon-oil mixture"
+          }
+        ],
+        "outputDescription": "drained orzo in serving bowl, mixed with lemon-oil dressing"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Heat a large skillet over medium-high heat and add 1 tbsp olive oil. Add shrimp, salt and pepper, and cook for about 2 minutes, or until the shrimp are just done.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating skillet with oil over medium-high heat"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "shrimp",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "seasoning shrimp with salt and pepper"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "shrimp"
+            ],
+            "durationMinutes": 2,
+            "notes": "cooking shrimp until just done"
+          }
+        ],
+        "outputDescription": "cooked shrimp, seasoned and ready to add to pasta"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add the shrimp, green onions, parsley, and feta to the orzo mixture. Stir well.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "shrimp",
+              "green onions",
+              "parsley",
+              "feta cheese",
+              "orzo pasta"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients with the dressed orzo"
+          }
+        ],
+        "outputDescription": "complete orzo salad with all ingredients mixed together"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Let the orzo sit for 1 hour. If you make it earlier in the day, cover and refrigerate. Bring to room temperature before serving.",
+        "processes": [
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "orzo pasta",
+              "shrimp",
+              "feta cheese",
+              "green onions",
+              "parsley"
+            ],
+            "durationMinutes": 60,
+            "notes": "allowing flavors to meld at room temperature or refrigerated"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "orzo pasta",
+              "shrimp",
+              "feta cheese",
+              "green onions",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "optional refrigeration if made ahead"
+          }
+        ],
+        "outputDescription": "orzo salad with melded flavors, at room temperature and ready for final garnish"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Just before serving, add the basil and gently mix. If desired, serve over a bed of spinach or lettuce.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "adding fresh basil as final garnish"
+          },
+          {
+            "processId": "fold",
+            "ingredients": [
+              "basil",
+              "orzo pasta"
+            ],
+            "durationMinutes": null,
+            "notes": "gently mixing in basil to preserve leaves"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "orzo pasta",
+              "shrimp",
+              "feta cheese",
+              "green onions",
+              "parsley",
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "serving, optionally over greens"
+          }
+        ],
+        "outputDescription": "finished Greek shrimp orzo, garnished with basil and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "mix",
+        "season",
+        "boil",
+        "drain",
+        "heat",
+        "saute",
+        "rest_meat",
+        "cool",
+        "garnish",
+        "fold",
+        "plate"
+      ],
+      "estimatedTotalTime": 75
+    }
+  },
+  "components": [
+    {
+      "id": "comp_645354_step1",
+      "name": "lemon juice and olive oil mixture ready for pasta",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 122
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 122,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 73.2,
+        "costPerG": 0.6,
+        "nutrition": {
+          "calories": 26.84,
+          "protein": 0.427,
+          "fat": 0.2928,
+          "carbs": 8.418000000000001,
+          "fiber": 0.366,
+          "sugar": 3.0744,
+          "sodium": 1.22,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645354_step2",
+      "name": "large pot of salted water at rolling boil",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645354_step3",
+      "name": "orzo pasta cooked al dente",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645354_step4",
+      "name": "drained orzo in serving bowl, mixed with lemon-oil dressing",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645354_step5",
+      "name": "cooked shrimp, seasoned and ready to add to pasta",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "shrimp",
+          "name": "shrimp",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 385.39897871999995,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 25.401152,
+        "costPerG": 0.06590871642774758,
+        "nutrition": {
+          "calories": 385.5532,
+          "protein": 91.171992,
+          "fat": 2.3133192,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 539.77448,
+          "method": "raw"
+        },
+        "prepTimeMin": 5.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645354_step6",
+      "name": "complete orzo salad with all ingredients mixed together",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 100
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 386.796,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 29.33475,
+        "costPerG": 0.0758403654639655,
+        "nutrition": {
+          "calories": 654.6094,
+          "protein": 35.817032,
+          "fat": 49.42514,
+          "carbs": 19.9376848,
+          "fiber": 4.58,
+          "sugar": 2.84,
+          "sodium": 2635.0744,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645354_step7",
+      "name": "orzo salad with melded flavors, at room temperature and ready for final garnish",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 90
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645354_step8",
+      "name": "finished Greek shrimp orzo, garnished with basil and ready to serve",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "basil",
+          "name": "basil",
+          "quantityG": 6.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "fold",
+          "processName": "Fold",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 6.63,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.17107999999999998,
+        "costPerG": 0.025803921568627448,
+        "nutrition": {
+          "calories": 1.495,
+          "protein": 0.20475,
+          "fat": 0.041600000000000005,
+          "carbs": 0.17225,
+          "fiber": 0.10400000000000001,
+          "sugar": 0.0195,
+          "sodium": 0.26,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 131.600146,
+    "costPerServing": 21.933357666666666,
+    "totalPrepTime": 128,
+    "nutritionPerServing": {
+      "calories": 547.5562233333334,
+      "protein": 28.663678599999997,
+      "fat": 27.534964766666665,
+      "carbs": 47.0917991,
+      "fiber": 2.656034666666667,
+      "sugar": 2.5028466333333332,
+      "sodium": 920.7300866666666
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_645354_step1",
+        "name": "lemon juice and olive oil mixture ready for pasta",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645354_step2",
+        "name": "large pot of salted water at rolling boil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_645354_step3",
+        "name": "orzo pasta cooked al dente",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_645354_step4",
+        "name": "drained orzo in serving bowl, mixed with lemon-oil dressing",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645354_step5",
+        "name": "cooked shrimp, seasoned and ready to add to pasta",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_645354_step6",
+        "name": "complete orzo salad with all ingredients mixed together",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645354_step7",
+        "name": "orzo salad with melded flavors, at room temperature and ready for final garnish",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_645354_step2",
+      "name": "large pot of salted water at rolling boil",
+      "shelfLifeHours": 72,
+      "processes": [
+        "season",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_645354_step4",
+      "name": "drained orzo in serving bowl, mixed with lemon-oil dressing",
+      "shelfLifeHours": 24,
+      "processes": [
+        "drain",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_645354_step5",
+      "name": "cooked shrimp, seasoned and ready to add to pasta",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "season",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_645354_step7",
+      "name": "orzo salad with melded flavors, at room temperature and ready for final garnish",
+      "shelfLifeHours": 96,
+      "processes": [
+        "rest_meat",
+        "cool"
+      ]
+    }
+  ]
+}

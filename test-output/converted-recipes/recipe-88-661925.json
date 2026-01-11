@@ -1,0 +1,768 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_126d4e9a-dda9-4c11-b27a-0a39a1d95614",
+  "name": "Strawberry-Mango Quinoa Salad",
+  "source": "spoonacular",
+  "spoonacularId": 661925,
+  "image": "/images/recipes/661925.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cucumber",
+      "quantity": 99.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mint",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "honey",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lime juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lime zest",
+      "quantity": 0.167,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mango",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 54,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cream",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "strawberries",
+      "quantity": 216,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 354.882,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Prepare the quinoa: In a medium saucepan combine the quinoa, water and 1/4 t. salt. Bring to a boil, reduce heat to low, cover and simmer until the liquid is just absorbed, about 15 minutes. Spread the cooked quinoa out on a baking sheet to cool for about 20 minutes.</li><li>In a large bowl whisk together lime juice, zest, honey, sour cream and olive oil. Add the cooled quinoa, strawberries, mango, cucumber and mint. Toss well to combine and season with salt &amp; pepper. Serve immediately.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 353.62,
+    "protein": 7.78,
+    "fat": 16.8,
+    "carbs": 45.92,
+    "fiber": 6.46,
+    "sugar": 14.33,
+    "saturatedFat": 2.35,
+    "sodium": 208.34
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 99.75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 99.75,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "99.75 g cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps mint",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "honey",
+      "displayName": "honey",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp honey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_juice",
+      "displayName": "lime juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lime juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_zest",
+      "displayName": "lime zest",
+      "quantity": {
+        "originalQuantity": 0.167,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 0.8350000000000001
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.167 tsps lime zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mango",
+      "displayName": "mango",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  mango",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 54,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 49,
+        "normalizedQuantityMl": 54
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "54 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cream",
+      "displayName": "cream",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp cream",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "strawberries",
+      "displayName": "strawberries",
+      "quantity": {
+        "originalQuantity": 216,
+        "originalUnit": "g",
+        "normalizedQuantityG": 216,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "216 g strawberries",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 354.882,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 350,
+        "normalizedQuantityMl": 354.882
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "354.882 ml water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 13,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:41:48.190Z",
+  "processGraph": {
+    "recipeName": "Strawberry-Mango Quinoa Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Prepare the quinoa: In a medium saucepan combine the quinoa, water and 1/4 t. salt. Bring to a boil, reduce heat to low, cover and simmer until the liquid is just absorbed, about 15 minutes. Spread the cooked quinoa out on a baking sheet to cool for about 20 minutes.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "water",
+              "salt"
+            ],
+            "durationMinutes": 1,
+            "notes": "combine quinoa, water and salt in saucepan"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa",
+              "water",
+              "salt"
+            ],
+            "durationMinutes": 2,
+            "notes": "bring mixture to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa",
+              "water",
+              "salt"
+            ],
+            "durationMinutes": 15,
+            "notes": "reduce heat to low, cover and simmer until liquid absorbed"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 1,
+            "notes": "spread cooked quinoa on baking sheet"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 20,
+            "notes": "cool quinoa on baking sheet"
+          }
+        ],
+        "outputDescription": "Cooked quinoa that has been cooled and is ready to use in salad"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "In a large bowl whisk together lime juice, zest, honey, sour cream and olive oil. Add the cooled quinoa, strawberries, mango, cucumber and mint. Toss well to combine and season with salt & pepper. Serve immediately.",
+        "processes": [
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lime zest"
+            ],
+            "durationMinutes": 1,
+            "notes": "zest lime for lime zest ingredient"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "lime juice",
+              "lime zest",
+              "honey",
+              "cream",
+              "olive oil"
+            ],
+            "durationMinutes": 2,
+            "notes": "whisk together dressing ingredients"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "strawberries",
+              "mango",
+              "cucumber"
+            ],
+            "durationMinutes": 5,
+            "notes": "implied prep of fruits and vegetables into salad-sized pieces"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "mint"
+            ],
+            "durationMinutes": 1,
+            "notes": "implied chopping of mint leaves"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "strawberries",
+              "mango",
+              "cucumber",
+              "mint"
+            ],
+            "durationMinutes": 1,
+            "notes": "add ingredients to dressing"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "quinoa",
+              "strawberries",
+              "mango",
+              "cucumber",
+              "mint",
+              "lime juice",
+              "lime zest",
+              "honey",
+              "cream",
+              "olive oil"
+            ],
+            "durationMinutes": 2,
+            "notes": "toss all ingredients together to combine"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "bell pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "season with salt and pepper to taste"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa",
+              "strawberries",
+              "mango",
+              "cucumber",
+              "mint",
+              "lime juice",
+              "lime zest",
+              "honey",
+              "cream",
+              "olive oil",
+              "salt",
+              "bell pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "serve immediately"
+          }
+        ],
+        "outputDescription": "Completed strawberry-mango quinoa salad, dressed and seasoned, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "mix",
+        "boil",
+        "simmer",
+        "spread",
+        "cool",
+        "zest",
+        "whisk",
+        "dice",
+        "chop",
+        "toss",
+        "season",
+        "plate"
+      ],
+      "estimatedTotalTime": 52
+    }
+  },
+  "components": [
+    {
+      "id": "comp_661925_step1",
+      "name": "Cooked quinoa that has been cooled and is ready to use in salad",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 354.882
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 497.41352100000006,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.77706294,
+        "costPerG": 0.009603805964896558,
+        "nutrition": {
+          "calories": 625.6,
+          "protein": 24.003999999999998,
+          "fat": 10.319,
+          "carbs": 109.07199999999999,
+          "fiber": 11.9,
+          "sugar": 0,
+          "sodium": 1576.5640999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 39
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_661925_step2",
+      "name": "Completed strawberry-mango quinoa salad, dressed and seasoned, ready to serve",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lime_zest",
+          "name": "lime zest",
+          "quantityG": 0.06680000000000001
+        }
+      ],
+      "processes": [
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.003238504080000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0050100000000000006,
+        "costPerG": 1.5470105568000392,
+        "nutrition": {
+          "calories": 0.020040000000000002,
+          "protein": 0.00046760000000000004,
+          "fat": 0.00013360000000000002,
+          "carbs": 0.007014000000000001,
+          "fiber": 0.0018704000000000001,
+          "sugar": 0.00112892,
+          "sodium": 0.0013360000000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 14
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 8.96319794,
+    "costPerServing": 2.240799485,
+    "totalPrepTime": 53,
+    "nutritionPerServing": {
+      "calories": 323.42751,
+      "protein": 6.726473149999999,
+      "fat": 17.6582584,
+      "carbs": 36.0860035,
+      "fiber": 4.410530100000001,
+      "sugar": 6.35914473,
+      "sodium": 397.26885899999996
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_661925_step1",
+        "name": "Cooked quinoa that has been cooled and is ready to use in salad",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_661925_step2",
+        "name": "Completed strawberry-mango quinoa salad, dressed and seasoned, ready to serve",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_661925_step1",
+      "name": "Cooked quinoa that has been cooled and is ready to use in salad",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil",
+        "simmer",
+        "spread",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_661925_step2",
+      "name": "Completed strawberry-mango quinoa salad, dressed and seasoned, ready to serve",
+      "shelfLifeHours": 12,
+      "processes": [
+        "zest",
+        "whisk",
+        "dice",
+        "chop",
+        "mix",
+        "toss",
+        "season",
+        "plate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1109 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_693be0c5-fce1-4cc2-9a24-215fa65bbabd",
+  "name": "Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried Cherries",
+  "source": "spoonacular",
+  "spoonacularId": 716004,
+  "image": "/images/recipes/716004.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cashews",
+      "quantity": 43,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dried cherries",
+      "quantity": 40.404,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dried chickpeas",
+      "quantity": 300,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dried thyme",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cumin",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "honey",
+      "quantity": 1.5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of orange",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 340,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea-salt",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sun-dried tomatoes",
+      "quantity": 55,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "turmeric",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Rinse the quinoa and soak for 8 hours or overnight in 2 cups of water. Rinse the chickpeas and soak for 8 hours or overnight in several inches of water.Rinse the chickpeas and transfer to a small saucepan. Cover with fresh water and bring to a boil. Reduce heat to medium-low, cover, and simmer for 1 hour or until buttery soft.While the chickpeas are cooking, soak the sun-dried tomatoes in hot water for 30 minutes, then drain and chop. Meanwhile, bring the quinoa to a boil in a medium saucepan. Reduce heat to the lowest setting, cover, and simmer for 15 minutes or until the water is absorbed. Remove from heat and wait 5 minutes before fluffing with a fork.Meanwhile, toast the cashews in a dry unoiled skillet or saucepan over medium-low heat, tossing or stirring frequently, for 10 minutes until browned.Transfer the chickpeas, quinoa, sun-dried tomatoes, cashews and dried cherries to a large mixing bowl. Whisk the dressing ingredients together and pour over the salad. Stir to combine and serve at room temperature or chilled.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 538.7,
+    "protein": 20.86,
+    "fat": 14.62,
+    "carbs": 84.48,
+    "fiber": 14.78,
+    "sugar": 17.87,
+    "saturatedFat": 1.97,
+    "sodium": 221.29
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 84.6,
+    "hasUnknownIngredients": true,
+    "unknownCount": 2,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "dried cherries",
+        "identity": "dried cherries",
+        "issue": "no_match_found"
+      },
+      {
+        "raw": "dried chickpeas",
+        "identity": "dried chickpeas",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Cashews",
+      "quantity": {
+        "originalQuantity": 43,
+        "originalUnit": "g",
+        "normalizedQuantityG": 43,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "43 g cashews",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "thyme",
+      "displayName": "thyme",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps dried thyme",
+      "matchConfidence": 0.95
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "honey",
+      "displayName": "honey",
+      "quantity": {
+        "originalQuantity": 1.5,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 23,
+        "normalizedQuantityMl": 22.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.5 Tbsps honey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "juice_orange",
+      "displayName": "juice orange",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of orange",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 340,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "340 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 10,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings sea-salt",
+      "matchConfidence": 0.875
+    },
+    {
+      "masterIngredientId": "sundried_tomatoes",
+      "displayName": "sun-dried tomatoes",
+      "quantity": {
+        "originalQuantity": 55,
+        "originalUnit": "g",
+        "normalizedQuantityG": 55,
+        "normalizedQuantityMl": null
+      },
+      "state": "dried",
+      "preparation": [],
+      "rawText": "55 g sun-dried tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "turmeric",
+      "displayName": "turmeric",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps turmeric",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 11,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "40.404 g dried cherries",
+        "identityText": "dried cherries",
+        "state": "dried"
+      },
+      {
+        "rawText": "300 g dried chickpeas",
+        "identityText": "dried chickpeas",
+        "state": "dried"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:57:00.539Z",
+  "processGraph": {
+    "recipeName": "Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried Cherries",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Rinse the quinoa and soak for 8 hours or overnight in 2 cups of water. Rinse the chickpeas and soak for 8 hours or overnight in several inches of water.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 2,
+            "notes": "wash quinoa under running water"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 480,
+            "notes": "soak in water for 8 hours"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "dried chickpeas"
+            ],
+            "durationMinutes": 2,
+            "notes": "wash chickpeas under running water"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "dried chickpeas"
+            ],
+            "durationMinutes": 480,
+            "notes": "soak in water for 8 hours"
+          }
+        ],
+        "outputDescription": "quinoa and chickpeas are clean and fully hydrated after overnight soaking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Rinse the chickpeas and transfer to a small saucepan. Cover with fresh water and bring to a boil. Reduce heat to medium-low, cover, and simmer for 1 hour or until buttery soft.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "dried chickpeas"
+            ],
+            "durationMinutes": 2,
+            "notes": "rinse soaked chickpeas"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "dried chickpeas"
+            ],
+            "durationMinutes": 5,
+            "notes": "bring to a boil in fresh water"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "dried chickpeas"
+            ],
+            "durationMinutes": 60,
+            "notes": "cook covered on medium-low until buttery soft"
+          }
+        ],
+        "outputDescription": "chickpeas are fully cooked and tender"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "While the chickpeas are cooking, soak the sun-dried tomatoes in hot water for 30 minutes, then drain and chop.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "sun-dried tomatoes"
+            ],
+            "durationMinutes": 30,
+            "notes": "soak in hot water to rehydrate"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "sun-dried tomatoes"
+            ],
+            "durationMinutes": 1,
+            "notes": "remove soaking water"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "sun-dried tomatoes"
+            ],
+            "durationMinutes": 3,
+            "notes": "cut into rough pieces"
+          }
+        ],
+        "outputDescription": "sun-dried tomatoes are rehydrated and chopped into pieces"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Meanwhile, bring the quinoa to a boil in a medium saucepan. Reduce heat to the lowest setting, cover, and simmer for 15 minutes or until the water is absorbed. Remove from heat and wait 5 minutes before fluffing with a fork.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 3,
+            "notes": "bring quinoa and soaking water to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 15,
+            "notes": "cook covered on lowest heat until water absorbed"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 5,
+            "notes": "let rest off heat before fluffing"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 1,
+            "notes": "fluff with fork"
+          }
+        ],
+        "outputDescription": "quinoa is fully cooked, fluffy and ready to use"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Meanwhile, toast the cashews in a dry unoiled skillet or saucepan over medium-low heat, tossing or stirring frequently, for 10 minutes until browned.",
+        "processes": [
+          {
+            "processId": "toast",
+            "ingredients": [
+              "cashews"
+            ],
+            "durationMinutes": 10,
+            "notes": "toast in dry pan over medium-low heat, stirring frequently until browned"
+          }
+        ],
+        "outputDescription": "cashews are golden brown and toasted"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Transfer the chickpeas, quinoa, sun-dried tomatoes, cashews and dried cherries to a large mixing bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "dried chickpeas",
+              "quinoa",
+              "sun-dried tomatoes",
+              "cashews",
+              "dried cherries"
+            ],
+            "durationMinutes": 2,
+            "notes": "combine all main ingredients in large bowl"
+          }
+        ],
+        "outputDescription": "all main salad components are combined in mixing bowl"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Whisk the dressing ingredients together and pour over the salad. Stir to combine and serve at room temperature or chilled.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "olive oil",
+              "red wine vinegar",
+              "honey",
+              "juice of orange",
+              "dried thyme",
+              "ground cumin",
+              "turmeric",
+              "sea-salt"
+            ],
+            "durationMinutes": 2,
+            "notes": "whisk all dressing ingredients together"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "dried chickpeas",
+              "quinoa",
+              "sun-dried tomatoes",
+              "cashews",
+              "dried cherries",
+              "olive oil",
+              "red wine vinegar",
+              "honey",
+              "juice of orange",
+              "dried thyme",
+              "ground cumin",
+              "turmeric",
+              "sea-salt"
+            ],
+            "durationMinutes": 2,
+            "notes": "combine dressing with salad ingredients"
+          }
+        ],
+        "outputDescription": "completed salad with dressing evenly distributed, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 16,
+      "uniqueProcesses": [
+        "rinse",
+        "marinate",
+        "boil",
+        "simmer",
+        "drain",
+        "chop",
+        "rest_meat",
+        "mix",
+        "toast",
+        "whisk",
+        "toss"
+      ],
+      "estimatedTotalTime": 570
+    }
+  },
+  "components": [
+    {
+      "id": "comp_716004_step1",
+      "name": "quinoa and chickpeas are clean and fully hydrated after overnight soaking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 340
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 480,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 480,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 401.4643500000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.42,
+        "costPerG": 0.011009694883244301,
+        "nutrition": {
+          "calories": 1251.2,
+          "protein": 48.007999999999996,
+          "fat": 20.638,
+          "carbs": 218.14399999999998,
+          "fiber": 23.8,
+          "sugar": 0,
+          "sodium": 17,
+          "method": "raw"
+        },
+        "prepTimeMin": 964
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716004_step2",
+      "name": "chickpeas are fully cooked and tender",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chickpeas_dried",
+          "name": "dried chickpeas",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 261.63,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.1,
+        "costPerG": 0.008026602453847037,
+        "nutrition": {
+          "calories": 1092,
+          "protein": 57.900000000000006,
+          "fat": 18.12,
+          "carbs": 181.95,
+          "fiber": 52.199999999999996,
+          "sugar": 32.099999999999994,
+          "sodium": 72,
+          "method": "raw"
+        },
+        "prepTimeMin": 67
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716004_step3",
+      "name": "sun-dried tomatoes are rehydrated and chopped into pieces",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sundried_tomatoes",
+          "name": "sun-dried tomatoes",
+          "quantityG": 55
+        }
+      ],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 55.46309999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.65,
+        "costPerG": 0.029749509133099306,
+        "nutrition": {
+          "calories": 141.9,
+          "protein": 7.755000000000001,
+          "fat": 1.6335000000000002,
+          "carbs": 30.69,
+          "fiber": 6.765000000000001,
+          "sugar": 20.680000000000003,
+          "sodium": 58.85,
+          "method": "raw"
+        },
+        "prepTimeMin": 34
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716004_step4",
+      "name": "quinoa is fully cooked, fluffy and ready to use",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 24
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716004_step5",
+      "name": "cashews are golden brown and toasted",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cashews",
+          "name": "cashews",
+          "quantityG": 43
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 39.56,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.8275,
+        "costPerG": 0.04619565217391304,
+        "nutrition": {
+          "calories": 237.79,
+          "protein": 7.834599999999999,
+          "fat": 18.8555,
+          "carbs": 12.9817,
+          "fiber": 1.4189999999999998,
+          "sugar": 2.5413,
+          "sodium": 5.16,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_716004_step6",
+      "name": "all main salad components are combined in mixing bowl",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cherry",
+          "name": "dried cherries",
+          "quantityG": 40.404
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 40.404,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.48484800000000006,
+        "costPerG": 0.012,
+        "nutrition": {
+          "calories": 25.454520000000002,
+          "protein": 0.4282824,
+          "fat": 0.080808,
+          "carbs": 6.46464,
+          "fiber": 0.848484,
+          "sugar": 5.171712,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716004_step7",
+      "name": "completed salad with dressing evenly distributed, ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        },
+        {
+          "ingredientId": "red_wine_vinegar",
+          "name": "red wine vinegar",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "honey",
+          "name": "honey",
+          "quantityG": 22.5
+        },
+        {
+          "ingredientId": "juice_orange",
+          "name": "juice of orange",
+          "quantityG": 180
+        },
+        {
+          "ingredientId": "thyme",
+          "name": "dried thyme",
+          "quantityG": 0.2
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "ground cumin",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "turmeric",
+          "name": "turmeric",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "salt",
+          "name": "sea-salt",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 247.8,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 110.105016,
+        "costPerG": 0.44433016949152543,
+        "nutrition": {
+          "calories": 397.8365,
+          "protein": 1.6118400000000002,
+          "fat": 27.700934999999998,
+          "carbs": 38.48218500000001,
+          "fiber": 0.7648,
+          "sugar": 33.64983,
+          "sodium": 2331.701,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 120.587364,
+    "costPerServing": 20.097894,
+    "totalPrepTime": 1105,
+    "nutritionPerServing": {
+      "calories": 524.3635033333334,
+      "protein": 20.5896204,
+      "fat": 14.5047905,
+      "carbs": 81.45208749999999,
+      "fiber": 14.299547333333331,
+      "sugar": 15.690473666666668,
+      "sodium": 414.1185
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_716004_step1",
+        "name": "quinoa and chickpeas are clean and fully hydrated after overnight soaking",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_716004_step2",
+        "name": "chickpeas are fully cooked and tender",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_716004_step3",
+        "name": "sun-dried tomatoes are rehydrated and chopped into pieces",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_716004_step4",
+        "name": "quinoa is fully cooked, fluffy and ready to use",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716004_step6",
+        "name": "all main salad components are combined in mixing bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716004_step7",
+        "name": "completed salad with dressing evenly distributed, ready to serve",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_716004_step1",
+      "name": "quinoa and chickpeas are clean and fully hydrated after overnight soaking",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "marinate",
+        "rinse",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_716004_step2",
+      "name": "chickpeas are fully cooked and tender",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_716004_step3",
+      "name": "sun-dried tomatoes are rehydrated and chopped into pieces",
+      "shelfLifeHours": 48,
+      "processes": [
+        "marinate",
+        "drain",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_716004_step4",
+      "name": "quinoa is fully cooked, fluffy and ready to use",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "simmer",
+        "rest_meat",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_716004_step7",
+      "name": "completed salad with dressing evenly distributed, ready to serve",
+      "shelfLifeHours": 12,
+      "processes": [
+        "whisk",
+        "toss"
+      ]
+    }
+  ]
+}

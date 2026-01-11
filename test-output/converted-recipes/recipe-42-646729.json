@@ -1,0 +1,703 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_51288601-3b1d-4510-b565-546d0e061fcf",
+  "name": "Herbed Vegetables In A Feta Quiche With A Wild Rice Crust",
+  "source": "spoonacular",
+  "spoonacularId": 646729,
+  "image": "/images/recipes/646729.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "brown rice",
+      "quantity": 390,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggs",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "milk",
+      "quantity": 122,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "four seasons blend",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "herbs",
+      "quantity": 15,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta",
+      "quantity": 150,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cheese",
+      "quantity": 33,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Mix the rice, cheese and egg in a bowl.\nPress the rice mixture into a pie plate, about 1/4 inch thick.\nBake in a preheated 450F oven until the edges and bottom just start turning golden brown, about 5-7 minutes.\nMix the eggs, milk, vegetables, dill, mint, green onions, feta, salt and pepper in a large bowl.\nPour the egg mixture into the pie crust.\nBake in a preheated 375F oven until golden brown and set in the center, about 30-35 minutes.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 328.75,
+    "protein": 15.53,
+    "fat": 13.47,
+    "carbs": 43.99,
+    "fiber": 17.42,
+    "sugar": 2.79,
+    "saturatedFat": 6.59,
+    "sodium": 589.99
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "French",
+      "European"
+    ],
+    "diets": [
+      "gluten free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "brown_rice",
+      "displayName": "brown rice",
+      "quantity": {
+        "originalQuantity": 390,
+        "originalUnit": "g",
+        "normalizedQuantityG": 390,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "390 g brown rice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  egg",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "milk",
+      "displayName": "milk",
+      "quantity": {
+        "originalQuantity": 122,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 124,
+        "normalizedQuantityMl": 122
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "122 ml milk",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 150,
+        "originalUnit": "g",
+        "normalizedQuantityG": 150,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "150 g feta",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 7,
+    "unmatched": 3,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "226.796 g four seasons blend",
+        "identityText": "four seasons blend",
+        "state": "fresh"
+      },
+      {
+        "rawText": "15 g herbs",
+        "identityText": "herbs",
+        "state": "fresh"
+      },
+      {
+        "rawText": "33 g graviera",
+        "identityText": "graviera",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:33:25.800Z",
+  "processGraph": {
+    "recipeName": "Herbed Vegetables In A Feta Quiche With A Wild Rice Crust",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Mix the rice, cheese and egg in a bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "brown rice",
+              "cheese",
+              "egg"
+            ],
+            "durationMinutes": null,
+            "notes": "combining ingredients for crust"
+          }
+        ],
+        "outputDescription": "rice mixture ready for pressing into pie plate"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Press the rice mixture into a pie plate, about 1/4 inch thick.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "rice mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "forming crust by pressing to 1/4 inch thickness"
+          }
+        ],
+        "outputDescription": "rice crust formed in pie plate"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Bake in a preheated 450F oven until the edges and bottom just start turning golden brown, about 5-7 minutes.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "rice crust"
+            ],
+            "durationMinutes": 6,
+            "notes": "pre-baking crust at 450F until golden"
+          }
+        ],
+        "outputDescription": "partially baked golden rice crust"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Mix the eggs, milk, vegetables, dill, mint, green onions, feta, salt and pepper in a large bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "eggs",
+              "milk",
+              "four seasons blend",
+              "herbs",
+              "green onions",
+              "feta",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all filling ingredients"
+          }
+        ],
+        "outputDescription": "quiche filling mixture ready to pour"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Pour the egg mixture into the pie crust.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "egg mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "filling the pre-baked crust"
+          }
+        ],
+        "outputDescription": "assembled quiche ready for final baking"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Bake in a preheated 375F oven until golden brown and set in the center, about 30-35 minutes.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "assembled quiche"
+            ],
+            "durationMinutes": 32,
+            "notes": "final baking at 375F until set and golden"
+          }
+        ],
+        "outputDescription": "fully cooked quiche, golden brown and set"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 5,
+      "uniqueProcesses": [
+        "mix",
+        "spread",
+        "bake"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_646729_step1",
+      "name": "rice mixture ready for pressing into pie plate",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "brown_rice",
+          "name": "brown rice",
+          "quantityG": 390
+        },
+        {
+          "ingredientId": "cheese",
+          "name": "cheese",
+          "quantityG": 33
+        },
+        {
+          "ingredientId": "eggs",
+          "name": "egg",
+          "quantityG": 50
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 473,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.9954999999999998,
+        "costPerG": 0.0042188160676532764,
+        "nutrition": {
+          "calories": 1617.94,
+          "protein": 43.239,
+          "fat": 26.427,
+          "carbs": 298.2282,
+          "fiber": 13.26,
+          "sugar": 0.2939,
+          "sodium": 302.42,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646729_step2",
+      "name": "rice crust formed in pie plate",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_646729_step3",
+      "name": "partially baked golden rice crust",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 6,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646729_step4",
+      "name": "quiche filling mixture ready to pour",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggs",
+          "name": "eggs",
+          "quantityG": 200
+        },
+        {
+          "ingredientId": "milk",
+          "name": "milk",
+          "quantityG": 122
+        },
+        {
+          "ingredientId": "spice_blend",
+          "name": "four seasons blend",
+          "quantityG": 226.796
+        },
+        {
+          "ingredientId": "herbs",
+          "name": "herbs",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 300
+        },
+        {
+          "ingredientId": "feta",
+          "name": "feta",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1019.796,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 78.56316172,
+        "costPerG": 0.07703811519166577,
+        "nutrition": {
+          "calories": 1457.1594,
+          "protein": 76.87574,
+          "fat": 65.5468688,
+          "carbs": 191.6827032,
+          "fiber": 104.4283,
+          "sugar": 22.9191564,
+          "sodium": 4471.139,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646729_step5",
+      "name": "assembled quiche ready for final baking",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_646729_step6",
+      "name": "fully cooked quiche, golden brown and set",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 32,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 32
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 80.55866171999999,
+    "costPerServing": 13.426443619999999,
+    "totalPrepTime": 44,
+    "nutritionPerServing": {
+      "calories": 512.5165666666666,
+      "protein": 20.019123333333333,
+      "fat": 15.328978133333331,
+      "carbs": 81.6518172,
+      "fiber": 19.614716666666666,
+      "sugar": 3.868842733333333,
+      "sodium": 795.5931666666665
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_646729_step1",
+        "name": "rice mixture ready for pressing into pie plate",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_646729_step3",
+        "name": "partially baked golden rice crust",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_646729_step4",
+        "name": "quiche filling mixture ready to pour",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_646729_step6",
+        "name": "fully cooked quiche, golden brown and set",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": []
+}

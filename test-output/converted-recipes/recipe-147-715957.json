@@ -1,0 +1,784 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_3be3ebce-f87e-445f-924f-804583b904ad",
+  "name": "Zesty Green Pea and Jalapeño Pesto Pasta",
+  "source": "spoonacular",
+  "spoonacularId": 715957,
+  "image": "/images/recipes/715957.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "fresh basil leaves",
+      "quantity": 24,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "fresh mint leaves",
+      "quantity": 33.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "jalapeno",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "peas",
+      "quantity": 181.25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rotini pasta",
+      "quantity": 180,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 1,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red onion",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sun-dried tomatoes",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Soak the sun-dried tomatoes in hot water for 20 to 30 minutes. Drain and chop.Cook the pasta in a large saucepan of boiling salted water according to package directions. Two minutes before the pasta is finished cooking, toss in the remaining peas.In a small food processor, process the sun-dried tomatoes, 1/4 cup of the peas, basil, mint, shallot or onion, garlic, jalapeo, lemon juice and zest, salt and pepper with 3 tablespoons of olive oil in a small food processor. Process until smooth. Add another tablespoon of olive oil if the pesto is too thick to process.Drain the pasta and peas and toss with the pesto. Serve hot or warm, or cold as a salad.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 324.82,
+    "protein": 9.57,
+    "fat": 11.6,
+    "carbs": 46.47,
+    "fiber": 5.66,
+    "sugar": 6.05,
+    "saturatedFat": 1.66,
+    "sodium": 21.4
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "dairy free"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 83.3,
+    "hasUnknownIngredients": true,
+    "unknownCount": 2,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "rotini pasta",
+        "identity": "rotini pasta",
+        "issue": "no_match_found"
+      },
+      {
+        "raw": "ground",
+        "identity": "",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 24,
+        "originalUnit": "g",
+        "normalizedQuantityG": 24,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "24 g fresh basil leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 33.75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 33.75,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "33.75 g fresh mint leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "jalapeno",
+      "displayName": "jalapeno",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  jalapeno",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "peas",
+      "displayName": "peas",
+      "quantity": {
+        "originalQuantity": 181.25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 181.25,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "181.25 g peas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 pinch sea salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sundried_tomatoes",
+      "displayName": "sun-dried tomatoes",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "dried",
+      "preparation": [],
+      "rawText": "4  sun-dried tomatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 9,
+    "unmatched": 3,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "180 g rotini pasta",
+        "identityText": "rotini pasta",
+        "state": "other"
+      },
+      {
+        "rawText": "1 small red onion",
+        "identityText": "red onion",
+        "state": "fresh"
+      },
+      {
+        "rawText": "0.25 tsps ground",
+        "identityText": "",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-11T00:01:02.511Z",
+  "processGraph": {
+    "recipeName": "Zesty Green Pea and Jalapeño Pesto Pasta",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Soak the sun-dried tomatoes in hot water for 20 to 30 minutes. Drain and chop.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "sun-dried tomatoes"
+            ],
+            "durationMinutes": 25,
+            "notes": "soaking in hot water to rehydrate"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "sun-dried tomatoes"
+            ],
+            "durationMinutes": 0,
+            "notes": "remove soaking water"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "sun-dried tomatoes"
+            ],
+            "durationMinutes": 0,
+            "notes": "cut into pieces"
+          }
+        ],
+        "outputDescription": "sun-dried tomatoes are rehydrated, drained, and chopped"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Cook the pasta in a large saucepan of boiling salted water according to package directions. Two minutes before the pasta is finished cooking, toss in the remaining peas.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "rotini pasta"
+            ],
+            "durationMinutes": 8,
+            "notes": "cook according to package directions"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "peas"
+            ],
+            "durationMinutes": 2,
+            "notes": "add peas to pasta water for final 2 minutes"
+          }
+        ],
+        "outputDescription": "pasta is cooked al dente and peas are tender"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "In a small food processor, process the sun-dried tomatoes, 1/4 cup of the peas, basil, mint, shallot or onion, garlic, jalapeo, lemon juice and zest, salt and pepper with 3 tablespoons of olive oil in a small food processor. Process until smooth. Add another tablespoon of olive oil if the pesto is too thick to process.",
+        "processes": [
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": 0,
+            "notes": "extract lemon zest"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": 0,
+            "notes": "extract lemon juice"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "sun-dried tomatoes",
+              "peas",
+              "basil",
+              "mint",
+              "red onion",
+              "garlic",
+              "jalapeno",
+              "olive oil"
+            ],
+            "durationMinutes": 2,
+            "notes": "process until smooth pesto consistency"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "sea salt",
+              "ground"
+            ],
+            "durationMinutes": 0,
+            "notes": "add salt and pepper to taste"
+          }
+        ],
+        "outputDescription": "smooth pesto is formed from all ingredients"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Drain the pasta and peas and toss with the pesto. Serve hot or warm, or cold as a salad.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "rotini pasta",
+              "peas"
+            ],
+            "durationMinutes": 0,
+            "notes": "remove cooking water"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "rotini pasta",
+              "peas",
+              "pesto"
+            ],
+            "durationMinutes": 0,
+            "notes": "combine pasta and peas with pesto"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "pasta mixture"
+            ],
+            "durationMinutes": 0,
+            "notes": "serve hot, warm, or cold"
+          }
+        ],
+        "outputDescription": "finished pasta dish ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 10,
+      "uniqueProcesses": [
+        "marinate",
+        "drain",
+        "chop",
+        "boil",
+        "toss",
+        "zest",
+        "squeeze",
+        "blend",
+        "season",
+        "plate"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_715957_step1",
+      "name": "sun-dried tomatoes are rehydrated, drained, and chopped",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sundried_tomatoes",
+          "name": "sun-dried tomatoes",
+          "quantityG": 480
+        }
+      ],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 484.04159999999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 14.399999999999999,
+        "costPerG": 0.029749509133099303,
+        "nutrition": {
+          "calories": 1238.3999999999999,
+          "protein": 67.67999999999999,
+          "fat": 14.256,
+          "carbs": 267.84,
+          "fiber": 59.04,
+          "sugar": 180.48,
+          "sodium": 513.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 28
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715957_step2",
+      "name": "pasta is cooked al dente and peas are tender",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pasta",
+          "name": "rotini pasta",
+          "quantityG": 180
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 2.5,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 450,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.08,
+        "costPerG": 0.0024000000000000002,
+        "nutrition": {
+          "calories": 667.8000000000001,
+          "protein": 23.471999999999998,
+          "fat": 2.718,
+          "carbs": 134.406,
+          "fiber": 5.760000000000001,
+          "sugar": 4.806,
+          "sodium": 10.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715957_step3",
+      "name": "smooth pesto is formed from all ingredients",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "peas",
+          "name": "peas",
+          "quantityG": 181.25
+        },
+        {
+          "ingredientId": "onion",
+          "name": "red onion",
+          "quantityG": 105
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "jalapeno",
+          "name": "jalapeno",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 6.153162749999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.2889125,
+        "costPerG": 0.5345076399937577,
+        "nutrition": {
+          "calories": 566.0825,
+          "protein": 11.75125,
+          "fat": 41.4355,
+          "carbs": 40.19200000000001,
+          "fiber": 12.746250000000002,
+          "sugar": 15.446875000000002,
+          "sodium": 16.222499999999997,
+          "method": "raw"
+        },
+        "prepTimeMin": 5.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715957_step4",
+      "name": "finished pasta dish ready to serve",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 69.5505925,
+    "costPerServing": 17.387648125,
+    "totalPrepTime": 47.5,
+    "nutritionPerServing": {
+      "calories": 629.756875,
+      "protein": 26.301218749999997,
+      "fat": 14.768087499999998,
+      "carbs": 113.40484375,
+      "fiber": 20.2175625,
+      "sugar": 50.70521875,
+      "sodium": 380.44875
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_715957_step1",
+        "name": "sun-dried tomatoes are rehydrated, drained, and chopped",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_715957_step2",
+        "name": "pasta is cooked al dente and peas are tender",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_715957_step3",
+        "name": "smooth pesto is formed from all ingredients",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_715957_step1",
+      "name": "sun-dried tomatoes are rehydrated, drained, and chopped",
+      "shelfLifeHours": 48,
+      "processes": [
+        "marinate",
+        "drain",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_715957_step2",
+      "name": "pasta is cooked al dente and peas are tender",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "toss"
+      ]
+    },
+    {
+      "componentId": "comp_715957_step3",
+      "name": "smooth pesto is formed from all ingredients",
+      "shelfLifeHours": 48,
+      "processes": [
+        "zest",
+        "squeeze",
+        "blend",
+        "season"
+      ]
+    }
+  ]
+}

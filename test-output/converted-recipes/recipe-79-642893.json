@@ -1,0 +1,676 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_1368bb2e-3105-4ea5-835e-58e17e2e22fe",
+  "name": "Fire-Roasted Jalapeño Hummus with Turnip and Beet Chips",
+  "source": "spoonacular",
+  "spoonacularId": 642893,
+  "image": "/images/recipes/642893.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "chickpeas",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic powder",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "golden beet",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "jalapeño",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 54,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tahini",
+      "quantity": 60,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "turmeric",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "turnip",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Start by making the chips. Preheat oven to 415 degrees (and if you have a convection option on your oven, I recommend using it!). Slice turnip and beet thinly (peel on or off...I leave the peels on), place all slices in a plastic bag (I just use the plastic produce bags from the produce section of the store), drizzle in olive oil, add your salt and garlic powder, and shake it like Shake N Bake! Lay roots flat on a lightly-oiled cookie sheet (or two) and bake in the oven to desired crip level, between 11 and 15 minutes. The thicker slices will likely need to be turned over if they're not getting crispy within 10 minutes or so.</li><li>While the chips are baking, make the hummus. Wrap the cloves of garlic in foil. Using tongs, roast the jalapeo and wrapped garlic over a flame (I used my gas stove) until the flesh is blackened, soft and hot.  When cool enough to handle, remove the stem and seeds from the jalapeo.  Place all ingredients (including jalapeo flesh) in a blender or food processor, and blend until ingredients are combined and there are no more chunks. You may need to use a rubber spatula to stir around the ingredients in order to blend them well.  Spoon hummus into a serving bowl. Drizzle olive oil on top and sprinkle paprika and turmeric.  Serve with beet and turnip chips.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 484.82,
+    "protein": 10.15,
+    "fat": 37.74,
+    "carbs": 30.9,
+    "fiber": 8.61,
+    "sugar": 6.69,
+    "saturatedFat": 5.16,
+    "sodium": 581.62
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "condiment",
+      "starter",
+      "snack",
+      "appetizer",
+      "dip",
+      "antipasto",
+      "hor d'oeuvre",
+      "spread"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "chickpeas",
+      "displayName": "chickpeas",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g chickpeas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic_powder",
+      "displayName": "garlic powder",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps garlic powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "jalapeno",
+      "displayName": "jalapeno",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  jalapeño",
+      "matchConfidence": 0.925
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 54,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 49,
+        "normalizedQuantityMl": 54
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "54 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tahini",
+      "displayName": "tahini",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 60
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 ml tahini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "turmeric",
+      "displayName": "turmeric",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings turmeric",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Turnip",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large turnip",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 10,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 large golden beet",
+        "identityText": "golden beet",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:39:13.403Z",
+  "processGraph": {
+    "recipeName": "Fire-Roasted Jalapeño Hummus with Turnip and Beet Chips",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Start by making the chips. Preheat oven to 415 degrees (and if you have a convection option on your oven, I recommend using it!). Slice turnip and beet thinly (peel on or off...I leave the peels on), place all slices in a plastic bag (I just use the plastic produce bags from the produce section of the store), drizzle in olive oil, add your salt and garlic powder, and shake it like Shake N Bake! Lay roots flat on a lightly-oiled cookie sheet (or two) and bake in the oven to desired crip level, between 11 and 15 minutes. The thicker slices will likely need to be turned over if they're not getting crispy within 10 minutes or so.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 415 degrees"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "turnip",
+              "beet"
+            ],
+            "durationMinutes": null,
+            "notes": "slice thinly"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "turnip",
+              "beet"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle with olive oil, add salt and garlic powder"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "turnip",
+              "beet"
+            ],
+            "durationMinutes": null,
+            "notes": "shake in plastic bag to coat evenly"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "turnip",
+              "beet"
+            ],
+            "durationMinutes": 13,
+            "notes": "bake 11-15 minutes until crispy, turn over if needed after 10 minutes"
+          }
+        ],
+        "outputDescription": "Crispy turnip and beet chips"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "While the chips are baking, make the hummus. Wrap the cloves of garlic in foil. Using tongs, roast the jalapeo and wrapped garlic over a flame (I used my gas stove) until the flesh is blackened, soft and hot. When cool enough to handle, remove the stem and seeds from the jalapeo. Place all ingredients (including jalapeo flesh) in a blender or food processor, and blend until ingredients are combined and there are no more chunks. You may need to use a rubber spatula to stir around the ingredients in order to blend them well. Spoon hummus into a serving bowl. Drizzle olive oil on top and sprinkle paprika and turmeric. Serve with beet and turnip chips.",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "garlic",
+              "jalapeño"
+            ],
+            "durationMinutes": null,
+            "notes": "roast over flame until blackened, soft and hot"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "jalapeño",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "cool until safe to handle"
+          },
+          {
+            "processId": "trim",
+            "ingredients": [
+              "jalapeño"
+            ],
+            "durationMinutes": null,
+            "notes": "remove stem"
+          },
+          {
+            "processId": "deseed",
+            "ingredients": [
+              "jalapeño"
+            ],
+            "durationMinutes": null,
+            "notes": "remove seeds"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "chickpeas",
+              "garlic",
+              "jalapeño",
+              "lemon juice",
+              "olive oil",
+              "salt",
+              "tahini",
+              "turmeric"
+            ],
+            "durationMinutes": null,
+            "notes": "blend until combined with no chunks, stir as needed"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "hummus"
+            ],
+            "durationMinutes": null,
+            "notes": "spoon into serving bowl"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "olive oil",
+              "turmeric"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle olive oil and sprinkle paprika and turmeric on top"
+          }
+        ],
+        "outputDescription": "Smooth fire-roasted jalapeño hummus garnished with olive oil and spices, served with crispy vegetable chips"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 12,
+      "uniqueProcesses": [
+        "heat",
+        "slice",
+        "coat",
+        "toss",
+        "bake",
+        "roast",
+        "cool",
+        "trim",
+        "deseed",
+        "blend",
+        "plate",
+        "garnish"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642893_step1",
+      "name": "Crispy turnip and beet chips",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "turnip",
+          "name": "turnip",
+          "quantityG": 1.3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 13,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 1.2204282999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.005849999999999999,
+        "costPerG": 0.004793399169783264,
+        "nutrition": {
+          "calories": 0.36400000000000005,
+          "protein": 0.011700000000000002,
+          "fat": 0.0013000000000000002,
+          "carbs": 0.08359,
+          "fiber": 0.023400000000000004,
+          "sugar": 0.0494,
+          "sodium": 0.8710000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 21
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642893_step2",
+      "name": "Smooth fire-roasted jalapeño hummus garnished with olive oil and spices, served with crispy vegetable chips",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "jalapenos_pickled",
+          "name": "jalapeño",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "deseed",
+          "processName": "Deseed",
+          "yieldFactor": 0.88,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 6.894241199999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.46163,
+        "costPerG": 0.06695878293321099,
+        "nutrition": {
+          "calories": 15.17,
+          "protein": 0.6452000000000001,
+          "fat": 0.0594,
+          "carbs": 3.3574000000000006,
+          "fiber": 0.23600000000000002,
+          "sugar": 0.12140000000000001,
+          "sodium": 18.41,
+          "method": "raw"
+        },
+        "prepTimeMin": 63
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 15.42834125,
+    "costPerServing": 3.8570853125,
+    "totalPrepTime": 84,
+    "nutritionPerServing": {
+      "calories": 473.56888000000004,
+      "protein": 14.550551200000003,
+      "fat": 26.239583425,
+      "carbs": 49.903027650000006,
+      "fiber": 13.503904500000003,
+      "sugar": 5.997901000000001,
+      "sodium": 415.8201275
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642893_step1",
+        "name": "Crispy turnip and beet chips",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_642893_step2",
+        "name": "Smooth fire-roasted jalapeño hummus garnished with olive oil and spices, served with crispy vegetable chips",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_642893_step1",
+      "name": "Crispy turnip and beet chips",
+      "shelfLifeHours": 2,
+      "processes": [
+        "heat",
+        "slice",
+        "coat",
+        "toss",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_642893_step2",
+      "name": "Smooth fire-roasted jalapeño hummus garnished with olive oil and spices, served with crispy vegetable chips",
+      "shelfLifeHours": 24,
+      "processes": [
+        "roast",
+        "cool",
+        "trim",
+        "deseed",
+        "blend",
+        "plate",
+        "garnish"
+      ]
+    }
+  ]
+}

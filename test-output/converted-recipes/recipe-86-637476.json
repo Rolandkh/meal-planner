@@ -1,0 +1,424 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_d6e7e939-0b79-4f81-951f-58beb59688a1",
+  "name": "Chavrie Hummus",
+  "source": "spoonacular",
+  "spoonacularId": 637476,
+  "image": "/images/recipes/637476.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cilantro",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chavrie goat cheese",
+      "quantity": 150.252,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "hummus",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 28.35,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Combine all ingredients and mix well</li><li>Transfer mixture to a serving dish and refrigerate</li><li>Serve with your favorite chips</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 194.87,
+    "protein": 11.46,
+    "fat": 13.38,
+    "carbs": 8.6,
+    "fiber": 3.43,
+    "sugar": 0.51,
+    "saturatedFat": 6.29,
+    "sodium": 353.24
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "condiment",
+      "starter",
+      "snack",
+      "appetizer",
+      "dip",
+      "antipasto",
+      "hor d'oeuvre",
+      "spread"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cilantro",
+      "displayName": "cilantro",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp cilantro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "goat_cheese",
+      "displayName": "goat cheese",
+      "quantity": {
+        "originalQuantity": 150.252,
+        "originalUnit": "g",
+        "normalizedQuantityG": 150.252,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "150.252 g chavrie goat cheese",
+      "matchConfidence": 0.6
+    },
+    {
+      "displayName": "Hummus",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "226.796 g hummus",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 28.35,
+        "originalUnit": "g",
+        "normalizedQuantityG": 28.35,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "28.35 g lemon juice",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 4,
+    "matched": 4,
+    "unmatched": 0,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:41:11.261Z",
+  "processGraph": {
+    "recipeName": "Chavrie Hummus",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Combine all ingredients and mix well",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cilantro",
+              "chavrie goat cheese",
+              "hummus",
+              "lemon juice"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients uniformly"
+          }
+        ],
+        "outputDescription": "all ingredients combined into uniform mixture"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Transfer mixture to a serving dish and refrigerate",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "mixed hummus"
+            ],
+            "durationMinutes": null,
+            "notes": "transferring to serving dish"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "mixed hummus"
+            ],
+            "durationMinutes": null,
+            "notes": "refrigerating to chill"
+          }
+        ],
+        "outputDescription": "hummus mixture arranged in serving dish and chilled"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Serve with your favorite chips",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "chilled hummus"
+            ],
+            "durationMinutes": null,
+            "notes": "final presentation with chips"
+          }
+        ],
+        "outputDescription": "ready-to-eat hummus served with chips"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 4,
+      "uniqueProcesses": [
+        "mix",
+        "plate",
+        "cool",
+        "garnish"
+      ],
+      "estimatedTotalTime": 5
+    }
+  },
+  "components": [
+    {
+      "id": "comp_637476_step1",
+      "name": "all ingredients combined into uniform mixture",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cilantro",
+          "name": "cilantro",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "cheese",
+          "name": "chavrie goat cheese",
+          "quantityG": 150.252
+        },
+        {
+          "ingredientId": "hummus",
+          "name": "hummus",
+          "quantityG": 226.796
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 28.35
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 406.398,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 23.098188,
+        "costPerG": 0.05683637222624127,
+        "nutrition": {
+          "calories": 995.97652,
+          "protein": 53.046124999999996,
+          "fat": 72.931336,
+          "carbs": 38.0681472,
+          "fiber": 13.72081,
+          "sugar": 1.2189516,
+          "sodium": 1842.9484200000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_637476_step2",
+      "name": "hummus mixture arranged in serving dish and chilled",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 32
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_637476_step3",
+      "name": "ready-to-eat hummus served with chips",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 23.098188,
+    "costPerServing": 5.774547,
+    "totalPrepTime": 35,
+    "nutritionPerServing": {
+      "calories": 248.99413,
+      "protein": 13.261531249999999,
+      "fat": 18.232834,
+      "carbs": 9.5170368,
+      "fiber": 3.4302025,
+      "sugar": 0.3047379,
+      "sodium": 460.73710500000004
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_637476_step1",
+        "name": "all ingredients combined into uniform mixture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_637476_step2",
+        "name": "hummus mixture arranged in serving dish and chilled",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_637476_step2",
+      "name": "hummus mixture arranged in serving dish and chilled",
+      "shelfLifeHours": 96,
+      "processes": [
+        "plate",
+        "cool"
+      ]
+    }
+  ]
+}

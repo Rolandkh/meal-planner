@@ -1,0 +1,422 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_c39f107c-7c67-4751-85d8-a9ed70dddf67",
+  "name": "Slow Cooker Chicken Taco Soup",
+  "source": "spoonacular",
+  "spoonacularId": 715391,
+  "image": "/images/recipes/715391.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "black beans",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 566.99,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chili beans",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kernal corn",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken breasts",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Once you have all of your ingredients added, allow it to cook all day for 8 hours on low. If you are wanting to make this a little faster, turn it on high and cook for 4 hours.When your Chicken Taco Soup is ready to serve, add in some crushed tortilla shells, shredded cheddar cheese, and a little sour cream.",
+  "prepTime": 5,
+  "cookTime": 480,
+  "servings": 6,
+  "nutrition": {
+    "calories": 311.77,
+    "protein": 24.33,
+    "fat": 3.78,
+    "carbs": 49.24,
+    "fiber": 12.17,
+    "sugar": 13.08,
+    "saturatedFat": 0.67,
+    "sodium": 955.98
+  },
+  "tags": {
+    "cuisines": [
+      "Mexican"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": true,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 85.7,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "chili beans",
+        "identity": "chili beans",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "black_beans",
+      "displayName": "black beans",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g black beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 566.99,
+        "originalUnit": "g",
+        "normalizedQuantityG": 566.99,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "566.99 g tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "corn",
+      "displayName": "corn",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "425.243 g kernal corn",
+      "matchConfidence": 0.9590909090909091
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  chicken breasts",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 6,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "425.243 g chili beans",
+        "identityText": "chili beans",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:50:17.267Z",
+  "processGraph": {
+    "recipeName": "Slow Cooker Chicken Taco Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Once you have all of your ingredients added, allow it to cook all day for 8 hours on low. If you are wanting to make this a little faster, turn it on high and cook for 4 hours.When your Chicken Taco Soup is ready to serve, add in some crushed tortilla shells, shredded cheddar cheese, and a little sour cream.",
+        "processes": [
+          {
+            "processId": "stew",
+            "ingredients": [
+              "black beans",
+              "tomatoes",
+              "canned tomatoes",
+              "chili beans",
+              "kernal corn",
+              "onion",
+              "chicken breasts"
+            ],
+            "durationMinutes": 480,
+            "notes": "slow cooking on low heat for 8 hours, or 4 hours on high"
+          },
+          {
+            "processId": "crush",
+            "ingredients": [
+              "tortilla shells"
+            ],
+            "durationMinutes": 1,
+            "notes": "crushing tortilla shells for garnish"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "cheddar cheese"
+            ],
+            "durationMinutes": 2,
+            "notes": "shredding cheese for garnish"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "tortilla shells",
+              "cheddar cheese",
+              "sour cream"
+            ],
+            "durationMinutes": 2,
+            "notes": "adding final toppings when ready to serve"
+          }
+        ],
+        "outputDescription": "Fully cooked soup with tender chicken and vegetables, ready to serve with crushed tortilla shells, shredded cheese, and sour cream garnish"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 4,
+      "uniqueProcesses": [
+        "stew",
+        "crush",
+        "shred",
+        "garnish"
+      ],
+      "estimatedTotalTime": 485
+    }
+  },
+  "components": [
+    {
+      "id": "comp_715391_step1",
+      "name": "Fully cooked soup with tender chicken and vegetables, ready to serve with crushed tortilla shells, shredded cheese, and sour cream garnish",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "black_beans",
+          "name": "black beans",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 566.99
+        },
+        {
+          "ingredientId": "canned_tomatoes",
+          "name": "canned tomatoes",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "beans",
+          "name": "chili beans",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "corn",
+          "name": "kernal corn",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 195
+        },
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken breasts",
+          "quantityG": 600
+        }
+      ],
+      "processes": [
+        {
+          "processId": "stew",
+          "processName": "Stew",
+          "yieldFactor": 0.88,
+          "durationMinutes": 480,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "crush",
+          "processName": "Crush",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2640.1668979593596,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 33.3916942,
+        "costPerG": 0.01264756944941971,
+        "nutrition": {
+          "calories": 2097.2629,
+          "protein": 206.5932005,
+          "fat": 27.500055,
+          "carbs": 286.5696566000001,
+          "fiber": 73.054844,
+          "sugar": 78.7590971,
+          "sodium": 1327.4897,
+          "method": "raw"
+        },
+        "prepTimeMin": 485
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 33.3916942,
+    "costPerServing": 5.5652823666666675,
+    "totalPrepTime": 485,
+    "nutritionPerServing": {
+      "calories": 349.5438166666667,
+      "protein": 34.432200083333335,
+      "fat": 4.5833425,
+      "carbs": 47.76160943333335,
+      "fiber": 12.175807333333333,
+      "sugar": 13.126516183333335,
+      "sodium": 221.24828333333335
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_715391_step1",
+        "name": "Fully cooked soup with tender chicken and vegetables, ready to serve with crushed tortilla shells, shredded cheese, and sour cream garnish",
+        "shelfLifeHours": 2
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_715391_step1",
+      "name": "Fully cooked soup with tender chicken and vegetables, ready to serve with crushed tortilla shells, shredded cheese, and sour cream garnish",
+      "shelfLifeHours": 2,
+      "processes": [
+        "stew",
+        "crush",
+        "shred",
+        "garnish"
+      ]
+    }
+  ]
+}

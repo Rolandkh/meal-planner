@@ -1,0 +1,732 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_0eaafbe7-a825-4051-845f-98414befe4ae",
+  "name": "Jade Buddha Salmon Tartare",
+  "source": "spoonacular",
+  "spoonacularId": 648320,
+  "image": "/images/recipes/648320.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "salmon",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onion",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chives",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cilantro",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "thai basil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ginger",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lime zest",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lime juice",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rice vinegar",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "habanero sauce and chile",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil to coat",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Combine all ingredients except lime juice and vinegar.\nChill for 30 minutes.\nAdd lime juice and vinegar, adjust to perfect, and serve.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 382.32,
+    "protein": 34.26,
+    "fat": 24.91,
+    "carbs": 5.13,
+    "fiber": 1.24,
+    "sugar": 0.95,
+    "saturatedFat": 3.62,
+    "sodium": 271.27
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "primal",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 83.3,
+    "hasUnknownIngredients": true,
+    "unknownCount": 2,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "habanero sauce and chile",
+        "identity": "habanero sauce and chile",
+        "issue": "no_match_found"
+      },
+      {
+        "raw": "olive oil to coat",
+        "identity": "olive oil to coat",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 340.194,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340.194,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "340.194 g salmon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps green onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chives",
+      "displayName": "chives",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp chives",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cilantro",
+      "displayName": "cilantro",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp cilantro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp thai basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ginger",
+      "displayName": "ginger",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 tsps ginger",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_zest",
+      "displayName": "lime zest",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lime zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_juice",
+      "displayName": "lime juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp lime juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rice_vinegar",
+      "displayName": "rice vinegar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp rice vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 10,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "2 servings habanero sauce and chile",
+        "identityText": "habanero sauce and chile",
+        "state": "other"
+      },
+      {
+        "rawText": "2 servings olive oil to coat",
+        "identityText": "olive oil to coat",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:51:44.243Z",
+  "processGraph": {
+    "recipeName": "Jade Buddha Salmon Tartare",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Combine all ingredients except lime juice and vinegar.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "salmon"
+            ],
+            "durationMinutes": null,
+            "notes": "salmon needs to be diced for tartare preparation"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "green onion",
+              "chives",
+              "cilantro",
+              "thai basil",
+              "ginger"
+            ],
+            "durationMinutes": null,
+            "notes": "herbs and aromatics need to be finely chopped"
+          },
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lime zest"
+            ],
+            "durationMinutes": null,
+            "notes": "lime zest needs to be grated from lime"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "salmon",
+              "green onion",
+              "chives",
+              "cilantro",
+              "thai basil",
+              "ginger",
+              "lime zest",
+              "habanero sauce and chile",
+              "salt and pepper",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients except lime juice and vinegar"
+          }
+        ],
+        "outputDescription": "diced salmon mixed with minced herbs, ginger, lime zest, seasonings and oil"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Chill for 30 minutes.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "salmon",
+              "green onion",
+              "chives",
+              "cilantro",
+              "thai basil",
+              "ginger",
+              "lime zest",
+              "habanero sauce and chile",
+              "salt and pepper",
+              "olive oil"
+            ],
+            "durationMinutes": 30,
+            "notes": "chilling the mixture to allow flavors to meld"
+          }
+        ],
+        "outputDescription": "chilled salmon tartare mixture with melded flavors"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add lime juice and vinegar, adjust to perfect, and serve.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lime juice",
+              "rice vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "adding acidic components to finish the tartare"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "adjusting seasoning to taste"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "salmon",
+              "green onion",
+              "chives",
+              "cilantro",
+              "thai basil",
+              "ginger",
+              "lime zest",
+              "lime juice",
+              "rice vinegar",
+              "habanero sauce and chile",
+              "salt and pepper",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "final plating and serving"
+          }
+        ],
+        "outputDescription": "finished salmon tartare with balanced acidity, properly seasoned and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 7,
+      "uniqueProcesses": [
+        "dice",
+        "mince",
+        "zest",
+        "mix",
+        "cool",
+        "season",
+        "plate"
+      ],
+      "estimatedTotalTime": 40
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648320_step1",
+      "name": "diced salmon mixed with minced herbs, ginger, lime zest, seasonings and oil",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salmon",
+          "name": "salmon",
+          "quantityG": 340.194
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 16.169420820000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 37.42134,
+        "costPerG": 2.314327792972859,
+        "nutrition": {
+          "calories": 483.07548,
+          "protein": 67.49448960000001,
+          "fat": 21.5682996,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 149.68536,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648320_step2",
+      "name": "chilled salmon tartare mixture with melded flavors",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "green_onions",
+          "name": "green onion",
+          "quantityG": 2.6
+        },
+        {
+          "ingredientId": "chives",
+          "name": "chives",
+          "quantityG": 1.3
+        },
+        {
+          "ingredientId": "cilantro",
+          "name": "cilantro",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "basil",
+          "name": "thai basil",
+          "quantityG": 1.3
+        },
+        {
+          "ingredientId": "ginger",
+          "name": "ginger",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "lime_zest",
+          "name": "lime zest",
+          "quantityG": 50
+        },
+        {
+          "ingredientId": "scotch_bonnet",
+          "name": "habanero sauce and chile",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 122.2,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.239216,
+        "costPerG": 0.05105741407528641,
+        "nutrition": {
+          "calories": 43.951,
+          "protein": 1.69714,
+          "fat": 0.42195000000000005,
+          "carbs": 11.565339999999999,
+          "fiber": 2.5288999999999997,
+          "sugar": 4.19023,
+          "sodium": 783.0469999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648320_step3",
+      "name": "finished salmon tartare with balanced acidity, properly seasoned and ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lime_juice",
+          "name": "lime juice",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "rice_vinegar",
+          "name": "rice vinegar",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 20.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.15999999999999998,
+        "costPerG": 0.00784313725490196,
+        "nutrition": {
+          "calories": 4.65,
+          "protein": 0.063,
+          "fat": 0.0105,
+          "carbs": 1.265,
+          "fiber": 0.06,
+          "sugar": 0.2555,
+          "sodium": 0.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 4.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 44.24722266666668,
+    "costPerServing": 22.12361133333334,
+    "totalPrepTime": 43.5,
+    "nutritionPerServing": {
+      "calories": 442.63824,
+      "protein": 34.62731479999999,
+      "fat": 31.000374800000003,
+      "carbs": 6.41517,
+      "fiber": 1.2944499999999999,
+      "sugar": 2.2228649999999996,
+      "sodium": 466.96617999999995
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648320_step1",
+        "name": "diced salmon mixed with minced herbs, ginger, lime zest, seasonings and oil",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648320_step2",
+        "name": "chilled salmon tartare mixture with melded flavors",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_648320_step3",
+        "name": "finished salmon tartare with balanced acidity, properly seasoned and ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648320_step1",
+      "name": "diced salmon mixed with minced herbs, ginger, lime zest, seasonings and oil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "mince",
+        "zest",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_648320_step3",
+      "name": "finished salmon tartare with balanced acidity, properly seasoned and ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "season",
+        "plate"
+      ]
+    }
+  ]
+}

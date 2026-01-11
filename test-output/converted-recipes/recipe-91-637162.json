@@ -1,0 +1,624 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_a0dfb55c-44ef-48ce-90bd-a9f0fa599927",
+  "name": "Carrot and Cabbage Salad With Coriander+cumin Dry Rub",
+  "source": "spoonacular",
+  "spoonacularId": 637162,
+  "image": "/images/recipes/637162.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "carrots",
+      "quantity": 192,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin seed powder",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "coriander",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cabbage",
+      "quantity": 52.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground coriander",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lime",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cabbage",
+      "quantity": 66.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sunflower seeds",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Chop up the carrots and the cabbage into slivers of roughly the same size.</li><li>Add the ground coriander, cumin seed, lime juice, and olive oil and massage it into the veggies.</li><li>Add the fresh coriander and sunflower seeds on top.</li><li>Leave aside for a couple of hours for the spices to seep into the veggies for added flavor.</li></ol>",
+  "prepTime": 8,
+  "cookTime": 18,
+  "servings": 1,
+  "nutrition": {
+    "calories": 222.26,
+    "protein": 6.08,
+    "fat": 10.22,
+    "carbs": 32.14,
+    "fiber": 9.78,
+    "sugar": 14.2,
+    "saturatedFat": 1.12,
+    "sodium": 167.29
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "fodmap friendly",
+      "whole 30",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 192,
+        "originalUnit": "g",
+        "normalizedQuantityG": 192,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "192 g carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps cumin seed powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "coriander",
+      "displayName": "coriander",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 bunch coriander",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cabbage",
+      "displayName": "cabbage",
+      "quantity": {
+        "originalQuantity": 52.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 52.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "52.5 g cabbage",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "coriander",
+      "displayName": "coriander",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground coriander",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_juice",
+      "displayName": "lime juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lime",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cabbage",
+      "displayName": "cabbage",
+      "quantity": {
+        "originalQuantity": 66.75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 66.75,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "66.75 g cabbage",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sunflower_seeds",
+      "displayName": "sunflower seeds",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps sunflower seeds",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 9,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:42:26.013Z",
+  "processGraph": {
+    "recipeName": "Carrot and Cabbage Salad With Coriander+cumin Dry Rub",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Chop up the carrots and the cabbage into slivers of roughly the same size.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "carrots",
+              "cabbage"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into slivers of roughly the same size"
+          }
+        ],
+        "outputDescription": "carrots and cabbage chopped into uniform slivers"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add the ground coriander, cumin seed, lime juice, and olive oil and massage it into the veggies.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "ground coriander",
+              "cumin seed powder",
+              "lime juice",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "adding spices and seasonings to vegetables"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "carrots",
+              "cabbage",
+              "ground coriander",
+              "cumin seed powder",
+              "lime juice",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "massage seasonings into the vegetables"
+          }
+        ],
+        "outputDescription": "vegetables coated and mixed with spices, lime juice, and oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the fresh coriander and sunflower seeds on top.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "coriander",
+              "sunflower seeds"
+            ],
+            "durationMinutes": null,
+            "notes": "adding fresh herbs and seeds as topping"
+          }
+        ],
+        "outputDescription": "salad topped with fresh coriander and sunflower seeds"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Leave aside for a couple of hours for the spices to seep into the veggies for added flavor.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "carrots",
+              "cabbage",
+              "ground coriander",
+              "cumin seed powder",
+              "lime juice",
+              "olive oil"
+            ],
+            "durationMinutes": 120,
+            "notes": "allowing spices to penetrate vegetables for enhanced flavor"
+          }
+        ],
+        "outputDescription": "fully flavored salad with spices absorbed into vegetables"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 5,
+      "uniqueProcesses": [
+        "chop",
+        "season",
+        "mix",
+        "garnish",
+        "marinate"
+      ],
+      "estimatedTotalTime": 135
+    }
+  },
+  "components": [
+    {
+      "id": "comp_637162_step1",
+      "name": "carrots and cabbage chopped into uniform slivers",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 192
+        },
+        {
+          "ingredientId": "cabbage",
+          "name": "cabbage",
+          "quantityG": 66.75
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 253.575,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.886875,
+        "costPerG": 0.0034974859509021,
+        "nutrition": {
+          "calories": 95.4075,
+          "protein": 2.64,
+          "fat": 0.52755,
+          "carbs": 22.2651,
+          "fiber": 7.04475,
+          "sugar": 11.236799999999999,
+          "sodium": 144.495,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_637162_step2",
+      "name": "vegetables coated and mixed with spices, lime juice, and oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "coriander",
+          "name": "ground coriander",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "cumin seed powder",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 4.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 6.731999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.1438125,
+        "costPerG": 0.021362522281639932,
+        "nutrition": {
+          "calories": 46.8465,
+          "protein": 0.31689,
+          "fat": 4.92042,
+          "carbs": 1.0419150000000001,
+          "fiber": 0.5502,
+          "sugar": 0.023625,
+          "sodium": 2.2215,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_637162_step3",
+      "name": "salad topped with fresh coriander and sunflower seeds",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "coriander",
+          "name": "coriander",
+          "quantityG": 80
+        },
+        {
+          "ingredientId": "sunflower_seeds",
+          "name": "sunflower seeds",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 86.7,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.56,
+        "costPerG": 0.02952710495963091,
+        "nutrition": {
+          "calories": 267.6,
+          "protein": 10.935,
+          "fat": 16.789,
+          "carbs": 44.992000000000004,
+          "fiber": 33.95,
+          "sugar": 0.131,
+          "sodium": 28.45,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_637162_step4",
+      "name": "fully flavored salad with spices absorbed into vegetables",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 120,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 120
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 3.9156875,
+    "costPerServing": 3.9156875,
+    "totalPrepTime": 125.5,
+    "nutritionPerServing": {
+      "calories": 422.354,
+      "protein": 14.101890000000001,
+      "fat": 22.271970000000003,
+      "carbs": 72.50901499999999,
+      "fiber": 41.74495000000001,
+      "sugar": 12.236424999999999,
+      "sodium": 176.1665
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_637162_step1",
+        "name": "carrots and cabbage chopped into uniform slivers",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_637162_step2",
+        "name": "vegetables coated and mixed with spices, lime juice, and oil",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_637162_step4",
+        "name": "fully flavored salad with spices absorbed into vegetables",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_637162_step2",
+      "name": "vegetables coated and mixed with spices, lime juice, and oil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "season",
+        "mix"
+      ]
+    }
+  ]
+}

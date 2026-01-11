@@ -1,0 +1,863 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_89417554-c03c-46a0-8e3b-b39042459a64",
+  "name": "Winter Vegetable Minestrone Soup",
+  "source": "spoonacular",
+  "spoonacularId": 1095742,
+  "image": "/images/recipes/1095742.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "butternut squash",
+      "quantity": 420,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrot",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cannellini beans",
+      "quantity": 2,
+      "unit": "cans",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 793.787,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable stock",
+      "quantity": 1.88,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato puree",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "fusilli pasta",
+      "quantity": 120,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Dice the onion and mince the garlic. Dice all the other vegetables into 1 inch cubes.</li><li>Heat about 1 tbsp olive oil in the bottom of a large stock pot. Fry the onion for 2-3 minutes until slightly translucent, add the garlic and cook for a further one minute.</li><li>Add the rest of the cubed vegetables with the oregano, and stir so everything is coated.</li><li>Add the vegetable stock, cans of tomatoes and tomato puree, mix so everything is combined and then simmer for 20 minutes.</li><li>After 20 minutes, drain the beans and add those to the pan, along with the fusilli. Simmer for 6-8 minutes until the pasta is al dente. Serve straight away.</li></ol>",
+  "prepTime": 15,
+  "cookTime": 35,
+  "servings": 6,
+  "nutrition": {
+    "calories": 333.58,
+    "protein": 15.89,
+    "fat": 1.16,
+    "carbs": 68.53,
+    "fiber": 11.7,
+    "sugar": 10.68,
+    "saturatedFat": 0.26,
+    "sodium": 1466.1
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "butternut_squash",
+      "displayName": "butternut squash",
+      "quantity": {
+        "originalQuantity": 420,
+        "originalUnit": "g",
+        "normalizedQuantityG": 420,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "420 g butternut squash",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  zucchini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  carrot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cannellini_beans",
+      "displayName": "cannellini beans",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "2 cans cannellini beans",
+      "matchConfidence": 0.6
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 793.787,
+        "originalUnit": "g",
+        "normalizedQuantityG": 793.787,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "793.787 g tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 1.88,
+        "originalUnit": "l",
+        "normalizedQuantityG": 1880,
+        "normalizedQuantityMl": 1880
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.88 l vegetable stock",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Tomato purée",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 30
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "2 Tbsps tomato puree",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pasta",
+      "displayName": "pasta",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "g",
+        "normalizedQuantityG": 120,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "120 g fusilli pasta",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 11,
+    "unmatched": 0,
+    "lowConfidence": 1,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:23:27.257Z",
+  "processGraph": {
+    "recipeName": "Winter Vegetable Minestrone Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Dice the onion and mince the garlic. Dice all the other vegetables into 1 inch cubes.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "standard dice size"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "very fine pieces"
+          },
+          {
+            "processId": "cube",
+            "ingredients": [
+              "butternut squash",
+              "zucchini",
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "1 inch cubes - larger than standard dice"
+          }
+        ],
+        "outputDescription": "All vegetables are prepped: onion diced, garlic minced, and remaining vegetables cut into 1-inch cubes"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Heat about 1 tbsp olive oil in the bottom of a large stock pot. Fry the onion for 2-3 minutes until slightly translucent, add the garlic and cook for a further one minute.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in stock pot"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": 2.5,
+            "notes": "until slightly translucent"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": 1,
+            "notes": "added after onion"
+          }
+        ],
+        "outputDescription": "Onion is translucent and garlic is fragrant, both sautéed in heated oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the rest of the cubed vegetables with the oregano, and stir so everything is coated.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "butternut squash",
+              "zucchini",
+              "carrot",
+              "oregano"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring to coat vegetables with oil and oregano"
+          }
+        ],
+        "outputDescription": "All vegetables are combined and coated with oil and oregano"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add the vegetable stock, cans of tomatoes and tomato puree, mix so everything is combined and then simmer for 20 minutes.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "vegetable stock",
+              "tomatoes",
+              "tomato puree"
+            ],
+            "durationMinutes": null,
+            "notes": "combining liquids with vegetables"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "onion",
+              "garlic",
+              "butternut squash",
+              "zucchini",
+              "carrot",
+              "oregano",
+              "vegetable stock",
+              "tomatoes",
+              "tomato puree"
+            ],
+            "durationMinutes": 20,
+            "notes": "gentle bubbling to cook vegetables"
+          }
+        ],
+        "outputDescription": "Soup base is simmering with all vegetables partially cooked and flavors melding"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "After 20 minutes, drain the beans and add those to the pan, along with the fusilli. Simmer for 6-8 minutes until the pasta is al dente. Serve straight away.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "cannellini beans"
+            ],
+            "durationMinutes": null,
+            "notes": "removing liquid from canned beans"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "cannellini beans",
+              "fusilli pasta"
+            ],
+            "durationMinutes": 7,
+            "notes": "cooking pasta until al dente"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "Winter Vegetable Minestrone Soup"
+            ],
+            "durationMinutes": null,
+            "notes": "serve immediately"
+          }
+        ],
+        "outputDescription": "Completed minestrone soup with tender vegetables, cooked beans, and al dente pasta, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "dice",
+        "mince",
+        "cube",
+        "heat",
+        "saute",
+        "mix",
+        "simmer",
+        "drain",
+        "plate"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1095742_step1",
+      "name": "All vegetables are prepped: onion diced, garlic minced, and remaining vegetables cut into 1-inch cubes",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cube",
+          "processName": "Cube",
+          "yieldFactor": 0.96,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 136.88639999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.5005,
+        "costPerG": 0.01826697173714847,
+        "nutrition": {
+          "calories": 60,
+          "protein": 1.6500000000000001,
+          "fat": 0.15000000000000002,
+          "carbs": 14.01,
+          "fiber": 2.55,
+          "sugar": 6.36,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095742_step2",
+      "name": "Onion is translucent and garlic is fragrant, both sautéed in heated oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2.5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 10.62075,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6749999999999999,
+        "costPerG": 0.06355483369818515,
+        "nutrition": {
+          "calories": 22.349999999999998,
+          "protein": 0.954,
+          "fat": 0.075,
+          "carbs": 4.965,
+          "fiber": 0.315,
+          "sugar": 0.15,
+          "sodium": 2.55,
+          "method": "raw"
+        },
+        "prepTimeMin": 6.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095742_step3",
+      "name": "All vegetables are combined and coated with oil and oregano",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "butternut_squash",
+          "name": "butternut squash",
+          "quantityG": 420
+        },
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 200
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrot",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "oregano",
+          "name": "oregano",
+          "quantityG": 0.8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 680.8,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.908336,
+        "costPerG": 0.0042719388954171565,
+        "nutrition": {
+          "calories": 249.72,
+          "protein": 7.25,
+          "fat": 1.23824,
+          "carbs": 61.61736,
+          "fiber": 12.42,
+          "sugar": 17.116720000000004,
+          "sodium": 74.39999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095742_step4",
+      "name": "Soup base is simmering with all vegetables partially cooked and flavors melding",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "vegetable stock",
+          "quantityG": 1880
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 793.787
+        },
+        {
+          "ingredientId": "tomato_puree",
+          "name": "tomato puree",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 2433.4083000000005,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 27.69747384,
+        "costPerG": 0.011382172831415096,
+        "nutrition": {
+          "calories": 280.28166000000004,
+          "protein": 20.3133256,
+          "fat": 5.6765740000000005,
+          "carbs": 44.82331430000001,
+          "fiber": 10.755444,
+          "sugar": 32.614598099999995,
+          "sodium": 7251.48935,
+          "method": "raw"
+        },
+        "prepTimeMin": 22
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095742_step5",
+      "name": "Completed minestrone soup with tender vegetables, cooked beans, and al dente pasta, ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cannellini_beans",
+          "name": "cannellini beans",
+          "quantityG": 800
+        }
+      ],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 7,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 705.6,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3,
+        "costPerG": 0.004251700680272108,
+        "nutrition": {
+          "calories": 576,
+          "protein": 44.64,
+          "fat": 0,
+          "carbs": 121.84,
+          "fiber": 38.32,
+          "sugar": 0,
+          "sodium": 1720,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 37.50130984,
+    "costPerServing": 6.250218306666667,
+    "totalPrepTime": 48.5,
+    "nutritionPerServing": {
+      "calories": 272.25861000000003,
+      "protein": 15.075887600000001,
+      "fat": 1.4919689999999999,
+      "carbs": 56.14327905,
+      "fiber": 11.366740666666667,
+      "sugar": 9.907553016666666,
+      "sodium": 1510.2732250000001
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1095742_step1",
+        "name": "All vegetables are prepped: onion diced, garlic minced, and remaining vegetables cut into 1-inch cubes",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095742_step2",
+        "name": "Onion is translucent and garlic is fragrant, both sautéed in heated oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_1095742_step3",
+        "name": "All vegetables are combined and coated with oil and oregano",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095742_step4",
+        "name": "Soup base is simmering with all vegetables partially cooked and flavors melding",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1095742_step5",
+        "name": "Completed minestrone soup with tender vegetables, cooked beans, and al dente pasta, ready to serve",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1095742_step1",
+      "name": "All vegetables are prepped: onion diced, garlic minced, and remaining vegetables cut into 1-inch cubes",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "mince",
+        "cube"
+      ]
+    },
+    {
+      "componentId": "comp_1095742_step2",
+      "name": "Onion is translucent and garlic is fragrant, both sautéed in heated oil",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_1095742_step4",
+      "name": "Soup base is simmering with all vegetables partially cooked and flavors melding",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_1095742_step5",
+      "name": "Completed minestrone soup with tender vegetables, cooked beans, and al dente pasta, ready to serve",
+      "shelfLifeHours": 96,
+      "processes": [
+        "drain",
+        "simmer",
+        "plate"
+      ]
+    }
+  ]
+}

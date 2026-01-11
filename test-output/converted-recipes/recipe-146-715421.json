@@ -1,0 +1,735 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_cf5ee2b7-e737-468f-871b-085ca53a4b70",
+  "name": "Cheesy Chicken Enchilada Quinoa Casserole",
+  "source": "spoonacular",
+  "spoonacularId": 715421,
+  "image": "/images/recipes/715421.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "avocado",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "black beans",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 283.495,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chili powder",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 185,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "verde enchilada sauce",
+      "quantity": 283.495,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cilantro",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onion tops",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "roma tomato",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cheese",
+      "quantity": 224,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken breast",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "corn",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "To get started, heat your oven to 350 and prepare an 8x8 baking dish. Cook the quinoa according to the instructions. If you haven't already, boil and shred your chicken breast.In a medium sized mixing bowl add 2 Tbsp cilantro, 1 cup shredded cheese, quinoa, tomatoes with chilis, black beans, half of the can of sweet corn, verde enchilada sauce, cumin, chili powder, white pepper, black pepper, and salt to taste. Mix everything well, and then pour into the 8 x8 baking dish. Cover with the last cup of cheese and then bake in the oven for 15 minutes.Remove from oven and allow to cool for 5 minutes. Then top with chopped Roma tomato, chopped avocado, green onion tops, and remaining 2 tsp of cilantro. Serve immediately.",
+  "prepTime": 15,
+  "cookTime": 15,
+  "servings": 4,
+  "nutrition": {
+    "calories": 594.1,
+    "protein": 34.23,
+    "fat": 23.79,
+    "carbs": 68.04,
+    "fiber": 17.73,
+    "sugar": 14.56,
+    "saturatedFat": 9.04,
+    "sodium": 1709.61
+  },
+  "tags": {
+    "cuisines": [
+      "Mexican"
+    ],
+    "diets": [
+      "gluten free"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": true,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "avocado",
+      "displayName": "avocado",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small avocado",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "black_beans",
+      "displayName": "black beans",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g black beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 283.495,
+        "originalUnit": "g",
+        "normalizedQuantityG": 283.495,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "283.495 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chili_powder",
+      "displayName": "chili powder",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps chili powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 185,
+        "originalUnit": "g",
+        "normalizedQuantityG": 185,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "185 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cilantro",
+      "displayName": "cilantro",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps cilantro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  roma tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cheese",
+      "displayName": "cheese",
+      "quantity": {
+        "originalQuantity": 224,
+        "originalUnit": "g",
+        "normalizedQuantityG": 224,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "224 g cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  chicken breast",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "corn",
+      "displayName": "corn",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "425.243 g corn",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 14,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "283.495 g verde enchilada sauce",
+        "identityText": "verde enchilada sauce",
+        "state": "other"
+      },
+      {
+        "rawText": "4 servings green onion tops",
+        "identityText": "green onion tops",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-11T00:00:45.469Z",
+  "processGraph": {
+    "recipeName": "Cheesy Chicken Enchilada Quinoa Casserole",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "To get started, heat your oven to 350 and prepare an 8x8 baking dish. Cook the quinoa according to the instructions. If you haven't already, boil and shred your chicken breast.In a medium sized mixing bowl add 2 Tbsp cilantro, 1 cup shredded cheese, quinoa, tomatoes with chilis, black beans, half of the can of sweet corn, verde enchilada sauce, cumin, chili powder, white pepper, black pepper, and salt to taste. Mix everything well, and then pour into the 8 x8 baking dish. Cover with the last cup of cheese and then bake in the oven for 15 minutes.Remove from oven and allow to cool for 5 minutes. Then top with chopped Roma tomato, chopped avocado, green onion tops, and remaining 2 tsp of cilantro. Serve immediately.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 350°F"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "cook according to package instructions"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "chicken breast"
+            ],
+            "durationMinutes": null,
+            "notes": "cook chicken breast"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "chicken breast"
+            ],
+            "durationMinutes": null,
+            "notes": "shred cooked chicken"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cilantro",
+              "cheese",
+              "quinoa",
+              "canned tomatoes",
+              "black beans",
+              "corn",
+              "verde enchilada sauce",
+              "cumin",
+              "chili powder",
+              "pepper",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all ingredients in mixing bowl"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "salt to taste"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "mixed casserole ingredients"
+            ],
+            "durationMinutes": null,
+            "notes": "pour mixture into baking dish"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "cover with remaining cheese"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "casserole"
+            ],
+            "durationMinutes": 15,
+            "notes": "bake in 350°F oven"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "casserole"
+            ],
+            "durationMinutes": 5,
+            "notes": "allow to cool after removing from oven"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "roma tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "chop for topping"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "chop for topping"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "roma tomato",
+              "avocado",
+              "green onion tops",
+              "cilantro"
+            ],
+            "durationMinutes": null,
+            "notes": "top casserole with fresh ingredients"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "casserole"
+            ],
+            "durationMinutes": null,
+            "notes": "serve immediately"
+          }
+        ],
+        "outputDescription": "Completed cheesy chicken enchilada quinoa casserole, baked and topped with fresh vegetables, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 14,
+      "uniqueProcesses": [
+        "heat",
+        "boil",
+        "shred",
+        "mix",
+        "season",
+        "spread",
+        "sprinkle",
+        "bake",
+        "cool",
+        "chop",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_715421_step1",
+      "name": "Completed cheesy chicken enchilada quinoa casserole, baked and topped with fresh vegetables, ready to serve",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 185
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 151.2450000828456,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.405,
+        "costPerG": 0.015901352102103493,
+        "nutrition": {
+          "calories": 680.8000000000001,
+          "protein": 26.122,
+          "fat": 11.229500000000002,
+          "carbs": 118.696,
+          "fiber": 12.950000000000001,
+          "sugar": 0,
+          "sodium": 9.25,
+          "method": "raw"
+        },
+        "prepTimeMin": 57
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 18.774702299999998,
+    "costPerServing": 4.693675574999999,
+    "totalPrepTime": 57,
+    "nutritionPerServing": {
+      "calories": 765.48761,
+      "protein": 46.201352650000004,
+      "fat": 25.733097050000005,
+      "carbs": 93.14116767499999,
+      "fiber": 18.52659825,
+      "sugar": 14.531389675,
+      "sodium": 1532.8582274999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_715421_step1",
+        "name": "Completed cheesy chicken enchilada quinoa casserole, baked and topped with fresh vegetables, ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_715421_step1",
+      "name": "Completed cheesy chicken enchilada quinoa casserole, baked and topped with fresh vegetables, ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "boil",
+        "boil",
+        "shred",
+        "mix",
+        "season",
+        "spread",
+        "sprinkle",
+        "bake",
+        "cool",
+        "chop",
+        "chop",
+        "garnish",
+        "plate"
+      ]
+    }
+  ]
+}

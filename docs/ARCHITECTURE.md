@@ -816,3 +816,137 @@ window.debug = {
 ---
 
 **Last Updated:** January 9, 2026
+
+---
+
+## Recipe Processing Engine (Added Jan 11, 2026)
+
+### Component-Based Recipe Architecture
+
+**Paradigm Shift:** Recipes are now **process graphs** instead of flat ingredient lists.
+
+#### Core Components
+
+**1. Process Master Database** (`src/data/processMaster.json`)
+- 74 standardized culinary processes
+- Yield factors (material throughput)
+- Time estimates (active/passive split)
+- Nutrition multiplier references
+- Equipment requirements
+- Prep-ahead characteristics
+- Ingredient-specific overrides
+
+**2. Process Parser** (`src/utils/processParser.js`)
+- AI-powered (Claude Sonnet 4)
+- Parses recipe instructions → process graphs
+- Handles 74 processes + aliases
+- Duration extraction
+- Ingredient linkage
+- 100% success rate on tested recipes
+
+**3. Component Generator** (`src/utils/componentGenerator.js`)
+- Creates intermediate components from process chains
+- Tracks material flow through recipe
+- Prevents ingredient double-counting
+- Identifies reusable components
+- Prep-ahead opportunity detection
+- Fresh ingredient preference system
+
+**4. Calculators** (`src/utils/*.js`)
+- **Yield Calculator:** Material throughput with yield factors
+- **Cost Calculator:** Cost tracking with pricePerKg priority
+- **Nutrition Calculator:** Cooking method multiplier application
+- **Unit Converter:** 50+ unit types handled
+
+#### Recipe Schema v3.0
+
+```javascript
+{
+  _schemaVersion: 3,
+  processGraph: {
+    processSteps: [
+      {
+        stepNumber: 1,
+        processes: [
+          { processId: "dice", ingredients: ["onion"], durationMinutes: 3 }
+        ]
+      }
+    ]
+  },
+  components: [
+    {
+      id: "comp_12345_step2",
+      name: "caramelized onions",
+      sourceIngredients: [...],
+      processes: [...],
+      calculated: { costAUD, nutrition, prepTimeMin },
+      prepAhead: { canStore, shelfLifeHours, storageLocation }
+    }
+  ],
+  calculated: {
+    totalCost,
+    costPerServing,
+    totalPrepTime,
+    nutritionPerServing
+  }
+}
+```
+
+#### Performance Metrics (50-recipe batch)
+
+- Conversion speed: 21 seconds/recipe
+- Cost accuracy: 78% within $1-10/serving
+- Nutrition accuracy: 70% within ±30%
+- Component generation: 6.3 avg components/recipe
+- Reusable components: 3.2 avg/recipe
+
+
+---
+
+## System Cost Analysis
+
+### API Costs (Per Operation)
+
+| Operation | Model | Input Tokens | Output Tokens | Cost |
+|-----------|-------|--------------|---------------|------|
+| Meal generation | Sonnet | 3,500 | 3,000 | $0.055 |
+| Recipe import | Sonnet | 2,300 | 1,500 | $0.030 |
+| Single-day regen | Sonnet | 2,000 | 1,000 | $0.020 |
+| Chat message | Haiku | 300 | 400 | $0.002 |
+| Ingredient add | Haiku | 300 | 200 | $0.005 |
+| Voice STT (1 min) | Deepgram | - | - | $0.004 |
+| Voice TTS (500 chars) | Google | - | - | $0.002 |
+| Image process | Sonnet | 1,500 | - | $0.005 |
+
+### Hosting Costs
+
+| Service | Tier | Monthly Cost |
+|---------|------|--------------|
+| Vercel | Free/Pro | $0-20 |
+| Firebase Firestore | Free tier | $0 (up to 50K reads/day) |
+| Firebase Auth | Free | $0 |
+| Spoonacular | Optional | $39-79 (can cancel after extraction) |
+| **Total Fixed** | | **~$0-30/month** |
+
+### Subscription Tier Profitability
+
+| Tier | Price | API Cost | App Store (15%) | Profit | Margin |
+|------|-------|----------|-----------------|--------|--------|
+| Free Trial | $0 | ~$0.94 | $0 | -$0.94 | - |
+| Pro | $15/mo | ~$2.81 | $2.25 | $9.94 | 66% |
+| Ultra | $30/mo | ~$5.90 | $4.50 | $19.60 | 65% |
+
+### Revenue Projections
+
+| Users | Mix (Free/Pro/Ultra) | Monthly Revenue | Costs | Profit |
+|-------|----------------------|-----------------|-------|--------|
+| 100 | 10/60/30 | $1,800 | ~$600 | $1,200 |
+| 500 | 50/300/150 | $9,000 | ~$3,000 | $6,000 |
+| 1000 | 100/600/300 | $18,000 | ~$6,000 | $12,000 |
+
+*API costs scale linearly; hosting costs are largely fixed until ~1000+ users*
+
+---
+
+**Last Updated:** January 11, 2026
+

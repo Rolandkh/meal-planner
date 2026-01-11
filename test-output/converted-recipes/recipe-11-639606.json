@@ -1,0 +1,1565 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_bc95958a-c451-4c7a-8488-a4b3d8758054",
+  "name": "Classic Greek Moussaka",
+  "source": "spoonacular",
+  "spoonacularId": 639606,
+  "image": "/images/recipes/639606.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bread crumbs",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "butter",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 480,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg plants",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg yolks",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 230,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flour",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 4,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground allspice",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cinnamon",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground nutmeg",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and ground pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "beef",
+      "quantity": 400,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "warm milk",
+      "quantity": 250,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato paste",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Sprinkle the egg plant slices with salt and let them stand for 45 minutes. Then wash thoroughly to remove excess salt.</li><li>Thinly brush each slice with olive oil and bake in the preheated grill pan for several minutes on each side. Set aside. Repeat until all slices are grilled.</li><li>For the meat sauce lightly saute the onions in olive oil until tender.</li><li>Add ground beef and saute, stirring frequently to break up the clumps of meat, until the meat is no longer pink.</li><li>Stir in tomatoes, garlic, cinnamon, allspice, salt and pepper and simmer briefly on low heat.</li><li>Add in tomato paste and a little water if the sauce is to thick. Remove from heat and set aside.</li><li>For the bchamel sauce add flour to the melted butter, stirring constantly. When the mixture is evenly thick, gradually whisk in warm milk.  Gently bring to the boil, then remove from heat, season with pepper and nutmeg. Whisk in (vigorously) the egg yolks. Set aside.</li><li>Thinly coat with olive oil a suitable ovenproof baking dish, sprinkle the bottom with homemade bread crumbs.</li><li>Place a layer of egg plant, cover with some meat sauce and feta cheese and repeat this until the pan is almost full. Finish with a layer of feta cheese.</li><li>Top with bchamel sauce.</li><li>Cover with tin foil and bake in a preheated oven at 180C for 1 hour.</li><li>Remove moussaka from the oven and let it set at room temperature 45 minutes before serving.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 847.48,
+    "protein": 42.49,
+    "fat": 52.44,
+    "carbs": 55.85,
+    "fiber": 12.07,
+    "sugar": 20.77,
+    "saturatedFat": 21.64,
+    "sodium": 1347.88
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "breadcrumbs",
+      "displayName": "breadcrumbs",
+      "quantity": {
+        "originalQuantity": 50,
+        "originalUnit": "g",
+        "normalizedQuantityG": 50,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "50 g bread crumbs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "butter",
+      "displayName": "butter",
+      "quantity": {
+        "originalQuantity": 50,
+        "originalUnit": "g",
+        "normalizedQuantityG": 50,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "50 g butter",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 480,
+        "originalUnit": "g",
+        "normalizedQuantityG": 480,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "480 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggplants",
+      "displayName": "eggplants",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  egg plants",
+      "matchConfidence": 0.9500000000000001
+    },
+    {
+      "masterIngredientId": "egg_yolks",
+      "displayName": "egg yolks",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  egg yolks",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 230,
+        "originalUnit": "g",
+        "normalizedQuantityG": 230,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "230 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "flour",
+      "displayName": "flour",
+      "quantity": {
+        "originalQuantity": 50,
+        "originalUnit": "g",
+        "normalizedQuantityG": 50,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "50 g flour",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "allspice",
+      "displayName": "allspice",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.25 tsps ground allspice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cinnamon",
+      "displayName": "cinnamon",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.25 tsps ground cinnamon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "nutmeg",
+      "displayName": "nutmeg",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground nutmeg",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "4 servings salt and ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ground_beef",
+      "displayName": "ground beef",
+      "quantity": {
+        "originalQuantity": 400,
+        "originalUnit": "g",
+        "normalizedQuantityG": 400,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "400 g beef",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings sea salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato_paste",
+      "displayName": "tomato paste",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 19,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps tomato paste",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 19,
+    "matched": 18,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "250 ml warm milk",
+        "identityText": "warm milk",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:22:53.682Z",
+  "processGraph": {
+    "recipeName": "Classic Greek Moussaka",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Sprinkle the egg plant slices with salt and let them stand for 45 minutes. Then wash thoroughly to remove excess salt.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "egg plants"
+            ],
+            "durationMinutes": null,
+            "notes": "implied slicing of eggplants"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle salt on eggplant slices"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "egg plants"
+            ],
+            "durationMinutes": null,
+            "notes": "wash thoroughly to remove excess salt"
+          }
+        ],
+        "outputDescription": "eggplant slices salted, rested for 45 minutes, then washed clean"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Thinly brush each slice with olive oil and bake in the preheated grill pan for several minutes on each side. Set aside. Repeat until all slices are grilled.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "brush olive oil on eggplant slices"
+          },
+          {
+            "processId": "grill",
+            "ingredients": [
+              "egg plants"
+            ],
+            "durationMinutes": null,
+            "notes": "grill in preheated grill pan, several minutes each side"
+          }
+        ],
+        "outputDescription": "grilled eggplant slices, cooked on both sides and set aside"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "For the meat sauce lightly saute the onions in olive oil until tender.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of onions"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onions"
+            ],
+            "durationMinutes": null,
+            "notes": "lightly sauté in olive oil until tender"
+          }
+        ],
+        "outputDescription": "tender sautéed onions"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add ground beef and saute, stirring frequently to break up the clumps of meat, until the meat is no longer pink.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "beef"
+            ],
+            "durationMinutes": null,
+            "notes": "sauté ground beef, stirring frequently until no longer pink"
+          }
+        ],
+        "outputDescription": "fully cooked ground beef with no pink color remaining"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Stir in tomatoes, garlic, cinnamon, allspice, salt and pepper and simmer briefly on low heat.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied mincing of garlic"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "canned tomatoes",
+              "garlic",
+              "ground cinnamon",
+              "ground allspice",
+              "salt and ground pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "stir ingredients into meat mixture"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "canned tomatoes",
+              "garlic",
+              "ground cinnamon",
+              "ground allspice",
+              "salt and ground pepper",
+              "beef"
+            ],
+            "durationMinutes": null,
+            "notes": "simmer briefly on low heat"
+          }
+        ],
+        "outputDescription": "seasoned meat sauce with tomatoes and spices, briefly simmered"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add in tomato paste and a little water if the sauce is to thick. Remove from heat and set aside.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tomato paste"
+            ],
+            "durationMinutes": null,
+            "notes": "add tomato paste and water if needed"
+          }
+        ],
+        "outputDescription": "completed meat sauce with proper consistency, removed from heat"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "For the bchamel sauce add flour to the melted butter, stirring constantly. When the mixture is evenly thick, gradually whisk in warm milk. Gently bring to the boil, then remove from heat, season with pepper and nutmeg. Whisk in (vigorously) the egg yolks. Set aside.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "butter"
+            ],
+            "durationMinutes": null,
+            "notes": "melt butter"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "flour",
+              "butter"
+            ],
+            "durationMinutes": null,
+            "notes": "add flour to melted butter, stirring constantly"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "warm milk"
+            ],
+            "durationMinutes": null,
+            "notes": "gradually whisk in warm milk"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "flour",
+              "butter",
+              "warm milk"
+            ],
+            "durationMinutes": null,
+            "notes": "gently bring to boil"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and ground pepper",
+              "ground nutmeg"
+            ],
+            "durationMinutes": null,
+            "notes": "season with pepper and nutmeg"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "egg yolks"
+            ],
+            "durationMinutes": null,
+            "notes": "vigorously whisk in egg yolks"
+          }
+        ],
+        "outputDescription": "completed béchamel sauce, thickened and seasoned"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Thinly coat with olive oil a suitable ovenproof baking dish, sprinkle the bottom with homemade bread crumbs.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "coat baking dish with olive oil"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "bread crumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle breadcrumbs on bottom of dish"
+          }
+        ],
+        "outputDescription": "prepared baking dish coated with oil and breadcrumbs"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Place a layer of egg plant, cover with some meat sauce and feta cheese and repeat this until the pan is almost full. Finish with a layer of feta cheese.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "egg plants",
+              "beef",
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "layer eggplant, meat sauce, and feta cheese repeatedly"
+          }
+        ],
+        "outputDescription": "layered moussaka with alternating eggplant, meat sauce, and feta, topped with feta"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Top with bchamel sauce.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "flour",
+              "butter",
+              "warm milk",
+              "egg yolks"
+            ],
+            "durationMinutes": null,
+            "notes": "top with béchamel sauce"
+          }
+        ],
+        "outputDescription": "assembled moussaka topped with béchamel sauce"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Cover with tin foil and bake in a preheated oven at 180C for 1 hour.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "egg plants",
+              "beef",
+              "feta cheese",
+              "flour",
+              "butter",
+              "warm milk",
+              "egg yolks"
+            ],
+            "durationMinutes": 60,
+            "notes": "covered with foil, baked at 180°C"
+          }
+        ],
+        "outputDescription": "fully baked moussaka"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "Remove moussaka from the oven and let it set at room temperature 45 minutes before serving.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "egg plants",
+              "beef",
+              "feta cheese",
+              "flour",
+              "butter",
+              "warm milk",
+              "egg yolks"
+            ],
+            "durationMinutes": 45,
+            "notes": "let set at room temperature before serving"
+          }
+        ],
+        "outputDescription": "rested moussaka ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 19,
+      "uniqueProcesses": [
+        "slice",
+        "sprinkle",
+        "rinse",
+        "spread",
+        "grill",
+        "chop",
+        "saute",
+        "mince",
+        "mix",
+        "simmer",
+        "heat",
+        "whisk",
+        "boil",
+        "season",
+        "coat",
+        "bake",
+        "cool"
+      ],
+      "estimatedTotalTime": 165
+    }
+  },
+  "components": [
+    {
+      "id": "comp_639606_step1",
+      "name": "eggplant slices salted, rested for 45 minutes, then washed clean",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggs",
+          "name": "egg plants",
+          "quantityG": 100
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 101.95920000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.667,
+        "costPerG": 0.006541832419242206,
+        "nutrition": {
+          "calories": 143,
+          "protein": 12.6,
+          "fat": 9.51,
+          "carbs": 0.72,
+          "fiber": 0,
+          "sugar": 0.37,
+          "sodium": 142,
+          "method": "raw"
+        },
+        "prepTimeMin": 3.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step2",
+      "name": "grilled eggplant slices, cooked on both sides and set aside",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "grill",
+          "processName": "Grill",
+          "yieldFactor": 0.78,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 68.64000000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8533333333333333,
+        "costPerG": 0.012432012432012429,
+        "nutrition": {
+          "calories": 707.2,
+          "protein": 0,
+          "fat": 80,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step3",
+      "name": "tender sautéed onions",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onions",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 249.89999999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.001,
+        "costPerG": 0.020012004801920773,
+        "nutrition": {
+          "calories": 120,
+          "protein": 3.3000000000000003,
+          "fat": 0.30000000000000004,
+          "carbs": 28.02,
+          "fiber": 5.1,
+          "sugar": 12.72,
+          "sodium": 12,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step4",
+      "name": "fully cooked ground beef with no pink color remaining",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ground_beef",
+          "name": "beef",
+          "quantityG": 400
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 340,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 7.2,
+        "costPerG": 0.021176470588235293,
+        "nutrition": {
+          "calories": 1016,
+          "protein": 68.68,
+          "fat": 80,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 268,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step5",
+      "name": "seasoned meat sauce with tomatoes and spices, briefly simmered",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 20
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 17.64,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8999999999999999,
+        "costPerG": 0.0510204081632653,
+        "nutrition": {
+          "calories": 29.8,
+          "protein": 1.2720000000000002,
+          "fat": 0.1,
+          "carbs": 6.620000000000001,
+          "fiber": 0.42000000000000004,
+          "sugar": 0.2,
+          "sodium": 3.4000000000000004,
+          "method": "raw"
+        },
+        "prepTimeMin": 24
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step6",
+      "name": "completed meat sauce with proper consistency, removed from heat",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato_paste",
+          "name": "tomato paste",
+          "quantityG": 18.8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 18.8,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.14100000000000001,
+        "costPerG": 0.007500000000000001,
+        "nutrition": {
+          "calories": 15.416,
+          "protein": 0.8121600000000001,
+          "fat": 0.08836,
+          "carbs": 3.5550800000000002,
+          "fiber": 0.7707999999999999,
+          "sugar": 2.28984,
+          "sodium": 148.52,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step7",
+      "name": "completed béchamel sauce, thickened and seasoned",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "butter",
+          "name": "butter",
+          "quantityG": 50
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 47.480999999999995,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.0625,
+        "costPerG": 0.022377372001432156,
+        "nutrition": {
+          "calories": 358.5,
+          "protein": 0.425,
+          "fat": 40.55,
+          "carbs": 0.03,
+          "fiber": 0,
+          "sugar": 0.03,
+          "sodium": 321.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 19.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step8",
+      "name": "prepared baking dish coated with oil and breadcrumbs",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "breadcrumbs",
+          "name": "bread crumbs",
+          "quantityG": 50
+        }
+      ],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 58.64999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.7000000000000001,
+        "costPerG": 0.01193520886615516,
+        "nutrition": {
+          "calories": 197.5,
+          "protein": 6.675,
+          "fat": 2.65,
+          "carbs": 35.99,
+          "fiber": 2.25,
+          "sugar": 3.1,
+          "sodium": 366,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step9",
+      "name": "layered moussaka with alternating eggplant, meat sauce, and feta, topped with feta",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 230
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 253.00000000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.875,
+        "costPerG": 0.011363636363636362,
+        "nutrition": {
+          "calories": 609.5,
+          "protein": 32.66,
+          "fat": 49.449999999999996,
+          "carbs": 8.924,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 2622,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_639606_step10",
+      "name": "assembled moussaka topped with béchamel sauce",
+      "stepNumber": 10,
+      "sourceIngredients": [
+        {
+          "ingredientId": "flour",
+          "name": "flour",
+          "quantityG": 50
+        },
+        {
+          "ingredientId": "milk",
+          "name": "warm milk",
+          "quantityG": 250
+        },
+        {
+          "ingredientId": "egg_yolks",
+          "name": "egg yolks",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 495.00000000000006,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 11.9625,
+        "costPerG": 0.024166666666666666,
+        "nutrition": {
+          "calories": 815,
+          "protein": 37.215,
+          "fat": 48.24,
+          "carbs": 55.214999999999996,
+          "fiber": 1.35,
+          "sugar": 12.999999999999998,
+          "sodium": 168,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_639606_step11",
+      "name": "fully baked moussaka",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 60
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639606_step12",
+      "name": "rested moussaka ready to serve",
+      "stepNumber": 12,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 45,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 45
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 32.893970833333334,
+    "costPerServing": 8.223492708333334,
+    "totalPrepTime": 181.5,
+    "nutritionPerServing": {
+      "calories": 1045.8063125,
+      "protein": 42.93855812500001,
+      "fat": 78.31381125,
+      "carbs": 44.15573187500001,
+      "fiber": 5.01989375,
+      "sugar": 13.388370625,
+      "sodium": 1947.1687499999998
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_639606_step1",
+        "name": "eggplant slices salted, rested for 45 minutes, then washed clean",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_639606_step2",
+        "name": "grilled eggplant slices, cooked on both sides and set aside",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_639606_step3",
+        "name": "tender sautéed onions",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_639606_step4",
+        "name": "fully cooked ground beef with no pink color remaining",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_639606_step5",
+        "name": "seasoned meat sauce with tomatoes and spices, briefly simmered",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_639606_step6",
+        "name": "completed meat sauce with proper consistency, removed from heat",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_639606_step7",
+        "name": "completed béchamel sauce, thickened and seasoned",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_639606_step8",
+        "name": "prepared baking dish coated with oil and breadcrumbs",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_639606_step11",
+        "name": "fully baked moussaka",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_639606_step12",
+        "name": "rested moussaka ready to serve",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_639606_step1",
+      "name": "eggplant slices salted, rested for 45 minutes, then washed clean",
+      "shelfLifeHours": 12,
+      "processes": [
+        "slice",
+        "sprinkle",
+        "rinse"
+      ]
+    },
+    {
+      "componentId": "comp_639606_step2",
+      "name": "grilled eggplant slices, cooked on both sides and set aside",
+      "shelfLifeHours": 72,
+      "processes": [
+        "spread",
+        "grill"
+      ]
+    },
+    {
+      "componentId": "comp_639606_step3",
+      "name": "tender sautéed onions",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_639606_step5",
+      "name": "seasoned meat sauce with tomatoes and spices, briefly simmered",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "mix",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_639606_step7",
+      "name": "completed béchamel sauce, thickened and seasoned",
+      "shelfLifeHours": 12,
+      "processes": [
+        "heat",
+        "mix",
+        "whisk",
+        "boil",
+        "season",
+        "whisk"
+      ]
+    },
+    {
+      "componentId": "comp_639606_step8",
+      "name": "prepared baking dish coated with oil and breadcrumbs",
+      "shelfLifeHours": 2,
+      "processes": [
+        "coat",
+        "sprinkle"
+      ]
+    }
+  ]
+}

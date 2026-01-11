@@ -1,0 +1,1032 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_402ce88f-1336-46a8-9111-8623f873f749",
+  "name": "Moroccan chickpea and lentil stew",
+  "source": "spoonacular",
+  "spoonacularId": 652417,
+  "image": "/images/recipes/652417.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "broccoli",
+      "quantity": 88,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chickpeas",
+      "quantity": 1,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 2,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery stalks",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 99,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "couscous",
+      "quantity": 173,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cilantro",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cinnamon",
+      "quantity": 0.125,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cumin",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground turmeric",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "paprika",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato paste",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 354.882,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Heat oil in large saucepan over medium-high heat, add onion and cook for about 3 minutes.</li><li>Add celery, carrot and broccoli to pan and saut for about 5 minutes.</li><li>Add in all seasonings and cook additional 1 minute.</li><li>Add water, tomato paste, chickpeas and lentils, bring to a boil. Cover, reduce heat to low and simmer for 20 minutes.</li><li>Meanwhile, cook couscous in separate pan according to package directions.</li><li>Add cilantro and lemon juice to stew and serve over warm couscous.</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 3,
+  "nutrition": {
+    "calories": 465.29,
+    "protein": 20.02,
+    "fat": 7.26,
+    "carbs": 82.4,
+    "fiber": 15.55,
+    "sugar": 5.03,
+    "saturatedFat": 0.93,
+    "sodium": 758.7
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "broccoli",
+      "displayName": "broccoli",
+      "quantity": {
+        "originalQuantity": 88,
+        "originalUnit": "g",
+        "normalizedQuantityG": 88,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "88 g broccoli",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chickpeas",
+      "displayName": "chickpeas",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "1 can chickpeas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 large carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery_stalks",
+      "displayName": "celery stalks",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  celery stalks",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 99,
+        "originalUnit": "g",
+        "normalizedQuantityG": 99,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "99 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Couscous",
+      "quantity": {
+        "originalQuantity": 173,
+        "originalUnit": "ml",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 173
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "173 ml couscous",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cilantro",
+      "displayName": "cilantro",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 servings cilantro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cinnamon",
+      "displayName": "cinnamon",
+      "quantity": {
+        "originalQuantity": 0.125,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 0.625
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.125 tsps ground cinnamon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "2 tsps ground cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "turmeric",
+      "displayName": "turmeric",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground turmeric",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "paprika",
+      "displayName": "paprika",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps paprika",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato_paste",
+      "displayName": "tomato paste",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 19,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps tomato paste",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 354.882,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 350,
+        "normalizedQuantityMl": 354.882
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "354.882 ml water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 16,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:48:50.647Z",
+  "processGraph": {
+    "recipeName": "Moroccan chickpea and lentil stew",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat oil in large saucepan over medium-high heat, add onion and cook for about 3 minutes.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in saucepan over medium-high heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": 3,
+            "notes": "cook onion in heated oil"
+          }
+        ],
+        "outputDescription": "oil is heated and onion is softened"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add celery, carrot and broccoli to pan and saut for about 5 minutes.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "celery stalks",
+              "carrots",
+              "broccoli"
+            ],
+            "durationMinutes": 5,
+            "notes": "sauté vegetables with onion"
+          }
+        ],
+        "outputDescription": "vegetables are softened and lightly cooked"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add in all seasonings and cook additional 1 minute.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "ground cinnamon",
+              "ground cumin",
+              "ground turmeric",
+              "paprika",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add all seasonings to vegetables"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "ground cinnamon",
+              "ground cumin",
+              "ground turmeric",
+              "paprika",
+              "salt and pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "cook seasonings to release flavors"
+          }
+        ],
+        "outputDescription": "seasonings are fragrant and well distributed"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add water, tomato paste, chickpeas and lentils, bring to a boil. Cover, reduce heat to low and simmer for 20 minutes.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "water",
+              "tomato paste",
+              "chickpeas",
+              "lentils"
+            ],
+            "durationMinutes": null,
+            "notes": "add liquid ingredients and legumes to pot"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "water",
+              "tomato paste",
+              "chickpeas",
+              "lentils"
+            ],
+            "durationMinutes": null,
+            "notes": "bring mixture to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "water",
+              "tomato paste",
+              "chickpeas",
+              "lentils"
+            ],
+            "durationMinutes": 20,
+            "notes": "cover and simmer on low heat"
+          }
+        ],
+        "outputDescription": "stew is fully cooked with tender lentils and integrated flavors"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Meanwhile, cook couscous in separate pan according to package directions.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "couscous"
+            ],
+            "durationMinutes": null,
+            "notes": "cook couscous separately according to package directions"
+          }
+        ],
+        "outputDescription": "couscous is cooked and fluffy"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add cilantro and lemon juice to stew and serve over warm couscous.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cilantro",
+              "lemon juice"
+            ],
+            "durationMinutes": null,
+            "notes": "stir cilantro and lemon juice into finished stew"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "couscous"
+            ],
+            "durationMinutes": null,
+            "notes": "serve stew over warm couscous"
+          }
+        ],
+        "outputDescription": "finished stew with fresh herbs and citrus served over couscous"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "heat",
+        "saute",
+        "season",
+        "mix",
+        "boil",
+        "simmer",
+        "plate"
+      ],
+      "estimatedTotalTime": 29
+    }
+  },
+  "components": [
+    {
+      "id": "comp_652417_step1",
+      "name": "oil is heated and onion is softened",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 9
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 7.497,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.096,
+        "costPerG": 0.012805122048819529,
+        "nutrition": {
+          "calories": 79.56,
+          "protein": 0,
+          "fat": 9,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.18,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652417_step2",
+      "name": "vegetables are softened and lightly cooked",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "celery",
+          "name": "celery stalks",
+          "quantityG": 80
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 156
+        },
+        {
+          "ingredientId": "broccoli",
+          "name": "broccoli",
+          "quantityG": 88
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 275.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.601,
+        "costPerG": 0.005813362381989834,
+        "nutrition": {
+          "calories": 105.08,
+          "protein": 4.4844,
+          "fat": 0.836,
+          "carbs": 23.164,
+          "fiber": 7.936,
+          "sugar": 9.9624,
+          "sodium": 200.67999999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652417_step3",
+      "name": "seasonings are fragrant and well distributed",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cinnamon",
+          "name": "ground cinnamon",
+          "quantityG": 0.2625
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "ground cumin",
+          "quantityG": 4.2
+        },
+        {
+          "ingredientId": "turmeric",
+          "name": "ground turmeric",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "paprika",
+          "name": "paprika",
+          "quantityG": 4.2
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 11.0217375,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.9361140000000002,
+        "costPerG": 0.08493343268246047,
+        "nutrition": {
+          "calories": 31.959375,
+          "protein": 1.43458875,
+          "fat": 1.5837150000000002,
+          "carbs": 5.018973750000001,
+          "fiber": 2.2677375,
+          "sugar": 0.56818125,
+          "sodium": 1173.07725,
+          "method": "raw"
+        },
+        "prepTimeMin": 1.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652417_step4",
+      "name": "stew is fully cooked with tender lentils and integrated flavors",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 354.882
+        },
+        {
+          "ingredientId": "tomato_paste",
+          "name": "tomato paste",
+          "quantityG": 18.8
+        },
+        {
+          "ingredientId": "chickpeas",
+          "name": "chickpeas",
+          "quantityG": 400
+        },
+        {
+          "ingredientId": "lentils",
+          "name": "lentils",
+          "quantityG": 99
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 746.14311,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.50306294,
+        "costPerG": 0.006035119643468933,
+        "nutrition": {
+          "calories": 1020.886,
+          "protein": 61.79416,
+          "fat": 11.49776,
+          "carbs": 172.71428,
+          "fiber": 61.3658,
+          "sugar": 23.49954,
+          "sodium": 200.2041,
+          "method": "raw"
+        },
+        "prepTimeMin": 32
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652417_step5",
+      "name": "couscous is cooked and fluffy",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "couscous",
+          "name": "couscous",
+          "quantityG": 173
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 164.35,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.557,
+        "costPerG": 0.009473684210526316,
+        "nutrition": {
+          "calories": 650.48,
+          "protein": 22.0748,
+          "fat": 1.1072,
+          "carbs": 133.9539,
+          "fiber": 8.65,
+          "sugar": 0,
+          "sodium": 17.3,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652417_step6",
+      "name": "finished stew with fresh herbs and citrus served over couscous",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cilantro",
+          "name": "cilantro",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 15.25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 30.25,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.15,
+        "costPerG": 0.4016528925619835,
+        "nutrition": {
+          "calories": 6.805,
+          "protein": 0.37287499999999996,
+          "fat": 0.11460000000000001,
+          "carbs": 1.6027500000000001,
+          "fiber": 0.46575,
+          "sugar": 0.5147999999999999,
+          "sodium": 7.052499999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 20.843176939999996,
+    "costPerServing": 6.947725646666665,
+    "totalPrepTime": 58.5,
+    "nutritionPerServing": {
+      "calories": 631.5901250000001,
+      "protein": 30.053607916666667,
+      "fat": 8.046425000000001,
+      "carbs": 112.15130125,
+      "fiber": 26.895095833333333,
+      "sugar": 11.514973749999998,
+      "sodium": 532.8312833333333
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_652417_step1",
+        "name": "oil is heated and onion is softened",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_652417_step2",
+        "name": "vegetables are softened and lightly cooked",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_652417_step3",
+        "name": "seasonings are fragrant and well distributed",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_652417_step4",
+        "name": "stew is fully cooked with tender lentils and integrated flavors",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652417_step5",
+        "name": "couscous is cooked and fluffy",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_652417_step6",
+        "name": "finished stew with fresh herbs and citrus served over couscous",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_652417_step1",
+      "name": "oil is heated and onion is softened",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_652417_step3",
+      "name": "seasonings are fragrant and well distributed",
+      "shelfLifeHours": 72,
+      "processes": [
+        "season",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_652417_step4",
+      "name": "stew is fully cooked with tender lentils and integrated flavors",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_652417_step6",
+      "name": "finished stew with fresh herbs and citrus served over couscous",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "plate"
+      ]
+    }
+  ]
+}

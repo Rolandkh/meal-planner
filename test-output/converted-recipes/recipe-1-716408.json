@@ -1,0 +1,870 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_04ada886-45ce-4a84-b664-bf9c05f97b68",
+  "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+  "source": "spoonacular",
+  "spoonacularId": 716408,
+  "image": "/images/recipes/716408.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rice",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 56.699,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "fish fillets",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "white wine",
+      "quantity": 60,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<p><span class=\"Apple-style-span\">Preheat the oven to 450 degrees F. Choose an oven-proof baking dish that your fish will fit in without overlapping and spray it with cooking spray.</span></p><p><span class=\"Apple-style-span\">Lay the fish fillets in the baking pan in a single layer, season with salt and pepper, then top the fish with red onion and bell pepper.</span></p><p><span class=\"Apple-style-span\">Sprinkle with dried basil and oregano, the tomato, and the feta cheese, then drizzle the white wine and olive oil over top. Grind some fresh pepper over the top.<br></span></p><p><span class=\"Apple-style-span\">Bake uncovered for about 12 – 15 minutes or until the fish flakes easily with a fork. Squeeze the lemon wedges over the cooked fish, garnish with the fresh basil and/or oregano and serve with hot cooked rice.</span></p>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 4,
+  "nutrition": {
+    "calories": 344.33,
+    "protein": 27.77,
+    "fat": 12.4,
+    "carbs": 28.01,
+    "fiber": 1.89,
+    "sugar": 2.85,
+    "saturatedFat": 3.62,
+    "sodium": 419.71
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": true,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.879Z",
+  "updatedAt": "2026-01-09T11:32:55.879Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rice",
+      "displayName": "rice",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings rice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 56.699,
+        "originalUnit": "g",
+        "normalizedQuantityG": 56.699,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "56.699 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "fish_fillets",
+      "displayName": "fish fillets",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g fish fillets",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt & pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "white_wine",
+      "displayName": "white wine",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 60
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 ml white wine",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 12,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:18:58.964Z",
+  "processGraph": {
+    "recipeName": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat the oven to 450 degrees F. Choose an oven-proof baking dish that your fish will fit in without overlapping and spray it with cooking spray.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 450°F"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "spray baking dish with cooking spray"
+          }
+        ],
+        "outputDescription": "oven preheated to 450°F, baking dish prepared with cooking spray"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Lay the fish fillets in the baking pan in a single layer, season with salt and pepper, then top the fish with red onion and bell pepper.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied slicing of onion for topping"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "implied slicing of bell pepper for topping"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "fish fillets",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season fish with salt and pepper"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "onion",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "top fish with sliced vegetables"
+          }
+        ],
+        "outputDescription": "fish fillets arranged in single layer, seasoned with salt and pepper, topped with sliced onion and bell pepper"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Sprinkle with dried basil and oregano, the tomato, and the feta cheese, then drizzle the white wine and olive oil over top. Grind some fresh pepper over the top.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "implied dicing of tomato for sprinkling"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "basil",
+              "oregano",
+              "tomato",
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle herbs, tomato, and cheese over fish"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "white wine",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle liquids over the dish"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "grind fresh pepper over top"
+          }
+        ],
+        "outputDescription": "fish topped with herbs, diced tomato, feta cheese, drizzled with wine and oil, finished with fresh ground pepper"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Bake uncovered for about 12 – 15 minutes or until the fish flakes easily with a fork. Squeeze the lemon wedges over the cooked fish, garnish with the fresh basil and/or oregano and serve with hot cooked rice.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "fish fillets",
+              "bell pepper",
+              "onion",
+              "tomato",
+              "feta cheese",
+              "basil",
+              "oregano",
+              "white wine",
+              "olive oil"
+            ],
+            "durationMinutes": 13.5,
+            "notes": "bake uncovered until fish flakes easily"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "squeeze lemon wedges over cooked fish"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "basil",
+              "oregano"
+            ],
+            "durationMinutes": null,
+            "notes": "garnish with fresh herbs"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "rice"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with hot cooked rice"
+          }
+        ],
+        "outputDescription": "baked fish with vegetables and cheese, garnished with fresh herbs and lemon, served with rice"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "heat",
+        "coat",
+        "slice",
+        "season",
+        "sprinkle",
+        "dice",
+        "spread",
+        "bake",
+        "squeeze",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_716408_step1",
+      "name": "oven preheated to 450°F, baking dish prepared with cooking spray",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716408_step2",
+      "name": "fish fillets arranged in single layer, seasoned with salt and pepper, topped with sliced onion and bell pepper",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 75
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 74.940012,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.25025,
+        "costPerG": 0.016683344005869658,
+        "nutrition": {
+          "calories": 30,
+          "protein": 0.8250000000000001,
+          "fat": 0.07500000000000001,
+          "carbs": 7.005,
+          "fiber": 1.275,
+          "sugar": 3.18,
+          "sodium": 3,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716408_step3",
+      "name": "fish topped with herbs, diced tomato, feta cheese, drizzled with wine and oil, finished with fresh ground pepper",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomato",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 133.212816,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1584,
+        "costPerG": 0.023709430480022282,
+        "nutrition": {
+          "calories": 21.599999999999998,
+          "protein": 1.056,
+          "fat": 0.24,
+          "carbs": 4.668,
+          "fiber": 1.44,
+          "sugar": 3.1559999999999997,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716408_step4",
+      "name": "baked fish with vegetables and cheese, garnished with fresh herbs and lemon, served with rice",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "fish_fillets",
+          "name": "fish fillets",
+          "quantityG": 453.592
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 56.699
+        },
+        {
+          "ingredientId": "basil",
+          "name": "basil",
+          "quantityG": 0.4
+        },
+        {
+          "ingredientId": "oregano",
+          "name": "oregano",
+          "quantityG": 0.4
+        },
+        {
+          "ingredientId": "white_wine",
+          "name": "white wine",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 13.5,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 259.4379588,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.399221500000003,
+        "costPerG": 0.036229168404943536,
+        "nutrition": {
+          "calories": 875.9326699999999,
+          "protein": 100.6901316,
+          "fat": 47.37102899999999,
+          "carbs": 11.6932012,
+          "fiber": 3.3264000000000005,
+          "sugar": 6.31756,
+          "sodium": 893.6924399999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 17.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 17.8742715,
+    "costPerServing": 4.468567875,
+    "totalPrepTime": 32.5,
+    "nutritionPerServing": {
+      "calories": 307.39316749999995,
+      "protein": 27.172682899999998,
+      "fat": 12.086107250000001,
+      "carbs": 22.471050300000005,
+      "fiber": 2.02335,
+      "sugar": 3.19379,
+      "sodium": 614.45311
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_716408_step1",
+        "name": "oven preheated to 450°F, baking dish prepared with cooking spray",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_716408_step2",
+        "name": "fish fillets arranged in single layer, seasoned with salt and pepper, topped with sliced onion and bell pepper",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716408_step3",
+        "name": "fish topped with herbs, diced tomato, feta cheese, drizzled with wine and oil, finished with fresh ground pepper",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_716408_step4",
+        "name": "baked fish with vegetables and cheese, garnished with fresh herbs and lemon, served with rice",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_716408_step1",
+      "name": "oven preheated to 450°F, baking dish prepared with cooking spray",
+      "shelfLifeHours": 2,
+      "processes": [
+        "heat",
+        "coat"
+      ]
+    },
+    {
+      "componentId": "comp_716408_step2",
+      "name": "fish fillets arranged in single layer, seasoned with salt and pepper, topped with sliced onion and bell pepper",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "slice",
+        "season",
+        "sprinkle"
+      ]
+    },
+    {
+      "componentId": "comp_716408_step3",
+      "name": "fish topped with herbs, diced tomato, feta cheese, drizzled with wine and oil, finished with fresh ground pepper",
+      "shelfLifeHours": 48,
+      "processes": [
+        "dice",
+        "sprinkle",
+        "spread",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_716408_step4",
+      "name": "baked fish with vegetables and cheese, garnished with fresh herbs and lemon, served with rice",
+      "shelfLifeHours": 48,
+      "processes": [
+        "bake",
+        "squeeze",
+        "garnish",
+        "plate"
+      ]
+    }
+  ]
+}

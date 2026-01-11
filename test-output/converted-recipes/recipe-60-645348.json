@@ -1,0 +1,417 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_ad91be45-3090-42db-be19-289a130aae2e",
+  "name": "Greek Side Salad",
+  "source": "spoonacular",
+  "spoonacularId": 645348,
+  "image": "/images/recipes/645348.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cucumber",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "greek feta",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kalamata olives",
+      "quantity": 12,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 5,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li> Slice the vegetables into bite-size wedges</li><li>Toss in a bowl with olive oil </li><li>Place feta on top of the salad or break up into crumbles</li></ol>",
+  "prepTime": 5,
+  "cookTime": 11,
+  "servings": 4,
+  "nutrition": {
+    "calories": 276.64,
+    "protein": 6.87,
+    "fat": 22.53,
+    "carbs": 14.49,
+    "fiber": 4.08,
+    "sugar": 8.18,
+    "saturatedFat": 6.03,
+    "sodium": 524.54
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian",
+      "primal"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 113.398,
+        "originalUnit": "g",
+        "normalizedQuantityG": 113.398,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "113.398 g greek feta",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "kalamata_olives",
+      "displayName": "kalamata olives",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "12  kalamata olives",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5 large tomatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 6,
+    "matched": 6,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:32:55.370Z",
+  "processGraph": {
+    "recipeName": "Greek Side Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Slice the vegetables into bite-size wedges",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "cucumber",
+              "onion",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into bite-size wedges"
+          }
+        ],
+        "outputDescription": "vegetables cut into bite-size wedges"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Toss in a bowl with olive oil",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "cucumber",
+              "onion",
+              "tomatoes",
+              "extra virgin olive oil",
+              "kalamata olives"
+            ],
+            "durationMinutes": null,
+            "notes": "combine sliced vegetables and olives with olive oil"
+          }
+        ],
+        "outputDescription": "vegetables and olives mixed with olive oil in bowl"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place feta on top of the salad or break up into crumbles",
+        "processes": [
+          {
+            "processId": "crumble",
+            "ingredients": [
+              "greek feta"
+            ],
+            "durationMinutes": null,
+            "notes": "break feta into crumbles or place whole on top"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "greek feta"
+            ],
+            "durationMinutes": null,
+            "notes": "place feta on top of salad"
+          }
+        ],
+        "outputDescription": "completed salad with feta cheese on top"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 4,
+      "uniqueProcesses": [
+        "slice",
+        "toss",
+        "crumble",
+        "garnish"
+      ],
+      "estimatedTotalTime": 10
+    }
+  },
+  "components": [
+    {
+      "id": "comp_645348_step1",
+      "name": "vegetables cut into bite-size wedges",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumber",
+          "quantityG": 390
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 195
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 780
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1337.7,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 26.705250000000003,
+        "costPerG": 0.019963556851311955,
+        "nutrition": {
+          "calories": 265.2,
+          "protein": 11.309999999999999,
+          "fat": 2.379,
+          "carbs": 56.979,
+          "fiber": 15.405,
+          "sugar": 34.164,
+          "sodium": 54.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645348_step2",
+      "name": "vegetables and olives mixed with olive oil in bowl",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 80
+        },
+        {
+          "ingredientId": "kalamata_olives",
+          "name": "kalamata olives",
+          "quantityG": 12
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 92,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.1932933333333333,
+        "costPerG": 0.012970579710144927,
+        "nutrition": {
+          "calories": 724.6,
+          "protein": 0.1236,
+          "fat": 81.836,
+          "carbs": 0.4608,
+          "fiber": 0.39599999999999996,
+          "sugar": 0.0648,
+          "sodium": 188.79999999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 29.316018333333336,
+    "costPerServing": 7.329004583333334,
+    "totalPrepTime": 3,
+    "nutritionPerServing": {
+      "calories": 322.57617500000003,
+      "protein": 6.884028999999999,
+      "fat": 27.1488925,
+      "carbs": 15.4599106,
+      "fiber": 3.9502499999999996,
+      "sugar": 8.5572,
+      "sodium": 384.03430000000003
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_645348_step1",
+        "name": "vegetables cut into bite-size wedges",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": []
+}

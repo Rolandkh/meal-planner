@@ -1,0 +1,38 @@
+{
+  "lastProcessed": 149,
+  "totalProcessed": 100,
+  "successful": 100,
+  "failed": 0,
+  "startedAt": "2026-01-10T23:28:58.182Z",
+  "lastUpdated": "2026-01-11T00:01:47.235Z",
+  "errors": [],
+  "warnings": [
+    {
+      "index": 53,
+      "errors": [
+        {
+          "stepNumber": 8,
+          "error": "Process not found: crumble"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "errors": [
+        {
+          "stepNumber": 3,
+          "error": "Process not found: crumble"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "errors": [
+        {
+          "stepNumber": 4,
+          "error": "Process not found: press"
+        }
+      ]
+    }
+  ]
+}

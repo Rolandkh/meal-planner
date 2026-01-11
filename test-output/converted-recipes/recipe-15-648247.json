@@ -1,0 +1,1214 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_9780ed5e-ff83-4a55-b489-4ead1622e7cf",
+  "name": "Italian Seafood Stew",
+  "source": "spoonacular",
+  "spoonacularId": 648247,
+  "image": "/images/recipes/648247.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "portobello mushrooms",
+      "quantity": 20,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bay leaves",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "canned tomatoes",
+      "quantity": 793.787,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "soda water",
+      "quantity": 118.294,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seafood stock/ fish stock",
+      "quantity": 1.2,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 4,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mussels",
+      "quantity": 20,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasoning",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "shrimps",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tilapia",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato paste",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Prepare ingredients.</li><li>In a large pot, heat up 3 tbsp of olive oil and add garlic and onion. Sautee over medium heat.</li><li>Add salt, tomato paste, tomatoes with juice, stock, club soda, bay leaves and stir.</li><li>Simmer over medium low heat for 30 min.</li><li>Add mushrooms.</li><li>Add salt to taste.</li><li>Cook mussels according to package directions.</li><li>Add shrimp and fish into stew.</li><li>Add mussels.</li><li>Simmer for a few minutes.</li><li>Ready to serve with some baked bread.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 3,
+  "nutrition": {
+    "calories": 610.86,
+    "protein": 69.43,
+    "fat": 11.98,
+    "carbs": 67.64,
+    "fiber": 15.08,
+    "sugar": 36.4,
+    "saturatedFat": 3.03,
+    "sodium": 2834.98
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "primal",
+      "whole 30",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "portobello_mushroom",
+      "displayName": "portobello mushroom",
+      "quantity": {
+        "originalQuantity": 20,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "20  baby portobello mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bay_leaves",
+      "displayName": "bay leaves",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2  bay leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 793.787,
+        "originalUnit": "g",
+        "normalizedQuantityG": 793.787,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "793.787 g canned tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 servings parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mussels",
+      "displayName": "mussels",
+      "quantity": {
+        "originalQuantity": 20,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "20  mussels",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 12,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Seasoning blend",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp seasoning",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "shrimp",
+      "displayName": "shrimp",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  shrimps",
+      "matchConfidence": 0.95
+    },
+    {
+      "masterIngredientId": "white_fish",
+      "displayName": "white fish",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 servings tilapia",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato_paste",
+      "displayName": "tomato paste",
+      "quantity": {
+        "originalQuantity": 113.398,
+        "originalUnit": "g",
+        "normalizedQuantityG": 113.398,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "113.398 g tomato paste",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 15,
+    "matched": 13,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "118.294 ml club soda",
+        "identityText": "club soda",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1.2 l seafood stock/ fish stock",
+        "identityText": "seafood stock/ fish stock",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:24:11.109Z",
+  "processGraph": {
+    "recipeName": "Italian Seafood Stew",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Prepare ingredients.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation of onion"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation of garlic"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "portobello mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation of mushrooms"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "implied cleaning of mussels"
+          }
+        ],
+        "outputDescription": "All ingredients prepped and ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "In a large pot, heat up 3 tbsp of olive oil and add garlic and onion. Sautee over medium heat.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in large pot"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "sautéing aromatics over medium heat"
+          }
+        ],
+        "outputDescription": "Garlic and onion are softened and fragrant in hot oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add salt, tomato paste, tomatoes with juice, stock, club soda, bay leaves and stir.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "salt",
+              "tomato paste",
+              "canned tomatoes",
+              "seafood stock",
+              "soda water",
+              "bay leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "combining liquid ingredients and seasonings"
+          }
+        ],
+        "outputDescription": "Base stew liquid is formed with all aromatics and liquids combined"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Simmer over medium low heat for 30 min.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "stew base"
+            ],
+            "durationMinutes": 30,
+            "notes": "developing flavors in the base"
+          }
+        ],
+        "outputDescription": "Stew base has developed deep flavors and reduced slightly"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add mushrooms.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "portobello mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "adding mushrooms to simmering stew"
+          }
+        ],
+        "outputDescription": "Mushrooms are added to the stew base"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add salt to taste.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "adjusting seasoning"
+          }
+        ],
+        "outputDescription": "Stew is properly seasoned"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Cook mussels according to package directions.",
+        "processes": [
+          {
+            "processId": "steam",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "cooking mussels separately as per package instructions"
+          }
+        ],
+        "outputDescription": "Mussels are cooked and shells have opened"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Add shrimp and fish into stew.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "shrimps",
+              "tilapia"
+            ],
+            "durationMinutes": null,
+            "notes": "adding seafood to the stew"
+          }
+        ],
+        "outputDescription": "Raw seafood is added to the simmering stew"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Add mussels.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "adding cooked mussels to stew"
+          }
+        ],
+        "outputDescription": "All seafood is now in the stew"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Simmer for a few minutes.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "complete stew"
+            ],
+            "durationMinutes": 3,
+            "notes": "final cooking to cook seafood through"
+          }
+        ],
+        "outputDescription": "Seafood is cooked through and flavors are melded"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Ready to serve with some baked bread.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "Italian Seafood Stew"
+            ],
+            "durationMinutes": null,
+            "notes": "serving the completed stew"
+          }
+        ],
+        "outputDescription": "Stew is plated and ready to serve with bread"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 12,
+      "uniqueProcesses": [
+        "chop",
+        "mince",
+        "slice",
+        "rinse",
+        "heat",
+        "saute",
+        "mix",
+        "simmer",
+        "season",
+        "steam",
+        "plate"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648247_step1",
+      "name": "All ingredients prepped and ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 144.002376,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.5005,
+        "costPerG": 0.017364296822435763,
+        "nutrition": {
+          "calories": 60,
+          "protein": 1.6500000000000001,
+          "fat": 0.15000000000000002,
+          "carbs": 14.01,
+          "fiber": 2.55,
+          "sugar": 6.36,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step2",
+      "name": "Garlic and onion are softened and fragrant in hot oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 20
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 16.66,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8999999999999999,
+        "costPerG": 0.054021608643457376,
+        "nutrition": {
+          "calories": 29.8,
+          "protein": 1.2720000000000002,
+          "fat": 0.1,
+          "carbs": 6.620000000000001,
+          "fiber": 0.42000000000000004,
+          "sugar": 0.2,
+          "sodium": 3.4000000000000004,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step3",
+      "name": "Base stew liquid is formed with all aromatics and liquids combined",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 12
+        },
+        {
+          "ingredientId": "tomato_paste",
+          "name": "tomato paste",
+          "quantityG": 113.398
+        },
+        {
+          "ingredientId": "canned_tomatoes",
+          "name": "canned tomatoes",
+          "quantityG": 793.787
+        },
+        {
+          "ingredientId": "water",
+          "name": "soda water",
+          "quantityG": 118.294
+        },
+        {
+          "ingredientId": "bay_leaves",
+          "name": "bay leaves",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1039.479,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.89205038,
+        "costPerG": 0.0037442318507636997,
+        "nutrition": {
+          "calories": 353.2582,
+          "protein": 18.0691004,
+          "fat": 2.9227742,
+          "carbs": 80.8100341,
+          "fiber": 20.257271,
+          "sugar": 48.7385044,
+          "sodium": 6600.97774,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step4",
+      "name": "Stew base has developed deep flavors and reduced slightly",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step5",
+      "name": "Mushrooms are added to the stew base",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "portobello_mushroom",
+          "name": "portobello mushrooms",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 300,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.75,
+        "costPerG": 0.0125,
+        "nutrition": {
+          "calories": 66,
+          "protein": 6.33,
+          "fat": 1.0499999999999998,
+          "carbs": 11.61,
+          "fiber": 3.9000000000000004,
+          "sugar": 7.5,
+          "sodium": 27,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step6",
+      "name": "Stew is properly seasoned",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_648247_step7",
+      "name": "Mussels are cooked and shells have opened",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mussels",
+          "name": "mussels",
+          "quantityG": 20
+        }
+      ],
+      "processes": [
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 19.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.32,
+        "costPerG": 0.016494845360824743,
+        "nutrition": {
+          "calories": 8.772,
+          "protein": 1.2140000000000002,
+          "fat": 0.22799999999999998,
+          "carbs": 0.376,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 29.172000000000004,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step8",
+      "name": "Raw seafood is added to the simmering stew",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "shrimp",
+          "name": "shrimps",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "white_fish",
+          "name": "tilapia",
+          "quantityG": 450
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 451,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.881,
+        "costPerG": 0.0285609756097561,
+        "nutrition": {
+          "calories": 432.85,
+          "protein": 90.56099999999998,
+          "fat": 7.655099999999999,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 235.19,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step9",
+      "name": "All seafood is now in the stew",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step10",
+      "name": "Seafood is cooked through and flavors are melded",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648247_step11",
+      "name": "Stew is plated and ready to serve with bread",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 39.52590038,
+    "costPerServing": 13.175300126666668,
+    "totalPrepTime": 66.5,
+    "nutritionPerServing": {
+      "calories": 397.05673333333334,
+      "protein": 48.422966800000005,
+      "fat": 6.730491399999999,
+      "carbs": 42.811611366666675,
+      "fiber": 9.951090333333335,
+      "sugar": 22.459201466666666,
+      "sodium": 3578.009913333333
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648247_step1",
+        "name": "All ingredients prepped and ready for cooking",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_648247_step2",
+        "name": "Garlic and onion are softened and fragrant in hot oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_648247_step3",
+        "name": "Base stew liquid is formed with all aromatics and liquids combined",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648247_step4",
+        "name": "Stew base has developed deep flavors and reduced slightly",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_648247_step5",
+        "name": "Mushrooms are added to the stew base",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648247_step7",
+        "name": "Mussels are cooked and shells have opened",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_648247_step8",
+        "name": "Raw seafood is added to the simmering stew",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648247_step9",
+        "name": "All seafood is now in the stew",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_648247_step10",
+        "name": "Seafood is cooked through and flavors are melded",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648247_step1",
+      "name": "All ingredients prepped and ready for cooking",
+      "shelfLifeHours": 12,
+      "processes": [
+        "chop",
+        "mince",
+        "slice",
+        "rinse"
+      ]
+    },
+    {
+      "componentId": "comp_648247_step2",
+      "name": "Garlic and onion are softened and fragrant in hot oil",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1052 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_5f3740fc-df89-4fd8-ba45-f2983e1741e6",
+  "name": "Potato Gnocchi With Kale and Mushrooms In A Goat Cheese Sauce",
+  "source": "spoonacular",
+  "spoonacularId": 656972,
+  "image": "/images/recipes/656972.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "baking potatoes",
+      "quantity": 680.389,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flour",
+      "quantity": 125,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg yolk",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "nutmeg",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "crimmini mushrooms",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kale",
+      "quantity": 42,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "semi-soft goat cheese",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "skim milk",
+      "quantity": 122.5,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Preheat oven to 400F. Pierce potatoes several times each with a fork and bake until soft, about 1 hour. Remove from the oven and let cool.\nCut the potatoes in half and scoop the flesh into a medium-sized bowl and mash until smooth. You can also use a potato ricer or food mill and rice. Let cool to room temperature.\nLine a large backing sheet with parchment paper. Add flour to the potatoes and mix.  Form a well in the middle of the mixture and add yolk, nutmeg and salt. Using a fork, stir until the potato mixture is evenly coated, it will not be completely smooth. Form the dough into a ball and divide into 4 equally-sized pieces.\nRoll each piece of dough between your hands and a lightly floured work surface into a 3/4 inch diameter rope. Cut the rope int 3/4-inch pieces and indent each piece with a fork. (The indent is optional, but will help the gnocchi hold the sauce.) Place the pieces on the parchment and repeat with the remaining dough.\nBring a large pot of salted water to a rolling boil and add the gnocchi in batches. You don't want the water to stop boiling. It will sink to the bottom of the pot. Stirring occasionally, let the gnocchi cook until it floats and is cooked through, about 4 minutes. With a slotted spoon, transfer the cooked gnocchi to a bowl and set aside.\nIn a large skillet, heat the oil over medium-high heat. Add the mushrooms and sautee until browned and most of the moisture has cooked off. Add the kale and continue to cook until it just begins to wilt, about 1 minute. Add milk and goat cheese and stir continuously until well blended. Add gnocchi and stir until coated and warmed through. Add salt and pepper to taste.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 382.36,
+    "protein": 15.95,
+    "fat": 10.03,
+    "carbs": 58.62,
+    "fiber": 4.08,
+    "sugar": 4.21,
+    "saturatedFat": 5.02,
+    "sodium": 911.79
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "baking_potatoes",
+      "displayName": "baking potatoes",
+      "quantity": {
+        "originalQuantity": 680.389,
+        "originalUnit": "g",
+        "normalizedQuantityG": 680.389,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "680.389 g baking potatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "flour",
+      "displayName": "flour",
+      "quantity": {
+        "originalQuantity": 125,
+        "originalUnit": "g",
+        "normalizedQuantityG": 125,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "125 g flour",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "egg_yolks",
+      "displayName": "egg yolks",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  egg yolk",
+      "matchConfidence": 0.925
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "nutmeg",
+      "displayName": "nutmeg",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps nutmeg",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Cremini mushrooms",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g crimmini mushrooms",
+      "matchConfidence": 0.9944444444444445
+    },
+    {
+      "masterIngredientId": "kale",
+      "displayName": "kale",
+      "quantity": {
+        "originalQuantity": 42,
+        "originalUnit": "g",
+        "normalizedQuantityG": 42,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "42 g kale",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "goat_cheese",
+      "displayName": "goat cheese",
+      "quantity": {
+        "originalQuantity": 113.398,
+        "originalUnit": "g",
+        "normalizedQuantityG": 113.398,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "113.398 g semi-soft goat cheese",
+      "matchConfidence": 0.6
+    },
+    {
+      "masterIngredientId": "milk",
+      "displayName": "milk",
+      "quantity": {
+        "originalQuantity": 122.5,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 125,
+        "normalizedQuantityMl": 122.5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "122.5 ml skim milk",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 11,
+    "unmatched": 0,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:26:23.794Z",
+  "processGraph": {
+    "recipeName": "Potato Gnocchi With Kale and Mushrooms In A Goat Cheese Sauce",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven to 400F. Pierce potatoes several times each with a fork and bake until soft, about 1 hour. Remove from the oven and let cool.",
+        "processes": [
+          {
+            "processId": "score",
+            "ingredients": [
+              "baking potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "pierce with fork several times"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "baking potatoes"
+            ],
+            "durationMinutes": 60,
+            "notes": "at 400F until soft"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "baking potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "let cool after baking"
+          }
+        ],
+        "outputDescription": "Potatoes are baked until soft and cooled"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Cut the potatoes in half and scoop the flesh into a medium-sized bowl and mash until smooth. You can also use a potato ricer or food mill and rice. Let cool to room temperature.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "baking potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "cut in half"
+          },
+          {
+            "processId": "puree",
+            "ingredients": [
+              "baking potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "mash until smooth or rice with potato ricer"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "baking potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "cool to room temperature"
+          }
+        ],
+        "outputDescription": "Potato flesh is mashed smooth and cooled to room temperature"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Line a large backing sheet with parchment paper. Add flour to the potatoes and mix. Form a well in the middle of the mixture and add yolk, nutmeg and salt. Using a fork, stir until the potato mixture is evenly coated, it will not be completely smooth. Form the dough into a ball and divide into 4 equally-sized pieces.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "flour",
+              "baking potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "add flour to potatoes and mix"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "egg yolk",
+              "nutmeg",
+              "kosher salt",
+              "flour",
+              "baking potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "form well, add ingredients, stir until evenly coated"
+          },
+          {
+            "processId": "quarter",
+            "ingredients": [
+              "flour",
+              "baking potatoes",
+              "egg yolk",
+              "nutmeg",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "form into ball and divide into 4 equal pieces"
+          }
+        ],
+        "outputDescription": "Gnocchi dough is formed and divided into 4 equal pieces"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Roll each piece of dough between your hands and a lightly floured work surface into a 3/4 inch diameter rope. Cut the rope int 3/4-inch pieces and indent each piece with a fork. (The indent is optional, but will help the gnocchi hold the sauce.) Place the pieces on the parchment and repeat with the remaining dough.",
+        "processes": [
+          {
+            "processId": "roll",
+            "ingredients": [
+              "flour",
+              "baking potatoes",
+              "egg yolk",
+              "nutmeg",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "roll into 3/4 inch diameter rope"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "flour",
+              "baking potatoes",
+              "egg yolk",
+              "nutmeg",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "cut rope into 3/4-inch pieces"
+          },
+          {
+            "processId": "score",
+            "ingredients": [
+              "flour",
+              "baking potatoes",
+              "egg yolk",
+              "nutmeg",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "indent each piece with fork"
+          }
+        ],
+        "outputDescription": "Individual gnocchi pieces are formed, cut, and scored with fork marks"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Bring a large pot of salted water to a rolling boil and add the gnocchi in batches. You don't want the water to stop boiling. It will sink to the bottom of the pot. Stirring occasionally, let the gnocchi cook until it floats and is cooked through, about 4 minutes. With a slotted spoon, transfer the cooked gnocchi to a bowl and set aside.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "flour",
+              "baking potatoes",
+              "egg yolk",
+              "nutmeg",
+              "kosher salt"
+            ],
+            "durationMinutes": 4,
+            "notes": "cook gnocchi in batches until they float"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "flour",
+              "baking potatoes",
+              "egg yolk",
+              "nutmeg",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "transfer with slotted spoon to bowl"
+          }
+        ],
+        "outputDescription": "Gnocchi are cooked through and drained, ready for sauce"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "In a large skillet, heat the oil over medium-high heat. Add the mushrooms and sautee until browned and most of the moisture has cooked off. Add the kale and continue to cook until it just begins to wilt, about 1 minute. Add milk and goat cheese and stir continuously until well blended. Add gnocchi and stir until coated and warmed through. Add salt and pepper to taste.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in skillet over medium-high heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "crimmini mushrooms"
+            ],
+            "durationMinutes": null,
+            "notes": "sauté until browned and moisture cooked off"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "kale"
+            ],
+            "durationMinutes": 1,
+            "notes": "cook until just begins to wilt"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "skim milk",
+              "semi-soft goat cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "stir continuously until well blended"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "flour",
+              "baking potatoes",
+              "egg yolk",
+              "nutmeg",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "add gnocchi and stir until coated and warmed through"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to taste"
+          }
+        ],
+        "outputDescription": "Complete dish with gnocchi coated in goat cheese sauce with mushrooms and kale, seasoned to taste"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 17,
+      "uniqueProcesses": [
+        "score",
+        "bake",
+        "cool",
+        "slice",
+        "puree",
+        "mix",
+        "quarter",
+        "roll",
+        "dice",
+        "boil",
+        "drain",
+        "heat",
+        "saute",
+        "season"
+      ],
+      "estimatedTotalTime": 90
+    }
+  },
+  "components": [
+    {
+      "id": "comp_656972_step1",
+      "name": "Potatoes are baked until soft and cooled",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "baking_potatoes",
+          "name": "baking potatoes",
+          "quantityG": 680.389
+        }
+      ],
+      "processes": [
+        {
+          "processId": "score",
+          "processName": "Score",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 578.33065,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.0617505,
+        "costPerG": 0.005294117647058823,
+        "nutrition": {
+          "calories": 537.50731,
+          "protein": 14.560324600000001,
+          "fat": 0.5443112,
+          "carbs": 122.9462923,
+          "fiber": 8.845057,
+          "sugar": 4.2184118,
+          "sodium": 34.01945,
+          "method": "raw"
+        },
+        "prepTimeMin": 92
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656972_step2",
+      "name": "Potato flesh is mashed smooth and cooled to room temperature",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 35
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656972_step3",
+      "name": "Gnocchi dough is formed and divided into 4 equal pieces",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "flour",
+          "name": "flour",
+          "quantityG": 125
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "quarter",
+          "processName": "Quarter",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 123.75,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1,
+        "costPerG": 0.00808080808080808,
+        "nutrition": {
+          "calories": 455,
+          "protein": 12.9125,
+          "fat": 1.225,
+          "carbs": 95.3875,
+          "fiber": 3.375,
+          "sugar": 0.3375,
+          "sodium": 2.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656972_step4",
+      "name": "Individual gnocchi pieces are formed, cut, and scored with fork marks",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggs",
+          "name": "egg yolk",
+          "quantityG": 50
+        },
+        {
+          "ingredientId": "nutmeg",
+          "name": "nutmeg",
+          "quantityG": 0.525
+        },
+        {
+          "ingredientId": "salt",
+          "name": "kosher salt",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "score",
+          "processName": "Score",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 54.829249999999995,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.7175,
+        "costPerG": 0.013086080878363285,
+        "nutrition": {
+          "calories": 74.25625,
+          "protein": 6.33066,
+          "fat": 4.9456275,
+          "carbs": 0.6187725,
+          "fiber": 0.1092,
+          "sugar": 0.3345725,
+          "sodium": 2396.564,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656972_step5",
+      "name": "Gnocchi are cooked through and drained, ready for sauce",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656972_step6",
+      "name": "Complete dish with gnocchi coated in goat cheese sauce with mushrooms and kale, seasoned to taste",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 9
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 6.36990102,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.096,
+        "costPerG": 0.015070877820327575,
+        "nutrition": {
+          "calories": 79.56,
+          "protein": 0,
+          "fat": 9,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.18,
+          "method": "raw"
+        },
+        "prepTimeMin": 14.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 47.3090925,
+    "costPerServing": 11.827273125,
+    "totalPrepTime": 159.5,
+    "nutritionPerServing": {
+      "calories": 436.7706299999999,
+      "protein": 18.11940375,
+      "fat": 14.896791275000002,
+      "carbs": 59.17254390000001,
+      "fiber": 4.0798042500000005,
+      "sugar": 3.995877125,
+      "sodium": 1201.3390425
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_656972_step1",
+        "name": "Potatoes are baked until soft and cooled",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_656972_step2",
+        "name": "Potato flesh is mashed smooth and cooled to room temperature",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_656972_step3",
+        "name": "Gnocchi dough is formed and divided into 4 equal pieces",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_656972_step4",
+        "name": "Individual gnocchi pieces are formed, cut, and scored with fork marks",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_656972_step5",
+        "name": "Gnocchi are cooked through and drained, ready for sauce",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_656972_step6",
+        "name": "Complete dish with gnocchi coated in goat cheese sauce with mushrooms and kale, seasoned to taste",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_656972_step1",
+      "name": "Potatoes are baked until soft and cooled",
+      "shelfLifeHours": 12,
+      "processes": [
+        "score",
+        "bake",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_656972_step2",
+      "name": "Potato flesh is mashed smooth and cooled to room temperature",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "puree",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_656972_step3",
+      "name": "Gnocchi dough is formed and divided into 4 equal pieces",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "mix",
+        "quarter"
+      ]
+    },
+    {
+      "componentId": "comp_656972_step4",
+      "name": "Individual gnocchi pieces are formed, cut, and scored with fork marks",
+      "shelfLifeHours": 12,
+      "processes": [
+        "roll",
+        "dice",
+        "score"
+      ]
+    },
+    {
+      "componentId": "comp_656972_step5",
+      "name": "Gnocchi are cooked through and drained, ready for sauce",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_656972_step6",
+      "name": "Complete dish with gnocchi coated in goat cheese sauce with mushrooms and kale, seasoned to taste",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "saute",
+        "saute",
+        "mix",
+        "heat",
+        "season"
+      ]
+    }
+  ]
+}

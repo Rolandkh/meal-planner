@@ -1,0 +1,789 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_b5f1c6ac-1476-4fa3-84e9-b689a7eaa518",
+  "name": "Farro salad with parsley pesto",
+  "source": "spoonacular",
+  "spoonacularId": 642602,
+  "image": "/images/recipes/642602.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "balsamic vinegar",
+      "quantity": 0.5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "brussels sprouts",
+      "quantity": 3,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "farro",
+      "quantity": 100,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flat leaf parsley",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic clove",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chili flakes",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red/yellow onion",
+      "quantity": 40,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sunflower seeds",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 74.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "walnuts",
+      "quantity": 29.25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 354.882,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>For parsley pesto : Blend parsley, walnuts, garlic, parmesan, lemon juice, and 1 tbsp olive oil in a blender until a coarse but kind of smooth paste forms. Taste and adjust salt and lemon juice.</li><li>For farro salad : Let the farro cool down after cooking in 1.5 cups water. In a big bowl, add farro, pesto, tomatoes, onions, sprouts, vinegar. Mix it all up nicely. Add salt, black pepper, lemon juicve and red chili flakes and give it a good shake. Taste and adjust seasoning. Serve right away or chill it in refrigerator.</li><li>Before serving garnish with sunflower seeds.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 411.67,
+    "protein": 12.02,
+    "fat": 19.67,
+    "carbs": 52.26,
+    "fiber": 12.52,
+    "sugar": 4.69,
+    "saturatedFat": 2.98,
+    "sodium": 348.52
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "balsamic_vinegar",
+      "displayName": "balsamic vinegar",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 8,
+        "normalizedQuantityMl": 7.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 Tbsps balsamic vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings pepper",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Brussels sprouts",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 medium brussels sprouts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "farro",
+      "displayName": "farro",
+      "quantity": {
+        "originalQuantity": 100,
+        "originalUnit": "g",
+        "normalizedQuantityG": 100,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "100 g farro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 g flat leaf parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  garlic clove",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 servings lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps parmesan",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Chili flakes",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings chili flakes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sunflower_seeds",
+      "displayName": "sunflower seeds",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings sunflower seeds",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 74.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 74.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "74.5 g tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "walnuts",
+      "displayName": "walnuts",
+      "quantity": {
+        "originalQuantity": 29.25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 29.25,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "29.25 g walnuts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 354.882,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 350,
+        "normalizedQuantityMl": 354.882
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "354.882 ml water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 15,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "40 g red/yellow onion",
+        "identityText": "red/yellow onion",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:45:20.349Z",
+  "processGraph": {
+    "recipeName": "Farro salad with parsley pesto",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "For parsley pesto : Blend parsley, walnuts, garlic, parmesan, lemon juice, and 1 tbsp olive oil in a blender until a coarse but kind of smooth paste forms. Taste and adjust salt and lemon juice.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "flat leaf parsley",
+              "walnuts",
+              "garlic clove",
+              "parmesan",
+              "lemon juice",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "blend until coarse but smooth paste forms"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "lemon juice"
+            ],
+            "durationMinutes": null,
+            "notes": "taste and adjust seasoning"
+          }
+        ],
+        "outputDescription": "coarse but smooth parsley pesto paste"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "For farro salad : Let the farro cool down after cooking in 1.5 cups water. In a big bowl, add farro, pesto, tomatoes, onions, sprouts, vinegar. Mix it all up nicely. Add salt, black pepper, lemon juicve and red chili flakes and give it a good shake. Taste and adjust seasoning. Serve right away or chill it in refrigerator.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "farro",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "cook farro in 1.5 cups water"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "farro"
+            ],
+            "durationMinutes": null,
+            "notes": "let farro cool down after cooking"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "farro",
+              "pesto",
+              "tomatoes",
+              "red/yellow onion",
+              "brussels sprouts",
+              "balsamic vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "combine in big bowl and mix nicely"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper",
+              "lemon juice",
+              "chili flakes"
+            ],
+            "durationMinutes": null,
+            "notes": "add seasonings and shake well"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "farro salad mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "give it a good shake to combine"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "farro salad"
+            ],
+            "durationMinutes": null,
+            "notes": "optional - chill in refrigerator"
+          }
+        ],
+        "outputDescription": "seasoned farro salad, ready to serve or chilled"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Before serving garnish with sunflower seeds.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "sunflower seeds"
+            ],
+            "durationMinutes": null,
+            "notes": "garnish before serving"
+          }
+        ],
+        "outputDescription": "finished farro salad garnished with sunflower seeds"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 7,
+      "uniqueProcesses": [
+        "blend",
+        "season",
+        "boil",
+        "cool",
+        "mix",
+        "toss",
+        "garnish"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642602_step1",
+      "name": "coarse but smooth parsley pesto paste",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parsley",
+          "name": "flat leaf parsley",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "walnuts",
+          "name": "walnuts",
+          "quantityG": 29.25
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic clove",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "parmesan",
+          "name": "parmesan",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 167.68290000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 34.592549999999996,
+        "costPerG": 0.20629742209849658,
+        "nutrition": {
+          "calories": 463.885,
+          "protein": 17.376,
+          "fat": 40.89099999999999,
+          "carbs": 12.49625,
+          "fiber": 4.1347499999999995,
+          "sugar": 2.319425,
+          "sodium": 516.2049999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642602_step2",
+      "name": "seasoned farro salad, ready to serve or chilled",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "farro",
+          "name": "farro",
+          "quantityG": 100
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 354.882
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 440.780658,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.4670629400000004,
+        "costPerG": 0.007865732937855,
+        "nutrition": {
+          "calories": 352,
+          "protein": 9.91,
+          "fat": 1.16,
+          "carbs": 77.72,
+          "fiber": 15.6,
+          "sugar": 0.8,
+          "sodium": 26.7441,
+          "method": "raw"
+        },
+        "prepTimeMin": 73.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642602_step3",
+      "name": "finished farro salad garnished with sunflower seeds",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sunflower_seeds",
+          "name": "sunflower seeds",
+          "quantityG": 20
+        }
+      ],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 20.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.24,
+        "costPerG": 0.011764705882352941,
+        "nutrition": {
+          "calories": 116.80000000000001,
+          "protein": 4.156000000000001,
+          "fat": 10.292000000000002,
+          "carbs": 4,
+          "fiber": 1.72,
+          "sugar": 0.524,
+          "sodium": 1.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 42.58775294,
+    "costPerServing": 21.29387647,
+    "totalPrepTime": 77,
+    "nutritionPerServing": {
+      "calories": 490.3225,
+      "protein": 16.576375,
+      "fat": 26.445899999999998,
+      "carbs": 52.33452499999999,
+      "fiber": 12.172374999999999,
+      "sugar": 4.3213125,
+      "sodium": 680.4545499999998
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642602_step1",
+        "name": "coarse but smooth parsley pesto paste",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_642602_step2",
+        "name": "seasoned farro salad, ready to serve or chilled",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_642602_step1",
+      "name": "coarse but smooth parsley pesto paste",
+      "shelfLifeHours": 48,
+      "processes": [
+        "blend",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_642602_step2",
+      "name": "seasoned farro salad, ready to serve or chilled",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "cool",
+        "mix",
+        "season",
+        "toss",
+        "cool"
+      ]
+    }
+  ]
+}

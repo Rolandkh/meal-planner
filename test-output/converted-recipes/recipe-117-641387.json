@@ -1,0 +1,757 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_9306c7a4-244c-4a2d-ab49-5ae36f6a61d8",
+  "name": "Delicious Creamy Lentils and Chestnuts Soup",
+  "source": "spoonacular",
+  "spoonacularId": 641387,
+  "image": "/images/recipes/641387.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bay leaf",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "roasted chestnuts",
+      "quantity": 35.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 288,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "potato",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "roma tomatoes",
+      "quantity": 74.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Put the lentils in a large pot and cover with water. </li><li>Add the onions, garlic, potato, tomatoes, chestnuts, bay leaf, salt and pepper and a tablespoon of olive oil. </li><li>Cook for about 20 minutes and adjust with salt and pepper if necessary. </li><li> Let it sit and cool down for 15 minutes. </li><li>Remove the bay leaf. </li><li>To obtain a creamy velvety consistency use  an electric immersion blender .</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 4,
+  "nutrition": {
+    "calories": 451.99,
+    "protein": 20.33,
+    "fat": 14.98,
+    "carbs": 60.09,
+    "fiber": 23.75,
+    "sugar": 3.51,
+    "saturatedFat": 2.09,
+    "sodium": 205.05
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 88.9,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "roasted chestnuts",
+        "identity": "roasted chestnuts",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "bay_leaf",
+      "displayName": "bay leaf",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  bay leaf",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 288,
+        "originalUnit": "g",
+        "normalizedQuantityG": 288,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "288 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  potato",
+      "matchConfidence": 0.7166666666666668
+    },
+    {
+      "masterIngredientId": "roma_tomatoes",
+      "displayName": "roma tomatoes",
+      "quantity": {
+        "originalQuantity": 74.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 74.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "74.5 g roma tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 8,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "35.75 g roasted chestnuts",
+        "identityText": "roasted chestnuts",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:50:31.945Z",
+  "processGraph": {
+    "recipeName": "Delicious Creamy Lentils and Chestnuts Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Put the lentils in a large pot and cover with water.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lentils"
+            ],
+            "durationMinutes": null,
+            "notes": "placing lentils in pot and covering with water"
+          }
+        ],
+        "outputDescription": "lentils in pot covered with water"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add the onions, garlic, potato, tomatoes, chestnuts, bay leaf, salt and pepper and a tablespoon of olive oil.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "onion",
+              "garlic",
+              "potato",
+              "roma tomatoes",
+              "roasted chestnuts",
+              "bay leaf",
+              "salt and pepper",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients into the pot"
+          }
+        ],
+        "outputDescription": "all ingredients combined in pot with water"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Cook for about 20 minutes and adjust with salt and pepper if necessary.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "lentils",
+              "onion",
+              "garlic",
+              "potato",
+              "roma tomatoes",
+              "roasted chestnuts",
+              "bay leaf",
+              "salt and pepper",
+              "olive oil"
+            ],
+            "durationMinutes": 20,
+            "notes": "cooking all ingredients together"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "adjusting seasoning to taste"
+          }
+        ],
+        "outputDescription": "cooked soup with tender vegetables and lentils"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Let it sit and cool down for 15 minutes.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "lentils",
+              "onion",
+              "garlic",
+              "potato",
+              "roma tomatoes",
+              "roasted chestnuts",
+              "bay leaf",
+              "salt and pepper",
+              "olive oil"
+            ],
+            "durationMinutes": 15,
+            "notes": "allowing soup to cool before blending"
+          }
+        ],
+        "outputDescription": "cooled soup ready for blending"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Remove the bay leaf.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "bay leaf"
+            ],
+            "durationMinutes": null,
+            "notes": "removing bay leaf from soup"
+          }
+        ],
+        "outputDescription": "soup with bay leaf removed"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "To obtain a creamy velvety consistency use an electric immersion blender.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "lentils",
+              "onion",
+              "garlic",
+              "potato",
+              "roma tomatoes",
+              "roasted chestnuts",
+              "salt and pepper",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "blending with immersion blender for creamy consistency"
+          }
+        ],
+        "outputDescription": "smooth, creamy soup ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "mix",
+        "simmer",
+        "season",
+        "cool",
+        "trim",
+        "blend"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_641387_step1",
+      "name": "lentils in pot covered with water",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "lentils",
+          "quantityG": 288
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 288,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.44,
+        "costPerG": 0.005,
+        "nutrition": {
+          "calories": 1016.64,
+          "protein": 74.304,
+          "fat": 3.0528,
+          "carbs": 173.0304,
+          "fiber": 87.84,
+          "sugar": 5.846399999999999,
+          "sodium": 17.28,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641387_step2",
+      "name": "all ingredients combined in pot with water",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "potatoes",
+          "name": "potato",
+          "quantityG": 180
+        },
+        {
+          "ingredientId": "roma_tomatoes",
+          "name": "roma tomatoes",
+          "quantityG": 74.5
+        },
+        {
+          "ingredientId": "bay_leaf",
+          "name": "bay leaf",
+          "quantityG": 0.5
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 494,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.803083333333333,
+        "costPerG": 0.009722840755735493,
+        "nutrition": {
+          "calories": 928.225,
+          "protein": 6.29765,
+          "fat": 80.5278,
+          "carbs": 50.3839,
+          "fiber": 7.6405,
+          "sugar": 9.77335,
+          "sodium": 1573.4099999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641387_step3",
+      "name": "cooked soup with tender vegetables and lentils",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 20.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641387_step4",
+      "name": "cooled soup ready for blending",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 15
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641387_step5",
+      "name": "soup with bay leaf removed",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641387_step6",
+      "name": "smooth, creamy soup ready to serve",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 6.243083333333334,
+    "costPerServing": 1.5607708333333334,
+    "totalPrepTime": 42.5,
+    "nutritionPerServing": {
+      "calories": 486.21625,
+      "protein": 20.1504125,
+      "fat": 20.895150000000005,
+      "carbs": 55.853575,
+      "fiber": 23.870125,
+      "sugar": 3.9049375,
+      "sodium": 397.6725
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_641387_step1",
+        "name": "lentils in pot covered with water",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_641387_step2",
+        "name": "all ingredients combined in pot with water",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_641387_step3",
+        "name": "cooked soup with tender vegetables and lentils",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_641387_step4",
+        "name": "cooled soup ready for blending",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_641387_step5",
+        "name": "soup with bay leaf removed",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_641387_step6",
+        "name": "smooth, creamy soup ready to serve",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_641387_step3",
+      "name": "cooked soup with tender vegetables and lentils",
+      "shelfLifeHours": 96,
+      "processes": [
+        "simmer",
+        "season"
+      ]
+    }
+  ]
+}

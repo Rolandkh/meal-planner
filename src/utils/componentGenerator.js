@@ -343,7 +343,21 @@ function findIngredient(name, ingredientMaster) {
     'phyllo dough': 'puff_pastry',            // Similar pastry substitute
     
     // Water variants
-    'soda water': 'water'
+    'soda water': 'water',
+    
+    // Meat substitutes
+    'veal shanks': 'ground_beef',             // Beef substitute
+    'veal': 'ground_beef',
+    'stew meat': 'ground_beef',
+    
+    // Baking
+    'baking mix': 'flour',                    // Flour substitute
+    
+    // Produce  
+    'over-ripe plantain': 'banana',           // Banana is close substitute
+    'plantain': 'banana',
+    'ripe plantain': 'banana',
+    'over ripe plantain': 'banana'
   };
   
   if (freshPreferences[normalized] && ingredients[freshPreferences[normalized]]) {

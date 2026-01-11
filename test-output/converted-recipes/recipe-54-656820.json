@@ -1,0 +1,954 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_0b6d30f4-9626-428f-90d1-d44dfb24b29e",
+  "name": "Pork Shoulder Tacos with Chipotle Greek Yogurt and Coleslaw",
+  "source": "spoonacular",
+  "spoonacularId": 656820,
+  "image": "/images/recipes/656820.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "apple cider vinegar",
+      "quantity": 59.75,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrot",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chipotle chilies in adobo sauce",
+      "quantity": 0.5,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "Cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "greek yogurt",
+      "quantity": 200,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onion stalk",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lime",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mushrooms",
+      "quantity": 192,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pork shoulder roast",
+      "quantity": 1.383,
+      "unit": "kgs",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "purple cabbage",
+      "quantity": 1,
+      "unit": "head",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine",
+      "quantity": 120,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt pepper",
+      "quantity": 12,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable broth",
+      "quantity": 235,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>To Make the pork shoulder:</li><li>Place all ingredients in the crock pot.  Cook for 5 hours on low.  Meat should be tender and easily shred when finished cooking.</li><li>To Make the Chipotle Greek Yogurt:</li><li>In a small bowl, add the Greek yogurt.  Crack open your can of chipotle chilies in adobo sauce and remove the seeds from 3 or 4 of the chilies (about half of the can). Finely chop and add to the Greek yogurt. Add about a teaspoon of the adobo sauce.  Stir. For a spicier sauce, add additional chipotle chilies.</li><li>To Make the no-mayo coleslaw:</li><li>Thinly slice the cabbage and chop the green onion.  Peel and julienne the carrot.  Add all veggies to a large mixing bowl.  Mix the lime juice, apple cider vinegar and olive oil together in a small bowl.  Drizzle the liquid over the veggies.  Add salt and pepper to taste and if youre one of those cilantro people, add a handful of chopped cilantro.  Mix thoroughly and serve on your taco.</li><li>To assemble the tacos, simply heat your favorite tortilla on the stove until warm. Spoon desired amount of meat, chipotle Greek yogurt sauce, and coleslaw on the tortilla and enjoy!</li><li>Nutritional information is per taco.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 12,
+  "nutrition": {
+    "calories": 260.39,
+    "protein": 25.97,
+    "fat": 11.99,
+    "carbs": 10.01,
+    "fiber": 2.8,
+    "sugar": 5.04,
+    "saturatedFat": 3.38,
+    "sodium": 1553.13
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "apple_cider_vinegar",
+      "displayName": "apple cider vinegar",
+      "quantity": {
+        "originalQuantity": 59.75,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 59.75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "59.75 ml apple cider vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  carrot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 200,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 200,
+        "normalizedQuantityMl": 200
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "200 ml greek yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lime_juice",
+      "displayName": "lime juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lime",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mushrooms",
+      "displayName": "mushrooms",
+      "quantity": {
+        "originalQuantity": 192,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 120,
+        "normalizedQuantityMl": 192
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "192 ml mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 120,
+        "normalizedQuantityMl": 120
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "120 ml red wine",
+      "matchConfidence": 0.6
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 36,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sea_salt_and_pepper",
+      "displayName": "sea salt and pepper",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "12 servings salt pepper",
+      "matchConfidence": 0.7666666666666666
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 235,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 235,
+        "normalizedQuantityMl": 235
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "235 ml vegetable broth",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 12,
+    "unmatched": 4,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "0.5 can chipotle chilies in adobo sauce",
+        "identityText": "chipotle chilies in adobo sauce",
+        "state": "other"
+      },
+      {
+        "rawText": "1  green onion stalk",
+        "identityText": "green onion stalk",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1.383 kgs pork shoulder roast",
+        "identityText": "kgs pork shoulder roast",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 head purple cabbage",
+        "identityText": "purple cabbage",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:30:54.386Z",
+  "processGraph": {
+    "recipeName": "Pork Shoulder Tacos with Chipotle Greek Yogurt and Coleslaw",
+    "processSteps": [
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Place all ingredients in the crock pot. Cook for 5 hours on low. Meat should be tender and easily shred when finished cooking.",
+        "processes": [
+          {
+            "processId": "stew",
+            "ingredients": [
+              "pork shoulder roast",
+              "garlic",
+              "onion",
+              "mushrooms",
+              "red wine",
+              "vegetable broth",
+              "salt",
+              "salt pepper"
+            ],
+            "durationMinutes": 300,
+            "notes": "slow cooking in crock pot on low heat"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "pork shoulder roast"
+            ],
+            "durationMinutes": null,
+            "notes": "meat becomes tender enough to shred easily"
+          }
+        ],
+        "outputDescription": "tender, shreddable pork shoulder cooked with aromatics"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "In a small bowl, add the Greek yogurt. Crack open your can of chipotle chilies in adobo sauce and remove the seeds from 3 or 4 of the chilies (about half of the can). Finely chop and add to the Greek yogurt. Add about a teaspoon of the adobo sauce. Stir. For a spicier sauce, add additional chipotle chilies.",
+        "processes": [
+          {
+            "processId": "shell",
+            "ingredients": [
+              "chipotle chilies in adobo sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "crack open can"
+          },
+          {
+            "processId": "deseed",
+            "ingredients": [
+              "chipotle chilies in adobo sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "remove seeds from 3-4 chilies"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "chipotle chilies in adobo sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "finely chop the deseeded chilies"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "greek yogurt",
+              "chipotle chilies in adobo sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "combine yogurt with chopped chilies and adobo sauce"
+          }
+        ],
+        "outputDescription": "spicy chipotle Greek yogurt sauce"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Thinly slice the cabbage and chop the green onion. Peel and julienne the carrot. Add all veggies to a large mixing bowl. Mix the lime juice, apple cider vinegar and olive oil together in a small bowl. Drizzle the liquid over the veggies. Add salt and pepper to taste and if youre one of those cilantro people, add a handful of chopped cilantro. Mix thoroughly and serve on your taco.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "purple cabbage"
+            ],
+            "durationMinutes": null,
+            "notes": "thinly slice cabbage"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "green onion stalk"
+            ],
+            "durationMinutes": null,
+            "notes": "chop green onion"
+          },
+          {
+            "processId": "peel",
+            "ingredients": [
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "peel carrot"
+          },
+          {
+            "processId": "julienne",
+            "ingredients": [
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "cut carrot into matchstick strips"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "juice of lime",
+              "apple cider vinegar",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "combine dressing ingredients"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "purple cabbage",
+              "green onion stalk",
+              "carrot",
+              "juice of lime",
+              "apple cider vinegar",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle dressing over vegetables"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "purple cabbage",
+              "green onion stalk",
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to taste"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "purple cabbage",
+              "green onion stalk",
+              "carrot"
+            ],
+            "durationMinutes": null,
+            "notes": "mix thoroughly to combine coleslaw"
+          }
+        ],
+        "outputDescription": "no-mayo coleslaw with dressed vegetables"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "To assemble the tacos, simply heat your favorite tortilla on the stove until warm. Spoon desired amount of meat, chipotle Greek yogurt sauce, and coleslaw on the tortilla and enjoy!",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "tortilla"
+            ],
+            "durationMinutes": null,
+            "notes": "warm tortilla on stove"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "pork shoulder roast",
+              "greek yogurt",
+              "purple cabbage"
+            ],
+            "durationMinutes": null,
+            "notes": "assemble taco with meat, sauce, and coleslaw"
+          }
+        ],
+        "outputDescription": "assembled warm tacos ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 14,
+      "uniqueProcesses": [
+        "stew",
+        "shred",
+        "shell",
+        "deseed",
+        "mince",
+        "mix",
+        "slice",
+        "chop",
+        "peel",
+        "julienne",
+        "toss",
+        "season",
+        "heat",
+        "plate"
+      ],
+      "estimatedTotalTime": 330
+    }
+  },
+  "components": [
+    {
+      "id": "comp_656820_step2",
+      "name": "tender, shreddable pork shoulder cooked with aromatics",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pork_roast_shoulder",
+          "name": "pork shoulder roast",
+          "quantityG": 1383
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "mushrooms_button",
+          "name": "mushrooms",
+          "quantityG": 192
+        },
+        {
+          "ingredientId": "red_wine",
+          "name": "red wine",
+          "quantityG": 120
+        },
+        {
+          "ingredientId": "vegetable_broth",
+          "name": "vegetable broth",
+          "quantityG": 235
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 36
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt pepper",
+          "quantityG": 12
+        }
+      ],
+      "processes": [
+        {
+          "processId": "stew",
+          "processName": "Stew",
+          "yieldFactor": 0.88,
+          "durationMinutes": 300,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1824.9968000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 24.833000000000002,
+        "costPerG": 0.013607147146778558,
+        "nutrition": {
+          "calories": 1479.4624000000001,
+          "protein": 173.29469999999998,
+          "fat": 61.1516,
+          "carbs": 29.719199999999997,
+          "fiber": 4.68,
+          "sugar": 13.0031,
+          "sodium": 20207.0988,
+          "method": "raw"
+        },
+        "prepTimeMin": 303
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656820_step4",
+      "name": "spicy chipotle Greek yogurt sauce",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chilies",
+          "name": "chipotle chilies in adobo sauce",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "shell",
+          "processName": "Shell",
+          "yieldFactor": 0.5,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "deseed",
+          "processName": "Deseed",
+          "yieldFactor": 0.88,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 86.24,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9,
+        "costPerG": 0.10435992578849722,
+        "nutrition": {
+          "calories": 80,
+          "protein": 3.74,
+          "fat": 0.88,
+          "carbs": 17.62,
+          "fiber": 3,
+          "sugar": 10.6,
+          "sodium": 18,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656820_step6",
+      "name": "no-mayo coleslaw with dressed vegetables",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cabbage",
+          "name": "purple cabbage",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "julienne",
+          "processName": "Julienne",
+          "yieldFactor": 0.95,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.83756484,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0025,
+        "costPerG": 0.0029848435376059962,
+        "nutrition": {
+          "calories": 0.25,
+          "protein": 0.0128,
+          "fat": 0.001,
+          "carbs": 0.057999999999999996,
+          "fiber": 0.025,
+          "sugar": 0.032,
+          "sodium": 0.18,
+          "method": "raw"
+        },
+        "prepTimeMin": 16.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656820_step7",
+      "name": "assembled warm tacos ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "greek yogurt",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 196,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.2000000000000002,
+        "costPerG": 0.006122448979591837,
+        "nutrition": {
+          "calories": 122,
+          "protein": 20.6,
+          "fat": 0.74,
+          "carbs": 7.28,
+          "fiber": 0,
+          "sugar": 6.54,
+          "sodium": 72,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 38.81675,
+    "costPerServing": 3.2347291666666664,
+    "totalPrepTime": 335.5,
+    "nutritionPerServing": {
+      "calories": 178.9656166666667,
+      "protein": 16.672124999999998,
+      "fat": 8.633466666666669,
+      "carbs": 6.555758333333333,
+      "fiber": 1.0112499999999998,
+      "sugar": 3.3539999999999996,
+      "sodium": 1695.6403166666666
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_656820_step2",
+        "name": "tender, shreddable pork shoulder cooked with aromatics",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_656820_step4",
+        "name": "spicy chipotle Greek yogurt sauce",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_656820_step6",
+        "name": "no-mayo coleslaw with dressed vegetables",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_656820_step2",
+      "name": "tender, shreddable pork shoulder cooked with aromatics",
+      "shelfLifeHours": 24,
+      "processes": [
+        "stew",
+        "shred"
+      ]
+    },
+    {
+      "componentId": "comp_656820_step4",
+      "name": "spicy chipotle Greek yogurt sauce",
+      "shelfLifeHours": 12,
+      "processes": [
+        "shell",
+        "deseed",
+        "mince",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_656820_step6",
+      "name": "no-mayo coleslaw with dressed vegetables",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "chop",
+        "peel",
+        "julienne",
+        "mix",
+        "toss",
+        "season",
+        "mix"
+      ]
+    }
+  ]
+}

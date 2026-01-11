@@ -1,0 +1,1042 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_a7edc247-8f27-41f5-b80a-e6117b8214b1",
+  "name": "How Sweet It Is Sweet Potato Lasagne",
+  "source": "spoonacular",
+  "spoonacularId": 647563,
+  "image": "/images/recipes/647563.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "portabella mushrooms",
+      "quantity": 12,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "curry powder",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil leaves",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggplants",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 283.495,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "heavy cream",
+      "quantity": 121,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "montery jack",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cheddar cheese mix",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "jalapenos",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "marinara sauce",
+      "quantity": 735,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sweet potatoes",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable cooking oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Slice the Sweet Potato into 1/4 inch thick slices. Boil until semi-cooked (about 10 min). Rub the slices with a dry curry powder & olive oil (1cup) mixture. Set aside and let marinate for at least 10 min.</li><li>Slice Eggplants into 1/4 inch thick slices and rub all over with an olive oil (1 cup)/dried basil/salt & pepper mix. Set aside and let marinate for at least 15 min.</li><li>Pour canola or vegetable cooking oil into a pan. Saute spinach and mushrooms for about 3-5 min, add in jalapenos and salt & pepper to taste.</li><li>Turn the heat down and add in some heavy cream and about 1/2 of the mexican cheeses until mixture is creamy, but not watery.</li><li>Start layering the lasagne in this order: Sweet Potatoes, Spinach/Mushroom Mix, Eggplants, Marinara Sauce, Sweet Potatoes, Spinach/Mushrom Mix, Eggplants, Then finally sprinkle the remaining Monterey Jack/Cheddar Cheese Blend on top.</li><li>Bake at 350-375 for about 35-45 min, depending on how your oven works. You'll know it's ready when you can pass through a fork easily through all the layers.</li><li>Devour with Passion</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 500.87,
+    "protein": 25.09,
+    "fat": 23.69,
+    "carbs": 53.74,
+    "fiber": 13.83,
+    "sugar": 19.27,
+    "saturatedFat": 12.92,
+    "sodium": 1264.13
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "portobello_mushroom",
+      "displayName": "portobello mushroom",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "12  baby portabella mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "curry_powder",
+      "displayName": "curry powder",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 19,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps curry powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps basil leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggplants",
+      "displayName": "eggplants",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  eggplants",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 283.495,
+        "originalUnit": "g",
+        "normalizedQuantityG": 283.495,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "283.495 g spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "heavy_cream",
+      "displayName": "heavy cream",
+      "quantity": {
+        "originalQuantity": 121,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 121,
+        "normalizedQuantityMl": 121
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "121 ml heavy cream",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "jalapeno",
+      "displayName": "jalapeno",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  jalapenos",
+      "matchConfidence": 0.95
+    },
+    {
+      "displayName": "Marinara sauce",
+      "quantity": {
+        "originalQuantity": 735,
+        "originalUnit": "ml",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 735
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "735 ml marinara sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt & pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sweet_potatoes",
+      "displayName": "sweet potatoes",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  sweet potatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 10,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "340.194 g montery jack & cheddar cheese mix",
+        "identityText": "montery jack & cheddar cheese mix",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 Tbsp vegetable cooking oil",
+        "identityText": "vegetable cooking oil",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:28:48.387Z",
+  "processGraph": {
+    "recipeName": "How Sweet It Is Sweet Potato Lasagne",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Slice the Sweet Potato into 1/4 inch thick slices. Boil until semi-cooked (about 10 min). Rub the slices with a dry curry powder & olive oil (1cup) mixture. Set aside and let marinate for at least 10 min.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "sweet potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "1/4 inch thick slices"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "sweet potatoes"
+            ],
+            "durationMinutes": 10,
+            "notes": "until semi-cooked"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "curry powder",
+              "vegetable cooking oil"
+            ],
+            "durationMinutes": null,
+            "notes": "create curry powder and oil mixture"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "sweet potatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "rub with curry powder and oil mixture"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "sweet potatoes"
+            ],
+            "durationMinutes": 10,
+            "notes": "at least 10 minutes"
+          }
+        ],
+        "outputDescription": "Sweet potato slices are boiled until semi-cooked, coated with curry powder and oil mixture, and marinating"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Slice Eggplants into 1/4 inch thick slices and rub all over with an olive oil (1 cup)/dried basil/salt & pepper mix. Set aside and let marinate for at least 15 min.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": null,
+            "notes": "1/4 inch thick slices"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "vegetable cooking oil",
+              "basil leaves",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "create seasoning mixture"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": null,
+            "notes": "rub all over with oil and herb mixture"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": 15,
+            "notes": "at least 15 minutes"
+          }
+        ],
+        "outputDescription": "Eggplant slices are coated with oil, basil, salt and pepper mixture and marinating"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Pour canola or vegetable cooking oil into a pan. Saute spinach and mushrooms for about 3-5 min, add in jalapenos and salt & pepper to taste.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "spinach",
+              "portabella mushrooms"
+            ],
+            "durationMinutes": 4,
+            "notes": "3-5 minutes in vegetable oil"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "jalapenos",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add jalapenos and season to taste"
+          }
+        ],
+        "outputDescription": "Spinach and mushrooms are sautéed and seasoned with jalapeños, salt and pepper"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Turn the heat down and add in some heavy cream and about 1/2 of the mexican cheeses until mixture is creamy, but not watery.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "spinach",
+              "portabella mushrooms",
+              "jalapenos"
+            ],
+            "durationMinutes": null,
+            "notes": "turn heat down"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "heavy cream",
+              "montery jack",
+              "cheddar cheese mix"
+            ],
+            "durationMinutes": null,
+            "notes": "add cream and half the cheese until creamy"
+          }
+        ],
+        "outputDescription": "Spinach mixture is combined with cream and half the cheese to create a creamy mixture"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Start layering the lasagne in this order: Sweet Potatoes, Spinach/Mushroom Mix, Eggplants, Marinara Sauce, Sweet Potatoes, Spinach/Mushrom Mix, Eggplants, Then finally sprinkle the remaining Monterey Jack/Cheddar Cheese Blend on top.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "sweet potatoes",
+              "spinach",
+              "portabella mushrooms",
+              "eggplants",
+              "marinara sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "layer ingredients in specified order"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "montery jack",
+              "cheddar cheese mix"
+            ],
+            "durationMinutes": null,
+            "notes": "remaining cheese on top"
+          }
+        ],
+        "outputDescription": "Lasagne is assembled in layers with cheese sprinkled on top"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Bake at 350-375 for about 35-45 min, depending on how your oven works. You'll know it's ready when you can pass through a fork easily through all the layers.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "sweet potatoes",
+              "spinach",
+              "portabella mushrooms",
+              "eggplants",
+              "marinara sauce",
+              "montery jack",
+              "cheddar cheese mix"
+            ],
+            "durationMinutes": 40,
+            "notes": "350-375°F for 35-45 minutes until fork passes through easily"
+          }
+        ],
+        "outputDescription": "Lasagne is fully baked and tender throughout"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Devour with Passion",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "sweet potatoes",
+              "spinach",
+              "portabella mushrooms",
+              "eggplants",
+              "marinara sauce",
+              "montery jack",
+              "cheddar cheese mix"
+            ],
+            "durationMinutes": null,
+            "notes": "serve the completed lasagne"
+          }
+        ],
+        "outputDescription": "Lasagne is ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "slice",
+        "boil",
+        "mix",
+        "coat",
+        "marinate",
+        "saute",
+        "season",
+        "heat",
+        "spread",
+        "sprinkle",
+        "bake",
+        "plate"
+      ],
+      "estimatedTotalTime": 89
+    }
+  },
+  "components": [
+    {
+      "id": "comp_647563_step1",
+      "name": "Sweet potato slices are boiled until semi-cooked, coated with curry powder and oil mixture, and marinating",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sweet_potatoes",
+          "name": "sweet potatoes",
+          "quantityG": 720
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 809.4114,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.2399999999999998,
+        "costPerG": 0.00400290878038041,
+        "nutrition": {
+          "calories": 619.2,
+          "protein": 11.304,
+          "fat": 0.36000000000000004,
+          "carbs": 144.864,
+          "fiber": 21.6,
+          "sugar": 30.096,
+          "sodium": 396,
+          "method": "raw"
+        },
+        "prepTimeMin": 26
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_647563_step2",
+      "name": "Eggplant slices are coated with oil, basil, salt and pepper mixture and marinating",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggplants",
+          "name": "eggplants",
+          "quantityG": 50
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 59.167500000000004,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.375,
+        "costPerG": 0.006337938902268981,
+        "nutrition": {
+          "calories": 12.5,
+          "protein": 0.49,
+          "fat": 0.09,
+          "carbs": 2.94,
+          "fiber": 1.5,
+          "sugar": 1.765,
+          "sodium": 1,
+          "method": "raw"
+        },
+        "prepTimeMin": 21
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_647563_step3",
+      "name": "Spinach and mushrooms are sautéed and seasoned with jalapeños, salt and pepper",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "spinach_bunch",
+          "name": "spinach",
+          "quantityG": 283.495
+        },
+        {
+          "ingredientId": "portobello_mushroom",
+          "name": "portabella mushrooms",
+          "quantityG": 180
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 401.850165,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 10.51954915,
+        "costPerG": 0.026177789798842062,
+        "nutrition": {
+          "calories": 104.80385000000001,
+          "protein": 11.905957,
+          "fat": 1.7356305,
+          "carbs": 17.2568685,
+          "fiber": 8.57689,
+          "sugar": 5.690679,
+          "sodium": 240.16105,
+          "method": "raw"
+        },
+        "prepTimeMin": 4.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_647563_step4",
+      "name": "Spinach mixture is combined with cream and half the cheese to create a creamy mixture",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "jalapeno",
+          "name": "jalapenos",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.96,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.009,
+        "costPerG": 0.004591836734693877,
+        "nutrition": {
+          "calories": 0.58,
+          "protein": 0.0182,
+          "fat": 0.0074,
+          "carbs": 0.13,
+          "fiber": 0.055999999999999994,
+          "sugar": 0.0824,
+          "sodium": 0.06,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_647563_step5",
+      "name": "Lasagne is assembled in layers with cheese sprinkled on top",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "marinara_sauce",
+          "name": "marinara sauce",
+          "quantityG": 735
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 824.6700000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.1450000000000005,
+        "costPerG": 0.006238859180035651,
+        "nutrition": {
+          "calories": 176.39999999999998,
+          "protein": 8.819999999999999,
+          "fat": 2.2049999999999996,
+          "carbs": 39.028499999999994,
+          "fiber": 11.024999999999999,
+          "sugar": 26.166,
+          "sodium": 3483.8999999999996,
+          "method": "raw"
+        },
+        "prepTimeMin": 1.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_647563_step6",
+      "name": "Lasagne is fully baked and tender throughout",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "monterey_jack",
+          "name": "montery jack",
+          "quantityG": 340.194
+        },
+        {
+          "ingredientId": "cheese",
+          "name": "cheddar cheese mix",
+          "quantityG": 340.194
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 40,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 578.3298,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 17.519991,
+        "costPerG": 0.030294117647058826,
+        "nutrition": {
+          "calories": 2656.91514,
+          "protein": 162.612732,
+          "fat": 218.74474200000003,
+          "carbs": 10.614052800000001,
+          "fiber": 0,
+          "sugar": 2.8236102,
+          "sodium": 4266.03276,
+          "method": "raw"
+        },
+        "prepTimeMin": 40
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_647563_step7",
+      "name": "Lasagne is ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 43.96388881666667,
+    "costPerServing": 7.327314802777778,
+    "totalPrepTime": 100,
+    "nutritionPerServing": {
+      "calories": 696.3703316666666,
+      "protein": 33.614221500000006,
+      "fat": 47.19101708333334,
+      "carbs": 38.86101188333333,
+      "fiber": 8.432048333333334,
+      "sugar": 11.787454866666666,
+      "sodium": 1792.7393016666667
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_647563_step1",
+        "name": "Sweet potato slices are boiled until semi-cooked, coated with curry powder and oil mixture, and marinating",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_647563_step2",
+        "name": "Eggplant slices are coated with oil, basil, salt and pepper mixture and marinating",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_647563_step3",
+        "name": "Spinach and mushrooms are sautéed and seasoned with jalapeños, salt and pepper",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_647563_step4",
+        "name": "Spinach mixture is combined with cream and half the cheese to create a creamy mixture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_647563_step6",
+        "name": "Lasagne is fully baked and tender throughout",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_647563_step1",
+      "name": "Sweet potato slices are boiled until semi-cooked, coated with curry powder and oil mixture, and marinating",
+      "shelfLifeHours": 2,
+      "processes": [
+        "slice",
+        "boil",
+        "mix",
+        "coat",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_647563_step2",
+      "name": "Eggplant slices are coated with oil, basil, salt and pepper mixture and marinating",
+      "shelfLifeHours": 2,
+      "processes": [
+        "slice",
+        "mix",
+        "coat",
+        "marinate"
+      ]
+    },
+    {
+      "componentId": "comp_647563_step3",
+      "name": "Spinach and mushrooms are sautéed and seasoned with jalapeños, salt and pepper",
+      "shelfLifeHours": 72,
+      "processes": [
+        "saute",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_647563_step4",
+      "name": "Spinach mixture is combined with cream and half the cheese to create a creamy mixture",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "mix"
+      ]
+    }
+  ]
+}

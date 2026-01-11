@@ -1,0 +1,802 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_a72f9b9e-8fb9-4197-854c-6cb2f8df8be3",
+  "name": "Feta Encrusted Salmon",
+  "source": "spoonacular",
+  "spoonacularId": 642619,
+  "image": "/images/recipes/642619.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "dill",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "panko",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salmon fillets",
+      "quantity": 680.389,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Pre-Heat oven to 350 F</li><li>Season each salmon filet with sea salt and pepper</li><li>Place on a greased sheet tray</li><li>Combine olive oil, lemon juice, Panko and chopped dill in a bowl</li><li>Fold Feta Crumbles into breadcrumb mixture</li><li>Carefully coat the top of each salmon filet with the breadcrumb mixture</li><li>Bake in the oven for 8-10 minutes until topping becomes golden brown</li><li>Serve over couscous with a sprig of dill and fresh lemon</li></ol>",
+  "prepTime": 8,
+  "cookTime": 18,
+  "servings": 4,
+  "nutrition": {
+    "calories": 388.2,
+    "protein": 43.6,
+    "fat": 15.32,
+    "carbs": 17.83,
+    "fiber": 2.26,
+    "sugar": 5.26,
+    "saturatedFat": 2.38,
+    "sodium": 644.82
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "dill",
+      "displayName": "dill",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp dill",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 113.398,
+        "originalUnit": "g",
+        "normalizedQuantityG": 113.398,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "113.398 g feta",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Panko breadcrumbs",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "60 g panko",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 680.389,
+        "originalUnit": "g",
+        "normalizedQuantityG": 680.389,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "680.389 g salmon fillets",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings sea salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 8,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:55:18.953Z",
+  "processGraph": {
+    "recipeName": "Feta Encrusted Salmon",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Pre-Heat oven to 350 F",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 350°F"
+          }
+        ],
+        "outputDescription": "oven preheated to 350°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Season each salmon filet with sea salt and pepper",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salmon fillets",
+              "sea salt",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season with salt and pepper"
+          }
+        ],
+        "outputDescription": "salmon fillets seasoned with salt and pepper"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place on a greased sheet tray",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange on greased sheet tray"
+          }
+        ],
+        "outputDescription": "seasoned salmon fillets arranged on greased sheet tray"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Combine olive oil, lemon juice, Panko and chopped dill in a bowl",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "dill"
+            ],
+            "durationMinutes": null,
+            "notes": "chop dill"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "olive oil",
+              "juice of lemon",
+              "panko",
+              "dill"
+            ],
+            "durationMinutes": null,
+            "notes": "combine ingredients in bowl"
+          }
+        ],
+        "outputDescription": "breadcrumb mixture of olive oil, lemon juice, panko, and chopped dill"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Fold Feta Crumbles into breadcrumb mixture",
+        "processes": [
+          {
+            "processId": "fold",
+            "ingredients": [
+              "feta"
+            ],
+            "durationMinutes": null,
+            "notes": "gently fold feta into breadcrumb mixture"
+          }
+        ],
+        "outputDescription": "breadcrumb mixture with feta crumbles folded in"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Carefully coat the top of each salmon filet with the breadcrumb mixture",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": null,
+            "notes": "coat tops with breadcrumb mixture"
+          }
+        ],
+        "outputDescription": "salmon fillets coated with feta breadcrumb mixture on top"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Bake in the oven for 8-10 minutes until topping becomes golden brown",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": 9,
+            "notes": "bake until topping is golden brown"
+          }
+        ],
+        "outputDescription": "baked salmon with golden brown feta crust"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Serve over couscous with a sprig of dill and fresh lemon",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "dill"
+            ],
+            "durationMinutes": null,
+            "notes": "garnish with dill sprig and fresh lemon"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": null,
+            "notes": "serve over couscous"
+          }
+        ],
+        "outputDescription": "plated feta-crusted salmon over couscous, garnished with dill and lemon"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "heat",
+        "season",
+        "plate",
+        "chop",
+        "mix",
+        "fold",
+        "coat",
+        "bake",
+        "garnish"
+      ],
+      "estimatedTotalTime": 20
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642619_step1",
+      "name": "oven preheated to 350°F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642619_step2",
+      "name": "salmon fillets seasoned with salt and pepper",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salmon",
+          "name": "salmon fillets",
+          "quantityG": 680.389
+        },
+        {
+          "ingredientId": "salt",
+          "name": "sea salt",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 702.15678,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 75.07679000000002,
+        "costPerG": 0.10692311480635423,
+        "nutrition": {
+          "calories": 967.19238,
+          "protein": 135.0287776,
+          "fat": 43.1486626,
+          "carbs": 0.24120000000000003,
+          "fiber": 0.084,
+          "sugar": 0.168,
+          "sodium": 1849.85116,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642619_step3",
+      "name": "seasoned salmon fillets arranged on greased sheet tray",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642619_step4",
+      "name": "breadcrumb mixture of olive oil, lemon juice, panko, and chopped dill",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "dill",
+          "name": "dill",
+          "quantityG": 0.2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.196,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.046666000000000006,
+        "costPerG": 0.2380918367346939,
+        "nutrition": {
+          "calories": 0.08600000000000001,
+          "protein": 0.00692,
+          "fat": 0.0022400000000000002,
+          "carbs": 0.014039999999999999,
+          "fiber": 0.004200000000000001,
+          "sugar": 0,
+          "sodium": 0.122,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642619_step5",
+      "name": "breadcrumb mixture with feta crumbles folded in",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "feta",
+          "name": "feta",
+          "quantityG": 113.398
+        }
+      ],
+      "processes": [
+        {
+          "processId": "fold",
+          "processName": "Fold",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 113.398,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.551455,
+        "costPerG": 0.0225,
+        "nutrition": {
+          "calories": 300.5047,
+          "protein": 16.102515999999998,
+          "fat": 24.38057,
+          "carbs": 4.3998424,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1292.7372,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642619_step6",
+      "name": "salmon fillets coated with feta breadcrumb mixture on top",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642619_step7",
+      "name": "baked salmon with golden brown feta crust",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 9,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642619_step8",
+      "name": "plated feta-crusted salmon over couscous, garnished with dill and lemon",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 126.718911,
+    "costPerServing": 31.67972775,
+    "totalPrepTime": 25.5,
+    "nutritionPerServing": {
+      "calories": 410.43077,
+      "protein": 39.8570534,
+      "fat": 21.10086815,
+      "carbs": 13.3407706,
+      "fiber": 0.75705,
+      "sugar": 1.476,
+      "sodium": 895.74509
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642619_step4",
+        "name": "breadcrumb mixture of olive oil, lemon juice, panko, and chopped dill",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642619_step6",
+        "name": "salmon fillets coated with feta breadcrumb mixture on top",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_642619_step7",
+        "name": "baked salmon with golden brown feta crust",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_642619_step4",
+      "name": "breadcrumb mixture of olive oil, lemon juice, panko, and chopped dill",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "mix"
+      ]
+    }
+  ]
+}

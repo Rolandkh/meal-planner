@@ -1,0 +1,1187 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_a67a1ed3-5dc9-4c14-851a-dfcebfd6a7f1",
+  "name": "Crab Stacks",
+  "source": "spoonacular",
+  "spoonacularId": 640321,
+  "image": "/images/recipes/640321.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "dungeness crab- cooked&",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "orange juice",
+      "quantity": 248,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken stock",
+      "quantity": 240,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mango",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "fresno chile",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "avocado",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lime",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "roma tomato",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cilantro",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onion",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "clove garlic",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salmon",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "COMBINE THE QUINOA, OJ AND STOCK IN A SAUCEPAN. COOK OVER MEDIUM HIGH HEAT UNTIL ALL LIQUID HAS BEEN ABSORBED. REMOVE FROM HEAT AND SET ASIDE.\nCUT THE LIME INTO QUARTERS.\nCOMBINE THE MANGO AND FRESNO CHILE. SQUEEZE A 1/4 OF THE LIME OVER THE MIXTURE AND MIX TO COMBINE.\nCOMBINE THE TOMATO, CILANTRO, GREEN ONION AND GARLIC. SQUEEZE 1/4 OF THE LIME OVER THE MIXTURE AND STIR TO COMBINE.\nUSING A ROUND MOLD, SPOON SOME OF THE PREPARED QUINOA INTO THE BOTTOM. IF USING THE SALMON- SPOON IN A LAYER OF THE SALMON.- OTHERWISE USE CRAB. TOP WITH A LAYER OF THE TOMATO MIXTURE, THEN AVOCADO.\nTOP WITH A THIN LAYER OF THE QUINOA, THEN CRAB, FOLLOWED BY AVOCADO, THE MANGO MIXTURE AND MORE CRAB AND FINALLY TOPPED WITH A BIT MORE MANGO MIXTURE.\nPRESS DOWN AND THEN REMOVE THE MOLDS.\nGARNISH WITH PICKLED GINGER AND RADISHES AND USE THE REMAINING 1/2 LIME TO SQUEEZE OVER THE STACKS. SERVE COLD.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 3,
+  "nutrition": {
+    "calories": 729.84,
+    "protein": 56.41,
+    "fat": 26.14,
+    "carbs": 69.2,
+    "fiber": 10.9,
+    "sugar": 19.88,
+    "saturatedFat": 3.93,
+    "sodium": 361.9
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 84.6,
+    "hasUnknownIngredients": true,
+    "unknownCount": 2,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "dungeness crab- cooked&",
+        "identity": "dungeness crab- cooked&",
+        "issue": "no_match_found"
+      },
+      {
+        "raw": "fresno chile",
+        "identity": "fresno chile",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Orange juice",
+      "quantity": {
+        "originalQuantity": 248,
+        "originalUnit": "ml",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 248
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "248 ml orange juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_broth",
+      "displayName": "chicken broth",
+      "quantity": {
+        "originalQuantity": 240,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 240,
+        "normalizedQuantityMl": 240
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "240 ml chicken stock",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mango",
+      "displayName": "mango",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  mango",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "avocado",
+      "displayName": "avocado",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  avocado",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "rice",
+      "displayName": "rice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  lime",
+      "matchConfidence": 0.5
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  roma tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cilantro",
+      "displayName": "cilantro",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp cilantro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp green onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 servings salmon",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 11,
+    "unmatched": 2,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1  dungeness crab- cooked&",
+        "identityText": "dungeness crab- cooked&",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1  fresno chile",
+        "identityText": "fresno chile",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:53:49.936Z",
+  "processGraph": {
+    "recipeName": "Crab Stacks",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "COMBINE THE QUINOA, OJ AND STOCK IN A SAUCEPAN. COOK OVER MEDIUM HIGH HEAT UNTIL ALL LIQUID HAS BEEN ABSORBED. REMOVE FROM HEAT AND SET ASIDE.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "orange juice",
+              "chicken stock"
+            ],
+            "durationMinutes": null,
+            "notes": "combine in saucepan"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa",
+              "orange juice",
+              "chicken stock"
+            ],
+            "durationMinutes": null,
+            "notes": "cook over medium high heat until liquid absorbed"
+          }
+        ],
+        "outputDescription": "cooked quinoa with absorbed liquid, set aside"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "CUT THE LIME INTO QUARTERS.",
+        "processes": [
+          {
+            "processId": "quarter",
+            "ingredients": [
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into four equal pieces"
+          }
+        ],
+        "outputDescription": "lime cut into quarters"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "COMBINE THE MANGO AND FRESNO CHILE. SQUEEZE A 1/4 OF THE LIME OVER THE MIXTURE AND MIX TO COMBINE.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "mango",
+              "fresno chile"
+            ],
+            "durationMinutes": null,
+            "notes": "implied cutting for combining"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "mango",
+              "fresno chile"
+            ],
+            "durationMinutes": null,
+            "notes": "combine together"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from 1/4 lime"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "mango",
+              "fresno chile",
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "mix lime juice into mixture"
+          }
+        ],
+        "outputDescription": "mango and chile mixture with lime juice"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "COMBINE THE TOMATO, CILANTRO, GREEN ONION AND GARLIC. SQUEEZE 1/4 OF THE LIME OVER THE MIXTURE AND STIR TO COMBINE.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "roma tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "implied cutting for combining"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "cilantro",
+              "green onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied cutting for combining"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied cutting for combining"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "roma tomato",
+              "cilantro",
+              "green onion",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "combine together"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from 1/4 lime"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "roma tomato",
+              "cilantro",
+              "green onion",
+              "garlic",
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "stir lime juice into mixture"
+          }
+        ],
+        "outputDescription": "tomato mixture with herbs and lime juice"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "USING A ROUND MOLD, SPOON SOME OF THE PREPARED QUINOA INTO THE BOTTOM. IF USING THE SALMON- SPOON IN A LAYER OF THE SALMON.- OTHERWISE USE CRAB. TOP WITH A LAYER OF THE TOMATO MIXTURE, THEN AVOCADO.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "implied cutting for layering"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa",
+              "salmon",
+              "dungeness crab",
+              "roma tomato",
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "layer ingredients in round mold"
+          }
+        ],
+        "outputDescription": "first layer of stack assembled in mold"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "TOP WITH A THIN LAYER OF THE QUINOA, THEN CRAB, FOLLOWED BY AVOCADO, THE MANGO MIXTURE AND MORE CRAB AND FINALLY TOPPED WITH A BIT MORE MANGO MIXTURE.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa",
+              "dungeness crab",
+              "avocado",
+              "mango"
+            ],
+            "durationMinutes": null,
+            "notes": "continue layering ingredients in specific order"
+          }
+        ],
+        "outputDescription": "complete stack assembled in mold with all layers"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "PRESS DOWN AND THEN REMOVE THE MOLDS.",
+        "processes": [
+          {
+            "processId": "crush",
+            "ingredients": [
+              "quinoa",
+              "dungeness crab",
+              "avocado",
+              "mango",
+              "roma tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "press down to compact stack"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa",
+              "dungeness crab",
+              "avocado",
+              "mango",
+              "roma tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "remove molds to reveal shaped stacks"
+          }
+        ],
+        "outputDescription": "compressed stacks removed from molds"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "GARNISH WITH PICKLED GINGER AND RADISHES AND USE THE REMAINING 1/2 LIME TO SQUEEZE OVER THE STACKS. SERVE COLD.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from remaining 1/2 lime"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "lime"
+            ],
+            "durationMinutes": null,
+            "notes": "add pickled ginger, radishes, and lime juice as final garnish"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa",
+              "dungeness crab",
+              "avocado",
+              "mango",
+              "roma tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "serve cold"
+          }
+        ],
+        "outputDescription": "finished crab stacks garnished and ready to serve cold"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 18,
+      "uniqueProcesses": [
+        "mix",
+        "simmer",
+        "quarter",
+        "dice",
+        "chop",
+        "mince",
+        "squeeze",
+        "slice",
+        "plate",
+        "crush",
+        "garnish"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_640321_step1",
+      "name": "cooked quinoa with absorbed liquid, set aside",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        },
+        {
+          "ingredientId": "orange_juice",
+          "name": "orange juice",
+          "quantityG": 248
+        },
+        {
+          "ingredientId": "chicken_broth",
+          "name": "chicken stock",
+          "quantityG": 240
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 592.2,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.9179999999999997,
+        "costPerG": 0.006616008105369806,
+        "nutrition": {
+          "calories": 751.6,
+          "protein": 27.276,
+          "fat": 11.319,
+          "carbs": 135.92,
+          "fiber": 12.396,
+          "sugar": 21.864,
+          "sodium": 901.38,
+          "method": "raw"
+        },
+        "prepTimeMin": 22
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640321_step2",
+      "name": "lime cut into quarters",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lime_juice",
+          "name": "lime",
+          "quantityG": 50
+        }
+      ],
+      "processes": [
+        {
+          "processId": "quarter",
+          "processName": "Quarter",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 49.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.325,
+        "costPerG": 0.006565656565656566,
+        "nutrition": {
+          "calories": 12.5,
+          "protein": 0.21,
+          "fat": 0.035,
+          "carbs": 4.21,
+          "fiber": 0.2,
+          "sugar": 0.845,
+          "sodium": 1,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640321_step3",
+      "name": "mango and chile mixture with lime juice",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mango",
+          "name": "mango",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.388,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.01,
+        "costPerG": 0.02577319587628866,
+        "nutrition": {
+          "calories": 0.6,
+          "protein": 0.008199999999999999,
+          "fat": 0.0038,
+          "carbs": 0.15,
+          "fiber": 0.016,
+          "sugar": 0.13699999999999998,
+          "sodium": 0.01,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640321_step4",
+      "name": "tomato mixture with herbs and lime juice",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "roma tomato",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 44.716224,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1584,
+        "costPerG": 0.07063208199332753,
+        "nutrition": {
+          "calories": 21.599999999999998,
+          "protein": 1.056,
+          "fat": 0.24,
+          "carbs": 4.668,
+          "fiber": 1.44,
+          "sugar": 3.1559999999999997,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640321_step5",
+      "name": "first layer of stack assembled in mold",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "avocado",
+          "name": "avocado",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.98,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0125,
+        "costPerG": 0.012755102040816327,
+        "nutrition": {
+          "calories": 1.6,
+          "protein": 0.02,
+          "fat": 0.147,
+          "carbs": 0.0853,
+          "fiber": 0.067,
+          "sugar": 0.006600000000000001,
+          "sodium": 0.07,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640321_step6",
+      "name": "complete stack assembled in mold with all layers",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_640321_step7",
+      "name": "compressed stacks removed from molds",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "crush",
+          "processName": "Crush",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_640321_step8",
+      "name": "finished crab stacks garnished and ready to serve cold",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 57.55846,
+    "costPerServing": 19.186153333333333,
+    "totalPrepTime": 56,
+    "nutritionPerServing": {
+      "calories": 478.6120000000001,
+      "protein": 39.46539666666667,
+      "fat": 13.437823333333334,
+      "carbs": 48.94013999999999,
+      "fiber": 4.761933333333333,
+      "sugar": 8.699196666666667,
+      "sodium": 372.1126666666667
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_640321_step1",
+        "name": "cooked quinoa with absorbed liquid, set aside",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640321_step2",
+        "name": "lime cut into quarters",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640321_step3",
+        "name": "mango and chile mixture with lime juice",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640321_step4",
+        "name": "tomato mixture with herbs and lime juice",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640321_step5",
+        "name": "first layer of stack assembled in mold",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640321_step7",
+        "name": "compressed stacks removed from molds",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_640321_step8",
+        "name": "finished crab stacks garnished and ready to serve cold",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_640321_step1",
+      "name": "cooked quinoa with absorbed liquid, set aside",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_640321_step3",
+      "name": "mango and chile mixture with lime juice",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "mix",
+        "squeeze",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_640321_step4",
+      "name": "tomato mixture with herbs and lime juice",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "chop",
+        "mince",
+        "mix",
+        "squeeze",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_640321_step5",
+      "name": "first layer of stack assembled in mold",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "plate"
+      ]
+    },
+    {
+      "componentId": "comp_640321_step7",
+      "name": "compressed stacks removed from molds",
+      "shelfLifeHours": 2,
+      "processes": [
+        "crush",
+        "plate"
+      ]
+    },
+    {
+      "componentId": "comp_640321_step8",
+      "name": "finished crab stacks garnished and ready to serve cold",
+      "shelfLifeHours": 48,
+      "processes": [
+        "squeeze",
+        "garnish",
+        "plate"
+      ]
+    }
+  ]
+}

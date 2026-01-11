@@ -1,0 +1,419 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_2b063a31-fbcc-4a99-9db7-169fbaf87cb5",
+  "name": "Peach and Pistachio Greek Yogurt Bowl",
+  "source": "spoonacular",
+  "spoonacularId": 1095731,
+  "image": "/images/recipes/1095731.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "non-fat greek yogurt",
+      "quantity": 100,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "peach",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pistachios",
+      "quantity": 30.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mint leaves",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<p>1.  Scoop yogurt into a serving bowl.</p><p>2. Slice peach horizontal, carving out center seed. Or slice vertically to top yogurt.</p><p>3. Top yogurt with peaches, pistachios, and mint..... enjoy!</p>",
+  "prepTime": 2,
+  "cookTime": 4,
+  "servings": 1,
+  "nutrition": {
+    "calories": 265.39,
+    "protein": 17.22,
+    "fat": 14.53,
+    "carbs": 19.69,
+    "fiber": 4.3,
+    "sugar": 11.92,
+    "saturatedFat": 1.83,
+    "sodium": 46.09
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian",
+      "primal"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 100,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 100,
+        "normalizedQuantityMl": 100
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "100 ml non-fat greek yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "peach",
+      "displayName": "peach",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  peach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pistachio",
+      "displayName": "pistachios",
+      "quantity": {
+        "originalQuantity": 30.75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 30.75,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "30.75 g pistachios",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp mint leaves",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 4,
+    "matched": 4,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:31:18.390Z",
+  "processGraph": {
+    "recipeName": "Peach and Pistachio Greek Yogurt Bowl",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Scoop yogurt into a serving bowl.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "non-fat greek yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "transferring yogurt to serving bowl"
+          }
+        ],
+        "outputDescription": "yogurt is placed in serving bowl"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Slice peach horizontal, carving out center seed. Or slice vertically to top yogurt.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "peach"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting peach horizontally or vertically"
+          },
+          {
+            "processId": "core",
+            "ingredients": [
+              "peach"
+            ],
+            "durationMinutes": null,
+            "notes": "removing center seed/pit"
+          }
+        ],
+        "outputDescription": "peach is sliced and pit removed, ready for topping"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Top yogurt with peaches, pistachios, and mint..... enjoy!",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "peach",
+              "pistachios",
+              "mint leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "adding toppings to yogurt bowl"
+          }
+        ],
+        "outputDescription": "completed yogurt bowl with all toppings arranged on top"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 4,
+      "uniqueProcesses": [
+        "plate",
+        "slice",
+        "core",
+        "garnish"
+      ],
+      "estimatedTotalTime": 5
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1095731_step1",
+      "name": "yogurt is placed in serving bowl",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "non-fat greek yogurt",
+          "quantityG": 100
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 100,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6000000000000001,
+        "costPerG": 0.006000000000000001,
+        "nutrition": {
+          "calories": 61,
+          "protein": 10.3,
+          "fat": 0.37,
+          "carbs": 3.64,
+          "fiber": 0,
+          "sugar": 3.27,
+          "sodium": 36,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_1095731_step2",
+      "name": "peach is sliced and pit removed, ready for topping",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "peach",
+          "name": "peach",
+          "quantityG": 0.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "core",
+          "processName": "Core",
+          "yieldFactor": 0.92,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.45080000000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0025,
+        "costPerG": 0.005545696539485359,
+        "nutrition": {
+          "calories": 0.21,
+          "protein": 0.00455,
+          "fat": 0.00135,
+          "carbs": 0.050499999999999996,
+          "fiber": 0.0075,
+          "sugar": 0.04195,
+          "sodium": 0.065,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1095731_step3",
+      "name": "completed yogurt bowl with all toppings arranged on top",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pistachios",
+          "name": "pistachios",
+          "quantityG": 30.75
+        },
+        {
+          "ingredientId": "mint",
+          "name": "mint leaves",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 32.385,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.8026025,
+        "costPerG": 0.05566164891153312,
+        "nutrition": {
+          "calories": 173.515,
+          "protein": 6.270524999999999,
+          "fat": 13.966825,
+          "carbs": 8.608225,
+          "fiber": 3.24725,
+          "sugar": 2.35545,
+          "sodium": 0.6174999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 2.4051025000000004,
+    "costPerServing": 2.4051025000000004,
+    "totalPrepTime": 6,
+    "nutritionPerServing": {
+      "calories": 234.725,
+      "protein": 16.575075000000002,
+      "fat": 14.338175,
+      "carbs": 12.298725,
+      "fiber": 3.25475,
+      "sugar": 5.6674,
+      "sodium": 36.6825
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1095731_step2",
+        "name": "peach is sliced and pit removed, ready for topping",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1095731_step2",
+      "name": "peach is sliced and pit removed, ready for topping",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "core"
+      ]
+    }
+  ]
+}

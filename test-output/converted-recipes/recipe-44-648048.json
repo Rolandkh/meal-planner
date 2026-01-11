@@ -1,0 +1,848 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_185f6548-8915-4c7c-a620-6b8c466dd7be",
+  "name": "Italian Beef Braciole",
+  "source": "spoonacular",
+  "spoonacularId": 648048,
+  "image": "/images/recipes/648048.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "beef steak",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "prosciutto",
+      "quantity": 4,
+      "unit": "slice",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "genoa salami",
+      "quantity": 6,
+      "unit": "slice",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bread crumbs",
+      "quantity": 108,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 15,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "romano cheese",
+      "quantity": 25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "marinara sauce",
+      "quantity": 1.47,
+      "unit": "l",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine",
+      "quantity": 120,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Pound the beef between two sheets of plastic wrap with a meat tenderizer mallet until about  to  inch thick being careful to prevent holes or tears in the meat. Any holes that do happen can be patched with a piece of prosciutto or salami during the next step.\nPlace the prosciutto and salami in a single layer over the beef. If there are any holes or thin places in the beef, make sure to place the meat over those areas.\nSpread the breadcrumbs over the salami in an even layer leaving an inch on all sides to make rolling the meat easier. Sprinkle the cheese over the breadcrumbs and drizzle 2 tablespoons of the olive oil over all.\nCarefully fold the edges over and begin to roll the beef.  Tie the roll in several places with kitchen twine and gently rub the outside of the roll with the remaining oil.\nHeat a non-stick skillet over medium high heat. With the aid of tongs, sear the roll all over, including the ends, until nicely browned all over. While the meat is browning, heat the marinara sauce, garlic and wine in a Dutch oven or pan large enough to hold the size of the roll.  Place the browned braciole in the sauce and bring to a gentle simmer.  Cover and braise, over low heat until tender. The braciole in the photograph took 3 hours until a fork inserted into the meat slid in easily.\nWhen tender, carefully remove the beef roll from the sauce and set on a platter. Let the roll cool for about 5-10 minutes and remove the string. Slice the braciole and serve with pasta or gnocchi with the sauce over the top and plenty of parmesan cheese.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 620.06,
+    "protein": 40.07,
+    "fat": 31.41,
+    "carbs": 41.26,
+    "fiber": 6.9,
+    "sugar": 15.04,
+    "saturatedFat": 8.01,
+    "sodium": 2441.25
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "breadcrumbs",
+      "displayName": "breadcrumbs",
+      "quantity": {
+        "originalQuantity": 108,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 83,
+        "normalizedQuantityMl": 108
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "108 ml bread crumbs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 15,
+        "originalUnit": "g",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "15 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Romano cheese",
+      "quantity": {
+        "originalQuantity": 25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 25,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "25 g romano cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 54,
+        "normalizedQuantityMl": 60
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Marinara sauce",
+      "quantity": {
+        "originalQuantity": 1.47,
+        "originalUnit": "l",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 1470
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "1.47 l marinara sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 120,
+        "normalizedQuantityMl": 120
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "120 ml red wine",
+      "matchConfidence": 0.6
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 7,
+    "unmatched": 3,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "453.592 g round steak",
+        "identityText": "round steak",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4 slice prosciutto",
+        "identityText": "slice prosciutto",
+        "state": "fresh"
+      },
+      {
+        "rawText": "6 slice genoa salami",
+        "identityText": "slice genoa salami",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:34:13.059Z",
+  "processGraph": {
+    "recipeName": "Italian Beef Braciole",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Pound the beef between two sheets of plastic wrap with a meat tenderizer mallet until about to inch thick being careful to prevent holes or tears in the meat. Any holes that do happen can be patched with a piece of prosciutto or salami during the next step.",
+        "processes": [
+          {
+            "processId": "pound",
+            "ingredients": [
+              "beef steak"
+            ],
+            "durationMinutes": null,
+            "notes": "flatten to 1/4-1/2 inch thick using meat tenderizer mallet"
+          }
+        ],
+        "outputDescription": "beef flattened to uniform thickness between plastic wrap"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Place the prosciutto and salami in a single layer over the beef. If there are any holes or thin places in the beef, make sure to place the meat over those areas.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "prosciutto",
+              "genoa salami"
+            ],
+            "durationMinutes": null,
+            "notes": "layer over flattened beef, covering any holes"
+          }
+        ],
+        "outputDescription": "beef covered with single layer of prosciutto and salami"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Spread the breadcrumbs over the salami in an even layer leaving an inch on all sides to make rolling the meat easier. Sprinkle the cheese over the breadcrumbs and drizzle 2 tablespoons of the olive oil over all.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "bread crumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "even layer over salami, leaving 1 inch border"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "romano cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "over breadcrumbs"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle 2 tablespoons over filling"
+          }
+        ],
+        "outputDescription": "beef layered with meat, breadcrumbs, cheese, and oil ready for rolling"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Carefully fold the edges over and begin to roll the beef. Tie the roll in several places with kitchen twine and gently rub the outside of the roll with the remaining oil.",
+        "processes": [
+          {
+            "processId": "roll",
+            "ingredients": [
+              "beef steak"
+            ],
+            "durationMinutes": null,
+            "notes": "fold edges and roll tightly, tie with kitchen twine"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "rub remaining oil on outside of roll"
+          }
+        ],
+        "outputDescription": "beef rolled into tight cylinder, tied with twine and oiled"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Heat a non-stick skillet over medium high heat. With the aid of tongs, sear the roll all over, including the ends, until nicely browned all over. While the meat is browning, heat the marinara sauce, garlic and wine in a Dutch oven or pan large enough to hold the size of the roll. Place the browned braciole in the sauce and bring to a gentle simmer. Cover and braise, over low heat until tender. The braciole in the photograph took 3 hours until a fork inserted into the meat slid in easily.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "heat non-stick skillet over medium-high heat"
+          },
+          {
+            "processId": "sear",
+            "ingredients": [
+              "beef steak"
+            ],
+            "durationMinutes": null,
+            "notes": "brown all surfaces including ends using tongs"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "marinara sauce",
+              "garlic",
+              "red wine"
+            ],
+            "durationMinutes": null,
+            "notes": "heat in Dutch oven large enough for roll"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "beef steak",
+              "marinara sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "bring to gentle simmer"
+          },
+          {
+            "processId": "braise",
+            "ingredients": [
+              "beef steak"
+            ],
+            "durationMinutes": 180,
+            "notes": "covered, low heat until fork tender"
+          }
+        ],
+        "outputDescription": "braciole seared and braised until tender in marinara sauce"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "When tender, carefully remove the beef roll from the sauce and set on a platter. Let the roll cool for about 5-10 minutes and remove the string. Slice the braciole and serve with pasta or gnocchi with the sauce over the top and plenty of parmesan cheese.",
+        "processes": [
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "beef steak"
+            ],
+            "durationMinutes": 7,
+            "notes": "let cool 5-10 minutes before slicing"
+          },
+          {
+            "processId": "slice_to_serve",
+            "ingredients": [
+              "beef steak"
+            ],
+            "durationMinutes": null,
+            "notes": "remove string and slice for serving"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "beef steak",
+              "marinara sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with pasta/gnocchi and sauce"
+          }
+        ],
+        "outputDescription": "sliced braciole plated and ready to serve with sauce"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "pound",
+        "spread",
+        "sprinkle",
+        "roll",
+        "coat",
+        "heat",
+        "sear",
+        "simmer",
+        "braise",
+        "rest_meat",
+        "slice_to_serve",
+        "plate"
+      ],
+      "estimatedTotalTime": 210
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648048_step1",
+      "name": "beef flattened to uniform thickness between plastic wrap",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ground_beef",
+          "name": "beef steak",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "pound",
+          "processName": "Pound",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 453.592,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.164656,
+        "costPerG": 0.018000000000000002,
+        "nutrition": {
+          "calories": 1152.12368,
+          "protein": 77.88174640000001,
+          "fat": 90.7184,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 303.90664,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648048_step2",
+      "name": "beef covered with single layer of prosciutto and salami",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "prosciutto",
+          "name": "prosciutto",
+          "quantityG": 4
+        },
+        {
+          "ingredientId": "salami",
+          "name": "genoa salami",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 11,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6799999999999999,
+        "costPerG": 0.061818181818181814,
+        "nutrition": {
+          "calories": 41.099999999999994,
+          "protein": 1.8596,
+          "fat": 3.6107999999999993,
+          "carbs": 0.1472,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 162.07999999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_648048_step3",
+      "name": "beef layered with meat, breadcrumbs, cheese, and oil ready for rolling",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "breadcrumbs",
+          "name": "bread crumbs",
+          "quantityG": 108
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 133.29360000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.512,
+        "costPerG": 0.011343380327337544,
+        "nutrition": {
+          "calories": 426.6,
+          "protein": 14.418000000000001,
+          "fat": 5.724,
+          "carbs": 77.73840000000001,
+          "fiber": 4.86,
+          "sugar": 6.696000000000001,
+          "sodium": 790.5600000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_648048_step4",
+      "name": "beef rolled into tight cylinder, tied with twine and oiled",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 54
+        }
+      ],
+      "processes": [
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 62.099999999999994,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.576,
+        "costPerG": 0.00927536231884058,
+        "nutrition": {
+          "calories": 477.36,
+          "protein": 0,
+          "fat": 54,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1.08,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648048_step5",
+      "name": "braciole seared and braised until tender in marinara sauce",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "marinara_sauce",
+          "name": "marinara sauce",
+          "quantityG": 1470
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "red_wine",
+          "name": "red wine",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sear",
+          "processName": "Sear",
+          "yieldFactor": 0.95,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "braise",
+          "processName": "Braise",
+          "yieldFactor": 0.85,
+          "durationMinutes": 180,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 1120.2429735,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.165000000000001,
+        "costPerG": 0.010859251330086563,
+        "nutrition": {
+          "calories": 477.15,
+          "protein": 18.677999999999997,
+          "fat": 4.484999999999999,
+          "carbs": 86.154,
+          "fiber": 22.365,
+          "sugar": 53.226,
+          "sodium": 6975.15,
+          "method": "raw"
+        },
+        "prepTimeMin": 209
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648048_step6",
+      "name": "sliced braciole plated and ready to serve with sauce",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 7,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice_to_serve",
+          "processName": "Slice to Serve",
+          "yieldFactor": 0.99,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 27.660106000000003,
+    "costPerServing": 6.915026500000001,
+    "totalPrepTime": 231.5,
+    "nutritionPerServing": {
+      "calories": 669.1209200000001,
+      "protein": 30.308211600000003,
+      "fat": 41.347925,
+      "carbs": 41.47415,
+      "fiber": 6.93,
+      "sugar": 15.058,
+      "sodium": 2135.2941599999995
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648048_step1",
+        "name": "beef flattened to uniform thickness between plastic wrap",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_648048_step4",
+        "name": "beef rolled into tight cylinder, tied with twine and oiled",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_648048_step5",
+        "name": "braciole seared and braised until tender in marinara sauce",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648048_step4",
+      "name": "beef rolled into tight cylinder, tied with twine and oiled",
+      "shelfLifeHours": 2,
+      "processes": [
+        "roll",
+        "coat"
+      ]
+    },
+    {
+      "componentId": "comp_648048_step5",
+      "name": "braciole seared and braised until tender in marinara sauce",
+      "shelfLifeHours": 96,
+      "processes": [
+        "heat",
+        "sear",
+        "heat",
+        "simmer",
+        "braise"
+      ]
+    }
+  ]
+}

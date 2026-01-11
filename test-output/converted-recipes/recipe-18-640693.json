@@ -1,0 +1,820 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_e5cbed8d-a34f-4d5b-bfbc-23e63c7fd856",
+  "name": "Creamy Ratatouille Over Penne",
+  "source": "spoonacular",
+  "spoonacularId": 640693,
+  "image": "/images/recipes/640693.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "pepper",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "penne",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggplant",
+      "quantity": 82,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mascarpone cheese",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 40,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 149,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground tomatoes",
+      "quantity": 240,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 59.147,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 124,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Heat olive oil in a large skillet over medium heat. Add onion, bell pepper, and zucchini and saut for about 7 minutes, stirring occasionally, until slightly softened.</li><li>Add eggplant and continue to saut mixture for another 3 minutes, stirring frequently. When vegetables are softened, add garlic and cook until fragrant, about 1 minute.</li><li>Add dried spices, salt, and pepper, followed by the tomato sauce and water. Allow mixture to come to a simmer and cook for 5 minutes, until slightly thickened.</li><li>Stir in mascarpone cheese and serve immediately.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 308.03,
+    "protein": 8.95,
+    "fat": 11.93,
+    "carbs": 44.12,
+    "fiber": 7.29,
+    "sugar": 10.39,
+    "saturatedFat": 3.39,
+    "sodium": 208.37
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "French",
+      "European"
+    ],
+    "diets": [
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pasta",
+      "displayName": "pasta",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings penne",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggplant",
+      "displayName": "eggplant",
+      "quantity": {
+        "originalQuantity": 82,
+        "originalUnit": "g",
+        "normalizedQuantityG": 82,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "82 g eggplant",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Mascarpone",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp mascarpone cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 40,
+        "originalUnit": "g",
+        "normalizedQuantityG": 40,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "40 g onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "oregano",
+      "displayName": "oregano",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp oregano",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 149,
+        "originalUnit": "g",
+        "normalizedQuantityG": 149,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "149 g bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 pinch salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 240,
+        "originalUnit": "g",
+        "normalizedQuantityG": 240,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "240 g ground tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 59.147,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 58,
+        "normalizedQuantityMl": 59.147
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "59.147 ml water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 124,
+        "originalUnit": "g",
+        "normalizedQuantityG": 124,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "124 g zucchini",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 14,
+    "matched": 14,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:25:08.525Z",
+  "processGraph": {
+    "recipeName": "Creamy Ratatouille Over Penne",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat olive oil in a large skillet over medium heat. Add onion, bell pepper, and zucchini and saut for about 7 minutes, stirring occasionally, until slightly softened.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in skillet over medium heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "bell pepper",
+              "zucchini"
+            ],
+            "durationMinutes": 7,
+            "notes": "stirring occasionally until slightly softened"
+          }
+        ],
+        "outputDescription": "vegetables are slightly softened"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add eggplant and continue to saut mixture for another 3 minutes, stirring frequently. When vegetables are softened, add garlic and cook until fragrant, about 1 minute.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": 3,
+            "notes": "stirring frequently with other vegetables"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": 1,
+            "notes": "cook until fragrant"
+          }
+        ],
+        "outputDescription": "all vegetables are softened and garlic is fragrant"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add dried spices, salt, and pepper, followed by the tomato sauce and water. Allow mixture to come to a simmer and cook for 5 minutes, until slightly thickened.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "basil",
+              "oregano",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add dried spices, salt, and pepper"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ground tomatoes",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "add tomato sauce and water to mixture"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "ground tomatoes",
+              "water",
+              "onion",
+              "bell pepper",
+              "zucchini",
+              "eggplant",
+              "garlic",
+              "basil",
+              "oregano",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": 5,
+            "notes": "cook until slightly thickened"
+          }
+        ],
+        "outputDescription": "mixture is simmered and slightly thickened"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Stir in mascarpone cheese and serve immediately.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "mascarpone cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "stir in mascarpone cheese"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "penne"
+            ],
+            "durationMinutes": null,
+            "notes": "serve immediately over penne"
+          }
+        ],
+        "outputDescription": "creamy ratatouille ready to serve over penne"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "heat",
+        "saute",
+        "season",
+        "mix",
+        "simmer",
+        "plate"
+      ],
+      "estimatedTotalTime": 16
+    }
+  },
+  "components": [
+    {
+      "id": "comp_640693_step1",
+      "name": "vegetables are slightly softened",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 7,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 11.2455,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.144,
+        "costPerG": 0.012805122048819527,
+        "nutrition": {
+          "calories": 119.34,
+          "protein": 0,
+          "fat": 13.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640693_step2",
+      "name": "all vegetables are softened and garlic is fragrant",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggplant",
+          "name": "eggplant",
+          "quantityG": 82
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 59.24499999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.615,
+        "costPerG": 0.010380622837370243,
+        "nutrition": {
+          "calories": 20.5,
+          "protein": 0.8036,
+          "fat": 0.14759999999999998,
+          "carbs": 4.821599999999999,
+          "fiber": 2.46,
+          "sugar": 2.8945999999999996,
+          "sodium": 1.64,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640693_step3",
+      "name": "mixture is simmered and slightly thickened",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "basil",
+          "name": "basil",
+          "quantityG": 0.4
+        },
+        {
+          "ingredientId": "oregano",
+          "name": "oregano",
+          "quantityG": 0.4
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 1
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 1.05
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 2.6163000000000003,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.737196,
+        "costPerG": 0.2817704391698199,
+        "nutrition": {
+          "calories": 3.7875,
+          "protein": 0.15769500000000003,
+          "fat": 0.05391,
+          "carbs": 0.9577550000000001,
+          "fiber": 0.44205,
+          "sugar": 0.02428,
+          "sodium": 387.90599999999995,
+          "method": "raw"
+        },
+        "prepTimeMin": 7.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640693_step4",
+      "name": "creamy ratatouille ready to serve over penne",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mascarpone",
+          "name": "mascarpone cheese",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 15,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.3,
+        "costPerG": 0.02,
+        "nutrition": {
+          "calories": 67.5,
+          "protein": 1.05,
+          "fat": 6.75,
+          "carbs": 0.3,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 8.25,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 11.48480649,
+    "costPerServing": 5.742403245,
+    "totalPrepTime": 25.5,
+    "nutritionPerServing": {
+      "calories": 246.72375000000002,
+      "protein": 6.6953975,
+      "fat": 11.234654999999998,
+      "carbs": 32.585227499999995,
+      "fiber": 6.160525000000001,
+      "sugar": 10.72644,
+      "sodium": 217.30167500000002
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_640693_step1",
+        "name": "vegetables are slightly softened",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_640693_step2",
+        "name": "all vegetables are softened and garlic is fragrant",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_640693_step3",
+        "name": "mixture is simmered and slightly thickened",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640693_step4",
+        "name": "creamy ratatouille ready to serve over penne",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_640693_step1",
+      "name": "vegetables are slightly softened",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_640693_step2",
+      "name": "all vegetables are softened and garlic is fragrant",
+      "shelfLifeHours": 72,
+      "processes": [
+        "saute",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_640693_step3",
+      "name": "mixture is simmered and slightly thickened",
+      "shelfLifeHours": 24,
+      "processes": [
+        "season",
+        "mix",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_640693_step4",
+      "name": "creamy ratatouille ready to serve over penne",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "plate"
+      ]
+    }
+  ]
+}

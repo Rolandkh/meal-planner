@@ -1,0 +1,1391 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_ff37bf22-8b7a-46f2-96c8-08da9d75199e",
+  "name": "Balsamic & Honey Glazed Salmon with Lemony Asparagus",
+  "source": "spoonacular",
+  "spoonacularId": 633921,
+  "image": "/images/recipes/633921.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "apple cider vinegar",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "asparagus",
+      "quantity": 12,
+      "unit": "stalks",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "balsamic vinegar",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dill",
+      "quantity": 0.125,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "grapeseed oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "herbs de provence",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "honey",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon zest",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salmon fillet",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable stock",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In a small mixing bowl or blender, combine all of the ingredients for the balsamic marinade except for the lemon juice (balsamic vinegar, apple cider vinegar, 1 tbsp grapeseed oil, honey, dried dill, herbs de provence, salt and pepper).</li><li> Whisk or blend until oil and vinegar are well incorporated and no longer separate.</li><li>  Place salmon fillet in a baking dish (I use a small casserole dish). Pour the marinade over the salmon and allow it to marinate for at least 15 minutes (or up to 24 hours covered in the refrigerator). </li><li> Turn your oven on high broil. </li><li>Just before putting the salmon in the oven, drizzle the lemon juice over the fish. </li><li>Bake for 10 to 12 minutes on the top rack or until salmon is glazed, browned and sizzling.</li><li>While the salmon is baking, prepare the asparagus. </li><li> Wash the asparagus and cut off the bottom inch and a half of each stalk and discard.</li><li>  Spread the asparagus on in a large skillet. Drizzle the grapeseed oil over the asparagus and spread the oil on the asparagus with your hands so that all stalks are completely coated. </li><li> Sprinkle asparagus with desired amount of salt and pepper. </li><li>Saute over medium heat for 5 minutes. </li><li>Add the two tablespoons of vegetable stock and cover the skillet. </li><li>Saute 4 minutes. </li><li>Remove lid and add the minced garlic. </li><li>Place cover back over the asparagus. </li><li>Continue cooking an additional 3 to 5 minutes until asparagus is cooked but not too soft.  Grate lemon zest over the top of the asparagus.</li></ol>",
+  "prepTime": 18,
+  "cookTime": 42,
+  "servings": 2,
+  "nutrition": {
+    "calories": 301.22,
+    "protein": 25.18,
+    "fat": 14.45,
+    "carbs": 18.46,
+    "fiber": 2.73,
+    "sugar": 12.74,
+    "saturatedFat": 1.85,
+    "sodium": 310.27
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "apple_cider_vinegar",
+      "displayName": "apple cider vinegar",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps apple cider vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Asparagus",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "12 stalks asparagus",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "balsamic_vinegar",
+      "displayName": "balsamic vinegar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp balsamic vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "dill",
+      "displayName": "dill",
+      "quantity": {
+        "originalQuantity": 0.125,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 0,
+        "normalizedQuantityMl": 0.625
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.125 tsps dill",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "grapeseed_oil",
+      "displayName": "grapeseed oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp grapeseed oil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Herbes de Provence",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp herbs de provence",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "honey",
+      "displayName": "honey",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp honey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lemon zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g salmon fillet",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps vegetable stock",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 13,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:52:41.273Z",
+  "processGraph": {
+    "recipeName": "Balsamic & Honey Glazed Salmon with Lemony Asparagus",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a small mixing bowl or blender, combine all of the ingredients for the balsamic marinade except for the lemon juice (balsamic vinegar, apple cider vinegar, 1 tbsp grapeseed oil, honey, dried dill, herbs de provence, salt and pepper).",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "balsamic vinegar",
+              "apple cider vinegar",
+              "grapeseed oil",
+              "honey",
+              "dill",
+              "herbs de provence",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combining marinade ingredients"
+          }
+        ],
+        "outputDescription": "marinade ingredients combined in bowl"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Whisk or blend until oil and vinegar are well incorporated and no longer separate.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "balsamic vinegar",
+              "apple cider vinegar",
+              "grapeseed oil",
+              "honey",
+              "dill",
+              "herbs de provence",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "emulsifying oil and vinegar"
+          }
+        ],
+        "outputDescription": "well-incorporated marinade with oil and vinegar emulsified"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place salmon fillet in a baking dish (I use a small casserole dish). Pour the marinade over the salmon and allow it to marinate for at least 15 minutes (or up to 24 hours covered in the refrigerator).",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "salmon fillet"
+            ],
+            "durationMinutes": 15,
+            "notes": "minimum 15 minutes, up to 24 hours"
+          }
+        ],
+        "outputDescription": "salmon marinating in balsamic marinade"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Turn your oven on high broil.",
+        "processes": [],
+        "outputDescription": "oven preheated to high broil"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Just before putting the salmon in the oven, drizzle the lemon juice over the fish.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extracting lemon juice"
+          }
+        ],
+        "outputDescription": "salmon with lemon juice drizzled on top"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Bake for 10 to 12 minutes on the top rack or until salmon is glazed, browned and sizzling.",
+        "processes": [
+          {
+            "processId": "broil",
+            "ingredients": [
+              "salmon fillet"
+            ],
+            "durationMinutes": 11,
+            "notes": "10-12 minutes until glazed and browned"
+          }
+        ],
+        "outputDescription": "glazed, browned, and sizzling salmon"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "While the salmon is baking, prepare the asparagus.",
+        "processes": [],
+        "outputDescription": "preparation phase for asparagus"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Wash the asparagus and cut off the bottom inch and a half of each stalk and discard.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "asparagus"
+            ],
+            "durationMinutes": null,
+            "notes": "washing asparagus"
+          },
+          {
+            "processId": "trim",
+            "ingredients": [
+              "asparagus"
+            ],
+            "durationMinutes": null,
+            "notes": "removing bottom 1.5 inches of stalks"
+          }
+        ],
+        "outputDescription": "clean, trimmed asparagus stalks"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Spread the asparagus on in a large skillet. Drizzle the grapeseed oil over the asparagus and spread the oil on the asparagus with your hands so that all stalks are completely coated.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "asparagus",
+              "grapeseed oil"
+            ],
+            "durationMinutes": null,
+            "notes": "coating asparagus with oil by hand"
+          }
+        ],
+        "outputDescription": "asparagus stalks completely coated with oil in skillet"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Sprinkle asparagus with desired amount of salt and pepper.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "asparagus",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "seasoning with salt and pepper"
+          }
+        ],
+        "outputDescription": "seasoned asparagus ready for cooking"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Saute over medium heat for 5 minutes.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "asparagus"
+            ],
+            "durationMinutes": 5,
+            "notes": "cooking over medium heat"
+          }
+        ],
+        "outputDescription": "partially cooked asparagus"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "Add the two tablespoons of vegetable stock and cover the skillet.",
+        "processes": [
+          {
+            "processId": "steam",
+            "ingredients": [
+              "asparagus",
+              "vegetable stock"
+            ],
+            "durationMinutes": null,
+            "notes": "adding stock and covering for steam cooking"
+          }
+        ],
+        "outputDescription": "asparagus steaming with vegetable stock under cover"
+      },
+      {
+        "stepNumber": 13,
+        "originalInstruction": "Saute 4 minutes.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "asparagus"
+            ],
+            "durationMinutes": 4,
+            "notes": "continuing to cook covered"
+          }
+        ],
+        "outputDescription": "asparagus cooked with stock for 4 minutes"
+      },
+      {
+        "stepNumber": 14,
+        "originalInstruction": "Remove lid and add the minced garlic.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "preparing garlic by mincing"
+          }
+        ],
+        "outputDescription": "asparagus with minced garlic added, lid removed"
+      },
+      {
+        "stepNumber": 15,
+        "originalInstruction": "Place cover back over the asparagus.",
+        "processes": [],
+        "outputDescription": "asparagus covered again for continued cooking"
+      },
+      {
+        "stepNumber": 16,
+        "originalInstruction": "Continue cooking an additional 3 to 5 minutes until asparagus is cooked but not too soft. Grate lemon zest over the top of the asparagus.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "asparagus"
+            ],
+            "durationMinutes": 4,
+            "notes": "final 3-5 minutes until tender but not soft"
+          },
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "grating lemon zest over asparagus"
+          }
+        ],
+        "outputDescription": "perfectly cooked asparagus topped with fresh lemon zest"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 14,
+      "uniqueProcesses": [
+        "mix",
+        "whisk",
+        "marinate",
+        "squeeze",
+        "broil",
+        "rinse",
+        "trim",
+        "coat",
+        "season",
+        "saute",
+        "steam",
+        "mince",
+        "zest"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_633921_step1",
+      "name": "marinade ingredients combined in bowl",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "balsamic_vinegar",
+          "name": "balsamic vinegar",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "vinegar",
+          "name": "apple cider vinegar",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "grapeseed_oil",
+          "name": "grapeseed oil",
+          "quantityG": 13.5
+        },
+        {
+          "ingredientId": "honey",
+          "name": "honey",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "dill",
+          "name": "dill",
+          "quantityG": 0.025
+        },
+        {
+          "ingredientId": "herbs_de_provence",
+          "name": "herbs de provence",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 80.525,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.35783325,
+        "costPerG": 0.041699264203663454,
+        "nutrition": {
+          "calories": 197.35075,
+          "protein": 0.574865,
+          "fat": 13.87178,
+          "carbs": 18.125255,
+          "fiber": 1.880525,
+          "sugar": 14.655,
+          "sodium": 782.57525,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step2",
+      "name": "well-incorporated marinade with oil and vinegar emulsified",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step3",
+      "name": "salmon marinating in balsamic marinade",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salmon",
+          "name": "salmon fillet",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 238.1358,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 24.94756,
+        "costPerG": 0.10476190476190476,
+        "nutrition": {
+          "calories": 322.05032,
+          "protein": 44.9963264,
+          "fat": 14.3788664,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 99.79024,
+          "method": "raw"
+        },
+        "prepTimeMin": 15
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step4",
+      "name": "oven preheated to high broil",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_633921_step5",
+      "name": "salmon with lemon juice drizzled on top",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step6",
+      "name": "glazed, browned, and sizzling salmon",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "broil",
+          "processName": "Broil",
+          "yieldFactor": 0.8,
+          "durationMinutes": 11,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step7",
+      "name": "preparation phase for asparagus",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_633921_step8",
+      "name": "clean, trimmed asparagus stalks",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "asparagus",
+          "name": "asparagus",
+          "quantityG": 480
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 465.12,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9,
+        "costPerG": 0.01934984520123839,
+        "nutrition": {
+          "calories": 96,
+          "protein": 10.56,
+          "fat": 0.576,
+          "carbs": 18.624,
+          "fiber": 10.08,
+          "sugar": 9.024,
+          "sodium": 9.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step9",
+      "name": "asparagus stalks completely coated with oil in skillet",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step10",
+      "name": "seasoned asparagus ready for cooking",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_633921_step11",
+      "name": "partially cooked asparagus",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step12",
+      "name": "asparagus steaming with vegetable stock under cover",
+      "stepNumber": 12,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "vegetable stock",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 29.099999999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.105,
+        "costPerG": 0.0036082474226804126,
+        "nutrition": {
+          "calories": 1.7999999999999998,
+          "protein": 0.192,
+          "fat": 0.063,
+          "carbs": 0.132,
+          "fiber": 0,
+          "sugar": 0.129,
+          "sodium": 111.3,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step13",
+      "name": "asparagus cooked with stock for 4 minutes",
+      "stepNumber": 13,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step14",
+      "name": "asparagus with minced garlic added, lid removed",
+      "stepNumber": 14,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 14.7,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6749999999999999,
+        "costPerG": 0.04591836734693877,
+        "nutrition": {
+          "calories": 22.349999999999998,
+          "protein": 0.954,
+          "fat": 0.075,
+          "carbs": 4.965,
+          "fiber": 0.315,
+          "sugar": 0.15,
+          "sodium": 2.55,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_633921_step15",
+      "name": "asparagus covered again for continued cooking",
+      "stepNumber": 15,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_633921_step16",
+      "name": "perfectly cooked asparagus topped with fresh lemon zest",
+      "stepNumber": 16,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 148.08539324999998,
+    "costPerServing": 74.04269662499999,
+    "totalPrepTime": 60.5,
+    "nutritionPerServing": {
+      "calories": 356.17553499999997,
+      "protein": 29.518595700000002,
+      "fat": 14.7943232,
+      "carbs": 32.8431275,
+      "fiber": 10.6177625,
+      "sugar": 15.663000000000002,
+      "sodium": 506.10774499999997
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_633921_step1",
+        "name": "marinade ingredients combined in bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_633921_step2",
+        "name": "well-incorporated marinade with oil and vinegar emulsified",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_633921_step3",
+        "name": "salmon marinating in balsamic marinade",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_633921_step5",
+        "name": "salmon with lemon juice drizzled on top",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_633921_step6",
+        "name": "glazed, browned, and sizzling salmon",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_633921_step8",
+        "name": "clean, trimmed asparagus stalks",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_633921_step9",
+        "name": "asparagus stalks completely coated with oil in skillet",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_633921_step11",
+        "name": "partially cooked asparagus",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_633921_step12",
+        "name": "asparagus steaming with vegetable stock under cover",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_633921_step13",
+        "name": "asparagus cooked with stock for 4 minutes",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_633921_step14",
+        "name": "asparagus with minced garlic added, lid removed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_633921_step16",
+        "name": "perfectly cooked asparagus topped with fresh lemon zest",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_633921_step8",
+      "name": "clean, trimmed asparagus stalks",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "trim"
+      ]
+    },
+    {
+      "componentId": "comp_633921_step16",
+      "name": "perfectly cooked asparagus topped with fresh lemon zest",
+      "shelfLifeHours": 72,
+      "processes": [
+        "saute",
+        "zest"
+      ]
+    }
+  ]
+}

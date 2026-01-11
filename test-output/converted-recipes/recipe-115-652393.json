@@ -1,0 +1,1251 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_6098f63f-9173-4e86-b079-a5643d40adfe",
+  "name": "Moosewood Lentil Soup",
+  "source": "spoonacular",
+  "spoonacularId": 652393,
+  "image": "/images/recipes/652393.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "brown sugar",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 128,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery",
+      "quantity": 101,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "herbs",
+      "quantity": 3,
+      "unit": "pinches",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "grapeseed oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 576,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 59.147,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Place lentils and water in a soup pot or Dutch oven.</li><li>Bring to a boil, lower heat to a simmer, and let cook until lentils are mushy (about 45 minutes).</li><li>Add more water as needed, until the soup is your favorite consistency.</li><li>Heat oil or melt butter in a medium-sized skillet.</li><li>Add onion, celery, and carrots, and saut over medium heat for about 10 minutes.</li><li>Add garlic, salt, pepper, and herbs of your choice, and saut about 5 minutes longer. Transfer to lentils.</li><li>Stir in wine, if desired, lemon juice and molasses or brown sugar.</li><li>Taste to correct seasonings, then simmer for</li><li>At least 15 minutes longer. Serve hot, with a little vinegar drizzled onto each serving, and a sprinkling of minced</li><li>Scallions or parsley on top, if desired.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 396.33,
+    "protein": 25.65,
+    "fat": 3.55,
+    "carbs": 66.22,
+    "fiber": 31.05,
+    "sugar": 6.86,
+    "saturatedFat": 0.42,
+    "sodium": 231.64
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "brown_sugar",
+      "displayName": "brown sugar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp brown sugar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 128,
+        "originalUnit": "g",
+        "normalizedQuantityG": 128,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "128 g carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery",
+      "displayName": "celery",
+      "quantity": {
+        "originalQuantity": 101,
+        "originalUnit": "g",
+        "normalizedQuantityG": 101,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "101 g celery",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "grapeseed_oil",
+      "displayName": "grapeseed oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp grapeseed oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 576,
+        "originalUnit": "g",
+        "normalizedQuantityG": 576,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "576 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 59.147,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 58,
+        "normalizedQuantityMl": 59.147
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "59.147 ml water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 14,
+    "matched": 13,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "3 pinches herbs",
+        "identityText": "pinches herbs",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:50:06.985Z",
+  "processGraph": {
+    "recipeName": "Moosewood Lentil Soup",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Place lentils and water in a soup pot or Dutch oven.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lentils",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "combining ingredients in pot"
+          }
+        ],
+        "outputDescription": "lentils and water combined in soup pot"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Bring to a boil, lower heat to a simmer, and let cook until lentils are mushy (about 45 minutes).",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "lentils",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "initial boiling"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "lentils",
+              "water"
+            ],
+            "durationMinutes": 45,
+            "notes": "cook until lentils are mushy"
+          }
+        ],
+        "outputDescription": "lentils are mushy and cooked through"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add more water as needed, until the soup is your favorite consistency.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "adjusting consistency"
+          }
+        ],
+        "outputDescription": "soup at desired consistency"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Heat oil or melt butter in a medium-sized skillet.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "grapeseed oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in skillet"
+          }
+        ],
+        "outputDescription": "oil heated in skillet"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add onion, celery, and carrots, and sauté over medium heat for about 10 minutes.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion",
+              "celery",
+              "carrots"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping for sautéing"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "celery",
+              "carrots"
+            ],
+            "durationMinutes": 10,
+            "notes": "sautéing vegetables over medium heat"
+          }
+        ],
+        "outputDescription": "vegetables softened and lightly browned"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add garlic, salt, pepper, and herbs of your choice, and sauté about 5 minutes longer. Transfer to lentils.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied mincing of garlic"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper",
+              "herbs"
+            ],
+            "durationMinutes": null,
+            "notes": "adding seasonings"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic",
+              "salt",
+              "pepper",
+              "herbs"
+            ],
+            "durationMinutes": 5,
+            "notes": "sautéing with seasonings"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "onion",
+              "celery",
+              "carrots",
+              "garlic",
+              "salt",
+              "pepper",
+              "herbs"
+            ],
+            "durationMinutes": null,
+            "notes": "transferring sautéed vegetables to lentils"
+          }
+        ],
+        "outputDescription": "seasoned vegetables combined with cooked lentils"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Stir in wine, if desired, lemon juice and molasses or brown sugar.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "red wine vinegar",
+              "lemon juice",
+              "brown sugar"
+            ],
+            "durationMinutes": null,
+            "notes": "stirring in liquid seasonings"
+          }
+        ],
+        "outputDescription": "soup with added liquid seasonings incorporated"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Taste to correct seasonings, then simmer for",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "adjusting seasonings to taste"
+          }
+        ],
+        "outputDescription": "soup seasoned to taste"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "At least 15 minutes longer. Serve hot, with a little vinegar drizzled onto each serving, and a sprinkling of minced",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "lentils",
+              "vegetables"
+            ],
+            "durationMinutes": 15,
+            "notes": "final simmering to meld flavors"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "lentils",
+              "vegetables"
+            ],
+            "durationMinutes": null,
+            "notes": "serving hot"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "red wine vinegar"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzling vinegar on individual servings"
+          }
+        ],
+        "outputDescription": "finished soup served hot with vinegar garnish"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Scallions or parsley on top, if desired.",
+        "processes": [
+          {
+            "processId": "mince",
+            "ingredients": [
+              "herbs"
+            ],
+            "durationMinutes": null,
+            "notes": "mincing scallions or parsley for garnish"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "herbs"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkling minced herbs on top"
+          }
+        ],
+        "outputDescription": "soup garnished with fresh minced herbs"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 16,
+      "uniqueProcesses": [
+        "mix",
+        "boil",
+        "simmer",
+        "heat",
+        "chop",
+        "saute",
+        "mince",
+        "season",
+        "garnish"
+      ],
+      "estimatedTotalTime": 75
+    }
+  },
+  "components": [
+    {
+      "id": "comp_652393_step1",
+      "name": "lentils and water combined in soup pot",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "lentils",
+          "quantityG": 576
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 59.147
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 635.147,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.27451049,
+        "costPerG": 0.005155515951425418,
+        "nutrition": {
+          "calories": 2033.28,
+          "protein": 148.608,
+          "fat": 6.1056,
+          "carbs": 346.0608,
+          "fiber": 175.68,
+          "sugar": 11.692799999999998,
+          "sodium": 37.51735,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652393_step2",
+      "name": "lentils are mushy and cooked through",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 45,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 55
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652393_step3",
+      "name": "soup at desired consistency",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652393_step4",
+      "name": "oil heated in skillet",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "grapeseed_oil",
+          "name": "grapeseed oil",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 13.23,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.432,
+        "costPerG": 0.03265306122448979,
+        "nutrition": {
+          "calories": 119.34,
+          "protein": 0,
+          "fat": 13.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_652393_step5",
+      "name": "vegetables softened and lightly browned",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 195
+        },
+        {
+          "ingredientId": "celery",
+          "name": "celery",
+          "quantityG": 101
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 128
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 353.192,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.23565,
+        "costPerG": 0.011992485673514687,
+        "nutrition": {
+          "calories": 144.62,
+          "protein": 4.0323,
+          "fat": 0.6738999999999999,
+          "carbs": 33.4751,
+          "fiber": 8.515,
+          "sugar": 15.688600000000001,
+          "sodium": 176.92000000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652393_step6",
+      "name": "seasoned vegetables combined with cooked lentils",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 4.2482999999999995,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.22499999999999998,
+        "costPerG": 0.0529623614151543,
+        "nutrition": {
+          "calories": 7.45,
+          "protein": 0.31800000000000006,
+          "fat": 0.025,
+          "carbs": 1.6550000000000002,
+          "fiber": 0.10500000000000001,
+          "sugar": 0.05,
+          "sodium": 0.8500000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 9.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652393_step7",
+      "name": "soup with added liquid seasonings incorporated",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "red_wine_vinegar",
+          "name": "red wine vinegar",
+          "quantityG": 120
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 30.5
+        },
+        {
+          "ingredientId": "brown_sugar",
+          "name": "brown sugar",
+          "quantityG": 6.3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 156.8,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 19.15575,
+        "costPerG": 0.12216677295918367,
+        "nutrition": {
+          "calories": 53.45,
+          "protein": 0.16231,
+          "fat": 0.0732,
+          "carbs": 8.6088,
+          "fiber": 0.0915,
+          "sugar": 6.8796,
+          "sodium": 11.668999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652393_step8",
+      "name": "soup seasoned to taste",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 9.18,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.7499999999999996,
+        "costPerG": 0.4084967320261438,
+        "nutrition": {
+          "calories": 15.059999999999999,
+          "protein": 0.6234000000000001,
+          "fat": 0.19559999999999997,
+          "carbs": 3.837,
+          "fiber": 1.518,
+          "sugar": 0.0384,
+          "sodium": 1163.94,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_652393_step9",
+      "name": "finished soup served hot with vinegar garnish",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 19
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652393_step10",
+      "name": "soup garnished with fresh minced herbs",
+      "stepNumber": 10,
+      "sourceIngredients": [
+        {
+          "ingredientId": "herbs",
+          "name": "herbs",
+          "quantityG": 3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.9988,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.525,
+        "costPerG": 0.17507002801120447,
+        "nutrition": {
+          "calories": 0.69,
+          "protein": 0.0945,
+          "fat": 0.0192,
+          "carbs": 0.0795,
+          "fiber": 0.048,
+          "sugar": 0.009,
+          "sodium": 0.12,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 34.75631049,
+    "costPerServing": 5.7927184149999995,
+    "totalPrepTime": 108,
+    "nutritionPerServing": {
+      "calories": 399.2483333333334,
+      "protein": 25.81575166666667,
+      "fat": 3.4720833333333334,
+      "carbs": 66.39736666666667,
+      "fiber": 31.232916666666668,
+      "sugar": 6.252400000000001,
+      "sodium": 232.8360583333333
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_652393_step1",
+        "name": "lentils and water combined in soup pot",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652393_step2",
+        "name": "lentils are mushy and cooked through",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_652393_step3",
+        "name": "soup at desired consistency",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652393_step5",
+        "name": "vegetables softened and lightly browned",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_652393_step6",
+        "name": "seasoned vegetables combined with cooked lentils",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652393_step7",
+        "name": "soup with added liquid seasonings incorporated",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652393_step9",
+        "name": "finished soup served hot with vinegar garnish",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_652393_step10",
+        "name": "soup garnished with fresh minced herbs",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_652393_step2",
+      "name": "lentils are mushy and cooked through",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_652393_step5",
+      "name": "vegetables softened and lightly browned",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_652393_step6",
+      "name": "seasoned vegetables combined with cooked lentils",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "season",
+        "saute",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_652393_step9",
+      "name": "finished soup served hot with vinegar garnish",
+      "shelfLifeHours": 96,
+      "processes": [
+        "simmer",
+        "heat",
+        "garnish"
+      ]
+    },
+    {
+      "componentId": "comp_652393_step10",
+      "name": "soup garnished with fresh minced herbs",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mince",
+        "garnish"
+      ]
+    }
+  ]
+}

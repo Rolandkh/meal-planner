@@ -1,0 +1,1118 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_06f8e668-e2bc-49a0-a40b-47804a1270d4",
+  "name": "North by Northwest Couscous Salad",
+  "source": "spoonacular",
+  "spoonacularId": 1096185,
+  "image": "/images/recipes/1096185.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "lemon zest",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "squeezed lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sugar",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dijon mustard",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tri-color pearl couscous",
+      "quantity": 171,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "apricots",
+      "quantity": 155,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 128,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery",
+      "quantity": 101,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "raisins",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garbanzo beans",
+      "quantity": 1,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "hazelnuts",
+      "quantity": 120,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 53.333,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 30,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Whisk together the lemon zest, lemon juice, sugar, mustard, and salt.</li><li>Slowly add in the olive oil, continuing to whisk, until emulsified.</li><li>Prepare the couscous according to the package instructions.</li><li>Toast the hazelnuts for approximately 10 minutes at 350F. Let cool until safe to touch, then chop.</li><li>Mix all remaining ingredients in a large bowl.</li><li>Add the couscous and dressing. </li><li>Mix well and serve.</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 4,
+  "nutrition": {
+    "calories": 635.75,
+    "protein": 17.36,
+    "fat": 31.69,
+    "carbs": 76.7,
+    "fiber": 13.7,
+    "sugar": 8.62,
+    "saturatedFat": 3.15,
+    "sodium": 523.26
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5 tsps lemon zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps squeezed lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sugar",
+      "displayName": "sugar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp sugar",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Dijon mustard",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps dijon mustard",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Apricots",
+      "quantity": {
+        "originalQuantity": 155,
+        "originalUnit": "g",
+        "normalizedQuantityG": 155,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "155 g apricots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 128,
+        "originalUnit": "g",
+        "normalizedQuantityG": 128,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "128 g carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery",
+      "displayName": "celery",
+      "quantity": {
+        "originalQuantity": 101,
+        "originalUnit": "g",
+        "normalizedQuantityG": 101,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "101 g celery",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "raisins",
+      "displayName": "raisins",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 60
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 Tbsps raisins",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garbanzo_beans",
+      "displayName": "garbanzo beans",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "1 can garbanzo beans",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Hazelnuts",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "g",
+        "normalizedQuantityG": 120,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "120 g hazelnuts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 53.333,
+        "originalUnit": "g",
+        "normalizedQuantityG": 53.333,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "53.333 g onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 30,
+        "originalUnit": "g",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "30 g parsley",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 15,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "171 g tri-color pearl couscous",
+        "identityText": "tri-color pearl couscous",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:45:04.758Z",
+  "processGraph": {
+    "recipeName": "North by Northwest Couscous Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Whisk together the lemon zest, lemon juice, sugar, mustard, and salt.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "lemon zest",
+              "lemon juice",
+              "sugar",
+              "dijon mustard",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "combining dressing base ingredients"
+          }
+        ],
+        "outputDescription": "mixed dressing base without oil"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Slowly add in the olive oil, continuing to whisk, until emulsified.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "slowly incorporating oil while whisking"
+          },
+          {
+            "processId": "emulsify",
+            "ingredients": [
+              "olive oil",
+              "lemon juice",
+              "dijon mustard"
+            ],
+            "durationMinutes": null,
+            "notes": "creating stable oil-water mixture"
+          }
+        ],
+        "outputDescription": "emulsified vinaigrette dressing"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Prepare the couscous according to the package instructions.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "tri-color pearl couscous"
+            ],
+            "durationMinutes": null,
+            "notes": "following package directions for cooking couscous"
+          }
+        ],
+        "outputDescription": "cooked couscous ready for mixing"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Toast the hazelnuts for approximately 10 minutes at 350F. Let cool until safe to touch, then chop.",
+        "processes": [
+          {
+            "processId": "toast",
+            "ingredients": [
+              "hazelnuts"
+            ],
+            "durationMinutes": 10,
+            "notes": "toasting at 350F in oven"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "hazelnuts"
+            ],
+            "durationMinutes": null,
+            "notes": "cooling until safe to handle"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "hazelnuts"
+            ],
+            "durationMinutes": null,
+            "notes": "chopping cooled toasted hazelnuts"
+          }
+        ],
+        "outputDescription": "chopped toasted hazelnuts ready for mixing"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Mix all remaining ingredients in a large bowl.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "apricots",
+              "carrots",
+              "celery",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of fresh ingredients before mixing"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of parsley before mixing"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "garbanzo beans"
+            ],
+            "durationMinutes": null,
+            "notes": "draining canned beans before mixing"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "apricots",
+              "carrots",
+              "celery",
+              "raisins",
+              "garbanzo beans",
+              "onion",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all remaining ingredients except couscous and dressing"
+          }
+        ],
+        "outputDescription": "mixed salad base with vegetables, fruits, and beans"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add the couscous and dressing.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tri-color pearl couscous",
+              "olive oil",
+              "lemon zest",
+              "lemon juice",
+              "sugar",
+              "dijon mustard",
+              "kosher salt"
+            ],
+            "durationMinutes": null,
+            "notes": "adding cooked couscous and prepared dressing to salad base"
+          }
+        ],
+        "outputDescription": "combined salad with couscous and dressing added"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Mix well and serve.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tri-color pearl couscous",
+              "apricots",
+              "carrots",
+              "celery",
+              "raisins",
+              "garbanzo beans",
+              "hazelnuts",
+              "onion",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "final thorough mixing of complete salad"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "tri-color pearl couscous",
+              "apricots",
+              "carrots",
+              "celery",
+              "raisins",
+              "garbanzo beans",
+              "hazelnuts",
+              "onion",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "serving the finished salad"
+          }
+        ],
+        "outputDescription": "finished North by Northwest Couscous Salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 12,
+      "uniqueProcesses": [
+        "whisk",
+        "emulsify",
+        "boil",
+        "toast",
+        "cool",
+        "chop",
+        "dice",
+        "drain",
+        "mix",
+        "plate"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1096185_step1",
+      "name": "mixed dressing base without oil",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_zest",
+          "name": "lemon zest",
+          "quantityG": 0.2
+        },
+        {
+          "ingredientId": "sugar",
+          "name": "sugar",
+          "quantityG": 4.2
+        },
+        {
+          "ingredientId": "dijon_mustard",
+          "name": "dijon mustard",
+          "quantityG": 2.5
+        },
+        {
+          "ingredientId": "salt",
+          "name": "kosher salt",
+          "quantityG": 1.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 8.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.19475,
+        "costPerG": 0.023184523809523808,
+        "nutrition": {
+          "calories": 17.789,
+          "protein": 0.10925000000000001,
+          "fat": 0.09854,
+          "carbs": 4.347700000000001,
+          "fiber": 0.1287,
+          "sugar": 4.23544,
+          "sodium": 608.924,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096185_step2",
+      "name": "emulsified vinaigrette dressing",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "emulsify",
+          "processName": "Emulsify",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 40.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.432,
+        "costPerG": 0.010666666666666666,
+        "nutrition": {
+          "calories": 358.02000000000004,
+          "protein": 0,
+          "fat": 40.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.81,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096185_step3",
+      "name": "cooked couscous ready for mixing",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "couscous",
+          "name": "tri-color pearl couscous",
+          "quantityG": 171
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 162.45,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.5390000000000001,
+        "costPerG": 0.009473684210526318,
+        "nutrition": {
+          "calories": 642.96,
+          "protein": 21.819599999999998,
+          "fat": 1.0944,
+          "carbs": 132.4053,
+          "fiber": 8.55,
+          "sugar": 0,
+          "sodium": 17.1,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096185_step4",
+      "name": "chopped toasted hazelnuts ready for mixing",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "hazelnuts",
+          "name": "hazelnuts",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 108.19200000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.199599999999999,
+        "costPerG": 0.048059006211180116,
+        "nutrition": {
+          "calories": 753.6,
+          "protein": 18,
+          "fat": 72.96,
+          "carbs": 20.04,
+          "fiber": 11.639999999999999,
+          "sugar": 5.207999999999999,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 42
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096185_step5",
+      "name": "mixed salad base with vegetables, fruits, and beans",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "apricot",
+          "name": "apricots",
+          "quantityG": 155
+        },
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 128
+        },
+        {
+          "ingredientId": "celery",
+          "name": "celery",
+          "quantityG": 101
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 53.333
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 407.41417480399997,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.4240611100000002,
+        "costPerG": 0.00840437402956649,
+        "nutrition": {
+          "calories": 162.35320000000002,
+          "protein": 4.643963,
+          "fat": 1.136733,
+          "carbs": 37.4484022,
+          "fiber": 9.206660999999999,
+          "sugar": 24.003919200000002,
+          "sodium": 172.80332,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096185_step6",
+      "name": "combined salad with couscous and dressing added",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1096185_step7",
+      "name": "finished North by Northwest Couscous Salad ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "raisins",
+          "name": "raisins",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "chickpeas",
+          "name": "garbanzo beans",
+          "quantityG": 400
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 490,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 13.299900000000001,
+        "costPerG": 0.027142653061224493,
+        "nutrition": {
+          "calories": 844.4,
+          "protein": 37.842999999999996,
+          "fat": 10.921,
+          "carbs": 158.661,
+          "fiber": 35.47,
+          "sugar": 19.455,
+          "sodium": 61.599999999999994,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 44.78931111,
+    "costPerServing": 11.1973277775,
+    "totalPrepTime": 73,
+    "nutritionPerServing": {
+      "calories": 698.9680500000001,
+      "protein": 20.73454075,
+      "fat": 31.72856825,
+      "carbs": 89.39122555,
+      "fiber": 16.524715249999996,
+      "sugar": 13.4241398,
+      "sodium": 215.58557999999996
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1096185_step1",
+        "name": "mixed dressing base without oil",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_1096185_step2",
+        "name": "emulsified vinaigrette dressing",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_1096185_step3",
+        "name": "cooked couscous ready for mixing",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_1096185_step4",
+        "name": "chopped toasted hazelnuts ready for mixing",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_1096185_step5",
+        "name": "mixed salad base with vegetables, fruits, and beans",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1096185_step6",
+        "name": "combined salad with couscous and dressing added",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1096185_step7",
+        "name": "finished North by Northwest Couscous Salad ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1096185_step2",
+      "name": "emulsified vinaigrette dressing",
+      "shelfLifeHours": 12,
+      "processes": [
+        "whisk",
+        "emulsify"
+      ]
+    },
+    {
+      "componentId": "comp_1096185_step4",
+      "name": "chopped toasted hazelnuts ready for mixing",
+      "shelfLifeHours": 48,
+      "processes": [
+        "toast",
+        "cool",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_1096185_step5",
+      "name": "mixed salad base with vegetables, fruits, and beans",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "chop",
+        "drain",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_1096185_step7",
+      "name": "finished North by Northwest Couscous Salad ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "plate"
+      ]
+    }
+  ]
+}

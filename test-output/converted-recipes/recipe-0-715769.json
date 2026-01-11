@@ -1,0 +1,801 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_cc054543-6777-46cf-8e71-3e9f9ab1c1a1",
+  "name": "Broccolini Quinoa Pilaf",
+  "source": "spoonacular",
+  "spoonacularId": 715769,
+  "image": "/images/recipes/715769.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "broccolini",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic clove",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 80,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable broth",
+      "quantity": 470,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "walnuts",
+      "quantity": 56.699,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In a large pan with lid heat olive oil over medium high heat. Add onions and cook for 1 minute. Add garlic and cook until onions are translucent and garlic is fragrant.</li><li>Add quinoa to pan, stir to combine. Slowly add in broth and bring to a boil.</li><li>Cover and reduce heat to low, cook for 15 minutes.</li><li>In the last 2-3 minutes of cooking add in broccolini on top of the quinoa (do not stir) and cover.</li><li>Uncover and toss broccolini and quinoa together.</li><li>Season to taste with salt and pepper.</li><li>Add walnuts and serve hot.</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 2,
+  "nutrition": {
+    "calories": 625.07,
+    "protein": 19.85,
+    "fat": 30.69,
+    "carbs": 71.66,
+    "fiber": 9.56,
+    "sugar": 6.45,
+    "saturatedFat": 3.32,
+    "sodium": 971.81
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.879Z",
+  "updatedAt": "2026-01-09T11:32:55.879Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "broccoli",
+      "displayName": "broccoli",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch broccolini",
+      "matchConfidence": 0.8500000000000001
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  garlic clove",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 80,
+        "originalUnit": "g",
+        "normalizedQuantityG": 80,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "80 g onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 470,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 470,
+        "normalizedQuantityMl": 470
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "470 ml vegetable broth",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "walnuts",
+      "displayName": "walnuts",
+      "quantity": {
+        "originalQuantity": 56.699,
+        "originalUnit": "g",
+        "normalizedQuantityG": 56.699,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "56.699 g walnuts",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 7,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:18:40.590Z",
+  "processGraph": {
+    "recipeName": "Broccolini Quinoa Pilaf",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a large pan with lid heat olive oil over medium high heat. Add onions and cook for 1 minute. Add garlic and cook until onions are translucent and garlic is fragrant.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in large pan over medium high heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": 1,
+            "notes": "cook onions for 1 minute"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic clove",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "cook until onions translucent and garlic fragrant"
+          }
+        ],
+        "outputDescription": "heated oil with sautéed translucent onions and fragrant garlic"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add quinoa to pan, stir to combine. Slowly add in broth and bring to a boil.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "add quinoa and stir to combine"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "vegetable broth",
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "slowly add broth and bring to boil"
+          }
+        ],
+        "outputDescription": "quinoa mixed with aromatics, broth added and brought to boil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Cover and reduce heat to low, cook for 15 minutes.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa",
+              "vegetable broth"
+            ],
+            "durationMinutes": 15,
+            "notes": "covered, low heat for 15 minutes"
+          }
+        ],
+        "outputDescription": "quinoa simmered covered for 15 minutes, absorbing broth"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "In the last 2-3 minutes of cooking add in broccolini on top of the quinoa (do not stir) and cover.",
+        "processes": [
+          {
+            "processId": "steam",
+            "ingredients": [
+              "broccolini"
+            ],
+            "durationMinutes": 2.5,
+            "notes": "broccolini placed on top of quinoa, covered, steamed in last 2-3 minutes"
+          }
+        ],
+        "outputDescription": "broccolini steamed on top of quinoa pilaf"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Uncover and toss broccolini and quinoa together.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "broccolini",
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "combine broccolini with quinoa pilaf"
+          }
+        ],
+        "outputDescription": "broccolini and quinoa pilaf tossed together"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Season to taste with salt and pepper.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "broccolini",
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to taste"
+          }
+        ],
+        "outputDescription": "seasoned broccolini quinoa pilaf"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Add walnuts and serve hot.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "walnuts"
+            ],
+            "durationMinutes": null,
+            "notes": "add walnuts to finished dish"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "broccolini",
+              "quinoa",
+              "walnuts"
+            ],
+            "durationMinutes": null,
+            "notes": "serve hot"
+          }
+        ],
+        "outputDescription": "finished broccolini quinoa pilaf with walnuts, served hot"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "heat",
+        "saute",
+        "mix",
+        "boil",
+        "simmer",
+        "steam",
+        "toss",
+        "season",
+        "plate"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_715769_step1",
+      "name": "heated oil with sautéed translucent onions and fragrant garlic",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 9.558675,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.144,
+        "costPerG": 0.015064849469199445,
+        "nutrition": {
+          "calories": 119.34,
+          "protein": 0,
+          "fat": 13.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715769_step2",
+      "name": "quinoa mixed with aromatics, broth added and brought to boil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 161.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.21,
+        "costPerG": 0.01368421052631579,
+        "nutrition": {
+          "calories": 625.6,
+          "protein": 24.003999999999998,
+          "fat": 10.319,
+          "carbs": 109.07199999999999,
+          "fiber": 11.9,
+          "sugar": 0,
+          "sodium": 8.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 12
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715769_step3",
+      "name": "quinoa simmered covered for 15 minutes, absorbing broth",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "vegetable_broth",
+          "name": "vegetable broth",
+          "quantityG": 470
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 423,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.645,
+        "costPerG": 0.0038888888888888888,
+        "nutrition": {
+          "calories": 23.5,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 6.016,
+          "fiber": 0,
+          "sugar": 3.995,
+          "sodium": 1880,
+          "method": "raw"
+        },
+        "prepTimeMin": 15
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715769_step4",
+      "name": "broccolini steamed on top of quinoa pilaf",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "broccolini",
+          "name": "broccolini",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 2.5,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 194,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.5,
+        "costPerG": 0.023195876288659795,
+        "nutrition": {
+          "calories": 82.36,
+          "protein": 7.06,
+          "fat": 0,
+          "carbs": 14.12,
+          "fiber": 2.36,
+          "sugar": 4.7,
+          "sodium": 58.82,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715769_step5",
+      "name": "broccolini and quinoa pilaf tossed together",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_715769_step6",
+      "name": "seasoned broccolini quinoa pilaf",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_715769_step7",
+      "name": "finished broccolini quinoa pilaf with walnuts, served hot",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "walnuts",
+          "name": "walnuts",
+          "quantityG": 56.699
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 56.699,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.984465,
+        "costPerG": 0.034999999999999996,
+        "nutrition": {
+          "calories": 370.81146,
+          "protein": 8.618248,
+          "fat": 36.967748,
+          "carbs": 7.7677629999999995,
+          "fiber": 3.798833,
+          "sugar": 1.4798438999999999,
+          "sodium": 1.13398,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 12.042065000000001,
+    "costPerServing": 6.0210325000000005,
+    "totalPrepTime": 44,
+    "nutritionPerServing": {
+      "calories": 630.53073,
+      "protein": 20.440124,
+      "fat": 30.445874,
+      "carbs": 73.05138149999999,
+      "fiber": 9.761916500000002,
+      "sugar": 6.8084219500000005,
+      "sodium": 976.3869900000001
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_715769_step1",
+        "name": "heated oil with sautéed translucent onions and fragrant garlic",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_715769_step2",
+        "name": "quinoa mixed with aromatics, broth added and brought to boil",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_715769_step3",
+        "name": "quinoa simmered covered for 15 minutes, absorbing broth",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_715769_step4",
+        "name": "broccolini steamed on top of quinoa pilaf",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_715769_step7",
+        "name": "finished broccolini quinoa pilaf with walnuts, served hot",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_715769_step1",
+      "name": "heated oil with sautéed translucent onions and fragrant garlic",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_715769_step2",
+      "name": "quinoa mixed with aromatics, broth added and brought to boil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_715769_step7",
+      "name": "finished broccolini quinoa pilaf with walnuts, served hot",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "plate"
+      ]
+    }
+  ]
+}

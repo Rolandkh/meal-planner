@@ -1,0 +1,838 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_b7789dc9-1b97-4854-896e-5edae98b622d",
+  "name": "Quinoa Tabbouleh Salad",
+  "source": "spoonacular",
+  "spoonacularId": 657686,
+  "image": "/images/recipes/657686.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 473.176,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cucumber",
+      "quantity": 0.5,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mint",
+      "quantity": 11.25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 7.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 61,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic powder",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "freshly cracked pepper",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Bring water to a boil in a medium saucepan. Add quinoa and stir. Cover and reduce heat. Allow quinoa to simmer on medium-low heat until all water is cooked off, about 20 minutes. Stir occasionally. Be careful not to burn your quinoa. Allow to cool.\nPlace cooled quinoa into a large bowl (preferably something with an airtight lid).\nAdd all remaining ingredients and gently stir until very well-mixed. Cover and refrigerate for at least an hour.\nStir again before serving.\nCan be stored, covered, in the refrigerator for two or three days. But it's best on the first day, when the veggies are still fresh and crisp!",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 8,
+  "nutrition": {
+    "calories": 135.89,
+    "protein": 3.53,
+    "fat": 6.65,
+    "carbs": 16.18,
+    "fiber": 2.18,
+    "sugar": 1,
+    "saturatedFat": 0.89,
+    "sodium": 7.49
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 473.176,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 467,
+        "normalizedQuantityMl": 473.176
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "473.176 ml water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5 large cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 11.25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 11.25,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "11.25 g mint",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 7.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 7.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "7.5 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 61,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 62,
+        "normalizedQuantityMl": 61
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "61 ml lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic_powder",
+      "displayName": "garlic powder",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp garlic powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "8 servings freshly cracked pepper",
+      "matchConfidence": 0.54
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 11,
+    "unmatched": 0,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:36:56.478Z",
+  "processGraph": {
+    "recipeName": "Quinoa Tabbouleh Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Bring water to a boil in a medium saucepan. Add quinoa and stir. Cover and reduce heat. Allow quinoa to simmer on medium-low heat until all water is cooked off, about 20 minutes. Stir occasionally. Be careful not to burn your quinoa. Allow to cool.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "bring water to boil in saucepan"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "add quinoa and stir"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 20,
+            "notes": "covered, medium-low heat until water absorbed, stir occasionally"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "allow to cool after cooking"
+          }
+        ],
+        "outputDescription": "cooked and cooled quinoa with all water absorbed"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Place cooled quinoa into a large bowl (preferably something with an airtight lid).",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "transfer quinoa to large bowl"
+          }
+        ],
+        "outputDescription": "cooled quinoa in large mixing bowl"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add all remaining ingredients and gently stir until very well-mixed. Cover and refrigerate for at least an hour.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "green onions"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of green onions"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "implied dicing of tomato"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "cucumber"
+            ],
+            "durationMinutes": null,
+            "notes": "implied dicing of cucumber"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "mint"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of mint"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of parsley"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "green onions",
+              "tomato",
+              "cucumber",
+              "mint",
+              "parsley",
+              "olive oil",
+              "lemon juice",
+              "garlic powder",
+              "freshly cracked pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "gently stir all ingredients until well-mixed"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "quinoa",
+              "green onions",
+              "tomato",
+              "cucumber",
+              "mint",
+              "parsley",
+              "olive oil",
+              "lemon juice",
+              "garlic powder",
+              "freshly cracked pepper"
+            ],
+            "durationMinutes": 60,
+            "notes": "cover and refrigerate for at least an hour"
+          }
+        ],
+        "outputDescription": "fully mixed tabbouleh salad, chilled and flavors melded"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Stir again before serving.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "green onions",
+              "tomato",
+              "cucumber",
+              "mint",
+              "parsley",
+              "olive oil",
+              "lemon juice",
+              "garlic powder",
+              "freshly cracked pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "final stir before serving"
+          }
+        ],
+        "outputDescription": "ready-to-serve quinoa tabbouleh salad"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "boil",
+        "mix",
+        "simmer",
+        "cool",
+        "chop",
+        "dice"
+      ],
+      "estimatedTotalTime": 90
+    }
+  },
+  "components": [
+    {
+      "id": "comp_657686_step1",
+      "name": "cooked and cooled quinoa with all water absorbed",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 473.176
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 404.56548,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.15608392,
+        "costPerG": 0.007801169590643275,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 23.6588,
+          "method": "raw"
+        },
+        "prepTimeMin": 62
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657686_step2",
+      "name": "cooled quinoa in large mixing bowl",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 170,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.21,
+        "costPerG": 0.013,
+        "nutrition": {
+          "calories": 625.6,
+          "protein": 24.003999999999998,
+          "fat": 10.319,
+          "carbs": 109.07199999999999,
+          "fiber": 11.9,
+          "sugar": 0,
+          "sodium": 8.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657686_step3",
+      "name": "fully mixed tabbouleh salad, chilled and flavors melded",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 600
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 531.3405316799999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 75,
+        "costPerG": 0.1411524164416066,
+        "nutrition": {
+          "calories": 192,
+          "protein": 10.98,
+          "fat": 1.1400000000000001,
+          "carbs": 44.04,
+          "fiber": 15.600000000000001,
+          "sugar": 13.98,
+          "sodium": 96,
+          "method": "raw"
+        },
+        "prepTimeMin": 74
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657686_step4",
+      "name": "ready-to-serve quinoa tabbouleh salad",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomato",
+          "quantityG": 120
+        },
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumber",
+          "quantityG": 195
+        },
+        {
+          "ingredientId": "mint",
+          "name": "mint",
+          "quantityG": 11.25
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 7.5
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40.5
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 61
+        },
+        {
+          "ingredientId": "garlic_powder",
+          "name": "garlic powder",
+          "quantityG": 3.1
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "freshly cracked pepper",
+          "quantityG": 8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 446.35,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 49.187875,
+        "costPerG": 0.11020023524140247,
+        "nutrition": {
+          "calories": 457.35600000000005,
+          "protein": 4.408875,
+          "fat": 41.64683,
+          "carbs": 22.609505,
+          "fiber": 6.4384999999999994,
+          "sugar": 7.5744799999999985,
+          "sodium": 22.4675,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 129.55395892,
+    "costPerServing": 16.194244865,
+    "totalPrepTime": 140,
+    "nutritionPerServing": {
+      "calories": 159.36950000000002,
+      "protein": 4.924109375,
+      "fat": 6.638228750000001,
+      "carbs": 21.965188125,
+      "fiber": 4.2423125,
+      "sugar": 2.6943099999999998,
+      "sodium": 18.828287500000002
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_657686_step1",
+        "name": "cooked and cooled quinoa with all water absorbed",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657686_step2",
+        "name": "cooled quinoa in large mixing bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657686_step3",
+        "name": "fully mixed tabbouleh salad, chilled and flavors melded",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657686_step4",
+        "name": "ready-to-serve quinoa tabbouleh salad",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_657686_step1",
+      "name": "cooked and cooled quinoa with all water absorbed",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "mix",
+        "simmer",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_657686_step3",
+      "name": "fully mixed tabbouleh salad, chilled and flavors melded",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "dice",
+        "dice",
+        "chop",
+        "chop",
+        "mix",
+        "cool"
+      ]
+    }
+  ]
+}

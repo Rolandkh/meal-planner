@@ -1,0 +1,963 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_696d945a-b438-4c96-8cfb-d70060ee33df",
+  "name": "Simple Skillet Lasagna",
+  "source": "spoonacular",
+  "spoonacularId": 715573,
+  "image": "/images/recipes/715573.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "basil and basil sprig",
+      "quantity": 1,
+      "unit": "leaf",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 1.588,
+      "unit": "kgs",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sausage",
+      "quantity": 680.389,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "m zarella cheese",
+      "quantity": 28.35,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oregano dried",
+      "quantity": 5,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lasagna sheets",
+      "quantity": 5,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper flakes",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ricotta cheese",
+      "quantity": 5,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 5,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "In a large saute pan, heat oil on high. Add sausage and cook until browned, about 3-5 minutes. Transfer to a side bowl and set aside.Reduce the heat to medium low and add your onion, garlic, and pepper flakes. Cook until onions are softened, about 8 minutes. Add your oregano, tomatoes and their juices (crushing the whole tomatoes with your hands or a mixer if you prefer), the basil sprig, and the cooked sausage. Add salt and pepper and simmer for about 5 minutes.Break half of the lasagna noodles in half and place into the meat mixture under the sausage. Distribute them evenly throughout. Take the other half of the noodles and use a spoon to submerge them down into the pan.Dollop Ricotta over lasagna and mix in with the sauce. Top with Mozzarella and bake in the oven on 325 degrees for 15 minutes. Top with basil, then remove from heat and allow to cool before serving.",
+  "prepTime": 10,
+  "cookTime": 25,
+  "servings": 5,
+  "nutrition": {
+    "calories": 761.2,
+    "protein": 30.69,
+    "fat": 46.2,
+    "carbs": 58.45,
+    "fiber": 5.95,
+    "sugar": 9.25,
+    "saturatedFat": 16.59,
+    "sodium": 1684.89
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 90.9,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "basil and basil sprig",
+        "identity": "basil and basil sprig",
+        "issue": "some_components_unknown"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sausage",
+      "displayName": "sausage",
+      "quantity": {
+        "originalQuantity": 680.389,
+        "originalUnit": "g",
+        "normalizedQuantityG": 680.389,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "680.389 g sausage",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mozzarella_cheese",
+      "displayName": "mozzarella cheese",
+      "quantity": {
+        "originalQuantity": 28.35,
+        "originalUnit": "g",
+        "normalizedQuantityG": 28.35,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "28.35 g m zarella cheese",
+      "matchConfidence": 0.925
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper_flakes",
+      "displayName": "pepper flakes",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5 tsps pepper flakes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ricotta",
+      "displayName": "ricotta",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5 servings ricotta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "5 servings salt and pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 11,
+    "matched": 7,
+    "unmatched": 4,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 leaf basil and basil sprig",
+        "identityText": "leaf basil and basil sprig",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1.588 kgs tomatoes",
+        "identityText": "kgs tomatoes",
+        "state": "fresh"
+      },
+      {
+        "rawText": "5 servings oregano flakes",
+        "identityText": "oregano flakes",
+        "state": "fresh"
+      },
+      {
+        "rawText": "5 servings no boil lasagna noodles",
+        "identityText": "no boil lasagna noodles",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:31:55.577Z",
+  "processGraph": {
+    "recipeName": "Simple Skillet Lasagna",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a large saute pan, heat oil on high. Add sausage and cook until browned, about 3-5 minutes. Transfer to a side bowl and set aside.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil on high in saute pan"
+          },
+          {
+            "processId": "sear",
+            "ingredients": [
+              "sausage"
+            ],
+            "durationMinutes": 4,
+            "notes": "cook until browned on high heat"
+          }
+        ],
+        "outputDescription": "browned sausage set aside in bowl, pan ready for next ingredients"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Reduce the heat to medium low and add your onion, garlic, and pepper flakes. Cook until onions are softened, about 8 minutes.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep - onion needs to be diced"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep - garlic needs to be minced"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "garlic",
+              "pepper flakes"
+            ],
+            "durationMinutes": 8,
+            "notes": "cook on medium low until onions softened"
+          }
+        ],
+        "outputDescription": "softened onions with aromatic garlic and pepper flakes"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add your oregano, tomatoes and their juices (crushing the whole tomatoes with your hands or a mixer if you prefer), the basil sprig, and the cooked sausage. Add salt and pepper and simmer for about 5 minutes.",
+        "processes": [
+          {
+            "processId": "crush",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "crush whole tomatoes with hands or mixer"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "oregano",
+              "tomatoes",
+              "basil sprig",
+              "sausage"
+            ],
+            "durationMinutes": null,
+            "notes": "add ingredients to pan"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper to taste"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "tomatoes",
+              "oregano",
+              "basil sprig",
+              "sausage",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": 5,
+            "notes": "simmer the sauce mixture"
+          }
+        ],
+        "outputDescription": "simmered tomato sauce with sausage, herbs, and aromatics"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Break half of the lasagna noodles in half and place into the meat mixture under the sausage. Distribute them evenly throughout. Take the other half of the noodles and use a spoon to submerge them down into the pan.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "lasagna sheets"
+            ],
+            "durationMinutes": null,
+            "notes": "break half the noodles in half"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lasagna sheets"
+            ],
+            "durationMinutes": null,
+            "notes": "distribute broken noodles evenly under sausage"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lasagna sheets"
+            ],
+            "durationMinutes": null,
+            "notes": "submerge remaining whole noodles into pan"
+          }
+        ],
+        "outputDescription": "lasagna noodles distributed throughout the sauce mixture"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Dollop Ricotta over lasagna and mix in with the sauce. Top with Mozzarella and bake in the oven on 325 degrees for 15 minutes.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "ricotta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "dollop ricotta over the mixture"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ricotta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "mix ricotta into the sauce"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "m zarella cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "top with mozzarella cheese"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "lasagna sheets",
+              "ricotta cheese",
+              "m zarella cheese",
+              "tomatoes",
+              "sausage"
+            ],
+            "durationMinutes": 15,
+            "notes": "bake at 325 degrees"
+          }
+        ],
+        "outputDescription": "baked skillet lasagna with melted cheese"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Top with basil, then remove from heat and allow to cool before serving.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "top with fresh basil"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "lasagna sheets",
+              "ricotta cheese",
+              "m zarella cheese",
+              "tomatoes",
+              "sausage"
+            ],
+            "durationMinutes": null,
+            "notes": "allow to cool before serving"
+          }
+        ],
+        "outputDescription": "finished skillet lasagna garnished with basil, cooled and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 16,
+      "uniqueProcesses": [
+        "heat",
+        "sear",
+        "dice",
+        "mince",
+        "saute",
+        "crush",
+        "mix",
+        "season",
+        "simmer",
+        "chop",
+        "spread",
+        "sprinkle",
+        "bake",
+        "garnish",
+        "cool"
+      ],
+      "estimatedTotalTime": 32
+    }
+  },
+  "components": [
+    {
+      "id": "comp_715573_step1",
+      "name": "browned sausage set aside in bowl, pan ready for next ingredients",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sausage",
+          "name": "sausage",
+          "quantityG": 680.389
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sear",
+          "processName": "Sear",
+          "yieldFactor": 0.95,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 633.442159,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 11.566613,
+        "costPerG": 0.018259935553168637,
+        "nutrition": {
+          "calories": 2068.38256,
+          "protein": 102.6707001,
+          "fat": 180.5072017,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 4327.27404,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_715573_step2",
+      "name": "softened onions with aromatic garlic and pepper flakes",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 105
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 84.84105,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.75035,
+        "costPerG": 0.02063093278548533,
+        "nutrition": {
+          "calories": 42,
+          "protein": 1.1550000000000002,
+          "fat": 0.10500000000000001,
+          "carbs": 9.807,
+          "fiber": 1.785,
+          "sugar": 4.452000000000001,
+          "sodium": 4.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 13
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715573_step3",
+      "name": "simmered tomato sauce with sausage, herbs, and aromatics",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 1588
+        }
+      ],
+      "processes": [
+        {
+          "processId": "crush",
+          "processName": "Crush",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 1443.2061600000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 41.79616,
+        "costPerG": 0.028960630267819806,
+        "nutrition": {
+          "calories": 285.84000000000003,
+          "protein": 13.974400000000001,
+          "fat": 3.176,
+          "carbs": 61.7732,
+          "fiber": 19.056,
+          "sugar": 41.7644,
+          "sodium": 79.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 8.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_715573_step4",
+      "name": "lasagna noodles distributed throughout the sauce mixture",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lasagne_sheets",
+          "name": "lasagna sheets",
+          "quantityG": 100
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 98,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.933,
+        "costPerG": 0.009520408163265307,
+        "nutrition": {
+          "calories": 371,
+          "protein": 13.04,
+          "fat": 1.51,
+          "carbs": 74.67,
+          "fiber": 3.2,
+          "sugar": 2.67,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715573_step5",
+      "name": "baked skillet lasagna with melted cheese",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ricotta",
+          "name": "ricotta cheese",
+          "quantityG": 100
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 95.37,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6000000000000001,
+        "costPerG": 0.0062912865681031774,
+        "nutrition": {
+          "calories": 174,
+          "protein": 11.26,
+          "fat": 12.98,
+          "carbs": 3.04,
+          "fiber": 0,
+          "sugar": 0.27,
+          "sodium": 84,
+          "method": "raw"
+        },
+        "prepTimeMin": 18.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_715573_step6",
+      "name": "finished skillet lasagna garnished with basil, cooled and ready to serve",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cheese",
+          "name": "m zarella cheese",
+          "quantityG": 28.35
+        }
+      ],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 28.917,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.25515,
+        "costPerG": 0.008823529411764706,
+        "nutrition": {
+          "calories": 115.668,
+          "protein": 6.605550000000001,
+          "fat": 9.639000000000001,
+          "carbs": 0.69174,
+          "fiber": 0,
+          "sugar": 0.09355500000000001,
+          "sodium": 185.40900000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 31
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 77.886683,
+    "costPerServing": 15.5773366,
+    "totalPrepTime": 84,
+    "nutritionPerServing": {
+      "calories": 669.4633120000001,
+      "protein": 31.76334602,
+      "fat": 42.48506833999999,
+      "carbs": 44.880408,
+      "fiber": 13.445879999999999,
+      "sugar": 10.71339,
+      "sodium": 1333.7946080000002
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_715573_step2",
+        "name": "softened onions with aromatic garlic and pepper flakes",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_715573_step3",
+        "name": "simmered tomato sauce with sausage, herbs, and aromatics",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_715573_step4",
+        "name": "lasagna noodles distributed throughout the sauce mixture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_715573_step5",
+        "name": "baked skillet lasagna with melted cheese",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_715573_step6",
+        "name": "finished skillet lasagna garnished with basil, cooled and ready to serve",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_715573_step2",
+      "name": "softened onions with aromatic garlic and pepper flakes",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "mince",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_715573_step3",
+      "name": "simmered tomato sauce with sausage, herbs, and aromatics",
+      "shelfLifeHours": 2,
+      "processes": [
+        "crush",
+        "mix",
+        "season",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_715573_step4",
+      "name": "lasagna noodles distributed throughout the sauce mixture",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "mix",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_715573_step5",
+      "name": "baked skillet lasagna with melted cheese",
+      "shelfLifeHours": 24,
+      "processes": [
+        "spread",
+        "mix",
+        "sprinkle",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_715573_step6",
+      "name": "finished skillet lasagna garnished with basil, cooled and ready to serve",
+      "shelfLifeHours": 96,
+      "processes": [
+        "garnish",
+        "cool"
+      ]
+    }
+  ]
+}

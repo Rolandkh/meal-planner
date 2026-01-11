@@ -1,0 +1,1189 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_5f16d4da-dbb7-441d-a104-bf913e0bcc3e",
+  "name": "Crispy Panko and Herb Crusted Salmon",
+  "source": "spoonacular",
+  "spoonacularId": 640828,
+  "image": "/images/recipes/640828.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "salmon fillet",
+      "quantity": 907.185,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "leek",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cherry tomatoes",
+      "quantity": 6,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "panko crumbs",
+      "quantity": 90,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 30,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic clove",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon zest",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 1,
+      "unit": "dash",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "In a skillet heat 2-3 tablespoons of extra virgin olive oil.\nAdd the chopped onions and leeks.\nSaute until translucent about 4 minutes.\nAdd the chopped red peppers and tomatoes and continue cooking until soft.\nSet aside and allow to cool before adding to the panko breadcrumb mixture.\nUsing a food processor, finely chop the parsley, garlic clove, and the lemon zest.\nAdd the panko breadcrumbs,salt and pepper, pulse to blend.\nTransfer to a bowl and toss in the the onion, leek, tomato and red pepper mixture, which has been cooled. Blend in 3 tablespoons of extra virgin oil, enough to coat the bread mixture.\nPlace the salmon flat side down on a cookie sheet, which has been lined with parchment paper.\nSpread the breadcrumb mixture on top of the fish to cover.\nBake in a preheated 375F for 25- 35 minutes, depending on the thickness of the salmon fillet.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 390.3,
+    "protein": 32.57,
+    "fat": 22.16,
+    "carbs": 13.78,
+    "fiber": 1.42,
+    "sugar": 2.15,
+    "saturatedFat": 3.29,
+    "sodium": 377.05
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 907.185,
+        "originalUnit": "g",
+        "normalizedQuantityG": 907.185,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "907.185 g salmon fillet",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "leek",
+      "displayName": "leek",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  leek",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cherry_tomatoes",
+      "displayName": "cherry tomatoes",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6  cherry tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Panko breadcrumbs",
+      "quantity": {
+        "originalQuantity": 90,
+        "originalUnit": "g",
+        "normalizedQuantityG": 90,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "90 g panko crumbs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 30,
+        "originalUnit": "g",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "30 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  garlic clove",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lemon zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 dash pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 12,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:53:21.318Z",
+  "processGraph": {
+    "recipeName": "Crispy Panko and Herb Crusted Salmon",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a skillet heat 2-3 tablespoons of extra virgin olive oil.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in skillet"
+          }
+        ],
+        "outputDescription": "hot oil ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add the chopped onions and leeks.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "leek"
+            ],
+            "durationMinutes": null,
+            "notes": "onions mentioned but not in ingredient list, using leek"
+          }
+        ],
+        "outputDescription": "chopped leeks added to hot oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Saute until translucent about 4 minutes.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "leek"
+            ],
+            "durationMinutes": 4,
+            "notes": "cooking until translucent"
+          }
+        ],
+        "outputDescription": "translucent sautéed leeks"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add the chopped red peppers and tomatoes and continue cooking until soft.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "bell pepper",
+              "cherry tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "chopping peppers and tomatoes"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "bell pepper",
+              "cherry tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "continuing to cook until soft"
+          }
+        ],
+        "outputDescription": "soft cooked vegetables mixture"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Set aside and allow to cool before adding to the panko breadcrumb mixture.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "leek",
+              "bell pepper",
+              "cherry tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "cooling vegetable mixture"
+          }
+        ],
+        "outputDescription": "cooled vegetable mixture ready for mixing"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Using a food processor, finely chop the parsley, garlic clove, and the lemon zest.",
+        "processes": [
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lemon zest"
+            ],
+            "durationMinutes": null,
+            "notes": "creating lemon zest"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "parsley",
+              "garlic clove",
+              "lemon zest"
+            ],
+            "durationMinutes": null,
+            "notes": "finely chopping in food processor"
+          }
+        ],
+        "outputDescription": "finely chopped herb and garlic mixture"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Add the panko breadcrumbs,salt and pepper, pulse to blend.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "panko crumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "adding salt and pepper"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "panko crumbs",
+              "parsley",
+              "garlic clove",
+              "lemon zest",
+              "salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "pulsing to blend in food processor"
+          }
+        ],
+        "outputDescription": "seasoned panko mixture with herbs"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Transfer to a bowl and toss in the the onion, leek, tomato and red pepper mixture, which has been cooled. Blend in 3 tablespoons of extra virgin oil, enough to coat the bread mixture.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "panko crumbs",
+              "leek",
+              "bell pepper",
+              "cherry tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "combining panko with cooled vegetables"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "extra virgin olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "blending in oil to coat mixture"
+          }
+        ],
+        "outputDescription": "complete breadcrumb mixture with vegetables and oil"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Place the salmon flat side down on a cookie sheet, which has been lined with parchment paper.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "salmon fillet"
+            ],
+            "durationMinutes": null,
+            "notes": "arranging salmon on prepared baking sheet"
+          }
+        ],
+        "outputDescription": "salmon positioned on lined baking sheet"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Spread the breadcrumb mixture on top of the fish to cover.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "panko crumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "applying breadcrumb mixture to cover salmon"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "salmon fillet"
+            ],
+            "durationMinutes": null,
+            "notes": "coating salmon with breadcrumb mixture"
+          }
+        ],
+        "outputDescription": "salmon completely coated with breadcrumb mixture"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Bake in a preheated 375F for 25- 35 minutes, depending on the thickness of the salmon fillet.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "salmon fillet"
+            ],
+            "durationMinutes": 30,
+            "notes": "baking at 375°F, time varies by thickness"
+          }
+        ],
+        "outputDescription": "fully cooked crispy crusted salmon"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "heat",
+        "chop",
+        "saute",
+        "cool",
+        "zest",
+        "mince",
+        "season",
+        "blend",
+        "toss",
+        "mix",
+        "plate",
+        "spread",
+        "coat",
+        "bake"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_640828_step1",
+      "name": "hot oil ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 40.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 39.69,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.432,
+        "costPerG": 0.0108843537414966,
+        "nutrition": {
+          "calories": 358.02000000000004,
+          "protein": 0,
+          "fat": 40.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.81,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_640828_step2",
+      "name": "chopped leeks added to hot oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "leek",
+          "name": "leek",
+          "quantityG": 0.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.49,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.00357,
+        "costPerG": 0.007285714285714285,
+        "nutrition": {
+          "calories": 0.305,
+          "protein": 0.0075,
+          "fat": 0.0015,
+          "carbs": 0.071,
+          "fiber": 0.009000000000000001,
+          "sugar": 0.0195,
+          "sodium": 0.1,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640828_step3",
+      "name": "translucent sautéed leeks",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640828_step4",
+      "name": "soft cooked vegetables mixture",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 75
+        },
+        {
+          "ingredientId": "cherry_tomatoes",
+          "name": "cherry tomatoes",
+          "quantityG": 720
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 662.235,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.3175,
+        "costPerG": 0.00802962694511767,
+        "nutrition": {
+          "calories": 149.1,
+          "protein": 7.5825,
+          "fat": 1.017,
+          "carbs": 33.3945,
+          "fiber": 6.615,
+          "sugar": 21.078000000000003,
+          "sodium": 82.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640828_step5",
+      "name": "cooled vegetable mixture ready for mixing",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640828_step6",
+      "name": "finely chopped herb and garlic mixture",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_zest",
+          "name": "lemon zest",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3.92,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 14,
+        "costPerG": 3.5714285714285716,
+        "nutrition": {
+          "calories": 37.6,
+          "protein": 1.2000000000000002,
+          "fat": 0.24,
+          "carbs": 12.8,
+          "fiber": 8.48,
+          "sugar": 3.3360000000000003,
+          "sodium": 4.800000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640828_step7",
+      "name": "seasoned panko mixture with herbs",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "panko",
+          "name": "panko crumbs",
+          "quantityG": 90
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 89.964,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.3499999999999999,
+        "costPerG": 0.015006002400960382,
+        "nutrition": {
+          "calories": 355.5,
+          "protein": 12.015,
+          "fat": 4.77,
+          "carbs": 64.78200000000001,
+          "fiber": 4.05,
+          "sugar": 5.58,
+          "sodium": 658.8000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640828_step8",
+      "name": "complete breadcrumb mixture with vegetables and oil",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640828_step9",
+      "name": "salmon positioned on lined baking sheet",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salmon",
+          "name": "salmon fillet",
+          "quantityG": 907.185
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 907.185,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 99.79034999999999,
+        "costPerG": 0.11,
+        "nutrition": {
+          "calories": 1288.2026999999998,
+          "protein": 179.985504,
+          "fat": 57.515528999999994,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 399.16139999999996,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_640828_step10",
+      "name": "salmon completely coated with breadcrumb mixture",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_640828_step11",
+      "name": "fully cooked crispy crusted salmon",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 128.86831999999998,
+    "costPerServing": 21.47805333333333,
+    "totalPrepTime": 90.5,
+    "nutritionPerServing": {
+      "calories": 368.24795,
+      "protein": 33.683900666666666,
+      "fat": 17.3897715,
+      "carbs": 19.206833333333332,
+      "fiber": 3.4170000000000003,
+      "sugar": 5.05415,
+      "sodium": 387.7435666666666
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_640828_step2",
+        "name": "chopped leeks added to hot oil",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_640828_step3",
+        "name": "translucent sautéed leeks",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_640828_step4",
+        "name": "soft cooked vegetables mixture",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_640828_step5",
+        "name": "cooled vegetable mixture ready for mixing",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_640828_step6",
+        "name": "finely chopped herb and garlic mixture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640828_step7",
+        "name": "seasoned panko mixture with herbs",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_640828_step8",
+        "name": "complete breadcrumb mixture with vegetables and oil",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_640828_step10",
+        "name": "salmon completely coated with breadcrumb mixture",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_640828_step11",
+        "name": "fully cooked crispy crusted salmon",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_640828_step4",
+      "name": "soft cooked vegetables mixture",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_640828_step6",
+      "name": "finely chopped herb and garlic mixture",
+      "shelfLifeHours": 24,
+      "processes": [
+        "zest",
+        "mince"
+      ]
+    },
+    {
+      "componentId": "comp_640828_step7",
+      "name": "seasoned panko mixture with herbs",
+      "shelfLifeHours": 48,
+      "processes": [
+        "season",
+        "blend"
+      ]
+    },
+    {
+      "componentId": "comp_640828_step8",
+      "name": "complete breadcrumb mixture with vegetables and oil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "toss",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_640828_step10",
+      "name": "salmon completely coated with breadcrumb mixture",
+      "shelfLifeHours": 2,
+      "processes": [
+        "spread",
+        "coat"
+      ]
+    }
+  ]
+}

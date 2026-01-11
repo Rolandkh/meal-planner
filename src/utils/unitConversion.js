@@ -107,7 +107,13 @@ export function convertToGrams(quantity, unit, ingredientName, ingredientData) {
     'pt': 473,         // Pint = 473ml
     'pts': 473,        // Pints
     'pint': 473,
-    'pints': 473
+    'pints': 473,
+    'pkg': 250,        // Package (average)
+    'package': 250,
+    'fillet': 150,     // Fish/meat fillet
+    'fillets': 150,
+    'slice': 30,       // Slice of meat/cheese/bread
+    'slices': 30
     // NOTE: 'serving' and 'servings' handled specially below
   };
   
@@ -188,9 +194,31 @@ export function convertToGrams(quantity, unit, ingredientName, ingredientData) {
       'basil': 0.5,          // Per leaf
       'basil leaf': 0.5,
       'sage': 0.3,           // Per leaf
+      'bay leaf': 0.5,       // Per leaf
+      'bay leaves': 0.5,
+      'kale': 0.8,           // Per leaf
+      'kale leaf': 0.8,
       'lasagna': 20,         // Per sheet
       'lasagna sheet': 20,
-      'lasagna noodle': 20
+      'lasagna noodle': 20,
+      'shallot': 30,         // Per shallot
+      'shallots': 30,
+      'celery': 40,          // Per stalk
+      'celery stalk': 40,
+      'pepperoni': 10,       // Per slice
+      'jalapeno': 15,        // Per pepper
+      'jalapenos': 15,
+      'chili': 10,           // Per chili
+      'chillies': 10,
+      'squash': 300,         // Small squash
+      'pear': 180,           // Medium pear
+      'bosc pear': 180,
+      'orange': 180,         // Medium orange
+      'oranges': 180,
+      'wonton': 10,          // Per wrapper
+      'wonton wrapper': 10,
+      'bouillon cube': 5,    // Per cube
+      'bouillon cubes': 5
     };
     
     // Check if ingredient name matches any item weight

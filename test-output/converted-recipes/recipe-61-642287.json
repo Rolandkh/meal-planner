@@ -1,0 +1,655 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_fb9eb3f4-4a15-43fd-bc8a-0609c38bf7b8",
+  "name": "Eggplant Fries with Tzatziki Sauce",
+  "source": "spoonacular",
+  "spoonacularId": 642287,
+  "image": "/images/recipes/642287.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "eggplants",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bread crumbs",
+      "quantity": 108,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasoning mix",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "yogurt",
+      "quantity": 61.25,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "-Preheat oven to 450F\n-Mix salt, garlic powder, italian seasonings, and paprika in a bowl.\n- In another bowl, mix yogurt & egg together.\n-First place the eggplant strips into egg/yogurt mixture then coat them in flour mixture evenly.\n-Place them in a parchment paper or greased baking pan and bake for 10-15 minutes rotating once and until slightly brown.\nFor the tzatziki sauce:\n- In a food processor, put cucumber (seeded, peeled), yogurt, dill, lemon juice, garlic cloves, salt together until smooth.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 295.33,
+    "protein": 12.8,
+    "fat": 5.68,
+    "carbs": 48.61,
+    "fiber": 6.29,
+    "sugar": 9.67,
+    "saturatedFat": 1.7,
+    "sodium": 450.5
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "eggplants",
+      "displayName": "eggplants",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  eggplants",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "breadcrumbs",
+      "displayName": "breadcrumbs",
+      "quantity": {
+        "originalQuantity": 108,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 83,
+        "normalizedQuantityMl": 108
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "108 ml bread crumbs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 61.25,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 61,
+        "normalizedQuantityMl": 61.25
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "61.25 ml yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  egg",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 5,
+    "matched": 4,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "2 servings seasoning mix",
+        "identityText": "seasoning mix",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:33:10.162Z",
+  "processGraph": {
+    "recipeName": "Eggplant Fries with Tzatziki Sauce",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven to 450F",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 450F"
+          }
+        ],
+        "outputDescription": "oven preheated to 450F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Mix salt, garlic powder, italian seasonings, and paprika in a bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "seasoning mix"
+            ],
+            "durationMinutes": null,
+            "notes": "combining dry seasonings"
+          }
+        ],
+        "outputDescription": "seasoning mixture combined in bowl"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "In another bowl, mix yogurt & egg together.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "yogurt",
+              "egg"
+            ],
+            "durationMinutes": null,
+            "notes": "combining wet ingredients"
+          }
+        ],
+        "outputDescription": "yogurt and egg mixture combined"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "First place the eggplant strips into egg/yogurt mixture then coat them in flour mixture evenly.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting eggplant into strips"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": null,
+            "notes": "first coating in egg/yogurt mixture, then in seasoning mixture"
+          }
+        ],
+        "outputDescription": "eggplant strips coated in wet mixture then dry seasoning mixture"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Place them in a parchment paper or greased baking pan and bake for 10-15 minutes rotating once and until slightly brown.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "eggplants"
+            ],
+            "durationMinutes": 12.5,
+            "notes": "baking at 450F, rotating once during cooking"
+          }
+        ],
+        "outputDescription": "eggplant fries baked until slightly brown"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "In a food processor, put cucumber (seeded, peeled), yogurt, dill, lemon juice, garlic cloves, salt together until smooth.",
+        "processes": [
+          {
+            "processId": "deseed",
+            "ingredients": [
+              "cucumber"
+            ],
+            "durationMinutes": null,
+            "notes": "removing seeds from cucumber"
+          },
+          {
+            "processId": "peel",
+            "ingredients": [
+              "cucumber"
+            ],
+            "durationMinutes": null,
+            "notes": "peeling cucumber"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "cucumber",
+              "yogurt",
+              "dill",
+              "lemon juice",
+              "garlic cloves",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "processing in food processor until smooth"
+          }
+        ],
+        "outputDescription": "smooth tzatziki sauce"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 7,
+      "uniqueProcesses": [
+        "heat",
+        "mix",
+        "slice",
+        "coat",
+        "bake",
+        "deseed",
+        "peel",
+        "blend"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642287_step1",
+      "name": "oven preheated to 450F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642287_step2",
+      "name": "seasoning mixture combined in bowl",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "seasoning",
+          "name": "seasoning mix",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.064,
+        "costPerG": 0.032,
+        "nutrition": {
+          "calories": 6.140000000000001,
+          "protein": 0.1918,
+          "fat": 0.1506,
+          "carbs": 1.3118,
+          "fiber": 0.226,
+          "sugar": 0.0616,
+          "sodium": 0.54,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642287_step3",
+      "name": "yogurt and egg mixture combined",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "yogurt",
+          "quantityG": 61.25
+        },
+        {
+          "ingredientId": "eggs",
+          "name": "egg",
+          "quantityG": 50
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 111.25,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.7010000000000001,
+        "costPerG": 0.006301123595505618,
+        "nutrition": {
+          "calories": 108.86250000000001,
+          "protein": 12.60875,
+          "fat": 4.981625,
+          "carbs": 2.5895,
+          "fiber": 0,
+          "sugar": 2.187875,
+          "sodium": 93.05,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642287_step4",
+      "name": "eggplant strips coated in wet mixture then dry seasoning mixture",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggplants",
+          "name": "eggplants",
+          "quantityG": 25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 28.175,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.1875,
+        "costPerG": 0.006654835847382431,
+        "nutrition": {
+          "calories": 6.25,
+          "protein": 0.245,
+          "fat": 0.045,
+          "carbs": 1.47,
+          "fiber": 0.75,
+          "sugar": 0.8825,
+          "sodium": 0.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642287_step5",
+      "name": "eggplant fries baked until slightly brown",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 12.5,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 12.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642287_step7",
+      "name": "smooth tzatziki sauce",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "deseed",
+          "processName": "Deseed",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 2.4645,
+    "costPerServing": 1.23225,
+    "totalPrepTime": 29.5,
+    "nutritionPerServing": {
+      "calories": 273.92625,
+      "protein": 13.731775,
+      "fat": 5.4506125,
+      "carbs": 41.55485000000001,
+      "fiber": 2.918,
+      "sugar": 4.913987500000001,
+      "sodium": 442.325
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642287_step2",
+        "name": "seasoning mixture combined in bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642287_step3",
+        "name": "yogurt and egg mixture combined",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642287_step4",
+        "name": "eggplant strips coated in wet mixture then dry seasoning mixture",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_642287_step5",
+        "name": "eggplant fries baked until slightly brown",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_642287_step7",
+        "name": "smooth tzatziki sauce",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_642287_step4",
+      "name": "eggplant strips coated in wet mixture then dry seasoning mixture",
+      "shelfLifeHours": 2,
+      "processes": [
+        "slice",
+        "coat"
+      ]
+    },
+    {
+      "componentId": "comp_642287_step7",
+      "name": "smooth tzatziki sauce",
+      "shelfLifeHours": 24,
+      "processes": [
+        "deseed",
+        "peel",
+        "blend"
+      ]
+    }
+  ]
+}

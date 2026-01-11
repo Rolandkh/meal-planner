@@ -1,0 +1,677 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_c5e2248b-37f3-44f4-8d69-1d578f9abc45",
+  "name": "Instant Pot Quinoa Grain Bowl",
+  "source": "spoonacular",
+  "spoonacularId": 982371,
+  "image": "/images/recipes/982371.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "avocado",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "broccoli",
+      "quantity": 88,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rainbow cherry tomatoes",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "clementine",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kale",
+      "quantity": 42,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 340,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "brussell sprouts",
+      "quantity": 33,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "stock",
+      "quantity": 470,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Rinse and drain the quinoa to remove the bitter and sometimes mildly soapy taste that can linger if not rinsed.\nCombine the quinoa, stock and seasonings in the Instant Pot together and then twist to lock the lid shut. Set the pot to Manual for 1 minute.\nAt the end of the cook time, let the pot to natural pressure release for 10 minutes before carefully releasing the remaining pressure.\nFluff the cooked quinoa with a fork. Now you have Instant Pot Quinoa!\nAdd fruits and vegetables over a scoop of cooked quinoa and make an amazing quinoa grain bowl.",
+  "prepTime": 2,
+  "cookTime": 11,
+  "servings": 4,
+  "nutrition": {
+    "calories": 407.26,
+    "protein": 15.32,
+    "fat": 9.34,
+    "carbs": 68.44,
+    "fiber": 10.14,
+    "sugar": 7.02,
+    "saturatedFat": 1.21,
+    "sodium": 699.58
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 88.9,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "clementine",
+        "identity": "clementine",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "avocado",
+      "displayName": "avocado",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  avocado",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "broccoli",
+      "displayName": "broccoli",
+      "quantity": {
+        "originalQuantity": 88,
+        "originalUnit": "g",
+        "normalizedQuantityG": 88,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "88 g broccoli",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "kale",
+      "displayName": "kale",
+      "quantity": {
+        "originalQuantity": 42,
+        "originalUnit": "g",
+        "normalizedQuantityG": 42,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "42 g kale",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 340,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "340 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Brussels sprouts",
+      "quantity": {
+        "originalQuantity": 33,
+        "originalUnit": "ml",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 33
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "33 ml baby brussell sprouts",
+      "matchConfidence": 0.9875
+    },
+    {
+      "masterIngredientId": "chicken_broth",
+      "displayName": "chicken broth",
+      "quantity": {
+        "originalQuantity": 470,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 470,
+        "normalizedQuantityMl": 470
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "470 ml stock",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 9,
+    "matched": 7,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 servings rainbow cherry tomatoes",
+        "identityText": "rainbow cherry tomatoes",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1  clementine",
+        "identityText": "clementine",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-11T00:00:13.621Z",
+  "processGraph": {
+    "recipeName": "Instant Pot Quinoa Grain Bowl",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Rinse and drain the quinoa to remove the bitter and sometimes mildly soapy taste that can linger if not rinsed.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "removes bitter and soapy taste"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "remove excess water after rinsing"
+          }
+        ],
+        "outputDescription": "clean, rinsed and drained quinoa ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Combine the quinoa, stock and seasonings in the Instant Pot together and then twist to lock the lid shut. Set the pot to Manual for 1 minute.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "stock",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combine ingredients in Instant Pot"
+          },
+          {
+            "processId": "pressure_cook",
+            "ingredients": [
+              "quinoa",
+              "stock",
+              "salt and pepper"
+            ],
+            "durationMinutes": 1,
+            "notes": "Manual setting on Instant Pot"
+          }
+        ],
+        "outputDescription": "quinoa cooking under pressure in seasoned stock"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "At the end of the cook time, let the pot to natural pressure release for 10 minutes before carefully releasing the remaining pressure.",
+        "processes": [
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 10,
+            "notes": "natural pressure release - using rest_meat as closest analog for letting pressure naturally release"
+          }
+        ],
+        "outputDescription": "pressure released quinoa, fully cooked and ready to fluff"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Fluff the cooked quinoa with a fork. Now you have Instant Pot Quinoa!",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "fluffing with fork to separate grains"
+          }
+        ],
+        "outputDescription": "fluffy, separated quinoa grains ready for serving"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add fruits and vegetables over a scoop of cooked quinoa and make an amazing quinoa grain bowl.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa",
+              "avocado",
+              "broccoli",
+              "rainbow cherry tomatoes",
+              "clementine",
+              "kale",
+              "brussell sprouts"
+            ],
+            "durationMinutes": null,
+            "notes": "assembling grain bowl with fruits and vegetables"
+          }
+        ],
+        "outputDescription": "completed quinoa grain bowl with fresh fruits and vegetables"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "rinse",
+        "drain",
+        "mix",
+        "pressure_cook",
+        "rest_meat",
+        "plate"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_982371_step1",
+      "name": "clean, rinsed and drained quinoa ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 340
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.05,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 349.85999999999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.42,
+        "costPerG": 0.012633624878522839,
+        "nutrition": {
+          "calories": 1251.2,
+          "protein": 48.007999999999996,
+          "fat": 20.638,
+          "carbs": 218.14399999999998,
+          "fiber": 23.8,
+          "sugar": 0,
+          "sodium": 17,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_982371_step2",
+      "name": "quinoa cooking under pressure in seasoned stock",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_broth",
+          "name": "stock",
+          "quantityG": 470
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "pressure_cook",
+          "processName": "Pressure Cook",
+          "yieldFactor": 0.93,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 440.82000000000005,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.845,
+        "costPerG": 0.004185381788485095,
+        "nutrition": {
+          "calories": 28.200000000000003,
+          "protein": 3.008,
+          "fat": 0.987,
+          "carbs": 2.068,
+          "fiber": 0,
+          "sugar": 2.021,
+          "sodium": 3294.02,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_982371_step3",
+      "name": "pressure released quinoa, fully cooked and ready to fluff",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_982371_step4",
+      "name": "fluffy, separated quinoa grains ready for serving",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_982371_step5",
+      "name": "completed quinoa grain bowl with fresh fruits and vegetables",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "avocado",
+          "name": "avocado",
+          "quantityG": 0.5
+        },
+        {
+          "ingredientId": "broccoli",
+          "name": "broccoli",
+          "quantityG": 88
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "rainbow cherry tomatoes",
+          "quantityG": 80
+        },
+        {
+          "ingredientId": "kale",
+          "name": "kale",
+          "quantityG": 42
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 210.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.36625,
+        "costPerG": 0.015991686460807602,
+        "nutrition": {
+          "calories": 59.82000000000001,
+          "protein": 4.422,
+          "fat": 1.1849,
+          "carbs": 10.85425,
+          "fiber": 5.0035,
+          "sugar": 3.9393,
+          "sodium": 55.335,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 9.63125,
+    "costPerServing": 2.4078125,
+    "totalPrepTime": 19,
+    "nutritionPerServing": {
+      "calories": 334.805,
+      "protein": 13.859499999999999,
+      "fat": 5.702475,
+      "carbs": 57.7665625,
+      "fiber": 7.200875,
+      "sugar": 1.490075,
+      "sodium": 841.58875
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_982371_step1",
+        "name": "clean, rinsed and drained quinoa ready for cooking",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_982371_step2",
+        "name": "quinoa cooking under pressure in seasoned stock",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_982371_step4",
+        "name": "fluffy, separated quinoa grains ready for serving",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_982371_step1",
+      "name": "clean, rinsed and drained quinoa ready for cooking",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_982371_step2",
+      "name": "quinoa cooking under pressure in seasoned stock",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "pressure_cook"
+      ]
+    }
+  ]
+}

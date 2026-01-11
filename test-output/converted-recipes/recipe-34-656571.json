@@ -1,0 +1,968 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_70f182e3-09fe-4389-acdd-cb07c7f836cb",
+  "name": "Polla alla Parmigiana: Chicken Parmesan",
+  "source": "spoonacular",
+  "spoonacularId": 656571,
+  "image": "/images/recipes/656571.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bread crumbs",
+      "quantity": 108,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggs",
+      "quantity": 2,
+      "unit": "extra large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flour",
+      "quantity": 125,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "marjoram",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mozzarella",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oil",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "panko",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken breasts",
+      "quantity": 6,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato sauce",
+      "quantity": 735,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Preheat oven at 350</li><li>Pound the chicken breast or tights until they are even and  inch thick.</li><li>On a shallow dish combine the flour, salt and pepper. On a second dish, beat the eggs with 1 tablespoon of water. On a third dish, combine the bread crumbs, panko, marjoram and parmesan cheese.</li><li>Coat the chicken on both sides with the flour mixture, shaking off any excess, then dip both sides into the egg mixture and dredge both sides in the bread crumbs mixture.</li><li>Heat the oil in a large saute pan and cook breaded thighs on medium high for 2 to 3 minutes on each side, until the chicken is golden brown on each side. Do not overcrowd the skillet. Remove and place in a cookie sheet.</li><li>Smear tomato sauce over the chicken and top with a mozzarella slice.</li><li>Place in the oven and cook until the mozzarella has melted.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 619.33,
+    "protein": 45.8,
+    "fat": 26.92,
+    "carbs": 48.29,
+    "fiber": 5.23,
+    "sugar": 9.81,
+    "saturatedFat": 8.71,
+    "sodium": 1510.9
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "breadcrumbs",
+      "displayName": "breadcrumbs",
+      "quantity": {
+        "originalQuantity": 108,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 83,
+        "normalizedQuantityMl": 108
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "108 ml bread crumbs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 extra large eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "flour",
+      "displayName": "flour",
+      "quantity": {
+        "originalQuantity": 125,
+        "originalUnit": "g",
+        "normalizedQuantityG": 125,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "125 g flour",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Marjoram",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp marjoram",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mozzarella_cheese",
+      "displayName": "mozzarella cheese",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "226.796 g mozzarella",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 54,
+        "normalizedQuantityMl": 60
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 Tbsps oil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Panko breadcrumbs",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "60 g panko",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 50,
+        "originalUnit": "g",
+        "normalizedQuantityG": 50,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "50 g parmesan cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chicken_breast",
+      "displayName": "chicken breast",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6  chicken breasts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato_sauce",
+      "displayName": "tomato sauce",
+      "quantity": {
+        "originalQuantity": 735,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 459,
+        "normalizedQuantityMl": 735
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "735 ml tomato sauce",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 12,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:31:04.602Z",
+  "processGraph": {
+    "recipeName": "Polla alla Parmigiana: Chicken Parmesan",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat oven at 350",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 350°F"
+          }
+        ],
+        "outputDescription": "oven preheated to 350°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Pound the chicken breast or tights until they are even and inch thick.",
+        "processes": [
+          {
+            "processId": "pound",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "flatten to 1 inch thickness"
+          }
+        ],
+        "outputDescription": "chicken breasts flattened to even 1-inch thickness"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "On a shallow dish combine the flour, salt and pepper. On a second dish, beat the eggs with 1 tablespoon of water. On a third dish, combine the bread crumbs, panko, marjoram and parmesan cheese.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "flour",
+              "salt",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "combine in shallow dish"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "eggs"
+            ],
+            "durationMinutes": null,
+            "notes": "beat with 1 tablespoon water"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "bread crumbs",
+              "panko",
+              "marjoram",
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "combine in third dish"
+          }
+        ],
+        "outputDescription": "three breading stations prepared: flour mixture, beaten eggs with water, and breadcrumb mixture"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Coat the chicken on both sides with the flour mixture, shaking off any excess, then dip both sides into the egg mixture and dredge both sides in the bread crumbs mixture.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "coat with flour mixture, shake off excess"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "dip in egg mixture"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": null,
+            "notes": "dredge in breadcrumb mixture"
+          }
+        ],
+        "outputDescription": "chicken breasts fully breaded with three-layer coating"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Heat the oil in a large saute pan and cook breaded thighs on medium high for 2 to 3 minutes on each side, until the chicken is golden brown on each side. Do not overcrowd the skillet. Remove and place in a cookie sheet.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in large saute pan"
+          },
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "chicken breasts"
+            ],
+            "durationMinutes": 5,
+            "notes": "cook on medium high, 2-3 minutes per side until golden brown"
+          }
+        ],
+        "outputDescription": "chicken breasts golden brown on both sides, placed on cookie sheet"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Smear tomato sauce over the chicken and top with a mozzarella slice.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "tomato sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "smear over chicken"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "mozzarella"
+            ],
+            "durationMinutes": null,
+            "notes": "slice mozzarella"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "mozzarella"
+            ],
+            "durationMinutes": null,
+            "notes": "top chicken with mozzarella slices"
+          }
+        ],
+        "outputDescription": "chicken topped with tomato sauce and mozzarella slices"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Place in the oven and cook until the mozzarella has melted.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "chicken breasts",
+              "mozzarella",
+              "tomato sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "bake until mozzarella melts"
+          }
+        ],
+        "outputDescription": "finished chicken parmesan with melted mozzarella"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 10,
+      "uniqueProcesses": [
+        "heat",
+        "pound",
+        "mix",
+        "whisk",
+        "coat",
+        "pan_fry",
+        "spread",
+        "slice",
+        "sprinkle",
+        "bake"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_656571_step1",
+      "name": "oven preheated to 350°F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_656571_step2",
+      "name": "chicken breasts flattened to even 1-inch thickness",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken breasts",
+          "quantityG": 1200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "pound",
+          "processName": "Pound",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1200,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 20.4,
+        "costPerG": 0.016999999999999998,
+        "nutrition": {
+          "calories": 1368,
+          "protein": 254.76,
+          "fat": 31.08,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1392,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656571_step3",
+      "name": "three breading stations prepared: flour mixture, beaten eggs with water, and breadcrumb mixture",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "flour",
+          "name": "flour",
+          "quantityG": 125
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 6
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 137,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.351,
+        "costPerG": 0.009861313868613138,
+        "nutrition": {
+          "calories": 456.56,
+          "protein": 12.9719,
+          "fat": 1.243,
+          "carbs": 95.7493,
+          "fiber": 3.501,
+          "sugar": 0.5895,
+          "sodium": 2328.22,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656571_step4",
+      "name": "chicken breasts fully breaded with three-layer coating",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656571_step5",
+      "name": "chicken breasts golden brown on both sides, placed on cookie sheet",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "oil",
+          "quantityG": 54
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 42.336,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.576,
+        "costPerG": 0.013605442176870748,
+        "nutrition": {
+          "calories": 477.36,
+          "protein": 0,
+          "fat": 54,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1.08,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656571_step6",
+      "name": "chicken topped with tomato sauce and mozzarella slices",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato_sauce",
+          "name": "tomato sauce",
+          "quantityG": 735
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 808.1766000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.205,
+        "costPerG": 0.0027283640729018877,
+        "nutrition": {
+          "calories": 176.39999999999998,
+          "protein": 8.819999999999999,
+          "fat": 2.2049999999999996,
+          "carbs": 39.028499999999994,
+          "fiber": 11.024999999999999,
+          "sugar": 26.166,
+          "sodium": 3483.8999999999996,
+          "method": "raw"
+        },
+        "prepTimeMin": 3.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_656571_step7",
+      "name": "finished chicken parmesan with melted mozzarella",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mozzarella_fresh",
+          "name": "mozzarella",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 192.7766,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 7.37087,
+        "costPerG": 0.03823529411764706,
+        "nutrition": {
+          "calories": 680.388,
+          "protein": 50.2806732,
+          "fat": 50.688906,
+          "carbs": 4.9668323999999995,
+          "fiber": 0,
+          "sugar": 2.3359988,
+          "sodium": 1422.01092,
+          "method": "raw"
+        },
+        "prepTimeMin": 20
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 38.24037,
+    "costPerServing": 6.3733949999999995,
+    "totalPrepTime": 49.5,
+    "nutritionPerServing": {
+      "calories": 707.7263333333334,
+      "protein": 64.4447622,
+      "fat": 29.275484333333335,
+      "carbs": 44.39817206666666,
+      "fiber": 4.0168333333333335,
+      "sugar": 6.777833133333334,
+      "sodium": 1812.470153333333
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_656571_step2",
+        "name": "chicken breasts flattened to even 1-inch thickness",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_656571_step3",
+        "name": "three breading stations prepared: flour mixture, beaten eggs with water, and breadcrumb mixture",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_656571_step4",
+        "name": "chicken breasts fully breaded with three-layer coating",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_656571_step5",
+        "name": "chicken breasts golden brown on both sides, placed on cookie sheet",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_656571_step6",
+        "name": "chicken topped with tomato sauce and mozzarella slices",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_656571_step7",
+        "name": "finished chicken parmesan with melted mozzarella",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_656571_step3",
+      "name": "three breading stations prepared: flour mixture, beaten eggs with water, and breadcrumb mixture",
+      "shelfLifeHours": 12,
+      "processes": [
+        "mix",
+        "whisk",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_656571_step4",
+      "name": "chicken breasts fully breaded with three-layer coating",
+      "shelfLifeHours": 2,
+      "processes": [
+        "coat",
+        "coat",
+        "coat"
+      ]
+    },
+    {
+      "componentId": "comp_656571_step5",
+      "name": "chicken breasts golden brown on both sides, placed on cookie sheet",
+      "shelfLifeHours": 48,
+      "processes": [
+        "heat",
+        "pan_fry"
+      ]
+    },
+    {
+      "componentId": "comp_656571_step6",
+      "name": "chicken topped with tomato sauce and mozzarella slices",
+      "shelfLifeHours": 24,
+      "processes": [
+        "spread",
+        "slice",
+        "sprinkle"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_e1afe3d2-f4be-4fed-85da-90812edec723",
+  "name": "Butternut Squash Soup (In Half An Hour!)",
+  "source": "spoonacular",
+  "spoonacularId": 636602,
+  "image": "/images/recipes/636602.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "butternut squash",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "black-eyed peas",
+      "quantity": 1,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "collard greens",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kombu",
+      "quantity": 1,
+      "unit": "piece",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "nutmeg",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable broth",
+      "quantity": 907.185,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In large pot, saute onion in butter, ghee or olive oil until soft</li><li>Add cubed squash and saute for a couple of minutes</li><li>Add vegetable stock and 1 3 inch piece of kombu and bring to a boil</li><li>Reduce heat and simmer until squash is soft (about 15 minutes)</li><li>Using a slotted spoon, remove squash and puree in blender</li><li>Return squash to pot and stir in black-eyed peas and cooked quinoa.</li><li>Add greens for about five minutes until soft</li><li>Add nutmeg, sea salt and pepper to taste</li></ol>",
+  "prepTime": 9,
+  "cookTime": 21,
+  "servings": 8,
+  "nutrition": {
+    "calories": 251.7,
+    "protein": 8.73,
+    "fat": 6.49,
+    "carbs": 42.38,
+    "fiber": 8.51,
+    "sugar": 5.97,
+    "saturatedFat": 1.3,
+    "sodium": 666.45
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "soup",
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 90,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "collard greens",
+        "identity": "collard greens",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "butternut_squash",
+      "displayName": "butternut squash",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  butternut squash",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Black-eyed peas",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "1 can black-eyed peas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "8 servings quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Kombu",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "dried",
+      "preparation": [],
+      "rawText": "1 piece kombu",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "nutmeg",
+      "displayName": "nutmeg",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "8 servings nutmeg",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "8 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 907.185,
+        "originalUnit": "g",
+        "normalizedQuantityG": 907.185,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "907.185 g vegetable broth",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small onions",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 9,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "8 servings collard greens",
+        "identityText": "collard greens",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:49:42.939Z",
+  "processGraph": {
+    "recipeName": "Butternut Squash Soup (In Half An Hour!)",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In large pot, saute onion in butter, ghee or olive oil until soft",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onions",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "cook until soft"
+          }
+        ],
+        "outputDescription": "softened onions in oil"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add cubed squash and saute for a couple of minutes",
+        "processes": [
+          {
+            "processId": "cube",
+            "ingredients": [
+              "butternut squash"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep process"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "butternut squash"
+            ],
+            "durationMinutes": 2,
+            "notes": "couple of minutes"
+          }
+        ],
+        "outputDescription": "cubed squash sautéed with onions"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add vegetable stock and 1 3 inch piece of kombu and bring to a boil",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "vegetable broth",
+              "kombu"
+            ],
+            "durationMinutes": null,
+            "notes": "bring to a boil"
+          }
+        ],
+        "outputDescription": "boiling soup base with vegetables, stock, and kombu"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Reduce heat and simmer until squash is soft (about 15 minutes)",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "butternut squash",
+              "vegetable broth",
+              "kombu",
+              "onions"
+            ],
+            "durationMinutes": 15,
+            "notes": "until squash is soft"
+          }
+        ],
+        "outputDescription": "soft squash in simmered broth"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Using a slotted spoon, remove squash and puree in blender",
+        "processes": [
+          {
+            "processId": "puree",
+            "ingredients": [
+              "butternut squash"
+            ],
+            "durationMinutes": null,
+            "notes": "using blender"
+          }
+        ],
+        "outputDescription": "smooth pureed squash"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Return squash to pot and stir in black-eyed peas and cooked quinoa.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "butternut squash",
+              "black-eyed peas",
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "stir together"
+          }
+        ],
+        "outputDescription": "soup with pureed squash, peas, and quinoa combined"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Add greens for about five minutes until soft",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "collard greens"
+            ],
+            "durationMinutes": 5,
+            "notes": "until greens are soft"
+          }
+        ],
+        "outputDescription": "soup with softened greens"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Add nutmeg, sea salt and pepper to taste",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "nutmeg",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "to taste"
+          }
+        ],
+        "outputDescription": "finished seasoned soup"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "saute",
+        "cube",
+        "boil",
+        "simmer",
+        "puree",
+        "mix",
+        "season"
+      ],
+      "estimatedTotalTime": 30
+    }
+  },
+  "components": [
+    {
+      "id": "comp_636602_step1",
+      "name": "softened onions in oil",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onions",
+          "quantityG": 105
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 27
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 112.2,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.03835,
+        "costPerG": 0.01816711229946524,
+        "nutrition": {
+          "calories": 280.68,
+          "protein": 1.1550000000000002,
+          "fat": 27.105,
+          "carbs": 9.807,
+          "fiber": 1.785,
+          "sugar": 4.452000000000001,
+          "sodium": 4.74,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636602_step2",
+      "name": "cubed squash sautéed with onions",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "butternut_squash",
+          "name": "butternut squash",
+          "quantityG": 300
+        }
+      ],
+      "processes": [
+        {
+          "processId": "cube",
+          "processName": "Cube",
+          "yieldFactor": 0.96,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 244.79999999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.3499999999999999,
+        "costPerG": 0.005514705882352941,
+        "nutrition": {
+          "calories": 135,
+          "protein": 3,
+          "fat": 0.30000000000000004,
+          "carbs": 35.07,
+          "fiber": 6,
+          "sugar": 6.6000000000000005,
+          "sodium": 12,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636602_step3",
+      "name": "boiling soup base with vegetables, stock, and kombu",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "vegetable_broth",
+          "name": "vegetable broth",
+          "quantityG": 907.185
+        },
+        {
+          "ingredientId": "kombu",
+          "name": "kombu",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 862.7757499999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.2651475,
+        "costPerG": 0.0037844683279519625,
+        "nutrition": {
+          "calories": 45.789249999999996,
+          "protein": 0.0168,
+          "fat": 0.005600000000000001,
+          "carbs": 11.707668,
+          "fiber": 0.013000000000000001,
+          "sugar": 7.7170725,
+          "sodium": 3631.0699999999997,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636602_step4",
+      "name": "soft squash in simmered broth",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 15
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636602_step5",
+      "name": "smooth pureed squash",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636602_step6",
+      "name": "soup with pureed squash, peas, and quinoa combined",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "black_eyed_peas",
+          "name": "black-eyed peas",
+          "quantityG": 400
+        },
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 160
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 560,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.58,
+        "costPerG": 0.00817857142857143,
+        "nutrition": {
+          "calories": 1052.8000000000002,
+          "protein": 53.512,
+          "fat": 11.832,
+          "carbs": 185.69600000000003,
+          "fiber": 37.2,
+          "sugar": 13.2,
+          "sodium": 24,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636602_step7",
+      "name": "soup with softened greens",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lard",
+          "name": "collard greens",
+          "quantityG": 160
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 144,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.88,
+        "costPerG": 0.02,
+        "nutrition": {
+          "calories": 51.2,
+          "protein": 4.832000000000001,
+          "fat": 0.976,
+          "carbs": 8.672,
+          "fiber": 6.4,
+          "sugar": 0.7360000000000001,
+          "sodium": 27.200000000000003,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_636602_step8",
+      "name": "finished seasoned soup",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "nutmeg",
+          "name": "nutmeg",
+          "quantityG": 160
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 8
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 171.36,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 26,
+        "costPerG": 0.15172735760971054,
+        "nutrition": {
+          "calories": 840,
+          "protein": 9.344,
+          "fat": 58.096000000000004,
+          "carbs": 78.864,
+          "fiber": 33.28,
+          "sugar": 45.584,
+          "sodium": 3126.24,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 40.113497499999994,
+    "costPerServing": 5.014187187499999,
+    "totalPrepTime": 45.5,
+    "nutritionPerServing": {
+      "calories": 300.68365625,
+      "protein": 8.982475,
+      "fat": 12.289325000000002,
+      "carbs": 41.2270835,
+      "fiber": 10.58475,
+      "sugar": 9.7861340625,
+      "sodium": 853.1562499999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_636602_step1",
+        "name": "softened onions in oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_636602_step2",
+        "name": "cubed squash sautéed with onions",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_636602_step3",
+        "name": "boiling soup base with vegetables, stock, and kombu",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_636602_step4",
+        "name": "soft squash in simmered broth",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_636602_step5",
+        "name": "smooth pureed squash",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_636602_step6",
+        "name": "soup with pureed squash, peas, and quinoa combined",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_636602_step7",
+        "name": "soup with softened greens",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_636602_step2",
+      "name": "cubed squash sautéed with onions",
+      "shelfLifeHours": 48,
+      "processes": [
+        "cube",
+        "saute"
+      ]
+    }
+  ]
+}

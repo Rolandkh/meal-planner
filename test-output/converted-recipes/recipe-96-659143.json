@@ -1,0 +1,710 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_d2e82f78-b47f-4501-b571-e111cceda92c",
+  "name": "Salmon, Watercress, Fennel and Baby Beetroot Salad With Lemony \"Caviar\" Dressing",
+  "source": "spoonacular",
+  "spoonacularId": 659143,
+  "image": "/images/recipes/659143.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "arënkha msc caviar substitute",
+      "quantity": 4,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "beets",
+      "quantity": 12,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bay leaf",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 6,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "fennel",
+      "quantity": 1,
+      "unit": "head",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salmon fillets",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tarragon stalks",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tarragon leaves",
+      "quantity": 9,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "watercress",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "white wine",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Place the salmon in a pan, cover with water, and add the wine, bay and tarragon stalks.  Bring to the boil and then immediately turn off and leave for a couple of minutes to cook in the residual heat. Remove to a plate with a slotted spoon and leave to cool before flaking into large pieces.</li><li>Make the dressing by lightly whisking the olive oil and lemon juice together. Stir in the Arnkha MSC and season with some black pepper.</li><li>Next, arrange the watercress, beets and fennel in 4 shallow salad bowls, then add the salmon and tarragon.  Drizzle over the Arnkha MSC dressing and serve.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 440.07,
+    "protein": 27.23,
+    "fat": 29.1,
+    "carbs": 18.51,
+    "fiber": 5.58,
+    "sugar": 10.85,
+    "saturatedFat": 4.24,
+    "sodium": 186.03
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "primal",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "ground_beef",
+      "displayName": "ground beef",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "12  baby beets",
+      "matchConfidence": 0.65
+    },
+    {
+      "masterIngredientId": "bay_leaf",
+      "displayName": "bay leaf",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  bay leaf",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 81,
+        "normalizedQuantityMl": 90
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Fennel",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 head fennel",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salmon",
+      "displayName": "salmon",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g salmon fillets",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "white_wine",
+      "displayName": "white wine",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp white wine",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 8,
+    "unmatched": 4,
+    "lowConfidence": 1,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 tsps arënkha msc caviar substitute",
+        "identityText": "arënkha msc caviar substitute",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4 servings tarragon stalks",
+        "identityText": "tarragon stalks",
+        "state": "fresh"
+      },
+      {
+        "rawText": "9 servings tarragon leaves",
+        "identityText": "tarragon leaves",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 bunch watercress",
+        "identityText": "watercress",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:44:02.938Z",
+  "processGraph": {
+    "recipeName": "Salmon, Watercress, Fennel and Baby Beetroot Salad With Lemony \"Caviar\" Dressing",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Place the salmon in a pan, cover with water, and add the wine, bay and tarragon stalks. Bring to the boil and then immediately turn off and leave for a couple of minutes to cook in the residual heat. Remove to a plate with a slotted spoon and leave to cool before flaking into large pieces.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "salmon fillets",
+              "white wine",
+              "bay leaf",
+              "tarragon stalks"
+            ],
+            "durationMinutes": 1,
+            "notes": "bring to boil then immediately turn off"
+          },
+          {
+            "processId": "poach",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": 2,
+            "notes": "cook in residual heat"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": 0,
+            "notes": "remove with slotted spoon"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": 10,
+            "notes": "leave to cool"
+          },
+          {
+            "processId": "shred",
+            "ingredients": [
+              "salmon fillets"
+            ],
+            "durationMinutes": 1,
+            "notes": "flake into large pieces"
+          }
+        ],
+        "outputDescription": "Salmon is poached, cooled, and flaked into large pieces"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Make the dressing by lightly whisking the olive oil and lemon juice together. Stir in the Arnkha MSC and season with some black pepper.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "extra virgin olive oil",
+              "lemon juice"
+            ],
+            "durationMinutes": 1,
+            "notes": "lightly whisk together"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "arënkha msc caviar substitute"
+            ],
+            "durationMinutes": 0,
+            "notes": "stir into oil and lemon mixture"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "pepper"
+            ],
+            "durationMinutes": 0,
+            "notes": "season with black pepper"
+          }
+        ],
+        "outputDescription": "Lemony caviar dressing is prepared and seasoned"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Next, arrange the watercress, beets and fennel in 4 shallow salad bowls, then add the salmon and tarragon. Drizzle over the Arnkha MSC dressing and serve.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "watercress",
+              "beets",
+              "fennel"
+            ],
+            "durationMinutes": 2,
+            "notes": "arrange in 4 shallow salad bowls"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "salmon fillets",
+              "tarragon leaves"
+            ],
+            "durationMinutes": 1,
+            "notes": "add to arranged salad"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "arënkha msc caviar substitute"
+            ],
+            "durationMinutes": 1,
+            "notes": "drizzle dressing over salad"
+          }
+        ],
+        "outputDescription": "Complete salad is plated and dressed, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "boil",
+        "poach",
+        "drain",
+        "cool",
+        "shred",
+        "whisk",
+        "mix",
+        "season",
+        "plate",
+        "garnish"
+      ],
+      "estimatedTotalTime": 19
+    }
+  },
+  "components": [
+    {
+      "id": "comp_659143_step1",
+      "name": "Salmon is poached, cooled, and flaked into large pieces",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salmon",
+          "name": "salmon fillets",
+          "quantityG": 453.592
+        },
+        {
+          "ingredientId": "white_wine",
+          "name": "white wine",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "bay_leaf",
+          "name": "bay leaf",
+          "quantityG": 0.5
+        },
+        {
+          "ingredientId": "tarragon",
+          "name": "tarragon stalks",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "poach",
+          "processName": "Poach",
+          "yieldFactor": 0.92,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "steamed"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 456.1990314447999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 74.30011999999999,
+        "costPerG": 0.16286777235078437,
+        "nutrition": {
+          "calories": 884.5156400000001,
+          "protein": 108.25270280000001,
+          "fat": 34.591532799999996,
+          "carbs": 40.59135,
+          "fiber": 6.051500000000001,
+          "sugar": 0,
+          "sodium": 250.49548,
+          "method": "raw"
+        },
+        "prepTimeMin": 15
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659143_step2",
+      "name": "Lemony caviar dressing is prepared and seasoned",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 81
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 30.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 113.73,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 19.164,
+        "costPerG": 0.1685043524136112,
+        "nutrition": {
+          "calories": 722.7500000000001,
+          "protein": 0.10675,
+          "fat": 81.0732,
+          "carbs": 2.1045000000000003,
+          "fiber": 0.0915,
+          "sugar": 0.7686,
+          "sodium": 1.925,
+          "method": "raw"
+        },
+        "prepTimeMin": 3.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_659143_step3",
+      "name": "Complete salad is plated and dressed, ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "watercress",
+          "name": "watercress",
+          "quantityG": 100
+        },
+        {
+          "ingredientId": "silverbeet",
+          "name": "beets",
+          "quantityG": 12
+        },
+        {
+          "ingredientId": "fennel",
+          "name": "fennel",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 115.26,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.61375,
+        "costPerG": 0.03135302793683845,
+        "nutrition": {
+          "calories": 14.07,
+          "protein": 2.6555999999999997,
+          "fat": 0.14880000000000002,
+          "carbs": 1.7986,
+          "fiber": 0.795,
+          "sugar": 0.2897,
+          "sodium": 51.00000000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 153.47787,
+    "costPerServing": 38.3694675,
+    "totalPrepTime": 22.5,
+    "nutritionPerServing": {
+      "calories": 540.5939099999999,
+      "protein": 38.1041632,
+      "fat": 32.243983199999995,
+      "carbs": 34.3621125,
+      "fiber": 5.317500000000001,
+      "sugar": 0.27097499999999997,
+      "sodium": 103.95512000000001
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_659143_step1",
+        "name": "Salmon is poached, cooled, and flaked into large pieces",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_659143_step2",
+        "name": "Lemony caviar dressing is prepared and seasoned",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_659143_step1",
+      "name": "Salmon is poached, cooled, and flaked into large pieces",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "poach",
+        "drain",
+        "cool",
+        "shred"
+      ]
+    },
+    {
+      "componentId": "comp_659143_step2",
+      "name": "Lemony caviar dressing is prepared and seasoned",
+      "shelfLifeHours": 12,
+      "processes": [
+        "whisk",
+        "mix",
+        "season"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,872 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_5bd2bbb6-1988-4c42-b2bc-205012c5fa02",
+  "name": "Red Quinoa and Roasted Cauliflower Salad",
+  "source": "spoonacular",
+  "spoonacularId": 658087,
+  "image": "/images/recipes/658087.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cauliflower",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "walnuts",
+      "quantity": 39,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "apricots",
+      "quantity": 32.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Cook the quinoa according to package directions.\nPreheat the oven to 400 F\nCut head of cauliflower into florets.  Toss with olive oil, salt and pepper and place on a baking sheet.  Roast cauliflower for 20 minutes or until tender.\nMeanwhile, crumble the cheese and chop the rest of the ingredients.\nMix them all together, sprinkle with some extra virgin olive oil and juice from 1/2 a lemon season to taste.\nServe warm or cold.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 444.3,
+    "protein": 12.84,
+    "fat": 26.19,
+    "carbs": 44.68,
+    "fiber": 8.18,
+    "sugar": 8.25,
+    "saturatedFat": 4.7,
+    "sodium": 386.4
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cauliflower",
+      "displayName": "cauliflower",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium cauliflower",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "walnuts",
+      "displayName": "walnuts",
+      "quantity": {
+        "originalQuantity": 39,
+        "originalUnit": "g",
+        "normalizedQuantityG": 39,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "39 g walnuts",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Apricots",
+      "quantity": {
+        "originalQuantity": 32.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 32.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "32.5 g apricots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 50,
+        "originalUnit": "g",
+        "normalizedQuantityG": 50,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "50 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 11,
+        "normalizedQuantityMl": 45
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 Tbsps parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings olive oil",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 10,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:46:51.433Z",
+  "processGraph": {
+    "recipeName": "Red Quinoa and Roasted Cauliflower Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Cook the quinoa according to package directions.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": null,
+            "notes": "following package directions"
+          }
+        ],
+        "outputDescription": "cooked quinoa ready for salad"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Preheat the oven to 400 F",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 400°F"
+          }
+        ],
+        "outputDescription": "oven heated and ready for roasting"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Cut head of cauliflower into florets. Toss with olive oil, salt and pepper and place on a baking sheet. Roast cauliflower for 20 minutes or until tender.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting into florets"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "cauliflower",
+              "olive oil",
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "coating florets with oil and seasoning"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "adding salt and pepper"
+          },
+          {
+            "processId": "roast",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": 20,
+            "notes": "roasting until tender"
+          }
+        ],
+        "outputDescription": "tender roasted cauliflower florets"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Meanwhile, crumble the cheese and chop the rest of the ingredients.",
+        "processes": [
+          {
+            "processId": "crush",
+            "ingredients": [
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "crumbling cheese"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "walnuts",
+              "apricots",
+              "green onions",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "chopping remaining ingredients"
+          }
+        ],
+        "outputDescription": "crumbled feta and chopped nuts, apricots, green onions, and parsley"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Mix them all together, sprinkle with some extra virgin olive oil and juice from 1/2 a lemon season to taste.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extracting juice from half lemon"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "cauliflower",
+              "walnuts",
+              "apricots",
+              "feta cheese",
+              "green onions",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "adding olive oil on top"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "adding lemon juice and seasoning to taste"
+          }
+        ],
+        "outputDescription": "fully mixed salad with oil and lemon dressing"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Serve warm or cold.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "quinoa",
+              "cauliflower",
+              "walnuts",
+              "apricots",
+              "feta cheese",
+              "green onions",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "serving at desired temperature"
+          }
+        ],
+        "outputDescription": "plated salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "boil",
+        "heat",
+        "chop",
+        "toss",
+        "season",
+        "roast",
+        "crush",
+        "squeeze",
+        "mix",
+        "sprinkle",
+        "plate"
+      ],
+      "estimatedTotalTime": 35
+    }
+  },
+  "components": [
+    {
+      "id": "comp_658087_step1",
+      "name": "cooked quinoa ready for salad",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 161.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.21,
+        "costPerG": 0.01368421052631579,
+        "nutrition": {
+          "calories": 625.6,
+          "protein": 24.003999999999998,
+          "fat": 10.319,
+          "carbs": 109.07199999999999,
+          "fiber": 11.9,
+          "sugar": 0,
+          "sodium": 8.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658087_step2",
+      "name": "oven heated and ready for roasting",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_658087_step3",
+      "name": "tender roasted cauliflower florets",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cauliflower",
+          "name": "cauliflower",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 20,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0.7497,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0045,
+        "costPerG": 0.006002400960384153,
+        "nutrition": {
+          "calories": 0.25,
+          "protein": 0.0192,
+          "fat": 0.0028000000000000004,
+          "carbs": 0.0497,
+          "fiber": 0.02,
+          "sugar": 0.0191,
+          "sodium": 0.3,
+          "method": "raw"
+        },
+        "prepTimeMin": 23.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658087_step4",
+      "name": "crumbled feta and chopped nuts, apricots, green onions, and parsley",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 50
+        }
+      ],
+      "processes": [
+        {
+          "processId": "crush",
+          "processName": "Crush",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 48.51,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.625,
+        "costPerG": 0.012883941455370028,
+        "nutrition": {
+          "calories": 132.5,
+          "protein": 7.1,
+          "fat": 10.75,
+          "carbs": 1.94,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 570,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_658087_step5",
+      "name": "fully mixed salad with oil and lemon dressing",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon",
+          "name": "lemon",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 29.131199999999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.36,
+        "costPerG": 0.01235788433020267,
+        "nutrition": {
+          "calories": 23.200000000000003,
+          "protein": 0.8800000000000001,
+          "fat": 0.24,
+          "carbs": 7.456,
+          "fiber": 2.2399999999999998,
+          "sugar": 2,
+          "sodium": 1.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658087_step6",
+      "name": "plated salad ready to serve",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "walnuts",
+          "name": "walnuts",
+          "quantityG": 39
+        },
+        {
+          "ingredientId": "apricot",
+          "name": "apricots",
+          "quantityG": 32.5
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 450
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 11.399999999999999
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 532.9,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 60.599962,
+        "costPerG": 0.1137173240758116,
+        "nutrition": {
+          "calories": 418.764,
+          "protein": 14.956579999999999,
+          "fat": 26.499810000000004,
+          "carbs": 42.70212,
+          "fiber": 15.339200000000002,
+          "sugar": 14.6028,
+          "sodium": 79.489,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 64.85279533333333,
+    "costPerServing": 16.213198833333333,
+    "totalPrepTime": 45.5,
+    "nutritionPerServing": {
+      "calories": 476.8785000000001,
+      "protein": 11.739945,
+      "fat": 31.9529025,
+      "carbs": 40.30495499999999,
+      "fiber": 7.3748000000000005,
+      "sugar": 4.155474999999999,
+      "sodium": 552.9522499999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_658087_step1",
+        "name": "cooked quinoa ready for salad",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_658087_step3",
+        "name": "tender roasted cauliflower florets",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_658087_step4",
+        "name": "crumbled feta and chopped nuts, apricots, green onions, and parsley",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_658087_step5",
+        "name": "fully mixed salad with oil and lemon dressing",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_658087_step3",
+      "name": "tender roasted cauliflower florets",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "toss",
+        "season",
+        "roast"
+      ]
+    },
+    {
+      "componentId": "comp_658087_step4",
+      "name": "crumbled feta and chopped nuts, apricots, green onions, and parsley",
+      "shelfLifeHours": 2,
+      "processes": [
+        "crush",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_658087_step5",
+      "name": "fully mixed salad with oil and lemon dressing",
+      "shelfLifeHours": 24,
+      "processes": [
+        "squeeze",
+        "mix",
+        "sprinkle",
+        "season"
+      ]
+    }
+  ]
+}

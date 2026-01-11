@@ -1,0 +1,852 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_f2c3bfb8-b671-4d0b-ac2a-55cf638a46de",
+  "name": "Greek Style Honey and Pistachio Cake",
+  "source": "spoonacular",
+  "spoonacularId": 645365,
+  "image": "/images/recipes/645365.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "baking powder",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggs",
+      "quantity": 5,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oz. flour",
+      "quantity": 150,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oz. greek yogurt",
+      "quantity": 225,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": ".5 oz. ground almonds",
+      "quantity": 75,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": ".8 fl. oz. honey",
+      "quantity": 100,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of orange",
+      "quantity": 12,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon zest",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": ".7 fl. oz. olive oil",
+      "quantity": 200,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "orange zest",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oz. pistachios",
+      "quantity": 150,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oz. semolina",
+      "quantity": 200,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oz. caster sugar",
+      "quantity": 225,
+      "unit": "gr",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Pre-heat your oven to 180C / 350F.</li><li>Mix all the cake batter ingredients together until smooth.  This is quite a loose batter so its easy to do by hand.</li><li>Line your baking tin with greaseproof paper and pour the cake batter in.  Place in the oven and bake for up to 50 minutes.  Checking after 35.  I check by sliding a knife or a skewer into the middle of the cake and when it comes out clean, the cake is baked through.</li><li>Allow your cake to cool completely before making the syrup.</li><li>Smash or chop your pistachios roughly.  Heat a non-stick frying pan on the stove and roast the nuts for a couple of minutes, add the honey and the lemon and orange juice.  Stir around for a few seconds on a high heat.</li><li>Whilst your cake is still in the tin pierce it all over with a knife and pour over your syrup.  Allow the liquid to soak into the sponge before serving.</li></ol>",
+  "prepTime": 23,
+  "cookTime": 53,
+  "servings": 12,
+  "nutrition": {
+    "calories": 525.22,
+    "protein": 12.32,
+    "fat": 26.52,
+    "carbs": 62.89,
+    "fiber": 3.35,
+    "sugar": 35.54,
+    "saturatedFat": 3.75,
+    "sodium": 82.42
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "dessert"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 93.3,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": ".8 fl. oz. honey",
+        "identity": "fl. oz. honey",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "baking_powder",
+      "displayName": "baking powder",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp baking powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5 large eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "juice_orange",
+      "displayName": "juice orange",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "12  juice of orange",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lemon zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "juice_orange",
+      "displayName": "juice orange",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  orange zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 pinch salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 15,
+    "matched": 7,
+    "unmatched": 8,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "150 gr oz. flour",
+        "identityText": "gr oz. flour",
+        "state": "other"
+      },
+      {
+        "rawText": "225 gr oz. greek yogurt",
+        "identityText": "gr oz. greek yogurt",
+        "state": "fresh"
+      },
+      {
+        "rawText": "75 gr .5 oz. ground almonds",
+        "identityText": "gr .5 oz. almonds",
+        "state": "fresh"
+      },
+      {
+        "rawText": "100 ml .8 fl. oz. honey",
+        "identityText": ".8 fl. oz. honey",
+        "state": "fresh"
+      },
+      {
+        "rawText": "200 ml .7 fl. oz. olive oil",
+        "identityText": ".7 fl. oz. olive oil",
+        "state": "other"
+      },
+      {
+        "rawText": "150 gr oz. pistachios",
+        "identityText": "gr oz. pistachios",
+        "state": "fresh"
+      },
+      {
+        "rawText": "200 gr oz. semolina",
+        "identityText": "gr oz. semolina",
+        "state": "fresh"
+      },
+      {
+        "rawText": "225 gr oz. caster sugar",
+        "identityText": "gr oz. caster sugar",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:35:03.318Z",
+  "processGraph": {
+    "recipeName": "Greek Style Honey and Pistachio Cake",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Pre-heat your oven to 180C / 350F.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 180C/350F"
+          }
+        ],
+        "outputDescription": "oven heated to baking temperature"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Mix all the cake batter ingredients together until smooth. This is quite a loose batter so its easy to do by hand.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "baking powder",
+              "eggs",
+              "flour",
+              "greek yogurt",
+              "ground almonds",
+              "honey",
+              "lemon juice",
+              "orange juice",
+              "lemon zest",
+              "olive oil",
+              "orange zest",
+              "salt",
+              "semolina",
+              "caster sugar"
+            ],
+            "durationMinutes": null,
+            "notes": "mix by hand until smooth, loose batter consistency"
+          }
+        ],
+        "outputDescription": "smooth cake batter ready for baking"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Line your baking tin with greaseproof paper and pour the cake batter in. Place in the oven and bake for up to 50 minutes. Checking after 35. I check by sliding a knife or a skewer into the middle of the cake and when it comes out clean, the cake is baked through.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "cake batter"
+            ],
+            "durationMinutes": 50,
+            "notes": "check after 35 minutes, test with knife/skewer for doneness"
+          }
+        ],
+        "outputDescription": "fully baked cake in tin"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Allow your cake to cool completely before making the syrup.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "cake"
+            ],
+            "durationMinutes": null,
+            "notes": "cool completely before proceeding"
+          }
+        ],
+        "outputDescription": "completely cooled cake ready for syrup"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Smash or chop your pistachios roughly. Heat a non-stick frying pan on the stove and roast the nuts for a couple of minutes, add the honey and the lemon and orange juice. Stir around for a few seconds on a high heat.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "pistachios"
+            ],
+            "durationMinutes": null,
+            "notes": "roughly chop or smash pistachios"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "heat non-stick frying pan"
+          },
+          {
+            "processId": "roast",
+            "ingredients": [
+              "pistachios"
+            ],
+            "durationMinutes": 2,
+            "notes": "roast nuts in pan for a couple of minutes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "honey",
+              "lemon juice",
+              "orange juice"
+            ],
+            "durationMinutes": null,
+            "notes": "add honey and juices to roasted nuts, stir on high heat for few seconds"
+          }
+        ],
+        "outputDescription": "hot pistachio and honey syrup ready to pour"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Whilst your cake is still in the tin pierce it all over with a knife and pour over your syrup. Allow the liquid to soak into the sponge before serving.",
+        "processes": [
+          {
+            "processId": "score",
+            "ingredients": [
+              "cake"
+            ],
+            "durationMinutes": null,
+            "notes": "pierce cake all over with knife to allow syrup penetration"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "pistachio honey syrup"
+            ],
+            "durationMinutes": null,
+            "notes": "pour syrup over pierced cake"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "cake with syrup"
+            ],
+            "durationMinutes": null,
+            "notes": "allow syrup to soak into cake before serving"
+          }
+        ],
+        "outputDescription": "finished cake with absorbed syrup ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "heat",
+        "mix",
+        "bake",
+        "cool",
+        "chop",
+        "roast",
+        "score",
+        "garnish",
+        "rest_meat"
+      ],
+      "estimatedTotalTime": 90
+    }
+  },
+  "components": [
+    {
+      "id": "comp_645365_step1",
+      "name": "oven heated to baking temperature",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_645365_step2",
+      "name": "smooth cake batter ready for baking",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "baking_powder",
+          "name": "baking powder",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "eggs",
+          "name": "eggs",
+          "quantityG": 325
+        },
+        {
+          "ingredientId": "lemon_zest",
+          "name": "lemon zest",
+          "quantityG": 80
+        },
+        {
+          "ingredientId": "juice_orange",
+          "name": "orange zest",
+          "quantityG": 360
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 768.1,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 232.25975,
+        "costPerG": 0.3023821767998958,
+        "nutrition": {
+          "calories": 665.463,
+          "protein": 44.67,
+          "fat": 31.867499999999996,
+          "carbs": 53.1617,
+          "fiber": 9.204200000000002,
+          "sugar": 34.7785,
+          "sodium": 1080.08,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645365_step3",
+      "name": "fully baked cake in tin",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 50,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 50
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645365_step4",
+      "name": "completely cooled cake ready for syrup",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645365_step5",
+      "name": "hot pistachio and honey syrup ready to pour",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645365_step6",
+      "name": "finished cake with absorbed syrup ready to serve",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "score",
+          "processName": "Score",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 13
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 1602.5930833333334,
+    "costPerServing": 133.5494236111111,
+    "totalPrepTime": 107,
+    "nutritionPerServing": {
+      "calories": 606.1510833333333,
+      "protein": 14.225416666666666,
+      "fat": 28.917666666666673,
+      "carbs": 76.30014166666668,
+      "fiber": 4.219933333333333,
+      "sugar": 45.616625,
+      "sodium": 100.08166666666666
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_645365_step2",
+        "name": "smooth cake batter ready for baking",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645365_step3",
+        "name": "fully baked cake in tin",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_645365_step4",
+        "name": "completely cooled cake ready for syrup",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_645365_step5",
+        "name": "hot pistachio and honey syrup ready to pour",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645365_step6",
+        "name": "finished cake with absorbed syrup ready to serve",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_645365_step5",
+      "name": "hot pistachio and honey syrup ready to pour",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "heat",
+        "roast",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_645365_step6",
+      "name": "finished cake with absorbed syrup ready to serve",
+      "shelfLifeHours": 12,
+      "processes": [
+        "score",
+        "garnish",
+        "rest_meat"
+      ]
+    }
+  ]
+}

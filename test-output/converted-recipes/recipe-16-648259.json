@@ -1,0 +1,567 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_e78f233e-0801-49d9-8db8-914519e1645a",
+  "name": "Italian String Beans With Anchovies and Breadcrumbs",
+  "source": "spoonacular",
+  "spoonacularId": 648259,
+  "image": "/images/recipes/648259.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "anchovy",
+      "quantity": 6,
+      "unit": "fillet",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "breadcrumbs",
+      "quantity": 108,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 54,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "string beans",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Prepare the breadcrumbs:</li><li>Preheat the oven to 300F. Toss some day-old bread in a food processor. Even better if it's whole grain, or from a local bakery. Spread the crumbs on a foiled baking dish, add salt, pepper, oregano and olive oil. Toss with your hands to coat, and bake for about 15 minutes, or until golden.</li><li>Start the beans:</li><li>Mash up four of the anchovy fillets with a fork. Heat up a large cast iron skillet, and add about 2 tablespoons of olive oil. Turn the heat to low, and throw in the anchovies. Flatten with a wooden spoon until they dissolve. Then, turn the heat up to medium and add the onions. Stir around until soft and translucent, about five minutes. Add the string beans, a few grinds of fresh black pepper, and cook for 10 minutes. Add the breadcrumbs and stir to coat. Cook for one more minute and turn off heat. Serve with a anchovy fillet draped on </li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 590.97,
+    "protein": 15.13,
+    "fat": 31.07,
+    "carbs": 67.17,
+    "fiber": 10.04,
+    "sugar": 19.05,
+    "saturatedFat": 4.64,
+    "sodium": 435.15
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "dairy free",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Anchovies",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "6 fillet anchovy",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "breadcrumbs",
+      "displayName": "breadcrumbs",
+      "quantity": {
+        "originalQuantity": 108,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 83,
+        "normalizedQuantityMl": 108
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "108 ml breadcrumbs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 54,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 49,
+        "normalizedQuantityMl": 54
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "54 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_beans",
+      "displayName": "green beans",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g string beans",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 5,
+    "matched": 5,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:24:31.354Z",
+  "processGraph": {
+    "recipeName": "Italian String Beans With Anchovies and Breadcrumbs",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat the oven to 300F. Toss some day-old bread in a food processor. Even better if it's whole grain, or from a local bakery. Spread the crumbs on a foiled baking dish, add salt, pepper, oregano and olive oil. Toss with your hands to coat, and bake for about 15 minutes, or until golden.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "breadcrumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "process day-old bread in food processor to make crumbs"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "breadcrumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "spread crumbs on foiled baking dish"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "breadcrumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt, pepper, oregano"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "breadcrumbs",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "toss with hands to coat with olive oil"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "breadcrumbs"
+            ],
+            "durationMinutes": 15,
+            "notes": "bake at 300F until golden"
+          }
+        ],
+        "outputDescription": "Golden, seasoned breadcrumbs ready for use"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Mash up four of the anchovy fillets with a fork. Heat up a large cast iron skillet, and add about 2 tablespoons of olive oil. Turn the heat to low, and throw in the anchovies. Flatten with a wooden spoon until they dissolve. Then, turn the heat up to medium and add the onions. Stir around until soft and translucent, about five minutes. Add the string beans, a few grinds of fresh black pepper, and cook for 10 minutes. Add the breadcrumbs and stir to coat. Cook for one more minute and turn off heat. Serve with a anchovy fillet draped on",
+        "processes": [
+          {
+            "processId": "crush",
+            "ingredients": [
+              "anchovy"
+            ],
+            "durationMinutes": null,
+            "notes": "mash four anchovy fillets with a fork"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat cast iron skillet with olive oil on low heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "anchovy"
+            ],
+            "durationMinutes": null,
+            "notes": "cook mashed anchovies on low heat, flatten until dissolved"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": 5,
+            "notes": "cook onions on medium heat until soft and translucent"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "string beans"
+            ],
+            "durationMinutes": null,
+            "notes": "add fresh black pepper"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "string beans"
+            ],
+            "durationMinutes": 10,
+            "notes": "cook string beans with anchovy-onion mixture"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "breadcrumbs"
+            ],
+            "durationMinutes": null,
+            "notes": "add breadcrumbs and stir to coat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "breadcrumbs",
+              "string beans"
+            ],
+            "durationMinutes": 1,
+            "notes": "cook for one more minute to integrate"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "anchovy"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with remaining anchovy fillet draped on top"
+          }
+        ],
+        "outputDescription": "Finished dish with tender string beans coated in seasoned breadcrumbs, flavored with dissolved anchovies and soft onions, garnished with anchovy fillet"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 14,
+      "uniqueProcesses": [
+        "blend",
+        "spread",
+        "season",
+        "toss",
+        "bake",
+        "crush",
+        "heat",
+        "saute",
+        "garnish"
+      ],
+      "estimatedTotalTime": 31
+    }
+  },
+  "components": [
+    {
+      "id": "comp_648259_step1",
+      "name": "Golden, seasoned breadcrumbs ready for use",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "breadcrumbs",
+          "name": "breadcrumbs",
+          "quantityG": 108
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 100.939608,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.512,
+        "costPerG": 0.014979253733578992,
+        "nutrition": {
+          "calories": 426.6,
+          "protein": 14.418000000000001,
+          "fat": 5.724,
+          "carbs": 77.73840000000001,
+          "fiber": 4.86,
+          "sugar": 6.696000000000001,
+          "sodium": 790.5600000000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 19.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_648259_step2",
+      "name": "Finished dish with tender string beans coated in seasoned breadcrumbs, flavored with dissolved anchovies and soft onions, garnished with anchovy fillet",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "anchovy",
+          "name": "anchovy",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "crush",
+          "processName": "Crush",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 3.161466374913,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6,
+        "costPerG": 0.18978534921678908,
+        "nutrition": {
+          "calories": 7.859999999999999,
+          "protein": 1.221,
+          "fat": 0.2904,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 6.24,
+          "method": "raw"
+        },
+        "prepTimeMin": 27.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 6.662674000000001,
+    "costPerServing": 3.3313370000000004,
+    "totalPrepTime": 47,
+    "nutritionPerServing": {
+      "calories": 556.21676,
+      "protein": 12.794866800000001,
+      "fat": 30.5811512,
+      "carbs": 61.68188120000001,
+      "fiber": 9.828492,
+      "sugar": 13.921549599999999,
+      "sodium": 415.54776000000004
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_648259_step1",
+        "name": "Golden, seasoned breadcrumbs ready for use",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_648259_step2",
+        "name": "Finished dish with tender string beans coated in seasoned breadcrumbs, flavored with dissolved anchovies and soft onions, garnished with anchovy fillet",
+        "shelfLifeHours": 2
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_648259_step1",
+      "name": "Golden, seasoned breadcrumbs ready for use",
+      "shelfLifeHours": 48,
+      "processes": [
+        "blend",
+        "spread",
+        "season",
+        "toss",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_648259_step2",
+      "name": "Finished dish with tender string beans coated in seasoned breadcrumbs, flavored with dissolved anchovies and soft onions, garnished with anchovy fillet",
+      "shelfLifeHours": 2,
+      "processes": [
+        "crush",
+        "heat",
+        "saute",
+        "saute",
+        "season",
+        "saute",
+        "toss",
+        "saute",
+        "garnish"
+      ]
+    }
+  ]
+}

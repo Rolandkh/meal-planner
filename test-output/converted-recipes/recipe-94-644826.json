@@ -1,0 +1,1056 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_502a223d-f593-4de2-abdd-5a8c5e30ae76",
+  "name": "Gluten Free Dairy Free Sugar Free Chinese Chicken Salad",
+  "source": "spoonacular",
+  "spoonacularId": 644826,
+  "image": "/images/recipes/644826.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "apple cider vinegar",
+      "quantity": 5,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sesame seeds",
+      "quantity": 1.5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 0.25,
+      "unit": "cups",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cabbage",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "satsuma mandarins",
+      "quantity": 6,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cabbage",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chicken breasts roasted",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "romaine lettuce hearts",
+      "quantity": 2,
+      "unit": "bunches",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "scallions",
+      "quantity": 6,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sesame oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of 1 mandarin (cut crosswise then tablespoon into jar over a strainer)",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sesame seeds",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "xylitol",
+      "quantity": 1.5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>For the salad:</li><li>Finely slice the red, and green cabbage.</li><li>Remove ends and finely slice romaine lettuce.</li><li>Trim ends of scallions (white and green side) and finely slice.</li><li>Peel and grate carrots, or put into a mini food processor to finely chop.</li><li>Peel clementines then remove pith from slices.</li><li>Add all the ingredients into a large serving bowl.</li><li>For the dressing:</li><li>Add all the ingredients into a glass jar and shake until well blended, or whisk all the ingredients in a mixing bowl.</li><li>Pour dressing over salad, toss to combine well.</li><li>If making ahead, dress the salad just before serving.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 363.77,
+    "protein": 30.96,
+    "fat": 15.42,
+    "carbs": 28.7,
+    "fiber": 6.91,
+    "sugar": 16.18,
+    "saturatedFat": 2.62,
+    "sodium": 317.98
+  },
+  "tags": {
+    "cuisines": [
+      "Chinese",
+      "Asian"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "apple_cider_vinegar",
+      "displayName": "apple cider vinegar",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "5 ml apple cider vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sesame_seeds",
+      "displayName": "sesame seeds",
+      "quantity": {
+        "originalQuantity": 1.5,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 11,
+        "normalizedQuantityMl": 22.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.5 Tbsps sesame seeds",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "cup",
+        "normalizedQuantityG": 54,
+        "normalizedQuantityMl": 60
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 cups extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cabbage",
+      "displayName": "cabbage",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  cabbage",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps kosher salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cabbage",
+      "displayName": "cabbage",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  cabbage",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6  scallions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sesame_oil",
+      "displayName": "sesame oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps sesame oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sesame_seeds",
+      "displayName": "sesame seeds",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 23,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps sesame seeds",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 11,
+    "unmatched": 5,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "6  satsuma mandarins",
+        "identityText": "satsuma mandarins",
+        "state": "fresh"
+      },
+      {
+        "rawText": "3  chicken breasts roasted",
+        "identityText": "chicken breasts roasted",
+        "state": "fresh"
+      },
+      {
+        "rawText": "2 bunches romaine lettuce hearts",
+        "identityText": "bunches romaine lettuce hearts",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1  juice of 1 mandarin (cut crosswise then tablespoon into jar over a strainer)",
+        "identityText": "juice 1 mandarin cut crosswise then tablespoon into jar over a strainer",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1.5 Tbsps xylitol",
+        "identityText": "xylitol",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:43:27.318Z",
+  "processGraph": {
+    "recipeName": "Gluten Free Dairy Free Sugar Free Chinese Chicken Salad",
+    "processSteps": [
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Finely slice the red, and green cabbage.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "cabbage"
+            ],
+            "durationMinutes": null,
+            "notes": "finely sliced"
+          }
+        ],
+        "outputDescription": "cabbage cut into fine slices"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Remove ends and finely slice romaine lettuce.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "romaine lettuce hearts"
+            ],
+            "durationMinutes": null,
+            "notes": "remove ends"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "romaine lettuce hearts"
+            ],
+            "durationMinutes": null,
+            "notes": "finely sliced"
+          }
+        ],
+        "outputDescription": "romaine lettuce trimmed and cut into fine slices"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Trim ends of scallions (white and green side) and finely slice.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "remove both white and green ends"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "scallions"
+            ],
+            "durationMinutes": null,
+            "notes": "finely sliced"
+          }
+        ],
+        "outputDescription": "scallions trimmed and cut into fine slices"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Peel and grate carrots, or put into a mini food processor to finely chop.",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "carrots"
+            ],
+            "durationMinutes": null,
+            "notes": "remove outer skin"
+          },
+          {
+            "processId": "grate",
+            "ingredients": [
+              "carrots"
+            ],
+            "durationMinutes": null,
+            "notes": "alternative: finely chop in food processor"
+          }
+        ],
+        "outputDescription": "carrots peeled and grated into fine pieces"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Peel clementines then remove pith from slices.",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "satsuma mandarins"
+            ],
+            "durationMinutes": null,
+            "notes": "remove outer peel"
+          },
+          {
+            "processId": "trim",
+            "ingredients": [
+              "satsuma mandarins"
+            ],
+            "durationMinutes": null,
+            "notes": "remove pith from slices"
+          }
+        ],
+        "outputDescription": "mandarins peeled and pith removed from segments"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Add all the ingredients into a large serving bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cabbage",
+              "romaine lettuce hearts",
+              "scallions",
+              "carrots",
+              "satsuma mandarins",
+              "chicken breasts roasted"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all salad ingredients"
+          }
+        ],
+        "outputDescription": "all salad ingredients combined in serving bowl"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Add all the ingredients into a glass jar and shake until well blended, or whisk all the ingredients in a mixing bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "apple cider vinegar",
+              "pepper",
+              "sesame seeds",
+              "extra virgin olive oil",
+              "kosher salt",
+              "sesame oil",
+              "juice of 1 mandarin",
+              "xylitol"
+            ],
+            "durationMinutes": null,
+            "notes": "shake in jar or whisk in bowl until well blended"
+          }
+        ],
+        "outputDescription": "dressing ingredients well blended into emulsified mixture"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Pour dressing over salad, toss to combine well.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "salad mixture",
+              "dressing"
+            ],
+            "durationMinutes": null,
+            "notes": "combine dressing with salad"
+          }
+        ],
+        "outputDescription": "salad evenly coated with dressing"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "slice",
+        "trim",
+        "peel",
+        "grate",
+        "mix",
+        "toss"
+      ],
+      "estimatedTotalTime": 20
+    }
+  },
+  "components": [
+    {
+      "id": "comp_644826_step2",
+      "name": "cabbage cut into fine slices",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cabbage",
+          "name": "cabbage",
+          "quantityG": 0.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.49,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.00125,
+        "costPerG": 0.0025510204081632655,
+        "nutrition": {
+          "calories": 0.125,
+          "protein": 0.0064,
+          "fat": 0.0005,
+          "carbs": 0.028999999999999998,
+          "fiber": 0.0125,
+          "sugar": 0.016,
+          "sodium": 0.09,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644826_step3",
+      "name": "romaine lettuce trimmed and cut into fine slices",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lettuce",
+          "name": "romaine lettuce hearts",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.8619999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.04,
+        "costPerG": 0.021482277121374866,
+        "nutrition": {
+          "calories": 0.28,
+          "protein": 0.018000000000000002,
+          "fat": 0.0028000000000000004,
+          "carbs": 0.05940000000000001,
+          "fiber": 0.024,
+          "sugar": 0.0394,
+          "sodium": 0.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644826_step4",
+      "name": "scallions trimmed and cut into fine slices",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "green_onions",
+          "name": "scallions",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 5.585999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.75,
+        "costPerG": 0.13426423200859292,
+        "nutrition": {
+          "calories": 1.92,
+          "protein": 0.1098,
+          "fat": 0.0114,
+          "carbs": 0.44039999999999996,
+          "fiber": 0.156,
+          "sugar": 0.1398,
+          "sodium": 0.96,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644826_step5",
+      "name": "carrots peeled and grated into fine pieces",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "carrot",
+          "name": "carrots",
+          "quantityG": 180
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "grate",
+          "processName": "Grate",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 153.9,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6749999999999999,
+        "costPerG": 0.0043859649122807015,
+        "nutrition": {
+          "calories": 73.8,
+          "protein": 1.6740000000000002,
+          "fat": 0.432,
+          "carbs": 17.244,
+          "fiber": 5.04,
+          "sugar": 8.532,
+          "sodium": 124.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644826_step6",
+      "name": "mandarins peeled and pith removed from segments",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mandarin",
+          "name": "satsuma mandarins",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 5.13,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.027,
+        "costPerG": 0.005263157894736842,
+        "nutrition": {
+          "calories": 3.1799999999999997,
+          "protein": 0.048600000000000004,
+          "fat": 0.0186,
+          "carbs": 0.798,
+          "fiber": 0.108,
+          "sugar": 0.636,
+          "sodium": 0.12,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644826_step7",
+      "name": "all salad ingredients combined in serving bowl",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chicken_breast",
+          "name": "chicken breasts roasted",
+          "quantityG": 600
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 600,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 10.2,
+        "costPerG": 0.016999999999999998,
+        "nutrition": {
+          "calories": 684,
+          "protein": 127.38,
+          "fat": 15.54,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 696,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644826_step9",
+      "name": "dressing ingredients well blended into emulsified mixture",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "vinegar",
+          "name": "apple cider vinegar",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "sesame_seeds",
+          "name": "sesame seeds",
+          "quantityG": 22.5
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 54
+        },
+        {
+          "ingredientId": "salt",
+          "name": "kosher salt",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "sesame_oil",
+          "name": "sesame oil",
+          "quantityG": 40.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 127.1,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.4397499999999996,
+        "costPerG": 0.027063335955940203,
+        "nutrition": {
+          "calories": 970.4760000000001,
+          "protein": 4.20744,
+          "fat": 105.74421,
+          "carbs": 6.6212,
+          "fiber": 3.1863,
+          "sugar": 0.08294,
+          "sodium": 1166.815,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_644826_step10",
+      "name": "salad evenly coated with dressing",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 16.258,
+    "costPerServing": 2.7096666666666667,
+    "totalPrepTime": 20,
+    "nutritionPerServing": {
+      "calories": 311.0468333333334,
+      "protein": 22.57820666666667,
+      "fat": 20.420751666666664,
+      "carbs": 9.740333333333334,
+      "fiber": 2.171133333333333,
+      "sugar": 5.991023333333334,
+      "sodium": 332.23083333333335
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_644826_step2",
+        "name": "cabbage cut into fine slices",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_644826_step3",
+        "name": "romaine lettuce trimmed and cut into fine slices",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_644826_step4",
+        "name": "scallions trimmed and cut into fine slices",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_644826_step5",
+        "name": "carrots peeled and grated into fine pieces",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_644826_step6",
+        "name": "mandarins peeled and pith removed from segments",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_644826_step7",
+        "name": "all salad ingredients combined in serving bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_644826_step9",
+        "name": "dressing ingredients well blended into emulsified mixture",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_644826_step3",
+      "name": "romaine lettuce trimmed and cut into fine slices",
+      "shelfLifeHours": 24,
+      "processes": [
+        "trim",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_644826_step4",
+      "name": "scallions trimmed and cut into fine slices",
+      "shelfLifeHours": 24,
+      "processes": [
+        "trim",
+        "slice"
+      ]
+    },
+    {
+      "componentId": "comp_644826_step5",
+      "name": "carrots peeled and grated into fine pieces",
+      "shelfLifeHours": 12,
+      "processes": [
+        "peel",
+        "grate"
+      ]
+    },
+    {
+      "componentId": "comp_644826_step6",
+      "name": "mandarins peeled and pith removed from segments",
+      "shelfLifeHours": 48,
+      "processes": [
+        "peel",
+        "trim"
+      ]
+    }
+  ]
+}

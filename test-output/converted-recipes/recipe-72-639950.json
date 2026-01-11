@@ -1,0 +1,862 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_1abb61c2-05cb-47a5-a087-218670224398",
+  "name": "Colorful Red Quinoa Not So Tabbouleh Salad",
+  "source": "spoonacular",
+  "spoonacularId": 639950,
+  "image": "/images/recipes/639950.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 354.882,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "avocado",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "radishes",
+      "quantity": 5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 30,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 74.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cucumber",
+      "quantity": 52,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cayenne pepper",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tumeric",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "red wine vinegar",
+      "quantity": 3.5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Wash the 1 cup of quinoa in a colander for several seconds. Add quinoa, water and salt to a small pot and boil for 15 minutes. You will know it is cooked when it becomes soft and you see little white antennas pop from the grain.\nMeanwhile, wash all your veggies well and chop and dice them accordingly.\nAdd all the veggies to a medium glass bowl and toss. In a small bowl mix the red wine vinegar, olive oil and all the spices and blend well. Add the vinagrette to the salad and enjoy.\nWill keep for 1 day, but best eaten the same day.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 283.32,
+    "protein": 7.59,
+    "fat": 13.64,
+    "carbs": 34.16,
+    "fiber": 6.06,
+    "sugar": 1.37,
+    "saturatedFat": 1.87,
+    "sodium": 601.59
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 354.882,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 350,
+        "normalizedQuantityMl": 354.882
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "354.882 ml water",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "avocado",
+      "displayName": "avocado",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  avocado",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  tomato",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Radish",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5  radishes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "5  green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 30,
+        "originalUnit": "g",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "30 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 74.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 74.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "74.5 g bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 52,
+        "originalUnit": "g",
+        "normalizedQuantityG": 52,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "52 g cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cayenne",
+      "displayName": "cayenne pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp cayenne pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "turmeric",
+      "displayName": "turmeric",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp tumeric",
+      "matchConfidence": 0.8571428571428572
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "red_wine_vinegar",
+      "displayName": "red wine vinegar",
+      "quantity": {
+        "originalQuantity": 3.5,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 53,
+        "normalizedQuantityMl": 52.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3.5 Tbsps red wine vinegar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps extra virgin olive oil",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 15,
+    "matched": 15,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:36:39.631Z",
+  "processGraph": {
+    "recipeName": "Colorful Red Quinoa Not So Tabbouleh Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Wash the 1 cup of quinoa in a colander for several seconds. Add quinoa, water and salt to a small pot and boil for 15 minutes. You will know it is cooked when it becomes soft and you see little white antennas pop from the grain.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 0.1,
+            "notes": "wash in colander for several seconds"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "water",
+              "salt"
+            ],
+            "durationMinutes": 1,
+            "notes": "combine in small pot"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa",
+              "water",
+              "salt"
+            ],
+            "durationMinutes": 15,
+            "notes": "cook until soft with white antennas visible"
+          }
+        ],
+        "outputDescription": "Cooked quinoa that is soft with visible white antennas"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Meanwhile, wash all your veggies well and chop and dice them accordingly.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "avocado",
+              "tomato",
+              "radishes",
+              "green onions",
+              "parsley",
+              "bell pepper",
+              "cucumber"
+            ],
+            "durationMinutes": 2,
+            "notes": "wash all vegetables well"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "avocado",
+              "tomato",
+              "radishes",
+              "green onions",
+              "parsley",
+              "bell pepper",
+              "cucumber"
+            ],
+            "durationMinutes": 10,
+            "notes": "chop and dice vegetables as appropriate"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "avocado",
+              "tomato",
+              "radishes",
+              "green onions",
+              "parsley",
+              "bell pepper",
+              "cucumber"
+            ],
+            "durationMinutes": 0,
+            "notes": "included in chopping process"
+          }
+        ],
+        "outputDescription": "Clean, chopped and diced vegetables ready for salad"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add all the veggies to a medium glass bowl and toss. In a small bowl mix the red wine vinegar, olive oil and all the spices and blend well. Add the vinagrette to the salad and enjoy.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "avocado",
+              "tomato",
+              "radishes",
+              "green onions",
+              "parsley",
+              "bell pepper",
+              "cucumber"
+            ],
+            "durationMinutes": 1,
+            "notes": "combine vegetables in medium glass bowl"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "red wine vinegar",
+              "extra virgin olive oil",
+              "cayenne pepper",
+              "tumeric",
+              "cumin"
+            ],
+            "durationMinutes": 2,
+            "notes": "combine vinaigrette ingredients in small bowl"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "red wine vinegar",
+              "extra virgin olive oil",
+              "cayenne pepper",
+              "tumeric",
+              "cumin"
+            ],
+            "durationMinutes": 1,
+            "notes": "blend vinaigrette well"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "avocado",
+              "tomato",
+              "radishes",
+              "green onions",
+              "parsley",
+              "bell pepper",
+              "cucumber",
+              "red wine vinegar",
+              "extra virgin olive oil",
+              "cayenne pepper",
+              "tumeric",
+              "cumin"
+            ],
+            "durationMinutes": 1,
+            "notes": "add vinaigrette to salad"
+          }
+        ],
+        "outputDescription": "Complete tabbouleh salad with vegetables and vinaigrette combined, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "rinse",
+        "mix",
+        "boil",
+        "chop",
+        "dice",
+        "toss",
+        "blend"
+      ],
+      "estimatedTotalTime": 33
+    }
+  },
+  "components": [
+    {
+      "id": "comp_639950_step1",
+      "name": "Cooked quinoa that is soft with visible white antennas",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.05,
+          "durationMinutes": 0.1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 169.575,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.21,
+        "costPerG": 0.013032581453634087,
+        "nutrition": {
+          "calories": 625.6,
+          "protein": 24.003999999999998,
+          "fat": 10.319,
+          "carbs": 109.07199999999999,
+          "fiber": 11.9,
+          "sugar": 0,
+          "sodium": 8.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 16.1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639950_step2",
+      "name": "Clean, chopped and diced vegetables ready for salad",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "avocado",
+          "name": "avocado",
+          "quantityG": 0.5
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomato",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "radish",
+          "name": "radishes",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 750
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 74.5
+        },
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumber",
+          "quantityG": 52
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 942.4628640000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 103.4461,
+        "costPerG": 0.10976146005472741,
+        "nutrition": {
+          "calories": 288.81,
+          "protein": 16.23235,
+          "fat": 2.1672000000000002,
+          "carbs": 65.1112,
+          "fiber": 23.252,
+          "sugar": 23.2509,
+          "sodium": 145.80499999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 15
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_639950_step3",
+      "name": "Complete tabbouleh salad with vegetables and vinaigrette combined, ready to serve",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "red_wine_vinegar",
+          "name": "red wine vinegar",
+          "quantityG": 52.5
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 27
+        },
+        {
+          "ingredientId": "cayenne",
+          "name": "cayenne pepper",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "cumin",
+          "quantityG": 1.05
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 80.99699999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.9884970000000001,
+        "costPerG": 0.012204118671061893,
+        "nutrition": {
+          "calories": 259.2705,
+          "protein": 0.46021500000000004,
+          "fat": 27.596505,
+          "carbs": 1.7955000000000003,
+          "fiber": 0.68145,
+          "sugar": 0.240765,
+          "sodium": 7.134,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 109.31165994000001,
+    "costPerServing": 27.327914985000003,
+    "totalPrepTime": 36.1,
+    "nutritionPerServing": {
+      "calories": 293.420125,
+      "protein": 10.17414125,
+      "fat": 10.020676250000001,
+      "carbs": 43.994674999999994,
+      "fiber": 8.9583625,
+      "sugar": 5.87291625,
+      "sodium": 626.1657749999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_639950_step1",
+        "name": "Cooked quinoa that is soft with visible white antennas",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_639950_step2",
+        "name": "Clean, chopped and diced vegetables ready for salad",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_639950_step3",
+        "name": "Complete tabbouleh salad with vegetables and vinaigrette combined, ready to serve",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_639950_step1",
+      "name": "Cooked quinoa that is soft with visible white antennas",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "mix",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_639950_step2",
+      "name": "Clean, chopped and diced vegetables ready for salad",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "chop",
+        "dice"
+      ]
+    },
+    {
+      "componentId": "comp_639950_step3",
+      "name": "Complete tabbouleh salad with vegetables and vinaigrette combined, ready to serve",
+      "shelfLifeHours": 24,
+      "processes": [
+        "toss",
+        "mix",
+        "blend",
+        "mix"
+      ]
+    }
+  ]
+}

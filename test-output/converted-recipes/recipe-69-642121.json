@@ -1,0 +1,527 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_820379df-20af-493c-bae4-a0ff3e8745b4",
+  "name": "Easy Tabouleh",
+  "source": "spoonacular",
+  "spoonacularId": 642121,
+  "image": "/images/recipes/642121.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "bulgur",
+      "quantity": 70,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cucumbers",
+      "quantity": 2,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flat leaf parsley",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "serving",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 2,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Chop the vegetables and parsley finely. The restaurant version has the veggies diced fairly small and I wanted to stay true to that.</li><li>Rinse the cracked wheat in a fine mesh sieve and let drain.</li><li>Combine all ingredients in a large bowl.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 1,
+  "nutrition": {
+    "calories": 716.7,
+    "protein": 14.38,
+    "fat": 44.41,
+    "carbs": 74.15,
+    "fiber": 19.9,
+    "sugar": 11.98,
+    "saturatedFat": 6.15,
+    "sodium": 257.22
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Bulgur wheat",
+      "quantity": {
+        "originalQuantity": 70,
+        "originalUnit": "g",
+        "normalizedQuantityG": 70,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "70 g bulgur",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 small cucumbers",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch flat leaf parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 serving salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 medium tomatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 6,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "0.5  lemon juice from a lemon",
+        "identityText": "lemon juice from a lemon",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:35:38.212Z",
+  "processGraph": {
+    "recipeName": "Easy Tabouleh",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Chop the vegetables and parsley finely. The restaurant version has the veggies diced fairly small and I wanted to stay true to that.",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "cucumbers",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "diced fairly small to match restaurant version"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "flat leaf parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "chopped finely"
+          }
+        ],
+        "outputDescription": "vegetables diced small and parsley finely minced"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Rinse the cracked wheat in a fine mesh sieve and let drain.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "bulgur"
+            ],
+            "durationMinutes": null,
+            "notes": "using fine mesh sieve"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "bulgur"
+            ],
+            "durationMinutes": null,
+            "notes": "let drain after rinsing"
+          }
+        ],
+        "outputDescription": "bulgur rinsed and drained"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Combine all ingredients in a large bowl.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "bulgur",
+              "cucumbers",
+              "flat leaf parsley",
+              "lemon juice",
+              "olive oil",
+              "salt",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all prepared ingredients"
+          }
+        ],
+        "outputDescription": "all ingredients combined into tabouleh salad"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 5,
+      "uniqueProcesses": [
+        "dice",
+        "mince",
+        "rinse",
+        "drain",
+        "mix"
+      ],
+      "estimatedTotalTime": 15
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642121_step1",
+      "name": "vegetables diced small and parsley finely minced",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumbers",
+          "quantityG": 420
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 240
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 627.396,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.4668,
+        "costPerG": 0.015089034676663542,
+        "nutrition": {
+          "calories": 93.6,
+          "protein": 4.59,
+          "fat": 1.1520000000000001,
+          "carbs": 18.408,
+          "fiber": 5.82,
+          "sugar": 12.107999999999999,
+          "sodium": 20.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642121_step2",
+      "name": "bulgur rinsed and drained",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bulgur",
+          "name": "bulgur",
+          "quantityG": 70
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 69.97200000000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8400000000000001,
+        "costPerG": 0.012004801920768308,
+        "nutrition": {
+          "calories": 239.39999999999998,
+          "protein": 8.602999999999998,
+          "fat": 0.9309999999999999,
+          "carbs": 53.109,
+          "fiber": 12.81,
+          "sugar": 0.287,
+          "sodium": 11.899999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642121_step3",
+      "name": "all ingredients combined into tabouleh salad",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parsley",
+          "name": "flat leaf parsley",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 40
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40.5
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 96.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 27.981949999999998,
+        "costPerG": 0.28996839378238337,
+        "nutrition": {
+          "calories": 372.22,
+          "protein": 0.5855,
+          "fat": 40.7145,
+          "carbs": 3.7095000000000002,
+          "fiber": 0.615,
+          "sugar": 1.1355,
+          "sodium": 397.19,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 38.28875,
+    "costPerServing": 38.28875,
+    "totalPrepTime": 9,
+    "nutritionPerServing": {
+      "calories": 705.22,
+      "protein": 13.7785,
+      "fat": 42.7975,
+      "carbs": 75.2265,
+      "fiber": 19.245,
+      "sugar": 13.5305,
+      "sodium": 429.48999999999995
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642121_step1",
+        "name": "vegetables diced small and parsley finely minced",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642121_step2",
+        "name": "bulgur rinsed and drained",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_642121_step3",
+        "name": "all ingredients combined into tabouleh salad",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_642121_step1",
+      "name": "vegetables diced small and parsley finely minced",
+      "shelfLifeHours": 24,
+      "processes": [
+        "dice",
+        "mince"
+      ]
+    },
+    {
+      "componentId": "comp_642121_step2",
+      "name": "bulgur rinsed and drained",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "drain"
+      ]
+    }
+  ]
+}

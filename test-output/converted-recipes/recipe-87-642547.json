@@ -1,0 +1,859 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_10504844-0729-401f-9c47-5a603a39b682",
+  "name": "Indian-Inspired Falafel Appetizer",
+  "source": "spoonacular",
+  "spoonacularId": 642547,
+  "image": "/images/recipes/642547.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "all purpose flour",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "baking powder",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eyed beans",
+      "quantity": 172,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "coriander leaves/cilantro",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "coriander powder",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin seeds",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garbanzo beans/ chickpeas",
+      "quantity": 164,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 80,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 12,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 12,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable oil",
+      "quantity": 218,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Clean and wash the garbanzo beans, black eyed peas and green gram. Soak the lentils overnight/ 6-8 hours in excess water. Drain and set them aside.</li><li>Grind them to a coarse paste in a grinder without water. Mix in all the ingredients and let the mixture sit for 1-2 hours in refrigerator. Bring them down to room temperature and roll them into small balls using a falafel scoop or a spoon or a small ice cream scoop and place over a baking sheet covered with a parchment paper.</li><li>Heat 3 inches of oil in a deep cooking vessel (375 degrees) . Once the oil gets heated up, first fry 1 ball and if the balls lose shape, add little more flour for maintaining the shape.</li><li>Fry them in batches of 6 at a time for 2-3 minutes on one side or until they turn golden brown. Drain excess oil and serve with a salad/pita bread/tahini sauce.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 12,
+  "nutrition": {
+    "calories": 101.79,
+    "protein": 3.43,
+    "fat": 4.45,
+    "carbs": 13.57,
+    "fiber": 3.89,
+    "sugar": 4.57,
+    "saturatedFat": 0.67,
+    "sodium": 234.99
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "all_purpose_flour",
+      "displayName": "all purpose flour",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 23,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps all purpose flour",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "baking_powder",
+      "displayName": "baking powder",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp baking powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "coriander",
+      "displayName": "coriander",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps coriander powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps cumin seeds",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 164,
+        "originalUnit": "g",
+        "normalizedQuantityG": 164,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "164 g garbanzo beans/ chickpeas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  garlic cloves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 80,
+        "originalUnit": "g",
+        "normalizedQuantityG": 80,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "80 g onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "12 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "12 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_oil",
+      "displayName": "vegetable oil",
+      "quantity": {
+        "originalQuantity": 218,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 196,
+        "normalizedQuantityMl": 218
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "218 ml vegetable oil",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 11,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "172 g eyed beans",
+        "identityText": "eyed beans",
+        "state": "fresh"
+      },
+      {
+        "rawText": "2 Tbsps coriander leaves/cilantro",
+        "identityText": "coriander leaves/cilantro",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:41:32.313Z",
+  "processGraph": {
+    "recipeName": "Indian-Inspired Falafel Appetizer",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Clean and wash the garbanzo beans, black eyed peas and green gram. Soak the lentils overnight/ 6-8 hours in excess water. Drain and set them aside.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "garbanzo beans/ chickpeas",
+              "eyed beans"
+            ],
+            "durationMinutes": null,
+            "notes": "clean and wash beans"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "garbanzo beans/ chickpeas",
+              "eyed beans"
+            ],
+            "durationMinutes": 480,
+            "notes": "soak overnight/6-8 hours in excess water"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "garbanzo beans/ chickpeas",
+              "eyed beans"
+            ],
+            "durationMinutes": null,
+            "notes": "drain soaked beans and set aside"
+          }
+        ],
+        "outputDescription": "Clean, soaked, and drained beans ready for grinding"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Grind them to a coarse paste in a grinder without water. Mix in all the ingredients and let the mixture sit for 1-2 hours in refrigerator. Bring them down to room temperature and roll them into small balls using a falafel scoop or a spoon or a small ice cream scoop and place over a baking sheet covered with a parchment paper.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "garbanzo beans/ chickpeas",
+              "eyed beans"
+            ],
+            "durationMinutes": null,
+            "notes": "grind to coarse paste without water"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "all purpose flour",
+              "baking powder",
+              "coriander leaves/cilantro",
+              "coriander powder",
+              "cumin seeds",
+              "garlic cloves",
+              "onions",
+              "parsley",
+              "bell pepper",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "mix in all remaining ingredients"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "mixture"
+            ],
+            "durationMinutes": 90,
+            "notes": "let mixture sit for 1-2 hours in refrigerator"
+          },
+          {
+            "processId": "roll",
+            "ingredients": [
+              "mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "roll into small balls using falafel scoop or spoon"
+          }
+        ],
+        "outputDescription": "Formed falafel balls placed on parchment-lined baking sheet"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Heat 3 inches of oil in a deep cooking vessel (375 degrees) . Once the oil gets heated up, first fry 1 ball and if the balls lose shape, add little more flour for maintaining the shape.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "vegetable oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat 3 inches of oil to 375 degrees"
+          },
+          {
+            "processId": "deep_fry",
+            "ingredients": [
+              "falafel ball"
+            ],
+            "durationMinutes": null,
+            "notes": "test fry 1 ball to check consistency"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "all purpose flour"
+            ],
+            "durationMinutes": null,
+            "notes": "add more flour if balls lose shape"
+          }
+        ],
+        "outputDescription": "Oil heated to proper temperature, mixture consistency tested and adjusted"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Fry them in batches of 6 at a time for 2-3 minutes on one side or until they turn golden brown. Drain excess oil and serve with a salad/pita bread/tahini sauce.",
+        "processes": [
+          {
+            "processId": "deep_fry",
+            "ingredients": [
+              "falafel balls"
+            ],
+            "durationMinutes": 3,
+            "notes": "fry in batches of 6 for 2-3 minutes until golden brown"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "fried falafel"
+            ],
+            "durationMinutes": null,
+            "notes": "drain excess oil"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "fried falafel"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with salad/pita bread/tahini sauce"
+          }
+        ],
+        "outputDescription": "Golden brown fried falafel, drained and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "rinse",
+        "marinate",
+        "drain",
+        "blend",
+        "mix",
+        "cool",
+        "roll",
+        "heat",
+        "deep_fry",
+        "plate"
+      ],
+      "estimatedTotalTime": 600
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642547_step1",
+      "name": "Clean, soaked, and drained beans ready for grinding",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "garbanzo beans/ chickpeas",
+          "quantityG": 164
+        },
+        {
+          "ingredientId": "beans",
+          "name": "eyed beans",
+          "quantityG": 172
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 480,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 352.65888000000007,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.394333333333333,
+        "costPerG": 0.006789374858030889,
+        "nutrition": {
+          "calories": 1501.36,
+          "protein": 5.2288,
+          "fat": 164.3096,
+          "carbs": 10.216800000000001,
+          "fiber": 3.096,
+          "sugar": 7.1036,
+          "sodium": 13.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 482
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642547_step2",
+      "name": "Formed falafel balls placed on parchment-lined baking sheet",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "flour",
+          "name": "all purpose flour",
+          "quantityG": 15
+        },
+        {
+          "ingredientId": "baking_powder",
+          "name": "baking powder",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "cilantro",
+          "name": "coriander leaves/cilantro",
+          "quantityG": 2
+        },
+        {
+          "ingredientId": "coriander",
+          "name": "coriander powder",
+          "quantityG": 4.2
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "cumin seeds",
+          "quantityG": 4.2
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic cloves",
+          "quantityG": 20
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onions",
+          "quantityG": 80
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 3.8
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 12
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 12
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 90,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 152.19400000000002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.767504000000001,
+        "costPerG": 0.03132517707662589,
+        "nutrition": {
+          "calories": 150.727,
+          "protein": 5.243320000000001,
+          "fat": 2.0851,
+          "carbs": 31.325400000000002,
+          "fiber": 4.8233999999999995,
+          "sugar": 4.280700000000001,
+          "sodium": 4892.514,
+          "method": "raw"
+        },
+        "prepTimeMin": 97
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642547_step3",
+      "name": "Oil heated to proper temperature, mixture consistency tested and adjusted",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "vegetable_oil",
+          "name": "vegetable oil",
+          "quantityG": 218
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "deep_fry",
+          "processName": "Deep Fry",
+          "yieldFactor": 0.75,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 160.23,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.9619999999999997,
+        "costPerG": 0.012244897959183673,
+        "nutrition": {
+          "calories": 1927.1200000000001,
+          "protein": 0,
+          "fat": 218.00000000000003,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642547_step4",
+      "name": "Golden brown fried falafel, drained and ready to serve",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "deep_fry",
+          "processName": "Deep Fry",
+          "yieldFactor": 0.75,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 9.123837333333332,
+    "costPerServing": 0.7603197777777777,
+    "totalPrepTime": 595,
+    "nutritionPerServing": {
+      "calories": 298.26725,
+      "protein": 0.8726766666666667,
+      "fat": 32.03289166666667,
+      "carbs": 3.46185,
+      "fiber": 0.65995,
+      "sugar": 0.9486916666666666,
+      "sodium": 408.8428333333334
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642547_step1",
+        "name": "Clean, soaked, and drained beans ready for grinding",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_642547_step2",
+        "name": "Formed falafel balls placed on parchment-lined baking sheet",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_642547_step3",
+        "name": "Oil heated to proper temperature, mixture consistency tested and adjusted",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_642547_step1",
+      "name": "Clean, soaked, and drained beans ready for grinding",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "marinate",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_642547_step2",
+      "name": "Formed falafel balls placed on parchment-lined baking sheet",
+      "shelfLifeHours": 24,
+      "processes": [
+        "blend",
+        "mix",
+        "cool",
+        "roll"
+      ]
+    },
+    {
+      "componentId": "comp_642547_step3",
+      "name": "Oil heated to proper temperature, mixture consistency tested and adjusted",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "deep_fry",
+        "mix"
+      ]
+    }
+  ]
+}

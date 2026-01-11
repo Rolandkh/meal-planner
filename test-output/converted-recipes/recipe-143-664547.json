@@ -1,0 +1,305 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_7ac574f7-0fb5-472e-b3c0-5d232331ce96",
+  "name": "Vegetable Dip",
+  "source": "spoonacular",
+  "spoonacularId": 664547,
+  "image": "/images/recipes/664547.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "spinach",
+      "quantity": 283.495,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 160,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lowfat yogurt",
+      "quantity": 490,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetables",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In a medium bowl combine all ingredients (except raw vegetables for dipping). Cover and refrigerate until ready to serve. Serve as a dip for raw vegetables. Makes approximately 3 cups.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 3,
+  "nutrition": {
+    "calories": 209.88,
+    "protein": 15.62,
+    "fat": 3.6,
+    "carbs": 32.71,
+    "fiber": 7.29,
+    "sugar": 14.37,
+    "saturatedFat": 1.78,
+    "sodium": 229.17
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian",
+      "primal"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "condiment",
+      "starter",
+      "snack",
+      "appetizer",
+      "dip",
+      "antipasto",
+      "hor d'oeuvre",
+      "spread"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 75,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "questionable",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 283.495,
+        "originalUnit": "g",
+        "normalizedQuantityG": 283.495,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "283.495 g spinach",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 160,
+        "originalUnit": "g",
+        "normalizedQuantityG": 160,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "160 g onion",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 4,
+    "matched": 2,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "490 ml lowfat yogurt",
+        "identityText": "lowfat yogurt",
+        "state": "fresh"
+      },
+      {
+        "rawText": "3 servings vegetables",
+        "identityText": "vegetables",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:59:58.091Z",
+  "processGraph": {
+    "recipeName": "Vegetable Dip",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a medium bowl combine all ingredients (except raw vegetables for dipping). Cover and refrigerate until ready to serve. Serve as a dip for raw vegetables. Makes approximately 3 cups.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "spinach",
+              "onion",
+              "lowfat yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all ingredients except raw vegetables in medium bowl"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "spinach",
+              "onion",
+              "lowfat yogurt"
+            ],
+            "durationMinutes": null,
+            "notes": "cover and refrigerate until ready to serve"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "vegetables"
+            ],
+            "durationMinutes": null,
+            "notes": "serve as a dip for raw vegetables"
+          }
+        ],
+        "outputDescription": "Combined dip mixture chilled and ready to serve with raw vegetables"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 3,
+      "uniqueProcesses": [
+        "mix",
+        "cool",
+        "plate"
+      ],
+      "estimatedTotalTime": null
+    }
+  },
+  "components": [
+    {
+      "id": "comp_664547_step1",
+      "name": "Combined dip mixture chilled and ready to serve with raw vegetables",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "spinach_bunch",
+          "name": "spinach",
+          "quantityG": 283.495
+        },
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 160
+        },
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "lowfat yogurt",
+          "quantityG": 490
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 933.495,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 13.87674915,
+        "costPerG": 0.014865370623302749,
+        "nutrition": {
+          "calories": 428.10385,
+          "protein": 60.337957,
+          "fat": 3.0786305,
+          "carbs": 43.0708685,
+          "fiber": 8.956890000000001,
+          "sugar": 23.997679,
+          "sodium": 406.76105,
+          "method": "raw"
+        },
+        "prepTimeMin": 34
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 15.55674915,
+    "costPerServing": 5.18558305,
+    "totalPrepTime": 34,
+    "nutritionPerServing": {
+      "calories": 193.90128333333334,
+      "protein": 22.776652333333335,
+      "fat": 1.4422101666666667,
+      "carbs": 25.124956166666667,
+      "fiber": 6.185630000000001,
+      "sugar": 7.9992263333333335,
+      "sodium": 173.18701666666666
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_664547_step1",
+        "name": "Combined dip mixture chilled and ready to serve with raw vegetables",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_664547_step1",
+      "name": "Combined dip mixture chilled and ready to serve with raw vegetables",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "cool",
+        "plate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1220 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_6862b6b4-ff55-4173-ad99-f0762df620cb",
+  "name": "Grilled Fattoush",
+  "source": "spoonacular",
+  "spoonacularId": 645704,
+  "image": "/images/recipes/645704.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cucumber",
+      "quantity": 199.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 112.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mint",
+      "quantity": 22.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kalamata olives",
+      "quantity": 135,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 54,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 15,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pita breads",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell peppers",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Preheat the grill to high. Halve the zucchinis length-wise and cut the peppers into large chunks and remove seeds.</li><li>Separate the layers of the pitas to make 6 pita circles.</li><li>Drizzle olive oil over the zucchini, peppers, and pitas, and salt and pepper them. Roll them around, to make sure they have a good coat of oil. Grill the veggies for about 2-3 minutes per side, until nice grill marks have formed and the veggies are slightly tender. Then grill the pitas, for 1 minute per side, until toasty.</li><li>In a large serving bowl, add all the other veggies and herbs.</li><li>Once the grilled veggies have cooled, chop them into  inch cubes and add them to the serving bowl.</li><li>Break the pitas into bite-size pieces and add to the mix. Toss the salad and sprinkle the feta over the top.</li><li>Mix  cup of olive oil and the juice of one lemon in a small bowl. Season with cumin, salt and pepper and whisk. Drizzle over the salad when ready to serve!</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 294.84,
+    "protein": 8.58,
+    "fat": 17.67,
+    "carbs": 29,
+    "fiber": 5.34,
+    "sugar": 7.08,
+    "saturatedFat": 4.41,
+    "sodium": 928.5
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cucumber",
+      "displayName": "cucumber",
+      "quantity": {
+        "originalQuantity": 199.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 199.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "199.5 g cucumber",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 112.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 112.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "112.5 g feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mint",
+      "displayName": "mint",
+      "quantity": {
+        "originalQuantity": 22.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 22.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "22.5 g mint",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 75,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "75 g green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "kalamata_olives",
+      "displayName": "kalamata olives",
+      "quantity": {
+        "originalQuantity": 135,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 101,
+        "normalizedQuantityMl": 135
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "135 ml kalamata olives",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 54,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 49,
+        "normalizedQuantityMl": 54
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "54 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 15,
+        "originalUnit": "g",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "15 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Pita bread",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3  pita breads",
+      "matchConfidence": 0.95
+    },
+    {
+      "masterIngredientId": "bell_peppers",
+      "displayName": "bell peppers",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  bell peppers",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  zucchini",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 14,
+    "matched": 14,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:38:05.842Z",
+  "processGraph": {
+    "recipeName": "Grilled Fattoush",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat the grill to high. Halve the zucchinis length-wise and cut the peppers into large chunks and remove seeds.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat grill to high"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "zucchini"
+            ],
+            "durationMinutes": null,
+            "notes": "halve length-wise"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "bell peppers"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into large chunks"
+          },
+          {
+            "processId": "deseed",
+            "ingredients": [
+              "bell peppers"
+            ],
+            "durationMinutes": null,
+            "notes": "remove seeds"
+          }
+        ],
+        "outputDescription": "Grill preheated, zucchini halved lengthwise, bell peppers cut into large chunks and deseeded"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Separate the layers of the pitas to make 6 pita circles.",
+        "processes": [
+          {
+            "processId": "shred",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "separate layers to make 6 circles"
+          }
+        ],
+        "outputDescription": "Pita breads separated into 6 individual circles"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Drizzle olive oil over the zucchini, peppers, and pitas, and salt and pepper them. Roll them around, to make sure they have a good coat of oil. Grill the veggies for about 2-3 minutes per side, until nice grill marks have formed and the veggies are slightly tender. Then grill the pitas, for 1 minute per side, until toasty.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "zucchini",
+              "bell peppers",
+              "pita breads",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle olive oil over vegetables and pitas"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "zucchini",
+              "bell peppers",
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "zucchini",
+              "bell peppers",
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "roll around to coat with oil"
+          },
+          {
+            "processId": "grill",
+            "ingredients": [
+              "zucchini",
+              "bell peppers"
+            ],
+            "durationMinutes": 5,
+            "notes": "2-3 minutes per side until grill marks form and slightly tender"
+          },
+          {
+            "processId": "grill",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": 2,
+            "notes": "1 minute per side until toasty"
+          }
+        ],
+        "outputDescription": "Vegetables and pitas coated with oil and seasoned, grilled vegetables with grill marks and slightly tender, pitas toasted"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "In a large serving bowl, add all the other veggies and herbs.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cucumber",
+              "green onions",
+              "kalamata olives",
+              "tomato",
+              "mint",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "add raw vegetables and herbs to serving bowl"
+          }
+        ],
+        "outputDescription": "Raw vegetables and herbs combined in serving bowl"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Once the grilled veggies have cooled, chop them into inch cubes and add them to the serving bowl.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "zucchini",
+              "bell peppers"
+            ],
+            "durationMinutes": null,
+            "notes": "let grilled vegetables cool"
+          },
+          {
+            "processId": "cube",
+            "ingredients": [
+              "zucchini",
+              "bell peppers"
+            ],
+            "durationMinutes": null,
+            "notes": "chop into inch cubes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "zucchini",
+              "bell peppers"
+            ],
+            "durationMinutes": null,
+            "notes": "add to serving bowl"
+          }
+        ],
+        "outputDescription": "Grilled vegetables cooled, cubed, and added to serving bowl"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Break the pitas into bite-size pieces and add to the mix. Toss the salad and sprinkle the feta over the top.",
+        "processes": [
+          {
+            "processId": "shred",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "break into bite-size pieces"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "add to the mix"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "cucumber",
+              "green onions",
+              "kalamata olives",
+              "tomato",
+              "mint",
+              "parsley",
+              "zucchini",
+              "bell peppers",
+              "pita breads"
+            ],
+            "durationMinutes": null,
+            "notes": "toss the salad"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle feta over the top"
+          }
+        ],
+        "outputDescription": "Pita pieces added and salad tossed, feta cheese sprinkled on top"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Mix cup of olive oil and the juice of one lemon in a small bowl. Season with cumin, salt and pepper and whisk. Drizzle over the salad when ready to serve!",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extract juice from lemon"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "olive oil",
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "combine olive oil and lemon juice"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "olive oil",
+              "lemon",
+              "cumin"
+            ],
+            "durationMinutes": null,
+            "notes": "add cumin, salt and pepper"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "olive oil",
+              "lemon",
+              "cumin"
+            ],
+            "durationMinutes": null,
+            "notes": "whisk dressing"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "olive oil",
+              "lemon",
+              "cumin"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle dressing over salad"
+          }
+        ],
+        "outputDescription": "Dressing prepared and drizzled over completed salad"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 20,
+      "uniqueProcesses": [
+        "heat",
+        "slice",
+        "chop",
+        "deseed",
+        "shred",
+        "coat",
+        "season",
+        "toss",
+        "grill",
+        "mix",
+        "cool",
+        "cube",
+        "sprinkle",
+        "squeeze",
+        "whisk"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_645704_step1",
+      "name": "Grill preheated, zucchini halved lengthwise, bell peppers cut into large chunks and deseeded",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 800
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "deseed",
+          "processName": "Deseed",
+          "yieldFactor": 0.88,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 662.599168,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.8000000000000003,
+        "costPerG": 0.004225782547315243,
+        "nutrition": {
+          "calories": 136,
+          "protein": 9.68,
+          "fat": 2.56,
+          "carbs": 24.88,
+          "fiber": 8,
+          "sugar": 20,
+          "sodium": 64,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645704_step2",
+      "name": "Pita breads separated into 6 individual circles",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bread",
+          "name": "pita breads",
+          "quantityG": 3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.91,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.042,
+        "costPerG": 0.01443298969072165,
+        "nutrition": {
+          "calories": 8.219999999999999,
+          "protein": 0.32099999999999995,
+          "fat": 0.1359,
+          "carbs": 1.425,
+          "fiber": 0.12,
+          "sugar": 0.1719,
+          "sodium": 14.19,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645704_step3",
+      "name": "Vegetables and pitas coated with oil and seasoned, grilled vegetables with grill marks and slightly tender, pitas toasted",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell peppers",
+          "quantityG": 300
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 54
+        }
+      ],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "grill",
+          "processName": "Grill",
+          "yieldFactor": 0.78,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "grill",
+          "processName": "Grill",
+          "yieldFactor": 0.78,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 252.63323279999994,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1260000000000003,
+        "costPerG": 0.012373668995775923,
+        "nutrition": {
+          "calories": 555.36,
+          "protein": 2.9699999999999998,
+          "fat": 54.9,
+          "carbs": 18.09,
+          "fiber": 6.300000000000001,
+          "sugar": 12.600000000000001,
+          "sodium": 13.08,
+          "method": "raw"
+        },
+        "prepTimeMin": 10.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645704_step4",
+      "name": "Raw vegetables and herbs combined in serving bowl",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cucumber",
+          "name": "cucumber",
+          "quantityG": 199.5
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 75
+        },
+        {
+          "ingredientId": "kalamata_olives",
+          "name": "kalamata olives",
+          "quantityG": 135
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomato",
+          "quantityG": 156
+        },
+        {
+          "ingredientId": "mint",
+          "name": "mint",
+          "quantityG": 22.5
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 603,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 23.651670000000003,
+        "costPerG": 0.03922333333333334,
+        "nutrition": {
+          "calories": 292.91999999999996,
+          "protein": 6.6021,
+          "fat": 21.758700000000005,
+          "carbs": 25.36635,
+          "fiber": 11.9685,
+          "sugar": 9.4599,
+          "sodium": 2145.165,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645704_step5",
+      "name": "Grilled vegetables cooled, cubed, and added to serving bowl",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cube",
+          "processName": "Cube",
+          "yieldFactor": 0.96,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 35
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645704_step6",
+      "name": "Pita pieces added and salad tossed, feta cheese sprinkled on top",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 112.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 111.30749999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.40625,
+        "costPerG": 0.012633919547200325,
+        "nutrition": {
+          "calories": 298.125,
+          "protein": 15.975,
+          "fat": 24.1875,
+          "carbs": 4.365,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1282.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 6.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645704_step7",
+      "name": "Dressing prepared and drizzled over completed salad",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon",
+          "name": "lemon",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 32.843999999999994,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.36,
+        "costPerG": 0.010960906101571065,
+        "nutrition": {
+          "calories": 23.200000000000003,
+          "protein": 0.8800000000000001,
+          "fat": 0.24,
+          "carbs": 7.456,
+          "fiber": 2.2399999999999998,
+          "sugar": 2,
+          "sodium": 1.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 7.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 31.81192,
+    "costPerServing": 5.301986666666667,
+    "totalPrepTime": 73.5,
+    "nutritionPerServing": {
+      "calories": 220.28333333333333,
+      "protein": 6.133685,
+      "fat": 17.374961666666668,
+      "carbs": 13.751898333333331,
+      "fiber": 4.808166666666666,
+      "sugar": 7.3798416666666675,
+      "sodium": 974.9238333333334
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_645704_step1",
+        "name": "Grill preheated, zucchini halved lengthwise, bell peppers cut into large chunks and deseeded",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645704_step2",
+        "name": "Pita breads separated into 6 individual circles",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645704_step3",
+        "name": "Vegetables and pitas coated with oil and seasoned, grilled vegetables with grill marks and slightly tender, pitas toasted",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_645704_step4",
+        "name": "Raw vegetables and herbs combined in serving bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645704_step5",
+        "name": "Grilled vegetables cooled, cubed, and added to serving bowl",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645704_step6",
+        "name": "Pita pieces added and salad tossed, feta cheese sprinkled on top",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645704_step7",
+        "name": "Dressing prepared and drizzled over completed salad",
+        "shelfLifeHours": 2
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_645704_step1",
+      "name": "Grill preheated, zucchini halved lengthwise, bell peppers cut into large chunks and deseeded",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "slice",
+        "chop",
+        "deseed"
+      ]
+    },
+    {
+      "componentId": "comp_645704_step3",
+      "name": "Vegetables and pitas coated with oil and seasoned, grilled vegetables with grill marks and slightly tender, pitas toasted",
+      "shelfLifeHours": 2,
+      "processes": [
+        "coat",
+        "season",
+        "toss",
+        "grill",
+        "grill"
+      ]
+    },
+    {
+      "componentId": "comp_645704_step5",
+      "name": "Grilled vegetables cooled, cubed, and added to serving bowl",
+      "shelfLifeHours": 24,
+      "processes": [
+        "cool",
+        "cube",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_645704_step6",
+      "name": "Pita pieces added and salad tossed, feta cheese sprinkled on top",
+      "shelfLifeHours": 24,
+      "processes": [
+        "shred",
+        "mix",
+        "toss",
+        "sprinkle"
+      ]
+    },
+    {
+      "componentId": "comp_645704_step7",
+      "name": "Dressing prepared and drizzled over completed salad",
+      "shelfLifeHours": 2,
+      "processes": [
+        "squeeze",
+        "mix",
+        "season",
+        "whisk",
+        "coat"
+      ]
+    }
+  ]
+}

@@ -851,3 +851,58 @@ npm outdated
 ---
 
 **Last Updated:** January 9, 2026
+
+---
+
+## Recipe Processing Engine Testing (Added Jan 11, 2026)
+
+### Validation Scripts
+
+**Process Master Validation:**
+```bash
+node scripts/validate-process-master.cjs
+```
+Validates 74 processes for data integrity.
+
+**Process Parser Testing:**
+```bash
+# Test specific recipe by index
+node scripts/test-process-parser.js 9
+
+# Tests AI parsing of recipe instructions
+```
+
+**Component Generator Testing:**
+```bash
+# Full pipeline test
+node scripts/test-component-generator.js 9
+
+# Shows: processes, components, yields, costs, nutrition
+```
+
+**Batch Conversion:**
+```bash
+# Test batch (50 recipes)
+node scripts/batch-convert-recipes.js --limit=50
+
+# Full conversion (516 recipes, ~3 hours)
+node scripts/batch-convert-recipes.js
+
+# Resume if interrupted
+node scripts/batch-convert-recipes.js --resume
+```
+
+### Test Results (30-recipe validation)
+
+- ✅ Cost accuracy: 87% within $1-15/serving
+- ✅ Nutrition accuracy: 77% within ±30%
+- ✅ Process parsing: 100% success rate
+- ✅ Component generation: 100% success rate
+
+### Known Limitations
+
+- "servings" units from Spoonacular are estimates
+- Specialty ingredients may have ±20% variance
+- Missing ingredients default to substitutes
+- ~10% of recipes are outliers (expensive ingredients, data quality)
+

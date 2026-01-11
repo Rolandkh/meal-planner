@@ -51,3 +51,87 @@ alwaysApply: true
   - Include both DO and DON'T examples
   - Reference actual code over theoretical examples
   - Use consistent formatting across rules 
+---
+
+## Context Window Handover Protocol
+
+When the user requests a handover for context window refresh:
+
+### Handover File Naming
+- **Format:** `HANDOVER-[descriptive-name].md` in project root
+- **Descriptor:** Brief description of what's being continued (e.g., "recipe-processing-batch-conversion", "meal-planner-api-integration")
+- **If Multiple:** If similar handover exists, append number: `HANDOVER-[topic]-2.md`, `HANDOVER-[topic]-3.md`
+- **Cleanup:** Delete previous handover files (keep current one only)
+- **Location:** Project root for easy access
+
+**Naming Examples:**
+- `HANDOVER-recipe-processing-batch-conversion.md`
+- `HANDOVER-meal-planner-ui-components.md`
+- `HANDOVER-database-migration-2.md` (second handover for same topic)
+
+### Handover File Contents
+
+**Required Sections:**
+1. **Paste This Into New Chat** - Exact text to copy
+2. **Current Position** - What phase/task/status
+3. **What's Complete** - Summary of finished work
+4. **Next Immediate Action** - Specific command/task to run
+5. **Essential Files** - Where to find key information
+6. **Session Document Reference** - Link to today's session doc
+7. **If Issues Occur** - Troubleshooting commands
+8. **After Current Task** - What comes next
+
+**Format:**
+```markdown
+# 🔄 Handover - [Task Name] ([Date])
+
+## Paste This Into New Chat
+```
+[Exact text block to copy with @HANDOVER.md reference]
+```
+
+## 📍 Current Position
+[Phase/status/progress]
+
+## ✅ What's Complete
+[Completed items with ✅]
+
+## 🎯 Next Immediate Action
+```bash
+[Exact command to run]
+```
+
+## 📁 Essential Files
+- `path/to/session/doc.md` - **Full session context**
+- `path/to/key/file.js` - Description
+
+## 🔍 If Issues Occur
+[Troubleshooting commands]
+
+## 🎯 After Current Task
+[Next steps]
+```
+
+### Session Document Reference
+- ALWAYS include explicit reference to current session document
+- Format: `docs/sessions/YYYY-MM-DD-description.md`
+- Include brief description of what's in the session doc
+
+### Cleanup
+- Delete any previous `HANDOVER*.md` files
+- Keep only the current `HANDOVER.md`
+- Do NOT create multiple handover files
+
+### When User Says
+- "Create a handover" → Create `HANDOVER.md`
+- "Refresh context" → Create `HANDOVER.md`
+- "Handover prompt" → Create `HANDOVER.md`
+- "New chat" → Create `HANDOVER.md`
+
+### Documentation Updates Before Handover
+1. Update session document with progress
+2. Update ARCHITECTURE.md if new components added
+3. Update DEVELOPMENT.md if new processes/tests added
+4. Update CHANGELOG.md with changes
+5. THEN create HANDOVER.md
+

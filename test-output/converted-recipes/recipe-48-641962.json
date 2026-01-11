@@ -1,0 +1,801 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_9bccfcc2-8068-47cd-8540-61315066ddc9",
+  "name": "Easy Eggplant Parmesan",
+  "source": "spoonacular",
+  "spoonacularId": 641962,
+  "image": "/images/recipes/641962.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "olive oil",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic clove",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pasta sauce",
+      "quantity": 0.5,
+      "unit": "jar",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggplant",
+      "quantity": 680.389,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cheese",
+      "quantity": 452,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil leaves",
+      "quantity": 24,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Put the eggplant on a baking sheet and brush with olive oil. Place under the broiler until soft. Remove and allow to cool.\nMeanwhile, heat the sauce in a small saucepan. Heat the remaining oil and cook the onion for 5 minutes. Then add the garlic and cook for an additional minute. Add the onion and garlic to the sauce.\nArrange the eggplant across the bottom of a 8 x 6 baking dish and then scatter cheese on top. Repeat layers until you run out of eggplant. Finish off with sauce, basil and remaining cheese. Bake for 40 minutes and 375.\nOptional: If you prefer you can fry the eggplant in a bit of olive oil. Then, soak up oil on a paper towel.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 287.89,
+    "protein": 20.97,
+    "fat": 12.26,
+    "carbs": 26.15,
+    "fiber": 6.96,
+    "sugar": 16.41,
+    "saturatedFat": 2.28,
+    "sodium": 1201.24
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian",
+      "primal"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 41,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  garlic clove",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pasta_sauce",
+      "displayName": "pasta sauce",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 jar pasta sauce",
+      "matchConfidence": 0.7666666666666666
+    },
+    {
+      "masterIngredientId": "eggplant",
+      "displayName": "eggplant",
+      "quantity": {
+        "originalQuantity": 680.389,
+        "originalUnit": "g",
+        "normalizedQuantityG": 680.389,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "680.389 g eggplant",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 24,
+        "originalUnit": "g",
+        "normalizedQuantityG": 24,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "24 g basil leaves",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 6,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "452 g style cheese",
+        "identityText": "style cheese",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:35:48.598Z",
+  "processGraph": {
+    "recipeName": "Easy Eggplant Parmesan",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Put the eggplant on a baking sheet and brush with olive oil. Place under the broiler until soft. Remove and allow to cool.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "implied slicing for layering later"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "brushing with olive oil"
+          },
+          {
+            "processId": "broil",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "until soft"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "allow to cool after broiling"
+          }
+        ],
+        "outputDescription": "eggplant slices are broiled until soft, oil-coated, and cooled"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Meanwhile, heat the sauce in a small saucepan. Heat the remaining oil and cook the onion for 5 minutes. Then add the garlic and cook for an additional minute. Add the onion and garlic to the sauce.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "pasta sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "heating sauce in saucepan"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping for cooking"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "garlic clove"
+            ],
+            "durationMinutes": null,
+            "notes": "implied mincing for cooking"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil for sautéing"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": 5,
+            "notes": "cook onion for 5 minutes"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic clove"
+            ],
+            "durationMinutes": 1,
+            "notes": "cook garlic for additional minute"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "onion",
+              "garlic clove",
+              "pasta sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "adding onion and garlic to sauce"
+          }
+        ],
+        "outputDescription": "heated sauce combined with sautéed onion and garlic"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Arrange the eggplant across the bottom of a 8 x 6 baking dish and then scatter cheese on top. Repeat layers until you run out of eggplant. Finish off with sauce, basil and remaining cheese. Bake for 40 minutes and 375.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "arranging eggplant in baking dish"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "scattering cheese on top"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "eggplant",
+              "cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "repeating layers"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "pasta sauce"
+            ],
+            "durationMinutes": null,
+            "notes": "finishing with sauce"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "basil leaves",
+              "cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "topping with basil and remaining cheese"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "eggplant",
+              "cheese",
+              "pasta sauce",
+              "basil leaves"
+            ],
+            "durationMinutes": 40,
+            "notes": "bake at 375°F for 40 minutes"
+          }
+        ],
+        "outputDescription": "layered eggplant parmesan baked until golden and bubbly"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Optional: If you prefer you can fry the eggplant in a bit of olive oil. Then, soak up oil on a paper towel.",
+        "processes": [
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "alternative method to broiling"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "soaking up excess oil on paper towel"
+          }
+        ],
+        "outputDescription": "optional pan-fried eggplant with excess oil removed"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 16,
+      "uniqueProcesses": [
+        "slice",
+        "coat",
+        "broil",
+        "cool",
+        "heat",
+        "chop",
+        "mince",
+        "saute",
+        "mix",
+        "spread",
+        "sprinkle",
+        "bake",
+        "pan_fry",
+        "drain"
+      ],
+      "estimatedTotalTime": 52
+    }
+  },
+  "components": [
+    {
+      "id": "comp_641962_step1",
+      "name": "eggplant slices are broiled until soft, oil-coated, and cooled",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggplant",
+          "name": "eggplant",
+          "quantityG": 680.389
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "broil",
+          "processName": "Broil",
+          "yieldFactor": 0.8,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 613.4387224000001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.1029175,
+        "costPerG": 0.008318544809228038,
+        "nutrition": {
+          "calories": 170.09725,
+          "protein": 6.6678122,
+          "fat": 1.2247002,
+          "carbs": 40.0068732,
+          "fiber": 20.41167,
+          "sugar": 24.0177317,
+          "sodium": 13.60778,
+          "method": "raw"
+        },
+        "prepTimeMin": 42
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641962_step2",
+      "name": "heated sauce combined with sautéed onion and garlic",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pasta_sauce",
+          "name": "pasta sauce",
+          "quantityG": 125
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 83.30137444999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.625,
+        "costPerG": 0.007502877403003044,
+        "nutrition": {
+          "calories": 30,
+          "protein": 1.5,
+          "fat": 0.375,
+          "carbs": 6.637499999999999,
+          "fiber": 1.875,
+          "sugar": 4.45,
+          "sodium": 592.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 18
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641962_step3",
+      "name": "layered eggplant parmesan baked until golden and bubbly",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cheese",
+          "name": "cheese",
+          "quantityG": 452
+        }
+      ],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 40,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 532.0295560800001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.0680000000000005,
+        "costPerG": 0.007646191745385484,
+        "nutrition": {
+          "calories": 1844.1599999999999,
+          "protein": 105.31599999999999,
+          "fat": 153.67999999999998,
+          "carbs": 11.028799999999999,
+          "fiber": 0,
+          "sugar": 1.4916,
+          "sodium": 2956.08,
+          "method": "raw"
+        },
+        "prepTimeMin": 44
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_641962_step4",
+      "name": "optional pan-fried eggplant with excess oil removed",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 13.5850975,
+    "costPerServing": 3.396274375,
+    "totalPrepTime": 113,
+    "nutritionPerServing": {
+      "calories": 618.8118125,
+      "protein": 29.051953049999998,
+      "fat": 49.02707505,
+      "carbs": 18.4935433,
+      "fiber": 6.331417500000001,
+      "sugar": 9.110332925,
+      "sodium": 892.701945
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_641962_step1",
+        "name": "eggplant slices are broiled until soft, oil-coated, and cooled",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_641962_step2",
+        "name": "heated sauce combined with sautéed onion and garlic",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_641962_step3",
+        "name": "layered eggplant parmesan baked until golden and bubbly",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_641962_step4",
+        "name": "optional pan-fried eggplant with excess oil removed",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_641962_step1",
+      "name": "eggplant slices are broiled until soft, oil-coated, and cooled",
+      "shelfLifeHours": 2,
+      "processes": [
+        "slice",
+        "coat",
+        "broil",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_641962_step2",
+      "name": "heated sauce combined with sautéed onion and garlic",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "chop",
+        "mince",
+        "heat",
+        "saute",
+        "saute",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_641962_step3",
+      "name": "layered eggplant parmesan baked until golden and bubbly",
+      "shelfLifeHours": 72,
+      "processes": [
+        "spread",
+        "sprinkle",
+        "spread",
+        "spread",
+        "sprinkle",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_641962_step4",
+      "name": "optional pan-fried eggplant with excess oil removed",
+      "shelfLifeHours": 48,
+      "processes": [
+        "pan_fry",
+        "drain"
+      ]
+    }
+  ]
+}

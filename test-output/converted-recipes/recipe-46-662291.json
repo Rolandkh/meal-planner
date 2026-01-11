@@ -1,0 +1,1673 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_28cdf0cb-bcae-4e7c-a56c-14f66a89e59f",
+  "name": "Sun-Dried Tomato and Leek Quiche",
+  "source": "spoonacular",
+  "spoonacularId": 662291,
+  "image": "/images/recipes/662291.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "crust",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "plain flour",
+      "quantity": 120,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pine nuts",
+      "quantity": 33.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "almonds",
+      "quantity": 35.75,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "baking powder",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "almond milk",
+      "quantity": 62.5,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 4,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "leek",
+      "quantity": 178,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra-firm tofu",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "miso paste",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.75,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "panko breadcrumbs",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasonings",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "reconstituted sun-dried tomatoes",
+      "quantity": 27.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Crust\nPreheat oven to 350F.\nCoat four 5-inch tart pans with cooking spray.\nPulse flour, pine nuts,almonds,baking powder\nIn food processor until finely ground.\nWhisk together almond milk, oil and salt in bowl.\nStir in flour mixture. Press into pan.\nBake 5 minutes, then cool.\nFilling\nHeat 1 Tbs. oil in skillet over medium heat.\nAdd leeks, and saute' 8 minutes, or until softened. Set aside.\nBring large saucepan of water to a boil.\nAdd tofu, and simmer 5 minutes.\nDrain and pat dry.\nWhisk 3 Tbsp. oil, lemon juice, miso, garlic and salt in bowl.\nAdd tofu and blend with an immersion blender.\nStir in breadcrumbs,seasonings, sun-dried tomatoes and leeks.\nSpoon filling into crust.\nBake 40 minutes, or until crust is browned.\nCool 5 minutes, then unmold.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 681.21,
+    "protein": 20.11,
+    "fat": 42.81,
+    "carbs": 59.87,
+    "fiber": 8.63,
+    "sugar": 6.74,
+    "saturatedFat": 6.21,
+    "sodium": 958.06
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "French",
+      "European"
+    ],
+    "diets": [
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "morning meal",
+      "brunch",
+      "main dish",
+      "breakfast",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Pine nuts",
+      "quantity": {
+        "originalQuantity": 33.75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 33.75,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "33.75 g pine nuts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "almonds",
+      "displayName": "almonds",
+      "quantity": {
+        "originalQuantity": 35.75,
+        "originalUnit": "g",
+        "normalizedQuantityG": 35.75,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "35.75 g almonds",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "baking_powder",
+      "displayName": "baking powder",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps baking powder",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Almond milk",
+      "quantity": {
+        "originalQuantity": 62.5,
+        "originalUnit": "ml",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 62.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "62.5 ml almond milk",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 54,
+        "normalizedQuantityMl": 60
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "leek",
+      "displayName": "leek",
+      "quantity": {
+        "originalQuantity": 178,
+        "originalUnit": "g",
+        "normalizedQuantityG": 178,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "178 g leek",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Tofu",
+      "quantity": {
+        "originalQuantity": 340.194,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340.194,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "340.194 g extra-firm tofu",
+      "matchConfidence": 0.9833333333333334
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Miso paste",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps miso paste",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.75,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 3.75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.75 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Panko breadcrumbs",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "60 g panko breadcrumbs",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Seasoning blend",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp seasonings",
+      "matchConfidence": 0.9
+    },
+    {
+      "masterIngredientId": "sundried_tomatoes",
+      "displayName": "sun-dried tomatoes",
+      "quantity": {
+        "originalQuantity": 27.5,
+        "originalUnit": "g",
+        "normalizedQuantityG": 27.5,
+        "normalizedQuantityMl": null
+      },
+      "state": "dried",
+      "preparation": [],
+      "rawText": "27.5 g reconstituted sun-dried tomatoes",
+      "matchConfidence": 0.6
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 18,
+    "matched": 16,
+    "unmatched": 2,
+    "lowConfidence": 1,
+    "missingDensity": 2,
+    "unmatchedIngredients": [
+      {
+        "rawText": "4 servings crust",
+        "identityText": "crust",
+        "state": "fresh"
+      },
+      {
+        "rawText": "120 g pastry flour",
+        "identityText": "pastry flour",
+        "state": "other"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:34:57.078Z",
+  "processGraph": {
+    "recipeName": "Sun-Dried Tomato and Leek Quiche",
+    "processSteps": [
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Preheat oven to 350F.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 350F"
+          }
+        ],
+        "outputDescription": "oven heated to 350F"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Coat four 5-inch tart pans with cooking spray.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "coat tart pans with cooking spray"
+          }
+        ],
+        "outputDescription": "tart pans coated and ready for use"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Pulse flour, pine nuts,almonds,baking powder",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "plain flour",
+              "pine nuts",
+              "almonds",
+              "baking powder"
+            ],
+            "durationMinutes": null,
+            "notes": "pulse in food processor"
+          }
+        ],
+        "outputDescription": "dry ingredients pulsed together"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "In food processor until finely ground.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "plain flour",
+              "pine nuts",
+              "almonds",
+              "baking powder"
+            ],
+            "durationMinutes": null,
+            "notes": "process until finely ground"
+          }
+        ],
+        "outputDescription": "flour mixture finely ground"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Whisk together almond milk, oil and salt in bowl.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "almond milk",
+              "olive oil",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "combine wet ingredients"
+          }
+        ],
+        "outputDescription": "wet ingredients whisked together"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Stir in flour mixture. Press into pan.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "flour mixture",
+              "almond milk mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "combine wet and dry ingredients"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "crust mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "press into tart pans"
+          }
+        ],
+        "outputDescription": "crust dough formed and pressed into pans"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Bake 5 minutes, then cool.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "crust"
+            ],
+            "durationMinutes": 5,
+            "notes": "partial bake of crust"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "crust"
+            ],
+            "durationMinutes": null,
+            "notes": "cool after baking"
+          }
+        ],
+        "outputDescription": "crust partially baked and cooled"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Heat 1 Tbs. oil in skillet over medium heat.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in skillet over medium heat"
+          }
+        ],
+        "outputDescription": "oil heated in skillet"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Add leeks, and saute' 8 minutes, or until softened. Set aside.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "leek"
+            ],
+            "durationMinutes": 8,
+            "notes": "cook until softened"
+          }
+        ],
+        "outputDescription": "leeks sautéed and softened, set aside"
+      },
+      {
+        "stepNumber": 12,
+        "originalInstruction": "Bring large saucepan of water to a boil.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "bring water to boiling point"
+          }
+        ],
+        "outputDescription": "water boiling in saucepan"
+      },
+      {
+        "stepNumber": 13,
+        "originalInstruction": "Add tofu, and simmer 5 minutes.",
+        "processes": [
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "extra-firm tofu"
+            ],
+            "durationMinutes": 5,
+            "notes": "simmer tofu in boiling water"
+          }
+        ],
+        "outputDescription": "tofu simmered for 5 minutes"
+      },
+      {
+        "stepNumber": 14,
+        "originalInstruction": "Drain and pat dry.",
+        "processes": [
+          {
+            "processId": "drain",
+            "ingredients": [
+              "extra-firm tofu"
+            ],
+            "durationMinutes": null,
+            "notes": "drain cooking water"
+          }
+        ],
+        "outputDescription": "tofu drained and patted dry"
+      },
+      {
+        "stepNumber": 15,
+        "originalInstruction": "Whisk 3 Tbsp. oil, lemon juice, miso, garlic and salt in bowl.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "olive oil",
+              "lemon juice",
+              "miso paste",
+              "garlic",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "combine seasoning mixture"
+          }
+        ],
+        "outputDescription": "seasoning mixture whisked together"
+      },
+      {
+        "stepNumber": 16,
+        "originalInstruction": "Add tofu and blend with an immersion blender.",
+        "processes": [
+          {
+            "processId": "blend",
+            "ingredients": [
+              "extra-firm tofu",
+              "seasoning mixture"
+            ],
+            "durationMinutes": null,
+            "notes": "blend with immersion blender"
+          }
+        ],
+        "outputDescription": "tofu blended with seasonings into smooth mixture"
+      },
+      {
+        "stepNumber": 17,
+        "originalInstruction": "Stir in breadcrumbs,seasonings, sun-dried tomatoes and leeks.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "panko breadcrumbs",
+              "seasonings",
+              "reconstituted sun-dried tomatoes",
+              "leek"
+            ],
+            "durationMinutes": null,
+            "notes": "fold in remaining filling ingredients"
+          }
+        ],
+        "outputDescription": "complete quiche filling mixed together"
+      },
+      {
+        "stepNumber": 18,
+        "originalInstruction": "Spoon filling into crust.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "quiche filling"
+            ],
+            "durationMinutes": null,
+            "notes": "distribute filling into prepared crusts"
+          }
+        ],
+        "outputDescription": "filling spooned into crusts"
+      },
+      {
+        "stepNumber": 19,
+        "originalInstruction": "Bake 40 minutes, or until crust is browned.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "assembled quiche"
+            ],
+            "durationMinutes": 40,
+            "notes": "bake until crust is browned"
+          }
+        ],
+        "outputDescription": "quiche fully baked with browned crust"
+      },
+      {
+        "stepNumber": 20,
+        "originalInstruction": "Cool 5 minutes, then unmold.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "baked quiche"
+            ],
+            "durationMinutes": 5,
+            "notes": "cool before unmolding"
+          }
+        ],
+        "outputDescription": "quiche cooled and unmolded, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 18,
+      "uniqueProcesses": [
+        "heat",
+        "coat",
+        "blend",
+        "whisk",
+        "mix",
+        "spread",
+        "bake",
+        "cool",
+        "saute",
+        "boil",
+        "simmer",
+        "drain"
+      ],
+      "estimatedTotalTime": 58
+    }
+  },
+  "components": [
+    {
+      "id": "comp_662291_step2",
+      "name": "oven heated to 350F",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_662291_step3",
+      "name": "tart pans coated and ready for use",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step4",
+      "name": "dry ingredients pulsed together",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "flour",
+          "name": "plain flour",
+          "quantityG": 120
+        },
+        {
+          "ingredientId": "pine_nuts",
+          "name": "pine nuts",
+          "quantityG": 33.75
+        },
+        {
+          "ingredientId": "almonds",
+          "name": "almonds",
+          "quantityG": 35.75
+        },
+        {
+          "ingredientId": "baking_powder",
+          "name": "baking powder",
+          "quantityG": 0.525
+        }
+      ],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 186.2245,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.6861250000000005,
+        "costPerG": 0.03053371065568709,
+        "nutrition": {
+          "calories": 871.2082499999999,
+          "protein": 24.59875,
+          "fat": 42.10025,
+          "carbs": 103.860675,
+          "fiber": 8.958549999999999,
+          "sugar": 3.09075,
+          "sodium": 59.0825,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step5",
+      "name": "flour mixture finely ground",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step6",
+      "name": "wet ingredients whisked together",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "almond_milk",
+          "name": "almond milk",
+          "quantityG": 62.5
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 54
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 121,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.9572499999999999,
+        "costPerG": 0.007911157024793388,
+        "nutrition": {
+          "calories": 486.11,
+          "protein": 0.3125,
+          "fat": 54.75,
+          "carbs": 0.25,
+          "fiber": 0.1875,
+          "sugar": 0.0625,
+          "sodium": 1826.4399999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step7",
+      "name": "crust dough formed and pressed into pans",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step8",
+      "name": "crust partially baked and cooled",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pie_crust",
+          "name": "crust",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 68,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.96,
+        "costPerG": 0.014117647058823528,
+        "nutrition": {
+          "calories": 365.6,
+          "protein": 4.928000000000001,
+          "fat": 20.856,
+          "carbs": 38.896,
+          "fiber": 2,
+          "sugar": 0,
+          "sodium": 327.20000000000005,
+          "method": "raw"
+        },
+        "prepTimeMin": 35
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step10",
+      "name": "oil heated in skillet",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_662291_step11",
+      "name": "leeks sautéed and softened, set aside",
+      "stepNumber": 11,
+      "sourceIngredients": [
+        {
+          "ingredientId": "leek",
+          "name": "leek",
+          "quantityG": 178
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 151.29999999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.2709199999999998,
+        "costPerG": 0.0084,
+        "nutrition": {
+          "calories": 108.58,
+          "protein": 2.67,
+          "fat": 0.534,
+          "carbs": 25.276,
+          "fiber": 3.204,
+          "sugar": 6.942,
+          "sodium": 35.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step12",
+      "name": "water boiling in saucepan",
+      "stepNumber": 12,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step13",
+      "name": "tofu simmered for 5 minutes",
+      "stepNumber": 13,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tofu",
+          "name": "extra-firm tofu",
+          "quantityG": 340.194
+        }
+      ],
+      "processes": [
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 306.1746,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 13.607759999999999,
+        "costPerG": 0.04444444444444444,
+        "nutrition": {
+          "calories": 285.76296,
+          "protein": 30.277266000000004,
+          "fat": 14.968536000000002,
+          "carbs": 7.824462,
+          "fiber": 2.7215520000000004,
+          "sugar": 1.020582,
+          "sodium": 13.60776,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step14",
+      "name": "tofu drained and patted dry",
+      "stepNumber": 14,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_662291_step15",
+      "name": "seasoning mixture whisked together",
+      "stepNumber": 15,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 30.5
+        },
+        {
+          "ingredientId": "miso",
+          "name": "miso paste",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 45.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 20.025000000000002,
+        "costPerG": 0.44010989010989016,
+        "nutrition": {
+          "calories": 33.96,
+          "protein": 1.7047500000000002,
+          "fat": 0.6992,
+          "carbs": 6.299500000000001,
+          "fiber": 0.7365,
+          "sugar": 1.4386,
+          "sodium": 374.15500000000003,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step16",
+      "name": "tofu blended with seasonings into smooth mixture",
+      "stepNumber": 16,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step17",
+      "name": "complete quiche filling mixed together",
+      "stepNumber": 17,
+      "sourceIngredients": [
+        {
+          "ingredientId": "panko",
+          "name": "panko breadcrumbs",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "seasoning",
+          "name": "seasonings",
+          "quantityG": 2.5
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "reconstituted sun-dried tomatoes",
+          "quantityG": 27.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 90,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.7037999999999998,
+        "costPerG": 0.018931111111111107,
+        "nutrition": {
+          "calories": 249.625,
+          "protein": 8.491750000000001,
+          "fat": 3.42325,
+          "carbs": 45.8975,
+          "fiber": 3.3125,
+          "sugar": 4.52025,
+          "sodium": 441.25,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step18",
+      "name": "filling spooned into crusts",
+      "stepNumber": 18,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_662291_step19",
+      "name": "quiche fully baked with browned crust",
+      "stepNumber": 19,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 40,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 40
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662291_step20",
+      "name": "quiche cooled and unmolded, ready to serve",
+      "stepNumber": 20,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 44.210854999999995,
+    "costPerServing": 11.052713749999999,
+    "totalPrepTime": 128,
+    "nutritionPerServing": {
+      "calories": 600.2115525,
+      "protein": 18.245754,
+      "fat": 34.33280900000002,
+      "carbs": 57.076034250000006,
+      "fiber": 5.280150499999999,
+      "sugar": 4.268670500000001,
+      "sodium": 769.3338149999998
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_662291_step3",
+        "name": "tart pans coated and ready for use",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_662291_step4",
+        "name": "dry ingredients pulsed together",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_662291_step5",
+        "name": "flour mixture finely ground",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_662291_step6",
+        "name": "wet ingredients whisked together",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_662291_step7",
+        "name": "crust dough formed and pressed into pans",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_662291_step8",
+        "name": "crust partially baked and cooled",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_662291_step11",
+        "name": "leeks sautéed and softened, set aside",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_662291_step12",
+        "name": "water boiling in saucepan",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_662291_step13",
+        "name": "tofu simmered for 5 minutes",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_662291_step15",
+        "name": "seasoning mixture whisked together",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_662291_step16",
+        "name": "tofu blended with seasonings into smooth mixture",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_662291_step17",
+        "name": "complete quiche filling mixed together",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_662291_step19",
+        "name": "quiche fully baked with browned crust",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_662291_step20",
+        "name": "quiche cooled and unmolded, ready to serve",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_662291_step7",
+      "name": "crust dough formed and pressed into pans",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "spread"
+      ]
+    },
+    {
+      "componentId": "comp_662291_step8",
+      "name": "crust partially baked and cooled",
+      "shelfLifeHours": 72,
+      "processes": [
+        "bake",
+        "cool"
+      ]
+    }
+  ]
+}

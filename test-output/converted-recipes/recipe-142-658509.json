@@ -1,0 +1,530 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_474896d7-2abe-4910-8512-7011a027cc51",
+  "name": "Roasted Broccoli with Lemon and Garlic",
+  "source": "spoonacular",
+  "spoonacularId": 658509,
+  "image": "/images/recipes/658509.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "broccoli florets",
+      "quantity": 455,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground pepper",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Preheat the oven to 400 degrees F</li><li>In a large bowl, add broccoli florets, olive oil, salt, pepper and garlic. Spread the broccoli out in an even layer on a baking sheet.</li><li>Bake in the preheated oven until broccoli is tender enough to pierce the stems with a fork, 15 to 20 minutes.</li><li>Remove and place in a bowl, toss with lemon juice.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 58.24,
+    "protein": 3.28,
+    "fat": 2.43,
+    "carbs": 8,
+    "fiber": 3.04,
+    "sugar": 1.96,
+    "saturatedFat": 0.41,
+    "sodium": 328.45
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "whole 30",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "broccoli",
+      "displayName": "broccoli",
+      "quantity": {
+        "originalQuantity": 455,
+        "originalUnit": "g",
+        "normalizedQuantityG": 455,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "455 g broccoli florets",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 9,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5 tsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 6,
+    "matched": 6,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:59:51.235Z",
+  "processGraph": {
+    "recipeName": "Roasted Broccoli with Lemon and Garlic",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat the oven to 400 degrees F",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 400°F"
+          }
+        ],
+        "outputDescription": "oven heated to 400°F and ready for roasting"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "In a large bowl, add broccoli florets, olive oil, salt, pepper and garlic. Spread the broccoli out in an even layer on a baking sheet.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "broccoli florets",
+              "extra virgin olive oil",
+              "salt",
+              "ground pepper",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients in bowl"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "broccoli florets"
+            ],
+            "durationMinutes": null,
+            "notes": "arranging seasoned broccoli in even layer on baking sheet"
+          }
+        ],
+        "outputDescription": "seasoned broccoli florets evenly distributed on baking sheet, ready for roasting"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Bake in the preheated oven until broccoli is tender enough to pierce the stems with a fork, 15 to 20 minutes.",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "broccoli florets"
+            ],
+            "durationMinutes": 17.5,
+            "notes": "roasting until tender, 15-20 minutes"
+          }
+        ],
+        "outputDescription": "broccoli is tender and fork-pierceable, with caramelized edges"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Remove and place in a bowl, toss with lemon juice.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "broccoli florets",
+              "lemon juice"
+            ],
+            "durationMinutes": null,
+            "notes": "finishing with lemon juice"
+          }
+        ],
+        "outputDescription": "roasted broccoli tossed with lemon juice, ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 5,
+      "uniqueProcesses": [
+        "heat",
+        "mix",
+        "spread",
+        "roast",
+        "toss"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_658509_step1",
+      "name": "oven heated to 400°F and ready for roasting",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_658509_step2",
+      "name": "seasoned broccoli florets evenly distributed on baking sheet, ready for roasting",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "broccoli",
+          "name": "broccoli florets",
+          "quantityG": 455
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "extra virgin olive oil",
+          "quantityG": 9
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "ground pepper",
+          "quantityG": 1.05
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 520.355,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.286,
+        "costPerG": 0.008236684571110106,
+        "nutrition": {
+          "calories": 244.3455,
+          "protein": 13.258094999999999,
+          "fat": 10.742730000000002,
+          "carbs": 32.538475,
+          "fiber": 12.200650000000001,
+          "sugar": 7.791719999999999,
+          "sodium": 1314.1299999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658509_step3",
+      "name": "broccoli is tender and fork-pierceable, with caramelized edges",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 17.5,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 17.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_658509_step4",
+      "name": "roasted broccoli tossed with lemon juice, ready to serve",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 2.55
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 2.55,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.5299999999999998,
+        "costPerG": 0.6,
+        "nutrition": {
+          "calories": 0.5609999999999999,
+          "protein": 0.008924999999999999,
+          "fat": 0.00612,
+          "carbs": 0.17595,
+          "fiber": 0.007649999999999999,
+          "sugar": 0.06426,
+          "sodium": 0.0255,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 5.816000000000001,
+    "costPerServing": 1.4540000000000002,
+    "totalPrepTime": 24.5,
+    "nutritionPerServing": {
+      "calories": 61.226625,
+      "protein": 3.3167549999999997,
+      "fat": 2.6872125000000002,
+      "carbs": 8.17860625,
+      "fiber": 3.0520750000000003,
+      "sugar": 1.9639949999999997,
+      "sodium": 328.538875
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_658509_step2",
+        "name": "seasoned broccoli florets evenly distributed on baking sheet, ready for roasting",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_658509_step3",
+        "name": "broccoli is tender and fork-pierceable, with caramelized edges",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_658509_step2",
+      "name": "seasoned broccoli florets evenly distributed on baking sheet, ready for roasting",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "spread"
+      ]
+    }
+  ]
+}

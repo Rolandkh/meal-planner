@@ -1,0 +1,777 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_fafec013-9820-4fbd-8ba1-512af0832c93",
+  "name": "Radish & Snap Pea Quinoa Salad",
+  "source": "spoonacular",
+  "spoonacularId": 657719,
+  "image": "/images/recipes/657719.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "quinoa",
+      "quantity": 170,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 473.176,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "snap peas",
+      "quantity": 1,
+      "unit": "pts",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "radishes",
+      "quantity": 7,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "flat leaf parsley",
+      "quantity": 1,
+      "unit": "large handful",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "yogurt",
+      "quantity": 61.25,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tahini",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Make the quinoa: combine the quinoa and water in a sauce pan and bring to a boil.  Reduce the heat to a simmer (medium-low), stir the quinoa, then cover it and cook for 10 to 15 minutes until all of the water has been absorbed.  Remove it from the heat, let it sit for 5 minutes, then fluff it up with a fork.  Cool the quinoa a bit before making the salad.  The quinoa can be made several days in advance and kept in the fridge if needed before using.\nMake the dressing: Combine the yogurt, tahini, lemon juice, and a pinch of sea salt in a bowl and whisk until smooth.  Thin the dressing out with a bit of water if it is too thick.  Set aside.\nMake the salad:  Combine the quinoa, snap peas, radishes, and parsley in a bowl.  Pour over about half of the dressing, then toss to combine.  Taste the salad and add more dressing or sea salt if desired.  Enjoy at room temperature or chilled.  Makes 3 to 4 main dish servings or 6 to 8 side servings.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 262.13,
+    "protein": 11.24,
+    "fat": 7.31,
+    "carbs": 39.09,
+    "fiber": 6.56,
+    "sugar": 5.68,
+    "saturatedFat": 1.23,
+    "sodium": 231.39
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "quinoa",
+      "displayName": "quinoa",
+      "quantity": {
+        "originalQuantity": 170,
+        "originalUnit": "g",
+        "normalizedQuantityG": 170,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "170 g quinoa",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 473.176,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 467,
+        "normalizedQuantityMl": 473.176
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "473.176 ml water",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Radish",
+      "quantity": {
+        "originalQuantity": 7,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "7 medium radishes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "greek_yogurt",
+      "displayName": "greek yogurt",
+      "quantity": {
+        "originalQuantity": 61.25,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 61,
+        "normalizedQuantityMl": 61.25
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "61.25 ml yogurt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tahini",
+      "displayName": "tahini",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps tahini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "0.5  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings sea salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 8,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 pts snap peas",
+        "identityText": "pts snap peas",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 large handful flat leaf parsley",
+        "identityText": "handful flat leaf parsley",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:43:47.648Z",
+  "processGraph": {
+    "recipeName": "Radish & Snap Pea Quinoa Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Make the quinoa: combine the quinoa and water in a sauce pan and bring to a boil. Reduce the heat to a simmer (medium-low), stir the quinoa, then cover it and cook for 10 to 15 minutes until all of the water has been absorbed. Remove it from the heat, let it sit for 5 minutes, then fluff it up with a fork. Cool the quinoa a bit before making the salad. The quinoa can be made several days in advance and kept in the fridge if needed before using.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "water"
+            ],
+            "durationMinutes": 1,
+            "notes": "combine quinoa and water in sauce pan"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "quinoa",
+              "water"
+            ],
+            "durationMinutes": 2,
+            "notes": "bring to a boil"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 12.5,
+            "notes": "reduce heat to medium-low, cook covered for 10-15 minutes"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 5,
+            "notes": "let sit off heat for 5 minutes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 1,
+            "notes": "fluff with fork"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "quinoa"
+            ],
+            "durationMinutes": 10,
+            "notes": "cool before making salad"
+          }
+        ],
+        "outputDescription": "cooked, fluffy, cooled quinoa ready for salad"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Make the dressing: Combine the yogurt, tahini, lemon juice, and a pinch of sea salt in a bowl and whisk until smooth. Thin the dressing out with a bit of water if it is too thick. Set aside.",
+        "processes": [
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": 1,
+            "notes": "extract lemon juice"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "yogurt",
+              "tahini",
+              "lemon",
+              "sea salt"
+            ],
+            "durationMinutes": 1,
+            "notes": "combine ingredients in bowl"
+          },
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "yogurt",
+              "tahini",
+              "lemon",
+              "sea salt"
+            ],
+            "durationMinutes": 2,
+            "notes": "whisk until smooth"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": 1,
+            "notes": "thin with water if needed"
+          }
+        ],
+        "outputDescription": "smooth, well-combined dressing ready to use"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Make the salad: Combine the quinoa, snap peas, radishes, and parsley in a bowl. Pour over about half of the dressing, then toss to combine. Taste the salad and add more dressing or sea salt if desired. Enjoy at room temperature or chilled. Makes 3 to 4 main dish servings or 6 to 8 side servings.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "snap peas"
+            ],
+            "durationMinutes": 2,
+            "notes": "remove stems and strings from snap peas"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "radishes"
+            ],
+            "durationMinutes": 2,
+            "notes": "slice radishes"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "flat leaf parsley"
+            ],
+            "durationMinutes": 2,
+            "notes": "chop parsley"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "quinoa",
+              "snap peas",
+              "radishes",
+              "flat leaf parsley"
+            ],
+            "durationMinutes": 1,
+            "notes": "combine all salad ingredients in bowl"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "quinoa",
+              "snap peas",
+              "radishes",
+              "flat leaf parsley"
+            ],
+            "durationMinutes": 2,
+            "notes": "toss with half the dressing"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "quinoa",
+              "snap peas",
+              "radishes",
+              "flat leaf parsley"
+            ],
+            "durationMinutes": 1,
+            "notes": "taste and adjust with more dressing or salt"
+          }
+        ],
+        "outputDescription": "finished quinoa salad, dressed and seasoned, ready to serve at room temperature or chilled"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 16,
+      "uniqueProcesses": [
+        "mix",
+        "boil",
+        "simmer",
+        "rest_meat",
+        "cool",
+        "squeeze",
+        "whisk",
+        "trim",
+        "slice",
+        "chop",
+        "toss",
+        "season"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_657719_step1",
+      "name": "cooked, fluffy, cooled quinoa ready for salad",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "quinoa",
+          "name": "quinoa",
+          "quantityG": 170
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 12.5,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 213.75,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.7436,
+        "costPerG": 0.012835555555555555,
+        "nutrition": {
+          "calories": 625.6,
+          "protein": 24.003999999999998,
+          "fat": 10.319,
+          "carbs": 109.07199999999999,
+          "fiber": 11.9,
+          "sugar": 0,
+          "sodium": 12.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 31.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657719_step2",
+      "name": "smooth, well-combined dressing ready to use",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "greek_yogurt",
+          "name": "yogurt",
+          "quantityG": 61.25
+        },
+        {
+          "ingredientId": "tahini",
+          "name": "tahini",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "salt",
+          "name": "sea salt",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 33.3375,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.0675999999999999,
+        "costPerG": 0.03202399700037495,
+        "nutrition": {
+          "calories": 214.9625,
+          "protein": 11.52875,
+          "fat": 16.129624999999997,
+          "carbs": 8.6795,
+          "fiber": 1.41,
+          "sugar": 2.002875,
+          "sodium": 1582.87,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657719_step3",
+      "name": "finished quinoa salad, dressed and seasoned, ready to serve at room temperature or chilled",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "sugar_snap_peas",
+          "name": "snap peas",
+          "quantityG": 473
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 440.1868548,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 10.6425,
+        "costPerG": 0.02417723265460857,
+        "nutrition": {
+          "calories": 198.66000000000003,
+          "protein": 13.244,
+          "fat": 0.9460000000000002,
+          "carbs": 35.7115,
+          "fiber": 12.298000000000002,
+          "sugar": 18.92,
+          "sodium": 18.92,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 47.67607,
+    "costPerServing": 11.9190175,
+    "totalPrepTime": 46.5,
+    "nutritionPerServing": {
+      "calories": 265.795625,
+      "protein": 12.5306625,
+      "fat": 6.95143125,
+      "carbs": 39.732425,
+      "fiber": 6.78175,
+      "sugar": 5.598143749999999,
+      "sodium": 409.815
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_657719_step1",
+        "name": "cooked, fluffy, cooled quinoa ready for salad",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657719_step2",
+        "name": "smooth, well-combined dressing ready to use",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_657719_step3",
+        "name": "finished quinoa salad, dressed and seasoned, ready to serve at room temperature or chilled",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_657719_step1",
+      "name": "cooked, fluffy, cooled quinoa ready for salad",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "boil",
+        "simmer",
+        "rest_meat",
+        "mix",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_657719_step2",
+      "name": "smooth, well-combined dressing ready to use",
+      "shelfLifeHours": 12,
+      "processes": [
+        "squeeze",
+        "mix",
+        "whisk",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_657719_step3",
+      "name": "finished quinoa salad, dressed and seasoned, ready to serve at room temperature or chilled",
+      "shelfLifeHours": 24,
+      "processes": [
+        "trim",
+        "slice",
+        "chop",
+        "mix",
+        "toss",
+        "season"
+      ]
+    }
+  ]
+}

@@ -1669,3 +1669,200 @@ This is the foundation because:
 
 **Deliverable:** `src/data/processMaster.json` with ~70 culinary processes
 
+
+---
+
+## IMPLEMENTATION PROGRESS (January 11, 2026)
+
+### ✅ Phase 1: Process Master Database - COMPLETE
+
+**Created:** `src/data/processMaster.json` v2.0.0
+
+**Delivered:** 74 processes with complete metadata (yield, time, nutrition, equipment, prerequisites, aliases)
+
+**Files:** processMaster.json, validate-process-master.cjs, process-master-v2-improvements.md
+
+### ✅ Phase 2: Recipe Conversion Engine - COMPLETE
+
+**Phase 2.1-2.5:** Process Parser, Component Generator, Yield/Cost/Nutrition Calculators
+
+**Validation:** 30 recipes tested - 87% cost accuracy, 77% nutrition accuracy
+
+### ✅ Phase 3: Batch Conversion - 50/516 COMPLETE
+
+**Results:** 50 recipes converted (100% success), 78% cost accuracy, 70% nutrition accuracy
+
+**Status:** Ready to convert remaining 466 recipes (~3 hours, $20-25)
+
+**Command to continue:** `node scripts/batch-convert-recipes.js --start=50`
+
+---
+
+## 16. Subscription Tiers & Pricing (Confirmed Jan 11)
+
+### Tier Structure
+
+#### Free Trial (1 Month)
+| Feature | Limit |
+|---------|-------|
+| Meal plan generations | 5 total |
+| Recipe imports | 3 total |
+| Voice conversations | 5 × 10 min |
+| Ingredient additions | 5 total |
+| Chat messages | Unlimited |
+| Single-day regeneration | 2 total |
+| History retention | 1 week |
+| Diet profiles | Basic 5 |
+| Shopping list mode | Chef mode only |
+| Receipt scanning | ❌ |
+
+#### Pro Tier ($15/month)
+**Target:** Regular home cook, 1-2 person household
+
+| Feature | Limit |
+|---------|-------|
+| Meal plan generations | 8/month |
+| Recipe imports | 8/month |
+| Voice conversations | 20/month |
+| Ingredient additions | 20/month |
+| Chat messages | Unlimited |
+| Single-day regeneration | 4/month |
+| History retention | 4 weeks |
+| Diet profiles | All 17 |
+| Multi-profile generation | ❌ |
+| Shopping list mode | Both modes |
+| Receipt scanning | ❌ |
+| Prep planning | Basic |
+
+#### Ultra Tier ($30/month)
+**Target:** Serious meal planner, families with dietary conflicts, diet-focused users
+
+| Feature | Limit |
+|---------|-------|
+| Meal plan generations | Unlimited |
+| Recipe imports | Unlimited |
+| Voice conversations | Unlimited |
+| Ingredient additions | Unlimited |
+| Chat messages | Unlimited |
+| Single-day regeneration | Unlimited |
+| History retention | 12 weeks |
+| Diet profiles | All 17 + custom |
+| Multi-profile generation | ✅ |
+| Shopping list mode | Both modes |
+| Receipt scanning | ✅ |
+| Prep planning | Advanced |
+| Equipment constraints | ✅ |
+| Priority support | ✅ |
+
+---
+
+## 17. Cost Analysis (Confirmed Jan 11)
+
+### API Pricing Reference
+| Model | Input (per M tokens) | Output (per M tokens) |
+|-------|---------------------|----------------------|
+| Claude Sonnet 4 | $3.00 | $15.00 |
+| Claude Haiku 4.5 | $1.00 | $5.00 |
+| Deepgram STT | $0.0043/min | - |
+| Google TTS | $4.00/M chars | - |
+
+### Per-Operation Costs
+| Operation | Model | Cost |
+|-----------|-------|------|
+| Meal generation | Sonnet | $0.055 |
+| Recipe import | Sonnet | $0.030 |
+| Single-day regen | Sonnet | $0.020 |
+| Chat message | Haiku | $0.002 |
+| Ingredient add | Haiku | $0.005 |
+| Voice STT (1 min) | Deepgram | $0.004 |
+| Voice TTS (500 chars) | Google | $0.002 |
+| Image process | Sonnet | $0.005 |
+
+### Tier Profitability
+| Tier | Price | Total Cost | Profit | Margin |
+|------|-------|------------|--------|--------|
+| Free Trial | $0 | $0.94 | -$0.94 | N/A |
+| Pro | $15 | $5.06 | $9.94 | 66% |
+| Ultra | $30 | $10.40 | $19.60 | 65% |
+
+*Costs include App Store 15% fee*
+
+### Revenue Projections (100 Users)
+| Mix | Monthly Revenue | Monthly Cost | Profit |
+|-----|-----------------|--------------|--------|
+| 10 free, 60 Pro, 30 Ultra | $1,800 | ~$600 | $1,200 |
+
+---
+
+## 18. Technical Stack (Confirmed Jan 11)
+
+### Voice Interface
+- **STT:** Deepgram ($0.0043/min) or on-device (free)
+- **TTS:** Google Standard ($4/M chars) or on-device (free)
+- **Strategy:** Start with cloud, evaluate on-device for cost savings
+
+### Image Processing
+- **Provider:** Claude Vision (Sonnet)
+- **Use cases:** Receipt scanning, fridge/pantry inventory, recipe photos
+- **Cost:** ~$0.005 per image (~1,500 tokens)
+
+### Hosting
+- **Backend:** Vercel (Free tier sufficient for <1000 users)
+- **Database:** Firebase Firestore (Free tier generous)
+- **Cost at scale:** ~$30/month fixed, scales with usage
+
+### External APIs
+- **Spoonacular:** $39-79/month if needed (free tier may suffice)
+- **App Store fees:** 15% (Apple/Google Small Business Program)
+
+---
+
+## 19. Platform Strategy
+
+### iOS First
+- Primary development target
+- Voice interface via iOS speech APIs
+- Receipt scanning via camera
+
+### Android Later
+- Same feature set
+- May use different voice providers
+- Cross-platform data sync via Firebase
+
+### Web App
+- Existing web version continues
+- May deprecate in favor of mobile
+- Or maintain as companion
+
+---
+
+## 20. Session Summary
+
+### Key Decisions Made
+1. ✅ Full complexity system (will pare back based on data)
+2. ✅ Retrospective conversion of all 516 recipes
+3. ✅ Component naming: `comp_[ingredient]_[process]_[id]`
+4. ✅ AI-first approach, then extract rules for hybrid system
+5. ✅ Leftover handling: Flexible (schedule, freeze, or inventory)
+6. ✅ Feedback loop: Staged (more questions early, fewer later)
+7. ✅ Waste tracking: Collaborative with Vanessa check-ins
+8. ✅ Recipe import: Yes, with user resolution of ambiguity
+9. ✅ Manual override: Full flexibility, all changes via Vanessa
+10. ✅ Three-tier pricing: Free Trial, Pro ($15), Ultra ($30)
+11. ✅ Voice interface: Cloud (Deepgram + Google) or on-device
+12. ✅ Image processing: Claude Vision for receipts/inventory
+
+### Next Steps
+1. Create Process Master Database (~70 processes)
+2. Build process parser (Claude AI)
+3. Convert recipes to process graphs
+4. Implement tier system and usage tracking
+5. Build voice interface
+6. Build iOS app
+
+### Cost Summary
+- **Per high-usage user:** ~$3-5/month (API only)
+- **With App Store fee:** ~$5-10/month total
+- **At $15 Pro:** 66% margin
+- **At $30 Ultra:** 65% margin
+

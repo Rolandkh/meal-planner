@@ -1,0 +1,650 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_acc7cdb4-9ba6-4e2e-b15e-b1416f2b1a28",
+  "name": "Egyptain Cauliflower Side Salad",
+  "source": "spoonacular",
+  "spoonacularId": 642346,
+  "image": "/images/recipes/642346.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cauliflower",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Separate the cauliflower into medium sized pieces.</li><li>Steam in a steamer (if you don't have a steamer you can boil the cauliflower whole in water and then cut it into pieces).</li><li>Place in a bowl.</li><li>Mix the olive oil, cumin, lemon juice and salt and pepper.</li><li>Pour over the cauliflower and mix.</li><li>Garnish with parsley.</li></ol>",
+  "prepTime": 8,
+  "cookTime": 18,
+  "servings": 2,
+  "nutrition": {
+    "calories": 183.1,
+    "protein": 3.6,
+    "fat": 14.87,
+    "carbs": 12.29,
+    "fiber": 4.47,
+    "sugar": 5.91,
+    "saturatedFat": 2.17,
+    "sodium": 240.79
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "whole 30",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cauliflower",
+      "displayName": "cauliflower",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small cauliflower",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 servings parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings salt",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 7,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:46:07.626Z",
+  "processGraph": {
+    "recipeName": "Egyptain Cauliflower Side Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Separate the cauliflower into medium sized pieces.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "breaking into medium sized pieces"
+          }
+        ],
+        "outputDescription": "cauliflower broken into medium-sized pieces"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Steam in a steamer (if you don't have a steamer you can boil the cauliflower whole in water and then cut it into pieces).",
+        "processes": [
+          {
+            "processId": "steam",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "alternative method is to boil whole then cut"
+          }
+        ],
+        "outputDescription": "cauliflower pieces cooked and tender"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place in a bowl.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "transferring to serving bowl"
+          }
+        ],
+        "outputDescription": "steamed cauliflower placed in bowl"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Mix the olive oil, cumin, lemon juice and salt and pepper.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "olive oil",
+              "cumin",
+              "lemon juice",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "creating dressing mixture"
+          }
+        ],
+        "outputDescription": "dressing ingredients combined into uniform mixture"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Pour over the cauliflower and mix.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "cauliflower",
+              "olive oil",
+              "cumin",
+              "lemon juice",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "coating cauliflower with dressing"
+          }
+        ],
+        "outputDescription": "cauliflower evenly coated with seasoned dressing"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Garnish with parsley.",
+        "processes": [
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "final presentation touch"
+          }
+        ],
+        "outputDescription": "finished salad garnished with parsley"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "chop",
+        "steam",
+        "plate",
+        "mix",
+        "toss",
+        "garnish"
+      ],
+      "estimatedTotalTime": 20
+    }
+  },
+  "components": [
+    {
+      "id": "comp_642346_step1",
+      "name": "cauliflower broken into medium-sized pieces",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cauliflower",
+          "name": "cauliflower",
+          "quantityG": 0.7
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.6859999999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0031499999999999996,
+        "costPerG": 0.004591836734693877,
+        "nutrition": {
+          "calories": 0.175,
+          "protein": 0.013439999999999999,
+          "fat": 0.00196,
+          "carbs": 0.034789999999999995,
+          "fiber": 0.013999999999999999,
+          "sugar": 0.013369999999999998,
+          "sodium": 0.20999999999999996,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642346_step2",
+      "name": "cauliflower pieces cooked and tender",
+      "stepNumber": 2,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642346_step3",
+      "name": "steamed cauliflower placed in bowl",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642346_step4",
+      "name": "dressing ingredients combined into uniform mixture",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 40
+        },
+        {
+          "ingredientId": "cumin",
+          "name": "cumin",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "lemon_juice",
+          "name": "lemon juice",
+          "quantityG": 15.25
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 59.35,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.802666666666667,
+        "costPerG": 0.16516708789665824,
+        "nutrition": {
+          "calories": 364.83000000000004,
+          "protein": 0.427385,
+          "fat": 40.50427,
+          "carbs": 1.9812900000000002,
+          "fiber": 0.26625,
+          "sugar": 0.43155,
+          "sodium": 779.6405,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_642346_step5",
+      "name": "cauliflower evenly coated with seasoned dressing",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_642346_step6",
+      "name": "finished salad garnished with parsley",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 10
+        }
+      ],
+      "processes": [
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 10.2,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.3333000000000004,
+        "costPerG": 0.22875490196078438,
+        "nutrition": {
+          "calories": 3.6,
+          "protein": 0.29700000000000004,
+          "fat": 0.07900000000000001,
+          "carbs": 0.633,
+          "fiber": 0.33,
+          "sugar": 0.085,
+          "sodium": 5.6000000000000005,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 12.156116666666666,
+    "costPerServing": 6.078058333333333,
+    "totalPrepTime": 16,
+    "nutritionPerServing": {
+      "calories": 184.5625,
+      "protein": 0.3788125,
+      "fat": 20.295615,
+      "carbs": 1.3848400000000003,
+      "fiber": 0.326125,
+      "sugar": 0.30695999999999996,
+      "sodium": 392.76525
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_642346_step1",
+        "name": "cauliflower broken into medium-sized pieces",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_642346_step2",
+        "name": "cauliflower pieces cooked and tender",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_642346_step4",
+        "name": "dressing ingredients combined into uniform mixture",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": []
+}

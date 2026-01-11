@@ -1,0 +1,666 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_f509d30d-be81-4dba-a973-574eb7565e18",
+  "name": "Spicy Indian-Style Hummus",
+  "source": "spoonacular",
+  "spoonacularId": 716195,
+  "image": "/images/recipes/716195.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "asafetida",
+      "quantity": 1,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cayenne",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chickpeas",
+      "quantity": 250,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chives",
+      "quantity": 10,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ginger",
+      "quantity": 1,
+      "unit": "inch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 30,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 2,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground coriander",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground cumin",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground pepper",
+      "quantity": 12,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "juice of lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chilies",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tahini",
+      "quantity": 60,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "turmeric",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<p>Rinse the chickpeas and soak for 8 hours or overnight covered in several inches of water with a little yogurt whey or lemon juice added.  Drain and rinse, then transfer to a large saucepan.  Cover with several inches of fresh water, bring to a boil, reduce the heat to medium-low and cover.  Simmer for 1 to 1 1/2 hours or until the beans are buttery soft. Drain.In a food processor, combine all of the ingredients and process until you have a thick, smooth paste. You may need to add extra olive oil or a bit of water if you want a thinner paste. Makes 3 cups, nutrition information is based on 1/4 cup serving.</p>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 12,
+  "nutrition": {
+    "calories": 133.79,
+    "protein": 5.24,
+    "fat": 6.38,
+    "carbs": 15.34,
+    "fiber": 4.23,
+    "sugar": 2.76,
+    "saturatedFat": 0.85,
+    "sodium": 203.18
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "antipasti",
+      "condiment",
+      "starter",
+      "snack",
+      "appetizer",
+      "dip",
+      "antipasto",
+      "hor d'oeuvre",
+      "spread"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Asafoetida",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 pinch asafetida",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cayenne",
+      "displayName": "cayenne pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps cayenne",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chickpeas",
+      "displayName": "chickpeas",
+      "quantity": {
+        "originalQuantity": 250,
+        "originalUnit": "g",
+        "normalizedQuantityG": 250,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "250 g chickpeas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chives",
+      "displayName": "chives",
+      "quantity": {
+        "originalQuantity": 10,
+        "originalUnit": "g",
+        "normalizedQuantityG": 10,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "10 g chives",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ginger",
+      "displayName": "ginger",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 inch ginger",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 30,
+        "originalUnit": "g",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "30 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "coriander",
+      "displayName": "coriander",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground coriander",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.5 tsps ground cumin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 12,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "12 servings ground pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  juice of lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 27,
+        "normalizedQuantityMl": 30
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chilies",
+      "displayName": "chilies",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2  chilies",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp sea salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tahini",
+      "displayName": "tahini",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 60
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 ml tahini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "turmeric",
+      "displayName": "turmeric",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp turmeric",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 16,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:35:28.582Z",
+  "processGraph": {
+    "recipeName": "Spicy Indian-Style Hummus",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Rinse the chickpeas and soak for 8 hours or overnight covered in several inches of water with a little yogurt whey or lemon juice added. Drain and rinse, then transfer to a large saucepan. Cover with several inches of fresh water, bring to a boil, reduce the heat to medium-low and cover. Simmer for 1 to 1 1/2 hours or until the beans are buttery soft. Drain. In a food processor, combine all of the ingredients and process until you have a thick, smooth paste. You may need to add extra olive oil or a bit of water if you want a thinner paste.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "chickpeas"
+            ],
+            "durationMinutes": 2,
+            "notes": "initial cleaning of chickpeas"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "chickpeas"
+            ],
+            "durationMinutes": 480,
+            "notes": "soaking for 8 hours in water with yogurt whey or lemon juice"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "chickpeas"
+            ],
+            "durationMinutes": 1,
+            "notes": "remove soaking liquid"
+          },
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "chickpeas"
+            ],
+            "durationMinutes": 1,
+            "notes": "rinse after soaking"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "chickpeas"
+            ],
+            "durationMinutes": 5,
+            "notes": "bring to a boil in fresh water"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "chickpeas"
+            ],
+            "durationMinutes": 75,
+            "notes": "simmer for 1 to 1.5 hours until buttery soft"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "chickpeas"
+            ],
+            "durationMinutes": 1,
+            "notes": "drain cooked chickpeas"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "chickpeas",
+              "asafetida",
+              "cayenne",
+              "chives",
+              "ginger",
+              "parsley",
+              "garlic",
+              "ground coriander",
+              "ground cumin",
+              "ground pepper",
+              "lemon",
+              "olive oil",
+              "chilies",
+              "sea salt",
+              "tahini",
+              "turmeric"
+            ],
+            "durationMinutes": 5,
+            "notes": "process all ingredients in food processor until smooth paste"
+          }
+        ],
+        "outputDescription": "Smooth, thick hummus paste ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "rinse",
+        "marinate",
+        "drain",
+        "boil",
+        "simmer",
+        "blend"
+      ],
+      "estimatedTotalTime": 570
+    }
+  },
+  "components": [
+    {
+      "id": "comp_716195_step1",
+      "name": "Smooth, thick hummus paste ready to serve",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chickpeas",
+          "name": "chickpeas",
+          "quantityG": 250
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 480,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 75,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 219.77282619180002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.9375,
+        "costPerG": 0.004265768503981586,
+        "nutrition": {
+          "calories": 410,
+          "protein": 22.15,
+          "fat": 6.475,
+          "carbs": 68.55000000000001,
+          "fiber": 19,
+          "sugar": 12,
+          "sodium": 17.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 570
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 67.47361175,
+    "costPerServing": 5.622800979166667,
+    "totalPrepTime": 570,
+    "nutritionPerServing": {
+      "calories": 92.39083333333333,
+      "protein": 3.080414375,
+      "fat": 5.597022291666666,
+      "carbs": 8.801937708333334,
+      "fiber": 2.345841666666667,
+      "sugar": 1.3277266666666667,
+      "sodium": 199.33808333333332
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_716195_step1",
+        "name": "Smooth, thick hummus paste ready to serve",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_716195_step1",
+      "name": "Smooth, thick hummus paste ready to serve",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "marinate",
+        "drain",
+        "rinse",
+        "boil",
+        "simmer",
+        "drain",
+        "blend"
+      ]
+    }
+  ]
+}

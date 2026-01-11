@@ -1,0 +1,633 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_a78134f2-6ab8-476c-8e4b-e90a47eb2c39",
+  "name": "Lasagna - Spinach Rolls",
+  "source": "spoonacular",
+  "spoonacularId": 649270,
+  "image": "/images/recipes/649270.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "butter",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mushrooms",
+      "quantity": 1,
+      "unit": "can",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato sauce",
+      "quantity": 850.486,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cottage cheese",
+      "quantity": 452,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lasagna sheets",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggs",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic powder",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "marjoram",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mozzarella cheese",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 80,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan cheese",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 99.333,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 566.99,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Cook noodles as directed, omitting salt; drain and pat dry. Saute red pepper, mushrooms and onion in butter until tender. Combine cottage cheese, spinach, eggs, 4 tablespoons of the Parmesan cheese, the sauteed vegetables and pepper; mix well. Spread 1/3 cup filling on each noodle. Roll up, place in greased 13 x 9 inch baking dish. Heat tomato sauce, marjoram, sugar and garlic powder 5 minutes; pour over lasagna rolls. Sprinkle with Mozzarella cheese and remaining Parmesan cheese. Cover and bake at 350 degrees for 40 minutes. Makes 12 rolls.</li><li>This lasagna is my favorite. I have made it often, as I find it goes with any dinner. Also it can be prepared in advance and frozen.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 442.84,
+    "protein": 32.52,
+    "fat": 24.8,
+    "carbs": 27.68,
+    "fiber": 9.95,
+    "sugar": 13.55,
+    "saturatedFat": 13.14,
+    "sodium": 1668.03
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "primal"
+    ],
+    "dishTypes": [],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "butter",
+      "displayName": "butter",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 28,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps butter",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mushrooms",
+      "displayName": "mushrooms",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 can mushrooms",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato_sauce",
+      "displayName": "tomato sauce",
+      "quantity": {
+        "originalQuantity": 850.486,
+        "originalUnit": "g",
+        "normalizedQuantityG": 850.486,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "850.486 g tomato sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic_powder",
+      "displayName": "garlic powder",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp garlic powder",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mozzarella_cheese",
+      "displayName": "mozzarella cheese",
+      "quantity": {
+        "originalQuantity": 340.194,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340.194,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "340.194 g mozzarella cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 80,
+        "originalUnit": "g",
+        "normalizedQuantityG": 80,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "80 g onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 50,
+        "originalUnit": "g",
+        "normalizedQuantityG": 50,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "50 g parmesan cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 99.333,
+        "originalUnit": "g",
+        "normalizedQuantityG": 99.333,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "99.333 g bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 566.99,
+        "originalUnit": "g",
+        "normalizedQuantityG": 566.99,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "566.99 g spinach",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 14,
+    "matched": 11,
+    "unmatched": 3,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "452 g curd cottage cheese",
+        "identityText": "curd cottage cheese",
+        "state": "fresh"
+      },
+      {
+        "rawText": "453.592 g ronzoni curly edge lasagna",
+        "identityText": "ronzoni curly edge lasagna",
+        "state": "fresh"
+      },
+      {
+        "rawText": "2 tsps marjoram leaves",
+        "identityText": "marjoram leaves",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:31:19.938Z",
+  "processGraph": {
+    "recipeName": "Lasagna - Spinach Rolls",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Cook noodles as directed, omitting salt; drain and pat dry. Saute red pepper, mushrooms and onion in butter until tender. Combine cottage cheese, spinach, eggs, 4 tablespoons of the Parmesan cheese, the sauteed vegetables and pepper; mix well. Spread 1/3 cup filling on each noodle. Roll up, place in greased 13 x 9 inch baking dish. Heat tomato sauce, marjoram, sugar and garlic powder 5 minutes; pour over lasagna rolls. Sprinkle with Mozzarella cheese and remaining Parmesan cheese. Cover and bake at 350 degrees for 40 minutes. Makes 12 rolls.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "lasagna sheets"
+            ],
+            "durationMinutes": null,
+            "notes": "cook noodles as directed, omitting salt"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "lasagna sheets"
+            ],
+            "durationMinutes": null,
+            "notes": "drain and pat dry after cooking"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "bell pepper",
+              "mushrooms",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "implied preparation for sautéing"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "bell pepper",
+              "mushrooms",
+              "onion",
+              "butter"
+            ],
+            "durationMinutes": null,
+            "notes": "sauté until tender"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cottage cheese",
+              "spinach",
+              "eggs",
+              "parmesan cheese",
+              "bell pepper",
+              "mushrooms",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "combine cottage cheese, spinach, eggs, 4 tablespoons parmesan, sautéed vegetables and pepper; mix well"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "cottage cheese",
+              "spinach",
+              "eggs",
+              "parmesan cheese",
+              "bell pepper",
+              "mushrooms",
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "spread 1/3 cup filling on each noodle"
+          },
+          {
+            "processId": "roll",
+            "ingredients": [
+              "lasagna sheets"
+            ],
+            "durationMinutes": null,
+            "notes": "roll up filled noodles"
+          },
+          {
+            "processId": "heat",
+            "ingredients": [
+              "tomato sauce",
+              "marjoram",
+              "garlic powder"
+            ],
+            "durationMinutes": 5,
+            "notes": "heat tomato sauce with seasonings"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "mozzarella cheese",
+              "parmesan cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "sprinkle with mozzarella and remaining parmesan"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "lasagna sheets",
+              "cottage cheese",
+              "spinach",
+              "eggs",
+              "parmesan cheese",
+              "bell pepper",
+              "mushrooms",
+              "onion",
+              "tomato sauce",
+              "mozzarella cheese"
+            ],
+            "durationMinutes": 40,
+            "notes": "cover and bake at 350 degrees"
+          }
+        ],
+        "outputDescription": "12 baked lasagna rolls with spinach and vegetable filling, covered in tomato sauce and melted cheese"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 10,
+      "uniqueProcesses": [
+        "boil",
+        "drain",
+        "chop",
+        "saute",
+        "mix",
+        "spread",
+        "roll",
+        "heat",
+        "sprinkle",
+        "bake"
+      ],
+      "estimatedTotalTime": 65
+    }
+  },
+  "components": [
+    {
+      "id": "comp_649270_step1",
+      "name": "12 baked lasagna rolls with spinach and vegetable filling, covered in tomato sauce and melted cheese",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lasagne_sheets",
+          "name": "lasagna sheets",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 40,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 328.77434939125754,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.23201336,
+        "costPerG": 0.012872091049182481,
+        "nutrition": {
+          "calories": 1682.82632,
+          "protein": 59.14839679999999,
+          "fat": 6.8492391999999995,
+          "carbs": 338.6971464,
+          "fiber": 14.514944,
+          "sugar": 12.1109064,
+          "sodium": 27.215519999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 69.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 46.61380516,
+    "costPerServing": 7.768967526666667,
+    "totalPrepTime": 69.5,
+    "nutritionPerServing": {
+      "calories": 700.6400399999999,
+      "protein": 42.979766549999994,
+      "fat": 25.77982436666667,
+      "carbs": 77.38779141666667,
+      "fiber": 8.583501166666666,
+      "sugar": 12.849513366666669,
+      "sodium": 1537.1718266666664
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_649270_step1",
+        "name": "12 baked lasagna rolls with spinach and vegetable filling, covered in tomato sauce and melted cheese",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_649270_step1",
+      "name": "12 baked lasagna rolls with spinach and vegetable filling, covered in tomato sauce and melted cheese",
+      "shelfLifeHours": 24,
+      "processes": [
+        "boil",
+        "drain",
+        "chop",
+        "saute",
+        "mix",
+        "spread",
+        "roll",
+        "heat",
+        "sprinkle",
+        "bake"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1270 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_8eccd9eb-1109-4be3-8fd1-c849e4342268",
+  "name": "Plantain Pizza",
+  "source": "spoonacular",
+  "spoonacularId": 716300,
+  "image": "/images/recipes/716300.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "beef",
+      "quantity": 225,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell peppers",
+      "quantity": 1,
+      "unit": "handful",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bread flour",
+      "quantity": 250,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasoning cube",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "oil",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onions",
+      "quantity": 1,
+      "unit": "handful",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "over-ripe plantain",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sugar",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato)",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 177.441,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "yeast",
+      "quantity": 1.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<p>Dissolve the yeast in warm water and leave to stand for about 5 minutes.Mix the oil, flour, salt, sugar and mashed plantain and pour in the dissolved yeast.Knead the dough till its elastic which may take aBout 15-20 minutes By hand or 10 minutes in a mixer.Coat a Bowl lightly with oil and place the dough in it. Cover with a plastic wrap and leave to rise between 1.5 – 2 hours.While the dough is rising, heat up the oil for the sauce, fry the Blended tomato and pepper, season and stir fry the Beef in the tomato sauce. Set aside.When the dough rises, divide into two. Sprinkle some flour on a flat surface and with a rolling pin, flatten out the dough but not excessively. Cut the dough into your desired shape, rub some oil on it and spread your sauce and toppings on it and set aside.Heat up your oven to 350 F and place your pizza dough on a lightly oiled foil pan and Bake for 12-15 mins. Serve warm</p>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 3,
+  "nutrition": {
+    "calories": 642.7,
+    "protein": 25.03,
+    "fat": 22.92,
+    "carbs": 84.82,
+    "fiber": 4.77,
+    "sugar": 14.14,
+    "saturatedFat": 6.45,
+    "sodium": 839.68
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "ground_beef",
+      "displayName": "ground beef",
+      "quantity": {
+        "originalQuantity": 225,
+        "originalUnit": "g",
+        "normalizedQuantityG": 225,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "225 g beef",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_peppers",
+      "displayName": "bell peppers",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 handful bell peppers",
+      "matchConfidence": 0.7666666666666666
+    },
+    {
+      "masterIngredientId": "seasoning_cubes",
+      "displayName": "seasoning cubes",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 servings seasoning cube",
+      "matchConfidence": 0.9785714285714286
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 5,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sugar",
+      "displayName": "sugar",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps sugar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  tomato)",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 177.441,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 175,
+        "normalizedQuantityMl": 177.441
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "177.441 ml water",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Yeast",
+      "quantity": {
+        "originalQuantity": 1.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 7.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.5 tsps yeast",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 14,
+    "matched": 11,
+    "unmatched": 3,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "250 g bread flour",
+        "identityText": "bread flour",
+        "state": "other"
+      },
+      {
+        "rawText": "1 handful onions",
+        "identityText": "handful onions",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1  over-ripe plantain",
+        "identityText": "over-ripe plantain",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:21:26.290Z",
+  "processGraph": {
+    "recipeName": "Plantain Pizza",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Dissolve the yeast in warm water and leave to stand for about 5 minutes.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "warm water for yeast activation"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "yeast",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "dissolve yeast in warm water"
+          },
+          {
+            "processId": "rest_meat",
+            "ingredients": [
+              "yeast",
+              "water"
+            ],
+            "durationMinutes": 5,
+            "notes": "let yeast mixture stand to activate"
+          }
+        ],
+        "outputDescription": "activated yeast mixture ready for dough"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Mix the oil, flour, salt, sugar and mashed plantain and pour in the dissolved yeast.",
+        "processes": [
+          {
+            "processId": "puree",
+            "ingredients": [
+              "plantain"
+            ],
+            "durationMinutes": null,
+            "notes": "mash plantain to smooth consistency"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "oil",
+              "bread flour",
+              "salt",
+              "sugar",
+              "plantain",
+              "yeast",
+              "water"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all dough ingredients"
+          }
+        ],
+        "outputDescription": "combined dough ingredients ready for kneading"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Knead the dough till its elastic which may take about 15-20 minutes by hand or 10 minutes in a mixer.",
+        "processes": [
+          {
+            "processId": "knead",
+            "ingredients": [
+              "bread flour",
+              "plantain",
+              "yeast",
+              "water",
+              "oil",
+              "salt",
+              "sugar"
+            ],
+            "durationMinutes": 17.5,
+            "notes": "knead until elastic, 15-20 min by hand or 10 min by mixer"
+          }
+        ],
+        "outputDescription": "elastic pizza dough ready for rising"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Coat a bowl lightly with oil and place the dough in it. Cover with a plastic wrap and leave to rise between 1.5 – 2 hours.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "lightly oil bowl"
+          },
+          {
+            "processId": "proof",
+            "ingredients": [
+              "bread flour",
+              "plantain",
+              "yeast",
+              "water",
+              "oil",
+              "salt",
+              "sugar"
+            ],
+            "durationMinutes": 105,
+            "notes": "let dough rise covered for 1.5-2 hours"
+          }
+        ],
+        "outputDescription": "risen dough doubled in size"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "While the dough is rising, heat up the oil for the sauce, fry the blended tomato and pepper, season and stir fry the beef in the tomato sauce. Set aside.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil for sauce"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "tomato",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "blend tomato and pepper for sauce"
+          },
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "tomato",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "fry blended tomato and pepper"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "tomato",
+              "bell pepper",
+              "seasoning cube"
+            ],
+            "durationMinutes": null,
+            "notes": "season the tomato sauce"
+          },
+          {
+            "processId": "stir_fry",
+            "ingredients": [
+              "beef"
+            ],
+            "durationMinutes": null,
+            "notes": "stir fry beef in the tomato sauce"
+          }
+        ],
+        "outputDescription": "cooked beef in seasoned tomato sauce ready for topping"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "When the dough rises, divide into two. Sprinkle some flour on a flat surface and with a rolling pin, flatten out the dough but not excessively.",
+        "processes": [
+          {
+            "processId": "quarter",
+            "ingredients": [
+              "bread flour",
+              "plantain",
+              "yeast",
+              "water",
+              "oil",
+              "salt",
+              "sugar"
+            ],
+            "durationMinutes": null,
+            "notes": "divide risen dough into two portions"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "bread flour"
+            ],
+            "durationMinutes": null,
+            "notes": "dust work surface with flour"
+          },
+          {
+            "processId": "roll",
+            "ingredients": [
+              "bread flour",
+              "plantain",
+              "yeast",
+              "water",
+              "oil",
+              "salt",
+              "sugar"
+            ],
+            "durationMinutes": null,
+            "notes": "flatten dough with rolling pin, not excessively"
+          }
+        ],
+        "outputDescription": "two flattened pizza dough portions ready for shaping"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Cut the dough into your desired shape, rub some oil on it and spread your sauce and toppings on it and set aside.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "bread flour",
+              "plantain",
+              "yeast",
+              "water",
+              "oil",
+              "salt",
+              "sugar"
+            ],
+            "durationMinutes": null,
+            "notes": "cut dough into desired pizza shape"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "rub oil on shaped dough"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "tomato",
+              "bell pepper",
+              "beef"
+            ],
+            "durationMinutes": null,
+            "notes": "spread sauce and toppings on pizza"
+          }
+        ],
+        "outputDescription": "assembled pizzas with sauce and toppings ready for baking"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Heat up your oven to 350 F and place your pizza dough on a lightly oiled foil pan and bake for 12-15 mins. Serve warm",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheat oven to 350°F"
+          },
+          {
+            "processId": "coat",
+            "ingredients": [
+              "oil"
+            ],
+            "durationMinutes": null,
+            "notes": "lightly oil foil pan"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "bread flour",
+              "plantain",
+              "yeast",
+              "water",
+              "oil",
+              "salt",
+              "sugar",
+              "tomato",
+              "bell pepper",
+              "beef"
+            ],
+            "durationMinutes": 13.5,
+            "notes": "bake pizza for 12-15 minutes at 350°F"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "bread flour",
+              "plantain",
+              "yeast",
+              "water",
+              "oil",
+              "salt",
+              "sugar",
+              "tomato",
+              "bell pepper",
+              "beef"
+            ],
+            "durationMinutes": null,
+            "notes": "serve warm"
+          }
+        ],
+        "outputDescription": "finished plantain pizza served warm"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 19,
+      "uniqueProcesses": [
+        "heat",
+        "mix",
+        "rest_meat",
+        "puree",
+        "knead",
+        "coat",
+        "proof",
+        "blend",
+        "pan_fry",
+        "season",
+        "stir_fry",
+        "quarter",
+        "sprinkle",
+        "roll",
+        "slice",
+        "spread",
+        "bake",
+        "plate"
+      ],
+      "estimatedTotalTime": 141
+    }
+  },
+  "components": [
+    {
+      "id": "comp_716300_step1",
+      "name": "activated yeast mixture ready for dough",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 177.441
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "rest_meat",
+          "processName": "Rest (Meat)",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 173.89218,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.1835314700000001,
+        "costPerG": 0.006806122448979593,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 8.87205,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716300_step2",
+      "name": "combined dough ingredients ready for kneading",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "oil",
+          "quantityG": 4.5
+        },
+        {
+          "ingredientId": "flour_bread",
+          "name": "bread flour",
+          "quantityG": 250
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 6
+        },
+        {
+          "ingredientId": "sugar",
+          "name": "sugar",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "yeast",
+          "name": "yeast",
+          "quantityG": 7.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 261.997,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.3847500000000004,
+        "costPerG": 0.009102203460344967,
+        "nutrition": {
+          "calories": 974.74,
+          "protein": 32.980000000000004,
+          "fat": 9.227469999999999,
+          "carbs": 186.5066,
+          "fiber": 8.0175,
+          "sugar": 2.8708,
+          "sodium": 2334.416,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716300_step3",
+      "name": "elastic pizza dough ready for rising",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "knead",
+          "processName": "Knead",
+          "yieldFactor": 1,
+          "durationMinutes": 17.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 17.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716300_step4",
+      "name": "risen dough doubled in size",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "proof",
+          "processName": "Proof",
+          "yieldFactor": 1.5,
+          "durationMinutes": 105,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 107
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716300_step5",
+      "name": "cooked beef in seasoned tomato sauce ready for topping",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stir_fry",
+          "processName": "Stir Fry",
+          "yieldFactor": 0.88,
+          "durationMinutes": 4,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 103.4466048,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.2750000000000001,
+        "costPerG": 0.012325199096336123,
+        "nutrition": {
+          "calories": 39,
+          "protein": 1.4849999999999999,
+          "fat": 0.44999999999999996,
+          "carbs": 9.045,
+          "fiber": 3.1500000000000004,
+          "sugar": 6.300000000000001,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 17.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716300_step6",
+      "name": "two flattened pizza dough portions ready for shaping",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "quarter",
+          "processName": "Quarter",
+          "yieldFactor": 0.99,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 4.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716300_step7",
+      "name": "assembled pizzas with sauce and toppings ready for baking",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ground_beef",
+          "name": "beef",
+          "quantityG": 225
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 278.9325,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.05,
+        "costPerG": 0.014519641848834395,
+        "nutrition": {
+          "calories": 571.5,
+          "protein": 38.63250000000001,
+          "fat": 45,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 150.75,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_716300_step8",
+      "name": "finished plantain pizza served warm",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 13.5,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 20.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 12.85053147,
+    "costPerServing": 4.28351049,
+    "totalPrepTime": 187,
+    "nutritionPerServing": {
+      "calories": 544.7133333333333,
+      "protein": 25.026833333333332,
+      "fat": 18.395823333333336,
+      "carbs": 68.77686666666666,
+      "fiber": 4.7325,
+      "sugar": 5.002933333333334,
+      "sodium": 856.1460166666666
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_716300_step1",
+        "name": "activated yeast mixture ready for dough",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716300_step2",
+        "name": "combined dough ingredients ready for kneading",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716300_step3",
+        "name": "elastic pizza dough ready for rising",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716300_step4",
+        "name": "risen dough doubled in size",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_716300_step5",
+        "name": "cooked beef in seasoned tomato sauce ready for topping",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_716300_step6",
+        "name": "two flattened pizza dough portions ready for shaping",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_716300_step7",
+        "name": "assembled pizzas with sauce and toppings ready for baking",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_716300_step8",
+        "name": "finished plantain pizza served warm",
+        "shelfLifeHours": 2
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_716300_step1",
+      "name": "activated yeast mixture ready for dough",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "mix",
+        "rest_meat"
+      ]
+    },
+    {
+      "componentId": "comp_716300_step2",
+      "name": "combined dough ingredients ready for kneading",
+      "shelfLifeHours": 24,
+      "processes": [
+        "puree",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_716300_step4",
+      "name": "risen dough doubled in size",
+      "shelfLifeHours": 2,
+      "processes": [
+        "coat",
+        "proof"
+      ]
+    },
+    {
+      "componentId": "comp_716300_step5",
+      "name": "cooked beef in seasoned tomato sauce ready for topping",
+      "shelfLifeHours": 48,
+      "processes": [
+        "heat",
+        "blend",
+        "pan_fry",
+        "season",
+        "stir_fry"
+      ]
+    },
+    {
+      "componentId": "comp_716300_step6",
+      "name": "two flattened pizza dough portions ready for shaping",
+      "shelfLifeHours": 24,
+      "processes": [
+        "quarter",
+        "sprinkle",
+        "roll"
+      ]
+    },
+    {
+      "componentId": "comp_716300_step7",
+      "name": "assembled pizzas with sauce and toppings ready for baking",
+      "shelfLifeHours": 2,
+      "processes": [
+        "slice",
+        "coat",
+        "spread"
+      ]
+    },
+    {
+      "componentId": "comp_716300_step8",
+      "name": "finished plantain pizza served warm",
+      "shelfLifeHours": 2,
+      "processes": [
+        "heat",
+        "coat",
+        "bake",
+        "plate"
+      ]
+    }
+  ]
+}

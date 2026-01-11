@@ -1,0 +1,1009 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_7ae7c3ad-7d0e-4c70-84d4-db4fbadd0475",
+  "name": "Heart Shaped Spinach Ravioli",
+  "source": "spoonacular",
+  "spoonacularId": 646549,
+  "image": "/images/recipes/646549.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cream",
+      "quantity": 1,
+      "unit": "Dash",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "leek",
+      "quantity": 22.25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ricotta cheese",
+      "quantity": 62,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 3,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spinach",
+      "quantity": 1,
+      "unit": "Bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "wonton wrapper",
+      "quantity": 1,
+      "unit": "pkg",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Lightly steam whole head of spinach. Wring it out. Chop it up.</li><li>Add leek, garlic, ricotta salt and pepper.</li><li>In a separate bowl beat egg with a dash of cream or milk.</li><li>Lay down one wonton wrapper.</li><li>Place 1/2 t. of filling in center.</li><li>Brush 4 edges with egg mixture.</li><li>Lay onother wrapper on top, push out air.</li><li>Cut with cookie cutter. -Make sure edges are sealed.</li><li>Lay in a bed of flour until ready to boil.</li><li>Boil for 5 minutes or until they float to the top. Strain.</li><li>Toss them in your favorite sauce.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 3,
+  "nutrition": {
+    "calories": 528.14,
+    "protein": 22.36,
+    "fat": 6.92,
+    "carbs": 93.42,
+    "fiber": 5.37,
+    "sugar": 0.9,
+    "saturatedFat": 2.72,
+    "sodium": 1181.42
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cream",
+      "displayName": "cream",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Dash cream",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  egg",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  garlic cloves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "leek",
+      "displayName": "leek",
+      "quantity": {
+        "originalQuantity": 22.25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 22.25,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "22.25 g leek",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ricotta",
+      "displayName": "ricotta",
+      "quantity": {
+        "originalQuantity": 62,
+        "originalUnit": "g",
+        "normalizedQuantityG": 62,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "62 g ricotta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 servings salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "spinach",
+      "displayName": "spinach",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Bunch spinach",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 7,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1 pkg wonton wrappers",
+        "identityText": "pkg wonton wrappers",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T22:26:43.941Z",
+  "processGraph": {
+    "recipeName": "Heart Shaped Spinach Ravioli",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Lightly steam whole head of spinach. Wring it out. Chop it up.",
+        "processes": [
+          {
+            "processId": "steam",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "lightly steam whole head"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "wring out excess water"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "chop up steamed spinach"
+          }
+        ],
+        "outputDescription": "steamed, drained, and chopped spinach"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add leek, garlic, ricotta salt and pepper.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "leek",
+              "garlic",
+              "ricotta cheese",
+              "salt and pepper",
+              "spinach"
+            ],
+            "durationMinutes": null,
+            "notes": "combine filling ingredients"
+          }
+        ],
+        "outputDescription": "mixed filling with spinach, leek, garlic, ricotta, salt and pepper"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "In a separate bowl beat egg with a dash of cream or milk.",
+        "processes": [
+          {
+            "processId": "whisk",
+            "ingredients": [
+              "egg",
+              "cream"
+            ],
+            "durationMinutes": null,
+            "notes": "beat egg with cream for egg wash"
+          }
+        ],
+        "outputDescription": "egg wash mixture"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Lay down one wonton wrapper.",
+        "processes": [],
+        "outputDescription": "wonton wrapper laid flat"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Place 1/2 t. of filling in center.",
+        "processes": [
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "wonton wrapper"
+            ],
+            "durationMinutes": null,
+            "notes": "place filling in center of wrapper"
+          }
+        ],
+        "outputDescription": "wonton wrapper with filling in center"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Brush 4 edges with egg mixture.",
+        "processes": [
+          {
+            "processId": "spread",
+            "ingredients": [
+              "wonton wrapper"
+            ],
+            "durationMinutes": null,
+            "notes": "brush edges with egg wash"
+          }
+        ],
+        "outputDescription": "wrapper with filling and egg-brushed edges"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Lay onother wrapper on top, push out air.",
+        "processes": [
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "wonton wrapper"
+            ],
+            "durationMinutes": null,
+            "notes": "seal ravioli and remove air"
+          }
+        ],
+        "outputDescription": "sealed ravioli with air removed"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Cut with cookie cutter. -Make sure edges are sealed.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "wonton wrapper"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into heart shape and ensure seal"
+          }
+        ],
+        "outputDescription": "heart-shaped ravioli with sealed edges"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Lay in a bed of flour until ready to boil.",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "wonton wrapper"
+            ],
+            "durationMinutes": null,
+            "notes": "dust with flour to prevent sticking"
+          }
+        ],
+        "outputDescription": "shaped ravioli dusted with flour, ready for cooking"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Boil for 5 minutes or until they float to the top. Strain.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "wonton wrapper"
+            ],
+            "durationMinutes": 5,
+            "notes": "cook until they float"
+          },
+          {
+            "processId": "strain",
+            "ingredients": [
+              "wonton wrapper"
+            ],
+            "durationMinutes": null,
+            "notes": "remove from boiling water"
+          }
+        ],
+        "outputDescription": "cooked ravioli, drained"
+      },
+      {
+        "stepNumber": 11,
+        "originalInstruction": "Toss them in your favorite sauce.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "wonton wrapper"
+            ],
+            "durationMinutes": null,
+            "notes": "combine with sauce"
+          }
+        ],
+        "outputDescription": "finished ravioli with sauce"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "steam",
+        "squeeze",
+        "chop",
+        "mix",
+        "whisk",
+        "stuff",
+        "spread",
+        "slice",
+        "coat",
+        "boil",
+        "strain",
+        "toss"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_646549_step1",
+      "name": "steamed, drained, and chopped spinach",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "spinach_bunch",
+          "name": "spinach",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "steamed"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.4,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 45.628800000000005,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.5004,
+        "costPerG": 0.07671470650115715,
+        "nutrition": {
+          "calories": 27.599999999999998,
+          "protein": 3.432,
+          "fat": 0.46799999999999997,
+          "carbs": 4.356,
+          "fiber": 2.64,
+          "sugar": 0.504,
+          "sodium": 94.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646549_step2",
+      "name": "mixed filling with spinach, leek, garlic, ricotta, salt and pepper",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "leek",
+          "name": "leek",
+          "quantityG": 22.25
+        },
+        {
+          "ingredientId": "ricotta",
+          "name": "ricotta cheese",
+          "quantityG": 62
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 3
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 87.25,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.6808649999999999,
+        "costPerG": 0.007803610315186246,
+        "nutrition": {
+          "calories": 121.4525,
+          "protein": 7.31495,
+          "fat": 8.114350000000002,
+          "carbs": 5.0443,
+          "fiber": 0.4005,
+          "sugar": 1.03515,
+          "sodium": 1219.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646549_step3",
+      "name": "egg wash mixture",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggs",
+          "name": "egg",
+          "quantityG": 50
+        },
+        {
+          "ingredientId": "cream",
+          "name": "cream",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "whisk",
+          "processName": "Whisk",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 51,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.3451666666666667,
+        "costPerG": 0.0067679738562091505,
+        "nutrition": {
+          "calories": 74.9,
+          "protein": 6.3284,
+          "fat": 5.116,
+          "carbs": 0.38839999999999997,
+          "fiber": 0,
+          "sugar": 0.2142,
+          "sodium": 71.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646549_step4",
+      "name": "wonton wrapper laid flat",
+      "stepNumber": 4,
+      "sourceIngredients": [],
+      "processes": [],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 0
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_646549_step5",
+      "name": "wonton wrapper with filling in center",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "wonton_wrapper",
+          "name": "wonton wrapper",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.3,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.01,
+        "costPerG": 0.007692307692307692,
+        "nutrition": {
+          "calories": 2.91,
+          "protein": 0.098,
+          "fat": 0.015,
+          "carbs": 0.579,
+          "fiber": 0.018000000000000002,
+          "sugar": 0,
+          "sodium": 5.72,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646549_step6",
+      "name": "wrapper with filling and egg-brushed edges",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_646549_step7",
+      "name": "sealed ravioli with air removed",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646549_step8",
+      "name": "heart-shaped ravioli with sealed edges",
+      "stepNumber": 8,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646549_step9",
+      "name": "shaped ravioli dusted with flour, ready for cooking",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646549_step10",
+      "name": "cooked ravioli, drained",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "strain",
+          "processName": "Strain",
+          "yieldFactor": 0.6,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_646549_step11",
+      "name": "finished ravioli with sauce",
+      "stepNumber": 11,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 4.986431666666666,
+    "costPerServing": 1.6621438888888889,
+    "totalPrepTime": 38,
+    "nutritionPerServing": {
+      "calories": 80.58749999999999,
+      "protein": 5.93645,
+      "fat": 4.587783333333333,
+      "carbs": 4.559233333333334,
+      "fiber": 1.0895,
+      "sugar": 0.6177833333333334,
+      "sodium": 464.25333333333333
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_646549_step1",
+        "name": "steamed, drained, and chopped spinach",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_646549_step2",
+        "name": "mixed filling with spinach, leek, garlic, ricotta, salt and pepper",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_646549_step3",
+        "name": "egg wash mixture",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_646549_step5",
+        "name": "wonton wrapper with filling in center",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_646549_step7",
+        "name": "sealed ravioli with air removed",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_646549_step8",
+        "name": "heart-shaped ravioli with sealed edges",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_646549_step9",
+        "name": "shaped ravioli dusted with flour, ready for cooking",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_646549_step10",
+        "name": "cooked ravioli, drained",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_646549_step1",
+      "name": "steamed, drained, and chopped spinach",
+      "shelfLifeHours": 48,
+      "processes": [
+        "steam",
+        "squeeze",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_646549_step10",
+      "name": "cooked ravioli, drained",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "strain"
+      ]
+    }
+  ]
+}

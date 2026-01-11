@@ -1,0 +1,948 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_e4d5b286-1e94-4336-bc8f-ef6da0875cc4",
+  "name": "Swiss Chard Wraps",
+  "source": "spoonacular",
+  "spoonacularId": 662670,
+  "image": "/images/recipes/662670.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "swiss chard leaves",
+      "quantity": 6,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "orange cauliflower",
+      "quantity": 1,
+      "unit": "small head",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1.5,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "pinch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil",
+      "quantity": 1,
+      "unit": "sprig",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "avocado",
+      "quantity": 1,
+      "unit": "medium",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "trader joe's spicy peanut vinaigrette",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Chop off the stems of the swiss chard at the point where it meets the leaf. You could stem the swiss chard entirely. I like leaving a bit of stem with the leaves to give better structure to the wraps.\nChop the cauliflower into small pieces and pulse them in a food processor until it looks like rice. I usually pulse the cauliflower florets and the stalk together.\nPlace the olive oil in a saut pan over medium-high heat. Once the pan is hot, add the garlic and let it fry for about a minute or two, or until the garlic starts to brown. Add the pulsed cauliflower rice and cook it for about 2-3 minutes. The cauliflower should turn into a vibrant yellow-orange color when it is cooked. Add a pinch of salt and chopped basil to the cauliflower and stir.\nSpiralize the zucchini with Blade B to create zucchini noodles. If you do not have a spiralizer, just create zucchini ribbons with a vegetable peeler.\nTo assemble the wraps, place a large leaf flat down. Add a bit of sauted cauliflower, zucchini noodles, red pepper, and avocado along the swiss chard stalk. Drizzle a bit of vinaigrette on top of the vegetables and wrap everything up.\nEnjoy these wraps as a side to your favorite protein! Feel free to dip these wraps in more sauce.\nThese wraps are best consumed when they are freshly made. Refrigerate any leftovers in an airtight container.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 137.21,
+    "protein": 3.61,
+    "fat": 11.2,
+    "carbs": 8.63,
+    "fiber": 4.43,
+    "sugar": 2.75,
+    "saturatedFat": 1.64,
+    "sodium": 116.19
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 80,
+    "hasUnknownIngredients": true,
+    "unknownCount": 2,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "orange cauliflower",
+        "identity": "orange cauliflower",
+        "issue": "no_match_found"
+      },
+      {
+        "raw": "trader joe's spicy peanut vinaigrette",
+        "identity": "trader joe's spicy peanut vinaigrette",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1.5,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 20,
+        "normalizedQuantityMl": 22.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1.5 Tbsps olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 pinch salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 sprig basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium zucchini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "avocado",
+      "displayName": "avocado",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 medium avocado",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 7,
+    "unmatched": 3,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "6 large swiss chard leaves",
+        "identityText": "swiss chard leaves",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 small head orange cauliflower",
+        "identityText": "head orange cauliflower",
+        "state": "fresh"
+      },
+      {
+        "rawText": "3 Tbsps trader joe's spicy peanut vinaigrette",
+        "identityText": "trader joe's spicy peanut vinaigrette",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:58:20.364Z",
+  "processGraph": {
+    "recipeName": "Swiss Chard Wraps",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Chop off the stems of the swiss chard at the point where it meets the leaf. You could stem the swiss chard entirely. I like leaving a bit of stem with the leaves to give better structure to the wraps.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "swiss chard leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "remove stems at leaf junction, leaving some stem for structure"
+          }
+        ],
+        "outputDescription": "swiss chard leaves with stems partially removed"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Chop the cauliflower into small pieces and pulse them in a food processor until it looks like rice. I usually pulse the cauliflower florets and the stalk together.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "orange cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "cut into small pieces including florets and stalk"
+          },
+          {
+            "processId": "blend",
+            "ingredients": [
+              "orange cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "pulse in food processor until rice-like texture"
+          }
+        ],
+        "outputDescription": "cauliflower processed into rice-like pieces"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place the olive oil in a saut pan over medium-high heat. Once the pan is hot, add the garlic and let it fry for about a minute or two, or until the garlic starts to brown. Add the pulsed cauliflower rice and cook it for about 2-3 minutes. The cauliflower should turn into a vibrant yellow-orange color when it is cooked. Add a pinch of salt and chopped basil to the cauliflower and stir.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat oil in sauté pan over medium-high heat"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": 2,
+            "notes": "fry until garlic starts to brown"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "orange cauliflower"
+            ],
+            "durationMinutes": 3,
+            "notes": "cook until vibrant yellow-orange color"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "chop basil before adding"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "orange cauliflower"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and chopped basil"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "orange cauliflower",
+              "salt",
+              "basil"
+            ],
+            "durationMinutes": null,
+            "notes": "stir to combine"
+          }
+        ],
+        "outputDescription": "sautéed cauliflower rice with garlic, salt, and basil"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Spiralize the zucchini with Blade B to create zucchini noodles. If you do not have a spiralizer, just create zucchini ribbons with a vegetable peeler.",
+        "processes": [
+          {
+            "processId": "julienne",
+            "ingredients": [
+              "zucchini"
+            ],
+            "durationMinutes": null,
+            "notes": "spiralize into noodles or create ribbons with peeler"
+          }
+        ],
+        "outputDescription": "zucchini cut into noodle or ribbon shapes"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "To assemble the wraps, place a large leaf flat down. Add a bit of sauted cauliflower, zucchini noodles, red pepper, and avocado along the swiss chard stalk. Drizzle a bit of vinaigrette on top of the vegetables and wrap everything up.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of red pepper for assembly"
+          },
+          {
+            "processId": "slice",
+            "ingredients": [
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "implied prep of avocado for assembly"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "swiss chard leaves",
+              "orange cauliflower",
+              "zucchini",
+              "bell pepper",
+              "avocado"
+            ],
+            "durationMinutes": null,
+            "notes": "arrange ingredients on swiss chard leaf"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "trader joe's spicy peanut vinaigrette"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle vinaigrette over vegetables"
+          },
+          {
+            "processId": "roll",
+            "ingredients": [
+              "swiss chard leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "wrap everything up in the leaf"
+          }
+        ],
+        "outputDescription": "completed swiss chard wraps with all fillings"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Enjoy these wraps as a side to your favorite protein! Feel free to dip these wraps in more sauce.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "swiss chard wraps"
+            ],
+            "durationMinutes": null,
+            "notes": "serve as side dish"
+          }
+        ],
+        "outputDescription": "plated wraps ready to serve"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "These wraps are best consumed when they are freshly made. Refrigerate any leftovers in an airtight container.",
+        "processes": [
+          {
+            "processId": "cool",
+            "ingredients": [
+              "swiss chard wraps"
+            ],
+            "durationMinutes": null,
+            "notes": "refrigerate leftovers in airtight container"
+          }
+        ],
+        "outputDescription": "stored leftovers"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 15,
+      "uniqueProcesses": [
+        "trim",
+        "chop",
+        "blend",
+        "heat",
+        "saute",
+        "season",
+        "mix",
+        "julienne",
+        "slice",
+        "plate",
+        "sprinkle",
+        "roll",
+        "cool"
+      ],
+      "estimatedTotalTime": 20
+    }
+  },
+  "components": [
+    {
+      "id": "comp_662670_step1",
+      "name": "swiss chard leaves with stems partially removed",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "swiss_chard",
+          "name": "swiss chard leaves",
+          "quantityG": 7.800000000000001
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 7.41,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.07129200000000001,
+        "costPerG": 0.009621052631578949,
+        "nutrition": {
+          "calories": 1.4820000000000002,
+          "protein": 0.14040000000000002,
+          "fat": 0.015600000000000003,
+          "carbs": 0.2917200000000001,
+          "fiber": 0.12480000000000002,
+          "sugar": 0.08580000000000002,
+          "sodium": 16.614000000000004,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662670_step2",
+      "name": "cauliflower processed into rice-like pieces",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cauliflower",
+          "name": "orange cauliflower",
+          "quantityG": 125.99999999999999
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "blend",
+          "processName": "Blend",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 121.01039999999998,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.567,
+        "costPerG": 0.004685547688463141,
+        "nutrition": {
+          "calories": 31.499999999999993,
+          "protein": 2.4191999999999996,
+          "fat": 0.35279999999999995,
+          "carbs": 6.262199999999998,
+          "fiber": 2.5199999999999996,
+          "sugar": 2.4065999999999996,
+          "sodium": 37.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662670_step3",
+      "name": "sautéed cauliflower rice with garlic, salt, and basil",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 20.25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 14.332277295,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.216,
+        "costPerG": 0.015070877820327575,
+        "nutrition": {
+          "calories": 179.01000000000002,
+          "protein": 0,
+          "fat": 20.25,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.405,
+          "method": "raw"
+        },
+        "prepTimeMin": 12.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662670_step4",
+      "name": "zucchini cut into noodle or ribbon shapes",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 200
+        }
+      ],
+      "processes": [
+        {
+          "processId": "julienne",
+          "processName": "Julienne",
+          "yieldFactor": 0.95,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 190,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.7000000000000001,
+        "costPerG": 0.00368421052631579,
+        "nutrition": {
+          "calories": 34,
+          "protein": 2.42,
+          "fat": 0.64,
+          "carbs": 6.22,
+          "fiber": 2,
+          "sugar": 5,
+          "sodium": 16,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662670_step5",
+      "name": "completed swiss chard wraps with all fillings",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 195
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 191.02355999999997,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.6575000000000002,
+        "costPerG": 0.008676940163820632,
+        "nutrition": {
+          "calories": 50.699999999999996,
+          "protein": 1.9304999999999999,
+          "fat": 0.585,
+          "carbs": 11.7585,
+          "fiber": 4.095,
+          "sugar": 8.19,
+          "sodium": 7.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 9.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_662670_step6",
+      "name": "plated wraps ready to serve",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_662670_step7",
+      "name": "stored leftovers",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 30
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 4.080892,
+    "costPerServing": 0.6801486666666667,
+    "totalPrepTime": 64,
+    "nutritionPerServing": {
+      "calories": 53.632000000000005,
+      "protein": 1.3402666666666665,
+      "fat": 3.6829,
+      "carbs": 4.952536666666666,
+      "fiber": 1.5336333333333332,
+      "sugar": 2.642333333333333,
+      "sodium": 78.16983333333333
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_662670_step1",
+        "name": "swiss chard leaves with stems partially removed",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_662670_step2",
+        "name": "cauliflower processed into rice-like pieces",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_662670_step3",
+        "name": "sautéed cauliflower rice with garlic, salt, and basil",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_662670_step4",
+        "name": "zucchini cut into noodle or ribbon shapes",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_662670_step5",
+        "name": "completed swiss chard wraps with all fillings",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_662670_step7",
+        "name": "stored leftovers",
+        "shelfLifeHours": 96
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_662670_step2",
+      "name": "cauliflower processed into rice-like pieces",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "blend"
+      ]
+    },
+    {
+      "componentId": "comp_662670_step3",
+      "name": "sautéed cauliflower rice with garlic, salt, and basil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "saute",
+        "saute",
+        "chop",
+        "season",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_662670_step5",
+      "name": "completed swiss chard wraps with all fillings",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "slice",
+        "plate",
+        "sprinkle",
+        "roll"
+      ]
+    }
+  ]
+}

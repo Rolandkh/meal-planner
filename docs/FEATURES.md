@@ -805,10 +805,24 @@ location.reload();
 - Multi-device sync
 - Cloud backup
 
-**Usage Metering:**
-- Free tier: 4 generations/month
-- Paid tier: unlimited
-- Track usage across devices
+**Usage Metering & Subscription Tiers:**
+
+| Feature | Free Trial | Pro ($15/mo) | Ultra ($30/mo) |
+|---------|------------|--------------|----------------|
+| Meal generations | 5 total | 8/month | Unlimited |
+| Recipe imports | 3 total | 8/month | Unlimited |
+| Voice conversations | 5×10min | 20/month | Unlimited |
+| Single-day regen | 2 total | 4/month | Unlimited |
+| History retention | 1 week | 4 weeks | 12 weeks |
+| Diet profiles | Basic 5 | All 17 | 17 + custom |
+| Multi-profile gen | ❌ | ❌ | ✅ |
+| Receipt scanning | ❌ | ❌ | ✅ |
+| Prep planning | ❌ | Basic | Advanced |
+
+- Free trial: 1 month, limited features
+- Pro tier: Regular home cook, 1-2 person household
+- Ultra tier: Serious planners, families with dietary conflicts
+- Track usage across devices via Firebase
 
 **Benefits:**
 - Unlimited storage
@@ -842,6 +856,29 @@ location.reload();
 - Offline mode
 - Push notifications
 
+**Voice Interface:**
+- Speech-to-text (Deepgram or on-device)
+- Text-to-speech (Google or on-device)
+- Full voice conversations with Vanessa
+- Hands-free meal prep guidance
+
+**Image Processing:**
+- Receipt scanning for inventory updates
+- Fridge/pantry photos for initial inventory
+- Recipe photos for imports
+
+---
+
+## Subscription Economics
+
+| Tier | Price | API Cost | App Store (15%) | Profit | Margin |
+|------|-------|----------|-----------------|--------|--------|
+| Free Trial | $0 | ~$0.94 | $0 | -$0.94 | - |
+| Pro | $15 | ~$2.81 | $2.25 | $9.94 | 66% |
+| Ultra | $30 | ~$5.90 | $4.50 | $19.60 | 65% |
+
+*Costs based on typical/heavy usage patterns*
+
 ---
 
 ## Feature Comparison
@@ -869,4 +906,4 @@ location.reload();
 
 ---
 
-**Last Updated:** January 10, 2026
+**Last Updated:** January 11, 2026

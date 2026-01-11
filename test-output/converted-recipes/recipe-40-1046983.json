@@ -1,0 +1,907 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_bd326ee7-42ea-47c0-81fc-a30546135ee5",
+  "name": "Excellent No Fail and Easy Keto Zucchini Lasagna",
+  "source": "spoonacular",
+  "spoonacularId": 1046983,
+  "image": "/images/recipes/1046983.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "basil",
+      "quantity": 6,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground turkey",
+      "quantity": 680.389,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mozzarella cheese",
+      "quantity": 340.194,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan",
+      "quantity": 25,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 15,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ricotta cheese",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sugar",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato sauce",
+      "quantity": 793.787,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 4,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Instructions\n\n\n\nPreheat the oven to 375F. Slice the zucchini lengthwise and lay it flat on a cookie sheet. Bake in the oven for 15 minutes. This is very important in order to bake out most of the liquid.\n\n\nIn a medium saucepan, saut the onion and bell pepper. Add in the ground turkey and cook thoroughly. Mix in the tomato sauce and seasonings. Turn the heat to low and allow it to simmer for 5 minutes.\n\n\nIn a separate bowl, mix together the ingredients for your cheese mixture and set aside. In a 9 x 13 baking dish, layer the bottom with zucchini noodles. Spread the cheese mixture over the zucchini and add a layer of meat sauce. Repeat these steps to create the layers for your zucchini lasagna. Top with mozzarella cheese and cover the baking dish with foil.\n\n\nBake the zucchini lasagna in the oven for 30 minutes. Remove the foil and then cook an additional 10 minutes. Remove from the oven and allow to cool for 5 minutes before serving.",
+  "prepTime": 20,
+  "cookTime": 40,
+  "servings": 6,
+  "nutrition": {
+    "calories": 522.5,
+    "protein": 53.51,
+    "fat": 26.36,
+    "carbs": 21.29,
+    "fiber": 5.07,
+    "sugar": 13.24,
+    "saturatedFat": 14.83,
+    "sodium": 1186.96
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [
+      "gluten free",
+      "ketogenic"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": "g",
+        "normalizedQuantityG": 6,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 g basil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "turkey",
+      "displayName": "turkey",
+      "quantity": {
+        "originalQuantity": 680.389,
+        "originalUnit": "g",
+        "normalizedQuantityG": 680.389,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "680.389 g ground turkey",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mozzarella_cheese",
+      "displayName": "mozzarella cheese",
+      "quantity": {
+        "originalQuantity": 340.194,
+        "originalUnit": "g",
+        "normalizedQuantityG": 340.194,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "340.194 g mozzarella cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 25,
+        "originalUnit": "g",
+        "normalizedQuantityG": 25,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "25 g parmesan",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 15,
+        "originalUnit": "g",
+        "normalizedQuantityG": 15,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "15 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 5
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 tsp bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ricotta",
+      "displayName": "ricotta",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "425.243 g ricotta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sugar",
+      "displayName": "sugar",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp sugar",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato_sauce",
+      "displayName": "tomato sauce",
+      "quantity": {
+        "originalQuantity": 793.787,
+        "originalUnit": "g",
+        "normalizedQuantityG": 793.787,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "793.787 g tomato sauce",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 large zucchini",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 13,
+    "matched": 13,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:32:55.578Z",
+  "processGraph": {
+    "recipeName": "Excellent No Fail and Easy Keto Zucchini Lasagna",
+    "processSteps": [
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Preheat the oven to 375F. Slice the zucchini lengthwise and lay it flat on a cookie sheet. Bake in the oven for 15 minutes. This is very important in order to bake out most of the liquid.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "zucchini"
+            ],
+            "durationMinutes": null,
+            "notes": "slice lengthwise"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "zucchini"
+            ],
+            "durationMinutes": 15,
+            "notes": "at 375F to remove liquid"
+          }
+        ],
+        "outputDescription": "zucchini sliced lengthwise and partially dehydrated"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "In a medium saucepan, sauté the onion and bell pepper. Add in the ground turkey and cook thoroughly. Mix in the tomato sauce and seasonings. Turn the heat to low and allow it to simmer for 5 minutes.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "in medium saucepan"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "ground turkey"
+            ],
+            "durationMinutes": null,
+            "notes": "cook thoroughly"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "tomato sauce",
+              "basil",
+              "parsley",
+              "sugar",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add seasonings to meat mixture"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "onion",
+              "bell pepper",
+              "ground turkey",
+              "tomato sauce",
+              "basil",
+              "parsley",
+              "sugar",
+              "pepper"
+            ],
+            "durationMinutes": 5,
+            "notes": "on low heat"
+          }
+        ],
+        "outputDescription": "cooked meat sauce with vegetables and seasonings"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "In a separate bowl, mix together the ingredients for your cheese mixture and set aside. In a 9 x 13 baking dish, layer the bottom with zucchini noodles. Spread the cheese mixture over the zucchini and add a layer of meat sauce. Repeat these steps to create the layers for your zucchini lasagna. Top with mozzarella cheese and cover the baking dish with foil.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "ricotta cheese",
+              "parmesan"
+            ],
+            "durationMinutes": null,
+            "notes": "cheese mixture in separate bowl"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "zucchini"
+            ],
+            "durationMinutes": null,
+            "notes": "layer bottom of baking dish"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "ricotta cheese",
+              "parmesan"
+            ],
+            "durationMinutes": null,
+            "notes": "cheese mixture over zucchini"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "ground turkey",
+              "tomato sauce",
+              "onion",
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "meat sauce layer"
+          },
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "mozzarella cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "top with mozzarella and cover with foil"
+          }
+        ],
+        "outputDescription": "assembled lasagna with alternating layers of zucchini, cheese mixture, and meat sauce, topped with mozzarella and covered"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Bake the zucchini lasagna in the oven for 30 minutes. Remove the foil and then cook an additional 10 minutes. Remove from the oven and allow to cool for 5 minutes before serving.",
+        "processes": [
+          {
+            "processId": "bake",
+            "ingredients": [
+              "zucchini",
+              "ricotta cheese",
+              "parmesan",
+              "mozzarella cheese",
+              "ground turkey",
+              "tomato sauce",
+              "onion",
+              "bell pepper"
+            ],
+            "durationMinutes": 30,
+            "notes": "covered with foil"
+          },
+          {
+            "processId": "bake",
+            "ingredients": [
+              "zucchini",
+              "ricotta cheese",
+              "parmesan",
+              "mozzarella cheese",
+              "ground turkey",
+              "tomato sauce",
+              "onion",
+              "bell pepper"
+            ],
+            "durationMinutes": 10,
+            "notes": "uncovered to brown top"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "zucchini",
+              "ricotta cheese",
+              "parmesan",
+              "mozzarella cheese",
+              "ground turkey",
+              "tomato sauce",
+              "onion",
+              "bell pepper"
+            ],
+            "durationMinutes": 5,
+            "notes": "rest before serving"
+          }
+        ],
+        "outputDescription": "fully cooked zucchini lasagna, cooled and ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 11,
+      "uniqueProcesses": [
+        "slice",
+        "bake",
+        "saute",
+        "mix",
+        "simmer",
+        "spread",
+        "sprinkle",
+        "cool"
+      ],
+      "estimatedTotalTime": 65
+    }
+  },
+  "components": [
+    {
+      "id": "comp_1046983_step2",
+      "name": "zucchini sliced lengthwise and partially dehydrated",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 1040
+        }
+      ],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "baked"
+        }
+      ],
+      "output": {
+        "quantityG": 866.3199999999999,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.64,
+        "costPerG": 0.004201680672268908,
+        "nutrition": {
+          "calories": 176.8,
+          "protein": 12.584,
+          "fat": 3.3280000000000003,
+          "carbs": 32.344,
+          "fiber": 10.4,
+          "sugar": 26,
+          "sodium": 83.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 17
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1046983_step3",
+      "name": "cooked meat sauce with vegetables and seasonings",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 3.1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 99.553275,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.52685,
+        "costPerG": 0.025381887235753922,
+        "nutrition": {
+          "calories": 60.806,
+          "protein": 1.6806900000000002,
+          "fat": 0.15930000000000002,
+          "carbs": 14.19693,
+          "fiber": 2.6151,
+          "sugar": 6.490200000000001,
+          "sodium": 6.124,
+          "method": "raw"
+        },
+        "prepTimeMin": 17
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1046983_step4",
+      "name": "assembled lasagna with alternating layers of zucchini, cheese mixture, and meat sauce, topped with mozzarella and covered",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "ricotta",
+          "name": "ricotta cheese",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "parmesan",
+          "name": "parmesan",
+          "quantityG": 25
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 611.2589016600002,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.551458,
+        "costPerG": 0.005810071624896226,
+        "nutrition": {
+          "calories": 837.9228200000001,
+          "protein": 56.819861800000005,
+          "fat": 61.65404140000001,
+          "carbs": 13.732387200000002,
+          "fiber": 0,
+          "sugar": 1.3481561000000002,
+          "sodium": 757.7041200000001,
+          "method": "raw"
+        },
+        "prepTimeMin": 5.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_1046983_step5",
+      "name": "fully cooked zucchini lasagna, cooled and ready to serve",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mozzarella_fresh",
+          "name": "mozzarella cheese",
+          "quantityG": 340.194
+        },
+        {
+          "ingredientId": "turkey",
+          "name": "ground turkey",
+          "quantityG": 680.389
+        },
+        {
+          "ingredientId": "tomato_sauce",
+          "name": "tomato sauce",
+          "quantityG": 793.787
+        }
+      ],
+      "processes": [
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "bake",
+          "processName": "Bake",
+          "yieldFactor": 0.85,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1310.882325,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 23.303306499999998,
+        "costPerG": 0.01777681036320327,
+        "nutrition": {
+          "calories": 2024.2918128000001,
+          "protein": 195.3055496,
+          "fat": 116.3804262,
+          "carbs": 49.6003383,
+          "fiber": 11.906805,
+          "sugar": 31.762815400000004,
+          "sodium": 6313.4616838,
+          "method": "raw"
+        },
+        "prepTimeMin": 45
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 38.012984499999995,
+    "costPerServing": 6.335497416666666,
+    "totalPrepTime": 84.5,
+    "nutritionPerServing": {
+      "calories": 521.3402721333334,
+      "protein": 44.54046523333333,
+      "fat": 30.293427933333334,
+      "carbs": 19.41805091666667,
+      "fiber": 4.340700833333334,
+      "sugar": 11.658618583333334,
+      "sodium": 1194.9319673
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_1046983_step2",
+        "name": "zucchini sliced lengthwise and partially dehydrated",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1046983_step3",
+        "name": "cooked meat sauce with vegetables and seasonings",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1046983_step4",
+        "name": "assembled lasagna with alternating layers of zucchini, cheese mixture, and meat sauce, topped with mozzarella and covered",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_1046983_step5",
+        "name": "fully cooked zucchini lasagna, cooled and ready to serve",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_1046983_step2",
+      "name": "zucchini sliced lengthwise and partially dehydrated",
+      "shelfLifeHours": 24,
+      "processes": [
+        "slice",
+        "bake"
+      ]
+    },
+    {
+      "componentId": "comp_1046983_step3",
+      "name": "cooked meat sauce with vegetables and seasonings",
+      "shelfLifeHours": 24,
+      "processes": [
+        "saute",
+        "saute",
+        "mix",
+        "simmer"
+      ]
+    },
+    {
+      "componentId": "comp_1046983_step4",
+      "name": "assembled lasagna with alternating layers of zucchini, cheese mixture, and meat sauce, topped with mozzarella and covered",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "spread",
+        "spread",
+        "spread",
+        "sprinkle"
+      ]
+    },
+    {
+      "componentId": "comp_1046983_step5",
+      "name": "fully cooked zucchini lasagna, cooled and ready to serve",
+      "shelfLifeHours": 72,
+      "processes": [
+        "bake",
+        "bake",
+        "cool"
+      ]
+    }
+  ]
+}

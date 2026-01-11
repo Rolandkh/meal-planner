@@ -1,0 +1,874 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_84391328-3dcd-42cb-aa05-1545b9a59688",
+  "name": "Amaranth and Roast Veggie Salad",
+  "source": "spoonacular",
+  "spoonacularId": 632269,
+  "image": "/images/recipes/632269.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "amaranth",
+      "quantity": 96.5,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil-infused olive oil",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pumpkin",
+      "quantity": 0.5,
+      "unit": "pkt",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "rocket leaves",
+      "quantity": 9,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "herbal salt",
+      "quantity": 2,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "punnet tomatoes",
+      "quantity": 0.5,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Cook the amaranth with about a cup of water until it reaches a sticky consistency</li><li>Cut the onion roughly into chunks</li><li>Add the onion and diced pumpkin to a tinfoil lined baking tray</li><li>Drizzled over the olive oil and sprinkle with the herbal salt and pepper</li><li>Put into a hot oven and roast until the edges of the pumpkin go crispy</li><li>Just before the veggies are done, throw in the baby tomatoes</li><li>Coat the veggies in the cooked amaranth</li><li>Tear a few rocket leaves</li><li>Toss together and there you have it, an unusual roast veggie salad!</li><li>Serve warm</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 2,
+  "nutrition": {
+    "calories": 360.99,
+    "protein": 9.32,
+    "fat": 18.02,
+    "carbs": 43.97,
+    "fiber": 6.82,
+    "sugar": 8.01,
+    "saturatedFat": 2.75,
+    "sodium": 214.87
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 servings basil-infused olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "canned_tomatoes",
+      "displayName": "canned tomatoes",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "0.5  punnet baby tomatoes",
+      "matchConfidence": 0.8
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 4,
+    "unmatched": 4,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "96.5 g amaranth",
+        "identityText": "amaranth",
+        "state": "fresh"
+      },
+      {
+        "rawText": "0.5 pkt pumpkin",
+        "identityText": "pkt pumpkin",
+        "state": "fresh"
+      },
+      {
+        "rawText": "9 servings rocket leaves",
+        "identityText": "rocket leaves",
+        "state": "fresh"
+      },
+      {
+        "rawText": "2 servings herbal salt",
+        "identityText": "herbal salt",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:42:14.548Z",
+  "processGraph": {
+    "recipeName": "Amaranth and Roast Veggie Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Cook the amaranth with about a cup of water until it reaches a sticky consistency",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "amaranth"
+            ],
+            "durationMinutes": null,
+            "notes": "cook with water until sticky consistency"
+          }
+        ],
+        "outputDescription": "amaranth cooked to sticky consistency"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Cut the onion roughly into chunks",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "cut roughly into chunks"
+          }
+        ],
+        "outputDescription": "onion cut into rough chunks"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the onion and diced pumpkin to a tinfoil lined baking tray",
+        "processes": [
+          {
+            "processId": "dice",
+            "ingredients": [
+              "pumpkin"
+            ],
+            "durationMinutes": null,
+            "notes": "implied dicing process for pumpkin"
+          }
+        ],
+        "outputDescription": "chopped onion and diced pumpkin on lined baking tray"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Drizzled over the olive oil and sprinkle with the herbal salt and pepper",
+        "processes": [
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "basil-infused olive oil",
+              "herbal salt"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle oil and sprinkle seasonings"
+          }
+        ],
+        "outputDescription": "vegetables drizzled with oil and seasoned"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Put into a hot oven and roast until the edges of the pumpkin go crispy",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "onion",
+              "pumpkin"
+            ],
+            "durationMinutes": null,
+            "notes": "roast until pumpkin edges are crispy"
+          }
+        ],
+        "outputDescription": "vegetables roasted with crispy pumpkin edges"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Just before the veggies are done, throw in the baby tomatoes",
+        "processes": [
+          {
+            "processId": "roast",
+            "ingredients": [
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "brief roasting of tomatoes added near end"
+          }
+        ],
+        "outputDescription": "all vegetables roasted together"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Coat the veggies in the cooked amaranth",
+        "processes": [
+          {
+            "processId": "coat",
+            "ingredients": [
+              "onion",
+              "pumpkin",
+              "tomatoes",
+              "amaranth"
+            ],
+            "durationMinutes": null,
+            "notes": "coat roasted vegetables with cooked amaranth"
+          }
+        ],
+        "outputDescription": "roasted vegetables coated with amaranth"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Tear a few rocket leaves",
+        "processes": [
+          {
+            "processId": "shred",
+            "ingredients": [
+              "rocket leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "tear rocket leaves by hand"
+          }
+        ],
+        "outputDescription": "rocket leaves torn into pieces"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Toss together and there you have it, an unusual roast veggie salad!",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "onion",
+              "pumpkin",
+              "tomatoes",
+              "amaranth",
+              "rocket leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all components together"
+          }
+        ],
+        "outputDescription": "complete salad with all ingredients combined"
+      },
+      {
+        "stepNumber": 10,
+        "originalInstruction": "Serve warm",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "onion",
+              "pumpkin",
+              "tomatoes",
+              "amaranth",
+              "rocket leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "serve while warm"
+          }
+        ],
+        "outputDescription": "salad plated and ready to serve warm"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 10,
+      "uniqueProcesses": [
+        "boil",
+        "chop",
+        "dice",
+        "sprinkle",
+        "roast",
+        "coat",
+        "shred",
+        "toss",
+        "plate"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_632269_step1",
+      "name": "amaranth cooked to sticky consistency",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_632269_step2",
+      "name": "onion cut into rough chunks",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 147,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.5005,
+        "costPerG": 0.017010204081632653,
+        "nutrition": {
+          "calories": 60,
+          "protein": 1.6500000000000001,
+          "fat": 0.15000000000000002,
+          "carbs": 14.01,
+          "fiber": 2.55,
+          "sugar": 6.36,
+          "sodium": 6,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_632269_step3",
+      "name": "chopped onion and diced pumpkin on lined baking tray",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pumpkin",
+          "name": "pumpkin",
+          "quantityG": 0.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.485,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.0025,
+        "costPerG": 0.005154639175257732,
+        "nutrition": {
+          "calories": 2.795,
+          "protein": 0.15115,
+          "fat": 0.24525,
+          "carbs": 0.05355000000000001,
+          "fiber": 0.03,
+          "sugar": 0.006999999999999999,
+          "sodium": 0.035,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_632269_step4",
+      "name": "vegetables drizzled with oil and seasoned",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "basil-infused olive oil",
+          "quantityG": 10
+        },
+        {
+          "ingredientId": "salt",
+          "name": "herbal salt",
+          "quantityG": 2
+        }
+      ],
+      "processes": [
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 12.24,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.20666666666666667,
+        "costPerG": 0.016884531590413945,
+        "nutrition": {
+          "calories": 88.4,
+          "protein": 0,
+          "fat": 10,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 775.36,
+          "method": "raw"
+        },
+        "prepTimeMin": 0.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_632269_step5",
+      "name": "vegetables roasted with crispy pumpkin edges",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 25
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_632269_step6",
+      "name": "all vegetables roasted together",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roast",
+          "processName": "Roast",
+          "yieldFactor": 0.75,
+          "durationMinutes": 25,
+          "nutritionMultiplier": "grilled"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 25
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_632269_step7",
+      "name": "roasted vegetables coated with amaranth",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "coat",
+          "processName": "Coat",
+          "yieldFactor": 1.15,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 2,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_632269_step8",
+      "name": "rocket leaves torn into pieces",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "arugula",
+          "name": "rocket leaves",
+          "quantityG": 180
+        }
+      ],
+      "processes": [
+        {
+          "processId": "shred",
+          "processName": "Shred",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 174.6,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 6.75,
+        "costPerG": 0.03865979381443299,
+        "nutrition": {
+          "calories": 45,
+          "protein": 4.644,
+          "fat": 1.1880000000000002,
+          "carbs": 6.57,
+          "fiber": 2.8800000000000003,
+          "sugar": 3.69,
+          "sodium": 48.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_632269_step9",
+      "name": "complete salad with all ingredients combined",
+      "stepNumber": 9,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 1
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_632269_step10",
+      "name": "salad plated and ready to serve warm",
+      "stepNumber": 10,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 11.055866666666667,
+    "costPerServing": 5.527933333333333,
+    "totalPrepTime": 73.5,
+    "nutritionPerServing": {
+      "calories": 103.75750000000001,
+      "protein": 3.496475,
+      "fat": 5.854625,
+      "carbs": 11.544075,
+      "fiber": 3.111,
+      "sugar": 5.8595,
+      "sodium": 416.53749999999997
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_632269_step1",
+        "name": "amaranth cooked to sticky consistency",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_632269_step2",
+        "name": "onion cut into rough chunks",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_632269_step3",
+        "name": "chopped onion and diced pumpkin on lined baking tray",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_632269_step5",
+        "name": "vegetables roasted with crispy pumpkin edges",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_632269_step6",
+        "name": "all vegetables roasted together",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_632269_step7",
+        "name": "roasted vegetables coated with amaranth",
+        "shelfLifeHours": 2
+      },
+      {
+        "id": "comp_632269_step8",
+        "name": "rocket leaves torn into pieces",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": []
+}

@@ -1,0 +1,1149 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_3dc4effb-cf13-402c-81b9-7dbd6468c707",
+  "name": "Moroccan Couscous and Chickpea Salad",
+  "source": "spoonacular",
+  "spoonacularId": 652423,
+  "image": "/images/recipes/652423.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "pepper",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chickpeas",
+      "quantity": 425.243,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cayenne",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cinnamon",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "couscous",
+      "quantity": 259.5,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground ginger",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "ground nutmeg",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 60,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pistachio nuts",
+      "quantity": 123,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "turmeric",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "vegetable broth",
+      "quantity": 352.5,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Heat broth and a teaspoon of salt and bring to a boil.</li><li>Place couscous in a bowl and add broth.  Cover bowl to let couscous absorb liquid.</li><li>After  5 minutes, remove cover and fluff couscous with a fork.</li><li>In a large bowl, add the chickpeas, pistachios, red peppers, green onions and parsley and mix well.</li><li>Add the zest and juice of the lemon and mix again.</li><li>Add the spice mixture over the couscous and mix well. Taste, and add salt if needed.</li><li>Let the salad marinate for an hour or so before serving.</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 483.46,
+    "protein": 13.96,
+    "fat": 25.22,
+    "carbs": 53.47,
+    "fiber": 8.86,
+    "sugar": 3.31,
+    "saturatedFat": 3.33,
+    "sodium": 638.24
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 93.8,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "pistachio nuts",
+        "identity": "pistachio nuts",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 2,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chickpeas",
+      "displayName": "chickpeas",
+      "quantity": {
+        "originalQuantity": 425.243,
+        "originalUnit": "g",
+        "normalizedQuantityG": 425.243,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "425.243 g chickpeas",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cayenne",
+      "displayName": "cayenne pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps cayenne",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cinnamon",
+      "displayName": "cinnamon",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps cinnamon",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Couscous",
+      "quantity": {
+        "originalQuantity": 259.5,
+        "originalUnit": "ml",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 259.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "259.5 ml couscous",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "ginger",
+      "displayName": "ginger",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "fresh",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.25 tsps ground ginger",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "nutmeg",
+      "displayName": "nutmeg",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [
+        "ground"
+      ],
+      "rawText": "0.25 tsps ground nutmeg",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  lemon",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 60,
+        "originalUnit": "g",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "60 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "turmeric",
+      "displayName": "turmeric",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps turmeric",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "vegetable_broth",
+      "displayName": "vegetable broth",
+      "quantity": {
+        "originalQuantity": 352.5,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 353,
+        "normalizedQuantityMl": 352.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "352.5 ml vegetable broth",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 16,
+    "matched": 15,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "123 g pistachio nuts",
+        "identityText": "pistachio nuts",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:59:40.280Z",
+  "processGraph": {
+    "recipeName": "Moroccan Couscous and Chickpea Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Heat broth and a teaspoon of salt and bring to a boil.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "vegetable broth",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "heating broth with salt"
+          },
+          {
+            "processId": "boil",
+            "ingredients": [
+              "vegetable broth",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "bringing to a boil"
+          }
+        ],
+        "outputDescription": "boiling seasoned vegetable broth"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Place couscous in a bowl and add broth. Cover bowl to let couscous absorb liquid.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "couscous",
+              "vegetable broth"
+            ],
+            "durationMinutes": null,
+            "notes": "combining couscous with hot broth"
+          }
+        ],
+        "outputDescription": "couscous covered and absorbing hot broth"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "After 5 minutes, remove cover and fluff couscous with a fork.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "couscous"
+            ],
+            "durationMinutes": 5,
+            "notes": "fluffing couscous with fork after absorption"
+          }
+        ],
+        "outputDescription": "fluffy, cooked couscous"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "In a large bowl, add the chickpeas, pistachios, red peppers, green onions and parsley and mix well.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "bell pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of red peppers"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "green onions"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of green onions"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "implied chopping of parsley"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chickpeas",
+              "pistachio nuts",
+              "bell pepper",
+              "green onions",
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all ingredients in large bowl"
+          }
+        ],
+        "outputDescription": "mixed salad base with chickpeas, nuts, vegetables, and herbs"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Add the zest and juice of the lemon and mix again.",
+        "processes": [
+          {
+            "processId": "zest",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "zesting lemon for outer peel"
+          },
+          {
+            "processId": "squeeze",
+            "ingredients": [
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "extracting lemon juice"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "chickpeas",
+              "pistachio nuts",
+              "bell pepper",
+              "green onions",
+              "parsley",
+              "lemon"
+            ],
+            "durationMinutes": null,
+            "notes": "incorporating lemon zest and juice"
+          }
+        ],
+        "outputDescription": "salad mixture with bright lemon flavor added"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Add the spice mixture over the couscous and mix well. Taste, and add salt if needed.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "pepper",
+              "cayenne",
+              "cinnamon",
+              "ground ginger",
+              "ground nutmeg",
+              "turmeric"
+            ],
+            "durationMinutes": null,
+            "notes": "implied mixing of spices into mixture"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "couscous",
+              "pepper",
+              "cayenne",
+              "cinnamon",
+              "ground ginger",
+              "ground nutmeg",
+              "turmeric"
+            ],
+            "durationMinutes": null,
+            "notes": "adding spice mixture to couscous"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "tasting and adjusting seasoning"
+          }
+        ],
+        "outputDescription": "seasoned couscous with spice mixture, adjusted to taste"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Let the salad marinate for an hour or so before serving.",
+        "processes": [
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "chickpeas",
+              "pistachio nuts",
+              "bell pepper",
+              "green onions",
+              "parsley",
+              "lemon",
+              "couscous",
+              "pepper",
+              "cayenne",
+              "cinnamon",
+              "ground ginger",
+              "ground nutmeg",
+              "turmeric",
+              "olive oil"
+            ],
+            "durationMinutes": 60,
+            "notes": "allowing flavors to meld together"
+          }
+        ],
+        "outputDescription": "fully marinated Moroccan couscous and chickpea salad ready to serve"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 12,
+      "uniqueProcesses": [
+        "heat",
+        "boil",
+        "mix",
+        "chop",
+        "zest",
+        "squeeze",
+        "season",
+        "marinate"
+      ],
+      "estimatedTotalTime": 75
+    }
+  },
+  "components": [
+    {
+      "id": "comp_652423_step1",
+      "name": "boiling seasoned vegetable broth",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "vegetable_broth",
+          "name": "vegetable broth",
+          "quantityG": 352.5
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 6
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 333.76349999999996,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.5337500000000002,
+        "costPerG": 0.004595319739875692,
+        "nutrition": {
+          "calories": 17.625,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 4.512,
+          "fiber": 0,
+          "sugar": 2.99625,
+          "sodium": 3735.48,
+          "method": "raw"
+        },
+        "prepTimeMin": 13
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652423_step2",
+      "name": "couscous covered and absorbing hot broth",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "couscous",
+          "name": "couscous",
+          "quantityG": 259.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 259.5,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.3355,
+        "costPerG": 0.009000000000000001,
+        "nutrition": {
+          "calories": 975.72,
+          "protein": 33.1122,
+          "fat": 1.6608,
+          "carbs": 200.93085000000002,
+          "fiber": 12.975000000000001,
+          "sugar": 0,
+          "sodium": 25.950000000000003,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652423_step3",
+      "name": "fluffy, cooked couscous",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652423_step4",
+      "name": "mixed salad base with chickpeas, nuts, vegetables, and herbs",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 105
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 98.82516,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8925000000000001,
+        "costPerG": 0.009031100986833717,
+        "nutrition": {
+          "calories": 27.3,
+          "protein": 1.0395,
+          "fat": 0.315,
+          "carbs": 6.3315,
+          "fiber": 2.205,
+          "sugar": 4.41,
+          "sodium": 4.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652423_step5",
+      "name": "salad mixture with bright lemon flavor added",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lemon",
+          "name": "lemon",
+          "quantityG": 80
+        }
+      ],
+      "processes": [
+        {
+          "processId": "zest",
+          "processName": "Zest",
+          "yieldFactor": 0.05,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "squeeze",
+          "processName": "Squeeze",
+          "yieldFactor": 0.35,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.36,
+        "costPerG": 0.2571428571428572,
+        "nutrition": {
+          "calories": 23.200000000000003,
+          "protein": 0.8800000000000001,
+          "fat": 0.24,
+          "carbs": 7.456,
+          "fiber": 2.2399999999999998,
+          "sugar": 2,
+          "sodium": 1.6,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652423_step6",
+      "name": "seasoned couscous with spice mixture, adjusted to taste",
+      "stepNumber": 6,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 2.1
+        },
+        {
+          "ingredientId": "cayenne",
+          "name": "cayenne",
+          "quantityG": 0.525
+        },
+        {
+          "ingredientId": "cinnamon",
+          "name": "cinnamon",
+          "quantityG": 0.525
+        },
+        {
+          "ingredientId": "ginger",
+          "name": "ground ginger",
+          "quantityG": 0.5
+        },
+        {
+          "ingredientId": "nutmeg_ground",
+          "name": "ground nutmeg",
+          "quantityG": 1.25
+        },
+        {
+          "ingredientId": "turmeric",
+          "name": "turmeric",
+          "quantityG": 1.05
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 6.069,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.5940617499999998,
+        "costPerG": 0.26265640962267256,
+        "nutrition": {
+          "calories": 18.91675,
+          "protein": 0.46650500000000006,
+          "fat": 0.7270025000000001,
+          "carbs": 3.4500949999999997,
+          "fiber": 1.4444250000000003,
+          "sugar": 0.4774475,
+          "sodium": 1.294,
+          "method": "raw"
+        },
+        "prepTimeMin": 4.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_652423_step7",
+      "name": "fully marinated Moroccan couscous and chickpea salad ready to serve",
+      "stepNumber": 7,
+      "sourceIngredients": [
+        {
+          "ingredientId": "chickpeas",
+          "name": "chickpeas",
+          "quantityG": 425.243
+        },
+        {
+          "ingredientId": "pistachios",
+          "name": "pistachio nuts",
+          "quantityG": 123
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 450
+        },
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 60
+        },
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 60,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1237.15515,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 80.09487125000001,
+        "costPerG": 0.06474116948872581,
+        "nutrition": {
+          "calories": 2615.0585199999996,
+          "protein": 72.6256298,
+          "fat": 188.17249370000002,
+          "carbs": 187.26693060000002,
+          "fiber": 58.66746800000001,
+          "sugar": 40.828464,
+          "sodium": 138.99701000000002,
+          "method": "raw"
+        },
+        "prepTimeMin": 60
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 86.81068300000001,
+    "costPerServing": 14.46844716666667,
+    "totalPrepTime": 97.5,
+    "nutritionPerServing": {
+      "calories": 612.9700450000001,
+      "protein": 18.02063913333333,
+      "fat": 31.852549366666665,
+      "carbs": 68.32456260000002,
+      "fiber": 12.921982166666666,
+      "sugar": 8.452026916666666,
+      "sodium": 651.2535016666667
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_652423_step1",
+        "name": "boiling seasoned vegetable broth",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_652423_step2",
+        "name": "couscous covered and absorbing hot broth",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652423_step3",
+        "name": "fluffy, cooked couscous",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652423_step4",
+        "name": "mixed salad base with chickpeas, nuts, vegetables, and herbs",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652423_step5",
+        "name": "salad mixture with bright lemon flavor added",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652423_step6",
+        "name": "seasoned couscous with spice mixture, adjusted to taste",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_652423_step7",
+        "name": "fully marinated Moroccan couscous and chickpea salad ready to serve",
+        "shelfLifeHours": 48
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_652423_step1",
+      "name": "boiling seasoned vegetable broth",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "boil"
+      ]
+    },
+    {
+      "componentId": "comp_652423_step4",
+      "name": "mixed salad base with chickpeas, nuts, vegetables, and herbs",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "chop",
+        "chop",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_652423_step5",
+      "name": "salad mixture with bright lemon flavor added",
+      "shelfLifeHours": 24,
+      "processes": [
+        "zest",
+        "squeeze",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_652423_step6",
+      "name": "seasoned couscous with spice mixture, adjusted to taste",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "mix",
+        "season"
+      ]
+    }
+  ]
+}

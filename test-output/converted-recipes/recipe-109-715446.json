@@ -1,0 +1,483 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_5046134b-32e0-40c3-992b-f306fbb8413b",
+  "name": "Slow Cooker Beef Stew",
+  "source": "spoonacular",
+  "spoonacularId": 715446,
+  "image": "/images/recipes/715446.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "beef broth",
+      "quantity": 411.068,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrots",
+      "quantity": 2,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery",
+      "quantity": 2,
+      "unit": "stalks",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cream of mushroom soup",
+      "quantity": 737.088,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "new potatoes",
+      "quantity": 10,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "small",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "dale's seasoning",
+      "quantity": 118.294,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "stew meat",
+      "quantity": 907.185,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 473.176,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<p>To get started, heat your slow cooker to low. Pour in the cream of mushroom soup, Dale's seasoning, water, and beef broth and stir until mixed well. Add in your stew meat, potatoes, onions, carrots, celery, and green onions. Stir well until covered and cook on low for 8 hours. You can add salt and pepper as desired, but the flavors and the Dale's marry together so well that you probably won’t need them.</p>",
+  "prepTime": 10,
+  "cookTime": 480,
+  "servings": 6,
+  "nutrition": {
+    "calories": 433.82,
+    "protein": 44.24,
+    "fat": 11.63,
+    "carbs": 40.53,
+    "fiber": 11.92,
+    "sugar": 3.49,
+    "saturatedFat": 4.47,
+    "sodium": 1253.65
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "dishTypes": [
+      "lunch",
+      "soup",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 80,
+    "hasUnknownIngredients": true,
+    "unknownCount": 2,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "dale's seasoning",
+        "identity": "dale's seasoning",
+        "issue": "no_match_found"
+      },
+      {
+        "raw": "stew meat",
+        "identity": "stew meat",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "beef_broth",
+      "displayName": "beef broth",
+      "quantity": {
+        "originalQuantity": 411.068,
+        "originalUnit": "g",
+        "normalizedQuantityG": 411.068,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "411.068 g beef broth",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 large carrots",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery_stalks",
+      "displayName": "celery stalks",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 stalks celery",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Cream of mushroom soup",
+      "quantity": {
+        "originalQuantity": 737.088,
+        "originalUnit": "g",
+        "normalizedQuantityG": 737.088,
+        "normalizedQuantityMl": null
+      },
+      "state": "canned",
+      "preparation": [],
+      "rawText": "737.088 g cream of mushroom soup",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  green onions",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "New potatoes",
+      "quantity": {
+        "originalQuantity": 10,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "10  new potatoes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 small onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 473.176,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 467,
+        "normalizedQuantityMl": 473.176
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "473.176 ml water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 8,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "118.294 ml dale's seasoning",
+        "identityText": "dale's seasoning",
+        "state": "fresh"
+      },
+      {
+        "rawText": "907.185 g stew meat",
+        "identityText": "stew meat",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:48:04.526Z",
+  "processGraph": {
+    "recipeName": "Slow Cooker Beef Stew",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "To get started, heat your slow cooker to low. Pour in the cream of mushroom soup, Dale's seasoning, water, and beef broth and stir until mixed well. Add in your stew meat, potatoes, onions, carrots, celery, and green onions. Stir well until covered and cook on low for 8 hours. You can add salt and pepper as desired, but the flavors and the Dale's marry together so well that you probably won't need them.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "heating slow cooker to low setting"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "cream of mushroom soup",
+              "dale's seasoning",
+              "water",
+              "beef broth"
+            ],
+            "durationMinutes": null,
+            "notes": "pouring and stirring liquid ingredients until mixed well"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "stew meat",
+              "new potatoes",
+              "small onion",
+              "carrots",
+              "celery",
+              "green onions"
+            ],
+            "durationMinutes": null,
+            "notes": "adding solid ingredients and stirring until covered"
+          },
+          {
+            "processId": "stew",
+            "ingredients": [
+              "stew meat",
+              "new potatoes",
+              "small onion",
+              "carrots",
+              "celery",
+              "green onions",
+              "cream of mushroom soup",
+              "dale's seasoning",
+              "water",
+              "beef broth"
+            ],
+            "durationMinutes": 480,
+            "notes": "slow cooking on low for 8 hours"
+          },
+          {
+            "processId": "season",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "optional addition of salt and pepper as desired"
+          }
+        ],
+        "outputDescription": "All ingredients combined in slow cooker and cooked for 8 hours until tender, creating a fully cooked beef stew"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 5,
+      "uniqueProcesses": [
+        "heat",
+        "mix",
+        "stew",
+        "season"
+      ],
+      "estimatedTotalTime": 490
+    }
+  },
+  "components": [
+    {
+      "id": "comp_715446_step1",
+      "name": "All ingredients combined in slow cooker and cooked for 8 hours until tender, creating a fully cooked beef stew",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cream_of_mushroom_soup",
+          "name": "cream of mushroom soup",
+          "quantityG": 737.088
+        },
+        {
+          "ingredientId": "seasoning",
+          "name": "dale's seasoning",
+          "quantityG": 118.294
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 473.176
+        },
+        {
+          "ingredientId": "beef_broth",
+          "name": "beef broth",
+          "quantityG": 411.068
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stew",
+          "processName": "Stew",
+          "yieldFactor": 0.88,
+          "durationMinutes": 480,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1530.258531648,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 12.765903519999998,
+        "costPerG": 0.008342318148196736,
+        "nutrition": {
+          "calories": 841.56102,
+          "protein": 49.9366178,
+          "fat": 27.501999799999997,
+          "carbs": 116.0820378,
+          "fiber": 14.841398,
+          "sugar": 3.6434551999999996,
+          "sodium": 6810.72506,
+          "method": "raw"
+        },
+        "prepTimeMin": 487.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 96.18058352,
+    "costPerServing": 16.030097253333334,
+    "totalPrepTime": 487.5,
+    "nutritionPerServing": {
+      "calories": 798.8284866666667,
+      "protein": 42.242180383333334,
+      "fat": 35.3382333,
+      "carbs": 81.78330629999999,
+      "fiber": 12.262399666666667,
+      "sugar": 6.8478091999999995,
+      "sodium": 1295.7298349999999
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_715446_step1",
+        "name": "All ingredients combined in slow cooker and cooked for 8 hours until tender, creating a fully cooked beef stew",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_715446_step1",
+      "name": "All ingredients combined in slow cooker and cooked for 8 hours until tender, creating a fully cooked beef stew",
+      "shelfLifeHours": 24,
+      "processes": [
+        "heat",
+        "mix",
+        "mix",
+        "stew",
+        "season"
+      ]
+    }
+  ]
+}

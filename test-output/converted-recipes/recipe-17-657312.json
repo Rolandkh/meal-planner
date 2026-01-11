@@ -1,0 +1,1113 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_0f351cf3-48f0-4d81-bb7e-1c58af25f3c7",
+  "name": "Pumpkin gnocchi with basil and Parmesan",
+  "source": "spoonacular",
+  "spoonacularId": 657312,
+  "image": "/images/recipes/657312.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "pumpkin",
+      "quantity": 1,
+      "unit": "kg",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggs",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pepper",
+      "quantity": 0.25,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil leaves",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "wheat flour",
+      "quantity": 250,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "corn flour",
+      "quantity": 250,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "grana padano cheese",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "basil leaves",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Separate the meat and chop the pumpkin into a puree.\nAdd eggs, stir.\nAdd salt, pepper and chopped basil.\nAdd flour and knead a soft dough. If the dough is too sticky, add more flour - the amount depends on the water content of the pumpkin.\nDivide the dough into equal rolls 3 cm thick and about 20 cm long.\nDivide and cut each roll into a 2 cm long pieces.\nCook the gnocchi in a large pot in plenty of salted water. Gnocchi are cooked when they rise to the surface. Remove them from the pot with a slotted spoon.\nPour hot olive oil over gnocchi or simply saut them in hot oil.\nServe sprinkled with cheese and fresh basil.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 610.55,
+    "protein": 22.55,
+    "fat": 25.36,
+    "carbs": 75.65,
+    "fiber": 4.71,
+    "sugar": 5.69,
+    "saturatedFat": 7.69,
+    "sodium": 700.26
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Pumpkin",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "kg",
+        "normalizedQuantityG": 1000,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 kg pumpkin",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggs",
+      "displayName": "eggs",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  eggs",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 3,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps sea salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "pepper",
+      "displayName": "pepper",
+      "quantity": {
+        "originalQuantity": 0.25,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 1.25
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.25 tsps pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings basil leaves",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "flour",
+      "displayName": "flour",
+      "quantity": {
+        "originalQuantity": 250,
+        "originalUnit": "g",
+        "normalizedQuantityG": 250,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "250 g wheat flour",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cornstarch",
+      "displayName": "cornstarch",
+      "quantity": {
+        "originalQuantity": 250,
+        "originalUnit": "g",
+        "normalizedQuantityG": 250,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "250 g corn flour",
+      "matchConfidence": 0.9500000000000001
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "6 servings olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings grana padano cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "basil",
+      "displayName": "basil",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings basil leaves",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 10,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:24:54.708Z",
+  "processGraph": {
+    "recipeName": "Pumpkin gnocchi with basil and Parmesan",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Separate the meat and chop the pumpkin into a puree.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "pumpkin"
+            ],
+            "durationMinutes": null,
+            "notes": "chop pumpkin meat"
+          },
+          {
+            "processId": "puree",
+            "ingredients": [
+              "pumpkin"
+            ],
+            "durationMinutes": null,
+            "notes": "process chopped pumpkin into puree"
+          }
+        ],
+        "outputDescription": "pumpkin puree ready for mixing"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add eggs, stir.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "pumpkin",
+              "eggs"
+            ],
+            "durationMinutes": null,
+            "notes": "combine eggs with pumpkin puree"
+          }
+        ],
+        "outputDescription": "pumpkin and egg mixture"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add salt, pepper and chopped basil.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "chop basil leaves"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "add salt and pepper"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all ingredients"
+          }
+        ],
+        "outputDescription": "seasoned pumpkin mixture with herbs"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Add flour and knead a soft dough. If the dough is too sticky, add more flour - the amount depends on the water content of the pumpkin.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "wheat flour",
+              "corn flour",
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "add both flours to mixture"
+          },
+          {
+            "processId": "knead",
+            "ingredients": [
+              "wheat flour",
+              "corn flour",
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "knead into soft dough, adjust flour as needed"
+          }
+        ],
+        "outputDescription": "soft gnocchi dough"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Divide the dough into equal rolls 3 cm thick and about 20 cm long.",
+        "processes": [
+          {
+            "processId": "roll",
+            "ingredients": [
+              "wheat flour",
+              "corn flour",
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "shape dough into rolls 3cm thick, 20cm long"
+          }
+        ],
+        "outputDescription": "dough shaped into long rolls"
+      },
+      {
+        "stepNumber": 6,
+        "originalInstruction": "Divide and cut each roll into a 2 cm long pieces.",
+        "processes": [
+          {
+            "processId": "slice",
+            "ingredients": [
+              "wheat flour",
+              "corn flour",
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "cut rolls into 2cm pieces"
+          }
+        ],
+        "outputDescription": "individual gnocchi pieces"
+      },
+      {
+        "stepNumber": 7,
+        "originalInstruction": "Cook the gnocchi in a large pot in plenty of salted water. Gnocchi are cooked when they rise to the surface. Remove them from the pot with a slotted spoon.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "wheat flour",
+              "corn flour",
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "cook in salted boiling water until they float"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "wheat flour",
+              "corn flour",
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "remove with slotted spoon"
+          }
+        ],
+        "outputDescription": "cooked gnocchi, drained"
+      },
+      {
+        "stepNumber": 8,
+        "originalInstruction": "Pour hot olive oil over gnocchi or simply saut them in hot oil.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heat olive oil"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "wheat flour",
+              "corn flour",
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves",
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "sauté gnocchi in hot oil or pour hot oil over"
+          }
+        ],
+        "outputDescription": "gnocchi finished with hot olive oil"
+      },
+      {
+        "stepNumber": 9,
+        "originalInstruction": "Serve sprinkled with cheese and fresh basil.",
+        "processes": [
+          {
+            "processId": "sprinkle",
+            "ingredients": [
+              "grana padano cheese",
+              "basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "top with cheese and fresh basil"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "wheat flour",
+              "corn flour",
+              "pumpkin",
+              "eggs",
+              "sea salt",
+              "pepper",
+              "basil leaves",
+              "olive oil",
+              "grana padano cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "serve the finished dish"
+          }
+        ],
+        "outputDescription": "plated gnocchi garnished with cheese and basil"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 13,
+      "uniqueProcesses": [
+        "chop",
+        "puree",
+        "mix",
+        "season",
+        "knead",
+        "roll",
+        "slice",
+        "boil",
+        "drain",
+        "heat",
+        "saute",
+        "sprinkle",
+        "plate"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_657312_step1",
+      "name": "pumpkin puree ready for mixing",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "pumpkin",
+          "name": "pumpkin",
+          "quantityG": 1000
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "puree",
+          "processName": "Puree",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 950.6,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5,
+        "costPerG": 0.005259835893120134,
+        "nutrition": {
+          "calories": 5590,
+          "protein": 302.3,
+          "fat": 490.5,
+          "carbs": 107.10000000000001,
+          "fiber": 60,
+          "sugar": 14,
+          "sodium": 70,
+          "method": "raw"
+        },
+        "prepTimeMin": 5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657312_step2",
+      "name": "pumpkin and egg mixture",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "eggs",
+          "name": "eggs",
+          "quantityG": 100
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 100,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.667,
+        "costPerG": 0.006670000000000001,
+        "nutrition": {
+          "calories": 143,
+          "protein": 12.6,
+          "fat": 9.51,
+          "carbs": 0.72,
+          "fiber": 0,
+          "sugar": 0.37,
+          "sodium": 142,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657312_step3",
+      "name": "seasoned pumpkin mixture with herbs",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "basil",
+          "name": "basil leaves",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 29.988,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.7896,
+        "costPerG": 0.026330532212885154,
+        "nutrition": {
+          "calories": 6.8999999999999995,
+          "protein": 0.945,
+          "fat": 0.192,
+          "carbs": 0.7949999999999999,
+          "fiber": 0.48,
+          "sugar": 0.09,
+          "sodium": 1.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 4.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657312_step4",
+      "name": "soft gnocchi dough",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "flour",
+          "name": "wheat flour",
+          "quantityG": 250
+        },
+        {
+          "ingredientId": "cornflour",
+          "name": "corn flour",
+          "quantityG": 250
+        },
+        {
+          "ingredientId": "salt",
+          "name": "sea salt",
+          "quantityG": 3
+        },
+        {
+          "ingredientId": "pepper",
+          "name": "pepper",
+          "quantityG": 0.525
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "knead",
+          "processName": "Knead",
+          "yieldFactor": 1,
+          "durationMinutes": 8,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 503.525,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.965000000000001,
+        "costPerG": 0.009860483590685669,
+        "nutrition": {
+          "calories": 911.31775,
+          "protein": 25.8795475,
+          "fat": 2.467115,
+          "carbs": 191.1107375,
+          "fiber": 6.882825,
+          "sugar": 0.6783600000000001,
+          "sodium": 1167.845,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657312_step5",
+      "name": "dough shaped into long rolls",
+      "stepNumber": 5,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "roll",
+          "processName": "Roll",
+          "yieldFactor": 1,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657312_step6",
+      "name": "individual gnocchi pieces",
+      "stepNumber": 6,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "slice",
+          "processName": "Slice",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657312_step7",
+      "name": "cooked gnocchi, drained",
+      "stepNumber": 7,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 11
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657312_step8",
+      "name": "gnocchi finished with hot olive oil",
+      "stepNumber": 8,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 99.96,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.28,
+        "costPerG": 0.012805122048819529,
+        "nutrition": {
+          "calories": 1060.8,
+          "protein": 0,
+          "fat": 120,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 2.4,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657312_step9",
+      "name": "plated gnocchi garnished with cheese and basil",
+      "stepNumber": 9,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parmesan_cheese",
+          "name": "grana padano cheese",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "sprinkle",
+          "processName": "Sprinkle",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 122.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.42,
+        "costPerG": 0.027941176470588233,
+        "nutrition": {
+          "calories": 470.4,
+          "protein": 42.9,
+          "fat": 30.995999999999995,
+          "carbs": 3.864,
+          "fiber": 0,
+          "sugar": 0.96,
+          "sodium": 1922.3999999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 16.1216,
+    "costPerServing": 2.6869333333333336,
+    "totalPrepTime": 48,
+    "nutritionPerServing": {
+      "calories": 1363.7362916666666,
+      "protein": 64.10409125,
+      "fat": 108.94418583333332,
+      "carbs": 50.59828958333333,
+      "fiber": 11.227137499999998,
+      "sugar": 2.68306,
+      "sodium": 550.9741666666667
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_657312_step1",
+        "name": "pumpkin puree ready for mixing",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_657312_step2",
+        "name": "pumpkin and egg mixture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657312_step3",
+        "name": "seasoned pumpkin mixture with herbs",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657312_step4",
+        "name": "soft gnocchi dough",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657312_step5",
+        "name": "dough shaped into long rolls",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657312_step6",
+        "name": "individual gnocchi pieces",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_657312_step7",
+        "name": "cooked gnocchi, drained",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_657312_step8",
+        "name": "gnocchi finished with hot olive oil",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_657312_step1",
+      "name": "pumpkin puree ready for mixing",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "puree"
+      ]
+    },
+    {
+      "componentId": "comp_657312_step3",
+      "name": "seasoned pumpkin mixture with herbs",
+      "shelfLifeHours": 24,
+      "processes": [
+        "chop",
+        "season",
+        "mix"
+      ]
+    },
+    {
+      "componentId": "comp_657312_step7",
+      "name": "cooked gnocchi, drained",
+      "shelfLifeHours": 72,
+      "processes": [
+        "boil",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_657312_step8",
+      "name": "gnocchi finished with hot olive oil",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute"
+      ]
+    }
+  ]
+}

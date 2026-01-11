@@ -1,0 +1,795 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_f23adb54-135c-4b31-9328-4afffdb4dc2c",
+  "name": "Middle Eastern Chopped Salad",
+  "source": "spoonacular",
+  "spoonacularId": 651823,
+  "image": "/images/recipes/651823.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "walnuts",
+      "quantity": 117,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 120,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "niçoise olives",
+      "quantity": 101.25,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "scallion",
+      "quantity": 50,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomato",
+      "quantity": 149,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 216,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "squeezed lemon juice",
+      "quantity": 244,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cumin powder",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chili flake",
+      "quantity": 0.5,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "kosher salt and coarsely ground pepper",
+      "quantity": 8,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Preheat the oven to 325 F.\nPlace the nuts on a baking sheet and toast for about 10 minutes until they begin to emit a toasted nut aroma. Cool completely before using the nuts in the recipe.\nRemove the stems from the parsley and mince either by hand or with quick pulses in a food processor. The parsley should be finely minced, but if you use a food processor be careful not to pure it. The parsley should form a fluffy base for the other textures.\nChop the olives, walnuts, and scallions by hand into a rough dice. Dice the prepared tomatoes and drain.\nCombine all of the chopped ingredients. Toss in a large wooden bowl with the olive oil, fresh lemon juice, cumin, and chili flakes. Season to taste with salt and black pepper.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 8,
+  "nutrition": {
+    "calories": 179.79,
+    "protein": 3.21,
+    "fat": 17.14,
+    "carbs": 6.81,
+    "fiber": 2.39,
+    "sugar": 2,
+    "saturatedFat": 1.94,
+    "sodium": 402.5
+  },
+  "tags": {
+    "cuisines": [
+      "Middle Eastern"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "whole 30",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "walnuts",
+      "displayName": "walnuts",
+      "quantity": {
+        "originalQuantity": 117,
+        "originalUnit": "g",
+        "normalizedQuantityG": 117,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "117 g walnuts",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 120,
+        "originalUnit": "g",
+        "normalizedQuantityG": 120,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "120 g parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 50,
+        "originalUnit": "g",
+        "normalizedQuantityG": 50,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "50 g scallion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 149,
+        "originalUnit": "g",
+        "normalizedQuantityG": 149,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "149 g tomato",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 216,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 194,
+        "normalizedQuantityMl": 216
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "216 ml extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 244,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 248,
+        "normalizedQuantityMl": 244
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "244 ml squeezed lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cumin",
+      "displayName": "cumin",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 1,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps cumin powder",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Chili flakes",
+      "quantity": {
+        "originalQuantity": 0.5,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 2.5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "0.5 tsps chili flake",
+      "matchConfidence": 0.9090909090909091
+    },
+    {
+      "masterIngredientId": "kosher_salt_and_pepper",
+      "displayName": "kosher salt and pepper",
+      "quantity": {
+        "originalQuantity": 8,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [
+        "coarsely",
+        "ground"
+      ],
+      "rawText": "8 servings kosher salt and coarsely ground pepper",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 9,
+    "unmatched": 1,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": [
+      {
+        "rawText": "101.25 ml niçoise olives",
+        "identityText": "niçoise olives",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:37:14.295Z",
+  "processGraph": {
+    "recipeName": "Middle Eastern Chopped Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Preheat the oven to 325 F.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "preheating oven to 325°F"
+          }
+        ],
+        "outputDescription": "oven heated to 325°F"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Place the nuts on a baking sheet and toast for about 10 minutes until they begin to emit a toasted nut aroma. Cool completely before using the nuts in the recipe.",
+        "processes": [
+          {
+            "processId": "toast",
+            "ingredients": [
+              "walnuts"
+            ],
+            "durationMinutes": 10,
+            "notes": "toast until aromatic"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "walnuts"
+            ],
+            "durationMinutes": null,
+            "notes": "cool completely before use"
+          }
+        ],
+        "outputDescription": "walnuts toasted and cooled, aromatic"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Remove the stems from the parsley and mince either by hand or with quick pulses in a food processor. The parsley should be finely minced, but if you use a food processor be careful not to pure it. The parsley should form a fluffy base for the other textures.",
+        "processes": [
+          {
+            "processId": "trim",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "remove stems"
+          },
+          {
+            "processId": "mince",
+            "ingredients": [
+              "parsley"
+            ],
+            "durationMinutes": null,
+            "notes": "finely mince by hand or food processor, avoid pureeing"
+          }
+        ],
+        "outputDescription": "parsley stems removed and finely minced into fluffy texture"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Chop the olives, walnuts, and scallions by hand into a rough dice. Dice the prepared tomatoes and drain.",
+        "processes": [
+          {
+            "processId": "chop",
+            "ingredients": [
+              "niçoise olives",
+              "walnuts",
+              "scallion"
+            ],
+            "durationMinutes": null,
+            "notes": "rough dice by hand"
+          },
+          {
+            "processId": "dice",
+            "ingredients": [
+              "tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "dice prepared tomatoes"
+          },
+          {
+            "processId": "drain",
+            "ingredients": [
+              "tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "drain diced tomatoes"
+          }
+        ],
+        "outputDescription": "olives, walnuts, and scallions roughly chopped; tomatoes diced and drained"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Combine all of the chopped ingredients. Toss in a large wooden bowl with the olive oil, fresh lemon juice, cumin, and chili flakes. Season to taste with salt and black pepper.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "parsley",
+              "niçoise olives",
+              "walnuts",
+              "scallion",
+              "tomato"
+            ],
+            "durationMinutes": null,
+            "notes": "combine all chopped ingredients"
+          },
+          {
+            "processId": "toss",
+            "ingredients": [
+              "parsley",
+              "niçoise olives",
+              "walnuts",
+              "scallion",
+              "tomato",
+              "extra virgin olive oil",
+              "squeezed lemon juice",
+              "cumin powder",
+              "chili flake"
+            ],
+            "durationMinutes": null,
+            "notes": "toss with oil, lemon juice, cumin, and chili flakes"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "kosher salt and coarsely ground pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "season to taste with salt and pepper"
+          }
+        ],
+        "outputDescription": "all ingredients combined and tossed with dressing, seasoned to taste"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "heat",
+        "toast",
+        "cool",
+        "trim",
+        "mince",
+        "chop",
+        "dice",
+        "drain",
+        "mix",
+        "toss",
+        "season"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_651823_step1",
+      "name": "oven heated to 325°F",
+      "stepNumber": 1,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    },
+    {
+      "id": "comp_651823_step2",
+      "name": "walnuts toasted and cooled, aromatic",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "walnuts",
+          "name": "walnuts",
+          "quantityG": 117
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toast",
+          "processName": "Toast",
+          "yieldFactor": 0.92,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "baked"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 107.64,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 4.095000000000001,
+        "costPerG": 0.03804347826086957,
+        "nutrition": {
+          "calories": 765.18,
+          "protein": 17.784,
+          "fat": 76.28399999999999,
+          "carbs": 16.029,
+          "fiber": 7.8389999999999995,
+          "sugar": 3.0536999999999996,
+          "sodium": 2.34,
+          "method": "raw"
+        },
+        "prepTimeMin": 40
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651823_step3",
+      "name": "parsley stems removed and finely minced into fluffy texture",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "parsley",
+          "name": "parsley",
+          "quantityG": 120
+        }
+      ],
+      "processes": [
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mince",
+          "processName": "Mince",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 111.72,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 27.9996,
+        "costPerG": 0.2506229860365199,
+        "nutrition": {
+          "calories": 43.199999999999996,
+          "protein": 3.564,
+          "fat": 0.948,
+          "carbs": 7.596,
+          "fiber": 3.9599999999999995,
+          "sugar": 1.02,
+          "sodium": 67.2,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651823_step4",
+      "name": "olives, walnuts, and scallions roughly chopped; tomatoes diced and drained",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olives",
+          "name": "niçoise olives",
+          "quantityG": 101.25
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "scallion",
+          "quantityG": 50
+        }
+      ],
+      "processes": [
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "dice",
+          "processName": "Dice",
+          "yieldFactor": 0.97,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "drain",
+          "processName": "Drain",
+          "yieldFactor": 0.98,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 140.902685,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.2875,
+        "costPerG": 0.0659142868711125,
+        "nutrition": {
+          "calories": 162.8125,
+          "protein": 1.957875,
+          "fat": 15.586250000000001,
+          "carbs": 7.558,
+          "fiber": 4.641249999999999,
+          "sugar": 1.7117499999999999,
+          "sodium": 1587.5,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_651823_step5",
+      "name": "all ingredients combined and tossed with dressing, seasoned to taste",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "tomato",
+          "name": "tomato",
+          "quantityG": 149
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 151.98,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.92168,
+        "costPerG": 0.02580392156862745,
+        "nutrition": {
+          "calories": 26.82,
+          "protein": 1.3112,
+          "fat": 0.298,
+          "carbs": 5.7961,
+          "fiber": 1.788,
+          "sugar": 3.9187,
+          "sodium": 7.45,
+          "method": "raw"
+        },
+        "prepTimeMin": 3.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 194.53328000000002,
+    "costPerServing": 24.316660000000002,
+    "totalPrepTime": 55.5,
+    "nutritionPerServing": {
+      "calories": 370.75875,
+      "protein": 3.2131037499999993,
+      "fat": 38.743335625,
+      "carbs": 6.81248375,
+      "fiber": 2.3885,
+      "sugar": 2.001134375,
+      "sodium": 596.734875
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_651823_step2",
+        "name": "walnuts toasted and cooled, aromatic",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_651823_step3",
+        "name": "parsley stems removed and finely minced into fluffy texture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_651823_step4",
+        "name": "olives, walnuts, and scallions roughly chopped; tomatoes diced and drained",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_651823_step5",
+        "name": "all ingredients combined and tossed with dressing, seasoned to taste",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_651823_step2",
+      "name": "walnuts toasted and cooled, aromatic",
+      "shelfLifeHours": 96,
+      "processes": [
+        "toast",
+        "cool"
+      ]
+    },
+    {
+      "componentId": "comp_651823_step3",
+      "name": "parsley stems removed and finely minced into fluffy texture",
+      "shelfLifeHours": 24,
+      "processes": [
+        "trim",
+        "mince"
+      ]
+    },
+    {
+      "componentId": "comp_651823_step4",
+      "name": "olives, walnuts, and scallions roughly chopped; tomatoes diced and drained",
+      "shelfLifeHours": 48,
+      "processes": [
+        "chop",
+        "dice",
+        "drain"
+      ]
+    },
+    {
+      "componentId": "comp_651823_step5",
+      "name": "all ingredients combined and tossed with dressing, seasoned to taste",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "toss",
+        "season"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,740 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_27dddd2c-492a-4032-892a-610832657b85",
+  "name": "Lentil Mango Salad",
+  "source": "spoonacular",
+  "spoonacularId": 649944,
+  "image": "/images/recipes/649944.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "cilantro",
+      "quantity": 1,
+      "unit": "bunch",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lentils",
+      "quantity": 453.592,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "clove",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mango",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 108,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "white wine vinegar",
+      "quantity": 59.75,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Clean and chop the onion, red pepper, garlic, Cilantro</li><li>Peel and chop mango</li><li>Place all salad ingredients in a bowl, add the oil, vinegar, season with salt and pepper</li><li>Mix well and leave in the refrigerator for 1 / 2 hour</li><li>This salad is left to eat alone or to accompany meat and poultry dishes, enjoy ...</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 252.85,
+    "protein": 12.08,
+    "fat": 6.38,
+    "carbs": 39.81,
+    "fiber": 12.51,
+    "sugar": 14.7,
+    "saturatedFat": 0.93,
+    "sodium": 204.2
+  },
+  "tags": {
+    "cuisines": [],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+    ],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "salad",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "cilantro",
+      "displayName": "cilantro",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 bunch cilantro",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lentils",
+      "displayName": "lentils",
+      "quantity": {
+        "originalQuantity": 453.592,
+        "originalUnit": "g",
+        "normalizedQuantityG": 453.592,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "453.592 g lentils",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 clove garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mango",
+      "displayName": "mango",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  mango",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 108,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 97,
+        "normalizedQuantityMl": 108
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "108 ml olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bell_pepper",
+      "displayName": "bell pepper",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  bell pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1  onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "white_wine_vinegar",
+      "displayName": "white wine vinegar",
+      "quantity": {
+        "originalQuantity": 59.75,
+        "originalUnit": "ml",
+        "normalizedQuantityG": 60,
+        "normalizedQuantityMl": 59.75
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "59.75 ml white wine vinegar",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete",
+  "normalizationDiagnostics": {
+    "totalIngredients": 10,
+    "matched": 10,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:42:41.270Z",
+  "processGraph": {
+    "recipeName": "Lentil Mango Salad",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Clean and chop the onion, red pepper, garlic, Cilantro",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "onion",
+              "bell pepper",
+              "garlic",
+              "cilantro"
+            ],
+            "durationMinutes": null,
+            "notes": "cleaning vegetables and herbs"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "onion",
+              "bell pepper",
+              "garlic",
+              "cilantro"
+            ],
+            "durationMinutes": null,
+            "notes": "rough chopping of vegetables and herbs"
+          }
+        ],
+        "outputDescription": "cleaned and chopped vegetables and herbs ready for salad"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Peel and chop mango",
+        "processes": [
+          {
+            "processId": "peel",
+            "ingredients": [
+              "mango"
+            ],
+            "durationMinutes": null,
+            "notes": "removing outer skin from mango"
+          },
+          {
+            "processId": "chop",
+            "ingredients": [
+              "mango"
+            ],
+            "durationMinutes": null,
+            "notes": "cutting peeled mango into pieces"
+          }
+        ],
+        "outputDescription": "peeled and chopped mango pieces ready for salad"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Place all salad ingredients in a bowl, add the oil, vinegar, season with salt and pepper",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lentils",
+              "onion",
+              "bell pepper",
+              "garlic",
+              "cilantro",
+              "mango"
+            ],
+            "durationMinutes": null,
+            "notes": "combining all salad ingredients in bowl"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "olive oil",
+              "white wine vinegar",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "adding oil, vinegar, salt and pepper for seasoning"
+          }
+        ],
+        "outputDescription": "all ingredients combined in bowl with dressing and seasoning"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Mix well and leave in the refrigerator for 1 / 2 hour",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lentils",
+              "onion",
+              "bell pepper",
+              "garlic",
+              "cilantro",
+              "mango",
+              "olive oil",
+              "white wine vinegar",
+              "salt"
+            ],
+            "durationMinutes": null,
+            "notes": "thoroughly combining all ingredients"
+          },
+          {
+            "processId": "cool",
+            "ingredients": [
+              "lentils",
+              "onion",
+              "bell pepper",
+              "garlic",
+              "cilantro",
+              "mango",
+              "olive oil",
+              "white wine vinegar",
+              "salt"
+            ],
+            "durationMinutes": 30,
+            "notes": "chilling in refrigerator to allow flavors to meld"
+          }
+        ],
+        "outputDescription": "well-mixed salad chilled and ready to serve with flavors melded"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "rinse",
+        "chop",
+        "peel",
+        "mix",
+        "season",
+        "cool"
+      ],
+      "estimatedTotalTime": 45
+    }
+  },
+  "components": [
+    {
+      "id": "comp_649944_step1",
+      "name": "cleaned and chopped vegetables and herbs ready for salad",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "bell_pepper",
+          "name": "bell pepper",
+          "quantityG": 150
+        },
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 5
+        },
+        {
+          "ingredientId": "cilantro",
+          "name": "cilantro",
+          "quantityG": 20
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 324.87,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.000499999999999,
+        "costPerG": 0.02462677378643765,
+        "nutrition": {
+          "calories": 111.05,
+          "protein": 3.879,
+          "fat": 0.729,
+          "carbs": 25.444000000000003,
+          "fiber": 6.365,
+          "sugar": 12.884,
+          "sodium": 22.05,
+          "method": "raw"
+        },
+        "prepTimeMin": 3
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649944_step2",
+      "name": "peeled and chopped mango pieces ready for salad",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mango",
+          "name": "mango",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "peel",
+          "processName": "Peel",
+          "yieldFactor": 0.9,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "chop",
+          "processName": "Chop",
+          "yieldFactor": 0.98,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 0.882,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.01,
+        "costPerG": 0.011337868480725623,
+        "nutrition": {
+          "calories": 0.6,
+          "protein": 0.008199999999999999,
+          "fat": 0.0038,
+          "carbs": 0.15,
+          "fiber": 0.016,
+          "sugar": 0.13699999999999998,
+          "sodium": 0.01,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649944_step3",
+      "name": "all ingredients combined in bowl with dressing and seasoning",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lentils",
+          "name": "lentils",
+          "quantityG": 453.592
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 462.66384,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 2.26796,
+        "costPerG": 0.004901960784313725,
+        "nutrition": {
+          "calories": 1601.17976,
+          "protein": 117.026736,
+          "fat": 4.8080752,
+          "carbs": 272.5180736,
+          "fiber": 138.34556,
+          "sugar": 9.207917599999998,
+          "sodium": 27.215519999999998,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_649944_step4",
+      "name": "well-mixed salad chilled and ready to serve with flavors melded",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 108
+        },
+        {
+          "ingredientId": "white_wine_vinegar",
+          "name": "white wine vinegar",
+          "quantityG": 59.75
+        },
+        {
+          "ingredientId": "salt",
+          "name": "salt",
+          "quantityG": 4
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "cool",
+          "processName": "Cool",
+          "yieldFactor": 1,
+          "durationMinutes": 30,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 171.75,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.6507499999999997,
+        "costPerG": 0.009611353711790392,
+        "nutrition": {
+          "calories": 966.0725,
+          "protein": 0.0239,
+          "fat": 108,
+          "carbs": 0.16132500000000002,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 1557.26,
+          "method": "raw"
+        },
+        "prepTimeMin": 32
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 11.92921,
+    "costPerServing": 2.9823025,
+    "totalPrepTime": 41.5,
+    "nutritionPerServing": {
+      "calories": 669.725565,
+      "protein": 30.234459,
+      "fat": 28.3852188,
+      "carbs": 74.56834964999997,
+      "fiber": 36.18164,
+      "sugar": 5.5572294,
+      "sodium": 401.63388
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_649944_step1",
+        "name": "cleaned and chopped vegetables and herbs ready for salad",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_649944_step2",
+        "name": "peeled and chopped mango pieces ready for salad",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_649944_step3",
+        "name": "all ingredients combined in bowl with dressing and seasoning",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_649944_step4",
+        "name": "well-mixed salad chilled and ready to serve with flavors melded",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_649944_step1",
+      "name": "cleaned and chopped vegetables and herbs ready for salad",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_649944_step2",
+      "name": "peeled and chopped mango pieces ready for salad",
+      "shelfLifeHours": 48,
+      "processes": [
+        "peel",
+        "chop"
+      ]
+    },
+    {
+      "componentId": "comp_649944_step3",
+      "name": "all ingredients combined in bowl with dressing and seasoning",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_649944_step4",
+      "name": "well-mixed salad chilled and ready to serve with flavors melded",
+      "shelfLifeHours": 24,
+      "processes": [
+        "mix",
+        "cool"
+      ]
+    }
+  ]
+}

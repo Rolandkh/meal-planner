@@ -1,0 +1,601 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_a252fafb-bd45-4370-a84c-e26035a9546f",
+  "name": "Thai-Style Mussels",
+  "source": "spoonacular",
+  "spoonacularId": 663177,
+  "image": "/images/recipes/663177.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "wine",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 4,
+      "unit": "Cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "stem lemongrass",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "mussels",
+      "quantity": 520.497,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "chilies",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "thai basil leaves",
+      "quantity": 1,
+      "unit": "handful",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "water",
+      "quantity": 3,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>Scrub the outside of the mussels with a brush. Remove and discard the beards.</li><li>Heat the oil in a wok or large pan add garlic, lemongrass and chili. Cook until slightly brown and fragrant.</li><li>Add the mussels to the wok and toss well. Add in chinese rice wine, water, and Thai basil after about 3 minutes. Mix well. Put the lid back on for another 1 minutes or so until all the mussels are open (discard any that stay closed).</li></ol>",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 3,
+  "nutrition": {
+    "calories": 207.76,
+    "protein": 21.02,
+    "fat": 8.6,
+    "carbs": 8.72,
+    "fiber": 0,
+    "sugar": 0.31,
+    "saturatedFat": 1.39,
+    "sodium": 498.66
+  },
+  "tags": {
+    "cuisines": [
+      "Thai",
+      "Asian"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "primal",
+      "pescatarian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "antipasti",
+      "main course",
+      "starter",
+      "snack",
+      "appetizer",
+      "main dish",
+      "antipasto",
+      "dinner",
+      "hor d'oeuvre"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.881Z",
+  "updatedAt": "2026-01-09T11:32:55.881Z",
+  "quality": {
+    "ingredientMatchRate": 87.5,
+    "hasUnknownIngredients": true,
+    "unknownCount": 1,
+    "qualityTier": "good",
+    "flagForUser": true,
+    "problematicIngredients": [
+      {
+        "raw": "stem lemongrass",
+        "identity": "stem lemongrass",
+        "issue": "no_match_found"
+      }
+    ]
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "wine",
+      "displayName": "wine",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 30,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps wine",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 Cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "mussels",
+      "displayName": "mussels",
+      "quantity": {
+        "originalQuantity": 520.497,
+        "originalUnit": "g",
+        "normalizedQuantityG": 520.497,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "520.497 g mussels",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 14,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "chilies",
+      "displayName": "chilies",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 4,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps chilies",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "water",
+      "displayName": "water",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 45,
+        "normalizedQuantityMl": 45
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "3 Tbsps water",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 8,
+    "matched": 6,
+    "unmatched": 2,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1  stem lemongrass",
+        "identityText": "stem lemongrass",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1 handful thai basil leaves",
+        "identityText": "handful thai basil leaves",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:55:03.035Z",
+  "processGraph": {
+    "recipeName": "Thai-Style Mussels",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Scrub the outside of the mussels with a brush. Remove and discard the beards.",
+        "processes": [
+          {
+            "processId": "rinse",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "scrubbing with brush to clean outside"
+          },
+          {
+            "processId": "trim",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "removing and discarding beards"
+          }
+        ],
+        "outputDescription": "clean mussels with beards removed, ready for cooking"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Heat the oil in a wok or large pan add garlic, lemongrass and chili. Cook until slightly brown and fragrant.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [
+              "olive oil"
+            ],
+            "durationMinutes": null,
+            "notes": "heating oil in wok or large pan"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic",
+              "lemongrass",
+              "chilies"
+            ],
+            "durationMinutes": null,
+            "notes": "cooking until slightly brown and fragrant"
+          }
+        ],
+        "outputDescription": "aromatic base with browned garlic, lemongrass, and chilies in hot oil"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the mussels to the wok and toss well. Add in chinese rice wine, water, and Thai basil after about 3 minutes. Mix well. Put the lid back on for another 1 minutes or so until all the mussels are open (discard any that stay closed).",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": null,
+            "notes": "adding mussels to wok and tossing well"
+          },
+          {
+            "processId": "stir_fry",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": 3,
+            "notes": "cooking mussels for about 3 minutes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "wine",
+              "water",
+              "thai basil leaves"
+            ],
+            "durationMinutes": null,
+            "notes": "adding liquids and basil, mixing well"
+          },
+          {
+            "processId": "steam",
+            "ingredients": [
+              "mussels"
+            ],
+            "durationMinutes": 1,
+            "notes": "covered cooking until mussels open"
+          }
+        ],
+        "outputDescription": "cooked mussels opened in aromatic broth with wine, water, and Thai basil"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "rinse",
+        "trim",
+        "heat",
+        "saute",
+        "toss",
+        "stir_fry",
+        "mix",
+        "steam"
+      ],
+      "estimatedTotalTime": 10
+    }
+  },
+  "components": [
+    {
+      "id": "comp_663177_step1",
+      "name": "clean mussels with beards removed, ready for cooking",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "mussels",
+          "name": "mussels",
+          "quantityG": 520.497
+        }
+      ],
+      "processes": [
+        {
+          "processId": "rinse",
+          "processName": "Rinse",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "trim",
+          "processName": "Trim",
+          "yieldFactor": 0.95,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 504.36159299999997,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 8.327952,
+        "costPerG": 0.01651186790505676,
+        "nutrition": {
+          "calories": 228.28998419999996,
+          "protein": 31.5941679,
+          "fat": 5.933665799999999,
+          "carbs": 9.7853436,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 759.1969242,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_663177_step2",
+      "name": "aromatic base with browned garlic, lemongrass, and chilies in hot oil",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "olive_oil",
+          "name": "olive oil",
+          "quantityG": 13.5
+        }
+      ],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 11.2455,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.144,
+        "costPerG": 0.012805122048819527,
+        "nutrition": {
+          "calories": 119.34,
+          "protein": 0,
+          "fat": 13.5,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0.27,
+          "method": "raw"
+        },
+        "prepTimeMin": 8
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_663177_step3",
+      "name": "cooked mussels opened in aromatic broth with wine, water, and Thai basil",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "wine",
+          "name": "wine",
+          "quantityG": 30
+        },
+        {
+          "ingredientId": "water",
+          "name": "water",
+          "quantityG": 45
+        },
+        {
+          "ingredientId": "basil",
+          "name": "thai basil leaves",
+          "quantityG": 30
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stir_fry",
+          "processName": "Stir Fry",
+          "yieldFactor": 0.88,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "steam",
+          "processName": "Steam",
+          "yieldFactor": 0.97,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "steamed"
+        }
+      ],
+      "output": {
+        "quantityG": 89.628,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 1.4497499999999999,
+        "costPerG": 0.01617519078859285,
+        "nutrition": {
+          "calories": 31.799999999999997,
+          "protein": 0.966,
+          "fat": 0.192,
+          "carbs": 1.611,
+          "fiber": 0.48,
+          "sugar": 0.32699999999999996,
+          "sodium": 4.95,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 59.010702,
+    "costPerServing": 19.670234,
+    "totalPrepTime": 17,
+    "nutritionPerServing": {
+      "calories": 142.8366614,
+      "protein": 11.396902633333331,
+      "fat": 6.645381933333333,
+      "carbs": 7.968787866666666,
+      "fiber": 0.401,
+      "sugar": 0.9218666666666665,
+      "sodium": 256.3316414
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_663177_step1",
+        "name": "clean mussels with beards removed, ready for cooking",
+        "shelfLifeHours": 12
+      },
+      {
+        "id": "comp_663177_step2",
+        "name": "aromatic base with browned garlic, lemongrass, and chilies in hot oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_663177_step3",
+        "name": "cooked mussels opened in aromatic broth with wine, water, and Thai basil",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_663177_step1",
+      "name": "clean mussels with beards removed, ready for cooking",
+      "shelfLifeHours": 12,
+      "processes": [
+        "rinse",
+        "trim"
+      ]
+    },
+    {
+      "componentId": "comp_663177_step2",
+      "name": "aromatic base with browned garlic, lemongrass, and chilies in hot oil",
+      "shelfLifeHours": 72,
+      "processes": [
+        "heat",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_663177_step3",
+      "name": "cooked mussels opened in aromatic broth with wine, water, and Thai basil",
+      "shelfLifeHours": 24,
+      "processes": [
+        "toss",
+        "stir_fry",
+        "mix",
+        "steam"
+      ]
+    }
+  ]
+}

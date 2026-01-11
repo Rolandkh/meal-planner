@@ -1,0 +1,657 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_0d187361-bcb6-460a-8e77-1ad7e5b6e5a5",
+  "name": "Marinated Souvlaki",
+  "source": "spoonacular",
+  "spoonacularId": 651076,
+  "image": "/images/recipes/651076.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "lamb",
+      "quantity": 907.185,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "onion",
+      "quantity": 85.049,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "carrot",
+      "quantity": 28.35,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "celery",
+      "quantity": 28.35,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic clove",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pinch thyme",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pinch rosemary",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pinch coriander",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pinch cloves",
+      "quantity": 2,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pinch pepper",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "bay leaf",
+      "quantity": 1,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parsley",
+      "quantity": 6,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon zest",
+      "quantity": 1,
+      "unit": "of",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt",
+      "quantity": 2,
+      "unit": "tsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "lemon juice",
+      "quantity": 2,
+      "unit": "Tbsps",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 85.049,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "wine",
+      "quantity": 113.398,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pinch or",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "pinch or",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Cut the meat into small cubes. In a bowl, preferably earthenware, mix the marinade ingredients well and add the meat, mix again, cover and leave to marinate for 24 to 48 hours. (He doesn't say to refrigerate but I would certainly do so. For the curious, the recipe actually calls for marinating in a*kioupi* or earthenware storage jar rather than a bowl. This would probably keep the ingredients cooler.) When ready to cook, thread the meat on 18 to 24 skewers. Grill over embers of vine branches (!). Serve hot.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 6,
+  "nutrition": {
+    "calories": 553.23,
+    "protein": 26.06,
+    "fat": 46.33,
+    "carbs": 3.93,
+    "fiber": 0.87,
+    "sugar": 1.22,
+    "saturatedFat": 13.89,
+    "sodium": 871.63
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "ketogenic"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "lamb",
+      "displayName": "lamb",
+      "quantity": {
+        "originalQuantity": 907.185,
+        "originalUnit": "g",
+        "normalizedQuantityG": 907.185,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "907.185 g lamb",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 85.049,
+        "originalUnit": "g",
+        "normalizedQuantityG": 85.049,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "85.049 g onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "carrot",
+      "displayName": "carrot",
+      "quantity": {
+        "originalQuantity": 28.35,
+        "originalUnit": "g",
+        "normalizedQuantityG": 28.35,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "28.35 g carrot",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "celery",
+      "displayName": "celery",
+      "quantity": {
+        "originalQuantity": 28.35,
+        "originalUnit": "g",
+        "normalizedQuantityG": 28.35,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "28.35 g celery",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2  garlic clove",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "bay_leaf",
+      "displayName": "bay leaf",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1  bay leaf",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parsley",
+      "displayName": "parsley",
+      "quantity": {
+        "originalQuantity": 6,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "6 servings parsley",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon",
+      "displayName": "lemon",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 of lemon zest",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": 12,
+        "normalizedQuantityMl": 10
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "2 tsps salt",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "lemon_juice",
+      "displayName": "lemon juice",
+      "quantity": {
+        "originalQuantity": 2,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 31,
+        "normalizedQuantityMl": 30
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "2 Tbsps lemon juice",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 85.049,
+        "originalUnit": "g",
+        "normalizedQuantityG": 85.049,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "85.049 g olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "wine",
+      "displayName": "wine",
+      "quantity": {
+        "originalQuantity": 113.398,
+        "originalUnit": "g",
+        "normalizedQuantityG": 113.398,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "113.398 g wine",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "partial",
+  "normalizationDiagnostics": {
+    "totalIngredients": 19,
+    "matched": 12,
+    "unmatched": 7,
+    "lowConfidence": 0,
+    "missingDensity": 0,
+    "unmatchedIngredients": [
+      {
+        "rawText": "1  pch thyme",
+        "identityText": "pch thyme",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1  pch rosemary",
+        "identityText": "pch rosemary",
+        "state": "fresh"
+      },
+      {
+        "rawText": "1  pch coriander",
+        "identityText": "pch coriander",
+        "state": "fresh"
+      },
+      {
+        "rawText": "2  pch cloves",
+        "identityText": "pch cloves",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4  pch pepper",
+        "identityText": "pch pepper",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4  pch or",
+        "identityText": "pch or",
+        "state": "fresh"
+      },
+      {
+        "rawText": "4  pch or",
+        "identityText": "pch or",
+        "state": "fresh"
+      }
+    ]
+  },
+  "_convertedAt": "2026-01-10T23:35:15.091Z",
+  "processGraph": {
+    "recipeName": "Marinated Souvlaki",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Cut the meat into small cubes. In a bowl, preferably earthenware, mix the marinade ingredients well and add the meat, mix again, cover and leave to marinate for 24 to 48 hours. When ready to cook, thread the meat on 18 to 24 skewers. Grill over embers of vine branches (!). Serve hot.",
+        "processes": [
+          {
+            "processId": "cube",
+            "ingredients": [
+              "lamb"
+            ],
+            "durationMinutes": 5,
+            "notes": "cut into small cubes"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "onion",
+              "carrot",
+              "celery",
+              "garlic clove",
+              "thyme",
+              "rosemary",
+              "coriander",
+              "cloves",
+              "pepper",
+              "bay leaf",
+              "parsley",
+              "lemon zest",
+              "salt",
+              "lemon juice",
+              "olive oil",
+              "wine"
+            ],
+            "durationMinutes": 5,
+            "notes": "mix marinade ingredients well"
+          },
+          {
+            "processId": "mix",
+            "ingredients": [
+              "lamb",
+              "onion",
+              "carrot",
+              "celery",
+              "garlic clove",
+              "thyme",
+              "rosemary",
+              "coriander",
+              "cloves",
+              "pepper",
+              "bay leaf",
+              "parsley",
+              "lemon zest",
+              "salt",
+              "lemon juice",
+              "olive oil",
+              "wine"
+            ],
+            "durationMinutes": 2,
+            "notes": "add meat to marinade and mix again"
+          },
+          {
+            "processId": "marinate",
+            "ingredients": [
+              "lamb",
+              "onion",
+              "carrot",
+              "celery",
+              "garlic clove",
+              "thyme",
+              "rosemary",
+              "coriander",
+              "cloves",
+              "pepper",
+              "bay leaf",
+              "parsley",
+              "lemon zest",
+              "salt",
+              "lemon juice",
+              "olive oil",
+              "wine"
+            ],
+            "durationMinutes": 2160,
+            "notes": "marinate for 24 to 48 hours (using 36 hours average)"
+          },
+          {
+            "processId": "grill",
+            "ingredients": [
+              "lamb"
+            ],
+            "durationMinutes": 15,
+            "notes": "thread on skewers and grill over embers"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "lamb"
+            ],
+            "durationMinutes": 2,
+            "notes": "serve hot"
+          }
+        ],
+        "outputDescription": "Marinated lamb cubes grilled on skewers, ready to serve hot"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 6,
+      "uniqueProcesses": [
+        "cube",
+        "mix",
+        "marinate",
+        "grill",
+        "plate"
+      ],
+      "estimatedTotalTime": 2189
+    }
+  },
+  "components": [
+    {
+      "id": "comp_651076_step1",
+      "name": "Marinated lamb cubes grilled on skewers, ready to serve hot",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "lamb",
+          "name": "lamb",
+          "quantityG": 907.185
+        }
+      ],
+      "processes": [
+        {
+          "processId": "cube",
+          "processName": "Cube",
+          "yieldFactor": 0.96,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "marinate",
+          "processName": "Marinate",
+          "yieldFactor": 1.05,
+          "durationMinutes": 2160,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "grill",
+          "processName": "Grill",
+          "yieldFactor": 0.78,
+          "durationMinutes": 15,
+          "nutritionMultiplier": "grilled"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 713.2651344,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 25.8547725,
+        "costPerG": 0.03624847374847375,
+        "nutrition": {
+          "calories": 2558.2617,
+          "protein": 150.22983599999998,
+          "fat": 212.3720085,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 535.23915,
+          "method": "raw"
+        },
+        "prepTimeMin": 2189
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 59.33637716333334,
+    "costPerServing": 9.88939619388889,
+    "totalPrepTime": 2189,
+    "nutritionPerServing": {
+      "calories": 584.2687166666668,
+      "protein": 25.6724206,
+      "fat": 49.75073208333333,
+      "carbs": 4.4045462,
+      "fiber": 1.0365388333333334,
+      "sugar": 1.2360836333333334,
+      "sodium": 876.6555816666665
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_651076_step1",
+        "name": "Marinated lamb cubes grilled on skewers, ready to serve hot",
+        "shelfLifeHours": 24
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_651076_step1",
+      "name": "Marinated lamb cubes grilled on skewers, ready to serve hot",
+      "shelfLifeHours": 24,
+      "processes": [
+        "cube",
+        "mix",
+        "mix",
+        "marinate",
+        "grill",
+        "plate"
+      ]
+    }
+  ]
+}

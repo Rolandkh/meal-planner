@@ -1,0 +1,860 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_eecbcba2-ff8e-4286-a7b7-2efc8fbe24ce",
+  "name": "Ratatouille Pasta",
+  "source": "spoonacular",
+  "spoonacularId": 657933,
+  "image": "/images/recipes/657933.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "onion",
+      "quantity": 1,
+      "unit": "large",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "sea salt and pepper",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "garlic",
+      "quantity": 4,
+      "unit": "cloves",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "zucchini",
+      "quantity": 372,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "eggplant",
+      "quantity": 246,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "seasoning",
+      "quantity": 1,
+      "unit": "tsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "artichokes",
+      "quantity": 396.893,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 396.893,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "spaghetti",
+      "quantity": 226.796,
+      "unit": "g",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "parmesan",
+      "quantity": 4,
+      "unit": "servings",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "Saute the yellow onion in a large skillet or saute pan with enough Olive oil to coat the bottom of the pan, over medium-low heat until tender and translucent. Season with salt and pepper. Add garlic, saute until fragrant.\nAdd another tablespoon of Olive oil and the zucchini, eggplant and Italian seasoning. Continue sauteing until the zucchini and eggplant start to break down and become limp and tender.\nAdd the artichokes and tomatoes. Season with salt and pepper. Bring to a simmer for ten - fifteen minutes. Taste and re-season if needed.\nMeanwhile cook the spaghetti to al dente according to package directions.\nToss with pasta and serve with a drizzle of extra-virgin Olive oil and Parmesan cheese.",
+  "prepTime": 14,
+  "cookTime": 31,
+  "servings": 4,
+  "nutrition": {
+    "calories": 690.96,
+    "protein": 24.51,
+    "fat": 37.37,
+    "carbs": 69.05,
+    "fiber": 11.85,
+    "sugar": 11.23,
+    "saturatedFat": 9.12,
+    "sodium": 924.32
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "French",
+      "European"
+    ],
+    "diets": [],
+    "dishTypes": [
+      "side dish",
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "medium",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "masterIngredientId": "onion",
+      "displayName": "onion",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 large onion",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "sea_salt_and_pepper",
+      "displayName": "sea salt and pepper",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings sea salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "garlic",
+      "displayName": "garlic",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": "whole",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 cloves garlic",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "zucchini",
+      "displayName": "zucchini",
+      "quantity": {
+        "originalQuantity": 372,
+        "originalUnit": "g",
+        "normalizedQuantityG": 372,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "372 g zucchini",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "eggplant",
+      "displayName": "eggplant",
+      "quantity": {
+        "originalQuantity": 246,
+        "originalUnit": "g",
+        "normalizedQuantityG": 246,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "246 g eggplant",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Seasoning blend",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 5
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 tsp seasoning",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Artichoke",
+      "quantity": {
+        "originalQuantity": 396.893,
+        "originalUnit": "g",
+        "normalizedQuantityG": 396.893,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "396.893 g artichokes",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "tomato",
+      "displayName": "tomato",
+      "quantity": {
+        "originalQuantity": 396.893,
+        "originalUnit": "g",
+        "normalizedQuantityG": 396.893,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "396.893 g tomatoes",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Spaghetti",
+      "quantity": {
+        "originalQuantity": 226.796,
+        "originalUnit": "g",
+        "normalizedQuantityG": 226.796,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "226.796 g spaghetti",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "olive_oil",
+      "displayName": "olive oil",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "4 servings extra virgin olive oil",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "parmesan_cheese",
+      "displayName": "parmesan cheese",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4 servings parmesan",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 12,
+    "matched": 12,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T22:30:12.806Z",
+  "processGraph": {
+    "recipeName": "Ratatouille Pasta",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "Saute the yellow onion in a large skillet or saute pan with enough Olive oil to coat the bottom of the pan, over medium-low heat until tender and translucent. Season with salt and pepper. Add garlic, saute until fragrant.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "medium-low heat until tender and translucent"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "onion"
+            ],
+            "durationMinutes": null,
+            "notes": "with salt and pepper"
+          },
+          {
+            "processId": "saute",
+            "ingredients": [
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "until fragrant"
+          }
+        ],
+        "outputDescription": "tender, translucent onions and fragrant garlic sautéed in olive oil"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "Add another tablespoon of Olive oil and the zucchini, eggplant and Italian seasoning. Continue sauteing until the zucchini and eggplant start to break down and become limp and tender.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "zucchini",
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "until vegetables start to break down and become limp and tender"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "zucchini",
+              "eggplant"
+            ],
+            "durationMinutes": null,
+            "notes": "with Italian seasoning"
+          }
+        ],
+        "outputDescription": "broken down, limp and tender zucchini and eggplant mixed with onions and garlic"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Add the artichokes and tomatoes. Season with salt and pepper. Bring to a simmer for ten - fifteen minutes. Taste and re-season if needed.",
+        "processes": [
+          {
+            "processId": "season",
+            "ingredients": [
+              "artichokes",
+              "tomatoes"
+            ],
+            "durationMinutes": null,
+            "notes": "with salt and pepper"
+          },
+          {
+            "processId": "simmer",
+            "ingredients": [
+              "artichokes",
+              "tomatoes",
+              "zucchini",
+              "eggplant",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": 12.5,
+            "notes": "ten to fifteen minutes"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "artichokes",
+              "tomatoes",
+              "zucchini",
+              "eggplant",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "re-season if needed after tasting"
+          }
+        ],
+        "outputDescription": "complete ratatouille mixture simmered and seasoned to taste"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Meanwhile cook the spaghetti to al dente according to package directions.",
+        "processes": [
+          {
+            "processId": "boil",
+            "ingredients": [
+              "spaghetti"
+            ],
+            "durationMinutes": null,
+            "notes": "cook to al dente according to package directions"
+          }
+        ],
+        "outputDescription": "al dente spaghetti pasta"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Toss with pasta and serve with a drizzle of extra-virgin Olive oil and Parmesan cheese.",
+        "processes": [
+          {
+            "processId": "toss",
+            "ingredients": [
+              "spaghetti",
+              "artichokes",
+              "tomatoes",
+              "zucchini",
+              "eggplant",
+              "onion",
+              "garlic"
+            ],
+            "durationMinutes": null,
+            "notes": "combine pasta with ratatouille mixture"
+          },
+          {
+            "processId": "garnish",
+            "ingredients": [
+              "extra virgin olive oil",
+              "parmesan"
+            ],
+            "durationMinutes": null,
+            "notes": "drizzle olive oil and add parmesan cheese"
+          },
+          {
+            "processId": "plate",
+            "ingredients": [
+              "spaghetti",
+              "artichokes",
+              "tomatoes",
+              "zucchini",
+              "eggplant",
+              "onion",
+              "garlic",
+              "extra virgin olive oil",
+              "parmesan"
+            ],
+            "durationMinutes": null,
+            "notes": "serve the finished dish"
+          }
+        ],
+        "outputDescription": "finished ratatouille pasta dish ready to serve with olive oil and parmesan"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 9,
+      "uniqueProcesses": [
+        "saute",
+        "season",
+        "simmer",
+        "boil",
+        "toss",
+        "garnish",
+        "plate"
+      ],
+      "estimatedTotalTime": 25
+    }
+  },
+  "components": [
+    {
+      "id": "comp_657933_step1",
+      "name": "tender, translucent onions and fragrant garlic sautéed in olive oil",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "onion",
+          "name": "onion",
+          "quantityG": 195
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 143.70525,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.2506500000000003,
+        "costPerG": 0.022620259176334895,
+        "nutrition": {
+          "calories": 78,
+          "protein": 2.145,
+          "fat": 0.195,
+          "carbs": 18.213,
+          "fiber": 3.315,
+          "sugar": 8.268,
+          "sodium": 7.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 10.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657933_step2",
+      "name": "broken down, limp and tender zucchini and eggplant mixed with onions and garlic",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "zucchini",
+          "name": "zucchini",
+          "quantityG": 372
+        },
+        {
+          "ingredientId": "eggplant",
+          "name": "eggplant",
+          "quantityG": 246
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "fried"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 535.806,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 3.1470000000000002,
+        "costPerG": 0.005873394474865903,
+        "nutrition": {
+          "calories": 124.74000000000001,
+          "protein": 6.912,
+          "fat": 1.6332,
+          "carbs": 26.034,
+          "fiber": 11.1,
+          "sugar": 17.983800000000002,
+          "sodium": 34.68,
+          "method": "raw"
+        },
+        "prepTimeMin": 5.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657933_step3",
+      "name": "complete ratatouille mixture simmered and seasoned to taste",
+      "stepNumber": 3,
+      "sourceIngredients": [
+        {
+          "ingredientId": "artichoke_hearts",
+          "name": "artichokes",
+          "quantityG": 396.893
+        },
+        {
+          "ingredientId": "tomato",
+          "name": "tomatoes",
+          "quantityG": 396.893
+        }
+      ],
+      "processes": [
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "simmer",
+          "processName": "Simmer",
+          "yieldFactor": 0.9,
+          "durationMinutes": 12.5,
+          "nutritionMultiplier": "boiled"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 743.2694589600001,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 14.73663709,
+        "costPerG": 0.019826776026314663,
+        "nutrition": {
+          "calories": 163.04364439999998,
+          "protein": 6.5487345,
+          "fat": 0.793786,
+          "carbs": 30.7195182,
+          "fiber": 10.874868199999998,
+          "sugar": 13.494361999999999,
+          "sodium": 1485.2926739,
+          "method": "raw"
+        },
+        "prepTimeMin": 13.5
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 96,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657933_step4",
+      "name": "al dente spaghetti pasta",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "spaghetti",
+          "name": "spaghetti",
+          "quantityG": 226.796
+        }
+      ],
+      "processes": [
+        {
+          "processId": "boil",
+          "processName": "Boil",
+          "yieldFactor": 0.95,
+          "durationMinutes": 10,
+          "nutritionMultiplier": "boiled"
+        }
+      ],
+      "output": {
+        "quantityG": 215.4562,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.907184,
+        "costPerG": 0.004210526315789474,
+        "nutrition": {
+          "calories": 841.41316,
+          "protein": 29.574198399999997,
+          "fat": 3.4246195999999998,
+          "carbs": 169.3485732,
+          "fiber": 7.257472,
+          "sugar": 6.0554532,
+          "sodium": 13.607759999999999,
+          "method": "raw"
+        },
+        "prepTimeMin": 10
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_657933_step5",
+      "name": "finished ratatouille pasta dish ready to serve with olive oil and parmesan",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "garlic",
+          "name": "garlic",
+          "quantityG": 20
+        }
+      ],
+      "processes": [
+        {
+          "processId": "toss",
+          "processName": "Toss",
+          "yieldFactor": 1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "garnish",
+          "processName": "Garnish",
+          "yieldFactor": 1.02,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 20.4,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.8999999999999999,
+        "costPerG": 0.044117647058823525,
+        "nutrition": {
+          "calories": 29.8,
+          "protein": 1.2720000000000002,
+          "fat": 0.1,
+          "carbs": 6.620000000000001,
+          "fiber": 0.42000000000000004,
+          "sugar": 0.2,
+          "sodium": 3.4000000000000004,
+          "method": "raw"
+        },
+        "prepTimeMin": 4
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 28.068137756666665,
+    "costPerServing": 7.017034439166666,
+    "totalPrepTime": 43.5,
+    "nutritionPerServing": {
+      "calories": 743.1679510999999,
+      "protein": 18.822920725000003,
+      "fat": 46.74971389999999,
+      "carbs": 63.787710350000005,
+      "fiber": 8.31246005,
+      "sugar": 11.6796538,
+      "sodium": 707.563858475
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_657933_step1",
+        "name": "tender, translucent onions and fragrant garlic sautéed in olive oil",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_657933_step2",
+        "name": "broken down, limp and tender zucchini and eggplant mixed with onions and garlic",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_657933_step3",
+        "name": "complete ratatouille mixture simmered and seasoned to taste",
+        "shelfLifeHours": 96
+      },
+      {
+        "id": "comp_657933_step4",
+        "name": "al dente spaghetti pasta",
+        "shelfLifeHours": 72
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_657933_step1",
+      "name": "tender, translucent onions and fragrant garlic sautéed in olive oil",
+      "shelfLifeHours": 72,
+      "processes": [
+        "saute",
+        "season",
+        "saute"
+      ]
+    },
+    {
+      "componentId": "comp_657933_step2",
+      "name": "broken down, limp and tender zucchini and eggplant mixed with onions and garlic",
+      "shelfLifeHours": 72,
+      "processes": [
+        "saute",
+        "season"
+      ]
+    },
+    {
+      "componentId": "comp_657933_step3",
+      "name": "complete ratatouille mixture simmered and seasoned to taste",
+      "shelfLifeHours": 96,
+      "processes": [
+        "season",
+        "simmer",
+        "season"
+      ]
+    }
+  ]
+}

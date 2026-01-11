@@ -1,0 +1,697 @@
+{
+  "_schemaVersion": 3,
+  "recipeId": "recipe_381eca4b-3b8e-4fd8-a266-dd754b5dc8f1",
+  "name": "Greek Inspired Spring Omelet",
+  "source": "spoonacular",
+  "spoonacularId": 645315,
+  "image": "/images/recipes/645315.jpg",
+  "imageUrl": null,
+  "ingredients": [
+    {
+      "name": "asparagus spears",
+      "quantity": 3,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "egg whites",
+      "quantity": 81,
+      "unit": "ml",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "feta cheese",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "green onions",
+      "quantity": 1,
+      "unit": "serving",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "salt and pepper",
+      "quantity": 1,
+      "unit": "serving",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "tzatziki",
+      "quantity": 1,
+      "unit": "Tbsp",
+      "category": "other",
+      "healthImpact": "neutral"
+    },
+    {
+      "name": "cherry tomatoes",
+      "quantity": 4,
+      "unit": "",
+      "category": "other",
+      "healthImpact": "neutral"
+    }
+  ],
+  "instructions": "<ol><li>In a medium skillet saute asparagus until tender, about 7 minutes. Set aside.</li><li>In a small bowl combine egg whites and tzatziki; stir to combine.</li><li>Spray non stick skillet with cooking spray and bring to medium heat. Pour in egg white and allow it to spread over the skillet surface. Cook until egg turns white; about 2 minutes.</li><li>Slide omelette onto a plate and place asparagus, tomatoes, green onions and feta in the middle. Fold the omelette into thirds to cover the fillings.</li><li>Serve hot with additional tzatziki. Salt and pepper to taste.</li></ol>",
+  "prepTime": 6,
+  "cookTime": 14,
+  "servings": 1,
+  "nutrition": {
+    "calories": 133.43,
+    "protein": 13.55,
+    "fat": 5.94,
+    "carbs": 7.28,
+    "fiber": 1.64,
+    "sugar": 3.81,
+    "saturatedFat": 2.79,
+    "sodium": 606.45
+  },
+  "tags": {
+    "cuisines": [
+      "Mediterranean",
+      "European",
+      "Greek"
+    ],
+    "diets": [
+      "gluten free",
+      "lacto ovo vegetarian",
+      "primal"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "morning meal",
+      "brunch",
+      "main dish",
+      "breakfast",
+      "dinner"
+    ],
+    "mealSlots": [
+      "lunch",
+      "dinner"
+    ],
+    "proteinSources": [],
+    "cookingMethods": [],
+    "carbBases": [],
+    "effortLevel": "quick",
+    "spiceLevel": "none",
+    "budgetTier": "moderate",
+    "kidFriendly": false,
+    "makeAhead": false,
+    "protectiveFoods": []
+  },
+  "dietCompassScores": null,
+  "isFavorite": false,
+  "rating": null,
+  "timesCooked": 0,
+  "lastCooked": null,
+  "createdAt": "2026-01-09T11:32:55.880Z",
+  "updatedAt": "2026-01-09T11:32:55.880Z",
+  "quality": {
+    "ingredientMatchRate": 100,
+    "hasUnknownIngredients": false,
+    "unknownCount": 0,
+    "qualityTier": "excellent",
+    "flagForUser": false
+  },
+  "normalizedIngredients": [
+    {
+      "displayName": "Asparagus",
+      "quantity": {
+        "originalQuantity": 3,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "3  asparagus spears",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Egg whites",
+      "quantity": {
+        "originalQuantity": 81,
+        "originalUnit": "ml",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 81
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "81 ml egg whites",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "feta_cheese",
+      "displayName": "feta cheese",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": 7,
+        "normalizedQuantityMl": 15
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 Tbsp feta cheese",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "green_onions",
+      "displayName": "green onions",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "1 serving green onions",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "salt",
+      "displayName": "salt",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 serving salt and pepper",
+      "matchConfidence": 1
+    },
+    {
+      "displayName": "Tzatziki",
+      "quantity": {
+        "originalQuantity": 1,
+        "originalUnit": "tbsp",
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": 15
+      },
+      "state": "other",
+      "preparation": [],
+      "rawText": "1 Tbsp tzatziki",
+      "matchConfidence": 1
+    },
+    {
+      "masterIngredientId": "cherry_tomatoes",
+      "displayName": "cherry tomatoes",
+      "quantity": {
+        "originalQuantity": 4,
+        "originalUnit": null,
+        "normalizedQuantityG": null,
+        "normalizedQuantityMl": null
+      },
+      "state": "fresh",
+      "preparation": [],
+      "rawText": "4  cherry tomatoes",
+      "matchConfidence": 1
+    }
+  ],
+  "normalizationStatus": "complete_with_warnings",
+  "normalizationDiagnostics": {
+    "totalIngredients": 7,
+    "matched": 7,
+    "unmatched": 0,
+    "lowConfidence": 0,
+    "missingDensity": 1,
+    "unmatchedIngredients": []
+  },
+  "_convertedAt": "2026-01-10T23:31:09.328Z",
+  "processGraph": {
+    "recipeName": "Greek Inspired Spring Omelet",
+    "processSteps": [
+      {
+        "stepNumber": 1,
+        "originalInstruction": "In a medium skillet saute asparagus until tender, about 7 minutes. Set aside.",
+        "processes": [
+          {
+            "processId": "saute",
+            "ingredients": [
+              "asparagus spears"
+            ],
+            "durationMinutes": 7,
+            "notes": "cook until tender"
+          }
+        ],
+        "outputDescription": "asparagus is tender and set aside"
+      },
+      {
+        "stepNumber": 2,
+        "originalInstruction": "In a small bowl combine egg whites and tzatziki; stir to combine.",
+        "processes": [
+          {
+            "processId": "mix",
+            "ingredients": [
+              "egg whites",
+              "tzatziki"
+            ],
+            "durationMinutes": null,
+            "notes": "stir to combine in small bowl"
+          }
+        ],
+        "outputDescription": "egg whites and tzatziki are combined into mixture"
+      },
+      {
+        "stepNumber": 3,
+        "originalInstruction": "Spray non stick skillet with cooking spray and bring to medium heat. Pour in egg white and allow it to spread over the skillet surface. Cook until egg turns white; about 2 minutes.",
+        "processes": [
+          {
+            "processId": "heat",
+            "ingredients": [],
+            "durationMinutes": null,
+            "notes": "bring skillet to medium heat"
+          },
+          {
+            "processId": "spread",
+            "ingredients": [
+              "egg whites"
+            ],
+            "durationMinutes": null,
+            "notes": "allow to spread over skillet surface"
+          },
+          {
+            "processId": "pan_fry",
+            "ingredients": [
+              "egg whites"
+            ],
+            "durationMinutes": 2,
+            "notes": "cook until egg turns white"
+          }
+        ],
+        "outputDescription": "omelet base is cooked and white"
+      },
+      {
+        "stepNumber": 4,
+        "originalInstruction": "Slide omelette onto a plate and place asparagus, tomatoes, green onions and feta in the middle. Fold the omelette into thirds to cover the fillings.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "egg whites"
+            ],
+            "durationMinutes": null,
+            "notes": "slide omelet onto plate"
+          },
+          {
+            "processId": "stuff",
+            "ingredients": [
+              "asparagus spears",
+              "cherry tomatoes",
+              "green onions",
+              "feta cheese"
+            ],
+            "durationMinutes": null,
+            "notes": "place fillings in middle of omelet"
+          },
+          {
+            "processId": "fold",
+            "ingredients": [
+              "egg whites"
+            ],
+            "durationMinutes": null,
+            "notes": "fold omelet into thirds to cover fillings"
+          }
+        ],
+        "outputDescription": "omelet is plated, filled, and folded into thirds"
+      },
+      {
+        "stepNumber": 5,
+        "originalInstruction": "Serve hot with additional tzatziki. Salt and pepper to taste.",
+        "processes": [
+          {
+            "processId": "plate",
+            "ingredients": [
+              "tzatziki"
+            ],
+            "durationMinutes": null,
+            "notes": "serve with additional tzatziki"
+          },
+          {
+            "processId": "season",
+            "ingredients": [
+              "salt and pepper"
+            ],
+            "durationMinutes": null,
+            "notes": "salt and pepper to taste"
+          }
+        ],
+        "outputDescription": "omelet is served hot with tzatziki and seasoned to taste"
+      }
+    ],
+    "processSummary": {
+      "totalProcesses": 8,
+      "uniqueProcesses": [
+        "saute",
+        "mix",
+        "heat",
+        "spread",
+        "pan_fry",
+        "plate",
+        "stuff",
+        "fold",
+        "season"
+      ],
+      "estimatedTotalTime": 12
+    }
+  },
+  "components": [
+    {
+      "id": "comp_645315_step1",
+      "name": "asparagus is tender and set aside",
+      "stepNumber": 1,
+      "sourceIngredients": [
+        {
+          "ingredientId": "asparagus",
+          "name": "asparagus spears",
+          "quantityG": 540
+        }
+      ],
+      "processes": [
+        {
+          "processId": "saute",
+          "processName": "Sauté",
+          "yieldFactor": 0.85,
+          "durationMinutes": 7,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 459,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 10.125,
+        "costPerG": 0.022058823529411766,
+        "nutrition": {
+          "calories": 108,
+          "protein": 11.880000000000003,
+          "fat": 0.648,
+          "carbs": 20.952,
+          "fiber": 11.340000000000002,
+          "sugar": 10.152,
+          "sodium": 10.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 7
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 72,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645315_step2",
+      "name": "egg whites and tzatziki are combined into mixture",
+      "stepNumber": 2,
+      "sourceIngredients": [
+        {
+          "ingredientId": "egg_white",
+          "name": "egg whites",
+          "quantityG": 81
+        },
+        {
+          "ingredientId": "tzatziki",
+          "name": "tzatziki",
+          "quantityG": 15
+        }
+      ],
+      "processes": [
+        {
+          "processId": "mix",
+          "processName": "Mix",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 96,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 9.1725,
+        "costPerG": 0.09554687499999999,
+        "nutrition": {
+          "calories": 64.62,
+          "protein": 9.3285,
+          "fat": 2.1372,
+          "carbs": 1.5903,
+          "fiber": 0,
+          "sugar": 1.0746,
+          "sodium": 209.46,
+          "method": "raw"
+        },
+        "prepTimeMin": 2
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 24,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645315_step3",
+      "name": "omelet base is cooked and white",
+      "stepNumber": 3,
+      "sourceIngredients": [],
+      "processes": [
+        {
+          "processId": "heat",
+          "processName": "Heat",
+          "yieldFactor": 0.98,
+          "durationMinutes": 3,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "spread",
+          "processName": "Spread",
+          "yieldFactor": 1.1,
+          "durationMinutes": 1,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "pan_fry",
+          "processName": "Pan Fry",
+          "yieldFactor": 0.8,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "fried"
+        }
+      ],
+      "output": {
+        "quantityG": 0,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0,
+        "costPerG": 0,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 0,
+          "method": "raw"
+        },
+        "prepTimeMin": 6
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 48,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645315_step4",
+      "name": "omelet is plated, filled, and folded into thirds",
+      "stepNumber": 4,
+      "sourceIngredients": [
+        {
+          "ingredientId": "cherry_tomatoes",
+          "name": "cherry tomatoes",
+          "quantityG": 480
+        },
+        {
+          "ingredientId": "green_onions",
+          "name": "green onions",
+          "quantityG": 20
+        },
+        {
+          "ingredientId": "feta_cheese",
+          "name": "feta cheese",
+          "quantityG": 7
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "stuff",
+          "processName": "Stuff",
+          "yieldFactor": 1.3,
+          "durationMinutes": 5,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "fold",
+          "processName": "Fold",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 659.1,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 5.7075,
+        "costPerG": 0.008659535730541647,
+        "nutrition": {
+          "calories": 111.35,
+          "protein": 5.919999999999999,
+          "fat": 2.071,
+          "carbs": 20.987599999999997,
+          "fiber": 3.88,
+          "sugar": 12.418,
+          "sodium": 135.8,
+          "method": "raw"
+        },
+        "prepTimeMin": 9
+      },
+      "prepAhead": {
+        "canStore": true,
+        "shelfLifeHours": 12,
+        "storageLocation": "fridge"
+      }
+    },
+    {
+      "id": "comp_645315_step5",
+      "name": "omelet is served hot with tzatziki and seasoned to taste",
+      "stepNumber": 5,
+      "sourceIngredients": [
+        {
+          "ingredientId": "salt",
+          "name": "salt and pepper",
+          "quantityG": 1
+        }
+      ],
+      "processes": [
+        {
+          "processId": "plate",
+          "processName": "Plate",
+          "yieldFactor": 1,
+          "durationMinutes": 2,
+          "nutritionMultiplier": "raw"
+        },
+        {
+          "processId": "season",
+          "processName": "Season",
+          "yieldFactor": 1.02,
+          "durationMinutes": 0.5,
+          "nutritionMultiplier": "raw"
+        }
+      ],
+      "output": {
+        "quantityG": 1.02,
+        "state": "prepared"
+      },
+      "calculated": {
+        "costAUD": 0.05,
+        "costPerG": 0.049019607843137254,
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "sodium": 387.58,
+          "method": "raw"
+        },
+        "prepTimeMin": 2.5
+      },
+      "prepAhead": {
+        "canStore": false,
+        "shelfLifeHours": 0,
+        "storageLocation": "counter"
+      }
+    }
+  ],
+  "calculated": {
+    "totalCost": 25.055,
+    "costPerServing": 25.055,
+    "totalPrepTime": 26.5,
+    "nutritionPerServing": {
+      "calories": 283.97,
+      "protein": 27.128500000000003,
+      "fat": 4.856199999999999,
+      "carbs": 43.5299,
+      "fiber": 15.22,
+      "sugar": 23.644599999999997,
+      "sodium": 743.64
+    }
+  },
+  "prepAhead": {
+    "components": [
+      {
+        "id": "comp_645315_step1",
+        "name": "asparagus is tender and set aside",
+        "shelfLifeHours": 72
+      },
+      {
+        "id": "comp_645315_step2",
+        "name": "egg whites and tzatziki are combined into mixture",
+        "shelfLifeHours": 24
+      },
+      {
+        "id": "comp_645315_step3",
+        "name": "omelet base is cooked and white",
+        "shelfLifeHours": 48
+      },
+      {
+        "id": "comp_645315_step4",
+        "name": "omelet is plated, filled, and folded into thirds",
+        "shelfLifeHours": 12
+      }
+    ]
+  },
+  "reusable": [
+    {
+      "componentId": "comp_645315_step3",
+      "name": "omelet base is cooked and white",
+      "shelfLifeHours": 48,
+      "processes": [
+        "heat",
+        "spread",
+        "pan_fry"
+      ]
+    },
+    {
+      "componentId": "comp_645315_step4",
+      "name": "omelet is plated, filled, and folded into thirds",
+      "shelfLifeHours": 12,
+      "processes": [
+        "plate",
+        "stuff",
+        "fold"
+      ]
+    }
+  ]
+}
